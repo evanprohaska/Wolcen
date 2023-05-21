@@ -1,0 +1,40 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="LambachMouth">
+    <Model>
+      <SpawnAnim AnimName="cofe_tentacle_spawn_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="cofe_tentacle_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="COFE_Tentacle_Skill_Atk_01" PlaybackSpeed="1" />
+      <DeathAnim AnimName="COFE_Tentacle_Skill_Unspawn_01" PlaybackSpeed="1" />
+    </Model>
+    <Particles>
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredient2.flesh_mouth.spawn_ground" Direction="0,0,1" Scale="1" />
+      <Particle Key="ProjectileCastVFX" Name="u_gameplay_ingredient2.flesh_mouth.shoot" Direction="0,0,1" Scale="1.5" />
+    </Particles>
+    <Iterations Number="0" WarmUpTime="2" CooldownMin="1" CooldownMax="1" DelayBeforeFirstIteration="1.5" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_LambachMouth" Targeting="Random" ProjectileStartingPosition="FromCaster" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="LambachMouth_PresetList" UIName="@ui_GameplayIngredients_LambachMouth" Model="Objects/characters/mobs/Non_Humanoid/Tentacle/COFE_Tentacle/COFE_Tentacle_02.cdf" ModelScale="0.5" Loop="1" NewStartingPosition="0" LootClass="LC_Elite">
+    <Preset Name="LambachMouth" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="EndgameLambachMouth">
+    <Model>
+      <SpawnAnim AnimName="cofe_tentacle_spawn_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="cofe_tentacle_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="COFE_Tentacle_Skill_Atk_01" PlaybackSpeed="1" />
+      <DeathAnim AnimName="COFE_Tentacle_Skill_Unspawn_01" PlaybackSpeed="1" />
+    </Model>
+    <Particles>
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredient2.flesh_mouth.spawn_ground" Direction="0,0,1" Scale="1" />
+      <Particle Key="ProjectileCastVFX" Name="u_gameplay_ingredient2.flesh_mouth.shoot" Direction="0,0,1" Scale="1.5" />
+    </Particles>
+    <Iterations Number="0" WarmUpTime="2" CooldownMin="1" CooldownMax="1" DelayBeforeFirstIteration="1.5" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_EndgameLambachMouth" Targeting="Random" ProjectileStartingPosition="FromCaster" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="EndgameLambachMouth_PresetList" UIName="@ui_GameplayIngredients_LambachMouth_Endgame" Model="Objects/characters/mobs/Non_Humanoid/Tentacle/COFE_Tentacle/COFE_Tentacle_02.cdf" ModelScale="0.5" Loop="1" NewStartingPosition="0" LootClass="LC_Elite">
+    <Preset Name="EndgameLambachMouth" />
+  </FlowOfSoulsPresetList>
+</MetaData>

@@ -1,0 +1,58 @@
+<MetaData>
+  <Skill UID="AI_TMPL_Priest_ChainHeal" ESkill="AI_TMPL_Priest_ChainHeal" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="sacred" WeaponMultiplier="1.1" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01 R Hand" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="ChainSkillBeam" Name="U_Monster.Templar_Priest.Heal_Beam_01" Offset="0,-0.5,-0.7" Direction="0,0,1" />
+      <Particle Key="ChainSkillHit" Name="U_Monster_Alt.tmpl_priest.chain_heal_hit" Direction="0,0,1" />
+      <Particle Key="ChainSkillHeal" Name="U_Monster.Templar_Priest.Heal_Impact_01" Direction="0,0,1" />
+    </ParticleList>
+    <ChainSkill MaxBounce="10" HitBounceDelay="0.2" TargetBone="Bip01 Spine1" SoundTriggerOnFirstHit="PLAY_Skill_ChainLightning_FirstImpact" SoundTriggerOnMiss="PLAY_Skill_ChainLightning_Miss">
+      <SpreadDatas>
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_FourthImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_FourthImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_FourthImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+      </SpreadDatas>
+    </ChainSkill>
+    <HealthTransfer Ratio="0.1" Timer="1" Delay="0" />
+    <SoundTrigger OnAnimCast="Play_TMPL_Priest_ChainHeal_Cast" OnAnimStart="Play_TMPL_Priest_ChainHeal" OnHit="" />
+  </Skill>
+  <Skill UID="AI_COSS_Priest_ChainHeal" ESkill="AI_TMPL_Priest_ChainHeal" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Frost" WeaponMultiplier="1.1" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01 R Hand" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="ChainSkillBeam" Name="U_Monster_Alt.soul_priest.chain_heal" Offset="0,-0.5,-0.7" Direction="0,0,-1" />
+      <Particle Key="ChainSkillHit" Name="U_Monster_Alt.soul_priest.chain_hit" Direction="0,0,1" />
+      <Particle Key="ChainSkillHeal" Name="U_Monster_Alt.soul_priest.heal_impact" Direction="0,0,1" />
+    </ParticleList>
+    <ChainSkill MaxBounce="10" HitBounceDelay="0.2" TargetBone="Bip01 Spine1" SoundTriggerOnFirstHit="PLAY_Skill_ChainLightning_FirstImpact" SoundTriggerOnMiss="PLAY_Skill_ChainLightning_Miss">
+      <SpreadDatas>
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_FourthImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_FourthImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_FourthImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="40" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+      </SpreadDatas>
+    </ChainSkill>
+    <HealthTransfer Ratio="0.1" Timer="1" Delay="0" />
+    <SoundTrigger OnAnimCast="Play_TMPL_Priest_ChainHeal_Cast" OnAnimStart="Play_TMPL_Priest_ChainHeal" OnHit="" />
+  </Skill>
+</MetaData>

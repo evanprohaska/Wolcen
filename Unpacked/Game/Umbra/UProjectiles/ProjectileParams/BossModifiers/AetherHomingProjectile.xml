@@ -1,0 +1,22 @@
+<MetaData>
+  <Projectile ID="AetherHomingProjectile_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.5,1.5,0.5" vOffset="0,0,0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="u_bossmodifiers.aether_homing.proj" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="u_bossmodifiers.aether_homing.impact" Direction="0,0,1" WorldSpace="0" Scale="1" />
+      <HitEnvironment ParticleName="u_bossmodifiers.aether_homing.Fade" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="180" TimeBeforeHoming="1" MaxLifeTime="10" MaxTravelDistance="-1" />
+    <Speed SpeedMin="2" SpeedMax="2" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_BossModifier_AetherHoming_Proj_Launch" />
+      <Hit SoundTriggerName="Play_BossModifier_AetherHoming_Proj_Impact" />
+      <Removed SoundTriggerName="Stop_BossModifier_AetherHoming_Proj_Lp" />
+    </Audio>
+  </Projectile>
+</MetaData>

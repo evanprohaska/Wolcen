@@ -1,0 +1,57 @@
+<MetaData>
+  <MonsterManager Name="MM_AlexTest_Level">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="2" HConstraint_TriggerFactorPercent="30" CConstraint_CountThreshold="2" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="50" SpreadPercent="50" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="deduced" CPPerSquareMeter="10" DefaultSpawnerSpawnRadius="10" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="Bandit_Me" SpawnClassFamily="Scf_Bandit_Me" MandatoryContentKeywords="" />
+      <Entry Category="Bandit_Trap" SpawnClassFamily="Scf_Bandit_Trap" MandatoryContentKeywords="" />
+      <Entry Category="Bandit_Worg" SpawnClassFamily="Scf_Bandit_Worg" MandatoryContentKeywords="" />
+      <Entry Category="Bandit_Ranged" SpawnClassFamily="Scf_Bandit_Ranged" MandatoryContentKeywords="" />
+      <Entry Category="Bandit_Brute" SpawnClassFamily="Scf_Bandit_Brute" MandatoryContentKeywords="" />
+      <Entry Category="Bandit_KMaster" SpawnClassFamily="Scf_Bandit_KMaster" MandatoryContentKeywords="" />
+      <Entry Category="Bandit_Thug" SpawnClassFamily="Scf_Bandit_Thug" MandatoryContentKeywords="" />
+      <Entry Category="Hornet_W_CP6" SpawnClassFamily="Scf_Hornet_W_CP6" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="Bandit_Me" Percentage="55" />
+      <Entry Category="Bandit_Worg" Percentage="12.5" />
+      <Entry Category="Bandit_Ranged" Percentage="17.5" />
+      <Entry Category="Bandit_Trap" Percentage="5" />
+      <Entry Category="Bandit_Brute" Percentage="5" />
+      <Entry Category="Bandit_KMaster" Percentage="5" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Bandit_Me" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Bandit_Trap" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Bandit_Worg" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Bandit_Ranged" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Bandit_Brute" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Bandit_KMaster" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Bandit_Thug" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Hornet_W_CP6" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Bandit_FF1" />
+    </FMP>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="250" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns>
+      <Ambush Percentage="5" TriggerRadiusOverride="5" BaseSpawnRadiusOverride="15" DelayBeforeFirstSpawn="0" DelayBetweenMonsterSpawn="0.5" SpawnCountPerTick="1" />
+      <SurroundingAssault Percentage="5" TriggerRadiusOverride="15" SpawnRadiusMin="7" SpawnRadiusMax="9" DelayBeforeFirstSpawn="0" DelayBetweenMonsterSpawn="0.1" SpawnCountPerTick="1" />
+      <ReinforcementGroup Percentage="5" GroupCountMin="1" GroupCountMax="3" Category="Hornet_W_CP6" Category_CPMin="3" Category_CPMax="6" DelayBeforeFirstSpawn="1" DelayBetweenGroups="5" DelayBetweenMonsterSpawn="0.1" SpawnDistanceFromPlayer="10" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+</MetaData>

@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_MobileDamageZone">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="2" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="FrostNova" />
+    </Shapes>
+    <DamageZone Duration="5" RateOfFire="0.5" RemoveParticleWithShape="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_Monster.Heimlock.Lightningball_Gain_01" Offset="0,0,0" Direction="1,0,0" />
+      <Particle Key="Spawn" Name="U_Monster.Heimlock.Lightningball_Body_01" Offset="0,0,0" Direction="1,0,0" Scale="2" />
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock.Lightningball_Projectile_01" Offset="0,0,2.5" Direction="1,0,0" />
+      <Particle Key="Disappear" Name="U_Monster.Heimlock.Lightningball_Ready_01" Offset="0,0,2.5" Direction="1,0,0" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="5" RandomBaseDistMax="15" RandomBaseAngleMin="0" RandomBaseAngleMax="180" MinLinearSpeed="5" MaxLinearSpeed="5" MinAngularSpeed="45" MaxAngularSpeed="45" IndicatorMaxTimer="2" NumberOfDZ="4" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

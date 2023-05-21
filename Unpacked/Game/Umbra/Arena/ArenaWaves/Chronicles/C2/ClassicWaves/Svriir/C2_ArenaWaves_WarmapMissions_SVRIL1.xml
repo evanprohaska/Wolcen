@@ -1,0 +1,125 @@
+<MetaData>
+  <ArenaWaves Name="ArenaWaves_WM_E_SVRIL1_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SL1_Swarmcrawler" NumberOfEntitiesPerSpawn="6" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SL1_ToxicConjuration" NumberOfEntitiesPerSpawn="6" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SL1_Omega" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="5" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SL1_OmegaFemale" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="5" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SL1_BetaSpitter" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="21" TargetSpawnClass="Sc_WM_E_SL1_Swarmcrawler" NumberOfEntitiesPerSpawn="7" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="21" TargetSpawnClass="Sc_WM_E_SL1_ToxicConjuration" NumberOfEntitiesPerSpawn="7" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_E_SL1_Omega" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_E_SL1_OmegaFemale" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="5" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SL1_BetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_SL1_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="18" TargetSpawnClass="Sc_WM_E_SL1_Swarmcrawler" NumberOfEntitiesPerSpawn="6" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="18" TargetSpawnClass="Sc_WM_E_SL1_ToxicConjuration" NumberOfEntitiesPerSpawn="6" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_E_SL1_Omega" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_E_SL1_OmegaFemale" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SL1_BetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SL1_BetaScreecher" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_SL1_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_M_SVRIL1_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SL1_Swarmcrawler" NumberOfEntitiesPerSpawn="6" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SL1_ToxicConjuration" NumberOfEntitiesPerSpawn="6" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SL1_Omega" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="5" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SL1_OmegaFemale" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="5" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SL1_BetaSpitter" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="21" TargetSpawnClass="Sc_WM_M_SL1_Swarmcrawler" NumberOfEntitiesPerSpawn="7" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="21" TargetSpawnClass="Sc_WM_M_SL1_ToxicConjuration" NumberOfEntitiesPerSpawn="7" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_M_SL1_Omega" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_M_SL1_OmegaFemale" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="5" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SL1_BetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_SL1_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="18" TargetSpawnClass="Sc_WM_M_SL1_Swarmcrawler" NumberOfEntitiesPerSpawn="6" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="18" TargetSpawnClass="Sc_WM_M_SL1_ToxicConjuration" NumberOfEntitiesPerSpawn="6" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_M_SL1_Omega" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_M_SL1_OmegaFemale" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SL1_BetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SL1_BetaScreecher" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_SL1_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_H_SVRIL1_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SL1_Swarmcrawler" NumberOfEntitiesPerSpawn="6" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SL1_ToxicConjuration" NumberOfEntitiesPerSpawn="6" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SL1_Omega" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="5" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SL1_OmegaFemale" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="5" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SL1_BetaSpitter" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="21" TargetSpawnClass="Sc_WM_H_SL1_Swarmcrawler" NumberOfEntitiesPerSpawn="7" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="21" TargetSpawnClass="Sc_WM_H_SL1_ToxicConjuration" NumberOfEntitiesPerSpawn="7" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_H_SL1_Omega" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_H_SL1_OmegaFemale" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="5" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SL1_BetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_SL1_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="18" TargetSpawnClass="Sc_WM_H_SL1_Swarmcrawler" NumberOfEntitiesPerSpawn="6" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="18" TargetSpawnClass="Sc_WM_H_SL1_ToxicConjuration" NumberOfEntitiesPerSpawn="6" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_H_SL1_Omega" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_H_SL1_OmegaFemale" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SL1_BetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SL1_BetaScreecher" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_SL1_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

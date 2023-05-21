@@ -1,0 +1,1564 @@
+<MetaData>
+  <Affix AffixId="new_affixes_unique_additional_projectile_2_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="accessory,weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="additional_projectile">
+      <LoRoll ProjectileCountInt="1" />
+      <HiRoll ProjectileCountInt="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_ring_melee_damage_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent_melee_weapon">
+      <LoRoll DamagePercentInt="50" />
+      <HiRoll DamagePercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_ring_critical_damage_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_attackskill_pts">
+      <LoRoll DamagePercentInt="40" />
+      <HiRoll DamagePercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_shield_sacred_cast_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="shield" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="skillrequirement_keyword_sacred">
+      <LoRoll CountInt="1" />
+      <HiRoll CountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_stasis_on_attack_skill_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="stasis_on_attack_skill">
+      <LoRoll ChanceFlatFloat="100" StackCountInt="2" />
+      <HiRoll ChanceFlatFloat="100" StackCountInt="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_zephyron_skillrequirement_keyword_lightning_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="skillrequirement_keyword_lightning">
+      <LoRoll CountInt="1" />
+      <HiRoll CountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_edict_poisonchance_on_toxic_damage_score_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="poisonchance_on_toxic_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="25" />
+      <HiRoll CharacteristicScorePercentInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_rigard_stunchance_on_dash_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="stunchance_on_dash">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_apex_dotdamage_percent_bleed_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dotdamage_percent_bleed">
+      <LoRoll DamagePercentFloat="40" />
+      <HiRoll DamagePercentFloat="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_abolition_act_cc_immunity_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="cc_immunity">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_abolition_material_damage_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_percent_material">
+      <LoRoll DamagePercentFloat="180" />
+      <HiRoll DamagePercentFloat="200" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_regicide_mark_piercing_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="piercing">
+      <LoRoll CountInt="1" />
+      <HiRoll CountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_regicide_mark_projectile_speed_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="projectiles_speed_percent">
+      <LoRoll SpeedPercentInt="-30" />
+      <HiRoll SpeedPercentInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_shimmering_shadow_curse_on_dash_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="accessory,shield" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="curse_on_dash">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_shimmering_shadow_damage_weapon_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="shadow_damage_weapon">
+      <LoRoll DamagesFlatInt_Min="90" DamagesFlatInt_Max="110" />
+      <HiRoll DamagesFlatInt_Min="100" DamagesFlatInt_Max="120" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_brooch_movespeed_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="movespeed">
+      <LoRoll SpeedPercentInt="15" />
+      <HiRoll SpeedPercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_brooch_dodgechance_score_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="accessory,armor,shield" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dodgechance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="35" />
+      <HiRoll CharacteristicScorePercentInt="75" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_untainted_cast_deathmark_on_hit_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="cast_deathmark_on_hit">
+      <LoRoll PossibilityInt="1" TriggeredSkillSelector="0" />
+      <HiRoll PossibilityInt="1" TriggeredSkillSelector="0" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_omaley_criticalchance_magicspell_score_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_magicspell_score_percent">
+      <LoRoll CharacteristicScorePercentInt="35" />
+      <HiRoll CharacteristicScorePercentInt="75" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_omaley_magic_find_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="magic_find">
+      <LoRoll ResourcePercentFloat="50" />
+      <HiRoll ResourcePercentFloat="100" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_searing_song_weaknesschance_override_on_attacks_skills_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="force_weakness_roll_on_attack_skills">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_searing_song_forceshield_to_life_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_to_life">
+      <LoRoll ConversionRateFloat="1" />
+      <HiRoll ConversionRateFloat="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_envoy_health_gain_on_spent_rage_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_gain_on_spent_rage">
+      <LoRoll ConversionRateFloat="3" />
+      <HiRoll ConversionRateFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_envoy_damage_percent_any_weapon_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent_any_weapon">
+      <LoRoll DamagePercentInt="20" />
+      <HiRoll DamagePercentInt="45" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_argands_dash_cooldown_on_kill_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dash_cooldown_on_kill">
+      <LoRoll DurationPercentFloat="20" />
+      <HiRoll DurationPercentFloat="25" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_argands_physical_damage_weapon_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="physical_damage_weapon">
+      <LoRoll DamagesFlatInt_Min="20" DamagesFlatInt_Max="40" />
+      <HiRoll DamagesFlatInt_Min="30" DamagesFlatInt_Max="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_sleeper_freezechance_on_frost_damage_score_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="freezechance_on_frost_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="80" />
+      <HiRoll CharacteristicScorePercentInt="100" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_abyssal_shadow_spells_cost_to_rage_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="shadow_spells_cost_to_rage">
+      <LoRoll ConversionRateFloat="1" />
+      <HiRoll ConversionRateFloat="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_abyssal_skillrequirement_keyword_shadow_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="skillrequirement_keyword_shadow">
+      <LoRoll CountInt="1" />
+      <HiRoll CountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_firstmen_skills_buffs_intensity_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="skills_buffs_intensity">
+      <LoRoll ConversionRateFloat="60" />
+      <HiRoll ConversionRateFloat="100" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_firstmen_healing_from_spells_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="healing_from_spells_percent">
+      <LoRoll HealingPercentFloat="15" />
+      <HiRoll HealingPercentFloat="25" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_purifier_shoulder_rage_on_blocked_attack_pts_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="rage_on_blocked_attack_pts">
+      <LoRoll ResourceFlatFloat="30" />
+      <HiRoll ResourceFlatFloat="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_vanity_dodgechance_score_to_allres_score_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dodgechance_score_to_allres_score">
+      <LoRoll ConversionRateFloat="1" />
+      <HiRoll ConversionRateFloat="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_skypirate_melee_damage_benefits_from_projectiles_bonuses_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="melee_damage_benefits_from_projectiles_bonuses">
+      <LoRoll DamagePercentFloat="30" />
+      <HiRoll DamagePercentFloat="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_skypirate_damage_percent_projectiles_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent_projectiles">
+      <LoRoll DamagePercentInt="25" />
+      <HiRoll DamagePercentInt="35" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_warmonger_helmet_life_leech_percent_against_bleeding_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_against_bleeding">
+      <LoRoll DamagePercentFloat="1" />
+      <HiRoll DamagePercentFloat="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_warmonger_chest_bleedchance_on_rend_damage_score_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="bleedchance_on_rend_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_warmonger_chest_life_leech_percent_rend_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_rend">
+      <LoRoll DamagePercentFloat="2" />
+      <HiRoll DamagePercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_mag_slow_aoe_on_active_dodge_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="slow_aoe_on_active_dodge">
+      <LoRoll SpeedPercentInt="60" />
+      <HiRoll SpeedPercentInt="70" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_agony_dotdamage_percent_per_wisdom_point_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dotdamage_percent_per_wisdom_point">
+      <LoRoll DamagePercentFloat_Max="100" ConversionRateFloat="0.3" />
+      <HiRoll DamagePercentFloat_Max="100" ConversionRateFloat="0.3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_genesis_sacred_ground_on_cursed_stacks_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="sacred_ground_on_cursed_stacks">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_genesis_shadow_nova_on_weakness_stacks_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="shadow_nova_on_weakness_stacks">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_genesis_curesechance_on_shadow_damage_score_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="curesechance_on_shadow_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="25" />
+      <HiRoll CharacteristicScorePercentInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_genesis_weaknesschance_on_sacred_damage_score_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="weaknesschance_on_sacred_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="25" />
+      <HiRoll CharacteristicScorePercentInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_amulet_kardis_stavesattacks_consideredspells_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="stavesattacks_consideredspells">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_flintlock_lightning_strike_on_critical_hit_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="lightning_strike_on_critical_hit">
+      <LoRoll PossibilityInt="1" TriggeredSkillSelector="0" />
+      <HiRoll PossibilityInt="1" TriggeredSkillSelector="0" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_flintlock_criticalchance_projectiles_score_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_projectiles_score_percent">
+      <LoRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_spellblade_attack_damage_bonus_from_last_spell_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="attack_damage_bonus_from_last_spell">
+      <LoRoll DamagePercentFloat="25" DurationFloatMaxCombined="20" />
+      <HiRoll DamagePercentFloat="30" DurationFloatMaxCombined="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_spellblade_statusailment_inflict_score_percent_occult_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent_occult">
+      <LoRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_dominion_criticaldamage_magicspell_pts_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_magicspell_pts">
+      <LoRoll DamagePercentInt="25" />
+      <HiRoll DamagePercentInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_driftwood_convert_physical_to_frost_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="convert_physical_to_frost">
+      <LoRoll DamagePercentFloat="40" />
+      <HiRoll DamagePercentFloat="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_driftwood_chain_3" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="default_attacks_chain">
+      <LoRoll RadiusFloat="10" StackCountInt="1" />
+      <HiRoll RadiusFloat="10" StackCountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_frostweave_freeze_chance_to_crit_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="freeze_chance_to_crit">
+      <LoRoll ChanceFlatFloat="25" />
+      <HiRoll ChanceFlatFloat="45" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_figurehead_aggression_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="aggression_percent">
+      <LoRoll CharacteristicPercentInt="40" />
+      <HiRoll CharacteristicPercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_figurehead_all_resistance_score_percent_on_full_stamina_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent_on_full_stamina">
+      <LoRoll CharacteristicScorePercentInt="75" />
+      <HiRoll CharacteristicScorePercentInt="150" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_necromancer_minion_damage_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="minion_damage_percent">
+      <LoRoll DamagePercentFloat="50" />
+      <HiRoll DamagePercentFloat="75" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_ezaneal_chest_convert_physical_to_lightning_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="convert_physical_to_lightning">
+      <LoRoll DamagePercentFloat="40" />
+      <HiRoll DamagePercentFloat="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_ezaneal_chest_can_cast_sniper_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="can_cast_sniper">
+      <LoRoll CountInt="1" />
+      <HiRoll CountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_republic_helmet_stamina_regeneration_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="stamina_regeneration_percent">
+      <LoRoll ResourcePercentFloat="25" />
+      <HiRoll ResourcePercentFloat="100" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_expurgation_glove_criticaldamage_on_bleeding_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_on_bleeding">
+      <LoRoll DamagePercentInt="45" />
+      <HiRoll DamagePercentInt="65" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_expurgation_glove_criticalchance_on_poisoned_score_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_on_poisoned_score">
+      <LoRoll CharacteristicScoreInt="25" />
+      <HiRoll CharacteristicScoreInt="45" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_timemaster_belt_dodge_roll_breaks_cc_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dodge_roll_breaks_cc">
+      <LoRoll PossibilityInt="15" />
+      <HiRoll PossibilityInt="17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_trinity_belt_elemental_cycling_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="elemental_cycling_percent">
+      <LoRoll DamagePercentFloat="20" />
+      <HiRoll DamagePercentFloat="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_alastor_amulet_forceshield_leech_percent_lightning_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_leech_percent_lightning">
+      <LoRoll DamagePercentFloat="15" />
+      <HiRoll DamagePercentFloat="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_exorcism_amulet_burnchance_on_fire_damage_score_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="burnchance_on_fire_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_exorcism_amulet_life_leech_percent_fire_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_fire">
+      <LoRoll DamagePercentFloat="5" />
+      <HiRoll DamagePercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_exorcism_amulet_damage_percent_against_burning_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent_against_burning">
+      <LoRoll DamagePercentFloat="5" />
+      <HiRoll DamagePercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_hierophant_amulet_healing_from_spells_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="healing_from_spells_percent">
+      <LoRoll HealingPercentFloat="15" />
+      <HiRoll HealingPercentFloat="25" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_curse_ring_statusailment_inflict_score_percent_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="25" />
+      <HiRoll CharacteristicScorePercentInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_curse_ring_dotdamage_percent_global_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dotdamage_percent_global">
+      <LoRoll DamagePercentFloat="25" />
+      <HiRoll DamagePercentFloat="35" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_curse_ring_ailment_spread_3" Class="" AffixType="prefix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="ailment_spread">
+      <LoRoll ChanceFlatFloat="25" />
+      <HiRoll ChanceFlatFloat="45" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_additional_projectile_2_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="accessory,weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="additional_projectile">
+      <LoRoll ProjectileCountInt="1" />
+      <HiRoll ProjectileCountInt="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_ring_melee_damage_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent_melee_weapon">
+      <LoRoll DamagePercentInt="50" />
+      <HiRoll DamagePercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_ring_critical_damage_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_attackskill_pts">
+      <LoRoll DamagePercentInt="40" />
+      <HiRoll DamagePercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_shield_sacred_cast_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="shield" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="skillrequirement_keyword_sacred">
+      <LoRoll CountInt="1" />
+      <HiRoll CountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_stasis_on_attack_skill_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="stasis_on_attack_skill">
+      <LoRoll ChanceFlatFloat="100" StackCountInt="2" />
+      <HiRoll ChanceFlatFloat="100" StackCountInt="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_zephyron_skillrequirement_keyword_lightning_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="skillrequirement_keyword_lightning">
+      <LoRoll CountInt="1" />
+      <HiRoll CountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_edict_poisonchance_on_toxic_damage_score_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="poisonchance_on_toxic_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="25" />
+      <HiRoll CharacteristicScorePercentInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_rigard_stunchance_on_dash_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="stunchance_on_dash">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_apex_dotdamage_percent_bleed_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dotdamage_percent_bleed">
+      <LoRoll DamagePercentFloat="40" />
+      <HiRoll DamagePercentFloat="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_abolition_act_cc_immunity_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="cc_immunity">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_abolition_material_damage_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="local_damage_percent_material">
+      <LoRoll DamagePercentFloat="180" />
+      <HiRoll DamagePercentFloat="200" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_regicide_mark_piercing_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="piercing">
+      <LoRoll CountInt="1" />
+      <HiRoll CountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_regicide_mark_projectile_speed_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="projectiles_speed_percent">
+      <LoRoll SpeedPercentInt="-30" />
+      <HiRoll SpeedPercentInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_shimmering_shadow_curse_on_dash_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="accessory,shield" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="curse_on_dash">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_brooch_movespeed_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="movespeed">
+      <LoRoll SpeedPercentInt="15" />
+      <HiRoll SpeedPercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_brooch_dodgechance_score_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="accessory,armor,shield" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dodgechance_score_percent">
+      <LoRoll CharacteristicScorePercentInt="35" />
+      <HiRoll CharacteristicScorePercentInt="75" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_untainted_cast_deathmark_on_hit_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="cast_deathmark_on_hit">
+      <LoRoll PossibilityInt="1" TriggeredSkillSelector="0" />
+      <HiRoll PossibilityInt="1" TriggeredSkillSelector="0" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_omaley_criticalchance_magicspell_score_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_magicspell_score_percent">
+      <LoRoll CharacteristicScorePercentInt="35" />
+      <HiRoll CharacteristicScorePercentInt="75" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_omaley_magic_find_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="accessory" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="magic_find">
+      <LoRoll ResourcePercentFloat="50" />
+      <HiRoll ResourcePercentFloat="100" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_searing_song_weaknesschance_override_on_attacks_skills_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="force_weakness_roll_on_attack_skills">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_searing_song_forceshield_to_life_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_to_life">
+      <LoRoll ConversionRateFloat="1" />
+      <HiRoll ConversionRateFloat="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_envoy_health_gain_on_spent_rage_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_gain_on_spent_rage">
+      <LoRoll ConversionRateFloat="3" />
+      <HiRoll ConversionRateFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_envoy_damage_percent_any_weapon_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent_any_weapon">
+      <LoRoll DamagePercentInt="20" />
+      <HiRoll DamagePercentInt="45" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_argands_dash_cooldown_on_kill_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dash_cooldown_on_kill">
+      <LoRoll DurationPercentFloat="20" />
+      <HiRoll DurationPercentFloat="25" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_argands_physical_damage_weapon_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="physical_damage_weapon">
+      <LoRoll DamagesFlatInt_Min="20" DamagesFlatInt_Max="40" />
+      <HiRoll DamagesFlatInt_Min="30" DamagesFlatInt_Max="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_sleeper_freezechance_on_frost_damage_score_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="freezechance_on_frost_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="80" />
+      <HiRoll CharacteristicScorePercentInt="100" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_abyssal_shadow_spells_cost_to_rage_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="shadow_spells_cost_to_rage">
+      <LoRoll ConversionRateFloat="1" />
+      <HiRoll ConversionRateFloat="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_abyssal_skillrequirement_keyword_shadow_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="skillrequirement_keyword_shadow">
+      <LoRoll CountInt="1" />
+      <HiRoll CountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_firstmen_skills_buffs_intensity_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="skills_buffs_intensity">
+      <LoRoll ConversionRateFloat="60" />
+      <HiRoll ConversionRateFloat="100" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_firstmen_healing_from_spells_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="healing_from_spells_percent">
+      <LoRoll HealingPercentFloat="15" />
+      <HiRoll HealingPercentFloat="25" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_purifier_shoulder_rage_on_blocked_attack_pts_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="rage_on_blocked_attack_pts">
+      <LoRoll ResourceFlatFloat="30" />
+      <HiRoll ResourceFlatFloat="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_vanity_dodgechance_score_to_allres_score_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dodgechance_score_to_allres_score">
+      <LoRoll ConversionRateFloat="1" />
+      <HiRoll ConversionRateFloat="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_skypirate_melee_damage_benefits_from_projectiles_bonuses_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="melee_damage_benefits_from_projectiles_bonuses">
+      <LoRoll DamagePercentFloat="30" />
+      <HiRoll DamagePercentFloat="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_skypirate_damage_percent_projectiles_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent_projectiles">
+      <LoRoll DamagePercentInt="25" />
+      <HiRoll DamagePercentInt="35" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_warmonger_helmet_life_leech_percent_against_bleeding_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_against_bleeding">
+      <LoRoll DamagePercentFloat="1" />
+      <HiRoll DamagePercentFloat="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_warmonger_chest_bleedchance_on_rend_damage_score_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="bleedchance_on_rend_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_warmonger_chest_life_leech_percent_rend_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_rend">
+      <LoRoll DamagePercentFloat="2" />
+      <HiRoll DamagePercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_mag_slow_aoe_on_active_dodge_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="slow_aoe_on_active_dodge">
+      <LoRoll SpeedPercentInt="60" />
+      <HiRoll SpeedPercentInt="70" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_agony_dotdamage_percent_per_wisdom_point_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dotdamage_percent_per_wisdom_point">
+      <LoRoll DamagePercentFloat_Max="100" ConversionRateFloat="0.3" />
+      <HiRoll DamagePercentFloat_Max="100" ConversionRateFloat="0.3" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_genesis_sacred_ground_on_cursed_stacks_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="sacred_ground_on_cursed_stacks">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_genesis_shadow_nova_on_weakness_stacks_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="shadow_nova_on_weakness_stacks">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_genesis_curesechance_on_shadow_damage_score_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="curesechance_on_shadow_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="25" />
+      <HiRoll CharacteristicScorePercentInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_genesis_weaknesschance_on_sacred_damage_score_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="weaknesschance_on_sacred_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="25" />
+      <HiRoll CharacteristicScorePercentInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_amulet_kardis_stavesattacks_consideredspells_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="stavesattacks_consideredspells">
+      <LoRoll PossibilityInt="1" />
+      <HiRoll PossibilityInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_flintlock_lightning_strike_on_critical_hit_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="lightning_strike_on_critical_hit">
+      <LoRoll PossibilityInt="1" TriggeredSkillSelector="0" />
+      <HiRoll PossibilityInt="1" TriggeredSkillSelector="0" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_flintlock_criticalchance_projectiles_score_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_projectiles_score_percent">
+      <LoRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_spellblade_attack_damage_bonus_from_last_spell_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="weapon" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="attack_damage_bonus_from_last_spell">
+      <LoRoll DamagePercentFloat="25" DurationFloatMaxCombined="20" />
+      <HiRoll DamagePercentFloat="30" DurationFloatMaxCombined="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_spellblade_statusailment_inflict_score_percent_occult_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent_occult">
+      <LoRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_dominion_criticaldamage_magicspell_pts_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_magicspell_pts">
+      <LoRoll DamagePercentInt="25" />
+      <HiRoll DamagePercentInt="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_driftwood_convert_physical_to_frost_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="convert_physical_to_frost">
+      <LoRoll DamagePercentFloat="40" />
+      <HiRoll DamagePercentFloat="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_driftwood_chain_3" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="default_attacks_chain">
+      <LoRoll RadiusFloat="10" StackCountInt="1" />
+      <HiRoll RadiusFloat="10" StackCountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_frostweave_freeze_chance_to_crit_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="freeze_chance_to_crit">
+      <LoRoll ChanceFlatFloat="25" />
+      <HiRoll ChanceFlatFloat="45" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_figurehead_aggression_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="aggression_percent">
+      <LoRoll CharacteristicPercentInt="40" />
+      <HiRoll CharacteristicPercentInt="60" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_figurehead_all_resistance_score_percent_on_full_stamina_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="all_resistance_score_percent_on_full_stamina">
+      <LoRoll CharacteristicScorePercentInt="75" />
+      <HiRoll CharacteristicScorePercentInt="150" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_necromancer_minion_damage_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="minion_damage_percent">
+      <LoRoll DamagePercentFloat="50" />
+      <HiRoll DamagePercentFloat="75" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_ezaneal_chest_convert_physical_to_lightning_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="convert_physical_to_lightning">
+      <LoRoll DamagePercentFloat="40" />
+      <HiRoll DamagePercentFloat="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_ezaneal_chest_can_cast_sniper_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="can_cast_sniper">
+      <LoRoll CountInt="1" />
+      <HiRoll CountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_republic_helmet_stamina_regeneration_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="stamina_regeneration_percent">
+      <LoRoll ResourcePercentFloat="25" />
+      <HiRoll ResourcePercentFloat="100" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_expurgation_glove_criticaldamage_on_bleeding_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_on_bleeding">
+      <LoRoll DamagePercentInt="45" />
+      <HiRoll DamagePercentInt="65" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_expurgation_glove_criticalchance_on_poisoned_score_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_on_poisoned_score">
+      <LoRoll CharacteristicScoreInt="25" />
+      <HiRoll CharacteristicScoreInt="45" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_timemaster_belt_dodge_roll_breaks_cc_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dodge_roll_breaks_cc">
+      <LoRoll PossibilityInt="15" />
+      <HiRoll PossibilityInt="17" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_trinity_belt_elemental_cycling_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="elemental_cycling_percent">
+      <LoRoll DamagePercentFloat="20" />
+      <HiRoll DamagePercentFloat="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_alastor_amulet_forceshield_leech_percent_lightning_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_leech_percent_lightning">
+      <LoRoll DamagePercentFloat="15" />
+      <HiRoll DamagePercentFloat="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_exorcism_amulet_burnchance_on_fire_damage_score_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="burnchance_on_fire_damage_score_percent">
+      <LoRoll CharacteristicScorePercentInt="30" />
+      <HiRoll CharacteristicScorePercentInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_exorcism_amulet_life_leech_percent_fire_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="life_leech_percent_fire">
+      <LoRoll DamagePercentFloat="5" />
+      <HiRoll DamagePercentFloat="5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_exorcism_amulet_damage_percent_against_burning_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent_against_burning">
+      <LoRoll DamagePercentFloat="5" />
+      <HiRoll DamagePercentFloat="10" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_hierophant_amulet_healing_from_spells_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="healing_from_spells_percent">
+      <LoRoll HealingPercentFloat="15" />
+      <HiRoll HealingPercentFloat="25" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_curse_ring_statusailment_inflict_score_percent_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="statusailment_inflict_score_percent">
+      <LoRoll CharacteristicScorePercentInt="25" />
+      <HiRoll CharacteristicScorePercentInt="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_curse_ring_dotdamage_percent_global_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dotdamage_percent_global">
+      <LoRoll DamagePercentFloat="25" />
+      <HiRoll DamagePercentFloat="35" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_unique_curse_ring_ailment_spread_3" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords OptionalKeywords="" MandatoryKeywords="" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="ailment_spread">
+      <LoRoll ChanceFlatFloat="25" />
+      <HiRoll ChanceFlatFloat="45" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="new_affixes_ar_damage_percent_per_rage_point_Craft" Class="" AffixType="suffix" Tier="1">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="50" LevelMax="300" />
+      <Keywords MandatoryKeywords="armor" OptionalKeywords="head,chest" />
+      <ItemRarity Magic="0" Rare="0" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="damage_percent_per_rage_point">
+      <LoRoll ConversionRateFloat="6" />
+      <HiRoll ConversionRateFloat="10" />
+    </MagicEffect>
+  </Affix>
+</MetaData>

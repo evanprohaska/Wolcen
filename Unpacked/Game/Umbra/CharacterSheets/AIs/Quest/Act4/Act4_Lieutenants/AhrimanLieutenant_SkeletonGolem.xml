@@ -1,0 +1,88 @@
+<MetaData>
+  <BaseEntity ID="AhrimanLieutenant_SkeletonGolem" EntityName="cultofsouls_butcher" Scale="1.0" CanKillAllies="0" />
+  <Faction Name="CultOfSouls" />
+  <Keywords Value="coss,undead,elite,frost,melee,boss" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="1" CombatPointValueMultiplier="1" />
+  <Attributes Archetype="archetype_elite" HealthModifier="6" DamageModifier="1.0" XPModifier="1" Protection="" />
+  <Movement MovementSpeed="4" WalkSpeed="4" />
+  <InterruptionParams InterruptChance="0.00" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BlownAwayParams CanBeBlownAway="0" BlownAwayAnimationTag="" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BreakBar MaxHealthPercent="50" CCEffectiveness="20" RegenerationDelay="10" ExtraDamagePercentWhileBroken="20" StunDuration="5" AlwaysImmune="1" />
+  <DefaultBossModifiers />
+  <LootClass AffixDrop="Ahriman">
+    <Loot Class="LC_elite_Hunt_Occult" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="OnHitLoot_Elite" />
+  <OnDeathLootPreset Name="OnDeathLoot_Elite" />
+  <Corpses PresetName="EliteCadaverPreset" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="360" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Generic" />
+    <Perception>
+      <Proximity DayMaxDistance="17" NightMaxDistance="17" DetectionTime="0.01" />
+    </Perception>
+    <BT FleeOnLowHealthChance="0.0" EngageRange="20.0" MeleeAttack="False" FallBack="True" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Reaction Enabled="true" Cooldown="5.0" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="None" />
+  </Kythera>
+  <Skills>
+    <DefaultBasicAttack />
+    <Offensive>
+      <Skill Name="AI_CultOfSouls_SkeletonGolem_DefaultAttack" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0" MaxRepeats="1">
+        <Range Min="0.0" Preferred="2.5" Max="5" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_CultOfSouls_SkeletonGolem_ShieldThrow" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0" MaxRepeats="1">
+        <Range Min="5.0" Preferred="10" Max="15" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_CultOfSouls_SkeletonGolem_WeaponSmash" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0" MaxRepeats="1">
+        <Range Min="0" Preferred="4" Max="6" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_CultOfSouls_SkeletonGolem_SoulSwallow" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0" MaxRepeats="1">
+        <Range Min="0" Preferred="5" Max="8" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_CultOfSouls_SkeletonGolem_Tornado" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="3.0" MaxRepeats="1">
+        <Range Min="0" Preferred="10" Max="15" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </Offensive>
+    <Approach>
+      <Skill Name="AI_CultOfSouls_SkeletonGolem_ChargeSmash01" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="20.0" MaxRepeats="1">
+        <Range Min="1.0" Preferred="10" Max="15" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </Approach>
+  </Skills>
+  <BoneParticles>
+    <BoneParticle BoneName="Bip01 Spine" ParticleName="COSS_Skeleton_Golem.Ambience.Loop" Offset="0.4,0.2,0" Dir="0,0,1" Scale="1" FadeOut="0" />
+    <BoneParticle BoneName="Bip01 R MorningStarChain02" ParticleName="COSS_Skeleton_Golem.Ambience.Loop Mace" Offset="1,0,0" Dir="0,0,1" Scale="1" FadeOut="0" />
+    <BoneParticle BoneName="Bip01 R UpperArm" ParticleName="COSS_Skeleton_Golem.Ambience.Loop_Arm" Offset="1,0,0" Dir="0,0,1" Scale="1" FadeOut="0" />
+    <BoneParticle BoneName="Bip01 R Forearm" ParticleName="COSS_Skeleton_Golem.Ambience.Loop_Arm" Offset="1,0,0" Dir="0,0,1" Scale="1" FadeOut="0" />
+  </BoneParticles>
+  <RandomModel>
+    <ModelChoice Model="Objects\characters\mobs\Humanoid\SkeletonGolem\COSS_SkeletonGolem\COSS_SkeletonGolem.cdf" Weight="1">
+      <ADBChoice ADB="Animations\Mannequin\ADB\Mobs\Humanoid\SkeletonGolem\COSS_SkeletonGolem.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIName_COSS_SkeletonGolem" ZIconOffset="3.5" />
+  <Spawn SpawnAnimation="rise_out_ground_fast" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="1" DeathSkill="" CosmeticDropPreset="" OnDeathMaterial="" />
+  <GameplayParticles PresetName="size_Butcher" />
+  <Capsules>
+    <EntityPhysics ColliderSize="1.3,1.3,0.5" />
+    <MouseSelection SelectionCapsuleRadius="2.1" SelectionCapsuleHeight="2" SelectionCapsuleZOffset="-1.0" />
+    <ProjectileCollision ProjectileCapsuleRadius="1.05" ProjectileCapsuleHeight="8.0" CanSnapOnCenterWhenColliding="0" />
+    <VegetationCollision SphereRadius="0.75" SphereZOffset="0.75" />
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="default" OverrideScale="1" />
+  </VisualParams>
+  <Audio SurfaceType="metal" />
+  <RandomVoice>
+    <VoiceChoice VoiceName="COSS_SkeletonGolem_voice" EnemyBark="" Weight="1" />
+  </RandomVoice>
+  <BoneParticles>
+    <BoneParticle BoneName="" ParticleName="" Offset="" Dir="" Scale="1" />
+  </BoneParticles>
+</MetaData>

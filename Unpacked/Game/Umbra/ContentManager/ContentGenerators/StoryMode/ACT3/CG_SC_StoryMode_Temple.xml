@@ -1,0 +1,40 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_Temple" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="LuckyDungeon" PriorityTag="LotOfLoot" ExcludeTag="Room,MMGoblin,Named,NoMonster,BossArea" Weight="8" />
+      <Archetype Tag="ChestRoom" PriorityTag="EpicFixedLoot,Room,NoMonster" ExcludeTag="KillCP,KillTarget,CursedChestRoom" Weight="4" />
+      <Archetype Tag="CursedChestRoom" PriorityTag="CursedChestRoom,Room,NoMonster" ExcludeTag="EpicFixedLoot,KillCP,KillTarget" Weight="4" />
+      <Archetype Tag="GoblinDungeon" PriorityTag="MMGoblin,SmallArea,NormalLoot" ExcludeTag="NoMonster,Room,KillCP,KillTarget,MediumArea,BossArea" Weight="4" />
+      <Archetype Tag="KillOneTarget" PriorityTag="KillTarget,OneGoal,NormalLoot" ExcludeTag="Room,MMGoblin,Named,Hard,BossArea" Weight="20" />
+      <Archetype Tag="KillNumerousTarget" PriorityTag="KillTarget,NumerousGoal,MediumArea,NormalLoot,Easy" ExcludeTag="Room,MMGoblin,BossArea" Weight="20" />
+      <Archetype Tag="KillCP" PriorityTag="KillCP,NormalLoot" ExcludeTag="Room,MMGoblin,NoMonster,BossArea,MediumArea" Weight="20" />
+      <Archetype Tag="NoQuestEODReward" PriorityTag="EODReward" ExcludeTag="KillCP,KillTarget,MediumArea,Room,NoMonster,MMGoblin,BossArea" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WTemplar_Sandy_Room_CG" Tag="Room,WTemplar_Sandy" PriorityTag="WTemplar,COFY,Templar" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_VerySmallDungeon_CG" Tag="WTemplar_Sandy,VerySmallArea,ClassicArea" PriorityTag="WTemplar,COFY,Templar" ExcludeTag="NumerousGoal,FewGoal,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_SmallDungeon_CG" Tag="WTemplar_Sandy,SmallArea,ClassicArea" PriorityTag="WTemplar,COFY,Templar" ExcludeTag="NumerousGoal,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_MediumDungeon_CG" Tag="WTemplar_Sandy,MediumArea,ClassicArea" PriorityTag="WTemplar,COFY,Templar" ExcludeTag="PRIMO" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_Temple_KillTarget_COFY_Enforcer_4" Tag="KillTarget,NumerousGoal,COFY,Templar" PriorityTag="KillTarget,COFY,Templar,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Temple_KillTarget_COFY_Priest" Tag="KillTarget,OneGoal,COFY,Templar" PriorityTag="KillTarget,COFY,Templar,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Temple_KillCP_1" Tag="KillCP,COFY,Templar" PriorityTag="COFY,Templar,EMQuest" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Temple_COFY_Templar_Easy" Tag="Easy,COFY,Templar,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Temple_COFY_Templar_Medium" Tag="Medium,LotOfMonster,COFY,Templar" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Temple_COFY_Templar_Hard" Tag="Hard,LotOfMonster,COFY,Templar" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Temple_COFY_Templar_Goblin" Tag="MMGoblin,Easy,COFY,Templar,LotOfMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="WTemplar,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Temple_Templar_ChestRoom" Tag="WTemplar,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Temple_Templar_CursedChestRoom" Tag="WTemplar,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Temple_Templar_EODReward" Tag="WTemplar,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Temple_Templar_BigLoot" Tag="WTemplar,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Temple_Templar" Tag="WTemplar,NormalLoot" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

@@ -1,0 +1,17 @@
+<MetaData>
+  <Skill UID="AI_Coss_Ward_Laser" ESkill="AI_TMPL_Knight_SacredFire" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <Cooldown Cooldown="4" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Frost" WeaponMultiplier="0.8" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="DamageZoneShape01" ShapeName="Ward_Laser_Shape" />
+    </Shapes>
+    <DamageZone RateOfFire="0.2" Duration="2.5" />
+    <ParticleList>
+      <Particle Key="Wave" Name="U_CommonVFX.Impact_Ground.Physical_01_Blue_3M" Offset="0,0,0" Direction="0,0,1" Scale="0.5" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_COSS_Ward_Attack_Start" OnAnimCast="Play_COSS_Ward_Attack_Cast" OnHit="Play_hero_default_damage" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,72 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="DragonBreath_Test_01">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_Indicator_4x15" Offset="0,0,0" Direction="0,1,0" />
+    </Particles>
+    <Iterations Number="3" WarmUpTime="1.5" CooldownMin="1" CooldownMax="1" DelayBeforeFirstIteration="5" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_DragonBreath_Test" Targeting="TrackingFactions" TargetFactions="Republic" ProjectileStartingPosition="AboveTargetWithAngle" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="DragonBreath_PresetList_Test_01" Loop="1" NewStartingPosition="0">
+    <Preset Name="DragonBreath_Test_01" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="DragonBreath_Test_02">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_Indicator_15x30" Offset="0,0,0" Direction="0,1,0" />
+    </Particles>
+    <Iterations Number="3" WarmUpTime="1.5" CooldownMin="1" CooldownMax="1" DelayBeforeFirstIteration="5" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_DragonBreath_Test_02" Targeting="TrackingPlayer" ProjectileStartingPosition="AboveTargetWithAngle" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="DragonBreath_PresetList_Test_02" Loop="1" NewStartingPosition="0">
+    <Preset Name="DragonBreath_Test_02" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="DragonBreath_Test_03">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_Indicator_4x15" Offset="0,0,0" Direction="0,1,0" />
+    </Particles>
+    <Iterations Number="3" WarmUpTime="1.5" CooldownMin="1" CooldownMax="1" DelayBeforeFirstIteration="5" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_DragonBreath_Test_03" Targeting="TrackingPlayer" ProjectileStartingPosition="None" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="DragonBreath_PresetList_Test_03" Loop="1" NewStartingPosition="0">
+    <Preset Name="DragonBreath_Test_03" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="HL_M1_DragonBreath_TargetRepu">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_Indicator_4x15" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="10" WarmUpTime="0.75" CooldownMin="0.66" CooldownMax="0.75" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_DrakeBreath" Targeting="TrackingFactions" TargetFactions="Republic" ProjectileStartingPosition="AboveTargetWithAngle" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="HL_M1_DragonBreath_TRepu_PresetList" Loop="1" NewStartingPosition="0">
+    <Preset Name="HL_M1_DragonBreath_TargetRepu" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="DrakeBreath">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_Indicator_15x30" Offset="0,0,0" Direction="0,1,0" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="0.5" CooldownMin="1" CooldownMax="1" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_OsharaBreath" Targeting="Self" ProjectileStartingPosition="AboveTargetWithAngle" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="DrakeBreath_PresetList_1" Loop="0" NewStartingPosition="0">
+    <Preset Name="DrakeBreath" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="OsharaBreath_2">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_Indicator_15x30" Offset="0,0,0" Direction="0,1,0" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="0" CooldownMin="1" CooldownMax="1" DelayBeforeFirstIteration="0.25" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_OsharaBreath" Targeting="Self" ProjectileStartingPosition="AboveTargetWithAngle" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="OsharaBreath_PresetList_2" Loop="0" NewStartingPosition="0">
+    <Preset Name="OsharaBreath_2" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="OsharaBreath_3">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_Indicator_15x30" Offset="0,0,0" Direction="0,1,0" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="0" CooldownMin="1" CooldownMax="1" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_OsharaBreath" Targeting="Self" ProjectileStartingPosition="AboveTargetWithAngle" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="OsharaBreath_PresetList_3" Loop="0" NewStartingPosition="0">
+    <Preset Name="OsharaBreath_3" />
+  </FlowOfSoulsPresetList>
+</MetaData>

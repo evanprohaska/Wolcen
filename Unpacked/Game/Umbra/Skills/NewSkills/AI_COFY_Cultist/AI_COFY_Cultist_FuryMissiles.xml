@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill UID="AI_COFY_Cultist_FuryMissiles" ESkill="AI_default_resurectaround" Keywords="magic_spell,projectile">
+    <TriggerArea Radius="12.5" />
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <ParticleList>
+      <Particle Key="Trash" Name="U_Monster_Alt.cultist_fury.summmon_projectile_loop" Offset="0,0,1" Direction="0,1,0" Scale="1" />
+      <Particle Key="Lieutenant" Name="U_Monster_Alt.cultist_fury.summmon_projectile_loop" Offset="0,0,1" Direction="0,1,0" Scale="1.5" />
+      <Particle Key="Elite" Name="U_Monster_Alt.cultist_fury.summmon_projectile_loop" Offset="0,0,1" Direction="0,1,0" Scale="2.5" />
+      <Particle Key="Spawn" Name="U_Monster_Alt.cultist_fury.monster_spawn" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+      <Particle Key="Area" Name="U_Monster_Alt.cultist_fury.cultist_fury" Offset="0,0,0" Direction="0,1,0" Scale="1" Bone="Bip01" />
+      <Particle Key="Connection" Name="U_Monster.Cultist.Connection_01" Offset="0,0,1.5" Direction="1,0,0" Scale="1" Bone="Bip01" />
+    </ParticleList>
+    <SkillSpecific Missile="1" MissileEnemySearchRadius="20" MissileRangeIfNoTarget="10" ResOverKill="0" MinResTime="2" MaxResTime="6" TimerScale="0.5" Elite="3" Lieutenant="2" Normal="1" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="cofy_fury_missile_proj" ProjectileCount="1" />
+  </Skill>
+</MetaData>

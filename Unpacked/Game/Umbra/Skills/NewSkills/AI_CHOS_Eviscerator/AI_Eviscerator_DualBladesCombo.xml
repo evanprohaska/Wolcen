@@ -1,0 +1,47 @@
+<MetaData>
+  <Skill UID="AI_Eviscerator_DualBladesCombo_01" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Combo ComboStarter="Combo_Eviscerator_DualBlades" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="Eviscerator_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_CHOS_Eviscerator_DefaultAttack_Swing" OnHit="Play_CHOS_Eviscerator_DefaultAttack_Impact" />
+  </Skill>
+  <Skill UID="AI_Eviscerator_DualBladesCombo_02" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="0.8" />
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="Eviscerator_Shape_DualBladesCombo_02" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_CHOS_Eviscerator_DefaultAttack_Swing" OnHit="Play_CHOS_Eviscerator_DefaultAttack_Impact" />
+  </Skill>
+  <Skill UID="AI_Eviscerator_DualBladesCombo_03" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Sarisel" PercentMin="60" PercentMax="60" />
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="Eviscerator_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_CHOS_Eviscerator_DefaultAttack_Swing" OnHit="Play_CHOS_Eviscerator_DefaultAttack_Impact" />
+  </Skill>
+  <Skill UID="AI_Eviscerator_DualBladesCombo_04" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="0.8" />
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="Eviscerator_Shape_DualBladesCombo_04" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_CHOS_Eviscerator_DefaultAttack_Swing" OnHit="Play_CHOS_Eviscerator_DefaultAttack_Impact" />
+  </Skill>
+</MetaData>

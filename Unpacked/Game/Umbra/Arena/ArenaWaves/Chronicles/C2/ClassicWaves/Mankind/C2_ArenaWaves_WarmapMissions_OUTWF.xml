@@ -1,0 +1,143 @@
+<MetaData>
+  <ArenaWaves Name="ArenaWaves_WM_E_OUTWF_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_E_OF_WildBat" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill_forever" TargetSpawnClass="Sc_WM_E_OF_Ranged" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_E_OF_Melee03" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_E_OF_Melee02" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill_forever" TargetSpawnClass="Sc_WM_E_OF_Melee01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_E_OF_Worg01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_E_OF_Trapper_flashbang" NumberOfEntitiesPerSpawn="1" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="OutlawsWarbeast" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_E_OF_WildBat" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_E_OF_Ranged" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_E_OF_Melee03" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_E_OF_Melee02" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_E_OF_Melee01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="15" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_E_OF_Worg01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_OF_Trapper_flashbang" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_OF_Warbeast" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="OutlawsSadisticThug" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_E_OF_WildBat" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_E_OF_Ranged" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_E_OF_Melee03" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_E_OF_Melee02" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_E_OF_Melee01" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="14" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_E_OF_Worg01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_OF_Trapper_flashbang" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_OF_Brute" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_OF_SadisticThug" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_M_OUTWF_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_M_OF_WildBat" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill_forever" TargetSpawnClass="Sc_WM_M_OF_Ranged" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_M_OF_Melee03" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_M_OF_Melee02" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill_forever" TargetSpawnClass="Sc_WM_M_OF_Melee01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_M_OF_Worg01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_M_OF_Trapper_flashbang" NumberOfEntitiesPerSpawn="1" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="OutlawsWarbeast" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_M_OF_WildBat" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_M_OF_Ranged" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_M_OF_Melee03" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_M_OF_Melee02" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_M_OF_Melee01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="15" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_M_OF_Worg01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_OF_Trapper_flashbang" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_OF_Warbeast" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="OutlawsSadisticThug" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_M_OF_WildBat" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_M_OF_Ranged" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_M_OF_Melee03" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_M_OF_Melee02" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_M_OF_Melee01" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="14" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_M_OF_Worg01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_OF_Trapper_flashbang" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_OF_Brute" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_OF_SadisticThug" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_H_OUTWF_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_H_OF_WildBat" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill_forever" TargetSpawnClass="Sc_WM_H_OF_Ranged" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_H_OF_Melee03" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_H_OF_Melee02" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill_forever" TargetSpawnClass="Sc_WM_H_OF_Melee01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_H_OF_Worg01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_H_OF_Trapper_flashbang" NumberOfEntitiesPerSpawn="1" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="OutlawsWarbeast" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill" MaxNumberOfSpawnedEntities="8" TargetSpawnClass="Sc_WM_H_OF_WildBat" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_OF_Ranged" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_OF_Melee03" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="8" TargetSpawnClass="Sc_WM_H_OF_Melee02" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="fill" MaxNumberOfSpawnedEntities="8" TargetSpawnClass="Sc_WM_H_OF_Melee01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="15" Type="fill" MaxNumberOfSpawnedEntities="8" TargetSpawnClass="Sc_WM_H_OF_Worg01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="7" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_OF_Trapper_flashbang" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_OF_Warbeast" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="OutlawsSadisticThug" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_H_OF_WildBat" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_H_OF_Ranged" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_H_OF_Melee03" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_H_OF_Melee02" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_H_OF_Melee01" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="14" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_H_OF_Worg01" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_OF_Trapper_flashbang" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_OF_Brute" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_OF_SadisticThug" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

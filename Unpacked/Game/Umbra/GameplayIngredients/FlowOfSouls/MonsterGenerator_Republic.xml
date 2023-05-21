@@ -1,0 +1,26 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="MonsterGenerator_RepublicSentries">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_svriir" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_RepublicSentries" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_RepublicSentries_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_Svriir" Model="" ModelScale="1" SurfaceType="rock" Loop="0" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_RepublicSentries" />
+  </FlowOfSoulsPresetList>
+</MetaData>

@@ -1,0 +1,48 @@
+<MetaData>
+  <Skill UID="AI_TMPL_Knight_SacredOrbs_Level1" ESkill="AI_TMPL_Knight_SacredOrbs" Keywords="magic_spell,projectile">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CastBone="Bip01 Spine3" CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="templars_knight_sacredorb_level1_projectile" ProjectileCount="1" />
+    <SkillSpecific Duration="2" FireRate="0.1" AngleBetweenEachOrb="42" ClockwiseDirection="1" />
+    <SoundTrigger OnAnimStart="" />
+  </Skill>
+  <Skill UID="AI_TMPL_Knight_SacredOrbs_Level2" ESkill="AI_TMPL_Knight_SacredOrbs" Keywords="magic_spell,projectile">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CastBone="Bip01 Spine3" CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="templars_knight_sacredorb_level2_projectile" ProjectileCount="2" AngleBetweenProjectiles="180" />
+    <SkillSpecific Duration="2" FireRate="0.1" AngleBetweenEachOrb="42" ClockwiseDirection="1" />
+    <SoundTrigger OnAnimStart="" />
+    <ParticleList>
+      <Particle Key="Swirl" Name="U_Monster.AuroraKnight.SacredOrb_Spin_01" Offset="-0.15,-0.4,3" Direction="1,0,0" Scale="1" Bone="Bip01" InstantKill="0" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_SacredOrbs_Level1" ESkill="AI_TMPL_Knight_SacredOrbs" Keywords="magic_spell,projectile">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CastBone="Bip01 Spine3" CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="templars_knight_sacredorb_level1_projectile" ProjectileCount="2" />
+    <SkillSpecific Duration="2" FireRate="0.1" AngleBetweenEachOrb="42" ClockwiseDirection="1" />
+    <SoundTrigger OnAnimStart="" />
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_SacredOrbs_Level2" ESkill="AI_TMPL_Knight_SacredOrbs" Keywords="magic_spell,projectile">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CastBone="Bip01 Spine3" CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="templars_knight_sacredorb_level2_projectile" ProjectileCount="3" AngleBetweenProjectiles="120" />
+    <SkillSpecific Duration="2" FireRate="0.1" AngleBetweenEachOrb="42" ClockwiseDirection="1" />
+    <SoundTrigger OnAnimStart="" />
+    <ParticleList>
+      <Particle Key="Swirl" Name="U_Monster.AuroraKnight.SacredOrb_Spin_01" Offset="-0.15,-0.4,3" Direction="1,0,0" Scale="1" Bone="Bip01" InstantKill="0" />
+    </ParticleList>
+  </Skill>
+</MetaData>

@@ -1,0 +1,19 @@
+<Families>
+  <LootClassFamily LootClassFamilyName="pickable_vegetation_normal">
+    <LootClasses MaxPlayerLevel="5">
+      <LootChoice LootClassName="vegetation_normal_0_20" Proba="0.5" />
+      <LootChoice LootClassName="NoDrop_0" Proba="0.25" />
+    </LootClasses>
+    <LootClasses MaxPlayerLevel="10">
+      <LootChoice LootClassName="vegetation_normal_0_20" Proba="0.5" />
+      <LootChoice LootClassName="NoDrop_0" Proba="0.25" />
+    </LootClasses>
+  </LootClassFamily>
+  <LootClassFamily LootClassFamilyName="pickable_vegetation_river">
+    <LootClasses MaxPlayerLevel="25">
+      <LootChoice LootClassName="vegetation_normal_0_20" Proba="0.5" />
+      <LootChoice LootClassName="vegetation_river_0_20" Proba="0.0" />
+      <LootChoice LootClassName="NoDrop_0" Proba="0.25" />
+    </LootClasses>
+  </LootClassFamily>
+</Families>

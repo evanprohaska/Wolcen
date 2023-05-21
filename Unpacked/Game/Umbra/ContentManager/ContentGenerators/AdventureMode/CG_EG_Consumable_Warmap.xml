@@ -1,0 +1,133 @@
+<MetaData>
+  <ContentGenerator Name="CG_EG_Consumable_COFY_WM" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="" PriorityTag="" ExcludeTag="" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WM_NormalMode_Loop_Stronghold_Prototype" Tag="Loop" PriorityTag="Pacification" ExcludeTag="Purge,Diversion,Artifact,Portals" />
+      <LevelGenerator DungeonName="WM_NormalMode_Ear_Stronghold_Prototype" Tag="Ear" PriorityTag="Purge" ExcludeTag="Pacification,Diversion,Artifact,Portals" />
+      <LevelGenerator DungeonName="WM_NormalMode_Default_Stronghold_Prototype" Tag="Default" PriorityTag="Portals" ExcludeTag="Pacification,Purge,Diversion,Artifact" />
+      <LevelGenerator DungeonName="WM_NormalMode_Colosseum_Stronghold_Prototype" Tag="Colosseum" PriorityTag="Artifact" ExcludeTag="Pacification,Purge,Diversion,Portals" />
+      <LevelGenerator DungeonName="WM_NormalMode_Corridor_Stronghold_Prototype" Tag="Corridor" PriorityTag="Diversion" ExcludeTag="Pacification,Purge,Artifact,Portals" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="WM_Q1_1" Tag="Pacification" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="WM_Q1_2" Tag="Purge" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="WM_Q1_3" Tag="Portals" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="WM_Q1_4" Tag="Artifact" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="WM_Q1_5" Tag="Diversion" PriorityTag="" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="NPC2_TempleDesert_MM" Tag="Fury" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_AdventureMode_Stronghold_EG" Tag="Generic" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+  <ContentGenerator Name="CG_EG_Consumable_COFE_WM" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="" PriorityTag="" ExcludeTag="" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WM_NormalMode_Loop_TempleFlesh_Prototype" Tag="Loop" PriorityTag="Shrines" ExcludeTag="FleshHeart,Conquest,IncubationPod" />
+      <LevelGenerator DungeonName="WM_NormalMode_MultiLoop_TempleFlesh_Prototype" Tag="MultiLoop" PriorityTag="IncubationPod" ExcludeTag="FleshHeart,Shrines,Conquest" />
+      <LevelGenerator DungeonName="WM_NormalMode_Ear_TempleFlesh_Prototype" Tag="Ear" PriorityTag="FleshHeart" ExcludeTag="Shrines,Conquest,IncubationPod" />
+      <LevelGenerator DungeonName="WM_NormalMode_Corridor_TempleFlesh_Prototype" Tag="Corridor" PriorityTag="Conquest" ExcludeTag="FleshHeart,Shrines,IncubationPod" />
+      <LevelGenerator DungeonName="WM_NormalMode_Colosseum_TempleFlesh_Prototype" Tag="Colosseum" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="WM_NormalMode_Default_TempleFlesh_Prototype" Tag="Default" PriorityTag="" ExcludeTag="" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="WM_Q2_1" Tag="Shrines" PriorityTag="Q2_1" ExcludeTag="Generic,Q2_4" />
+      <Quest QuestName="WM_Q2_2" Tag="FleshHeart" PriorityTag="Generic" ExcludeTag="Q2_1,Q2_4" />
+      <Quest QuestName="WM_Q2_3" Tag="Conquest" PriorityTag="Generic" ExcludeTag="Q2_1,Q2_4" />
+      <Quest QuestName="WM_Q2_4" Tag="IncubationPod" PriorityTag="Q2_4" ExcludeTag="Q2_1,Generic" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="NPC2_TempleFlesh_MM" Tag="Flesh" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_AdventureMode_TempleFlesh_WM_Q2_1_EG" Tag="Q2_1" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_AdventureMode_TempleFlesh_EG" Tag="Generic" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_AdventureMode_TempleFlesh_WM_Q2_4_EG" Tag="Q2_4" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+  <ContentGenerator Name="CG_EG_Consumable_Republic_WM" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="" PriorityTag="" ExcludeTag="" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WM_NormalMode_MultiLoop_Stronghold_Prototype" Tag="MultiLoop" PriorityTag="PlunderSupplies" ExcludeTag="Veteran,DestroyAmmo,Commander,Generator,StealData" />
+      <LevelGenerator DungeonName="WM_NormalMode_Loop_Stronghold_Prototype" Tag="Loop" PriorityTag="Veteran" ExcludeTag="DestroyAmmo,PlunderSupplies,Commander,Generator,StealData" />
+      <LevelGenerator DungeonName="WM_NormalMode_Ear_Stronghold_Prototype" Tag="Ear" PriorityTag="DestroyAmmo" ExcludeTag="Veteran,PlunderSupplies,Commander,Generator,StealData" />
+      <LevelGenerator DungeonName="WM_NormalMode_Corridor_Stronghold_Prototype" Tag="Corridor" PriorityTag="Generator" ExcludeTag="Veteran,DestroyAmmo,PlunderSupplies,Commander,StealData" />
+      <LevelGenerator DungeonName="WM_NormalMode_Colosseum_Stronghold_Prototype" Tag="Colosseum" PriorityTag="Commander" ExcludeTag="Veteran,DestroyAmmo,PlunderSupplies,Generator,StealData" />
+      <LevelGenerator DungeonName="WM_NormalMode_Default_Stronghold_Prototype" Tag="Default" PriorityTag="StealData" ExcludeTag="Veteran,DestroyAmmo,PlunderSupplies,Commander,Generator" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="WM_Q3_1" Tag="Veteran" PriorityTag="Generic" ExcludeTag="Q3_2,Q3_3,Q3_6" />
+      <Quest QuestName="WM_Q3_2" Tag="DestroyAmmo" PriorityTag="Q3_2" ExcludeTag="Q3_3,Generic,Q3_6" />
+      <Quest QuestName="WM_Q3_3" Tag="PlunderSupplies" PriorityTag="Q3_3" ExcludeTag="Q3_2,Generic,Q3_6" />
+      <Quest QuestName="WM_Q3_4" Tag="Commander" PriorityTag="Generic" ExcludeTag="Q3_2,Q3_3,Q3_6" />
+      <Quest QuestName="WM_Q3_5" Tag="Generator" PriorityTag="Generic" ExcludeTag="Q3_2,Q3_3,Q3_6" />
+      <Quest QuestName="WM_Q3_6" Tag="StealData" PriorityTag="Q3_6" ExcludeTag="Q3_2,Q3_3,Generic" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="NPC2_Stronghold_MM" Tag="Repu" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_AdventureMode_WM_Q3_2_EG_Stronghold_EG" Tag="Q3_2" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_AdventureMode_WM_Q3_3_EG_Stronghold_EG" Tag="Q3_3" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_AdventureMode_WM_Q3_6_EG_Stronghold_EG" Tag="Q3_6" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_AdventureMode_Stronghold_EG" Tag="Generic" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+  <ContentGenerator Name="CG_EG_Consumable_COSS_WM" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="" PriorityTag="" ExcludeTag="" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WM_NormalMode_MultiLoop_Necropolis_Prototype" Tag="MultiLoop" PriorityTag="Shrines" ExcludeTag="Prisonners,Tremors,Summon" />
+      <LevelGenerator DungeonName="WM_NormalMode_Loop_Necropolis_Prototype" Tag="Loop" PriorityTag="Summon" ExcludeTag="Prisonners,Tremors,Shrines" />
+      <LevelGenerator DungeonName="WM_NormalMode_Colosseum_Necropolis_Prototype" Tag="Colosseum" PriorityTag="Tremors" ExcludeTag="Prisonners,Summon,Shrines" />
+      <LevelGenerator DungeonName="WM_NormalMode_Corridor_Necropolis_Prototype" Tag="Corridor" PriorityTag="Prisonners" ExcludeTag="Summon,Tremors,Shrines" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="WM_Q4_1" Tag="Shrines" PriorityTag="Generic" ExcludeTag="Q4_1" />
+      <Quest QuestName="WM_Q4_2" Tag="Summon" PriorityTag="Generic" ExcludeTag="Q4_1" />
+      <Quest QuestName="WM_Q4_3" Tag="Tremors" PriorityTag="Generic" ExcludeTag="Q4_1" />
+      <Quest QuestName="WM_Q4_4" Tag="Prisonners" PriorityTag="Generic" ExcludeTag="Q4_1" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="NPC2_Necropolis_MM" Tag="Coss" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_AdventureMode_Necropolis_EG" Tag="Generic" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_AdventureMode_WM_Q4_1_EG_Necropolis_EG" Tag="Q4_1" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+  <ContentGenerator Name="CG_EG_Consumable_SVRIIR_WM" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="" PriorityTag="" ExcludeTag="" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WM_NormalMode_MultiLoop_Svriir_Prototype" Tag="MultiLoop" PriorityTag="Nest" ExcludeTag="Spawners,Den,Essence" />
+      <LevelGenerator DungeonName="WM_NormalMode_Loop_Svriir_Prototype" Tag="Loop" PriorityTag="Spawners" ExcludeTag="Nest,Den,Essence" />
+      <LevelGenerator DungeonName="WM_NormalMode_Colosseum_Svriir_Prototype" Tag="Colosseum" PriorityTag="Den" ExcludeTag="Nest,Spawners,Essence" />
+      <LevelGenerator DungeonName="WM_NormalMode_Ear_Svriir_Prototype" Tag="Ear" PriorityTag="Essence" ExcludeTag="Nest,Spawners,Den" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="WM_Q5_1" Tag="Nest" PriorityTag="Q5_1" ExcludeTag="Generic,Q5_4" />
+      <Quest QuestName="WM_Q5_2" Tag="Spawners" PriorityTag="Generic" ExcludeTag="Q5_1,Q5_4" />
+      <Quest QuestName="WM_Q5_3" Tag="Den" PriorityTag="Generic" ExcludeTag="Q5_1,Q5_4" />
+      <Quest QuestName="WM_Q5_4" Tag="Essence" PriorityTag="Q5_4" ExcludeTag="Q5_1,Generic" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="NPC2_SvriirLair_MM" Tag="Svriir" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_AdventureMode_SvriirsLair_EG" Tag="Generic" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_AdventureMode_WM_Q5_1_EG_SvriirsLair_EG" Tag="Q5_1" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_AdventureMode_WM_Q5_4_EG_SvriirsLair_EG" Tag="Q5_4" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

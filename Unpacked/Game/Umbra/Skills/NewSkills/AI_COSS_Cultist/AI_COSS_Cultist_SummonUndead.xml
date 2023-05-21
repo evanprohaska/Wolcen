@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_cultist_summonundead" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+    <Particles ParticleName="U_Monster.Primordiar.Primordiar_Armor.Primordiar_Assemble_01" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="15.0" />
+    <Summoning MaxSummons="5" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="2" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_CultOfSoulsCultist" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_cultofsouls_cultist_resurect" ESkill="AI_default_resurectaround" Keywords="magic_spell">
+    <TriggerArea Radius="12.5" />
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+    <CastingParams CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="Trash" Name="U_Buff.Debuff.Cultist_Summon_Aura" Offset="0,0,1" Direction="0,1,0" Scale="1" />
+      <Particle Key="Lieutenant" Name="U_Buff.Debuff.Cultist_Summon_Aura_02" Offset="0,0,1" Direction="0,1,0" Scale="1.5" />
+      <Particle Key="Elite" Name="U_Buff.Debuff.Cultist_Summon_Aura_02" Offset="0,0,1" Direction="0,1,0" Scale="2.5" />
+      <Particle Key="Spawn" Name="U_Monster.Primordiar.Primordiar_Armor.Primordiar_Assemble_02" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+      <Particle Key="Area" Name="U_Monster.Indicator.Indicator_12M_Curtist_01" Offset="0,0,0" Direction="0,1,0" Scale="1" Bone="Bip01" />
+      <Particle Key="StopArea" Name="U_Monster.Indicator.Indicator_12M_Curtist_End_01" Offset="0,0,0.1" Direction="0,1,0" Scale="1" Bone="Bip01" />
+      <Particle Key="Connection" Name="U_Monster.Cultist.Connection_01" Offset="0,0,1.5" Direction="1,0,0" Scale="1" Bone="Bip01" />
+    </ParticleList>
+    <SkillSpecific ResOverKill="0" MinResTime="2" MaxResTime="6" TimerScale="0.5" Elite="6" Lieutenant="3" Normal="1" />
+    <Summoning MaxSummons="15" SummonDuration="0" MinRadiusAroundSpawnPosition="0.2" MaxRadiusAroundSpawnPosition="1" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Default" Name="sc_UniqueCultOfSoulsCultist" />
+    </Summoning>
+  </Skill>
+</MetaData>

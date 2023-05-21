@@ -1,0 +1,43 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="test_preset_1">
+    <Particles>
+      <Particle Key="WarmUpVFX" Name="U_Character.Skills.Teleport_AoE_Stasis_01" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="SkillCastVFX" Name="U_Character.Skills.Chain_Lightning_Hit" Direction="0,1,0" />
+    </Particles>
+    <Iterations Number="2" WarmUpTime="1" CooldownMin="0.5" CooldownMax="0.5" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="1" FireRate="0.5" SkillUID="Skill_FlowOfSouls_test_preset_1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPreset Name="test_preset_2">
+    <Particles>
+      <Particle Key="WarmUpVFX" Name="U_Character.Skills.Teleport_AoE_Stasis_01" Direction="0,1,0" Offset="0,2,0" Scale="3" />
+      <Particle Key="SkillCastVFX" Name="U_Character.Skills.Warcry_01" Direction="0,0,1" Offset="0,2,0" Scale="2" />
+    </Particles>
+    <Iterations Number="0" WarmUpTime="1" CooldownMin="0.5" CooldownMax="0.5" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="3" FireRate="0.5" SkillUID="Skill_FlowOfSouls_test_preset_2" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPreset Name="test_preset_damage_zone">
+    <Particles>
+      <Particle Key="WarmUpVFX" Name="U_Monster.Primordiar.Primordiar_Armor.Primordiar_Disassemble_02" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="SkillCastVFX" Name="U_Monster.Siviir.Spitter_Toxic_GroundLoop_01" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+    </Particles>
+    <Iterations Number="0" WarmUpTime="1" CooldownMin="0.5" CooldownMax="0.5" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="1" FireRate="0.5" SkillUID="Skill_FlowOfSouls_test_preset_damage_zone_Shape" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="test_preset_list_1" Loop="0" NewStartingPosition="0">
+    <Preset Name="test_preset_1" />
+    <Preset Name="test_preset_2" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPresetList Name="test_preset_list_2" Loop="1" NewStartingPosition="1">
+    <Preset Name="test_preset_1" />
+    <Preset Name="test_preset_1" />
+    <Preset Name="test_preset_1" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPresetList Name="test_preset_list_3" Loop="0" NewStartingPosition="0">
+    <Preset Name="test_preset_1" />
+    <Preset Name="test_preset_1" />
+    <Preset Name="test_preset_1" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPresetList Name="test_preset_list_damage_zone" Loop="0" NewStartingPosition="0">
+    <Preset Name="test_preset_damage_zone" />
+  </FlowOfSoulsPresetList>
+</MetaData>

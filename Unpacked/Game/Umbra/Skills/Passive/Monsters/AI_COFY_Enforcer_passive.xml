@@ -1,0 +1,19 @@
+<MetaData>
+  <Spell Name="AI_COFY_Enforcer_Enrage_allies_passive" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="50" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AI_COFY_Enforcer_Enrage_self_passive" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="1">
+        <Semantics SpeedPercentInt="100" />
+      </EIM>
+      <EIM Name="elemental_protection" Permanent="1">
+        <Semantics ProtectionFlatFloat="0" ProtectionAsPercentOfMaxHealthFloat="50" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

@@ -1,0 +1,58 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_FlamingSigilP2" ESkill="AI_COFY_AHRIMAN_FLAMINGSIGIL" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_09" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="3" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_02" Offset="0,0,0" Direction="0,0,1" Scale="0.66" />
+    </ParticleList>
+    <SkillSpecific NumberOfTraps="10" SpawnRange="15" />
+    <SoundTrigger OnAnimCast="" OnAnimStart="Play_Ahriman_Flaming_Sigil_Cast" OnHit="Play_DOT_Burn" />
+    <Traps Name="trap_cofy_ahriman" />
+    <Explosion ExplosionRadius="2" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlamingSigilP2_Nerfed" ESkill="AI_COFY_AHRIMAN_FLAMINGSIGIL" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_09" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_02" Offset="0,0,0" Direction="0,0,1" Scale="0.66" />
+    </ParticleList>
+    <SkillSpecific NumberOfTraps="5" SpawnRange="15" />
+    <SoundTrigger OnAnimCast="" OnAnimStart="Play_Ahriman_Flaming_Sigil_Cast" OnHit="Play_DOT_Burn" />
+    <Traps Name="trap_cofy_ahriman" />
+    <Explosion ExplosionRadius="2" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlamingSigilP3" ESkill="AI_COFY_AHRIMAN_FLAMINGSIGIL" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="3" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_02" Offset="0,0,0" Direction="0,0,1" Scale="0.66" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Ahriman_FlamingSigil_Cast_P3" OnHit="Play_DOT_Burn" PlayAttackVoice="0" />
+    <SkillSpecific NumberOfTraps="12" SpawnRange="15" />
+    <Traps Name="trap_cofy_ahriman" />
+    <Explosion ExplosionRadius="2" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlamingSigilP3_Nerfed" ESkill="AI_COFY_AHRIMAN_FLAMINGSIGIL" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_09" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_02" Offset="0,0,0" Direction="0,0,1" Scale="0.66" />
+    </ParticleList>
+    <SkillSpecific NumberOfTraps="5" SpawnRange="15" />
+    <SoundTrigger OnAnimCast="" OnAnimStart="Play_Ahriman_FlamingSigil_Cast_P3" OnHit="Play_DOT_Burn" />
+    <Traps Name="trap_cofy_ahriman" />
+    <Explosion ExplosionRadius="2" />
+  </Skill>
+</MetaData>

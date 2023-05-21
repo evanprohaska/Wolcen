@@ -1,0 +1,82 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_FlyingSmashP2" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="" OnAnimCast="" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlyingSmash_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="0.1" />
+      <Particle Key="Indicator" Name="COFY_Ahriman.FlyingSmash.SlowAoEStart" Offset="0,0,0.12" Direction="0,0,1" Scale="0.79" TimeScale="1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman.FlyingSmash.SlowAoE" Offset="0,0,0.12" Direction="0,0,1" Scale="0.79" />
+    </ParticleList>
+    <DamageZone Duration="15" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="70" Duration="0.6" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="1" DZDamageRatioOfMainDamage="0.1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlyingSmashP2_Nerfed" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlyingSmash_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="0.1" />
+      <Particle Key="Indicator" Name="COFY_Ahriman.FlyingSmash.SlowAoEStart" Offset="0,0,0.12" Direction="0,0,1" Scale="0.79" TimeScale="1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman.FlyingSmash.SlowAoE" Offset="0,0,0.12" Direction="0,0,1" Scale="0.79" />
+    </ParticleList>
+    <DamageZone Duration="8" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="70" Duration="0.6" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="1" DZDamageRatioOfMainDamage="0.1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlyingSmashP3" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="" OnAnimCast="" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlyingSmash_Shape2" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="0.1" />
+      <Particle Key="Indicator" Name="COFY_Ahriman.FlyingSmash.SlowAoEStart" Offset="0,0,0.12" Direction="0,0,1" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman.FlyingSmash.SlowAoE" Offset="0,0,0.12" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageZone Duration="12" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="70" Duration="0.6" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="1" DZDamageRatioOfMainDamage="0.1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlyingSmashP3_Nerfed" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="" OnAnimCast="" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlyingSmash_Shape2" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="0.1" />
+      <Particle Key="Indicator" Name="COFY_Ahriman.FlyingSmash.SlowAoEStart" Offset="0,0,0.12" Direction="0,0,1" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman.FlyingSmash.SlowAoE" Offset="0,0,0.12" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageZone Duration="8" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="70" Duration="0.6" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="1" DZDamageRatioOfMainDamage="0.1" />
+  </Skill>
+</MetaData>

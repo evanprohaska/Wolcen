@@ -1,0 +1,40 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_AetherHomingProjectile">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 Head" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Umbra" WeaponMultiplier="1" />
+    <StatusAilment>
+      <Stasis Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="2" />
+    <Projectile Name="AetherHomingProjectile_proj" ProjectileCount="1" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="210" totalAngleAtDistanceMax="40" projectileAngleAtDistanceMin="360" projectileAngleAtDistanceMax="360" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="1" MaxZOffset="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_AetherHomingProjectile_Lieutenant">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 Head" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Umbra" WeaponMultiplier=".75" />
+    <StatusAilment>
+      <Stasis Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="2" />
+    <Projectile Name="AetherHomingProjectile_proj" ProjectileCount="1" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="210" totalAngleAtDistanceMax="40" projectileAngleAtDistanceMin="360" projectileAngleAtDistanceMax="360" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="1" MaxZOffset="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

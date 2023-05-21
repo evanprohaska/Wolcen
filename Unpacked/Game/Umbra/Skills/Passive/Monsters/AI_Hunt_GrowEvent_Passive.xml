@@ -1,0 +1,42 @@
+<MetaData>
+  <Spell Name="AI_Hunt_GrowEvent_ShieldBuff_passive" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="all_protection" Permanent="1">
+        <Semantics ProtectionFlatFloat="0" ProtectionAsPercentOfMaxHealthFloat="2" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AI_Hunt_GrowEvent_Speed_passive" MaxStack="200">
+    <MagicEffects>
+      <EIM Name="dummy_ai_buff_attackspeed" Permanent="1">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="offensivespeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="2" />
+      </EIM>
+      <EIM Name="movespeed" Permanent="1">
+        <Semantics SpeedPercentInt="2" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AI_Hunt_BossMod_Vulnerability_passive" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="all_resistance_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="-30" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AI_Hunt_BossMod_SlowStart_passive" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dummy_ai_buff_attackspeed" Permanent="0">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="offensivespeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="-50" />
+      </EIM>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="-50" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

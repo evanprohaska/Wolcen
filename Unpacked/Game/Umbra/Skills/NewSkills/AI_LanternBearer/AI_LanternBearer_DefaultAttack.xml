@@ -1,0 +1,22 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="magic_spell" UID="AI_LanternBearer_DefaultAttack">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="LanternBearer_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="" UID="AI_MiniLanternBearer_DefaultAttack">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="CulfOfSoulsZombie_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="PLAY_AI_SvriirOmega_ClawSwipe" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

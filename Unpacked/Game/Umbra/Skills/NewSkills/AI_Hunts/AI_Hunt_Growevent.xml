@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="AI_Hunt_GrowEvent_Buff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <Cooldown Cooldown="100" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="BuffCultist_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="BuffOnTarget" Name="U_VFX_Oskar.C1Misc.Event_O5_Buff" Direction="0,0,1" Scale=".5" Offset="0,0.5,0" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_Tower_Veteran_Speed_passive" Targeting="OnSummoner" Duration="10" />
+    </PassiveSkills>
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+  </Skill>
+  <Skill UID="AI_Hunt_GrowEvent_Summons" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="0" />
+    <Summoning MaxSummons="30" SummonDuration="0" MinRadiusAroundSpawnPosition="12" MaxRadiusAroundSpawnPosition="15" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_Hunt_GrowEvent" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Hunt_GrowEvent_Disappear" ESkill="Misc_Hide" Keywords="magic_spell" />
+</MetaData>

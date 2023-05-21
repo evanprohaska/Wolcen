@@ -1,0 +1,68 @@
+<MetaData>
+  <Skill UID="AI_TMPL_Knight_SacredFire_Level1" ESkill="AI_TMPL_Knight_SacredFire" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="5" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone RateOfFire="0.7" Duration="2" />
+    <Shapes>
+      <Entry Key="DamageZoneShape01" ShapeName="Templars_Knight_SacredFire_Level1_Shape01" />
+      <Entry Key="DamageZoneShape02" ShapeName="Templars_Knight_SacredFire_Level1_Shape02" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Monster.AuroraKnight.SacredFire_1Seconds" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="AI_TMPL_Knight_SacredFire_Level2" ESkill="AI_TMPL_Knight_SacredFire" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="5" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone RateOfFire="0.7" Duration="1" />
+    <Shapes>
+      <Entry Key="DamageZoneShape01" ShapeName="Templars_Knight_SacredFire_Level2_Shape01" />
+      <Entry Key="DamageZoneShape02" ShapeName="Templars_Knight_SacredFire_Level2_Shape02" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Monster.AuroraKnight.SacredFire_2Seconds" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_SacredFire_Level1" ESkill="AI_TMPL_Knight_SacredFire" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="5" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <StatusAilment>
+      <weakness Chance="100" ChanceMode="override" Duration="10" DurationMode="override" Stacks="5" StacksMode="addtobase" />
+    </StatusAilment>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone RateOfFire="0.7" Duration="2" />
+    <Shapes>
+      <Entry Key="DamageZoneShape01" ShapeName="Templars_Knight_SacredFire_Level1_Shape01" />
+      <Entry Key="DamageZoneShape02" ShapeName="Templars_Knight_SacredFire_Level1_Shape02" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Monster.AuroraKnight.SacredFire_1Seconds" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_SacredFire_Level2" ESkill="AI_TMPL_Knight_SacredFire" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="5" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <StatusAilment>
+      <weakness Chance="100" ChanceMode="override" Duration="10" DurationMode="override" Stacks="5" StacksMode="addtobase" />
+    </StatusAilment>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone RateOfFire="0.7" Duration="1" />
+    <Shapes>
+      <Entry Key="DamageZoneShape01" ShapeName="Templars_Knight_SacredFire_Level2_Shape01" />
+      <Entry Key="DamageZoneShape02" ShapeName="Templars_Knight_SacredFire_Level2_Shape02" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Monster.AuroraKnight.SacredFire_2Seconds" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+  </Skill>
+</MetaData>

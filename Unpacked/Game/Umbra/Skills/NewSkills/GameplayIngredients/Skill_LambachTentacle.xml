@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill ESkill="gameplay_ingredient_flowofsouls" Keywords="attack_skill" UID="Skill_LambachTentacle">
+    <DamageWeapon Type="Rend" WeaponMultiplier="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Blownaway Chance="100" Height="2" Distance="3" StunDuration="0" />
+    <SoundTrigger OnHit="Play_hero_default_dot_burn" />
+    <Shapes>
+      <Entry ShapeName="Skill_LambachTentacle_Shape" />
+    </Shapes>
+  </Skill>
+  <Skill ESkill="gameplay_ingredient_flowofsouls" Keywords="attack_skill" UID="Skill_LambachTentacle_slow">
+    <DamageWeapon Type="Rend" WeaponMultiplier="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Blownaway Chance="100" Height="2" Distance="3" StunDuration="0" />
+    <SoundTrigger OnHit="Play_hero_default_dot_burn" />
+    <Shapes>
+      <Entry ShapeName="Skill_LambachTentacle_Shape" />
+    </Shapes>
+  </Skill>
+</MetaData>

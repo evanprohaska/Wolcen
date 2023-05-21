@@ -1,0 +1,18 @@
+<MetaData>
+  <Skill UID="AI_REPU_GolgothGatling_Unload" ESkill="AI_REPU_GolgothGatling_Unload" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="Bip01 Spine" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" />
+    </ParticleList>
+    <DamageWeapon Type="Lightning" WeaponMultiplier=".55" />
+    <Cooldown Cooldown="10.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Golgoth_Gatling_Unload_Right_Arcshape" />
+      <Entry ShapeName="Golgoth_Gatling_Unload_Left_Arcshape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_REPU_Golgoth_Gatling_Unload_SpinUp" OnAnimEnd="" OnInterrupt="Play_REPU_Golgoth_Gatling_Unload_Shoot_Interrupt" OnHit="Play_DOT_Shock" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.2" DegreesPerSecond="30" GroundParticleInterval="10" LoopSoundTriggerStart="Play_REPU_Golgoth_Gatling_Unload_Shoot" LoopSoundTriggerEnd="Play_REPU_Golgoth_Gatling_Unload_Shoot_End" />
+  </Skill>
+</MetaData>

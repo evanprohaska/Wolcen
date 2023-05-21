@@ -1,0 +1,341 @@
+<MetaData>
+  <Quest Name="ACT3_Quest1" StartDialog="" Type="Main" UIName="@ui_A3_Q1_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT3">
+    <Step Order="0" UIName="@ui_A3_Q1_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Wait" TimeLimit="2" />
+      <Goal Order="1" Type="Talk" EntityName="Gernese" DialogName="ACT3_Quest1_NW_GerneseTalk1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Gernese" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT3_VaultOfTruthOverlook" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="ClickableEntity_Nowhere_to_InnerSanctum" Radius="70" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_Aurora_Knight_Gendris" Area="ACT3_VaultOfTruthOverlook" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="PlayerLockTP" Name="A3_Q1_S1_A3_LockTP" Lock="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A3_Q1_S1_A3_CHAPTER" SequenceName="A3_CHAPTER" />
+      <Event Trigger="EventEnd" EventName="A3_Q1_S1_A3_CHAPTER" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A3_Q1_S1_A3_JOURNEY" SequenceName="A3_JOURNEY" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S1_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="QP_A3_Q1_SpawnPos1" FaceAtSpawn="QP_A3_Q1_FaceEntity" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S1_TemplarSpawn1" SpawnClass="Sc_Sty_AC3_QTH" TargetEntityName="QP_A3_Q1_SpawnPos2" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S1_TemplarSpawn2" SpawnClass="Sc_Sty_AC3_QTP" TargetEntityName="QP_A3_Q1_SpawnPos3" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S1_TemplarSpawn3" SpawnClass="Sc_Sty_AC3_QTS" TargetEntityName="QP_A3_Q1_SpawnPos4" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S1_TemplarSpawn4" SpawnClass="Sc_Sty_AC3_QTK" TargetEntityName="QP_A3_Q1_SpawnPos5" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S1_GernezSpawn" SpawnClass="Sc_Sty_AC3_QGS" TargetEntityName="QP_A3_Q1_SpawnPos7" FaceAtSpawn="QP_A3_Q1_FaceEntity" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A3_Q1_SpawnPos7" AreaRadius="20" Type="GlobalDialog" Name="A3_Quest1_NW_Gernese1_1" DialogName="ACT3_Quest1_NW_Gernese1_1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="A3_Quest1_NW_GerneseTalk2" DialogName="ACT3_Quest1_NW_GerneseTalk2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Squire_6" AreaRadius="50" Type="GlobalDialog" Name="A3_Quest1_NW_Gernese3" DialogName="ACT3_Quest1_NW_Gernese3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Squire_6" AreaRadius="12" Type="GlobalDialog" Name="BrotherhoodGuard1_Talk_1" DialogName="ACT3_Quest1_NW_BrotherhoodGuard1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A3_Q1_S1_Goal3" Localization="@ui_A3_Q1_S1_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="A3_Q1_S1_Hide_Blocking_Road" EntityNames="CE_A3_Q1_S1_GerneseTalk_Blocker" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:Stormfall" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_TemplarFollow1" FollowerEntityName="Knight" Follow="#Player" Constraints="not:Stormfall" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_TemplarFollow2" FollowerEntityName="Priest" Follow="#Player" Constraints="not:Stormfall" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_TemplarFollow3" FollowerEntityName="Sword" Follow="#Player" Constraints="not:Stormfall" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_TemplarFollow4" FollowerEntityName="Hammer" Follow="#Player" Constraints="not:Stormfall" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_GerneseFollow" FollowerEntityName="Gernese" Follow="#Player" Constraints="not:Stormfall" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_ValeriaUnFollow" FollowerEntityName="Valeria" Follow="" Constraints="not:Stormfall" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_TemplarUnfollow1" FollowerEntityName="Knight" Follow="" Constraints="not:Stormfall" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_TemplarUnfollow2" FollowerEntityName="Priest" Follow="" Constraints="not:Stormfall" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_TemplarUnfollow3" FollowerEntityName="Sword" Follow="" Constraints="not:Stormfall" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_TemplarUnfollow4" FollowerEntityName="Hammer" Follow="" Constraints="not:Stormfall" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S1_GerneseUnfollow" FollowerEntityName="Gernese" Follow="" Constraints="not:Stormfall" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="7" Name="A3_Q1_S1_ValeriaMove" EntityName="Valeria" TargetName="QP_A3_Q1_TargetPos1" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="7" Name="A3_Q1_S1_TemplarMove1" EntityName="Knight" TargetName="QP_A3_Q1_TargetPos2" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="7" Name="A3_Q1_S1_TemplarMove2" EntityName="Priest" TargetName="QP_A3_Q1_TargetPos3" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="7" Name="A3_Q1_S1_TemplarMove3" EntityName="Sword" TargetName="QP_A3_Q1_TargetPos4" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="7" Name="A3_Q1_S1_TemplarMove4" EntityName="Hammer" TargetName="QP_A3_Q1_TargetPos5" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="7" Name="A3_Q1_S1_GerneseMove" EntityName="Gernese" TargetName="QP_A3_Q1_TargetPos6" RemainScripted="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q1_S1_ValeriaMove" Type="EntityRotate" Name="A3_Q1_S1_ValeriaRotate" RotatedEntityName="Valeria" Target="QP_A3_Q1_TargetPos1" FaceTarget="0" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q1_S1_TemplarMove1" Type="EntityRotate" Name="A3_Q1_S1_TemplarRotate1" RotatedEntityName="Knight" Target="QP_A3_Q1_TargetPos2" FaceTarget="0" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q1_S1_TemplarMove2" Type="EntityRotate" Name="A3_Q1_S1_TemplarRotate2" RotatedEntityName="Priest" Target="QP_A3_Q1_TargetPos3" FaceTarget="0" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q1_S1_TemplarMove3" Type="EntityRotate" Name="A3_Q1_S1_TemplarRotate3" RotatedEntityName="Sword" Target="QP_A3_Q1_TargetPos4" FaceTarget="0" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q1_S1_TemplarMove4" Type="EntityRotate" Name="A3_Q1_S1_TemplarRotate4" RotatedEntityName="Hammer" Target="QP_A3_Q1_TargetPos5" FaceTarget="0" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q1_S1_GerneseMove" Type="EntityRotate" Name="A3_Q1_S1_GerneseRotate" RotatedEntityName="Gernese" Target="QP_A3_Q1_TargetPos6" FaceTarget="0" Delay="2" />
+    </Step>
+    <Step Order="1" UIName="@ui_A3_Q1_S1_UpdateStepNameLabel2" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Talk" EntityName="NPC_Aurora_Knight_Gendris" DialogName="ACT3_Quest1_NW_GendrisTalk1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_Aurora_Knight_Gendris" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_Nowhere_to_InnerSanctum" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="PlayerLockTP" Name="A3_Q1_S2_A3_UnlockTP" Lock="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A3_Q1_S2_LockPortal" ClickableEntityName="ClickableEntity_Nowhere_to_InnerSanctum" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionClickable" Name="A3_Q1_S2_UnlockPortal" ClickableEntityName="ClickableEntity_Nowhere_to_InnerSanctum" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A3_Q1_S1_Goal5" Localization="@ui_A3_Q1_S1_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="A3_Quest1_NW_Valeria1" DialogName="ACT3_Quest1_NW_Valeria1" />
+      <Event Trigger="EventEnd" EventName="A3_Q1_S2_UnlockPortal" Type="GoalAchieve" Name="A3_Q1_S2_GoalAchieve" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S2_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="QP_A3_Q1_TargetPos1" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S2_TemplarSpawn1" SpawnClass="Sc_Sty_AC3_QTH" TargetEntityName="QP_A3_Q1_TargetPos2" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S2_TemplarSpawn2" SpawnClass="Sc_Sty_AC3_QTP" TargetEntityName="QP_A3_Q1_TargetPos3" FaceAtSpawn="QP_A3_Q1_TargetPos5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S2_TemplarSpawn3" SpawnClass="Sc_Sty_AC3_QTS" TargetEntityName="QP_A3_Q1_TargetPos4" FaceAtSpawn="QP_A3_Q1_TargetPos5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S2_TemplarSpawn4" SpawnClass="Sc_Sty_AC3_QTK" TargetEntityName="QP_A3_Q1_TargetPos5" FaceAtSpawn="QP_A3_Q1_TargetPos3" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S2_GernezSpawn" SpawnClass="Sc_Sty_AC3_QGS" TargetEntityName="QP_A3_Q1_TargetPos6" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="A3_Q1_S2_ClearUI" Localization="" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="2" UIName="@ui_A3_Q1_S1_UpdateStepNameLabel3" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_Nowhere_to_InnerSanctum" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_Lever" Area="ACT3_DawnGateHall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_Nowhere_to_InnerSanctum" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="AnimDoor_Lever" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="AnimDoor_Lever" Area="ACT3_DawnGateHall" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_Nowhere_to_InnerSanctum" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="AnimDoor_A3_innersanctum" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="AnimDoor_A3_innersanctum" Area="ACT3_DawnGateHall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_Nowhere_to_InnerSanctum" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="AnimDoor_A3_innersanctum" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="AnimDoor_A3_innersanctum" Area="ACT3_DawnGateHall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_Nowhere_to_InnerSanctum" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A3_Q1_S2_Goal2" Localization="@ui_A3_Q1_S2_G1_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A3_Q1_S2_Goal3" Localization="@ui_A3_Q1_S2_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A3_Q1_S3_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A3_Q1_S3_LockDungeon2" EntityNames="DungeonEntrance_TempleofSerenity_War" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_InnerSantumEvent" CheckpointEntityName="" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalFlowGraph" Name="FireFlowgraph_SecretPathOpenning" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AnimDoor_A3_innersanctum" AreaRadius="100" Type="GlobalDialog" Name="A3_Quest1_IS_PlayerChatter1" DialogName="ACT3_Quest1_IS_PlayerChatter1" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AnimDoor_A3_innersanctum" AreaRadius="55" Type="GlobalDialog" Name="A3_Quest1_IS_PlayerChatter2" DialogName="ACT3_Quest1_IS_PlayerChatter2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AnimDoor_A3_innersanctum" AreaRadius="30" Type="GlobalDialog" Name="A3_Quest1_IS_Attuning1" DialogName="ACT3_Quest1_IS_Attuning1" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S3_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="QP_A3_Q1_TargetPos1" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S3_TemplarSpawn1" SpawnClass="Sc_Sty_AC3_QTH" TargetEntityName="QP_A3_Q1_TargetPos2" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S3_TemplarSpawn2" SpawnClass="Sc_Sty_AC3_QTP" TargetEntityName="QP_A3_Q1_TargetPos3" FaceAtSpawn="QP_A3_Q1_TargetPos5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S3_TemplarSpawn3" SpawnClass="Sc_Sty_AC3_QTS" TargetEntityName="QP_A3_Q1_TargetPos4" FaceAtSpawn="QP_A3_Q1_TargetPos5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S3_TemplarSpawn4" SpawnClass="Sc_Sty_AC3_QTK" TargetEntityName="QP_A3_Q1_TargetPos5" FaceAtSpawn="QP_A3_Q1_TargetPos3" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S3_GernezSpawn" SpawnClass="Sc_Sty_AC3_QGS" TargetEntityName="QP_A3_Q1_TargetPos6" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+    </Step>
+    <Step Order="3" UIName="@ui_A3_Q1_S3_StepNameLabel" AutoClearEvents="1" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="DungeonEntrance_TempleofSerenity_Faith" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_TempleofSerenity_Faith" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="DungeonEntrance_TempleofSerenity_Faith" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="CE_A3_Q1_S3_Altar2" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A3_Q1_S3_Altar2" Area="Act3_TempleOfSerenity_WingOfFaith" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Interact" Names="CE_A3_Q1_S3_Altar2" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="DungeonEntrance_TempleofSerenity_Faith" Area="ACT3_DawnGateHall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="CE_A3_Q1_S3_Altar2" Area="Act3_TempleOfSerenity_WingOfFaith" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A3_Q1_S3_Altar2" Area="Act3_TempleOfSerenity_WingOfFaith" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="KillAll" EventsName="A3_Q1_S3_SpawnAltar2" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A3_Q1_S3_SpawnAltar2" Area="Act3_TempleOfSerenity_WingOfFaith" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="CE_A3_Q1_S3_Altar2" Area="Act3_TempleOfSerenity_WingOfFaith" Threshold="85" />
+      </Goal>
+      <Goal Order="6" Type="Go" Destination="AnimDoor_A3_innersanctum" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_TempleofSerenity_War" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="7" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_TempleofSerenity_War" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="8" Type="Interact" Names="DungeonEntrance_TempleofSerenity_War" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_TempleofSerenity_War" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="9" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_TempleofSerenity_War" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="10" Type="Go" Destination="CE_A3_Q1_S3_Altar1" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A3_Q1_S3_Altar1" Area="Act3_TempleOfSerenity_WingOfWar" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="DungeonEntrance_TempleofSerenity_War" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="11" Type="Interact" Names="CE_A3_Q1_S3_Altar1" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="CE_A3_Q1_S3_Altar1" Area="Act3_TempleOfSerenity_WingOfWar" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="DungeonEntrance_TempleofSerenity_War" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="12" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A3_Q1_S3_Altar1" Area="Act3_TempleOfSerenity_WingOfWar" Threshold="85" />
+      </Goal>
+      <Goal Order="13" Type="KillAll" EventsName="A3_Q1_S3_SpawnAltar1" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A3_Q1_S3_SpawnAltar1" Area="Act3_TempleOfSerenity_WingOfWar" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05-06-07-08-09-10-11-12-13" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q1_S4_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A3_Q1_S3_LockDungeon1" EntityNames="DungeonEntrance_TempleofSerenity_War" Hide="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A3_Q1_S3_Altar2" Type="ActionClickable" Name="A3_Q1_S3_LockAltar1" ClickableEntityName="CE_A3_Q1_S3_Altar2" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionDungeonNextLevel" Name="A3_Q1_S3_LockExit2" EntityName="Act3_TempleOfSerenity1_Exit" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="A3_Quest1_TSF_Attuning2" DialogName="ACT3_Quest1_TSF_Attuning2" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="A3_Q1_S3_ExitHidden" EntityNames="Act3_TempleOfSerenity1_Exit" Hide="1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalDialog" Name="A3_Quest1_TSF_Attuning3" DialogName="ACT3_Quest1_TSF_Attuning3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntitySpawn" MinimumRadius="2" MaximumRadius="5" SpawnFrequency="0" Name="A3_Q1_S3_SpawnAltar2" SpawnClass="Sc_Sty_AC3_COFY_PRIEST" TargetEntityName="CE_A3_Q1_S3_Altar2" FaceAtSpawn="" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionParticleEmitter" Name="A3_Q1_S3_ActivateAltar2" EmitterEntityName="AltarOfDawn_Faith" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionParticleEmitter" Name="A3_Q1_S3_DeactivateAltar2" EmitterEntityName="AltarOfDawn_Faith" Activate="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="A3_Q1_S3_Goal1_1" Localization="@ui_A3_Q1_S3_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="ActionDungeonNextLevel" Name="A3_Q1_S3_UnlockExit1" EntityName="Act3_TempleOfSerenity1_Exit" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityIsHidden" Name="A3_Q1_S3_UnlockDungeon1" EntityNames="DungeonEntrance_TempleofSerenity_War" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityIsHidden" Name="A3_Q1_S3_ExitUnhidden" EntityNames="Act3_TempleOfSerenity1_Exit" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="GoalAchieve" Name="A3_Q1_S3_GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="7" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="ActionSequence" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" Name="A3_Q5_S5_Light_DynSemi1" SequenceName="A3_DYN_INNERSANCTUM_DOOR_LIGHT_SEMI" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="9" Type="GlobalDialog" Name="A3_Quest1_TSW_Attuning4" DialogName="ACT3_Quest1_TSW_Attuning4" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="10" Type="EntityIsHidden" Name="A3_Q1_S3_ExitHidden2" EntityNames="Act3_TempleOfSerenity2_Exit" Hide="1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="11" Type="ActionDungeonNextLevel" Name="A3_Q1_S3_LockExit1" EntityName="Act3_TempleOfSerenity2_Exit" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="11" Type="ActionClickable" Name="A3_Q1_S3_LockAltar2" ClickableEntityName="CE_A3_Q1_S3_Altar1" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="11" Type="EntitySpawn" MinimumRadius="2" MaximumRadius="5" SpawnFrequency="0" Name="A3_Q1_S3_SpawnAltar1" SpawnClass="Sc_Sty_AC3_COFY_AK" TargetEntityName="CE_A3_Q1_S3_Altar1" FaceAtSpawn="" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="11" Type="ActionParticleEmitter" Name="A3_Q1_S3_ActivateAltar1" EmitterEntityName="AltarOfDawn_War" Activate="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="11" Type="ActionParticleEmitter" Name="A3_Q1_S3_DeactivateAltar1" EmitterEntityName="AltarOfDawn_War" Activate="0" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="11" Type="GlobalDialog" Name="A3_Quest1_TSW_Attuning5" DialogName="ACT3_Quest1_TSW_Attuning5" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="13" Type="ActionDungeonNextLevel" Name="A3_Q1_S3_UnlockExit2" EntityName="Act3_TempleOfSerenity2_Exit" Activate="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="13" Type="EntityIsHidden" Name="A3_Q1_S3_ExitUnhidden2" EntityNames="Act3_TempleOfSerenity2_Exit" Hide="0" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S4_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="QP_A3_Q1_TargetPos1" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S4_TemplarSpawn1" SpawnClass="Sc_Sty_AC3_QTH" TargetEntityName="QP_A3_Q1_TargetPos2" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S4_TemplarSpawn2" SpawnClass="Sc_Sty_AC3_QTP" TargetEntityName="QP_A3_Q1_TargetPos3" FaceAtSpawn="QP_A3_Q1_TargetPos5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S4_TemplarSpawn3" SpawnClass="Sc_Sty_AC3_QTS" TargetEntityName="QP_A3_Q1_TargetPos4" FaceAtSpawn="QP_A3_Q1_TargetPos5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S4_TemplarSpawn4" SpawnClass="Sc_Sty_AC3_QTK" TargetEntityName="QP_A3_Q1_TargetPos5" FaceAtSpawn="QP_A3_Q1_TargetPos3" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S4_GernezSpawn" SpawnClass="Sc_Sty_AC3_QGS" TargetEntityName="QP_A3_Q1_TargetPos6" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+    </Step>
+    <Step Order="4" UIName="@ui_A3_Q1_S4_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="AnimDoor_A3_innersanctum" Radius="200" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="AnimDoor_A3_innersanctum" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q1_S5_ClearUI" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QuestPoint_InnerSantum_ResetPOS" AreaRadius="15" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_InnerEvent_CP" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_InnerEvent_SF" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_FX_Blocking_Road" EntityNames="BlockingRoad_FX_InnerSanctumEvent" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Blocking_Road" EntityNames="BlockingRoad_InnerSanctumEvent" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Unhide_CE_Helion_Restart" EntityNames="CE_Helion" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalDialog" Name="A3_Q1_S5_Talk_1" DialogName="ACT3_Quest1_IS_Attuning6" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionDoor" Name="A3_Q1_S5_UnlocknDoor" DoorName="AnimDoor_A3_innersanctum" Action="Unlock" AnimationSpeed="0" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionSequence" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" Name="A3_Q5_S5_Light_DynFull" SequenceName="A3_DYN_INNERSANCTUM_DOOR_LIGHT_FULL" Delay="2" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S5_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="QP_A3_Q1_TargetPos1" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S5_TemplarSpawn1" SpawnClass="Sc_Sty_AC3_QTH" TargetEntityName="QP_A3_Q1_TargetPos2" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S5_TemplarSpawn2" SpawnClass="Sc_Sty_AC3_QTP" TargetEntityName="QP_A3_Q1_TargetPos3" FaceAtSpawn="QP_A3_Q1_TargetPos5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S5_TemplarSpawn3" SpawnClass="Sc_Sty_AC3_QTS" TargetEntityName="QP_A3_Q1_TargetPos4" FaceAtSpawn="QP_A3_Q1_TargetPos5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S5_TemplarSpawn4" SpawnClass="Sc_Sty_AC3_QTK" TargetEntityName="QP_A3_Q1_TargetPos5" FaceAtSpawn="QP_A3_Q1_TargetPos3" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S5_GernezSpawn" SpawnClass="Sc_Sty_AC3_QGS" TargetEntityName="QP_A3_Q1_TargetPos6" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="StepFail_Kill_PacifiedSquire" MonsterClass="PacifiedSquire" Area="ACT3_InnerSanctum" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="StepFail_Kill_PacifiedPriest" MonsterClass="PacifiedPriest" Area="ACT3_InnerSanctum" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="StepFail_Kill_InnerSanctum_DemonOfSouls" MonsterClass="InnerSanctum_DemonOfSouls" Area="ACT3_InnerSanctum" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="StepFail_Kill_InnerSanctum_DemonOfFlesh" MonsterClass="InnerSanctum_DemonOfFlesh" Area="ACT3_InnerSanctum" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="StepFail_Kill_InnerSanctum_Enforcer" MonsterClass="InnerSanctum_Enforcer" Area="ACT3_InnerSanctum" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalStopAllDialogs" Name="StopAllDialogs_InnerSantumEvent" />
+    </Step>
+    <Step Order="5" UIName="@ui_A3_Q1_S5_StepNameLabel" AutoClearEvents="1" Save="1" CheckPoint="" IgnoreAutomaticStepUIUpdate="1">
+      <Goal Order="0" Type="Interact" Names="CE_Helion" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="CE_Helion" Area="ACT3_DawnGateHall" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="AnimDoor_A3_innersanctum" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT3_InnerSanctum" GameplayEventPresetName="ACT3_InnerSanctum">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_Nowhere_to_InnerSanctum" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_Helion" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Kill" ClassToKill="InnerSanctum_Enforcer,InnerSanctum_DemonOfSouls,InnerSanctum_DemonOfFlesh" KillCount="3">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="InnerSanctum_Enforcer" Area="ACT3_DawnGateHall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="InnerSanctum_DemonOfSouls" Area="ACT3_DawnGateHall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="InnerSanctum_DemonOfFlesh" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_Helion" Area="ACT3_DawnGateHall" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Interact" Names="CE_Helion" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="CE_Helion" Area="ACT3_DawnGateHall" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_EventStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_A3_Q1_S5_UpdateStepNameLabel1" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_EventEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="5" Type="ActionParticleEmitter" Name="A3_Q1_S5_ActivateHelion" EmitterEntityName="ParticleEffect_helion_click" Activate="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="AnimDoor_A3_innersanctum" Type="GlobalDialog" Name="A3_Q1_S6_Talk_2" DialogName="ACT3_Quest1_IS_Attuning7" />
+      <Event Trigger="EventEnd" EventName="A3_Q1_S6_Talk_2" Type="ActionDoor" Name="A3_Q1_S6_LockDoor" DoorName="AnimDoor_A3_innersanctum" Action="Lock" AnimationSpeed="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="CE_Helion" AreaRadius="40" Type="GlobalDialog" Name="A3_Q1_S6_Talk_3" DialogName="ACT3_Quest1_IS_Attuning8" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_CE_Blocker" EntityNames="BlockingRoad_InnerSanctumEvent" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Hide_PE_Particle" EmitterEntityName="BlockingRoad_FX_InnerSanctumEvent" Activate="0" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q1_S6_ClearUI" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="GlobalReleaseGameplayEvent" Name="Vote_Failure_InnerSantumEvent" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalCheckpoint" Name="SetGlobalCheckpoint_InnerSantumEvent" CheckpointEntityName="QuestPoint_InnerSantum_ResetPOS" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalMusic" Name="A3_InnerSanctumEvent_StartMusic" MusicName="ACT3_ThreeDemonsFight" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalMusic" Name="A3_InnerSanctumEvent_StopMusic" MusicName="ACT2_TempleOfJustice" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionSequence" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" Name="A3_Q5_S5_StartBossFight_CutScene" SequenceName="A3_MEETFURY" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalRevivePlayers" RevivePostion="" Delay=".5" Name="Revive_Cutscene1_InnerSanctumEvent" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="Remove_Valeria" EntityName="Valeria" Hide="1" Remove="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="EntityTeleport" MinRadius="3" Name="A3_Q1_S5_PlayerTeleport" TeleportedEntityName="#Player" DestinationName="QuestPoint_InnerSantum_TPPlayer" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="EntityIsHidden" Name="Unhide_FX_Blocking_Road" EntityNames="BlockingRoad_FX_InnerSanctumEvent" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="EntityIsHidden" Name="Unhide_Blocking_Road" EntityNames="BlockingRoad_InnerSanctumEvent" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="EntityIsHidden" Name="Hide_CE_Helion" EntityNames="CE_Helion" Hide="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="GoalAchieve" Name="A3_Q1_S5_GoalAchieve1" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="StepUpdate" Name="StepUpdate_Kill" Localization="@ui_A3_Q1_S5_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="EntityIsHidden" Name="Reaveal_CE_Blocker" EntityNames="BlockingRoad_InnerSanctumEvent" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="ActionParticleEmitter" Name="Reaveal_PE_Particle" EmitterEntityName="BlockingRoad_FX_InnerSanctumEvent" Activate="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S5_DoS" SpawnClass="sc_DoS_InnerSanctumEvent" TargetEntityName="Pos_DoS_InnerSanctumEvent" FaceAtSpawn="#Player" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S5_Enforcer" SpawnClass="sc_Enforcer_InnerSanctumEvent" TargetEntityName="Pos_Enforcer_InnerSanctumEvent" FaceAtSpawn="#Player" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S5_DoF" SpawnClass="sc_DoF_InnerSanctumEvent" TargetEntityName="Pos_DoF_InnerSanctumEvent" FaceAtSpawn="#Player" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionSequence" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" Name="A3_Q5_S5_EndBossFight_CutScene" SequenceName="A3_DYN_HELIONCOMESOUT" Delay="7" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityHeal" Name="Healing_EventEnd_InnerSanctumEvent" TargetEntityName="#Player" MinPercent="100" MaxPercent="100" Frequency="0" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_EndBossFight_CutScene" Type="GoalAchieve" Name="A3_Q1_S5_GoalAchieve2" SimulateOnly="1" Delay="1.3" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventStart" EventName="A3_Q5_S5_EndBossFight_CutScene" Type="EntityIsHidden" Name="Unhide_CE_Helion" EntityNames="CE_Helion" Hide="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_EndBossFight_CutScene" Type="EntityIsHidden" Name="Quickfix_Hide_CE_Helion" EntityNames="CE_Helion" Hide="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_EndBossFight_CutScene" Type="EntityIsHidden" Name="Quickfix_Unhide_CE_Helion" EntityNames="CE_Helion" Hide="0" Delay="1.1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_StartBossFight_CutScene" Type="GlobalDialog" Delay="2" Name="SinadrahelFight_Talk_1" DialogName="ACT3_Quest1_IS_SinadrahelFight1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalDialog" Delay="0.5" Name="SinadrahelFight_Talk_2" DialogName="ACT3_Quest1_IS_SinadrahelDefeat1" />
+      <Event Trigger="EventEnd" EventName="A3_Q5_S5_EndBossFight_CutScene" Type="GlobalDialog" Delay="0" Name="InteractHelion_InnerSanctumEvent" DialogName="ACT3_Quest1_IS_SinadrahelDefeat2" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="StepUpdate" Name="StepUpdate_Take" Localization="@ui_A3_Q1_S5_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="InnerSantum_StopDialog_Fail" />
+      <Event Trigger="PlayerWipe" Type="GlobalReleaseGameplayEvent" Name="EventSlotRelease_Lost_InnerSantumEvent" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="StepFail_InnerSantumEvent" RollbackToPreviousStep="1" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S6_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="QP_A3_Q1_TargetPos1" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S6_TemplarSpawn1" SpawnClass="Sc_Sty_AC3_QTH" TargetEntityName="QP_A3_Q1_TargetPos2" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S6_TemplarSpawn2" SpawnClass="Sc_Sty_AC3_QTP" TargetEntityName="QP_A3_Q1_TargetPos3" FaceAtSpawn="QP_A3_Q1_TargetPos5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S6_TemplarSpawn3" SpawnClass="Sc_Sty_AC3_QTS" TargetEntityName="QP_A3_Q1_TargetPos4" FaceAtSpawn="QP_A3_Q1_TargetPos5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S6_TemplarSpawn4" SpawnClass="Sc_Sty_AC3_QTK" TargetEntityName="QP_A3_Q1_TargetPos5" FaceAtSpawn="QP_A3_Q1_TargetPos3" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S6_GernezSpawn" SpawnClass="Sc_Sty_AC3_QGS" TargetEntityName="QP_A3_Q1_TargetPos6" FaceAtSpawn="NPC_Aurora_Knight_Gendris" />
+    </Step>
+    <Step Order="6" UIName="@ui_A3_Q1_S6_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Talk" EntityName="NPC_ACT3_Q1_S9_Gernez" DialogName="ACT3_Quest1_NW_GerneseTalk3">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_ACT3_Q1_S9_Gernez" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_A3_DYN_HELIONASSEMBLE" SequenceName="A3_DYN_HELIONASSEMBLE" ResetAtLastFrame="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_CE_Blocker2" EntityNames="BlockingRoad_InnerSanctumEvent" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Hide_PE_Particle2" EmitterEntityName="BlockingRoad_FX_InnerSanctumEvent" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalReleaseGameplayEvent" Name="EventSlotRelease_Win_InnerSantumEvent" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Unhide_Win_FX_Blocking_Road" EntityNames="BlockingRoad_FX_InnerSanctumEvent" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Unhide_Win_SoldierDyn" EntityNames="ProximityTrigger_ACT3_Quest1_NW_CampChatter3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Unhide_Win_Blocking_Road" EntityNames="BlockingRoad_InnerSanctumEvent" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Helion" EntityNames="CE_Helion" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_Win_InnerSantumEvent" CheckpointEntityName="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S6_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="QP_A3_Q1_S7_ValeriaSpawn" FaceAtSpawn="AO_A3_Q1_S7_TemplarSquire" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Delay="2" Name="GetHelion_InnerSanctumEvent" DialogName="ACT3_Quest1_IS_SinadrahelDefeat3" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q1_S7_ClearUI" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="Reveal_NPC_Gernese" EntityNames="NPC_ACT3_Q1_S9_Gernez" Hide="0" />
+      <Event Trigger="Instant" Type="EntityKill" Name="Remove_AI_2" EntityName="Knight" Hide="1" Remove="1" />
+      <Event Trigger="Instant" Type="EntityKill" Name="Remove_AI_3" EntityName="Priest" Hide="1" Remove="1" />
+      <Event Trigger="Instant" Type="EntityKill" Name="Remove_AI_4" EntityName="Sword" Hide="1" Remove="1" />
+      <Event Trigger="Instant" Type="EntityKill" Name="Remove_AI_5" EntityName="Hammer" Hide="1" Remove="1" />
+      <Event Trigger="Instant" Type="EntityKill" Name="Remove_AI_6" EntityName="Gernese" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="1" Name="Teleport_AI_1" TeleportedEntityName="Valeria" DestinationName="QP_A3_Q1_S7_ValeriaSpawn" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityRotate" Name="Rotate_Val" RotatedEntityName="Valeria" Target="AO_A3_Q1_S7_TemplarSquire" FaceTarget="1" Delay="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="10000" />
+        <XP Amount="350000" />
+        <FixedLootClass Name="A3_Q1_Reward_Fixe" MinItemNumber="3" MaxItemNumber="3" SortByRarity="0" />
+        <ChoiceLootClass Name="A3_Q1_Reward" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="7" UIName="@ui_A3_Q1_S7_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Wait" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_A3_Q1_S7_ValeriaSpawn" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_A3_Q1_S7_ValeriaSpawn" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="Valeria" DialogName="ACT3_Quest2_NW_ValeriaTalk1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Valeria" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q1_S8_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S9_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="QP_A3_Q1_S7_ValeriaSpawn" FaceAtSpawn="AO_A3_Q1_S7_TemplarSquire" Delay="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A3_Q1_S7_ValeriaSpawn" AreaRadius="15" Type="GlobalDialog" Name="A3_Quest2_NW_TowardsRedWastes2" DialogName="ACT3_Quest2_NW_TowardsRedWastes2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A3_Q1_S7_ValeriaSpawn" AreaRadius="15" Type="StepUpdate" Name="A3_Q1_S8_Goal1" Localization="@ui_A3_Q1_S7_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A3_Q1_S8_Goal2" Localization="@ui_A3_Q1_S7_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="A3_Quest2_NW_TowardsRedWastes2" Type="GoalAchieve" Name="A3_Q1_S8_GoalAchieve2" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityRotate" Name="A3_Q1_S8_Rotate_Val" RotatedEntityName="Valeria" Target="SpawnPoint_Nowhere" FaceTarget="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="A3_Q1_S7_RemoveWall" EntityNames="CE_A3_Q1_S7_ValDiscussion" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalDialog" Name="A3_Quest2_NW_Valeria1" DialogName="ACT3_Quest2_NW_Valeria1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityFollow" Name="A3_Q1_S7_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith" />
+    </Step>
+  </Quest>
+</MetaData>

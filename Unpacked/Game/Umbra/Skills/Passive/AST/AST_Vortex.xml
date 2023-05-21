@@ -1,0 +1,17 @@
+<MetaData>
+  <Spell Name="AST_Vortex_SpeedBuff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/anomaly.png" Description="@ui_movespeed_buff_skill" Title="@ui_vortex_buff_title" />
+  </Spell>
+  <Spell Name="AST_Vortex_DOTDamage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dotdamage_percent_received_increase" Permanent="0">
+        <Semantics DamagePercentFloat="30" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="unique_solarfall_onhit" ESkill="player_solarfall" Keywords="magic_spell,passive_effect,">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_solarfall" BloodDecalOrientation="forward" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/Solarfall_Sacred.png" UIName="@ui_AST_Solarfall" Lore="@ui_AST_Solarfall_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="DamageWeapon,Cost,ROSTime,Cooldown,Range,DamageDetail,DamageCritical,StatusAilmentsChance,Explosion,SpecificSolarfall" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificSolarfall" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Fire" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Fire" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Fire" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ABANAZAR" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Fire" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Fire" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Fire" Inventory_HUDPicture="../u_resources/enneracts/solarfall.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="20" />
+    <Range AttackRange="22" />
+    <DamageWeapon WeaponMultiplier="2.0" />
+    <StatusAilment AilmentEffectiveness="50" />
+    <Damage_Conversion>
+      <Entry From="physical" To="sacred" ConversionRate="100" />
+    </Damage_Conversion>
+    <Cooldown Cooldown="0.5" CooldownPerLevel="0" />
+    <CastingParams CanMultiCast="1" CanCastWhileMoving="1" MaintainedCast="0" MinimumCastDuration="0.5" />
+    <SoundTrigger OnKill="Play_OnKill_Impact_Lethal_Spell" />
+    <ParticleList>
+      <Particle Key="Beam" Name="U_Character_02.SolarFall.SolarFall_Impact_Loop_01" Direction="0,1,0" Offset="0,0,0" />
+      <Particle Key="WarmUp" Name="U_Character_02.SolarFall.SolarFall_Gaining_01_Short" Direction="0,1,0" Offset="0,0,0" />
+      <Particle Key="Hand" Name="U_Character_02.SolarFall.SolarFall_Gaining_01_Short_02" Direction="0,1,0" />
+      <Particle Key="Trail" Name="U_Character_02.SolarFall.SolarFall_Ground_Loop" Direction="0,1,0" />
+    </ParticleList>
+    <Specific_Solarfall RemoveMaintainedCast="1" MoveSpeed="8" StartAOERadius="3" EndAOERadius="3" StartDamageMultiplier="1" EndDamageMultiplier="1" MaxDuration="5" WarmUpTime="0.8" InstantSoundTrigger="Play_Skill_Solarfall_Cast_Static_Start" LoopSoundTrigger="Play_Skill_Solarfall_Cast_Loop" EndSoundTrigger="Stop_Skill_Solarfall_Cast_Loop" />
+    <Tickrate BaseTickrate="2" MaxTickrate="5" SpeedScaleFactor="1" DamageOvercapFactor="1" />
+    <Targeting TargetingType="target" />
+  </Skill>
+</MetaData>

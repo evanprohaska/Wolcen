@@ -1,0 +1,17 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_butcher_soulmeat" ESkill="AI_cultofsouls_butcher_soulmeat" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_02" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="frost" WeaponMultiplier=".6" />
+    <Cooldown Cooldown="6" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Range AttackRange="10" />
+    <DamageZone RateOfFire="0.2" Duration="5" />
+    <Shapes>
+      <Entry ShapeName="Butcher_SoulMeatShape" />
+    </Shapes>
+    <Particles ParticleOffSet="0,0,0" ParticleDirection="-1,0,0" ParticleName="U_Monster.Butcher.Skill_SoulWave_04" ParticleScale="1" />
+    <SkillSpecific AngleBetweenParticlesInDegrees="40" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

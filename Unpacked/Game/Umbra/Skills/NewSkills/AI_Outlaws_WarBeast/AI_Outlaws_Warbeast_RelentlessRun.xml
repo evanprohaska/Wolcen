@@ -1,0 +1,34 @@
+<MetaData>
+  <Skill UID="AI_outlaws_warbeast_relentlessrun" ESkill="AI_republicjusticar01_inexorableadvance" Keywords="attack_skill">
+    <VisualFeedback FeedbackPresetBase="default_ai_attacks" />
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="0.5" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaximumTurnRate="60" CanBeInterrupted="0" />
+    <Blownaway Height="0" Distance="5" StunDuration="0.5" />
+    <Shapes>
+      <Entry ShapeName="Warbeast_RelentlessRun_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Shield" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_RentlessRun_Loop" Bone="Bip01" InstantKill="0" Direction="0,1,0" />
+      <Particle Key="ObstacleHit" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_RentlessRun_Hit" InstantKill="0" OffSet="0,1.7,1" Scale="3" Direction="0,1,0" />
+    </ParticleList>
+    <Cooldown Cooldown="15" CooldownPerLevel="0" CooldownTrigger="OnEnd" />
+    <SkillSpecific AccelerationTime="0.8" RelativeSpeedMultiplier="1.3" MaxTimeOutDuration="10" StopIfStuck="1" TickRate="0.5" BreakBarDamagePercent="50" BlowAwayAllies="1" />
+  </Skill>
+  <Skill UID="AI_hunt_warbeast_relentlessrun" ESkill="AI_republicjusticar01_inexorableadvance" Keywords="attack_skill">
+    <VisualFeedback FeedbackPresetBase="default_ai_attacks" />
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="0.5" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaximumTurnRate="90" CanBeInterrupted="0" />
+    <Blownaway Height="0" Distance="5" StunDuration="0.5" />
+    <Shapes>
+      <Entry ShapeName="Warbeast_RelentlessRun_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Shield" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_RentlessRun_Loop" Bone="Bip01" InstantKill="0" Direction="0,1,0" />
+      <Particle Key="ObstacleHit" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_RentlessRun_Hit" InstantKill="0" OffSet="0,1.7,1" Scale="3" Direction="0,1,0" />
+    </ParticleList>
+    <Cooldown Cooldown="15" CooldownPerLevel="0" CooldownTrigger="OnEnd" />
+    <SkillSpecific AccelerationTime="0.8" RelativeSpeedMultiplier="1.3" MaxTimeOutDuration="10" StopIfStuck="1" TickRate="0.5" BreakBarDamagePercent="50" BlowAwayAllies="1" />
+  </Skill>
+</MetaData>

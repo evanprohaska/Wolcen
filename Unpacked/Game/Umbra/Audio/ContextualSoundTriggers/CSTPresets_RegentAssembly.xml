@@ -1,0 +1,176 @@
+<MetaData>
+  <Preset Name="Preset_Endgame_RegentsAssembly_OpenedIfNotConstructed" Trigger="Endgame_RegentAssembly_OpenedIfNotConstructed" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Intro" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_RegentsAssembly_ConstructionCompleted" Trigger="Endgame_RegentAssembly_OpenedIfConstructed" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_WelcomeBack1" Weight="1" />
+    <Entry Dialogue="RegentAssembly_WelcomeBack2" Weight="1" />
+    <Entry Dialogue="RegentAssembly_WelcomeBack3" Weight="1" />
+    <Entry Dialogue="RegentAssembly_WelcomeBack4" Weight="1" />
+    <Entry Dialogue="RegentAssembly_WelcomeBack5" Weight="1" />
+    <Entry Dialogue="RegentAssembly_WelcomeBack6" Weight="1" />
+    <Entry Dialogue="RegentAssembly_WelcomeBack7" Weight="1" />
+    <Entry Dialogue="RegentAssembly_WelcomeBack8" Weight="1" />
+    <Entry Dialogue="RegentAssembly_WelcomeBack9" Weight="1" />
+    <Entry Dialogue="RegentAssembly_WelcomeBack10" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_RegentsAssembly_Idle" Trigger="Endgame_RegentAssembly_Idle" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Idle1" Weight="1" />
+    <Entry Dialogue="RegentAssembly_Idle2" Weight="1" />
+    <Entry Dialogue="RegentAssembly_Idle3" Weight="1" />
+    <Entry Dialogue="RegentAssembly_Idle4" Weight="1" />
+    <Entry Dialogue="RegentAssembly_Idle5" Weight="1" />
+    <Entry Dialogue="RegentAssembly_Idle6" Weight="1" />
+    <Entry Dialogue="RegentAssembly_Idle7" Weight="1" />
+    <Entry Dialogue="RegentAssembly_Idle8" Weight="1" />
+    <Entry Dialogue="RegentAssembly_Idle9" Weight="1" />
+    <Entry Dialogue="RegentAssembly_Idle10" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_MedicalGarnison_ProjectStart" Trigger="RAMedicalGarnisonProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_MedicalGarnison_Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_MedicalGarnison_ProjectComplete" Trigger="RAMedicalGarnisonProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_MedicalGarnison_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_MedicalGarnison_Upgrade1ProjectStart" Trigger="RAMedicalGarnisonUpgrade1ProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_MedicalGarnison_Upgrade1Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_MedicalGarnison_Upgrade1ProjectComplete" Trigger="RAMedicalGarnisonUpgrade1ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_MedicalGarnison_Upgrade1End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_MedicalGarnison_Upgrade2ProjectStart" Trigger="RAMedicalGarnisonUpgrade2ProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_MedicalGarnison_Upgrade2Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_MedicalGarnison_Upgrade2ProjectComplete" Trigger="RAMedicalGarnisonUpgrade2ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_MedicalGarnison_Upgrade2End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_MedicalGarnison_Upgrade3ProjectStart" Trigger="RAMedicalGarnisonUpgrade3ProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_MedicalGarnison_Upgrade3Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_MedicalGarnison_Upgrade3ProjectComplete" Trigger="RAMedicalGarnisonUpgrade3ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_MedicalGarnison_Upgrade3End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_Soul_ProjectStart" Trigger="RAWeakeningEvilForcesSoulProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_Soul_Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_Soul_ProjectComplete" Trigger="RAWeakeningEvilForcesSoulProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_Soul_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_SoulUpgrade1_ProjectComplete" Trigger="RAWeakeningEvilForcesSoulUpgrade1ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_SoulUpgrade1_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_SoulUpgrade2_ProjectComplete" Trigger="RAWeakeningEvilForcesSoulUpgrade2ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_SoulUpgrade2_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_Flesh_ProjectStart" Trigger="RAWeakeningEvilForcesFleshProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_Flesh_Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_Flesh_ProjectEnd" Trigger="RAWeakeningEvilForcesFleshProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_Flesh_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_FleshUpgrade1_ProjectEnd" Trigger="RAWeakeningEvilForcesFleshUpgrade1ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_FleshUpgrade1_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_FleshUpgrade2_ProjectEnd" Trigger="RAWeakeningEvilForcesFleshUpgrade2ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_FleshUpgrade2_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_Fury_ProjectStart" Trigger="RAWeakeningEvilForcesFuryProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_Fury_Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_Fury_ProjectComplete" Trigger="RAWeakeningEvilForcesFuryProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_Fury_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_FuryUpgrade1_ProjectComplete" Trigger="RAWeakeningEvilForcesFuryUpgrade1ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_FuryUpgrade1_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Weakening_FuryUpgrade2_ProjectComplete" Trigger="RAWeakeningEvilForcesFuryUpgrade2ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Weakening_FuryUpgrade2_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Soul_ProjectStart" Trigger="RAFightTheCorruptionSoulProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Soul_Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Soul_ProjectComplete" Trigger="RAFightTheCorruptionSoulProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Soul_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Soul_Upgrade1ProjectComplete" Trigger="RAFightTheCorruptionSoulUpgrade1ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Flesh_Upgrade1End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Soul_Upgrade2ProjectProjectComplete" Trigger="RAFightTheCorruptionSoulUpgrade2ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Soul_Upgrade2End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Soul_Upgrade3ProjectComplete" Trigger="RAFightTheCorruptionSoulUpgrade3ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Soul_Upgrade3End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Flesh_ProjectStart" Trigger="RAFightTheCorruptionFleshProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Flesh_Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Flesh_ProjectComplete" Trigger="RAFightTheCorruptionFleshProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Flesh_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Flesh_Upgrade1ProjectComplete" Trigger="RAFightTheCorruptionFleshUpgrade1ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Flesh_Upgrade1End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Flesh_Upgrade2ProjectComplete" Trigger="RAFightTheCorruptionFleshUpgrade2ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Flesh_Upgrade2End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Flesh_Upgrade3ProjectComplete" Trigger="RAFightTheCorruptionFleshUpgrade3ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Flesh_Upgrade3End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Fury_ProjectStart" Trigger="RAFightTheCorruptionFuryProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Fury_Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Fury_ProjectComplete" Trigger="RAFightTheCorruptionFuryProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Fury_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Fury_Upgrade1ProjectComplete" Trigger="RAFightTheCorruptionFuryUpgrade1ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Fury_Upgrade1End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Fury_Upgrade2ProjectComplete" Trigger="RAFightTheCorruptionFuryUpgrade2ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Fury_Upgrade2End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Corruption_Fury_Upgrade3ProjectComplete" Trigger="RAFightTheCorruptionFuryUpgrade3ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Corruption_Fury_Upgrade3End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Time_ProjectStart" Trigger="RATimeDistortionProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Time_Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Time_ProjectComplete" Trigger="RATimeDistortionProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Time_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Time_Upgrade1ProjectComplete" Trigger="RATimeDistortionUpgrade1ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Time_Upgrade1End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Time_Upgrade2ProjectComplete" Trigger="RATimeDistortionUpgrade2ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Time_Upgrade2End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Seal_ProjectStart" Trigger="RASealTheFlamesProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Seal_Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Seal_ProjectComplete" Trigger="RASealTheFlamesProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Seal_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Shenanigans_ProjectStart" Trigger="RAMysteriousShenanigansProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Shenanigans_Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Shenanigans_ProjectComplete" Trigger="RAMysteriousShenanigansProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Shenanigans_End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Shenanigans_Upgrade1ProjectStart" Trigger="RAMysteriousShenanigansUpgrade1ProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Shenanigans_Upgrade1Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Shenanigans_Upgrade1ProjectComplete" Trigger="RAMysteriousShenanigansUpgrade1ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Shenanigans_Upgrade1End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Shenanigans_Upgrade2ProjectStart" Trigger="RAMysteriousShenanigansUpgrade2ProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Shenanigans_Upgrade2Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Shenanigans_Upgrade2ProjectComplete" Trigger="RAMysteriousShenanigansUpgrade2ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Shenanigans_Upgrade2End" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Shenanigans_Upgrade3ProjectStart" Trigger="RAMysteriousShenanigansUpgrade3ProjectStart" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Shenanigans_Upgrade3Start" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_RegentAssembly_Shenanigans_Upgrade3ProjectComplete" Trigger="RAMysteriousShenanigansUpgrade3ProjectComplete" Cooldown="4" ChanceToTrigger="100">
+    <Entry Dialogue="RegentAssembly_Shenanigans_Upgrade3End" Weight="1" />
+  </Preset>
+</MetaData>

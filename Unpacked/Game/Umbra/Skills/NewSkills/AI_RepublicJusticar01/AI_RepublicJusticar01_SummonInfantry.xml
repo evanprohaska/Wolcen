@@ -1,0 +1,18 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar01_summoninfantry" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="20.0" CooldownTrigger="OnEnd" />
+    <Summoning MaxSummons="12" SummonDuration="0" MinRadiusAroundSpawnPosition="8" MaxRadiusAroundSpawnPosition="10" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_RepublicJusticar01_infantry" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_republicjusticar01_summonassassins" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="9999.0" CooldownTrigger="OnEnd" />
+    <Summoning MaxSummons="2" SummonDuration="0" MinRadiusAroundSpawnPosition="5" MaxRadiusAroundSpawnPosition="6" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_RepublicJusticar01_assassin" />
+    </Summoning>
+  </Skill>
+</MetaData>

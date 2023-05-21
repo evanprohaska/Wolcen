@@ -1,0 +1,38 @@
+<MetaData>
+  <Skill UID="AI_DragonRider_ScorchedEarth" ESkill="AI_REPU_Golgoth_JusticeFromAbove" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Head" CastDelay="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="DragonRider_ScorchedEarth_DZ" />
+    </DamageZone>
+    <Range AttackRange="20" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Oshara.Oshara_Indicator_03" Offset="0,7,0" Direction="0,1,0" Scale="1.7" InstantKill="0" />
+    </ParticleList>
+    <Targeting TargetingType="Target" />
+    <Projectile Name="DragonRider_ScorchedEarth_proj" ProjectileCount="1" AngleBetweenProjectiles="180" PenetrationLimit="0" />
+    <SkillSpecific ProjectileLaunchTickRate="1.5" ProjectileSpawnRadiusIn="0" ProjectileSpawnRadiusOut="3" CastOnSelf="1" />
+    <SoundTrigger OnAnimStart="Play_Dragon_Juvenile_ScorchedEarth_Pre" OnAnimCast="Play_Dragon_Juvenile_ScorchedEarth_Cast" OnAnimEnd="Play_Dragon_Juvenile_ScorchedEarth_Cast_End" OnInterrupt="Play_Dragon_Juvenile_ScorchedEarth_Cast_End" OnHit="Play_Dragon_Juvenile_ScorchedEarth_Impact" />
+  </Skill>
+  <Skill UID="AI_Hunt_DragonRider_ScorchedEarth" ESkill="AI_REPU_Golgoth_JusticeFromAbove" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Head" CastDelay="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="DragonRider_ScorchedEarth_DZ" />
+    </DamageZone>
+    <Range AttackRange="20" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Oshara.Oshara_Indicator_03" Offset="0,7,0" Direction="0,1,0" Scale="1.7" InstantKill="0" />
+    </ParticleList>
+    <Targeting TargetingType="Target" />
+    <Projectile Name="DragonRider_ScorchedEarth_proj" ProjectileCount="1" AngleBetweenProjectiles="180" PenetrationLimit="0" />
+    <SkillSpecific ProjectileLaunchTickRate="1" ProjectileSpawnRadiusIn="0" ProjectileSpawnRadiusOut="3" CastOnSelf="1" />
+    <SoundTrigger OnAnimStart="Play_Dragon_Juvenile_ScorchedEarth_Pre" OnAnimCast="Play_Dragon_Juvenile_ScorchedEarth_Cast" OnAnimEnd="Play_Dragon_Juvenile_ScorchedEarth_Cast_End" OnInterrupt="Play_Dragon_Juvenile_ScorchedEarth_Cast_End" OnHit="Play_Dragon_Juvenile_ScorchedEarth_Impact" />
+  </Skill>
+</MetaData>

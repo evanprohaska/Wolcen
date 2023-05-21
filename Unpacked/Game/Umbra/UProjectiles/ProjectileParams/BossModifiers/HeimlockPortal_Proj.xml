@@ -1,0 +1,12 @@
+<MetaData>
+  <Projectile ID="HeimlockPortal_proj_01" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Heimlock.Abyss_Projectile_01" Direction="1,0,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Projectile.Fire.FireBall_Impact_01" Direction="1,0,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="50" TimeBeforeHoming="1" MaxLifeTime="-1" MaxTravelDistance="-1" />
+    <Speed SpeedMin="4" SpeedMax="4" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+  </Projectile>
+</MetaData>

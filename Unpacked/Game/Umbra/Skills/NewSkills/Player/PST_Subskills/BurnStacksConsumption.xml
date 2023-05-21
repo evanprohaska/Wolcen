@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill UID="pst_skill_burnstacks_consumption" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <ParticleList>
+      <Particle Key="target" Name="U_Swipe.Burnstack.BurnstackComsuption" Direction="0,0,1" Scale="1.4" />
+    </ParticleList>
+    <Specific_PST RelatedPSTEffect="BurnStackConsumption" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="0" ApplicationRadius="" />
+  </Skill>
+  <Skill UID="pst_skill_burnstacks_consumption_killed" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <ParticleList>
+      <Particle Key="damage" Name="U_Swipe.Burnstack.BurnstackComsuption" Direction="0,0,1" Scale="1.4" />
+    </ParticleList>
+    <DamageMaxHealthPercentage PercentMin="20" PercentMinPerLevel="0" PercentMax="20" PercentMaxPerLevel="0" />
+    <Specific_PST RelatedPSTEffect="BurnStackConsumption" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="1" ApplicationRadius="3.5" DamageOnEnemies="1" />
+  </Skill>
+</MetaData>

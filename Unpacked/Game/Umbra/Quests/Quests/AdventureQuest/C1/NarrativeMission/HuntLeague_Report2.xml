@@ -1,0 +1,15 @@
+<MetaData>
+  <Quest Name="C1_EG_SF_Q3" UIName="@ui_C1_M1_InterMission2_QuestLabel" UIDesc="" Type="Main" StartDialog="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_C1_M1_InterMission2_S1_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Talk" EntityName="NPC_HL_Ilthain_V2" DialogName="HLC1_EG_SF_Q3_Ilthain">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="NPC_HL_Ilthain_V2" Area="Palace" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_palacedoor" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="HuntLeague_C1_InitPos" TeleportedEntityName="#Player" DestinationName="QP_EG_GoToSF" MinRadius="30" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityRotate" Name="HuntLeague_C1_InitRot" RotatedEntityName="#Player" Target="QP_EG_GoToSF" FaceTarget="0" Delay="2.1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityRotate" Name="HuntLeague_C1_InitRot2" RotatedEntityName="#Player" Target="ClickableEntity_palacedoor" FaceTarget="1" Delay="2.1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="C1_EG_SF_Q2_Unhide_NPC_HL_Ilthain_V2" EntityNames="NPC_HL_Ilthain_V2" Hide="0" />
+    </Step>
+  </Quest>
+</MetaData>

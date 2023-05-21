@@ -1,0 +1,73 @@
+<MetaData>
+  <Spell Name="AST_SacredGround_DefenseUp" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="all_resistance_score_percent" Permanent="1">
+        <Semantics CharacteristicScorePercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/sacredground.png" Description="@ui_SacredGroundAllResistanceBonus_Desc" Title="@ui_SacredGroundAllResistanceBonus_Title" />
+  </Spell>
+  <Spell Name="AST_SacredGround_AttackSpeedUp" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="attackspeed_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="10" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/sacredground.png" Description="@ui_SacredGroundAttackSpeedBonus_Desc" Title="@ui_SacredGroundAttackSpeedBonus_Title" />
+  </Spell>
+  <Spell Name="AST_SacredGround_RegenStamina" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="stamina_regeneration_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="25" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/sacredground.png" Description="@ui_SacredGroundRegenStaminaBonus_Desc" Title="@ui_SacredGroundRegenStaminaBonus_Title" />
+  </Spell>
+  <Spell Name="AST_SacredGround_OffensiveBuff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="statusailment_inflict_chance_score" Permanent="0">
+        <Semantics CharacteristicScoreInt="40" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/sacredground.png" Description="@ui_statusailment_inflict_chance_score_buff_skill" Title="@ui_sacredground_buff_title" />
+  </Spell>
+  <Spell Name="AST_SacredGround_AddSacredDamageToWeapons" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_sacred" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/sacredground_Sacred.png" Description="@ui_SacredGroundSacredDamageToAttackBonus_Desc" Title="@ui_SacredGroundSacredDamageToAttackBonus_Title" />
+  </Spell>
+  <Spell Name="AST_SacredGround_AddFireDamageToWeapons" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_fire" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/sacredground_Fire.png" Description="@ui_SacredGroundFireDamageToAttackBonus_Desc" Title="@ui_SacredGroundFireDamageToAttackBonus_Title" />
+  </Spell>
+  <Spell Name="AST_SacredGround_AddShadowDamageToWeapons" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_shadow" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/sacredground_Shadow.png" Description="@ui_SacredGroundShadowDamageToAttackBonus_Desc" Title="@ui_SacredGroundShadowDamageToAttackBonus_Title" />
+  </Spell>
+  <Spell Name="AST_ApoSacredGround_Buff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_sacred" Permanent="1">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/sacredground.png" Description="@ui_SacredGroundSacredDamageToAttackBonus_Desc" Title="@ui_SacredGroundSacredDamageToAttackBonus_Title" />
+  </Spell>
+  <Spell Name="AST_ApoSacredGround_Debuff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="offensivespeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="-50" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

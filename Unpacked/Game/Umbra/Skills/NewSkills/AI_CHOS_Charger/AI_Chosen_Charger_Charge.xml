@@ -1,0 +1,35 @@
+<MetaData>
+  <Skill UID="AI_Chosen_Charger_Charge" ESkill="AI_Chosen_Charger_Charge" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="2.5" />
+    <Cooldown Cooldown="3.0" CooldownTrigger="OnEnd" />
+    <CastingParams />
+    <Shapes>
+      <Entry ShapeName="Chosen_Charger_DefaultAttack" />
+    </Shapes>
+    <PairAnimation AnimationDrivenMovement="1">
+      <Entry Key="CasterIn" ActionString="monster_skill_loop_01_in" />
+      <Entry Key="CasterLoopDash" ActionString="monster_skill_loop_01_loop" />
+      <Entry Key="CasterLoopImpale" ActionString="monster_skill_loop_02_loop" />
+      <Entry Key="CasterOutFailure" ActionString="monster_skill_loop_01_out_01" />
+      <Entry Key="CasterOutSuccess" ActionString="monster_skill_loop_01_out_02" />
+      <Entry Key="CasterRelease" ActionString="monster_skill_loop_01_out_03" />
+      <Entry Key="TargetLoop" ActionString="pair_slave_charger_charge_loop" />
+      <Entry Key="TargetOut" ActionString="pair_slave_charger_charge_out" />
+      <Entry Key="TargetRelease" ActionString="pair_slave_charger_charge_release" />
+    </PairAnimation>
+    <EnableCondition DisableAgainstAI="1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Charger.Charger_Charge_Indicator_01" Offset="0,-2.5,0" Direction="0,1,0" Delay="0.075" />
+      <Particle Key="Wind" Name="U_Monster.Charger.Charger_Dash_Wind_01" Bone="R_Weapon_Bone" Offset="0,-0.5,0" Direction="0,1,0" Scale="1.25" />
+    </ParticleList>
+    <Summoning MaxSummons="6" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="1" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_SariselChosenCharger" />
+    </Summoning>
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_Chosen_Charger_ChargeDamageZone" />
+    </SecondarySkillToCast>
+    <SkillSpecific SnapCameraTargetToBone="Bip01 Camera" DashSpeed="65" DashDistance="15" TriggerDistance="2.5" />
+    <SoundTrigger OnAnimStart="Play_CHOS_Charger_Charge_Warning" />
+  </Skill>
+</MetaData>

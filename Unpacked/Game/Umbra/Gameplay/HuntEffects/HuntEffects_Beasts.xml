@@ -1,0 +1,689 @@
+<MetaData>
+  <HuntEffectsFamily Name="Nestkiller">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Nestkiller_1" UITitle="@ui_hunteffect_title_Nestkiller_1" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C2_Hold_ArenaV2">
+        <Data Quest="QN_HE_C2_OTWF_Final" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Nestkiller_2" UITitle="@ui_hunteffect_title_Nestkiller_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.1" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Nestkiller_3" UITitle="@ui_hunteffect_title_Nestkiller_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Nestkiller_4" UITitle="@ui_hunteffect_title_Nestkiller_4" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-25" />
+          <HiRoll DamagePercentInt="-25" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Sweetmeats">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Sweetmeats_1" UITitle="@ui_hunteffect_title_Sweetmeats_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="movespeed">
+          <LoRoll SpeedPercentInt="-10" />
+          <HiRoll SpeedPercentInt="-10" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Sweetmeats_2" UITitle="@ui_hunteffect_title_Sweetmeats_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-15" />
+          <HiRoll DamagePercentInt="-15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Sweetmeats_3" UITitle="@ui_hunteffect_title_Sweetmeats_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="health_percent">
+          <LoRoll HealthPercentInt="-15" />
+          <HiRoll HealthPercentInt="-15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Sweetmeats_4" UITitle="@ui_hunteffect_title_Sweetmeats_4" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_percent">
+          <LoRoll ArmorPercentFloat="-20" />
+          <HiRoll ArmorPercentFloat="-20" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="4" UILore="@ui_hunteffect_desc_Sweetmeats_5" UITitle="@ui_hunteffect_title_Sweetmeats_5" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="offensivespeed_final_percent">
+          <LoRoll CharacteristicFinalPercentFloat="-10" />
+          <HiRoll CharacteristicFinalPercentFloat="-10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Adaptation">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Adaptation_1" UITitle="@ui_hunteffect_title_Adaptation_1" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Increased_AllRes" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Adaptation_2" UITitle="@ui_hunteffect_title_Adaptation_2" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Increased_Damage" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Adaptation_3" UITitle="@ui_hunteffect_title_Adaptation_3" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Increased_Speed" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Adaptation_4" UITitle="@ui_hunteffect_title_Adaptation_4" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Increased_CritChance" />
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Bloodscent">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Bloodscent_1" UITitle="@ui_hunteffect_title_Bloodscent_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Bloodscent_2" UITitle="@ui_hunteffect_title_Bloodscent_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Bloodscent_3" UITitle="@ui_hunteffect_title_Bloodscent_3" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="AI_Hunt_BossMod_Vulnerability" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Feral_Alliance">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Feral_Alliance_1" UITitle="@ui_hunteffect_title_Feral_Alliance_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Feral_Alliance_2" UITitle="@ui_hunteffect_title_Feral_Alliance_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Feral_Alliance_3" UITitle="@ui_hunteffect_title_Feral_Alliance_3" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B2_Wait_TameBeast" BossFilter="Hunt_SvriirAlpha,Sirkis">
+        <Data Quest="QN_HE_B2_SVRIIR_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B2_Wait_TameBeast" BossFilter="Hunt_Warbeast">
+        <Data Quest="QN_HE_B2_SVRIIRF_Final" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Drakesign">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Drakesign_1" UITitle="@ui_hunteffect_title_Drakesign_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Drakesign_2" UITitle="@ui_hunteffect_title_Drakesign_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="health_percent">
+          <LoRoll HealthPercentInt="20" />
+          <HiRoll HealthPercentInt="20" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Drakesign_3" UITitle="@ui_hunteffect_title_Drakesign_3" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="AI_BossModifier_Hunt_AirSupport" />
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Chamaleon">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Chamaleon_1" UITitle="@ui_hunteffect_title_Chamaleon_1" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C5_Kill_HuntingChallengers">
+        <Data Quest="QN_HE_C5_OTWF_Final" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Chamaleon_2" UITitle="@ui_hunteffect_title_Chamaleon_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Chamaleon_3" UITitle="@ui_hunteffect_title_Chamaleon_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="AI_Hunt_BossMod_SlowStart" />
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Anatomy">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Anatomy_1" UITitle="@ui_hunteffect_title_Anatomy_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Anatomy_2" UITitle="@ui_hunteffect_title_Anatomy_2" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_R3_Wait_DestroyTheLocks">
+        <Data Quest="QN_HE_R3_Final" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Anatomy_3" UITitle="@ui_hunteffect_title_Anatomy_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_damage_percent">
+          <LoRoll DamageIncreasePercentFloat="50" />
+          <HiRoll DamageIncreasePercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Bestial_Hierarchy">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Bestial_Hierarchy_1" UITitle="@ui_hunteffect_title_Bestial_Hierarchy_1" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_R1_Wait_ScarabSpawn">
+        <Data Quest="QN_HE_R1_Final" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Bestial_Hierarchy_2" UITitle="@ui_hunteffect_title_Bestial_Hierarchy_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Bestial_Hierarchy_3" UITitle="@ui_hunteffect_title_Bestial_Hierarchy_3" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B1_Interact_Nest" BossFilter="Hunt_SvriirAlpha,Sirkis">
+        <Data Quest="QN_HE_B1_SVRIIR_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B1_Interact_Nest_Fire" BossFilter="Hunt_Warbeast">
+        <Data Quest="QN_HE_B1_SVRIIF_Final" />
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Attrition">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Attrition_1" UITitle="@ui_hunteffect_title_Attrition_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="offensivespeed_final_percent">
+          <LoRoll CharacteristicFinalPercentFloat="-10" />
+          <HiRoll CharacteristicFinalPercentFloat="-10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Attrition_2" UITitle="@ui_hunteffect_title_Attrition_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="offensivespeed_final_percent">
+          <LoRoll CharacteristicFinalPercentFloat="-10" />
+          <HiRoll CharacteristicFinalPercentFloat="-10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Attrition_3" UITitle="@ui_hunteffect_title_Attrition_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="movespeed">
+          <LoRoll SpeedPercentInt="-10" />
+          <HiRoll SpeedPercentInt="-10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Attrition_4" UITitle="@ui_hunteffect_title_Attrition_4" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="movespeed">
+          <LoRoll SpeedPercentInt="-10" />
+          <HiRoll SpeedPercentInt="-10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="4" UILore="@ui_hunteffect_desc_Attrition_5" UITitle="@ui_hunteffect_title_Attrition_5" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="movespeed">
+          <LoRoll SpeedPercentInt="-10" />
+          <HiRoll SpeedPercentInt="-10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="5" UILore="@ui_hunteffect_desc_Attrition_6" UITitle="@ui_hunteffect_title_Attrition_6" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="offensivespeed_final_percent">
+          <LoRoll CharacteristicFinalPercentFloat="-10" />
+          <HiRoll CharacteristicFinalPercentFloat="-10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_11">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_11" UITitle="@ui_hunteffect_title_Beasts_11" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="material_damage_percent">
+          <LoRoll DamagePercentInt="50" />
+          <HiRoll DamagePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_12">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_12" UITitle="@ui_hunteffect_title_Beasts_12" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_SvriirAlpha">
+        <MagicEffect Name="damage_percent_as_toxic">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_Warbeast,Sirkis">
+        <MagicEffect Name="damage_percent_as_fire">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_13">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_13" UITitle="@ui_hunteffect_title_Beasts_13" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_SvriirAlpha">
+        <MagicEffect Name="chance_poison_on_hit">
+          <LoRoll ChancePercentInt="50" />
+          <HiRoll ChancePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_Warbeast,Sirkis">
+        <MagicEffect Name="chance_burn_on_hit">
+          <LoRoll ChancePercentInt="50" />
+          <HiRoll ChancePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_14">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_14" UITitle="@ui_hunteffect_title_Beasts_14" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B3_Bloodthirst_CatchTheBuffScarab" BossFilter="Hunt_SvriirAlpha,Sirkis">
+        <Data Quest="QN_HE_B3_SVRIIR_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B3_Bloodthirst_CatchTheBuffScarab" BossFilter="Hunt_Warbeast">
+        <Data Quest="QN_HE_B3_SVRIIRF_Final" />
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_15">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_15" UITitle="@ui_hunteffect_title_Beasts_15" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B1_Interact_Nest" BossFilter="Hunt_SvriirAlpha,Sirkis">
+        <Data Quest="QN_HE_B1_SVRIIR_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B1_Interact_Nest_Fire" BossFilter="Hunt_Warbeast">
+        <Data Quest="QN_HE_B1_SVRIIF_Final" />
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_16">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_16" UITitle="@ui_hunteffect_title_Beasts_16" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B2_Wait_TameBeast" BossFilter="Hunt_SvriirAlpha,Sirkis">
+        <Data Quest="QN_HE_B2_SVRIIR_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B2_Wait_TameBeast" BossFilter="Hunt_Warbeast">
+        <Data Quest="QN_HE_B2_SVRIIRF_Final" />
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_17">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_17" UITitle="@ui_hunteffect_title_Beasts_17" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_18">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_18" UITitle="@ui_hunteffect_title_Beasts_18" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_SvriirAlpha,Sirkis">
+        <Data BossModfier="AI_Hunt_BossMod_Spitters" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Warbeast">
+        <Data BossModfier="AI_Hunt_BossMod_Trappers" />
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_19">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_19" UITitle="@ui_hunteffect_title_Beasts_19" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_SvriirAlpha,Sirkis">
+        <Data BossModfier="AI_Hunt_BossModifier_PoisonFromSky" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Warbeast">
+        <Data BossModfier="AI_Hunt_BossModifier_FireHomingProjectile" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="50" />
+          <HiRoll ResourcePercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_20">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_20" UITitle="@ui_hunteffect_title_Beasts_20" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_SvriirAlpha,Sirkis">
+        <Data BossModfier="AI_Hunt_BossModifier_RandomPoisonDZ" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Warbeast">
+        <Data BossModfier="AI_Hunt_BossModifier_BurnArea_Permanent" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="50" />
+          <HiRoll ResourcePercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Chamaleon_A1">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Chamaleon_1" UITitle="@ui_hunteffect_title_Chamaleon_1" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C5_Kill_HuntingChallengers">
+        <Data Quest="QN_HE_STORYA1_SP_C5_OTWF_Final" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Chamaleon_2" UITitle="@ui_hunteffect_title_Chamaleon_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.25" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Chamaleon_3" UITitle="@ui_hunteffect_title_Chamaleon_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="AI_Hunt_BossMod_SlowStart" />
+      </Entry>
+      <Entry Type="HuntCurrency" UILoc="@ui_HuntReward_Currency_Multiplicative" Mode="Endgame">
+        <Data Mode="Multiplicative" Value="1.5" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind" Mode="Campaign">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_14_A1">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_14" UITitle="@ui_hunteffect_title_Beasts_14" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B3_Bloodthirst_CatchTheBuffScarab">
+        <Data Quest="QN_HE_STORYA1_SL_B3_SVRIIR_Final" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Beasts_15_A1">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Beasts_15" UITitle="@ui_hunteffect_title_Beasts_15" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_B1_Interact_Nest">
+        <Data Quest="QN_HE_STORYA1_SL_B1_SVRIIR_Final" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+</MetaData>

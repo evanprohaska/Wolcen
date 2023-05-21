@@ -1,0 +1,42 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_MovingShadows_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <Curse Chance="100" ChanceMode="override" Duration="10" DurationMode="override" Stacks="5" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_BossModifier_MovingShadowDZ_Impact" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="BossModifier_MovingShadows_DZ" />
+    </Shapes>
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_VFX_Oskar.Bossmodifiers.ShadowBacknForth_Cast" Offset="0,0,0" Direction="1,0,0" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.Bossmodifiers.ShadowBacknForth_Projectile" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.shadow_back_forth.ShadowBacknForth_Fade" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="2" RandomBaseDistMax="2" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="7.5" MaxLinearSpeed="-7.5" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1" NumberOfDZ="3" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_Hunt_BossModifier_MovingShadows_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <Curse Chance="100" ChanceMode="override" Duration="10" DurationMode="override" Stacks="5" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_BossModifier_MovingShadowDZ_Impact" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="BossModifier_MovingShadows_DZ" />
+    </Shapes>
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_VFX_Oskar.Bossmodifiers.ShadowBacknForth_Cast" Offset="0,0,0" Direction="1,0,0" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.Bossmodifiers.ShadowBacknForth_Projectile" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.shadow_back_forth.ShadowBacknForth_Fade" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="2" RandomBaseDistMax="2" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="7.5" MaxLinearSpeed="-7.5" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1" NumberOfDZ="3" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

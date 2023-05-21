@@ -1,0 +1,51 @@
+<MetaData>
+  <Spawner Name="CorruptionEgg_trash">
+    <Animation InitAnimation="eggs_spawner_birth" GrowthAnimation="Default" DeathAnimation="eggs_spawner_death" SpawnAnimation="eggs_spawner_spawn" MaxScale="1.0" />
+    <Effects InitVFX="U_Corruption.Egg.birth_activation_static" GrowthVFX="U_Corruption.Egg.growth" DeathVFX="U_Corruption.Egg.destroy" SpawnVFX="U_Corruption.Egg.destroy" OnHitVFX="U_Corruption.Egg.hit" />
+    <Spawn Class="corruption_trash_generic" RadiusMin="0.0" RadiusMax="0.0" />
+    <Physics OverrideModel="objects/architecture/corruption/corruption_eggs_spawner.cga" Mass="0" Density="0" Physicalize="1" Pushable="0" />
+    <Gameplay Destroyable="1" MaxHealth="40" GrowthDuration="4" ActivationRadius="30" />
+  </Spawner>
+  <Spawner Name="CorruptionEgg_warrior">
+    <Animation InitAnimation="eggs_spawner_birth" GrowthAnimation="Default" DeathAnimation="eggs_spawner_death" SpawnAnimation="eggs_spawner_spawn" MaxScale="1.2" />
+    <Effects InitVFX="U_Corruption.Egg.birth_activation_static" GrowthVFX="U_Corruption.Egg.growth" DeathVFX="U_Corruption.Egg.destroy" SpawnVFX="U_Corruption.Egg.destroy" OnHitVFX="U_Corruption.Egg.hit" />
+    <Spawn Class="corruption_warrior_generic" RadiusMin="0.0" RadiusMax="0.0" />
+    <Physics OverrideModel="objects/architecture/corruption/corruption_eggs_spawner.cga" Mass="0" Density="0" Physicalize="1" Pushable="0" />
+    <Gameplay Destroyable="1" MaxHealth="40" GrowthDuration="5" ActivationRadius="30" />
+  </Spawner>
+  <Spawner Name="CorruptionEgg_elite">
+    <Animation InitAnimation="eggs_spawner_birth" GrowthAnimation="Default" DeathAnimation="eggs_spawner_death" SpawnAnimation="eggs_spawner_spawn" MaxScale="1.5" />
+    <Effects InitVFX="U_Corruption.Egg.birth_activation_static" GrowthVFX="U_Corruption.Egg.growth_big" DeathVFX="U_Corruption.Egg.destroy_big" SpawnVFX="U_Corruption.Egg.destroy_big" OnHitVFX="U_Corruption.Egg.hit" />
+    <Spawn Class="corrupted_juggernaut" RadiusMin="0.0" RadiusMax="0.0" />
+    <Physics OverrideModel="objects/architecture/corruption/corruption_eggs_spawner.cga" Mass="0" Density="0" Physicalize="1" Pushable="0" />
+    <Gameplay Destroyable="1" MaxHealth="50" GrowthDuration="7" ActivationRadius="30" />
+  </Spawner>
+  <Spawner Name="CorruptionEgg_larva">
+    <Animation InitAnimation="eggs_spawner_birth" GrowthAnimation="Default" DeathAnimation="eggs_spawner_death" SpawnAnimation="eggs_spawner_spawn" MaxScale="1.7" />
+    <Effects InitVFX="U_Corruption.Egg.birth_activation_static" GrowthVFX="U_Corruption.Egg.growth_big" DeathVFX="U_Corruption.Egg.destroy_big" SpawnVFX="U_Corruption.Egg.destroy_big" OnHitVFX="U_Corruption.Egg.hit" />
+    <Spawn Class="corrupted_larva" RadiusMin="0.0" RadiusMax="0.0" />
+    <Physics OverrideModel="objects/architecture/corruption/corruption_eggs_spawner.cga" Mass="0" Density="0" Physicalize="1" Pushable="0" />
+    <Gameplay Destroyable="1" MaxHealth="60" GrowthDuration="8" ActivationRadius="30" />
+  </Spawner>
+  <Spawner Name="CorruptionEgg_Arena_trash">
+    <Animation InitAnimation="eggs_spawner_birth" GrowthAnimation="Default" DeathAnimation="eggs_spawner_death" SpawnAnimation="eggs_spawner_spawn" MaxScale="1.0" />
+    <Effects InitVFX="U_Corruption.Egg.birth_activation_static" GrowthVFX="U_Corruption.Egg.growth" DeathVFX="U_Corruption.Egg.destroy" SpawnVFX="U_Corruption.Egg.destroy" OnHitVFX="U_Corruption.Egg.hit" />
+    <Spawn Class="corruption_trash_generic" RadiusMin="0.0" RadiusMax="0.0" />
+    <Physics OverrideModel="objects/architecture/corruption/corruption_eggs_spawner.cga" Mass="0" Density="0" Physicalize="1" Pushable="0" />
+    <Gameplay Destroyable="0" MaxHealth="1" GrowthDuration="1" ActivationRadius="30" />
+  </Spawner>
+  <Spawner Name="CorruptionEgg_Arena_elite">
+    <Animation InitAnimation="eggs_spawner_birth" GrowthAnimation="Default" DeathAnimation="eggs_spawner_death" SpawnAnimation="eggs_spawner_spawn" MaxScale="1.3" />
+    <Effects InitVFX="U_Corruption.Egg.birth_activation_static" GrowthVFX="U_Corruption.Egg.growth_big" DeathVFX="U_Corruption.Egg.destroy_big" SpawnVFX="U_Corruption.Egg.destroy_big" OnHitVFX="U_Corruption.Egg.hit" />
+    <Spawn Class="corrupted_juggernaut" RadiusMin="0.0" RadiusMax="0.0" />
+    <Physics OverrideModel="objects/architecture/corruption/corruption_eggs_spawner.cga" Mass="0" Density="0" Physicalize="1" Pushable="0" />
+    <Gameplay Destroyable="0" MaxHealth="1" GrowthDuration="2" ActivationRadius="30" />
+  </Spawner>
+  <Spawner Name="CorruptionEgg_Arena_larva">
+    <Animation InitAnimation="eggs_spawner_birth" GrowthAnimation="Default" DeathAnimation="eggs_spawner_death" SpawnAnimation="eggs_spawner_spawn" MaxScale="1.5" />
+    <Effects InitVFX="U_Corruption.Egg.birth_activation_static" GrowthVFX="U_Corruption.Egg.growth_big" DeathVFX="U_Corruption.Egg.destroy_big" SpawnVFX="U_Corruption.Egg.destroy_big" OnHitVFX="U_Corruption.Egg.hit" />
+    <Spawn Class="corrupted_larva" RadiusMin="0.0" RadiusMax="0.0" />
+    <Physics OverrideModel="objects/architecture/corruption/corruption_eggs_spawner.cga" Mass="0" Density="0" Physicalize="1" Pushable="0" />
+    <Gameplay Destroyable="0" MaxHealth="1" GrowthDuration="1.5" ActivationRadius="30" />
+  </Spawner>
+</MetaData>

@@ -1,0 +1,57 @@
+<MetaData>
+  <Skill UID="AI_outlaw_warlord_axethrow" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" CanBeInterrupted="0" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTargetingHalfAngle="25" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="3.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_warlord_axe_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <Targeting TargetingType="target" TargetPositionOffset="0,2,0" />
+    <Collisions IgnoreEntityCollisions="0" IgnoreTerrainCollisions="1" />
+    <Range ProjectileMinDistance="4" AttackRange="15" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+  </Skill>
+  <Skill UID="AI_hunt_warlord_axethrow_1" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" CanBeInterrupted="0" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTargetingHalfAngle="25" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1" />
+    <StatusAilment>
+      <bleed Chance="100" ChanceMode="override" Duration="10" DurationMode="override" Stacks="2" StacksMode="addtobase" />
+    </StatusAilment>
+    <Cooldown Cooldown="1.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_warlord_axe_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <Targeting TargetingType="target" TargetPositionOffset="0,2,0" />
+    <Collisions IgnoreEntityCollisions="0" IgnoreTerrainCollisions="1" />
+    <Range ProjectileMinDistance="4" AttackRange="15" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+  </Skill>
+  <Skill UID="AI_hunt_warlord_axethrow_2" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" CanBeInterrupted="0" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTargetingHalfAngle="25" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="3.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_warlord_axe_proj" ProjectileCount="5" PenetrationLimit="999" AngleBetweenProjectiles="20" />
+    <Targeting TargetingType="target" TargetPositionOffset="0,2,0" />
+    <Collisions IgnoreEntityCollisions="0" IgnoreTerrainCollisions="1" />
+    <Range ProjectileMinDistance="4" AttackRange="15" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+  </Skill>
+  <Skill UID="AI_ShadowOutlaw_warlord_axethrow" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" CanBeInterrupted="0" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTargetingHalfAngle="25" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="1" />
+    <Cooldown Cooldown="3.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_warlord_axe_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <Targeting TargetingType="target" TargetPositionOffset="0,2,0" />
+    <Collisions IgnoreEntityCollisions="0" IgnoreTerrainCollisions="1" />
+    <Range ProjectileMinDistance="4" AttackRange="15" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+  </Skill>
+</MetaData>

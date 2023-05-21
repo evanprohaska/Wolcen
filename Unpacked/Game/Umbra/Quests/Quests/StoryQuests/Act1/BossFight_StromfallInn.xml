@@ -1,0 +1,31 @@
+<MetaData>
+  <Quest Name="Quest_StormfallInnFight" StartDialog="" Type="BossFight" UIName="@ui_A1_Q3_EventQuestLabel1" UIDesc="@">
+    <Step Order="0" UIName="@ui_A1_Q3_S2_UpdateStepNameLabel2" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Talk" EntityName="EfraimFaarad" DialogName="ACT1_Q3_SF_InnEvent_1">
+        <ArrowMarker ShowMinimapIcon="1" Target="EfraimFaarad" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2.5" Area="ACT1_Tavern" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_Inn" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" TimeLimit="1.5">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_Inn" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" Target="RepublicAssassin" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="ACT1_Tavern" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_Inn" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="EfraimFaarad" Type="EntityIsHidden" Delay="0.5" Name="SF_Reveal_Assassin" EntityNames="Q_NPC_SF_RepublicanAlastor" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="1" Delay="0.1" Name="PlayerTP_toInn" TeleportedEntityName="#Player" DestinationName="SpawnPoint_from_stormfall_to_inn" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Delay="0.5" Name="SF_Hide_Assassin2" EntityNames="Q_NPC_SF_RepublicanAlastor" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ArenaStart" Name="A1_Q3_S2_StartArena" ArenaPreset="TavernAmbush_Act1" LocationEntityName="TavernAmbush_Act1" EntityToFollow="" />
+      <Event Trigger="EventEnd" EventName="SF_AlastorDeadTalk" Type="GoalAchieve" GoalIndexToAchieve="2" Name="A1_Q3_S2_Arena_Victory" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Delay="1" Name="SF_TalkToInnkeeper3" DialogName="ACT1_Q3_SF_InnEvent_3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="RepublicAssassin" PercentLeft="35" Type="GlobalDialog" Delay="1" Name="SF_TalkToInnkeeper4" DialogName="ACT1_Q3_SF_InnEvent_4" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A1_Q3_S2_StepUpdate2" Localization="@ui_A1_Q3_S2_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="A1_Q3_S2_StartArena" Type="GlobalDialog" Name="SF_AlastorDeadTalk" DialogName="ACT1_Q3_SF_PlayerComment3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalMusic" Name="StormfallInn_StartMusic" MusicName="ACT1_Stormfall_InnAmbush" />
+      <Event Trigger="GoalEnd" GoalIndex="2" Type="GlobalMusic" Name="StormfallInn_StopMusic" MusicName="Stormfall_Inn" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A1_Q3_EventQuestLabel1" DisplayTime="3" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="A1_Q3_S2_StartArena" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+</MetaData>

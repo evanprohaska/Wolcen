@@ -1,0 +1,61 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_SvriirLair" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="LuckyDungeon" PriorityTag="LotOfLoot" ExcludeTag="Room,MMGoblin,Named,NoMonster,BossArea" Weight="8" />
+      <Archetype Tag="ChestRoom" PriorityTag="EpicFixedLoot,Room,NoMonster" ExcludeTag="KillCP,KillTarget,CursedChestRoom" Weight="4" />
+      <Archetype Tag="GoblinDungeon" PriorityTag="MMGoblin,SmallArea,NormalLoot" ExcludeTag="NoMonster,Room,KillCP,KillTarget,MediumArea,BossArea" Weight="4" />
+      <Archetype Tag="KillOneNamed" PriorityTag="KillTarget,OneGoal,NormalLoot,BossArea,Named" ExcludeTag="Room,MMGoblin,Hard,Medium" Weight="0.0000000000000000000000000001" />
+      <Archetype Tag="KillNumerousTarget" PriorityTag="KillTarget,NumerousGoal,MediumArea,NormalLoot" ExcludeTag="Room,MMGoblin,BossArea,Hard,Medium" Weight="20" />
+      <Archetype Tag="KillCP" PriorityTag="KillCP,NormalLoot" ExcludeTag="Room,MMGoblin,NoMonster,BossArea,MediumArea" Weight="20" />
+      <Archetype Tag="NoQuestEODReward" PriorityTag="EODReward" ExcludeTag="KillCP,KillTarget,MediumArea,Room,NoMonster,MMGoblin,BossArea" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="Cave_Room_CG" Tag="Room,Cave" PriorityTag="Cave" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Cave_VerySmallDungeon_CG" Tag="Cave,VerySmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="NumerousGoal,FewGoal,OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_SmallDungeon_CG" Tag="Cave,SmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="NumerousGoal,OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_MediumDungeon_CG" Tag="Cave,MediumArea,ClassicArea" PriorityTag="Cave" ExcludeTag="OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Foggy_Room_CG" Tag="Room,Cave" PriorityTag="Cave" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Cave_Foggy_VerySmallDungeon_CG" Tag="Cave,VerySmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="NumerousGoal,FewGoal,OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Foggy_SmallDungeon_CG" Tag="Cave,SmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="NumerousGoal,OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Foggy_MediumDungeon_CG" Tag="Cave,MediumArea,ClassicArea" PriorityTag="Cave" ExcludeTag="OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Room_CG" Tag="Room,Mine" PriorityTag="Mine" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Mine_VerySmallDungeon_CG" Tag="Mine,VerySmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,FewGoal,OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_SmallDungeon_CG" Tag="Mine,SmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_MediumDungeon_CG" Tag="Mine,MediumArea,ClassicArea" PriorityTag="Mine" ExcludeTag="OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_Room_CG" Tag="Room,Mine" PriorityTag="Mine" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Mine_Foggy_VerySmallDungeon_CG" Tag="Mine,VerySmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,FewGoal,OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_SmallDungeon_CG" Tag="Mine,SmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_MediumDungeon_CG" Tag="Mine,MediumArea,ClassicArea" PriorityTag="Mine" ExcludeTag="OUTW,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="SoulCave_BossArea_CG" Tag="SoulCave,SmallArea,BossArea" PriorityTag="SoulCave,COSS" ExcludeTag="NumerousGoal,FewGoal" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_SvriirLair_KillTarget_SVRI_Spawner_4" Tag="KillTarget,NumerousGoal,SVRI" PriorityTag="KillTarget,SVRI,EMQuest" ExcludeTag="Hard,Medium" />
+      <Quest QuestName="QN_SC_SvriirLair_KillTarget_COSS_NamedHalfbreed" Tag="KillTarget,OneGoal,COSS,Named" PriorityTag="KillTarget,COSS,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_SvriirLair_KillCP_1" Tag="KillCP,WILD" PriorityTag="WILD,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_SvriirLair_KillCP_1" Tag="KillCP,SVRI" PriorityTag="SVRI,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_SvriirLair_KillCP_1" Tag="KillCP,COSS" PriorityTag="COSS,EMQuest" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FS_Mammals" Tag="Easy,WILD,Mammals,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FS_Insects" Tag="Easy,WILD,insect,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FS_SVRI_Easy1" Tag="Easy,SVRI,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FS_SoulTremor" Tag="Easy,COSS,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FS_SVRI_Medium1" Tag="Medium,LotOfMonster,SVRI" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FS_Mammals_Goblin" Tag="MMGoblin,Easy,WILD,Mammals,LotOfMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Cave,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Mine,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_SvriirLair_Cave_ChestRoom" Tag="Cave,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_SvriirLair_Mine_ChestRoom" Tag="Mine,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_SvriirLair_Cave_BigLoot" Tag="Cave,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_SvriirLair_Mine_BigLoot" Tag="Mine,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_SvriirLair_Cave_EODReward" Tag="Cave,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_SvriirLair_Mine_EODReward" Tag="Mine,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_SvriirsNetwork_NormalLoot" Tag="SoulCave,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_SvriirLair_Cave" Tag="Cave,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_SvriirLair_Mine" Tag="Mine,NormalLoot" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

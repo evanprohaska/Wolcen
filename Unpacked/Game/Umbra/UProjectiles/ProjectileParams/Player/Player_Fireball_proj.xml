@@ -1,0 +1,307 @@
+<MetaData>
+  <Projectile ID="player_fireball_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Fire.FireBall_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Fire.FireBall_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="0.7" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Cast" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact" />
+      <Removed SoundTriggerName="Play_Skill_Fireball_Impact_Fadeout" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_big" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.4,1.4,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Fire.FireBall_01" Direction="0,1,0" WorldSpace="0" Scale="1.4" />
+      <Hit ParticleName="U_Projectile.Fire.FireBall_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="1.43" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Cast" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact" />
+      <Removed SoundTriggerName="Play_Skill_Fireball_Impact_Fadeout" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_pierce" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Fire.FireBall_Pierce_01" Scale=".625" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="9" SpeedMax="9" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Moltern_Cast_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact_Sml_Fire" />
+      <Removed SoundTriggerName="Stop_Skill_Fireball_Moltern_Cast_Loop" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_big_pierce" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.4,1.4,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Fire.FireBall_Pierce_01_Big" Scale=".777" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="9" SpeedMax="9" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Moltern_Cast_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact_Sml_Fire" />
+      <Removed SoundTriggerName="Stop_Skill_Fireball_Moltern_Cast_Loop" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_lightning" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Lightning.Lightning_Ball_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Lightning.Lightning_Ball_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="0.7" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Lightning_Orb_Cast" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Lightning_Orb_Impact_Sml" />
+      <Removed SoundTriggerName="Play_Skill_Fireball_Impact_Fadeout" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_big_lightning" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.4,1.4,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Lightning.Lightning_Ball_01" Direction="0,1,0" WorldSpace="0" Scale="1.4" />
+      <Hit ParticleName="U_Projectile.Lightning.Lightning_Ball_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="1.43" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Lightning_Orb_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Lightning_Orb_Impact_Sml" />
+      <Removed SoundTriggerName="Stop_SKill_Fireball_Lightning_Orb_Loop" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_pierce_lightning" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Lightning.Lightning_Ball_pierce_01" Scale=".625" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="9" SpeedMax="9" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Lightning_Orb_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Lightning_Orb_Impact_Sml" />
+      <Removed SoundTriggerName="Stop_SKill_Fireball_Lightning_Orb_Loop" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_big_pierce_lightning" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.4,1.4,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Lightning.Lightning_Ball_pierce_01_Big" Scale=".777" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="9" SpeedMax="9" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Lightning_Orb_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Lightning_Orb_Impact_Sml" />
+      <Removed SoundTriggerName="Stop_SKill_Fireball_Lightning_Orb_Loop" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_poison" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Poison.Poison_Ball_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Poison.Poison_Ball_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="0.7" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Cast_Toxic" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact_Toxic" />
+      <Removed SoundTriggerName="Play_Skill_Fireball_Impact_Fadeout" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_big_poison" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.4,1.4,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Poison.Poison_Ball_01" Direction="0,1,0" WorldSpace="0" Scale="1.4" />
+      <Hit ParticleName="U_Projectile.Poison.Poison_Ball_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="1.43" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Moltern_Cast_Toxic_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact_Sml_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_Fireball_Moltern_Cast_Toxic_Loop" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_pierce_poison" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Poison.Poison_Ball_pierce_01" Scale=".625" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="9" SpeedMax="9" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Cast_Toxic" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact_Toxic" />
+      <Removed SoundTriggerName="Play_Skill_Fireball_Impact_Fadeout" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_big_pierce_poison" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.4,1.4,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Poison.Poison_Ball_pierce_01_Big" Scale=".777" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="9" SpeedMax="9" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Moltern_Cast_Toxic_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact_Sml_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_Fireball_Moltern_Cast_Toxic_Loop" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_shadow" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Shadow.Shadow_Ball_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Shadow.Shadow_Ball_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="0.7" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Cast_Shadow" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact_Shadow" />
+      <Removed SoundTriggerName="Play_Skill_Fireball_Impact_Fadeout" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_big_shadow" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.4,1.4,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Shadow.Shadow_Ball_01" Direction="0,1,0" WorldSpace="0" Scale="1.4" />
+      <Hit ParticleName="U_Projectile.Shadow.Shadow_Ball_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="1.43" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Moltern_Cast_Shadow_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact_Sml_Shadow" />
+      <Removed SoundTriggerName="Stop_Skill_Fireball_Moltern_Cast_Shadow_Loop" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_pierce_shadow" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Shadow.Shadow_Ball_pierce_01" Scale=".625" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="9" SpeedMax="9" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Cast_Shadow" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact_Shadow" />
+      <Removed SoundTriggerName="Play_Skill_Fireball_Impact_Fadeout" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="player_fireball_proj_big_pierce_shadow" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.4,1.4,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_Projectile.Shadow.Shadow_Ball_pierce_01_Big" Scale=".777" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="9" SpeedMax="9" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Fireball_Moltern_Cast_Shadow_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Fireball_Impact_Sml_Shadow" />
+      <Removed SoundTriggerName="Stop_Skill_Fireball_Moltern_Cast_Shadow_Loop" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+</MetaData>

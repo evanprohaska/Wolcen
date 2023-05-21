@@ -1,0 +1,16 @@
+<MetaData>
+  <Skill UID="MapModifier_Curse_BloodRain" ESkill="MapModifier_Curse_BloodRain" Keywords="magic_spell">
+    <DamageBase Max="3000" Min="3000" Type="rend" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="Curses_And_Blessings.Curses.BloodRainIndicator" Offset="0,0,0" Direction="1,0,0" />
+      <Particle Key="DamageZone" Name="Curses_And_Blessings.Curses.BloodrainAoE" Offset="0,0,0" Direction="0,0,1" TimeScale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Blood_Rain_Shape" />
+    </Shapes>
+    <SkillSpecific AnticipationTime="1" TimeBetweenProjectiles="2" NumberOfProjectiles="2" Cooldown="6" />
+    <DamageZone RateOfFire="2" Duration="5" />
+    <SoundTrigger OnAnimStart="Play_Curse_BloodRain_Indicator" OnAnimEnd="Play_Curse_BloodRain_Impact" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,23 @@
+<MetaData>
+  <Skill UID="AI_RepublicJusticar02_FocusedShot" ESkill="default_ranged" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="2" />
+    <Cooldown Cooldown="4.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01_Cannons" CanBeInterrupted="0" />
+    <Range AttackRange="9" />
+    <Projectile Name="Justicar_focusedshot_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <Explosion ExplosionRadius="4" />
+    <Blownaway Chance="100" Height="1" Distance="3" StunDuration="0.0" />
+    <ParticleList>
+      <Particle Key="physical" Name="U_Monster.Justica.Muzzle_Fire_01" Offset="0,1,0.5" Direction="0,1,0" Scale="1.75" />
+    </ParticleList>
+    <SkillSpecific ComputeTargetPosAtCast="1" UseWeaponDirInsteadOfTargetDir="1" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="0" In="2" />
+      <EmissiveIntensity From="30" To="45" In="1" />
+      <EmissiveIntensity From="50" To="origin" In="1.5" />
+    </Material>
+    <SoundTrigger OnAnimStart="Play_Edric_Justicar2_FocusedShot_Charge" OnAnimCast="Play_Edric_Justicar2_FocusedShot_Launch" />
+  </Skill>
+</MetaData>

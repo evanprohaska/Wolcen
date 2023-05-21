@@ -1,0 +1,23 @@
+<MetaData>
+  <Quest Name="HL_M2_Secondary" UIName="@ui_C1_M2_Secondary_QuestLabel" UIDesc="" Type="Adventure" StartDialog="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_C1_M2_SecondaryStepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Kill" ClassToKill="Hunt_FleshCultist02" KillCount="4">
+        <ArrowMarker Target="Cultist01" Area="" ShowMinimapIcon="0" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" ShowArrow="0" />
+        <ArrowMarker Target="Cultist02" Area="" ShowMinimapIcon="0" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" ShowArrow="0" />
+        <ArrowMarker Target="Cultist03" Area="" ShowMinimapIcon="0" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" ShowArrow="0" />
+        <ArrowMarker Target="Cultist04" Area="" ShowMinimapIcon="0" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" ShowArrow="0" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+        <XP Amount="4500" />
+        <ChoiceLootClass Name="Hunt_Q2_Secondary" MinItemNumber="6" MaxItemNumber="6" SortByRarity="1" />
+      </Reward>
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_EG_GoToSF" AreaRadius="60" Type="QuestFail" Name="FailStateSecondaryQuest2_InSF" QuestName="HL_M2_Secondary" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_M2_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_C1_M2_Secondary_QuestLabel" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="C1_M2_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="@ui_C1_M2_Secondary_QuestLabel" DisplayTime="2" />
+      <Event Trigger="PlayerWipe" Type="QuestFail" Name="FailStateSecondaryQuest2" QuestName="HL_C2_Secondary" />
+    </Step>
+  </Quest>
+</MetaData>

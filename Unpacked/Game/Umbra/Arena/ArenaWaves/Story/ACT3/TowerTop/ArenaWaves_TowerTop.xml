@@ -1,0 +1,27 @@
+<MetaData>
+  <ArenaWaves Name="ArenaWaves_TowerTop">
+    <Wave Type="killcount" TargetKillCount="24" Tag="1">
+      <PrefabParams PrefabName="arena_TowerTop" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent" TargetSpawnLocationID="101" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent" TargetSpawnLocationID="102" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent" TargetSpawnLocationID="103" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent_Prespawn" TargetSpawnLocationID="201" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent_Prespawn" TargetSpawnLocationID="202" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent_Prespawn" TargetSpawnLocationID="203" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxNumberOfSpawnedEntities="2" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxNumberOfSpawnedEntities="2" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="5.5" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxNumberOfSpawnedEntities="2" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxNumberOfSpawnedEntities="2" TargetSpawnLocationID="6" />
+        <Spawner DelayBeforeFirstSpawn="6.5" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxNumberOfSpawnedEntities="2" TargetSpawnLocationID="7" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticMelee_TowerEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxNumberOfSpawnedEntities="2" TargetSpawnLocationID="8" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Instigator_TowerEvent" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Instigator_TowerEvent" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Instigator_TowerEvent" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Instigator_TowerEvent" TargetSpawnLocationID="6" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Instigator_TowerEvent" TargetSpawnLocationID="7" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Instigator_TowerEvent" TargetSpawnLocationID="8" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

@@ -1,0 +1,216 @@
+<MetaData>
+  <Spell Name="BossModifier_Fast">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="1">
+        <Semantics SpeedPercentInt="35" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_Tough">
+    <MagicEffects>
+      <EIM Name="health_percent" Permanent="1">
+        <Semantics HealthPercentInt="30" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_Unstoppable">
+    <MagicEffects>
+      <EIM Name="cc_immunity" Permanent="1">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_Unstoppable_breakbar">
+    <MagicEffects>
+      <EIM Name="breakbar_percent" Permanent="1">
+        <Semantics ArmorPercentFloat="100" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_FireImbued">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_fire" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+      <EIM Name="chance_burn_on_hit" Permanent="1">
+        <Semantics ChancePercentInt="100" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_FrostImbued">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_frost" Permanent="1">
+        <Semantics DamagePercentInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_LightningImbued">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_lightning" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+      <EIM Name="chance_shock_on_hit" Permanent="1">
+        <Semantics ChancePercentInt="100" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_PhysicalImbued">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_physical" Permanent="1">
+        <Semantics DamagePercentInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_RendImbued">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_rend" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+      <EIM Name="chance_bleed_on_hit" Permanent="1">
+        <Semantics ChancePercentInt="100" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_SacredImbued">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_sacred" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+      <EIM Name="chance_weakness_on_hit" Permanent="1">
+        <Semantics ChancePercentInt="100" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_ShadowImbued">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_shadow" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+      <EIM Name="chance_curse_on_hit" Permanent="1">
+        <Semantics ChancePercentInt="100" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_ToxicImbued">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_toxic" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+      <EIM Name="chance_poison_on_hit" Permanent="1">
+        <Semantics ChancePercentInt="100" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_AetherImbued">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_umbra" Permanent="1">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+      <EIM Name="chance_stasis_on_hit" Permanent="1">
+        <Semantics ChancePercentInt="100" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_MultipleProjectiles">
+    <MagicEffects>
+      <EIM Name="additional_projectile" Permanent="1">
+        <Semantics ProjectileCountInt="1" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_Regeneration">
+    <MagicEffects>
+      <EIM Name="health_regen_percent" Permanent="1">
+        <Semantics ResourcePercentFloat="50" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_Powerful">
+    <MagicEffects>
+      <EIM Name="damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_ElementalShield">
+    <MagicEffects>
+      <EIM Name="elemental_protection" Permanent="1">
+        <Semantics ProtectionAsPercentOfMaxHealthFloat="20" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_MaterialShield">
+    <MagicEffects>
+      <EIM Name="material_protection" Permanent="1">
+        <Semantics ProtectionAsPercentOfMaxHealthFloat="20" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_OccultShield">
+    <MagicEffects>
+      <EIM Name="occult_protection" Permanent="1">
+        <Semantics ProtectionAsPercentOfMaxHealthFloat="20" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_GreedAltar_Stronger01">
+    <MagicEffects>
+      <EIM Name="health_percent" Permanent="1">
+        <Semantics HealthPercentInt="75" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="35" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_GreedAltar_Stronger02">
+    <MagicEffects>
+      <EIM Name="health_percent" Permanent="1">
+        <Semantics HealthPercentInt="75" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="35" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_GreedAltar_Stronger03">
+    <MagicEffects>
+      <EIM Name="health_percent" Permanent="1">
+        <Semantics HealthPercentInt="75" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="35" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_GreedAltar_Stronger04">
+    <MagicEffects>
+      <EIM Name="health_percent" Permanent="1">
+        <Semantics HealthPercentInt="75" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="35" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_GreedAltar_Stronger05">
+    <MagicEffects>
+      <EIM Name="health_percent" Permanent="1">
+        <Semantics HealthPercentInt="75" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="35" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="BossModifier_Strong">
+    <MagicEffects>
+      <EIM Name="health_percent" Permanent="1">
+        <Semantics HealthPercentInt="200" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1">
+        <Semantics DamagePercentInt="100" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

@@ -1,0 +1,125 @@
+<MetaData>
+  <ArenaWaves Name="ArenaWaves_WM_E_SVRIWC_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWC_CaveMiniSpitter" NumberOfEntitiesPerSpawn="12" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="16" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWC_WildSnakeCave" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWC_WildHornet" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWC_Morgon" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWC_CaveBetaScreecher" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="42" TargetSpawnClass="Sc_WM_E_SWC_CaveMiniSpitter" NumberOfEntitiesPerSpawn="14" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="20" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWC_WildSnakeCave" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWC_WildHornet" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_E_SWC_Morgon" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWC_CaveBetaScreecher" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_SWC_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="36" TargetSpawnClass="Sc_WM_E_SWC_CaveMiniSpitter" NumberOfEntitiesPerSpawn="12" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="16" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWC_WildSnakeCave" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWC_WildHornet" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_E_SWC_Morgon" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWC_CaveBetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWC_CaveBetaSpitter" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_SWC_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_M_SVRIWC_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWC_CaveMiniSpitter" NumberOfEntitiesPerSpawn="12" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="16" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWC_WildSnakeCave" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWC_WildHornet" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWC_Morgon" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWC_CaveBetaScreecher" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="42" TargetSpawnClass="Sc_WM_M_SWC_CaveMiniSpitter" NumberOfEntitiesPerSpawn="14" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="20" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWC_WildSnakeCave" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWC_WildHornet" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_M_SWC_Morgon" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWC_CaveBetaScreecher" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_SWC_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="36" TargetSpawnClass="Sc_WM_M_SWC_CaveMiniSpitter" NumberOfEntitiesPerSpawn="12" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="16" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWC_WildSnakeCave" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWC_WildHornet" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_M_SWC_Morgon" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWC_CaveBetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWC_CaveBetaSpitter" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_SWC_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_H_SVRIWC_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWC_CaveMiniSpitter" NumberOfEntitiesPerSpawn="12" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="16" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWC_WildSnakeCave" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWC_WildHornet" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWC_Morgon" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWC_CaveBetaScreecher" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="42" TargetSpawnClass="Sc_WM_H_SWC_CaveMiniSpitter" NumberOfEntitiesPerSpawn="14" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="20" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWC_WildSnakeCave" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWC_WildHornet" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_H_SWC_Morgon" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWC_CaveBetaScreecher" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_SWC_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="36" TargetSpawnClass="Sc_WM_H_SWC_CaveMiniSpitter" NumberOfEntitiesPerSpawn="12" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="16" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWC_WildSnakeCave" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWC_WildHornet" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_H_SWC_Morgon" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWC_CaveBetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWC_CaveBetaSpitter" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_SWC_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

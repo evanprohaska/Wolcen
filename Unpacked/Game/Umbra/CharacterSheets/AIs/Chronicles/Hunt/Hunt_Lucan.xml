@@ -1,0 +1,90 @@
+<MetaData>
+  <BaseEntity ID="Hunt_Lucan" EntityName="republic_dragonrider" Scale="1" CanKillAllies="0" />
+  <Faction Name="Republic" />
+  <Keywords Value="repu,boss,elite,melee" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="1" CombatPointValueMultiplier="1" />
+  <Attributes Archetype="archetype_elite" HealthModifier="12" DamageModifier="1.5" XPModifier="1" Protection="" />
+  <Movement MovementSpeed="6" WalkSpeed="6" />
+  <InterruptionParams InterruptChance="0" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BreakBar MaxHealthPercent="25" CCEffectiveness="10" RegenerationDelay="15" ExtraDamagePercentWhileBroken="20" StunDuration="5" AlwaysImmune="1" />
+  <BlownAwayParams CanBeBlownAway="0" BlownAwayAnimationTag="" />
+  <DefaultBossModifiers />
+  <LootClass>
+    <Loot Class="LC_elite" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="OnHitLoot_Boss" />
+  <OnDeathLootPreset Name="OnDeathLoot_Boss" />
+  <Corpses PresetName="EliteCadaverPreset" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="360" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Generic" />
+    <BT FleeOnLowHealthChance="0.0" EngageRange="10.0" MeleeAttack="False" FallBack="True" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Reaction Enabled="true" Cooldown="5.0" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="None" />
+  </Kythera>
+  <Skills>
+    <Offensive>
+      <Skill Name="AI_Hunt_DragonRider_SpearBlast_Front" Orientated="Never" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="3" Preferred="7.0" Max="15.0" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_Hunt_DragonRider_ScorchedEarth" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="2.0">
+        <Range Min="0.0" Preferred="7.0" Max="10.0" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_DragonRider_DragonLeap" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.0" Preferred="10" Max="15" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_Hunt_DragonRider_DefaultMelee" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.0" Preferred="3" Max="4" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </Offensive>
+    <Approach>
+      <Skill Name="AI_DragonRider_DragonLeap" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.0" Preferred="10" Max="15" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </Approach>
+    <Other>
+      <Skill Name="AI_Hunt_DragonRider_SpearBlast_Left" Orientated="Never" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="3" Preferred="7.0" Max="15.0" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_Hunt_DragonRider_SpearBlast_Right" Orientated="Never" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="3" Preferred="7.0" Max="15.0" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_DragonRider_TailSwipe" Orientated="Never" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0" Preferred="7.0" Max="15.0" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </Other>
+    <Escape>
+      <Skill Name="AI_default_dodge_left" Orientated="Never" Interruptible="False" Enabled="True" BaseWeight="10" EscapeType="DodgeLeft">
+        <Range Min="1.0" Preferred="8.0" Max="8.0" MinWeight="0.0" PreferredWeight="40.0" MaxWeight="40.0" />
+      </Skill>
+      <Skill Name="AI_default_dodge_right" Orientated="Never" Interruptible="False" Enabled="True" BaseWeight="10" EscapeType="DodgeRight">
+        <Range Min="1.0" Preferred="8.0" Max="20.0" MinWeight="0.0" PreferredWeight="40.0" MaxWeight="40.0" />
+      </Skill>
+    </Escape>
+  </Skills>
+  <RandomModel>
+    <ModelChoice Model="Objects/characters/mobs/Reptile/Dragon/DRAG_DragonRider/DRAG_DragonRider_Lucan.cdf" Weight="1">
+      <ADBChoice ADB="Animations/Mannequin/ADB/Mobs/Reptile/Dragon/REPU_DragonRider.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIName_Lucan" ZIconOffset="4.5" />
+  <Spawn SpawnAnimation="rise_out_ground" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="1" DeathSkill="AI_Lucan_DeathSkill" />
+  <GameplayParticles PresetName="size_repubeast" />
+  <Capsules>
+    <EntityPhysics ColliderSize="2.5,2.5,0.5" />
+    <MouseSelection SelectionCapsuleRadius="4" SelectionCapsuleHeight="0.5" SelectionCapsuleZOffset="-1.0" />
+    <ProjectileCollision ProjectileCapsuleRadius="2" ProjectileCapsuleHeight="5" CanSnapOnCenterWhenColliding="0" />
+    <VegetationCollision SphereRadius="0.6" SphereZOffset="0.6" />
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="" OverrideScale="1" />
+  </VisualParams>
+  <Audio SurfaceType="metal" />
+  <BoneParticles>
+    <BoneParticle BoneName="R_Weapon_Bone" ParticleName="U_VFX_Oskar.Auras.Aura_LightningSpear_01" Offset="0,0,0" Dir="0,0,0" FadeOut="1" IgnoreRotation="0" Delay="0" />
+  </BoneParticles>
+</MetaData>

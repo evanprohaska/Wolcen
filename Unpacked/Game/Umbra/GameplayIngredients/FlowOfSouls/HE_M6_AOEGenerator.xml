@@ -1,0 +1,15 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="HE_M6_AOEGenerator">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_VFX_Oskar.AoE.Republic_Lightning_Anticipation_01" Direction="0,0,1" Offset="0,0,0" Scale="0.85" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="U_VFX_Oskar.AoE.Republic_Lightning_Impact_01" Direction="1,0,0" Scale="0.8" />
+      <Particle Key="ProjectileCastVFX" Name="" Direction="0,0,1" Scale="1.5" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="0.75" CooldownMin="0.1" CooldownMax="0.2" DelayBeforeFirstIteration="1" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_HE_M6_AOEGenerator" Targeting="TrackingPlayer" ProjectileStartingPosition="AboveTarget" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="HE_M6_AOEGeneratorPreset" Loop="1" NewStartingPosition="0">
+    <Preset Name="HE_M6_AOEGenerator" />
+  </FlowOfSoulsPresetList>
+</MetaData>

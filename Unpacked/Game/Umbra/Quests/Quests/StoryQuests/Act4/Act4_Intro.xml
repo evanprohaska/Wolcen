@@ -1,0 +1,141 @@
+<MetaData>
+  <Quest Name="ACT4_Intro" StartDialog="" Type="Main" UIName="@ui_A4_Q1_QuestLabel" UIDesc="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_A4_Q1_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="QP_EG_StartingPoint">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="NPC_END_LOOP1" Area="Stormfall" Threshold="85" UseAreaSize="25" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="ACT4_Quest_1_Zalahir" Radius="25" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Quest_1_Zalahir" Area="Stormfall" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="ACT4_Quest_1_Zalahir" DialogName="ACT4_Q1_ZalahirPermission">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Quest_1_Zalahir" Area="Stormfall" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_Hellion_Hide" Modifier="HellionCosmetic" Remove="1" Target="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_sua_productionUpdated_Hide" EntityNames="AlphaFlow_IncreaseLoop" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_sua_launchQuest_Hide" EntityNames="AlphaFlow_StartFight" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_sua_productionUpdated_Hide3" EntityNames="Act4_sua_productionUpdated" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_sua_launchQuest_Hide3" EntityNames="Act4_sua_launchQuest" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_citybuilding_Hide" EntityNames="CityBuilding_NPC3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_citybuilding_Hide2" EntityNames="CityBuilding_NPC7" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_citybuilding_Hide3" EntityNames="CityBuilding_NPC5" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="D_TeleportPlayersInSF" MinRadius="1" TeleportedEntityName="#Player" DestinationName="QP_EG_StartingPoint" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="A4_CHAPTER" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="A4_CHAPTER" Delay=".7" />
+      <Event Trigger="EventEnd" EventName="A4_CHAPTER" Type="ActionSequence" Name="A4_6MonthsLater" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="A4_6MonthsLater" />
+      <Event Trigger="EventEnd" EventName="A4_6MonthsLater" Type="GoalAchieve" Name="Achieve_A4_6MonthsLater" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_NPC_HL_Ilthain_V1" EntityNames="NPC_HL_Ilthain_V1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_NPC_HL_Ilthain_V2" EntityNames="NPC_HL_Ilthain_V2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_AnimObject380" EntityNames="AnimObject380" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_NPC_HL_Ondar" EntityNames="NPC_HL_Ondar" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_CityBuilding_NPC" EntityNames="CityBuilding_NPC" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_CityBuilding_NPC2" EntityNames="CityBuilding_NPC2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_ParticleEffect111" EntityNames="ParticleEffect111" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_ParticleEffect437" EntityNames="ParticleEffect437" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_NPC_HL_Valense" EntityNames="NPC_HL_Valense" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_AnimObject394" EntityNames="AnimObject394" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_AnimObject396" EntityNames="AnimObject396" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_MaleGuard59" EntityNames="MaleGuard59" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_MaleGuard45" EntityNames="MaleGuard45" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_Ondar2" EntityNames="ACT4_Quest_1_Ondar2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_Ilthain3" EntityNames="ACT4_Quest_1_Ilthain3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_Ilthain2" EntityNames="ACT4_Quest_1_Ilthain2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_PalaceBlocker" EntityNames="C1_Stormfall_Palace_Blocker" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_DragonBlocker" EntityNames="A4_Stormfall_SouthWayDragon_Blocker" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_NPC_Intro_Valense_End" EntityNames="NPC_Intro_Valense_End" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_NPC_Intro_Annaruz_End" EntityNames="NPC_Intro_Annaruz_End" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_NPC_Intro_Tabbitha_End" EntityNames="NPC_Intro_Tabbitha_End" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Unhide_ACT4_Quest_1_Annaruz" EntityNames="ACT4_Quest_1_Annaruz" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Unhide_ACT4_Quest_1_Valense" EntityNames="ACT4_Quest_1_Valense" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Unhide_ACT4_Quest_1_Tabbitha" EntityNames="ACT4_Quest_1_Tabbitha" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Unhide_ACT4_Quest_1_Zalahir" EntityNames="ACT4_Quest_1_Zalahir" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_CitizensGreetings_CitizenF_3" AreaRadius="8" Type="GlobalDialog" Name="ACT4_Q1_CitizenGreeting_1" DialogName="ACT4_Q1_CitizenGreeting_1" IsCST="false" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_CitizensGreetings_CitizenF_3" AreaRadius="8" Type="ActionSequence" Name="ACT4_Q1_CitizenGreeting_1_DYN" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="DYN_A4_SF_CitizensGreetings1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_CitizensGreetings_CitizenF_2" AreaRadius="8" Type="ActionSequence" Name="ACT4_Q1_CitizenGreeting_2_DYN" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="DYN_A4_SF_CitizensGreetings2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_CitizensGreetings_CitizenM_5" AreaRadius="8" Type="GlobalDialog" Name="ACT4_Q1_CitizenGreeting_2" DialogName="ACT4_Q1_CitizenGreeting_2" IsCST="false" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_CitizensGreetings_CitizenM_5" AreaRadius="8" Type="ActionSequence" Name="ACT4_Q1_CitizenGreeting_3_DYN" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="DYN_A4_SF_CitizensGreetings3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_CitizenGrievances_NobleF_1" AreaRadius="15" Type="GlobalDialog" Name="ACT4_Q1_CitizenGrievances_1" DialogName="ACT4_Q1_CitizenGrievances_1" IsCST="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_CitizenGrievances_NobleF_1" AreaRadius="15" Type="GlobalDialog" Name="ACT4_Q1_CitizenGrievances_2" DialogName="ACT4_Q1_CitizenGrievances_2" IsCST="0" Delay="8" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ACT4_Quest_1_Zalahir" AreaRadius="15" Type="GlobalDialog" Name="ACT4_Q1_GuardingPalace" DialogName="ACT4_Q1_GuardingPalace" IsCST="false" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Quest_1_Zalahir" Type="GlobalStopAllDialogs" Name="EndZalahir_Dialog" />
+    </Step>
+    <Step Order="1" UIName="@ui_A4_Q1_S2_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_palacedoor" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_palacedoor" Area="Stormfall" Threshold="180" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_PalaceBlocker" EntityNames="C1_Stormfall_Palace_Blocker" Hide="1" Delay=".1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_ParticleEffect111" EntityNames="ParticleEffect111" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_ParticleEffect437" EntityNames="ParticleEffect437" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_ACT4_Quest_1_Ondar2" EntityNames="ACT4_Quest_1_Ondar2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_ACT4_Quest_1_Ilthain3" EntityNames="ACT4_Quest_1_Ilthain3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_NPC_Intro_Annaruz_End" EntityNames="NPC_Intro_Annaruz_End" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_NPC_Intro_Valense_End" EntityNames="NPC_Intro_Valense_End" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_NPC_Intro_Tabbitha_End" EntityNames="NPC_Intro_Tabbitha_End" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_MaleGuard59" EntityNames="MaleGuard59" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_MaleGuard45" EntityNames="MaleGuard45" Hide="1" />
+    </Step>
+    <Step Order="2" UIName="@ui_A4_Q1_S3_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ACT4_Quest_1_Valense" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="Stormfall_Inn_Table1" Area="Palace" Threshold="85" UseAreaSize="17" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4.5" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_palacedoor" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Talk" EntityName="ACT4_Quest_1_Ilthain1" DialogName="ACT4_Q1_CouncilRegencyPitch">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Quest_1_Ilthain1" Area="Palace" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ACT4_Quest_1_Valense" AreaRadius="15" Type="GlobalDialog" Name="ACT4_Q1_CouncilInSession" DialogName="ACT4_Q1_CouncilInSession" IsCST="false" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Quest_1_Ilthain1" Type="GlobalStopAllDialogs" Name="EndIlthain_Dialog" />
+    </Step>
+    <Step Order="3" UIName="@ui_A4_Q1_S4_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Impossible" />
+      <Goal Order="1" Type="Go" Destination="ACT4_Quest_1_Ilthain3" Radius="7.5" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Quest_1_Ilthain3" Area="Stormfall" Threshold="85" UseAreaSize="17" VFX="U_Utils.Quest.Objective" VFXOffsetZ="50" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="ACT4_Quest_1_Ilthain3" DialogName="ACT4_Q1_OrderGoodNews">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Quest_1_Ilthain3" Area="Stormfall" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Unhide_ACT4_Quest_1_Iltrain" EntityNames="ACT4_Quest_1_Ilthain1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Unhide_ACT4_Quest_1_Ondar" EntityNames="ACT4_Quest_1_Ondar1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_Annaruz" EntityNames="ACT4_Quest_1_Annaruz" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_Tabbitha" EntityNames="ACT4_Quest_1_Tabbitha" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_Valense" EntityNames="ACT4_Quest_1_Valense" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_ParticleEffect111" EntityNames="ParticleEffect111" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_ParticleEffect437" EntityNames="ParticleEffect437" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_Hide_Adventure_NPC_2" EntityNames="Adventure_NPC_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_UnHide_NPC_Intro_Valense_End" EntityNames="NPC_Intro_Valense_End" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_UnHide_NPC_Intro_Annaruz_End" EntityNames="NPC_Intro_Annaruz_End" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_UnHide_NPC_Intro_Tabbitha_End" EntityNames="NPC_Intro_Tabbitha_End" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_UnHide_MaleGuard59" EntityNames="MaleGuard59" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_UnHide_MaleGuard45" EntityNames="MaleGuard45" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_UnHide_Ondar2" EntityNames="ACT4_Quest_1_Ondar2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_UnHide_Ilthain3" EntityNames="ACT4_Quest_1_Ilthain3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="D_TeleportInTavern" MinRadius="2" TeleportedEntityName="#Player" DestinationName="SpawnPoint_frompalace" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="A4_Intro_Sunrise_Cutscene" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="A4_Sunrise" />
+      <Event Trigger="EventEnd" EventName="A4_Intro_Sunrise_Cutscene" Type="GoalAchieve" Name="A4_Intro_Achieve" SimulateOnly="" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="D_ACT4_Q1_TheNextDay" DialogName="ACT4_Q1_TheNextDay" IsCST="false" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" Name="D_TeleportInTavern2" MinRadius="2" TeleportedEntityName="#Player" DestinationName="SpawnPoint_frompalace" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionClickable" Name="EndgameIntro_UnlockPalaceExit" ClickableEntityName="CityBuilding_NPC" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Quest_1_Ilthain3" Type="GlobalStopAllDialogs" Name="ACT4_Q1_OrderGoodNews_endDialog" />
+    </Step>
+    <Step Order="4" UIName="@ui_A4_Q1_S5_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Talk" EntityName="NPC_Intro_Valense_End" DialogName="ACT4_Q1_BecomingRegent">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="NPC_Intro_Valense_End" Area="Stormfall" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit=".2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Act4_citybuilding_UnHide2" EntityNames="CityBuilding_NPC7" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Act4_citybuilding_UnHide3" EntityNames="CityBuilding_NPC5" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="NPC_Intro_Valense_End" Type="GlobalStopAllDialogs" Name="EndPlayer_Dialog" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="NPC_Intro_Valense_End" AreaRadius="15" Type="GlobalDialog" Name="ACT4_Q1_CouncilGoodMorning" DialogName="ACT4_Q1_CouncilGoodMorning" IsCST="false" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="EndgameIntro_Unhide_CityBuilding_NPC" EntityNames="CityBuilding_NPC" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="EndgameIntro_Unhide_CityBuilding_NPC2" EntityNames="CityBuilding_NPC2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="EndgameIntro_Unhide_NPC_Intro_Valense_End" EntityNames="NPC_Intro_Valense_End" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="EndgameIntro_Unhide_AnimObject394" EntityNames="AnimObject394" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="EndgameIntro_Unhide_AnimObject396" EntityNames="AnimObject396" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="EndgameIntro_UnHide_ParticleEffect111" EntityNames="ParticleEffect111" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="EndgameIntro_UnHide_ParticleEffect437" EntityNames="ParticleEffect437" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="EndgameIntro_UnHide_Adventure_NPC_2" EntityNames="Adventure_NPC_2" Hide="0" />
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,17 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_SacredBall_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Shock" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_SacredBall" />
+    </Shapes>
+    <DamageZone Duration="60" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="U_Monster_Alt.AuroraKnight.SacredOrb" Offset="0,0,2" Direction="1,0,0" Scale="1" />
+      <Particle Key="Disappear" Name="U_ApocalypticForm.Heavy_ApocalypticForm.TransformToHuman.Gaining" Offset="0,0,1" Direction="1,0,0" Scale="0.75" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="6" RandomBaseDistMax="10" RandomBaseAngleMin="120" RandomBaseAngleMax="120" LimitAngle="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="25" MaxAngularSpeed="25" IndicatorMaxTimer="1.5" NumberOfDZ="3" BaseDirIsClockwise="0" AllowRandomDir="1" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" />
+  </Skill>
+</MetaData>

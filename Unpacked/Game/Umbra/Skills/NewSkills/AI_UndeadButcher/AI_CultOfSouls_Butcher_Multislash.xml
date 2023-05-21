@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_butcher_multislash" ESkill="AI_cultofsouls_butcher_multislash" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" AnimationDrivenMovement="1" ScaleWithAttackSpeed="1" />
+    <CastingParams CastBone="Weapon_Bone" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Particles ParticleName="U_Monster.Butcher.Skill_Muliple_Ground_Impact" ParticleBone="" ParticleOffSet="0,0,0" ParticleDirection="0,1,0" ParticleScale="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier=".74" />
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Butcher_Multislash" />
+    </Shapes>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_hunt_butcher_multislash" ESkill="AI_cultofsouls_butcher_multislash" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" AnimationDrivenMovement="1" ScaleWithAttackSpeed="1" />
+    <CastingParams CastBone="Weapon_Bone" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Particles ParticleName="U_Monster.Butcher.Skill_Muliple_Ground_Impact" ParticleBone="" ParticleOffSet="0,0,0" ParticleDirection="0,1,0" ParticleScale="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Butcher_Multislash" />
+    </Shapes>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

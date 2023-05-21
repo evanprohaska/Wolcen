@@ -1,0 +1,49 @@
+<MetaData>
+  <Panel Id="BetaTech1_Merchant_weapon" IconId="1">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="lc_weapon_BetaTech1" />
+  </Panel>
+  <Panel Id="BetaTech1_Merchant_armor" IconId="2">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="lc_armor_BetaTech1" />
+  </Panel>
+  <Panel Id="BetaTech1_Merchant_accessories" IconId="3">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="lc_accessories_BetaTech1" />
+  </Panel>
+  <Panel Id="BetaTech1_Merchant_potion" IconId="5">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="lc_potion_BetaTech1" />
+  </Panel>
+  <Panel Id="BetaTech1_Jeweler_Panel" IconId="8" />
+  <Panel Id="BetaTech1_Jeweler_Gems" IconId="9">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="lc_Gems_BetaTech1" />
+  </Panel>
+  <Panel Id="BetaTech1_Archivist_Panel" IconId="7" />
+  <Panel Id="BetaTech1_Jeweler_Sockets_Reroll" IconId="10" />
+  <Panel Id="archivist_hunter" IconId="11">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="Archivist_Enneracts_Rogue" />
+  </Panel>
+  <Panel Id="archivist_mage" IconId="12">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="Archivist_Enneracts_Mage" />
+  </Panel>
+  <Panel Id="archivist_warrior" IconId="13">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="Archivist_Enneracts_Warrior" />
+  </Panel>
+  <Merchant Name="BetaTech1_Merchant" UIName="@ui_NowhereMerchant_CharacterNameLabel" ScalingTable="Item_level_offset_scale">
+    <Panel Id="BetaTech1_Merchant_weapon" />
+    <Panel Id="BetaTech1_Merchant_armor" />
+    <Panel Id="BetaTech1_Merchant_accessories" />
+    <Panel Id="BetaTech1_Merchant_potion" />
+    <Panel Id="reclaim" />
+  </Merchant>
+  <Merchant Name="BetaTech1_Jeweler" UIName="Jeweler" ScalingTable="Item_level_offset_scale">
+    <Panel Id="BetaTech1_Jeweler_Panel" />
+    <Panel Id="BetaTech1_Jeweler_Sockets_Reroll" />
+    <Panel Id="BetaTech1_Jeweler_Gems" />
+    <Panel Id="reclaim" />
+  </Merchant>
+  <Merchant Name="BetaTech1_Archivist" UIName="Archivist" ScalingTable="Item_level_offset_scale">
+    <Panel Id="BetaTech1_Archivist_Panel" />
+    <Panel Id="archivist_hunter" />
+    <Panel Id="archivist_mage" />
+    <Panel Id="archivist_warrior" />
+    <Panel Id="reclaim" />
+  </Merchant>
+</MetaData>

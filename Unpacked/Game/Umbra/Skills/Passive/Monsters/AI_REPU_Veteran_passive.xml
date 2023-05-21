@@ -1,0 +1,48 @@
+<MetaData>
+  <Spell Name="AI_REPU_Veteran_DamageBuff_passive" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dummy_ai_buff_attackdamage" Permanent="0">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="0">
+        <Semantics DamagePercentInt="100" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AI_REPU_Veteran_ShieldBuff_passive" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dummy_ai_buff_shield" Permanent="0">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="all_protection" Permanent="1">
+        <Semantics ProtectionFlatFloat="0" ProtectionAsPercentOfMaxHealthFloat="20" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AI_Tower_Veteran_Speed_passive" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dummy_ai_buff_attackspeed" Permanent="0">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="attackspeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="125" />
+      </EIM>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="50" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="Ondar_Buff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dummy_ai_buff_attackdamage" Permanent="0">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="0">
+        <Semantics DamagePercentInt="2000" />
+      </EIM>
+      <EIM Name="dotdamage_percent_global" Permanent="0">
+        <Semantics DamagePercentFloat="300" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

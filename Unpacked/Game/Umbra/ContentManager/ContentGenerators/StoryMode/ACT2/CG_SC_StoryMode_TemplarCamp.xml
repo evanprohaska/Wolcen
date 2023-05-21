@@ -1,0 +1,20 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_TemplarCamp" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="KillOneTarget" PriorityTag="KillTarget,OneGoal,NormalLoot,BossArea" ExcludeTag="Room,MMGoblin,Named,Hard" Weight="0.000000000000000000001" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="RandomSvriir_Small_BossArea" Tag="SvriirLair,SmallArea,BossArea" PriorityTag="SvriirLair,SVRI" ExcludeTag="NumerousGoal,FewGoal" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_TemplarCamp_KillTarget_SVRI_GiantSpawner" Tag="KillTarget,OneGoal,SVRI" PriorityTag="KillTarget,SVRI,EMQuest" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TemplarCamp_SVRI_Easy" Tag="Easy,SVRI,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TemplarCamp_SVRI_Medium" Tag="Medium,LotOfMonster,SVRI" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_SvriirsNetwork_NormalLoot" Tag="SvriirLair,NormalLoot,EMNoQuest" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

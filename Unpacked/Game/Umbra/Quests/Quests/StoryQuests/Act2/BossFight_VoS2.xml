@@ -1,0 +1,26 @@
+<MetaData>
+  <Quest Name="Quest_Vos2Fight1" StartDialog="" Type="BossFight" UIName="@ui_A2_Q4_EventQuestLabel1" UIDesc="@">
+    <Step Order="0" UIName="@ui_A2_Q4_EventStepLabel1" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="A2_Q4_S4_DemonOfSoulsSpawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="VOS2_DemonOfSouls" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="A2_Q4_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A2_Q4_EventQuestLabel1" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="A2_Q4_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Delay="1" Name="VOS2_Event_SummonMercy" DialogName="ACT2_Q4_S4_DynS_Cultist_Talk3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".5" Name="VOS2EventCultisthide" EntityNames="NPC_A2_Q4_Cultist" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1.5" SpawnFrequency="0" Name="A2_Q4_S4_DemonOfSoulsSpawn" SpawnClass="sc_COSS_VOS2Event_DemonOfSouls" TargetEntityName="QP_A2_Q4_S4_VOS2EventSpawnPoint" FaceAtSpawn="#Player" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityKillAll" Name="VOS2_Event_SuccessKillMercy" MonsterClass="VOS2_Mercy_Zombie" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="VOS2EventCollisionHide1" EntityNames="primitive_box_BlockRoadVOS2Event1" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="VOS2EventCollisionHide2" EntityNames="primitive_box_BlockRoadVOS2Event2" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionParticleEmitter" Name="VOS2EventParticleHide1" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.VOS2Event1" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionParticleEmitter" Name="VOS2EventParticleHide2" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.VOS2Event2" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionClickable" Name="A2_Q4_S4_EventDoor_Desactivate" ClickableEntityName="ClickableEntity_VOS2Event_Gating" Delay="0.1" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q4_S4_HideEventDoorCollision" EntityNames="ClickableEntity_VOS2Event_Gating" Delay="0.2" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EventClear" Name="A2_Q4_S4_BossFightWinEventClear" Delay="0.2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="VOS2_DOS" PercentLeft="40" Type="GlobalDialog" Name="VOS2_Event_FightDial2" DialogName="ACT2_Q4_S4_DynS_Demon_Talk2_1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="VOS2_DOS" PercentLeft="65" Type="GlobalDialog" Name="VOS2_Event_FightDial3" DialogName="ACT2_Q4_S4_DynS_Demon_Talk2_2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="VOS2_DOS" PercentLeft="85" Type="GlobalDialog" Name="VOS2_Event_FightDial4" DialogName="ACT2_Q4_S4_DynS_Demon_Talk2_3" />
+    </Step>
+  </Quest>
+</MetaData>

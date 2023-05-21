@@ -1,0 +1,100 @@
+<MetaData>
+  <Quest Name="ACT2_Quest4" StartDialog="" Type="Main" UIName="@ui_A2_Q4_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT2">
+    <Step Order="0" UIName="@ui_A2_Q4_S2_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="Qp_Act1_SpawnPointQuest1">
+      <Goal Order="0" Type="Talk" EntityName="NPC_A2_Q4_Valeria" DialogName="ACT2_Q4_S2_Valeria_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q4_Valeria" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q4_S1_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q4_S1_VOS2Entrance_Desactivate_FS" ClickableEntityName="ClickableEntity_TemplarCamp_to_VOS2" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="A2_Q4_S1_DynS_Gernese_Talk1" DialogName="ACT2_Q4_S1_DynS_Gernese_Talk1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q5_S1_ForestClearingEntrance_Desactivate" ClickableEntityName="ClickableEntity_TemplarCamp_to_FleshForest1" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="NPC_A2_Q4_Valeria" AreaRadius="50" Type="EntityIsHidden" Name="A2_Q4_S4_HideBlockerVisual" EntityNames="TemplarCamp_ForestClearing_AccessBlocker" Hide="1" Delay="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="NPC_A2_Q4_Valeria" AreaRadius="50" Type="EntityIsHidden" Name="A2_Q4_S4_HideBlocker" EntityNames="TemplarCamp_VOS2_Blocker" Hide="1" Delay="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+        <XP Amount="250000" />
+        <FixedLootClass Name="A2_Q3_Reward_Fixe" MinItemNumber="3" MaxItemNumber="3" SortByRarity="0" />
+        <ChoiceLootClass Name="A2_Q3_Reward" MinItemNumber="6" MaxItemNumber="6" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="1" UIName="@ui_A2_Q4_S3_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="Qp_Act1_SpawnPointQuest1">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_TemplarCamp_to_VOS2" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_TemplarCamp_to_VOS2" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ClickableEntity_TemplarCamp_to_VOS2" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_TemplarCamp_to_VOS2" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q4_S2_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q4_S4_VOS2Entrance_Activate_FS" ClickableEntityName="ClickableEntity_TemplarCamp_to_VOS2" MakeClickable="1" FilterEvents="0" />
+    </Step>
+    <Step Order="2" UIName="@ui_A2_Q4_S3_UpdateStepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="QP_A2_Q4_VOS2Event_Entrance" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_A2_Q4_VOS2Event_Entrance" Area="ACT2_VOS2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q4_S3_ClearUI" StepToKeep="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_ACT2_Q4_S4_DynS_Player_Talk1" AreaRadius="30" Type="GlobalDialog" Name="A2_Q4_S4_DynS_Player_Talk1" DialogName="ACT2_Q4_S4_DynS_Player_Talk1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_ACT2_Q4_S4_DynS_Player_Talk2" AreaRadius="30" Type="GlobalDialog" Name="A2_Q4_S4_DynS_Player_Talk2" DialogName="ACT2_Q4_S4_DynS_Player_Talk2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_ACT2_Q4_S4_DynS_Player_Talk3" AreaRadius="30" Type="GlobalDialog" Name="A2_Q4_S4_DynS_Player_Talk3" DialogName="ACT2_Q4_S4_DynS_Player_Talk3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_ACT2_Q4_S4_DynS_Player_Talk4" AreaRadius="30" Type="GlobalDialog" Name="A2_Q4_S4_DynS_Player_Talk4" DialogName="ACT2_Q4_S4_DynS_Player_Talk4" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_ACT2_Q4_S4_DynS_Player_Talk5" AreaRadius="30" Type="GlobalDialog" Name="A2_Q4_S4_DynS_Player_Talk5" DialogName="ACT2_Q4_S4_DynS_Player_Talk5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Start_Dialog_Cultist_VOS2" AreaRadius="4" Type="GlobalDialog" Name="A2_Q4_S2_DynS_CUltist_Talk1" DialogName="ACT2_Q4_S4_DynS_Cultist_Talk1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_VOS2Event_FailReleaseCheckpoint" CheckpointEntityName="" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="VOS2EventCollisionHide1" EntityNames="primitive_box_BlockRoadVOS2Event1" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="VOS2EventCollisionHide2" EntityNames="primitive_box_BlockRoadVOS2Event2" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionParticleEmitter" Name="VOS2EventParticleHide1" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.VOS2Event1" Activate="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionParticleEmitter" Name="VOS2EventParticleHide2" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.VOS2Event2" Activate="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityKillAll" Name="VOS2_Event_FailKillAll1" MonsterClass="VOS2_DemonOfSouls" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityKillAll" Name="VOS2_Event_FailKillAll2" MonsterClass="VOS2_Mercy_Zombie" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionClickable" Name="A2_Q4_S4_EventDoor_Desactivate_FS" ClickableEntityName="ClickableEntity_VOS2Event_Gating" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q4_S4_HideEventDoorCollision_FS" EntityNames="ClickableEntity_VOS2Event_Gating" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="30" Type="GlobalCheckpoint" Name="Nerukai_Remove_Checkpoint_SF" CheckpointEntityName="" />
+    </Step>
+    <Step Order="3" UIName="@ui_A2_Q4_S4_StepNameLabel" AutoClearEvents="1" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_VOS2Event_Gating" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_VOS2Event_Gating" Area="ACT2_VOS2" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT2_VOS2Event" GameplayEventPresetName="ACT2_VOS2_Event">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q4_Cultist" Area="ACT2_VOS2" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="NPC_A2_Q4_Cultist" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Talk" EntityName="NPC_A2_Q4_Cultist" DialogName="ACT2_Q4_S4_Cultist_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q4_Cultist" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3.5" Area="ACT2_VOS2" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="BossFight" FightPreset="BossFight_Vos2Fight1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q4_Cultist" Area="ACT2_VOS2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q4_S4_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="GlobalReleaseGameplayEvent" Name="VOS2_VOS2Event_FailVoteEventSlotRelease" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalRevivePlayers" Name="VOS2_1stArenaRevive" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalCheckpoint" Name="Set_VOS2Event_Checkpoint" CheckpointEntityName="Checkpoint_VOS2Event" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="VOS2EventCultistunhide" EntityNames="NPC_A2_Q4_Cultist" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="VOS2EventFadeStart" SequenceName="A2_Q2_S3_BanditArena" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityTeleport" MinRadius="5" Delay="0.1" Name="PlayerTP_toVOS2Event" TeleportedEntityName="#Player" DestinationName="QP_A2_Q4_S4_EventPlayerSpawnPoint" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="A2_Q4_S4_RevealVal" EntityNames="NPC_A2_Q2_Valeria" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="VOS2_Event_IntroTalk" DialogName="ACT2_Q4_S4_DynS_Cultist_Talk2" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A2_Q4_S4_StepUpdate1" Localization="@ui_A2_Q4_S4_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="VOS2_Event_IntroTalk" Type="GoalAchieve" Name="A2_Q3_S5_Goal1Achieved" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="A2_Q4_S4_StepUpdate2" Localization="@ui_A2_Q4_S4_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="A2_Q4_S4_StepUpdate3" Localization="@ui_A2_Q4_S4_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="VOS2_EventFail_GlobalDialogStop" />
+      <Event Trigger="PlayerWipe" Type="GlobalReleaseGameplayEvent" Name="VOS2_VOS2Event_FailEventSlotRelease" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="VOS2_Event_EventFail" RollbackToPreviousStep="1" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="VOS2_EventFail_GlobalDialogStopBis" />
+      <Event Trigger="BossfightLost" Type="GlobalReleaseGameplayEvent" Name="VOS2_VOS2Event_FailEventSlotReleaseBis" />
+      <Event Trigger="BossfightLost" Type="StepFail" Name="VOS2_Event_EventFailBis" RollbackToPreviousStep="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="QuestFail" Name="FailHunt_HuntQuest" QuestName="QN_HS_A2_SvriirAlphaHunt_2F" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="QuestFail" Name="FailHunt_BossFightQuest" QuestName="QN_HE_BF_SvriirAlpha_S" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Pets>
+          <Pet PetId="pet_wolf" />
+        </Pets>
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

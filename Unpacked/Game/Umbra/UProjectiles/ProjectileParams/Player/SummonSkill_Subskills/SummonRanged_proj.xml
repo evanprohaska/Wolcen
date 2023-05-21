@@ -1,0 +1,345 @@
+<MetaData>
+  <Projectile ID="summon_ranged_Physical" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Normal" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_Fire" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Fire" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_Frost" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Ice" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_Lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Lightning" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_Aether" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Umbra" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_Sacred" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Sacred" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_Shadow" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Shadow" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_Rend" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Rend" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_Poison" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Toxic" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_explosive_Physical" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.ArrowSparks.Arrow_Normal" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Physical" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_explosive_Fire" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.ArrowSparks.Arrow_Fire" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Fire" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_explosive_Frost" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.ArrowSparks.Arrow_Ice" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Frost" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_explosive_Lightning" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.ArrowSparks.Arrow_Lightning" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Lightning" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_explosive_Aether" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.ArrowSparks.Arrow_Umbra" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Aether" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_explosive_Sacred" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.ArrowSparks.Arrow_Sacred" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Sacred" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_explosive_Shadow" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.ArrowSparks.Arrow_Shadow" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Shadow" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_explosive_Rend" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.ArrowSparks.Arrow_Rend" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Rend" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_ranged_explosive_Poison" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.ArrowSparks.Arrow_Toxic" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Poison" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_champion_rend_missile" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_Rocket_01_Rend" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Rend" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Launch SoundTriggerName="Play_Summoned_Champion_Missile_Projectile_Launch" />
+      <Hit SoundTriggerName="Play_Summoned_Champion_Missile_ImpactExplosion" />
+      <Removed SoundTriggerName="Stop_Summoned_Champion_Missile_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_champion_rend_bomb" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0,-0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Champion_Rend_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Trapper.Explosion_Bomb_01_Rend_3m" Direction="0,0,1" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Summoned_Champion_Missile_Projectile_Launch" />
+      <Hit SoundTriggerName="Play_Summoned_Champion_Missile_ImpactExplosion" />
+      <Removed SoundTriggerName="Stop_Summoned_Champion_Missile_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

@@ -1,0 +1,74 @@
+<MetaData>
+  <Skill ESkill="gameplay_ingredient_incubationchamber_damagezone" Keywords="attack_skill" UID="gameplay_ingredient_incubationchamber_damagezone">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Lambach01_IncubationChamberShape" />
+    </Shapes>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="3" />
+    <DamageZone Duration="10" RateOfFire="0.5" />
+    <Summoning MaxSummons="9" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="6" KillLowestHPOnOversummoning="1" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,-2,0">
+      <SummonedSpawnClass Key="1" Name="Sc_LambachIncubationChamber1" />
+      <SummonedSpawnClass Key="2" Name="Sc_LambachIncubationChamber2" />
+      <SummonedSpawnClass Key="3" Name="Sc_LambachIncubationChamber3" />
+      <SummonedSpawnClass Key="4" Name="Sc_LambachIncubationChamber4" />
+    </Summoning>
+    <ParticleList>
+      <Particle Key="Warning" Name="U_Monster.Lumbach.Incubation_Explosion_Ready_01" Offset="0,0,0" Direction="0,1,0" TimeScale="0.5" />
+      <Particle Key="Vomit" Name="U_Monster.Lumbach.Flesh_Area_Vomit_02" Offset="0,0,0" Direction="0,-1,0" />
+      <Particle Key="DamageZone" Name="U_Monster.Lumbach.Flesh_Area_IncubationChamber_01" Offset="0,0,-2" Direction="0,-1,0" />
+      <Particle Key="Light" Name="U_Monster.Lumbach.Incubation_Broken_Aura_01" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Lumbach.Incubation_Explosion_Blood_01" Offset="0,-2,0" Direction="0,0,1" Scale="1.5" />
+      <Particle Key="Recovering" Name="U_Monster.Lumbach.Incubation_Recover_01" Offset="0,0,0" Direction="0,1,0" Delay="0.1" Scale="0.99" />
+    </ParticleList>
+  </Skill>
+  <Skill ESkill="gameplay_ingredient_incubationchamber_damagezone" Keywords="attack_skill" UID="gameplay_ingredient_uber_incubationchamber_damagezone">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Lambach01_IncubationChamberShape" />
+    </Shapes>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="3" />
+    <DamageZone Duration="10" RateOfFire="0.5" />
+    <Summoning MaxSummons="9" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="6" KillLowestHPOnOversummoning="1" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,-2,0">
+      <SummonedSpawnClass Key="1" Name="Sc_UberLambachIncubationChamber1" />
+      <SummonedSpawnClass Key="2" Name="Sc_UberLambachIncubationChamber2" />
+      <SummonedSpawnClass Key="3" Name="Sc_UberLambachIncubationChamber3" />
+      <SummonedSpawnClass Key="4" Name="Sc_UberLambachIncubationChamber4" />
+    </Summoning>
+    <ParticleList>
+      <Particle Key="Warning" Name="U_Monster.Lumbach.Incubation_Explosion_Ready_01" Offset="0,0,0" Direction="0,0.25,0" TimeScale="5" />
+      <Particle Key="Vomit" Name="U_Monster.Lumbach.Flesh_Area_Vomit_02" Offset="0,0,0" Direction="0,-1,0" />
+      <Particle Key="DamageZone" Name="U_Monster.Lumbach.Flesh_Area_IncubationChamber_01" Offset="0,0,-2" Direction="0,-1,0" />
+      <Particle Key="Light" Name="U_Monster.Lumbach.Incubation_Broken_Aura_01" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Lumbach.Incubation_Explosion_Blood_01" Offset="0,-2,0" Direction="0,0,1" Scale="1.5" />
+      <Particle Key="Recovering" Name="U_Monster.Lumbach.Incubation_Recover_01" Offset="0,0,0" Direction="0,1,0" Delay="0.1" Scale="0.99" />
+    </ParticleList>
+  </Skill>
+  <Skill ESkill="gameplay_ingredient_incubationchamber_damagezone" Keywords="attack_skill" UID="gameplay_ingredient_Belizul_incubationchamber_damagezone">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="BelizulIncubationChamber_Permanent_Shape" />
+    </Shapes>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="3" />
+    <DamageZone Duration="10" RateOfFire="0.5" />
+    <Summoning MaxSummons="5" SummonDuration="0" MinRadiusAroundSpawnPosition="2" MaxRadiusAroundSpawnPosition="5" KillLowestHPOnOversummoning="1" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0       ">
+      <SummonedSpawnClass Key="1" Name="Sc_C1_M2_FleshTemple_ICBelizul_1" />
+      <SummonedSpawnClass Key="2" Name="Sc_C1_M2_FleshTemple_ICBelizul_2" />
+      <SummonedSpawnClass Key="3" Name="Sc_C1_M2_FleshTemple_ICBelizul_3" />
+      <SummonedSpawnClass Key="4" Name="Sc_C1_M2_FleshTemple_ICBelizul_4" />
+    </Summoning>
+    <ParticleList>
+      <Particle Key="Warning" Name="U_VFX_Oskar.AoE.IncubationChamber_Indicator_01" Offset="0,0,0" Direction="0,0,1" TimeScale="0.5" Scale="1" />
+      <Particle Key="Vomit" Name="U_Monster.Lumbach.Flesh_Area_Vomit_02" Offset="0,0,0" Direction="0,0,1" Scale="0.5" />
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.AoE.IncubationChamber_DamageArea_NoEnergy01" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="Light" Name="U_Monster.Lumbach.Incubation_Broken_Aura_01" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="Explosion" Name="U_Monster.Lumbach.Incubation_Explosion_Blood_01" Offset="0,0,-2" Direction="0,-1,0" Scale="1.5" />
+      <Particle Key="Recovering" Name="U_Monster.Lumbach.Incubation_Recover_01" Offset="0,0,0" Direction="0,1,0" Delay="0.1" Scale="0.99" />
+    </ParticleList>
+  </Skill>
+</MetaData>

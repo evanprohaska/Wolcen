@@ -1,0 +1,215 @@
+<MetaData>
+  <LevelSheet Name="ACT3_DawnGateHall" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_3_dawn_gate_hall_name" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Stormfall" GameMode="campaign" Type="fixed_level">
+    <HUD UIName="@ui_act_3_stormfall_name" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_BattlefieldOverlook" GameMode="campaign" Type="fixed_level">
+    <HUD UIName="@ui_act_3_BattlefieldOverlook_name" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_RedWaste1" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_VaultOfTruthOverlook" GameMode="campaign" Type="fixed_level">
+    <HUD UIName="@ui_act_3_VaultOfTruthOverlook_name" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_InnerSanctum" GameMode="campaign" Type="fixed_level">
+    <EnemiesLevel Min="33" Max="35" />
+    <HUD UIName="@ui_act_3_InnerSanctum_name" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Nowhere" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="36" Max="36" />
+    <HUD UIName="@ui_act_3_Nowhere_name" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_RepublicanTrenchWarfare" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="35" Max="37" />
+    <HUD UIName="@ui_act_3_republican_trench_warfare_name" />
+    <EntityManager Name="EM_StoryMode_Act3_RepublicTrenches" />
+    <MonsterManager Name="MM_StoryMode_Act3_Trenches" />
+    <EnvironmentVisualVariations Choices="0" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Trenches" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Rampart1" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="36" Max="38" />
+    <EntityManager Name="EM_StoryMode_Act3_Rampart1" />
+    <MonsterManager Name="MM_StoryMode_Act3_Rampart1" />
+    <HUD UIName="@ui_act_3_rempart_1_name" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Rampart" />
+  </LevelSheet>
+  <LevelSheet Name="Act3_Stronghold" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_StoryMode_Act3_Stronghold" />
+    <EntityManager Name="EM_StoryMode_Act3_Stronghold" />
+    <EnemiesLevel Min="37" Max="38" />
+    <HUD UIName="@ui_act_3_Stronghold_name" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Rampart" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Rampart2" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="37" Max="39" />
+    <HUD UIName="@ui_act_3_rempart_2_name" />
+    <EntityManager Name="EM_StoryMode_Act3_Rampart2" />
+    <MonsterManager Name="MM_StoryMode_Act3_Rampart2" />
+    <EnvironmentVisualVariations Choices="0" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Rampart" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Tower_Transition" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_3_Tower_Transition_name" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Tower_1" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="37" Max="39" />
+    <HUD UIName="@ui_act_3_tower_name" />
+    <EntityManager Name="EM_StoryMode_Act3_Tower" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Tower_2" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="37" Max="39" />
+    <HUD UIName="@ui_act_3_Tower_2_name" />
+    <EntityManager Name="EM_StoryMode_Act3_Tower" />
+    <MonsterManager Name="MM_StoryMode_Act3_TowerFloor2" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Tower_3" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="37" Max="39" />
+    <HUD UIName="@ui_act_3_Tower_3_name" />
+    <EntityManager Name="EM_StoryMode_Act3_Tower" />
+    <MonsterManager Name="MM_StoryMode_Act3_TowerFloor3" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Tower_4" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="37" Max="39" />
+    <HUD UIName="@ui_act_3_Tower_4_name" />
+    <EntityManager Name="EM_StoryMode_Act3_Tower" />
+    <MonsterManager Name="MM_StoryMode_Act3_TowerFloor4" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Tower_5" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="37" Max="39" />
+    <HUD UIName="@ui_act_3_Tower_5_name" />
+    <EntityManager Name="EM_StoryMode_Act3_Tower" />
+    <MonsterManager Name="MM_StoryMode_Act3_TowerFloor5" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Tower_6" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="37" Max="39" />
+    <HUD UIName="@ui_act_3_Tower_6_name" />
+    <EntityManager Name="EM_StoryMode_Act3_Tower" />
+    <MonsterManager Name="MM_StoryMode_Act3_TowerFloor6" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Tower_7" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="37" Max="39" />
+    <HUD UIName="@ui_act_3_Tower_7_name" />
+    <EntityManager Name="EM_StoryMode_Act3_Tower" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_RampartGatePlatform" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="37" Max="39" />
+    <HUD UIName="@ui_act_3_RampartGatePlatform_name" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_MonolithGate" GameMode="campaign" Type="fixed_level">
+    <EnemiesLevel Min="37" Max="39" />
+    <HUD UIName="@ui_act_3_monolith_gate_name" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_ElevatorPlatform" GameMode="campaign" Type="fixed_level">
+    <HUD UIName="@ui_act_3_elevator_platform_name" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_Monolith2" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnemiesLevel Min="38" Max="40" />
+    <HUD UIName="@ui_act_3_Monolith2_name" />
+    <MonsterManager Name="MM_StoryMode_Act3_Monolith2" />
+    <EntityManager Name="EM_StoryMode_Act3_Monolith2" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_HeimlockArena" GameMode="campaign" Type="fixed_level">
+    <EnemiesLevel Min="39" Max="41" />
+    <HUD UIName="@ui_act_3_HeimlockArena_name" />
+  </LevelSheet>
+  <LevelSheet Name="ACT3_RepublicanTrenchWarfare_HiddenBossSpot" GameMode="campaign" Type="fixed_level">
+    <EnemiesLevel Min="1" Max="41" />
+    <HUD UIName="@ui_act_3_RepublicanTrenchWarfare_HiddenBossSpot_name" />
+    <MonsterManager Name="MM_StoryMode_Act3_HiddenBossArea" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="Act3_TempleOfSerenity_WingOfWar" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_StoryMode_Act3_TOS_WingOfWar" />
+    <EnemiesLevel Min="32" Max="35" />
+    <EntityManager Name="EM_StoryMode_Act3_TempleOfSerenity1_C1" />
+    <HUD UIName="@ui_act_3_TempleOfSerenity_WingOfWar_name" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Temple" />
+  </LevelSheet>
+  <LevelSheet Name="Act3_TempleOfSerenity_WingOfFaith" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_StoryMode_Act3_TOS_WingOfFaith" />
+    <EnemiesLevel Min="32" Max="35" />
+    <EntityManager Name="EM_StoryMode_Act3_TempleOfSerenity2" />
+    <HUD UIName="@ui_act_3_TempleOfSerenity_WingOfFaith_name" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Temple" />
+  </LevelSheet>
+  <LevelSheet Name="Act3_Redwaste1" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_StoryMode_Act3_RedWaste1" />
+    <EnemiesLevel Min="34" Max="36" />
+    <EntityManager Name="EM_StoryMode_Act3_RedWaste1_C1" />
+    <HUD UIName="@ui_act_3_Redwaste1_name" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_RedWaste1" />
+  </LevelSheet>
+  <LevelSheet Name="Act3_Redwaste2" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_StoryMode_Act3_RedWaste2" />
+    <EnemiesLevel Min="35" Max="37" />
+    <EntityManager Name="EM_StoryMode_Act3_RedWaste2" />
+    <HUD UIName="@ui_act_3_Redwaste2_name" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_RedWaste1" />
+  </LevelSheet>
+  <LevelSheet Name="Act3_Monolith1" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_StoryMode_Act3_Monolith1" />
+    <EnemiesLevel Min="37" Max="39" />
+    <EntityManager Name="EM_StoryMode_Act3_Monolith1_C1" />
+    <HUD UIName="@ui_act_3_Monolith1_name" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Monolith" />
+  </LevelSheet>
+</MetaData>

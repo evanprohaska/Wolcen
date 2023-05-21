@@ -1,0 +1,299 @@
+<MetaData>
+  <Quest Name="ACT1_Quest5" StartDialog="" Type="Main" UIDesc="" UIName="@ui_A1_Q5_QuestLabel" BoundToMap="Wolcen_ACT1">
+    <Step Order="0" UIName="@ui_A1_Q5_S1_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Interact" Names="AnimDoor7" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="AnimDoor7" Area="ACT1_AnankisGate" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="AG_HideNPCGuardian" EntityNames="Q_NPC_TPSC_CPG" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="AG_HideDemonYudai" EntityNames="AnimObject_A1_Q5_S5_Yudai_DemonSoul" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" AnimationSpeed="3" Name="LockAnankisGate" DoorName="AnimDoor7" Action="Unlock" />
+    </Step>
+    <Step Order="1" AutoClearEvents="0" Save="0" UIName="@ui_A1_Q5_S2_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_from_necro_to_TPSstory" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="AnimDoor7" Area="ACT1_AnankisGate" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ClickableEntity_from_necro_to_TPSstory" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_necro_to_TPSstory" Area="ACT1_AnankisGate" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="AG_Hide_EventTrigger" EntityNames="ClickableEntity_Vheguaad_BossFight_Trigger" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="SpawnAG" SpawnClass="Sc_Sty_A1_COS_TPS2" TargetEntityName="AnankinsGate_LostSouls_Spawn" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="AG_DoorOpenedPlayerTalk" DialogName="ACT1_Q5_AG_DoorOpenedPlayerTalk" Delay="4" />
+      <Event Trigger="GoalEnd" GoalIndex="1" Type="StepUpdate" Name="StepupdateQ5_2" Localization="" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Delay="1" Type="GlobalDialog" Name="TPS_ExploringPlayerTalk" DialogName="ACT1_Q5_TPS_ExploringPlayerTalk" />
+    </Step>
+    <Step Order="2" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q5_S3_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_from_TPSstory_to_necro" Radius="150" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_toTPS" Area="ACT1_Anankis_Halls_1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" TimeLimit="1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_toTPS" Area="ACT1_Anankis_Halls_1" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="DungeonEntrance_toTPS" Radius="150" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_toTPS" Area="ACT1_Anankis_Halls_1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A1_Q5_ClearUI_1" StepToKeep="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A1Q5S1_Entrance" AreaRadius="15" Type="GlobalDialog" Name="TPS_EngravingPlayerTalk" DialogName="ACT1_Q5_TPS_EngravingPlayerTalk" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A1Q5S1_FaceToFace" AreaRadius="20" Type="GlobalDialog" Name="TPS_FaceToFaceTalk1" DialogName="ACT1_Q5_TPS_FaceToFaceTalk1" />
+      <Event Trigger="EventStart" EventName="TPS_FaceToFaceTalk1" Delay="0.2" Type="EntitySpawn" Name="SpawnFace1" SpawnClass="Sc_Sty_A1_COS_TPS2" TargetEntityName="QP_A1Q5S1_FaceToFace" FaceAtSpawn="" MinimumRadius="3" MaximumRadius="20" SpawnFrequency="0" />
+      <Event Trigger="EventStart" EventName="TPS_FaceToFaceTalk1" Type="EntitySpawn" Name="SpawnFace2" SpawnClass="Sc_Sty_A1_COS_TPS" TargetEntityName="QP_A1Q5S1_FaceToFace" FaceAtSpawn="" MinimumRadius="3" MaximumRadius="20" SpawnFrequency="0" />
+      <Event Trigger="EventStart" EventName="TPS_FaceToFaceTalk1" Delay="1" Type="EntitySpawn" Name="SpawnFace3" SpawnClass="Sc_Sty_A1_COS_TPS3" TargetEntityName="QP_A1Q5S1_FaceToFace" FaceAtSpawn="" MinimumRadius="3" MaximumRadius="20" SpawnFrequency="0" />
+      <Event Trigger="EventStart" EventName="TPS_FaceToFaceTalk1" Delay="1" Type="EntityKill" Name="KillFace" EntityName="SpawnFace2" Remove="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A1Q5S1_PGCorruption" AreaRadius="20" Type="GlobalDialog" Name="TPS_PGCorruptionTalk1" DialogName="ACT1_Q5_TPS_PGCorruptionTalk1" />
+      <Event Trigger="EventEnd" EventName="TPS_PGCorruptionTalk1" Type="GlobalDialog" Name="TPS_PGCorruptionTalk2" DialogName="ACT1_Q5_TPS_PGCorruptionTalk2" />
+      <Event Trigger="EventEnd" EventName="TPS_PGCorruptionTalk2" Type="GlobalDialog" Name="TPS_PGCorruptionTalk3" DialogName="ACT1_Q5_TPS_PGCorruptionTalk3" />
+      <Event Trigger="EventEnd" EventName="TPS_PGCorruptionTalk1" Type="EntitySpawn" Name="SpawnCPG" SpawnClass="Sc_CorruptedNeiddrerym_PG" TargetEntityName="QP_A1Q5S1_PGCorruption2" FaceAtSpawn="A1_Q5_S1_PGCorruption_Cultist2" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="EventEnd" EventName="TPS_PGCorruptionTalk1" Type="EntityIsHidden" Name="TPS1_Hide_PG_Event" EntityNames="A1_Q5_S1_PGCorruption_PrimoGuardian" Hide="1" />
+      <Event Trigger="EventEnd" EventName="TPS_PGCorruptionTalk1" Type="EntityIsHidden" Name="TPS1_Hide_PG2_Event" EntityNames="A1_Q5_S1_PGCorruption_PrimoGuardian_Corrupt" Hide="1" />
+    </Step>
+    <Step Order="3" AutoClearEvents="0" Save="0" UIName="@ui_A1_Q5_S4_StepNameLabel">
+      <Goal Order="0" Type="Interact" Names="DungeonEntrance_toTPS" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_toTPS" Area="ACT1_Anankis_Halls_1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="TaintedPrimordialSuperstructure_Floor2_Exit" Area="ACT1_Anankis_Halls_2" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="TaintedPrimordialSuperstructure_Floor2_Exit" Radius="150" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="TaintedPrimordialSuperstructure_Floor2_Exit" Area="ACT1_Anankis_Halls_2" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Interact" Names="TaintedPrimordialSuperstructure_Floor2_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="TaintedPrimordialSuperstructure_Floor2_Exit" Area="ACT1_Anankis_Halls_2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q5_ClearUI_2" />
+    </Step>
+    <Step Order="4" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q5_S5_UpdateStepNameLabel1">
+      <Goal Order="0" Type="Go" Destination="Q_NPC_TPS_Yudai" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TPS_Yudai" Area="ACT1_AnankisCoreOverlook" Threshold="500" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TPS_Yudai" Area="ACT1_AnankisCoreOverlook" Threshold="500" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q5_ClearUI_3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="StepUpdate" Name="TPS2_Update1" Localization="@ui_A1_Q5_S5_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_TPS_ForceField_Event_1" EntityNames="TPS_ForceField_Event_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_TPS_ForceField_Event_2" EntityNames="TPS_ForceField_Event_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_TPS_ForceField_Event_3" EntityNames="TPS_ForceField_Event_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="IcySoul_Hidden_P2_Trigger" EntityNames="Yudai_P2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="IcySoul_Hidden_P1_Trigger" EntityNames="Yudai_P1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_TPS_DungeonEntrance4" EntityNames="DungeonEntrance4" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="TPS_YudaiFightIntroTalk1" DialogName="ACT1_Q5_TPS_YudaiFightIntroTalk1" />
+      <Event Trigger="EventEnd" EventName="TPS_YudaiFightIntroTalk1" Type="GoalAchieve" Name="WaitEnd_ACT1_Quest5_YudaiFightIntroTalk1" SimulateOnly="1" GoalIndexToAchieve="-1" />
+    </Step>
+    <Step Order="5" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q5_S5_UpdateStepNameLabel1">
+      <Goal Order="0" Type="Go" Destination="Q_NPC_TPS_Yudai" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TPS_Yudai" Area="ACT1_AnankisCoreOverlook" Threshold="500" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalCheckpoint" Name="ResetCheckpointYudaiFight" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_Off1_Top" EmitterEntityName="Yudai_Arena_BlockingRoad_Top" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_Off1_Left" EmitterEntityName="Yudai_Arena_BlockingRoad_Left" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_Off1_Right" EmitterEntityName="Yudai_Arena_BlockingRoad_Right" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalReleaseGameplayEvent" Name="ReleaseSlotVhegguadhFightLost" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_TPS_ForceField_Event_1_Fail" EntityNames="TPS_ForceField_Event_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_TPS_ForceField_Event_2_Fail" EntityNames="TPS_ForceField_Event_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_TPS_ForceField_Event_3_Fail" EntityNames="TPS_ForceField_Event_3" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="30" Type="GlobalCheckpoint" Name="Yudai_Remove_Checkpoint_SF" CheckpointEntityName="" />
+    </Step>
+    <Step Order="6" AutoClearEvents="1" Save="1" UIName="@ui_A1_Q5_S6_StepNameLabel">
+      <Goal Order="0" Type="Talk" EntityName="Q_NPC_TPS_Yudai" DialogName="ACT1_Q5_TPS_YudaiFightIntroTalk2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_TPS_Yudai" Area="ACT1_AnankisCoreOverlook" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3.5" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT1_BossFight_Yudai" Duration="20">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TPS_Yudai" Area="ACT1_AnankisCoreOverlook" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="BossFight" FightPreset="BossFight_Yudai">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TPS_Yudai" Area="ACT1_AnankisCoreOverlook" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TPS_Yudai" Area="ACT1_AnankisCoreOverlook" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Talk" EntityName="Q_NPC_TPS_PG" DialogName="ACT1_Q5_TPS_DyingGuardianTalk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_TPS_PG" Area="ACT1_AnankisCoreOverlook" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TPS_Yudai" Area="ACT1_AnankisCoreOverlook" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q5_ClearUI_4" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalRevivePlayers" Delay=".2" Name="CO_EventStartRevive" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalCheckpoint" Name="SetCheckpointYudaiFight" CheckpointEntityName="QP_A1_Q5_S6_PlayerSpawnPoint" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_On_Top" EmitterEntityName="Yudai_Arena_BlockingRoad_Top" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_On_Left" EmitterEntityName="Yudai_Arena_BlockingRoad_Left" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_On_Right" EmitterEntityName="Yudai_Arena_BlockingRoad_Right" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="CO_Update1" Localization="@ui_A1_Q5_S5_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalReserveGameplayEvent" Name="ReverveSlotYudaiFight" EventDescriptorName="ACT1_BossFight_Yudai" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="TPS_Reveal_TPS_ForceField_Event_1" EntityNames="TPS_ForceField_Event_1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="TPS_Reveal_TPS_ForceField_Event_2" EntityNames="TPS_ForceField_Event_2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="TPS_Reveal_TPS_ForceField_Event_3" EntityNames="TPS_ForceField_Event_3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityTeleport" MinRadius="15" Name="Player_TP_YudaiArena" TeleportedEntityName="#Player" DestinationName="QP_A1_Q5_S6_PlayerSpawnPoint" />
+      <Event Trigger="EventEnd" EventName="SequenceCoreGainingPower1" Type="GlobalReleaseGameplayEvent" Name="ReleaseSlotYudaiFight" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_Off2_Top" EmitterEntityName="Yudai_Arena_BlockingRoad_Top" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_Off2_Left" EmitterEntityName="Yudai_Arena_BlockingRoad_Left" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_Off2_Right" EmitterEntityName="Yudai_Arena_BlockingRoad_Right" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalDialog" Name="TPS_YudaiDeadTalk1" DialogName="ACT1_Q5_TPS_YudaiDeadTalk1" />
+      <Event Trigger="EventEnd" EventName="TPS_YudaiDeadTalk1" Type="GlobalDialog" Delay="1" Name="TPS_YudaiDeadTalk2" DialogName="ACT1_Q5_TPS_YudaiDeadTalk2" />
+      <Event Trigger="EventEnd" EventName="TPS_YudaiDeadTalk2" Type="GoalAchieve" Name="WaitEnd_ACT1_Quest5_YudaiDeadTalk2" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="CO_Update2" Localization="@ui_A1_Q5_S6_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalRevivePlayers" Delay=".2" Name="CO_EventSuccessRevive" RevivePostion="" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="ActionSequence" Delay="2" Name="SequenceCoreGainingPower1" SequenceName="A1_Q5_S10_CoreGainingPower1" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityIsHidden" Name="IcySoul_Win_P1_Trigger" EntityNames="Yudai_P1" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityIsHidden" Name="IcySoul_Win_P2_Trigger" EntityNames="Yudai_P2" Hide="1" />
+      <Event Trigger="EventEnd" EventName="SequenceCoreGainingPower1" Type="GoalAchieve" Name="WaitEnd_ACT1_Quest5_CoreGainingPower1" SimulateOnly="0" GoalIndexToAchieve="-1" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="Yudai_StopDialog_Fail" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="IcySoul_Fail_P1_Trigger" EntityNames="Yudai_P1" Hide="1" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="IcySoul_Fail_P2_Trigger" EntityNames="Yudai_P2" Hide="1" />
+      <Event Trigger="BossfightLost" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_Fail_Top" EmitterEntityName="Yudai_Arena_BlockingRoad_Top" Activate="0" />
+      <Event Trigger="BossfightLost" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_Fail_Left" EmitterEntityName="Yudai_Arena_BlockingRoad_Left" Activate="0" />
+      <Event Trigger="BossfightLost" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_Fail_Right" EmitterEntityName="Yudai_Arena_BlockingRoad_Right" Activate="0" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="AO_Reveal_YudaiArena_NPC_Event" EntityNames="Q_NPC_TPS_Yudai" Hide="0" />
+      <Event Trigger="BossfightLost" Type="StepFail" Name="AO_YudaiArena_FailStep" RollbackToPreviousStep="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="3000" />
+        <XP Amount="300000" />
+        <ChoiceLootClass Name="A1_Q5_Reward" MinItemNumber="5" MaxItemNumber="5" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="7" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q5_S8_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="YudaiSpawnPoint" Radius="150" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_TPS3" Area="ACT1_AnankisCoreOverlook" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="DungeonEntrance_TPS3" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_TPS3" Area="ACT1_AnankisCoreOverlook" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Wait" ReferenceEntityName="" TimeLimit="3">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="TaintedPrimordialSuperstructure_Floor3_Exit" Area="ACT1_Anankis_Halls_3" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="DungeonEntrance_TPS3" Area="ACT1_AnankisCoreOverlook" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="TaintedPrimordialSuperstructure_Floor3_Exit" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="TaintedPrimordialSuperstructure_Floor3_Exit" Area="ACT1_Anankis_Halls_3" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="DungeonEntrance_TPS3" Area="ACT1_AnankisCoreOverlook" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" SpeedScale=".5" BlendingTime="0" Name="GuardianStayDied2" AnimatedEntityName="Q_NPC_TPS_PG" Play="prim_guardian_death_02" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_GuardianStayDied_1" EntityNames="Q_NPC_TPS_PG" Hide="1" Delay="10" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q5_ClearUI_6" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="TPS_Enable_Portal" ClickableEntityName="ACT1_Q5_TPS_2ndFloorEntrancePlayerTalk" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Yudai_BlockingRoad_Restart_Top" EmitterEntityName="Yudai_Arena_BlockingRoad_Top" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="DungeonEntrance_TPS3_Unhide" EntityNames="DungeonEntrance_TPS3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_TPS_ForceField_Event2_1" EntityNames="TPS_ForceField_Event_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_TPS_ForceField_Event2_2" EntityNames="TPS_ForceField_Event_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Hide_TPS_ForceField_Event2_3" EntityNames="TPS_ForceField_Event_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPS_Reveal_TPS_DungeonEntrance4" EntityNames="DungeonEntrance4" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPSC_Hide_GPE_EF" EntityNames="EdricFight_FlowofSouls_P2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Delay="1.5" Type="GlobalDialog" Name="TPS_2ndFloorPlayerTalk" DialogName="ACT1_Q5_TPS_2ndFloorPlayerTalk" />
+    </Step>
+    <Step Order="8" AutoClearEvents="1" Save="0" UIName="@ui_A1_Q5_S9_StepNameLabel">
+      <Goal Order="0" Type="Interact" Names="TaintedPrimordialSuperstructure_Floor3_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="TaintedPrimordialSuperstructure_Floor3_Exit" Area="ACT1_Anankis_Halls_3" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="DungeonEntrance_TPS3" Area="ACT1_AnankisCoreOverlook" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+    </Step>
+    <Step Order="9" AutoClearEvents="1" Save="1" UIName="@ui_A1_Q5_S10_StepNameLabel" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_TPEdricArena" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_TPEdricArena" Area="ACT1_AnankisCoreOverlook2" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="DungeonEntrance_TPS3" Area="ACT1_AnankisCoreOverlook" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_StormfallPlaza" AreaRadius="50" Type="GlobalCheckpoint" Name="ResetCheckpointEdricFightInStormfall" CheckpointEntityName="" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ClickableEntity_TPEdricArena" AreaRadius="20" Type="GlobalCheckpoint" Name="ResetCheckpointEdricFightInCoreOverlook2" CheckpointEntityName="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HideExit_Workaround" EntityNames="DungeonEntrance_TPS3" Hide="1" Delay="1.0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ShowExit_Workaround" EntityNames="DungeonEntrance_TPS3" Hide="0" Delay="1.1" />
+    </Step>
+    <Step Order="10" AutoClearEvents="1" Save="1" UIName="@ui_A1_Q5_S11_StepNameLabel" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_TPEdricArena" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" Target="TaintedPrimordialSuperstructure_Floor3_Exit" Area="ACT1_Anankis_Halls_3" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_TPEdricArena" Area="ACT1_AnankisCoreOverlook2" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" Duration="20" VotePreset="VotePreset_ACT1_TPS_EdricAmbush">
+        <ArrowMarker ShowMinimapIcon="1" Target="TaintedPrimordialSuperstructure_Floor3_Exit" Area="ACT1_Anankis_Halls_3" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_TPEdricArena" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_A1_Q5_EdricAmbushTrigger" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="BOSS_Spawn_Point_Edric03" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="BossFight" FightPreset="BossFight_Edric">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="BOSS_Spawn_Point_Edric03" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="Edric_Disable_Portal" ClickableEntityName="ClickableEntity_TPEdricArena" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalCheckpoint" Name="SetCheckpointEdricFight" CheckpointEntityName="SpawnPoint_taintedprimordial_bossArena" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalReserveGameplayEvent" Name="ReverveSlotEdricFight" EventDescriptorName="ACT1_BossFight_Edric" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityTeleport" MinRadius="1" Name="Player_TP_TPSC" TeleportedEntityName="#Player" DestinationName="QP_PlayerSpawnPoint_EdricArena" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionDungeonExit" Name="UnockTPS3Portal" ExitEntityName="TaintedPrimordialSuperstructure_Floor3_Exit" Activate="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalRevivePlayers" Delay=".2" Name="TPSC_EventStartRevive" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="TPSC_Update1" Localization="@ui_A1_Q5_S11_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="TPSC_Update2" Localization="@ui_A1_Q5_S11_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="GlobalRevivePlayers" Delay=".2" Name="TPSC_EventSuccessRevive" RevivePostion="" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="GlobalCheckpoint" Name="ReSetCheckpointEdricFightWin" CheckpointEntityName="" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="ActionClickable" Name="Edric_Ensable_Portal" ClickableEntityName="ClickableEntity_TPEdricArena" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="GlobalReleaseGameplayEvent" Name="ReleaseSlotEdricFight" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="EdricArena_StopDialog_Fail" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="TPSC_Hide_GPE_EF1" EntityNames="EdricFight_FlowofSouls_P2" Hide="1" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="TPSC_Hide_GPE_EF2" EntityNames="EdricFight_FlowofSouls_P3" Hide="1" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="AO_Hide_EdricArena_ForceField_Event_1" EntityNames="TPS_ForceField_Event_1" Hide="1" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="AO_Hide_EdricArena_ForceField_Event_2" EntityNames="TPS_ForceField_Event_2" Hide="1" />
+      <Event Trigger="BossfightLost" Type="StepFail" Name="AO_EdricArena_FailStep" RollbackToPreviousStep="1" />
+      <Event Trigger="BossfightLost" Type="ActionSequenceReset" Name="Reset_EdricAmbush" SequenceName="A1_Q5_S2_EdricAmbush" ResetAtLastFrame="0" />
+      <Event Trigger="BossfightLost" Type="GlobalReleaseGameplayEvent" Name="ReleaseSlotEdricFightSuccess" />
+    </Step>
+    <Step Order="11" UIName="@ui_A1_Q5_S12_StepNameLabel" AutoClearEvents="0" Save="1">
+      <Goal Order="0" Type="Go" Destination="Q_NPC_TPSC_CPG" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TPSC_CPG" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TPSC_CPG" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Interact" Names="Q_NPC_TPSC_CPG" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_TPSC_CPG" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TPSC_CPG" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="MaybeAllowApocalypticForm" AllowTransform="1" Name="A1_Q5_AllowManualApoTransform" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q5_ClearUI_8" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPSC_Reveal_Q_NPC_TPSC_CPG" EntityNames="Q_NPC_TPSC_CPG" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay=".5" Name="TPSC_EdricDeadTalk1" DialogName="ACT1_Q5_TPSC_EdricDeadTalk1" />
+      <Event Trigger="EventEnd" EventName="TPSC_EdricDeadTalk1" Type="GlobalDialog" Delay="2" Name="TPSC_EdricDeadTalk2" DialogName="ACT1_Q5_TPSC_EdricDeadTalk2" />
+      <Event Trigger="EventEnd" EventName="TPSC_EdricDeadTalk2" Type="GlobalDialog" Delay="2" Name="TPSC_GuardianSpiritTalk1" DialogName="ACT1_Q5_TPSC_GuardianSpiritTalk1" />
+      <Event Trigger="EventEnd" EventName="TPSC_GuardianSpiritTalk1" Type="GoalAchieve" Name="WaitEnd_GuardianSpiritTalk" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="TPSC_Hide_Q_NPC_TPSC_CPG2" EntityNames="Q_NPC_TPSC_CPG" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="GuardianDialogue_Sequence" SequenceName="A1_Q5_S10_CoreGainingPower2" />
+      <Event Trigger="EventEnd" EventName="GuardianDialogue_Sequence" Type="GoalAchieve" Name="WaitEnd_GuardianSpiritSequence" SimulateOnly="0" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="GlobalTutorial" Name="Dialog_ACT1_Q5_Tutorial_Apo" TutorialName="Quest_Apo" />
+      <Reward ShowRewardPanel="None" Order="1">
+        <XP Amount="100000" />
+      </Reward>
+    </Step>
+    <Step Order="12" UIName="@ui_A1_Q5_S13_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Talk" EntityName="Act1_StormfallPalace_Damaskus" DialogName="ACT1_Q5_TPSC_SF_DamaskusTalk1">
+        <ArrowMarker ShowMinimapIcon="1" Target="Act1_StormfallPalace_Damaskus" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q5_ClearUI_9" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="4500" />
+        <XP Amount="300000" />
+        <ChoiceLootClass Name="A1_Q5_Reward2" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="13" UIName="@ui_A1_Q5_S14_StepNameLabel" AutoClearEvents="0" Save="1">
+      <Goal Order="0" Type="Interact" Names="Act1_StormfallPalace_Damaskus" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" Target="Act1_StormfallPalace_Damaskus" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT1_SF_ACT1_to_ACT2" GameplayEventPresetName="" GatedByReward="1">
+        <ArrowMarker ShowMinimapIcon="1" Target="Act1_StormfallPalace_Damaskus" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ChangeMapAndStartQuest" Name="ChangeMapAndStartQuest_ACT2_Quest1" QuestName="ACT2_Quest1" />
+    </Step>
+  </Quest>
+</MetaData>

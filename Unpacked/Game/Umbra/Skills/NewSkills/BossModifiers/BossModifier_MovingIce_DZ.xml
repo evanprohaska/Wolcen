@@ -1,0 +1,36 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_MovingIce_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Frost" WeaponMultiplier=".5" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Freeze" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="BossModifier_MovingGround_DZ" />
+    </Shapes>
+    <DamageZone Duration="20" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_VFX_Oskar.Bossmodifiers.RandomIceDZ_Cast" Offset="0,0,2" Direction="1,0,0" Scale=".5" InstantKill="0" />
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.Bossmodifiers.RandomIceDZ_Projectile" Offset="0,0,2" Direction="0,1,0" Scale="1" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.iceproj.remove" Offset="0,0,2" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="2" RandomBaseDistMax="4" RandomBaseAngleMin="0" RandomBaseAngleMax="360" LimitAngle="360" MinLinearSpeed="2" MaxLinearSpeed="-2" MinAngularSpeed="20" MaxAngularSpeed="20" IndicatorMaxTimer="2" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="1" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_Hunt_BossModifier_MovingIce_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Frost" WeaponMultiplier=".5" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Freeze" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="BossModifier_MovingGround_DZ" />
+    </Shapes>
+    <DamageZone Duration="20" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_VFX_Oskar.Bossmodifiers.RandomIceDZ_Cast" Offset="0,0,2" Direction="1,0,0" Scale=".5" InstantKill="0" />
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.Bossmodifiers.RandomIceDZ_Projectile" Offset="0,0,2" Direction="0,1,0" Scale="1" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.iceproj.remove" Offset="0,0,2" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="2" RandomBaseDistMax="4" RandomBaseAngleMin="0" RandomBaseAngleMax="360" LimitAngle="360" MinLinearSpeed="2" MaxLinearSpeed="-2" MinAngularSpeed="20" MaxAngularSpeed="20" IndicatorMaxTimer="2" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="1" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

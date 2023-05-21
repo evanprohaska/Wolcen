@@ -1,0 +1,194 @@
+<MetaData>
+  <Quest Name="ACT2_Quest6" StartDialog="" Type="Main" UIName="@ui_A2_Q6_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT2">
+    <Step Order="0" UIName="@ui_A2_Q6_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="DungeonEntrance_IncubationChamber1" Radius="45" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="SpawnPoint_fleshcoty_from_fleshforest2" Area="ACT2_Flesh_City" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="DungeonEntrance_IncubationChamber1" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="SpawnPoint_fleshcoty_from_fleshforest2" Area="ACT2_Flesh_City" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="DungeonEntrance_IncubationChamber1" Area="ACT2_Flesh_City" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Wait" ReferenceEntityName="" Radius="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="IncubationChamber1_Exit" Area="Act2_IncubationChamber1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q6_S1_ClearUI" StepToKeep="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="DungeonEntrance_IncubationChamber1" AreaRadius="240" Type="GlobalDialog" Name="A2_Q6_S2_DynS_Player_Talk1" DialogName="ACT2_Q6_S2_DynS_Player_Talk1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="DungeonEntrance_IncubationChamber1" AreaRadius="162" Type="GlobalDialog" Name="A2_Q6_S2_DynS_Player_Talk2" DialogName="ACT2_Q6_S2_DynS_Player_Talk2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="A2_Q6_S2_DynS_Player_Talk3" DialogName="ACT2_Q6_S2_DynS_Player_Talk3" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="A2_Q6_S1_ClearUI2" Localization="" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="1" UIName="@ui_A2_Q6_S1_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="IncubationChamber1_Exit" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="IncubationChamber1_Exit" Area="Act2_IncubationChamber1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="IncubationChamber1_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="IncubationChamber1_Exit" Area="Act2_IncubationChamber1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="OnLoading" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Type="EntitySpawn" Name="A2_Q6_S1_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="QP_ValeriaGo_FleshCity" FaceAtSpawn="QP_ValeriaFace_FleshCity" />
+      <Event Trigger="EventEnd" EventName="A2_Q6_S1_ValeriaSpawn" SpeedScale="1" BlendingTime="1" Type="EntityAnimate" Name="A2_Q6_S1_ValeriaWounded" AnimatedEntityName="Valeria" Play="npc_fh_sit_wounded_01" Loop="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="A2_Q6_S2_DynS_Player_Talk4" DialogName="ACT2_Q6_S2_DynS_Player_Talk4" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_ACT2_Q6_S2_DynS_Player_Talk5" AreaRadius="75" Type="GlobalDialog" Name="A2_Q6_S2_DynS_Player_Talk5_1" DialogName="ACT2_Q6_S2_DynS_Player_Talk5_1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_ACT2_Q6_S2_DynS_Player_Talk5" AreaRadius="22" Type="GlobalDialog" Name="A2_Q6_S2_DynS_Player_Talk5_2" DialogName="ACT2_Q6_S2_DynS_Player_Talk5_2" />
+    </Step>
+    <Step Order="2" UIName="@ui_A2_Q6_S2_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="" IgnoreAutomaticStepUIUpdate="1">
+      <Goal Order="0" Type="Go" Destination="NPC_A2_Q6_S3_Lambach" Radius="25" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_IncubationChamber2" Area="ACT2_IC_Waypoint_Area" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Talk" EntityName="NPC_A2_Q6_S3_Lambach" DialogName="ACT2_Q6_S3_Lambach_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q6_S3_Lambach" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_IC_Waypoint_Area" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="A2_Q6_S2_CopyValSpawn1,A2_Q6_S2_CopyValSpawn2" KillCount="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A2_Q6_S2_CopyValSpawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_IC_Waypoint_Area" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A2_Q6_S2_CopyValSpawn2" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_IC_Waypoint_Area" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="DungeonEntrance_IncubationChamber2" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_IncubationChamber2" Area="ACT2_IC_Waypoint_Area" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q6_S2_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A2_Q6_S2_StepUpdate1" Localization="@ui_A2_Q6_S2_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q6_S2_CopyValSpawn1" SpawnClass="Sc_Sty_AC2_COFE_VAL1" TargetEntityName="QP_ValeriaSpawn1" FaceAtSpawn="#Player" Delay=".05" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q6_S2_CopyValSpawn2" SpawnClass="Sc_Sty_AC2_COFE_VAL2" TargetEntityName="QP_ValeriaSpawn2" FaceAtSpawn="#Player" Delay=".05" />
+      <Event Trigger="EventEnd" EventName="A2_Q6_S2_CopyValSpawn2" Type="GlobalDialog" Name="A2_Q6_S2_DynS_Player_Talk1" DialogName="ACT2_Q6_S3_DynS_Player_Talk1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q6_S2_DynS_Player_Talk2" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q6_S2_KillWallOfFlesh" SequenceName="A2_DYN_LAMBACHFACTORY3_WallOfFlesh" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="A2_Q6_S2_StepUpdate2" Localization="@ui_A2_Q6_S2_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalDialog" Name="A2_Q6_S2_DynS_Player_Talk2" DialogName="ACT2_Q6_S3_DynS_Player_Talk2" />
+      <Event Trigger="EventEnd" EventName="A2_Q6_S2_DynS_Player_Talk2" Type="EntityIsHidden" Name="A2_Q6_S2_HideCollisionWallOfFlesh" EntityNames="CE_A2_Q6_S2_WallOfFlesh" Hide="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q6_S2_DynS_Player_Talk2" Type="EntityAnimate" SpeedScale="1" BlendingTime="1" Name="A2_Q6_S2_LambachLeave" AnimatedEntityName="NPC_A2_Q6_S3_Lambach" Play="COFE_Lambach_Step1_Quit_01" Loop="0" />
+    </Step>
+    <Step Order="3" UIName="@ui_A2_Q6_S3_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="DungeonEntrance_IncubationChamber2" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_IncubationChamber2" Area="ACT2_IC_Waypoint_Area" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="IncubationChamber2_Exit" Area="Act2_IncubationChamber2" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="IncubationChamber2_Exit" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="IncubationChamber2_Exit" Area="Act2_IncubationChamber2" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Interact" Names="IncubationChamber2_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="IncubationChamber2_Exit" Area="Act2_IncubationChamber2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q6_S3_ClearUI" StepToKeep="2" />
+    </Step>
+    <Step Order="4" UIName="@ui_A2_Q6_S4_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_lamback_viewpoint_from_boss" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_lamback_viewpoint_from_boss" Area="ACT2_PS_Overlook" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q6_S4_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q6_S1_HideFleshCityEventTrigger" EntityNames="CE_A2_Q5_S9_EventVoteTrigger" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalDialog" Name="A2_Q6_S6_DynS_Player_Talk1" DialogName="ACT2_Q6_S6_DynS_Player_Talk1" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalCheckpoint" Name="ResetCheckpointLambachFight" CheckpointEntityName="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P1_Init_KillAll_Spreader" MonsterClass="CultOfFlesh_Spreader" Area="ACT2_Lambach_P1_Arena" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P1_Init_KillAll_Runner" MonsterClass="CultOfFlesh_Runner" Area="ACT2_Lambach_P1_Arena" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P1_Init_KillAll_Halfbreed" MonsterClass="CultOfFlesh_Halfbreed" Area="ACT2_Lambach_P1_Arena" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P1_Init_KillAll_Simulacrum" MonsterClass="CultOfFlesh_Simulacrum" Area="ACT2_Lambach_P1_Arena" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P1_Init_KillAll_Sniper" MonsterClass="CultOfFlesh_Sniper" Area="ACT2_Lambach_P1_Arena" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P1_Init_KillAll_Infantry_Sword" MonsterClass="CultOfFlesh_Infantry_Sword" Area="ACT2_Lambach_P1_Arena" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P1_Init_KillAll_Scarab" MonsterClass="CultOfFlesh_Scarab" Area="ACT2_Lambach_P1_Arena" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P1_Init_KillAll_Rat" MonsterClass="CultOfFlesh_Rat" Area="ACT2_Lambach_P1_Arena" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P2_Init_KillAll_ColossalBreeder" MonsterClass="CultOfFlesh_ColossalBreeder_Lambach" Area="ACT2_Lambach_P2_Arena" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P2_Init_KillAll_RunnerBreeder" MonsterClass="CultOfFlesh_RunnerBreeder_Lambach" Area="ACT2_Lambach_P2_Arena" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P2_Init_KillAll_Zombie" MonsterClass="CultOfFlesh_Zombie_Lambach" Area="ACT2_Lambach_P2_Arena" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_LambachEvent_SF" CheckpointEntityName="" Delay="1" />
+    </Step>
+    <Step Order="5" UIName="@ui_A2_Q6_S5_StepNameLabel" AutoClearEvents="1" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_lamback_viewpoint_from_boss" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_lamback_viewpoint_from_boss" Area="ACT2_PS_Overlook" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT2_LambachBossFight">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_lamback_viewpoint_from_boss" Area="ACT2_PS_Overlook" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="NPC_A2_Q6_S6_Lambach" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q6_S6_Lambach" Area="ACT2_Lambach_P1_Arena" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q6_S6_Lambach" Area="ACT2_IC_Waypoint_Area" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Talk" EntityName="NPC_A2_Q6_S6_Lambach" DialogName="ACT2_Q6_S6_Lambach_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q6_S6_Lambach" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Lambach_P1_Arena" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="BossFight" FightPreset="BossFight_Lambach" />
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q6_S5_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q6_S5_HideGI_1" EntityNames="GI_IncubationChamber01" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q6_S5_HideGI_2" EntityNames="GI_IncubationChamber02" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q6_S5_HideGI_3" EntityNames="GI_IncubationChamber03" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q6_S5_HideGI_4" EntityNames="GI_IncubationChamber04" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q6_S5_HideGI_5" EntityNames="GI_IncubationChamber05" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q6_S5_UnhideGI_1" EntityNames="GI_IncubationChamber01" Hide="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q6_S5_UnhideGI_2" EntityNames="GI_IncubationChamber02" Hide="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q6_S5_UnhideGI_3" EntityNames="GI_IncubationChamber03" Hide="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q6_S5_UnhideGI_4" EntityNames="GI_IncubationChamber04" Hide="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q6_S5_UnhideGI_5" EntityNames="GI_IncubationChamber05" Hide="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalReserveGameplayEvent" Name="A2_Q6_S6_ReserveEvent" EventDescriptorName="ACT2_BossFight_Lambach" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q6_S6_LockPortail" ClickableEntityName="ClickableEntity_lamback_viewpoint_from_boss" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalRevivePlayers" Name="ACT2_Quest6_EventRevive" RevivePostion="SpawnPoint_arenaboss1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A2_Q6_S6_StepUpdate2" Localization="@ui_A2_Q6_S5_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="A2_Q6_S6_RemoveValeria" EntityName="Valeria" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityTeleport" MinRadius="30" Name="A2_Q6_S6_Player_Tp_Event" TeleportedEntityName="#Player" DestinationName="SpawnPoint_arenaboss1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalDialog" Name="A2_Q6_S6_DynS_Lambach_Talk1" DialogName="ACT2_Q6_S6_DynS_Lambach_Talk1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalCheckpoint" Name="ResetCheckpointLambachFight" CheckpointEntityName="SpawnPoint_lamback_viewpoint_from_boss" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="StepUpdate" Name="A2_Q6_S6_StepUpdate1" Localization="@ui_A2_Q6_S5_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q6_S6_DynS_Lambach_Talk1" Type="GoalAchieve" Name="A2_Q6_S6_Goal4Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="LambachFight_StopDialog_Fail" />
+      <Event Trigger="BossfightLost" Type="EntityAnimate" SpeedScale="2" BlendingTime="1" Name="A2_Q6_S6_LambachIdle" AnimatedEntityName="NPC_A2_Q6_S6_Lambach" Play="cofe_lambach_step1_idle_03" Loop="1" />
+      <Event Trigger="BossfightLost" Type="ActionClickable" Name="A2_Q6_S6_UnlockPortail_Wipe" ClickableEntityName="ClickableEntity_lamback_viewpoint_from_boss" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="BossfightLost" Type="EntityKill" Name="LambachFight_Event_FailKill" EntityName="Lambach" Hide="1" Remove="1" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="LambachFight_EventLambachfailUnhide" EntityNames="NPC_A2_Q6_S6_Lambach" Hide="0" />
+      <Event Trigger="BossfightLost" Type="GlobalReleaseGameplayEvent" Name="LambachFight_LambachFightEvent_FailEventSlotRelease" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P1_Fail_KillAll_Spreader" MonsterClass="CultOfFlesh_Spreader" Area="ACT2_Lambach_P1_Arena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P1_Fail_KillAll_Runner" MonsterClass="CultOfFlesh_Runner" Area="ACT2_Lambach_P1_Arena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P1_Fail_KillAll_Halfbreed" MonsterClass="CultOfFlesh_Halfbreed" Area="ACT2_Lambach_P1_Arena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P1_Fail_KillAll_Simulacrum" MonsterClass="CultOfFlesh_Simulacrum" Area="ACT2_Lambach_P1_Arena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P1_Fail_KillAll_Sniper" MonsterClass="CultOfFlesh_Sniper" Area="ACT2_Lambach_P1_Arena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P1_Fail_KillAll_Infantry_Sword" MonsterClass="CultOfFlesh_Infantry_Sword" Area="ACT2_Lambach_P1_Arena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P1_Fail_KillAll_Scarab" MonsterClass="CultOfFlesh_Scarab" Area="ACT2_Lambach_P1_Arena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P1_Fail_KillAll_Rat" MonsterClass="CultOfFlesh_Rat" Area="ACT2_Lambach_P1_Arena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P2_Fail_KillAll_ColossalBreeder" MonsterClass="CultOfFlesh_ColossalBreeder_Lambach" Area="ACT2_Lambach_P2_Arena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P2_Fail_KillAll_RunnerBreeder" MonsterClass="CultOfFlesh_RunnerBreeder_Lambach" Area="ACT2_Lambach_P2_Arena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="LambachFight_P2_Fail_KillAll_Zombie" MonsterClass="CultOfFlesh_Zombie_Lambach" Area="ACT2_Lambach_P2_Arena" />
+      <Event Trigger="BossfightLost" Type="StepFail" Name="LambachFight_Event_EventFail" RollbackToPreviousStep="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="QuestFail" Name="FailHunt_HuntQuest" QuestName="QN_HS_A2_DoSoulHunt_2F" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="QuestFail" Name="FailHunt_BossFightQuest" QuestName="QN_HE_BF_DOS_S" />
+    </Step>
+    <Step Order="6" UIName="@ui_A2_Q6_S6_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="NPC_A2_Q6_Gernez" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q6_Gernez" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Talk" EntityName="NPC_A2_Q6_Gernez" DialogName="ACT2_Q6_S7_Gernese_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q6_Gernez" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="A2_Q6_S6_ResetCheckpoint" CheckpointEntityName="" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q6_S6_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="A2_Q6_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q6_S6_UnlockPortail" ClickableEntityName="ClickableEntity_lamback_viewpoint_from_boss" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalReleaseGameplayEvent" Name="LambachFight_LambachFightEvent_SuccessEventSlotRelease" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="A2_Q6_S7_DynS_Valeria_Talk" DialogName="ACT2_Q6_S7_DynS_Valeria_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P2_Win_KillAll_ColossalBreeder" MonsterClass="CultOfFlesh_ColossalBreeder_Lambach" Area="ACT2_Lambach_P2_Arena" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P2_Win_KillAll_RunnerBreeder" MonsterClass="CultOfFlesh_RunnerBreeder_Lambach" Area="ACT2_Lambach_P2_Arena" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="LambachFight_P2_Win_KillAll_Zombie" MonsterClass="CultOfFlesh_Zombie_Lambach" Area="ACT2_Lambach_P2_Arena" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="20000" />
+        <XP Amount="300000" />
+        <ChoiceLootClass Name="A2_Q6_Reward" MinItemNumber="5" MaxItemNumber="5" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="7" UIName="@ui_A2_Q6_S7_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="NPC_A2_Q6_Gernez" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q6_Gernez" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT2_TC_ACT2_to_ACT3" GameplayEventPresetName="" GatedByReward="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q6_Gernez" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q6_S7_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ChangeMapAndStartQuest" Name="ChangeMapAndStartQuest_ACT3_Quest1" QuestName="ACT3_Quest1" />
+    </Step>
+  </Quest>
+</MetaData>

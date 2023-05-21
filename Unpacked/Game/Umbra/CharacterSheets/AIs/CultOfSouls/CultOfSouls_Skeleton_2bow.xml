@@ -1,0 +1,59 @@
+<MetaData>
+  <BaseEntity ID="CultOfSouls_Skeleton_2bow" EntityName="wild_spider_melee" Scale="1" CanKillAllies="0" />
+  <Faction Name="CultOfSouls" />
+  <Keywords Value="trash,range,physical,normal" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="0.5" CombatPointValueMultiplier="0.5" />
+  <Attributes Archetype="archetype_trash" HealthModifier="0.5" DamageModifier="0.5" XPModifier="0.5" Protection="" />
+  <Movement MovementSpeed="4" WalkSpeed="4" />
+  <InterruptionParams InterruptChance="1.00" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BlownAwayParams CanBeBlownAway="1" BlownAwayAnimationTag="" />
+  <DefaultBossModifiers />
+  <LootClass>
+    <Loot Class="LC_trash" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="" />
+  <OnDeathLootPreset Name="OnDeathLoot_Trash" />
+  <Corpses PresetName="TrashCadaverPreset" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="360" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Generic" />
+    <BT FleeOnLowHealthChance="0.0" EngageRange="17.0" MeleeAttack="True" FallBack="True" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="Melee" />
+  </Kythera>
+  <Skills>
+    <DefaultBasicAttack>
+      <Skill Name="AI_COSS_Skeleton_Bow_DefaultAttack" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.0" Preferred="12" Max="15" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </DefaultBasicAttack>
+    <Offensive />
+    <Approach />
+  </Skills>
+  <RandomModel>
+    <ModelChoice Model="Objects\characters\mobs\Humanoid\Skeleton\COSS_Skeleton\COSS_Skeleton_2bow_01.cdf" Weight="1">
+      <ADBChoice ADB="Animations\Mannequin\ADB\Mobs\Humanoid\Skeleton\COSS_Skeleton_2Bow.adb" Weight="1" />
+    </ModelChoice>
+    <ModelChoice Model="Objects\characters\mobs\Humanoid\Skeleton\COSS_Skeleton\COSS_Skeleton_2bow_02.cdf" Weight="1">
+      <ADBChoice ADB="Animations\Mannequin\ADB\Mobs\Humanoid\Skeleton\COSS_Skeleton_2Bow.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIName_COSS_SkeletonRangeBow" ZIconOffset="2.0" />
+  <Spawn SpawnAnimation="rise_out_ground_fast" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="0.1" DeathSkill="" CosmeticDropPreset="AI_COSS_Skeleton_archer_01" OnDeathMaterial="Objects/characters/Textures/invisible.mtl" />
+  <GameplayParticles PresetName="size_Summons" />
+  <Capsules>
+    <EntityPhysics ColliderSize="0.5,0.5,0.5" IsPushable="0" RagdollMass="350" />
+    <MouseSelection SelectionCapsuleRadius="0.75" SelectionCapsuleHeight="1.2" SelectionCapsuleZOffset="-0.5" />
+    <ProjectileCollision ProjectileCapsuleRadius="0.75" ProjectileCapsuleHeight="3.0" CanSnapOnCenterWhenColliding="1" />
+    <VegetationCollision SphereRadius="0.4" SphereZOffset="0.4" />
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+  </VisualParams>
+  <Audio AllowGroupSounds="1" />
+  <RandomVoice>
+    <VoiceChoice VoiceName="spider_voice" EnemyBark="" Weight="1" />
+  </RandomVoice>
+</MetaData>

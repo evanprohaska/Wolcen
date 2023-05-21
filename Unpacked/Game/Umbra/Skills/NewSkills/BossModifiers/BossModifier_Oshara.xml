@@ -1,0 +1,50 @@
+<MetaData>
+  <Skill UID="AI_Oshara_SummonFireTraps" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="0" />
+    <Summoning MaxSummons="15" SummonDuration="0" MinRadiusAroundSpawnPosition="8" MaxRadiusAroundSpawnPosition="24" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_Oshara_FireTrap" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Oshara_SummonFireTraps_Uber" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="0" />
+    <Summoning MaxSummons="15" SummonDuration="0" MinRadiusAroundSpawnPosition="8" MaxRadiusAroundSpawnPosition="24" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_Oshara_FireTrap_Uber" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Oshara_KillFireTraps" ESkill="AI_default_killminions" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="0" />
+  </Skill>
+  <Skill UID="AI_BossModifier_FireTrap" ESkill="bossmodifier_firetrap" Keywords="magic_spell">
+    <DamageWeapon Type="Fire" WeaponMultiplier="4" />
+    <CastingParams CanBeInterrupted="0" CastDelay="1" />
+    <StatusAilment>
+      <Burn Chance="100" ChanceMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0" />
+    <Projectile Name="OsharaUber_BossMod_proj" ProjectileCount="1" AngleBetweenProjectiles="180" PenetrationLimit="0" />
+    <Range AttackRange="40" />
+    <SkillSpecific LootGlobeName="oshara_globe" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_UberOsharaTraps_Proj">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="4" />
+    <StatusAilment>
+      <Burn Chance="100" ChanceMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Burn" />
+    <Explosion ExplosionRadius="2" />
+    <Projectile Name="Oshara03_BossMod_proj" ProjectileCount="4" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="50" totalAngleAtDistanceMin="360" totalAngleAtDistanceMax="360" projectileAngleAtDistanceMin="90" projectileAngleAtDistanceMax="90" />
+    </Projectile>
+    <Range AttackRange="50" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround">
+      <CastAttributes FromCaster="1" RandomDir="1" MaxZOffset="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

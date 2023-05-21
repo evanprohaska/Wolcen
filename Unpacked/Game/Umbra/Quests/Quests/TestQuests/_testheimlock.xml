@@ -1,0 +1,122 @@
+<MetaData>
+  <Quest Name="test_heimlock01" UIName="" UIDesc="" Type="Main" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="Destination_Heimlock" Radius="20" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Vote" Duration="30" VotePreset="default" GameplayEventPresetName="GameplayEventPreset_TEST" />
+      <Goal Order="1" Type="BossFight" FightPreset="bossfight_heimlock01_test" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="BossfightLost" Type="StepFail" Delay="0" Name="BossFightTestFail" RollbackToPreviousStep="1" />
+    </Step>
+  </Quest>
+  <Quest Name="test_heimlock01_subquest" UIName="" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="5" Name="TP_Target_Heimlock" TeleportedEntityName="#Player" DestinationName="Target_Heimlock" />
+      <Goal Order="0" Type="Wait" TimeLimit="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI1" EntityNames="HeimlockSafeZone1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI2" EntityNames="HeimlockSafeZone2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI3" EntityNames="HeimlockSafeZone3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI4" EntityNames="HeimlockPillar1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI5" EntityNames="HeimlockPillar2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI6" EntityNames="HeimlockPillar3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI7" EntityNames="HeimlockPortal1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="C_A3_Q1_BossSpawn" Type="EntitySpawn" SpawnClass="sc_TEST_HEIMLOCK01" TargetEntityName="Heimlock_SpawnPoint_01" FaceAtSpawn="Target_Heimlock" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Goal Order="1" Type="KillAll" EventsName="C_A3_Q1_BossSpawn">
+        <ArrowMarker Target="C_A3_Q1_BossSpawn" Area="" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI4" EntityNames="HeimlockPillar1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI5" EntityNames="HeimlockPillar2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI6" EntityNames="HeimlockPillar3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI7" EntityNames="HeimlockPortal1" Hide="0" />
+      <Goal Order="2" Type="Wait" TimeLimit="1" />
+      <GoalLogic Formula="00-01-02" />
+    </Step>
+  </Quest>
+  <Quest Name="test_heimlock02" UIName="" UIDesc="" Type="Main" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="Destination_Heimlock" Radius="20" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Vote" Duration="30" VotePreset="default" GameplayEventPresetName="GameplayEventPreset_TEST" />
+      <Goal Order="1" Type="BossFight" FightPreset="bossfight_heimlock02_test" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="BossfightLost" Type="StepFail" Delay="0" Name="BossFightTestFail" RollbackToPreviousStep="1" />
+    </Step>
+  </Quest>
+  <Quest Name="test_heimlock02_subquest" UIName="" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="5" Name="TP_Target_Heimlock" TeleportedEntityName="#Player" DestinationName="Target_Heimlock" />
+      <Goal Order="0" Type="Wait" TimeLimit="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI1" EntityNames="HeimlockSafeZone1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI2" EntityNames="HeimlockSafeZone2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI3" EntityNames="HeimlockSafeZone3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI4" EntityNames="HeimlockPillar1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI5" EntityNames="HeimlockPillar2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI6" EntityNames="HeimlockPillar3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI7" EntityNames="HeimlockPortal1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="D_A3_Q1_BossSpawn" Type="EntitySpawn" SpawnClass="sc_TEST_HEIMLOCK02" TargetEntityName="Heimlock_SpawnPoint_01" FaceAtSpawn="Target_Heimlock" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Goal Order="1" Type="KillAll" EventsName="D_A3_Q1_BossSpawn">
+        <ArrowMarker Target="D_A3_Q1_BossSpawn" Area="" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI4" EntityNames="HeimlockPillar1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI5" EntityNames="HeimlockPillar2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI6" EntityNames="HeimlockPillar3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI7" EntityNames="HeimlockPortal1" Hide="0" />
+      <Goal Order="2" Type="Wait" TimeLimit="1" />
+      <GoalLogic Formula="00-01-02" />
+    </Step>
+  </Quest>
+  <Quest Name="test_heimlock03" UIName="" UIDesc="" Type="Main" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="Destination_Heimlock" Radius="20" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Vote" Duration="30" VotePreset="default" GameplayEventPresetName="GameplayEventPreset_TEST" />
+      <Goal Order="1" Type="BossFight" FightPreset="bossfight_heimlock03_test" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="BossfightLost" Type="StepFail" Delay="0" Name="BossFightTestFail" RollbackToPreviousStep="1" />
+    </Step>
+  </Quest>
+  <Quest Name="test_heimlock03_subquest" UIName="" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="5" Name="TP_Target_Heimlock" TeleportedEntityName="#Player" DestinationName="Target_Heimlock" />
+      <Goal Order="0" Type="Wait" TimeLimit="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI1" EntityNames="HeimlockSafeZone1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI2" EntityNames="HeimlockSafeZone2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI3" EntityNames="HeimlockSafeZone3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI4" EntityNames="HeimlockPillar1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI5" EntityNames="HeimlockPillar2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI6" EntityNames="HeimlockPillar3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_Hide_GPI7" EntityNames="HeimlockPortal1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="E_A3_Q1_BossSpawn" Type="EntitySpawn" SpawnClass="sc_TEST_HEIMLOCK03" TargetEntityName="Heimlock_SpawnPoint_01" FaceAtSpawn="Target_Heimlock" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Goal Order="1" Type="KillAll" EventsName="E_A3_Q1_BossSpawn">
+        <ArrowMarker Target="E_A3_Q1_BossSpawn" Area="" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI1" EntityNames="HeimlockSafeZone1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI2" EntityNames="HeimlockSafeZone2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI3" EntityNames="HeimlockSafeZone3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI4" EntityNames="HeimlockPillar1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI5" EntityNames="HeimlockPillar2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI6" EntityNames="HeimlockPillar3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Heimlock_UnHide_GPI7" EntityNames="HeimlockPortal1" Hide="0" />
+      <Goal Order="2" Type="Wait" TimeLimit="1" />
+      <GoalLogic Formula="00-01-02" />
+    </Step>
+  </Quest>
+  <Quest Name="test_heimlock" UIName="" UIDesc="" Type="Main" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="Destination_Heimlock" Radius="20" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Vote" Duration="30" VotePreset="default" GameplayEventPresetName="GameplayEventPreset_TEST" />
+      <Goal Order="1" Type="BossFight" FightPreset="bossfight_heimlock_test" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="BossfightLost" Type="StepFail" Delay="0" Name="BossFightTestFail" RollbackToPreviousStep="1" />
+    </Step>
+  </Quest>
+</MetaData>

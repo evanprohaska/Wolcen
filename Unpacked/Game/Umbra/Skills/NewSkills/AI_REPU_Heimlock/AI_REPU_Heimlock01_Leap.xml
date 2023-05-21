@@ -1,0 +1,37 @@
+<MetaData>
+  <Skill UID="AI_REPU_Heimlock01_Leap" ESkill="AI_TMPL_Knight_HolyDive" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.4" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_Leap" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_01" Direction="0,0,1" InstantKill="0" Scale="1.5" />
+      <Particles Key="Impact" Name="U_Monster.Heimlock.Jump_Impact_01" Offset="0,0,-1" Direction="0,0,1" Scale="1.5" />
+    </ParticleList>
+    <SkillSpecific DelayBeforeLanding="1" IndicatorDelay="0.1" IndicatorDuration="0.9" />
+    <SoundTrigger OnAnimStart="Play_Skill_Heimlock_Leap_Jump" OnAnimCast="PLAY_AI_SadisticThug_LeapImpact" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock01_Leap_old" ESkill="AI_default_leap" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithSpellCastingSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.4" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="2" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_Leap" />
+    </Shapes>
+    <StatusAilment>
+      <freeze Chance="100" ChanceMode="override" Duration="1.5" DurationMode="override" />
+    </StatusAilment>
+    <ParticleList>
+      <Particles Key="LeapImpact" Name="U_Monster.Heimlock.Jump_Impact_01" Offset="0,0,-1" Direction="0,0,1" Scale="1.5" />
+    </ParticleList>
+    <SkillSpecific Speed="50" MoveDistanceMinimum="1" MoveDistanceMaximum="15" MidPointAdvancement="0.75" RaycastHeightOffset="2.5" JumpHeight="3.5" JumpZOnlyForce="35" JumpZOnlyFallingGravityMultiplier="8" HeightLimit="3" NavPathLengthLimit="20" TriggerDistance="1.5" LeapGravity="-30" />
+    <SoundTrigger OnAnimStart="Play_Skill_Heimlock_Leap_Jump" OnAnimCast="PLAY_AI_SadisticThug_LeapImpact" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

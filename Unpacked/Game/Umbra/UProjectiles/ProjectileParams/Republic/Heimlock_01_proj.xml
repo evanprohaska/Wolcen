@@ -1,0 +1,92 @@
+<MetaData>
+  <Projectile ID="heimlock_01_meteor" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Heimlock.Meteo_Projectile_01" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Heimlock.Meteo_Impact_01" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="u_bossmodifiers.bombsky.indicator" Direction="0,0,1" Delay="0.5" WorldSpace="1" Scale="1.35" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="7.5" SpeedMax="7.5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Heimlock_Meteor_Impact" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="heimlock_support_meteor" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Heimlock.Meteo_Projectile_01" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Heimlock.Meteo_Impact_01" Direction="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="7.5" SpeedMax="7.5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Heimlock_Meteor_Impact" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="heimlock_02_fireprojectile" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Heimlock.Meteo_Projectile_01" Direction="0,-1,0" WorldSpace="0" Scale="0.3" />
+      <Hit ParticleName="U_Monster.Heimlock.Meteo_Impact_01" Direction="0,0,1" WorldSpace="1" Scale="0.6" />
+      <Indicator ParticleName="U_Monster.Heimlock_APO.FireBall_Indicator_01" Direction="1,0,0" WorldSpace="1" PosOffset="0,0,0.5" Scale="0.75" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Heimlock_FireProjectiles" Rotation="0" Force="1" Randomize="1" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Heimlock_Meteor_Impact" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="heimlock_02_fireprojectile_FromSky" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Heimlock.Meteo_Projectile_01" Direction="0,-1,0" WorldSpace="0" Scale="0.5" />
+      <Hit ParticleName="U_Monster.Heimlock.Meteo_Impact_01" Direction="0,0,1" WorldSpace="1" Scale="0.6" />
+      <Indicator ParticleName="U_Monster.Heimlock_APO.FireBall_Indicator_01" Direction="1,0,0" WorldSpace="1" PosOffset="0,0,0.5" Scale="0.75" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Heimlock_Meteor_Impact" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="heimlock_02_shadowprojectile" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Heimlock_APO.BasicAttack_Trail_03_1" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Shadow_01" Direction="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="1" />
+    <Speed SpeedMin="17" SpeedMax="17" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Heimlock_Meteor_Impact" />
+    </Audio>
+  </Projectile>
+</MetaData>

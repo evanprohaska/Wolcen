@@ -1,0 +1,17 @@
+<MetaData>
+  <Projectile ID="COFY_SkullMourner_Crown_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.7,0.7,0.7" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Monster.BurningSkull_Projectile_01" Direction="1,0,0" WorldSpace="0" Scale="1" PosOffset="0,0.3,0" />
+      <Hit ParticleName="U_Projectile.Fire.Fireball_Impact_01" Direction="0,-1,0" WorldSpace="0.5" Scale=".85" PosOffset="0,0,0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Fanatic_Fireball_Projectile_Cast" />
+      <Hit SoundTriggerName="Play_Fanatic_Fireball_Projectile_Impact" />
+      <Removed SoundTriggerName="Play_Fanatic_Fireball_Projectile_Impact_fadeout" />
+    </Audio>
+  </Projectile>
+</MetaData>

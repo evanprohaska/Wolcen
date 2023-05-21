@@ -1,0 +1,67 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_Necropolis" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="LuckyDungeon" PriorityTag="LotOfLoot" ExcludeTag="Room,MMGoblin,Named,NoMonster" Weight="8" />
+      <Archetype Tag="ChestRoom" PriorityTag="EpicFixedLoot,Room,NoMonster" ExcludeTag="KillCP,KillTarget,CursedChestRoom" Weight="4" />
+      <Archetype Tag="CursedChestRoom" PriorityTag="CursedChestRoom,Room,NoMonster" ExcludeTag="EpicFixedLoot,KillCP,KillTarget" Weight="4" />
+      <Archetype Tag="GoblinDungeon" PriorityTag="MMGoblin,SmallArea,NormalLoot" ExcludeTag="NoMonster,Room,KillCP,KillTarget,MediumArea,BossArea" Weight="4" />
+      <Archetype Tag="KillOneTarget" PriorityTag="KillTarget,OneGoal,NormalLoot" ExcludeTag="Room,MMGoblin,Named,Hard" Weight="20" />
+      <Archetype Tag="KillNumerousTarget" PriorityTag="KillTarget,NumerousGoal,MediumArea,NormalLoot,Easy" ExcludeTag="Room,MMGoblin" Weight="20" />
+      <Archetype Tag="KillCP" PriorityTag="KillCP,NormalLoot" ExcludeTag="Room,MMGoblin,NoMonster,BossArea,MediumArea" Weight="20" />
+      <Archetype Tag="NoQuestEODReward" PriorityTag="EODReward" ExcludeTag="KillCP,KillTarget,MediumArea,Room,NoMonster,MMGoblin,BossArea" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="Ossuary_Room_CG" Tag="Room,Ossuary" PriorityTag="Ossuary" ExcludeTag="GenericOssuary,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Mine,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Ossuary_VerySmallDungeon_CG" Tag="Ossuary,VerySmallArea,ClassicArea" PriorityTag="Ossuary" ExcludeTag="NumerousGoal,FewGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Ossuary_SmallDungeon_CG" Tag="Ossuary,SmallArea,ClassicArea" PriorityTag="Ossuary" ExcludeTag="NumerousGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Ossuary_MediumDungeon_CG" Tag="Ossuary,MediumArea,ClassicArea" PriorityTag="Ossuary" ExcludeTag="COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Ossuary_Foggy_Room_CG" Tag="Room,Ossuary" PriorityTag="Ossuary" ExcludeTag="GenericOssuary,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Mine,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Ossuary_Foggy_VerySmallDungeon_CG" Tag="Ossuary,VerySmallArea,ClassicArea" PriorityTag="Ossuary" ExcludeTag="NumerousGoal,FewGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Ossuary_Foggy_SmallDungeon_CG" Tag="Ossuary,SmallArea,ClassicArea" PriorityTag="Ossuary" ExcludeTag="NumerousGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Ossuary_Foggy_MediumDungeon_CG" Tag="Ossuary,MediumArea,ClassicArea" PriorityTag="Ossuary" ExcludeTag="COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Room_CG" Tag="Room,Mine" PriorityTag="Mine" ExcludeTag="GenericOssuary,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Mine_VerySmallDungeon_CG" Tag="Mine,VerySmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,FewGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_SmallDungeon_CG" Tag="Mine,SmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_MediumDungeon_CG" Tag="Mine,MediumArea,ClassicArea" PriorityTag="Mine" ExcludeTag="COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_Room_CG" Tag="Room,Mine" PriorityTag="Mine" ExcludeTag="GenericOssuary,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Mine_Foggy_VerySmallDungeon_CG" Tag="Mine,VerySmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,FewGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_SmallDungeon_CG" Tag="Mine,SmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_MediumDungeon_CG" Tag="Mine,MediumArea,ClassicArea" PriorityTag="Mine" ExcludeTag="COFE,REPU,COFY,PRIMO" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_Necropolis_KillTarget_COSS_Halfbreed_4" Tag="KillTarget,NumerousGoal,COSS,Specter" PriorityTag="KillTarget,COSS,EMQuest,Specter" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Necropolis_KillTarget_COSS_Halfbreed" Tag="KillTarget,OneGoal,COSS,Specter" PriorityTag="KillTarget,COSS,EMQuest,Specter" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Necropolis_KillTarget_COSS_Cultist" Tag="KillTarget,OneGoal,COSS,Undead" PriorityTag="KillTarget,SVRI,EMQuest,Undead" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Necropolis_KillCP_1" Tag="KillCP,WILD" PriorityTag="WILD,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Necropolis_KillCP_1" Tag="KillCP,WILD" PriorityTag="WILD,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Necropolis_KillCP_1" Tag="KillCP,WILD" PriorityTag="WILD,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Necropolis_KillCP_1" Tag="KillCP,COSS,Specter" PriorityTag="COSS,EMQuest,Specter" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Necropolis_KillCP_1" Tag="KillCP,COSS,Undead" PriorityTag="COSS,EMQuest,Undead" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Necropolis_Wild" Tag="Easy,WILD,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Necropolis_COSS_Undead_Easy" Tag="Easy,COSS,Undead,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Necropolis_COSS_Specter_Easy" Tag="Easy,COSS,Specter,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Necropolis_COSS_Undead_Medium" Tag="Medium,LotOfMonster,COSS,Undead" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Necropolis_COSS_Specter_Medium" Tag="Medium,LotOfMonster,COSS,Specter" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Necropolis_COSS_Undead_Hard" Tag="Hard,LotOfMonster,COSS,Undead" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Necropolis_COSS_Specter_Hard" Tag="Hard,LotOfMonster,COSS,Specter" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Necropolis_COSS_Goblin" Tag="MMGoblin,Easy,COSS,LotOfMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Ossuary,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Mine,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Necropolis_Ossuary_ChestRoom" Tag="Ossuary,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Necropolis_Mine_ChestRoom" Tag="Mine,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Necropolis_Ossuary_CursedChestRoom" Tag="Ossuary,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Necropolis_Mine_CursedChestRoom" Tag="Mine,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Necropolis_Ossuary_EODReward" Tag="Ossuary,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Necropolis_Mine_EODReward" Tag="Mine,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Necropolis_Ossuary_BigLoot" Tag="Ossuary,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Necropolis_Mine_BigLoot" Tag="Mine,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Necropolis_Ossuary" Tag="Ossuary,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Necropolis_Mine" Tag="Mine,NormalLoot" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

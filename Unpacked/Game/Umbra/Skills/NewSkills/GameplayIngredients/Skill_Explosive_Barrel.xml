@@ -1,0 +1,34 @@
+<MetaData>
+  <Skill ESkill="instant_explosion" Keywords="attack_skill" UID="explosive_barrel_fire">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <DamageWeapon Type="fire" WeaponMultiplier="12" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="5" />
+    <Particles ParticleName="U_CommonVFX.Explosive_Barrel.Barrel_Explosion_Fire_01" ParticleDirection="0,1,0" ParticleScale="1.5" />
+  </Skill>
+  <Skill ESkill="instant_explosion" Keywords="attack_skill" UID="explosive_barrel_lightning">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="12" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="5" />
+    <Particles ParticleName="U_CommonVFX.Explosive_Barrel.Barrel_Explosion_Lightning_01" ParticleDirection="0,1,0" ParticleScale="1.5" />
+  </Skill>
+  <Skill ESkill="instant_explosion" Keywords="attack_skill" UID="explosive_barrel_poison">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="8" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="5" />
+    <Particles ParticleName="U_CommonVFX.Explosive_Barrel.Barrel_Explosion_Poison_01" ParticleDirection="0,1,0" ParticleScale="1.5" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="explosive_barrel_poison_damagezone" />
+    </SecondarySkillToCast>
+  </Skill>
+  <Skill ESkill="default_damage_zone" Keywords="attack_skill" UID="explosive_barrel_poison_damagezone">
+    <DamageWeapon Type="toxic" WeaponMultiplier="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="explosive_barrel_poison_damagezone" />
+    </DamageZone>
+  </Skill>
+</MetaData>

@@ -1,0 +1,60 @@
+<MetaData>
+  <Skill UID="playerskill_H0_atk_01" ESkill="default_melee" Keywords="default_melee">
+    <Animation ActionString="player_skill_atk_01" ScaleWithAttackSpeed="1" IgnoreAnimationMovementWhenHoldingShift="1" AnimationDrivenMovement="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_weapon_1h" BloodDecalOrientation="forward" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/double_h1_melee.png" UIName="@ui_AST_ComboUnarmed" Lore="@ui_AST_ComboUnarmed_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance" />
+    <Combo ComboStarter="Combo_H0" />
+    <Aggression TargetValueOnHit="7" />
+    <DamageBase Type="physical" Min="1" MinPerLevel="1" Max="1" MaxPerLevel="1.1" />
+    <Shapes>
+      <Entry ShapeName="Fist_1" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Weapon_Unarmed_Swing" OnHit="Play_Weapon_Unarmed_Impact" OnCriticalHit="Play_Weapon_Unarmed_Impact_Critical" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H0_atk_02" ESkill="default_melee" Keywords="default_melee">
+    <Animation ActionString="player_skill_atk_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_weapon_1h" BloodDecalOrientation="forward" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/double_h1_melee.png" UIName="@ui_Headbutt" Lore="@ui_Headbutt_lore" />
+    <Aggression TargetValueOnHit="7" />
+    <DamageBase Type="physical" Min="1" MinPerLevel="1" Max="1" MaxPerLevel="1.1" />
+    <Shapes>
+      <Entry ShapeName="Fist_1" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Weapon_Unarmed_Swing" OnHit="Play_Weapon_Unarmed_Impact" OnCriticalHit="Play_Weapon_Unarmed_Impact_Critical" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H0_atk_03" ESkill="default_melee" Keywords="default_melee">
+    <Animation ActionString="player_skill_atk_03" ScaleWithAttackSpeed="1" IgnoreAnimationMovementWhenHoldingShift="1" AnimationDrivenMovement="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_weapon_1h" BloodDecalOrientation="forward" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/double_h1_melee.png" UIName="@ui_AST_ComboUnarmed" Lore="@ui_AST_ComboUnarmed_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance" />
+    <Combo ComboStarter="Combo_H0" />
+    <Aggression TargetValueOnHit="7" />
+    <DamageBase Type="physical" Min="1" MinPerLevel="1" Max="1" MaxPerLevel="1.1" />
+    <Shapes>
+      <Entry ShapeName="Fist_1" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Weapon_Unarmed_Swing" OnHit="Play_Weapon_Unarmed_Impact" OnCriticalHit="Play_Weapon_Unarmed_Impact_Critical" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H0_atk_loop_01" ESkill="default_melee" Keywords="default_melee">
+    <Animation ActionString="player_skill_atk_loop_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_weapon_1h" BloodDecalOrientation="forward" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/double_h1_melee.png" UIName="@ui_Headbutt" Lore="@ui_Headbutt_lore" />
+    <Aggression TargetValueOnHit="7" />
+    <DamageBase Type="physical" Min="1" MinPerLevel="1" Max="1" MaxPerLevel="1.1" />
+    <Shapes>
+      <Entry ShapeName="Fist_1" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Weapon_Unarmed_Swing" OnHit="Play_Weapon_Unarmed_Impact" OnCriticalHit="Play_Weapon_Unarmed_Impact_Critical" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+</MetaData>

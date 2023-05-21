@@ -1,0 +1,22 @@
+<MetaData>
+  <Projectile ID="COSS_SkeletonGolem_ShieldThrow_Proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="COSS_Skeleton_Golem.Shield Throw.Projectile2" Direction="0,-1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="COSS_Skeleton_Golem.Shield Throw.AoE" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="u_bossmodifiers.bombsky.indicator" Direction="0,0,1" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="1" />
+    <Speed SpeedMin="16" SpeedMax="16" Acceleration="30" AccelerationCurveID="Acc_Flat" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_COSS_SkeletonGolem_ShieldThrow_ShieldProjectile_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Play_COSS_SkeletonGolem_ShieldThrow_ShieldProjectile_HitGround" />
+    </Audio>
+  </Projectile>
+</MetaData>

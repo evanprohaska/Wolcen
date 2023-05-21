@@ -1,0 +1,16 @@
+<MetaData>
+  <Preset ID="skillloop_aetherblade" LoopParticleDelay="0.07" RespawnLoopParticle="0">
+    <StartLoop>
+      <VFX Key="startloop" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_Loop" Offset="0,1,1.6" Direction="0,1,0" Scale="0.001" Bone="Bip01" />
+      <Audio Trigger="Play_Skill_AetherBlade_Loop" />
+    </StartLoop>
+    <Start>
+      <VFX Key="start" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_Loop" Offset="0,1,1.6" Direction="0,1,0" Scale="0.001" Bone="Bip01" />
+      <Audio Trigger="Play_Skill_AetherBlade_Start" />
+    </Start>
+    <End>
+      <VFX Key="end" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_Loop" Offset="0,1,1.6" Direction="0,1,0" Scale="0.001" Bone="Bip01" />
+      <Audio Trigger="Stop_Skill_AetherBlade_Loop" />
+    </End>
+  </Preset>
+</MetaData>

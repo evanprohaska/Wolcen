@@ -1,0 +1,57 @@
+<MetaData>
+  <Spell Name="AST_SmokeBomb_FirstHit" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="criticalchance_score_percent" Permanent="0">
+        <Semantics CharacteristicScorePercentInt="100" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/duskshroud.png" Description="@ui_criticalchance_score_percent_buff_skill" Title="@ui_smokebomb_buff_title" />
+  </Spell>
+  <Spell Name="AST_SmokeBomb_Dodge" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dodgechance_score_percent" Permanent="0">
+        <Semantics CharacteristicScorePercentInt="80" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/duskshroud.png" Description="@ui_dodgechance_score_percent_buff_skill" Title="@ui_smokebomb_buff_title" />
+  </Spell>
+  <Spell Name="AST_SmokeBomb_SpeedBoost" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="50" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/duskshroud.png" Description="@ui_movespeed_buff_skill" Title="@ui_smokebomb_buff_title" />
+  </Spell>
+  <Spell Name="AST_SmokeBomb_ForceFieldRegen" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="forceshield_regeneration_flat" Permanent="0">
+        <Semantics DefenseRegenerationFlatFloat="1" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_SmokeBomb_PostBuff_Shadow" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_shadow" Permanent="0">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/duskshroud_Shadow.png" Description="@ui_damage_percent_as_shadow_buff_skill" Title="@ui_smokebomb_buff_title" />
+  </Spell>
+  <Spell Name="AST_SmokeBomb_PostBuff_Fire" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_fire" Permanent="0">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/duskshroud_Fire.png" Description="@ui_damage_percent_as_fire_buff_skill" Title="@ui_smokebomb_buff_title" />
+  </Spell>
+  <Spell Name="AST_SmokeBomb_PostBuff_Aether" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_umbra" Permanent="0">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/duskshroud_Aether.png" Description="@ui_damage_percent_as_umbra_buff_skill" Title="@ui_smokebomb_buff_title" />
+  </Spell>
+</MetaData>

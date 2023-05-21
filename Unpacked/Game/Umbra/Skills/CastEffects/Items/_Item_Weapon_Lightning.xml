@@ -1,0 +1,17 @@
+<MetaData>
+  <CastEffect Name="item_weapon_shock">
+    <Param Type="Arc" From="particle1" To="particle2" ArcLifeTime="-1" ArcPreset="item_lightning" RayMaterial="Materials/effects/lighning_animated2" Delay="1" DelayVariation="1" />
+    <Param Type="Arc" From="particle4" To="particle5" ArcLifeTime="-1" ArcPreset="item_lightning" RayMaterial="Materials/effects/lighning_animated2" Delay="1" DelayVariation="1" />
+    <Param Type="Arc" From="particle2" To="particle3" ArcLifeTime="-1" ArcPreset="item_lightning" RayMaterial="Materials/effects/lighning_animated2" Delay="1" DelayVariation="1" />
+    <Param Type="Arc" From="particle4" To="particle3" ArcLifeTime="-1" ArcPreset="item_lightning" RayMaterial="Materials/effects/lighning_animated2" Delay="1.5" DelayVariation="1" />
+    <Param Type="Arc" From="particle1" To="particle5" ArcLifeTime="-1" ArcPreset="item_lightning" RayMaterial="Materials/effects/lighning_animated2" Delay="2" DelayVariation="1" />
+    <Param Type="Particle" ParticleName="U_Weapon_Magic.Lightning.ligth" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle3" Target="" />
+  </CastEffect>
+  <CastEffect Name="item_weapon_stormy">
+    <Param Type="Particle" ParticleName="U_Weapon_Magic.Lightning.smallBlade" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle1" Target="" />
+    <Param Type="Particle" ParticleName="U_Weapon_Magic.Lightning.smallBlade" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle2" Target="" />
+    <Param Type="Particle" ParticleName="U_Weapon_Magic.Lightning.smallBlade" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle3" Target="" />
+    <Param Type="Particle" ParticleName="U_Weapon_Magic.Lightning.smallBlade" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle4" Target="" />
+    <Param Type="Particle" ParticleName="U_Weapon_Magic.Lightning.smallBlade" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle5" Target="" />
+  </CastEffect>
+</MetaData>

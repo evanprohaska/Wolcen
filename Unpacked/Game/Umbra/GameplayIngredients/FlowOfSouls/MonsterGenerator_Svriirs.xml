@@ -1,0 +1,122 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="MonsterGenerator_MiniSpitter">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_svriir" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_svriir" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Svriirs_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Svriirs_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_MiniSpitter" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_MiniSpitter_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_Svriir" Model="Objects/Animated_Object/Misc/Spawner/SVRI_MobSpawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_MiniSpitter" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_Omega">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_svriir" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_svriir" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Svriirs_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Svriirs_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_Omega" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_Omega_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_Svriir" Model="Objects/Animated_Object/Misc/Spawner/SVRI_MobSpawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_Omega" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_OmegaBaby">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_svriir" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_svriir" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Svriirs_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Svriirs_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_OmegaBaby" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_OmegaBaby_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_Svriir" Model="Objects/Animated_Object/Misc/Spawner/SVRI_MobSpawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_OmegaBaby" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_OmegaFemale">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_svriir" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_svriir" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Svriirs_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Svriirs_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="1" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_OmegaFemale" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_OmegaFemale_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_Svriir" Model="Objects/Animated_Object/Misc/Spawner/SVRI_MobSpawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_OmegaFemale" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_Morgon">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_svriir" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_svriir" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Svriirs_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Svriirs_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_Morgon" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_Morgon_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_Svriir" Model="Objects/Animated_Object/Misc/Spawner/SVRI_MobSpawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_Morgon" />
+  </FlowOfSoulsPresetList>
+</MetaData>

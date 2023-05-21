@@ -1,0 +1,21 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="magic_spell" UID="AI_REPU_Heimlock01_LightningBall">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="2" />
+    <SoundTrigger onAnimStart="Play_Heimlock_LightningBall_Cast" onHit="Play_Heimlock_LightningBall_Projectile_Hit" />
+    <Cooldown Cooldown="45.0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Heimlock01_LightningBall" />
+    </Shapes>
+    <DamageZone Duration="30" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_Monster.Heimlock.Lightningball_Gain_01" Offset="0,0,0" Direction="1,0,0" TimeScale="0.8" />
+      <Particle Key="Spawn" Name="U_Monster.Heimlock.Lightningball_Body_01" Offset="0,0,0" Direction="1,0,0" Scale="2" />
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock.Lightningball_Projectile_01" Offset="0,0,2.5" Direction="1,0,0" />
+      <Particle Key="Disappear" Name="U_Monster.Heimlock.Lightningball_Ready_01" Offset="0,0,2.5" Direction="1,0,0" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="13.5" RandomBaseDistMax="13.5" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="15" MaxAngularSpeed="15" IndicatorMaxTimer="1" NumberOfDZ="2" BaseDirIsClockwise="1" AllowRandomDir="1" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" CenterZonePosHelper="Heimlock_PortalCenter_Helper" />
+  </Skill>
+</MetaData>

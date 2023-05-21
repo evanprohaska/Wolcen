@@ -1,0 +1,54 @@
+<MetaData>
+  <Projectile ID="player_laceration_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3,3,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Laceration_Axe_Loop_01_Blood" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Laceration" Rotation="0" Force="1" Randomize="0" />
+    <RotationCurve ID="laceration" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio />
+  </Projectile>
+  <Projectile ID="player_laceration_proj_big" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="4,4,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Laceration_Axe_Loop_01_Blood_Big" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Laceration" Rotation="0" Force="1" Randomize="0" />
+    <RotationCurve ID="laceration" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio />
+  </Projectile>
+  <Projectile ID="player_laceration_proj_loop" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3,3,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Laceration_Axe_Loop_01_Blood" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Laceration_Loop" Rotation="0" Force="1" Randomize="0" />
+    <RotationCurve ID="laceration_loop" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Laceration_Spin_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Laceration_Spin_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_laceration_proj_loop_big" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="4,4,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Laceration_Axe_Loop_01_Blood_Big" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Laceration_Loop" Rotation="0" Force="1" Randomize="0" />
+    <RotationCurve ID="laceration_loop" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Laceration_Spin_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Laceration_Spin_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

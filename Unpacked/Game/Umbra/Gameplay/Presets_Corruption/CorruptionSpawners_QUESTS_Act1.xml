@@ -1,0 +1,33 @@
+<MetaData>
+  <SpreadingNode Name="CorruptionSpawner_act1_main6" UpdateDelay="0.1" MaxHealth="300" HealthPerLevel="20" Destroyable="1" OverrideModel="" HitEffect="" BirthEffect="U_Corruption.Spawner.birth_activation_static" DeathEffect="U_Corruption.Spawner.remove" LifeAnim="" BirthAnim="" ActivationRadius="14.0" DespawnDuration="4" StaticDespawnDuration="1.8" DespawnOffset="1.5">
+    <Step MaxRange="2" ScaledEffect="U_Corruption.Spawner.Decal_spread_1" StaticEffect="U_Corruption.Spawner.step1_static" Duration="1.5" RollTimer="0" MaxNumber="0" OnKillXP="0" OnKillLoot="" DamageResistance="100" />
+    <Step MaxRange="8.0" ScaledEffect="U_Corruption.Spawner.Decal_spread_1" StaticEffect="" Duration="10.0" RollTimer="1.2" MaxNumber="10" OnKillXP="50" OnKillLoot="LC_trash" DamageResistance="0" KillPreviousStaticEffect="0" KillPreviousScaledEffect="0">
+      <Spawner Name="CorruptionEgg_trash" Chance="100" />
+      <Spawner Name="CorruptionEgg_warrior" Chance="10" />
+      <Spawner Name="CorruptionEgg_elite" Chance="0" />
+      <Spawner Name="CorruptionEgg_larva" Chance="10" />
+      <Spawner Name="" Chance="10" />
+    </Step>
+    <Step MaxRange="16.0" ScaledEffect="U_Corruption.Spawner.Decal_spread_1" StaticEffect="U_Corruption.Spawner.step2_static" Duration="10.0" RollTimer="1.4" MaxNumber="15" OnKillXP="100" OnKillLoot="LC_trash" DamageResistance="0">
+      <Spawner Name="CorruptionEgg_trash" Chance="90" />
+      <Spawner Name="CorruptionEgg_warrior" Chance="20" />
+      <Spawner Name="CorruptionEgg_elite" Chance="1" />
+      <Spawner Name="CorruptionEgg_larva" Chance="10" />
+      <Spawner Name="" Chance="8" />
+    </Step>
+    <Step MaxRange="20.0" ScaledEffect="U_Corruption.Spawner.Decal_spread_1" StaticEffect="U_Corruption.Spawner.step3_static" Duration="10.0" RollTimer="1.6" MaxNumber="20" OnKillXP="150" OnKillLoot="LC_elite" DamageResistance="0">
+      <Spawner Name="CorruptionEgg_trash" Chance="80" />
+      <Spawner Name="CorruptionEgg_warrior" Chance="30" />
+      <Spawner Name="CorruptionEgg_elite" Chance="2" />
+      <Spawner Name="CorruptionEgg_larva" Chance="10" />
+      <Spawner Name="" Chance="6" />
+    </Step>
+    <Step MaxRange="24.0" ScaledEffect="U_Corruption.Spawner.Decal_spread_1" StaticEffect="U_Corruption.Spawner.step4_static" Duration="15.0" RollTimer="1.8" MaxNumber="25" OnKillXP="200" OnKillLoot="LC_elite" DamageResistance="0">
+      <Spawner Name="CorruptionEgg_trash" Chance="70" />
+      <Spawner Name="CorruptionEgg_warrior" Chance="40" />
+      <Spawner Name="CorruptionEgg_elite" Chance="5" />
+      <Spawner Name="CorruptionEgg_larva" Chance="10" />
+      <Spawner Name="" Chance="4" />
+    </Step>
+  </SpreadingNode>
+</MetaData>

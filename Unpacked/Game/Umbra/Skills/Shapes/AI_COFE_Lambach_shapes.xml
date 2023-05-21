@@ -1,0 +1,32 @@
+<MetaData>
+  <Shape ID="Lambach01_FleshAOEShape" Type="Circle">
+    <Data Radius="2.8" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Lambach01_TentacleAttackShape" Type="Rectangle">
+    <Data Length="20" Width="3" BoundingBoxHeight="2" />
+    <Position ForwardOffset="10" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="Lambach01_MeleeAttackShape" Type="Cone">
+    <Data Radius="7.2" Angle="140" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Lambach02_TentacleVerticalAttackShape" Type="Circle">
+    <Data Radius="2" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Lambach02_PianoAttackSideShape" Type="Rectangle">
+    <Data Length="14" Width="5.8" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="Lambach02_PianoAttackCenterShape" Type="Trapezium">
+    <Data Top="2.5" Bottom="18" Height="12" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="Lambach02_SafeZone_DamageZoneShape" Type="Rectangle">
+    <Data Length="25" Width="70" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="Lambach01_IncubationChamberShape" Type="Arc">
+    <Data RadiusIn="11" RadiusOut="15" Angle="72" BoundingBoxHeight="4" />
+    <Position ForwardOffset="-15" RightOffset="0" StartingAngle="0" />
+    <Scale Data="RadiusIn" Target="2" Duration="5" Delay="0" />
+  </Shape>
+</MetaData>

@@ -1,0 +1,48 @@
+<MetaData>
+  <Projectile ID="FirstManMange_Proj_Aether" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,-1" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.firstman.umbra_projectile" Direction="0,1,0" WorldSpace="0" Scale="0.65" />
+      <Hit ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Umbra_01" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="5" SpeedMax="5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Fanatic_Fireball_Projectile_Cast" />
+      <Hit SoundTriggerName="Play_Fanatic_Fireball_Projectile_Impact" />
+      <Removed SoundTriggerName="Play_Fanatic_Fireball_Projectile_Impact_fadeout" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="FirstManMange_Proj_Lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,-1" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.firstman.lightning_projectile" Direction="0,1,0" WorldSpace="0" Scale="0.65" />
+      <Hit ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Lightning_01" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="5" SpeedMax="5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Fanatic_Fireball_Projectile_Cast" />
+      <Hit SoundTriggerName="Play_Fanatic_Fireball_Projectile_Impact" />
+      <Removed SoundTriggerName="Play_Fanatic_Fireball_Projectile_Impact_fadeout" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="FirstManMange_Proj_Toxic" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,-1" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.firstman.poison_projectile" Direction="0,1,0" WorldSpace="0" Scale="0.65" />
+      <Hit ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Toxic_01" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="5" SpeedMax="5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotImpact" />
+      <Launch SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotLoop" />
+      <Hit SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+      <Removed SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+    </Audio>
+  </Projectile>
+</MetaData>

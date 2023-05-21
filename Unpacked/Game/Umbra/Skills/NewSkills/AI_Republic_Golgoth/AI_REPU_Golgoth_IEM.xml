@@ -1,0 +1,63 @@
+<MetaData>
+  <Skill UID="AI_REPU_Golgoth_IEM" ESkill="default_melee" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.6" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01" />
+    <Shapes>
+      <Entry ShapeName="REPU_Golgoth_IEM_Rectangle_Front_Shape" />
+      <Entry ShapeName="REPU_Golgoth_IEM_Rectangle_Side_Shape" />
+      <Entry ShapeName="REPU_Golgoth_IEM_Circle_Shape" />
+    </Shapes>
+    <SkillSpecific HitEntityOnlyOnce="0">
+      <Particles>
+        <Start>
+          <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.IEM_indicator" Offset="0,0,0" Direction="0,0,1" Scale="1" Bone="Bip01" InstantKill="0" />
+        </Start>
+        <Cast>
+          <Particle Key="Circle" Name="U_Monster_Alt.golgoth.IEM_Circle" Offset="0,0,0" Direction="0,0,1" Scale="1" InstantKill="0" />
+          <Particle Key="Ray1" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="0,-1,0" Scale="1" InstantKill="0" />
+          <Particle Key="Ray2" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="0,1,0" Scale="1" InstantKill="0" />
+          <Particle Key="Ray3" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="1,0,0" Scale="1" InstantKill="0" />
+          <Particle Key="Ray4" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="-1,0,0" Scale="1" InstantKill="0" />
+        </Cast>
+      </Particles>
+    </SkillSpecific>
+    <SoundTrigger PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_Golgoth_IEM_1" ESkill="default_melee" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.6" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01" />
+    <Shapes>
+      <Entry ShapeName="REPU_Golgoth_IEM_Rectangle_Front_Shape" />
+      <Entry ShapeName="REPU_Golgoth_IEM_Rectangle_Side_Shape" />
+      <Entry ShapeName="Hunt_Golgoth_IEM_Rectangle_Front_Shape" />
+      <Entry ShapeName="Hunt_Golgoth_IEM_Rectangle_Side_Shape" />
+      <Entry ShapeName="REPU_Golgoth_IEM_Circle_Shape" />
+    </Shapes>
+    <StatusEffect_MovementSpeed SlowPercent="1000" SlowPercentPerLevel="0" Duration="2.5" DurationPerLevel="0" />
+    <SkillSpecific HitEntityOnlyOnce="0">
+      <Particles>
+        <Start>
+          <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.IEM_indicator" Offset="0,0,0" Direction="0,0,1" Scale="1" Bone="Bip01" InstantKill="0" />
+          <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.IEM_indicator" Offset="0,0,0" Angle="90,0,45" Scale="1" Bone="Bip01" InstantKill="0" />
+        </Start>
+        <Cast>
+          <Particle Key="Circle" Name="U_Monster_Alt.golgoth.IEM_Circle" Offset="0,0,0" Direction="0,0,1" Scale="1" InstantKill="0" />
+          <Particle Key="Ray1" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="1,0,0" Angle="0,0,0" Scale="1" InstantKill="0" />
+          <Particle Key="Ray2" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="1,0,0" Angle="0,0,45" Scale="1" InstantKill="0" />
+          <Particle Key="Ray3" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="1,0,0" Angle="0,0,90" Scale="1" InstantKill="0" />
+          <Particle Key="Ray4" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="1,0,0" Angle="0,0,135" Scale="1" InstantKill="0" />
+          <Particle Key="Ray1" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="1,0,0" Angle="0,0,180" Scale="1" InstantKill="0" />
+          <Particle Key="Ray2" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="1,0,0" Angle="0,0,-45" Scale="1" InstantKill="0" />
+          <Particle Key="Ray3" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="1,0,0" Angle="0,0,-90" Scale="1" InstantKill="0" />
+          <Particle Key="Ray4" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="1,0,0" Angle="0,0,-135" Scale="1" InstantKill="0" />
+        </Cast>
+      </Particles>
+    </SkillSpecific>
+  </Skill>
+</MetaData>

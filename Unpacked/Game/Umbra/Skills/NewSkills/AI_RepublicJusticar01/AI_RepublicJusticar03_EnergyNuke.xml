@@ -1,0 +1,36 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar03_energynuke" ESkill="AI_republicjusticar03_energynuke" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out_01" />
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="25" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="4" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar03_EnergyNuke_ExclusionZone" />
+      <Entry ShapeName="RepublicJusticar03_EnergyNuke_Explosion" />
+      <Entry ShapeName="RepublicJusticar03_EnergyNuke_FinalExplosion" />
+      <Entry ShapeName="RepublicJusticar03_EnergyNuke_EnergyWave" />
+    </Shapes>
+    <DamageZone RateOfFire="0.2" Duration="2.5" MaxEntityHits="1" />
+    <SpecialShield ShieldAngle="360" BounceProjectiles="0" IgnoreDirectionalDamage="1" ResistsCrowdControl="1" ProtectionType="AnyDamage" />
+    <RandomCastingParams RandomNumberRangeMin="4" RandomNumberRangeMax="8" />
+    <ParticleList>
+      <Particle Key="ExplosionIndicator" Name="U_Monster.Justica.EnergyNuke_Indicator_01" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="ExplosionImpact" Name="U_Monster.Justica.EnergyNuke_Impact_Small" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="FinalExplosion" Name="U_Monster.Justica.EnergyNuke_Impact_Big" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="EnergyWave" Name="U_Monster.Justica.EnergyNuke_Impact_Big_Ring" Offset="0,0,0.7" Direction="0,1,0" Scale="1.5" />
+      <Particle Key="Shield" Name="U_Monster.Justica.EnergyNuke_Shield_01" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" Delay="1.53" />
+      <Particle Key="ShieldOut" Name="U_Monster.Justica.EnergyNuke_Shield_Disappear_01" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Charging01" Name="U_Monster.Justica.FocusedShot_Charging" Offset="0,0,0" Direction="0,1,0" Bone="Bip01 R Guard" Delay="0.46" />
+      <Particle Key="Charging02" Name="U_Monster.Justica.EnergyNuke_Charging" Offset="0,-0.7,0" Direction="0,0,1" Bone="Bip01" Delay="1.45" />
+    </ParticleList>
+    <Range ProjectileMinDistance="4" AttackRange="20" />
+    <SkillSpecific NumberOfExplosionsPerLoop="16" EnergyWaveDamageInPercentOfExplosionDamage="150" DelayBetweenExplosionsOfASameLoop="0.02" AnticipationTimerForExplosion="1.5" EnergyWaveActivationTimer="0.43" />
+    <Material ScaleWithAnimationSpeed="50" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="0.5" />
+      <EmissiveIntensity From="500" To="origin" In="1" />
+    </Material>
+  </Skill>
+</MetaData>

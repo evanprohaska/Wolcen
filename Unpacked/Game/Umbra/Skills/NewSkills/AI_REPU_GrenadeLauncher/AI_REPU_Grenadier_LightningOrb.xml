@@ -1,0 +1,13 @@
+<MetaData>
+  <Skill UID="AI_REPU_Grenadier_LightningOrb" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_02" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="2" />
+    <Cooldown Cooldown="2.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 L Finger01" />
+    <Projectile Name="REPU_Grenadier_LightningOrb_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <Explosion ExplosionRadius="3" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimCast="Play_REPU_GrenadeLauncher_LightningOrb_Fire" OnHit="Play_REPU_GrenadeLauncher_LightningOrb_Impact" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

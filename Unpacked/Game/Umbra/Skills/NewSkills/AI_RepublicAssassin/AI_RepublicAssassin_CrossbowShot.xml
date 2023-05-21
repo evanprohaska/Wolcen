@@ -1,0 +1,49 @@
+<MetaData>
+  <Skill UID="AI_RepublicAssassin_CrossbowShot" ESkill="AI_republicassassin_crossbowshot" Keywords="attack_skill,projectile">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".7" />
+    <CastingParams CastBone="R_Weapon_Bone" CanBeInterrupted="0" />
+    <Cooldown Cooldown="2.0" CooldownTrigger="OnEnd" />
+    <Projectile Name="assassin_crossbow_proj" ProjectileCount="1" />
+    <Particles ParticleName="U_Projectile.Bullet.Bullet_Muzzle_01" ParticleScale="1" />
+    <SkillSpecific ParticleTimeToLive="4" />
+    <SoundTrigger OnAnimCast="Play_Enemy_Crossbow_Fire" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_CrossbowShot_1" ESkill="AI_republicassassin_crossbowshot" Keywords="attack_skill,projectile">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".7" />
+    <CastingParams CastBone="R_Weapon_Bone" CanBeInterrupted="0" />
+    <Cooldown Cooldown="2.0" CooldownTrigger="OnEnd" />
+    <Projectile Name="assassin_crossbow_proj" ProjectileCount="5" AngleBetweenProjectiles="20" />
+    <Particles ParticleName="U_Projectile.Bullet.Bullet_Muzzle_01" ParticleScale="1" />
+    <SkillSpecific ParticleTimeToLive="4" />
+    <SoundTrigger OnAnimCast="Play_Enemy_Crossbow_Fire" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_CrossbowShot_2" ESkill="AI_default_projectileskillwithdamagezone" Keywords="attack_skill,projectile">
+    <Projectile Name="hunt_assassin_crossbow_proj" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier=".7" />
+    <CastingParams MaximumTurnRate="360" CastBone="R_Weapon_Bone" CasterImmobilizationTime="1" MaximumTargetingHalfAngle="10" CanBeInterrupted="0" />
+    <Cooldown Cooldown="2.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Explosion ExplosionRadius="3" />
+    <Range AttackRange="15" />
+    <SoundTrigger OnAnimCast="Play_Enemy_Crossbow_Fire" PlayAttackVoice="1" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_Hunt_Assassin_CrossbowShot_DZ" />
+    </SecondarySkillToCast>
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_CrossbowShot_DZ" ESkill="AI_default_projectileskillwithdamagezone_damagezone" Keywords="magic_spell">
+    <DamageWeapon Type="Shadow" WeaponMultiplier=".4" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="Hunt_Assassin_Crossbow_DZ" />
+    </DamageZone>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <SoundTrigger OnHit="Play_BossModifier_MovingShadowDZ_Impact" />
+  </Skill>
+</MetaData>

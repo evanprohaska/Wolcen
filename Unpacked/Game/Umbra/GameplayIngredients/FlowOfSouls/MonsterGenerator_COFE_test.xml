@@ -1,0 +1,26 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="MonsterGenerator_CultOfFlesh_test">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_gameplay_ingredient2.monster_generator.indicator" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_flesh" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_flesh" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Flesh_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Flesh_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="2" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_CultOfFury_Spirit" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_CultOfFlesh_PresetList_test" UIName="@ui_GameplayIngredients_MonsterGenerator" Model="Objects/Animated_Object/Misc/Spawner/COFE_MobSpawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Elite" DeathSCF="">
+    <Preset Name="MonsterGenerator_CultOfFlesh_test" />
+  </FlowOfSoulsPresetList>
+</MetaData>

@@ -1,0 +1,43 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_Monolith" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="LuckyDungeon" PriorityTag="LotOfLoot" ExcludeTag="Room,MMGoblin,Named,NoMonster,BossArea" Weight="8" />
+      <Archetype Tag="ChestRoom" PriorityTag="EpicFixedLoot,Room,NoMonster" ExcludeTag="KillCP,KillTarget,CursedChestRoom" Weight="4" />
+      <Archetype Tag="CursedChestRoom" PriorityTag="CursedChestRoom,Room,NoMonster" ExcludeTag="EpicFixedLoot,KillCP,KillTarget" Weight="4" />
+      <Archetype Tag="GoblinDungeon" PriorityTag="MMGoblin,SmallArea,NormalLoot" ExcludeTag="NoMonster,Room,KillCP,KillTarget,BossArea" Weight="4" />
+      <Archetype Tag="KillOneTarget" PriorityTag="KillTarget,OneGoal,NormalLoot" ExcludeTag="Room,MMGoblin,Named,Hard,BossArea" Weight="20" />
+      <Archetype Tag="KillNumerousTarget" PriorityTag="KillTarget,NumerousGoal,MediumArea,NormalLoot,Easy" ExcludeTag="Room,MMGoblin,BossArea" Weight="20" />
+      <Archetype Tag="KillCP" PriorityTag="KillCP,NormalLoot" ExcludeTag="Room,MMGoblin,NoMonster,BossArea" Weight="20" />
+      <Archetype Tag="NoQuestEODReward" PriorityTag="EODReward" ExcludeTag="KillCP,KillTarget,Room,NoMonster,MMGoblin,BossArea" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="RandomPPS_Room" Tag="Room,TPS" PriorityTag="TPS" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,RandomNecro,Cave,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="RandomPPS_Medium" Tag="TPS,MediumArea,ClassicArea" PriorityTag="TPS" ExcludeTag="COFE,REPU,COFY" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_Monolith_KillTarget_COSS_Halfbreed_4" Tag="KillTarget,NumerousGoal,PRIMO" PriorityTag="KillTarget,PRIMO,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Monolith_KillTarget_COFY_Cultist_4" Tag="KillTarget,NumerousGoal,PRIMO" PriorityTag="KillTarget,PRIMO,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Monolith_KillTarget_COFE_DOF" Tag="KillTarget,OneGoal,PRIMO" PriorityTag="KillTarget,PRIMO,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Monolith_KillTarget_COSS_DOS" Tag="KillTarget,OneGoal,PRIMO" PriorityTag="KillTarget,PRIMO,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Monolith_KillCP_1" Tag="KillCP,PRIMO" PriorityTag="PRIMO,EMQuest" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Monolith_PRIMO_Easy_1" Tag="Easy,PRIMO,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Monolith_PRIMO_Easy_2" Tag="Easy,PRIMO,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Monolith_PRIMO_Medium_1" Tag="Medium,LotOfMonster,PRIMO" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Monolith_PRIMO_Medium_2" Tag="Medium,LotOfMonster,PRIMO" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Monolith_PRIMO_Hard_1" Tag="Hard,LotOfMonster,PRIMO" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Monolith_PRIMO_Hard_2" Tag="Hard,LotOfMonster,PRIMO" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Monolith_PRIMO_Goblin" Tag="MMGoblin,Easy,PRIMO,LotOfMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="TPS,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_A1_PPS_ChestRoom" Tag="TPS,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_A1_PPS_CursedChestRoom" Tag="TPS,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_A1_PPS_EODReward" Tag="TPS,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_A1_PPS_BigLoot" Tag="TPS,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_A1_PPS" Tag="TPS,NormalLoot,EMNoQuest" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

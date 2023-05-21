@@ -1,0 +1,13 @@
+<MetaData>
+  <Skill UID="DOT_shock_zap" ESkill="DOT_shock_zap" Keywords="DOT">
+    <VisualFeedback BloodDecalOrientation="" FeedbackPresetBase="" TrailPresetBase="default" />
+    <CastingParams />
+    <DamageDOT Type="lightning" IsSecondaryDOTDamage="0" />
+    <SoundTrigger OnHit="Play_DOT_Zap" />
+    <ParticleList>
+      <Particle Key="Beam" Name="U_Character.Skills.Chain_Lightning_01" Direction="0,0,-1" Bone="Bip01 Spine1" />
+      <Particle Key="Hit" Name="U_Character.Skills.Chain_Lightning_Hit" Direction="0,0,1" Bone="Bip01 Spine1" />
+    </ParticleList>
+    <SkillSpecific />
+  </Skill>
+</MetaData>

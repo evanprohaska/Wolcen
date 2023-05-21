@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_sirkis_roar_omegas" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_08" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="25.0" CooldownTrigger="OnEnd" />
+    <Summoning MaxSummons="12" SummonDuration="0" MinRadiusAroundSpawnPosition="6" MaxRadiusAroundSpawnPosition="9" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_SirkisRoar_omegas" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="Play_VX_Svriir_Alpha_Roar_Summon" OnInterrupt="Stop_VX_Svriir_Alpha" />
+  </Skill>
+  <Skill UID="AI_sirkis_roar_spitters" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_08" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="999.0" CooldownTrigger="OnEnd" />
+    <Summoning MaxSummons="3" SummonDuration="0" MinRadiusAroundSpawnPosition="5" MaxRadiusAroundSpawnPosition="8" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_SirkisRoar_spitters" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="Play_VX_Svriir_Alpha_Roar_Summon" OnInterrupt="Stop_VX_Svriir_Alpha" />
+  </Skill>
+</MetaData>

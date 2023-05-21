@@ -1,0 +1,484 @@
+<MetaData>
+  <LevelSheet Name="C1_M1" GameMode="adventure" Type="fixed_level">
+    <MonsterManager Name="MM_Endgame_C1_M1" />
+    <EntityManager Name="EM_Adventure_C1_M1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_C1_M1_Starter_Name" />
+  </LevelSheet>
+  <LevelSheet Name="C1_M2" GameMode="adventure" Type="fixed_level">
+    <MonsterManager Name="MM_Endgame_C1_M2" />
+    <EntityManager Name="EM_Adventure_C1_M2" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_C1_M2_Starter_Name" />
+  </LevelSheet>
+  <LevelSheet Name="C1_M3" GameMode="adventure" Type="fixed_level">
+    <MonsterManager Name="MM_Endgame_C1_M3" />
+    <EntityManager Name="EM_Adventure_C1_M3" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_C1_M3_Starter_Name" />
+  </LevelSheet>
+  <LevelSheet Name="C1_M1_Consumables" GameMode="adventure" Type="fixed_level">
+    <MonsterManager Name="MM_Endgame_C1_M1" />
+    <EntityManager Name="EM_Adventure_C1_M1_Consumables" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_C1_M1_Starter_Name" />
+  </LevelSheet>
+  <LevelSheet Name="C1_M2_Consumables" GameMode="adventure" Type="fixed_level">
+    <MonsterManager Name="MM_Endgame_C1_M2" />
+    <EntityManager Name="EM_Adventure_C1_M2_Consumables" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_C1_M2_Starter_Name" />
+  </LevelSheet>
+  <LevelSheet Name="C1_M3_Consumables" GameMode="adventure" Type="fixed_level">
+    <MonsterManager Name="MM_Endgame_C1_M3" />
+    <EntityManager Name="EM_Adventure_C1_M3_Consumables" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_C1_M3_Starter_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_TPS" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TPS_MM" />
+    <EntityManager Name="EM_AdventureMode_TPS_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_TPS_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_TempleTemplar" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TempleUndead_MM" />
+    <EntityManager Name="EM_AdventureMode_TempleUndead_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_TempleTemplar_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_TempleFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TempleFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_TempleFlesh_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_TempleFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_TempleDesert" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TempleDesert_MM" />
+    <EntityManager Name="EM_AdventureMode_TempleDesert_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_TempleDesert_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_Svriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_SvriirLair_MM" />
+    <EntityManager Name="EM_AdventureMode_SvriirsLair_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_Svriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_SoulCave" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_SoulCave_MM" />
+    <EntityManager Name="EM_AdventureMode_SoulCave_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_SoulCave_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_RedWasteRepublic" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_RWRepublic_MM" />
+    <EntityManager Name="EM_AdventureMode_RWNRepublic_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_RedWasteRepublic_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_RedWaste" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_RWNatural_MM" />
+    <EntityManager Name="EM_AdventureMode_RWNatural_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_RedWaste_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_PPS" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_PPS_MM" />
+    <EntityManager Name="EM_AdventureMode_PPS_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_PPS_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_NecropolisMossy" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_NecropolisMossy_MM" />
+    <EntityManager Name="EM_AdventureMode_NecropolisMossy_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_NecropolisMossy_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_NecropolisImpaled" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_NecropolisGore_MM" />
+    <EntityManager Name="EM_AdventureMode_NecropolisGore_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_NecropolisImpaled_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_Necropolis" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Necropolis_MM" />
+    <EntityManager Name="EM_AdventureMode_Necropolis_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_Necropolis_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_IncubationChamber" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_IC_MM" />
+    <EntityManager Name="EM_AdventureMode_IncubationChamber_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_IncubationChamber_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_GenericCave" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_GenericCave_MM" />
+    <EntityManager Name="EM_AdventureMode_GenericCave_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_GenericCave_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_ForestGore" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_ForestGore_MM" />
+    <EntityManager Name="EM_AdventureMode_ForestGore_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_ForestGore_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_ForestAutumn" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_ForestAutumn_MM" />
+    <EntityManager Name="EM_AdventureMode_ForestAutumn_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_ForestAutumn_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_Forest" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Forest_MM" />
+    <EntityManager Name="EM_AdventureMode_Forest_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_Forest_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_Swamp" GameMode="adventure" Type="random_dungeon">
+    <EntityManager Name="EM_AdventureMode_Swamp_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_Swamp_Name" />
+    <MonsterManager Name="NPC2_Swamp_MM" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_Stronghold" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Stronghold_MM" />
+    <EntityManager Name="EM_AdventureMode_Stronghold_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_Stronghold_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_Wetlands" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Wetlands_MM" />
+    <EntityManager Name="EM_AdventureMode_Wetland_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_Wetlands_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_PPSSvriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_PPSSvriir_MM" />
+    <EntityManager Name="EM_AdventureMode_PPSSvriir_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_PPSSvriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_PPSFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_PPSFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_PPSFlesh_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_PPSFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_ForestSvriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_ForestSvriir_MM" />
+    <EntityManager Name="EM_AdventureMode_ForestSvriir_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_ForestSvriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_ForestFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_ForestFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_ForestFlesh_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_ForestFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_SwampSvriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_SwampSvriir_MM" />
+    <EntityManager Name="EM_AdventureMode_SwampSvriir_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_SwampSvriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_SwampFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_SwampFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_SwampFlesh_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_SwampFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_WetlandSvriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_WetlandSvriir_MM" />
+    <EntityManager Name="EM_AdventureMode_Wetland_Svriir_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_WetlandSvriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_SariselMode_WetlandFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_WetlandFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_Wetland_Flesh_EG_SariselMode" />
+    <HUD UIName="@ui_NPC2_WetlandFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF1_SwampFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_SwampFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_SwampFlesh_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_SwampFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF1_RedWaste" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_RWNatural_MM" />
+    <EntityManager Name="EM_AdventureMode_RWNatural_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_RedWaste_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF1_NecropolisImpaled" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_NecropolisGore_MM" />
+    <EntityManager Name="EM_AdventureMode_NecropolisGore_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_NecropolisImpaled_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF2_TempleTemplar" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TempleUndead_MM" />
+    <EntityManager Name="EM_AdventureMode_TempleUndead_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_TempleTemplar_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF2_WetlandSvriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_WetlandSvriir_MM" />
+    <EntityManager Name="EM_AdventureMode_WetlandSvriir_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_WetlandSvriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF2_Stronghold" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Stronghold_MM" />
+    <EntityManager Name="EM_AdventureMode_Stronghold_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Stronghold_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF3_NecropolisMossy" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_NecropolisMossy_MM" />
+    <EntityManager Name="EM_AdventureMode_NecropolisMossy_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_NecropolisMossy_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF3_SwampSvriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_SwampSvriir_MM" />
+    <EntityManager Name="EM_AdventureMode_SwampSvriir_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_SwampSvriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF3_RedWaste" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_RWNatural_MM" />
+    <EntityManager Name="EM_AdventureMode_RWNatural_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_RedWaste_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF4_ForestFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_ForestFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_ForestFlesh_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_ForestFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF4_Stronghold" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Stronghold_MM" />
+    <EntityManager Name="EM_AdventureMode_Stronghold_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Stronghold_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF4_Wetlands" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Wetlands_MM" />
+    <EntityManager Name="EM_AdventureMode_Wetland_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Wetlands_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF5_Stronghold" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Stronghold_MM" />
+    <EntityManager Name="EM_AdventureMode_Stronghold_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Stronghold_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF5_TempleTemplar" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TempleUndead_MM" />
+    <EntityManager Name="EM_AdventureMode_TempleUndead_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_TempleTemplar_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF5_Svriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_SvriirLair_MM" />
+    <EntityManager Name="EM_AdventureMode_SvriirsLair_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Svriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF6_TempleDesert" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TempleDesert_MM" />
+    <EntityManager Name="EM_AdventureMode_TempleDesert_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_TempleDesert_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF6_RedWasteRepublic" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_RWRepublic_MM" />
+    <EntityManager Name="EM_AdventureMode_RWNRepublic_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_RedWasteRepublic_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF6_NecropolisMossy" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_NecropolisMossy_MM" />
+    <EntityManager Name="EM_AdventureMode_NecropolisMossy_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_NecropolisMossy_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF7_WetlandFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_WetlandFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_WetlandFlesh_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_WetlandFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF7_Svriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_SvriirLair_MM" />
+    <EntityManager Name="EM_AdventureMode_SvriirsLair_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Svriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF7_Swamp" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Swamp_MM" />
+    <EntityManager Name="EM_AdventureMode_Swamp_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Swamp_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF8_Forest" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Forest_MM" />
+    <EntityManager Name="EM_AdventureMode_Forest_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Forest_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF8_TempleFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TempleFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_TempleFlesh_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_TempleFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF8_Swamp" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Swamp_MM" />
+    <EntityManager Name="EM_AdventureMode_Swamp_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Swamp_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF9_Wetlands" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Wetlands_MM" />
+    <EntityManager Name="EM_AdventureMode_Wetland_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Wetlands_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF9_TempleDesert" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TempleDesert_MM" />
+    <EntityManager Name="EM_AdventureMode_TempleDesert_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_TempleDesert_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF9_TPS" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TPS_MM" />
+    <EntityManager Name="EM_AdventureMode_TPS_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_TPS_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF10_WetlandFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_WetlandFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_WetlandFlesh_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_WetlandFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF10_SoulCave" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_SoulCave_MM" />
+    <EntityManager Name="EM_AdventureMode_SoulCave_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_SoulCave_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF10_GenericCave" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_GenericCave_MM" />
+    <EntityManager Name="EM_AdventureMode_GenericCave_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_GenericCave_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF11_IncubationChamber" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_IC_MM" />
+    <EntityManager Name="EM_AdventureMode_IncubationChamber_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_IncubationChamber_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF11_Necropolis" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Necropolis_MM" />
+    <EntityManager Name="EM_AdventureMode_Necropolis_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Necropolis_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF11_PPSSvriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_PPSSvriir_MM" />
+    <EntityManager Name="EM_AdventureMode_PPSSvriir_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_PPSSvriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF12_TPS" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TPS_MM" />
+    <EntityManager Name="EM_AdventureMode_TPS_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_TPS_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF12_ForestSvriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_ForestSvriir_MM" />
+    <EntityManager Name="EM_AdventureMode_ForestSvriir_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_ForestSvriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF12_RedWasteRepublic" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_RWRepublic_MM" />
+    <EntityManager Name="EM_AdventureMode_RWNRepublic_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_RedWasteRepublic_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF13_WetlandSvriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_WetlandSvriir_MM" />
+    <EntityManager Name="EM_AdventureMode_WetlandSvriir_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_WetlandSvriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF13_Necropolis" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Necropolis_MM" />
+    <EntityManager Name="EM_AdventureMode_Necropolis_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Necropolis_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF13_Stronghold" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Stronghold_MM" />
+    <EntityManager Name="EM_AdventureMode_Stronghold_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Stronghold_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF14_PPSFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_PPSFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_PPSFlesh_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_PPSFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF14_ForestGore" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_ForestGore_MM" />
+    <EntityManager Name="EM_AdventureMode_ForestGore_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_ForestGore_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF14_Wetlands" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_Wetlands_MM" />
+    <EntityManager Name="EM_AdventureMode_Wetland_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_Wetlands_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF15_PPS" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_PPS_MM" />
+    <EntityManager Name="EM_AdventureMode_PPS_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_PPS_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF15_ForestAutumn" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_ForestAutumn_MM" />
+    <EntityManager Name="EM_AdventureMode_ForestAutumn_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_ForestAutumn_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF15_NecropolisMossy" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_NecropolisMossy_MM" />
+    <EntityManager Name="EM_AdventureMode_NecropolisMossy_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_NecropolisMossy_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF16_TempleFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_TempleFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_TempleFlesh_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_TempleFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF16_WetlandSvriir" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_WetlandSvriir_MM" />
+    <EntityManager Name="EM_AdventureMode_WetlandSvriir_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_WetlandSvriir_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF16_SoulCave" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_SoulCave_MM" />
+    <EntityManager Name="EM_AdventureMode_SoulCave_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_SoulCave_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF17_RedWaste" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_RWNatural_MM" />
+    <EntityManager Name="EM_AdventureMode_RWNatural_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_RedWaste_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF17_WetlandFlesh" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_WetlandFlesh_MM" />
+    <EntityManager Name="EM_AdventureMode_WetlandFlesh_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_WetlandFlesh_Name" />
+  </LevelSheet>
+  <LevelSheet Name="NPC2_NormalMode_CF17_PPS" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_PPS_MM" />
+    <EntityManager Name="EM_AdventureMode_PPS_EG_C1" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <HUD UIName="@ui_NPC2_PPS_Name" />
+  </LevelSheet>
+</MetaData>

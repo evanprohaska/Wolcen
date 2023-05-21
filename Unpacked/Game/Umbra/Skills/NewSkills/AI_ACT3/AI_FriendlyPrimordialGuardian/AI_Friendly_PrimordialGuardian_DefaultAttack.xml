@@ -1,0 +1,15 @@
+<MetaData>
+  <Skill UID="AI_Friendly_PrimordialGuardian_DefaultAttack_Ranged" ESkill="AI_default_projectileskillwithaoe" Keywords="projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="2" />
+    <Cooldown Cooldown="0.0" />
+    <Explosion ExplosionRadius="4" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" CanBeInterrupted="0" />
+    <Projectile Name="friendly_primordialguardian_missileshot" ProjectileCount="1" PenetrationLimit="1" />
+    <SoundTrigger OnAnimStart="Play_Primordial_GuardianCorrupt_Ranged_Fire" OnHit="Play_Primordial_GuardianCorrupt_Ranged_Impact_Hit" PlayAttackVoice="0" />
+    <Targeting TargetingType="target" ComputeTargetPosAtCast="0" />
+    <Collisions IgnoreEntityCollisions="0" />
+    <Range AttackRange="13" />
+  </Skill>
+</MetaData>

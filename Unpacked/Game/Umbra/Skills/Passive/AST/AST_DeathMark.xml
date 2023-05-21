@@ -1,0 +1,51 @@
+<MetaData>
+  <Spell Name="AST_DeathMark_Base_Vulnerability" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="vulnerability" Permanent="0">
+        <Semantics DamagePercentFloat="16" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_DeathMark_Vulnerability_Increase" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="vulnerability" Permanent="0">
+        <Semantics DamagePercentFloat="4" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_DeathMark_DOT_Vulnerability_Chance" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="statusailment_resist_score_percent" Permanent="0">
+        <Semantics CharacteristicScorePercentInt="-25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_DeathMark_CriticalDamage_Vulnerability" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="criticaldamage_received_percent_increase" Permanent="0">
+        <Semantics DamagePercentFloat="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_DeathMark_DOT_Vulnerability_Damage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dotdamage_percent_received_increase" Permanent="0">
+        <Semantics DamagePercentFloat="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_DeathMark_Vulnerability_3" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="vulnerability" Permanent="0">
+        <Semantics DamagePercentFloat="8" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_DeathMark_Vulnerability_2" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="vulnerability" Permanent="0">
+        <Semantics DamagePercentFloat="4" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

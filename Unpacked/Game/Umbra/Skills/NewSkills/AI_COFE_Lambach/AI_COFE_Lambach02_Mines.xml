@@ -1,0 +1,81 @@
+<MetaData>
+  <Skill UID="AI_COFE_Lambach02_Mines" ESkill="AI_COFE_Lambach02_Mines" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <StringList>
+      <String Key="Character" String="Game/Objects/characters/mobs/Non_Humanoid/Tentacle/COFE_Tentacle/COFE_Tentacle_03.cdf" />
+      <String Key="Animation01" String="COFE_Tentacle_skill_Mine_01" />
+      <String Key="Animation02" String="COFE_Tentacle_skill_Mine_02" />
+    </StringList>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_02" Offset="0,0,0" Direction="0,0,1" Scale="0.66" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="4" RandomNumberRangeMax="4" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+    <Shapes>
+      <Entry Key="DamageShape" ShapeName="Lambach02_TentacleVerticalAttackShape" />
+    </Shapes>
+    <SkillSpecific TimeBetweenLockAndCast="1" TimeBetweenCastAndNextLock="1.5" LoopThresholdForAnimEnd="1" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFE_Lambach02_Mines_SpawnMines" />
+    </SecondarySkillToCast>
+  </Skill>
+  <Skill UID="AI_COFE_Lambach02_Mines_SpawnMines" ESkill="AI_COFE_Lambach02_Mines_SpawnMines">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageAsPercentageOfParent Type="Rend" Percentage="200" />
+    <SoundTrigger OnAnimCast="PLAY_Player_DefaultHitLarge" />
+    <Traps Name="trap_cofe_lambach" />
+    <Explosion ExplosionRadius="2" />
+  </Skill>
+  <Skill UID="AI_COFE_Lambach02_Mines2" ESkill="AI_COFE_Lambach02_Mines" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <StringList>
+      <String Key="Character" String="Game/Objects/characters/mobs/Non_Humanoid/Tentacle/COFE_Tentacle/COFE_Tentacle_03.cdf" />
+      <String Key="Animation01" String="COFE_Tentacle_skill_Mine_01" />
+      <String Key="Animation02" String="COFE_Tentacle_skill_Mine_02" />
+    </StringList>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_02" Offset="0,0,0" Direction="0,0,1" Scale="0.66" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="6" RandomNumberRangeMax="6" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+    <Shapes>
+      <Entry Key="DamageShape" ShapeName="Lambach02_TentacleVerticalAttackShape" />
+    </Shapes>
+    <SkillSpecific TimeBetweenLockAndCast="1" TimeBetweenCastAndNextLock="1.5" LoopThresholdForAnimEnd="1" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFE_Lambach02_Mines_SpawnMines" />
+    </SecondarySkillToCast>
+  </Skill>
+  <Skill UID="AI_COFE_Lambach02_Mines3" ESkill="AI_COFE_Lambach02_Mines" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <StringList>
+      <String Key="Character" String="Game/Objects/characters/mobs/Non_Humanoid/Tentacle/COFE_Tentacle/COFE_Tentacle_03.cdf" />
+      <String Key="Animation01" String="COFE_Tentacle_skill_Mine_01" />
+      <String Key="Animation02" String="COFE_Tentacle_skill_Mine_02" />
+    </StringList>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_02" Offset="0,0,0" Direction="0,0,1" Scale="0.66" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="8" RandomNumberRangeMax="8" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+    <Shapes>
+      <Entry Key="DamageShape" ShapeName="Lambach02_TentacleVerticalAttackShape" />
+    </Shapes>
+    <SkillSpecific TimeBetweenLockAndCast="1" TimeBetweenCastAndNextLock="1.5" LoopThresholdForAnimEnd="1" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFE_Lambach02_Mines_SpawnMines" />
+    </SecondarySkillToCast>
+  </Skill>
+</MetaData>

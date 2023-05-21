@@ -1,0 +1,56 @@
+<MetaData>
+  <Quest Name="Quest_MercyFight1" StartDialog="" Type="BossFight" UIName="@ui_A2_Q2_EventQuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_A2_Q2_S3_EventStepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Impossible" />
+      <Goal Order="1" Type="Talk" EntityName="NPC_A2_Q2_S2_Mercy" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk9_a">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q2_S2_Mercy" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Kill" ClassToKill="Outlaws_MercyArena_Mercy" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Outlaws_MercyArena_Mercy" Area="" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" Delay="0" StepToKeep="1" Name="A2_Q2_BossFight_ClearUI_1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="1" Type="GlobalAnnouncement" Name="A2_Q2_EA_AN_EventStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_A2_Q2_S3_UpdateStepNameLabel1" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="A2_Q2_EA_AN_EventEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalAnnouncement" Name="A2_Q2_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A2_Q2_S3_EventStepNameLabel" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalAnnouncement" Name="A2_Q2_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ArenaStart" Name="ACT2_Q2_StartArena_Mercy" ArenaPreset="BanditArena_Act2" LocationEntityName="BanditArena_Act2" EntityToFollow="" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" Type="GoalAchieve" GoalIndexToAchieve="0" Name="ACT2_Q2_Arena_Mercy_Victory" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="1" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_Anim2" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="outw_mercy_sit_gesture_speak_01" Loop="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="ACT2_Q2_S3_DynS_Mercy_Anim2" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_idl2" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="OUTW_Mercy_Sit_Loop_01" Loop="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="1" Type="EntityKillAll" Delay="1" Name="VOS1_BanditArena_W1KillAll" MonsterClass="MercyArena_Spitter" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="2" Type="GlobalDialog" Name="VOS1_BanditArena_Mazzara" Delay="1" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk3" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="2" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_Anim3" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="outw_mercy_sit_gesture_speak_01" Loop="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="ACT2_Q2_S3_DynS_Mercy_Anim3" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_idl3" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="OUTW_Mercy_Sit_Loop_01" Loop="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="3" Type="GlobalDialog" Name="VOS1_BanditArena_Wild" Delay="1" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk4" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="3" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_Anim4" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="outw_mercy_sit_gesture_speak_01" Loop="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="ACT2_Q2_S3_DynS_Mercy_Anim4" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_idl4" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="OUTW_Mercy_Sit_Loop_01" Loop="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="4" Type="GlobalDialog" Name="VOS1_BanditArena_Brothers" Delay="1" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk5" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="4" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_Anim5" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="outw_mercy_sit_gesture_speak_01" Loop="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="ACT2_Q2_S3_DynS_Mercy_Anim5" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_idl5" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="OUTW_Mercy_Sit_Loop_01" Loop="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="5" Type="GlobalDialog" Name="VOS1_BanditArena_Spider" Delay="1" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk6" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="5" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_Anim6" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="outw_mercy_sit_gesture_speak_01" Loop="0" Delay="5" />
+      <Event Trigger="EventEnd" EventName="ACT2_Q2_S3_DynS_Mercy_Anim6" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_idl6" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="OUTW_Mercy_Sit_Loop_01" Loop="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="5" Type="EntityKillAll" Delay="1" Name="VOS1_BanditArena_W5KillAll" MonsterClass="MercyArenaSpiderMeleeSmall" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="6" Type="GlobalDialog" Name="VOS1_BanditArena_Crowd" Delay="1" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk7" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" WaveIndex="6" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_Anim7" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="outw_mercy_sit_gesture_speak_01" Loop="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="ACT2_Q2_S3_DynS_Mercy_Anim7" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_idl7" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="OUTW_Mercy_Sit_Loop_01" Loop="1" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" Type="GlobalDialog" Name="VOS1_BanditArena_CrowdWon" Delay="1" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk8" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="ACT2_Q2_StartArena_Mercy" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_Anim8" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="outw_mercy_sit_gesture_speak_01" Loop="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="ACT2_Q2_S3_DynS_Mercy_Anim8" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_idl8" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="OUTW_Mercy_Sit_Loop_01" Loop="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A2_Q2_S3_StepUpdate2" Localization="@ui_A2_Q2_S3_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="MercySpawn_Arena" SpawnClass="Sc_MercyArena_OUTW_Mercy" TargetEntityName="QP_A2_Q2_S2_MercySpawn" FaceAtSpawn="QP_A2_Q2_S2_MercyFace" MinimumRadius="0" MaximumRadius="0.1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="VOS1_BanditArena_MercyFight1_0" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk9_b" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsGod" Delay=".5" Name="A2_Q2_MercyGod" EntityName="Mercy" Invincible="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsGod" Delay="17.2" Name="A2_Q2_MercyMortal" EntityName="Mercy" Invincible="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="A2_Q2_S2_HideMercySpawn" EntityNames="NPC_A2_Q2_S2_Mercy" Hide="1" Delay="0.5" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="VOS1_BanditArena_MercyFight1_1" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk10_1" Delay="17.2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Mercy" PercentLeft="25" Type="GlobalDialog" Name="VOS1_BanditArena_MercyFight1_2" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk10_2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Mercy" PercentLeft="40" Type="GlobalDialog" Name="VOS1_BanditArena_MercyFight1_3" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk10_3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Mercy" PercentLeft="65" Type="GlobalDialog" Name="VOS1_BanditArena_MercyFight1_4" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk10_4" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EventClear" Name="VOS1_BanditArena_ArenaWon" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="MercyArenaCollisionRehide" EntityNames="primitive_box_BlockRoadMercyArena" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionParticleEmitter" Name="MercyArenaParticleRehide" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.MercyArena" Activate="0" />
+    </Step>
+  </Quest>
+</MetaData>

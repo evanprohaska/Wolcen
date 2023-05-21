@@ -1,0 +1,89 @@
+<MetaData>
+  <Skill UID="playerskill_H2_Staff_atk_01" ESkill="default_homingprojectile" Keywords="default_ranged,attack_skill,additional_projectile,default_staff,projectile">
+    <Animation ActionString="player_skill_atk_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_staff" TrailPresetBase="staff" />
+    <HUD HUDPicture="../u_resources\spells\weapon_combo_icons/h2_staff.png" UIName="@ui_AST_Staff" Lore="@ui_AST_Staff_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance,Projectiles,Range" />
+    <Combo ComboStarter="Combo_H2_Staff" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastFromWeaponHelper="Blood" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+    <Range AttackRange="20" />
+    <Projectile Name="staff_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1">
+      <AutomaticCastAngle distanceMin="2" distanceMax="9" angleAtDistanceMin="90" angleAtDistanceMax="90" />
+    </Projectile>
+    <ParticleList LoadFromPreset="staff_default_muzzle" />
+    <Explosion ExplosionRadius="0.5" />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="-100" />
+    <SoundTrigger PlayImpactSound="1" OnAnimStart="Play_Foley_Move_Short" OnAnimCast="PLAY_Skill_DefaultWeapon_StaffShot" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+    <Targeting TargetingType="entity" />
+    <SkillSpecific RandomInitialRotationMax="80" LerpRatioTowardsZAxis="0.5" />
+  </Skill>
+  <Skill UID="playerskill_H2_Staff_atk_02" ESkill="default_homingprojectile" Keywords="default_ranged,attack_skill,additional_projectile,default_staff,projectile">
+    <Animation ActionString="player_skill_atk_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_staff" TrailPresetBase="staff" />
+    <HUD HUDPicture="../u_resources\spells\weapon_combo_icons/h2_staff.png" UIName="@ui_AST_FireStaff" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastFromWeaponHelper="Particle" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+    <Range AttackRange="20" />
+    <Projectile Name="staff_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1">
+      <AutomaticCastAngle distanceMin="2" distanceMax="9" angleAtDistanceMin="90" angleAtDistanceMax="90" />
+    </Projectile>
+    <ParticleList LoadFromPreset="staff_default_muzzle" />
+    <Explosion ExplosionRadius="0.5" />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="-100" />
+    <SoundTrigger PlayImpactSound="1" OnAnimStart="Play_Foley_Move_Short" OnAnimCast="PLAY_Skill_DefaultWeapon_StaffShot" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+    <SkillSpecific RandomInitialRotationMax="80" LerpRatioTowardsZAxis="0.5" />
+  </Skill>
+  <Skill UID="playerskill_H2_Staff_atk_loop_01" ESkill="default_homingprojectile" Keywords="default_ranged,attack_skill,additional_projectile,default_staff,projectile">
+    <Animation ActionString="player_skill_atk_loop_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_staff" TrailPresetBase="staff" />
+    <HUD HUDPicture="../u_resources\spells\weapon_combo_icons/h2_staff.png" UIName="@ui_AST_FireStaff" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastFromWeaponHelper="Particle" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+    <Range AttackRange="20" />
+    <Projectile Name="staff_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1">
+      <AutomaticCastAngle distanceMin="2" distanceMax="9" angleAtDistanceMin="90" angleAtDistanceMax="90" />
+    </Projectile>
+    <ParticleList LoadFromPreset="staff_default_muzzle" />
+    <Explosion ExplosionRadius="0.5" />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="-100" />
+    <SoundTrigger PlayImpactSound="1" OnAnimStart="Play_Foley_Move_Short" OnAnimCast="PLAY_Skill_DefaultWeapon_StaffShot" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+    <SkillSpecific RandomInitialRotationMax="80" LerpRatioTowardsZAxis="0.5" />
+  </Skill>
+  <Skill UID="playerskill_H2_Staff_atk_loop_02" ESkill="default_homingprojectile" Keywords="default_ranged,attack_skill,additional_projectile,default_staff,projectile">
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_staff" TrailPresetBase="staff" />
+    <HUD HUDPicture="../u_resources\spells\weapon_combo_icons/h2_staff.png" UIName="@ui_AST_FireStaff" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastFromWeaponHelper="Blood" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+    <Range AttackRange="20" />
+    <Projectile Name="staff_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1">
+      <AutomaticCastAngle distanceMin="2" distanceMax="9" angleAtDistanceMin="90" angleAtDistanceMax="90" />
+    </Projectile>
+    <ParticleList LoadFromPreset="staff_default_muzzle" />
+    <Explosion ExplosionRadius="0.5" />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="-100" />
+    <SoundTrigger PlayImpactSound="1" OnAnimStart="Play_Foley_Move_Short" OnAnimCast="PLAY_Skill_DefaultWeapon_StaffShot" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+    <SkillSpecific RandomInitialRotationMax="80" LerpRatioTowardsZAxis="0.5" />
+  </Skill>
+  <Skill UID="playerskill_H2_Staff_atk_finisher" ESkill="default_homingprojectile" Keywords="default_ranged,attack_skill,additional_projectile,default_staff,projectile">
+    <Animation ActionString="player_skill_atk_finisher" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_staff" TrailPresetBase="staff" />
+    <HUD HUDPicture="../u_resources\spells\weapon_combo_icons/h2_staff.png" UIName="@ui_AST_FireStaff" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastFromWeaponHelper="Blood" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+    <Range AttackRange="20" />
+    <Projectile Name="staff_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1">
+      <AutomaticCastAngle distanceMin="2" distanceMax="9" angleAtDistanceMin="90" angleAtDistanceMax="90" />
+    </Projectile>
+    <ParticleList LoadFromPreset="staff_default_muzzle" />
+    <Explosion ExplosionRadius="0.5" />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="-100" />
+    <SoundTrigger PlayImpactSound="1" OnAnimStart="Play_Foley_Move_Short" OnAnimCast="PLAY_Skill_DefaultWeapon_StaffShot" OnKill="Play_OnKill_Impact_Lethal_Spell" />
+    <SkillSpecific RandomInitialRotationMax="80" LerpRatioTowardsZAxis="0.5" />
+  </Skill>
+</MetaData>

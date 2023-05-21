@@ -1,0 +1,56 @@
+<MetaData>
+  <ContentGenerator Name="CG_EG_WM_Lieutenant" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="Lieutenant1" PriorityTag="Lieutenant1" Weight="1" ExcludeTag="Flesh_Arena,Fury_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant2" PriorityTag="Lieutenant2" Weight="1" ExcludeTag="Flesh_Arena,Fury_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant3" PriorityTag="Lieutenant3" Weight="1" ExcludeTag="Flesh_Arena,Fury_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant4" PriorityTag="Lieutenant4" Weight="1" ExcludeTag="Soul_Arena,Fury_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant5" PriorityTag="Lieutenant5" Weight="1" ExcludeTag="Soul_Arena,Fury_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant6" PriorityTag="Lieutenant6" Weight="1" ExcludeTag="Soul_Arena,Flesh_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant7" PriorityTag="Lieutenant7" Weight="1" ExcludeTag="Soul_Arena,Flesh_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant8" PriorityTag="Lieutenant8" Weight="1" ExcludeTag="Soul_Arena,Flesh_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant9" PriorityTag="Lieutenant9" Weight="1" ExcludeTag="Soul_Arena,Flesh_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant10" PriorityTag="Lieutenant10" Weight="1" ExcludeTag="Soul_Arena,Flesh_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant11" PriorityTag="Lieutenant11" Weight="1" ExcludeTag="Flesh_Arena,Fury_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant12" PriorityTag="Lieutenant12" Weight="1" ExcludeTag="Soul_Arena,Fury_Arena" UsedTag="" UsedDuration="0" />
+      <Archetype Tag="Lieutenant13" PriorityTag="Lieutenant13" Weight="1" ExcludeTag="Soul_Arena,Fury_Arena" UsedTag="" UsedDuration="0" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="SoulsPortal_BossArea_CG" Tag="Soul_Arena" PriorityTag="" ExcludeTag="" UsedTag="Soul_Arena" UsedDuration="0" />
+      <LevelGenerator DungeonName="FleshPortal_BossArea_CG" Tag="Flesh_Arena" PriorityTag="" ExcludeTag="" UsedTag="Flesh_Arena" UsedDuration="0" />
+      <LevelGenerator DungeonName="FuryPortal_BossArea_CG" Tag="Fury_Arena" PriorityTag="" ExcludeTag="" UsedTag="Fury_Arena" UsedDuration="0" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="Q_AL_ClusterFireBall" Tag="Lieutenant1" PriorityTag="Lieutenant1" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_OUTW_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_OUTW_QuestLoreLabel" />
+      <Quest QuestName="Q_AL_FirePillar" Tag="Lieutenant2" PriorityTag="Lieutenant2" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_SVRI_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_SVRI_QuestLoreLabel" />
+      <Quest QuestName="Q_AL_FirePillarOverloaded" Tag="Lieutenant3" PriorityTag="Lieutenant3" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_COFY_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_COFY_QuestLoreLabel" />
+      <Quest QuestName="Q_AL_FireTornado" Tag="Lieutenant4" PriorityTag="Lieutenant4" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_COSS_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_COSS_QuestLoreLabel" />
+      <Quest QuestName="Q_AL_FireWalls" Tag="Lieutenant5" PriorityTag="Lieutenant5" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_REPU_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_REPU_StepNameLabel" />
+      <Quest QuestName="Q_AL_FlameWave" Tag="Lieutenant6" PriorityTag="Lieutenant6" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_OUTW_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_OUTW_QuestLoreLabel" />
+      <Quest QuestName="Q_AL_FlamingSigil" Tag="Lieutenant7" PriorityTag="Lieutenant7" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_SVRI_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_SVRI_QuestLoreLabel" />
+      <Quest QuestName="Q_AL_FlamingSmash" Tag="Lieutenant8" PriorityTag="Lieutenant8" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_COFY_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_COFY_QuestLoreLabel" />
+      <Quest QuestName="Q_AL_FlamingStar" Tag="Lieutenant9" PriorityTag="Lieutenant9" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_COSS_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_COSS_QuestLoreLabel" />
+      <Quest QuestName="Q_AL_FlamingSwing" Tag="Lieutenant10" PriorityTag="Lieutenant10" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_REPU_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_REPU_StepNameLabel" />
+      <Quest QuestName="Q_AL_FlyingSmash" Tag="Lieutenant11" PriorityTag="Lieutenant11" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_OUTW_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_OUTW_QuestLoreLabel" />
+      <Quest QuestName="Q_AL_RotatingFireWalls" Tag="Lieutenant12" PriorityTag="Lieutenant12" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_SVRI_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_SVRI_QuestLoreLabel" />
+      <Quest QuestName="Q_AL_SuccessiveExplosion" Tag="Lieutenant13" PriorityTag="Lieutenant13" ExcludeTag="" UsedTag="" UsedDuration="" UIExpeditionDesc="@WM_Q6_Main_COFY_QuestDescriptionLabel" UIExpeditionLore="@WM_Q6_Main_COFY_QuestLoreLabel" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="default" Tag="" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="OUTW" Tag="Lieutenant1" PriorityTag="Lieutenant1" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="SVRI" Tag="Lieutenant2" PriorityTag="Lieutenant2" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="COFE" Tag="Lieutenant3" PriorityTag="Lieutenant3" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="COS" Tag="Lieutenant4" PriorityTag="Lieutenant4" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="REPU" Tag="Lieutenant5" PriorityTag="Lieutenant5" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="OUTW" Tag="Lieutenant6" PriorityTag="Lieutenant6" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="SVRI" Tag="Lieutenant7" PriorityTag="Lieutenant7" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="COFE" Tag="Lieutenant8" PriorityTag="Lieutenant8" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="COS" Tag="Lieutenant9" PriorityTag="Lieutenant9" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="REPU" Tag="Lieutenant10" PriorityTag="Lieutenant10" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="OUTW" Tag="Lieutenant11" PriorityTag="Lieutenant11" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="SVRI" Tag="Lieutenant12" PriorityTag="Lieutenant12" ExcludeTag="" UsedTag="" UsedDuration="0" />
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="COFE" Tag="Lieutenant13" PriorityTag="Lieutenant13" ExcludeTag="" UsedTag="" UsedDuration="0" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices />
+  </ContentGenerator>
+</MetaData>

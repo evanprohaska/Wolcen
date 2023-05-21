@@ -1,0 +1,350 @@
+<MetaData>
+  <Quest Name="NPC2_DoF" UIName="@NPC2_DoF_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_AlphaFlesh" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_PacifiedKnight" UIName="@NPC2_PacifiedKnight_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_PacifiedKnight" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_Butcher" UIName="@NPC2_Butcher_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_Butcher" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_Butcher" UIName="@NPC2_Butcher_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_Butcher" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_AlphaFire" UIName="@NPC2_AlphaFire_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_AlphaFire" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_AlphaFire" UIName="@NPC2_AlphaFire_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_AlphaFire" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_DragonRider" UIName="@NPC2_DR_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_DragonRider" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_WarBeast" UIName="@NPC2_WarBeast_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_Warbeast" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_Knight" UIName="@NPC2_PacifiedKnight_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_Knight" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_Justicar" UIName="@NPC2_Justicar_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_Justicar" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_RepuAssassin" UIName="@NPC2_RepuAssassin_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_Assassin" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_PacifiedGolgoth" UIName="@NPC2_PacifiedGolgoth_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_Golgoth" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_AlphaPoison" UIName="@NPC2_AlphaPoison_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_AlphaPoison" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_DragonRider" UIName="@NPC2_DR_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_RepublicDragonRider" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_BanditAssassin" UIName="@NPC2_BanditAssassin_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_Assassin" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_AlphaPoison" UIName="@NPC2_AlphaPoison_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_AlphaPoison" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_DoS" UIName="@NPC2_DoS_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_DoS" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_BanditAssassin" UIName="@NPC2_BanditAssassin_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_BanditAssassin" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_RepuAssassin" UIName="@NPC2_BanditAssassin_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_RepuAssassin" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_Thug" UIName="@NPC2_Thug_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_Thug" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_PrimoGuardian" UIName="@NPC2_COSDamned_PG_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_PrimoGuardian" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_DoS" UIName="@NPC2_DoS_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_DoS" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_Thug" UIName="@NPC2_Thug_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_Thug" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_DoF" UIName="@NPC2_DoF_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_DoF" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_Justicar" UIName="@NPC2_Justicar_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_Justicar" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_WarBeast" UIName="@NPC2_WarBeast_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_WarBeast" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_PrimoGuardian" UIName="@NPC2_COSDamned_PG_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_PrimoGuardian" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_FinalBoss_PacifiedGolgoth" UIName="@NPC2_PacifiedGolgoth_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FinalBoss_PacifiedGolgoth" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="NPC2_ShadowThug" UIName="@NPC2_ShadowThug_QuestNameLabel" UIDesc="" Type="NPC2" StartDialog="">
+    <Step Order="0" UIName="@NPC2_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <Goal Order="1" Type="Wait" TimeLimit="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_NPC2_FloorBoss_ShadowThug" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="NPC2_UI" Type="StepUpdate" Localization="@NPC2_StepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,246 @@
+<MetaData>
+  <Quest Name="QN_HE_BF_OutlawsAssassin_EG" UIName="@ui_HE_BF_OutlawsAssassin_QuestNameLabel" UIDesc="" Type="BossFight" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_BanditAssassin_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_OutlawsAssassin_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_OutlawsAssassin_MankindHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_OutlawsAssassin.png" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_OutlawsAssassin_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_OutlawsAssassin_MankindHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_OutlawsAssassin_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_OutlawsThug_EG" UIName="@ui_HE_BF_OutlawsThug_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_Thug_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_OutlawsThug_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_OutlawsThug_MankindHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_SadisticThug.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_OutlawsThug_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_OutlawsThug_MankindHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_OutlawsThug_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_RepublicJusticar_EG" UIName="@ui_HE_BF_RepublicJusticar_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_Justicar_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_RepublicJusticar_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_RepublicJusticar_MankindHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_Justicar.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_RepublicJusticar_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_RepublicJusticar_MankindHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_RepublicJusticar_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_RepublicDragonRider_EG" UIName="@ui_HE_BF_RepublicDragonRider_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_DragonRider_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_RepublicDragonRider_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_RepublicDragonRider_MankindHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_DragonRider.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_RepublicDragonRider_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_RepublicDragonRider_MankindHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_RepublicDragonRider_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_RepublicGolgoth_EG" UIName="@ui_HE_BF_RepublicGolgoth_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_Golgoth_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_RepublicGolgoth_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_RepublicGolgoth_MankindHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_Golgoth.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_RepublicGolgoth_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_RepublicGolgoth_MankindHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_RepublicGolgoth_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_DOS_EG" UIName="@ui_HE_BF_DOS_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_DoS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_DOS_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_DemonOfSouls_OccultHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_DemonOfSouls.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_DOS_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_DemonOfSouls_OccultHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_DOS_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_DOF_EG" UIName="@ui_HE_BF_DOF_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_DoF_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_DOF_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_DemonOfFlesh_OccultHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_DemonOfFlesh.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_DOF_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_DemonOfFlesh_OccultHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_DOF_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_Butcher_EG" UIName="@ui_HE_BF_Butcher_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_Devourer_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_Butcher_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_Butcher_OccultHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_Butcher.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_Butcher_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_Butcher_OccultHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_Butcher_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_AuroraKnight_EG" UIName="@ui_HE_BF_AuroraKnight_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_PacifiedKnight_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_AuroraKnight_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_AuroraKnight_OccultHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/Hunt_PacifiedKnight.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_AuroraKnight_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_AuroraKnight_OccultHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_AuroraKnight_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_SvriirAlpha_EG" UIName="@ui_HE_BF_SvriirAlpha_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_AlphaPoison_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_SvriirAlpha_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_SvriirAlpha_BeastHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_SvriirAlpha.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_SvriirAlpha_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_SvriirAlpha_BeastHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_SvriirAlpha_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_WarBeast_EG" UIName="@ui_HE_BF_WarBeast_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_WarBeast_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_OutlawsWarbeast_Final_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_OutlawsWarbeast_BeastHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_Warbeast.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_OutlawsWarbeast_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_OutlawsWarbeast_BeastHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_WarBeast_EG" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_OutlawsAssassin_S" UIName="@ui_HE_BF_OutlawsAssassin_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_BanditAssassin_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_OutlawsAssassin_Final_Spawn" TimeLimit="0" KillCount="1" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_S_OutlawsAssassin_MankindHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_OutlawsAssassin.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_OutlawsAssassin_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_S_OutlawsAssassin_MankindHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Name="HuntEvent_KillThePrey" Type="EntityIsHidden" EntityNames="HE_Mankind_ABandit_BFight" Hide="1" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Big_01" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_OutlawsAssassin_S" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_PreyKilled_Announcement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_OutlawsAssassin.png" UIReference="HuntComplete" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_RepublicJusticar_S" UIName="@ui_HE_BF_RepublicJusticar_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_Justicar_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_RepublicJusticar_Final_Spawn" TimeLimit="0" KillCount="1" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_S_RepublicJusticar_MankindHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_Justicar.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_RepublicJusticar_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_S_RepublicJusticar_MankindHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Name="HuntEvent_KillThePrey" Type="EntityIsHidden" EntityNames="HE_Mankind_Justicar_BFight" Hide="1" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Big_01" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_RepublicJusticar_S" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_PreyKilled_Announcement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_Justicar.png" UIReference="HuntComplete" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_DOS_S" UIName="@ui_HE_BF_DOS_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_DoS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_DOS_Final_Spawn" TimeLimit="0" KillCount="1" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_S_DemonOfSouls_OccultHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_DemonOfSouls.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_DOS_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_S_DemonOfSouls_OccultHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Name="HuntEvent_KillThePrey" Type="EntityIsHidden" EntityNames="HE_Occult_DOS_BFight" Hide="1" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Big_01" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_DOS_S" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_PreyKilled_Announcement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_DemonOfSouls.png" UIReference="HuntComplete" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_DOF_S" UIName="@ui_HE_BF_DOF_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_DoF_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_DOF_Final_Spawn" TimeLimit="0" KillCount="1" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_S_DemonOfFlesh_OccultHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_DemonOfFlesh.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_DOF_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_S_DemonOfFlesh_OccultHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Name="HuntEvent_KillThePrey" Type="EntityIsHidden" EntityNames="HE_Occult_DOF_BFight" Hide="1" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Big_01" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_DOF_S" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_PreyKilled_Announcement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_DemonOfFlesh.png" UIReference="HuntComplete" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_Butcher_S" UIName="@ui_HE_BF_Butcher_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_Devourer_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_Butcher_Final_Spawn" TimeLimit="0" KillCount="1" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_S_Butcher_OccultHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_Butcher.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_Butcher_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_S_Butcher_OccultHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Name="HuntEvent_KillThePrey" Type="EntityIsHidden" EntityNames="HE_Occult_Butcher_BFight" Hide="1" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Big_01" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_Butcher_S" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_PreyKilled_Announcement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_Butcher.png" UIReference="HuntComplete" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_AuroraKnight_S" UIName="@ui_HE_BF_AuroraKnight_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_PacifiedKnight_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_AuroraKnight_Final_Spawn" TimeLimit="0" KillCount="1" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_S_AuroraKnight_OccultHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/Hunt_PacifiedKnight.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_AuroraKnight_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_S_AuroraKnight_OccultHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Name="HuntEvent_KillThePrey" Type="EntityIsHidden" EntityNames="HE_Occult_AuroraK_BFight" Hide="1" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Big_01" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_AuroraKnight_S" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_PreyKilled_Announcement" ImagePath="../u_resources/hunt/boss_portraits/Hunt_PacifiedKnight.png" UIReference="HuntComplete" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_SvriirAlpha_S" UIName="@ui_HE_BF_SvriirAlpha_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_AlphaPoison_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_SvriirAlpha_Final_Spawn" TimeLimit="0" KillCount="1" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_S_SvriirAlpha_BeastHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_SvriirAlpha.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_SvriirAlpha_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_S_SvriirAlpha_BeastHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Name="HuntEvent_KillThePrey" Type="EntityIsHidden" EntityNames="HE_Beast_ASvriir_BFight" Hide="1" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Big_01" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_SvriirAlpha_S" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_PreyKilled_Announcement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_SvriirAlpha.png" UIReference="HuntComplete" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_HE_BF_WarBeast_S" UIName="@ui_HE_BF_WarBeast_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_PS_WarBeast_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_HE_OutlawsWarbeast_Final_Spawn" TimeLimit="0" KillCount="1" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_S_OutlawsWarbeast_BeastHFinal" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EndOfTrail_Announcement" UIReference="HuntEventAnnouncement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_Warbeast.png" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntBossSpawn" ContextualMessage="@ui_C1_Hunt_EA_CM_HuntBossSpawn" DisplayTime="3" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" Name="QN_HE_OutlawsWarbeast_Final_Spawn" Delay="1" SpawnClass="Sc_CG_HE_S_OutlawsWarbeast_BeastHFinal" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="BossfightLost" Name="HuntEvent_KillThePrey" Type="EntityIsHidden" EntityNames="HE_Beast_WarBeast_BFight" Hide="1" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Big_01" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_BF_WarBeast_S" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_PreyKilled_Announcement" ImagePath="../u_resources/hunt/boss_portraits/portraits_Hunt_Warbeast.png" UIReference="HuntComplete" AnnouncementName="@ui_C1_Hunt_EA_AN_HuntEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+</MetaData>

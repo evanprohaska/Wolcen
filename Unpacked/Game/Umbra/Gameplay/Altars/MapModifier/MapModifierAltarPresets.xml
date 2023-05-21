@@ -1,0 +1,30 @@
+<MapModifierAltarPresets>
+  <MapModifier PresetName="MapModidifier_Altar" Weight="1" AutoTeleport="1" Geometry="Objects/props/Altar/Altar_Shrine_Map_Modifier.cgf" BlockerGeometry="objects/fx/AltarPhys/CustomSphere_Collision_10x10.cgf" BlockerOffset="0,0,0" BlockerRotation="0" BlockerScale="1.58">
+    <MapModifierList>
+      <Modifier Preset="EliteRandomLightning" Chance="5" Difficulty="1" ItemRarity="30" ItemQuantity="15" />
+      <Modifier Preset="EliteAetherHomingProjectile" Chance="5" Difficulty="1" ItemRarity="30" ItemQuantity="15" />
+      <Modifier Preset="EliteRandomRend" Chance="5" Difficulty="1" ItemRarity="30" ItemQuantity="15" />
+      <Modifier Preset="EliteMeteors" Chance="5" Difficulty="1" ItemRarity="30" ItemQuantity="15" />
+      <Modifier Preset="EliteRendCircle" Chance="5" Difficulty="1" ItemRarity="30" ItemQuantity="15" />
+      <Modifier Preset="SoulExplosion" Chance="10" Difficulty="1" ItemRarity="30" ItemQuantity="15" />
+      <Modifier Preset="RandomExplosion" Chance="10" Difficulty="1" ItemRarity="30" ItemQuantity="15" />
+    </MapModifierList>
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.Altars_Map_Sphere" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="Permanent_Mesh" VFXName="U_CommonVFX.Altars.Altars_Aura_01" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="PermanentDeactivation" VFXName="U_CommonVFX.Altars.Altars_Map_Sphere_Disappear" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="PermanentDeactivation_Mesh" VFXName="U_CommonVFX.Altars.Altars_Finish_01_Blue" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+    </Particles>
+  </MapModifier>
+  <MapModifier PresetName="MapModidifier_Test_Altar" Weight="1" AutoTeleport="0" Geometry="Objects/props/Altar/Altar_Shrine_Map_Modifier.cgf" BlockerGeometry="objects/housing/walls/housing_door_metal1.cgf" BlockerOffset="3.6,1.8,0" BlockerRotation="0" BlockerScale="2.5">
+    <MapModifierList>
+      <Modifier Preset="SoulExplosion" Chance="5" Difficulty="0" ItemRarity="10" ItemQuantity="10" />
+      <Modifier Preset="RandomExplosion" Chance="5" Difficulty="0" ItemRarity="10" ItemQuantity="10" />
+      <Modifier Preset="ResurectSimilar" Chance="5" Difficulty="0" ItemRarity="10" ItemQuantity="10" />
+    </MapModifierList>
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_StaticMagic.storm.rigolo_illusion" Direction="0,1,0" Offset="3.6,1.4,2.4" Scale="1" />
+      <Particle Key="PermanentDeactivation" VFXName="Lightning.Lightning" Direction="0,0,1" Offset="3.6,1.8,0" Scale="1" />
+    </Particles>
+  </MapModifier>
+</MapModifierAltarPresets>

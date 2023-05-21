@@ -1,0 +1,160 @@
+<MetaData>
+  <Quest Name="ACT2_Quest1" StartDialog="" Type="Main" UIName="@ui_A2_Q1_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT2">
+    <Step Order="0" UIName="@ui_A2_Q1_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="QP_A2_Q1_S1_PlayerTP">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_BanditCamp3_to_TemplarCamp" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_BanditCamp3_to_TemplarCamp" Area="ACT2_Warlord_Lair" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q1_S1_A2_FOGPANIC" SequenceName="A2_FOGPANIC" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_A2_FOGPANIC" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q1_S1_A2_CHAPTER" SequenceName="A2_CHAPTER" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q1_S1_DynS_Player_Talk1" AreaRadius="10" Type="GlobalDialog" Name="A2_Q1_S1_DynS_Player_Talk1" DialogName="ACT2_Q1_S1_DynS_Player_Talk1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q1_S1_DynS_Player_Talk2" AreaRadius="14" Type="GlobalDialog" Name="A2_Q1_S1_DynS_Player_Talk2_1" DialogName="ACT2_Q1_S1_DynS_Player_Talk2_1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q1_S1_DynS_Player_Talk2" AreaRadius="8" Type="GlobalDialog" Name="A2_Q1_S1_DynS_Player_Talk2_2" DialogName="ACT2_Q1_S1_DynS_Player_Talk2_2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q1_S1_DynS_Player_Talk3" AreaRadius="32" Type="GlobalDialog" Name="A2_Q1_S1_DynS_Player_Talk3_1" DialogName="ACT2_Q1_S1_DynS_Player_Talk3_1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q1_S1_DynS_Player_Talk3_2" AreaRadius="20" Type="GlobalDialog" Name="A2_Q1_S1_DynS_Player_Talk3_2" DialogName="ACT2_Q1_S1_DynS_Player_Talk3_2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q1_S1_DynS_Player_Talk4" AreaRadius="20" Type="GlobalDialog" Name="A2_Q1_S1_DynS_Player_Talk4" DialogName="ACT2_Q1_S1_DynS_Player_Talk4" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q1_S1_DynS_Player_Talk6" AreaRadius="80" Type="GlobalDialog" Name="A2_Q1_S1_DynS_Player_Talk5" DialogName="ACT2_Q1_S1_DynS_Player_Talk5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q1_S1_DynS_Justicar_Talk" AreaRadius="20" Type="GlobalDialog" Name="A2_Q1_S1_DynS_Justicar_Talk" DialogName="ACT2_Q1_S1_DynS_Justicar_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_1" SpawnClass="Sc_Sty_AC2_BG_RI1" TargetEntityName="QP_RepublicanOfficer_Spawn1" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_2" SpawnClass="Sc_Sty_AC2_BG_RI2" TargetEntityName="QP_RepublicanOfficer_Spawn2" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_3" SpawnClass="Sc_Sty_AC2_BG_RI3" TargetEntityName="QP_RepublicanOfficer_Spawn3" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_4" SpawnClass="Sc_Sty_AC2_BG_RI4" TargetEntityName="QP_RepublicanOfficer_Spawn4" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_5" SpawnClass="Sc_Sty_AC2_BG_RI5" TargetEntityName="QP_RepublicanOfficer_Spawn5" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_6" SpawnClass="Sc_Sty_AC2_BG_RI6" TargetEntityName="QP_RepublicanOfficer_Spawn6" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_7" SpawnClass="Sc_Sty_AC2_BG_RI7" TargetEntityName="QP_RepublicanOfficer_Spawn7" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_8" SpawnClass="Sc_Sty_AC2_BG_RI8" TargetEntityName="QP_RepublicanOfficer_Spawn8" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_9" SpawnClass="Sc_Sty_AC2_BG_RI9" TargetEntityName="QP_RepublicanOfficer_Spawn9" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_10" SpawnClass="Sc_Sty_AC2_BG_RI10" TargetEntityName="QP_RepublicanOfficer_Spawn10" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_11" SpawnClass="Sc_Sty_AC2_BG_RI11" TargetEntityName="QP_RepublicanOfficer_Spawn11" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_12" SpawnClass="Sc_Sty_AC2_BG_RI12" TargetEntityName="QP_RepublicanOfficer_Spawn12" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_13" SpawnClass="Sc_Sty_AC2_BG_RI13" TargetEntityName="QP_RepublicanOfficer_Spawn13" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_14" SpawnClass="Sc_Sty_AC2_BG_RI14" TargetEntityName="QP_RepublicanOfficer_Spawn14" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_15" SpawnClass="Sc_Sty_AC2_BG_RI15" TargetEntityName="QP_RepublicanOfficer_Spawn15" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_16" SpawnClass="Sc_Sty_AC2_BG_RI16" TargetEntityName="QP_RepublicanOfficer_Spawn16" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q1_S1_Spawn_R_BG_IS_17" SpawnClass="Sc_Sty_AC2_BG_RI17" TargetEntityName="QP_RepublicanOfficer_Spawn17" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_1" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_1" RotatedEntityName="R_BG_IS_1" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_2" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_2" RotatedEntityName="R_BG_IS_2" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_3" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_3" RotatedEntityName="R_BG_IS_3" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_4" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_4" RotatedEntityName="R_BG_IS_4" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_5" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_5" RotatedEntityName="R_BG_IS_5" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_6" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_6" RotatedEntityName="R_BG_IS_6" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_7" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_7" RotatedEntityName="R_BG_IS_7" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_8" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_8" RotatedEntityName="R_BG_IS_8" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_9" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_9" RotatedEntityName="R_BG_IS_9" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_10" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_10" RotatedEntityName="R_BG_IS_10" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_11" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_11" RotatedEntityName="R_BG_IS_11" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_12" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_12" RotatedEntityName="R_BG_IS_12" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_13" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_13" RotatedEntityName="R_BG_IS_13" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_14" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_14" RotatedEntityName="R_BG_IS_14" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_15" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_15" RotatedEntityName="R_BG_IS_15" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_16" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_16" RotatedEntityName="R_BG_IS_16" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_Spawn_R_BG_IS_17" Type="EntityRotate" Name="A2_Q1_S1_Rotate_R_BG_IS_17" RotatedEntityName="R_BG_IS_17" Target="Justicar_Azenhal" FaceTarget="0" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_17" EntityName="R_BG_IS_17" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.8" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_16" EntityName="R_BG_IS_16" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_15" EntityName="R_BG_IS_15" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_14" EntityName="R_BG_IS_14" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="1.9" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_13" EntityName="R_BG_IS_13" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_12" EntityName="R_BG_IS_12" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.1" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_11" EntityName="R_BG_IS_11" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.15" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_10" EntityName="R_BG_IS_10" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.2" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_9" EntityName="R_BG_IS_9" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.25" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_8" EntityName="R_BG_IS_8" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.3" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_7" EntityName="R_BG_IS_7" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.35" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_6" EntityName="R_BG_IS_6" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.4" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_5" EntityName="R_BG_IS_5" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_4" EntityName="R_BG_IS_4" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.6" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_3" EntityName="R_BG_IS_3" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="2.7" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_2" EntityName="R_BG_IS_2" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="3.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="7" Name="A2_Q1_S1_Move_R_BG_IS_1" EntityName="R_BG_IS_1" TargetName="QP_RepublicanOfficer_Moveorder" RemainScripted="1" Delay="3" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_17" AnimatedEntityName="R_BG_IS_17" Play="repu_infantry1swd1shd_move_03" Loop="1" Delay="2.8" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_16" AnimatedEntityName="R_BG_IS_16" Play="repu_infantry1swd1shd_move_02" Loop="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_15" AnimatedEntityName="R_BG_IS_15" Play="repu_infantry1swd1shd_move_03" Loop="1" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_14" AnimatedEntityName="R_BG_IS_14" Play="repu_infantry1swd1shd_move_04" Loop="1" Delay="1.9" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_13" AnimatedEntityName="R_BG_IS_13" Play="repu_infantry1swd1shd_move_05" Loop="1" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_12" AnimatedEntityName="R_BG_IS_12" Play="repu_infantry1swd1shd_move_06" Loop="1" Delay="2.1" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_11" AnimatedEntityName="R_BG_IS_11" Play="repu_infantry1swd1shd_move_07" Loop="1" Delay="2.1" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_10" AnimatedEntityName="R_BG_IS_10" Play="repu_infantry1swd1shd_move_07" Loop="1" Delay="2.2" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_9" AnimatedEntityName="R_BG_IS_9" Play="repu_infantry1swd1shd_move_06" Loop="1" Delay="2.2" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_8" AnimatedEntityName="R_BG_IS_8" Play="repu_infantry1swd1shd_move_05" Loop="1" Delay="2.3" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_7" AnimatedEntityName="R_BG_IS_7" Play="repu_infantry1swd1shd_move_04" Loop="1" Delay="2.3" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_6" AnimatedEntityName="R_BG_IS_6" Play="repu_infantry1swd1shd_move_03" Loop="1" Delay="2.4" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_5" AnimatedEntityName="R_BG_IS_5" Play="repu_infantry1swd1shd_move_02" Loop="1" Delay="2.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_4" AnimatedEntityName="R_BG_IS_4" Play="repu_infantry1swd1shd_move_01" Loop="1" Delay="2.6" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_3" AnimatedEntityName="R_BG_IS_3" Play="repu_infantry1swd1shd_move_01" Loop="1" Delay="2.7" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_2" AnimatedEntityName="R_BG_IS_2" Play="repu_infantry1swd1shd_move_03" Loop="1" Delay="3.5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S1_DynS_Justicar_Talk" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q1_S1_MoveAnim_R_BG_IS_1" AnimatedEntityName="R_BG_IS_1" Play="repu_infantry1swd1shd_move_02" Loop="1" Delay="3" />
+    </Step>
+    <Step Order="1" UIName="@ui_A2_Q1_S2_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="" IgnoreAutomaticStepUIUpdate="1">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_BanditCamp3_to_TemplarCamp" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_BanditCamp3_to_TemplarCamp" Area="ACT2_Warlord_Lair" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="NPC_A2_Q1_Valeria" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q1_Valeria" Area="ACT2_Templar_Camp_Exterior" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="A2_Q1_S2_CultOfSoulsSpawn1,A2_Q1_S2_CultOfSoulsSpawn2,A2_Q1_S2_CultOfSoulsSpawn3" KillCount="15">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A2_Q1_S2_CultOfSoulsSpawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A2_Q1_S2_CultOfSoulsSpawn2" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A2_Q1_S2_CultOfSoulsSpawn3" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="KillJanaris" EntityName="Janaris_Cultist" Hide="1" Remove="0" VFX="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="KillFanatic1" EntityName="Janaris_Fanatic1" Hide="1" Remove="0" VFX="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="KillFanatic2" EntityName="Janaris_Fanatic2" Hide="1" Remove="0" VFX="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="KillFanatic3" EntityName="Janaris_Fanatic3" Hide="1" Remove="0" VFX="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="KillFanatic4" EntityName="Janaris_Fanatic4" Hide="1" Remove="0" VFX="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalCheckpoint" Name="A2_Q3_S1__Remove_Checkpoint" CheckpointEntityName="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionWaypoint" Name="A2_Q3_S1_DeactivateWaypoint" WaypointEntityName="waypoint_act_2_templar_camp_exterior" Action="LOCK" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q1_S2_LockPortal" ClickableEntityName="ClickableEntity_BanditCamp3_to_TemplarCamp" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionClickable" Name="A2_Q1_S2_VOS1_Deactivate" ClickableEntityName="ClickableEntity_TemplarCamp2_to_VOS1" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="15" Name="A2_Q1_S2_Player_Tp" TeleportedEntityName="#Player" DestinationName="SpawnPoint_templarcamp_from_banditcamp3" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionClickable" Name="A2_Q1_S2_UnlockPortal" ClickableEntityName="ClickableEntity_BanditCamp3_to_TemplarCamp" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A2_Q1_S2_StepUpdate1" Localization="@ui_A3_Q4_S4_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="6" SpawnFrequency="0" Name="A2_Q1_S2_CultOfSoulsSpawn4" SpawnClass="Sc_Sty_AC2_COS_Fanatic1" TargetEntityName="QP_A2_Q1_S2_OutlawSpawn" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="6" SpawnFrequency="0" Name="A2_Q1_S2_CultOfSoulsSpawn5" SpawnClass="Sc_Sty_AC2_COS_Fanatic2" TargetEntityName="QP_A2_Q1_S2_OutlawSpawn" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="6" SpawnFrequency="0" Name="A2_Q1_S2_CultOfSoulsSpawn1" SpawnClass="Sc_Sty_AC2_COS_CultistTemplarCampExt" TargetEntityName="QP_A2_Q1_S2_OutlawSpawn" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="6" SpawnFrequency="0" Name="A2_Q1_S2_CultOfSoulsSpawn2" SpawnClass="Sc_Sty_AC2_COS_Fanatic3" TargetEntityName="QP_A2_Q1_S2_OutlawSpawn" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="6" SpawnFrequency="0" Name="A2_Q1_S2_CultOfSoulsSpawn3" SpawnClass="Sc_Sty_AC2_COS_Fanatic4" TargetEntityName="QP_A2_Q1_S2_OutlawSpawn" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A2_Q1_S2_StepUpdate2" Localization="@ui_A2_Q1_S2_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="NPC_A2_Q1_Valeria" AreaRadius="60" Type="GlobalDialog" Name="A2_Q1_S2_DynS_Player_Talk6" DialogName="ACT2_Q1_S1_DynS_Player_Talk6" />
+      <Event Trigger="EventStart" EventName="A2_Q1_S2_CultOfSoulsSpawn1" Type="GlobalDialog" Name="A2_Q1_S2_DynS_Player_Talk" DialogName="ACT2_Q1_S2_DynS_Player_Talk" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="A2_Q3_S1_FailStep" RollbackToPreviousStep="0" />
+    </Step>
+    <Step Order="2" UIName="@ui_A2_Q1_S3_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="NPC_A2_Q1_Valeria" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q1_Valeria" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q1_Valeria" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="NPC_A2_Q1_Valeria" DialogName="ACT2_Q1_S3_Valeria_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q1_Valeria" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q1_Valeria" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Talk" EntityName="NPC_A2_Q1_Valeria" DialogName="ACT2_Q1_S3_DynS_Valeria_Talk2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q1_Valeria" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q1_Shaman" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+      </Goal>
+      <Goal Order="6" Type="Talk" EntityName="NPC_A2_Q1_Shaman" DialogName="ACT2_Q1_S3_Shaman_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q1_Shaman" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05-06" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionWaypoint" Name="A2_Q3_S1_ActivateWaypoint" WaypointEntityName="waypoint_act_2_templar_camp_exterior" Action="FORCEUNLOCK" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="A2_Q1_S2_DynS_Valeria_Talk1" DialogName="ACT2_Q1_S2_DynS_Valeria_Talk1" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S2_DynS_Valeria_Talk1" Type="GoalAchieve" Name="A2_Q1_S3_Goal1Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntitySound" Name="A2_Q1_S3_AlertSound" EntityName="#Player" SoundName="Play_DYN_ACT2_BODHorn_B" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S3_AlertSound" Type="GlobalDialog" Name="A2_Q1_S3_DynS_Templar_Talk" DialogName="ACT2_Q1_S3_DynS_Templar_Talk" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S3_DynS_Templar_Talk" Type="GoalAchieve" Name="A2_Q1_S3_Goal2Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q1_S3_ValeriaRetreat" SequenceName="A2_DYN_VALERIADEPARTURE" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalDialog" Name="A2_Q1_S3_DynS_Player_Talk" DialogName="ACT2_Q1_S3_DynS_Player_Talk" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q1_S3_DynS_Player_Talk" Type="GoalAchieve" Name="A2_Q1_S3_Goal6Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="StepUpdate" Name="A2_Q1_S3_StepUpdate1" Localization="@ui_A2_Q1_S3_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="A2_Q1_S3_StepUpdate2" Localization="@ui_A2_Q1_S3_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="6" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q2_S1_ZimaSister_dying" AnimatedEntityName="NPC_A2_Q1_Shaman" Play="OUTW_Shaman_Dying_01" Loop="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S1_ZimaSister_dying" Type="EntityAnimate" SpeedScale="1" BlendingTime=".2" Name="A2_Q2_S1_ZimaSister_loop" AnimatedEntityName="NPC_A2_Q1_Shaman" Play="OUTW_Shaman_Death_Loop_01" Loop="1" />
+    </Step>
+  </Quest>
+</MetaData>

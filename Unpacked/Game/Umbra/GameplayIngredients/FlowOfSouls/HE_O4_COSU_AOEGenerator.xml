@@ -1,0 +1,14 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="HE_O4_COSU_AOEGenerator">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_VFX_Oskar.AoE.Rend_Start_01" Direction="0,0,1" Offset="0,0,1" Scale="2" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,1" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="U_VFX_Oskar.AoE.Rend_AoE_01" Direction="0,0,1" Offset="0,0,1" Scale="2.2" />
+    </Particles>
+    <Iterations Number="0" WarmUpTime="1.5" CooldownMin="3.0" CooldownMax="3.0" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_HE_O4_AOEGenerator" Targeting="TrackingPlayer" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="HE_O4_COSU_AOEGeneratorPreset" Loop="0" NewStartingPosition="0">
+    <Preset Name="HE_O4_AOEGenerator" />
+  </FlowOfSoulsPresetList>
+</MetaData>

@@ -1,0 +1,51 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="HeimlockPortal_DZ_01">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="5" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Heimlock01_Portal_DZ" />
+    </Shapes>
+    <DamageZone Duration="4" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DirectionalStaticIndicator" Name="U_Monster.Heimlock.Abyss_DamageArea_01_Indicator" Offset="0,0,1" Direction="0,1,0" Scale="1" />
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock.Abyss_DmageArea_01" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="12" RandomBaseDistMax="12" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="10" MaxLinearSpeed="10" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1.5" NumberOfDZ="1" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="HeimlockPortal_DZ_02">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.5" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Heimlock02_Portal_DZ" />
+    </Shapes>
+    <Cooldown Cooldown="10" />
+    <DamageZone Duration="4" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DirectionalStaticIndicator" Name="U_Monster.Heimlock.Abyss_DamageArea_02_Indicator" Offset="0,0,1" Direction="0,1,0" Scale="1" />
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock.Abyss_DmageArea_02" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="12" RandomBaseDistMax="12" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="10" MaxLinearSpeed="10" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1.5" NumberOfDZ="1" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="HeimlockPortal_DZ_03">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.5" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Heimlock03_Portal_DZ" />
+    </Shapes>
+    <Cooldown Cooldown="15" />
+    <DamageZone Duration="4" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DirectionalStaticIndicator" Name="U_Monster.Heimlock.Abyss_DamageArea_03_Indicator" Offset="0,0,1" Direction="0,1,0" Scale="1" />
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock.Abyss_DmageArea_03" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+    <IsIgnoredBySafeZoneGPIPreset SafeZoneGroupNames="heimlock_safezone" />
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="12" RandomBaseDistMax="12" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="15" MaxLinearSpeed="15" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1.5" NumberOfDZ="1" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

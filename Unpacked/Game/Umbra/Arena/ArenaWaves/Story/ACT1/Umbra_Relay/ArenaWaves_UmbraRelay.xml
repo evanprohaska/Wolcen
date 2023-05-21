@@ -1,0 +1,33 @@
+<MetaData>
+  <ArenaWaves Name="Umbra_Relay">
+    <Wave Type="clearwave">
+      <PrefabParams PrefabName="test_arena_layout" />
+      <MobSpawners>
+        <Spawner Type="once" TargetSpawnClass="test_arena_spawnclass_COSS_0" NumberOfEntitiesPerSpawn="8" TargetSpawnLocationID="-1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="survival" TimeLimit="8">
+      <PrefabParams PrefabName="test_arena_layout" />
+      <MobSpawners>
+        <Spawner Type="fill_forever" TargetSpawnClass="test_arena_spawnclass_COSS_0" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.5" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="15" TargetSpawnLocationID="-2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="killcount" TargetKillCount="10">
+      <PrefabParams PrefabName="test_arena_layout" />
+      <MobSpawners>
+        <Spawner Type="until_spawn_count" TargetSpawnClass="test_arena_spawnclass_COSS_0" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.5" MaxNumberOfSpawnedEntities="15" TargetSpawnLocationID="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="killtarget">
+      <PrefabParams PrefabName="test_arena_layout" />
+      <KillTargets>
+        <Entry ClassName="CultOfSouls_Zombie" Amount="10" />
+        <Entry ClassName="CultOfSouls_Zombie_frost" Amount="5" />
+      </KillTargets>
+      <MobSpawners>
+        <Spawner Type="fill_forever" TargetSpawnClass="test_arena_spawnclass_COSS_0" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1.2" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="8" TargetSpawnLocationID="-2" />
+        <Spawner Type="fill_forever" TargetSpawnClass="test_arena_spawnclass_COSS_1" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1.5" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="8" TargetSpawnLocationID="-1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

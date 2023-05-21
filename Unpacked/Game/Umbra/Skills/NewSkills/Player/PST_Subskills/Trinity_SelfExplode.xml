@@ -1,0 +1,56 @@
+<MetaData>
+  <Skill UID="pst_skill_selfexplode_fire" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <ParticleList>
+      <Particle Key="damage" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Fire_Large" Scale="0.6" Direction="0,0,1" />
+    </ParticleList>
+    <DamageMaxHealthPercentage PercentMin="80" PercentMinPerLevel="0" PercentMax="80" PercentMaxPerLevel="0" UseForceShieldIfGreaterThanHealth="1" Type="fire" />
+    <Specific_PST RelatedPSTEffect="SelfExplode" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="" ApplicationRadius="3.5" DamageOnEnemies="1" DamageOnSelf="0.2" />
+  </Skill>
+  <Skill UID="pst_skill_selfexplode_frost" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <ParticleList>
+      <Particle Key="damage" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_4m" Scale="0.8" Direction="0,0,1" />
+    </ParticleList>
+    <DamageMaxHealthPercentage PercentMin="80" PercentMinPerLevel="0" PercentMax="80" PercentMaxPerLevel="0" UseForceShieldIfGreaterThanHealth="1" Type="frost" />
+    <Specific_PST RelatedPSTEffect="SelfExplode" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="" ApplicationRadius="3.5" DamageOnEnemies="1" DamageOnSelf="0.2" />
+  </Skill>
+  <Skill UID="pst_skill_selfexplode_lightning" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <ParticleList>
+      <Particle Key="damage" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Lightning_2M" Scale="1.4" Direction="0,0,1" />
+    </ParticleList>
+    <DamageMaxHealthPercentage PercentMin="80" PercentMinPerLevel="0" PercentMax="80" PercentMaxPerLevel="0" UseForceShieldIfGreaterThanHealth="1" Type="lightning" />
+    <Specific_PST RelatedPSTEffect="SelfExplode" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="" ApplicationRadius="3.5" DamageOnEnemies="1" DamageOnSelf="0.2" />
+  </Skill>
+  <Skill UID="pst_skill_selfexplode_fire_moredamage" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <ParticleList>
+      <Particle Key="damage" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Fire_Large" Scale="0.6" Direction="0,0,1" />
+    </ParticleList>
+    <DamageMaxHealthPercentage PercentMin="160" PercentMinPerLevel="0" PercentMax="160" PercentMaxPerLevel="0" UseForceShieldIfGreaterThanHealth="1" Type="fire" />
+    <Specific_PST RelatedPSTEffect="SelfExplode" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="" ApplicationRadius="3.5" DamageOnEnemies="1" DamageOnSelf="0.2" />
+  </Skill>
+  <Skill UID="pst_skill_selfexplode_frost_moredamage" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <ParticleList>
+      <Particle Key="damage" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_4m" Scale="0.8" Direction="0,0,1" />
+    </ParticleList>
+    <DamageMaxHealthPercentage PercentMin="160" PercentMinPerLevel="0" PercentMax="160" PercentMaxPerLevel="0" UseForceShieldIfGreaterThanHealth="1" Type="frost" />
+    <Specific_PST RelatedPSTEffect="SelfExplode" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="" ApplicationRadius="3.5" DamageOnEnemies="1" DamageOnSelf="0.2" />
+  </Skill>
+  <Skill UID="pst_skill_selfexplode_lightning_moredamage" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <ParticleList>
+      <Particle Key="damage" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Lightning_2M" Scale="1.4" Direction="0,0,1" />
+    </ParticleList>
+    <DamageMaxHealthPercentage PercentMin="160" PercentMinPerLevel="0" PercentMax="160" PercentMaxPerLevel="0" UseForceShieldIfGreaterThanHealth="1" Type="lightning" />
+    <Specific_PST RelatedPSTEffect="SelfExplode" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="" ApplicationRadius="3.5" DamageOnEnemies="1" DamageOnSelf="0.2" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,18 @@
+<ChoiceAltarPresets>
+  <Choice PresetName="Choice_Shrine" Weight="1" MaxUses="1" Geometry="objects/props/altar/Selection_Shrine.cgf">
+    <Rewards>
+	  <Reward LootClass="Weapon_ChoiceAltars" Weight="100"/>
+      <Reward LootClass="Weapon_ChoiceAltars_Legendary" Weight="20"/>
+      <Reward LootClass="Armor_ChoiceAltars" Weight="100"/>
+      <Reward LootClass="Armor_ChoiceAltars_Legendary" Weight="20"/>
+      <Reward LootClass="Accessories_ChoiceAltars" Weight="100"/>
+      <Reward LootClass="Accessories_ChoiceAltars_Legendary" Weight="20"/>
+      <Reward LootClass="Uniques_ChoiceAltars" Weight="10"/>
+      <Reward LootClass="Gems_ChoiceAltars" Weight="50"/>
+    </Rewards>
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.SelectionShrine_01" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.SelectionShrine_Activate_01" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+    </Particles>
+  </Choice>
+</ChoiceAltarPresets>

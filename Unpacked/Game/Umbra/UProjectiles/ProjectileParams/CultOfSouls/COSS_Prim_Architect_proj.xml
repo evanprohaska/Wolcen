@@ -1,0 +1,18 @@
+<MetaData>
+  <Projectile ID="COSS_Prim_Architect_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.7,0.7,0.7" vOffset="0,0,1" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Monster.Primordial_Architect_Projectile01" Direction="0,1,0" PosOffset="0,0.5,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Crystal_COSS.Impact" Direction="0,0,1" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_Monster.Crystal_COSS.Impact" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_COSS_Crystal_Projectile_Ice_Launch" />
+      <Hit SoundTriggerName="Play_COSS_Crystal_Projectile_Ice_Impact" />
+      <Removed SoundTriggerName="Stop_COSS_Crystal_Projectile_Ice_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

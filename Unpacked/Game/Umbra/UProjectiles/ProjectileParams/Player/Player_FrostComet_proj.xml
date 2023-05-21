@@ -1,0 +1,210 @@
+<MetaData>
+  <Projectile ID="player_frostcomet_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Medium" Direction="0,-1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Large" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_4m" Direction="0,0,1" Scale=".75" WorldSpace="1" />
+      <Indicator ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Indicator_Medium" Direction="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="40" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="pressure" value="300" />
+      <param name="explosion_radius" value="1" />
+      <param name="hole_size" value="3" />
+      <param name="terrain_hole_size" value="4" />
+      <param name="effect" value="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_4m" Scale=".75" />
+      <param name="effect_scale" value="1" />
+      <param name="type" value="basictrap" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="PLAY_Skill_FrostMeteor_Impact" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostcomet_proj_large" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Large" Direction="0,-1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Large" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_4m" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Indicator_4m" Direction="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="40" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="pressure" value="300" />
+      <param name="explosion_radius" value="1" />
+      <param name="hole_size" value="3" />
+      <param name="terrain_hole_size" value="4" />
+      <param name="effect" value="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Large" />
+      <param name="effect_scale" value="1" />
+      <param name="type" value="basictrap" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="PLAY_Skill_FrostMeteor_ImpactLarge" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostcomet_proj_fire" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Large_Fire" Direction="0,-1,0" Scale=".75" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Large_Fire" Direction="0,-1,0" Scale=".75" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Fire_Large" Direction="0,0,1" Scale=".75" WorldSpace="1" />
+      <Indicator ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Indicator_Fire_Large" Direction="0,0,1" Scale=".6" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="40" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="pressure" value="300" />
+      <param name="explosion_radius" value="1" />
+      <param name="hole_size" value="3" />
+      <param name="terrain_hole_size" value="4" />
+      <param name="effect" value="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Medium" />
+      <param name="effect_scale" value="1" />
+      <param name="type" value="basictrap" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Skill_Meteor_Impact_Medium_Fire" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostcomet_proj_large_fire" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Large_Fire" Direction="0,-1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Large_Fire" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Fire_Large" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Indicator_Fire_Large" Direction="0,0,1" Scale=".8" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="40" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="pressure" value="300" />
+      <param name="explosion_radius" value="1" />
+      <param name="hole_size" value="3" />
+      <param name="terrain_hole_size" value="4" />
+      <param name="effect" value="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Large" />
+      <param name="effect_scale" value="1" />
+      <param name="type" value="basictrap" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Skill_Meteor_Impact_Large_Fire" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostcomet_proj_rend" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Large_Rend" Direction="0,-1,0" Scale=".75" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Large_Rend" Direction="0,-1,0" Scale=".75" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Rend_Large" Direction="0,0,1" Scale=".6" WorldSpace="1" />
+      <Indicator ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Indicator_Rend_Large" Direction="0,0,1" Scale=".6" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="40" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="pressure" value="300" />
+      <param name="explosion_radius" value="1" />
+      <param name="hole_size" value="3" />
+      <param name="terrain_hole_size" value="4" />
+      <param name="effect" value="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Medium" />
+      <param name="effect_scale" value="1" />
+      <param name="type" value="basictrap" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Skill_Meteor_Impact_Medium_Rend" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostcomet_proj_large_rend" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Large_Rend" Direction="0,-1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Large_Rend" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Rend_Large" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Indicator_Rend_Large" Direction="0,0,1" Scale=".8" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="40" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="pressure" value="300" />
+      <param name="explosion_radius" value="1" />
+      <param name="hole_size" value="3" />
+      <param name="terrain_hole_size" value="4" />
+      <param name="effect" value="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Large" />
+      <param name="effect_scale" value="1" />
+      <param name="type" value="basictrap" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Skill_Meteor_Impact_Large_Rend" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostcomet_proj_sacred" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Large_Sacred" Direction="0,-1,0" Scale=".75" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Large_Sacred" Direction="0,-1,0" Scale=".75" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Sacred_Large" Direction="0,0,1" Scale=".75" WorldSpace="1" />
+      <Indicator ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Indicator_Sacred_Large" Direction="0,0,1" Scale=".6" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="40" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="pressure" value="300" />
+      <param name="explosion_radius" value="1" />
+      <param name="hole_size" value="3" />
+      <param name="terrain_hole_size" value="4" />
+      <param name="effect" value="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Medium" />
+      <param name="effect_scale" value="1" />
+      <param name="type" value="basictrap" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Skill_Meteor_Impact_Medium_Sacred" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostcomet_proj_large_sacred" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Start_Large_Sacred" Direction="0,-1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Large_Sacred" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Sacred_Large" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_VFX_Temp.Temp_Chaguk.IceMeteor_Indicator_Sacred_Large" Direction="0,0,1" Scale=".8" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="40" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="pressure" value="300" />
+      <param name="explosion_radius" value="1" />
+      <param name="hole_size" value="3" />
+      <param name="terrain_hole_size" value="4" />
+      <param name="effect" value="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Large" />
+      <param name="effect_scale" value="1" />
+      <param name="type" value="basictrap" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="Play_Skill_Meteor_Impact_Large_Sacred" />
+    </Audio>
+  </Projectile>
+</MetaData>

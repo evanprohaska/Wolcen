@@ -1,0 +1,93 @@
+<MetaData>
+  <Quest Name="QN_SC_RedWaste1_KillTarget_COSS_Tombbearer_4" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KFT_StepNameLabel_COSS_Tombbearer" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_RedWaste1_KillTarget_COSS_Tombbearer_4_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_RedWaste1_KillTarget_COSS_Tombbearer_4_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_RedWaste1_KillTarget_COSS_Tombbearer_4_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_Tombbearer_4" MinSpawnPercent="-1" MaxSpawnPercent="-70" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_RedWaste1_KillTarget_SVRI_Spawner_4" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KFT_StepNameLabel_SVRI_Spawner" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_RedWaste1_KillTarget_SVRI_Spawner_4_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_RedWaste1_KillTarget_SVRI_Spawner_4_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_RedWaste1_KillTarget_SVRI_Spawner_4_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_Spawner_4" MinSpawnPercent="-1" MaxSpawnPercent="-70" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_RedWaste1_KillTarget_COFY_Enforcer_4" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KFT_StepNameLabel_COFY_Enforcer" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_RedWaste1_KillTarget_COFY_Enforcer_4_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_RedWaste1_KillTarget_COFY_Enforcer_4_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_RedWaste1_KillTarget_COFY_Enforcer_4_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_Enforcer_4" MinSpawnPercent="-1" MaxSpawnPercent="-70" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_RedWaste1_KillTarget_COSS_NamedMiniSpacter" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KON_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KON_StepNameLabel_COSS_NamedMiniSpecter" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Kill" ClassToKill="Named_Minispecter" KillCount="1" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_RedWaste1_KillTarget_COFE_NamedMiniSpacter_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="7" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="1" MaximumRadius="5" SpawnFrequency="0" Name="QN_SC_RedWaste1_KillTarget_COFE_NamedMiniSpacter_Spawn1" Delay=".5" SpawnClass="Sc_Named_Minispecter" TargetEntityName="QP_MiniSpecter_Named" FaceAtSpawn="" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_RedWaste1_KillTarget_COSS_Butcher" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KOT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KOT_StepNameLabel_COSS_Butcher" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_RedWaste1_KillTarget_COSS_Butcher_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_RedWaste1_KillTarget_COSS_Butcher_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_RedWaste1_KillTarget_COSS_Butcher_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_Butcher_1" MinSpawnPercent="90" MaxSpawnPercent="100" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_RedWaste1_KillTarget_SVRI_AlphaFire" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KOT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KOT_StepNameLabel_SVRI_AlphaFire" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_RedWaste1_KillTarget_SVRI_AlphaFire_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_RedWaste1_KillTarget_SVRI_AlphaFire_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_RedWaste1_KillTarget_SVRI_AlphaFire_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_SvriirAlpha_1" MinSpawnPercent="90" MaxSpawnPercent="100" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_RedWaste1_KillTarget_COFY_TemplarKnight" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KOT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KOT_StepNameLabel_COFY_Knight" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_RedWaste1_KillTarget_COFY_TemplarKnight_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_RedWaste1_KillTarget_COFY_TemplarKnight_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_RedWaste1_KillTarget_COFY_TemplarKnight_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_Knight_1" MinSpawnPercent="90" MaxSpawnPercent="100" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

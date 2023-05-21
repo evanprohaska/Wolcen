@@ -1,0 +1,32 @@
+<MetaData>
+  <Skill UID="AI_Named_SummonRepublic" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="60" />
+    <Summoning MaxSummons="4" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="6" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="1" Name="sc_HiddenBoss_SiegeBeast_02" />
+      <SummonedSpawnClass Key="2" Name="sc_HiddenBoss_SiegeBeast_01" />
+      <SummonedSpawnClass Key="3" Name="sc_HiddenBoss_SiegeBeast_03" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Named_SummonHornets" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="60" />
+    <Summoning MaxSummons="4" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="6" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="default" Name="sc_HiddenBoss_Hornet" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Named_SummonShadowBandits" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="60" />
+    <Summoning MaxSummons="4" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="6" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="default" Name="sc_HiddenBoss_Shaman" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Named_SummonZombies" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="1" />
+    <Summoning MaxSummons="12" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="6" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="default" Name="sc_Named_SummonsSpiker" />
+    </Summoning>
+  </Skill>
+</MetaData>

@@ -1,0 +1,14 @@
+<MetaData>
+  <Skill UID="AI_RepublicAssassin_ForwardDash" ESkill="AI_republicassassin_forwarddash" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".7" />
+    <Cooldown Cooldown="4" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_Shape" />
+    </Shapes>
+    <SkillSpecific HitTriggerDistance="2" DashSpeed="30" DashHitRadius="2" DashBlownAwayDistance="2" DashBlownAwayHeight="1" />
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_ForwardDash_Lunge" OnHit="Play_Republic_Alastor_ShadowStrike_Impact" />
+  </Skill>
+</MetaData>

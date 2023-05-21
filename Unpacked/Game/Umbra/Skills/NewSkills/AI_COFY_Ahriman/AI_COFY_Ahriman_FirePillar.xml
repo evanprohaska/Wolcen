@@ -1,0 +1,40 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_FirePillarP2" ESkill="AI_Default_DamageZone" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Range AttackRange="40" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="COFY_Ahriman.FirePillar.Indicator" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="OnSpawn" Name="COFY_Ahriman.FirePillar.AoE" Offset="0,0,0" Direction="0,0,1" Delay="1.5" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman.FirePillar.AoE" Offset="0,0,0" Direction="0,0,1" Delay="1.5" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="7" />
+    <SoundTrigger OnAnimStart="Play_Ahriman_Fire_Pillar_Indicator_P2" OnAnimCast="Play_Ahriman_Fire_Pillar_Cast_P2" OnHit="Play_DOT_Burn" PlayAttackVoice="1" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlamePillar_Shape" />
+    </Shapes>
+    <DamageZone RateOfFire="0.5" Duration="60" RemoveDamageZoneWhenCasterDies="1" RemoveParticleWithShape="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FirePillarP2_Nerfed" ESkill="AI_Default_DamageZone" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Range AttackRange="40" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="COFY_Ahriman.FirePillar.Indicator" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="OnSpawn" Name="COFY_Ahriman.FirePillar.AoENerfed" Offset="0,0,0" Direction="0,0,1" Delay="1.5" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman.FirePillar.AoENerfed" Offset="0,0,0" Direction="0,0,1" Delay="1.5" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="7" />
+    <SoundTrigger OnAnimStart="Play_Ahriman_Fire_Pillar_Indicator_P2" OnAnimCast="Play_Ahriman_Fire_Pillar_Cast_P2" OnHit="Play_DOT_Burn" PlayAttackVoice="1" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlamePillar_Shape" />
+    </Shapes>
+    <DamageZone RateOfFire="0.5" Duration="30" RemoveDamageZoneWhenCasterDies="1" RemoveParticleWithShape="1" />
+  </Skill>
+</MetaData>

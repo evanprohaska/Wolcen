@@ -1,0 +1,97 @@
+<MetaData>
+  <Quest Name="AutoTest_Quest" StartDialog="" Type="Adventure" UIName="@ui_A0_Q0_QuestLabel" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_A0_Q0_S1_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Impossible" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="EntityIsHidden_Test" EntityNames="HideTarget" Hide="1" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Big_01" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_Complex_script" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="secondary" UIName="@ui_C1_HE_B2_QuestLabel" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_HE_B2_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="Position_Checkpoint">
+      <Goal Order="0" Type="Weaken" EnnemyName="SC_OTWSWarbeast_EB2" Percent="33" TimeLimit="41" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sc_CG_HE_OutlawsWarbeast_B2" Area="" Threshold="1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="35" ShowTimer="1" />
+      <GoalLogic Formula="0001#" />
+      <Event Trigger="Goalstart" GoalIndex="0" Name="QN_HE_B2_Final_Spawn1" Type="EntitySpawn" SpawnClass="Sc_CG_HE_OutlawsWarbeast_B2" TargetEntityName="#Player" FaceAtSpawn="" MinimumRadius="2" MaximumRadius="8" SpawnFrequency="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EventBegins_Announcement" UIReference="HuntEventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ImagePath="../u_resources/hunt/Circle/Event.png" ContextualMessage="@ui_C1_HE_B2_StepNameLabel" DisplayTime="3" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EventFailed_Announcement" UIReference="HuntEventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventFailed" ImagePath="../u_resources/hunt/Circle/Event.png" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="KilledEntityClass" TriggerEntityName="SC_OTWSWarbeast_EB2" Type="GlobalAnnouncement" Name="C1_EventFailed_Announcement2" UIReference="HuntEventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventFailed" ImagePath="../u_resources/hunt/Circle/Event.png" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="QN_HE_B2_Final_GlobalDialog_1" Type="GlobalDialog" DialogName="ui_HE_Dialog_B2_1" />
+      <Event Trigger="EventEnd" EventName="EntityAnimate_Test" Name="QN_HE_B2_Final_HarmedEntityFaction" Type="EntityFaction" EntityName="SC_OTWSWarbeast_EB2" FactionName="Players" />
+      <Event Trigger="EventEnd" EventName="EntityAnimate_Test" Name="QN_HE_B2_Final_HarmedEntityFollow" Type="EntityFollow" FollowerEntityName="SC_OTWSWarbeast_EB2" Follow="#Player" Constraints="current" />
+      <Event Trigger="EventEnd" EventName="EntityAnimate_Test" Name="QN_HE_B2_Final_HarmedEntityIsGod0" Type="EntityIsGod" EntityName="SC_OTWSWarbeast_EB2" Invincible="0" DisplayVFX="1" />
+      <Event Trigger="EventEnd" EventName="EntityAnimate_Test" Name="QN_HE_B2_Final_HarmedEntityGoalAchieve" Type="GoalAchieve" SimulateOnly="1" GoalIndexToAchieve="-1" Delay="0.1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EventEnd_Announcement" UIReference="HuntEventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ImagePath="../u_resources/hunt/Circle/Event.png" ContextualMessage="" DisplayTime="2" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Name="QN_HE_B2_Final_GlobalDialog_2" Type="GlobalDialog" DialogName="ui_HE_Dialog_B2_2" Delay="1.5" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Name="EntityAnimate_Test" Type="EntityAnimate" AnimatedEntityName="SC_OTWSWarbeast_EB2" Play="REPU_Beast_AltDeath_01" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Name="QN_HE_B2_Final_HarmedEntityIsGod1" Type="EntityIsGod" EntityName="SC_OTWSWarbeast_EB2" Invincible="1" DisplayVFX="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Name="QN_HE_B2_Final_HarmedEntityHeal" Type="EntityHeal" TargetEntityName="SC_OTWSWarbeast_EB2" MinPercent="100" MaxPercent="100" Frequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsGod" Name="QN_HE_B2_Final_BeastIsGod" EntityName="SC_OTWSWarbeast_EB2" Invincible="1" DisplayVFX="1" Delay="34" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityMove" Name="QN_HE_B2_Final_BeastMove" EntityName="SC_OTWSWarbeast_EB2" TargetName="NPC2NextLevelPortal_QP" RemainScripted="1" TargetMinDistance="0" OverrideSpeed="30" Delay="34" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsGod" Name="QN_HE_B2_Final_BeastIsNotGod" EntityName="SC_OTWSWarbeast_EB2" Invincible="0" DisplayVFX="0" Delay="37" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="QN_HE_B2_Final_BeastKill" EntityName="SC_OTWSWarbeast_EB2" Hide="1" Remove="0" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Big_01" Delay="40" />
+      <Event Trigger="PlayerWipe" Type="QuestFail" Name="QN_HE_Final_QuestLost_PlayerWipe" QuestName="QN_HE_B2_SVRIIRF_Final" />
+      <Event Trigger="KilledEntityClass" TriggerEntityName="SC_OTWSWarbeast_EB2" Name="QN_HE_Final_QuestLost_EntityKilled" Type="QuestFail" QuestName="QN_HE_B2_SVRIIRF_Final" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_AutoTest" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="secondary" UIName="@ui_C1_HE_B2_QuestLabel" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_C1_HE_B2_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="Position_Checkpoint">
+      <Goal Order="0" Type="Impossible" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="Goalstart" GoalIndex="0" Type="EntityTeleport" MinRadius="2" Name="Player_TP" TeleportedEntityName="#Player" DestinationName="Position_E" Delay="0.5" />
+      <Event Trigger="Goalstart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0.1" MaximumRadius="1" SpawnFrequency="0" Name="IntroValeriaSpawn2" SpawnClass="Sc_Sty_Intro_QVV2" TargetEntityName="Position_N" FaceAtSpawn="Position_S" />
+      <Event Trigger="Goalstart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0.1" MaximumRadius="1" SpawnFrequency="0" Name="IntroEdricSpawn2" SpawnClass="Sc_Sty_A1_R_QVE2" TargetEntityName="Position_S" FaceAtSpawn="Position_N" />
+      <Event Trigger="Goalstart" GoalIndex="0" Type="EntityMove" Delay="1" TargetMinDistance="0.1" OverrideSpeed="0" Name="AutoTest_EdricPos" EntityName="Edric2" TargetName="Position_N" RemainScripted="1" />
+      <Event Trigger="Goalstart" GoalIndex="0" Type="EntityMove" Delay="1" TargetMinDistance="0.1" OverrideSpeed="0" Name="AutoTest_ValeriaPos" EntityName="Valeria2" TargetName="Position_S" RemainScripted="1" />
+      <Event Trigger="EventEnd" EventName="AutoTest_ValeriaPos" Type="EntityRotate" Name="Intro_Q1_ValeriaRotate" RotatedEntityName="Valeria2" Target="Position_Checkpoint" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="AutoTest_EdricPos" Type="EntityRotate" Name="Intro_Q1_EdricRotate" RotatedEntityName="Edric2" Target="Position_Checkpoint" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="Intro_Q1_ValeriaRotate" Name="EntityAnimate_TestValeria" Type="EntityAnimate" AnimatedEntityName="Valeria2" Play="CFH_H1_Melee_Death_01" Loop="1" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventEnd" EventName="Intro_Q1_EdricRotate" Name="EntityAnimate_TestEdric" Type="EntityAnimate" AnimatedEntityName="Edric2" Play="CMH_H1_Melee_H1_Shield_Death_01" Loop="1" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventEnd" EventName="Intro_Q1_ValeriaRotate" Name="AutoTest_Animate" Type="EntityIsHidden" EntityNames="Position_N" Hide="0" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="Intro_Q1_ValeriaRotate" Name="Unanimate_TestValeria" Type="EntityAnimate" AnimatedEntityName="Valeria2" Play="" Loop="0" SpeedScale="1" BlendingTime="0" Delay="3" />
+      <Event Trigger="EventEnd" EventName="Intro_Q1_EdricRotate" Name="Unanimate_TestEdric" Type="EntityAnimate" AnimatedEntityName="Edric2" Play="" Loop="0" SpeedScale="1" BlendingTime="0" Delay="3" />
+      <Event Trigger="EventEnd" EventName="Unanimate_TestValeria" Type="EntityTeleport" MinRadius="2" Name="Player_TP2" TeleportedEntityName="#Player" DestinationName="Position_N" />
+      <Event Trigger="EventEnd" EventName="Unanimate_TestValeria" Type="EntityFaction" EntityName="Valeria2" FactionName="CultOfSouls" Name="Event_ValeriaFaction" />
+      <Event Trigger="EventEnd" EventName="Unanimate_TestValeria" Type="EntityKill" Delay="10" Name="Intro_KillValeria" EntityName="Valeria2" Hide="1" Remove="1" />
+      <Event Trigger="EventEnd" EventName="Unanimate_TestEdric" Type="EntityFollow" Delay="10" FollowerEntityName="Edric2" Follow="#player" Name="Event_Follow" />
+      <Event Trigger="EventEnd" EventName="Event_Follow" Type="EntityMove" Delay="5" TargetMinDistance="0.1" OverrideSpeed="0" Name="AutoTest_EdricPos2" EntityName="Edric2" TargetName="Position_W" RemainScripted="1" />
+      <Event Trigger="EventEnd" EventName="Event_Follow" Type="EntityKill" Delay="10" Name="Intro_KillEdric" EntityName="Edric2" Hide="1" Remove="1" />
+      <Event Trigger="EventEnd" EventName="Intro_KillEdric" Type="GoalAchieve" GoalIndexToAchieve="0" Name="Npc_script_Victory" SimulateOnly="0" />
+    </Step>
+    <Step Order="1" UIName="@ui_C1_HE_B3_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Wait" TimeLimit="3" ShowTimer="1" />
+      <Goal Order="1" Type="Frenzy" TimeLimit="10" ValueToReach="5" DropRate="100" ShowTimer="1" ShowProgression="1" />
+      <Goal Order="2" Type="Bloodthirst" TimeLimit="10" DecayRate="2" MaxValue="20" ShowTimer="1" ShowProgression="1" />
+      <Goal Order="3" Type="Defend" ShowProgression="1" AllyToDefend="Priest" TimeLimit="20" ShowTimer="1" />
+      <GoalLogic Formula="00-01-0203+" />
+      <Event Trigger="Instant" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="20" SpawnFrequency="15" Name="A3_Q3_S2_ZombiesSpawn2" SpawnClass="Sc_Sty_AC2_COS_TrashTemplarCamp" TargetEntityName="Position_N" />
+      <Event Trigger="Goalstart" GoalIndex="0" Type="EntityTeleport" MinRadius="2" Name="Player_TP3" TeleportedEntityName="#Player" DestinationName="Position_E" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q1_S1_TemplarSpawn4" SpawnClass="Sc_Sty_AC3_QTP" TargetEntityName="Position_E" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityFaction" EntityName="Priest" FactionName="Players" Name="Event_Faction_Players" />
+      <Event Trigger="GoalEnd" GoalIndex="3" Type="ClearSpawn" Events="A3_Q3_S2_ZombiesSpawn2" Name="Kill_Spawned" />
+    </Step>
+    <Step Order="2" UIName="@ui_C1_HE_B3_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Impossible" />
+      <Goal Order="1" Type="Kill" ClassToKill="Naarlog" KillCount="1" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Goalstart" GoalIndex="0" Type="EntityTeleport" MinRadius="2" Name="Player_TP4" TeleportedEntityName="#Player" DestinationName="BanditAmbush_Act1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ArenaStart" Name="ACT1_Q3_BO_StartArena" ArenaPreset="BanditAmbush_Act1" LocationEntityName="BanditAmbush_Act1" EntityToFollow="" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT1_Q3_BO_StartArena" WaveIndex="4" Type="GoalAchieve" GoalIndexToAchieve="0" Name="Arena_ToBoss" SimulateOnly="0" />
+    </Step>
+    <Step Order="3" UIName="@ui_C1_HE_B3_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="">
+      <Goal Order="0" Type="BossFight" FightPreset="BossFight_Yudai" />
+      <GoalLogic Formula="00" />
+    </Step>
+    <Step Order="4" UIName="@ui_C1_HE_B3_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Hold" TimeLimit="10" Tolerance="1" Radius="5" ShowTimer="1" CenterEntityName="Position_W" />
+      <Goal Order="1" Type="Conquer" TimeLimit="10" Radius="2" ShowTimer="1" ShowProgression="1" CenterEntityNames="Position_N,Position_S,Position_W,Position_E" EarnPointPerSec="1" MaxPoints="3" EnnemiesAreBlocking="1" />
+      <Goal Order="2" Type="Go" Destination="Position_Checkpoint" Radius="4" RequireAllPlayers="0" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Goalstart" GoalIndex="0" Name="AutoTest_Goal_Start_0" Type="EntityIsHidden" EntityNames="Position_N" Hide="0" />
+      <Event Trigger="Goalstart" GoalIndex="1" Name="AutoTest_Goal_Start_1" Type="EntityIsHidden" EntityNames="Position_N" Hide="0" />
+      <Event Trigger="Goalstart" GoalIndex="2" Name="AutoTest_Goal_Start_2" Type="EntityIsHidden" EntityNames="Position_N" Hide="0" />
+      <Event Trigger="Goalstart" GoalIndex="2" Name="AutoTest_Goal_End_2" Type="EntityIsHidden" EntityNames="Position_N" Hide="0" />
+    </Step>
+  </Quest>
+</MetaData>

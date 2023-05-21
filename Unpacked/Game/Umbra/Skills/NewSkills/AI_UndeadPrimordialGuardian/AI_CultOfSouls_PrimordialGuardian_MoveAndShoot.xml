@@ -1,0 +1,22 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_corruptedprimordialguardian_moveandshoot" ESkill="AI_cultofsouls_corruptedprimordialguardian_moveandshoot" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Blownaway Height="1" Distance="6" />
+    <Range AttackRange="12" />
+    <DamageWeapon Type="frost" WeaponMultiplier=".4" />
+    <Cooldown Cooldown="15.0" />
+    <DamageZone UseDamageZoneList="1" RemoveDamageZoneWhenCasterDies="1">
+      <Entry DamageZoneName="CultOfSouls_PrimordialGuardian_MoveAndShoot_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="MuzzleRHand" Name="U_Monster.Primordiar.Primordiar_Guardian.Move_and_Shot_Muzzle_01" Offset="1,0,0" Direction="0,1,0" Bone="Bip01 R HandSphere" Delay="0.6" />
+      <Particle Key="MuzzleLHand" Name="U_Monster.Primordiar.Primordiar_Guardian.Move_and_Shot_Muzzle_01" Offset="-1,0,0" Direction="0,1,0" Bone="Bip01 L HandSphere" Delay="0.6" />
+      <Particle Key="GunFire" Name="U_Monster.Primordiar.Primordiar_Guardian.Move_and_Shot_02" Offset="0,1,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Dust" Name="U_CommonVFX.Dust.Dust_dash_Loop_01" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" Scale="1.5" />
+    </ParticleList>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SkillSpecific Speed="4" SafetyDistanceAgainstWalls="2" SoundStart="Play_Primordial_GuardianCorrupt_MoveAndFire_Bullet_Rico" SoundEnd="Stop_Primordial_GuardianCorrupt_MoveAndFire_Bullet_Rico" />
+    <SoundTrigger OnAnimStart="Play_Primordial_GuardianCorrupt_MoveAndFire_Windup" OnAnimLoopIn="Play_Primordial_GuardianCorrupt_MoveAndFire_Sequence" OnAnimLoopOut="Stop_Primordial_GuardianCorrupt_MoveAndFire_Sequence" OnInterrupt="Stop_Primordial_GuardianCorrupt_MoveAndFire_Sequence" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

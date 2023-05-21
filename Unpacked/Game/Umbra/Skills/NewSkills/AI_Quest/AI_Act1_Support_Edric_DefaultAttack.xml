@@ -1,0 +1,44 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="attack_skill" UID="AI_ACT1_Support_Edric_DefaultAttack">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="RepublicInfantry_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger PlayAttackVoice="1" onAnimStart="Play_ally_melee_attack_swing_Delayed" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" />
+  </Skill>
+  <Skill UID="AI_ACT1_Support_Edric_ShieldBash" ESkill="AI_outlaw_warlord_kick" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="8.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_ShieldBash" />
+    </Shapes>
+    <Blownaway Height="1" Distance="10" StunDuration="1" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="0.5" />
+      <EmissiveIntensity From="500" To="origin" In="1" />
+    </Material>
+    <SoundTrigger OnHit="Play_Edric_Justicar1_ShieldBash_Impact" />
+  </Skill>
+  <Skill UID="AI_ACT1_Support_Edric_Charge" ESkill="AI_svriiralpha_jumpattack" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_03" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="physical" WeaponMultiplier="1" />
+    <Cooldown Cooldown="15" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="4" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_InexorableCharge" />
+      <Entry ShapeName="RepublicJusticar01_InexorableCharge" />
+    </Shapes>
+    <SkillSpecific TimeBetweenHits="0.2" Speed="10" MoveDistance="15" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

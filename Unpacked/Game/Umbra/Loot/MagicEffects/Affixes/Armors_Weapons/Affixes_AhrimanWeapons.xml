@@ -1,0 +1,156 @@
+<MetaData>
+  <Affix AffixId="w_fast_criticalchance_attackskill_final_percent" Class="criticalchance_attackskill_final_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords MandatoryKeywords="weapon,fast" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="4" />
+      <HiRoll CharacteristicFinalPercentFloat="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_slow_criticalchance_attackskill_final_percent" Class="criticalchance_attackskill_final_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords MandatoryKeywords="weapon,slow" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_attackskill_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="6" />
+      <HiRoll CharacteristicFinalPercentFloat="18" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_fast_criticalchance_magicspell_final_percent" Class="criticalchance_magicspell_final_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="trinket" MandatoryKeywords="weapon,trinket" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_magicspell_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="4" />
+      <HiRoll CharacteristicFinalPercentFloat="8" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_slow_criticalchance_magicspell_final_percent" Class="criticalchance_magicspell_final_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="staff" MandatoryKeywords="weapon,staff" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_magicspell_final_percent">
+      <LoRoll CharacteristicFinalPercentFloat="6" />
+      <HiRoll CharacteristicFinalPercentFloat="18" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_slow_criticalchance_projectiles_score_percent" Class="criticalchance_projectiles_score_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="physical_weapon,bow" MandatoryKeywords="weapon,bow" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_projectiles_score_percent">
+      <LoRoll CharacteristicScorePercentInt="15" />
+      <HiRoll CharacteristicScorePercentInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_fast_criticalchance_projectiles_score_percent" Class="criticalchance_projectiles_score_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="physical_weapon,gun,dagger" MandatoryKeywords="weapon,fast" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticalchance_projectiles_score_percent">
+      <LoRoll CharacteristicScorePercentInt="10" />
+      <HiRoll CharacteristicScorePercentInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_slow_criticaldamage_projectiles_pts" Class="criticaldamage_projectiles_pts" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="physical_weapon,bow" MandatoryKeywords="weapon,bow" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_projectiles_pts">
+      <LoRoll DamagePercentInt="20" />
+      <HiRoll DamagePercentInt="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_fast_criticaldamage_projectiles_pts" Class="criticaldamage_projectiles_pts" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="physical_weapon,gun,dagger" MandatoryKeywords="weapon" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="criticaldamage_projectiles_pts">
+      <LoRoll DamagePercentInt="10" />
+      <HiRoll DamagePercentInt="15" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_fast_dotdamage_percent_global" Class="dotdamage_percent_global" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dotdamage_percent_global">
+      <LoRoll DamagePercentFloat="12" />
+      <HiRoll DamagePercentFloat="25" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_slow_dotdamage_percent_global" Class="dotdamage_percent_global" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,slow" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="dotdamage_percent_global">
+      <LoRoll DamagePercentFloat="25" />
+      <HiRoll DamagePercentFloat="50" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_slow_minion_damage_percent" Class="dotdamage_percent_global" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="physical_weapon,staff" MandatoryKeywords="weapon,slow,staff" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="minion_damage_percent">
+      <LoRoll DamagePercentFloat="25" />
+      <HiRoll DamagePercentFloat="40" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_fast_minion_damage_percent" Class="minion_damage_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="minion_damage_percent">
+      <LoRoll DamagePercentFloat="15" />
+      <HiRoll DamagePercentFloat="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_slow_minion_offensive_speed_percent" Class="minion_offensive_speed_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="physical_weapon,staff" MandatoryKeywords="weapon,slow,staff" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="minion_offensive_speed_percent">
+      <LoRoll CharacteristicFinalPercentFloat="15" />
+      <HiRoll CharacteristicFinalPercentFloat="30" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="w_fast_minion_offensive_speed_percent" Class="minion_offensive_speed_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords OptionalKeywords="physical_weapon" MandatoryKeywords="weapon,fast" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="minion_offensive_speed_percent">
+      <LoRoll CharacteristicFinalPercentFloat="10" />
+      <HiRoll CharacteristicFinalPercentFloat="15" />
+    </MagicEffect>
+  </Affix>
+</MetaData>

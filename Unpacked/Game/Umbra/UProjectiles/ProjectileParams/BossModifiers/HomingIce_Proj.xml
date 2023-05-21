@@ -1,0 +1,17 @@
+<MetaData>
+  <Projectile ID="VOS2_demonofsouls_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="u_bossmodifiers.homing_ice.HomingIce_Projectile" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="u_bossmodifiers.homing_ice.impact" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="60" TimeBeforeHoming="1" MaxLifeTime="-1" MaxTravelDistance="-1" />
+    <Speed SpeedMin="5" SpeedMax="5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+    <Audio>
+      <Launch SoundTriggerName="Play_BossModifier_HomingIce_Proj_Launch" />
+      <Hit SoundTriggerName="Play_BossModifier_HomingIce_Proj_Impact" />
+      <Removed SoundTriggerName="Stop_BossModifier_HomingIce_Proj_Lp" />
+    </Audio>
+  </Projectile>
+</MetaData>

@@ -1,0 +1,16 @@
+<MetaData>
+  <Skill UID="AI_BossModifier_Hunt_AirSupport" ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimStart="" OnAnimLoopIn="Play_Dragon_Oshara_Firevolleys_Loop" OnAnimLoopOut="Stop_Dragon_Oshara_Firevolleys_Loop" OnInterrupt="Stop_Dragon_Oshara_Firevolleys_Loop" OnHit="Play_BossModifier_FireHoming_Proj_Impact" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon WeaponMultiplier="0.5" />
+    <Projectile Name="Oshara02_FireVolleys_proj" ProjectileCount="5" PenetrationLimit="2" CanCollideAndDamageallies="1">
+      <AutomaticCastAngle distanceMin="3" distanceMax="12" totalAngleAtDistanceMin="300" totalAngleAtDistanceMax="300" projectileAngleAtDistanceMin="10" projectileAngleAtDistanceMax="10" />
+    </Projectile>
+    <Range AttackRange="2" />
+    <Explosion ExplosionRadius="1.5" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.25" CastMode="FromSky" CollideWithCaster="1" KillProjsOnCasterDeath="1">
+      <CastAttributes OnTarget="0" StartZOffset="30" AngleFromZAxis="10" ZPadding="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

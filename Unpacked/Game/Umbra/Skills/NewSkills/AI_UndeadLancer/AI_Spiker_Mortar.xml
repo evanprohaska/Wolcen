@@ -1,0 +1,32 @@
+<MetaData>
+  <Skill UID="AI_coss_spiker_mortar" ESkill="AI_coss_spiker_mortar" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_02" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastDelay="1" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1.38" />
+    <Cooldown Cooldown="10" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Blood" Name="U_Monster.Spiker.Spiker_Blood_01" Offset="0,0,0" Direction="0,1,0" Bone="Bip01 Spear" />
+      <Particle Key="FakeMissile" Name="U_Monster.Spiker.Spiker_Spear_01_GoingUp" Offset="0,-0.5,0" Direction="0,0,1" Bone="Bip01 Spear" />
+    </ParticleList>
+    <Projectile Name="undeadlancer_mortar_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <Explosion ExplosionRadius="3" />
+    <Range AttackRange="20" />
+    <SkillSpecific DefaultZOffset="20" />
+  </Skill>
+  <Skill UID="AI_coss_spiker_mortar_frost" ESkill="AI_coss_spiker_mortar" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_02" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastDelay="1" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.38" />
+    <Cooldown Cooldown="10" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Blood" Name="U_Monster.Spiker.Spiker_Blood_01_frost" Offset="0,0,0" Direction="0,1,0" Bone="Bip01 Spear" />
+      <Particle Key="FakeMissile" Name="U_Monster.Spiker.Spiker_Spear_01_GoingUp_frost" Offset="0,-0.5,0" Direction="0,0,1" Bone="Bip01 Spear" />
+    </ParticleList>
+    <Projectile Name="undeadlancer_mortar_proj_frost" ProjectileCount="1" PenetrationLimit="1" />
+    <Explosion ExplosionRadius="3" />
+    <Range AttackRange="20" />
+    <SkillSpecific DefaultZOffset="20" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,18 @@
+<MetaData>
+  <Quest Name="Quest_YudaiIntroFight2" StartDialog="" Type="BossFight" UIName="@ui_A0_Q0_S7_EventQuestNameLabel" UIDesc="@">
+    <Step Order="0" UIName="@ui_A0_Q0_S7_EventStepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" TimeLimit="2" />
+      <Goal Order="1" Type="Weaken" EnnemyName="Yudai2" Percent="75" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ValeriaHide" EntityNames="AnimObject_val_ground" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ValeriaDBNOUnhide" EntityNames="AnimObject_A0_Q1_TempIntroEnd_Valeria" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="ValeriaDBNOUnhide_Anim" AnimatedEntityName="AnimObject_A0_Q1_TempIntroEnd_Valeria" Play="NPC_Kneeling_Valeria_TemporaryIntroEnd" Loop="1" SpeedScale="1" BlendingTime="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="PlayerApocalypticForm" Ressource="1000" Name="YudaiFight2ForcePlayerApoFormOn" Limited="0" Transformation="ForceOn" Preset="apo_tank_intro" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="INTRO_Q1_YudaiFight_YudaiSpawn2" SpawnClass="Sc_Sty_A1_CoS_YudaiIntro2" TargetEntityName="Qp_Intro_YudaiSpawn2" FaceAtSpawn="Qp_Intro_SpawnPointIntroduction6" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="DefendValUpdate" Localization="@ui_A0_Q0_S7_StepNameLabelUpdate1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay="2" Name="INTRO_Q1_YudaiP2_Talk" DialogName="INTRO_Quest1_Yudai_Talk2" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Delay="0" Name="INTRO_Q1_ClearUI_5" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalAnnouncement" Name="A0_Q0_SA_AN_EndQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndQuest" ContextualMessage="@ui_A0_Q0_QuestLabel" DisplayTime="2" />
+    </Step>
+  </Quest>
+</MetaData>

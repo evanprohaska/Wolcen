@@ -1,0 +1,15 @@
+<MetaData>
+  <Phase Name="phase_1" MetricsName="metrics_1" MinimumPhaseDuration="65" CIOverrideOnPhaseStart="-1" CIMaxGain_PerSecond_Pts="100" CIMaxLoss_PerSecond_Pts="1000" SPMSlotCooldown_Override="60" SPMRespawnTimerFactor="15" MaxAliveSPM_Override="1" SPMSpawnDelay_Min="40" SPMSpawnDelay_Max="60" AllowedSPMMonsters="Charger,Eviscerator,Tracker">
+    <Condition_NextPhase Condition="HighestCIAbovePercentage" Threshold="90" />
+  </Phase>
+  <Phase Name="phase_2" MetricsName="metrics_2" MinimumPhaseDuration="50" CIOverrideOnPhaseStart="-1" CIMaxGain_PerSecond_Pts="100" CIMaxLoss_PerSecond_Pts="1000" SPMSlotCooldown_Override="60" SPMRespawnTimerFactor="15" MaxAliveSPM_Override="2" SPMSpawnDelay_Min="30" SPMSpawnDelay_Max="45" AllowedSPMMonsters="Charger,Eviscerator,Tracker">
+    <Condition_NextPhase Condition="ElapsedTime" Threshold="30" />
+    <Condition_PreviousPhase Condition="HighestCIBelowPercentage" Threshold="50" />
+  </Phase>
+  <Phase Name="phase_3" MetricsName="metrics_3" MinimumPhaseDuration="0" CIOverrideOnPhaseStart="-1" CIMaxGain_PerSecond_Pts="50" CIMaxLoss_PerSecond_Pts="1000" SPMSlotCooldown_Override="60" SPMRespawnTimerFactor="1" MaxAliveSPM_Override="0" AllowedSPMMonsters="">
+    <Condition_NextPhase Condition="HighestCIBelowPercentage" Threshold="30" />
+  </Phase>
+  <Phase Name="phase_4" MetricsName="metrics_4" MinimumPhaseDuration="30" CIOverrideOnPhaseStart="-1" CIMaxGain_PerSecond_Pts="100" CIMaxLoss_PerSecond_Pts="1000" SPMSlotCooldown_Override="60" SPMRespawnTimerFactor="1" MaxAliveSPM_Override="0" AllowedSPMMonsters="">
+    <Condition_NextPhase Condition="ElapsedTime" Threshold="30" />
+  </Phase>
+</MetaData>

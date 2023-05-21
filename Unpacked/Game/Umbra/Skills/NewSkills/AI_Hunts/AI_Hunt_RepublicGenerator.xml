@@ -1,0 +1,27 @@
+<MetaData>
+  <Skill UID="AI_republic_generator_drop" ESkill="AI_Default_DropCreature" Keywords="magic_spell">
+    <SkillSpecific SpawnerPool="100" TriggerPerLifePercent="20" ChanceToTriggerOnHit="0" ThrowSpawnAngle="360" AnimationTravelDistance="20" MinSpawn="1" MaxSpawn="1" CanTriggerWhenCC="0" IgnoreDots="1" OnDropSound="" />
+    <Summoning MaxSummons="100" SummonDuration="0" MinRadiusAroundSpawnPosition="20" MaxRadiusAroundSpawnPosition="25" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0" AllowUnreachable="1">
+      <SummonedSpawnClass Key="Default" Name="sc_Republic_Generator_Sniper" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_republic_generator_summons" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="0" />
+    <Summoning MaxSummons="30" SummonDuration="0" MinRadiusAroundSpawnPosition="20" MaxRadiusAroundSpawnPosition="25" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0" AllowUnreachable="1">
+      <SummonedSpawnClass Key="Default" Name="sc_Republic_Generator_Infantry" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_endgame_republic_generator_drop" ESkill="AI_Default_DropCreature" Keywords="magic_spell">
+    <SkillSpecific SpawnerPool="100" TriggerPerLifePercent="30" ChanceToTriggerOnHit="0" ThrowSpawnAngle="360" AnimationTravelDistance="5" MinSpawn="1" MaxSpawn="1" CanTriggerWhenCC="0" IgnoreDots="1" OnDropSound="" />
+    <Summoning MaxSummons="2" SummonDuration="0" MinRadiusAroundSpawnPosition="10" MaxRadiusAroundSpawnPosition="15" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0" AllowUnreachable="1">
+      <SummonedSpawnClass Key="Default" Name="Sc_WM_E_R_Assassin_FinalBoss" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_endgame_republic_generator_summons" ESkill="AI_Default_DropCreature" Keywords="magic_spell">
+    <SkillSpecific SpawnerPool="100" TriggerPerLifePercent="5" ChanceToTriggerOnHit="0" ThrowSpawnAngle="360" AnimationTravelDistance="5" MinSpawn="1" MaxSpawn="1" CanTriggerWhenCC="0" IgnoreDots="1" OnDropSound="" />
+    <Summoning MaxSummons="30" SummonDuration="0" MinRadiusAroundSpawnPosition="5" MaxRadiusAroundSpawnPosition="10" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0" AllowUnreachable="1">
+      <SummonedSpawnClass Key="Default" Name="Sc_WM_R_GeneratorSpawn" />
+    </Summoning>
+  </Skill>
+</MetaData>

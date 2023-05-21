@@ -1,0 +1,42 @@
+<MetaData>
+  <Preset ID="skillloop_fireball" LoopParticleDelay="0.07" RespawnLoopParticle="0">
+    <StartLoop>
+      <VFX Key="startloop" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_Loop" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Audio Trigger="Play_Skill_Fireball_Glyph_Start" />
+    </StartLoop>
+    <End>
+      <VFX Key="end" Name="U_Magic_Sign.Fire.FrontCircle_Sign_01_End" Offset="0,1,1.6" Direction="0,1,0" Scale="1" />
+      <Audio Trigger="Play_Skill_Fireball_Glyph_End" />
+    </End>
+  </Preset>
+  <Preset ID="skillloop_fireball_lightning" LoopParticleDelay="0.07" RespawnLoopParticle="0">
+    <StartLoop>
+      <VFX Key="startloop" Name="U_Magic_Sign.Lightning.FrontCircle_Sign_01_Loop" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Audio Trigger="Play_Skill_Fireball_Glyph_Start" />
+    </StartLoop>
+    <End>
+      <VFX Key="end" Name="U_Magic_Sign.Lightning.FrontCircle_Sign_01_End" Offset="0,1,1.6" Direction="0,1,0" Scale="1" />
+      <Audio Trigger="Play_Skill_Fireball_Glyph_End" />
+    </End>
+  </Preset>
+  <Preset ID="skillloop_fireball_poison" LoopParticleDelay="0.07" RespawnLoopParticle="0">
+    <StartLoop>
+      <VFX Key="startloop" Name="U_Magic_Sign.Toxic.FrontCircle_Sign_01_Loop" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Audio Trigger="Play_Skill_Fireball_Glyph_Start" />
+    </StartLoop>
+    <End>
+      <VFX Key="end" Name="U_Magic_Sign.Toxic.FrontCircle_Sign_01_End" Offset="0,1,1.6" Direction="0,1,0" Scale="1" />
+      <Audio Trigger="Play_Skill_Fireball_Glyph_End" />
+    </End>
+  </Preset>
+  <Preset ID="skillloop_fireball_shadow" LoopParticleDelay="0.07" RespawnLoopParticle="0">
+    <StartLoop>
+      <VFX Key="startloop" Name="U_Magic_Sign.Shadow.FrontCircle_Sign_01_Loop" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Audio Trigger="Play_Skill_Fireball_Glyph_Start" />
+    </StartLoop>
+    <End>
+      <VFX Key="end" Name="U_Magic_Sign.Shadow.FrontCircle_Sign_01_End" Offset="0,1,1.6" Direction="0,1,0" Scale="1" />
+      <Audio Trigger="Play_Skill_Fireball_Glyph_End" />
+    </End>
+  </Preset>
+</MetaData>

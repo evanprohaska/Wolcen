@@ -1,0 +1,22 @@
+<MetaData>
+  <Skill UID="AI_COFY_Enforcer_Enrage" ESkill="AI_COFY_Enforcer_Enrage" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="1000" />
+    <Shapes>
+      <Entry Key="TargetPassive" ShapeName="COFY_Enforcer_Enraged_Shape" />
+    </Shapes>
+    <SkillStateSwitch>
+      <Skill UID="AI_COFY_Enforcer_Enrage" Enabled="0" />
+      <Skill UID="AI_COFY_Enforcer_DefaultAttack" Enabled="0" />
+      <Skill UID="AI_COFY_Enforcer_DefaultAttack_Enraged" Enabled="1" />
+    </SkillStateSwitch>
+    <ParticleList>
+      <Particle Key="AllBuff" Name="U_Monster_Alt.RepuVeteran.buff_target" Direction="0,0,1" Scale="1" Bone="Bip01" Offset="0,0.5,0" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_COFY_Enforcer_Enrage_self_passive" Targeting="OnSelf" Duration="5" />
+      <Skill Index="1" Name="AI_COFY_Enforcer_Enrage_allies_passive" Targeting="OnAllies" Duration="10" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimStart="Play_Enforcer_Enrage" OnHit="" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

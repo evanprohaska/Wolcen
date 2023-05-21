@@ -1,0 +1,211 @@
+<MetaData>
+  <Quest Name="ENDGAME_StormfallUnderAttack" UIName="@ui_A4_Q6_SFUA_QuestLabel" UIDesc="" Type="Adventure" StartDialog="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_A4_Q6_SFUA_S1_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_Act4_Quest1_PlayerSpawn_Start" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="FG_A4_P1_To_P2_close_barricade" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_Phase1_Close_Palace" EntityNames="Blocker_A4_P1_to_P2" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Act4_Quest1_PlayerSpawn_Start" AreaRadius="15" Type="ClearSpawn" Name="A4_AhrimanQuest_ClearAllArena" Events="" ClearAllDES="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="1" Name="D_TeleportPlayersInStormfallUnderAttack" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_MedicalGarrison_UnHide" Modifier="MedicalGarrison" Remove="0" Target="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_Hellion_Hide" Modifier="HellionCosmetic" Remove="1" Target="#Player" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="D_TeleportPlayersInStormfallUnderAttack" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A4_SUA_StormfallAttack" SequenceName="A4_StormfallAttack" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_StormfallAttack" Type="GoalAchieve" Name="A4_SUA_Start_Achieve" SimulateOnly="" GoalIndexToAchieve="1" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_sua_productionUpdated_Hide" EntityNames="AlphaFlow_IncreaseLoop" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_sua_launchQuest_Hide" EntityNames="AlphaFlow_StartFight" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_sua_productionUpdated_Hide3" EntityNames="Act4_sua_productionUpdated" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_sua_launchQuest_Hide3" EntityNames="Act4_sua_launchQuest" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_WarCouncil_Thunderblade_Hide" EntityNames="A4_DYN_WarCouncil_Thunderblade" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill1_Coss2" Area="" MonsterClass="CultOfSouls_Skeleton_RangeCaster" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill2_Coss2" Area="" MonsterClass="CultOfSouls_Skeleton_1swd1Shd_Heavy" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill3_Coss2" Area="" MonsterClass="CultOfSouls_Skeleton_1swd1Shd_Weak" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill4_Coss2" Area="" MonsterClass="CultOfSouls_Skeleton_2bow" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill5_Coss2" Area="" MonsterClass="CultOfSouls_Cultist" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill6_Coss2" Area="" MonsterClass="CultOfSouls_Fanatic" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill7_Coss2" Area="" MonsterClass="CultOfSouls_LanternBearer" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill8_Coss2" Area="" MonsterClass="CultOfSouls_MiniLanternBearer" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill1_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Zombie" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill2_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_RunnerBreeder" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill3_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Runner" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill4_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Leech" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill5_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Spreader" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill6_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Infantry_Ranged" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill7_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Infantry_Sword" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill8_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Sniper" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill9_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Squire" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill1_Cofy2" Area="" MonsterClass="PacifiedInfantrySword" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill2_Cofy2" Area="" MonsterClass="PacifiedInfantryRanged" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill3_Cofy2" Area="" MonsterClass="PacifiedHeavyInfantry" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill4_Cofy2" Area="" MonsterClass="CultOfFury_FurySpawn" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill5_Cofy2" Area="" MonsterClass="CultOfFury_Fanatic_Ranged" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill6_Cofy2" Area="" MonsterClass="CultOfFury_Fanatic_Melee" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill7_Cofy2" Area="" MonsterClass="CultOfFury_Instigator" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_AhrimanP2" Area="" MonsterClass="CultOfFury_AhrimanP2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_AhrimanP3" Area="" MonsterClass="CultOfFury_AhrimanP3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_AhrimanSpectersP2" Area="" MonsterClass="CultOfFury_AhrimanSpecterP2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_AhrimanSpectersP3" Area="" MonsterClass="CultOfFury_AhrimanSpecterP3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Ilthain_Hide" EntityNames="SFUA_Ilthain" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Gernese_Hide" EntityNames="SFUA_Gernese" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Damaskus_Hide" EntityNames="SFUA_Damaskus" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_MerchantAltar_Hide" EntityNames="Prefab_A4_SFUA_MerchantAltar" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TenseFamilyMeeting_Valeria_Hide" EntityNames="A4_Valeria_TenseFamily_NPC" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TenseFamilyMeeting_Heimlock_Hide" EntityNames="A4_Heimlock_TenseFamily_NPC" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Zalahir_UnHide" EntityNames="AnimObject_Dyn_Zalahir_ZalahirMessage" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="AS_DYN_A4_ZalahirMessage_CleanAnim" ResetAtLastFrame="1" SequenceName="DYN_A4_ZalahirMessage" />
+    </Step>
+    <Step Order="1" UIName="@ui_A4_Q6_SFUA_S2_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="3" />
+      <Goal Order="1" Type="KillAll" EventsName="Act4_QuestSoulsPortal_Spawn,Act4_QuestFleshPortal_Spawn,Act4_QuestFuryPortal_Spawn" KillCount="3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMusic" Name="Music_ACT4_Stormfall_Portals" MusicName="ACT4_Stormfall_Portals" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Act4_Quest1_PlayerSpawn_Start" AreaRadius="15" Type="ClearSpawn" Name="A4_AhrimanQuest_ClearAllArena2" Events="" ClearAllDES="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_Hellion_UnHide" Modifier="HellionCosmetic" Remove="0" Target="#Player" />
+      <Event Trigger="EventEnd" EventName="D_A4_P1_ZalahirMessageTalk" Type="StepUpdate" Name="ACT4_SFUA_Update1" Localization="@ui_A4_Q6_SFUA_S2_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="AS_DYN_A4_ZalahirMessage" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="1" SequenceName="DYN_A4_ZalahirMessage" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="D_A4_P1_ZalahirMessage" DialogName="ACT4_Q6_P1_ZalahirMessage" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="D_A4_P1_ZalahirMessageTalk" DialogName="ACT4_Q6_P1_ZalahirMessageTalk" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_LowLevelBattle_Gernese" AreaRadius="8" Type="GlobalDialog" Name="D_A4_P1_LowLevelBattle" DialogName="ACT4_Q6_P1_LowLevelBattle" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_SoulBackline_OsharaKnight_1" AreaRadius="5" Type="GlobalDialog" Name="D_A4_P1_SoulBackline" DialogName="ACT4_Q6_P1_SoulBackline" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_FleshBackline_Knight_1" AreaRadius="5" Type="GlobalDialog" Name="D_A4_P1_FleshBackline" DialogName="ACT4_Q6_P1_FleshBackline" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_FleshBackline_Knight_1" AreaRadius="5" Type="EntityAnimate" Name="D_A4_P1_FleshBackline_anim" AnimatedEntityName="A4_DYN_FleshBackline_Knight_1" Play="TMPL_Knight_Die_01" Loop="0" SpeedScale="1" BlendingTime="0" Delay="6.7" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_FuryBackline_Thunderblade_1" AreaRadius="5" Type="GlobalDialog" Name="D_A4_P1_FuryBackline" DialogName="ACT4_Q6_P1_FuryBackline" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TP_ArenaFuryToSF_Hide" EntityNames="CE_A4_P1_FuryArena_To_SF" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TP_ArenaSoulsToSF_Hide" EntityNames="CE_A4_P1_SoulsArena_To_SF" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TP_ArenaFleshToSF_Hide" EntityNames="CE_A4_P1_FleshArena_To_SF" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="CE_A4_P1_SF_To_SoulsArena" Hide="0" VFX="" Name="CE_A4_P1_SFToSoulsyArena_Open" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="CE_A4_P1_SF_To_FleshArena" Hide="0" VFX="" Name="CE_A4_P1_SFToFleshArena_Open" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="CE_A4_P1_SF_To_FuryArena" Hide="0" VFX="" Name="CE_A4_P1_SFToFuryArena_Open" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="unlockClickOnArenaPortals_Coss" ClickableEntityName="CE_A4_P1_SF_To_SoulsArena" MakeClickable="1" FilterEvents="0" Delay=".6" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="unlockClickOnArenaPortals_Cofe" ClickableEntityName="CE_A4_P1_SF_To_FleshArena" MakeClickable="1" FilterEvents="0" Delay=".6" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="unlockClickOnArenaPortals_Cofy" ClickableEntityName="CE_A4_P1_SF_To_FuryArena" MakeClickable="1" FilterEvents="0" Delay=".6" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_Prefab264_UnHide" EntityNames="Prefab264" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="ClickableEntity_palacedoor_ACT4" Hide="1" VFX="" Name="CE_CityToPalace_ACT4_hide" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC_SpawnClass1_COSS" SpawnClass="Sc_A4_Q1_Monoliths_Spawn_Coss_1" TargetEntityName="QP_Act4_AhrimanQuest_Spawn_COSS1" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC_SpawnClass2_COSS" SpawnClass="Sc_A4_Q1_Monoliths_Spawn_Coss_2" TargetEntityName="QP_Act4_AhrimanQuest_Spawn_COSS2" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC_SpawnClass1_COFE" SpawnClass="Sc_A4_Q1_Monoliths_Spawn_Cofe_1" TargetEntityName="QP_Act4_AhrimanQuest_Spawn_COFE1" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC_SpawnClass2_COFE" SpawnClass="Sc_A4_Q1_Monoliths_Spawn_Cofe_2" TargetEntityName="QP_Act4_AhrimanQuest_Spawn_COFE2" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC_SpawnClass1_COFY" SpawnClass="Sc_A4_Q1_Monoliths_Spawn_Cofy_1" TargetEntityName="QP_Act4_AhrimanQuest_Spawn_COFY1" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC_SpawnClass2_COFY" SpawnClass="Sc_A4_Q1_Monoliths_Spawn_Cofy_2" TargetEntityName="QP_Act4_AhrimanQuest_Spawn_COFY2" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" Name="Act4_QuestSoulsPortal_Spawn" SpawnClass="Sc_A4_P1_Coss_Portal" TargetEntityName="QP_Act4_AhrimanQuest_Monolith_COSS" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" FaceAtSpawn="QP_A4_P1_PlayerSpawn_SoulsArena" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" Name="Act4_QuestFleshPortal_Spawn" SpawnClass="Sc_A4_P1_Cofe_Portal" TargetEntityName="QP_Act4_AhrimanQuest_Monolith_COFE" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" FaceAtSpawn="QP_A4_P1_PlayerSpawn_FleshArena" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" Name="Act4_QuestFuryPortal_Spawn" SpawnClass="Sc_A4_P1_Cofy_Portal" TargetEntityName="QP_Act4_AhrimanQuest_Monolith_COFY" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" FaceAtSpawn="QP_A4_P1_PlayerSpawn_FuryArena" />
+      <Event Trigger="EventEnd" EventName="D_A4_P1_ZalahirMessageTalk" Type="GlobalStartQuest" Name="A4_P1_Start_CossPortal_Quest" QuestName="Quest_A4_P1_Destroy_Coss_Portal" StopOnQuestEnding="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_SF_To_SoulsArena" Type="EntityIsHidden" Name="A4_SFUA_MerchantAltar_UnHide_Coss" EntityNames="Prefab_A4_SFUA_MerchantAltar" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_SF_To_SoulsArena" Type="DirectedEntitySpawn" Name="SpawnArena_Coss" Mode="Prefab" SpawnData="Library_BossArena.Stormfall_Soul_Act4_Arena_N_Arena" PrefabLibrary="Prefabs/library_bossarena.xml" StartEntity="QP_Act4_AhrimanP1_ArenaSpawn_COSS" EndEntity="QP_A4_P1_PlayerSpawn_SoulsArena" MinNaviguationRadius="0.01" UseLoadingVFX="0" Backup="Library_BossArena.Stormfall_Soul_Act4_Arena_N_Arena" />
+      <Event Trigger="EventEnd" EventName="D_A4_P1_ZalahirMessageTalk" Type="GlobalStartQuest" Name="A4_P1_Start_CofePortal_Quest" QuestName="Quest_A4_P1_Destroy_Cofe_Portal" StopOnQuestEnding="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_SF_To_FleshArena" Type="EntityIsHidden" Name="A4_SFUA_MerchantAltar_UnHide_Cofe" EntityNames="Prefab_A4_SFUA_MerchantAltar" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_SF_To_FleshArena" Type="DirectedEntitySpawn" Name="SpawnArena_Cofe" Mode="Prefab" SpawnData="Library_BossArena.Stormfall_Flesh_Act4_Arena_N_Arena" PrefabLibrary="Prefabs/library_bossarena.xml" StartEntity="QP_Act4_AhrimanP1_ArenaSpawn_COFE" EndEntity="QP_A4_P1_PlayerSpawn_FleshArena" MinNaviguationRadius="0.01" UseLoadingVFX="0" Backup="Library_BossArena.Stormfall_Flesh_Act4_Arena_N_Arena" />
+      <Event Trigger="EventEnd" EventName="D_A4_P1_ZalahirMessageTalk" Type="GlobalStartQuest" Name="A4_P1_Start_CofyPortal_Quest" QuestName="Quest_A4_P1_Destroy_Cofy_Portal" StopOnQuestEnding="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_SF_To_FuryArena" Type="EntityIsHidden" Name="A4_SFUA_MerchantAltar_UnHide_Cofy" EntityNames="Prefab_A4_SFUA_MerchantAltar" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_SF_To_FuryArena" Type="DirectedEntitySpawn" Name="SpawnArena_Cofy" Mode="Prefab" SpawnData="Library_BossArena.Stormfall_Fury_Act4_Arena_N_Arena" PrefabLibrary="Prefabs/library_bossarena.xml" StartEntity="QP_Act4_AhrimanP1_ArenaSpawn_COFY" EndEntity="QP_A4_P1_PlayerSpawn_FuryArena" MinNaviguationRadius="0.01" UseLoadingVFX="0" Backup="Library_BossArena.Stormfall_Fury_Act4_Arena_N_Arena" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_SoulsArena_To_SF" Type="EntityTeleport" MinRadius="1" Name="D_TeleportPlayersInStormfallUnderAttackBackCoss1" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_FuryArena_To_SF" Type="EntityTeleport" MinRadius="1" Name="D_TeleportPlayersInStormfallUnderAttackBackCofy1" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_FleshArena_To_SF" Type="EntityTeleport" MinRadius="1" Name="D_TeleportPlayersInStormfallUnderAttackBackCofe1" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" />
+      <Event Trigger="GoalEnd" GoalIndex="1" Type="ClearSpawn" Name="A4_P1_ClearAIs" Events="NPC_SpawnClass1_COSS,NPC_SpawnClass2_COSS,NPC_SpawnClass1_COFE,NPC_SpawnClass2_COFE,NPC_SpawnClass1_COFY,NPC_SpawnClass2_COFY,Act4_QuestSoulsPortal_Spawn,Act4_QuestFuryPortal_Spawn,Act4_QuestFleshPortal_Spawn" />
+      <Event Trigger="GoalEnd" GoalIndex="1" Type="GlobalReleaseGameplayEvent" Name="Act4_StopAnyPortalEvent" />
+    </Step>
+    <Step Order="2" UIName="@ui_A4_Q6_SFUA_S3_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Talk" EntityName="SFUA_Ilthain" DialogName="ACT4_Q6_P2_WarCouncil">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="SFUA_Ilthain" Area="Stormfall_SFUA" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Impossible" />
+      <Goal Order="2" Type="Impossible" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Act4_Quest1_PlayerSpawn_Start" AreaRadius="50" Type="GlobalDialog" Name="D_A4_P2_AllPortalsDestroyed" DialogName="ACT4_Q6_P2_AllPortalsDestroyed" Delay="1.5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Act4_Quest1_PlayerSpawn_Start" AreaRadius="50" Type="GlobalMusic" Name="Music_ACT4_Stormfall_PreBossFight" MusicName="ACT4_Stormfall_PreBossFight" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_Phase1_Release_Palace" EntityNames="Blocker_A4_P1_to_P2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="FG_A4_P1_To_P2_open_barricade" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TP_ArenaSoulsToSF_UnHide2" EntityNames="CE_A4_P1_SoulsArena_To_SF" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TP_ArenaFleshToSF_UnHide2" EntityNames="CE_A4_P1_FleshArena_To_SF" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TP_ArenaFuryToSF_UnHide2" EntityNames="CE_A4_P1_FuryArena_To_SF" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_SoulsArena_To_SF" Type="EntityTeleport" MinRadius="1" Name="D_TeleportPlayersInStormfallUnderAttackBackCoss2" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_FuryArena_To_SF" Type="EntityTeleport" MinRadius="1" Name="D_TeleportPlayersInStormfallUnderAttackBackCofy2" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A4_P1_FleshArena_To_SF" Type="EntityTeleport" MinRadius="1" Name="D_TeleportPlayersInStormfallUnderAttackBackCofe2" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="CE_EndQuest_TalkToFamily_ACT4_Starthide" EntityNames="ClickableEntity_EndQuest_TalkToFamily" Hide="1" VFX="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="CE_EndQuest_CheckTheEgg_ACT4_Starthide" EntityNames="ClickableEntity_EndQuest_CheckTheEgg" Hide="1" VFX="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_LowLevelBattle_Gernese_Hide" EntityNames="A4_DYN_LowLevelBattle_Gernese" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Ilthain_UnHide" EntityNames="SFUA_Ilthain" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Gernese_UnHide" EntityNames="SFUA_Gernese" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Damaskus_UnHide" EntityNames="SFUA_Damaskus" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Zalahir_Hide" EntityNames="AnimObject_Dyn_Zalahir_ZalahirMessage" Hide="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="SFUA_Ilthain" Type="GlobalStopAllDialogs" Name="EndIlthain_Dialog" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySound" Name="SFUA_Sound_Explosion" EntityName="#Player" SoundName="Play_DYN_ACT4_WarCouncil_StartledDistExplosion" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="D_A4_P1_WarCouncilStartled" DialogName="ACT4_Q6_P2_WarCouncilStartled" Delay="3.5" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="D_A4_P1_WarCouncilMessenger" DialogName="ACT4_Q6_P2_WarCouncilMessenger" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="A4_DYN_WarCouncil_Thunderblade_UnHide" EntityNames="A4_DYN_WarCouncil_Thunderblade" Hide="0" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P1_WarCouncilStartled" Type="GoalAchieve" Name="A4_P3_WarCouncil_Startled_EndGoal1" SimulateOnly="" GoalIndexToAchieve="1" />
+      <Event Trigger="EventEnd" EventName="D_A4_P1_WarCouncilMessenger" Type="GoalAchieve" Name="A4_P3_WarCouncil_Messenger_EndGoal2" SimulateOnly="" GoalIndexToAchieve="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestFail" Name="Act4_PortalQuest_FailIfPortalDestroyedCoss" QuestName="Quest_A4_P1_Destroy_Coss_Portal" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestFail" Name="Act4_PortalQuest_FailIfPortalDestroyedCofe" QuestName="Quest_A4_P1_Destroy_Cofe_Portal" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestFail" Name="Act4_PortalQuest_FailIfPortalDestroyedCofy" QuestName="Quest_A4_P1_Destroy_Cofy_Portal" Delay="1" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="Act4_AhrimanQuest_StopTalk_2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill1_Coss2" Area="" MonsterClass="CultOfSouls_Skeleton_RangeCaster" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill2_Coss2" Area="" MonsterClass="CultOfSouls_Skeleton_1swd1Shd_Heavy" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill3_Coss2" Area="" MonsterClass="CultOfSouls_Skeleton_1swd1Shd_Weak" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill4_Coss2" Area="" MonsterClass="CultOfSouls_Skeleton_2bow" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill5_Coss2" Area="" MonsterClass="CultOfSouls_Cultist" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill6_Coss2" Area="" MonsterClass="CultOfSouls_Fanatic" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill7_Coss2" Area="" MonsterClass="CultOfSouls_LanternBearer" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill8_Coss2" Area="" MonsterClass="CultOfSouls_MiniLanternBearer" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill1_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Zombie" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill2_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_RunnerBreeder" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill3_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Runner" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill4_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Leech" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill5_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Spreader" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill6_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Infantry_Ranged" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill7_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Infantry_Sword" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill8_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Sniper" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill9_Cofe2" Area="" MonsterClass="Endgame_CultOfFlesh_Squire" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill1_Cofy2" Area="" MonsterClass="PacifiedInfantrySword" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill2_Cofy2" Area="" MonsterClass="PacifiedInfantryRanged" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill3_Cofy2" Area="" MonsterClass="PacifiedHeavyInfantry" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill4_Cofy2" Area="" MonsterClass="CultOfFury_FurySpawn" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill5_Cofy2" Area="" MonsterClass="CultOfFury_Fanatic_Ranged" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill6_Cofy2" Area="" MonsterClass="CultOfFury_Fanatic_Melee" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill7_Cofy2" Area="" MonsterClass="CultOfFury_Instigator" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_Ahriman1" Area="" MonsterClass="CultOfFury_Ahriman01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_Heimlock" Area="" MonsterClass="CultOfFury_Cultist_Heimlock" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_Valeria" Area="" MonsterClass="Republic_Valeria_Act1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_AhrimanP2" Area="" MonsterClass="CultOfFury_AhrimanP2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_AhrimanP3" Area="" MonsterClass="CultOfFury_AhrimanP3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_AhrimanSpectersP2" Area="" MonsterClass="CultOfFury_AhrimanSpecterP2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="A4_AhrimanQuest_Kill_AhrimanSpectersP3" Area="" MonsterClass="CultOfFury_AhrimanSpecterP3" />
+    </Step>
+    <Step Order="3" UIName="@ui_A4_Q6_SFUA_S4_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_palacedoor_ACT4" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_palacedoor_ACT4" Area="Stormfall_SFUA" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="ClickableEntity_EndQuest_CheckTheEgg" Hide="1" VFX="" Name="G0_egg_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="drag_oshara_egg32" Hide="0" VFX="" Name="G0_egg_2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="CE_A4_SFUAEnd_Egg" Hide="1" VFX="" Name="G0_egg_2_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg_Pedestal4" Hide="0" VFX="" Name="G0_egg_2_pedestalTrue" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg_Pedestal" Hide="1" VFX="" Name="G0_egg_2_pedestalFalse" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg3" Hide="1" VFX="" Name="G0_egg_3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="ClickableEntity_palacedoor_ACT4" Hide="0" VFX="" Name="CE_CityToPalace_ACT4_unhide" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_UnfortunateSurvivor_SFGuard_1" AreaRadius="15" Type="GlobalDialog" Name="A4_P1_TO_P2_NearingThePalace" DialogName="Preset_NearingThePalace" IsCST="1" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="Act4_AhrimanQuest_StopTalk_3" />
+    </Step>
+    <Step Order="4" UIName="@ui_A4_Q6_SFUA_S5_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Impossible" />
+      <Goal Order="1" Type="BossFight" FightPreset="BossFight_Ahriman_Endgame" />
+      <Goal Order="2" Type="Wait" TimeLimit=".1" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="1" Name="A4_SFUA_ClearUI_2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_TenseFamilyMeeting_Valeria_Hide" EntityNames="A4_DYN_TenseFamilyMeeting_Valeria" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_TenseFamilyMeeting_Heimlock_Hide" EntityNames="A4_DYN_TenseFamilyMeeting_Heimlock" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_Hellion_Hide" Modifier="HellionCosmetic" Remove="1" Target="#Player" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="2" Name="D_TeleportPlayersInPalace" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Phase2" />
+      <Event Trigger="EventEnd" EventName="D_TeleportPlayersInPalace" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A4_SUA_PalaceClash" SequenceName="A4_PalaceClash" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_PalaceClash" Type="GoalAchieve" Name="A4_P3_AhrimanBossfight_EndGoal0" SimulateOnly="" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalMapModifier" Name="GMM_MedicalGarrison_Hide" Modifier="MedicalGarrison" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalMapModifier" Name="GMM_TimeDistortion_UnHide" Modifier="TimeDistortion" Remove="0" Target="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalReserveGameplayEvent" Name="Act4_StartBossFightEvent" EventDescriptorName="ACT4_BossFight" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="QuestUnlock" Name="ENDGAME_SFUA_End_StartQuest" QuestName="ENDGAME_SFUA_End" FailCurrent="1" StartingStep="0" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="Act4_AhrimanQuest_StopTalk_4" />
+      <Event Trigger="GoalEnd" GoalIndex="1" Type="ClearSpawn" Name="A4_P2_ClearAIs" Events="Act4_Heimlock_SpawnFriendly,Act4_Valeria_SpawnFriendly,Act4_Ahriman_SpawnFriendly,Act4_Heimlock_Spawn,Act4_Valeria_Spawn" />
+      <Event Trigger="GoalEnd" GoalIndex="1" Type="GlobalReleaseGameplayEvent" Name="Act4_StopBossFightEvent" />
+    </Step>
+  </Quest>
+</MetaData>

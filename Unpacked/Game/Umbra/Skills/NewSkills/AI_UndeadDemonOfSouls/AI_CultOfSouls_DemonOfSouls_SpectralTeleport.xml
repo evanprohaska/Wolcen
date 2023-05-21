@@ -1,0 +1,45 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_demonofsouls_spectralteleport_escape" ESkill="AI_cultofsouls_demonofsouls_spectralteleport" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_06_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ActionString_OutMissed="monster_skill_loop_06_out" ActionString_OutTerrain="monster_skill_loop_01_out_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="10" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <AnimationList>
+      <Animation Key="SpectralTp" ActionString_In="status_spectralTp_in_01" ActionString_Loop="status_spectralTp_loop_01" ActionString_Out="status_spectralTp_out_01" />
+    </AnimationList>
+    <ParticleList>
+      <Particle Key="TeleportOut" Name="U_Monster.DeomonOfSoul.Teleport_Out_01" Offset="0,0,0" Direction="-1,0,0" Delay="0.5" />
+      <Particle Key="FirstTeleportIn" Name="U_Monster.DeomonOfSoul.Teleport_In_01" Offset="0,0,0" Direction="-1,0,0" />
+      <Particle Key="FirstReady" Name="U_Monster.DeomonOfSoul.Teleport_ReadyIn_01" Offset="0,0,0" Direction="-1,0,0" />
+      <Particle Key="FirstIndicator" Name="U_Monster.DeomonOfSoul.Teleport_ReadyIn_01" Offset="0,0,0" Direction="-1,0,0" />
+      <Particle Key="SecondTeleportIn" Name="U_Monster.DeomonOfSoul.Teleport_Out_01" Offset="0,0,0" Direction="-1,0,0" Delay="0.3" />
+      <Particle Key="SecondReady" Name="U_Monster.DeomonOfSoul.Teleport_ReadyIn_01" Offset="0,0,0" Direction="-1,0,0" Delay="0.3" />
+      <Particle Key="SecondIndicator" Name="U_Monster.DeomonOfSoul.Teleport_ReadyIn_01" Offset="0,0,0" Direction="-1,0,0" />
+    </ParticleList>
+    <Range AttackRange="14" />
+    <RandomCastingParams ProbaForRandomBool="0" />
+    <SkillSpecific MaxDuration="0.5" IndicatorTimer="0.5" RadiusOfEffect="2" />
+  </Skill>
+  <Skill UID="AI_cultofsouls_demonofsouls_spectralteleport_abduct" ESkill="AI_cultofsouls_demonofsouls_spectralteleport" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ActionString_OutMissed="monster_skill_loop_01_out_02" ActionString_OutTerrain="monster_skill_loop_01_out_03" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <AnimationList>
+      <Animation Key="SpectralTp" ActionString_In="status_spectralTp_in_01" ActionString_Loop="status_spectralTp_loop_01" ActionString_Out="status_spectralTp_out_01" />
+    </AnimationList>
+    <ParticleList>
+      <Particle Key="TeleportOut" Name="U_Monster.DeomonOfSoul.Teleport_Out_01" Offset="0,0,0" Direction="-1,0,0" Delay="0.5" />
+      <Particle Key="FirstTeleportIn" Name="U_Monster.DeomonOfSoul.Teleport_In_01" Offset="0,0,0" Direction="-1,0,0" />
+      <Particle Key="FirstReady" Name="U_Monster.DeomonOfSoul.Teleport_ReadyIn_01" Offset="0,0,0" Direction="-1,0,0" />
+      <Particle Key="FirstIndicator" Name="U_Monster.Indicator.Indicator_3M_01" Offset="0,0,0" Direction="-1,0,0" />
+      <Particle Key="SecondTeleportIn" Name="U_Monster.DeomonOfSoul.Teleport_Out_01" Offset="0,0,0" Direction="-1,0,0" Delay="0.3" />
+      <Particle Key="SecondReady" Name="U_Monster.DeomonOfSoul.Teleport_ReadyIn_01" Offset="0,0,0" Direction="-1,0,0" Delay="0.3" />
+      <Particle Key="SecondIndicator" Name="U_Monster.DeomonOfSoul.Teleport_ReadyIn_01" Offset="0,0,0" Direction="-1,0,0" />
+    </ParticleList>
+    <Range AttackRange="14" />
+    <RandomCastingParams ProbaForRandomBool="1" />
+    <SkillSpecific MaxDuration="0.7" IndicatorTimer="0.7" RadiusOfEffect="3" />
+  </Skill>
+</MetaData>

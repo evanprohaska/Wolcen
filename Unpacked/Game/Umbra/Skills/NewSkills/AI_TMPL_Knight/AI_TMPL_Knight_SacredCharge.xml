@@ -1,0 +1,60 @@
+<MetaData>
+  <Skill UID="AI_TMPL_Knight_SacredCharge_Level1" ESkill="ai_default_charge" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="Templars_Knight_SacredCharge_TargetDetection_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.AuroraKnight.Charge_Indicator_01" Offset="0,0,0" Direction="-1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="StartGround" Name="U_Monster.AuroraKnight.Charge_Wind_01" Offset="0,0,1.5" Direction="0,1,0" Scale="1" Bone="Bip01" InstantKill="0" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="28" ChargeDistance="10" StopChargeAtTarget="1">
+      <Extra Type="FrontAttack">
+        <Shape ShapeName="Templars_Knight_SacredCharge_FrontAttack_Shape" />
+      </Extra>
+      <Extra Type="SideAttack">
+        <Shape ShapeWidth="3" RightOffset="2" WidthFactorForParticlePacing="2" />
+      </Extra>
+      <Extra Type="Particles" />
+    </SkillSpecific>
+    <SoundTrigger OnAnimLoopIn="Play_TMPL_Knight_SacredCharge_Charge" />
+  </Skill>
+  <Skill UID="AI_TMPL_Knight_SacredCharge_Level2" ESkill="ai_default_charge" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="Templars_Knight_SacredCharge_TargetDetection_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.AuroraKnight.Charge_Indicator_01" Offset="0,0,0" Direction="-1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="StartGround" Name="U_Monster.AuroraKnight.Charge_Wind_01" Offset="0,-1.5,0" Direction="0,1,0" Scale="1" Bone="Bip01" InstantKill="0" />
+      <Particle Key="SideShape" Name="U_Monster.AuroraKnight.Charge_Damage_Lightning_01" Offset="0,0,0" Direction="0,1,0" Scale="1" InstantKill="0" />
+      <Particle Key="SideDZ" Name="U_Monster.AuroraKnight.Charge_Damage_Area_01" Offset="0,0,0" Direction="0,1,0" Scale="0.2" InstantKill="0" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="36" ChargeDistance="10" StopChargeAtTarget="1">
+      <Extra Type="FrontAttack">
+        <Shape ShapeName="Templars_Knight_SacredCharge_FrontAttack_Shape" />
+      </Extra>
+      <Extra Type="SideAttack">
+        <Shape ShapeWidth="3" RightOffset="2" WidthFactorForParticlePacing="1.5" />
+        <DamageZone TurnIntoDamageZoneAfterDash="1" DamageZoneSkillUID="AI_TMPL_Knight_SacredCharge_Level2_DamageZone" />
+      </Extra>
+      <Extra Type="Particles" />
+    </SkillSpecific>
+    <SoundTrigger OnAnimLoopIn="Play_TMPL_Knight_SacredCharge_Charge" />
+  </Skill>
+  <Skill UID="AI_TMPL_Knight_SacredCharge_Level2_DamageZone" ESkill="default_empty" Keywords="magic_spell">
+    <Cooldown Cooldown="0.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="sacred" WeaponMultiplier="0.4" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="0" RateOfFire="1" Duration="5" MaxEntityHits="0" MaxHitsTotal="0" RemoveParticleWithShape="0" RemoveDamageZoneWhenCasterDies="0" CanNotHitSameEntityTwice="0" />
+  </Skill>
+</MetaData>

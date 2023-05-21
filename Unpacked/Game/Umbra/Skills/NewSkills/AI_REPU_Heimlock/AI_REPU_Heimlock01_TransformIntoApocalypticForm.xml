@@ -1,0 +1,167 @@
+<MetaData>
+  <Skill UID="AI_REPU_Heimlock02_TransformIntoApocalypticForm" ESkill="AI_REPU_Heimlock01_TransformIntoApocalypticForm" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="40" CooldownTrigger="OnUnregister" />
+    <CastingParams CanBeInterrupted="0" />
+    <AnimationList>
+      <Animation Key="ApoSpawn" ActionString="monster_skill_05" />
+    </AnimationList>
+    <StringList>
+      <String Key="ApoModel" String="Objects/characters/mobs/Humanoid/Heimlock/APO_Heimlock/Apo_Heimlock.cdf" />
+      <String Key="ApoADB" String="Animations/Mannequin/ADB/Mobs/Humanoid/Heimlock/APO_Heimlock.adb" />
+    </StringList>
+    <SkillStateSwitch>
+      <Skill UID="AI_REPU_Heimlock01_LightningBall" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_BleedingEdge" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_Leap" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_DefaultAttack" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_Meteor" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock02_TransformIntoApocalypticForm" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock02_TransformIntoApocalypticForm_Start" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock02_DefaultAttack" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_MultiSlash" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_BrutalExplosion" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_TeleportExplosion" Enabled="1" />
+    </SkillStateSwitch>
+    <ParticleList>
+      <Particle Key="RWing01" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing03" Offset="0,0,0" Direction="0,-0.028,-0.972" Scale="1.5" />
+      <Particle Key="RWing02" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing02" Offset="0,0,0" Direction="0,-0.111,-0.889" Scale="1" />
+      <Particle Key="RWing03" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing01" Offset="0,0,0" Direction="0,-0.111,-0.889" Scale="0.7" />
+      <Particle Key="RWing04" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing04" Offset="0,0,0" Direction="0,-0.444,-0.556" Scale="0.5" />
+      <Particle Key="LWing01" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing03" Offset="0,0,0" Direction="0,0.028,0.972" Scale="1.5" />
+      <Particle Key="LWing02" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing02" Offset="0,0,0" Direction="0,0.111,0.889" Scale="1" />
+      <Particle Key="LWing03" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing01" Offset="0,0,0" Direction="0,0.111,0.889" Scale="0.7" />
+      <Particle Key="LWing04" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing04" Offset="0,0,0" Direction="0,0.444,0.556" Scale="0.5" />
+      <Particle Key="Despawn" Name="U_Monster.Heimlock_APO.Transformation_Back_01" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="BodyTrail01" Name="U_Monster.Heimlock_APO.Permanent_Body_Trail_01" Bone="Bip01 Fx" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="BodyTrail02" Name="U_Monster.Heimlock_APO.Permanent_Body_Trail_01" Bone="Bip01 Fx" Offset="0,0,0" Direction="0,0,-1" />
+    </ParticleList>
+    <SkipBreakBar />
+    <Specific_AI_REPU_Heimlock01_TransformIntoApocalypticForm ProtectionAsPercentOfMaxHealth="10" ApoScale="1.35" />
+    <SoundTrigger OnAnimStart="Play_Heimlock_Transform" />
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock02_TransformIntoApocalypticForm_Start" ESkill="AI_REPU_Heimlock01_TransformIntoApocalypticForm" Keywords="magic_spell">
+    <Cooldown Cooldown="1000" />
+    <CastingParams CanBeInterrupted="0" />
+    <AnimationList>
+      <Animation Key="ApoSpawn" ActionString="monster_skill_05" />
+    </AnimationList>
+    <StringList>
+      <String Key="ApoModel" String="Objects/characters/mobs/Humanoid/Heimlock/APO_Heimlock/Apo_Heimlock.cdf" />
+      <String Key="ApoADB" String="Animations/Mannequin/ADB/Mobs/Humanoid/Heimlock/APO_Heimlock.adb" />
+    </StringList>
+    <SkillStateSwitch>
+      <Skill UID="AI_REPU_Heimlock01_LightningBall" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_BleedingEdge" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_Leap" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_DefaultAttack" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_Meteor" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock02_TransformIntoApocalypticForm" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock02_TransformIntoApocalypticForm_Start" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock02_DefaultAttack" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_MultiSlash" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_BrutalExplosion" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_TeleportExplosion" Enabled="1" />
+    </SkillStateSwitch>
+    <ParticleList>
+      <Particle Key="RWing01" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing03" Offset="0,0,0" Direction="0,-0.028,-0.972" Scale="1.5" />
+      <Particle Key="RWing02" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing02" Offset="0,0,0" Direction="0,-0.111,-0.889" Scale="1" />
+      <Particle Key="RWing03" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing01" Offset="0,0,0" Direction="0,-0.111,-0.889" Scale="0.7" />
+      <Particle Key="RWing04" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing04" Offset="0,0,0" Direction="0,-0.444,-0.556" Scale="0.5" />
+      <Particle Key="LWing01" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing03" Offset="0,0,0" Direction="0,0.028,0.972" Scale="1.5" />
+      <Particle Key="LWing02" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing02" Offset="0,0,0" Direction="0,0.111,0.889" Scale="1" />
+      <Particle Key="LWing03" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing01" Offset="0,0,0" Direction="0,0.111,0.889" Scale="0.7" />
+      <Particle Key="LWing04" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing04" Offset="0,0,0" Direction="0,0.444,0.556" Scale="0.5" />
+      <Particle Key="Despawn" Name="U_Monster.Heimlock_APO.Transformation_Back_01" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="BodyTrail01" Name="U_Monster.Heimlock_APO.Permanent_Body_Trail_01" Bone="Bip01 Fx" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="BodyTrail02" Name="U_Monster.Heimlock_APO.Permanent_Body_Trail_01" Bone="Bip01 Fx" Offset="0,0,0" Direction="0,0,-1" />
+    </ParticleList>
+    <Specific_AI_REPU_Heimlock01_TransformIntoApocalypticForm ProtectionAsPercentOfMaxHealth="8" ApoScale="1.35" />
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock03_TransformIntoApocalypticForm" ESkill="AI_REPU_Heimlock01_TransformIntoApocalypticForm" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="40" CooldownTrigger="OnUnregister" />
+    <CastingParams CanBeInterrupted="0" />
+    <AnimationList>
+      <Animation Key="ApoSpawn" ActionString="monster_skill_05" />
+    </AnimationList>
+    <StringList>
+      <String Key="ApoModel" String="Objects/characters/mobs/Humanoid/Heimlock/APO_Heimlock/Apo_Heimlock_02.cdf" />
+      <String Key="ApoADB" String="Animations/Mannequin/ADB/Mobs/Humanoid/Heimlock/APO_Heimlock.adb" />
+    </StringList>
+    <SkillStateSwitch>
+      <Skill UID="AI_REPU_Heimlock01_LightningBall" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_BleedingEdge" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_Leap" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_DefaultAttack" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_Meteor" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock03_TransformIntoApocalypticForm" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock03_TransformIntoApocalypticForm_Start" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock02_FireProjectiles_FromSky" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_MultiSlash" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_BrutalExplosion" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_TeleportExplosion" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock03_Teleport" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock03_DefaultAttack" Enabled="1" />
+    </SkillStateSwitch>
+    <SkipBreakBar />
+    <ParticleList>
+      <Particle Key="RWing01" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing03" Offset="0,0,0" Direction="0,-0.028,-0.972" Scale="1.5" />
+      <Particle Key="RWing02" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing02" Offset="0,0,0" Direction="0,-0.111,-0.889" Scale="1" />
+      <Particle Key="RWing03" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing01" Offset="0,0,0" Direction="0,-0.111,-0.889" Scale="0.7" />
+      <Particle Key="RWing04" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing04" Offset="0,0,0" Direction="0,-0.444,-0.556" Scale="0.5" />
+      <Particle Key="LWing01" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing03" Offset="0,0,0" Direction="0,0.028,0.972" Scale="1.5" />
+      <Particle Key="LWing02" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing02" Offset="0,0,0" Direction="0,0.111,0.889" Scale="1" />
+      <Particle Key="LWing03" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing01" Offset="0,0,0" Direction="0,0.111,0.889" Scale="0.7" />
+      <Particle Key="LWing04" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing04" Offset="0,0,0" Direction="0,0.444,0.556" Scale="0.5" />
+      <Particle Key="Despawn" Name="U_Monster.Heimlock_APO.Transformation_Back_01" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="BodyTrail01" Name="U_Monster.Heimlock_APO.Permanent_Body_Trail_01" Bone="Bip01 Fx" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="BodyTrail02" Name="U_Monster.Heimlock_APO.Permanent_Body_Trail_01" Bone="Bip01 Fx" Offset="0,0,0" Direction="0,0,-1" />
+      <Particle Key="BodySmoke" Name="U_Monster.Heimlock_APO.Permanent_Body_Smoke_01" Bone="Bip01 Fx" Offset="0,0,0" Direction="0,1,0" Scale="1.35" TimeScale="0.5" />
+    </ParticleList>
+    <Specific_AI_REPU_Heimlock01_TransformIntoApocalypticForm ProtectionAsPercentOfMaxHealth="20" ApoScale="1.35" />
+    <SoundTrigger OnAnimStart="Play_Heimlock_Transform" />
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock03_TransformIntoApocalypticForm_Start" ESkill="AI_REPU_Heimlock01_TransformIntoApocalypticForm" Keywords="magic_spell">
+    <Cooldown Cooldown="1000" />
+    <CastingParams CanBeInterrupted="0" />
+    <AnimationList>
+      <Animation Key="ApoSpawn" ActionString="monster_skill_05" />
+    </AnimationList>
+    <StringList>
+      <String Key="ApoModel" String="Objects/characters/mobs/Humanoid/Heimlock/APO_Heimlock/Apo_Heimlock_02.cdf" />
+      <String Key="ApoADB" String="Animations/Mannequin/ADB/Mobs/Humanoid/Heimlock/APO_Heimlock.adb" />
+    </StringList>
+    <SkillStateSwitch>
+      <Skill UID="AI_REPU_Heimlock01_LightningBall" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_BleedingEdge" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_Leap" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_DefaultAttack" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock01_Meteor" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock03_TransformIntoApocalypticForm" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock03_TransformIntoApocalypticForm_Start" Enabled="0" />
+      <Skill UID="AI_REPU_Heimlock02_FireProjectiles_FromSky" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_MultiSlash" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_BrutalExplosion" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock02_TeleportExplosion" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock03_Teleport" Enabled="1" />
+      <Skill UID="AI_REPU_Heimlock03_DefaultAttack" Enabled="1" />
+    </SkillStateSwitch>
+    <ParticleList>
+      <Particle Key="RWing01" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing03" Offset="0,0,0" Direction="0,-0.028,-0.972" Scale="1.5" />
+      <Particle Key="RWing02" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing02" Offset="0,0,0" Direction="0,-0.111,-0.889" Scale="1" />
+      <Particle Key="RWing03" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing01" Offset="0,0,0" Direction="0,-0.111,-0.889" Scale="0.7" />
+      <Particle Key="RWing04" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 R Wing04" Offset="0,0,0" Direction="0,-0.444,-0.556" Scale="0.5" />
+      <Particle Key="LWing01" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing03" Offset="0,0,0" Direction="0,0.028,0.972" Scale="1.5" />
+      <Particle Key="LWing02" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing02" Offset="0,0,0" Direction="0,0.111,0.889" Scale="1" />
+      <Particle Key="LWing03" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing01" Offset="0,0,0" Direction="0,0.111,0.889" Scale="0.7" />
+      <Particle Key="LWing04" Name="U_Monster.Heimlock_APO.Permanent_Wing_01" Bone="Bip01 L Wing04" Offset="0,0,0" Direction="0,0.444,0.556" Scale="0.5" />
+      <Particle Key="Despawn" Name="U_Monster.Heimlock_APO.Transformation_Back_01" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="BodyTrail01" Name="U_Monster.Heimlock_APO.Permanent_Body_Trail_01" Bone="Bip01 Fx" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="BodyTrail02" Name="U_Monster.Heimlock_APO.Permanent_Body_Trail_01" Bone="Bip01 Fx" Offset="0,0,0" Direction="0,0,-1" />
+      <Particle Key="BodySmoke" Name="U_Monster.Heimlock_APO.Permanent_Body_Smoke_01" Bone="Bip01 Fx" Offset="0,0,0" Direction="0,1,0" Scale="1.35" TimeScale="0.5" />
+    </ParticleList>
+    <SkipBreakBar />
+    <Specific_AI_REPU_Heimlock01_TransformIntoApocalypticForm ProtectionAsPercentOfMaxHealth="16" ApoScale="1.35" />
+  </Skill>
+</MetaData>

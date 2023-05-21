@@ -1,0 +1,77 @@
+<MetaData>
+  <Skill UID="AI_Monolith_DefaultAttack01" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="lightning" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="3" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="RepublicGenerator_Projectile" SpeedScale="0.1" ProjectileCount="16" AngleBetweenProjectiles="30.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_Monolith_DefaultAttack02" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="lightning" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="3" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="RepublicGenerator_Projectile" SpeedScale="0.1" ProjectileCount="8" AngleBetweenProjectiles="10.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_Monolith_DefaultAttack03" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_02" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="lightning" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="3" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="RepublicGenerator_Projectile" SpeedScale="0.1" ProjectileCount="4" AngleBetweenProjectiles="90.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_Monolith_DefaultAttack04" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="lightning" WeaponMultiplier=".6" />
+    <Cooldown Cooldown="8" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <DamageZone Duration="10" RateOfFire="0.2" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="u_gameplay_ingredients.a3_repu_event_generator.projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="0" MinAngularSpeed="20" MaxAngularSpeed="20" IndicatorMaxTimer="0" NumberOfDZ="8" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_Monolith_DefaultAttack05" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="lightning" WeaponMultiplier=".6" />
+    <Cooldown Cooldown="8" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <DamageZone Duration="10" RateOfFire="0.2" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="u_gameplay_ingredients.a3_repu_event_generator.projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="0" MinAngularSpeed="-20" MaxAngularSpeed="-20" IndicatorMaxTimer="0" NumberOfDZ="8" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_Monolith_DefaultAttack06" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_03" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="lightning" WeaponMultiplier=".6" />
+    <Cooldown Cooldown="6" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <DamageZone Duration="10" RateOfFire="0.2" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="u_gameplay_ingredients.a3_repu_event_generator.projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="-4" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="8" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

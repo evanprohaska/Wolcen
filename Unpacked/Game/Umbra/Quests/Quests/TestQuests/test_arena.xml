@@ -1,0 +1,65 @@
+<MetaData>
+  <Quest Name="test_arena_flow" StartDialog="" Type="Secondary" UIName="@ui_SvriirCoast" UIDesc="@ui_LeaveTheSvriirCoast">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Impossible" />
+      <Event Name="arena_0_start" Trigger="GoalStart" GoalIndex="0" Delay="0" Type="ArenaStart" ArenaPreset="test_arena_mob_spawner_types_no_teleport" LocationEntityName="#Player" EntityToFollow="" />
+      <Event Name="end_event" Trigger="GoalStart" GoalIndex="0" Delay="2.5" Type="EventEnd" EventsName="arena_0_start" Remove="true" TriggerEnd="true" />
+      <Event Name="achieve" Trigger="GoalStart" GoalIndex="0" Delay="5" Type="GoalAchieve" GoalIndexToAchieve="0" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Impossible" />
+      <Event Name="arena_1_start" Trigger="GoalStart" GoalIndex="0" Delay="0" Type="ArenaStart" ArenaPreset="test_arena_mob_spawner_types_no_teleport" LocationEntityName="#Player" EntityToFollow="" />
+      <Event Name="arena_1_lost" Trigger="GoalStart" GoalIndex="0" Delay="5" Type="GoalAchieve" GoalIndexToAchieve="0" />
+    </Step>
+    <Step Order="2" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Wait" TimeLimit="5" />
+      <Event Name="arena_2_start" Trigger="GoalStart" GoalIndex="0" Delay="0" Type="ArenaStart" ArenaPreset="test_arena_mob_spawner_types_no_teleport" LocationEntityName="#Player" EntityToFollow="" />
+    </Step>
+    <Step Order="3" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Impossible" />
+      <Event Name="arena_3_start" Trigger="GoalStart" GoalIndex="0" Delay="0" Type="ArenaStart" ArenaPreset="test_arena_mob_spawner_types_no_teleport" LocationEntityName="#Player" EntityToFollow="" />
+      <Event Name="arena_3_won" Trigger="ArenaWon" ArenaStartEventName="arena_3_start" Type="GoalAchieve" GoalIndexToAchieve="0" />
+      <Event Name="arena_3_lost" Trigger="ArenaLost" ArenaStartEventName="arena_3_start" Type="StepFail" RollbackToPreviousStep="false" />
+    </Step>
+    <Step Order="4" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Impossible" />
+      <Event Name="arena_4_start" Trigger="GoalStart" GoalIndex="0" Delay="0" Type="ArenaStart" ArenaPreset="test_arena_mob_spawner_types_no_teleport" LocationEntityName="#Player" EntityToFollow="" />
+      <Event Name="arena_4_won" Trigger="ArenaWon" ArenaStartEventName="arena_4_start" Type="GoalAchieve" GoalIndexToAchieve="0" />
+      <Event Name="arena_4_lost" Trigger="ArenaLost" ArenaStartEventName="arena_4_start" Type="QuestFail" QuestName="test_arena_flow" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="1000" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="test_arena_types" StartDialog="" Type="Secondary" UIName="@ui_SvriirCoast" UIDesc="@ui_LeaveTheSvriirCoast">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Impossible" />
+      <Event Name="arena_0_start" Trigger="GoalStart" GoalIndex="0" Delay="0" Type="ArenaStart" ArenaPreset="test_arena_mob_spawner_types_no_teleport" LocationEntityName="#Player" EntityToFollow="" />
+      <Event Name="arena_0_won" Trigger="ArenaWon" ArenaStartEventName="arena_0_start" Type="GoalAchieve" GoalIndexToAchieve="0" />
+      <Event Name="arena_0_lost" Trigger="ArenaLost" ArenaStartEventName="arena_0_start" Type="QuestFail" QuestName="test_arena_types" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Impossible" />
+      <Event Name="arena_1_start" Trigger="GoalStart" GoalIndex="0" Delay="0" Type="ArenaStart" ArenaPreset="test_arena_dynamic_no_prefab" LocationEntityName="#Player" EntityToFollow="" />
+      <Event Name="arena_1_won" Trigger="ArenaWon" ArenaStartEventName="arena_1_start" Type="GoalAchieve" GoalIndexToAchieve="0" />
+      <Event Name="arena_1_lost" Trigger="ArenaLost" ArenaStartEventName="arena_1_start" Type="QuestFail" QuestName="test_arena_types" />
+    </Step>
+    <Step Order="2" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Impossible" />
+      <Event Name="arena_2_start" Trigger="GoalStart" GoalIndex="0" Delay="0" Type="ArenaStart" ArenaPreset="test_arena_dynamic_no_prefab" LocationEntityName="#Player" EntityToFollow="#Player" />
+      <Event Name="arena_2_won" Trigger="ArenaWon" ArenaStartEventName="arena_2_start" Type="GoalAchieve" GoalIndexToAchieve="0" />
+      <Event Name="arena_2_lost" Trigger="ArenaLost" ArenaStartEventName="arena_2_start" Type="QuestFail" QuestName="test_arena_types" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="1000" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

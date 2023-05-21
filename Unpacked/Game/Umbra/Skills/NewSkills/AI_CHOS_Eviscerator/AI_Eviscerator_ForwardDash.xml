@@ -1,0 +1,14 @@
+<MetaData>
+  <Skill UID="AI_Eviscerator_ForwardDash" ESkill="AI_republicassassin_forwarddash" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="0.8" />
+    <Cooldown Cooldown="3" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="Eviscerator_Shape" />
+    </Shapes>
+    <SkillSpecific HitTriggerDistance="2" DashSpeed="30" DashHitRadius="2.5" DashBlownAwayDistance="2.5" DashBlownAwayHeight="1" />
+    <SoundTrigger OnAnimStart="Play_CHOS_Eviscerator_Impale_Dash" />
+  </Skill>
+</MetaData>

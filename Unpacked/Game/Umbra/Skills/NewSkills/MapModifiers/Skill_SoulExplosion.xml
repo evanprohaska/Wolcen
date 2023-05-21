@@ -1,0 +1,10 @@
+<MetaData>
+  <Skill UID="mapmodifier_skill_soulexplosion" ESkill="MapModifier_SoulExplosion" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_CommonVFX.Map_Modifier.Fire_Explosion_Indicator_01" Direction="0,0,1" Scale="1" />
+      <Particle Key="Explosion" Name="U_CommonVFX.Map_Modifier.Fire_Explosion_01" Direction="0,0,1" Scale="0.625" TimeScale="1.25" />
+    </ParticleList>
+    <DamageBase Max="50" MaxPerLevel="50" Min="50" MinPerLevel="50" Type="fire" />
+    <SkillSpecific IndicatorTime="4.8" ExplosionRadius="5" ChanceToDrop="20" />
+  </Skill>
+</MetaData>

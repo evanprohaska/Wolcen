@@ -1,0 +1,50 @@
+<MetaData>
+  <Skill UID="AI_outlaw_kennelmaster_whiplash" ESkill="ai_default_zonebuff" Keywords="deathskill">
+    <Animation ActionString="monster_skill_05" ScaleWithCastingSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="100" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="KennelMaster_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_kennelmaster_whiplash_passive" Targeting="OnSummons" Duration="100" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimCast="" />
+  </Skill>
+  <Skill UID="AI_outlaw_denmaster_whiplash" ESkill="ai_default_zonebuff" Keywords="">
+    <Animation ActionString="monster_skill_04" ScaleWithCastingSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="100" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="KennelMaster_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_kennelmaster_whiplash_passive" Targeting="OnSummons" Duration="100" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimCast="" />
+  </Skill>
+  <Skill UID="AI_outlaw_Worg_whiplash" ESkill="ai_default_zonebuff" Keywords="deathskill">
+    <Animation ActionString="monster_skill_02" ScaleWithCastingSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="100" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="KennelMaster_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_kennelmaster_whiplash_passive" Targeting="OnSummoner" Duration="100" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimCast="" />
+  </Skill>
+  <Skill UID="AI_outlaw_Bear_whiplash" ESkill="ai_default_zonebuff" Keywords="deathskill">
+    <Animation ActionString="monster_skill_03" ScaleWithCastingSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="100" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="KennelMaster_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_kennelmaster_whiplash_passive" Targeting="OnSummoner" Duration="100" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimCast="" />
+  </Skill>
+</MetaData>

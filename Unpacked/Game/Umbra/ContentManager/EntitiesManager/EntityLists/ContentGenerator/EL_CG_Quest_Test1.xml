@@ -1,0 +1,150 @@
+<MetaData>
+  <EntityList Name="CG_Quest_Clickable" NoDropWeight="0">
+    <Entry Weight="1">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/ContentGenerator.xml" PrefabName="Test_Quest.Clickable1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="CG_Quest_Destroyable" NoDropWeight="0">
+    <Entry Weight="1">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/ContentGenerator.xml" PrefabName="Test_Quest.Destroyable" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="CG_F1" NoDropWeight="0">
+    <Entry Weight="10">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="MapModifier_Altar.MapModifier_Altar" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="CG_F2" NoDropWeight="0">
+    <Entry Weight="35">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Gambling_Altar.Gambling_Altar" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="CG_F3" NoDropWeight="0">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00014285714" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Common" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5,5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00014285714" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4,5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00014285714" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00014285714" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="CG_EG_CCC_F3" NoDropWeight="0">
+    <Entry Weight="7">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="2" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Common" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5,5">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4,5">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="CG_EndOfDungeon_Reward_CC" NoDropWeight="0">
+    <Entry Weight="10">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Legendary" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5,5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.0002" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4,5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.0002" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.0002" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="CG_EndOfDungeon_Reward_TPS" NoDropWeight="0">
+    <Entry Weight="10">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="TPS.Chest_TPS_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="TPS.Chest_TPS_Legendary" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5,5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4,5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+</MetaData>

@@ -1,0 +1,160 @@
+<MetaData>
+  <Projectile ID="player_frostlance_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,1.5,0.5" vOffset="0,1.25,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Start_Medium" Direction="0,1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Projectile_Medium" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Medium" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Medium" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="25" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="Play_Skill_FrostLance_Buildup_Frost" />
+      <Launch SoundTriggerName="Play_Skill_FrostLance_Launch_Frost" />
+      <Hit SoundTriggerName="Play_Skill_FrostLance_Impact_Frost" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostlance_proj_large" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.75,1.5,0.75" vOffset="0,1.5,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Start_Large" Direction="0,1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Projectile_Large" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Large" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Large" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="25" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <BuildUp SoundTriggerName="Play_Skill_FrostLance_Buildup_Frost" />
+      <Launch SoundTriggerName="Play_Skill_FrostLance_Launch_Frost" />
+      <Hit SoundTriggerName="Play_Skill_FrostLance_Impact_Frost" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostlance_proj_sacred" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,1.5,0.5" vOffset="0,1.25,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Start_Medium_Sacred" Direction="0,1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Projectile_Medium_Sacred" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Medium_Sacred" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Medium_Sacred" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="25" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="Play_Skill_FrostLance_Buildup_Sacred" />
+      <Launch SoundTriggerName="Play_Skill_FrostLance_Launch_Sacred" />
+      <Hit SoundTriggerName="Play_Skill_FrostLance_Impact_Sacred" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostlance_proj_large_sacred" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.75,1.5,0.75" vOffset="0,1.5,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Start_Large_Sacred" Direction="0,1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Projectile_Large_Sacred" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Large_Sacred" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Large_Sacred" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="25" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="Play_Skill_FrostLance_Buildup_Sacred" />
+      <Launch SoundTriggerName="Play_Skill_FrostLance_Launch_Sacred" />
+      <Hit SoundTriggerName="Play_Skill_FrostLance_Impact_Sacred" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostlance_proj_bleed" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,1.5,0.5" vOffset="0,1.25,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Start_Medium_Rend" Direction="0,1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Projectile_Medium_Rend" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Medium_Rend" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Large_Rend" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="25" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="Play_Skill_FrostLance_Buildup_Rend" />
+      <Launch SoundTriggerName="Play_Skill_FrostLance_Launch_Rend" />
+      <Hit SoundTriggerName="Play_Skill_FrostLance_Impact_Rend" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostlance_proj_large_bleed" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.75,1.5,0.75" vOffset="0,1.5,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Start_Large_Rend" Direction="0,1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Projectile_Large_Rend" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Large_Rend" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Large_Rend" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="25" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="Play_Skill_FrostLance_Buildup_Rend" />
+      <Launch SoundTriggerName="Play_Skill_FrostLance_Launch_Rend" />
+      <Hit SoundTriggerName="Play_Skill_FrostLance_Impact_Rend" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostlance_proj_aether" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,1.5,0.5" vOffset="0,1.25,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Start_Medium_Aether" Direction="0,1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Projectile_Medium_Aether" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Medium_Aether" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Large_Aether" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="25" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="Play_Skill_FrostLance_Buildup_Aether" />
+      <Launch SoundTriggerName="Play_Skill_FrostLance_Launch_Aether" />
+      <Hit SoundTriggerName="Play_Skill_FrostLance_Impact_Aether" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_frostlance_proj_large_aether" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.75,1.5,0.75" vOffset="0,1.5,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Start_Large_Aether" Direction="0,1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Projectile_Large_Aether" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Large_Aether" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Hit_Large_Aether" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="25" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="Play_Skill_FrostLance_Buildup_Aether" />
+      <Launch SoundTriggerName="Play_Skill_FrostLance_Launch_Aether" />
+      <Hit SoundTriggerName="Play_Skill_FrostLance_Impact_Aether" />
+    </Audio>
+  </Projectile>
+</MetaData>

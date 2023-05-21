@@ -1,0 +1,82 @@
+<MetaData>
+  <Skill UID="AI_svriirbeta_spawner_eggthrow_land" ESkill="AI_svriirbeta_spawner_eggthrow" Keywords="projectile,magic_spell">
+    <Projectile Name="svriir_beta_spawner_eggthrow_proj" ProjectileCount="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".3" />
+    <CastingParams CastBone="Bip01 Spine3" CasterImmobilizationTime="1" CastDelay="0" AnimationTrigger="1" CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Cooldown Cooldown="3.0" />
+    <Explosion ExplosionRadius="3.5" />
+    <Range AttackRange="10" />
+    <Summoning MaxSummons="8" SummonDuration="0" MinRadiusAroundSpawnPosition="0.5" MaxRadiusAroundSpawnPosition="2" KillLowestHPOnOversummoning="1" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Default" Name="sc_SvriirBetaSpawner_land" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_AI_SvriirSpawner_SpawnStart" OnAnimCast="PLAY_AI_SvriirSpawner_SpawnShot" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="10" In="0.5" />
+      <EmissiveIntensity From="10" To="30" In="1" />
+      <EmissiveIntensity From="30" To="origin" In="1.5" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_svriirbeta_spawner_eggthrow_sea" ESkill="AI_svriirbeta_spawner_eggthrow" Keywords="projectile,magic_spell">
+    <Projectile Name="svriir_beta_spawner_eggthrow_proj" ProjectileCount="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".3" />
+    <CastingParams CastBone="Bip01 Spine3" CasterImmobilizationTime="1" CastDelay="0" AnimationTrigger="1" CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Cooldown Cooldown="3.0" />
+    <Explosion ExplosionRadius="3.5" />
+    <Range AttackRange="10" />
+    <Summoning MaxSummons="8" SummonDuration="0" MinRadiusAroundSpawnPosition="0.5" MaxRadiusAroundSpawnPosition="2" KillLowestHPOnOversummoning="1" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Default" Name="sc_SvriirBetaSpawner_sea" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_AI_SvriirSpawner_SpawnStart" OnAnimCast="PLAY_AI_SvriirSpawner_SpawnShot" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="10" In="0.5" />
+      <EmissiveIntensity From="10" To="30" In="1" />
+      <EmissiveIntensity From="30" To="origin" In="1.5" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_svriirbeta_spawner_eggthrow_cave" ESkill="AI_svriirbeta_spawner_eggthrow" Keywords="projectile,magic_spell">
+    <Projectile Name="svriir_beta_spawner_eggthrow_proj" ProjectileCount="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".3" />
+    <CastingParams CastBone="Bip01 Spine3" CasterImmobilizationTime="1" CastDelay="0" AnimationTrigger="1" CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Cooldown Cooldown="3.0" />
+    <Explosion ExplosionRadius="3.5" />
+    <Range AttackRange="10" />
+    <Summoning MaxSummons="8" SummonDuration="0" MinRadiusAroundSpawnPosition="0.5" MaxRadiusAroundSpawnPosition="2" KillLowestHPOnOversummoning="1" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Default" Name="sc_SvriirBetaSpawner_cave" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_AI_SvriirSpawner_SpawnStart" OnAnimCast="PLAY_AI_SvriirSpawner_SpawnShot" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="10" In="0.5" />
+      <EmissiveIntensity From="10" To="30" In="1" />
+      <EmissiveIntensity From="30" To="origin" In="1.5" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_svriirbeta_spawner_eggthrow_fire" ESkill="AI_svriirbeta_spawner_eggthrow" Keywords="projectile,magic_spell">
+    <Projectile Name="svriir_beta_spawner_eggthrow_fire_proj" ProjectileCount="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier=".3" />
+    <CastingParams CastBone="Bip01 Spine3" CasterImmobilizationTime="1" CastDelay="0" AnimationTrigger="1" CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Cooldown Cooldown="3.0" />
+    <Explosion ExplosionRadius="3.5" />
+    <Range AttackRange="10" />
+    <Summoning MaxSummons="8" SummonDuration="0" MinRadiusAroundSpawnPosition="0.5" MaxRadiusAroundSpawnPosition="2" KillLowestHPOnOversummoning="1" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Default" Name="sc_SvriirBetaSpawner_eggthrowFire" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_AI_SvriirSpawner_SpawnStart" OnAnimCast="PLAY_AI_SvriirSpawner_SpawnShot" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="10" In="0.5" />
+      <EmissiveIntensity From="10" To="30" In="1" />
+      <EmissiveIntensity From="30" To="origin" In="1.5" />
+    </Material>
+  </Skill>
+</MetaData>

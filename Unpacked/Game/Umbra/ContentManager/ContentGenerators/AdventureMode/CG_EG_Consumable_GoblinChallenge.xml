@@ -1,0 +1,49 @@
+<MetaData>
+  <ContentGenerator Name="CG_EG_Consumable_GoblinChallenge" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="Flayers" PriorityTag="OTWF" ExcludeTag="SvriirLair,IncubationChamber,SoulCave,PPS,TPS,Necropolis,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="ShadowBandit" PriorityTag="OTWSB" ExcludeTag="SvriirLair,IncubationChamber,SoulCave,PPS,TPS,Necropolis,NecropolisGore,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="ShadowBanditWild" PriorityTag="OTWSBW" ExcludeTag="SvriirLair,IncubationChamber,SoulCave,PPS,TPS,NecropolisGore,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="COSTemplar" PriorityTag="COST" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="COSSpecter" PriorityTag="COSS" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,ForestGore,ForestAutumn,PPS,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="COSDamned" PriorityTag="COSD" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="COSUndead" PriorityTag="COSU" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,ForestGore,ForestAutumn,PPS,TPS,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="COSWild" PriorityTag="COSW" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="FleshWild" PriorityTag="COFLW" ExcludeTag="GenericCave,SvriirLair,SoulCave,Forest,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="FleshVictimRepublic" PriorityTag="COFLVR" ExcludeTag="GenericCave,SvriirLair,SoulCave,Forest,ForestAutumn,PPS,TPS,Necropolis,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste" Weight="10" />
+      <Archetype Tag="FleshMonster" PriorityTag="COFMSR" ExcludeTag="GenericCave,SvriirLair,SoulCave,Forest,ForestGore,ForestAutumn,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="FleshVictimeTemplar" PriorityTag="COFLVT" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,Redwaste,RedwasteRepu" Weight="5" />
+      <Archetype Tag="Republic" PriorityTag="REPU" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste" Weight="10" />
+      <Archetype Tag="FuryTemplar" PriorityTag="COFUT" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="FuryRepublic" PriorityTag="COFUR" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste" Weight="10" />
+      <Archetype Tag="SvriirsPoisons" PriorityTag="SVRIP" ExcludeTag="IncubationChamber,SoulCave,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+      <Archetype Tag="SvriirsFire" PriorityTag="SVRIF" ExcludeTag="GenericCave,IncubationChamber,SoulCave,Forest,ForestGore,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,RedwasteRepu" Weight="10" />
+      <Archetype Tag="SvriirPoisonWild" PriorityTag="SVRIW" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,RedwasteRepu" Weight="4" />
+      <Archetype Tag="SvriirPoisonWild" PriorityTag="SVRIFW" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,RedwasteRepu" Weight="4" />
+      <Archetype Tag="AllCult" PriorityTag="CALL" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu" Weight="10" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WRepu_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="WTemplar_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cellar_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cellar_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cellar_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cellar_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cellar_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cave_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Mine_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Ossuary_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Ossuary_Sandy_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="WTemplar_Fleshed_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Canyon_SmallDungeon_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+    </LevelGeneratorChoices>
+    <QuestChoices />
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_CG_FixedEpicLoot" Tag="EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

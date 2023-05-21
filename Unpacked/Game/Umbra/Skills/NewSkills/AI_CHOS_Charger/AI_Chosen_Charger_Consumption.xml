@@ -1,0 +1,13 @@
+<MetaData>
+  <Skill UID="AI_Chosen_Charger_Consumption" ESkill="AI_Chosen_Charger_Consumption" Keywords="magic_spell">
+    <Cooldown Cooldown="0" />
+    <CastingParams />
+    <ParticleList>
+      <Particle Key="Consume" Name="U_Monster.Charger.Charger_Clone_Ghost_01" Offset="0,0,1.5" Direction="1,0,0" Bone="Bip01" />
+      <Particle Key="Heal" Name="U_Monster.Charger.Charger_Consume_Heal" Offset="0.2,0,2" Direction="1,0,0" Bone="Bip01" Scale="1.3" />
+    </ParticleList>
+    <HealthTransfer Ratio="0.05" Timer="2" Delay="0" />
+    <SoundTrigger OnAnimStart="Play_CHOS_Charger_Consumption" />
+    <SkillSpecific TriggerDistance="3" />
+  </Skill>
+</MetaData>

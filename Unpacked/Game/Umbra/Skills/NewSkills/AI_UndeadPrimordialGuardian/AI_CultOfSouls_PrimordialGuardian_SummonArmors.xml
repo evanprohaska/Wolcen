@@ -1,0 +1,11 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_primordialguardian_summonarmors" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_06" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Summoning MaxSummons="4" SummonDuration="0" MinRadiusAroundSpawnPosition="2" MaxRadiusAroundSpawnPosition="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_CultOfSoulsPrimordialGuardian" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="Play_Primordial_GuardianCorrupt_Summon" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

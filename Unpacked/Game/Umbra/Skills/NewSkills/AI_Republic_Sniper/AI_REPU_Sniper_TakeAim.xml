@@ -1,0 +1,70 @@
+<MetaData>
+  <Skill UID="AI_REPU_Sniper_TakeAim" ESkill="AI_REPU_Sniper_TakeAim" Keywords="attack_skill,projectile">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="2.1" />
+    <Cooldown Cooldown="3.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="R_Weapon_Bone" MaximumTurnRate="180" InterruptIfTargetGoesInvisible="1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.repu_sniper.aim" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Weapon" Name="U_Character_02.Sniper.Sniper_Charging_01" Offset="0,0,0" Direction="0,0,1" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.BullEye_Muzzle_01_Lightning" Offset="-0.15,-1,1.5" Direction="0,1,0" Scale="2" Bone="Bip01" />
+      <Particle Key="BulletShell" Name="U_Monster.Sniper.Bullet_Shell_01_Lightning" Offset="-0.15,-0.5,1.7" Direction="1,0,0" Scale="0.5" Delay="0.83" Bone="Bip01" />
+    </ParticleList>
+    <Projectile Name="repu_sniper_takeaim_proj" ProjectileCount="1" PenetrationLimit="100" />
+    <Targeting ComputeTargetPosAtCast="0" />
+    <SkillSpecific LoopDuration="2" />
+    <SoundTrigger OnAnimStart="Play_Republic_Sniper_DefaultRanged_Charge" OnAnimCast="Play_Republic_Sniper_DefaultRanged_Fire" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_ForestClearing_Sniper_TakeAim" ESkill="AI_REPU_Sniper_TakeAim" Keywords="attack_skill,projectile">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.05" />
+    <Cooldown Cooldown="7" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="R_Weapon_Bone" MaximumTurnRate="180" InterruptIfTargetGoesInvisible="1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Sniper.Aim_Line_01" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Weapon" Name="U_Character_02.Sniper.Sniper_Charging_01" Offset="0,0,0" Direction="0,0,1" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.BullEye_Muzzle_01_Lightning" Offset="-0.15,-1,1.5" Direction="0,1,0" Scale="2" Bone="Bip01" />
+      <Particle Key="BulletShell" Name="U_Monster.Sniper.Bullet_Shell_01_Lightning" Offset="-0.15,-0.5,1.7" Direction="1,0,0" Scale="0.5" Delay="0.83" Bone="Bip01" />
+    </ParticleList>
+    <Projectile Name="repu_sniper_takeaim_proj" ProjectileCount="1" PenetrationLimit="100" />
+    <Targeting ComputeTargetPosAtCast="0" />
+    <SkillSpecific LoopDuration="2" />
+    <SoundTrigger OnAnimStart="Play_Republic_Sniper_DefaultRanged_Charge" OnAnimCast="Play_Republic_Sniper_DefaultRanged_Fire" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_COFE_Sniper_TakeAim" ESkill="AI_REPU_Sniper_TakeAim" Keywords="projectile">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Rend" PWeaponMultiplier="2.1" />
+    <Cooldown Cooldown="6" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="R_Weapon_Bone" MaximumTurnRate="180" InterruptIfTargetGoesInvisible="1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Sniper.Aim_Line_01" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Weapon" Name="U_Character_02.Sniper.Sniper_Charging_01_Rend" Offset="0,0,0" Direction="0,0,1" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.BullEye_Muzzle_01_Rend" Offset="-0.15,-1,1.5" Direction="0,1,0" Scale="2" Bone="Bip01" />
+      <Particle Key="BulletShell" Name="U_Monster.Sniper.Bullet_Shell_01_Rend" Offset="-0.15,-0.5,1.7" Direction="1,0,0" Scale="0.5" Delay="0.83" Bone="Bip01" />
+    </ParticleList>
+    <Projectile Name="cofe_sniper_takeaim_proj" ProjectileCount="1" PenetrationLimit="100" />
+    <Targeting ComputeTargetPosAtCast="0" />
+    <SkillSpecific LoopDuration="2" />
+    <SoundTrigger OnAnimStart="Play_Republic_Sniper_DefaultRanged_Charge" OnAnimCast="Play_Republic_Sniper_DefaultRanged_Fire" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_Named_Sniper_TakeAim" ESkill="AI_REPU_Sniper_TakeAim" Keywords="projectile">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Rend" PWeaponMultiplier="2.1" />
+    <Cooldown Cooldown="1" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="R_Weapon_Bone" MaximumTurnRate="180" InterruptIfTargetGoesInvisible="1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Sniper.Aim_Line_01" Offset="0,0,0.5" Direction="0,0,1" Scale="1" />
+      <Particle Key="Weapon" Name="U_Character_02.Sniper.Sniper_Charging_01_Rend" Offset="0,0,0" Direction="0,0,1" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.BullEye_Muzzle_01_Rend" Offset="-0.15,-1,1.5" Direction="0,1,0" Scale="2" Bone="Bip01" />
+      <Particle Key="BulletShell" Name="U_Monster.Sniper.Bullet_Shell_01_Rend" Offset="-0.15,-0.5,1.7" Direction="1,0,0" Scale="0.5" Delay="0.83" Bone="Bip01" />
+    </ParticleList>
+    <Projectile Name="named_sniper_takeaim_proj" ProjectileCount="1" PenetrationLimit="100" />
+    <Targeting ComputeTargetPosAtCast="0" />
+    <SkillSpecific LoopDuration="2" />
+    <SoundTrigger OnAnimStart="Play_Republic_Sniper_DefaultRanged_Charge" OnAnimCast="Play_Republic_Sniper_DefaultRanged_Fire" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

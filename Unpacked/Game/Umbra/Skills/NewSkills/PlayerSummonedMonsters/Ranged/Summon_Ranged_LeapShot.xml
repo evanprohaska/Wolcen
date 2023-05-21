@@ -1,0 +1,50 @@
+<MetaData>
+  <Skill UID="summon_ranged_leapshot_base" ESkill="default_ranged" Keywords="magic_spell,default_ranged,projectile,additional_projectile">
+    <Animation ActionString="monster_skill_02" AnimationDrivenMovement="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimCast="PLAY_AI_DefaultBowShot" OnHit="" PlayAttackVoice="0" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <Targeting ComputeTargetPosAtCast="1" />
+    <Projectile Name="summon_ranged" ProjectileCount="3" AngleBetweenProjectiles="5" PenetrationLimit="1" AppendElementalSuffixToProjectileName="1" />
+    <ParticleList />
+  </Skill>
+  <Skill UID="summon_ranged_leapshot_explosive" ESkill="default_ranged" Keywords="magic_spell,default_ranged,projectile,additional_projectile">
+    <HUD ShowParamsInTooltip="Explosion" ShowParamsInAST="Explosion" />
+    <Animation ActionString="monster_skill_04" AnimationDrivenMovement="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimCast="PLAY_AI_DefaultBowShot" OnHit="" PlayAttackVoice="0" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <Targeting ComputeTargetPosAtCast="1" />
+    <Projectile Name="summon_ranged_explosive" ProjectileCount="3" PenetrationLimit="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList />
+    <Explosion ExplosionRadius="2" />
+  </Skill>
+  <Skill UID="summon_ranged_leapshot_withIncreasedAttackSpeed" ESkill="default_ranged" Keywords="magic_spell,default_ranged,projectile,additional_projectile">
+    <Animation ActionString="monster_skill_05" AnimationDrivenMovement="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimCast="PLAY_AI_DefaultBowShot" OnHit="" PlayAttackVoice="0" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <Targeting ComputeTargetPosAtCast="1" />
+    <Projectile Name="summon_ranged" ProjectileCount="3" AngleBetweenProjectiles="5" PenetrationLimit="1" AppendElementalSuffixToProjectileName="1" />
+    <ParticleList />
+  </Skill>
+  <Skill UID="summon_ranged_leapshot_withIncreasedAttackSpeedExplosive" ESkill="default_ranged" Keywords="magic_spell,default_ranged,projectile,additional_projectile">
+    <HUD ShowParamsInTooltip="Explosion" ShowParamsInAST="Explosion" />
+    <Animation ActionString="monster_skill_06" AnimationDrivenMovement="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimCast="PLAY_AI_DefaultBowShot" OnHit="" PlayAttackVoice="0" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <Targeting ComputeTargetPosAtCast="1" />
+    <Projectile Name="summon_ranged_explosive" ProjectileCount="3" PenetrationLimit="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList />
+    <Explosion ExplosionRadius="2" />
+  </Skill>
+</MetaData>

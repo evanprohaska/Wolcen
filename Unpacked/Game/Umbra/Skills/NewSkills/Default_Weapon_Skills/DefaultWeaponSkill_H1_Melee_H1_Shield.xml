@@ -1,0 +1,59 @@
+<MetaData>
+  <Skill UID="playerskill_H1_Melee_H1_Shield_atk_01" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_1h_shield" TrailPresetBase="shield_swipe" BloodDecalOrientation="right" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee_shield.png" UIName="@ui_AST_ComboOneHanded" Lore="@ui_AST_ComboOneHanded_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance" />
+    <Combo ComboStarter="Combo_H1_Melee_H1_Shield" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="Shield_1" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger AttackingHand="right" OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H1_Melee_H1_Shield_atk_02" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_1h_shield" TrailPresetBase="shield_swipe" BloodDecalOrientation="left" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee_shield.png" UIName="@ui_AST_ComboOneHanded" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="Shield_1" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger AttackingHand="right" OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H1_Melee_H1_Shield_atk_loop_01" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_loop_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_1h_shield" TrailPresetBase="shield_swipe" BloodDecalOrientation="right" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee_shield.png" UIName="@ui_AST_ComboOneHanded" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="Shield_2" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger AttackingHand="left" OnAnimStart="Play_Foley_Move_Short" OnHit="Play_Wpn_Shield_Bash" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H1_Melee_H1_Shield_atk_loop_02" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_1h_shield" TrailPresetBase="shield_swipe" BloodDecalOrientation="left" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee_shield.png" UIName="@ui_AST_ComboOneHanded" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="Shield_2" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger AttackingHand="left" OnAnimStart="Play_Foley_Move_Short" OnHit="Play_Wpn_Shield_Bash" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,17 @@
+<MetaData>
+  <ArenaWaves Name="EdricBossFightP3">
+    <Wave Type="killtarget">
+      <PrefabParams PrefabName="arena_BossFightEdric_part3" />
+      <KillTargets>
+        <Entry ClassName="Justicar_03" Amount="1" />
+      </KillTargets>
+      <MobSpawners>
+        <Spawner Type="fill_forever" TargetSpawnClass="Sc_LostSoul_COSDamned_EdricBossFight" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner Type="fill_forever" TargetSpawnClass="Sc_LostSoul_COSDamned_EdricBossFight" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner Type="fill_forever" TargetSpawnClass="Sc_LostSoul_COSDamned_EdricBossFight" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner Type="fill_forever" TargetSpawnClass="Sc_LostSoul_COSDamned_EdricBossFight" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15  " MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="4" />
+        <Spawner Type="once" TargetSpawnClass="Sc_republic_JE3" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="10" MustLoot="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

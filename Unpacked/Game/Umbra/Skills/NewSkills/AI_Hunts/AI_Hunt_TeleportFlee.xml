@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill ESkill="AI_lanternbearer_soulswallow" Keywords="magic_spell" UID="AI_Hunt_Teleportflee">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="0" />
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <Shapes>
+      <Entry ShapeName="LanternBearer_SoulSwallowShape" />
+    </Shapes>
+    <LifeLeech TransferPercent="0" TransferDuration="3" />
+    <SkillSpecific TimeBetweenHits="0.5" MaxDuration="2" TimeOutDuration="0.5" AllowMultipleTarget="1" HitLoopParticleName="U_Monster.Tomb_Bearer.Soul_Hit_Loop_01" HitLoopParticleBoneCaster="R_Weapon_Bone" HitLoopParticleBoneCasterOffset="0,2,0" HitLoopParticleBoneTarget="Bip01 Spine" TrailParticleName="U_Monster.Tomb_Bearer.Soul_Trail_01" TrailParticleBone="Bip01 Spine" SwallowParticleName="U_Monster.Tomb_Bearer.Soul_Swallow_01" SwallowParticleBone="Bip01 Spine1" SoundStart="Play_Gravebearer_SoulVacuum_Loop" SoundEnd="Play_Gravebearer_SoulVacuum_Loop_End" SoundHitStart="Play_Gravebearer_SoulVacuum_Impact_Loop" SoundHitEnd="Stop_Gravebearer_SoulVacuum_Impact_Loop" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="10" To="50" In="1.5" />
+      <EmissiveIntensity From="50" To="200" In="3" />
+      <EmissiveIntensity From="200" To="500" In="6" />
+      <EmissiveIntensity From="500" To="10" In="1" />
+    </Material>
+  </Skill>
+</MetaData>

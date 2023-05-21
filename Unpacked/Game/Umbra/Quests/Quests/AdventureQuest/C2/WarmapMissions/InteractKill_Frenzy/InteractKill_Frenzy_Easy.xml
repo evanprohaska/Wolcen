@@ -1,0 +1,210 @@
+<MetaData>
+  <Quest Name="WM_Q4_Optional_COSS_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="2" />
+      <Goal Order="1" Type="Frenzy" ValueToReach="70" DropRate="10" TimeLimit="420" ShowTimer="1" ShowProgression="1" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Name="FailQuest" Type="QuestFail" QuestName="WM_Q4_Optional_COSS_Easy" />
+      <Event Trigger="EnterAreaAll" CenterEntityName="QP_EG_GoToSF" AreaRadius="50" Name="FailQuest_Main" Type="QuestFail" QuestName="WM_Q4_Optional_COSS_Easy" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="Goal2Label" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="SP_SA_AN_StartOptionalQuest" Type="GlobalAnnouncement" UIReference="StandardAnnouncement" AnnouncementName="@ui_gold" ContextualMessage="" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Name="SP_SA_AN_EndOptionalQuest" Type="GlobalAnnouncement" UIReference="StandardAnnouncement" AnnouncementName="@ui_gold" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Name="SP_SA_AN_FailOptionnalQuest" Type="GlobalAnnouncement" UIReference="StandardAnnouncement" AnnouncementName="@ui_gold" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Optional_COFE_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="2" ShowProgression="1" />
+      <Goal Order="1" Type="Frenzy" ValueToReach="70" DropRate="10" TimeLimit="420" ShowTimer="1" ShowProgression="1" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Name="FailQuest" Type="QuestFail" QuestName="WM_Q4_Optional_COFE_Easy" />
+      <Event Trigger="EnterAreaAll" CenterEntityName="QP_EG_GoToSF" AreaRadius="50" Name="FailQuest_Main" Type="QuestFail" QuestName="WM_Q4_Optional_COFE_Easy" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="Goal2Label" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="SP_SA_AN_StartOptionalQuest" Type="GlobalAnnouncement" UIReference="StandardAnnouncement" AnnouncementName="@ui_gold" ContextualMessage="" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Name="SP_SA_AN_EndOptionalQuest" Type="GlobalAnnouncement" UIReference="StandardAnnouncement" AnnouncementName="@ui_gold" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Name="SP_SA_AN_FailOptionnalQuest" Type="GlobalAnnouncement" UIReference="StandardAnnouncement" AnnouncementName="@ui_gold" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COSST_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COSS.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COSS_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSST_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSST_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSST_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSST_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSST_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COSSS_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COSS.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COSS_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSS_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSS_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSS_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSS_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSS_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COSSD1_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COSS.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COSS_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSD1_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSD1_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSD1_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSD1_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSD1_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COSSD2_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COSS.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COSS_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSD2_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSD2_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSD2_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSD2_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSD2_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COSSU1_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COSS.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COSS_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSU1_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSU1_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSU1_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSU1_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSU1_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COSSU2_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COSS.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COSS_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSU2_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSU2_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSU2_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSU2_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSU2_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COSSW_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COSS.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COSS_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSW_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSW_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSW_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSW_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COSSW_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COFEM_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COFL.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COFE_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFEM_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFEM_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFEM_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFEM_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFEM_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COFEW_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COFL.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COFE_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFEW_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFEW_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFEW_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFEW_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFEW_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COFER_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COFL.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COFE_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFER_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFER_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFER_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFER_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFER_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_Main_COFET1_Easy" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="4" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Interact" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COFL.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q4_Optional_COFE_Easy" StopOnQuestEnding="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_" Name="SpawnGroup1" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFET1_Group_1" TargetEntityName="Shrine_" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_0" Name="SpawnGroup2" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFET1_Group_2" TargetEntityName="Shrine_0" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_1" Name="SpawnGroup3" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFET1_Group_3" TargetEntityName="Shrine_1" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_2" Name="SpawnGroup4" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFET1_Group_4" TargetEntityName="Shrine_2" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Shrine_3" Name="SpawnGroup5" Type="EntitySpawn" SpawnClass="Sc_WM_E_COFET1_Group_5" TargetEntityName="Shrine_3" MinimumRadius="0" MaximumRadius="10" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+</MetaData>

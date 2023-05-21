@@ -1,0 +1,362 @@
+<MetaData>
+  <Trap Name="trap_player_bomb">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_3m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_big">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_4m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_glue">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_Glue_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_01_3m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_big_glue">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_Glue_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_01_4m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_rend">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_Rend_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Rend_3m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_big_rend">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_Rend_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Rend_3m" Scale="1.33" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_glue_rend">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_GlueRend_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_big_glue_rend">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_GlueRend_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_01_Rend_3m" Scale="1.33" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_sacred">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_Sacred_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Sacred_3m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_big_sacred">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_Sacred_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Sacred_3m" Scale="1.33" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_glue_sacred">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_GlueSacred_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_01_Sacred_3m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_big_glue_sacred">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_GlueSacred_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_01_Sacred_3m" Scale="1.33" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_lightning">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_Lightning_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Lightning_3m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_big_lightning">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_Lightning_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Lightning_3m" Scale="1.33" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_glue_lightning">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_GlueLightning_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_01_Lightning_3m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_big_glue_lightning">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_GlueLightning_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_01_Lightning_3m" Scale="1.33" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_fire">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_Fire_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Fire_3m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_big_fire">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_Fire_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Fire_3m" Scale="1.33" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_glue_fire">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_GlueFire_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_01_Fire_3m" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_bomb_big_glue_fire">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character.Skills.Summon_Bomb_Mine_GlueFire_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_01_Fire_3m" Scale="1.33" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+</MetaData>

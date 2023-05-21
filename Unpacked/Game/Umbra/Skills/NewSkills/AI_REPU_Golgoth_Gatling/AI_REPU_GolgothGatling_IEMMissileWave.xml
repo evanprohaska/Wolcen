@@ -1,0 +1,18 @@
+<MetaData>
+  <Skill UID="AI_REPU_GolgothGatling_IEMMissileWave" ESkill="AI_REPU_GOLGOTHGATLING_IEMMISSILEWAVE" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="8" CooldownTrigger="OnEnd" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.7" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Impact" Name="REPU_Golgoth_Gatling.IEM Missile Wave.Impact AoE" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Projectile" Name="REPU_Golgoth_Gatling.IEM Missile Wave.Projectile Down" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Explosion" Name="REPU_Golgoth_Gatling.IEM Missile Wave.Impact AOE" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Smoke" Name="U_VFX_Oskar.Globes.Globe_Frenzy_Pickup_01" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <Range AttackRange="10" />
+    <SkillSpecific TimeBeforeMissilesLand="0.75" TimeBetweenWaves="0.75" RocketAOERadius="2" SpaceBetweenMissiles="4.4" ProjectileTrailLength="0.4" />
+    <SoundTrigger PlayAttackVoice="1" OnAnimStart="Play_REPU_Golgoth_Gatling_IEMMisslewave_Prepare" OnAnimCast="" />
+  </Skill>
+</MetaData>

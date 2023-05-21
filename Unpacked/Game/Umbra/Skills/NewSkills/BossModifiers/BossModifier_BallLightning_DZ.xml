@@ -1,0 +1,36 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_BallLightning_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Shock" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_BallLightning_DZ" />
+    </Shapes>
+    <DamageZone Duration="1.4" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DirectionalStaticIndicator" Name="u_bossmodifiers.rdn_lightning.indicatorglobal" Offset="0,0,0" Direction="1,0,0" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.rdn_lightning.dmgzone" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+      <Particle Key="Explosion" Name="u_bossmodifiers.rdn_lightning.dmgzone_explo" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.rdn_lightning.dmgzone_explo" Offset="0,0,0" Direction="1,0,0" Scale=".75" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="15" RandomBaseDistMax="15" RandomBaseAngleMin="60" RandomBaseAngleMax="60" LimitAngle="360" MinLinearSpeed="-10" MaxLinearSpeed="-10" MinAngularSpeed="40" MaxAngularSpeed="40" IndicatorMaxTimer="2" NumberOfDZ="6" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_Hunt_BossModifier_BallLightning_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Shock" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_BallLightning_DZ" />
+    </Shapes>
+    <DamageZone Duration="1.4" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="u_bossmodifiers.rdn_lightning.indicator" Offset="0,0,0" Direction="1,0,0" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.rdn_lightning.dmgzone" Offset="0,0,0" Direction="1,0,0" Scale=".5" />
+      <Particle Key="Explosion" Name="u_bossmodifiers.rdn_lightning.dmgzone_explo" Offset="0,0,0" Direction="1,0,0" Scale=".5" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.rdn_lightning.dmgzone_explo" Offset="0,0,0" Direction="1,0,0" Scale=".75" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="15" RandomBaseDistMax="15" RandomBaseAngleMin="60" RandomBaseAngleMax="60" LimitAngle="360" MinLinearSpeed="-10" MaxLinearSpeed="-10" MinAngularSpeed="40" MaxAngularSpeed="40" IndicatorMaxTimer="2" NumberOfDZ="6" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

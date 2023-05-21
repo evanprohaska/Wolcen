@@ -1,0 +1,58 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RandomFlesh_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <Bleed Chance="100" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_DOT_DZ_Bleed" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomFlesh_DZ" />
+    </Shapes>
+    <DamageZone Duration="5" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="u_bossmodifiers.rnd_rend_dz.indicator" Offset="0,0,0" Direction="0,0,1" Scale="0.75" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.rnd_rend_dz.dz" Offset="0,0,0" Direction="1,0,0" Scale="0.75" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.rnd_rend_dz.remove" Offset="0,0,0" Direction="0,0,1" Scale="0.75" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="3" RandomBaseDistMax="12" RandomBaseAngleMin="0" RandomBaseAngleMax="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_Hunt_BossModifier_RandomFlesh_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <Bleed Chance="100" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_DOT_DZ_Bleed" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomFlesh_DZ" />
+    </Shapes>
+    <DamageZone Duration="5" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="u_bossmodifiers.rnd_rend_dz.indicator" Offset="0,0,0" Direction="0,0,1" Scale="0.75" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.rnd_rend_dz.dz" Offset="0,0,0" Direction="1,0,0" Scale="0.75" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.rnd_rend_dz.remove" Offset="0,0,0" Direction="0,0,1" Scale="0.75" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="3" RandomBaseDistMax="12" RandomBaseAngleMin="0" RandomBaseAngleMax="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RandomFlesh_DZ_Lieutenant">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <Bleed Chance="100" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_DOT_DZ_Bleed" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomFlesh_DZ" />
+    </Shapes>
+    <DamageZone Duration="5" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="u_bossmodifiers.rnd_rend_dz.indicator" Offset="0,0,0" Direction="0,0,1" Scale="0.75" />
+      <Particle Key="DamageZone" Name="U_Monster.Lumbach.Flesh_Area_02" Offset="0,0,0" Direction="1,0,0" Scale="0.75" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="3" RandomBaseDistMax="12" RandomBaseAngleMin="0" RandomBaseAngleMax="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,22 @@
+<MetaData>
+  <Quest Name="HL_C3_BossFight_Oshara1" UIName="@ui_C1_M3_E1_EventQuestLabel" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_C1_M3_E1_EventStepLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="M3_SpawnOshara_P1" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Oshara_P1" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="M3_DS_51" SequenceName="C1_OsharaIntroduction" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_51" Type="GlobalAnnouncement" Name="C1_M3_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_C1_M3_EA_CM_BossFightDescription" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC3_Step2_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EventStart" EventName="M3_DS_51" Type="EntitySpawn" Name="M3_SpawnOshara_P1" SpawnClass="Sc_C1_M3_OsharaSpawn_P1" TargetEntityName="QP_M3_OsharaP1_OsharaSpawnPoint" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_51" Type="EntityTeleport" Name="M3_SpawnOshara_P1_Player_TP_Start" TeleportedEntityName="#Player" DestinationName="QP_M3_OsharaP1_PlayerSpawnPoint" MinRadius="1" />
+      <Event Trigger="EventEnd" EventName="M3_DS_51" Type="EntityIsHidden" Name="M3_Oshara_P1_Blocker1_Start" EntityNames="Blocker_M3_OsharaP1_1" Hide="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_51" Type="EntityIsHidden" Name="M3_Oshara_P1_Blocker2_Start" EntityNames="Blocker_M3_OsharaP1_2" Hide="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_51" Type="ActionParticleEmitter" Name="M3_Oshara_P1_FX_Blocker1_Start" EmitterEntityName="M3_Oshara_P1_BlockingRoad_FX_1" Activate="1" />
+      <Event Trigger="EventEnd" EventName="M3_DS_51" Type="ActionParticleEmitter" Name="M3_Oshara_P1_FX_Blocker2_Start" EmitterEntityName="M3_Oshara_P1_BlockingRoad_FX_2" Activate="1" />
+      <Event Trigger="EventEnd" EventName="M3_DS_51" Type="GlobalFlowGraph" Name="HL_M3_OsharaP1_CamOn" />
+      <Event Trigger="EventEnd" EventName="M3_DS_51" Type="GlobalDialog" Name="M3_DS_52" DialogName="HLC3_Crossroads_Player_52" Delay="2" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="FailStateOsharaBossfight1" QuestName="HL_C3_BossFight_Oshara1" />
+    </Step>
+  </Quest>
+</MetaData>

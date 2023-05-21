@@ -1,0 +1,20 @@
+<MetaData>
+  <CastEffect Name="orc_mage_fireballs">
+    <Param Type="Arc" From="Bip01 R Hand" To="particle3" ArcLifeTime="-1" ArcPreset="LightningStaff_orc" RayMaterial="Materials/effects/fire_lighning_animated" Delay="0" DelayVariation="0.33" />
+    <Param Type="Arc" From="Bip01 L Hand" To="Bip01 R Hand" ArcLifeTime="-1" ArcPreset="LightningStaff_orc" RayMaterial="Materials/effects/fire_lighning_animated" Delay="0" DelayVariation="0.33" />
+    <Param Type="Particle" ParticleName="U_Trails.SpecialFlow.orc_necro_eye" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_left_bone" Target="" KillAfter="1" />
+    <Param Type="Particle" ParticleName="U_Trails.SpecialFlow.orc_necro_eye" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_right_bone" Target="" KillAfter="1" />
+    <Particles Name="SpecialFlow.orc_necro_fireball_staff_start" ParticleVersion="26">
+      <Params Count="3" EmitterLifeTime="0.43" ParticleLifeTime="0.43,Random=0.219" BlendType="Additive" Texture="textures/sprites/glow/glow_color.dds" TextureTiling="AnimCycle=Loop" Tessellation="true" Alpha="0.777" Color="ParticleAge=(t=0.063,v=(x=0.227,y=0.42,z=0.92);t=0.937,v=(x=0.23,y=0.345,z=0.937))" DiffuseLighting="0.709" DiffuseBacklighting="0.683" EmissiveLighting="1" Size="5.396" Speed="10,Random=0.5" TargetAttraction="Target=OwnEmitter,Orbit=true,Radius=(0.5,ParticleAge=(v=1;t=1))" />
+    </Particles>
+  </CastEffect>
+  <CastEffect Name="orc_mage_fireballs">
+    <Param Type="Arc" From="Bip01 R Hand" To="particle3" ArcLifeTime="-1" ArcPreset="LightningStaff_orc" RayMaterial="Materials/effects/fire_lighning_animated" Delay="0" DelayVariation="0.33" />
+    <Param Type="Arc" From="Bip01 L Hand" To="Bip01 R Hand" ArcLifeTime="-1" ArcPreset="LightningStaff_orc" RayMaterial="Materials/effects/fire_lighning_animated" Delay="0" DelayVariation="0.33" />
+    <Param Type="Particle" ParticleName="U_Trails.SpecialFlow.orc_necro_eye" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_left_bone" Target="" KillAfter="1" />
+    <Param Type="Particle" ParticleName="U_Trails.SpecialFlow.orc_necro_eye" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_right_bone" Target="" KillAfter="1" />
+    <Particles Name="SpecialFlow.orc_necro_fireball_staff_start" ParticleVersion="26">
+      <Params Count="3" EmitterLifeTime="0.43" ParticleLifeTime="0.43,Random=0.219" BlendType="Additive" Texture="textures/sprites/glow/glow_color.dds" TextureTiling="AnimCycle=Loop" Tessellation="true" Alpha="0.777" Color="ParticleAge=(t=0.063,v=(x=0.227,y=0.42,z=0.92);t=0.937,v=(x=0.23,y=0.345,z=0.937))" DiffuseLighting="0.709" DiffuseBacklighting="0.683" EmissiveLighting="1" Size="5.396" Speed="10,Random=0.5" TargetAttraction="Target=OwnEmitter,Orbit=true,Radius=(0.5,ParticleAge=(v=1;t=1))" />
+    </Particles>
+  </CastEffect>
+</MetaData>

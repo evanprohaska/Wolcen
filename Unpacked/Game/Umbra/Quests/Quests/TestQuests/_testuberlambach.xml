@@ -1,0 +1,41 @@
+<MetaData>
+  <Quest Name="test_uberlambach01" UIName="" UIDesc="" Type="Main" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="Destination_Uber_Lambach1" Radius="20" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Vote" Duration="30" VotePreset="default" GameplayEventPresetName="GameplayEventPreset_TEST" />
+      <Goal Order="1" Type="BossFight" FightPreset="bossfight_uberlambach01_test" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="BossfightLost" Type="StepFail" Delay="0" Name="BossFightTestFail" RollbackToPreviousStep="1" />
+    </Step>
+  </Quest>
+  <Quest Name="test_uberlambach01_subquest" UIName="" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="5" Name="TP_Target_Lambach1" TeleportedEntityName="#Player" DestinationName="Target_Uber_Lambach1" />
+      <Goal Order="0" Type="Wait" TimeLimit="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Lambach01_Hide_1_GPE1" EntityNames="GI_IncubationChamber01" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Lambach01_Hide_1_GPE2" EntityNames="GI_IncubationChamber02" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Lambach01_Hide_1_GPE3" EntityNames="GI_IncubationChamber03" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Lambach01_Hide_1_GPE4" EntityNames="GI_IncubationChamber04" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Lambach01_Hide_1_GPE5" EntityNames="GI_IncubationChamber05" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="B_A3_Q1_BossSpawn" Type="EntitySpawn" SpawnClass="sc_TEST_UBERLAMBACH01" TargetEntityName="QP_EG_UB_Lambach_P1" FaceAtSpawn="QP_Lambach01_FacePoint" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Goal Order="1" Type="KillAll" EventsName="B_A3_Q1_BossSpawn">
+        <ArrowMarker Target="B_A3_Q1_BossSpawn" Area="" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Lambach01_Unhide_2_GPE1" EntityNames="GI_IncubationChamber01" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Lambach01_Unhide_2_GPE2" EntityNames="GI_IncubationChamber02" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Lambach01_Unhide_2_GPE3" EntityNames="GI_IncubationChamber03" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Lambach01_Unhide_2_GPE4" EntityNames="GI_IncubationChamber04" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Lambach01_Unhide_2_GPE5" EntityNames="GI_IncubationChamber05" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="Lambach01_Hide_2_GPE1" EntityNames="GI_IncubationChamber01" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="Lambach01_Hide_2_GPE2" EntityNames="GI_IncubationChamber02" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="Lambach01_Hide_2_GPE3" EntityNames="GI_IncubationChamber03" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="Lambach01_Hide_2_GPE4" EntityNames="GI_IncubationChamber04" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="Lambach01_Hide_2_GPE5" EntityNames="GI_IncubationChamber05" Hide="1" />
+      <Goal Order="2" Type="Wait" TimeLimit="1" />
+      <GoalLogic Formula="00-01-02" />
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,24 @@
+<MetaData>
+  <Trap Name="trap_cofy_ahriman">
+    <Trigger InactivityDelay="1" TriggerDelay="0.3" Radius="2" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="3000" MaximumInWorld="100" TriggerOnRemove="0" RemoveOnCasterDeath="1" />
+    <States>
+      <Inactive>
+        <Particle Name="COFY_Ahriman.FlamingSigil.Inactive" Direction="0,0,1" />
+        <Audio Trigger="Play_Ahriman_Flaming_Sigil_Indicator_P2" />
+      </Inactive>
+      <Activated>
+        <Particle Name="COFY_Ahriman.FlamingSigil.Active" Direction="0,0,1" />
+      </Activated>
+      <PreTriggered>
+        <Particle Name="COFY_Ahriman.FlamingSigil.PreTriggered" Direction="0,0,1" />
+        <Audio Trigger="" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="COFY_Ahriman.FlamingSigil.Triggered" Direction="0,0,1" />
+        <Audio Trigger="" />
+      </Triggered>
+    </States>
+  </Trap>
+</MetaData>

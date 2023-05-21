@@ -1,0 +1,33 @@
+<MetaData>
+  <ContentGenerator Name="CG_Test_EncounterDesign" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="Ambush" PriorityTag="Tag_Ambush" ExcludeTag="" Weight="1" />
+      <Archetype Tag="All_Trash" PriorityTag="Tag_All_Trash" ExcludeTag="" Weight="1" />
+      <Archetype Tag="All_Lieutenant" PriorityTag="Tag_All_Lieutenant" ExcludeTag="" Weight="1" />
+      <Archetype Tag="Elite_Attack" PriorityTag="Tag_Elite_Attack" ExcludeTag="" Weight="1" />
+      <Archetype Tag="Easy_Dungeon" PriorityTag="Tag_Easy_Dungeon" ExcludeTag="" Weight="1" />
+      <Archetype Tag="Medium_Dungeon" PriorityTag="Tag_Medium_Dungeon" ExcludeTag="" Weight="1" />
+      <Archetype Tag="Hard_Dungeon" PriorityTag="Tag_Hard_Dungeon" ExcludeTag="" Weight="1" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="AMBUSH_TempleTemplar" Tag="Tag_Ambush" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="ALL_TRASH_Swamp" Tag="Tag_All_Trash" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="ALL_LIEUTENANT_Ossuary_Foggy" Tag="Tag_All_Lieutenant" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="ELITE_ATTACK_Forest" Tag="Tag_Elite_Attack" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="EASY_DUNGEON_NecropolisMossy" Tag="Tag_Easy_Dungeon" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="MEDIUM_DUNGEON_Svriir" Tag="Tag_Medium_Dungeon" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="HARD_DUNGEON_Stronghold" Tag="Tag_Hard_Dungeon" PriorityTag="" ExcludeTag="" />
+    </LevelGeneratorChoices>
+    <QuestChoices />
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="AMBUSH" Tag="Tag_Ambush" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="ALL_TRASH" Tag="Tag_All_Trash" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="ALL_LIEUTENANT" Tag="Tag_All_Lieutenant" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="ELITE_ATTACK" Tag="Tag_Elite_Attack" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="EASY_DUNGEON" Tag="Tag_Easy_Dungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MEDIUM_DUNGEON" Tag="Tag_Medium_Dungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="HARD_DUNGEON" Tag="Tag_Hard_Dungeon" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices />
+  </ContentGenerator>
+</MetaData>

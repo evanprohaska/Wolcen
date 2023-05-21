@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill UID="AI_REPU_Veteran_DamageBuff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="15" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="REPU_Veteran_DamageBuff_Shape" />
+    </Shapes>
+    <ParticleList />
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_REPU_Veteran_DamageBuff_passive" Targeting="OnAllies" Duration="5" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimStart="Play_Republic_Veteran_DamageBuff" OnCriticalHit="" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Ondar_Buff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="3" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ondar_Buff_Shape" />
+    </Shapes>
+    <ParticleList />
+    <PassiveSkills>
+      <Skill Index="0" Name="Ondar_Buff" Targeting="OnAllies" Duration="4" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimStart="Play_Republic_Veteran_DamageBuff" OnCriticalHit="" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

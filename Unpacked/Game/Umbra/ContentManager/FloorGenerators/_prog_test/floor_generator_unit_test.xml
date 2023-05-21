@@ -1,0 +1,129 @@
+<MetaData>
+  <FloorGenerator Name="FG_PROG_CUSTOM_ARCHI" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="NPC2_1stFloor" Activity="NPC2" Content="CG_EG_CUSTOM_ARCHI" Weight="1" Tag="NPC2" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Normal" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="fg_prog_test_0" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="NPC2_1stFloor" Activity="NPC2" Content="CG_EG_NPC2" Weight="1" Tag="NPC2" PriorityTag="p0" ExcludeTag="e0" TagsDuration="2" CGPriorityTag="KillNTarget" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="NPC2_2ndFloor" Activity="NPC2" Content="CG_EG_NPC2" Weight="1" Tag="NPC2" PriorityTag="p1" ExcludeTag="e1" TagsDuration="1" CGPriorityTag="KillCP" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="NPC2_3rdFloor" Activity="NPC2" Content="CG_EG_NPC2" Weight="1" Tag="NPC2" PriorityTag="p2" ExcludeTag="e2" TagsDuration="1" CGPriorityTag="KillFTaget" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="fg_prog_test_01_npc2_x1" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="npc2_1" Activity="npc2" Content="test_contentgenerator_npc2" Weight="1" Tag="Mandate" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="fg_prog_test_02_npc2_x3" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="npc2_1" Activity="npc2" Content="test_contentgenerator_npc2" Weight="1" Tag="Mandate" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="npc2_2" Activity="npc2" Content="test_contentgenerator_npc2" Weight="1" Tag="Mandate" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="npc2_3" Activity="npc2" Content="test_contentgenerator_npc2" Weight="1" Tag="Mandate" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="fg_prog_test_03_sarisel_x1" GiveTokenBack="0">
+    <Floor>
+      <ContentChoice Name="sarisel_1" Activity="sarisel" Content="test_contentgenerator_sarisel" Weight="1" Tag="Mandate" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="sarisel_1" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="fg_prog_test_04_sarisel_x3" GiveTokenBack="0">
+    <Floor>
+      <ContentChoice Name="sarisel_1" Activity="sarisel" Content="test_contentgenerator_sarisel" Weight="1" Tag="Mandate" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="sarisel_1" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="sarisel_2" Activity="sarisel" Content="test_contentgenerator_sarisel" Weight="1" Tag="Mandate" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="sarisel_2" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="sarisel_3" Activity="sarisel" Content="test_contentgenerator_sarisel" Weight="1" Tag="Mandate" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="sarisel_3" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="fg_prog_test_05_remi_prototypes" GiveTokenBack="0">
+    <Floor>
+      <ContentChoice Name="WM_destroy_1" Activity="npc2" Content="test_contentgenerator_remi_destroy" Weight="1" Tag="destroy" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="destroy" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="fg_prog_test_06_remi_prototypes" GiveTokenBack="0">
+    <Floor>
+      <ContentChoice Name="WM_destroy_1" Activity="npc2" Content="test_contentgenerator_remi_destroy" Weight="1" Tag="destroy" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="destroy" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="WM_destroy_1" Activity="npc2" Content="test_contentgenerator_remi_destroy" Weight="1" Tag="destroy" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="destroy" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="WM_destroy_1" Activity="npc2" Content="test_contentgenerator_remi_destroy" Weight="1" Tag="destroy" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="destroy" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="fg_prog_test_wait_x1" GiveTokenBack="0">
+    <Floor>
+      <ContentChoice Name="reward_chest_dungeon" Activity="npc2" Content="CG_EG_Consumable_RewardRoom" Weight="1" Tag="RewardChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestDungeon" CGExcludeTag="" />
+      <ContentChoice Name="cursed_reward_chest_dungeon" Activity="npc2" Content="CG_EG_Consumable_RewardRoom" Weight="1" Tag="CursedRewardChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="CursedChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="chest_dungeon" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="ChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestDungeon" CGExcludeTag="" />
+      <ContentChoice Name="goblin_dungeon" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="GoblinDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="GoblinDungeon" CGExcludeTag="" />
+      <ContentChoice Name="chest_room" Activity="npc2" Content="CG_EG_Consumable_RewardRoom" Weight="1" Tag="ChestRoom" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="cursed_chest_room" Activity="npc2" Content="CG_EG_Consumable_RewardRoom" Weight="1" Tag="CursedChestRoom" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="CursedChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="cursed_chest_room_too" Activity="npc2" Content="CG_EG_Consumable_CursedChestRoom" Weight="1" Tag="CursedChestRoomToo" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="fg_prog_test_wait_x3" GiveTokenBack="0">
+    <Floor>
+      <ContentChoice Name="reward_chest_dungeon" Activity="npc2" Content="CG_EG_Consumable_RewardRoom" Weight="1" Tag="RewardChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestDungeon" CGExcludeTag="" />
+      <ContentChoice Name="cursed_reward_chest_dungeon" Activity="npc2" Content="CG_EG_Consumable_RewardRoom" Weight="1" Tag="CursedRewardChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="CursedChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="chest_dungeon" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="ChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestDungeon" CGExcludeTag="" />
+      <ContentChoice Name="goblin_dungeon" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="GoblinDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="GoblinDungeon" CGExcludeTag="" />
+      <ContentChoice Name="chest_room" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="ChestRoom" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="cursed_chest_room" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="CursedChestRoom" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="CursedChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="cursed_chest_room_too" Activity="npc2" Content="CG_EG_Consumable_CursedChestRoom" Weight="1" Tag="CursedChestRoomToo" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="reward_chest_dungeon" Activity="npc2" Content="CG_EG_Consumable_RewardRoom" Weight="1" Tag="RewardChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestDungeon" CGExcludeTag="" />
+      <ContentChoice Name="cursed_reward_chest_dungeon" Activity="npc2" Content="CG_EG_Consumable_RewardRoom" Weight="1" Tag="CursedRewardChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="CursedChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="chest_dungeon" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="ChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestDungeon" CGExcludeTag="" />
+      <ContentChoice Name="goblin_dungeon" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="GoblinDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="GoblinDungeon" CGExcludeTag="" />
+      <ContentChoice Name="chest_room" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="ChestRoom" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="cursed_chest_room" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="CursedChestRoom" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="CursedChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="cursed_chest_room_too" Activity="npc2" Content="CG_EG_Consumable_CursedChestRoom" Weight="1" Tag="CursedChestRoomToo" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="reward_chest_dungeon" Activity="npc2" Content="CG_EG_Consumable_RewardRoom" Weight="1" Tag="RewardChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestDungeon" CGExcludeTag="" />
+      <ContentChoice Name="cursed_reward_chest_dungeon" Activity="npc2" Content="CG_EG_Consumable_RewardRoom" Weight="1" Tag="CursedRewardChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="CursedChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="chest_dungeon" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="ChestDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestDungeon" CGExcludeTag="" />
+      <ContentChoice Name="goblin_dungeon" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="GoblinDungeon" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="GoblinDungeon" CGExcludeTag="" />
+      <ContentChoice Name="chest_room" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="ChestRoom" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="cursed_chest_room" Activity="npc2" Content="CG_EG_DungeonChallenge" Weight="1" Tag="CursedChestRoom" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="CursedChestRoom" CGExcludeTag="" />
+      <ContentChoice Name="cursed_chest_room_too" Activity="npc2" Content="CG_EG_Consumable_CursedChestRoom" Weight="1" Tag="CursedChestRoomToo" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="fg_prog_test_quest_migration" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="npc1_and_npc2_consumables" Activity="npc2" Content="test_contentgenerator_quest_migration" Weight="20" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="me" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_LambachP1_80" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="L80" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="LambachArena,LambachP1_80" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_LambachP1_100" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="L100" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="LambachArena,LambachP1_100" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_LambachP1_120" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="L120" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="LambachArena,LambachP1_120" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_OsharaP3_120" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="O120" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="OsharaArena,OsharaP3_120" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="npc1_and_npc2_consumables" Activity="npc2" Content="test_contentgenerator_quest_migration" Weight="20" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="me" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_LambachP1_80" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="L80" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="LambachArena,LambachP1_80" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_LambachP1_100" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="L100" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="LambachArena,LambachP1_100" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_LambachP1_120" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="L120" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="LambachArena,LambachP1_120" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_OsharaP3_120" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="O120" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="OsharaArena,OsharaP3_120" CGExcludeTag="" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="npc1_and_npc2_consumables" Activity="npc2" Content="test_contentgenerator_quest_migration" Weight="20" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="me" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_LambachP1_80" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="L80" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="LambachArena,LambachP1_80" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_LambachP1_100" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="L100" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="LambachArena,LambachP1_100" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_LambachP1_120" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="L120" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="LambachArena,LambachP1_120" CGExcludeTag="" />
+      <ContentChoice Name="uber_boss_OsharaP3_120" Activity="npc2" Content="CG_EG_Consumable_EliteBossFight" Weight="1" Tag="O120" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="OsharaArena,OsharaP3_120" CGExcludeTag="" />
+    </Floor>
+  </FloorGenerator>
+</MetaData>

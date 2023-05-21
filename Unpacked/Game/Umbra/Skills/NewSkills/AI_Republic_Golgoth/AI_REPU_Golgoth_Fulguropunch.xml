@@ -1,0 +1,58 @@
+<MetaData>
+  <Skill UID="AI_REPU_Golgoth_Fulguropunch" ESkill="AI_REPU_Golgoth_Fulguropunch" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="R Weapon_Bone" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.charge_indicator" Offset="0,0,0" Direction="-1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <SkillSpecific PunchShapeRadius="2" InitialBoltAngle="0" ProjectileCountGo="5" ProjectileCountReturn="5" TimeBetweenProjectiles="0.1" ProjectileSkillUID="AI_REPU_Golgoth_Fulguropunch_Bolt" />
+    <SoundTrigger PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_REPU_Golgoth_Fulguropunch_Bolt" ESkill="default_empty" Keywords="">
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.35" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="repu_golgoth_fulguropunch_bolt_proj" ProjectileCount="2" PenetrationLimit="100" AngleBetweenProjectiles="45" />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <Range AttackRange="30" />
+  </Skill>
+  <Skill UID="AI_Hunt_Golgoth_Fulguropunch_1" ESkill="AI_REPU_Golgoth_Fulguropunch" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="R Weapon_Bone" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.charge_indicator" Offset="0,0,0" Direction="-1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <SkillSpecific PunchShapeRadius="2" InitialBoltAngle="0" ProjectileCountGo="5" ProjectileCountReturn="5" TimeBetweenProjectiles="0.1" ProjectileSkillUID="AI_Hunt_Golgoth_Fulguropunch_Bolt_1" />
+  </Skill>
+  <Skill UID="AI_Hunt_Golgoth_Fulguropunch_Bolt_1" ESkill="default_empty" Keywords="">
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.35" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="hunt_golgoth_fulguropunch_bolt_proj_1" ProjectileCount="2" PenetrationLimit="2" AngleBetweenProjectiles="45" />
+    <Collisions IgnoreTerrainCollisions="0" />
+    <Range AttackRange="30" />
+  </Skill>
+  <Skill UID="AI_Hunt_Golgoth_Fulguropunch_2" ESkill="AI_REPU_Golgoth_Fulguropunch" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="R Weapon_Bone" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.charge_indicator" Offset="0,0,0" Direction="-1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <SkillSpecific PunchShapeRadius="2" InitialBoltAngle="0" ProjectileCountGo="10" ProjectileCountReturn="10" TimeBetweenProjectiles="0.03" ProjectileSkillUID="AI_Hunt_Golgoth_Fulguropunch_Bolt_2" />
+  </Skill>
+  <Skill UID="AI_Hunt_Golgoth_Fulguropunch_Bolt_2" ESkill="default_empty" Keywords="">
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.35" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="hunt_golgoth_fulguropunch_bolt_proj_2" ProjectileCount="2" PenetrationLimit="100" AngleBetweenProjectiles="45" />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <Range AttackRange="30" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,72 @@
+<MetaData>
+  <Quest Name="ACT4_SFUA_End" StartDialog="" Type="Main" UIName="@ui_A4_Q6_SFUA_End_QuestLabel" UIDesc="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="" AutoClearEvents="1" Save="1" CheckPoint="QP_Act4_Quest1_BossSpawn_Phase2">
+      <Goal Order="0" Type="Wait" TimeLimit="0.2" />
+      <GoalLogic Formula="00" />
+    </Step>
+    <Step Order="1" UIName="@ui_A4_Q6_SFUA_End_S1_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="QP_Act4_Quest1_BossSpawn_Phase2">
+      <Goal Order="0" Type="Talk" EntityName="A4_Heimlock_TenseFamily_NPC" DialogName="ACT4_Q6_P3_TenseFamilyMeeting">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="A4_Heimlock_TenseFamily_NPC" Area="Stormfall_SFUA" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4.5" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMusic" Name="Music_ACT4_PostAhrimanDefeat" MusicName="ACT4_PostAhrimanDefeat" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_TenseFamilyMeeting_Valeria_Hide" EntityNames="A4_DYN_TenseFamilyMeeting_Valeria" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_TenseFamilyMeeting_Heimlock_Hide" EntityNames="A4_DYN_TenseFamilyMeeting_Heimlock" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Valeria_Move" MinRadius="0" TeleportedEntityName="A4_DYN_TenseFamilyMeeting_Valeria" DestinationName="QP_EG_GoToSF" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Heimlock_Move" MinRadius="0" TeleportedEntityName="A4_DYN_TenseFamilyMeeting_Heimlock" DestinationName="QP_EG_GoToSF" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Valeria_Move2" MinRadius="0" TeleportedEntityName="A4_DYN_HeimlockAndValeriaPossessed_Valeria" DestinationName="QP_EG_GoToSF" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Heimlock_Move2" MinRadius="0" TeleportedEntityName="A4_DYN_HeimlockAndValeriaPossessed_Heimlock" DestinationName="QP_EG_GoToSF" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Valeria_Move3" MinRadius="0" TeleportedEntityName="A4_DYN_HeimlockAndValeriaPossessed_Valeria_Shader" DestinationName="QP_EG_GoToSF" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Heimlock_Move3" MinRadius="0" TeleportedEntityName="A4_DYN_HeimlockAndValeriaPossessed_Heimlock_Shader" DestinationName="QP_EG_GoToSF" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="ClickableEntity_EndQuest_CheckTheEgg" Hide="1" VFX="" Name="G0_egg_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="drag_oshara_egg32" Hide="1" VFX="" Name="G0_egg_2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="CE_A4_SFUAEnd_Egg" Hide="0" VFX="" Name="G0_egg_2_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg_Pedestal4" Hide="0" VFX="" Name="G0_egg_2_pedestalTrue" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg_Pedestal" Hide="1" VFX="" Name="G0_egg_2_pedestalFalse" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg3" Hide="1" VFX="" Name="G0_egg_3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_Hellion_UnHide" Modifier="HellionCosmetic" Remove="0" Target="#Player" Delay=".1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TenseFamilyMeeting_Valeria_UnHide" EntityNames="A4_Valeria_TenseFamily_NPC" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TenseFamilyMeeting_Heimlock_UnHide" EntityNames="A4_Heimlock_TenseFamily_NPC" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_HeimlockAndValeriaPossessed_Heimlock_Hide" EntityNames="A4_DYN_HeimlockAndValeriaPossessed_Heimlock" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_HeimlockAndValeriaPossessed_Valeria_Hide" EntityNames="A4_DYN_HeimlockAndValeriaPossessed_Valeria" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_HeimlockAndValeriaPossessed_Heimlock_Shader_Hide" EntityNames="A4_DYN_HeimlockAndValeriaPossessed_Heimlock_Shader" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_HeimlockAndValeriaPossessed_Valeria_Shader_Hide" EntityNames="A4_DYN_HeimlockAndValeriaPossessed_Valeria_Shader" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="drag_oshara_egg3_Hide" EntityNames="drag_oshara_egg3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="2" Name="D_TeleportPlayersInPalace_EndQuest" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_BossSpawn_Phase2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_EndQuest_TalkToFamily" AreaRadius="15" Type="GlobalDialog" Name="D_A4_EndQuest_FamilyAftermath" DialogName="ACT4_Q6_P3_FamilyAftermath" IsCST="false" Delay="1.5" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="A4_Heimlock_TenseFamily_NPC" Type="GlobalStopAllDialogs" Name="EndHeimlock_Dialog" />
+    </Step>
+    <Step Order="2" UIName="@ui_A4_Q6_SFUA_End_S2_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="CE_A4_SFUAEnd_Egg" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="CE_A4_SFUAEnd_Egg" Area="Stormfall_SFUA" VFX="U_Utils.Quest.Objective" VFXOffsetZ="1.5" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Impossible" />
+      <Goal Order="2" Type="Impossible" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TenseFamilyMeeting_Valeria_UnHide2" EntityNames="A4_Valeria_TenseFamily_NPC" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TenseFamilyMeeting_Heimlock_UnHide2" EntityNames="A4_Heimlock_TenseFamily_NPC" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="A4_EggReaction" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="DYN_A4_EggReaction" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_TenseFamilyMeeting_Valeria_Hide" EntityNames="A4_DYN_TenseFamilyMeeting_Valeria" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_DYN_TenseFamilyMeeting_Heimlock_Hide" EntityNames="A4_DYN_TenseFamilyMeeting_Heimlock" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" EntityNames="ClickableEntity_EndQuest_CheckTheEgg" Hide="1" VFX="" Name="G1_egg_1" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" EntityNames="drag_oshara_egg32" Hide="1" VFX="" Name="G1_egg_2" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" EntityNames="CE_A4_SFUAEnd_Egg" Hide="1" VFX="" Name="G1_egg_2_1" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg_Pedestal4" Hide="0" VFX="" Name="G1_egg_2_pedestalTrue" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg_Pedestal" Hide="1" VFX="" Name="G1_egg_2_pedestalFalse" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg3" Hide="1" VFX="" Name="G1_egg_3" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalMapModifier" Name="GMM_Hellion_Hide" Modifier="HellionCosmetic" Remove="1" Target="#Player" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A4_SUA_AhrimanDeafeat_Part2" SequenceName="A4_AhrimanDeafeat_Part2" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_AhrimanDeafeat_Part2" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A4_Credits" SequenceName="A3_CREDITS" />
+      <Event Trigger="EventEnd" EventName="A4_Credits" Type="GoalAchieve" Name="A4_P3_AhrimanDefeat_EndGoal1" SimulateOnly="" GoalIndexToAchieve="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityTeleport" Name="D_TeleportPlayersInSFUA" TeleportedEntityName="#Player" DestinationName="SpawnPoint_frompalace" MinRadius="1" />
+      <Event Trigger="EventEnd" EventName="D_TeleportPlayersInSFUA" Type="GoalAchieve" Name="A4_P3_AhrimanDefeat_EndGoal2" SimulateOnly="" GoalIndexToAchieve="2" Delay="0.5" />
+    </Step>
+    <Step Order="3" UIName="@ui_A4_Q6_SFUA_End_S3_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="0.1" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="EventEnd" EventName="Act4_AhrimanQuest_StartEndlessLoop_Success" Type="QuestFail" Name="FailLoop1" QuestName="ACT4_Loop1" />
+      <Event Trigger="EventEnd" EventName="Act4_AhrimanQuest_StartEndlessLoop_Success" Type="QuestFail" Name="FailLoop2" QuestName="ACT4_Loop2" />
+      <Event Trigger="EventEnd" EventName="Act4_AhrimanQuest_StartEndlessLoop_Success" Type="QuestFail" Name="FailLoop3" QuestName="ACT4_Loop3" />
+    </Step>
+  </Quest>
+</MetaData>

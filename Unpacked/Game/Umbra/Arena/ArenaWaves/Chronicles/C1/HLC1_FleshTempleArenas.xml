@@ -1,0 +1,26 @@
+<MetaData>
+  <ArenaWaves Name="Cultist_Arena_HLC2">
+    <Wave Type="Killtarget" Tag="1">
+      <KillTargets>
+        <Entry ClassName="Hunt_FleshCultist01" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="arena_HLC2_IncubationChambers" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="2.5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC2_COFE_FT_Arena1_1" NumberOfEntitiesPerSpawn="2" SpawnFrequency="5" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="5" TargetSpawnLocationID="-2" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="Sc_Sty_HLC2_COFE_FT_Arena1_2" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="-2" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="Belizul_Arena_HLC2">
+    <Wave Type="Killtarget" Tag="1">
+      <KillTargets>
+        <Entry ClassName="Hunt_Belizul" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="arena_HLC2_IncubationChambers" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="0" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC2_COFE_FT_Arena2_1" NumberOfEntitiesPerSpawn="1" SpawnFrequency="5" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="9" TargetSpawnLocationID="-2" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="Sc_Sty_HLC2_COFE_FT_Arena2_2" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="-2" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

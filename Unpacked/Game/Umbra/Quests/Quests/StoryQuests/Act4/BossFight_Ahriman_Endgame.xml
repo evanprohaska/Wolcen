@@ -1,0 +1,138 @@
+<MetaData>
+  <Quest Name="Quest_AhrimanFight1_Endgame" StartDialog="" Type="BossFight" UIName="@ui_A4_Q6_P2_QuestLabel" UIDesc="@">
+    <Step Order="0" UIName="@ui_A4_Q6_P2_S1_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="AhrimanPhase1_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" Target="QP_Act4_Quest1_BossSpawn_Phase2" Area="Stormfall_SFUA" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="ClickableEntity_EndQuest_CheckTheEgg" Hide="1" VFX="" Name="G0_egg_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="drag_oshara_egg32" Hide="1" VFX="" Name="G0_egg_2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="CE_A4_SFUAEnd_Egg" Hide="1" VFX="" Name="G0_egg_2_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg_Pedestal4" Hide="1" VFX="" Name="G0_egg_2_pedestalTrue" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg_Pedestal" Hide="1" VFX="" Name="G0_egg_2_pedestalFalse" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg3" Hide="1" VFX="" Name="G0_egg_3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_Hellion_UnHide" Modifier="HellionCosmetic" Remove="0" Target="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="ClickableEntity_ToPhase2_ACT4" Hide="1" VFX="" Name="CE_ToPhase2_ACT4_Hide" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="AhrimanPhase1_Spawn" SpawnClass="Sc_A4_Q1_Ahriman_Boss_1_Endgame" TargetEntityName="QP_Act4_Quest1_BossSpawn_Phase2" FaceAtSpawn="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="D_A4_P2_AhrimanFightStart" DialogName="ACT4_Q6_P2_AhrimanFightStart" Delay=".1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P2_Ahriman" PercentLeft="75" Type="GlobalDialog" Name="D_A4_P2_AhrimanAt75" DialogName="ACT4_Q6_P2_AhrimanAt75" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_AhrimanAt75" Type="GlobalDialog" Name="D_A4_P2_FirstApocForm" DialogName="ACT4_Q6_P2_FirstApocForm" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_FirstApocForm" Type="GlobalDialog" Name="D_A4_P2_FirstApocFormDefeated" DialogName="ACT4_Q6_P2_FirstApocFormDefeated" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P2_Ahriman" PercentLeft="50" Type="GlobalDialog" Name="D_A4_P2_AhrimanAt50" DialogName="ACT4_Q6_P2_AhrimanAt50" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_AhrimanAt50" Type="GlobalDialog" Name="D_A4_P2_SecondApocForm" DialogName="ACT4_Q6_P2_SecondApocForm" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_SecondApocForm" Type="GlobalDialog" Name="D_A4_P2_SecondApocFormDefeated" DialogName="ACT4_Q6_P2_SecondApocFormDefeated" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P2_Ahriman" PercentLeft="25" Type="GlobalDialog" Name="D_A4_P2_AhrimanAt25" DialogName="ACT4_Q6_P2_AhrimanAt25" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_AhrimanAt25" Type="GlobalDialog" Name="D_A4_P2_ThirdApocForm" DialogName="ACT4_Q6_P2_ThirdApocForm" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_ThirdApocForm" Type="GlobalDialog" Name="D_A4_P2_ThirdApocFormDefeated" DialogName="ACT4_Q6_P2_ThirdApocFormDefeated" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P2_Ahriman" PercentLeft="10" Type="EntityKillAll" Name="A4_P2_AhrimanDefeated_KillSpecters" Area="" MonsterClass="CultOfFury_AhrimanSpecterP2" Delay=".2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P2_Ahriman" PercentLeft="10" Type="EntityIsGod" Name="A4_P2_AhrimanDefeated_God" EntityName="A4_P2_Ahriman" Invincible="1" DisplayVFX="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P2_Ahriman" PercentLeft="10" Type="EntityFaction" Name="A4_P2_AhrimanDefeated_FactionP" EntityName="A4_P2_Ahriman" FactionName="SuperFriendly" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P2_Ahriman" PercentLeft="10" Type="GlobalDialog" Name="D_A4_P2_Ahriman0" DialogName="ACT4_Q6_P2_AhrimanAt0" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_Ahriman0" Type="GlobalDialog" Name="D_A4_P2_To_P3_AhrimanDefeated" DialogName="ACT4_Q6_P2_AhrimanCastsSpell" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_To_P3_AhrimanDefeated" Type="EntityAnimate" Name="Anim_Ahriman_CastsSpell" AnimatedEntityName="A4_P2_Ahriman" Play="COFY_Ahriman_Dyn_CastSpell_01" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_To_P3_AhrimanDefeated" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A4_SUA_AhrimanDefeat_P2_To_P3_Fade" SequenceName="DYN_A4_FadeToBlack" Delay="3" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_To_P3_AhrimanDefeated" Type="EntityIsGod" Name="A4_P2_AhrimanDefeated_NotGod" EntityName="A4_P2_Ahriman" Invincible="0" DisplayVFX="1" Delay="5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_To_P3_AhrimanDefeated" Type="EntityTeleport" MinRadius="2" Name="D_A4_P2_Teleport_Ahriman" TeleportedEntityName="A4_P2_Ahriman" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" Delay="5" />
+      <Event Trigger="EventEnd" EventName="D_A4_P2_To_P3_AhrimanDefeated" Type="EntityKill" Name="Act4_P2_Ahriman_Kill" EntityName="A4_P2_Ahriman" Hide="1" Remove="0" VFX="" Delay="5" />
+    </Step>
+  </Quest>
+  <Quest Name="Quest_AhrimanFight2_Endgame" StartDialog="" Type="BossFight" UIName="@ui_A4_Q6_P3_QuestLabel" UIDesc="@">
+    <Step Order="0" UIName="@ui_A4_Q6_P3_S1_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Impossible" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="D_TeleportInDen" MinRadius="2" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Phase3" Delay="0.1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="Act4_P3_HeimlockEntity_ClearPosition" MinRadius="0" TeleportedEntityName="A4_SFUA_P3_Heimlock_Exorcism" DestinationName="QP_SFUA_P3_Heimlock_Entity" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="Act4_P3_ValeriaEntity_ClearPosition" MinRadius="0" TeleportedEntityName="A4_SFUA_P3_Valeria_Exorcism" DestinationName="QP_SFUA_P3_Valeria_Entity" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="ClickableEntity_BackToThePalace_ACT4" Hide="1" VFX="" Name="CE_EndQuest_ACT4_Hide" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="D_A4_P3_PlayerHeimlockStart" DialogName="ACT4_Q6_P3_HeimlockSpawns" Delay="3.5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="A4_Heimlock_Friend" SpawnClass="Sc_A4_Q1_Ahriman_Heimlock_Bad2" TargetEntityName="QP_Act4_Quest1_HeimlockSpawn_Phase3" VFX="COFY_Ahriman.Specter.DeathSmall" FaceAtSpawn="#Player" Delay="1.5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="A4_Valeria_Friend" SpawnClass="Sc_A4_Q1_Ahriman_Valeria_Bad2" TargetEntityName="QP_Act4_Quest1_ValeriaSpawn_Phase3" VFX="COFY_Ahriman.Specter.DeathSmall" FaceAtSpawn="#Player" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="A4_Heimlock_Friend" Type="EntityFaction" Name="Act4_P3_Heimlock_FactionSpawned" EntityName="A4_P3_Bad_HeimlockFriend" FactionName="SuperFriendly" />
+      <Event Trigger="EventEnd" EventName="A4_Valeria_Friend" Type="EntityFaction" Name="Act4_P3_Valeria_FactionSpawned" EntityName="A4_P3_Bad_ValeriaFriend" FactionName="SuperFriendly" />
+      <Event Trigger="EventEnd" EventName="D_A4_P3_PlayerHeimlockStart" Type="GoalAchieve" Name="Act4_P3_EndTalk_LetsFight" SimulateOnly="" GoalIndexToAchieve="0" />
+    </Step>
+    <Step Order="1" UIName="@ui_A4_Q6_P3_S2_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Impossible" />
+      <Goal Order="1" Type="Impossible" />
+      <Goal Order="2" Type="Exorcism" Names="A4_SFUA_P3_Heimlock_Exorcism" InteractCount="1" ChannelingTime="6" Animation="monster_skill_01">
+        <ArrowMarker Target="A4_SFUA_P3_Heimlock_Exorcism" Area="" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="3" Type="Exorcism" Names="A4_SFUA_P3_Valeria_Exorcism" InteractCount="1" ChannelingTime="6" Animation="monster_skill_01">
+        <ArrowMarker Target="A4_SFUA_P3_Valeria_Exorcism" Area="" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="4" Type="Wait" TimeLimit="1" />
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="D_A4_P3_PlayerValeriaStart" DialogName="ACT4_Q6_P3_ValeriaSpawns" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="ClickableEntity_BackToThePalace_ACT4" Hide="1" VFX="" Name="CE_EndQuest_BackToThePalace_Heimlock_ACT4_Hide" />
+      <Event Trigger="EventEnd" EventName="ACT4_P3_Valeria_Death_Anim" Type="EntityIsHidden" EntityNames="A4_SFUA_P3_Valeria_Exorcism" Hide="0" VFX="" Name="A4_P3_Valeria_Exorcised_UnHide" />
+      <Event Trigger="EventEnd" EventName="ACT4_P3_Heimlock_Death_Anim" Type="EntityIsHidden" EntityNames="A4_SFUA_P3_Heimlock_Exorcism" Hide="0" VFX="" Name="A4_P3_Heimlock_Exorcised_UnHide" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="D_TeleportHeimlockFriendly" MinRadius="0" TeleportedEntityName="A4_P3_Bad_HeimlockFriend" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" Delay="1.2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="Act4_Heimlock_KillFriendly" EntityName="A4_P3_Bad_HeimlockFriend" Hide="1" Remove="0" VFX="" Delay="1.3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="Act4_Heimlock_Spawn" SpawnClass="Sc_A4_Q1_Ahriman_Heimlock_Bad" TargetEntityName="QP_Act4_Quest1_HeimlockSpawn_Phase3" VFX="COFY_Ahriman.Specter.DeathSmall" FaceAtSpawn="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="D_TeleportValeriaFriendly" MinRadius="0" TeleportedEntityName="A4_P3_Bad_ValeriaFriend" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" Delay="1.2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="Act4_Valeria_KillFriendly" EntityName="A4_P3_Bad_ValeriaFriend" Hide="1" Remove="0" VFX="" Delay="1.3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="Act4_Valeria_Spawn" SpawnClass="Sc_A4_Q1_Ahriman_Valeria_Bad" TargetEntityName="QP_Act4_Quest1_ValeriaSpawn_Phase3" VFX="COFY_Ahriman.Specter.DeathSmall" FaceAtSpawn="#Player" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Heimlock" PercentLeft="75" Type="GlobalDialog" Name="D_A4_P3_PlayerHeimlock75" DialogName="ACT4_Q6_P3_HeimlockAt75" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Valeria" PercentLeft="75" Type="GlobalDialog" Name="D_A4_P3_PlayerValeria75" DialogName="ACT4_Q6_P3_ValeriaAt75" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Heimlock" PercentLeft="50" Type="GlobalDialog" Name="D_A4_P3_PlayerHeimlock50" DialogName="ACT4_Q6_P3_HeimlockAt50" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Valeria" PercentLeft="50" Type="GlobalDialog" Name="D_A4_P3_PlayerValeria50" DialogName="ACT4_Q6_P3_ValeriaAt50" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Heimlock" PercentLeft="25" Type="GlobalDialog" Name="D_A4_P3_PlayerHeimlock25" DialogName="ACT4_Q6_P3_HeimlockAt25" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Valeria" PercentLeft="25" Type="GlobalDialog" Name="D_A4_P3_PlayerValeria25" DialogName="ACT4_Q6_P3_ValeriaAt25" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Heimlock" PercentLeft="10" Type="GlobalDialog" Name="D_A4_P3_PlayerHeimlock10" DialogName="ACT4_Q6_P3_HeimlockDefeated" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Valeria" PercentLeft="10" Type="GlobalDialog" Name="D_A4_P3_PlayerValeria10" DialogName="ACT4_Q6_P3_ValeriaDefeated" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Heimlock" PercentLeft="10" Type="GoalAchieve" Name="Act4_Heimlock_Achieve0" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Heimlock" PercentLeft="10" Type="GoalAchieve" Name="Act4_Heimlock_Achieve1" SimulateOnly="0" GoalIndexToAchieve="1" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Heimlock" PercentLeft="10" Type="EntityIsGod" Name="Act4_Heimlock_God" EntityName="A4_P3_Bad_Heimlock" Invincible="1" KeepAlive="1" DisplayVFX="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Heimlock" PercentLeft="10" Type="EntityFaction" Name="Act4_P3_Heimlock_Faction" EntityName="A4_P3_Bad_Heimlock" FactionName="SuperFriendly" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Heimlock" PercentLeft="10" Type="EntityTeleport" MinRadius="0" Name="Act4_P3_HeimlockEntity_Teleport" TeleportedEntityName="A4_SFUA_P3_Heimlock_Exorcism" DestinationName="A4_P3_Bad_Heimlock" />
+      <Event Trigger="EventEnd" EventName="Act4_P3_HeimlockEntity_Teleport" Type="EntityTeleport" Name="Act4_P3_HeimlockIA_Teleport" MinRadius="0" TeleportedEntityName="A4_P3_Bad_Heimlock" DestinationName="QP_Act4_Quest1_PlayerSpawn_Phase2" />
+      <Event Trigger="EventEnd" EventName="Act4_P3_HeimlockEntity_Teleport" Type="EntityAnimate" Name="ACT4_P3_Heimlock_Exorcism_Anim" AnimatedEntityName="A4_SFUA_P3_Heimlock_Exorcism" Play="REPU_Heimlock_Skill_Exorcism_In_01" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventEnd" EventName="ACT4_P3_Heimlock_Exorcism_Anim" Type="EntityAnimate" Name="ACT4_P3_Heimlock_ExorcismWaiting_Anim" AnimatedEntityName="A4_SFUA_P3_Heimlock_Exorcism" Play="REPU_Heimlock_Skill_Exorcism_Loop_01" Loop="1" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="A4_SFUA_P3_Heimlock_Exorcism" Type="EntityRotate" Name="D_RotatePlayersInHeimlockP3" RotatedEntityName="#Player" Target="A4_SFUA_P3_Heimlock_Exorcism" FaceTarget="0" />
+      <Event Trigger="EventEnd" EventName="Act4_P3_HeimlockEntity_Teleport" Type="EntityIsGod" Name="Act4_Heimlock_NotGod" EntityName="A4_P3_Bad_Heimlock" Invincible="0" DisplayVFX="1" />
+      <Event Trigger="EventEnd" EventName="Act4_Heimlock_NotGod" Type="EntityKill" Name="Act4_Heimlock_Kill" EntityName="A4_P3_Bad_Heimlock" Hide="1" Remove="1" VFX="" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EventEnd" Name="ACT4_P3_HeimlockExorcism_End" EventsName="ACT4_P3_Heimlock_ExorcismWaiting_Anim" Remove="" TriggerEnd="" />
+      <Event Trigger="EventEnd" EventName="ACT4_P3_HeimlockExorcism_End" Type="EntityAnimate" Name="ACT4_P3_Heimlock_Death_Anim" AnimatedEntityName="A4_SFUA_P3_Heimlock_Exorcism" Play="REPU_Heimlock_Skill_Exorcism_Out_01" Loop="0" SpeedScale="1" BlendingTime="0" Delay=".1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityTeleport" Name="Act4_P3_HeimlockEntity_TeleportToQP" MinRadius="0" TeleportedEntityName="A4_SFUA_P3_Heimlock_Exorcism" DestinationName="QP_SFUA_P3_Heimlock_Entity" Delay="4" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Valeria" PercentLeft="10" Type="GoalAchieve" Name="Act4_Valeria_Achieve0" SimulateOnly="0" GoalIndexToAchieve="0" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Valeria" PercentLeft="10" Type="EntityIsGod" Name="Act4_Valeria_God" EntityName="A4_P3_Bad_Valeria" Invincible="1" KeepAlive="1" DisplayVFX="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Valeria" PercentLeft="10" Type="EntityFaction" Name="Act4_P3_Valeria_Faction" EntityName="A4_P3_Bad_Valeria" FactionName="SuperFriendly" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Bad_Valeria" PercentLeft="10" Type="EntityTeleport" MinRadius="0" Name="Act4_P3_ValeriaEntity_Teleport" TeleportedEntityName="A4_SFUA_P3_Valeria_Exorcism" DestinationName="A4_P3_Bad_Valeria" />
+      <Event Trigger="EventEnd" EventName="Act4_P3_ValeriaEntity_Teleport" Type="EntityTeleport" Name="Act4_P3_ValeriaIA_Teleport" MinRadius="0" TeleportedEntityName="A4_P3_Bad_Valeria" DestinationName="QP_Act4_Quest1_PlayerSpawn_Phase2" />
+      <Event Trigger="EventEnd" EventName="Act4_P3_ValeriaEntity_Teleport" Type="EntityAnimate" Name="ACT4_P3_Valeria_Exorcism_Anim" AnimatedEntityName="A4_SFUA_P3_Valeria_Exorcism" Play="NPC_Valeria_Skill_Exorcism_In_01" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventEnd" EventName="ACT4_P3_Valeria_Exorcism_Anim" Type="EntityAnimate" Name="ACT4_P3_Valeria_ExorcismWaiting_Anim" AnimatedEntityName="A4_SFUA_P3_Valeria_Exorcism" Play="NPC_Valeria_Skill_Exorcism_Loop_01" Loop="1" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="A4_SFUA_P3_Valeria_Exorcism" Type="EntityRotate" Name="D_RotatePlayersInValeriaP3" RotatedEntityName="#Player" Target="A4_SFUA_P3_Valeria_Exorcism" FaceTarget="0" />
+      <Event Trigger="EventEnd" EventName="Act4_P3_ValeriaEntity_Teleport" Type="EntityIsGod" Name="Act4_Valeria_NotGod" EntityName="A4_P3_Bad_Valeria" Invincible="0" DisplayVFX="1" />
+      <Event Trigger="EventEnd" EventName="Act4_Valeria_NotGod" Type="EntityKill" Name="Act4_Valeria_Kill" EntityName="A4_P3_Bad_Valeria" Hide="1" Remove="1" VFX="" Delay=".1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EventEnd" Name="ACT4_P3_ValeriaExorcism_End" EventsName="ACT4_P3_Valeria_ExorcismWaiting_Anim" Remove="" TriggerEnd="" />
+      <Event Trigger="EventEnd" EventName="ACT4_P3_ValeriaExorcism_End" Type="EntityAnimate" Name="ACT4_P3_Valeria_Death_Anim" AnimatedEntityName="A4_SFUA_P3_Valeria_Exorcism" Play="NPC_Valeria_Skill_Exorcism_Out_01" Loop="0" SpeedScale="1" BlendingTime="0" Delay=".1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="ACT4_Epilogue_Update1" Localization="@ui_A4_Q6_P3_S2_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="D_A4_P3_PlayerHeimlock10" Type="GlobalDialog" Name="D_A4_P3_HeimlockExorcism" DialogName="ACT4_Q6_P3_HeimlockExorcism" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalDialog" Name="D_A4_P3_HeimlockExorcised" DialogName="ACT4_Q6_P3_HeimlockExorcised" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="ACT4_Epilogue_Update2" Localization="@ui_A4_Q6_P3_S2_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="D_A4_P3_HeimlockExorcised" Type="GlobalDialog" Name="D_A4_P3_ValeriaExorcism" DialogName="ACT4_Q6_P3_ValeriaExorcism" Delay=".5" />
+    </Step>
+    <Step Order="2" UIName="@ui_A4_Q6_P3_S3_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="AhrimanPhase2_Spawn" KillCount="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="Sc_A4_Q1_Ahriman_Boss_2" Area="Stormfall_SFUA" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Impossible" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMusic" Name="Music_ACT4_Ahriman_SecondBossFight" MusicName="ACT4_Ahriman_SecondBossFight" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="Act4_P3_ValeriaEntity_TeleportToQP" MinRadius="0" TeleportedEntityName="A4_SFUA_P3_Valeria_Exorcism" DestinationName="QP_SFUA_P3_Valeria_Entity" Delay="4" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="ClickableEntity_BackToThePalace_ACT4" Hide="1" VFX="" Name="CE_EndQuest_BackToThePalace_Valeria_ACT4_Hide" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="AhrimanPhase2_Spawn" SpawnClass="Sc_A4_Q1_Ahriman_Boss_2_Endgame" TargetEntityName="QP_Act4_Quest1_BossSpawn_Phase3" FaceAtSpawn="#Player" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="D_A4_P3_AhrimanArrives" DialogName="ACT4_Q6_P3_AhrimanArrives" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Ahriman" PercentLeft="75" Type="GlobalDialog" Name="D_A4_P3_PlayerAhriman75" DialogName="ACT4_Q6_P3_AhrimanAt75" Delay=".1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Ahriman" PercentLeft="50" Type="GlobalDialog" Name="D_A4_P3_PlayerAhriman50" DialogName="ACT4_Q6_P3_AhrimanAt50" Delay=".1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P3_Ahriman" PercentLeft="25" Type="GlobalDialog" Name="D_A4_P3_PlayerAhriman25" DialogName="ACT4_Q6_P3_AhrimanAt25" Delay=".1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityKillAll" Name="A4_P3_AhrimanDefeated_KillSpectersP3" Area="" MonsterClass="CultOfFury_AhrimanSpecterP3" Delay=".1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalMapModifier" Name="GMM_Hellion_Hide" Modifier="HellionCosmetic" Remove="1" Target="#Player" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalMapModifier" Name="GMM_TimeDistortion_Hide" Modifier="TimeDistortion" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A4_SUA_AhrimanDefeat_Part1" SequenceName="A4_AhrimanDeafeat_Part1" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="2" Name="D_TeleportInDen2" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Phase2" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_AhrimanDefeat_Part1" Type="GlobalLoot" Name="GlobalLoot_Ahriman" LootClass="LC_Ahriman" Target="QP_Act4_Quest1_BossSpawn_Phase2" AffixOrigin="Ahriman" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_AhrimanDefeat_Part1" Type="GoalAchieve" Name="A4_P3_AhrimanDefeat_Part1_Played" SimulateOnly="" GoalIndexToAchieve="1" Delay="0.1" />
+    </Step>
+  </Quest>
+</MetaData>

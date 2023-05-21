@@ -1,0 +1,40 @@
+<MetaData>
+  <Skill UID="AI_CultOfFlesh_Amalgam_LegSwipe" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" Type="rend" />
+    <Cooldown Cooldown="2.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="CultOfFlesh_Amalgam_LegSwipe_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Outlaw_Brute_Attack_Swing" OnAnimCast="Play_Outlaw_Brute_Attack_Impact" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_CultOfFlesh_Amalgam_LegCombo" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" Type="rend" />
+    <Cooldown Cooldown="6.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="CultOfFlesh_Amalgam_LegCombo_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Outlaw_Brute_Attack_Swing" OnAnimCast="Play_Outlaw_Brute_Attack_Impact" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_CultOfFlesh_Amalgam_JumpAttack" ESkill="AI_default_leap" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1.4" Type="rend" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Cooldown Cooldown="6" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="2" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_02" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="CultOfFlesh_Amalgam_JumpAttack_Shape" />
+    </Shapes>
+    <SkillSpecific Speed="35" MoveDistanceMinimum="1" MoveDistanceMaximum="15" MidPointAdvancement="0.75" RaycastHeightOffset="2.5" JumpHeight="3.5" JumpZOnlyForce="35" JumpZOnlyFallingGravityMultiplier="8" HeightLimit="3" NavPathLengthLimit="20" TriggerDistance="1.5" LeapGravity="-30" />
+    <SoundTrigger OnAnimStart="PLAY_AI_SadisticThug_LeapJump" OnAnimLoopOut="PLAY_AI_SadisticThug_LeapImpact" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,20 @@
+<MetaData>
+  <CastEffect Name="grave_digger_permanent">
+    <Param Type="Particle" ParticleName="U_Trails.gravedigger.light" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Lantern" OrientToViewDir="1" />
+  </CastEffect>
+  <CastEffect Name="gravedigger_digging">
+    <Param Type="Particle" ParticleName="U_Trails.gravedigger.digging" Scale="1" Offset="0,0,0" Direction="0,0,1" BonePos="particle3" NoUpdate="1" />
+  </CastEffect>
+  <CastEffect Name="gravedigger_dirt_shovel">
+    <Param Type="Particle" ParticleName="U_Trails.gravedigger.dirt_trail" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle5" />
+  </CastEffect>
+  <CastEffect Name="gravedigger_dirt_shovel2">
+    <Param Type="Particle" ParticleName="U_Trails.gravedigger.dirt_trail" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle5" />
+  </CastEffect>
+  <CastEffect Name="gravedigger_charge">
+    <Param Type="Particle" ParticleName="U_Trails.gravedigger.light_charge" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Lantern" OrientToViewDir="1" />
+    <Param Type="Particle" ParticleName="U_Trails.gravedigger.charge_move" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Spine1" />
+    <Param Type="Particle" ParticleName="U_Trails.gravedigger.eye" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_right_bone" />
+    <Param Type="Particle" ParticleName="U_Trails.gravedigger.eye" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_left_bone" />
+  </CastEffect>
+</MetaData>

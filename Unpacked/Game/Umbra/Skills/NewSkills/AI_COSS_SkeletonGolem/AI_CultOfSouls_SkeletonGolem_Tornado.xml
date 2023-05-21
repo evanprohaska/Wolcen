@@ -1,0 +1,14 @@
+<MetaData>
+  <Skill UID="AI_CultOfSouls_SkeletonGolem_Tornado" ESkill="AI_CultOfSouls_SkeletonGolem_Tornado" Keywords="magic_spell">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageWeapon Type="Frost" WeaponMultiplier="2" />
+    <CastingParams CanCastWhileMoving="0" />
+    <Cooldown Cooldown="10" />
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnAnimStart="Play_COSS_SkeletonGolem_Tornado_Cast" OnHit="Play_Hero_TakeDamage_Ice_Medium" PlayAttackVoice="1" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="CultOfSouls_SkeletonGolem_Projectile_DZ" />
+    </DamageZone>
+    <SkillSpecific MovementDuration="5" TimeToSelectTarget="5" MinTornadoesToSpawn="1" MaxTornadoesToSpawn="1" MinSpawnRadius="5" MaxSpawnRadius="10" />
+  </Skill>
+</MetaData>

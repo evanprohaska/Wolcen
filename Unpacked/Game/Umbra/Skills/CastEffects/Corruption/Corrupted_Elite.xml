@@ -1,0 +1,44 @@
+<MetaData>
+  <CastEffect Name="rail_shoot_init">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.railshoot_warning" Scale="1" Offset="0,0,0" Direction="0,0,1" BonePos="Bip01 Look" />
+    <Param Type="Particle" ParticleName="U_Corruption.elite.railshoot_laserwarning" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Look" OrientToViewDir="1" NoUpdate="1" />
+    <Param Type="Particle" ParticleName="U_Corruption.elite.railshoot_hand" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R Hand" />
+    <Param Type="Particle" ParticleName="U_Corruption.elite.railshoot_hand" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 L Hand" />
+  </CastEffect>
+  <CastEffect Name="corrupted_elite_default">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.permanent" Scale="1" Offset="0,0,0" Direction="0,0,1" BonePos="Bip01 Spine3" />
+    <Param Type="Particle" ParticleName="U_Corruption.elite.tentacle_black" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Neck" OrientToViewDir="0" />
+    <Param Type="Particle" ParticleName="U_Corruption.elite.light1" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Look" OrientToViewDir="1" />
+  </CastEffect>
+  <CastEffect Name="corrupted_elite_shield">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.shield_warning" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Look" />
+    <Param Type="Particle" ParticleName="U_Corruption.elite.shield" Scale="1" Offset="0,0,0" Direction="0,0,1" BonePos="Bip01 Spine2" KillAfter="8" />
+  </CastEffect>
+  <CastEffect Name="corrupted_elite_jump">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.jump_start" Scale="1" Offset="0,0,0" Direction="0,0,1" NoUpdate="1" BonePos="Locator_Locomotion" />
+  </CastEffect>
+  <CastEffect Name="corrupted_elite_weapon_creation">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.weapon_creation_hand" Scale="1" Offset="0,0,0" Direction="0,0,1" BonePos="Bip01 R Hand" OrientToViewDir="1" />
+  </CastEffect>
+  <CastEffect Name="corrupted_elite_weapon_creation_dual_charge">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.weapon_creation_noemitter_attached" Scale="1" Offset="0,0,0" BonePos="Bip01 R Hand" />
+    <Param Type="Particle" ParticleName="U_Corruption.elite.weapon_creation_noemitter_attached" Scale="1" Offset="0,0,0" BonePos="Bip01 L Hand" />
+  </CastEffect>
+  <CastEffect Name="corrupted_elite_weapon_creation_lens_flare">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.weapon_creation_lens_flare" Scale="1" Offset="0,0,0" Direction="0,0,1" BonePos="Bip01 R Hand" OrientToViewDir="1" />
+  </CastEffect>
+  <CastEffect Name="corrupted_elite_weapon_creation_dual_charge_lens_flare">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.weapon_creation_lens_flare" Scale="1" Offset="0,0,0" Direction="0,0,1" BonePos="Bip01 R Hand" OrientToViewDir="1" />
+    <Param Type="Particle" ParticleName="U_Corruption.elite.weapon_creation_lens_flare" Scale="1" Offset="0,0,0" Direction="0,0,1" BonePos="Bip01 L Hand" OrientToViewDir="1" />
+  </CastEffect>
+  <CastEffect Name="corrupted_elite_remove_weapon">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.weapon_destruction" Scale="1" Offset="0,0,0" BonePos="Bip01 R Hand" />
+  </CastEffect>
+  <CastEffect Name="corrupted_elite_dual_charge_remove_weapon">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.weapon_destruction" Scale="1" Offset="0,0,0" BonePos="Bip01 R Hand" />
+    <Param Type="Particle" ParticleName="U_Corruption.elite.weapon_destruction" Scale="1" Offset="0,0,0" BonePos="Bip01 L Hand" />
+  </CastEffect>
+  <CastEffect Name="corrupted_elite_end_jump_charge">
+    <Param Type="Particle" ParticleName="U_Corruption.elite.slash_area" Scale="1" Offset="0,0,0" Direction="0,0,1" BonePos="Bip01 Spine2" KillAfter="3" NoUpdate="0" />
+  </CastEffect>
+</MetaData>

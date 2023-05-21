@@ -1,0 +1,21 @@
+<MetaData>
+  <Skill UID="ACT4_NeutralisedHeimlock" ESkill="AI_default_maintainedskillwithdamageinshape" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="ParticleIn" Name="U_VFX_Oskar.Monster.REPU_Soldier_Flamethrower_Init" Offset="0,-5.0,-5.0" Direction="0,0,1" Scale="1" Bone="Bip01" />
+      <Particle Key="ShapeParticle" Name="U_VFX_Oskar.Monster.REPU_Soldier_Flamethrower_Loop" Offset="0,-5.0,-5.0" Direction="0,0,1" Scale="1" Bone="Bip01" />
+      <Particle Key="ParticleOut" Name="U_VFX_Oskar.Monster.REPU_Soldier_Flamethrower_End" Offset="0,-5.0,-5.0" Direction="0,0,1" Scale="1" Bone="Bip01" />
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Fire" Offset="0,-5.0,-5.0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageWeapon Type="fire" WeaponMultiplier="0.0001" />
+    <Cooldown Cooldown="1" />
+    <DamageZone Duration="0" RateOfFire="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="AI_REPU_Flamethrower_Cone_DZ" />
+    </Shapes>
+    <SoundTrigger OnAnimLoopIn="" OnAnimLoopOut="" OnInterrupt="" OnHit="" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="1000" MaxDuration="100000" MaxTimeOutDuration="1000" DistanceBetweenParticles="100" DZForwardOffset="0" />
+  </Skill>
+</MetaData>

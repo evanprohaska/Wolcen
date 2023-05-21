@@ -1,0 +1,28 @@
+<MetaData>
+  <Preset Name="apo_warrior" StatsName="warrior_stats" Type="warrior" MinApoResourceToTransform="300" RestoredHealthPercentOnDropForm="30">
+    <UIParams Name="@ui_apo_warrior_name" Lore="@ui_apo_warrior_lore" />
+    <Visuals AnimationActionTag="player_skill_spawn_warrior" ADB="Animations/Mannequin/ADB/Apocalyptic/APO_Warrior.adb" CDF="objects/characters/players/apocalyptic/APO_Warrior/APO_Warrior.cdf" Scale="1.3">
+      <VFX_OnBeginPlayerToApo>
+        <Entry VFX="U_ApocalypticForm.Worrior_ApocalypticFrom.Transform_Camera_Fadeout" Bone="Bip01 Spine" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0.05" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+        <Entry VFX="U_ApocalypticForm.Worrior_ApocalypticFrom.Transform_Camera" Bone="Bip01 Spine" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0.55" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+      </VFX_OnBeginPlayerToApo>
+      <VFX_OnBeginApoToPlayer>
+        <Entry VFX="U_ApocalypticForm.Worrior_ApocalypticFrom.TransformToHuman" Bone="Bip01 Spine2" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+        <Entry VFX="U_ApocalypticForm.Worrior_ApocalypticFrom.TransformToHuman_Camera" Bone="Bip01 Spine" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+      </VFX_OnBeginApoToPlayer>
+      <MutationSkins>
+        <Entry MutationName="apo_warrior_permanent_vfx" SkinName="apo_warrior_skin_permanent_vfx" />
+      </MutationSkins>
+    </Visuals>
+    <TransformationSkill SkillUID="apo_warrior_apotransform" />
+    <Skills>
+      <Entry Slot="16" SkillUID="apo_warrior_chargegeneration" />
+      <Entry Slot="17" SkillUID="apo_warrior_chargeconsumption" />
+      <Entry Slot="18" SkillUID="apo_warrior_brutalstrike" />
+      <Entry Slot="24" SkillUID="apowarrior_default_attack_01" />
+      <Entry Slot="25" SkillUID="apo_warrior_moveattack" />
+      <Entry Slot="26" SkillUID="apo_warrior_moveattack" />
+    </Skills>
+    <Stacks MaxStacks="5" />
+  </Preset>
+</MetaData>

@@ -1,0 +1,44 @@
+<MetaData>
+  <Skill UID="AI_outlaw_warlord_whirlwind" ESkill="AI_outlaw_warlord_whirlwind" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <DamageWeapon WeaponMultiplier=".5" />
+    <Particles ParticleName="U_Character.Skills.Whirldwind_Inver" ParticleBone="Bip01" ParticleOffSet="0,0,1.5" ParticleDirection="0,1,0" ParticleScale="1" />
+    <Cooldown Cooldown="20.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="2" />
+    <Shapes>
+      <Entry ShapeName="Outlaw_Warlord_Whirlwind" />
+    </Shapes>
+    <SkillSpecific Speed="8.0" MoveDistance="5" TriggerDistance="1" TimeBetweenHits="0.33" MaxDuration="8" MaxTimeOutDuration="2" CanStayStillWhileSpinning="0" />
+    <SoundTrigger OnAnimStart="" OnAnimLoopIn="PLAY_AI_SadisticThug_WhirlwindLoop" OnAnimLoopOut="PLAY_AI_SadisticThug_WhirlwindEnd" OnInterrupt="STOP_AI_SadisticThug_WhirlwindLoop" OnReset="STOP_AI_SadisticThug_WhirlwindLoop" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_hunt_warlord_whirlwind" ESkill="AI_outlaw_warlord_whirlwind" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <DamageWeapon WeaponMultiplier=".5" />
+    <Particles ParticleName="U_Character.Skills.Whirldwind_Inver" ParticleBone="Bip01" ParticleOffSet="0,0,1.5" ParticleDirection="0,1,0" ParticleScale="1" />
+    <Cooldown Cooldown="5.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="2" />
+    <Shapes>
+      <Entry ShapeName="Outlaw_Warlord_Whirlwind" />
+    </Shapes>
+    <SkillSpecific Speed="12" MoveDistance="5" TriggerDistance="1" TimeBetweenHits="0.33" MaxDuration="8" MaxTimeOutDuration="2" CanStayStillWhileSpinning="0" />
+    <SoundTrigger OnAnimStart="" OnAnimLoopIn="PLAY_AI_SadisticThug_WhirlwindLoop" OnAnimLoopOut="PLAY_AI_SadisticThug_WhirlwindEnd" OnInterrupt="STOP_AI_SadisticThug_WhirlwindLoop" OnReset="STOP_AI_SadisticThug_WhirlwindLoop" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_ShadowOutlaw_warlord_whirlwind" ESkill="AI_outlaw_warlord_whirlwind" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier=".5" />
+    <Particles ParticleName="U_Character.Skills.Whirldwind_Inver" ParticleBone="Bip01" ParticleOffSet="0,0,1.5" ParticleDirection="0,1,0" ParticleScale="1" />
+    <Cooldown Cooldown="20.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="2" />
+    <Shapes>
+      <Entry ShapeName="Outlaw_Warlord_Whirlwind" />
+    </Shapes>
+    <SkillSpecific Speed="8.0" MoveDistance="5" TriggerDistance="1" TimeBetweenHits="0.33" MaxDuration="8" MaxTimeOutDuration="2" CanStayStillWhileSpinning="0" />
+    <SoundTrigger OnAnimStart="" OnAnimLoopIn="PLAY_AI_SadisticThug_WhirlwindLoop" OnAnimLoopOut="PLAY_AI_SadisticThug_WhirlwindEnd" OnInterrupt="STOP_AI_SadisticThug_WhirlwindLoop" OnReset="STOP_AI_SadisticThug_WhirlwindLoop" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

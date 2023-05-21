@@ -1,0 +1,146 @@
+<MetaData>
+  <Projectile ID="gun_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bullet.Bullet.Bullet_Normal" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="" />
+      <HitEnvironment SoundTriggerName="Play_Bullet_Impact_Miss" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="gun_proj_fire" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bullet.Bullet.Bullet_Fire" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="" />
+      <HitEnvironment SoundTriggerName="Play_Bullet_Impact_Miss" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="gun_proj_frost" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bullet.Bullet.Bullet_Ice" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="" />
+      <HitEnvironment SoundTriggerName="Play_Bullet_Impact_Miss" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="gun_proj_lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bullet.Bullet.Bullet_Lightning" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="" />
+      <HitEnvironment SoundTriggerName="Play_Bullet_Impact_Miss" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="gun_proj_umbra" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bullet.Bullet.Bullet_Umbra" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="" />
+      <HitEnvironment SoundTriggerName="Play_Bullet_Impact_Miss" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="gun_proj_sacred" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bullet.Bullet.Bullet_Sacred" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="" />
+      <HitEnvironment SoundTriggerName="Play_Bullet_Impact_Miss" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="gun_proj_shadow" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bullet.Bullet.Bullet_Shadow" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="" />
+      <HitEnvironment SoundTriggerName="Play_Bullet_Impact_Miss" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="gun_proj_rend" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bullet.Bullet.Bullet_Rend" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="" />
+      <HitEnvironment SoundTriggerName="Play_Bullet_Impact_Miss" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="gun_proj_toxic" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bullet.Bullet.Bullet_Toxic" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="" />
+      <HitEnvironment SoundTriggerName="Play_Bullet_Impact_Miss" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+</MetaData>

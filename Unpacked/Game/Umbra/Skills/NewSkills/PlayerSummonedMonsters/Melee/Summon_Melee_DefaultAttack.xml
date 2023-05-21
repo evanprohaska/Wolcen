@@ -1,0 +1,42 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="magic_spell" UID="summon_default_melee">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Summon_Melee_DefaultAttack" />
+    </Shapes>
+    <SoundTrigger OnHit="PLAY_AI_Undead_Attack" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Skeleton_Leap" ESkill="AI_default_leap" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Cooldown Cooldown="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="2" />
+    <Shapes>
+      <Entry ShapeName="Outlaw_Warlord_Leap" />
+    </Shapes>
+    <SkillSpecific Speed="35" MoveDistanceMinimum="1" MoveDistanceMaximum="15" MidPointAdvancement="0.5" RaycastHeightOffset="2.5" JumpHeight="2" JumpZOnlyForce="35" JumpZOnlyFallingGravityMultiplier="8" HeightLimit="3" NavPathLengthLimit="20" TriggerDistance="1.5" LeapGravity="-30" />
+    <SoundTrigger OnAnimStart="" OnAnimLoopOut="" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Skeleton_Teleportation" ESkill="ai_default_charge" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="REPU_Golgoth_QuickCharge_TargetDetection_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Start" Name="U_VFX_Oskar.WIP.Skeleton_Teleport_Init01" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="End" Name="U_VFX_Oskar.WIP.Skeleton_Teleport_Init01" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="100" ChargeDistance="30" StopChargeAtTarget="1" HideDuringCharge="1">
+      <Extra Type="Particles" />
+    </SkillSpecific>
+  </Skill>
+</MetaData>

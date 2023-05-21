@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="AI_Summon_Champion_Shadow_Default_Attack" ESkill="default_melee" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="0.8" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Summon_ShadowChampion_DefaultAttack" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Summoned_Champion_Shadow_MeleeAttack_Swing" OnHit="Play_Summoned_Champion_Shadow_MeleeAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Summon_Champion_Shadow_Leap" ESkill="AI_default_leap" Keywords="magic_spell">
+    <HUD ShowParamsInTooltip="Explosion" ShowParamsInAST="Explosion" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1.4" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="2" />
+    <Cooldown Cooldown="0.2" />
+    <Shapes>
+      <Entry ShapeName="Outlaw_Warlord_Leap" />
+    </Shapes>
+    <SkillSpecific Speed="50" MoveDistanceMinimum="1" MoveDistanceMaximum="15" MidPointAdvancement="0.75" RaycastHeightOffset="2.5" JumpHeight="3.5" JumpZOnlyForce="7" JumpZOnlyFallingGravityMultiplier="8" HeightLimit="3" NavPathLengthLimit="20" TriggerDistance="1.5" LeapGravity="-30" />
+    <SoundTrigger OnAnimStart="Play_Summoned_Champion_Shadow_LeapJump" OnAnimLoopOut="Play_Summoned_Champion_Shadow_LeapImpact" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar03_enragewarcry" ESkill="AI_republicjusticar03_enragewarcry" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="6" StunDuration="0.33" />
+    <CastingParams CastBone="Bip01_Cannons" CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar03_EnrageWarcry" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Warcry" Name="U_Character.Skills.Warcry_01" Offset="1.5,0,0" Direction="0,0,1" Scale="1.45" Delay="0.13" Bone="Bip01" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_REPU_Justicar_passive" Targeting="OnAllies,OnSelf" Duration="10" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimCast="Play_Edric_Justicar1_InexorableCharge_Warcry" />
+  </Skill>
+</MetaData>

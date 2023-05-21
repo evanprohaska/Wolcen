@@ -1,0 +1,30 @@
+<MetaData>
+  <MonsterManager Name="MM_ben_level_test">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="2" HConstraint_TriggerFactorPercent="30" CConstraint_CountThreshold="2" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="100" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="1" />
+    <CombatPointsRepartition Mode="fixed" CP="0.1" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="20" />
+    <Categories>
+      <Entry Category="S_B" SpawnClassFamily="Scf_WreckCoast_S_B" MandatoryContentKeywords="" />
+      <Entry Category="S_O" SpawnClassFamily="Scf_WreckCoast_S_O" MandatoryContentKeywords="" />
+      <Entry Category="S_A" SpawnClassFamily="Scf_SvriirsNetwork1_S_Spa" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="S_B" Percentage="50" />
+      <Entry Category="S_O" Percentage="20" />
+      <Entry Category="S_A" Percentage="30" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="1" SpawnClassFamily="Scf_WreckCoast_S_O" />
+      <Entry DeduceCPFromTotal="1" SpawnClassFamily="Scf_WreckCoast_S_B" />
+      <Entry DeduceCPFromTotal="1" SpawnClassFamily="Scf_SvriirsNetwork1_S_Trash" />
+      <Entry DeduceCPFromTotal="1" SpawnClassFamily="Scf_WreckCoast_S_B" />
+      <Entry DeduceCPFromTotal="1" SpawnClassFamily="Scf_WreckCoast_S_Medium" />
+    </FMP>
+    <SpawnPatterns />
+  </MonsterManager>
+</MetaData>

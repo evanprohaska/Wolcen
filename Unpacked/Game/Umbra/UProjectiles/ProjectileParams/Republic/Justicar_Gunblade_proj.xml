@@ -1,0 +1,68 @@
+<MetaData>
+  <Projectile ID="Justicar_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,-1" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Justica.Bullet_Projectile_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="Play_Edric_Justicar1_RepeatingShots_Projectile_Impact" />
+      <HitEnvironment SoundTriggerName="Play_Edric_Justicar1_RepeatingShots_Projectile_Impact_Miss" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="hunt_Justicar_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,-1" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Justica.Bullet_Projectile_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Justica.FocusedShot_Impact" Direction="0,0,1" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_hunt_justicar_proj" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="Play_Edric_Justicar2_FocusedShot_Impact_Explosion" />
+      <HitEnvironment SoundTriggerName="Play_Edric_Justicar2_FocusedShot_Impact_Explosion" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="Justicar_focusedshot_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,-1" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Justica.FocusedShot_Projectile" Direction="0,1,0" WorldSpace="0" Scale="1.0" />
+      <Hit ParticleName="U_Monster.Justica.FocusedShot_Impact" Direction="0,0,1" WorldSpace="1" Scale="1.5" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Edric_Justicar2_FocusedShot_Proj_Loop" />
+      <Hit SoundTriggerName="Play_Edric_Justicar2_FocusedShot_Impact_Explosion" />
+      <HitEnvironment SoundTriggerName="Play_Edric_Justicar2_FocusedShot_Impact_Explosion" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="Justicar_Homing_Proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Justica.Bullet_Projectile_01" Direction="0,1,0" WorldSpace="0" Scale="1.5" />
+      <Hit ParticleName="U_Monster.Justica.FocusedShot_Impact" Direction="0,0,1" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="180" TimeBeforeHoming="1" MaxLifeTime="4" MaxTravelDistance="-1" />
+    <Speed SpeedMin="10" SpeedMax="10" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="Play_Edric_Justicar1_RepeatingShots_Projectile_Impact" />
+    </Audio>
+  </Projectile>
+</MetaData>

@@ -1,0 +1,65 @@
+<Builds>
+  <Build Name="Stance_H0" RightKeywords="fist" LeftKeywords="fist,trinket,shield">
+    <Skill Slot="11" Name="playerskill_H0_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H1_Melee" RightKeywords="1h,mace,sword,axe,dagger" LeftKeywords="fist,trinket">
+    <Skill Slot="11" Name="playerskill_H1_Melee_atk_01" CanBeReplaced="0" AutoDash="dash_H1_melee_noshield" />
+  </Build>
+  <Build Name="Stance_H2_Hammer" RightKeywords="2h,mace" LeftKeywords="fist">
+    <Skill Slot="11" Name="playerskill_H2_Hammer_atk_01" CanBeReplaced="0" AutoDash="dash_H2_melee_hammer" />
+  </Build>
+  <Build Name="Stance_H1_DualDaggers" RightKeywords="dagger" LeftKeywords="dagger">
+    <Skill Slot="11" Name="playerskill_H1_DualDaggers_atk_01" CanBeReplaced="0" AutoDash="dash_H1_melee_dualdaggers" />
+  </Build>
+  <Build Name="Stance_H1_DualMelee" RightKeywords="1h,mace,sword,axe,dagger" LeftKeywords="1h,mace,sword,axe,dagger">
+    <Skill Slot="11" Name="playerskill_H1_DualMelee_atk_01" CanBeReplaced="0" AutoDash="dash_H1_melee_dualmelee" />
+  </Build>
+  <Build Name="Stance_H1_Melee_H1_Shield" RightKeywords="fist,mace,sword,axe,dagger,1h" LeftKeywords="shield">
+    <Skill Slot="11" Name="playerskill_H1_Melee_H1_Shield_atk_01" CanBeReplaced="0" AutoDash="dash_H1_melee_shield" />
+  </Build>
+  <Build Name="Stance_H2_Sword" RightKeywords="2h,sword" LeftKeywords="fist">
+    <Skill Slot="11" Name="playerskill_H2_Sword_atk_01" CanBeReplaced="0" AutoDash="dash_H2_melee_sword" />
+  </Build>
+  <Build Name="Stance_H2_Axe" RightKeywords="2h,axe" LeftKeywords="fist">
+    <Skill Slot="11" Name="playerskill_H2_Axe_atk_01" CanBeReplaced="0" AutoDash="dash_H2_melee_axe" />
+  </Build>
+  <Build Name="Stance_H2_Crossbow" LeftKeywords="fist" RightKeywords="crossbow">
+    <Skill Slot="11" Name="playerskill_H2_Crossbow_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H2_Bow" LeftKeywords="fist" RightKeywords="bow">
+    <Skill Slot="11" Name="playerskill_H2_Bow_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H2_Melee_H1_Shield" RightKeywords="2h,sword,axe,mace" LeftKeywords="shield">
+    <Skill Slot="11" Name="playerskill_H1_Melee_H1_Shield_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H2_DualMelee" RightKeywords="2h,mace,axe,sword" LeftKeywords="2h,mace,axe,sword">
+    <Skill Slot="11" Name="playerskill_H1_DualMelee_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H2_Melee_H1_Melee" RightKeywords="2h,mace,sword,axe" LeftKeywords="1h,mace,dagger,sword,axe">
+    <Skill Slot="11" Name="playerskill_H1_DualMelee_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H1_Melee_H2_Melee" RightKeywords="1h,mace,dagger,sword,axe" LeftKeywords="2h,mace,axe,sword">
+    <Skill Slot="11" Name="playerskill_H1_DualMelee_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H1_Pistol_H2_Melee" ForceStandAlternateBuild="Gun and Weapon Distance" RightKeywords="gun" LeftKeywords="2h,mace,sword,axe">
+    <Skill Slot="11" Name="playerskill_H1_Pistol_H1_Melee_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H2_Staff" RightKeywords="weapon,staff,2h,mage" LeftKeywords="fist">
+    <Skill Slot="11" Name="playerskill_H2_Staff_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H1_Pistol_H1_Melee" ForceStandAlternateBuild="Stance_H1_Pistol_H1_Melee_Alt" RightKeywords="gun" LeftKeywords="1h,mace,sword,axe,dagger">
+    <Skill Slot="11" Name="playerskill_H1_Melee_H1_Pistol_atk_01" CanBeReplaced="0" AutoDash="dash_H1_melee_gunweapon" />
+  </Build>
+  <Build Name="Stance_H1_Pistol_H1_Melee_Alt" IgnoreDuringAutoSelection="1" RightKeywords="gun" LeftKeywords="1h,mace,sword,axe,dagger">
+    <Skill Slot="11" Name="playerskill_H1_Pistol_H1_Melee_alt_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H1_Pistol_H1_Shield" RightKeywords="gun" LeftKeywords="shield">
+    <Skill Slot="11" Name="playerskill_H1_Pistol_H1_Shield_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H1_DualPistol" RightKeywords="gun" LeftKeywords="gun">
+    <Skill Slot="11" Name="playerskill_H1_DualPistol_atk_01" CanBeReplaced="0" />
+  </Build>
+  <Build Name="Stance_H1_Pistol" RightKeywords="gun" LeftKeywords="fist,trinket">
+    <Skill Slot="11" Name="playerskill_H1_Pistol_atk_01" CanBeReplaced="0" />
+  </Build>
+</Builds>

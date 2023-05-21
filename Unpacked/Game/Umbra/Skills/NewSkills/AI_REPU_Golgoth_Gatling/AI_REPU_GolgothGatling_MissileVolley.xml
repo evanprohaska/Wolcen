@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="AI_REPU_GolgothGatling_MissileVolley" ESkill="AI_REPU_GOLGOTHGATLING_MISSILEVOLLEY" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="24" CooldownTrigger="OnEnd" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="0.9" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Missile" Name="REPU_Golgoth_Gatling.Missile Volley Rocket.Breakable" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Impact" Name="REPU_Golgoth_Gatling.Missile Volley Rocket.Impact AoE" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Indicator" Name="REPU_Golgoth_Gatling.Missile Volley Rocket.Indicator" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Projectile" Name="REPU_Golgoth_Gatling.Missile Volley.Projectile Down" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Explosion" Name="U_VFX_Oskar.AoE.Fire_Explosion_r5" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Smoke" Name="REPU_Golgoth_Gatling.Missile Volley Rocket.Broken" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="REPU_GolgothGatling_MissileVolley_DZ" />
+    </DamageZone>
+    <Range AttackRange="15" />
+    <SkillSpecific TimeBeforeMissilesLand="1" DamageRate="0.5" RocketAOERadius="8" MissileLifetime="13" MissileElectricityDelay="3" SpaceBetweenMissiles="8" ProjectileTrailLength="0.4" />
+    <Summoning MaxSummons="4" SummonsSuicideWhenMasterDies="1" SummonDuration="10" KillLowestHPOnOversummoning="0">
+      <SummonedSpawnClass Key="Missile" Name="sc_Missile" />
+    </Summoning>
+    <SoundTrigger PlayAttackVoice="1" OnAnimStart="Play_REPU_Golgoth_Gatling_IEMMisslewave_Prepare" OnAnimCast="Play_REPU_Golgoth_Gatling_IEMMisslewave_Launch" />
+  </Skill>
+</MetaData>

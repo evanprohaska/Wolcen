@@ -1,0 +1,14 @@
+<MetaData>
+  <Projectile ID="repu_golgothflamethrower_speargrab_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1" />
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="500" />
+    <Speed SpeedMin="30" SpeedMax="30" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+</MetaData>

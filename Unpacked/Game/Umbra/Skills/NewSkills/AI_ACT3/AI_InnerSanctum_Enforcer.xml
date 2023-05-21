@@ -1,0 +1,100 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_Enforcer_FireStun">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="2" />
+    <StatusAilment>
+      <Stun Chance="100" ChanceMode="override" Duration="1" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Enforcer_FireStun_Shape" />
+    </Shapes>
+    <DamageZone Duration="1" RateOfFire="2" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Transform_Ready.Decal_Horizontal_Type.66" Offset="0,0,0" Direction="0,0,1" Scale="1.2" TimeScale="0.3" />
+      <Particle Key="DamageZone" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Charging_Ground.Dust" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="0" RandomBaseDistMax="0" RandomBaseAngleMin="0" RandomBaseAngleMax="0" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="2" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" />
+  </Skill>
+  <Skill UID="AI_InnerSanctum_Enforcer_Summon" ESkill="AI_TMPL_Knight_Prayer" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <TemporaryProtection ComputeHealthFrom="Caster" HealthPercent="5" />
+    <SkillSpecific PrayerDuration="10" />
+    <SecondarySkillToCast>
+      <Entry Key="OnSuccess" UID="AI_InnerSanctum_Enforcer_SuccessSummon" />
+      <Entry Key="OnFailure" UID="AI_InnerSanctum_Enforcer_FailureSummon" />
+    </SecondarySkillToCast>
+  </Skill>
+  <Skill UID="AI_InnerSanctum_Enforcer_SuccessSummon" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSpawn="Play_DemonOfSouls_Attack_Impact" />
+    <Particles ParticleName="U_Monster.Charger.Charger_Spawn_01" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="0.0" />
+    <Summoning MaxSummons="100" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_InnerSanctum_Enforcer1" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_InnerSanctum_Enforcer_Summon2" ESkill="AI_TMPL_Knight_Prayer" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <TemporaryProtection ComputeHealthFrom="Caster" HealthPercent="5" />
+    <SkillSpecific PrayerDuration="10" />
+    <SecondarySkillToCast>
+      <Entry Key="OnSuccess" UID="AI_InnerSanctum_Enforcer_SuccessSummon2" />
+      <Entry Key="OnFailure" UID="AI_InnerSanctum_Enforcer_FailureSummon" />
+    </SecondarySkillToCast>
+  </Skill>
+  <Skill UID="AI_InnerSanctum_Enforcer_SuccessSummon2" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSpawn="Play_DemonOfSouls_Attack_Impact" />
+    <Particles ParticleName="U_Monster.Charger.Charger_Spawn_01" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="0.0" />
+    <Summoning MaxSummons="100" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_InnerSanctum_Enforcer2" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_InnerSanctum_Enforcer_FailureSummon" ESkill="AI_TMPL_Knight_PrayerFailure" Keywords="magic_spell">
+    <Cooldown Cooldown="0.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <StatusAilment>
+      <stun Chance="100" ChanceMode="override" Duration="2" DurationMode="override" />
+    </StatusAilment>
+  </Skill>
+  <Skill UID="AI_InnerSanctum_Enforcer_Dialogs_01" ESkill="Misc_StartDialog" Keywords="">
+    <StartDialog>
+      <Dialogs>
+        <Entry DialogId="ACT3_Quest1_IS_SinadrahelFight2" />
+        <Entry DialogId="ACT3_Quest1_IS_SinadrahelFight3" />
+      </Dialogs>
+    </StartDialog>
+  </Skill>
+  <Skill UID="AI_InnerSanctum_Enforcer_Dialogs_02" ESkill="Misc_StartDialog" Keywords="">
+    <StartDialog>
+      <Dialogs>
+        <Entry DialogId="ACT3_Quest1_IS_SinadrahelFight4" />
+        <Entry DialogId="ACT3_Quest1_IS_SinadrahelFight5" />
+      </Dialogs>
+    </StartDialog>
+  </Skill>
+  <Skill UID="AI_InnerSanctum_Enforcer_Dialogs_03" ESkill="Misc_StartDialog" Keywords="">
+    <StartDialog>
+      <Dialogs>
+        <Entry DialogId="ACT3_Quest1_IS_SinadrahelFight2" />
+        <Entry DialogId="ACT3_Quest1_IS_SinadrahelFight6" />
+      </Dialogs>
+    </StartDialog>
+  </Skill>
+  <Skill UID="AI_InnerSanctum_Enforcer_Dialogs_04" ESkill="Misc_StartDialog" Keywords="">
+    <StartDialog>
+      <Dialogs>
+        <Entry DialogId="ACT3_Quest1_IS_SinadrahelFight3" />
+        <Entry DialogId="ACT3_Quest1_IS_SinadrahelFight4" />
+        <Entry DialogId="ACT3_Quest1_IS_SinadrahelFight5" />
+      </Dialogs>
+    </StartDialog>
+  </Skill>
+</MetaData>

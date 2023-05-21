@@ -1,0 +1,34 @@
+<MetaData>
+  <ArenaWaves Name="FleshCity">
+    <Wave Type="Killcount" TargetKillCount="21" Tag="1">
+      <PrefabParams PrefabName="arena_FleshCity" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="9" Type="once" TargetSpawnClass="sc_COFE_FleshCity_Spreader" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="once" TargetSpawnClass="sc_COFE_FleshCity_Spreader" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" TargetSpawnClass="sc_COFE_FleshCity_ZoF" NumberOfEntitiesPerSpawn="3" SpawnFrequency="6" MaxNumberOfSpawnedEntities="9" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="6" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" TargetSpawnClass="sc_COFE_FleshCity_RoF" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxNumberOfSpawnedEntities="5" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" TargetSpawnClass="sc_COFE_FleshCity_FurySpirit" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxNumberOfSpawnedEntities="5" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killcount" TargetKillCount="22" Tag="2">
+      <PrefabParams PrefabName="arena_FleshCity" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="sc_COFE_FleshCity_CoF" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="once" TargetSpawnClass="sc_COFE_FleshCity_CoF" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill" TargetSpawnClass="sc_COFE_FleshCity_RoF" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxNumberOfSpawnedEntities="10" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="5" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="fill" TargetSpawnClass="sc_COFE_FleshCity_FurySpirit" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxNumberOfSpawnedEntities="10" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="5" TargetSpawnLocationID="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killcount" TargetKillCount="36" Tag="2">
+      <PrefabParams PrefabName="arena_FleshCity" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="sc_COFE_FleshCity_CoF_R2" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" TargetSpawnClass="sc_COFE_FleshCity_CoF_R2" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="fill" TargetSpawnClass="sc_COFE_FleshCity_RoF" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2.5" MaxNumberOfSpawnedEntities="14" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="fill" TargetSpawnClass="sc_COFE_FleshCity_FurySpirit" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2.5" MaxNumberOfSpawnedEntities="14" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="7.5" Type="once" TargetSpawnClass="sc_COFE_FleshCity_FurySpirit" NumberOfEntitiesPerSpawn="3" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="once" TargetSpawnClass="sc_COFE_FleshCity_FurySpirit" NumberOfEntitiesPerSpawn="3" TargetSpawnLocationID="2" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

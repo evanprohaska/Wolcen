@@ -1,0 +1,27 @@
+<MetaData>
+  <Skill UID="AI_COFY_AhrimanSpecter_CrossingLines" ESkill="AI_COFY_AhrimanSpecter_CrossingLines" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_02" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone RateOfFire="0.3" Duration="2.5" RemoveParticleWithShape="1" />
+    <Range AttackRange="40" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Fire_Tile_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="COFY_Ahriman.FlameSquare.Indicator" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman.FlameSquare.AoE" Offset="0,0,0" Scale="1" Direction="0,0,1" />
+    </ParticleList>
+    <SkillSpecific Anticipation="2" TileDistance="3" IsCircle="0" IsDebuffCircle="0" IsRandomShape="1" NoOuterRing="0">
+      <Upgrade AssociatedProject="mysterious_shenanigans_construct">
+        <Entry Upgrade="0" TileDistance="2" IsDebuffCircle="0" NoOuterRing="0" />
+        <Entry Upgrade="1" TileDistance="2" IsDebuffCircle="0" NoOuterRing="0" />
+        <Entry Upgrade="2" TileDistance="2" IsDebuffCircle="0" NoOuterRing="0" />
+        <Entry Upgrade="3" TileDistance="2" IsDebuffCircle="1" NoOuterRing="1" />
+      </Upgrade>
+    </SkillSpecific>
+    <SoundTrigger OnHit="Play_DOT_Burn" PlayAttackVoice="1" OnAnimStart="Play_Ahriman_Specter_CrossingLines_Cast" OnAnimCast="Play_Ahriman_Specter_CrossingLines_Impact" />
+  </Skill>
+</MetaData>

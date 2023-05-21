@@ -1,0 +1,34 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_Oshara02_DefaultRanged">
+    <Animation ActionString="monster_skill_06" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 Tongue3" CanCastWhileMoving="0" MaintainedCast="0" MaximumTurnRate="60" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" />
+    <SoundTrigger OnAnimStart="" />
+    <Explosion ExplosionRadius="4" />
+    <Projectile Name="Oshara02_DefaultRanged_proj" ProjectileCount="1" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="2" distanceMax="7" totalAngleAtDistanceMin="0" totalAngleAtDistanceMax="0" projectileAngleAtDistanceMin="0" projectileAngleAtDistanceMax="0" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.1" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="2" CastAtTargetPos="1" TargetBone="Bip01" />
+      <LoopAttributes NumberOfLoops="5" TimeBetweenLoopsBase="0.06" ResetTargetPosBetweenLoops="1" FaceTargetEntity="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill UID="AI_Oshara02_DefaultRanged_test" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_06" ScaleWithAttackSpeed="1" />
+    <CastingParams CastBone="Bip01 Tongue3" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="360" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon WeaponMultiplier="2" />
+    <Cooldown Cooldown="0.1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="Oshara02_DefaultRanged_proj" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="4" />
+    <Range ProjectileMinDistance="4" AttackRange="15" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="" OnAnimCast="" OnHit="" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

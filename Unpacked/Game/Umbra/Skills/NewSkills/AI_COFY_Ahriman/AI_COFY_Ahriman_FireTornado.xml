@@ -1,0 +1,140 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_FireTornadoP2" ESkill="AI_COFY_AHRIMAN_FIRETORNADO" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_06" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="0.8" />
+    <Cooldown Cooldown="30" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Range AttackRange="20" />
+    <DamageZone RateOfFire="0.2" Duration="12" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FireTornado" />
+    </Shapes>
+    <Particles ParticleOffSet="0,-5,-5" ParticleDirection="-1,0,0" ParticleName="COFY_Ahriman_bys.Fire_Tornado.Tornado_Loop_and_Out" ParticleScale="0" />
+    <ParticleList>
+      <Particle Key="Tornado" Name="COFY_Ahriman_bys.Fire_Tornado.Tornado_Loop_and_Out" Direction="0,0,1" />
+    </ParticleList>
+    <SkillSpecific AngleBetweenParticlesInDegrees="40" />
+    <SoundTrigger OnHit="Play_Dragon_Juvenile_ScorchedEarth_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlyingTornadoP2_1" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="3" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="" OnHit="Play_Dragon_Juvenile_ScorchedEarth_Impact" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlyingSmash_Shape_Tornado" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="0.1" />
+      <Particle Key="Indicator" Name="COFY_Ahriman_bys.Fire_Tornado.Indicator" Offset="0,0,0.12" Direction="0,0,1" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman_bys.Fire_Tornado.Tornado_Loop_And_Out" Offset="0,0,1" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageZone Duration="12" RateOfFire="0.33" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="1" Duration="0.01" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="2" DZDamageRatioOfMainDamage="0.6" RandomPos1="516,3190,122" RandomPos2="516,3175,122" RandomPos3="535,3175,122" RandomPos4="535,3190,122" UseRandomPos="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlyingTornadoP2_2" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="50" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="" OnHit="Play_Dragon_Juvenile_ScorchedEarth_Impact" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlyingSmash_Shape_Tornado" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="0.1" />
+      <Particle Key="Indicator" Name="COFY_Ahriman_bys.Fire_Tornado.Indicator" Offset="0,0,1" Direction="0,0,1" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman_bys.Fire_Tornado.Tornado_Loop_And_Out" Offset="0,0,1" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageZone Duration="12" RateOfFire="0.33" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="1" Duration="0.01" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="2" DZDamageRatioOfMainDamage="0.6" RandomPos1="516,3190,122" RandomPos2="516,3175,122" RandomPos3="535,3175,122" RandomPos4="535,3190,122" UseRandomPos="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlyingTornadoP2_3" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="50" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlyingSmash_Shape_Tornado" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="0.1" />
+      <Particle Key="Indicator" Name="COFY_Ahriman_bys.Fire_Tornado.Indicator" Offset="0,0,1" Direction="0,0,1" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman_bys.Fire_Tornado.Tornado_Loop_And_Out" Offset="0,0,1" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageZone Duration="12" RateOfFire="0.33" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="1" Duration="0.01" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="2" DZDamageRatioOfMainDamage="0.6" RandomPos1="516,3190,122" RandomPos2="516,3175,122" RandomPos3="535,3175,122" RandomPos4="535,3190,122" UseRandomPos="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlyingTornadoP2_1_Nerfed" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="50" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlyingSmash_Shape_Tornado" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="0.1" />
+      <Particle Key="Indicator" Name="COFY_Ahriman_bys.Fire_Tornado.Indicator" Offset="0,0,1" Direction="0,0,1" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman_bys.Fire_Tornado.Tornado_Loop_And_Out" Offset="0,0,1" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageZone Duration="8" RateOfFire="0.33" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="1" Duration="0.01" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="2" DZDamageRatioOfMainDamage="0.6" RandomPos1="516,3190,122" RandomPos2="516,3175,122" RandomPos3="535,3175,122" RandomPos4="535,3190,122" UseRandomPos="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlyingTornadoP2_2_Nerfed" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="50" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlyingSmash_Shape_Tornado" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="0.1" />
+      <Particle Key="Indicator" Name="COFY_Ahriman_bys.Fire_Tornado.Indicator" Offset="0,0,1" Direction="0,0,1" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman_bys.Fire_Tornado.Tornado_Loop_And_Out" Offset="0,0,1" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageZone Duration="8" RateOfFire="0.33" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="1" Duration="0.01" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="2" DZDamageRatioOfMainDamage="0.6" RandomPos1="516,3190,122" RandomPos2="516,3175,122" RandomPos3="535,3175,122" RandomPos4="535,3190,122" UseRandomPos="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlyingTornadoP2_3_Nerfed" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="50" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Ahriman_FlyingSmash_Shape_Tornado" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="0.1" />
+      <Particle Key="Indicator" Name="COFY_Ahriman_bys.Fire_Tornado.Indicator" Offset="0,0,1" Direction="0,0,1" Scale="1" TimeScale="1" />
+      <Particle Key="DamageZone" Name="COFY_Ahriman_bys.Fire_Tornado.Tornado_Loop_And_Out" Offset="0,0,1" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageZone Duration="8" RateOfFire="0.33" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="1" Duration="0.01" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="2" DZDamageRatioOfMainDamage="0.6" RandomPos1="516,3190,122" RandomPos2="516,3175,122" RandomPos3="535,3175,122" RandomPos4="535,3190,122" UseRandomPos="1" />
+  </Skill>
+</MetaData>

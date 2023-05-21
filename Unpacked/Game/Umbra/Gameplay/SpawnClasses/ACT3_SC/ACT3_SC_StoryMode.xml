@@ -1,0 +1,492 @@
+<MetaData>
+  <SpawnClass Name="Sc_A3_Temple_NamedPriest">
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_A3_Temple_NamedKnight">
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_1">
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="6" NumberMax="8" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_2">
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="6" NumberMax="8" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_3">
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="3" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_4">
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="3" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_5">
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="3" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_6">
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="4" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="4" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_7">
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="6" NumberMax="8" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_8">
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="6" NumberMax="8" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_9">
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="3" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_10">
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="3" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Medium_11">
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="3" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Hard_1">
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="4" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Hard_2">
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="4" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Hard_3">
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="4" NumberMax="8" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Hard_4">
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="4" NumberMax="8" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSniper_Red" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Hard_5">
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Hard_6">
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged_red" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="RepublicJusticar_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Repu_RW2_Hard_7">
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword_Red" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="RepublicAssassin_Red" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Small_Fury_1">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Small_Fury_2">
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Small_Fury_3">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Small_Fury_4">
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Small_Fury_5">
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Medium_Fury_1">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedVeteran" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Medium_Fury_2">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Medium_Fury_3">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Medium_Fury_4">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Medium_Fury_5">
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Large_Fury_1">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedAssassin" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Large_Fury_2">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedAssassin" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Large_Fury_3">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedVeteran" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedAssassin" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Trenches_Large_Fury_4">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="PacifiedAssassin" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart_SiegeBeast_R1">
+    <Spawn Type="Actor" ClassName="PacifiedSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_Small_Bat">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_Medium_Bat">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_Large_Bat">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_5CP_1">
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_5CP_2">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_5CP_3">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_5CP_4">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_10CP_1">
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_10CP_2">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_10CP_3">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_10CP_4">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_10CP_5">
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_10CP_6">
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_10CP_7">
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_15CP_1">
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_15CP_2">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_15CP_3">
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_15CP_4">
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_15CP_5">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_15CP_6">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Rampart2_FurySpawn_15CP_7">
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="75" />
+      <BossRank Id="2" Frequency="25" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP5_1">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP5_2">
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP5_3">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP10_1">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedVeteran" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP10_2">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedVeteran" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP10_3">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP10_4">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP15_1">
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedGolgoth" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP15_2">
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedAssassin" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP15_3">
+    <Spawn Type="Actor" ClassName="PacifiedVeteran" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedGolgoth" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP15_4">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedVeteran" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedAssassin" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP15_5">
+    <Spawn Type="Actor" ClassName="PacifiedInfantryRanged" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedAssassin" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP15_6">
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedGolgoth" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP20_1">
+    <Spawn Type="Actor" ClassName="PacifiedSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedGolgoth" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP20_2">
+    <Spawn Type="Actor" ClassName="PacifiedSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedVeteran" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedGolgoth" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP20_3">
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedVeteran" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedAssassin" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Tower_CP20_4">
+    <Spawn Type="Actor" ClassName="PacifiedSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="PacifiedAssassin" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Cultist1_Monolith2">
+    <Spawn Type="Actor" ClassName="Monolith_Cultist_01" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Cultist2_Monolith2">
+    <Spawn Type="Actor" ClassName="Monolith_Cultist_02" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Cultist3_Monolith2">
+    <Spawn Type="Actor" ClassName="Monolith_Cultist_03" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+</MetaData>

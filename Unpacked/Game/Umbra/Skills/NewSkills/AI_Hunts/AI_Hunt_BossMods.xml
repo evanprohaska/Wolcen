@@ -1,0 +1,44 @@
+<MetaData>
+  <Skill UID="AI_Hunt_BossMod_Vulnerability" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="REPU_Veteran_DamageBuff_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="BuffOnTarget" Name="U_Monster_Alt.gameplay.break_elite" Direction="1,0,0" Bone="Bip01" Scale=".5" Offset="0,1,0" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_Hunt_BossMod_Vulnerability_passive" Targeting="OnSelf" Duration="5" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimStart="" OnCriticalHit="" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_BossMod_SlowStart" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="REPU_Veteran_DamageBuff_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="BuffOnTarget" Name="U_Buff.Debuff.Slow" Direction="1,0,0" Bone="Bip01" Scale="2" Offset="0,0,0" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_Hunt_BossMod_SlowStart_passive" Targeting="OnSelf" Duration="20" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimStart="" OnCriticalHit="" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_Ondar_Buff_Allies" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="REPU_Veteran_DamageBuff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_Hunt_Ondar_Allies_Buff" Targeting="OnAllies" Duration="0.2" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimStart="" OnCriticalHit="" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

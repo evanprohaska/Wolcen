@@ -1,0 +1,29 @@
+<MetaData>
+  <Skill UID="AI_Oshara01_DragonLeap" ESkill="ai_default_charge" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_05_in" ActionString_Loop="monster_skill_loop_05_loop" ActionString_Out="monster_skill_loop_05_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="Oshara01_Leap_DetectionShape" />
+    </Shapes>
+    <Blownaway Height="0" Distance="8" StunDuration="0" Chance="100" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="Oshara01_DragonLeap_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.charge_indicator" Offset="0,0,0" Direction="-1,0,0" Scale="2" InstantKill="0" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="20" ChargeDistance="30" StopChargeAtTarget="0">
+      <Extra Type="CastDamageZone">
+        <Entry DamageZoneName="Oshara01_DragonLeap_DZ" Trigger="OnDashStart" LinkedVFX="Wave" ParticleTiling="3" />
+      </Extra>
+      <Extra Type="Particles" />
+      <Extra Type="FrontAttack">
+        <Shape ShapeName="Oshara01_Tailswipe" />
+      </Extra>
+    </SkillSpecific>
+    <SoundTrigger OnAnimStart="Play_Dragon_Oshara_DragonLeap_JumpAndFlight" OnAnimLoopIn="" OnAnimLoopOut="Play_Dragon_Oshara_DragonLeap_DiveAndLand" OnInterrupt="" />
+  </Skill>
+</MetaData>

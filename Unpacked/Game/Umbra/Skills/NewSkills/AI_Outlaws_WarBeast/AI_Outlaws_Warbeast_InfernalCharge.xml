@@ -1,0 +1,39 @@
+<MetaData>
+  <Skill UID="AI_Outlaws_Warbeast_InfernalCharge" ESkill="ai_default_charge" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="REPU_Golgoth_QuickCharge_TargetDetection_Shape" />
+    </Shapes>
+    <Blownaway Height="0" Distance="3.5" StunDuration="0.1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_InfernalCharge_Indicator" Offset="0,0,0" Direction="-1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Trail" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_InfernalCharge_Charge" Bone="Bip01" InstantKill="0" Direction="0,0,1" />
+      <Particle Key="TrailTorch" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_InfernalCharge_ChargeTorch" Bone="Bip01 Head" InstantKill="0" Direction="0,0,1" />
+      <Particle Key="SideShape" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_InfernalCharge_Decal" InstantKill="0" Direction="0,0,1" />
+      <Particle Key="SideDZ" Name="U_Monster.Siviir.Alpha_Breath_Fire_Ground_Loop_01" Direction="0,0,1" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="24" ChargeDistance="18" StopChargeAtTarget="0">
+      <Extra Type="FrontAttack">
+        <Shape ShapeName="Warbeast_RelentlessRun_Shape" />
+      </Extra>
+      <Extra Type="SideAttack">
+        <Shape ShapeWidth="4" RightOffset="0" WidthFactorForParticlePacing="2" />
+        <DamageZone TurnIntoDamageZoneAfterDash="1" DamageZoneSkillUID="AI_Outlaws_Warbeast_InfernalCharge_DZ" />
+      </Extra>
+      <Extra Type="Particles" />
+    </SkillSpecific>
+    <SoundTrigger OnAnimStart="Play_Outlaw_Warbeast_InfernalCharge_Start" OnHit="Play_Outlaw_Warbeast_InfernalCharge_Impact" />
+  </Skill>
+  <Skill UID="AI_Outlaws_Warbeast_InfernalCharge_DZ" ESkill="default_empty" Keywords="magic_spell">
+    <Cooldown Cooldown="0.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="0.3" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="0" RateOfFire="1" Duration="5" MaxEntityHits="0" MaxHitsTotal="0" RemoveParticleWithShape="0" RemoveDamageZoneWhenCasterDies="0" CanNotHitSameEntityTwice="0" />
+    <SoundTrigger OnHit="Play_DOT_Burn" />
+  </Skill>
+</MetaData>

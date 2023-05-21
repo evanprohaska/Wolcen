@@ -1,0 +1,198 @@
+<MetaData>
+  <LevelSheet Name="DungeonZoo_Forest" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EntityManager Name="DungeonZoo_Forest" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="DungeonZoo_Necropolis" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EntityManager Name="DungeonZoo_Necropolis" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="DungeonZoo_TPS" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EntityManager Name="EM_StoryMode_Act3_PPS" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="DungeonZoo_GenericCave" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EntityManager Name="EM_StoryMode_Act2_SvriirCave" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="DungeonZoo_Templar" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EntityManager Name="EM_StoryMode_Act2_TempleOfJustice" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="DungeonZoo_RedWaste" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EntityManager Name="EM_StoryMode_Act3_RedWaste2" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="DungeonZoo_SecondaryContent" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EntityManager Name="EM_Secondary_Content_Templar" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="DungeonZoo_Stronghold" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EntityManager Name="EM_AdventureMode_Stronghold_EG" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="DungeonZoo_Swamp" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EntityManager Name="EM_AdventureMode_Swamp_EG" />
+    <EnvironmentVisualVariations Choices="2" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_SvriirLair" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="DungeonZoo_Wetlands" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EntityManager Name="EM_AdventureMode_Wetland_EG" />
+    <EnvironmentVisualVariations Choices="2" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_SvriirLair" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="test_area_hub" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="test_area_1" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="test_area_1_spawnpoint_1" />
+      <Entry EntityName="test_area_1_spawnpoint_2" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="test_monster_manager_descriptor_COSS_OTLW_1" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="test_area_2" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="test_area_2_spawnpoint_1" />
+      <Entry EntityName="test_area_2_spawnpoint_2" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="test_monster_manager_descriptor_COSS_OTLW_1" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="test_Necropolis_1" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="test_monster_manager_descriptor_COSS_OTLW_1" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="Test_LD" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="NPC2_NecropolisGore_MM" />
+    <EntityManager Name="EM_AdventureMode_NecropolisGore_EG_C1" />
+    <SecondaryContentGenerator Name="CG_Test_LevelDesign" />
+    <HUD UIName="@ui_NPC2_NecropolisImpaled_Name" />
+  </LevelSheet>
+  <LevelSheet Name="Test_LD_Dungeon" GameMode="adventure" Type="random_dungeon">
+    <MonsterManager Name="GYM_END_GAME_TPS" />
+    <EntityManager Name="EM_AdventureMode_TPS_EG_C1" />
+    <SecondaryContentGenerator Name="CG_Test_EncounterDesign" />
+    <HUD UIName="@ui_NPC2_NecropolisImpaled_Name" />
+  </LevelSheet>
+  <LevelSheet Name="test_area_hub" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="waypoint_stormfall" />
+    </PlayerSpawnPoints>
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="test_area_1" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="test_area_1_spawnpoint_1" />
+      <Entry EntityName="test_area_1_spawnpoint_2" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="test_monster_manager_descriptor_COSS_OTLW_1" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="test_area_2" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="test_area_2_spawnpoint_1" />
+      <Entry EntityName="test_area_2_spawnpoint_2" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="test_monster_manager_descriptor_COSS_OTLW_1" />
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="test_Necropolis_1" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="test_monster_manager_descriptor_COSS_OTLW_1" />
+    <HUD UIName="@ui_gold" />
+  </LevelSheet>
+  <LevelSheet Name="Alex_Test_LevelSheet" GameMode="adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_AlexTest_Level" />
+    <EntityManager Name="EM_Test_AlexMap" />
+    <EnvironmentVisualVariations Choices="2" />
+    <SecondaryContentGenerator Name="CG_ALEXTEST" />
+    <HUD UIName="@ui_act_1_stormfall_farmlands_name" />
+    <EnemiesLevel Min="2" Max="10" />
+  </LevelSheet>
+  <LevelSheet Name="HE_HuntProto_LevelSheet_RedWaste" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="NPC2_RWNatural_MM" />
+    <EntityManager Name="EM_AdventureMode_RWNatural_EG" />
+    <EnvironmentVisualVariations Choices="2" />
+    <SecondaryContentGenerator Name="CG_ALEXTEST" />
+    <HUD UIName="@ui_act_1_stormfall_farmlands_name" />
+    <EnemiesLevel Min="2" Max="50" />
+  </LevelSheet>
+  <LevelSheet Name="HE_HuntProto_LevelSheet_NecroMossy" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="NPC2_NecropolisMossy_MM" />
+    <EntityManager Name="EM_AdventureMode_NecropolisMossy_EG" />
+    <EnvironmentVisualVariations Choices="2" />
+    <SecondaryContentGenerator Name="CG_ALEXTEST" />
+    <HUD UIName="@ui_act_1_stormfall_farmlands_name" />
+    <EnemiesLevel Min="2" Max="50" />
+  </LevelSheet>
+  <LevelSheet Name="HE_HuntProto_LevelSheet_IncubationChamber" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="NPC2_IC_MM" />
+    <EntityManager Name="EM_AdventureMode_IncubationChamber_EG" />
+    <EnvironmentVisualVariations Choices="2" />
+    <SecondaryContentGenerator Name="CG_ALEXTEST" />
+    <HUD UIName="@ui_act_1_stormfall_farmlands_name" />
+    <EnemiesLevel Min="2" Max="50" />
+  </LevelSheet>
+</MetaData>

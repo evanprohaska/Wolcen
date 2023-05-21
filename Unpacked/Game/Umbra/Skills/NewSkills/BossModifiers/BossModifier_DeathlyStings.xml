@@ -1,0 +1,32 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_DeathlyStings">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <SoundTrigger OnHit="Play_hero_default_damage_large" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1" />
+    <Projectile Name="DeathlyStings_proj" ProjectileCount="10" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="3" distanceMax="12" totalAngleAtDistanceMin="360" totalAngleAtDistanceMax="50" projectileAngleAtDistanceMin="36" projectileAngleAtDistanceMax="5" />
+    </Projectile>
+    <Range AttackRange="30" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.05" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="25" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_DeathlyStings_Lieutenant">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <SoundTrigger OnHit="Play_hero_default_damage_large" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1" />
+    <Projectile Name="DeathlyStings_proj" ProjectileCount="5" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="3" distanceMax="12" totalAngleAtDistanceMin="360" totalAngleAtDistanceMax="50" projectileAngleAtDistanceMin="36" projectileAngleAtDistanceMax="5" />
+    </Projectile>
+    <Range AttackRange="30" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.05" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="25" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

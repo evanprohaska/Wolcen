@@ -1,0 +1,9 @@
+<MetaData>
+  <Spawner Name="PithusEgg_Arena">
+    <Animation InitAnimation="" GrowthAnimation="Default" DeathAnimation="spawner_death" SpawnAnimation="spawner_spawn" MaxScale="1.0" />
+    <Effects InitVFX="" GrowthVFX="" DeathVFX="" SpawnVFX="U_Trails.pithus.egg_explode" OnHitVFX="U_Trails.pithus.egg_hit" />
+    <Spawn Class="Arena_Pithus_challenge_arachnophobia" RadiusMin="0.0" RadiusMax="0.0" />
+    <Physics OverrideModel="objects/props/pithus_eggsandweb/pithuseggs_spawner.cga" Mass="0" Density="0" Physicalize="1" Pushable="0" />
+    <Gameplay Destroyable="0" MaxHealth="1" GrowthDuration="1.5" ActivationRadius="7" />
+  </Spawner>
+</MetaData>

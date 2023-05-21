@@ -1,0 +1,628 @@
+<MetaData>
+  <Quest Name="ACT1_Quest2_C1" StartDialog="" Type="Main" UIName="@ui_A1_Q2_QuestLabel" BoundToMap="Wolcen_ACT1">
+    <Step Order="0" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q2_S1_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="QP_StormfallPlaza" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_SF_Merchant" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="NPC_SF_Merchant" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_SF_Merchant" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="FS_Hide_Stormfall_ClickableDoor_C1" EntityNames="ClickableEntity_from_stormfall_to_farmstead" Hide="1" />
+      <Event Trigger="Instant" Type="Restriction" Name="Unrestrict_Rule" Mode="Set" Restrictions="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="PlayerLockTP" Name="SC_LockPlayerTP" Lock="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalRevivePlayers" Delay="" Name="ACT1_Quest2_EnterSFRevive" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Unblocking_guard_r_SF_UnderCity1" EntityNames="DO_AnimObject_Unblocking_guard_r_SF_UnderCity" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Unblocking_guard_l_SF_UnderCity1" EntityNames="DO_AnimObject_Unblocking_guard_l_SF_UnderCity" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Unblocking_guard_r_SF_BackCity1" EntityNames="DO_AnimObject_Unblocking_guard_r_SF_BackCity" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Unblocking_guard_l_SF_BackCity1" EntityNames="DO_AnimObject_Unblocking_guard_l_SF_BackCity" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Unblocking_guard_r_SF_Palace1" EntityNames="DO_AnimObject_Unblocking_guard_r_SF_Palace" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Unblocking_guard_l_SF_Palace1" EntityNames="DO_AnimObject_Unblocking_guard_l_SF_Palace" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_r_SF_Inn" EntityNames="DO_AnimObject_blocking_guard_r_SF_Inn" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_l_SF_Inn" EntityNames="DO_AnimObject_blocking_guard_l_SF_Inn" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay=".1" Name="Dialog_ACT1_Q2_PlayerEnteringPlaza_Talk" DialogName="ACT1_Q2_SF_PlayerEnteringPlaza" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="0" />
+        <XP Amount="100" />
+        <ChoiceLootClass Name="Weapons_Starter" MinItemNumber="3" MaxItemNumber="3" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="1" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q2_S2_StepNameLabel">
+      <Goal Order="0" Type="Interact" Names="NPC_SF_Archivist" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_SF_Archivist" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalDialog" Delay="3" Name="Dialog_ACT1_Quest2_SF_Stormfallguard_Talk" DialogName="ACT1_Q2_SF_Stormfallguard" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityAnimate" Delay="3" Name="Dialog_ACT1_Quest2_SF_Stormfallguard_Anim" AnimatedEntityName="ArabMaleGuard6" Play="npc_mh_h2_stand_idle_l_reporttothunderblade_01" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="Enneracts_Starter" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="2" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q2_S3_StepNameLabel">
+      <Goal Order="0" Type="Talk" EntityName="HT1_NPC_FS_Pet1" DialogName="ACT1_C1_SF_TalkToPet">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="HT1_NPC_FS_Pet1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Farmsteads" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Stormfall_RestrictedArea_C1" EntityNames="Stormfall_RestrictedArea_C1" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HE_TutoHunt0_PetFilter_Trigger1" AreaRadius="7.5" Type="StepUpdate" Name="SL1_Update_TalkToPet" Localization="@ui_C1_HT_TalkToDog_StepNameLabel" DisplayNewIcon="1" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HE_TutoHunt0_PetFilter_Trigger1" AreaRadius="15" Name="C1_TriggerDynamicScene_MeetPet" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" SequenceName="DYN_C1_SF_MeetPet" FemaleSequenceName="DYN_C1_SF_MeetPet" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Name="C1_TutoHunt0_PetFilter" Type="GlobalTutorial" TutorialName="Quest_LootFilter" Delay="0.5" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Name="C1_TutoHunt0_HidePet" Type="EntityIsHidden" EntityNames="HT1_NPC_FS_Pet1" VFX="U_VFX_Oskar.C1Misc.Hide_Entity_Smoke_Small_01" Hide="1" Delay="0.8" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="C1_TutoHunt0_AllowUsePet" Type="MaybeAllowUsingPets" AllowUsePets="1" Delay="0.5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Reveal_Unblocking_guard_l_Farm_Farm" EntityNames="DO_AnimObject_Unblocking_guard_l_Farm_Farm" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Reveal_Unblocking_guard_r_Farm_Farm" EntityNames="DO_AnimObject_Unblocking_guard_r_Farm_Farm" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalTutorial" Name="Dialog_ACT1_Q2_Tutorial2_Talk" TutorialName="Quest_Enneract" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="SF_HideFarmsteadsPortal" EntityNames="ClickableEntity_from_stormfall_to_farmstead" Hide="0" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Pets>
+          <Pet PetId="pet_dog" />
+        </Pets>
+      </Reward>
+    </Step>
+    <Step Order="3" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q2_S3_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_from_farmstead_to_stormfall" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_farmstead" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_farmstead_to_stormfall" Area="ACT1_Farmsteads" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="Q_NPC_SFBridge_Lieutenant" DialogName="ACT1_Q2_ThunderBladeFaraad1_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_SFBridge_Lieutenant" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="C1_A1_Q2_ClearUI_Step2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="FS_Update1" Localization="@ui_A1_Q2_S3_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay="1" Name="FS_EnteringFarlsteads" DialogName="ACT1_Q2_Conscript_Comment" />
+      <Event Trigger="EventEnd" EventName="FS_EnteringFarlsteads" Type="GoalAchieve" Name="WaitEnd_FS_EnteringFarlsteads" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="SC_HideValeria1" EntityNames="Q_NPC_SFBridge_Valeria" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="FS_HideSergent2" EntityNames="Q_NPC_FS_Sergent2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="FS_Update2" Localization="@ui_A1_Q2_S3_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalDialog" Name="ACT1_Q2_BridgeComments1_Talk" DialogName="ACT1_Q2_BridgeComments1_Talk" />
+      <Event Trigger="EventEnd" EventName="ACT1_Q2_BridgeComments1_Talk" Type="GlobalTutorial" Name="Dialog_ACT1_Q2_Tutorial1_Talk" TutorialName="Quest_TownPortal" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ArabMaleGuard7" AreaRadius="7" Type="GlobalDialog" Delay="0.1" Name="ACT1_Q2_BridgeComments2_Talk" DialogName="ACT1_Q2_BridgeComments2_Talk" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_GuardGossipingTrigger" AreaRadius="5" Type="GlobalDialog" Delay="0.1" Name="ACT1_Q2_BridgeComments3_Talk" DialogName="ACT1_Q2_BridgeComments3_Talk" />
+    </Step>
+    <Step Order="4" AutoClearEvents="0" Save="0" UIName="@ui_A1_Q2_S4_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="AnimObject431" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_FS_Sergent" Area="ACT1_Farmsteads" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="Q_NPC_FS_StormfallCampExit" Radius="12" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_FS_Sergent" Area="ACT1_Farmsteads" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Farmsteads_RestrictedArea3" EntityNames="Farmsteads_RestrictedArea3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay="0.1" Name="ACT1_Q2_BridgeComments4_Talk" DialogName="ACT1_Q2_BridgeComments4_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_r_Farm_SvriirLair" EntityNames="DO_AnimObject_blocking_guard_r_Farm_SvriirLair" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_l_Farm_SvriirLair" EntityNames="DO_AnimObject_blocking_guard_l_Farm_SvriirLair" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_r_Farm_Farm_Outpost" EntityNames="DO_AnimObject_blocking_guard_r_Farm_Outpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_l_Farm_Farm_Outpost" EntityNames="DO_AnimObject_blocking_guard_l_Farm_Outpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_r_Farm_Farm" EntityNames="DO_AnimObject_blocking_guard_r_Farm_Farm" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_l_Farm_Farm" EntityNames="DO_AnimObject_blocking_guard_l_Farm_Farm" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Unblocking_guard_r_Farm_SvriirLair" EntityNames="DO_AnimObject_Unblocking_guard_r_Farm_SvriirLair" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Unblocking_guard_l_Farm_SvriirLair" EntityNames="DO_AnimObject_Unblocking_guard_l_Farm_SvriirLair" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Unblocking_guard_r_Farm_Farm_Outpost" EntityNames="DO_AnimObject_Unblocking_guard_r_Farm_Outpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Unblocking_guard_l_Farm_Farm_Outpost" EntityNames="DO_AnimObject_Unblocking_guard_l_Farm_Outpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Reveal_Unblocking_guard_l_Farm_Farm" EntityNames="DO_AnimObject_Unblocking_guard_l_Farm_Farm" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Reveal_Unblocking_guard_r_Farm_Farm" EntityNames="DO_AnimObject_Unblocking_guard_r_Farm_Farm" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="StepUpdate_Camp" Localization="" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="5" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q2_S4_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="Q_NPC_FS_Sergent" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_FS_Sergent" Area="ACT1_Farmsteads" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="FS_HideParticleSR_SF" EmitterEntityName="BlockingRoadSvriirEvent_SF" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="FS_HideParticleSR_North" EmitterEntityName="BlockingRoadSvriirEvent_North" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="FS_HideParticleSR_West" EmitterEntityName="BlockingRoadSvriirEvent_West" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Delay="0.3" Name="ACT1_Q2_BridgeComments5_Talk" DialogName="ACT1_Q2_BridgeComments5_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Delay="" Name="ACT1_Q2_BridgeComments5_Anim" AnimatedEntityName="CaucasianMaleGuard17" Play="NPC_MH_H2_Stand_Formation_01_Warning" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalCheckpoint" Name="ResetSvriirRaidCheckpoint" CheckpointEntityName="" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalDialog" Delay="0.1" Name="FS_FindingCamp_Talk" DialogName="ACT1_Q2_FS_SFCamp" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="30" Type="GlobalCheckpoint" Name="Sobok_Remove_Checkpoint_SF" CheckpointEntityName="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Delay="0.1" StepToKeep="2" Name="A1_Q2_ClearUI_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_r_Farm_SvriirLair_bis" EntityNames="DO_AnimObject_blocking_guard_r_Farm_SvriirLair" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_l_Farm_SvriirLair_bis" EntityNames="DO_AnimObject_blocking_guard_l_Farm_SvriirLair" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_r_Farm_Farm_Outpost_bis" EntityNames="DO_AnimObject_blocking_guard_r_Farm_Outpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_l_Farm_Farm_Outpost_bis" EntityNames="DO_AnimObject_blocking_guard_l_Farm_Outpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_r_Farm_Farm_bis" EntityNames="DO_AnimObject_blocking_guard_r_Farm_Farm" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_l_Farm_Farm_bis" EntityNames="DO_AnimObject_blocking_guard_l_Farm_Farm" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Unblocking_guard_r_Farm_SvriirLair_bis" EntityNames="DO_AnimObject_Unblocking_guard_r_Farm_SvriirLair" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Unblocking_guard_l_Farm_SvriirLair_bis" EntityNames="DO_AnimObject_Unblocking_guard_l_Farm_SvriirLair" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Unblocking_guard_r_Farm_Farm_Outpost_bis" EntityNames="DO_AnimObject_Unblocking_guard_r_Farm_Outpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Unblocking_guard_l_Farm_Farm_Outpost_bis" EntityNames="DO_AnimObject_Unblocking_guard_l_Farm_Outpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Reveal_Unblocking_guard_l_Farm_Farm_bis" EntityNames="DO_AnimObject_Unblocking_guard_l_Farm_Farm" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Reveal_Unblocking_guard_r_Farm_Farm_bis" EntityNames="DO_AnimObject_Unblocking_guard_r_Farm_Farm" Hide="0" />
+    </Step>
+    <Step Order="6" AutoClearEvents="1" Save="0" UIName="@ui_A1_Q2_S5_StepNameLabel">
+      <Goal Order="0" Type="Talk" EntityName="Q_NPC_FS_Sergent" DialogName="ACT1_Quest2_FS_Stormfallguard_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_FS_Sergent" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="Q_NPC_FS_Sergent" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_FS_Sergent" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Vote" Duration="15" VotePreset="VotePreset_ACT1_SvriirRaid_1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_Farmsteads" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_Farmsteads" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_Farmsteads" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_Farmsteads" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="6" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_Farmsteads" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="7" Type="Talk" EntityName="Sandor" DialogName="ACT1_Q2_ThunderBladeSandor1_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sandor" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05-06-07" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="waypoint_act_1_stormfall_farmlands" AreaRadius="7" Type="GlobalTutorial" Name="Dialog_ACT1_Q2_Tutorial1_Talk" TutorialName="Quest_Waypoint" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Q_NPC_FS_Sergent" Type="GlobalFlowGraph" Name="StartSvriirsComing" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="FS_UnhideBrokenBarricade" EntityNames="DynamicObject_ACT1.Farmstead_Barricade1_Unbroken_prc" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_HideCorpsePostEvent" EntityNames="Dynamic_object_after_svriir_raid" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_HideSoldierPostEvent" EntityNames="Dynamic_object_after_svriir_raid_soldiers" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalFlowGraph" Name="EndSvriirsComing" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_UnHideSergent_1" EntityNames="Q_NPC_FS_Sergent" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Farmsteads_RestrictedArea4" EntityNames="Farmsteads_RestrictedArea4" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Farmsteads_Barricade1_Broken" EntityNames="DynamicObject_ACT1.Farmstead_Barricade1_Broken_prc" Hide="1" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q2_ClearUI_3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SC_HideValeria2" EntityNames="Q_NPC_SFBridge_Valeria" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalReserveGameplayEvent" Name="FS_SvriirEvent_EventSlotReserved" EventDescriptorName="ACT1_Svriirs_Raid" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="FS_Reveal_Farmsteads_RestrictedArea4_1" EntityNames="Farmsteads_RestrictedArea4" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="FS_Hide_Farmsteads_RestrictedArea1" EntityNames="Farmsteads_RestrictedArea1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="FS_HideSergent" EntityNames="Q_NPC_FS_Sergent" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="FS_HideSvriirRaidGuardR" EntityNames="DO_AnimObject_blocking_guard_r_Farm_Camp" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="FS_HideSvriirRaidGuardL" EntityNames="DO_AnimObject_blocking_guard_l_Farm_Camp" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="ActionSequence" Delay=".1" Name="CinematicEventStormfallCanon" SequenceName="A1_Q2_S5_EventStormfallCanon" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" NoPostSyncro="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="FS_Reveal_Farmsteads_RestrictedArea2_4_2" EntityNames="Farmsteads_RestrictedArea4" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalCheckpoint" Name="SetSvriirRaidCheckpoint" CheckpointEntityName="QP_SvriirRaidCheckpoint" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionParticleEmitter" Name="FS_UnhideParticleSR_West" EmitterEntityName="BlockingRoadSvriirEvent_West" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionParticleEmitter" Name="FS_UnhideParticleSR_SF" EmitterEntityName="BlockingRoadSvriirEvent_SF" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionSequence" BlendingSpeed="1" PlaySpeed="1" EnableBlendOut="0" Name="FS_Farmsteads_Canon_Dyn" SequenceName="A1_DYN_SvriirRaidCanon" FemaleSequenceName="" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="FS_Hide_Farmsteads_Canon" EntityNames="AnimObject_A1_Q2_S5_Canon2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ArenaStart" ArenaPreset="Svriirs_Raid_Act1_Part1" LocationEntityName="Svriirs_Raid_Act1_Part1" EntityToFollow="" Name="FS_SvriirEvent_StartArena_Part1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityTeleport" MinRadius="2" Name="FS_TeleportInArena" TeleportedEntityName="#Player" DestinationName="QP_Farmsteads4" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" Type="GoalAchieve" GoalIndexToAchieve="4" Name="FS_SvriirEvent_Arena_Part1_Victory" />
+      <Event Trigger="EventEnd" EventName="CinematicEventStormfallCanon" Type="GoalAchieve" Name="WaitEnd_FS_EventStormfallCanon" SimulateOnly="1" GoalIndexToAchieve="3" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="FS_SvriirRaidMeleeGuardSpawn1" SpawnClass="Sc_guard_M_svriirsraid_R" TargetEntityName="QP_FS_MeleeStormfallGuardSpawn1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="FS_SvriirRaidMeleeGuardSpawn2" SpawnClass="Sc_guard_M_svriirsraid_L" TargetEntityName="QP_FS_MeleeStormfallGuardSpawn2" />
+      <Event Trigger="EventEnd" EventName="FS_SvriirRaidMeleeGuardSpawn1" Type="EntityIsGod" Delay="1.5" Name="FS_SvriirRaidGuardRIsGod" EntityName="GuardR" Invincible="1" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="FS_SvriirRaidMeleeGuardSpawn2" Type="EntityIsGod" Delay="1.5" Name="FS_SvriirRaidGuardLIsGod" EntityName="GuardL" Invincible="1" DisplayVFX="0" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="FS_SvriirRaidRangedGuardSpawn1" SpawnClass="Sc_guard_R_svriirsraid_R" TargetEntityName="QP_FS_RangedStormfallGuardSpawn1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="FS_SvriirRaidRangedGuardSpawn2" SpawnClass="Sc_guard_R_svriirsraid_L" TargetEntityName="QP_FS_RangedStormfallGuardSpawn2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="GlobalDialog" Delay="2" Name="FS_SvriirEvent_Talk1" DialogName="ACT1_Quest2_FS_SvriirEvent_Talk1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="StepUpdate" Name="FS_SvriirRaidStepUdate1_1" Localization="@ui_A1_Q2_S5_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="2" Type="StepUpdate" Name="FS_SvriirRaidStepUdate1_2" Localization="@ui_A1_Q2_S5_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="2" Type="GlobalDialog" Delay="2" Name="FS_SvriirEvent_Talk_Wave2" DialogName="ACT1_Quest2_FS_SvriirEvent_Talk2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="3" Type="StepUpdate" Name="FS_SvriirRaidStepUdate1_3" Localization="@ui_A1_Q2_S5_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="3" Type="GlobalDialog" Delay="2" Name="FS_SvriirEvent_Talk2" DialogName="ACT1_Quest2_FS_Stormfallguard_Talk2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="4" Type="StepUpdate" Name="FS_SvriirRaidStepUdate1_4" Localization="@ui_A1_Q2_S5_UpdateStepNameLabel4" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="4" Type="GlobalCameraShake" Delay="4" Name="CameraShakeAlphacoming" PresetName="SVRI_AlphaComing_Event" OriginEntityName="QP_Farmsteads" MaxDistance="120" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="FS_UnhideCorpsePostEvent" EntityNames="Dynamic_object_after_svriir_raid" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionSequenceReset" Name="FS_Farmsteads_Canon_Dyn_End" SequenceName="A1_DYN_SvriirRaidCanon" ResetAtLastFrame="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="FS_Unhide_Farmsteads_Canon" EntityNames="AnimObject_A1_Q2_S5_Canon2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionSequence" Delay=".1" Name="CinematicEventAlphaSpawn" SequenceName="A1_Q2_S5_SvriirAlphaSpawn" BlendingSpeed="2" PlaySpeed="1" EnableBlendOut="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="FS_Hide_Farmsteads_Barricade1_Unbroken" EntityNames="DynamicObject_ACT1.Farmstead_Barricade1_Unbroken_prc" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="FS_Reveal_Farmsteads_Barricade1_Broken" EntityNames="DynamicObject_ACT1.Farmstead_Barricade1_Broken_prc" Hide="0" />
+      <Event Trigger="EventEnd" EventName="CinematicEventAlphaSpawn" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Delay=".1" Name="FS_SvriirRaidSandorSpawn" SpawnClass="Sc_Sty_SF_Sandor" TargetEntityName="QP_Farmsteads4" />
+      <Event Trigger="EventEnd" EventName="CinematicEventAlphaSpawn" Type="EntityIsGod" Delay=".2" Name="FS_SvriirRaidSandorIsGod" EntityName="Sandor" Invincible="1" />
+      <Event Trigger="EventEnd" EventName="CinematicEventAlphaSpawn" Type="GlobalDialog" Delay="2" Name="FS_SvriirEvent_Talk4" DialogName="ACT1_Quest2_FS_Stormfallguard_Talk4" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="6" Type="GlobalDialog" Delay="" Name="FS_SvriirEvent_Talk5" DialogName="ACT1_Quest2_FS_Stormfallguard_Talk5" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="ActionParticleEmitter" Name="FS_UnhideParticleSR_North" EmitterEntityName="BlockingRoadSvriirEvent_North" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="GlobalRevivePlayers" Name="FS_1stArenaRevive" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="FS_SvriirRaidStepUdate2_1" Localization="@ui_A1_Q2_S5_UpdateStepNameLabel5" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="ArenaStart" ArenaPreset="Svriirs_Raid_Act1_Part2" LocationEntityName="Svriirs_Raid_Act1_Part2" EntityToFollow="" Name="FS_SvriirEvent_StartArena_Part2" />
+      <Event Trigger="EventEnd" EventName="CinematicEventAlphaSpawn" Type="GoalAchieve" Name="WaitEnd_FS_AlphaSpawn" SimulateOnly="1" GoalIndexToAchieve="5" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="FS_SvriirEvent_StartArena_Part2" Type="GoalAchieve" Delay="2.2" Name="FS_SvriirEvent_Arena_Part2_Victory" GoalIndexToAchieve="6" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_EA_AN_EventEnd" Type="GlobalRevivePlayers" Delay="2.2" Name="FS_2ndArenaRevive" RevivePostion="" />
+      <Event Trigger="GoalSuccess" GoalIndex="7" Type="GlobalReleaseGameplayEvent" Name="FS_SvriirEvent_EventSlotRelease" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_EA_AN_EventEnd" Type="StepUpdate" Delay="2.5" Name="FS_SvriirRaidStepUdate2_2" Localization="@ui_A1_Q2_S5_UpdateStepNameLabel6" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_EA_AN_EventEnd" Type="EntityIsHidden" Delay="2.75" Name="FS_Hide_Farmsteads_RestrictedArea2_1" EntityNames="Farmsteads_RestrictedArea1" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_EA_AN_EventEnd" Type="EntityIsHidden" Delay="2.75" Name="FS_Reveal_Farmsteads_RestrictedArea2_2" EntityNames="Farmsteads_RestrictedArea2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay=".5" Type="EntityMove" TargetMinDistance="0.001" OverrideSpeed="0" Name="A1_Q2_S6_SandorMove" EntityName="Sandor" TargetName="QP_FS_SandorPosition" RemainScripted="0" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_S6_SandorMove" Type="EntityRotate" Name="A1_Q2_S6_SandorRotate" RotatedEntityName="Sandor" Target="QP_FS_SandorIsFacing" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_S6_SandorRotate" Type="EntityAnimate" Name="A1_Q2_S6_SandorAnimate" AnimatedEntityName="Sandor" Play="NPC_MH_H2_Stand_Idle_01" Loop="1" SpeedScale="1" BlendingTime="0.5" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay=".5" Type="EntityMove" TargetMinDistance="0.001" OverrideSpeed="0" Name="A1_Q2_S6_GuardRMove" EntityName="GuardR" TargetName="QP_FS_WestGuardR_Position" RemainScripted="0" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_S6_GuardRMove" Type="EntityRotate" Name="A1_Q2_S6_GuardRRotate" RotatedEntityName="GuardR" Target="QP_FS_WestGuardR_IsFacing" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_S6_GuardRRotate" Type="EntityAnimate" Name="A1_Q2_S6_GuardRAnimate" AnimatedEntityName="GuardR" Play="NPC_MH_H2_Stand_Idle_r_01" Loop="1" SpeedScale="1" BlendingTime="0.5" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay="2.5" Type="EntityMove" TargetMinDistance="0.001" OverrideSpeed="0" Name="A1_Q2_S6_GuardLMove" EntityName="GuardL" TargetName="QP_FS_WestGuardL_Position" RemainScripted="0" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_S6_GuardLMove" Type="EntityRotate" Name="A1_Q2_S6_GuardLRotate" RotatedEntityName="GuardL" Target="QP_FS_WestGuardL_IsFacing" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_S6_GuardLRotate" Type="EntityAnimate" Name="A1_Q2_S6_GuardLAnimate" AnimatedEntityName="GuardL" Play="NPC_MH_H2_Stand_Idle_01" Loop="1" SpeedScale="1" BlendingTime="0.5" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay=".5" Type="EntityMove" TargetMinDistance="0.001" OverrideSpeed="0" Name="A1_Q2_S6_ArcherRMove" EntityName="ArcherR" TargetName="QP_FS_WestArcherR_Position" RemainScripted="0" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_S6_ArcherRMove" Type="EntityRotate" Name="A1_Q2_S6_ArcherRRotate" RotatedEntityName="ArcherR" Target="QP_FS_WestArcherR_IsFacing" FaceTarget="1" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay="2.5" Type="EntityMove" TargetMinDistance="0.001" OverrideSpeed="0" Name="A1_Q2_S6_ArcherLMove" EntityName="ArcherL" TargetName="QP_FS_WestArcherL_Position" RemainScripted="0" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_S6_ArcherLMove" Type="EntityRotate" Name="A1_Q2_S6_ArcherLRotate" RotatedEntityName="ArcherL" Target="QP_FS_WestArcherL_IsFacing" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_S6_GuardLRotate" Type="ActionParticleEmitter" Name="FS_HideParticleSR_West_bis" EmitterEntityName="BlockingRoadSvriirEvent_West" Activate="0" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_EA_AN_EventEnd" Type="EntityIsHidden" Delay="2" Name="FS_Reveal_blocking_guard_Camp1_Audio" EntityNames="Audio_ATS_Stormfall_Guardsblock_BarricadeToOutpost" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_EA_AN_EventEnd" Type="EntityIsHidden" Delay="2" Name="FS_Reveal_blocking_guard_Camp2_Audio" EntityNames="Audio_ATS_Stormfall_Guardsblock_FarmSvriirsLair" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="7" Type="ActionWaypoint" Name="FS_UnlockFarmsteadsWaypoint" WaypointEntityName="waypoint_act_1_stormfall_farmlands" Action="FORCEUNLOCK" />
+      <Event Trigger="GoalSuccess" GoalIndex="7" Type="GlobalCheckpoint" Name="ResetSvriirRaidCheckpointOnVictory" CheckpointEntityName="" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionParticleEmitter" Name="FS_SvriirRaidEmitterHide_default_W" EmitterEntityName="ParticleEffect_spawn_svriirRaid_W" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="7" Type="ActionParticleEmitter" Name="FS_HideParticleSR_SF_bis" EmitterEntityName="BlockingRoadSvriirEvent_SF" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="7" Type="ActionParticleEmitter" Name="FS_HideParticleSR_North_bis" EmitterEntityName="BlockingRoadSvriirEvent_North" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="EntitySpawn" Name="C1_Hunt_Ilthain_Spawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" SpawnClass="Sc_CG_HE_Ilthain" TargetEntityName="Spawn_Ilthain_QP" FaceAtSpawn="FaceAt_Ilthain_QP" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="EntityWait" Name="C1_Ilthain_Wait" EntityName="A1_DYN_Ilthain_CalmingDrake_01" Duration="0" RemainScripted="1" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="EntityFaction" Name="C1_Ilthain_Friendly" EntityName="A1_DYN_Ilthain_CalmingDrake_01" FactionName="AllFriendly" Delay="3" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_EA_AN_EventEnd" Type="ActionParticleEmitter" Delay="2" Name="FS_FinalBlockerRoadOn" EmitterEntityName="BlockingRoadSvriirEvent_End" Activate="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="7" Type="ActionParticleEmitter" Name="FS_FinalBlockerRoadOff" EmitterEntityName="BlockingRoadSvriirEvent_End" Activate="0" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="ActionParticleEmitter" Name="FS_SvriirRaidEmitterHide_on_W" EmitterEntityName="ParticleEffect_spawn_svriirRaid_W" Activate="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="ActionParticleEmitter" Name="FS_SvriirRaidEmitterHide_default_S" EmitterEntityName="ParticleEffect_spawn_svriirRaid_S" Activate="0" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="ActionParticleEmitter" Name="FS_SvriirRaidEmitterHide_default_E" EmitterEntityName="ParticleEffect_spawn_svriirRaid_E" Activate="0" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="ActionParticleEmitter" Name="FS_SvriirRaidNorthEmitterHide1" EmitterEntityName="ParticleEffect_spawn_svriirRaid_W" Activate="0" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="2" Type="ActionParticleEmitter" Name="FS_SvriirRaidWestEmitterHide1" EmitterEntityName="ParticleEffect_spawn_svriirRaid_S" Activate="0" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="3" Type="ActionParticleEmitter" Name="FS_SvriirRaidSouthEmitterHide1" EmitterEntityName="ParticleEffect_spawn_svriirRaid_E" Activate="0" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="2" Type="ActionParticleEmitter" Delay="5.5" Name="FS_SvriirRaidWestEmitterReveal1" EmitterEntityName="ParticleEffect_spawn_svriirRaid_S" Activate="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="2" Type="ActionParticleEmitter" Delay="5.5" Name="FS_SvriirRaidSouthEmitterReveal1" EmitterEntityName="ParticleEffect_spawn_svriirRaid_E" Activate="1" />
+      <Event Trigger="GoalFailure" GoalIndex="2" Type="GlobalFlowGraph" Name="DeactivateSvriirsComing" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="ActionParticleEmitter" Name="FS_SvriirRaidEnableFX_Wave1" EmitterEntityName="ParticleEffect_spawn_svriirRaid_W" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalMusic" Name="SvriirRaidEvent_StartMusic" MusicName="Svriir_Raid" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="GlobalMusic" Name="SvriirRaidEvent_StopMusic" MusicName="Highlands" />
+      <Event Trigger="PlayerWipe" Type="ActionSequenceReset" Name="FS_Farmsteads_Canon_Dyn_Reset" SequenceName="A1_DYN_SvriirRaidCanon" ResetAtLastFrame="1" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="FS_Fail_StopDialog_Fail" />
+      <Event Trigger="PlayerWipe" Type="ActionSequenceReset" Name="FS_FailResetSequenceGuard" SequenceName="A1_DYN_Farmstead" ResetAtLastFrame="0" />
+      <Event Trigger="PlayerWipe" Type="EntityIsHidden" Name="FS_FailRevealSvriirRaidGuardR" EntityNames="DO_AnimObject_blocking_guard_r_Farm_Camp" Hide="0" />
+      <Event Trigger="PlayerWipe" Type="EntityIsHidden" Name="FS_FailRevealSvriirRaidGuardL" EntityNames="DO_AnimObject_blocking_guard_l_Farm_Camp" Hide="0" />
+      <Event Trigger="PlayerWipe" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_Camp1_Audio" EntityNames="Audio_ATS_Stormfall_Guardsblock_BarricadeToOutpost" Hide="1" />
+      <Event Trigger="PlayerWipe" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_Camp2_Audio" EntityNames="Audio_ATS_Stormfall_Guardsblock_FarmSvriirsLair" Hide="1" />
+      <Event Trigger="PlayerWipe" Type="ActionParticleEmitter" Name="FS_SvriirRaidLostNorthEmitterHide1" EmitterEntityName="ParticleEffect_spawn_svriirRaid_W" Activate="0" />
+      <Event Trigger="PlayerWipe" Type="ActionParticleEmitter" Name="FS_SvriirRaidLostWestEmitterHide1" EmitterEntityName="ParticleEffect_spawn_svriirRaid_S" Activate="0" />
+      <Event Trigger="PlayerWipe" Type="ActionParticleEmitter" Name="FS_SvriirRaidLostSouthEmitterHide1" EmitterEntityName="ParticleEffect_spawn_svriirRaid_E" Activate="0" />
+      <Event Trigger="PlayerWipe" Type="EntityIsHidden" Name="FS_Reveal_Farmsteads_RestrictedArea1" EntityNames="Farmsteads_RestrictedArea1" Hide="0" />
+      <Event Trigger="PlayerWipe" Type="GlobalReleaseGameplayEvent" Name="FS_SvriirEventFailed_EventSlotRelease" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="FS_SvriirRaidStepFail_1" RollbackToPreviousStep="1" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="StopDialog_SvriirRaid" />
+      <Event Trigger="PlayerWipe" Type="EntityKill" Name="FS_SvriirRaidSandorReset" EntityName="Sandor" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="FS_SvriirRaidGuardRangeReset" MonsterClass="SvriirsRaidStormfallGuardMelee" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="FS_SvriirRaidGuardMeleeReset" MonsterClass="SvriirsRaidStormfallGuardRanged" />
+      <Event Trigger="PlayerWipe" Type="ActionParticleEmitter" Name="FS_ResetBlockerRoadOff" EmitterEntityName="BlockingRoadSvriirEvent_End" Activate="0" />
+      <Event Trigger="PlayerWipe" Type="EntityIsHidden" Name="FS_ResetUnrevealSergent2" EntityNames="Q_NPC_FS_Sergent2" Hide="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FS_SvriirEvent_StartArena_Part1" WaveIndex="1" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_EventStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_vote_ACT1_SvriirRaid_1_title" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_EventEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="None" Order="1">
+        <Gold Amount="1000" />
+        <XP Amount="1500" />
+      </Reward>
+    </Step>
+    <Step Order="7" UIName="@ui_A1_Q2_S6_StepNameLabel" AutoClearEvents="0" Save="1">
+      <Goal Order="0" Type="Go" Destination="QP_FS_A1_Q2_S7_Talk1" Radius="24" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_FS_SvriirLairAreaMarker" VFX="U_Utils.Quest.Objective" VFXOffsetZ="" Area="ACT1_Farmsteads" Threshold="85" UseAreaSize="50" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_FS_A1_Q2_S7_Talk2" Radius="40" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_FS_SvriirLairAreaMarker" VFX="U_Utils.Quest.Objective" VFXOffsetZ="" Area="ACT1_Farmsteads" Threshold="85" UseAreaSize="50" />
+      </Goal>
+      <Goal Order="2" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_FS_SvriirLairAreaMarker" VFX="U_Utils.Quest.Objective" VFXOffsetZ="" Area="ACT1_Farmsteads" Threshold="85" UseAreaSize="50" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="C1_HideSvriirLair_Entrance" EntityNames="DungeonEntrance_tosvriirLair" Hide="1" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="C1_HuntTuto_Hide_FirstTrace" EntityNames="HS_A1_SvriirHunt_T0" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="C1_HuntTuto_Unhide_FirstTrace" EntityNames="HS_A1_SvriirHunt_T0" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Farmsteads_RestrictedArea3_1" EntityNames="Farmsteads_RestrictedArea1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Farmsteads_RestrictedArea3_4" EntityNames="Farmsteads_RestrictedArea4" Hide="1" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A1_Q2_ClearUI_4" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay="0.1" Name="FS_LeavingCamp" DialogName="ACT1_Q2_ThunderBladeSandor2_Talk" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" Name="C1_Hunt_Ilthain_Spawn_OnLoading" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" SpawnClass="Sc_CG_HE_Ilthain" TargetEntityName="Spawn_Ilthain_QP" FaceAtSpawn="FaceAt_Ilthain_QP" />
+      <Event Trigger="OnLoading" Type="EntityWait" Name="C1_Ilthain_Wait_OnLoading" EntityName="A1_DYN_Ilthain_CalmingDrake_01" Duration="0" RemainScripted="1" Delay=".1" />
+      <Event Trigger="OnLoading" Type="EntityFaction" Name="C1_Ilthain_Friendly_OnLoading" EntityName="A1_DYN_Ilthain_CalmingDrake_01" FactionName="AllFriendly" Delay="3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_FS_A1_Q2_S7_Talk2" AreaRadius="40" Type="GlobalDialog" Name="FS_BurningHamlet" DialogName="ACT1_Q2_FS_PlayerComment1" Delay="0.5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Spawn_Ilthain_QP" AreaRadius="20" Type="GoalAchieve" Name="C1_FinishStep_FindIlthain" SimulateOnly="true" GoalIndexToAchieve="2" />
+    </Step>
+    <Step Order="8" UIName="@ui_C1_HT_TalkTo_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="FaceAt_Ilthain_QP">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_FS_SvriirLairAreaMarker" VFX="U_Utils.Quest.Objective" VFXOffsetZ="" Area="ACT1_Farmsteads" Threshold="85" UseAreaSize="50" />
+      </Goal>
+      <Goal Order="1" Type="Talk" EntityName="A1_DYN_Ilthain_CalmingDrake_01" DialogName="ACT1_C1_SF_TalkToIlthain1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A1_DYN_Ilthain_CalmingDrake_01" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="3" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="C1_HideSvriirLair_Entrance2" EntityNames="DungeonEntrance_tosvriirLair" Hide="1" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="C1_HuntTuto_Hide_FirstTrace2" EntityNames="HS_A1_SvriirHunt_T0" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="C1_HuntTuto_Unhide_FirstTrace2" EntityNames="HS_A1_SvriirHunt_T0" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Farmsteads_RestrictedArea3_1_2" EntityNames="Farmsteads_RestrictedArea1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Farmsteads_RestrictedArea3_4_2" EntityNames="Farmsteads_RestrictedArea4" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionSequence" Name="C1_DrakeTakeOff_Animation" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" SequenceName="DYN_C1_IlthainDrake" FemaleSequenceName="DYN_C1_IlthainDrake" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" Name="C1_Hunt_Ilthain_Spawn_OnLoading" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" SpawnClass="Sc_CG_HE_Ilthain" TargetEntityName="Spawn_Ilthain_QP" FaceAtSpawn="FaceAt_Ilthain_QP" />
+      <Event Trigger="OnLoading" Type="EntityWait" Name="C1_Ilthain_Wait_OnLoading" EntityName="A1_DYN_Ilthain_CalmingDrake_01" Duration="0" RemainScripted="1" Delay=".1" />
+      <Event Trigger="OnLoading" Type="EntityFaction" Name="C1_Ilthain_Friendly_OnLoading" EntityName="A1_DYN_Ilthain_CalmingDrake_01" FactionName="AllFriendly" Delay="3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Spawn_Ilthain_QP" AreaRadius="18" Type="EntityAnimate" Name="C1_AnimObject_IlthainApproach_Calming" AnimatedEntityName="A1_DYN_Ilthain_CalmingDrake_01" Play="npc_mh_stand_gesture_calmingdrake_idle_01" Loop="1" SpeedScale="1" BlendingTime="0" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityAnimate" Name="C1_IlthainUnlockAnimation2" AnimatedEntityName="A1_DYN_Ilthain_CalmingDrake_01" Play="" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityAnimate" Name="C1_AnimObject_IlthainApproach_TurnToPlayer" AnimatedEntityName="A1_DYN_Ilthain_CalmingDrake_01" Play="npc_mh_stand_gesture_calmingdrake_turn_01" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="C1_AnimObject_IlthainApproach_TurnToPlayer" Type="EntityAnimate" Name="C1_AnimObject_IlthainApproach_Idle" AnimatedEntityName="A1_DYN_Ilthain_CalmingDrake_01" Play="cmh_h2_hammer_idle_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Spawn_Ilthain_QP" AreaRadius="18" Type="GlobalDialog" Name="C1_Dialog_IlthainApproach" Delay="1.5" DialogName="ACT1_C1_SF_IlthainApproach" />
+      <Event Trigger="EventEnd" EventName="C1_Dialog_IlthainApproach" Type="GoalAchieve" Name="C1_LaunchGoal_TalkToIlthain" SimulateOnly="true" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityWait" Name="C1_Ilthain_StopWait" EntityName="A1_DYN_Ilthain_CalmingDrake_01" Duration="0" RemainScripted="0" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="C1_Ilthain_StopWait" Type="EntityFollow" Name="C1_IlthainFollowPlayer" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="#Player" Constraints="not:Stormfall" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="C1_Ilthain_StopWait" Type="EntityAnimate" Name="C1_IlthainUnlockAnimation" AnimatedEntityName="A1_DYN_Ilthain_CalmingDrake_01" Play="cmh_h2_hammer_idle_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="C1_IlthainFollowPlayer" Type="EntityFaction" Name="C1_Ilthain_Players" EntityName="A1_DYN_Ilthain_CalmingDrake_01" FactionName="Players" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="C1_Ilthain_Players" Type="EntityIsHidden" Name="C1_Hide_ToUnlock" EntityNames="A1_DYN_Ilthain_CalmingDrake_01" Hide="1" Delay="2.9" />
+      <Event Trigger="EventEnd" EventName="C1_Hide_ToUnlock" Type="EntityIsHidden" Name="C1_Unhide_ToUnlock" EntityNames="A1_DYN_Ilthain_CalmingDrake_01" Hide="0" Delay="" />
+    </Step>
+    <Step Order="9" UIName="@ui_A1_Q2_S7_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonEntrance_tosvriirLair" Radius="35" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_tosvriirLair" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="DungeonEntrance_tosvriirLair" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_tosvriirLair" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="C1_IlthainUnlockAnimation2" AnimatedEntityName="A1_DYN_Ilthain_CalmingDrake_01" Play="" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="C1_AnimObject_IlthainApproach_Idle" AnimatedEntityName="A1_DYN_Ilthain_CalmingDrake_01" Play="cmh_h2_hammer_idle_01" Loop="1" SpeedScale="1" BlendingTime="1" Delay=".1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_FS_SvriirLairArrowTrigger" AreaRadius="15" Type="GlobalDialog" Delay="0.1" Name="FS_PlayerComment2" DialogName="ACT1_Q2_FS_PlayerComment2" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="HS_A1_SvriirHunt_T0_Hide" EntityNames="HS_A1_SvriirHunt_T0" Hide="1" />
+      <Event Trigger="OnLoading" Name="A1_Q2_C1_S9_IlthainSpawn" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" SpawnClass="Sc_CG_HE_Ilthain" TargetEntityName="#Player" Delay="1" />
+      <Event Trigger="OnLoading" Name="A1_Q2_C1_S9_IlthainFollow" Type="EntityFollow" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="#Player" Constraints="not:Stormfall" Delay="3" />
+      <Event Trigger="OnLoading" Name="A1_Q2_C1_S9_LaunchSirkisHuntQuest" Type="GlobalStartQuest" QuestName="QN_HS_A1_Sirkis" StopOnQuestEnding="0" Delay="1.2" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="C1_HuntTuto_Unhide_SLEntrance_RestrictedArea" EntityNames="SvriirLairEntrance_RestrictedArea" Hide="1" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="C1_HuntTuto_Unhide_SvriirLairLEntrance" EntityNames="DungeonEntrance_tosvriirLair" Hide="0" />
+      <Event Trigger="GoalEnd" GoalIndex="1" Type="QuestClearUI" StepToKeep="2" Name="A1_Q2_ClearUI_5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="FS_EnteringSvriirLair" DialogName="ACT1_Q2_SL_PlayerComment1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="SL1_Update2" Localization="" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="10" UIName="@ui_A1_Q2_S8_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="1" />
+      <Goal Order="1" Type="Go" Destination="SvriirLair1_Exit" Radius="150" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="SvriirLair1_Exit" Area="ACT1_Svriir_Network_1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="2" Type="Interact" Names="SvriirLair1_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="SvriirLair1_Exit" Area="ACT1_Svriir_Network_1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="3" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_svriirLair_toSirkis" Area="ACT1_Svriir_Tribute_Storage" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Go" Destination="DungeonEntrance_svriirLair_toSirkis" Radius="150" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_svriirLair_toSirkis" Area="ACT1_Svriir_Tribute_Storage" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityFollow" Name="C1_IlthainUnfollowPlayer3" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="" Constraints="not:Stormfall" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="C1_IlthainUnfollowPlayer3" Type="EntityFollow" Name="C1_IlthainFollowPlayerAgain3" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="#Player" Constraints="not:Stormfall" Delay="0.4" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" Name="A1_Q2_C1_S9_IlthainSpawn" SpawnClass="Sc_CG_HE_Ilthain" TargetEntityName="#Player" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A1_Q2_C1_S9_IlthainFollow" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="#Player" Constraints="not:Stormfall" Delay="3" />
+      <Event Trigger="EventEnd" EventName="A1_Q2_C1_S9_IlthainFollow" Type="EntityFollow" Name="C1_IlthainUnfollowPlayer4" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="" Constraints="not:Stormfall" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="C1_IlthainUnfollowPlayer4" Type="EntityFollow" Name="C1_IlthainFollowPlayerAgain4" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="#Player" Constraints="not:Stormfall" Delay="0.5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="DungeonStart_QP" AreaRadius="10" Type="EntityIsHidden" Name="SF_Hide_RestrictedArea_ToSL1End_1" EntityNames="SvriirLair_S_Exit1_RestrictedArea" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="DungeonStart_QP" AreaRadius="10" Type="ActionDungeonNextLevel" Name="SF_Hide_RestrictedArea_ToSL1End_2" EntityName="SvriirLair1_Exit" Activate="0" AlwaysVisible="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="SvriirLair1_dialog1" AreaRadius="10" Type="GlobalDialog" Delay="0.1" Name="SL2_PlayerComment2" DialogName="ACT1_Q2_SL_PlayerComment2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="SvriirLair1_dialog2" AreaRadius="15" Type="GlobalDialog" Delay="0.5" Name="SL_PhenomenonComment1" DialogName="ACT1_Q2_SL_PhenomenonComment1" />
+      <Event Trigger="EventEnd" EventName="SL2_PlayerComment2" Delay="1" Type="GlobalDialog" Name="C1_Intro_Hunt_NAR_DialogSlot" DialogName="ACT1_C1_SF_TalkToIlthain2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="SF_Unhide_RestrictedArea_ToSL1End_1" EntityNames="SvriirLair_S_Exit1_RestrictedArea" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionDungeonNextLevel" Name="SF_Unhide_RestrictedArea_ToSL1End_2" EntityName="SvriirLair1_Exit" Activate="1" AlwaysVisible="1" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A1_Q2_ClearUI_6" StepToKeep="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="StepUpdate" Name="SL2_Update1" Localization="" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="11" UIName="@ui_A1_Q2_S8_StepNameLabel" AutoClearEvents="0" Save="1">
+      <Goal Order="0" Type="Interact" Names="DungeonEntrance_svriirLair_toSirkis" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_svriirLair_toSirkis" Area="ACT1_Svriir_Tribute_Storage" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="DungeonSvriirLairN2Start_QP" Radius="0" TimeLimit="2000" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" StepToKeep="1" Name="A1_Q2_ClearUI_7" Delay=".1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="StepUpdate" Name="SL2_Update2" Localization="" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="C1_QN_HE_SvriirHunt_TutoStory_Directed_T0" Type="DirectedEntitySpawn" Mode="Prefab" SpawnData="Story_SvriirHunt_AltarPreset.HS_A1_SvriirHunt_T0" PrefabLibrary="Prefabs/HuntAltar_Proto.xml" StartEntity="DungeonSvriirLairN2Start_QP" EndEntity="HE_StoryLevelPortalToSirkiss_QP" UsePercentage="True" PathPosition="10" MinSpawnRadius="0" MaxSpawnRadius="50" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinNaviguationRadius="5" MinGameplayRadius="10" MinGameplayPercentage="60" GameplayPercentTolerance="40" VFX="" Backup="Story_SvriirHunt_AltarPreset.HS_A1_SvriirHunt_T0" Delay="0.2" />
+      <Event Trigger="EventEnd" EventName="C1_QN_HE_SvriirHunt_TutoStory_Directed_T0" Name="C1_QN_HE_BeastHunt_TutoStory_LaunchGoTo0" Type="GoalAchieve" SimulateOnly="1" GoalIndexToAchieve="1" Delay="0.5" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" Name="A1_Q2_C1_S14_IlthainSpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" SpawnClass="Sc_CG_HE_Ilthain" TargetEntityName="#Player" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A1_Q2_C1_S14_IlthainFollow" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="#Player" Constraints="" Delay="3" />
+    </Step>
+    <Step Order="12" AutoClearEvents="0" Save="0" UIName="@ui_C1_HT_FirstTrace_StepNameLabel">
+      <Goal Order="0" Type="Interact" Names="HS_A1_SvriirHunt_T0" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="HS_A1_SvriirHunt_T0" Area="" Threshold="70" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="1" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityFollow" Name="C1_IlthainUnfollowPlayer2" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="" Constraints="not:Stormfall" Delay="3.5" />
+      <Event Trigger="EventEnd" EventName="C1_IlthainUnfollowPlayer2" Type="EntityFollow" Name="C1_IlthainFollowPlayerAgain2" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="#Player" Constraints="not:Stormfall" Delay="0.5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalTutorial" Name="C1_Intro_DialogHuntPresentation" TutorialName="Quest_HuntPresentation" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="TrailLink" Name="C1_QN_HE_BeastHunt_TutoStory_TrailToDungeon" Start="HS_A1_SvriirHunt_T0" Stop="HE_StoryNextLevelPortal_QP" VFXName="" Deactivate="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="C1_QN_HE_SvriirHunt_TutoStory_Directed_T1" Type="DirectedEntitySpawn" Mode="Prefab" SpawnData="Story_SvriirHunt_AltarPreset.HS_A1_SvriirHunt_T1" PrefabLibrary="Prefabs/HuntAltar_Proto.xml" StartEntity="DungeonSvriirLairN2Start_QP" EndEntity="HE_StoryLevelPortalToSirkiss_QP" UsePercentage="True" PathPosition="45" MinSpawnRadius="0" MaxSpawnRadius="50" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinNaviguationRadius="5" MinGameplayRadius="10" MinGameplayPercentage="60" GameplayPercentTolerance="40" VFX="" Backup="Story_SvriirHunt_AltarPreset.HS_A1_SvriirHunt_T1" Delay="0.2" />
+      <Event Trigger="EventEnd" EventName="C1_QN_HE_SvriirHunt_TutoStory_Directed_T1" Name="C1_QN_HE_BeastHunt_TutoStory_Trail1" Type="TrailLink" Start="HS_A1_SvriirHunt_T0" Stop="HS_A1_SvriirHunt_T1" VFXName="" Deactivate="0" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="C1_QN_HE_SvriirHunt_TutoStory_Directed_T1" Name="C1_QN_HE_BeastHunt_TutoStory_LaunchGoTo1" Type="GoalAchieve" SimulateOnly="1" GoalIndexToAchieve="1" Delay="0.7" />
+    </Step>
+    <Step Order="13" UIName="@ui_C1_HM_NextTrace_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="HuntChoice" AltarName="HS_A1_SvriirHunt_T1" />
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="1" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="SvriirLair2_dialog1" AreaRadius="20" Type="GlobalDialog" Delay="0.1" Name="SL_PhenomenonComment2" DialogName="ACT1_Q2_SL_PhenomenonComment2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalTutorial" Name="C1_Intro_DialogTutoHunt_1" TutorialName="Quest_TutoHunt1" Delay="0.5" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HS_A1_SvriirHunt_T1" Type="GlobalTutorial" Name="C1_Intro_DialogTutoHunt_2" TutorialName="Quest_TutoHunt2" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="C1_QN_HE_SvriirHunt_TutoStory_Directed_T2" Type="DirectedEntitySpawn" Mode="Prefab" SpawnData="Story_SvriirHunt_AltarPreset.HS_A1_SvriirHunt_T2" PrefabLibrary="Prefabs/HuntAltar_Proto.xml" StartEntity="DungeonSvriirLairN2Start_QP" EndEntity="HE_StoryLevelPortalToSirkiss_QP" UsePercentage="True" PathPosition="80" MinSpawnRadius="0" MaxSpawnRadius="50" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinNaviguationRadius="5" MinGameplayRadius="10" MinGameplayPercentage="60" GameplayPercentTolerance="40" VFX="" Backup="Story_SvriirHunt_AltarPreset.HS_A1_SvriirHunt_T2" Delay="0.2" />
+      <Event Trigger="EventEnd" EventName="C1_QN_HE_SvriirHunt_TutoStory_Directed_T2" Name="C1_QN_HE_BeastHunt_TutoStory_Trail2" Type="TrailLink" Start="HS_A1_SvriirHunt_T1" Stop="HS_A1_SvriirHunt_T2" VFXName="" Deactivate="0" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="C1_QN_HE_SvriirHunt_TutoStory_Directed_T2" Name="C1_QN_HE_BeastHunt_TutoStory_LaunchGoTo2" Type="GoalAchieve" SimulateOnly="1" GoalIndexToAchieve="1" Delay="0.7" />
+    </Step>
+    <Step Order="14" UIName="@ui_C1_HM_NextTrace_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="Go" Destination="HS_A1_SvriirHunt_T2" RequireAllPlayers="1" Radius="10" />
+      <Goal Order="1" Type="HuntChoice" AltarName="HS_A1_SvriirHunt_T2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="1" Name="A1_Q2_ClearUI_7" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Unhide_RestrictedArea_ToSirkisLair1" EntityNames="SirkissLairEntrance_RestrictedArea" Hide="1" />
+      <Event Trigger="EventEnd" EventName="SF_Unhide_RestrictedArea_ToSirkisLair1" Type="EntityIsHidden" Name="SF_Unhide_RestrictedArea_ToSirkisLair1_2" EntityNames="SirkissLairEntrance_RestrictedArea" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDungeonNextLevel" Name="SF_Hide_RestrictedArea_ToSirkisLair2" EntityName="SvriirLair2_Exit" Activate="0" AlwaysVisible="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="SF_Hide_RestrictedArea_ToSirkisLair1" EntityNames="SirkissLairEntrance_RestrictedArea" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ActionDungeonNextLevel" Name="SF_Unhide_RestrictedArea_ToSirkisLair2" EntityName="SvriirLair2_Exit" Activate="1" AlwaysVisible="1" />
+    </Step>
+    <Step Order="15" UIName="@ui_A1_Q2_S10_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="SvriirLair2_Exit" Area="ACT1_Svriir_Network_2" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="DungeonEntrance_svriirLair_toSirkis" Area="ACT1_Svriir_Tribute_Storage" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="SvriirLair2_Exit" Radius="150" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="SvriirLair2_Exit" Area="ACT1_Svriir_Network_2" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="DungeonEntrance_svriirLair_toSirkis" Area="ACT1_Svriir_Tribute_Storage" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="SvriirLair2_Exit" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="SvriirLair2_Exit" Area="ACT1_Svriir_Network_2" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Interact" Names="SvriirLair2_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="SvriirLair2_Exit" Area="ACT1_Svriir_Network_2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="C1_QN_HE_BeastHunt_TutoStory_TrailToSLN2" Type="TrailLink" Start="HS_A1_SvriirHunt_T2" Stop="HE_StoryLevelPortalToSirkiss_QP" VFXName="" Deactivate="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="SL2_Hide_SirkisArena_Trigger_Event" EntityNames="CE_SirkisTrigger" Hide="1" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" Name="A1_Q2_C1_S14_IlthainSpawn" SpawnClass="Sc_CG_HE_Ilthain" TargetEntityName="#Player" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A1_Q2_C1_S14_IlthainFollow" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="#Player" Constraints="not:Stormfall" Delay="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="StepUpdate" Name="Den_Update1" Localization="" DisplayNewIcon="1" Delay="1" />
+    </Step>
+    <Step Order="16" UIName="@ui_A1_Q2_S11_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" TimeLimit="1" />
+      <Goal Order="1" Type="Go" Destination="HS_A1_SvriirHunt_T3" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="SvriirLair2_Exit" Area="SvriirLair2_Exit" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="HS_A1_SvriirHunt_T3" Area="ACT1_SirkisArena" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_svriirLair_toSirkis" Area="ACT1_Svriir_Tribute_Storage" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="EntityIsHidden" Name="C1_D_Reveal_SirkisArena_ForceField_Event_1" EntityNames="SirkisArena_ForceField_Event_1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="C1_QN_HE_SvriirHunt_TutoStory_Trail3" Type="TrailLink" Start="HE_StorySvriirLair_SirkisPass_QP" Stop="HS_A1_SvriirHunt_T3" VFXName="" Deactivate="0" />
+      <Event Trigger="GoalEnd" GoalIndex="1" Type="QuestClearUI" StepToKeep="1" Name="A1_Q2_ClearUI_8" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="D_FindingTheDen" DialogName="ACT1_Q2_SL_PlayerComment3" Delay="2" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" Name="A1_Q2_C1_S16_IlthainSpawn" SpawnClass="Sc_CG_HE_Ilthain" TargetEntityName="#Player" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A1_Q2_C1_S16_IlthainFollow" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="#Player" Constraints="not:Stormfall" Delay="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalReleaseGameplayEvent" Name="SL2_PlayerDeathReleaseEvent" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalCheckpoint" Name="ResetCheckpointSirkisFight" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="Den_Update2" Localization="" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="17" UIName="@ui_A1_Q2_S11_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="HS_A1_SvriirHunt_T3" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="HS_A1_SvriirHunt_T3" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_SirkisArena" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="SvriirLair2_Exit" Area="SvriirLair2_Exit" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_svriirLair_toSirkis" Area="ACT1_Svriir_Tribute_Storage" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" Duration="20" VotePreset="VotePreset_ACT1_BossFight_Sirkis" GameplayEventPresetName="ACT1_BossFight_Sirkis">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="HS_A1_SvriirHunt_T3" Area="ACT1_SirkisArena" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="BossFight" FightPreset="BossFight_Sirkis_C1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="SvriirLair2_Exit" Area="ACT1_SirkisArena" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" StepToKeep="1" Name="A1_Q2_ClearUI_8_1" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" Name="A1_Q2_C1_S16_IlthainSpawn" SpawnClass="Sc_CG_HE_Ilthain" TargetEntityName="#Player" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A1_Q2_C1_S16_IlthainFollow" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="#Player" Constraints="not:Stormfall" Delay="3" />
+      <Event Trigger="GoalEnd" GoalIndex="2" Type="EntityFollow" Name="C1_IlthainStopFollowsPlayer" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="" Constraints="not:Stormfall" Delay="0.5" />
+      <Event Trigger="GoalEnd" GoalIndex="2" Type="EntityIsMovable" Name="C1_Ilthain_Wait" EntityName="A1_DYN_Ilthain_CalmingDrake_01" CanMove="false" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="BlockingSirkisRoad_off_1" EmitterEntityName="BlockingRoad_Sirkis" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SL2_Hide_DungeonReturn" EntityNames="DungeonEntranceBack_insvriirSAS3" Hide="1" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="GlobalReleaseGameplayEvent" Name="SL2_VoteFailedReleaseEvent" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="SL2_Hide_GPETrigger1" EntityNames="Trigger_Sirkis_P1" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="SL2_Hide_GPETrigger2" EntityNames="Trigger_Sirkis_P2" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="SL2_Hide_GPETrigger3" EntityNames="Trigger_Sirkis_P3" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="D_Reveal_DungeonReturn" EntityNames="DungeonEntranceBack_insvriirSAS3" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalReleaseGameplayEvent" Name="D_ReleaseEvent" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="D_Hide_SirkisArena_ForceField_Event_1" EntityNames="SirkisArena_ForceField_Event_1" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="End_SirkisFight_P1_1" EntityNames="FlowOfFire_Sirkis_P1_1" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="End_SirkisFight_P1_2" EntityNames="FlowOfFire_Sirkis_P1_2" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="End_SirkisFight_P1_3" EntityNames="FlowOfFire_Sirkis_P1_3" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="End_SirkisFight_P2_1" EntityNames="FlowOfFire_Sirkis_P2_1" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="End_SirkisFight_P2_2" EntityNames="FlowOfFire_Sirkis_P2_2" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="End_SirkisFight_P2_3" EntityNames="FlowOfFire_Sirkis_P2_3" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="End_SirkisFight_P3_1" EntityNames="FlowOfFire_Sirkis_P3_1" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionParticleEmitter" Name="BlockingRoad_off_2" EmitterEntityName="BlockingRoad_Sirkis" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalRevivePlayers" Delay=".2" Name="D_EventSuccessRevive" RevivePostion="" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalDialog" Name="SL_SirkisDead" DialogName="ACT1_Q2_SL_PlayerComment5" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalCheckpoint" Name="ResetCheckpointSirkisFightOnVictory" CheckpointEntityName="" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityFollow" Name="A1_Q2_C1_S17_IlthainStopFollow" FollowerEntityName="A1_DYN_Ilthain_CalmingDrake_01" Follow="" Constraints="" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="QuestFail" Name="A1_Q2_C1_S17_QuestFailHuntDummy" QuestName="QN_HS_A1_Sirkis" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="SirkisArena_StopDialog_Fail" />
+      <Event Trigger="BossfightLost" Type="ActionParticleEmitter" Name="BlockingSirkisRoad_off_fail" EmitterEntityName="BlockingRoad_Sirkis" Activate="0" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="D_Hide_SirkisArena_ForceField_EventFailed" EntityNames="SirkisArena_ForceField_Event_1" Hide="1" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="D_Hide_SirkisArena_Trigger_Sirkis_P1_EventFailed" EntityNames="Trigger_Sirkis_P1" Hide="1" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="D_Hide_SirkisArena_Trigger_Sirkis_P2_EventFailed" EntityNames="Trigger_Sirkis_P2" Hide="1" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="D_Hide_SirkisArena_Trigger_Sirkis_P3_EventFailed" EntityNames="Trigger_Sirkis_P3" Hide="1" />
+      <Event Trigger="BossfightLost" Type="StepFail" Name="D_SirkisArena_FailStep" RollbackToPreviousStep="1" />
+      <Event Trigger="BossfightLost" Type="GlobalReleaseGameplayEvent" Name="D_ReleaseEvent_OnFail" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="FS_SvriirRaidSandorIsHidden" EntityNames="Sandor" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKill" Name="FS_SvriirRaidSandorIsDead" EntityName="Sandor" Hide="1" Remove="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="FS_SvriirRaidGuardRIsHidden" EntityNames="GuardR" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKill" Name="FS_SvriirRaidGuardRIsDead" EntityName="GuardR" Hide="1" Remove="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="FS_SvriirRaidGuardLIsHidden" EntityNames="GuardL" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKill" Name="FS_SvriirRaidGuardLIsDead" EntityName="GuardL" Hide="1" Remove="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="FS_Reveal_blocking_guard_r_Farm_Farm_Outpost" EntityNames="DO_AnimObject_blocking_guard_r_Farm_Outpost" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="FS_Reveal_blocking_guard_l_Farm_Farm_Outpost" EntityNames="DO_AnimObject_blocking_guard_l_Farm_Outpost" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="FS_RevealSergent2" EntityNames="Q_NPC_FS_Sergent2" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="FS_RevealPostEvent" EntityNames="Dynamic_object_after_svriir_raid_soldiers" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="FS_Reveal_Unblocking_guard_r_Farm_SvriirLair2" EntityNames="DO_AnimObject_Unblocking_guard_r_Farm_SvriirLair" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="FS_Reveal_Unblocking_guard_l_Farm_SvriirLair2" EntityNames="DO_AnimObject_Unblocking_guard_l_Farm_SvriirLair" Hide="0" />
+      <Reward ShowRewardPanel="None" Order="1">
+        <Gold Amount="1500" />
+        <XP Amount="10000" />
+      </Reward>
+    </Step>
+    <Step Order="18" UIName="@ui_C1_HT_TalkTo_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Talk" EntityName="A1_DYN_Ilthain_CalmingDrake_01" DialogName="ACT1_C1_SF_TalkToIlthain3">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A1_DYN_Ilthain_CalmingDrake_01" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Farmsteads" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" VFX="" VFXOffsetZ="" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="A1_DYN_Ilthain_CalmingDrake_01" AreaRadius="30" Type="GoalAchieve" Name="A1_Q2_IlthainTooFar" SimulateOnly="1" GoalIndexToAchieve="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_StormfallPlaza" AreaRadius="15" Type="GoalAchieve" Name="A1_Q2_PlayerBackToSF" SimulateOnly="1" GoalIndexToAchieve="0" />
+      <Event Trigger="Instant" Type="GoalAchieve" Name="A1_Q2_TimerBug" SimulateOnly="0" GoalIndexToAchieve="0" Delay="120" />
+    </Step>
+    <Step Order="19" UIName="@ui_A1_Q2_S12_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="Q_NPC_SF_Lieutenant" Radius="10" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_SF_Lieutenant" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Talk" EntityName="Q_NPC_SF_Lieutenant" DialogName="ACT1_Q2_ThunderBladeFaraad2_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_SF_Lieutenant" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="1" Name="A1_Q2_ClearUI_9" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_r_SF_Palace1" EntityNames="DO_AnimObject_blocking_guard_r_SF_Palace" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_l_SF_Palace1" EntityNames="DO_AnimObject_blocking_guard_l_SF_Palace" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Reveal_Unblocking_guard_r_SF_Palace1" EntityNames="DO_AnimObject_Unblocking_guard_r_SF_Palace" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Reveal_Unblocking_guard_l_SF_Palace1" EntityNames="DO_AnimObject_Unblocking_guard_l_SF_Palace" Hide="0" />
+    </Step>
+    <Step Order="20" UIName="@ui_A1_Q2_S13_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="SpawnPoint_from_stormfall_to_palace" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Stormfall_RestrictedArea1" EntityNames="Stormfall_RestrictedArea1" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ACT1_Q2_SF_PlayerCommentPalace" AreaRadius="15" Type="GlobalDialog" Name="SF_EnteringPalace" DialogName="ACT1_Q2_SF_PlayerComment" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="SpawnPoint_from_palace_to_stormfall" AreaRadius="22" Type="GlobalDialog" Name="SF_NobleQueeing" DialogName="ACT1_Q2_NobleQueeing_Talk" />
+    </Step>
+    <Step Order="21" AutoClearEvents="1" Save="0" UIName="@ui_A1_Q2_S14_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="Act1_StormfallPalace_Damaskus" Radius="22" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="Act1_StormfallPalace_Damaskus" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="Act1_StormfallPalace_Damaskus" DialogName="ACT1_Q2_Damaskus1_Talk">
+        <ArrowMarker ShowMinimapIcon="1" Target="Act1_StormfallPalace_Damaskus" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q2_ClearUI_10" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="SF_PalaceGuard" DialogName="ACT1_Q2_PalaceGuard_Talk" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_SF_PalaceMapCenter" AreaRadius="18" Type="GlobalDialog" Name="SF_TeachingGeography" DialogName="ACT1_Q2_TeachingGeography_Talk" />
+      <Event Trigger="EventEnd" EventName="SF_PalaceGuard" Type="GoalAchieve" Name="WaitEnd_SF_PalaceGuard" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventStart" EventName="SF_PalaceGuard" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="AnimateDamaskusGuard" AnimatedEntityName="AfricanMaleGuard14" Play="NPC_MH_Stand_Gesture_Announce_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="SF_Palace_Update1" Localization="@ui_A1_Q2_S14_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="SF_Palace_Update2" Localization="@ui_A1_Q2_S14_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalTutorial" Name="Dialog_ACT1_Q2_Tutorial_Gems" TutorialName="Quest_GemsJeweler" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="1500" />
+        <XP Amount="2500" />
+        <ChoiceLootClass Name="A1_Q2_Reward" MinItemNumber="3" MaxItemNumber="3" SortByRarity="1" />
+        <FixedLootClass Name="A1_Q2_Reward_Fixe" MinItemNumber="2" MaxItemNumber="2" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,11 @@
+<ChoiceAltarPresets>
+  <Choice PresetName="Choice_Shrine" Weight="1" MaxUses="1" Geometry="objects/props/altar/Selection_Shrine.cgf">
+    <Rewards>
+      <Reward LootClass="LC_ChoiceAltars" Weight="1" />
+    </Rewards>
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.SelectionShrine_01" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.SelectionShrine_Activate_01" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+    </Particles>
+  </Choice>
+</ChoiceAltarPresets>

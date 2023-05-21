@@ -1,0 +1,1379 @@
+<MetaData>
+  <HuntEffectsFamily Name="Omens">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Omens_1" UITitle="@ui_hunteffect_title_Omens_1" IconPath="../u_resources/hunt/EIM_01.png" />
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Omens_2" UITitle="@ui_hunteffect_title_Omens_2" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_R1_Wait_ScarabSpawn">
+        <Data Quest="QN_HE_R1_Final" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Omens_3" UITitle="@ui_hunteffect_title_Omens_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Omens_4" UITitle="@ui_hunteffect_title_Omens_4" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_O5_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_Butcher">
+        <Data Quest="QN_HE_O5_COSU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_PacifiedKnight">
+        <Data Quest="QN_HE_O5_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_O5_COFL_Final" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_DemonOfSouls">
+        <Data BossModfier="AI_Hunt_BossModifier_VOS2DOS_proj" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Butcher">
+        <Data BossModfier="AI_Hunt_BossModifier_MovingIce_DZ" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_PacifiedKnight">
+        <Data BossModfier="AI_Hunt_BossModifier_LightningStorm_Slow" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_DemonOfFlesh">
+        <Data BossModfier="AI_Hunt_BossModifier_FleshBeam_DZ" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Legendary" BossFilter="Hunt_DemonOfFlesh">
+        <Data AddedLootClass="LC_Hunt_Weapon_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Legendary" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Legendary" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Reagent_Legendary" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Reagent_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Willing_Vessel">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Willing_Vessel_1" UITitle="@ui_hunteffect_title_Willing_Vessel_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-15" />
+          <HiRoll DamagePercentInt="-15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Willing_Vessel_2" UITitle="@ui_hunteffect_title_Willing_Vessel_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-15" />
+          <HiRoll DamagePercentInt="-15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Willing_Vessel_3" UITitle="@ui_hunteffect_title_Willing_Vessel_3" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O3_Kill_CatchTheBuffScarab" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_O3_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O3_Kill_CatchTheBuffScarab" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_O3_COFL_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Willing_Vessel_4" UITitle="@ui_hunteffect_title_Willing_Vessel_4" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-25" />
+          <HiRoll DamagePercentInt="-25" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Forbidden_Bond">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Forbidden_Bond_1" UITitle="@ui_hunteffect_title_Forbidden_Bond_1" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="offensivespeed_final_percent">
+          <LoRoll CharacteristicFinalPercentFloat="25" />
+          <HiRoll CharacteristicFinalPercentFloat="25" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Forbidden_Bond_2" UITitle="@ui_hunteffect_title_Forbidden_Bond_2" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="health_percent">
+          <LoRoll HealthPercentInt="35" />
+          <HiRoll HealthPercentInt="35" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Forbidden_Bond_3" UITitle="@ui_hunteffect_title_Forbidden_Bond_3" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Additional_Proj" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Forbidden_Bond_4" UITitle="@ui_hunteffect_title_Forbidden_Bond_4" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Increased_Damage" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="4" UILore="@ui_hunteffect_desc_Forbidden_Bond_5" UITitle="@ui_hunteffect_title_Forbidden_Bond_5" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Increased_Speed" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="5" UILore="@ui_hunteffect_desc_Forbidden_Bond_6" UITitle="@ui_hunteffect_title_Forbidden_Bond_6" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_percent">
+          <LoRoll ArmorPercentFloat="100" />
+          <HiRoll ArmorPercentFloat="100" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Legendary" BossFilter="Hunt_DemonOfFlesh">
+        <Data AddedLootClass="LC_Hunt_Weapon_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Legendary" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Legendary" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Reagent_Legendary" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Reagent_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Wayward_Ghost">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Wayward_Ghost_1" UITitle="@ui_hunteffect_title_Wayward_Ghost_1" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="health_percent">
+          <LoRoll HealthPercentInt="20" />
+          <HiRoll HealthPercentInt="20" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Wayward_Ghost_2" UITitle="@ui_hunteffect_title_Wayward_Ghost_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="15" />
+          <HiRoll DamagePercentInt="15" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Wayward_Ghost_3" UITitle="@ui_hunteffect_title_Wayward_Ghost_3" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O1_Bloodthirst_DemonSummoning" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_O1_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O1_Bloodthirst_DemonSummoning" BossFilter="Hunt_Butcher">
+        <Data Quest="QN_HE_O1_COSU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O1_Bloodthirst_DemonSummoning" BossFilter="Hunt_PacifiedKnight">
+        <Data Quest="QN_HE_O1_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O1_Bloodthirst_DemonSummoning" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_O1_COFL_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Legendary" BossFilter="Hunt_DemonOfFlesh">
+        <Data AddedLootClass="LC_Hunt_Weapon_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Legendary" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Legendary" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Reagent_Legendary" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Reagent_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Nostalgia">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Nostalgia_1" UITitle="@ui_hunteffect_title_Nostalgia_1" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="movespeed">
+          <LoRoll SpeedPercentInt="15" />
+          <HiRoll SpeedPercentInt="15" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Nostalgia_2" UITitle="@ui_hunteffect_title_Nostalgia_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Nostalgia_3" UITitle="@ui_hunteffect_title_Nostalgia_3" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="BossModifier_MaterialShield" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Nostalgia_4" UITitle="@ui_hunteffect_title_Nostalgia_4" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="30" />
+          <HiRoll DamagePercentInt="30" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="4" UILore="@ui_hunteffect_desc_Nostalgia_5" UITitle="@ui_hunteffect_title_Nostalgia_5" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DemonOfSouls_skill_4" BossFilter="Hunt_DemonOfSouls">
+        <Data OldSkill="AI_CultOfSouls_DemonOfSouls_DefaultAttack01" NewSkill="AI_Hunt_DemonOfSouls_DefaultAttack01" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_Devourer_skill_1" BossFilter="Hunt_Butcher">
+        <Data OldSkill="AI_coss_butcher_soulvortex" NewSkill="AI_hunt_butcher_soulvortex" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_PacifiedKnight">
+        <MagicEffect Name="chance_weakness_on_hit">
+          <LoRoll ChancePercentInt="25" />
+          <HiRoll ChancePercentInt="25" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DemonOfFlesh_skill_1" BossFilter="Hunt_DemonOfFlesh">
+        <Data OldSkill="AI_CultOfFlesh_DemonOfFlesh_DefaultAttack" NewSkill="AI_Hunt_DemonOfFlesh_DefaultAttack" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Dark_Winged_Servant">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Dark_Winged_Servant_1" UITitle="@ui_hunteffect_title_Dark_Winged_Servant_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Dark_Winged_Servant_2" UITitle="@ui_hunteffect_title_Dark_Winged_Servant_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Dark_Winged_Servant_3" UITitle="@ui_hunteffect_title_Dark_Winged_Servant_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DemonOfSouls">
+        <MagicEffect Name="damage_percent_as_frost">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_Devourer_skill_1" BossFilter="Hunt_Butcher">
+        <Data OldSkill="AI_coss_butcher_soulvortex" NewSkill="AI_hunt_butcher_soulvortex" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_PacifiedKnight">
+        <MagicEffect Name="damage_percent_as_sacred">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DemonOfFlesh">
+        <MagicEffect Name="damage_percent_as_rend">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Dark_Winged_Servant_4" UITitle="@ui_hunteffect_title_Dark_Winged_Servant_4" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="AI_BossModifier_Hunt_AirSupport" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Sacrifice">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Sacrifice_1" UITitle="@ui_hunteffect_title_Sacrifice_1" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C3_Conquer" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_C3_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C3_Conquer" BossFilter="Hunt_Butcher">
+        <Data Quest="QN_HE_C3_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C3_Conquer" BossFilter="Hunt_PacifiedKnight">
+        <Data Quest="QN_HE_C3_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C3_Conquer" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_C3_COFU_Final" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="50" />
+          <HiRoll ResourcePercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Sacrifice_2" UITitle="@ui_hunteffect_title_Sacrifice_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Sacrifice_3" UITitle="@ui_hunteffect_title_Sacrifice_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="50" />
+          <HiRoll DamagePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Sacrifice_4" UITitle="@ui_hunteffect_title_Sacrifice_4" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DemonOfSouls">
+        <Data BossModfier="AI_Hunt_BossMod_Halfbreeds" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Butcher">
+        <Data BossModfier="AI_Hunt_BossMod_LanternBearers" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_PacifiedKnight">
+        <Data BossModfier="AI_Hunt_BossMod_Priest" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DemonOfFlesh">
+        <Data BossModfier="AI_Hunt_BossMod_Spreader" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Legendary" BossFilter="Hunt_DemonOfFlesh">
+        <Data AddedLootClass="LC_Hunt_Weapon_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Legendary" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Legendary" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Reagent_Legendary" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Reagent_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Abyssal_Hush">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Abyssal_Hush_1" UITitle="@ui_hunteffect_title_Abyssal_Hush_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_percent">
+          <LoRoll ArmorPercentFloat="50" />
+          <HiRoll ArmorPercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Abyssal_Hush_2" UITitle="@ui_hunteffect_title_Abyssal_Hush_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="BossModifier_MaterialShield" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Abyssal_Hush_3" UITitle="@ui_hunteffect_title_Abyssal_Hush_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="50" />
+          <HiRoll DamagePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Abyssal_Hush_4" UITitle="@ui_hunteffect_title_Abyssal_Hush_4" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O2_Destroy_MonsterSpawn" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_O2_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O2_Destroy_MonsterSpawn" BossFilter="Hunt_Butcher">
+        <Data Quest="QN_HE_O2_COSU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O2_Destroy_MonsterSpawn" BossFilter="Hunt_PacifiedKnight">
+        <Data Quest="QN_HE_O2_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O2_Destroy_MonsterSpawn" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_O2_COFL_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Stigma">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Stigma_1" UITitle="@ui_hunteffect_title_Stigma_1" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DemonOfSouls">
+        <Data BossModfier="AI_Hunt_BossMod_Halfbreeds" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Butcher">
+        <Data BossModfier="AI_Hunt_BossMod_LanternBearers" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_PacifiedKnight">
+        <Data BossModfier="AI_Hunt_BossMod_Priest" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DemonOfFlesh">
+        <Data BossModfier="AI_Hunt_BossMod_Spreader" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Stigma_2" UITitle="@ui_hunteffect_title_Stigma_2" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="MonsterBossMod" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Stigma_3" UITitle="@ui_hunteffect_title_Stigma_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="50" />
+          <HiRoll DamagePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Stigma_4" UITitle="@ui_hunteffect_title_Stigma_4" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DemonOfSouls">
+        <MagicEffect Name="chance_freeze_on_hit">
+          <LoRoll ChancePercentInt="10" />
+          <HiRoll ChancePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_Devourer_skill_2" BossFilter="Hunt_Butcher">
+        <Data OldSkill="AI_cultofsouls_butcher_hook" NewSkill="AI_hunt_butcher_hook" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_PacifiedKnight">
+        <MagicEffect Name="chance_weakness_on_hit">
+          <LoRoll ChancePercentInt="50" />
+          <HiRoll ChancePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DemonOfFlesh">
+        <MagicEffect Name="chance_bleed_on_hit">
+          <LoRoll ChancePercentInt="50" />
+          <HiRoll ChancePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Confusion">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Confusion_1" UITitle="@ui_hunteffect_title_Confusion_1" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Reduced_Damage_1" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Confusion_2" UITitle="@ui_hunteffect_title_Confusion_2" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Reduced_Offensivespeed_1" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Confusion_3" UITitle="@ui_hunteffect_title_Confusion_3" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Reduced_AllRes_1" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Confusion_4" UITitle="@ui_hunteffect_title_Confusion_4" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Reduced_Damage_1" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="4" UILore="@ui_hunteffect_desc_Confusion_5" UITitle="@ui_hunteffect_title_Confusion_5" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Reduced_AllRes_2" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="5" UILore="@ui_hunteffect_desc_Confusion_6" UITitle="@ui_hunteffect_title_Confusion_6" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Ghost_Damage" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="50" />
+          <HiRoll ResourcePercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Occult_11">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Occult_11" UITitle="@ui_hunteffect_title_Occult_11" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="50" />
+          <HiRoll DamagePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Occult_12">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_title_Occult_12" UITitle="@ui_hunteffect_desc_Occult_12" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_DemonOfSouls">
+        <Data BossModfier="AI_Hunt_BossModifier_RandomFrostDZ" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Butcher">
+        <Data BossModfier="AI_Hunt_BossModifier_MovingIce_DZ" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_PacifiedKnight">
+        <Data BossModfier="AI_Hunt_BossModifier_LightningStorm_Slow" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_DemonOfFlesh">
+        <Data BossModfier="AI_Hunt_BossModifier_FleshBeam_DZ" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_4" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_4" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_4" BossFilter="Hunt_Butcher,Hunt_DemonOfFlesh">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_4" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_4" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_4" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Occult_13">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Occult_13" UITitle="@ui_hunteffect_title_Occult_13" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DemonOfSouls_skill_4" BossFilter="Hunt_DemonOfSouls">
+        <Data OldSkill="AI_CultOfSouls_DemonOfSouls_DefaultAttack01" NewSkill="AI_Hunt_DemonOfSouls_DefaultAttack01" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_Devourer_skill_1" BossFilter="Hunt_Butcher">
+        <Data OldSkill="AI_coss_butcher_soulvortex" NewSkill="AI_hunt_butcher_soulvortex" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_PacifiedKnight">
+        <MagicEffect Name="damage_percent_as_sacred">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DemonOfFlesh_skill_6" BossFilter="Hunt_DemonOfFlesh">
+        <Data OldSkill="AI_CultOfFlesh_DemonOfFlesh_ExplosionWhipe" NewSkill="AI_hunt_DemonOfFlesh_ExplosionWhipe" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Occult_14">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Occult_14" UITitle="@ui_hunteffect_title_Occult_14" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O3_Kill_CatchTheBuffScarab" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_O3_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O3_Kill_CatchTheBuffScarab" BossFilter="Hunt_Butcher">
+        <Data Quest="QN_HE_O3_COSU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O3_Kill_CatchTheBuffScarab" BossFilter="Hunt_PacifiedKnight">
+        <Data Quest="QN_HE_O3_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O3_Kill_CatchTheBuffScarab" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_O3_COFL_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Occult_15">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Occult_15" UITitle="@ui_hunteffect_title_Occult_15" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O4_Destroy_AvoidAoE" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_O4_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O4_Destroy_AvoidAoE" BossFilter="Hunt_Butcher">
+        <Data Quest="QN_HE_O4_COSU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O4_Destroy_AvoidAoE" BossFilter="Hunt_PacifiedKnight">
+        <Data Quest="QN_HE_O4_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O4_Destroy_AvoidAoE" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_O4_COFL_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Occult_16">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Occult_16" UITitle="@ui_hunteffect_title_Occult_16" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_O5_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_Butcher">
+        <Data Quest="QN_HE_O5_COSU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_PacifiedKnight">
+        <Data Quest="QN_HE_O5_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_O5_COFL_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Occult_17">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Occult_17" UITitle="@ui_hunteffect_title_Occult_17" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DemonOfSouls_skill_2" BossFilter="Hunt_DemonOfSouls">
+        <Data OldSkill="AI_cultofsouls_demonofsouls_soulstorm_part1" NewSkill="AI_Hunt_demonofsouls_soulstorm_part1_1" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_Devourer_skill_2" BossFilter="Hunt_Butcher">
+        <Data OldSkill="AI_cultofsouls_butcher_hook" NewSkill="AI_hunt_butcher_hook" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_Auroraknight_skill_4" BossFilter="Hunt_PacifiedKnight">
+        <Data OldSkill="AI_TMPL_Knight_SacredOrbs_Level1" NewSkill="AI_Hunt_Knight_SacredOrbs_Level1" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="" BossFilter="Hunt_PacifiedKnight">
+        <Data OldSkill="AI_TMPL_Knight_Prayer" NewSkill="AI_Hunt_Knight_Prayer_SacredOrbs" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DemonOfFlesh_skill_4" BossFilter="Hunt_DemonOfFlesh">
+        <Data OldSkill="AI_CultOfFlesh_DemonOfFlesh_DoubleWhipe" NewSkill="AI_Hunt_DemonOfFlesh_DoubleWhipe" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Occult_18">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Occult_18" UITitle="@ui_hunteffect_title_Occult_18" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DemonOfSouls_skill_6" BossFilter="Hunt_DemonOfSouls">
+        <Data OldSkill="AI_cultofsouls_demonofsouls_possess_part1" NewSkill="AI_hunt_demonofsouls_possess_part1" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_Devourer_skill_3" BossFilter="Hunt_Butcher">
+        <Data OldSkill="AI_cultofsouls_butcher_multislash" NewSkill="AI_hunt_butcher_multislash" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_Auroraknight_skill_1" BossFilter="Hunt_PacifiedKnight">
+        <Data OldSkill="AI_TMPL_Knight_Prayer" NewSkill="AI_Hunt_Knight_Prayer" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DemonOfFlesh_skill_5" BossFilter="Hunt_DemonOfFlesh">
+        <Data OldSkill="AI_CultOfFlesh_DemonOfFlesh_FleshGrab" NewSkill="AI_Hunt_DemonOfFlesh_FleshGrab" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Occult_19">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Occult_19" UITitle="@ui_hunteffect_title_Occult_19" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_DemonOfSouls">
+        <Data BossModfier="AI_Hunt_BossModifier_VOS2DOS_proj" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Butcher">
+        <Data BossModfier="AI_BossModifier_FrostExplosions" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_PacifiedKnight">
+        <Data BossModfier="AI_BossModifier_SacredBall_DZ" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_DemonOfFlesh">
+        <Data BossModfier="AI_Hunt_BossModifier_RandomFlesh_DZ" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Occult_20">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Occult_20" UITitle="@ui_hunteffect_title_Occult_20" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DemonOfSouls">
+        <MagicEffect Name="damage_percent_as_frost">
+          <LoRoll DamagePercentInt="30" />
+          <HiRoll DamagePercentInt="30" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Butcher">
+        <Data BossModfier="AI_Hunt_BossMod_LanternBearers" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_PacifiedKnight">
+        <MagicEffect Name="damage_percent_as_sacred">
+          <LoRoll DamagePercentInt="30" />
+          <HiRoll DamagePercentInt="30" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DemonOfFlesh">
+        <MagicEffect Name="damage_percent_as_rend">
+          <LoRoll DamagePercentInt="30" />
+          <HiRoll DamagePercentInt="30" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_4" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_4" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_4" BossFilter="Hunt_Butcher,Hunt_DemonOfFlesh">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_4" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_4" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_4" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Wayward_Ghost_A2">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Wayward_Ghost_1" UITitle="@ui_hunteffect_title_Wayward_Ghost_1" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="health_percent">
+          <LoRoll HealthPercentInt="20" />
+          <HiRoll HealthPercentInt="20" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Wayward_Ghost_2" UITitle="@ui_hunteffect_title_Wayward_Ghost_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="30" />
+          <HiRoll DamagePercentInt="30" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Wayward_Ghost_3" UITitle="@ui_hunteffect_title_Wayward_Ghost_3" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O1_Bloodthirst_DemonSummoning">
+        <Data Quest="QN_HE_O1_COSU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Wayward_Ghost_A3">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Wayward_Ghost_1" UITitle="@ui_hunteffect_title_Wayward_Ghost_1" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="health_percent">
+          <LoRoll HealthPercentInt="20" />
+          <HiRoll HealthPercentInt="20" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Wayward_Ghost_2" UITitle="@ui_hunteffect_title_Wayward_Ghost_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="30" />
+          <HiRoll DamagePercentInt="30" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Wayward_Ghost_3" UITitle="@ui_hunteffect_title_Wayward_Ghost_3" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O1_Bloodthirst_DemonSummoning">
+        <Data Quest="QN_HE_STORYA3_MONO_O1_COFU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Abyssal_Hush_A2">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Abyssal_Hush_1" UITitle="@ui_hunteffect_title_Abyssal_Hush_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_percent">
+          <LoRoll ArmorPercentFloat="50" />
+          <HiRoll ArmorPercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Abyssal_Hush_2" UITitle="@ui_hunteffect_title_Abyssal_Hush_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="BossModifier_MaterialShield" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Abyssal_Hush_3" UITitle="@ui_hunteffect_title_Abyssal_Hush_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="50" />
+          <HiRoll DamagePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Abyssal_Hush_4" UITitle="@ui_hunteffect_title_Abyssal_Hush_4" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O2_Destroy_MonsterSpawn">
+        <Data Quest="QN_HE_STORYA2_VOS1_O2_COSU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Abyssal_Hush_A3">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Abyssal_Hush_1" UITitle="@ui_hunteffect_title_Abyssal_Hush_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_percent">
+          <LoRoll ArmorPercentFloat="50" />
+          <HiRoll ArmorPercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Abyssal_Hush_2" UITitle="@ui_hunteffect_title_Abyssal_Hush_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="BossModifier_MaterialShield" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Abyssal_Hush_3" UITitle="@ui_hunteffect_title_Abyssal_Hush_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="50" />
+          <HiRoll DamagePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Abyssal_Hush_4" UITitle="@ui_hunteffect_title_Abyssal_Hush_4" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O2_Destroy_MonsterSpawn">
+        <Data Quest="QN_HE_STORYA3_MONO_O2_COFU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Omens_A2">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Omens_1" UITitle="@ui_hunteffect_title_Omens_1" IconPath="../u_resources/hunt/EIM_01.png" />
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Omens_2" UITitle="@ui_hunteffect_title_Omens_2" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_R1_Wait_ScarabSpawn">
+        <Data Quest="QN_HE_R1_Final" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Omens_3" UITitle="@ui_hunteffect_title_Omens_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Omens_4" UITitle="@ui_hunteffect_title_Omens_4" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_STORYA2_IC2_O5_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_Butcher">
+        <Data Quest="QN_HE_STORYA2_IC2_O5_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_PacifiedKnight">
+        <Data Quest="QN_HE_STORYA2_IC2_O5_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O5_Kill_GrowBoss" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_STORYA2_IC2_O5_COSS_Final" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_DemonOfSouls">
+        <Data BossModfier="AI_Hunt_BossModifier_VOS2DOS_proj" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Butcher">
+        <Data BossModfier="AI_Hunt_BossModifier_MovingIce_DZ" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_PacifiedKnight">
+        <Data BossModfier="AI_Hunt_BossModifier_LightningStorm_Slow" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_DemonOfFlesh">
+        <Data BossModfier="AI_Hunt_BossModifier_FleshBeam_DZ" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Legendary" BossFilter="Hunt_DemonOfFlesh">
+        <Data AddedLootClass="LC_Hunt_Weapon_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Legendary" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Legendary" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Reagent_Legendary" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Reagent_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Willing_Vessel_A2">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Willing_Vessel_1" UITitle="@ui_hunteffect_title_Willing_Vessel_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-15" />
+          <HiRoll DamagePercentInt="-15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Willing_Vessel_2" UITitle="@ui_hunteffect_title_Willing_Vessel_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-15" />
+          <HiRoll DamagePercentInt="-15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Willing_Vessel_3" UITitle="@ui_hunteffect_title_Willing_Vessel_3" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O3_Kill_CatchTheBuffScarab" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_STORYA2_IC2_O3_COSS_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_O3_Kill_CatchTheBuffScarab" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_STORYA2_IC2_O3_COSS_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_1" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_1" BossFilter="Hunt_DemonOfFlesh,Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_1" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Willing_Vessel_4" UITitle="@ui_hunteffect_title_Willing_Vessel_4" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-25" />
+          <HiRoll DamagePercentInt="-25" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Sacrifice_A3">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Sacrifice_1" UITitle="@ui_hunteffect_title_Sacrifice_1" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C3_Conquer" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_C3_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C3_Conquer" BossFilter="Hunt_Butcher">
+        <Data Quest="QN_HE_C3_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C3_Conquer" BossFilter="Hunt_PacifiedKnight">
+        <Data Quest="QN_HE_C3_COFU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C3_Conquer" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_STORYA3_STRG_C3_REPU_Final" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="50" />
+          <HiRoll ResourcePercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Sacrifice_2" UITitle="@ui_hunteffect_title_Sacrifice_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Sacrifice_3" UITitle="@ui_hunteffect_title_Sacrifice_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="occult_damage_percent">
+          <LoRoll DamagePercentInt="50" />
+          <HiRoll DamagePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Sacrifice_4" UITitle="@ui_hunteffect_title_Sacrifice_4" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DemonOfSouls">
+        <Data BossModfier="AI_Hunt_BossMod_Halfbreeds" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Butcher">
+        <Data BossModfier="AI_Hunt_BossMod_LanternBearers" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_PacifiedKnight">
+        <Data BossModfier="AI_Hunt_BossMod_Priest" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DemonOfFlesh">
+        <Data BossModfier="AI_Hunt_BossMod_Spreader" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Legendary" BossFilter="Hunt_DemonOfFlesh">
+        <Data AddedLootClass="LC_Hunt_Weapon_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Legendary" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Armor_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Legendary" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Accessory_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Reagent_Legendary" BossFilter="Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Reagent_Legendary_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Stigma_A3">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Stigma_1" UITitle="@ui_hunteffect_title_Stigma_1" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DemonOfSouls">
+        <Data BossModfier="AI_Hunt_BossMod_Halfbreeds" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Butcher">
+        <Data BossModfier="AI_Hunt_BossMod_LanternBearers" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_PacifiedKnight">
+        <Data BossModfier="AI_Hunt_BossMod_Priest" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DemonOfFlesh">
+        <Data BossModfier="AI_Hunt_BossMod_Spreader" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Stigma_2" UITitle="@ui_hunteffect_title_Stigma_2" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="MonsterBossMod" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Stigma_3" UITitle="@ui_hunteffect_title_Stigma_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DemonOfSouls">
+        <MagicEffect Name="chance_freeze_on_hit">
+          <LoRoll ChancePercentInt="10" />
+          <HiRoll ChancePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_Devourer_skill_2" BossFilter="Hunt_Butcher">
+        <Data OldSkill="AI_cultofsouls_butcher_hook" NewSkill="AI_hunt_butcher_hook" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_PacifiedKnight">
+        <MagicEffect Name="chance_weakness_on_hit">
+          <LoRoll ChancePercentInt="50" />
+          <HiRoll ChancePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DemonOfFlesh">
+        <MagicEffect Name="chance_bleed_on_hit">
+          <LoRoll ChancePercentInt="50" />
+          <HiRoll ChancePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_DemonOfSouls">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfFlesh,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Stigma_4" UITitle="@ui_hunteffect_title_Stigma_4" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C1_Hold_ArenaV1" BossFilter="Hunt_DemonOfSouls">
+        <Data Quest="QN_HE_STORYA3_STRG_C1_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C1_Hold_ArenaV1" BossFilter="Hunt_Butcher">
+        <Data Quest="QN_HE_STORYA3_STRG_C1_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C1_Hold_ArenaV1" BossFilter="Hunt_PacifiedKnight">
+        <Data Quest="QN_HE_STORYA3_STRG_C1_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C1_Hold_ArenaV1" BossFilter="Hunt_DemonOfFlesh">
+        <Data Quest="QN_HE_STORYA3_STRG_C1_REPU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Weapon_Rare_2" BossFilter="Hunt_Butcher">
+        <Data AddedLootClass="LC_Hunt_Weapon_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Armor_Rare_2" BossFilter="Hunt_DemonOfSouls,Hunt_PacifiedKnight">
+        <Data AddedLootClass="LC_Hunt_Armor_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_LC_Accessory_Rare_2" BossFilter="Hunt_DemonOfFlesh">
+        <Data AddedLootClass="LC_Hunt_Accessory_Rare_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+</MetaData>

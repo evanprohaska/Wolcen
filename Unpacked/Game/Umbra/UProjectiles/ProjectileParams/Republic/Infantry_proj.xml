@@ -1,0 +1,32 @@
+<MetaData>
+  <Projectile ID="bow_proj_infantry_rend" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.75,0.75,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Rend" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Hit SoundTriggerName="Play_Enemy_Arrow_Impact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="bow_proj_infantry_physical" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.75,0.75,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Normal" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+      <Hit SoundTriggerName="Play_Enemy_Arrow_Impact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+    </Audio>
+  </Projectile>
+</MetaData>

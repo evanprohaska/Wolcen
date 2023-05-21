@@ -1,0 +1,28 @@
+<MetaData>
+  <ArenaWaves Name="ForestClearing_2">
+    <Wave Type="killcount" TargetKillCount="60" Tag="3">
+      <PrefabParams PrefabName="arena_ForestClearing_2" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1.5" Type="fill" TargetSpawnClass="sc_COFE_ForestClearing_FleshRunner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3.5" MaxNumberOfSpawnedEntities="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="11" />
+        <Spawner DelayBeforeFirstSpawn="2.5" Type="fill" TargetSpawnClass="sc_COFE_ForestClearing_FleshRunner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3.5" MaxNumberOfSpawnedEntities="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="12" />
+        <Spawner DelayBeforeFirstSpawn="3.5" Type="fill" TargetSpawnClass="sc_COFE_ForestClearing_FleshRunner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3.5" MaxNumberOfSpawnedEntities="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="13" />
+        <Spawner DelayBeforeFirstSpawn="4.5" Type="fill" TargetSpawnClass="sc_COFE_ForestClearing_FleshRunner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3.5" MaxNumberOfSpawnedEntities="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="14" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="fill" TargetSpawnClass="sc_COFE_ForestClearing_Zombie" NumberOfEntitiesPerSpawn="3" SpawnFrequency="4" MaxNumberOfSpawnedEntities="18" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="9" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="fill" TargetSpawnClass="sc_COFE_ForestClearing_Zombie" NumberOfEntitiesPerSpawn="3" SpawnFrequency="4" MaxNumberOfSpawnedEntities="18" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="9" TargetSpawnLocationID="2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="killtarget" Tag="4">
+      <PrefabParams PrefabName="arena_ForestClearing_2" />
+      <KillTargets>
+        <Entry ClassName="Republic_ForestClearing_Justicar" Amount="1" />
+      </KillTargets>
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="0" Type="until_spawn_count" TargetSpawnClass="sc_REPU_ForestClearing_Justicar" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="100" MustLoot="1" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill_forever" TargetSpawnClass="sc_COFE_ForestClearing_FleshRunner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="11" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="sc_COFE_ForestClearing_FleshRunner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="12" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="sc_COFE_ForestClearing_FleshRunner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="13" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="fill_forever" TargetSpawnClass="sc_COFE_ForestClearing_FleshRunner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="14" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

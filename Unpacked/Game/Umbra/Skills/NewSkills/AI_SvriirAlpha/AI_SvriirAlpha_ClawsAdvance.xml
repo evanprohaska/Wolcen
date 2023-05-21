@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill UID="AI_svriiralpha_clawsadvance" ESkill="AI_svriiralpha_clawsadvance" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_05" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Particles ParticleName="U_Trails.Umbra.fury" ParticleOffSet="0,0,0" ParticleDirection="0,0,0" ParticleScale="1" />
+    <Blownaway Chance="0" Height="1.1" Distance="2.2" DistancePerLevel="0" StunDuration="0" StunDurationPerLevel="0" />
+    <DamageWeapon Type="physical" WeaponMultiplier="1.52" />
+    <Cooldown Cooldown="10" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape" />
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape" />
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape_Circle" />
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape_Circle" />
+    </Shapes>
+    <SkillSpecific Speed="4" MoveDistance="10" />
+    <SoundTrigger OnAnimCast="PLAY_AI_SvriirAlpha_ClawSwipe" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

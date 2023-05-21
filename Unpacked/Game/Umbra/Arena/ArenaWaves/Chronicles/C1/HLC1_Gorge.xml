@@ -1,0 +1,52 @@
+<MetaData>
+  <ArenaWaves Name="GorgeArena_HLC1">
+    <Wave Type="Survival" Tag="1" TimeLimit="30">
+      <PrefabParams PrefabName="arena_HLC1_Gorge" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_Veteran" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="0" />
+        <Spawner DelayBeforeFirstSpawn="25" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_Veteran" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfMelee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="2" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfMelee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="3" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfMelee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="4" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfMelee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="5" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfMelee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="6" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfRange" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="7" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfRange" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="8" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfRange" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="9" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_BossRank" NumberOfEntitiesPerSpawn="2" SpawnFrequency="10" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" TargetSpawnLocationID="0" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="RepublicSniper" Amount="4" />
+      </KillTargets>
+      <PrefabParams PrefabName="arena_HLC1_Gorge" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfMelee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="2" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfMelee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="3" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfMelee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="4" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfMelee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="5" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfMelee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="6" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfHeavy" NumberOfEntitiesPerSpawn="2" SpawnFrequency="10" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="once" TargetSpawnClass="Sc_C1_M1_Republic_MiniBoss_Arena" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0" TargetSpawnLocationID="0" />
+        <Spawner DelayBeforeFirstSpawn="15" Type="once" TargetSpawnClass="Sc_C1_M1_Republic_MiniBoss_Arena" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="25" Type="once" TargetSpawnClass="Sc_C1_M1_Republic_MiniBoss_Arena" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0" TargetSpawnLocationID="0" />
+        <Spawner DelayBeforeFirstSpawn="35" Type="once" TargetSpawnClass="Sc_C1_M1_Republic_MiniBoss_Arena" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0" TargetSpawnLocationID="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="Hunt_RepublicAssassin" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="arena_HLC1_Gorge" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfRange" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="2" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfRange" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="3" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfRange" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="4" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfRange" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="5" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_Sty_HLC1_REPU_Enforcement_InfRange" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="6" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="once" TargetSpawnClass="Sc_C1_M1_Republic_MiniBoss_3" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0" TargetSpawnLocationID="10" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

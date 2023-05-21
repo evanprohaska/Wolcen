@@ -1,0 +1,36 @@
+<MetaData>
+  <CastEffect Name="skeleton_overlord_permanent">
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.default_eye" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_right_bone" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.default_eye" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_left_bone" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.spine_light" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Spine" />
+  </CastEffect>
+  <CastEffect Name="skeleton_overlord_wave_start">
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.wave_eyes" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_right_bone" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.wave_eyes" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_left_bone" />
+  </CastEffect>
+  <CastEffect Name="skeleton_overlord_dash_warning">
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.attack_dash_eye" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_right_bone" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.attack_dash_eye" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_left_bone" />
+  </CastEffect>
+  <CastEffect Name="skeleton_overlord_dash_end">
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.attack_dash_eye_end" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_right_bone" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.attack_dash_eye_end" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="eye_left_bone" />
+  </CastEffect>
+  <CastEffect Name="skeleton_overlord_dash_portal">
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.attack_dash_portal" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R Hand2" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.dash_sound_moving" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Spine1" MoveSpeed="30" KillAfter="1.2" />
+  </CastEffect>
+  <CastEffect Name="skeleton_overlord_escape_teleport">
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.trail" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 L Hand" MoveSpeed="30" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.trail" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R Hand" MoveSpeed="30" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.trail" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 L Calf" MoveSpeed="30" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.trail" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R Calf" MoveSpeed="30" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.trail_head" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Neck" MoveSpeed="30" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.trail_head" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Head" MoveSpeed="30" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.dash_sound_moving" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Spine1" MoveSpeed="30" KillAfter="1.2" />
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.attract_dash_start" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Spine1" NoUpdate="0" />
+  </CastEffect>
+  <CastEffect Name="skeleton_overlord_escape_start">
+    <Param Type="Particle" ParticleName="U_Trails.skeleton_overlord.dash_start" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="ground" NoUpdate="1" />
+  </CastEffect>
+</MetaData>

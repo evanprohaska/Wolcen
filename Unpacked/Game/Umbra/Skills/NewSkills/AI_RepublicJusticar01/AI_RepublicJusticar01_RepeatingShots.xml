@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar01_repeatingshots" ESkill="AI_republicjusticar01_repeatingshots" Keywords="attack_skill,projectile">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".5" />
+    <CastingParams CastBone="Bip01_Cannons" CanCastWhileMoving="0" MaximumTurnRate="45" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <RandomCastingParams RandomNumberRangeMin="4" RandomNumberRangeMax="6" />
+    <SpecialShield ShieldAngle="90" BounceProjectiles="1" IgnoreDirectionalDamage="1" ResistsCrowdControl="1" ProtectionType="ProjectilesOnly" />
+    <Blownaway Height="0" Distance="4" />
+    <Cooldown Cooldown="4.0" CooldownTrigger="OnEnd" />
+    <Range AttackRange="30" />
+    <Projectile Name="Justicar_proj" ProjectileCount="1" PenetrationLimit="3" />
+    <ParticleList>
+      <Particle Key="Muzzle" Name="U_Monster.Justica.Muzzle_Fire_01" Offset="0,0,0" Direction="0,1,0" Scale="1.25" />
+      <Particle Key="Shield" Name="U_Monster.Justica.Shield_Bash_04" Offset="0.35,-0.5,0" Direction="0,1,0" Bone="Bip01" Delay="0.17" />
+      <Particle Key="ShieldOut" Name="U_Monster.Justica.Shield_Bash_04_End" Offset="0.35,-0.5,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Reflection" Name="U_Monster.Justica.Shield_Bounds_02" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_RepeatingShots_ExclusionZone" />
+    </Shapes>
+    <SkillSpecific BulletFlurryNumber="3" TimeBetweenFlurryBullets="0.15" SoundTriggerOnBulletFire="Play_Edric_Justicar1_RepeatingShots" />
+    <Material ScaleWithAnimationSpeed="50" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="10" />
+      <EmissiveIntensity From="500" To="origin" In=".5" />
+    </Material>
+    <SoundTrigger OnAnimCast="" />
+  </Skill>
+</MetaData>

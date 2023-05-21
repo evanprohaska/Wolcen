@@ -1,0 +1,42 @@
+<MetaData>
+  <Projectile ID="FireHomingProjectile_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.cultist_fury.atk_proj" Direction="1,0,0" WorldSpace="0" Scale="0.75" />
+      <Hit ParticleName="u_bossmodifiers.fire_homing_.proj_impact" Direction="1,0,0" WorldSpace="0" Scale="1" />
+      <HitEnvironment ParticleName="u_bossmodifiers.fire_homing_.proj_Fade" Direction="1,0,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_BossModifier_FireHoming_Proj_Launch" />
+      <Hit SoundTriggerName="Play_BossModifier_FireHoming_Proj_Impact" />
+      <Removed SoundTriggerName="Stop_BossModifier_FireHoming_Proj_Lp" />
+    </Audio>
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="120" TimeBeforeHoming="1" MaxLifeTime="5" MaxTravelDistance="-1" />
+    <Speed SpeedMin="6" SpeedMax="6" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+  </Projectile>
+  <Projectile ID="bossmod_FireHomingProj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="u_bossmodifiers.fire_homing_.proj" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="u_bossmodifiers.fire_homing_.proj_impact" Direction="1,0,0" WorldSpace="0" Scale="1" />
+      <HitEnvironment ParticleName="u_bossmodifiers.fire_homing_.proj_Fade" Direction="1,0,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_BossModifier_FireHoming_Proj_Launch" />
+      <Hit SoundTriggerName="Play_BossModifier_FireHoming_Proj_Impact" />
+      <Removed SoundTriggerName="Stop_BossModifier_FireHoming_Proj_Lp" />
+    </Audio>
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="120" TimeBeforeHoming="1" MaxLifeTime="5" MaxTravelDistance="-1" />
+    <Speed SpeedMin="6" SpeedMax="6" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+  </Projectile>
+</MetaData>

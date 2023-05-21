@@ -1,0 +1,15 @@
+<MetaData>
+  <Quest Name="test_endgame_triggers" StartDialog="" Type="Secondary" UIName="@ui_SvriirCoast" UIDesc="@ui_LeaveTheSvriirCoast">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Impossible" />
+      <Event Name="event_next_goal" Trigger="EndgameProjectStarted" ProjectName="city_hall_training_equipment" Delay="0" Type="GoalAchieve" GoalIndexToAchieve="0" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Impossible" />
+      <Event Name="event_prev_goal" Trigger="EndgameProjectCancelled" ProjectName="city_hall_training_equipment" Delay="0" Type="StepFail" RollbackToPreviousStep="1" />
+      <Event Name="event_next_goal" Trigger="EndgameProjectFinished" ProjectName="city_hall_training_equipment" Delay="0" Type="GoalAchieve" GoalIndexToAchieve="0" />
+    </Step>
+  </Quest>
+</MetaData>

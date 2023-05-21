@@ -1,0 +1,11 @@
+<MetaData>
+  <Skill UID="AI_Chosen_Charger_clone_DefaultAttack" ESkill="default_ranged" Keywords="attack_skill,projectile">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="1" />
+    <Cooldown Cooldown="3.0" />
+    <CastingParams CastBone="R_weapon_bone" />
+    <Projectile Name="chosen_charger_clone_projectile" ProjectileCount="1" PenetrationLimit="1" />
+    <Targeting ComputeTargetPosAtCast="1" />
+  </Skill>
+</MetaData>

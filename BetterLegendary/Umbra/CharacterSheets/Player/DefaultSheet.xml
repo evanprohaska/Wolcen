@@ -1,0 +1,218 @@
+<MetaData>
+  <PlayerStats>
+    <Progression Level="1" XP="0" />
+    <Strength Value="1" AttackSkillCriticalDamagePercentBase="150" BaseStunTime="0.1" />
+    <Agility Value="1" MovementSpeed="5.5" WalkSpeed="1.5" DodgeBaseDelay="0.1" />
+    <Constitution Value="1" StunCooldown="3.3" DefaultReviveTokens="3" MaximumReviveTokens="5" />
+    <Stamina Value="4" StaminaRecoveryTimer="4" />
+    <Rage BonusPerStrike="50" BonusPerCriticalStrike="50.0" BonusPerHitReceived="0" TimeBeforeRageLoss="0" RageLossPerSecond="17.5" />
+    <Power Value="1" BaseMaximumMana="1000" MagicSpellCriticalDamagePercentBase="150" />
+    <Health BaseHealth="100" HealthRegenerationBase="2.0" HealthRegenPerLevel="0.33" />
+    <Defense Defense="0" DefenseRegeneration="1000" DefenseLockTimer="5" />
+    <BeltItem Size="5">
+      <UnlockBelt Id="0" Cost="-1" Level="1" />
+      <UnlockBelt Id="1" Cost="-1" Level="2" />
+    </BeltItem>
+    <AutoPick BaseRadius="3" />
+  </PlayerStats>
+  <Faction Name="Players" />
+  <Inventory X="12" Y="8" ChestX="12" ChestY="12" ChestPannelCount="5">
+    <UnlockChest Id="1" Cost="0" />
+    <UnlockChest Id="2" Cost="5000" />
+    <UnlockChest Id="3" Cost="20000" />
+    <UnlockChest Id="4" Cost="20000" />
+    <UnlockChest Id="5" Cost="20000" />
+  </Inventory>
+  <Progression Last="ACT1_Quest1">
+    <Quest Name="ACT1_Quest1" Step="1" />
+  </Progression>
+  <Equipement>
+    <Item Name="OutfitVeteran_Chest" Equipped="1" />
+    <Item Name="OutfitVeteran_Armband" Equipped="1" />
+    <Item Name="OutfitVeteran_Pants" Equipped="1" />
+    <Item Name="OutfitVeteran_Boots" Equipped="1" />
+    <Item Name="OutfitVeteran_Armband" Equipped="1" />
+    <Item Name="Potion_S_Health" Equipped="1" />
+  </Equipement>
+  <ArchetypeEquipment>
+    <Warrior>
+      <Item Name="1H_Sword_Starter" Equipped="1" />
+    </Warrior>
+    <Mage>
+      <Item Name="2H_Staff_Starter" Equipped="1" />
+    </Mage>
+    <Rogue>
+      <Item Name="2H_Bow_Starter" Equipped="1" />
+    </Rogue>
+  </ArchetypeEquipment>
+  <SkillSlots>
+    <Slot Id="11" UnlockAtLevel="0" />
+    <Slot Id="12" UnlockAtLevel="0" />
+    <Slot Id="1" UnlockAtLevel="0" />
+    <Slot Id="2" UnlockAtLevel="0" />
+    <Slot Id="3" UnlockAtLevel="0" />
+    <Slot Id="4" UnlockAtLevel="0" />
+    <Slot Id="5" UnlockAtLevel="0" />
+    <Slot Id="6" UnlockAtLevel="0" />
+    <Slot Id="7" UnlockAtLevel="0" />
+    <Slot Id="8" UnlockAtLevel="0" />
+    <Slot Id="9" UnlockAtLevel="0" />
+    <Slot Id="10" UnlockAtLevel="0" />
+  </SkillSlots>
+  <DefaultSkills_Game>
+    <Warrior>
+      <Slot Id="12" SkillName="player_brutalstrike" Unlock="1" Level="1" />
+    </Warrior>
+    <Mage>
+      <Slot Id="12" SkillName="player_fireball" Unlock="1" Level="1" />
+    </Mage>
+    <Rogue>
+      <Slot Id="12" SkillName="player_spreadshot" Unlock="1" Level="1" />
+    </Rogue>
+  </DefaultSkills_Game>
+  <DefaultSkills_Editor>
+    <Slot Id="12" SkillName="player_brutalstrike" Unlock="1" Level="1" />
+    <Slot Id="1" SkillName="player_deathmark" Unlock="1" Level="1" />
+    <Slot Id="2" SkillName="player_warcry" Unlock="1" Level="1" />
+    <Slot Id="3" SkillName="player_arrowsrain" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_bladeslinger" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_bomb" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_chainlightning" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_dualstrike" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_fireball" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_frostcomet" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_frostlance" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_frostnova" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_hook" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_laceration" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_laser" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_leap" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_sacredground" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_spreadshot" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_teleport" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_charge" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_bulleye" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_reave" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_whirlwind" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_turret" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_sniper" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_hammer" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_vortex" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_summon_melee" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_summon_ranged" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_summon_champion" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_summon_range_melee" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_corpseexplosion" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_possession" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_aetherblade" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_aetherblast" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_solarfall" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_vault" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_smokebomb" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_ringofpain" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_ironguard" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_holydive" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_owlshot" Unlock="1" Level="1" />
+    <Slot Id="-1" SkillName="player_spraynpray" Unlock="1" Level="1" />
+  </DefaultSkills_Editor>
+  <Blood BloodSplatGroundDir="0,0,-1" GroundWaterSpawnProba="1">
+    <OnHits>
+      <OnHit Effect="U_Blood.hit.zombie2" Scale="1" />
+    </OnHits>
+    <BloodInWater>
+      <BloodFxInWater Effect="misc.blood_fx.water" Scale="2" />
+    </BloodInWater>
+  </Blood>
+  <PlayerLevels>
+    <Level Level="1" RequieredXP="0" />
+    <Level Level="2" RequieredXP="500" />
+    <Level Level="3" RequieredXP="1100" />
+    <Level Level="4" RequieredXP="2700" />
+    <Level Level="5" RequieredXP="4900" />
+    <Level Level="6" RequieredXP="7900" />
+    <Level Level="7" RequieredXP="11700" />
+    <Level Level="8" RequieredXP="16400" />
+    <Level Level="9" RequieredXP="22000" />
+    <Level Level="10" RequieredXP="28700" />
+    <Level Level="11" RequieredXP="36600" />
+    <Level Level="12" RequieredXP="45700" />
+    <Level Level="13" RequieredXP="56300" />
+    <Level Level="14" RequieredXP="68400" />
+    <Level Level="15" RequieredXP="82300" />
+    <Level Level="16" RequieredXP="98000" />
+    <Level Level="17" RequieredXP="115800" />
+    <Level Level="18" RequieredXP="135900" />
+    <Level Level="19" RequieredXP="158500" />
+    <Level Level="20" RequieredXP="183800" />
+    <Level Level="21" RequieredXP="212200" />
+    <Level Level="22" RequieredXP="244000" />
+    <Level Level="23" RequieredXP="279300" />
+    <Level Level="24" RequieredXP="318800" />
+    <Level Level="25" RequieredXP="362700" />
+    <Level Level="26" RequieredXP="411400" />
+    <Level Level="27" RequieredXP="465600" />
+    <Level Level="28" RequieredXP="525600" />
+    <Level Level="29" RequieredXP="592200" />
+    <Level Level="30" RequieredXP="665900" />
+    <Level Level="31" RequieredXP="747500" />
+    <Level Level="32" RequieredXP="837800" />
+    <Level Level="33" RequieredXP="937500" />
+    <Level Level="34" RequieredXP="1047800" />
+    <Level Level="35" RequieredXP="1169600" />
+    <Level Level="36" RequieredXP="1304000" />
+    <Level Level="37" RequieredXP="1452400" />
+    <Level Level="38" RequieredXP="1616200" />
+    <Level Level="39" RequieredXP="1796800" />
+    <Level Level="40" RequieredXP="1995900" />
+    <Level Level="41" RequieredXP="2104725" />
+    <Level Level="42" RequieredXP="2334720" />
+    <Level Level="43" RequieredXP="2588180" />
+    <Level Level="44" RequieredXP="2867385" />
+    <Level Level="45" RequieredXP="3174995" />
+    <Level Level="46" RequieredXP="3328920" />
+    <Level Level="47" RequieredXP="3682530" />
+    <Level Level="48" RequieredXP="4071960" />
+    <Level Level="49" RequieredXP="4250680" />
+    <Level Level="50" RequieredXP="4696590" />
+    <Level Level="51" RequieredXP="4882400" />
+    <Level Level="52" RequieredXP="5390960" />
+    <Level Level="53" RequieredXP="5950880" />
+    <Level Level="54" RequieredXP="6567200" />
+    <Level Level="55" RequieredXP="7245520" />
+    <Level Level="56" RequieredXP="7992080" />
+    <Level Level="57" RequieredXP="8813680" />
+    <Level Level="58" RequieredXP="9717840" />
+    <Level Level="59" RequieredXP="10712800" />
+    <Level Level="60" RequieredXP="11175000" />
+    <Level Level="61" RequieredXP="12450000" />
+    <Level Level="62" RequieredXP="13950000" />
+    <Level Level="63" RequieredXP="15750000" />
+    <Level Level="64" RequieredXP="18000000" />
+    <Level Level="65" RequieredXP="20700000" />
+    <Level Level="66" RequieredXP="24300000" />
+    <Level Level="67" RequieredXP="28875000" />
+    <Level Level="68" RequieredXP="35025000" />
+    <Level Level="69" RequieredXP="43050000" />
+    <Level Level="70" RequieredXP="57278610" />
+    <Level Level="71" RequieredXP="71280048" />
+    <Level Level="72" RequieredXP="89100060" />
+    <Level Level="73" RequieredXP="118800080" />
+    <Level Level="74" RequieredXP="148500100" />
+    <Level Level="75" RequieredXP="207900140" />
+    <Level Level="76" RequieredXP="297000200" />
+    <Level Level="77" RequieredXP="415800280" />
+    <Level Level="78" RequieredXP="475200320" />
+    <Level Level="79" RequieredXP="534600360" />
+    <Level Level="80" RequieredXP="594000400" />
+    <Level Level="81" RequieredXP="610971840" />
+    <Level Level="82" RequieredXP="712800480" />
+    <Level Level="83" RequieredXP="814629120" />
+    <Level Level="84" RequieredXP="916457760" />
+    <Level Level="85" RequieredXP="933429200" />
+    <Level Level="86" RequieredXP="1166786500" />
+    <Level Level="87" RequieredXP="2333573000" />
+    <Level Level="88" RequieredXP="4667146000" />
+    <Level Level="89" RequieredXP="11667865000" />
+    <Level Level="90" RequieredXP="21002157000" />
+  </PlayerLevels>
+</MetaData>

@@ -1,0 +1,27 @@
+<MetaData>
+  <Skill UID="AI_svriiralpha_firebreath_arcshape" ESkill="AI_svriiralpha_poisonbreath_arcshape" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_06" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="Bip01 Jaw0" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="ShapeParticle" Name="U_Monster.Siviir.Alpha_Breath_Fire_Loop_01" Offset="0,-0.5,-0.25" Direction="0,0,1" />
+      <Particle Key="GroundEffect" Name="U_Monster.Siviir.Alpha_Breath_Fire_Ground_Loop_01" Offset="0,0,0" Direction="0,0,1" Scale="0.75" />
+    </ParticleList>
+    <DamageWeapon Type="fire" WeaponMultiplier=".66" />
+    <DamageZone RateOfFire="1" Duration="6" />
+    <Cooldown Cooldown="25.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_PoisonBreath_Arcshape" />
+      <Entry ShapeName="SvriirAlpha_PoisonBreath_Arcshape_DamageZone" />
+    </Shapes>
+    <SoundTrigger OnInterrupt="PLAY_AI_SvriirAlpha_FirebreathEnd" OnHit="Play_DOT_Burn" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.05" DegreesPerSecond="50" GroundParticleInterval="10" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="100" In="0.5" />
+      <EmissiveIntensity From="100" To="80" In="0.7" />
+      <EmissiveIntensity From="80" To="100" In="1" />
+      <EmissiveIntensity From="100" To="150" In="1.2" />
+      <EmissiveIntensity From="150" To="origin" In="2" />
+    </Material>
+  </Skill>
+</MetaData>

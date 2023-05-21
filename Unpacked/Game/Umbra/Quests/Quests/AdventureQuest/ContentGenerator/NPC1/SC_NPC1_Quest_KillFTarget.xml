@@ -1,0 +1,142 @@
+<MetaData>
+  <Quest Name="QN_EG_KFT_OTW_Thug_3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KFT_OTW_Thug_3_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KFT_OTW_Thug_3_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KFT_OTW_Thug_3_Spawn1" Delay="1.5" SpawnClass="Sc_EG_KFT_OTW_Thug" MinSpawnPercent="60" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KFT_StepNameLabel_OTW_Thug" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KFT_OTWSB_Thug_3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KFT_OTWSB_Thug_3_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KFT_OTWSB_Thug_3_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KFT_OTWSB_Thug_3_Spawn1" Delay="1.5" SpawnClass="Sc_EG_KFT_OTWSB_Thug" MinSpawnPercent="60" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KFT_StepNameLabel_OTWSB_Thug" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KFT_COS_DoS_3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KFT_COS_DoS_3_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KFT_COS_DoS_3_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KFT_COS_DoS_3_Spawn1" Delay="1.5" SpawnClass="Sc_EG_KFT_COS_DoS" MinSpawnPercent="60" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KFT_StepNameLabel_COS_DoS" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KFT_COFE_DoF_3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KFT_COFE_DoF_3_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KFT_COFE_DoF_3_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KFT_COFE_DoF_3_Spawn1" Delay="1.5" SpawnClass="Sc_EG_KFT_COFE_DoF" MinSpawnPercent="60" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KFT_StepNameLabel_COFE_DoF" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KFT_COFY_Knight_3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KFT_COFY_Knight_3_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KFT_COFY_Knight_3_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KFT_COFY_Knight_3_Spawn1" Delay="1.5" SpawnClass="Sc_EG_KFT_COFY_Knight" MinSpawnPercent="60" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KFT_StepNameLabel_COFY_Knight" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KFT_COFY_Golgoth_3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KFT_COFY_Golgoth_3_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KFT_COFY_Golgoth_3_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KFT_COFY_Golgoth_3_Spawn1" Delay="1.5" SpawnClass="Sc_EG_KFT_COFY_Golgoth" MinSpawnPercent="60" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KFT_StepNameLabel_COFY_Golgoth" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KFT_REPU_Justicar_3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KFT_REPU_Justicar_3_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KFT_REPU_Justicar_3_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KFT_REPU_Justicar_3_Spawn1" Delay="1.5" SpawnClass="Sc_EG_KFT_REPU_Justicar" MinSpawnPercent="60" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KFT_StepNameLabel_REPU_Justicar" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KFT_SVRI_AlphaPoison_3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KFT_SVRI_AlphaPoison_3_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KFT_SVRI_AlphaPoison_3_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KFT_SVRI_AlphaPoison_3_Spawn1" Delay="1.5" SpawnClass="Sc_EG_KFT_SVRI_AlphaPoison" MinSpawnPercent="60" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KFT_StepNameLabel_SVRI_AlphaPoison" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KFT_SVRIF_AlphaFire_3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KFT_SVRIF_AlphaFire_3_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KFT_SVRIF_AlphaFire_3_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KFT_SVRIF_AlphaFire_3_Spawn1" Delay="1.5" SpawnClass="Sc_EG_KFT_SVRIF_AlphaFire" MinSpawnPercent="60" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KFT_StepNameLabel_SVRIF_AlphaFire" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KFT_CALL_TaintedPrimoGuardian_3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KFT_CALL_TaintedPrimoGuardian_3_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KFT_CALL_TaintedPrimoGuardian_3_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KFT_CALL_TaintedPrimoGuardian_3_Spawn1" Delay="1.5" SpawnClass="Sc_EG_KFT_CALL_TaintedPrimoGuardian" MinSpawnPercent="60" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KFT_StepNameLabel_CALL_TaintedPrimoGuardian" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+</MetaData>

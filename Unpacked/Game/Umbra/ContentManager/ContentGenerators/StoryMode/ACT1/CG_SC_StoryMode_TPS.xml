@@ -1,0 +1,49 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_TPS" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="LuckyDungeon" PriorityTag="LotOfLoot" ExcludeTag="Room,MMGoblin,Named,NoMonster" Weight="8" />
+      <Archetype Tag="ChestRoom" PriorityTag="EpicFixedLoot,Room,NoMonster" ExcludeTag="KillCP,KillTarget,CursedChestRoom" Weight="4" />
+      <Archetype Tag="CursedChestRoom" PriorityTag="CursedChestRoom,Room,NoMonster" ExcludeTag="EpicFixedLoot,KillCP,KillTarget" Weight="4" />
+      <Archetype Tag="GoblinDungeon" PriorityTag="MMGoblin,SmallArea,NormalLoot" ExcludeTag="NoMonster,Room,KillCP,KillTarget,BossArea" Weight="4" />
+      <Archetype Tag="KillOneTarget" PriorityTag="KillTarget,OneGoal,NormalLoot" ExcludeTag="Room,MMGoblin,Named,Hard" Weight="20" />
+      <Archetype Tag="KillNumerousTarget" PriorityTag="KillTarget,NumerousGoal,MediumArea,NormalLoot,Easy" ExcludeTag="Room,MMGoblin" Weight="20" />
+      <Archetype Tag="KillCP" PriorityTag="KillCP,NormalLoot" ExcludeTag="Room,MMGoblin,NoMonster,BossArea" Weight="20" />
+      <Archetype Tag="NoQuestEODReward" PriorityTag="EODReward" ExcludeTag="KillCP,KillTarget,Room,NoMonster,MMGoblin,BossArea" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="RandomTPS_Room" Tag="Room,TPS" PriorityTag="TPS" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,RandomNecro,Cave,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="RandomTPS_Medium" Tag="TPS,MediumArea,ClassicArea" PriorityTag="TPS" ExcludeTag="COFE,REPU,COFY" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_TPS_KillTarget_COSS_Tombbearer_4" Tag="KillTarget,NumerousGoal,COSS,Undead" PriorityTag="KillTarget,COSS,EMQuest,Undead" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TPS_KillTarget_COSS_Halfbreed_4" Tag="KillTarget,NumerousGoal,COSS,Specter" PriorityTag="KillTarget,COSS,EMQuest,Specter" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TPS_KillTarget_COSS_Halfbreed" Tag="KillTarget,OneGoal,COSS,Specter" PriorityTag="KillTarget,COSS,EMQuest,Specter" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TPS_KillTarget_COSS_Cultist" Tag="KillTarget,OneGoal,COSS,Undead" PriorityTag="KillTarget,SVRI,EMQuest,Undead" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TPS_KillTarget_COSS_Reaper" Tag="KillTarget,OneGoal,COSS,Primo" PriorityTag="KillTarget,SVRI,EMQuest,Primo" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TPS_KillCP_1" Tag="KillCP,COSS,Specter" PriorityTag="COSS,Specter" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TPS_KillCP_1" Tag="KillCP,COSS,Undead" PriorityTag="COSS,Undead" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TPS_KillCP_1" Tag="KillCP,COSS,Primo" PriorityTag="COSS,Primo" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TPS_COSS_Specter_Easy" Tag="Easy,COSS,Specter,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TPS_COSS_Undead_Easy" Tag="Easy,COSS,Undead,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TPS_COSS_Primo_Easy" Tag="Easy,COSS,Primo,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TPS_COSS_Undead_Medium" Tag="Medium,LotOfMonster,COSS,Undead" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TPS_COSS_Specter_Medium" Tag="Medium,LotOfMonster,COSS,Specter" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TPS_COSS_Primo_Medium" Tag="Medium,LotOfMonster,COSS,Primo" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TPS_COSS_Undead_Hard" Tag="Hard,LotOfMonster,COSS,Undead" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TPS_COSS_Specter_Hard" Tag="Hard,LotOfMonster,COSS,Specter" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TPS_COSS_Primo_Hard" Tag="Hard,LotOfMonster,COSS,Primo" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TPS_COSS_Goblin" Tag="MMGoblin,Easy,COSS,LotOfMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="TPS,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_A1_TPS_ChestRoom" Tag="TPS,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_A1_TPS_CursedChestRoom" Tag="TPS,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_A1_TPS_EODReward" Tag="TPS,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_A1_TPS_BigLoot" Tag="TPS,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_A1_TPS" Tag="TPS,NormalLoot" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

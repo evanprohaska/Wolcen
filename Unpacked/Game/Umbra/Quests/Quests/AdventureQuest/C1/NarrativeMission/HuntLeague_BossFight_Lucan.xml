@@ -1,0 +1,17 @@
+<MetaData>
+  <Quest Name="HL_C1_BossFight_Lucan" UIName="@ui_C1_M1_E1_EventQuestLabel" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_C1_M1_E1_EventStepLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" TimeLimit="2.5" />
+      <Goal Order="1" Type="KillAll" EventsName="M1_SpawnLucan" KillCount="1" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="HLC1_TP_Introfight" DialogName="HLC1_TP_Introfight" Delay="1" />
+      <Event Trigger="EventEnd" EventName="HLC1_TP_Introfight" Type="EntitySpawn" Name="M1_SpawnLucan" SpawnClass="Sc_Sty_HLC1_REPU_Lucan" TargetEntityName="QP_HLC1_Lucan_SpawnPoint" FaceAtSpawn="HL_C1_SpawnPoint_Pit" MinimumRadius="2" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalFlowGraph" Name="HL_M1_Bossfight_CamOn" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="Event_Arena_Start" ArenaPreset="LucanArena_HLC1" LocationEntityName="LucanArena_HLC1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Lucan" PercentLeft="90" Type="GlobalDialog" Name="HLC1_TP_Lucan1" DialogName="HLC1_TP_Lucan1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Lucan" PercentLeft="60" Type="GlobalDialog" Name="HLC1_TP_Lucan2" DialogName="HLC1_TP_Lucan2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Lucan" PercentLeft="30" Type="GlobalDialog" Name="HLC1_TP_Lucan3" DialogName="HLC1_TP_Lucan3" />
+      <Event Trigger="PlayerWipe" Type="QuestFail" Name="FailStateBossFight_Lucan" QuestName="HL_C1_BossFight_Lucan" />
+    </Step>
+  </Quest>
+</MetaData>

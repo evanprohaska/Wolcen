@@ -1,0 +1,18 @@
+<MetaData>
+  <Skill UID="AI_REPU_Grenadier_LightningThrow" ESkill="AI_default_maintainedskillwithdamageinshape" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01 R Hand" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="ShapeParticle" Name="U_VFX_Oskar.Monster.REPU_Grenade_Launcher_Arc_Loop" Offset="0,0,-1" Direction="0,0,1" Bone="R_Weapon_Bone" />
+    </ParticleList>
+    <DamageWeapon Type="lightning" WeaponMultiplier="0.6" />
+    <Cooldown Cooldown="4.0" />
+    <DamageZone Duration="0" RateOfFire="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="AI_REPU_GrenadeLauncher_Line_DZ" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_REPU_Grenadier_LightningThrow_Start" OnAnimLoopIn="Play_REPU_Grenadier_LightningThrow_Loop" OnAnimLoopOut="Play_REPU_GrenadeLauncher_LightningThrow_End" OnInterrupt="Play_REPU_GrenadeLauncher_LightningThrow_End" OnHit="Play_REPU_GrenadeLauncher_LightningThrow_Impact" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.33" MaxDuration="4" MaxTimeOutDuration="2" DistanceBetweenParticles="1" DZForwardOffset="2" />
+  </Skill>
+</MetaData>

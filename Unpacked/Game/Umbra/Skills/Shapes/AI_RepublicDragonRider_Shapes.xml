@@ -1,0 +1,34 @@
+<MetaData>
+  <Shape ID="DragonRider_ScorchedEarth_shape" Type="Trapezium">
+    <Data Top="3" Bottom="18" Height="12" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="DragonRider_ScorchedEarth_moving_shape" Type="Trapezium">
+    <Data Top="5" Bottom="3" Height="2" BoundingBoxHeight="2" />
+    <Position ForwardOffset="2" RightOffset="0" StartingAngle="0" />
+    <Scale Data="Top" Target="18" Duration="2" Delay="0" />
+    <Scale Data="Height" Target="12" Duration="2" Delay="0" />
+    <Animation MovementDelay="0" MovementSpeed="2.5" MovementDuration="2" RotationDelay="0" RotationAngle="0" RotationDuration="0" SnapToGround="1" />
+  </Shape>
+  <Shape ID="DragonRider_DefaultMelee01_Shape" Type="Cone">
+    <Data Radius="4" Angle="120" BoundingBoxHeight="2" />
+    <Position ForwardOffset="1.5" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="DragonRider_DefaultMelee02_Shape" Type="Rectangle">
+    <Data Length="4" Width="3" BoundingBoxHeight="2" />
+    <Position ForwardOffset="2" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="DragonRider_Tailswipe_shape" Type="Circle">
+    <Data Radius="7" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="DragonRider_Leap_End_shape" Type="Circle">
+    <Data Radius="7" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+    <Animation MovementDelay="0" MovementSpeed="4" MovementDuration="0.5" RotationDelay="0" RotationAngle="0" RotationDuration="0" SnapToGround="1" />
+  </Shape>
+  <Shape ID="DragonRider_SpearBlast_Shape" Type="Circle">
+    <Data Radius="5" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+</MetaData>

@@ -1,0 +1,14 @@
+<MetaData>
+  <Skill UID="AI_CultOfFury_PossessedHeimlock_Deathskill" ESkill="AI_svriirbeta_spitter_headexplosion" Keywords="deathskill">
+    <Animation ActionString="monster_skill_loop_04_out" />
+    <DamageWeapon WeaponMultiplier="0.4" />
+    <Cooldown Cooldown="10" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams />
+    <DamageBase Type="toxic" Min="1" MinPerLevel="0.1" Max="1" MaxPerLevel="0.1" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="Heimlock_ACT4_Deathskill_DZ" />
+    </DamageZone>
+    <SoundTrigger OnAnimStart="PLAY_AI_SvriirSpitter_DeathBuildUp" OnAnimCast="PLAY_AI_SvriirSpitter_DeathBurst" OnHit="PLAY_Player_DefaultHit" />
+  </Skill>
+</MetaData>

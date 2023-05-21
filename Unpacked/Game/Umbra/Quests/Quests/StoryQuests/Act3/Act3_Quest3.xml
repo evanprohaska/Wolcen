@@ -1,0 +1,302 @@
+<MetaData>
+  <Quest Name="ACT3_Quest3" StartDialog="" Type="Main" UIName="@ui_A3_Q3_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT3">
+    <Step Order="0" UIName="@ui_A3_Q3_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_rempart1_to_TransitionTower" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_rempart1_to_TransitionTower" Area="ACT3_Rampart1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ClickableEntity_rempart1_to_TransitionTower" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_rempart1_to_TransitionTower" Area="ACT3_Rampart1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q3_S1_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="9" SpawnFrequency="0" Name="A3_Q3_S1_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A3_Q3_S1_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith,ACT3_Nowhere" Delay="2" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="9" SpawnFrequency="0" Name="A3_Q3_S1_HeimlockSpawn" SpawnClass="Sc_Sty_AC3_QH" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A3_Q3_S1_HeimlockFollow" FollowerEntityName="Heimlock" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith,ACT3_Nowhere" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="SpawnPoint_Rempart1_from_RepublicanTrenches" AreaRadius="50" Type="GlobalDialog" Name="A3_Quest2_RR1_Heimlock1" DialogName="ACT3_Quest3_RR1_Heimlock1" Delay="3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ClickableEntity_rempart1_to_TransitionTower" AreaRadius="300" Type="GlobalDialog" Name="A3_Quest2_RR1_Heimlock2" DialogName="ACT3_Quest3_RR1_Heimlock2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A3_Q3_S1_Goal2" Localization="@ui_A3_Q3_S1_UpdateStepNameLabel" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="1" UIName="@ui_A3_Q3_S2_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Wait" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Heimlock" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="ACT3_Tower_Transition" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Unreachable" Radius="10" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Heimlock" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="ACT3_Tower_Transition" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="Heimlock" DialogName="ACT3_Quest3_RR1_Heimlock5">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Heimlock" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="ACT3_Tower_Transition" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q3_S2_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDungeonEntrance" Name="A3_Q3_S1_DungeonEntranceStronghold_Deactivate" EntranceName="DungeonEntrance_Stronghold" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsGod" Name="A3_Q3_S2_ValeriaIsGod" EntityName="Valeria" Invincible="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsGod" Name="A3_Q3_S2_HeimlockIsGod" EntityName="Heimlock" Invincible="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q3_S2_ValeriaIsGod" Type="EntityFollow" Name="A3_Q3_S2_ValeriaUnFollow" FollowerEntityName="Valeria" Follow="" Constraints="" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q3_S2_HeimlockIsGod" Type="EntityFollow" Name="A3_Q3_S2_HeimlockUnfollow" FollowerEntityName="Heimlock" Follow="" Constraints="" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A3_Q3_S2_PortalDeactivate" ClickableEntityName="ClickableEntity_TransitionTower_to_rempart2" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="5" Name="A3_Q3_S2_Valeria_Tp" TeleportedEntityName="Valeria" DestinationName="QP_Q3_S2_Valeria_TargetPos" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="5" Name="A3_Q3_S2_Heimlock_Tp" TeleportedEntityName="Heimlock" DestinationName="QP_Q3_S2_Heimlock_TargetPos" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityWait" Duration="10" Name="A3_Q3_S2_HeimlockWait" EntityName="Heimlock" RemainScripted="1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="2" Name="A3_Q3_S2_Valeria_Tp2" TeleportedEntityName="Valeria" DestinationName="QP_Q3_S2_Valeria_TargetPos" Delay="4" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="2" Name="A3_Q3_S2_Heimlock_Tp2" TeleportedEntityName="Heimlock" DestinationName="QP_Q3_S2_Heimlock_TargetPos" Delay="4" />
+      <Event Trigger="EventEnd" EventName="A3_Quest2_RR1_Heimlock4" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="0" Name="A3_Q3_S2_ValeriaMove" EntityName="Valeria" TargetName="QP_Q3_S2_Valeria_TargetPos" RemainScripted="1" Delay="2" />
+      <Event Trigger="EventStart" EventName="A3_Q3_S2_Valeria_Tp" Type="EntityWait" Duration="10" Name="A3_Q3_S2_ValeriaWait" EntityName="Valeria" RemainScripted="1" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q3_S2_ValeriaMove" Type="EntityRotate" Name="A3_Q3_S2_ValeriaRotate" RotatedEntityName="Valeria" Target="QP_Q3_S2_Valeria_TargetPos" FaceTarget="0" />
+      <Event Trigger="EventEnd" EventName="A3_Quest2_RR1_Heimlock4" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="0" Name="A3_Q3_S2_HeimlockMove" EntityName="Heimlock" TargetName="QP_Q3_S2_Heimlock_TargetPos" RemainScripted="1" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q3_S2_HeimlockMove" Type="EntityRotate" Name="A3_Q3_S2_HeimlockRotate" RotatedEntityName="Heimlock" Target="QP_Q3_S2_Heimlock_TargetPos" FaceTarget="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityMove" TargetMinDistance="2" OverrideSpeed="0" Name="A3_Q3_S2_ValeriaMove2" EntityName="Valeria" TargetName="QP_Q3_S2_Valeria_TargetPos2" RemainScripted="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsGod" Name="A3_Q3_S2_ValeriaIsMortal" EntityName="Valeria" Invincible="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsGod" Name="A3_Q3_S2_HeimlockIsMortal" EntityName="Heimlock" Invincible="0" />
+      <Event Trigger="EventStart" EventName="A3_Q3_S2_ValeriaMove2" Type="EventEnd" Name="A3_Q3_S2_ValTP2End" EventsName="A3_Q3_S2_Valeria_Tp2" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="A3_Q3_S2_ValeriaMove2" Type="EntityKill" Name="A3_Q3_S2_ValeriaKill" EntityName="Valeria" Hide="1" Remove="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionDungeonEntrance" Name="A3_Q3_S1_DungeonEntranceStronghold_Activate" EntranceName="DungeonEntrance_Stronghold" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="A3_Quest2_RR1_Heimlock4" DialogName="ACT3_Quest3_RR1_Heimlock4" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Quest2_RR1_Heimlock4" Type="GoalAchieve" Name="A3_Q3_S2_GoalAchieve_2" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalDialog" Name="A3_Quest2_RR1_Heimlock6" DialogName="ACT3_Quest3_RR1_Heimlock6" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="SpawnPoint_Rempart2_from_TransitionTower" AreaRadius="50" Type="GlobalDialog" Name="A3_Quest2_RR2_TowerRush1" DialogName="ACT3_Quest3_RR2_TowerRush1" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q3_S2_Gate" AreaRadius="10" Type="GlobalDialog" Name="A3_Quest2_RR2_TowerRush2" DialogName="ACT3_Quest3_RR2_TowerRush2" />
+    </Step>
+    <Step Order="2" UIName="@ui_A3_Q3_S3_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="DungeonEntrance_Stronghold" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_Stronghold" Area="ACT3_Tower_Transition" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="Act3_Stronghold_Exit" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Stronghold_Exit" Area="Act3_Stronghold" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="DungeonEntrance_Stronghold" Area="ACT3_Tower_Transition" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Interact" Names="Act3_Stronghold_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Act3_Stronghold_Exit" Area="Act3_Stronghold" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="A3_Quest2_RR2_TowerRush3" DialogName="ACT3_Quest3_RR2_TowerRush3" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="A3_Q3_S3_Goal3" Localization="" DisplayNewIcon="0" />
+    </Step>
+    <Step Order="3" UIName="@ui_A3_Q3_S3_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_Rempart2_to_GateTowerLvl0" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_Rempart2_to_GateTowerLvl0" Area="ACT3_Rampart2" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_TransitionTower_to_rempart2" Area="ACT3_Tower_Transition" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ClickableEntity_Rempart2_to_GateTowerLvl0" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_Rempart2_to_GateTowerLvl0" Area="ACT3_Rampart2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="A3_Q3_S3_Goal3" Localization="" DisplayNewIcon="0" />
+    </Step>
+    <Step Order="4" UIName="@ui_A3_Q3_S3_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="ClickableEntity_from_GateTowerLvl1_to_GateTowerLvl2" Radius="40" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl1_to_GateTowerLvl2" Area="ACT3_Tower_2" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Interact" Names="ClickableEntity_from_GateTowerLvl1_to_GateTowerLvl2" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl1_to_GateTowerLvl2" Area="ACT3_Tower_2" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Go" Destination="ClickableEntity_from_GateTowerLvl2_to_GateTowerLvl3" Radius="40" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl2_to_GateTowerLvl3" Area="ACT3_Tower_3" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Interact" Names="ClickableEntity_from_GateTowerLvl2_to_GateTowerLvl3" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl2_to_GateTowerLvl3" Area="ACT3_Tower_3" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="6" Type="Go" Destination="ClickableEntity_from_GateTowerLvl3_to_GateTowerLvl4" Radius="40" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl3_to_GateTowerLvl4" Area="ACT3_Tower_4" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="7" Type="Interact" Names="ClickableEntity_from_GateTowerLvl3_to_GateTowerLvl4" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl3_to_GateTowerLvl4" Area="ACT3_Tower_4" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="8" Type="Go" Destination="ClickableEntity_from_GateTowerLvl4_to_GateTowerLvl5" Radius="40" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl4_to_GateTowerLvl5" Area="ACT3_Tower_5" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="9" Type="Interact" Names="ClickableEntity_from_GateTowerLvl4_to_GateTowerLvl5" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl4_to_GateTowerLvl5" Area="ACT3_Tower_5" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="10" Type="Go" Destination="ClickableEntity_from_GateTowerLvl5_to_GateTowerLvl6" Radius="40" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl5_to_GateTowerLvl6" Area="ACT3_Tower_6" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="11" Type="Interact" Names="ClickableEntity_from_GateTowerLvl5_to_GateTowerLvl6" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl5_to_GateTowerLvl6" Area="ACT3_Tower_6" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="12" Type="Go" Destination="CE_MainDoorMecanism" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="CE_MainDoorMecanism" Area="ACT3_Tower_7" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="13" Type="Interact" Names="CE_MainDoorMecanism" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="CE_MainDoorMecanism" Area="ACT3_Tower_7" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="14" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05-06-07-08-09-10-11-12-13-14" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q3_S3_ClearUI" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" AreaRadius="50" Type="GlobalDialog" Name="A3_Quest2_RT0_Escalation1" DialogName="ACT3_Quest3_RT0_Escalation1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A3_Q3_S3_TopTowerPortal_Deactivate" ClickableEntityName="ClickableEntity_from_GateTowerLvl6_to_GateTowerTop" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="13" Type="GlobalDialog" Name="A3_Quest2_RT6_Machinery1" DialogName="ACT3_Quest3_RT6_Machinery1" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="13" Type="GlobalDialog" Name="A3_Quest2_RT6_Machinery2" DialogName="ACT3_Quest3_RT6_Machinery2" Delay="5.5" />
+      <Event Trigger="GoalStart" GoalIndex="13" Type="StepUpdate" Name="A3_Q3_S3_Goal14" Localization="@ui_A3_Q3_S3_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="14" Type="StepUpdate" Name="A3_Q3_S3_Goal15" Localization="@ui_A0_Q0_S6_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="A3_Quest2_RT6_Machinery2" Type="GlobalDialog" Name="A3_Quest3_RT6_Machinery3" DialogName="ACT3_Quest3_RT6_Machinery3" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Quest3_RT6_Machinery3" Type="ActionDoor" Name="A3_Q3_S3_OpenDoor" DoorName="Door_RepublicanTower" Action="Open" AnimationSpeed="0" />
+      <Event Trigger="EventEnd" EventName="A3_Q3_S3_OpenDoor" Type="GoalAchieve" Name="A3_Q3_S3_EndEvent" SimulateOnly="1" GoalIndexToAchieve="-1" />
+    </Step>
+    <Step Order="5" UIName="@ui_A3_Q3_S4_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="CE_MainDoorMecanism" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="CE_MainDoorMecanism" Area="ACT3_Tower_7" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q3_S4_ClearUI" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Player_Checkpoint_TowerEvent" AreaRadius="15" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_TowersEvent_CP" CheckpointEntityName="" Delay="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_TowerEvent_SF" CheckpointEntityName="" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A3_Q3_S4_TopTowerPortal_Activate" ClickableEntityName="ClickableEntity_from_GateTowerLvl6_to_GateTowerTop" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Generator_State1" EntityNames="Generator_State1_GameplayIngredient" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Generator_State2" EntityNames="Generator_State2_GameplayIngredient" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Generator_State1_TriggerArea" EntityNames="Generator_State1_TriggerArea" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Generator_State2_TriggerArea" EntityNames="Generator_State2_TriggerArea" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_ElevatorTransitionPortal" EntityNames="ClickableEntity_from_GateToweTop_to_MonolithEntrance" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Fail_Stop_State1_FX" EmitterEntityName="State1_Generator_FX" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Fail_Stop_State2_FX" EmitterEntityName="State2_Generator_FX" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Fail_Stop_State3_FX" EmitterEntityName="State3_Generator_FX" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Fail_Stop_Explosion1_FX" EmitterEntityName="Generator_Explosion_FX_1" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Fail_Stop_Explosion2_FX" EmitterEntityName="Generator_Explosion_FX_2" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_FX_BlockerTop_TowerEvent_Start" EntityNames="FX_BlockerTop_TowerEvent" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="StepUpdate" Name="A3_Q3_S5_Goal1" Localization="" DisplayNewIcon="0" />
+    </Step>
+    <Step Order="6" UIName="@ui_A3_Q3_S4_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_from_GateTowerLvl6_to_GateTowerTop" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_from_GateTowerLvl6_to_GateTowerTop" Area="ACT3_Tower_7" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_GateTowerLvl0_to_GateTowerLvl1" Area="ACT3_Tower_1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT3_TowerTop" GameplayEventPresetName="ACT3_TowerTop" />
+      <Goal Order="2" Type="Impossible" />
+      <Goal Order="3" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Player_Spawn_TowerTopEvent" Area="ACT3_RampartGatePlatform" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Impossible" />
+      <Goal Order="5" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Player_Spawn_TowerTopEvent" Area="ACT3_RampartGatePlatform" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="A3_TopTowerEvent_StartArena_1" WaveIndex="1" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_EventStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_A1_Q5_EventQuestLabel1" DisplayTime="3" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="A3_TopTowerEvent_StartArena_Final" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_EventEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q3_S5_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A3_Q3_S5_TopTowerPortal_Activate" ClickableEntityName="ClickableEntity_from_GateTowerLvl6_to_GateTowerTop" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionClickable" Name="A3_Q3_S5_EventTowerPortal_Deactivate" ClickableEntityName="ClickableEntity_from_GateTowerTop_to_GateTowerLvl6" MakeClickable="0" FilterEvents="1" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="GlobalReleaseGameplayEvent" Name="Vote_Failure_TowerTopEvent" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityTeleport" MinRadius="1" Name="TowerTopEvent_Player_Tp" TeleportedEntityName="#Player" DestinationName="Player_Spawn_TowerTopEvent" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalCheckpoint" Name="TowerTopEvent_SetGlobalCheckpoint" CheckpointEntityName="Player_Checkpoint_TowerEvent" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ActionParticleEmitter" Name="Start_State1_Generator_FX" EmitterEntityName="State1_Generator_FX" Activate="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalRevivePlayers" Name="RevivePlayer_StartEventTowerTop" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ArenaStart" Name="A3_TopTowerEvent_StartArena_1" ArenaPreset="TowerTop_Act3" LocationEntityName="TowerTop_Act3" EntityToFollow="" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="A3_TopTowerEvent_StartArena_1" Type="GoalAchieve" GoalIndexToAchieve="2" Name="A3_TopTowerEvent_Arena_1_Victory" SimulateOnly="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="Player_Talk_1" DialogName="ACT3_Quest3_RTE_Sabotage1" Delay="1.5" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="TowerEvent_Update_Objective1" Localization="@ui_A3_Q3_S4_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="A3_Q3_S5_ValeriaKill" EntityName="Valeria" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="A3_Q3_S5_HeimlockKill" EntityName="Heimlock" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalMusic" Name="A3_TopTowerEvent_StartMusic" MusicName="ACT3_TowerRoofEvent" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ArenaStart" Name="A3_TopTowerEvent_StartArena_Final" ArenaPreset="TowerTop_Act3_Final" LocationEntityName="TowerTop_Act3_Final" EntityToFollow="" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="A3_TopTowerEvent_StartArena_Final" Type="GoalAchieve" GoalIndexToAchieve="4" Name="A3_TopTowerEvent_Arena_Final_Victory" SimulateOnly="0" Delay="5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalMusic" Name="A3_TopTowerEvent_StopMusic" MusicName="ACT3_Tower" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="TowerVeteran_Entrance" SequenceName="A3_TOPTOWER" Delay="8" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalRevivePlayers" Name="RevivePlayer_EventTowerTop_Cutscene1" RevivePostion="" Delay="8" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalDialog" Name="Player_Talk_On_Generator" DialogName="ACT3_Quest3_RTE_Sabotage2" Delay="0.75" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="TowerEvent_Update_Objective2" Localization="@ui_A3_Q3_S4_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="EventStart" EventName="TowerVeteran_Entrance" Type="ActionParticleEmitter" Name="Hide_Cutscene1_FX_BlockerTop_TowerEvent" EmitterEntityName="FX_BlockerTop_TowerEvent" Activate="0" />
+      <Event Trigger="EventEnd" EventName="TowerVeteran_Entrance" Type="GoalAchieve" Name="TowerEvent_GoalAchieve_1" SimulateOnly="0" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="TowerVeteran_Entrance" Type="ActionParticleEmitter" Name="Unhide_Cutscene1_FX_BlockerTop_TowerEvent" EmitterEntityName="FX_BlockerTop_TowerEvent" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalDialog" DialogName="ACT3_Quest3_RTE_Sabotage3" Name="Player_Talk_After_Cutscene1" Delay="1.5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="TowerBoss" PercentLeft="10" Name="Boss_Summon_1" Type="GlobalDialog" DialogName="ACT3_Quest3_RTE_Pacified2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="TowerBoss" PercentLeft="20" Delay="0" Name="Boss_State2_Explosion_Start" Type="ActionParticleEmitter" EmitterEntityName="Generator_Explosion_FX_1" Activate="1" />
+      <Event Trigger="EventStart" EventName="Boss_State2_Explosion_Start" Delay="2.5" Name="Boss_State2_FX" Type="ActionParticleEmitter" EmitterEntityName="State2_Generator_FX" Activate="1" />
+      <Event Trigger="EventStart" EventName="Boss_State2_Explosion_Start" Delay="2.5" Name="Boss_State2_HideState1_FX" Type="ActionParticleEmitter" EmitterEntityName="State1_Generator_FX" Activate="0" />
+      <Event Trigger="EventStart" EventName="Boss_State2_Explosion_Start" Delay="3" Name="Player_Talk_ReactorExplosion1" Type="GlobalDialog" DialogName="ACT3_Quest3_RTE_UnstableMid1" />
+      <Event Trigger="EventStart" EventName="Boss_State2_Explosion_Start" Delay="2.5" Name="Start_Generator_State1" Type="EntityIsHidden" EntityNames="Generator_State1_GameplayIngredient" Hide="0" />
+      <Event Trigger="EventStart" EventName="Boss_State2_Explosion_Start" Delay="2.5" Name="Start_Generator_State1_TriggerArea" Type="EntityIsHidden" EntityNames="Generator_State1_TriggerArea" Hide="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="TowerBoss" PercentLeft="50" Name="Boss_Summon_2" Type="GlobalDialog" DialogName="ACT3_Quest3_RTE_Pacified3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="TowerBoss" PercentLeft="65" Delay="0" Name="Boss_State3_Explosion_Start" Type="ActionParticleEmitter" EmitterEntityName="Generator_Explosion_FX_2" Activate="1" />
+      <Event Trigger="EventStart" EventName="Boss_State3_Explosion_Start" Delay="2.5" Name="Boss_State3_FX" Type="ActionParticleEmitter" EmitterEntityName="State3_Generator_FX" Activate="1" />
+      <Event Trigger="EventStart" EventName="Boss_State3_Explosion_Start" Delay="2.5" Name="Boss_State3_HideState2_FX" Type="ActionParticleEmitter" EmitterEntityName="State2_Generator_FX" Activate="0" />
+      <Event Trigger="EventStart" EventName="Boss_State3_Explosion_Start" Delay="3" Name="Player_Talk_ReactorExplosion2" Type="GlobalDialog" DialogName="ACT3_Quest3_RTE_UnstableHigh1" />
+      <Event Trigger="EventStart" EventName="Boss_State3_Explosion_Start" Delay="2.5" Name="Start_Generator_State2" Type="EntityIsHidden" EntityNames="Generator_State2_GameplayIngredient" Hide="0" />
+      <Event Trigger="EventStart" EventName="Boss_State3_Explosion_Start" Delay="2.5" Name="Start_Generator_State2_TriggerArea" Type="EntityIsHidden" EntityNames="Generator_State2_TriggerArea" Hide="0" />
+      <Event Trigger="EventStart" EventName="Boss_State3_Explosion_Start" Delay="2.5" Name="End_Generator_State1" Type="EntityIsHidden" EntityNames="Generator_State1_GameplayIngredient" Hide="1" />
+      <Event Trigger="EventStart" EventName="Boss_State3_Explosion_Start" Delay="2.5" Name="End_Generator_State1_TriggerArea" Type="EntityIsHidden" EntityNames="Generator_State1_TriggerArea" Hide="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="TowerBoss" PercentLeft="80" Name="Boss_Summon_3" Type="GlobalDialog" DialogName="ACT3_Quest3_RTE_Pacified4" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityIsHidden" Name="End_Generator_State1Bis" EntityNames="Generator_State1_GameplayIngredient" Hide="1" Delay=".2" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityIsHidden" Name="End_Generator_State1_TriggerAreaBis" EntityNames="Generator_State1_TriggerArea" Hide="1" Delay=".2" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityIsHidden" Name="End_Generator_State2" EntityNames="Generator_State2_GameplayIngredient" Hide="1" Delay=".2" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityIsHidden" Name="End_Generator_State2_TriggerArea" EntityNames="Generator_State2_TriggerArea" Hide="1" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalDialog" DialogName="ACT3_Quest3_RTE_PacifiedVictory1" Name="Final_Player_Talk" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionClickable" Name="A3_Q3_S5_EventTowerPortal_Activate" ClickableEntityName="ClickableEntity_from_GateTowerTop_to_GateTowerLvl6" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="EventEnd" EventName="Final_Player_Talk" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="GateOpening_Cutscene" SequenceName="A3_GATEOPENING" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="Final_Player_Talk" Type="GlobalRevivePlayers" Name="RevivePlayer_EventTowerTop_Cutscene2" RevivePostion="" Delay="0.5" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="ActionParticleEmitter" Name="Hide_Win_FX_BlockerLeft_TowerEvent" EmitterEntityName="FX_BlockerLeft_TowerEvent" Activate="0" Delay="0.5" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="ActionParticleEmitter" Name="Hide_Win_FX_BlockerTop_TowerEvent" EmitterEntityName="FX_BlockerTop_TowerEvent" Activate="0" Delay="0.5" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="GlobalReleaseGameplayEvent" Name="EventSlotRelease_Win_TowerEvent" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="EntityIsHidden" Name="Hide_Win_BlockerLeft_TowerEvent" EntityNames="BlockerLeft_TowerEvent" Hide="1" Delay="0.5" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="EntityIsHidden" Name="Hide_Win_BlockerTop_TowerEvent" EntityNames="BlockerTop_TowerEvent" Hide="1" Delay="0.5" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_TowerEvent_Win" CheckpointEntityName="" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="ActionParticleEmitter" Name="Win_End_State3_FX" EmitterEntityName="State3_Generator_FX" Activate="0" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q3_S5_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="QP_Q3_S5_Valeria_Spawn" FaceAtSpawn="QP_Q3_S5_Heimlock_Spawn" Delay="2" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q3_S5_HeimlockSpawn" SpawnClass="Sc_Sty_AC3_QH" TargetEntityName="QP_Q3_S5_Heimlock_Spawn" FaceAtSpawn="QP_Q3_S5_Valeria_Spawn" Delay="2" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="EntityTeleport" Name="TowerTopEvent_Player_Tp_End" MinRadius="1" TeleportedEntityName="#Player" DestinationName="QP_Q3_S5_PlayerSpawn_EndTowerTopEvent" />
+      <Event Trigger="EventStart" EventName="GateOpening_Cutscene" Type="ActionClickable" Name="WinState_Reactive_TransitionPortal" ClickableEntityName="ClickableEntity_from_GateTowerLvl6_to_GateTowerTop" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="EventEnd" EventName="GateOpening_Cutscene" Type="GoalAchieve" Name="EndEvent" SimulateOnly="0" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="GateOpening_Cutscene" Type="ActionSequenceReset" Name="SequenceReset_TowerEvent_Win_1" SequenceName="A3_TOPTOWER" ResetAtLastFrame="0" />
+      <Event Trigger="EventEnd" EventName="GateOpening_Cutscene" Type="ActionSequenceReset" Name="SequenceReset_TowerEvent_Win_2" SequenceName="A3_GATEOPENING" ResetAtLastFrame="0" />
+      <Event Trigger="PlayerWipe" Type="GlobalReleaseGameplayEvent" Name="EventSlotRelease_Lost_TowerEvent" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="StopAllDialogs_TowerEvent" />
+      <Event Trigger="PlayerWipe" Type="ActionSequenceReset" Name="SequenceReset_TowerEvent_Fail" SequenceName="A3_TOPTOWER" ResetAtLastFrame="0" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="StepFail_TowerEvent" RollbackToPreviousStep="1" />
+    </Step>
+    <Step Order="7" UIName="@ui_A3_Q3_S6_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Wait" TimeLimit="2" />
+      <Goal Order="1" Type="Go" Destination="QP_Q3_S5_Heimlock_Spawn" Radius="40" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_Q3_S5_Heimlock_Spawn" Area="ACT3_MonolithGate" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_Unreachable" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_Q3_S5_Heimlock_Spawn" Area="ACT3_MonolithGate" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Talk" EntityName="Heimlock" DialogName="ACT3_Quest4_PMB_HeimlockTalk1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Heimlock" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="ACT3_MonolithGate" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Talk" EntityName="Valeria" DialogName="ACT3_Quest4_PMB_ValeriaTalk1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Valeria" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT3_MonolithGate" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Wait" ReferenceEntityName="" TimeLimit="2" />
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q3_S6_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q3_S6_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="QP_Q3_S5_Valeria_Spawn" FaceAtSpawn="SpawnPoint_MonolithEntrance_From_GateTowerTop" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q3_S6_HeimlockSpawn" SpawnClass="Sc_Sty_AC3_QH" TargetEntityName="QP_Q3_S5_Heimlock_Spawn" FaceAtSpawn="SpawnPoint_MonolithEntrance_From_GateTowerTop" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Unhide_ElevatorTransitionPortal" EntityNames="ClickableEntity_from_GateToweTop_to_MonolithEntrance" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDungeonEntrance" Name="Unlock_MonolithPortal" EntranceName="DungeonEntrance_Monolith1" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q3_S5_Heimlock_Spawn" AreaRadius="35" Type="GlobalDialog" Name="A3_Q3_PMB_HeimlockValeria1" DialogName="ACT3_Quest4_PMB_HeimlockValeria1" />
+      <Event Trigger="EventEnd" EventName="A3_Q3_PMB_HeimlockValeria1" Type="GoalAchieve" Name="A3_Q3_S2_GoalAchieve_3" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="A3_Q3_S5_Goal3" Localization="@ui_A3_Q3_S5_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="A3_Q3_S5_Goal4" Localization="@ui_A3_Q3_S5_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="GlobalDialog" Name="A3_Q3_PMB_HeimlockValeria2" DialogName="ACT3_Quest4_PMB_HeimlockValeria2" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="6" Name="A3_Q3_S5_ValeriaMove" EntityName="Valeria" TargetName="QP_Q3_S5_Valeria_TargetPos" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="6" Name="A3_Q3_S5_HeimlockMove" EntityName="Heimlock" TargetName="QP_Q3_S5_Heimlock_TargetPos" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="5" Type="EntityIsHidden" Name="A3_Q3_S5_RemoveWall" EntityNames="CE_A3_Q3_S8_HeimlockValeria_Blocker" Hide="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="10000" />
+        <XP Amount="400000" />
+        <ChoiceLootClass Name="A3_Q3_Reward" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

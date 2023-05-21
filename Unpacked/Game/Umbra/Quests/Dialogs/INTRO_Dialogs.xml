@@ -1,0 +1,162 @@
+<MetaData>
+  <Dialog ID="INTRO_Quest1_MaelisBeginning_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="NPC_Intro0_Maelys" Title="@ui_Maelys_CharacterNameLabel" Content="@INTRO_Quest1_MaelisBeginning_Talk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\maelys.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene01\a1_sc01_l011_maelys_alt2.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_Siblings_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@INTRO_Quest1_Siblings_Talk_1" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\valeria_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene01\a1_sc01_l012_valeria.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_Siblings_Talk_2" Duration="30" StopAfterAudio="0.05" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene01\a1_sc01_l013_player_male_alt2_LSH.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@INTRO_Quest1_Siblings_Talk_3" Duration="30" StopAfterAudio="0.2" Portrait="..\\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene01\a1_sc01_l014_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_Maelis_Talk" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="NPC_Intro0_Maelys" Title="@ui_Maelys_CharacterNameLabel" Content="@INTRO_Quest1_Maelis_Talk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\maelys.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene01\a1_sc01_l016_maelys.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_PlayerThought_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_PlayerThought_Talk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene01\a1_sc01_l017_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_Beginning_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_Beginning_Talk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene02\a1_sc02_l001_player_male_alt2.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_FlayersWarrior_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="BanditMeleePrologue" Title="@ui_FlayerWarrior_CharacterNameLabel" Content="@INTRO_Quest1_FlayersWarrior_Talk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\flayer_melee.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene02\a1_sc02_l002_widling_warrior.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_FlayersArcher_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="BanditRangePrologue" Title="@ui_FlayerArcher_CharacterNameLabel" Content="@INTRO_Quest1_FlayersArcher_Talk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\flayer_range.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene02\a1_sc02_l003_widling_archer.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_SapperEncounter_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_SapperEncounter_Talk_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene02\a1_sc02_l004_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="TrapperIntro" Title="@ui_FlayerSapper_CharacterNameLabel" Content="@INTRO_Quest1_SapperEncounter_Talk_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\trapper.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene02\a1_sc02_l005_widling_sapper_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_SapperDefeated_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_SapperDefeated_Talk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene02\a1_sc02_l006_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_SoulsEncounter_Talk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_SoulsEncounter_Talk1_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l005_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Valeria2" Title="@ui_Valeria_CharacterNameLabel" Content="@INTRO_Quest1_SoulsEncounter_Talk1_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l001_Valeria.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric2" Title="@ui_Edric_CharacterNameLabel" Content="@INTRO_Quest1_SoulsEncounter_Talk1_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l002_Edric.wem" StartDelay="0.25" />
+    </Entry>
+    <Entry Entity="Valeria2" Title="@ui_Valeria_CharacterNameLabel" Content="@INTRO_Quest1_SoulsEncounter_Talk1_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l003_Valeria.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric2" Title="@ui_Edric_CharacterNameLabel" Content="@INTRO_Quest1_SoulsEncounter_Talk1_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l004_Edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_SoulsEncounter_Talk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric2" Title="@ui_Edric_CharacterNameLabel" Content="@INTRO_Quest1_SoulsEncounter_Talk2_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l005_Edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Valeria2" Title="@ui_Valeria_CharacterNameLabel" Content="@INTRO_Quest1_SoulsEncounter_Talk2_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l006_Valeria.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_SoulsEncounter_Talk2_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l007_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric2" Title="@ui_Edric_CharacterNameLabel" Content="@INTRO_Quest1_SoulsEncounter_Talk2_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l008_Edric_alt1.wem" StartDelay="0" />
+      <Audio Filename="ES\scene04\a1_sc04_l009_Edric_alt1.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_SoulsEncounter_Talk3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Valeria2" Title="@ui_Valeria_CharacterNameLabel" Content="@INTRO_Quest1_SoulsEncounter_Talk3_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l010_Valeria_alt3.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric2" Title="@ui_Edric_CharacterNameLabel" Content="@INTRO_Quest1_SoulsEncounter_Talk3_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l011_Edric.wem" StartDelay="0.25" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_SoldierEncounter_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_SoldierEncounter_Talk_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l012_player_male.wem" StartDelay="0.75" />
+    </Entry>
+    <Entry Entity="Valeria2" Title="@ui_Valeria_CharacterNameLabel" Content="@INTRO_Quest1_SoldierEncounter_Talk_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l013_Valeria.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric2" Title="@ui_Edric_CharacterNameLabel" Content="@INTRO_Quest1_SoldierEncounter_Talk_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l014_Edric_alt2.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Valeria2" Title="@ui_Valeria_CharacterNameLabel" Content="@INTRO_Quest1_SoldierEncounter_Talk_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l015_player_Valeria_alt1.wem" StartDelay="0.4" />
+      <Audio Filename="ES\scene04\a1_sc04_l016_player_Valeria_alt1.wem" StartDelay="1" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_SoldierDialog_Talk" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_SoldierDialog_Talk_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l017_player_male.wem" StartDelay="1" />
+    </Entry>
+    <Entry Entity="Edric2" Title="@ui_Edric_CharacterNameLabel" Content="@INTRO_Quest1_SoldierDialog_Talk_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l018_Edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Valeria2" Title="@ui_Valeria_CharacterNameLabel" Content="@INTRO_Quest1_SoldierDialog_Talk_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l018_Valeria_alt4.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_SoldierDialog_Talk_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene04\a1_sc04_l019_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_Arena_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_Arena_Talk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene06\a1_sc06_l001_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_Yudai_Talk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="AnimObject_assassin_transfo_yudai" Title="@ui_Yudai_CharacterNameLabel" Content="@INTRO_Quest1_Yudai_Talk1_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\republic_assassin.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene06\a1_sc06_l003_yudai_alt1.wem" StartDelay="0" />
+      <Audio Filename="ES\scene06\a1_sc06_l004_yudai.wem" StartDelay="0.25" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_Yudai_Talk1_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene06\a1_sc06_l002_player_male_alt3.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="AnimObject_assassin_transfo_yudai" Title="@ui_Yudai_CharacterNameLabel" Content="@INTRO_Quest1_Yudai_Talk1_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\republic_assassin.png" CanBeSkipped="1" PositionOffset="100">
+      <Audio Filename="ES\scene06\a1_sc06_l005_yudai.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_Yudai_Talk1_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene06\a1_sc06_l007_player_male_alt6.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Yudai" Title="@ui_Yudai_CharacterNameLabel" Content="@INTRO_Quest1_Yudai_Talk1_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene06\a1_sc06_l009_yudai.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_Yudai_Talk1_6" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene06\a1_sc06_l008_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="INTRO_Quest1_Yudai_Talk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Yudai2" Title="@ui_Yudai_CharacterNameLabel" Content="@INTRO_Quest1_Yudai_Talk2_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene08\a1_sc8_l001_yudai.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@INTRO_Quest1_Yudai_Talk2_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\player_veteran.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene08\a1_sc8_l002_player_male.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="AnimObject_A0_Q1_TempIntroEnd_Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@INTRO_Quest1_Yudai_Talk2_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene08\a1_sc8_l003_valeria_alt3.wem" StartDelay="1" />
+    </Entry>
+  </Dialog>
+</MetaData>

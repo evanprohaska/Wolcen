@@ -1,0 +1,94 @@
+<MetaData>
+  <LevelSheet Name="ben_test_level_GamplayArea" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="ben_test_level_SpawnPoint" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_ben_level_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="random_dungeon_area_BenTest" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="BenTest_Quest_GameplayArea" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="ben_test_level_SpawnPoint" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_BenTest_Quest" />
+    <EntityManager Name="EM_Test_BenLevel" />
+    <EnvironmentVisualVariations Choices="0" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="BenTest_Quest_GameplayArea" GameMode="Adventure" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="ben_test_level_SpawnPoint" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_BenTest_Quest" />
+    <EntityManager Name="EM_Test_BenLevel" />
+    <EnvironmentVisualVariations Choices="0" />
+    <SecondaryContentGenerator Name="CG_EG_SecondaryArea" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_Necro_Labyrinth_Level" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_Cave_Labyrinth_Level" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_Forest_Labyrinth_Level" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_TPS_Labyrinth_Level" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_Svriir_Small_Level" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_Necro_Small_Level" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_Cave_Small_Level" GameMode="campaign" Type="random_dungeon">
+    <EntityManager Name="EM_Test_ContentGenerator_GenericCave" />
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_SvriirLair" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_Forest_Small_Level" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_TPS_Small_Level" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_Cave_Small_BossArea_Level" GameMode="campaign" Type="random_dungeon">
+    <EntityManager Name="EM_Test_ContentGenerator_GenericCave" />
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_SvriirLair" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+  <LevelSheet Name="Test_Svriir_Small_BossArea_Level" GameMode="campaign" Type="random_dungeon">
+    <MonsterManager Name="MM_ben_RandomLevel_test" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+  </LevelSheet>
+</MetaData>

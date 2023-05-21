@@ -1,0 +1,8 @@
+<MetaData>
+  <DamageZone ID="name of my damage zone (unique)">
+    <Parameters Duration="float value" MaxHitPerEntity="int" MaxHitTotal="int" RateOfFire="float" />
+    <Position Offset="Vec3" StartingAngle="float" SnapToGround="1 or 0" />
+    <Shape ID="MyShape1" SpawnAngle="float" SpawnDelay="float" MaxHitPerEntity="int, or 0 if no limit" MaxHitTotal="int, or 0 if no limit" LinkedVFX="path" LinkedVFXRelPosOffset="Vec3" LinkedVFXRelDirOverride="Vec3" VFXTTL="60" MoveVFXWithShape="1" RemoveVFXWithShape="1" />
+    <Shape ID="MyShape2" SpawnAngle="float" SpawnDelay="float" MaxHitPerEntity="int, or 0 if no limit" MaxHitTotal="int, or 0 if no limit" LinkedVFX="path" LinkedVFXRelPosOffset="Vec3" LinkedVFXRelDirOverride="Vec3" VFXTTL="60" MoveVFXWithShape="1" RemoveVFXWithShape="1" />
+  </DamageZone>
+</MetaData>

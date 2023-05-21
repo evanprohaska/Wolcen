@@ -1,0 +1,22 @@
+<MetaData>
+  <Projectile ID="Ahriman_ClusterFireball_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="COFY_Ahriman_bys.Cluster_Fire_Ball.Bounce_Ball_proj" Direction="0,-1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="COFY_Ahriman_bys.Cluster_Fire_Ball.AOE_2_2m" Direction="1,0,0" WorldSpace="1" />
+      <Indicator ParticleName="COFY_Ahriman_bys.Cluster_Fire_Ball.Indicator_2_2m" Direction="0,0,1" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb_Cluster" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Ahriman_Cluster_Fireball_Impact_P3" />
+      <Launch SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotLoop" />
+      <Hit SoundTriggerName="Play_Ahriman_Cluster_Fireball_Impact_P3" />
+      <Removed SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+    </Audio>
+  </Projectile>
+</MetaData>

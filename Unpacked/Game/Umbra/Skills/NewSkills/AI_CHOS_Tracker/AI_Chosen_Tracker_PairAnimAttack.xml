@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_Chosen_Tracker_PairAnimAttack" ESkill="AI_Chosen_Tracker_PairAnimAttack" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams />
+    <Shapes>
+      <Entry ShapeName="Chosen_Tracker_MeleeAttack" />
+    </Shapes>
+    <PairAnimation AnimationDrivenMovement="1">
+      <Entry Key="CasterIn" ActionString="monster_skill_04" />
+      <Entry Key="CasterOutSuccess" ActionString="monster_skill_05" />
+      <Entry Key="CasterOutFail" ActionString="monster_skill_06" />
+      <Entry Key="Target" ActionString="pair_slave_tracker_hulk" />
+    </PairAnimation>
+    <EnableCondition DisableAgainstAI="1" />
+    <SkillSpecific SnapCameraTargetToBone="Bip01 Camera" />
+    <SoundTrigger OnAnimCast="" />
+  </Skill>
+</MetaData>

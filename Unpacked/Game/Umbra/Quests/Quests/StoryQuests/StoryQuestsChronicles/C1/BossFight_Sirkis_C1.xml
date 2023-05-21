@@ -1,0 +1,30 @@
+<MetaData>
+  <Quest Name="Quest_SirkisFight1_C1" StartDialog="" Type="BossFight" UIName="@ui_A1_Q2_EventQuestLabel1" UIDesc="@">
+    <Step Order="0" UIName="@ui_A1_Q2_EventStepLabel1" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_D_SirkisSpawnTrigger" Area="SvriirLair2_Exit" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="KillAll" EventsName="D_SirkisSpawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Sirkis" Area="SvriirLair2_Exit" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="BlockingSirkisRoad_on" EmitterEntityName="BlockingRoad_Sirkis" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Reveal_Q_NPC_SF_Sergent" EntityNames="Q_NPC_SF_Lieutenant" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FS_Hide_Q_NPC_SF_Sergent" EntityNames="Q_NPC_SFBridge_Lieutenant" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="SirkisSpawn_Sequence" SequenceName="A1_Q2_S13_SirkisSpawn_C1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalRevivePlayers" Delay=".2" Name="D_EventStartRevive" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="StepUpdate" Name="D_Update1" Localization="@ui_A1_Q2_S11_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="2" Name="D_TeleportInDen" TeleportedEntityName="#Player" DestinationName="QP_D_PlayerSpawn" />
+      <Event Trigger="EventEnd" EventName="D_TeleportInDen" Type="EntityTeleport" MinRadius="2" Name="D_IlthainTeleportInDen" TeleportedEntityName="A1_DYN_Ilthain_CalmingDrake_01" DestinationName="#Player" Delay=".1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="D_Reveal_SirkisArena_ForceField_Event_1" EntityNames="SirkisArena_ForceField_Event_1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="StepUpdate" Name="D_Update2" Localization="@ui_A1_Q2_S11_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="SetCheckpointSirkisFight" CheckpointEntityName="CheckPoint_SvriirBoss" />
+      <Event Trigger="EventEnd" EventName="SirkisSpawn_Sequence" Type="GoalAchieve" Delay="0" Name="WaitEnd_SirkisSpawn_Sequence" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="D_SirkisSpawn" SpawnClass="Sc_Sty_A1_S_D_Sirkis" TargetEntityName="QP_D_SirkisSpawn" FaceAtSpawn="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A1_Q2_EventQuestLabel1" DisplayTime="3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Sirkis" PercentLeft="25" Type="EntityIsHidden" Name="SirkisFight_P1_1" EntityNames="Trigger_Sirkis_P1" Hide="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Sirkis" PercentLeft="50" Type="EntityIsHidden" Name="SirkisFight_P2_1" EntityNames="Trigger_Sirkis_P2" Hide="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Sirkis" PercentLeft="75" Type="EntityIsHidden" Name="SirkisFight_P3_1" EntityNames="Trigger_Sirkis_P3" Hide="0" />
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,52 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_TempleOfJustice" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="LuckyDungeon" PriorityTag="LotOfLoot" ExcludeTag="Room,MMGoblin,Named,NoMonster" Weight="8" />
+      <Archetype Tag="ChestRoom" PriorityTag="EpicFixedLoot,Room,NoMonster" ExcludeTag="KillCP,KillTarget,CursedChestRoom" Weight="4" />
+      <Archetype Tag="CursedChestRoom" PriorityTag="CursedChestRoom,Room,NoMonster" ExcludeTag="EpicFixedLoot,KillCP,KillTarget" Weight="4" />
+      <Archetype Tag="GoblinDungeon" PriorityTag="MMGoblin,SmallArea,NormalLoot" ExcludeTag="NoMonster,Room,KillCP,KillTarget,MediumArea,BossArea" Weight="4" />
+      <Archetype Tag="KillOneTarget" PriorityTag="KillTarget,OneGoal,NormalLoot" ExcludeTag="Room,MMGoblin,Named,Hard" Weight="20" />
+      <Archetype Tag="KillNumerousTarget" PriorityTag="KillTarget,NumerousGoal,MediumArea,NormalLoot,Easy" ExcludeTag="Room,MMGoblin" Weight="20" />
+      <Archetype Tag="KillCP" PriorityTag="KillCP,NormalLoot" ExcludeTag="Room,MMGoblin,NoMonster,BossArea,MediumArea" Weight="20" />
+      <Archetype Tag="NoQuestEODReward" PriorityTag="EODReward" ExcludeTag="KillCP,KillTarget,MediumArea,Room,NoMonster,MMGoblin,BossArea" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WTemplar_Room_CG" Tag="Room,WTemplar" PriorityTag="WTemplar" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Mine,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="WTemplar_VerySmallDungeon_CG" Tag="WTemplar,VerySmallArea,ClassicArea" PriorityTag="WTemplar" ExcludeTag="NumerousGoal,FewGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_SmallDungeon_CG" Tag="WTemplar,SmallArea,ClassicArea" PriorityTag="WTemplar" ExcludeTag="NumerousGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_MediumDungeon_CG" Tag="WTemplar,MediumArea,ClassicArea" PriorityTag="WTemplar" ExcludeTag="COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Foggy_Room_CG" Tag="Room,WTemplar" PriorityTag="WTemplar" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Mine,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="WTemplar_Foggy_VerySmallDungeon_CG" Tag="WTemplar,VerySmallArea,ClassicArea" PriorityTag="WTemplar" ExcludeTag="NumerousGoal,FewGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Foggy_SmallDungeon_CG" Tag="WTemplar,SmallArea,ClassicArea" PriorityTag="WTemplar" ExcludeTag="NumerousGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Foggy_MediumDungeon_CG" Tag="WTemplar,MediumArea,ClassicArea" PriorityTag="WTemplar" ExcludeTag="COFE,REPU,COFY,PRIMO" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_TempleOfJustice_KillTarget_COSS_Tombbearer_4" Tag="KillTarget,NumerousGoal,COSS,Undead" PriorityTag="KillTarget,COSS,EMQuest,Undead" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TempleOfJustice_KillTarget_COSS_Halfbreed_4" Tag="KillTarget,NumerousGoal,COSS,Specter" PriorityTag="KillTarget,COSS,EMQuest,Specter" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TempleOfJustice_KillTarget_COSS_Halfbreed" Tag="KillTarget,OneGoal,COSS,Specter" PriorityTag="KillTarget,COSS,EMQuest,Specter" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TempleOfJustice_KillTarget_COSS_Priest" Tag="KillTarget,OneGoal,COSS,Undead" PriorityTag="KillTarget,SVRI,EMQuest,Undead" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TempleOfJustice_KillCP_1" Tag="KillCP,WILD" PriorityTag="WILD,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TempleOfJustice_KillCP_1" Tag="KillCP,COSS,Specter" PriorityTag="COSS,EMQuest,Specter" ExcludeTag="" />
+      <Quest QuestName="QN_SC_TempleOfJustice_KillCP_1" Tag="KillCP,COSS,Undead" PriorityTag="COSS,EMQuest,Undead" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TempleOfJustice_Wild" Tag="Easy,WILD,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TempleOfJustice_COSS_Undead_Easy" Tag="Easy,COSS,Undead,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TempleOfJustice_COSS_Specter_Easy" Tag="Easy,COSS,Specter,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TempleOfJustice_COSS_Undead_Medium" Tag="Medium,LotOfMonster,COSS,Undead" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TempleOfJustice_COSS_Specter_Medium" Tag="Medium,LotOfMonster,COSS,Specter" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TempleOfJustice_COSS_Undead_Hard" Tag="Hard,LotOfMonster,COSS,Undead" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TempleOfJustice_COSS_Specter_Hard" Tag="Hard,LotOfMonster,COSS,Specter" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_TempleOfJustice_COSS_Goblin" Tag="MMGoblin,Easy,COSS,LotOfMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="WTemplar,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_TempleOfJustice_Templar_ChestRoom" Tag="WTemplar,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_TempleOfJustice_Templar_CursedChestRoom" Tag="WTemplar,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_TempleOfJustice_Templar_EODReward" Tag="WTemplar,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_TempleOfJustice_Templar_BigLoot" Tag="WTemplar,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_TempleOfJustice_Templar" Tag="WTemplar,NormalLoot" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

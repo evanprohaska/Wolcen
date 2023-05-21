@@ -1,0 +1,16 @@
+<MetaData>
+  <Skill UID="AI_REPU_GolgothFlamethrower_Groundblast" ESkill="AI_DEFAULT_COMBO" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="8" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="GolgothFlamethrower_Groundblast_Shape1" />
+      <Entry ShapeName="GolgothFlamethrower_Groundblast_Shape2" />
+      <Entry ShapeName="GolgothFlamethrower_Groundblast_Shape3" />
+    </Shapes>
+    <SkillSpecific NumberOfAttacks="3" />
+    <SoundTrigger OnAnimStart="Play_REPU_GolgothFlamethrower_Groundblast_Precast" OnInterrupt="Stop_REPU_GolgothFlamethrower_Groundblast_Cast" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

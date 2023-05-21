@@ -1,0 +1,1616 @@
+<MetaData>
+  <EntityList Name="TOJ_DC_LyingGround">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_DC_SittingGround">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_WeaponRack">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_WeapoinRack01" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_WeaponRack02" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_ArmorRack">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_ArmorRack" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_BrokenTile">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_BrokenTile" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_SacredJar">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_SacredJar" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_CommonChest">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_CommonChest" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_Chest_Templar" NoDropWeight="0">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Templar.Chest_Templar_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="20">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Templar.Chest_Templar_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Templar.Chest_Templar_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="MobG_A2_TOJ" NoDropWeight="50">
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_COS.Mob_generator_COS_LostSoul" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_COS.Mob_generator_COS_SmallHB" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_COS.Mob_generator_COS_SmallSpecter" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Wild.Mob_generator_Wild_Spider" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="EL_InnerSanctumAltar1">
+    <Entry Weight="100">
+      <Budget Mode="manual" Entity_Min="1" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="InnerSanctumEvent.InnerSanctumAltar1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="EL_InnerSanctumAltar2">
+    <Entry Weight="100">
+      <Budget Mode="manual" Entity_Min="1" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="InnerSanctumEvent.InnerSanctumAltar2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="WL_Cit_Hung" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Hung_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Hung_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Hung_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Hung_4" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="WL_Trib_OffAlt" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Tribal.Lootable_Tribal_OfferingAltar" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="WL_Trib_Scarecrows">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Tribal.Lootable_Tribal_Scarecrows" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="WL_AbandChest" NoDropWeight="0">
+    <Entry Weight="60">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Usual.Lootable_UsualObject_AbandonedSmallWoodenChest" />
+      </Variants>
+    </Entry>
+    <Entry Weight="40">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Usual.Lootable_UsualObject_AbandonedMediumWoodenChest" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="WL_Chest" NoDropWeight="0">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Tribal.Chest_TribalChest_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="20">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Tribal.Chest_TribalChest_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Tribal.Chest_TribalChest_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="MobG_A2_WL" NoDropWeight="50">
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Svriir.Mob_generator_Svriir_Morgon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Svriir.Mob_generator_Svriir_OmegaFemale" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Wild.Mob_generator_Wild_Snake" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Wild.Mob_generator_Wild_Rat" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="ExploC_A2_WL" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Explosive_Container.Poison_ExplosiveBarrel" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS1_Cit_Hung" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Hung_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Hung_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Hung_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Hung_4" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS1_Cit_Impaled" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Impaled_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Impaled_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Citizen.Lootable_Citizen_DC_Impaled_3" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS1_Trib_OffAlt" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Tribal.Lootable_Tribal_OfferingAltar" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS1_Trib_Scarecrows">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Tribal.Lootable_Tribal_Scarecrows" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS1_AbandChest" NoDropWeight="0">
+    <Entry Weight="35">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Usual.Lootable_UsualObject_AbandonedSmallWoodenChest" />
+      </Variants>
+    </Entry>
+    <Entry Weight="30">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Usual.Lootable_UsualObject_AbandonedMediumWoodenChest" />
+      </Variants>
+    </Entry>
+    <Entry Weight="35">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Usual.Lootable_UsualObject_BuredSmallWoodenChest" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS1_Chest" NoDropWeight="0">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Tribal.Chest_TribalChest_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="20">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Tribal.Chest_TribalChest_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Tribal.Chest_TribalChest_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="MobG_A2_VOS1" NoDropWeight="50">
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Svriir.Mob_generator_Svriir_SmallSpitter" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Svriir.Mob_generator_Svriir_Omega" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Wild.Mob_generator_Wild_Snake" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Wild.Mob_generator_Wild_Rat" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="ExploC_A2_VOS1" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Explosive_Container.Poison_ExplosiveBarrel" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS2_Vil_LG" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_4" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS2_Vil_SG" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_4" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS2_Trib_OffAlt" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Tribal.Lootable_Tribal_OfferingAltar" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS2_Trib_Scarecrows">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Tribal.Lootable_Tribal_Scarecrows" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS2_AbandChest" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Usual.Lootable_UsualObject_BuredSmallWoodenChest" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="VOS2_Chest" NoDropWeight="0">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Tribal.Chest_TribalChest_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="20">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Tribal.Chest_TribalChest_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Tribal.Chest_TribalChest_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="MobG_A2_VOS2" NoDropWeight="50">
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_COS.Mob_generator_COS_Zombie" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_COS.Mob_generator_COS_SmallHB" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Wild.Mob_generator_Wild_Snake" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Wild.Mob_generator_Wild_Hornet" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="ExploC_A2_VOS2" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Explosive_Container.Fire_ExplosiveBarrel" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FF1_Flesh_LG" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FF1_Flesh_SG" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FF1_Flesh_Pouch" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Flesh.Lootable_Flesh_FleshPouchSmall" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Flesh.Lootable_Flesh_FleshPouchBig" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FF1_AbandChest" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Usual.Lootable_UsualObject_BuredSmallWoodenChest" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FF1_Chest" NoDropWeight="0">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="20">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="MobG_A2_FF1" NoDropWeight="25">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Flesh.Mob_generator_Flesh_LambachMouth" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FF2_Flesh_LG" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FF2_Flesh_SG" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FF2_Flesh_Pouch" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Flesh.Lootable_Flesh_FleshPouchSmall" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Flesh.Lootable_Flesh_FleshPouchBig" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FF2_AbandChest" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Usual.Lootable_UsualObject_BuredSmallWoodenChest" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FF2_Chest" NoDropWeight="0">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="20">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="MobG_A2_FF2" NoDropWeight="25">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Flesh.Mob_generator_Flesh_LambachMouth" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="MobG_A2_Tunnel" NoDropWeight="50">
+    <Entry Weight="25">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Wild.Mob_generator_Wild_Spider" />
+      </Variants>
+    </Entry>
+    <Entry Weight="25">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Svriir.Mob_generator_Svriir_OmegaBaby" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="ExploC_A2_Tunnel" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Explosive_Container.Fire_ExplosiveBarrel" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="IC1_Flesh_LG" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="IC1_Flesh_SG" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="IC1_Flesh_Pouch" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Flesh.Lootable_Flesh_FleshPouchSmall" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Flesh.Lootable_Flesh_FleshPouchBig" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="IC1_Chest" NoDropWeight="0">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="20">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="MobG_A2_IC1" NoDropWeight="25">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Flesh.Mob_generator_Flesh_LambachMouth" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="IC2_Flesh_LG" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="IC2_Flesh_SG" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="FleshedHuman.Lootable_FleshedHuman_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="IC2_Flesh_Pouch" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Flesh.Lootable_Flesh_FleshPouchSmall" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Flesh.Lootable_Flesh_FleshPouchBig" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="IC2_Chest" NoDropWeight="0">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="20">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Flesh.Chest_Flesh_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="MobG_A2_IC2" NoDropWeight="25">
+    <Entry Weight="75">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_GameplayIngredient.xml" PrefabName="Mob_generator_Flesh.Mob_generator_Flesh_LambachMouth" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F1_A2_TOJ" NoDropWeight="80">
+    <Entry Weight="20">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Companion.Companion_A1-A2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F2_A2_TOJ" NoDropWeight="65">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Buff_Altar.Buff_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="TOJ.GamblingAltar_TOJ" />
+      </Variants>
+    </Entry>
+    <Entry Weight="13">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="ApoGlobes_Altar.ApoGlobes_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Choice_Altar.Choice_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Merchant_Altar.Merchant_Altar_DestinyMage" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_TOJ" NoDropWeight="70">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="TOJ.CursedChest_Common_TOJ" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="TOJ.CursedChest_Uncommon_TOJ" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="TOJ.CursedChest_Rare_TOJ" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="TOJ.Greed_TOJ" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_TOJ_CCR" NoDropWeight="0">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="TOJ.CursedChest_Common_TOJ" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="TOJ.CursedChest_Uncommon_TOJ" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="TOJ.CursedChest_Rare_TOJ" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="TOJ.Greed_TOJ" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F1_A2_FF1" NoDropWeight="80">
+    <Entry Weight="20">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Companion.Companion_A1-A2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F2_A2_FF1" NoDropWeight="65">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Buff_Altar.Buff_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF1.GamblingAltar_FF1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="13">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="ApoGlobes_Altar.ApoGlobes_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Choice_Altar.Choice_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Merchant_Altar.Merchant_Altar_DestinyMage" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_FF1" NoDropWeight="70">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF1.CursedChest_Common_FF1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF1.CursedChest_Uncommon_FF1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF1.CursedChest_Rare_FF1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF1.Greed_FF1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_FF1_CCR" NoDropWeight="0">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF1.CursedChest_Common_FF1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF1.CursedChest_Uncommon_FF1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF1.CursedChest_Rare_FF1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF1.Greed_FF1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F1_A2_FF2" NoDropWeight="80">
+    <Entry Weight="20">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Companion.Companion_A1-A2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F2_A2_FF2" NoDropWeight="65">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Buff_Altar.Buff_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF2.GamblingAltar_FF2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="13">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="ApoGlobes_Altar.ApoGlobes_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Choice_Altar.Choice_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Merchant_Altar.Merchant_Altar_DestinyMage" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_FF2" NoDropWeight="70">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF2.CursedChest_Common_FF2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF2.CursedChest_Uncommon_FF2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF2.CursedChest_Rare_FF2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF2.Greed_FF2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_FF2_CCR" NoDropWeight="0">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF2.CursedChest_Common_FF2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF2.CursedChest_Uncommon_FF2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF2.CursedChest_Rare_FF2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="FF2.Greed_FF2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F1_A2_Tunnel" NoDropWeight="80">
+    <Entry Weight="20">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Companion.Companion_A1-A2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F2_A2_Tunnel" NoDropWeight="65">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Buff_Altar.Buff_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Tunnel.GamblingAltar_Tunnel" />
+      </Variants>
+    </Entry>
+    <Entry Weight="13">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="ApoGlobes_Altar.ApoGlobes_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Choice_Altar.Choice_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Merchant_Altar.Merchant_Altar_DestinyMage" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_Tunnel" NoDropWeight="70">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Tunnel.CursedChest_Common_Tunnel" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Tunnel.CursedChest_Uncommon_Tunnel" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Tunnel.CursedChest_Rare_Tunnel" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Tunnel.Greed_Tunnel" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F1_A2_IC1" NoDropWeight="80">
+    <Entry Weight="20">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Companion.Companion_A1-A2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F2_A2_IC1" NoDropWeight="65">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Buff_Altar.Buff_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC1.GamblingAltar_IC1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="13">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="ApoGlobes_Altar.ApoGlobes_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Choice_Altar.Choice_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Merchant_Altar.Merchant_Altar_DestinyMage" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_IC1" NoDropWeight="70">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC1.CursedChest_Common_IC1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC1.CursedChest_Uncommon_IC1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC1.CursedChest_Rare_IC1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC1.Greed_IC1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_IC1_CCR" NoDropWeight="0">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC1.CursedChest_Common_IC1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC1.CursedChest_Uncommon_IC1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC1.CursedChest_Rare_IC1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC1.Greed_IC1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F1_A2_IC2" NoDropWeight="80">
+    <Entry Weight="20">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Companion.Companion_A1-A2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F2_A2_IC2" NoDropWeight="65">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Buff_Altar.Buff_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC2.GamblingAltar_IC2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="13">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="ApoGlobes_Altar.ApoGlobes_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Choice_Altar.Choice_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Merchant_Altar.Merchant_Altar_DestinyMage" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_IC2" NoDropWeight="70">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC2.CursedChest_Common_IC2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC2.CursedChest_Uncommon_IC2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC2.CursedChest_Rare_IC2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="IC2.Greed_IC2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F1_A2_WarlordLair" NoDropWeight="80">
+    <Entry Weight="20">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Companion.Companion_A1-A2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F2_A2_WarlordLair" NoDropWeight="65">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Buff_Altar.Buff_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="WarlordLair.GamblingAltar_WarlordLair" />
+      </Variants>
+    </Entry>
+    <Entry Weight="13">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="ApoGlobes_Altar.ApoGlobes_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Choice_Altar.Choice_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Merchant_Altar.Merchant_Altar_DestinyMage" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_WarlordLair" NoDropWeight="70">
+    <Entry Weight="17.37">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="WarlordLair.CursedChest_Common_WarlordLair" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.63">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="WarlordLair.CursedChest_Uncommon_WarlordLair" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_WarlordLair_CCR" NoDropWeight="0">
+    <Entry Weight="17.37">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="WarlordLair.CursedChest_Common_WarlordLair" />
+      </Variants>
+    </Entry>
+    <Entry Weight="12.63">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="WarlordLair.CursedChest_Uncommon_WarlordLair" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F1_A2_VOS1" NoDropWeight="80">
+    <Entry Weight="20">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Companion.Companion_A1-A2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F2_A2_VOS1" NoDropWeight="65">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Buff_Altar.Buff_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS1.GamblingAltar_VOS1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="13">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="ApoGlobes_Altar.ApoGlobes_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Choice_Altar.Choice_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Merchant_Altar.Merchant_Altar_DestinyMage" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_VOS1" NoDropWeight="70">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS1.CursedChest_Common_VOS1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS1.CursedChest_Uncommon_VOS1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS1.CursedChest_Rare_VOS1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS1.Greed_VOS1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_VOS1_CCR" NoDropWeight="0">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS1.CursedChest_Common_VOS1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS1.CursedChest_Uncommon_VOS1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS1.CursedChest_Rare_VOS1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS1.Greed_VOS1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F1_A2_VOS2" NoDropWeight="80">
+    <Entry Weight="20">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="Companion.Companion_A1-A2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F2_A2_VOS2" NoDropWeight="65">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Buff_Altar.Buff_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS2.GamblingAltar_VOS2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="13">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="ApoGlobes_Altar.ApoGlobes_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Choice_Altar.Choice_Altar" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Merchant_Altar.Merchant_Altar_DestinyMage" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_VOS2" NoDropWeight="70">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS2.CursedChest_Common_VOS2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS2.CursedChest_Uncommon_VOS2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS2.CursedChest_Rare_VOS2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS2.Greed_VOS2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3_A2_VOS2_CCR" NoDropWeight="0">
+    <Entry Weight="11.38">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS2.CursedChest_Common_VOS2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="8.27">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS2.CursedChest_Uncommon_VOS2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="6.21">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS2.CursedChest_Rare_VOS2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.14">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar_Story_A2.xml" PrefabName="VOS2.Greed_VOS2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="Hunt_Altars_A2" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="QuestAltar_HC.QuestAltar_HC_StartTrace_[Template]_01" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs//Library_Altar.xml" PrefabName="QuestAltar_HC.QuestAltar_HC_StartTrace_[Template]_02" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs//Library_Altar.xml" PrefabName="QuestAltar_HC.QuestAltar_HC_StartTrace_[Template]_03" />
+      </Variants>
+    </Entry>
+  </EntityList>
+</MetaData>

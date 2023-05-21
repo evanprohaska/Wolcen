@@ -1,0 +1,24 @@
+<MetaData>
+  <Skill UID="unique_arrowsrain_onhit" ESkill="player_arrowsrain" Keywords="attack_skill,projectile,passive_effect,">
+    <Projectile BaseDamageBonusPercentPerNonUsedProjectile="30" />
+    <VisualFeedback TrailPresetBase="ranged" FeedbackPresetBase="Player_skill_arrowsrain" BloodDecalOrientation="center" />
+    <CastingParams CanMultiCast="1" CanCastWhileMoving="1" CancellableByDefault="1" />
+    <DamageWeapon WeaponMultiplier="15" />
+    <StatusAilment AilmentEffectiveness="30" />
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <PostProcess CameraZoomStartTime="0" CameraZoomDuration="0.665" CameraUnzoomDuration="0.1" CameraZoomFov="32" />
+    <ParticleList>
+      <Particle Key="Circle_Loop" Name="U_Character.Skills.Arrow_Rain_3m5_Blue_Loop" Direction="0,0,1" />
+      <Particle Key="Circle" Name="U_Character.Skills.Arrow_Rain_3m5_Blue" Direction="0,0,1" />
+      <Particle Key="Circle_Loop_Secondary" Name="U_Character.Skills.Arrow_Rain_2m_Blue_Loop" Direction="0,0,1" />
+      <Particle Key="Circle_Secondary" Name="U_Character.Skills.Arrow_Rain_2m_Blue" Direction="0,0,1" />
+    </ParticleList>
+    <Shapes>
+      <Entry Key="BasicShape" ShapeName="player_arrowsrain_shape" />
+      <Entry Key="BasicShapeSecondary" ShapeName="player_arrowsrain_shape_secondary" />
+    </Shapes>
+    <DamageZone Duration="9" RateOfFire="0.33" RemoveParticleWithShape="0" MaxEntityHits="20" />
+    <Specific_ArrowsRain ArrowsSpawnDelay="0.75" DamageAsOneShot="0" NominalTickCount="6" />
+    <SoundTrigger OnAnimStart="Play_Skill_ArrowsRain_Summon" OnAnimCast="Play_Skill_ArrowsRain_Shoot" OnHit="Play_Skill_ArrowsRain_Impact" OnKill="Play_OnKill_Impact_Lethal_Arrow" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,94 @@
+<MetaData>
+  <Projectile ID="Sniper_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bullet.Bullet.Bullet_Normal" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="70" SpeedMax="70" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="Play_Republic_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Republic_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Republic_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="repu_sniper_killzone_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Sniper.Projectile_01_Lightning" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Monster_Alt.repu_sniper.aim_proj_impact" Scale="0.9" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="cofe_sniper_killzone_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Sniper.Projectile_01_Rend" Scale="0.75" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster_Alt.flesh_sniper.impact" Scale="0.9" Direction="1,0,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_Spiker_SpearImpact" />
+      <Launch SoundTriggerName="PLAY_AI_Spiker_SpearLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="repu_sniper_takeaim_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Sniper.Projectile_01_Lightning" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Monster_Alt.repu_sniper.aim_proj_impact" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Republic_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Republic_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Republic_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="cofe_sniper_takeaim_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Sniper.Projectile_01_Rend" Scale="1" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Monster_Alt.flesh_sniper.impact" Scale="0.9" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="Play_Republic_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Republic_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Republic_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="named_sniper_takeaim_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Sniper.Projectile_01_Rend" Scale="1" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Monster_Alt.flesh_sniper.impact" Scale="0.9" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="Play_Republic_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Republic_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Republic_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

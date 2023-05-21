@@ -1,0 +1,11 @@
+<MetaData>
+  <Quest Name="QN_SC_KillCP_1" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KCP_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KCP_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillCP" AreaPercent="1" KillValue="70" ShowProgression="1" />
+      <GoalLogic Formula="00" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

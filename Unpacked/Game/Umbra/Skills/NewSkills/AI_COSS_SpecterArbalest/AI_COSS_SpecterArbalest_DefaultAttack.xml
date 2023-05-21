@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill UID="AI_COSS_SpecterArbalest_DefaultAttack" ESkill="default_ranged" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01 CrossbowBase" MaximumTargetingHalfAngle="25" />
+    <Projectile Name="COSS_SpecterArbalest_Proj" ProjectileCount="1" PenetrationLimit="3" />
+    <SoundTrigger OnAnimCast="Play_COSS_Specter_Arbalest_Fire" OnHit="Play_COSS_Specter_Arbalest_Projectile_Hit" PlayAttackVoice="0" />
+    <Targeting ComputeTargetPosAtCast="1" />
+  </Skill>
+</MetaData>

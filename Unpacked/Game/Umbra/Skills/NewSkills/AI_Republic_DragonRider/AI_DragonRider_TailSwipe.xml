@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill UID="AI_DragonRider_TailSwipe" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Physical" WeaponMultiplier="2.7" />
+    <Cooldown Cooldown="0.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="DragonRider_Tailswipe_shape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="" OnHit="Play_Republic_DragonRider_DragonLeap_TailSwing_Impact" PlayAttackVoice="0" />
+    <SkillSpecific HitEntityOnlyOnce="0">
+      <Particles>
+        <Start>
+          <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_4M_360D" Offset="0,0,0" Direction="0,0,1" Scale="1.83" Bone="Bip01" InstantKill="0" />
+        </Start>
+      </Particles>
+    </SkillSpecific>
+  </Skill>
+</MetaData>

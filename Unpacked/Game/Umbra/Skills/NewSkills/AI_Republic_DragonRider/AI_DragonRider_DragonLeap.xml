@@ -1,0 +1,22 @@
+<MetaData>
+  <Skill UID="AI_DragonRider_DragonLeap" ESkill="ai_default_charge" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1.6" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="REPU_Golgoth_QuickCharge_TargetDetection_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.charge_indicator" Offset="0,0,0" Direction="-1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="30" ChargeDistance="15" StopChargeAtTarget="0">
+      <Extra Type="Particles" />
+      <Extra Type="FrontAttack">
+        <Shape ShapeName="DragonRider_Leap_End_shape" />
+      </Extra>
+    </SkillSpecific>
+    <SoundTrigger OnAnimStart="Play_Republic_DragonRider_DragonLeap_Start" OnAnimLoopIn="Play_Republic_DragonRider_DragonLeap_Cast" OnAnimLoopOut="" OnInterrupt="Stop_Republic_DragonRider_DragonLeap_Cast" OnHit="Play_Republic_DragonRider_DragonLeap_Impact" />
+  </Skill>
+</MetaData>

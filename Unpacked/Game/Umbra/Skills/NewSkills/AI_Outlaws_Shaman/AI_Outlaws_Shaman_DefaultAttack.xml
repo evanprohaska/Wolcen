@@ -1,0 +1,71 @@
+<MetaData>
+  <Skill UID="AI_Outlaws_Shaman_DefaultAttack_01" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="1.3" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="Shaman_DefaultAttack01" />
+    </Shapes>
+    <Combo ComboStarter="Shaman_Combo" />
+    <SoundTrigger OnAnimStart="Play_Outlaw_Shaman_DefaultAttack_Swing_01" OnHit="Play_Enemy_Unique_Melee_Imp_Sword1H_Trash" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Outlaws_Shaman_DefaultAttack_02" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="Shaman_DefaultAttack02" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Outlaw_Shaman_DefaultAttack_Swing_02" OnHit="Play_Enemy_Unique_Melee_Imp_Sword1H_Trash" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Named_Shaman_DefaultAttack_01" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="1.3" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="Named_Shaman_DefaultAttack01" />
+    </Shapes>
+    <Combo ComboStarter="Named_Shaman_Combo" />
+    <SoundTrigger OnAnimStart="Play_Outlaw_Shaman_DefaultAttack_Swing_01" OnHit="Play_Enemy_Unique_Melee_Imp_Sword1H_Trash" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Named_Shaman_DefaultAttack_02" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="0.5" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_Named_Shaman_DefaultAttack_02_Shape,AI_Named_Shaman_DefaultAttack_02_Projectiles" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+    <SoundTrigger OnAnimStart="Play_Outlaw_Shaman_DefaultAttack_Swing_02" OnHit="Play_COSS_Fantic_Attack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Named_Shaman_DefaultAttack_02_Shape" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Named_Shaman_DefaultAttack02" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_Named_Shaman_DefaultAttack_02_Projectiles" ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageAsPercentageOfParent Percent="5" />
+    <StatusAilment>
+      <curse Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Projectile Name="Shaman_defaultattack_proj" ProjectileCount="5" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="50" totalAngleAtDistanceMin="130" totalAngleAtDistanceMax="130" projectileAngleAtDistanceMin="25" projectileAngleAtDistanceMax="25" />
+    </Projectile>
+    <Range AttackRange="25" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" BaseDirIsForwardDir="1" RandomDir="0" MaxZOffset="2" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

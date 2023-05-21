@@ -1,0 +1,10 @@
+<MetaData>
+  <Skill UID="mapmodifier_skill_randomexplosion" ESkill="MapModifier_RandomExplosion" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_CommonVFX.Map_Modifier.Fire_Explosion_Indicator_01" Direction="0,0,1" Scale="0.5" TimeScale="5" />
+      <Particle Key="Explosion" Name="U_CommonVFX.Map_Modifier.Fire_Explosion_01" Direction="0,0,1" Scale="0.3125" TimeScale="1.25" />
+    </ParticleList>
+    <DamageBase Max="50" MaxPerLevel="50" Min="50" MinPerLevel="50" Type="fire" />
+    <SkillSpecific MinTime="10" MaxTime="15" IndicatorTime="0.96" ExplosionRadius="2.5" MaxSpawnRadius="6" Margin="4" />
+  </Skill>
+</MetaData>

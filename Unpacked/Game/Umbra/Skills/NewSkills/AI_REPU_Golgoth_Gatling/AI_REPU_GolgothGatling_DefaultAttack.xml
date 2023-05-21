@@ -1,0 +1,21 @@
+<MetaData>
+  <Skill UID="AI_REPU_GolgothGatling_DefaultAttack" ESkill="AI_Default_DamageZone" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Range AttackRange="15" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="0.6" />
+    <Cooldown Cooldown="3" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Lumbach.FleshAOE_Indicator" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="OnSpawn" Name="REPU_Golgoth_Gatling.Machine Gun Leap Gatling.Loop AoE" Offset="0,0,0" Direction="0,0,1" Delay="0.4" Scale="1.5" />
+      <Particle Key="DamageZone" Name="REPU_Golgoth_Gatling.Machine Gun Leap Gatling.Loop AoE" Offset="0,0,0" Direction="0,1,0" Delay="0.4" Scale="1.5" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="7" />
+    <SoundTrigger OnAnimStart="" OnAnimCast="Play_REPU_Golgoth_Gatling_Unload_Shoot" OnAnimEnd="Play_REPU_Golgoth_Gatling_Unload_Shoot_End" OnInterrupt="" OnHit="Play_DOT_Shock" PlayAttackVoice="0" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Lambach01_FleshAOEShape" />
+    </Shapes>
+    <DamageZone RateOfFire="0.5" Duration="2.5" />
+  </Skill>
+</MetaData>

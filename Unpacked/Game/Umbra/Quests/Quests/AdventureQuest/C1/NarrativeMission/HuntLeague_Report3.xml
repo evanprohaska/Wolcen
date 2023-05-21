@@ -1,0 +1,12 @@
+<MetaData>
+  <Quest Name="C1_EG_SF_Q4" UIName="@ui_C1_M1_InterMission3_QuestLabel" UIDesc="" Type="Main" StartDialog="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_C1_M1_InterMission3_S1_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Talk" EntityName="NPC_HL_Ilthain_V2" DialogName="HLC1_EG_SF_Q4_Ilthain">
+        <ArrowMarker ShowMinimapIcon="1" Target="NPC_HL_Ilthain_V2" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_palacedoor" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="HuntLeague_C1_InitPos" TeleportedEntityName="#Player" DestinationName="QP_EG_GoToSF" MinRadius="30" Delay="2" />
+    </Step>
+  </Quest>
+</MetaData>

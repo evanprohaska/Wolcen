@@ -1,0 +1,15 @@
+<MetaData>
+  <Quest Name="ALEXQTest2_BossArenaNaarlog" UIName="@NPC2_DoS_QuestNameLabel" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_A1_Q3_S6_UpdateStepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Impossible" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" Delay="0" StepToKeep="2" Name="A1_Q3_ClearUI_6" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ArenaStart" Name="Event_Arena_Start" ArenaPreset="PrisonGuardianBandit_ATest" LocationEntityName="PrisonGuardianBandit_ATest" EntityToFollow="" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="Event_Arena_Start" Type="GoalAchieve" GoalIndexToAchieve="0" Name="Event_Arena_Victory" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="1" Delay="0.1" Name="PlayerTP_AQuest2_Arena" TeleportedEntityName="#Player" DestinationName="TPPlayer" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="Event_Arena_Start" WaveIndex="3" Type="StepUpdate" Name="A1_Q3_S5_StepUpdate" Localization="@ui_A1_Q3_S6_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="Event_Arena_Start" WaveIndex="3" Type="GlobalDialog" Name="NaarlogIsComing" Delay="4" DialogName="ACT1_Q3_BO_OutlawAmbush3" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="Event_Arena_Start" WaveIndex="1" Type="GlobalDialog" Name="BO_OutlawAmbush_2" Delay="3" DialogName="ACT1_Q3_BO_OutlawAmbush2" />
+    </Step>
+  </Quest>
+</MetaData>

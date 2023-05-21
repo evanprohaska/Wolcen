@@ -1,0 +1,58 @@
+<MetaData>
+  <Quest Name="Quest_EdricFight1" StartDialog="" Type="BossFight" UIName="@ui_A1_Q5_EventQuestLabel2" UIDesc="@">
+    <Step Order="0" UIName="@ui_A1_Q5_EventStepNametLabel2_1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" TimeLimit="1" />
+      <Goal Order="1" Type="KillAll" EventsName="TPSC_Edric_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Edric" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EventEnd" EventName="EdricAmbush_Sequence" Type="GlobalAnnouncement" Name="A1_Q5_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A1_Q5_EventQuestLabel2" DisplayTime="3" />
+      <Event Trigger="Instant" Type="QuestClearUI" Delay="0" StepToKeep="2" Name="A1_Q5_ClearUI_7" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TPSC_Hide_Q_NPC_TPSC_CPG" EntityNames="Q_NPC_TPSC_CPG" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="EdricAmbush_Sequence" SequenceName="A1_Q5_S2_EdricAmbush" />
+      <Event Trigger="EventEnd" EventName="EdricAmbush_Sequence" Type="EntityTeleport" MinRadius="5" Name="Player_TP_TPSC1" TeleportedEntityName="#Player" DestinationName="SpawnPoint_primo_boss_ring1" />
+      <Event Trigger="EventEnd" EventName="Player_TP_TPSC1" Type="EntitySpawn" Delay="0.5" MinimumRadius="5" MaximumRadius="15" SpawnFrequency="0" Name="TPSC_Edric_Spawn" SpawnClass="Sc_republic_JE1" TargetEntityName="BOSS_Spawn_Point_Edric01" FaceAtSpawn="SpawnPoint_primo_boss_ring1" />
+      <Event Trigger="EventEnd" EventName="Player_TP_TPSC1" Type="GlobalDialog" Delay="3" Name="TPSC_EdricFightP1Talk1" DialogName="ACT1_Q5_TPSC_EdricFightP1Talk1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Edric" PercentLeft="35" Type="GlobalDialog" Name="TPSC_EdricFightP1Talk2" DialogName="ACT1_Q5_TPSC_EdricFightP1Talk2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Edric" PercentLeft="65" Type="GlobalDialog" Name="TPSC_EdricFightP1Talk3" DialogName="ACT1_Q5_TPSC_EdricFightP1Talk3" />
+    </Step>
+  </Quest>
+  <Quest Name="Quest_EdricFight2" StartDialog="" Type="BossFight" UIName="@ui_A1_Q5_EventQuestLabel2" UIDesc="@">
+    <Step Order="0" UIName="@ui_A1_Q5_EventStepNametLabel2_2" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="7" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Edric" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Edric" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EventEnd" EventName="EdricDefeat1" Type="GoalAchieve" Delay="0.1" Name="WaitEnd_A1_Quest5_EdricDefeat1" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="EdricDefeat1" SequenceName="A1_Q5_S2_EdricDefeat1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="TPSC_EdricFightP2_StartArena" ArenaPreset="EdricBossFight_Part2_Act1" LocationEntityName="EdricBossFight_Part2_Act1" EntityToFollow="" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="TPSC_EdricFightP2_StartArena" Type="GoalAchieve" GoalIndexToAchieve="1" Name="TPSC_EdricFightP2_Arena_Victory" />
+      <Event Trigger="EventEnd" EventName="EdricDefeat1" Type="GlobalDialog" Delay="3" Name="TPSC_EdricFightP2Talk1" DialogName="ACT1_Q5_TPSC_EdricFightP2Talk1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Edric" PercentLeft="40" Type="GlobalDialog" Name="TPSC_EdricFightP2Talk2" DialogName="ACT1_Q5_TPSC_EdricFightP2Talk2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Edric" PercentLeft="75" Type="GlobalDialog" Name="TPSC_EdricFightP2Talk3" DialogName="ACT1_Q5_TPSC_EdricFightP2Talk3" />
+    </Step>
+  </Quest>
+  <Quest Name="Quest_EdricFight3" StartDialog="" Type="BossFight" UIName="@ui_A1_Q5_EventQuestLabel2" UIDesc="@">
+    <Step Order="0" UIName="@ui_A1_Q5_EventStepNametLabel2_3" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="7" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Edric" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Edric" Area="ACT1_AnankisCore" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="EdricDefeat2" SequenceName="A1_Q5_S2_EdricDefeat2" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="EdricDefeat2" Type="GoalAchieve" Name="WaitEnd_A1_Quest5_EdricDefeat2" SimulateOnly="1" GoalIndexToAchieve="-1" Delay="0.1" />
+      <Event Trigger="EventEnd" EventName="EdricDefeat2" Type="EntityTeleport" Name="Player_TP_TPSC3" TeleportedEntityName="#Player" MinRadius="5" DestinationName="SpawnPoint_primo_boss_ring2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="TPSC_EdricFightP3_StartArena" ArenaPreset="EdricBossFight_Part3_Act1" LocationEntityName="EdricBossFight_Part3_Act1" EntityToFollow="" />
+      <Event Trigger="EventEnd" EventName="A1_Q5_EA_AN_BossFightEnd" Type="GoalAchieve" Name="TPSC_EdricFightP3_Arena_Victory" GoalIndexToAchieve="1" />
+      <Event Trigger="EventEnd" EventName="EdricDefeat2" Type="GlobalDialog" Name="TPSC_EdricFightP3Talk1" DialogName="ACT1_Q5_TPSC_EdricFightP3Talk1" Delay="3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Edric" PercentLeft="30" Type="GlobalDialog" Name="TPSC_EdricFightP3Talk2" DialogName="ACT1_Q5_TPSC_EdricFightP3Talk2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Edric" PercentLeft="60" Type="GlobalDialog" Name="TPSC_EdricFightP3Talk3" DialogName="ACT1_Q5_TPSC_EdricFightP3Talk3" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="TPSC_EdricFightP3_StartArena" Type="GlobalAnnouncement" Name="A1_Q5_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+</MetaData>

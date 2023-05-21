@@ -1,0 +1,17 @@
+<MetaData>
+  <Skill UID="AI_Chosen_Charger_Explosion" ESkill="AI_Chosen_Charger_Explosion" Keywords="magic_spell">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.0" />
+    <CastingParams />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Charger.Charger_Clone_Explosion_Indicator_01" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="Explosion" Name="U_Monster.Tracker.Projectile_Explosion_01" Direction="0,0,1" Scale="1.25" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="Chosen_Charger_Clone_Explosion" />
+    </Shapes>
+    <SkillSpecific MinimumNumberOfSummons="6" />
+  </Skill>
+</MetaData>

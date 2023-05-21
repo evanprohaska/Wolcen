@@ -1,0 +1,14 @@
+<MetaData>
+  <Skill UID="mapmodifier_skill_timedistortion" ESkill="MapModifier_TimeDistortion" Keywords="">
+    <ParticleList>
+      <Particle Key="Dome" Name="U_Character_02.Summon.Summon_lightning_Dome" Direction="1,0,0" Scale="1.1" />
+    </ParticleList>
+    <SkillSpecific Positions="QP_A4_P2_TimeDistort1,QP_A4_P2_TimeDistort2" Radius="4" Debuff="TimeDistortion_MainDebuff" SpecialTarget="">
+      <Upgrade AssociatedProject="time_distortion_construct">
+        <Data Index="0" DebuffOnSpecial="TimeDistortion_SpecialDebuff_0" Buff="TimeDistortion_SpecialBuff_1" />
+        <Data Index="1" DebuffOnSpecial="TimeDistortion_SpecialDebuff_0" Buff="TimeDistortion_SpecialBuff_2" />
+        <Data Index="2" DebuffOnSpecial="TimeDistortion_SpecialDebuff_0" Buff="TimeDistortion_SpecialBuff_3" />
+      </Upgrade>
+    </SkillSpecific>
+  </Skill>
+</MetaData>

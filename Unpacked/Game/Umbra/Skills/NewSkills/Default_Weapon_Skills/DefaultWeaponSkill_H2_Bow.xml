@@ -1,0 +1,68 @@
+<MetaData>
+  <Skill UID="playerskill_H2_Bow_atk_01" ESkill="default_ranged" Keywords="default_ranged,attack_skill,projectile,additional_projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_bow.png" UIName="@ui_AST_Bow" Lore="@ui_AST_Bow_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance,Projectiles,Range" />
+    <Animation ActionString="player_skill_atk_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_bow" TrailPresetBase="ranged" />
+    <Combo ComboStarter="Combo_H2_Bow" />
+    <Range AttackRange="20" />
+    <Projectile Name="bow_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" PositionOffset="0,-1,0" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="bow_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <SoundTrigger PlayImpactSound="1" OnAnimCast="PLAY_Skill_DefaultWeapon_BowShot" OnKill="Play_OnKill_Impact_Lethal_Arrow" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="L_Weapon_Bone" CancellableByDefault="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+  </Skill>
+  <Skill UID="playerskill_H2_Bow_atk_02" ESkill="default_ranged" Keywords="default_ranged,attack_skill,projectile,additional_projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_bow.png" UIName="@ui_AST_Bow" Lore="@ui_AST_Bow_lore" />
+    <Animation ActionString="player_skill_atk_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_bow" TrailPresetBase="ranged" />
+    <Range AttackRange="20" />
+    <Projectile Name="bow_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" PositionOffset="0,-1,0" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="bow_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <SoundTrigger PlayImpactSound="1" OnAnimCast="PLAY_Skill_DefaultWeapon_BowShot" OnKill="Play_OnKill_Impact_Lethal_Arrow" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="L_Weapon_Bone" CancellableByDefault="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+  </Skill>
+  <Skill UID="playerskill_H2_Bow_atk_loop_01" ESkill="default_ranged" Keywords="default_ranged,attack_skill,projectile,additional_projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_bow.png" UIName="@ui_AST_Bow" Lore="@ui_AST_Bow_lore" />
+    <Animation ActionString="player_skill_atk_loop_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_bow" TrailPresetBase="ranged" />
+    <Range AttackRange="20" />
+    <Projectile Name="bow_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" PositionOffset="0,-1,0" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="bow_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <SoundTrigger PlayImpactSound="1" OnAnimCast="PLAY_Skill_DefaultWeapon_BowShot" OnKill="Play_OnKill_Impact_Lethal_Arrow" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="L_Weapon_Bone" CancellableByDefault="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+  </Skill>
+  <Skill UID="playerskill_H2_Bow_atk_loop_02" ESkill="default_ranged" Keywords="default_ranged,attack_skill,projectile,additional_projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_bow.png" UIName="@ui_AST_Bow" Lore="@ui_AST_Bow_lore" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_bow" TrailPresetBase="ranged" />
+    <Range AttackRange="20" />
+    <Projectile Name="bow_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" PositionOffset="0,-1,0" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="bow_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <SoundTrigger PlayImpactSound="1" OnAnimCast="PLAY_Skill_DefaultWeapon_BowShot" OnKill="Play_OnKill_Impact_Lethal_Arrow" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="L_Weapon_Bone" CancellableByDefault="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+  </Skill>
+  <Skill UID="playerskill_H2_Bow_atk_finisher" ESkill="default_ranged" Keywords="default_ranged,attack_skill,projectile,additional_projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_bow.png" UIName="@ui_AST_Bow" Lore="@ui_AST_Bow_lore" />
+    <Animation ActionString="player_skill_atk_finisher" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_bow" TrailPresetBase="ranged" />
+    <Range AttackRange="20" />
+    <Projectile Name="bow_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" PositionOffset="0,-1,0" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="bow_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <SoundTrigger PlayImpactSound="1" OnAnimCast="PLAY_Skill_DefaultWeapon_BowShot" OnKill="Play_OnKill_Impact_Lethal_Arrow" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="L_Weapon_Bone" CancellableByDefault="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+  </Skill>
+</MetaData>

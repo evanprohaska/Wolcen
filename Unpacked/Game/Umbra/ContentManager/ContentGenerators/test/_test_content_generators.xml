@@ -1,0 +1,315 @@
+<MetaData>
+  <ContentGenerator Name="test_contentgenerator_0" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="uber_1" PriorityTag="" ExcludeTag="" Weight="1" />
+      <Archetype Tag="uber_2" PriorityTag="tag_A1" ExcludeTag="tag_1,tag_2" Weight="1" />
+      <Archetype Tag="uber_3" PriorityTag="tag_A2" ExcludeTag="tag_3,tag_4" Weight="1" />
+    </ArchetypeChoices>
+    <QuestChoices>
+      <Quest QuestName="ACT1_Quest1" Tag="tag_A1,tag_1" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="ACT1_Quest2" Tag="tag_A1,tag_2" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="ACT1_Quest3" Tag="tag_A1,tag_3" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="ACT1_Quest4" Tag="tag_A1,tag_4" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="ACT2_Quest1" Tag="tag_A2,tag_1" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="ACT2_Quest2" Tag="tag_A2,tag_2" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="ACT2_Quest3" Tag="tag_A2,tag_3" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="ACT2_Quest4" Tag="tag_A2,tag_4" PriorityTag="" ExcludeTag="" />
+    </QuestChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="SvriirLair_Floor1" Tag="uber_1,tag_A1" PriorityTag="svriir" ExcludeTag="coss,cofe" />
+      <LevelGenerator DungeonName="SvriirLair_Floor1" Tag="uber_1,uber_2,tag_A1" PriorityTag="coss" ExcludeTag="svriir,cofe" />
+      <LevelGenerator DungeonName="TaintedPrimordialSuperstructure_Floor1" Tag="uber_2,tag_A2" PriorityTag="otlw,cofe" ExcludeTag="coss" />
+      <LevelGenerator DungeonName="TaintedPrimordialSuperstructure_Floor1" Tag="uber_2,uber_3,tag_A2" PriorityTag="otlw,coss" ExcludeTag="cofe" />
+    </LevelGeneratorChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_StoryMode_Act1_SvriirsNetwork1" Tag="tag_A1,svriir" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_StoryMode_Act1_SvriirsNetwork2" Tag="tag_A1,coss" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_StoryMode_Act1_TPS2" Tag="tag_A2,coss" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_StoryMode_Act1_TPS3" Tag="tag_A2,cofe" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_StoryMode_Act1_TPS2" Tag="svriir,coss" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_StoryMode_Act1_TPS2" Tag="svriir,coss" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_StoryMode_Act1_TPS3" Tag="coss,cofe" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_StoryMode_Act1_TPS3" Tag="coss,otlw" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+  <ContentGenerator Name="test_contentgenerator_npc2" SecondaryContentGeneratorName="CG_EG_SecondaryArea">
+    <ArchetypeChoices>
+      <Archetype Tag="OTWF,OTW,Flayers" PriorityTag="OTW,OTWF" Weight="10" ExcludeTag="SvriirLair,IncubationChamber,SoulCave,PPS,TPS,Necropolis,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="OTW" UsedDuration="3" />
+      <Archetype Tag="OTWSB,OTW,ShadowBandit" PriorityTag="OTW,OTWSB" Weight="10" ExcludeTag="SvriirLair,IncubationChamber,SoulCave,Forest,ForestAutumn,PPS,TPS,NecropolisGore,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="OTW" UsedDuration="3" />
+      <Archetype Tag="OTWSBW,OTW,ShadowBanditWild" PriorityTag="OTW,OTWSBW" Weight="10" ExcludeTag="SvriirLair,IncubationChamber,SoulCave,ForestGore,PPS,TPS,NecropolisGore,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,Wetlands,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="OTW" UsedDuration="3" />
+      <Archetype Tag="COST,COS,COSTemplar" PriorityTag="COS,COST" Weight="10" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="COS" UsedDuration="3" />
+      <Archetype Tag="COSS,COS,COSSpecter" PriorityTag="COS,COSS" Weight="10" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,ForestAutumn,PPS,TPS,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="COS" UsedDuration="3" />
+      <Archetype Tag="COSD,COS,COSDamned" PriorityTag="COS,COSD" Weight="10" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="COS" UsedDuration="3" />
+      <Archetype Tag="COSU,COS,COSUndead" PriorityTag="COS,COSU" Weight="10" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="COS" UsedDuration="3" />
+      <Archetype Tag="COSW,COS,COSWild" PriorityTag="COS,COSW" Weight="10" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,ForestGore,ForestAutumn,PPS,TPS,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="COS" UsedDuration="3" />
+      <Archetype Tag="COFLW,COF,FleshWild" PriorityTag="COF,COFLW" Weight="10" ExcludeTag="GenericCave,SvriirLair,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,Redwaste,RedwasteRepu,Stronghold,Swamp,ForestSvriir,PPSSvriir,PPSFlesh,SwampSvriir" UsedTag="COF" UsedDuration="3" />
+      <Archetype Tag="COFLVR,COF,FleshVictimRepublic" PriorityTag="COF,COFLVR" Weight="10" ExcludeTag="GenericCave,SvriirLair,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,Redwaste,RedwasteRepu,Wetlands,Swamp,ForestSvriir,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="COF" UsedDuration="3" />
+      <Archetype Tag="COFMSR,COF,FleshMonster" PriorityTag="COF,COFMSR" Weight="10" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,Redwaste,RedwasteRepu,Stronghold,Swamp,ForestSvriir,PPSSvriir,SwampSvriir,SwampFlesh" UsedTag="COF" UsedDuration="3" />
+      <Archetype Tag="COFLVT,COF,FleshVictimeTemplar" PriorityTag="COF,COFLVT" Weight="10" ExcludeTag="GenericCave,SvriirLair,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,Redwaste,RedwasteRepu,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,SwampSvriir,SwampFlesh" UsedTag="COF" UsedDuration="3" />
+      <Archetype Tag="REP,REPU,Republic" PriorityTag="REP,REPU" Weight="10" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="REP" UsedDuration="3" />
+      <Archetype Tag="COFUT,COFU,FuryTemplar" PriorityTag="COFU,COFUT" Weight="10" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,TempleFlesh,Redwaste,RedwasteRepu,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="COFU" UsedDuration="3" />
+      <Archetype Tag="COFUR,COFU,FuryRepublic" PriorityTag="COFU,COFUR" Weight="10" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir" UsedTag="COFU" UsedDuration="3" />
+      <Archetype Tag="SVRIP,SVRI,SvriirPoison" PriorityTag="SVRI,SVRIP" Weight="10" ExcludeTag="GenericCave,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestFlesh,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="SVRI" UsedDuration="3" />
+      <Archetype Tag="SVRIF,SVRI,SvriirFire" PriorityTag="SVRI,SVRIF" Weight="10" ExcludeTag="GenericCave,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestFlesh,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="SVRI" UsedDuration="3" />
+      <Archetype Tag="CALL,CALL,AllCult" PriorityTag="CALL,CALL" Weight="10" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="CALL" UsedDuration="3" />
+      <Archetype Tag="RW_SVRIW,SVRI,RW_SvriirPoisonWild" PriorityTag="SVRI,RW_SVRIW" Weight="1" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampFlesh" UsedTag="SVRI" UsedDuration="3" />
+      <Archetype Tag="RW_SVRIFW,SVRI,RW_SvriirFireWild" PriorityTag="SVRI,RW_SVRIFW" Weight="1" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,RedwasteRepu,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="SVRI" UsedDuration="3" />
+      <Archetype Tag="RW_REPU,REPU,RW_Republic" PriorityTag="REP,RW_REPU" Weight="1" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="REP" UsedDuration="3" />
+      <Archetype Tag="RW_COFUR,COFU,RW_FuryRepublic" PriorityTag="COFU,RW_COFUR" Weight="1" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="COFU" UsedDuration="3" />
+      <Archetype Tag="RW_COFLVR,COF,RW_FleshVictimRepublic" PriorityTag="COF,RW_COFLVR" Weight="1" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,SoulCave,Forest,ForestGore,ForestAutumn,PPS,TPS,Necropolis,NecropolisGore,NecropolisMossy,Temple,TempleDesert,TempleFlesh,Redwaste,Stronghold,Wetlands,Swamp,ForestSvriir,ForestFlesh,PPSSvriir,PPSFlesh,SwampSvriir,SwampFlesh" UsedTag="COF" UsedDuration="3" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="NPC2_SariselMode_GenericCave" Tag="GenericCave" PriorityTag="GenericCave" ExcludeTag="" UsedTag="GenericCave" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_Svriir" Tag="SvriirLair" PriorityTag="SvriirLair" ExcludeTag="" UsedTag="SvriirLair" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_IncubationChamber" Tag="IncubationChamber" PriorityTag="IncubationChamber" ExcludeTag="" UsedTag="IncubationChamber" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_SoulCave" Tag="SoulCave" PriorityTag="SoulCave" ExcludeTag="" UsedTag="SoulCave" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_Forest" Tag="Forest" PriorityTag="Forest" ExcludeTag="" UsedTag="Forest" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_ForestGore" Tag="ForestGore" PriorityTag="ForestGore" ExcludeTag="" UsedTag="ForestGore" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_ForestAutumn" Tag="ForestAutumn" PriorityTag="ForestAutumn" ExcludeTag="" UsedTag="ForestAutumn" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_PPS" Tag="PPS" PriorityTag="PPS" ExcludeTag="" UsedTag="PPS" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_TPS" Tag="TPS" PriorityTag="TPS" ExcludeTag="" UsedTag="TPS" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_Necropolis" Tag="Necropolis" PriorityTag="Necropolis" ExcludeTag="" UsedTag="Necropolis" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_NecropolisImpaled" Tag="NecropolisGore" PriorityTag="NecropolisGore" ExcludeTag="" UsedTag="NecropolisGore" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_NecropolisMossy" Tag="NecropolisMossy" PriorityTag="NecropolisMossy" ExcludeTag="" UsedTag="NecropolisMossy" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_TempleTemplar" Tag="Temple" PriorityTag="Temple" ExcludeTag="" UsedTag="Temple" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_TempleDesert" Tag="TempleDesert" PriorityTag="TempleDesert" ExcludeTag="" UsedTag="TempleDesert" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_TempleFlesh" Tag="TempleFlesh" PriorityTag="TempleFlesh" ExcludeTag="" UsedTag="TempleFlesh" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_RedWaste" Tag="Redwaste" PriorityTag="Redwaste" ExcludeTag="" UsedTag="Redwaste" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_RedWasteRepublic" Tag="RedwasteRepu" PriorityTag="RedwasteRepu" ExcludeTag="" UsedTag="RedwasteRepu" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_Stronghold" Tag="Stronghold" PriorityTag="Stronghold" ExcludeTag="" UsedTag="Stronghold" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_Swamp" Tag="Swamp" PriorityTag="Swamp" ExcludeTag="" UsedTag="Swamp" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_Wetlands" Tag="WetLands" PriorityTag="WetLands" ExcludeTag="" UsedTag="WetLands" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_PPSFlesh" Tag="PPSFlesh" PriorityTag="PPSFlesh" ExcludeTag="" UsedTag="PPSFlesh" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_PPSSvriir" Tag="PPSSvriir" PriorityTag="PPSSvriir" ExcludeTag="" UsedTag="PPSSvriir" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_ForestFlesh" Tag="ForestFlesh" PriorityTag="ForestFlesh" ExcludeTag="" UsedTag="ForestFlesh" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_ForestSvriir" Tag="ForestSvriir" PriorityTag="ForestSvriir" ExcludeTag="" UsedTag="ForestSvriir" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_SwampSvriir" Tag="SwampSvriir" PriorityTag="SwampSvriir" ExcludeTag="" UsedTag="SwampSvriir" UsedDuration="3" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_SwampFlesh" Tag="SwampFlesh" PriorityTag="SwampFlesh" ExcludeTag="" UsedTag="SwampFlesh" UsedDuration="3" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="NPC2_DoF" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COF,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_PacifiedKnight" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COFUT,CALL,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_Butcher" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COSU,COST,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_AlphaFire" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="SVRIF,RW_SVRIFW,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_WarBeast" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="OTWSBW,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_Justicar" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="REPU,RW_REPU,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_PacifiedGolgoth" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COFUR,RW_COFUR,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_DragonRider" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="REPU,RW_REPU,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_AlphaPoison" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="SVRIP,RW_SVRIW,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_RepuAssassin" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="REPU,RW_REPU,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_BanditAssassin" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="OTWSB,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_Thug" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="OTWF,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_DoS" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COSS,COST,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_PrimoGuardian" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COSD,NPC2,NormalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_Thug" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="OTWF,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_DoF" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COF,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_Justicar" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="REPU,RW_REPU,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_WarBeast" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="OTWSBW,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_PrimoGuardian" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COSD,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_Butcher" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COSU,COST,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_DragonRider" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="REPU,RW_REPU,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_RepuAssassin" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="REPU,RW_REPU,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_AlphaPoison" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="SVRIP,RW_SVRIW,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_BanditAssassin" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="OTWSB,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_PacifiedGolgoth" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COFUR,RW_COFUR,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_Knight" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COFUT,CALL,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_FinalBoss_DoS" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="COSS,COST,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <Quest QuestName="NPC2_AlphaFire" UIExpeditionDesc="@ui_gold" UIExpeditionLore="@ui_gold" Tag="SVRIF,RW_SVRIFW,NPC2,FinalBoss" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_OTWF_Basic_Normal" BiomeName="default" Tag="OTW,OTWF" PriorityTag="" ExcludeTag="" UsedTag="OTWF" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_OTWSB_Basic_Normal" BiomeName="default" Tag="OTW,OTWSB" PriorityTag="" ExcludeTag="" UsedTag="OTWSB" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_OTWSBW_Basic_Normal" BiomeName="default" Tag="OTW,OTWSBW" PriorityTag="" ExcludeTag="" UsedTag="OTWSBW" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COST_Basic_Normal" BiomeName="default" Tag="COS,COST" PriorityTag="" ExcludeTag="" UsedTag="COST" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COSS_Basic_Normal" BiomeName="default" Tag="COS,COSS" PriorityTag="" ExcludeTag="" UsedTag="COSS" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COSD_Basic_Normal" BiomeName="default" Tag="COS,COSD" PriorityTag="" ExcludeTag="" UsedTag="COSD" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COSU_Basic_Normal" BiomeName="default" Tag="COS,COSU" PriorityTag="" ExcludeTag="" UsedTag="COSU" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COSW_Basic_Normal" BiomeName="default" Tag="COS,COSW" PriorityTag="" ExcludeTag="" UsedTag="COSW" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFLW_Basic_Normal" BiomeName="default" Tag="COF,COFLW" PriorityTag="" ExcludeTag="" UsedTag="COFLW" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFLVR_Basic_Normal" BiomeName="default" Tag="COF,COFLVR" PriorityTag="" ExcludeTag="" UsedTag="COFLVR" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFMSR_Basic_Normal" BiomeName="default" Tag="COF,COFMSR" PriorityTag="" ExcludeTag="" UsedTag="COFMSR" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFLVT_Basic_Normal" BiomeName="default" Tag="COF,COFLVT" PriorityTag="" ExcludeTag="" UsedTag="COFLVT" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_REPU_Basic_Normal" BiomeName="default" Tag="REP,REPU" PriorityTag="" ExcludeTag="" UsedTag="REPU" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFUT_Basic_Normal" BiomeName="default" Tag="COFU,COFUT" PriorityTag="" ExcludeTag="" UsedTag="COFUT" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFUR_Basic_Normal" BiomeName="default" Tag="COFU,COFUR" PriorityTag="" ExcludeTag="" UsedTag="COFUR" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_SVRIP_Basic_Normal" BiomeName="default" Tag="SVRI,SVRIP" PriorityTag="" ExcludeTag="" UsedTag="SVRIP" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_SVRIF_Basic_Normal" BiomeName="default" Tag="SVRI,SVRIF" PriorityTag="" ExcludeTag="" UsedTag="SVRIF" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_CALL_Basic_Normal" BiomeName="default" Tag="CALL,CALL" PriorityTag="" ExcludeTag="" UsedTag="CALL" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_SVRIW-RW_Basic_Normal" BiomeName="default" Tag="SVRI,RW_SVRIW" PriorityTag="" ExcludeTag="" UsedTag="RW_SVRIW" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_SVRIFW-RW_Basic_Normal" BiomeName="default" Tag="SVRI,RW_SVRIFW" PriorityTag="" ExcludeTag="" UsedTag="RW_SVRIFW" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFLVR-RW_Basic_Normal" BiomeName="default" Tag="COF,RW_COFLVR" PriorityTag="" ExcludeTag="" UsedTag="RW_COFLVR" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFUR-RW_Basic_Normal" BiomeName="default" Tag="COFU,RW_COFUR" PriorityTag="" ExcludeTag="" UsedTag="RW_COFUR" UsedDuration="6" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_REPU-RW_Basic_Normal" BiomeName="default" Tag="REP,RW_REPU" PriorityTag="" ExcludeTag="" UsedTag="RW_REPU" UsedDuration="6" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_AdventureMode_GenericCave_EG" Tag="GenericCave" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_SvriirsLair_EG" Tag="SvriirLair" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_IncubationChamber_EG" Tag="IncubationChamber" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_SoulCave_EG" Tag="SoulCave" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_Forest_EG" Tag="Forest" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_ForestGore_EG" Tag="ForestGore" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_ForestAutumn_EG" Tag="ForestAutumn" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_PPS_EG" Tag="PPS" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_TPS_EG" Tag="TPS" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_Necropolis_EG" Tag="Necropolis" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_NecropolisGore_EG" Tag="NecropolisGore" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_NecropolisMossy_EG" Tag="NecropolisMossy" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_TempleUndead_EG" Tag="Temple" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_TempleDesert_EG" Tag="TempleDesert" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_TempleFlesh_EG" Tag="TempleFlesh" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_RWNatural_EG" Tag="Redwaste" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_RWNRepublic_EG" Tag="RedwasteRepu" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_Stronghold_EG" Tag="Stronghold" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_Swamp_EG" Tag="Swamp" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_Wetland_EG" Tag="Wetlands" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_ForestFlesh_EG" Tag="ForestFlesh" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_ForestSvriir_EG" Tag="ForestSvriir" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_PPSFlesh_EG" Tag="PPSFlesh" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_PPSSvriir_EG" Tag="PPSSvriir" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_SwampSvriir_EG" Tag="SwampSvriir" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+      <EntityManager EntityManagerName="EM_AdventureMode_SwampFlesh_EG" Tag="SwampFlesh" PriorityTag="" ExcludeTag="" UsedTag="" UsedDuration="1" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+  <ContentGenerator Name="test_contentgenerator_sarisel" SecondaryContentGeneratorName="CG_EG_SecondaryArea">
+    <ArchetypeChoices />
+    <QuestChoices>
+      <Quest QuestName="Q_NPC2_SariselMode_ForestGore" Tag="sarisel_1" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="Q_NPC2_SariselMode_ForestAutumn" Tag="sarisel_2" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="Q_NPC2_SariselMode_Swamp" Tag="sarisel_3" PriorityTag="" ExcludeTag="" />
+    </QuestChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="NPC2_SariselMode_ForestGore" Tag="sarisel_1" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_ForestAutumn" Tag="sarisel_2" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="NPC2_SariselMode_Swamp" Tag="sarisel_3" PriorityTag="" ExcludeTag="" />
+    </LevelGeneratorChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="NPC2_ForestGore_MM" BiomeName="default" Tag="sarisel_1" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="NPC2_ForestAutumn_MM" BiomeName="default" Tag="sarisel_2" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="NPC2_Swamp_MM" BiomeName="default" Tag="sarisel_3" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_AdventureMode_ForestGore_EG_SariselMode" Tag="sarisel_1" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_AdventureMode_ForestAutumn_EG_SariselMode" Tag="sarisel_2" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_AdventureMode_Swamp_EG_SariselMode" Tag="sarisel_3" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+  <ContentGenerator Name="test_contentgenerator_remi_destroy" SecondaryContentGeneratorName="CG_EG_SecondaryArea">
+    <ArchetypeChoices />
+    <QuestChoices>
+      <Quest QuestName="WM_Q1_Main_REPU_Easy" Tag="destroy" PriorityTag="" ExcludeTag="" />
+    </QuestChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="NPC2_SariselMode_ForestGore" Tag="destroy" PriorityTag="" ExcludeTag="" />
+    </LevelGeneratorChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="NPC2_ForestGore_MM" BiomeName="default" Tag="destroy" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_AdventureMode_ForestGore_EG_SariselMode" Tag="destroy" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+  <ContentGenerator Name="test_contentgenerator_quest_migration" SecondaryContentGeneratorName="">
+    <ArchetypeChoices />
+    <QuestChoices>
+      <Quest QuestName="B_A3_Q1" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="B_A3_Q2" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="B_A3_Q3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="B_A3_Q4" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="B_A3_Q5" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="B_A3_Q6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_NPC1_KillCP_1" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_OTW_Thug_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_OTWSB_Thug_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_COS_DoS_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_COFE_DoF_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_COFY_Knight_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_COFY_Golgoth_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_REPU_Justicar_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_SVRI_AlphaPoison_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_SVRIF_AlphaFire_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_CALL_TaintedPrimoGuardian_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_OTWF_Trapper_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_OTWSB_KennelMaster_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_OTWSBW_Shaman_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COST_Priest_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COSS_Halfbreed_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COSD_Tomberear_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COSU_Spiker_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COW_Reaper_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COFLW_Spreader_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COFLVR_Sniper_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COFMSR_Colossalbreader_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COFLVT_Cultist_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_REPU_SiegeBeast_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COFUT_Enforcer_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_COFUR_Veteran_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_SVRIP_Spitter_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_SVRIW_Spawner_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_SVRIF_Spitter_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_SVRIFW_Screecher_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_CALL_Cultist_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_NPC2_Consu_KillCP_1" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_Consu_OTW_Thug_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_Consu_OTWSB_Thug_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_Consu_COS_DoS_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_Consu_COFE_DoF_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_Consu_COFY_Knight_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_Consu_COFY_Golgoth_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_Consu_REPU_Justicar_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_Consu_SVRI_AlphaPoison_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_Consu_SVRIF_AlphaFire_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KFT_Consu_CALL_TaintedPrimoGuardian_3" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_OTWF_Trapper_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_OTWSB_KennelMaster_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_OTWSBW_Shaman_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COST_Priest_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COSS_Halfbreed_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COSD_Tomberear_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COSU_Spiker_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COW_Reaper_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COFLW_Spreader_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COFLVR_Sniper_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COFMSR_Colossalbreader_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COFLVT_Cultist_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_REPU_SiegeBeast_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COFUT_Enforcer_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_COFUR_Veteran_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_SVRIP_Spitter_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_SVRIW_Spawner_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_SVRIF_Spitter_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_SVRIFW_Screecher_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KNT_Consu_CALL_Cultist_6" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_RepublicJusticar" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_RepublicAssassin" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_CultOfSouls_Corrupted_PrimordialGuardian" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_OutlawsSadisticThug" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_CultOfSouls_DemonOfSouls" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_CultOfSouls_Butcher" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_PacifiedKnight" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_PacifiedGolgoth" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_CultOfFlesh_DemonOfFlesh" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_SvriirAlphaPoison" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_LBF_EndGame_AlphaPoison" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_LBF_EndGame_Thug" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_LBF_EndGame_Assassin" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_LBF_EndGame_Butcher" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_LBF_EndGame_Corrupted_PrimordialGuardian" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_LBF_EndGame_PacifiedGolgoth" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_LBF_Endgame_DemonOfFlesh" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_LBF_EndGame_DemonOfSouls" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_LBF_EndGame_JusticarElite" Tag="" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_LBF_EndGame_Knight" Tag="" PriorityTag="" ExcludeTag="" />
+    </QuestChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="NPC2_SariselMode_ForestGore" Tag="" PriorityTag="" ExcludeTag="" />
+    </LevelGeneratorChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="NPC2_ForestGore_MM" BiomeName="default" Tag="" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_AdventureMode_ForestGore_EG_SariselMode" Tag="" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

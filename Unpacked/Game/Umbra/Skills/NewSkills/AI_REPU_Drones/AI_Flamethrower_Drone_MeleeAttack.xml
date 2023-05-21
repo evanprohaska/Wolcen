@@ -1,0 +1,15 @@
+<MetaData>
+  <Skill UID="AI_Flamethrower_Drone_MeleeAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Republic_Flamethrower_Drone_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Attack" Bone="Bip01" Name="U_Monster.Drone.Flamethrower" Offset="0,0.7,1" Direction="0,1,0" />
+    </ParticleList>
+    <SoundTrigger OnAnimCast="Play_REPU_Drone_Flamethrower_Attack" OnHit="Play_DOT_Burn" OnCriticalHit="Play_DOT_Burn" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

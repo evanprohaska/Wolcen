@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill UID="AI_AlphaFlesh_jumpattack" ESkill="AI_svriiralpha_jumpattack" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_07" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="physical" WeaponMultiplier="3" />
+    <Cooldown Cooldown="5.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="4" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_JumpAttack_jumping" />
+      <Entry ShapeName="SvriirAlpha_JumpAttack_landing" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.DeomonOfSoul.Soul_Wave_Indicator_01_Big" Direction="-1,0,0" Scale="0.7" />
+    </ParticleList>
+    <SkillSpecific TimeBetweenHits="0.2" Speed="30" MoveDistance="15" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

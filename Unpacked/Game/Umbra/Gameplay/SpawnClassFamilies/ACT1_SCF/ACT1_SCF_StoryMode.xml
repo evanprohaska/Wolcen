@@ -1,0 +1,793 @@
+<MetaData>
+  <SpawnClassFamily Name="Scf_Prologue_B_Me">
+    <SpawnChoice SpawnClassName="Sc_Prologue_B_Me1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Prologue_B_Me2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Prologue_B_Me3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Prologue_B_R">
+    <SpawnChoice SpawnClassName="Sc_Prologue_B_R" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Prologue_B_Tr">
+    <SpawnChoice SpawnClassName="Sc_Prologue_B_Tr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Prologue_COS_LS">
+    <SpawnChoice SpawnClassName="Sc_Prologue_COS_LS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Prologue_COS_C">
+    <SpawnChoice SpawnClassName="Sc_Prologue_COS_C" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Prologue_B_Named_Me1">
+    <SpawnChoice SpawnClassName="Sc_Prologue_B_Named_Me1" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Prologue_B_Named_R">
+    <SpawnChoice SpawnClassName="Sc_Prologue_B_Named_R" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Prologue_B_Named_TrapperIntro">
+    <SpawnChoice SpawnClassName="Sc_Prologue_B_Named_TrapperIntro" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_WreckCoast_S_O">
+    <SpawnChoice SpawnClassName="Sc_WreckCoast_S_O" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_WreckCoast_S_B">
+    <SpawnChoice SpawnClassName="Sc_WreckCoast_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_WreckCoast_S_Medium">
+    <SpawnChoice SpawnClassName="Sc_WreckCoast_S_Medium1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_WreckCoast_S_Medium2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_WreckCoast_S_Medium3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Highlands_S_O">
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_O" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Highlands_S_B">
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Highlands_S_BO">
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_B" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_O" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Highlands_S_Medium">
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_Medium1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_Medium2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_Medium3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Highlands_S_Hard">
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_Hard1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_Hard2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_Hard3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Highlands_S_Named_Spi">
+    <SpawnChoice SpawnClassName="Sc_Highlands_S_Named_Spi" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Conscript_Small">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_O" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_B" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Conscript_Medium">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_O" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_B" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Conscript_Large">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_O" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_B" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_S_Trash">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_O" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_S_HeavyTrash">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_TM" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_S_Scr">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_Scr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_S_Spi">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_Spi" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_S_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_Spi" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_Scr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_S_O">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_O" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_S_B">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_S_BR1_Scr">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_BR1_Scr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_S_BR1_Br">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_BR1_Br" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_S_BR1_Tr">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_S_BR1_Tr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_B_Br">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Br" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_B_Tr">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_B_Tr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Trash_B_EasyCP4">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Trash_B_CP4_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Trash_B_CP4_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Trash_B_CP4_3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Trash_B_MediumCP6">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Trash_B_CP6_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Trash_B_CP6_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Trash_B_CP6_3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Trash_B_HardCP8">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Trash_B_CP8_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Trash_B_CP8_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Trash_B_CP8_3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Lieutenant_B_CP6">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Lieutenant_B_CP6_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Lieutenant_B_CP6_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Lieutenant_B_CP6_3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Lieutenant_B_CP6_4" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Lieutenant_B_CP6_5" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Lieutenant_B_CP6_6" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Lieutenant_B_CP6_7" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Lieutenant_B_CP6_8" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_B_Me">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_B_Me1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_B_Me2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_B_Me3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Rat_W_CP4">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Rat_W_CP4" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Rat_W_CP6">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Rat_W_CP6" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Rat_W_CP8">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Rat_W_CP8" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Hornet_W_CP4">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Hornet_W_CP4" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Hornet_W_CP6">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Hornet_W_CP6" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_Hornet_W_CP8">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_Hornet_W_CP8" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_S_MS">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_S_MS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_S_Trash">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_S_O" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_S_O">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_S_O" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_S_B">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_S_HeavyTrash">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_S_OF" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_S_Scr">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_S_Scr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_S_Spa">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_S_Spa" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_S_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_S_Scr" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_S_Spa" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_COS_Trash">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_COS_LS" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_COS_SSS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_COS_LS">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_COS_LS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_COS_SSS">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_COS_SSS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_MS">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_MS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_Trash">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_O" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_O">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_O" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_B">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_HeavyTrashAll">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_TM" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_OF">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_OF" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_TM">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_TM" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_Wild_S">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_Wild_S" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_Scr" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_Spa" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_Spi" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_Scr">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_Scr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_Spa">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_Spa" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_S_Spi">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_S_Spi" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_B_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Km" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Tr" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Br" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_B_Trash">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Me1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Me2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Me3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_R" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_W1" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_B_Me">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Me1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Me2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Me3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_B_R">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_R" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_B_W">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_W1" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_B_WorgHeavy">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_HeavyWorg" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_B_Km">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Km" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_B_Tr">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Tr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_B_Br">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_B_Br" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_B_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_Forest_B_Km" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Forest_B_Tr" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Forest_B_Br" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_B_Me">
+    <SpawnChoice SpawnClassName="Sc_Forest_B_Me1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Forest_B_Me2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Forest_B_Me3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_B_W">
+    <SpawnChoice SpawnClassName="Sc_Forest_B_W" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_B_R">
+    <SpawnChoice SpawnClassName="Sc_Forest_B_R" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_B_Br">
+    <SpawnChoice SpawnClassName="Sc_Forest_B_Br" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_B_AW">
+    <SpawnChoice SpawnClassName="Sc_Forest_B_AW" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_B_Tr">
+    <SpawnChoice SpawnClassName="Sc_Forest_B_Tr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_B_Km">
+    <SpawnChoice SpawnClassName="Sc_Forest_B_Km" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_W_SS">
+    <SpawnChoice SpawnClassName="Sc_Forest_W_SmallSpider" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_W_MS">
+    <SpawnChoice SpawnClassName="Sc_Forest_W_MeleeSpider" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_W_RS">
+    <SpawnChoice SpawnClassName="Sc_Forest_W_RangedSpider" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Forest_W_H">
+    <SpawnChoice SpawnClassName="Sc_Forest_W_H" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SmugglersPath_S_MS">
+    <SpawnChoice SpawnClassName="Sc_SmugglersPath_S_MS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SmugglersPath_S_B">
+    <SpawnChoice SpawnClassName="Sc_SmugglersPath_S_B" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SmugglersPath_S_TM">
+    <SpawnChoice SpawnClassName="Sc_SmugglersPath_S_TM" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SmugglersPath_S_M">
+    <SpawnChoice SpawnClassName="Sc_SmugglersPath_S_M" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SmugglersPath_S_RM">
+    <SpawnChoice SpawnClassName="Sc_SmugglersPath_S_RM" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SmugglersPath_S_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_SmugglersPath_S_Spi" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SmugglersPath_S_Spa" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SmugglersPath_S_Scr" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SmugglersPath_W_SC">
+    <SpawnChoice SpawnClassName="Sc_SmugglersPath_W_SC" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_COS_MLB">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_COS_MLB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_COS_ZF">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_COS_ZF" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_COS_SF">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_COS_SF" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_COS_DC">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_COS_DC" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_COS_ZS">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_COS_ZS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_COS_HB">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_COS_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_COS_C">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_COS_C" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_COS_F">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_COS_F" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_COS_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_COS_HB" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_COS_SF" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_W_CP4">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP4_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP4_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP4_3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP4_4" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP4_5" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP4_6" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP4_7" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_W_CP7">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP7_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP7_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP7_3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP7_4" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP7_5" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP7_6" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP7_7" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_W_CP10">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP10_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP10_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP10_3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP10_4" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP10_5" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_TrashCP10_6" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_W_AllTrash">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_AllTrash" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis1_W_Bat">
+    <SpawnChoice SpawnClassName="Sc_Necropolis1_W_Bat" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_COS_ZF">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_ZF" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_COS_F">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_F" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_COS_DC">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_DC" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_COS_ZS">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_ZS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_COS_HB">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_COS_C">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_C" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_COS_SF">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_SF" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_COS_C_HB">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_C" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_COS_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_C" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_SF" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_COS_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_W_CP4">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP4_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP4_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP4_3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP4_4" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP4_5" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP4_6" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP4_7" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_W_CP7">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP7_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP7_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP7_3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP7_4" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP7_5" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP7_6" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP7_7" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis2_W_CP10">
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP10_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP10_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP10_3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP10_4" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP10_5" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis2_W_TrashCP10_6" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_MLB">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_MLB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_ZF">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_ZF" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_F">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_F" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_DC">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_DC" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_ZS">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_ZS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_HB">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_C">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_C" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_SF">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_SF" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_LB">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_LB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_HB_SF">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_SF" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_SF" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_HB" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_LB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_W_CP4">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP4_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP4_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP4_3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP4_4" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP4_5" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP4_6" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP4_7" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_W_CP7">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP7_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP7_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP7_3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP7_4" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP7_5" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP7_6" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP7_7" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_W_CP10">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP10_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP10_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP10_3" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP10_4" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP10_5" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_TrashCP10_6" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_W_AllTrash">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_AllTrash" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_W_SpiderMeleeSmall">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_W_SpiderMeleeSmall" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Necropolis3_COS_Sequence1" DelayBeforeFirstSpawn="1.5" DelayBetweenEachSpawn="4" SequentialSpawn="1">
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_Sequence1_1" Weight="1" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_Sequence1_2" Weight="1" />
+    <SpawnChoice SpawnClassName="Sc_Necropolis3_COS_Sequence1_3" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_FMMelee">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_FMMelee" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_FMRanged">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_FMRanged" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_SSA">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_SSA" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_LS">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_LS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_TPA">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_TPA" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_C">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_C" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_S">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_S" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_LB">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_LB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_HB">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_LB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_LB" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_S" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_C" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_F">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_F" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_Named_TPG">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_TPG" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall1_COS_Sequence1_1" DelayBeforeFirstSpawn="2" DelayBetweenEachSpawn="5" SequentialSpawn="1">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_Sequence1_1" Weight="1" />
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_Sequence1_2" Weight="1" />
+    <SpawnChoice SpawnClassName="Sc_AnankisHall1_COS_Sequence1_3" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_FMRanged">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_FMRanged" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_F">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_F" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_FMMelee">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_FMMelee" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_SHBP">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_SHBP" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_LS">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_LS" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_TPA">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_TPA" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_HB">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_S">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_S" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_LB">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_LB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_TPG">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_TPG" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_C">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_C" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall2_COS_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_HB" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_LB" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_S" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_AnankisHall2_COS_C" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_FMMelee">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_FMMelee" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_FMRanged">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_FMRanged" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_SHBP">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_SHBP" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_F">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_F" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_TPA">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_TPA" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_HB">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_S">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_S" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_C">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_C" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_TPG">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_TPG" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_LB">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_LB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_Lieutenant">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_C" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_S" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_AnankisHall3_COS_LostSoul">
+    <SpawnChoice SpawnClassName="Sc_AnankisHall3_COS_LostSoul" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands1_SoulTremor_1" SequentialSpawn="0" CamShakePreset="COSS_SoulsTremor_Farmstead1" CamShakeSound="Play_Env_SoulTremor_StartRumble" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1.25" FXLifetime="11">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_SoulTremor_MiniSpecterShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands1_SoulTremor_2" SequentialSpawn="0" CamShakePreset="" CamShakeSound="" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="2.5">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_SoulTremor_LostSoul" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands2_SoulTremor_1" SequentialSpawn="0" CamShakePreset="COSS_SoulsTremor_Farmstead2" CamShakeSound="Play_Env_SoulTremor_StartRumble" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1.25" FXLifetime="10">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_SoulTremor_LostSoul" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands2_SoulTremor_2">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_SoulTremor_MiniHalfBreedShadow" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands2_SoulTremor_3">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_SoulTremor_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_All">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_All" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_CP6">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_CP6_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_CP6_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_CP6_3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_LostSoul">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_LostSoul" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_MiniSpecterShadow">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_MiniSpecterShadow" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_NS1_1" SequentialSpawn="0" CamShakePreset="COSS_SoulsTremor_SvriirLair1_NS1" CamShakeSound="Play_Env_SoulTremor_StartRumble" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="6">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_MiniSpecterShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_NS1_2" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="5">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_MiniSpecterShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_NS1_3" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="5">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_LostSoul" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_NS2_1" SequentialSpawn="0" CamShakePreset="COSS_SoulsTremor_SvriirLair1_NS2" CamShakeSound="Play_Env_SoulTremor_StartRumble" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="8">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_MiniSpecterShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_NS2_2" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="7">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_MiniSpecterShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_NS3_1" SequentialSpawn="0" CamShakePreset="COSS_SoulsTremor_SvriirLair1_NS3" CamShakeSound="Play_Env_SoulTremor_StartRumble" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="10">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_MiniSpecterShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_NS3_2" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="9">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_MiniSpecterShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork1_SoulTremor_NS3_3" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="9">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork1_SoulTremor_MiniSpecterShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_All">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_All" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_MiniHalfBreedShadow">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_MiniHalfBreedShadow" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_LostSoul">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_LostSoul" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_CP6">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_CP6_1" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_CP6_2" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_CP6_3" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_SW1" SequentialSpawn="0" CamShakePreset="COSS_SoulsTremor_SvriirLair2_SW1" CamShakeSound="Play_Env_SoulTremor_StartRumble" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1.25" FXLifetime="13">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_LostSoul" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_SW2" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="4">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_MiniHalfBreedShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_SW3" SequentialSpawn="0" CamShakePreset="COSS_SoulsTremor_SvriirLair2_SW2" CamShakeSound="Play_Env_SoulTremor_StartRumble" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="17">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_MiniHalfBreedShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_SW4" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="13">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_MiniHalfBreedShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_SW5" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="7">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_MiniHalfBreedShadow" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_NE1" SequentialSpawn="0" CamShakePreset="COSS_SoulsTremor_SvriirLair2_NE" CamShakeSound="Play_Env_SoulTremor_StartRumble" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="11">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_LostSoul" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_NE2" SequentialSpawn="0" CamShakePreset="" CamShakeSound="" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="8">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_LostSoul" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_SvriirsNetwork2_SoulTremor_NE3" SequentialSpawn="0" CamShakePreset="" CamShakeSound="" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="6">
+    <SpawnChoice SpawnClassName="Sc_SvriirsNetwork2_SoulTremor_LostSoul" Weight="1" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_SoulTremor_HB">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_HB" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_SoulTremor_LostSoul">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_LostSoul" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_SoulTremor_MiniHalfBreedShadow">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_MiniHalfBreedShadow" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_SoulTremor_MiniSpecterShadow">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_MiniSpecterShadow" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_SoulTremor_LightTrash">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_MiniHalfBreedShadow" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_MiniSpecterShadow" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_SoulTremor1_1" SequentialSpawn="0" CamShakePreset="COSS_SoulsTremor_BanditOutpost1" CamShakeSound="Play_Env_SoulTremor_StartRumble" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="3.5">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_MiniSpecterShadow" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_SoulTremor1_2" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1.5" FXLifetime="11">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_LostSoul" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_SoulTremor2_1" SequentialSpawn="0" CamShakePreset="COSS_SoulsTremor_BanditOutpost2" CamShakeSound="Play_Env_SoulTremor_StartRumble" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="3">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_MiniHalfBreedShadow" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_SoulTremor2_2" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1" FXLifetime="3">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_MiniHalfBreedShadow" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_FlayersOutpost_SoulTremor2_3" SequentialSpawn="0" FXRelatedSound="Play_Env_SoulTremor_SpiritRelease" FXPlayed="U_CommonVFX.SoulTremors.SoulTremors_01" DelayBetweenEachSpawn="0" DelayBeforeFirstSpawn="0" FXDirection="0,1,0" FXScale="1.25" FXLifetime="3">
+    <SpawnChoice SpawnClassName="Sc_FlayersOutpost_SoulTremor_HB_R1" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_StormfallGuardRanged">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_StormfallGuardRanged" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_StormfallGuardMelee">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_StormfallGuardMelee" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_Farmlands_AllStormfallGuard">
+    <SpawnChoice SpawnClassName="Sc_Farmlands_StormfallGuardMelee" Weight="100" />
+    <SpawnChoice SpawnClassName="Sc_Farmlands_StormfallGuardRanged" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_DemonicCrystal_Right_TLGroup1">
+    <SpawnChoice SpawnClassName="Sc_DemonicCrystal_Right_TLGroup1" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_DemonicCrystal_Right_TLGroup2">
+    <SpawnChoice SpawnClassName="Sc_DemonicCrystal_Right_TLGroup2" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_DemonicCrystal_Left_TLGroup1">
+    <SpawnChoice SpawnClassName="Sc_DemonicCrystal_Left_TLGroup1" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_DemonicCrystal_Left_TLGroup2">
+    <SpawnChoice SpawnClassName="Sc_DemonicCrystal_Left_TLGroup2" Weight="100" />
+  </SpawnClassFamily>
+  <SpawnClassFamily Name="Scf_DemonicCrystal_ZF">
+    <SpawnChoice SpawnClassName="Sc_DemonicCrystal_ZF" Weight="100" />
+  </SpawnClassFamily>
+</MetaData>

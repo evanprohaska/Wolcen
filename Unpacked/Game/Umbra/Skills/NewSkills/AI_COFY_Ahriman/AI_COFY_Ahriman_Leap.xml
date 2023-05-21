@@ -1,0 +1,86 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_ComebackLeapP2_1" ESkill="AI_COFY_AHRIMAN_LEAP" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_05_in" ActionString_Loop="monster_skill_loop_05_loop" ActionString_Out="monster_skill_loop_05_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Fire" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_CorruptingRayP2_1" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_VFX_Oskar.Monster.REPU_Soldier_Overheat_AoE" Offset="0,0,-20" Direction="1,0,0" Scale="0.1" InstantKill="0" />
+    </ParticleList>
+    <Range AttackRange="100" />
+    <SkillSpecific DelayBeforeLanding="0" TimeToLand="0.5" TargetPos="509,3183,122" PosForDir="543,3183,122" AddInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_ComebackLeapP2_2" ESkill="AI_COFY_AHRIMAN_LEAP" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_05_in" ActionString_Loop="monster_skill_loop_05_loop" ActionString_Out="monster_skill_loop_05_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Fire" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_CorruptingRayP2_2" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_VFX_Oskar.Monster.REPU_Soldier_Overheat_AoE" Offset="0,0,-20" Direction="1,0,0" Scale="0.1" InstantKill="0" />
+    </ParticleList>
+    <Range AttackRange="100" />
+    <SkillSpecific DelayBeforeLanding="0" TimeToLand="0.5" TargetPos="509,3183,122" PosForDir="543,3183,122" AddInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_ComebackLeapP2_3" ESkill="AI_COFY_AHRIMAN_LEAP" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_05_in" ActionString_Loop="monster_skill_loop_05_loop" ActionString_Out="monster_skill_loop_05_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Fire" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_CorruptingRayP2_3" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_VFX_Oskar.Monster.REPU_Soldier_Overheat_AoE" Offset="0,0,-20" Direction="1,0,0" Scale="0.1" InstantKill="0" />
+    </ParticleList>
+    <Range AttackRange="100" />
+    <SkillSpecific DelayBeforeLanding="0" TimeToLand="0.5" TargetPos="509,3183,122" PosForDir="543,3183,122" AddInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_ThroneLeapP2_1" ESkill="AI_COFY_AHRIMAN_LEAP" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Fire" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_FireWallsP2" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList />
+    <Range AttackRange="10" />
+    <SkillSpecific DelayBeforeLanding="0" TimeToLand="3.7" TargetPos="525,3183,122" PosForDir="543,3183,122" RemoveInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_ThroneLeapP2_2" ESkill="AI_COFY_AHRIMAN_LEAP" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Fire" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_FireWallsP2" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList />
+    <Range AttackRange="10" />
+    <SkillSpecific DelayBeforeLanding="0" TimeToLand="3.7" TargetPos="525,3183,122" PosForDir="543,3183,122" RemoveInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_ThroneLeapP2_3" ESkill="AI_COFY_AHRIMAN_LEAP" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Fire" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_FireWallsP2" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList />
+    <Range AttackRange="10" />
+    <SkillSpecific DelayBeforeLanding="0" TimeToLand="3.7" TargetPos="525,3183,122" PosForDir="543,3183,122" RemoveInvulnerability="1" />
+  </Skill>
+</MetaData>

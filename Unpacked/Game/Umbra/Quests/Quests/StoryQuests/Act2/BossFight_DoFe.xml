@@ -1,0 +1,11 @@
+<MetaData>
+  <Quest Name="Quest_DemonOfFlesh" StartDialog="" Type="BossFight" UIName="@ui_A1_Q2_EventQuestLabel1" UIDesc="@">
+    <Step Order="0" UIName="@ui_A1_Q2_EventStepLabel1" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="A2_Q2_S2_SpawnBoss" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="A2_Q2_S2_SpawnBoss" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q2_S2_SpawnBoss" SpawnClass="Sc_MercyArena_OUTW_Mercy" TargetEntityName="QP_A2_Q2_S2_Mercy" FaceAtSpawn="#Player" />
+    </Step>
+  </Quest>
+</MetaData>

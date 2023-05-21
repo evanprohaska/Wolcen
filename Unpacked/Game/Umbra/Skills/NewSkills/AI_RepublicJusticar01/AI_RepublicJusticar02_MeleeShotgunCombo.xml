@@ -1,0 +1,31 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar02_meleeshotguncombo" ESkill="AI_republicjusticar02_meleeshotguncombo" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="15.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01_Cannons" CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar02_MeleeShotgunCombo_Shotgun_01" />
+      <Entry ShapeName="RepublicJusticar02_MeleeShotgunCombo_Shotgun_02" />
+      <Entry ShapeName="RepublicJusticar02_MeleeShotgunCombo_Shotgun_03" />
+      <Entry ShapeName="RepublicJusticar02_MeleeShotgunCombo_Shotgun_04" />
+      <Entry ShapeName="RepublicJusticar02_MeleeShotgunCombo_Shotgun_05" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Justica.ShotgunCombo_Indicator_01" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="Explosion01" Name="U_Monster.Justica.Corn_Explosion_01" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+      <Particle Key="Explosion02" Name="U_Monster.Justica.Corn_Explosion_02" Offset="0,0,0" Direction="0,1,0" Scale="1.4" />
+      <Particle Key="Explosion03" Name="U_Monster.Justica.Corn_Explosion_03" Offset="0,0,0" Direction="0,1,0" Scale="1.6" />
+      <Particle Key="Explosion04" Name="U_Monster.Justica.Corn_Explosion_04" Offset="0,0,0" Direction="0,1,0" Scale="1.7" />
+      <Particle Key="Explosion05" Name="U_Monster.Justica.Corn_Explosion_05" Offset="0,0,0" Direction="0,1,0" Scale="1.7" />
+    </ParticleList>
+    <SkillSpecific WeaponHandBone="R_Weapon_Bone" DelayBetweenShotgunExplosionShapes="0.33" IndicatorDelay="0.0" Angle01ForIndicator="270" Angle02ForIndicator="90" Angle03ForIndicator="180" Angle04ForIndicator="0" />
+    <Material ScaleWithAnimationSpeed="50" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="0.5" />
+      <EmissiveIntensity From="500" To="origin" In="1" />
+    </Material>
+    <SoundTrigger OnAnimCast="" />
+  </Skill>
+</MetaData>

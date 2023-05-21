@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="AI_SiegeBeast_Nova" ESkill="default_melee" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="2.25" />
+    <Cooldown Cooldown="10.0" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <Blownaway Chance="100" Height="0" Distance="8" StunDuration="0.3" />
+    <Shapes>
+      <Entry ShapeName="SiegeBeast_Nova_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Republic_Siegebeast_Nova_Chargeup" OnAnimCast="Play_Republic_Siegebeast_Nova_Fire" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Named_SiegeBeast_Nova" ESkill="default_melee" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="2.25" />
+    <Cooldown Cooldown="7.0" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <Blownaway Chance="100" Height="0" Distance="8" StunDuration="0.3" />
+    <Shapes>
+      <Entry ShapeName="Named_SiegeBeast_Nova_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Republic_Siegebeast_Nova_Chargeup" OnAnimCast="Play_Republic_Siegebeast_Nova_Fire" OnHit="Play_hero_default_damage_large" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,28 @@
+<MetaData>
+  <Skill UID="AI_Sniper_DefaultAttack" ESkill="default_ranged" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="5.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.DeomonOfSoul.Soul_Wave_Indicator_01_Big" Offset="0,0,0" Direction="-1,0,0" Scale="0.5" />
+    </ParticleList>
+    <Projectile Name="sniper_proj" ProjectileCount="1" PenetrationLimit="100" />
+    <SoundTrigger OnAnimCast="Play_Republic_Sniper_DefaultRanged_Fire" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+    <Targeting ComputeTargetPosAtCast="1" />
+  </Skill>
+  <Skill UID="AI_Sniper_DefaultAttack02" ESkill="default_ranged" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="7.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.DeomonOfSoul.Soul_Wave_Indicator_01_Big" Offset="0,0,0" Direction="-1,0,0" Scale="0.5" />
+    </ParticleList>
+    <Projectile Name="sniper_proj" ProjectileCount="1" PenetrationLimit="100" />
+    <SoundTrigger OnAnimCast="Play_Republic_Sniper_DefaultRanged_Fire" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+    <Targeting ComputeTargetPosAtCast="1" />
+  </Skill>
+</MetaData>

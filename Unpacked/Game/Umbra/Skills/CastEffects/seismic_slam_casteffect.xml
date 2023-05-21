@@ -1,0 +1,9 @@
+<MetaData>
+  <CastEffect Name="seismic_slam_casteffect">
+    <Param Type="Particle" ParticleName="OnCast.seismic_slam.fist" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R Hand" Target="self" />
+    <Param Type="Particle" ParticleName="OnCast.seismic_wave.fist2" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R Hand" Target="" />
+  </CastEffect>
+  <CastEffect Name="seismic_slam_anim1">
+    <Param Type="Particle" ParticleName="U_Explosions.ShockWave.cast" Scale="0.5" Offset="0,0,0" Direction="0,90,0" BonePos="Bip01 R Hand" Target="ground" KillAfter="1" NoUpdate="1" />
+  </CastEffect>
+</MetaData>

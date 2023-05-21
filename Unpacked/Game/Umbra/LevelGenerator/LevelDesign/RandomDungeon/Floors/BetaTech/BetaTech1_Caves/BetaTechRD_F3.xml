@@ -1,0 +1,128 @@
+<RandomDungeon>
+  <Dungeon Name="BetaTechRD_F3" Architecture="Cave" DungeonNextLevelEntityName="BetaTechRD_F3_Exit" TileSize="100" LibraryPath="Prefabs/dungeon_genericcave.xml" IsRoguelike="0" NumberOfCPTiles="7" IsSPOnlyConnectedToCP="1" MinimumNumberOfLoop="1" MaximumNumberOfLoop="3" MinimumNumberOfDeadEnd="2" MaximumNumberOfDeadEnd="4" MinimumLoopSize="2" MaximumLoopSize="2" MinimumDeadEndSize="1" MaximumDeadEndSize="1">
+    <SpawnClassFamilies>
+      <Entry Name="BT1_EASY" Weight="1" Minimum="0" Maximum="0" Keywords="" />
+      <Entry Name="BT1_MEDIUM" Weight="50" Minimum="0" Maximum="0" Keywords="" />
+      <Entry Name="BT1_HARD" Weight="10" Minimum="2" Maximum="0" Keywords="" />
+      <Entry Name="BT1_VERYHARD" Weight="5" Minimum="1" Maximum="0" Keywords="" />
+    </SpawnClassFamilies>
+    <Rendering>
+      <Entry Weight="1">
+        <Tod Filename="tod_dungeon_generic_cave1.xml" />
+        <ColorGradient Texture="textures/colorcharts/GenericCave_green_cch.dds" Time="1" />
+      </Entry>
+    </Rendering>
+  </Dungeon>
+  <Tiles>
+    <Entrance RandomSelection="1">
+      <TypeN Weight="1">
+        <Tile Name="Entrance1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeN>
+      <TypeN Weight="1">
+        <Tile Name="Entrance2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeN>
+      <TypeN Weight="1">
+        <Tile Name="Entrance3" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeN>
+    </Entrance>
+    <Exit RandomSelection="1">
+      <TypeS Weight="1">
+        <Tile Name="Exit1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeS>
+      <TypeW Weight="1">
+        <Tile Name="Exit1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeW>
+    </Exit>
+    <CP RandomSelection="1">
+      <TypeNS Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="1" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNS>
+      <TypeSW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeSW>
+      <TypeNW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="1" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNW>
+      <TypeWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeWE>
+      <TypeSE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeSE>
+      <TypeNE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNE>
+    </CP>
+    <SP RandomSelection="1">
+      <TypeNS Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNS>
+      <TypeSW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeSW>
+      <TypeNW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNW>
+      <TypeWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeWE>
+      <TypeSE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeSE>
+      <TypeNE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNE>
+    </SP>
+    <CCP RandomSelection="1">
+      <TypeNSW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNSW>
+      <TypeNSE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNSE>
+      <TypeNSWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNSWE>
+      <TypeNWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNWE>
+      <TypeSWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeSWE>
+    </CCP>
+    <CSP RandomSelection="1">
+      <TypeNSW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNSW>
+      <TypeNSE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNSE>
+      <TypeNSWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNSWE>
+      <TypeNWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeNWE>
+      <TypeSWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeSWE>
+    </CSP>
+    <DeadEnd RandomSelection="1">
+      <TypeS Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="1" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeS>
+      <TypeS Weight="1">
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="1" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeS>
+      <TypeN Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeN>
+      <TypeW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeW>
+      <TypeE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeE>
+    </DeadEnd>
+  </Tiles>
+</RandomDungeon>

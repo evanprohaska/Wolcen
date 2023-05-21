@@ -1,0 +1,35 @@
+<MetaData>
+  <Quest Name="ACT4_C1_WaitQ1" UIName="@ui_C1_EG_SF_Q1_2_QuestLabel" UIDesc="" Type="Main" StartDialog="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@EG_SF_Q1_2_StepNameLabel_1" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker Target="CityBuilding_NPC2" Area="Stormfall" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_DragonBlocker" EntityNames="A4_Stormfall_SouthWayDragon_Blocker" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_C1_OpenPathToPalace" SequenceName="C1_OpenPathToPalace" ResetAtLastFrame="0" />
+      <Event Trigger="EndgameProjectStarted" ProjectName="hunt_narrative1" Name="EndgameProject_1_Started" Type="GoalAchieve" GoalIndexToAchieve="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_CityBuilding_NPC2_UnHide" EntityNames="CityBuilding_NPC2" Hide="0" />
+      <Event Trigger="EndgameProjectRun" ProjectName="hunt_narrative1" Name="EndgameProject_1_Run1" Type="QuestFail" QuestName="ACT4_C1_WaitQ1" />
+    </Step>
+    <Step Order="1" UIName="@EG_SF_Q1_2_StepNameLabel_2" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker Target="Adventure_NPC_2" Area="Stormfall" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="EndgameProjectFinished" ProjectName="hunt_narrative1" Name="EndgameProject_1_Finished" Type="GoalAchieve" GoalIndexToAchieve="0" Delay="1" />
+      <Event Trigger="EndgameProjectCancelled" ProjectName="hunt_narrative1" Name="EndgameProject_1_Cancelled" Type="StepFail" RollbackToPreviousStep="1" />
+      <Event Trigger="EndgameProjectRun" ProjectName="hunt_narrative1" Name="EndgameProject_1_Run2" Type="QuestFail" QuestName="ACT4_C1_WaitQ1" />
+    </Step>
+    <Step Order="2" UIName="@ui_C1_Wait_S1_StepNameLabel" AutoClearEvents="1" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="HL_C1_SpawnPoint_Forest" Radius="25" RequireAllPlayers="1">
+        <ArrowMarker ShowMinimapIcon="1" Target="CityBuilding_NPC2" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_palace" Area="ACT1_Palace" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_EG_SF_Q1_2_SA_AN_QuestHintName" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_QuestHintName" ContextualMessage="@EG_SF_Q1_2_StepNameLabel_3" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="C1_EG_SF_Q1_2_Step5_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_DragonBlocker" EntityNames="A4_Stormfall_SouthWayDragon_Blocker" Hide="0" />
+      <Event Trigger="EndgameProjectRun" ProjectName="hunt_narrative1" Name="EndgameProject_1_Run3" Type="QuestFail" QuestName="ACT4_C1_WaitQ1" />
+    </Step>
+  </Quest>
+</MetaData>

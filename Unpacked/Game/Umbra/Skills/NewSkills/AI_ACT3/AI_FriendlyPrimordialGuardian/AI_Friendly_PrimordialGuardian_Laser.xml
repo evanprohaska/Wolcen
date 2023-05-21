@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_Friendly_primordialguardian_laser" ESkill="AI_cultofsouls_corruptedprimordialguardian_laser" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="3" />
+    <Cooldown Cooldown="10" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Range AttackRange="20" />
+    <DamageZone UseDamageZoneList="1" RemoveDamageZoneWhenCasterDies="1">
+      <Entry DamageZoneName="Friendly_PrimordialGuardian_Laser_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="MainLaser" Name="U_Monster_Alt.primordialguardian.Lazer_01" Offset="0,0,0" Direction="1,0,0" Bone="L_Weapon_Bone" />
+      <Particle Key="RHandLaser" Name="U_Monster_Alt.primordialguardian.Lazer_02" Offset="0.5,0,0" Direction="1,0,0" Bone="Bip01 R Hand" />
+      <Particle Key="LHandLaser" Name="U_Monster_Alt.primordialguardian.Lazer_02" Offset="-0.5,0,0" Direction="1,0,0" Bone="Bip01 L Hand" />
+    </ParticleList>
+    <SkillSpecific LaserDuration="0.7" StopDistance="2" />
+    <SoundTrigger OnAnimStart="Play_Primordial_Guardian_Laser" OnInterrupt="Stop_Primordial_Guardian_Laser" OnHit="Play_Primordial_Guardian_Laser_Impact" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

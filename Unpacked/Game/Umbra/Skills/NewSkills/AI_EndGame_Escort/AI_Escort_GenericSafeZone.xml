@@ -1,0 +1,39 @@
+<MetaData>
+  <Skill UID="AI_BossModifier_SafeZone_Prim" ESkill="AI_Default_GenericSafeZone" Keywords="attack_skill">
+    <ParticleList>
+      <Particle Key="Area" Name="Missions.Escort.Escort_DamageZone" Offset="0,0.1,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Hit" Name="Missions.Escort.Darkness_Hit" Offset="0,0.1,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Debuff" Name="Missions.Escort.Darkness_Debuff" Offset="0,0.1,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="FarEffect" Name="Missions.Escort.CameraDarkness" Offset="0,0.1,0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <StartDialog>
+      <Dialogs>
+        <Entry DialogueId="" />
+      </Dialogs>
+      <CSTPreset CSTPresetName="Escort_Primo_Range" />
+    </StartDialog>
+    <SkillSpecific SafeDistance="12" PercentDamage="6" TickRate="0.5" FollowCaster="1" LockCasterWhenNoOneSafe="1" DialogCooldown="15" DamageModifier="1.06" ProxyTriggerDistance="8">
+      <EntitiesToProximityCheck>
+        <Entry EntityName="WM_PRIMOPump" />
+        <Entry EntityName="WM_PRIMOPump0" />
+        <Entry EntityName="WM_PRIMOPump1" />
+        <Entry EntityName="WM_PRIMOPump2" />
+      </EntitiesToProximityCheck>
+    </SkillSpecific>
+  </Skill>
+  <Skill UID="AI_BossModifier_SafeZone_Merchant" ESkill="AI_Default_GenericSafeZone" Keywords="attack_skill">
+    <ParticleList>
+      <Particle Key="Area" Name="Missions.Escort.Escort_MerchantZone" Offset="0,0.1,0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <StartDialog>
+      <Dialogs>
+        <Entry DialogueId="" />
+      </Dialogs>
+    </StartDialog>
+    <SkillSpecific SafeDistance="10" PercentDamage="0" TickRate="0" FollowCaster="1" LockCasterWhenNoOneSafe="1" DialogCooldown="15" />
+  </Skill>
+  <Skill UID="AI_Escort_DummyInteract_Prayer" ESkill="Misc_DummyInteraction" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <SkillSpecific InteractDuration="20" DisplayProgress="1" ReverseProgress="0" />
+  </Skill>
+</MetaData>

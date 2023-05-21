@@ -1,0 +1,25 @@
+<MetaData>
+  <Skill UID="AI_CultOfSouls_PrimordialArmor_DefaultAttack01" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Combo ComboStarter="Combo_CorruptedPrimordialArmor" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Primordial_ArmourCorrupt_Attack_Swing" OnHit="Play_Primordial_ArmourCorrupt_Attack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_CultOfSouls_PrimordialArmor_DefaultAttack02" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Primordial_ArmourCorrupt_Attack_Swing" OnHit="Play_Primordial_ArmourCorrupt_Attack_Impact" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,21 @@
+<MetaData>
+  <Quest Name="HL_C3_BossFight_Oshara2" UIName="@ui_C1_M3_E2_EventQuestLabel" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_C1_M3_E2_EventStepLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="M3_SpawnOshara_P2" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Oshara_P2" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="M3_Gating_OsharaP2_Cutscene" SequenceName="C1_OsharaIntroduction2" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC3_Step2_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EventEnd" EventName="M3_Gating_OsharaP2_Cutscene" Type="EntitySpawn" Name="M3_SpawnOshara_P2" SpawnClass="Sc_C1_M3_OsharaSpawn_P2" TargetEntityName="QP_M3_OsharaP2_OsharaSpawnPoint" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" FaceAtSpawn="QP_M3_OsharaP2_PlayerSpawnPoint" />
+      <Event Trigger="EventEnd" EventName="M3_Gating_OsharaP2_Cutscene" Type="EntityTeleport" Name="M3_SpawnOshara_P1_Player_TP_Start" TeleportedEntityName="#Player" DestinationName="QP_M3_OsharaP2_PlayerSpawnPoint" MinRadius="1" />
+      <Event Trigger="EventEnd" EventName="M3_Gating_OsharaP2_Cutscene" Type="EntityIsHidden" Name="M3_Oshara_P2_Blocker1_Start" EntityNames="Blocker_M3_OsharaP2_1" Hide="0" />
+      <Event Trigger="EventEnd" EventName="M3_Gating_OsharaP2_Cutscene" Type="EntityIsHidden" Name="M3_Oshara_P2_Blocker2_Start" EntityNames="Blocker_M3_OsharaP2_2" Hide="0" />
+      <Event Trigger="EventEnd" EventName="M3_Gating_OsharaP2_Cutscene" Type="ActionParticleEmitter" Name="M3_Oshara_P2_FX_Blocker1_Start" EmitterEntityName="M3_Oshara_P2_BlockingRoad_FX_1" Activate="1" />
+      <Event Trigger="EventEnd" EventName="M3_Gating_OsharaP2_Cutscene" Type="ActionParticleEmitter" Name="M3_Oshara_P2_FX_Blocker2_Start" EmitterEntityName="M3_Oshara_P2_BlockingRoad_FX_2" Activate="1" />
+      <Event Trigger="EventEnd" EventName="M3_Gating_OsharaP2_Cutscene" Type="GlobalFlowGraph" Name="HL_M3_OsharaP2_CamOn" />
+      <Event Trigger="EventEnd" EventName="M3_Gating_OsharaP2_Cutscene" Type="GlobalDialog" Name="M3_DS_61" DialogName="HLC3_HighlandHigherPart1_Player_61" Delay="2" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="FailStateOsharaBossfight2" QuestName="HL_C3_BossFight_Oshara2" />
+    </Step>
+  </Quest>
+</MetaData>

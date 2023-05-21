@@ -1,0 +1,43 @@
+<MetaData>
+  <Quest Name="Quest_NPC2Consumable_Dummy" UIName="@B_A2_Q_ExpeditionStatsQuestNameLabel" UIDesc="@B_A2_Q_QuestDescLabel" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@B_A2_Q_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="36000000" />
+      <GoalLogic Formula="00" />
+    </Step>
+  </Quest>
+  <Quest Name="Quest_CP4_Dummy_Expedition" UIName="@B_A2_Q_ExpeditionStatsQuestNameLabel" UIDesc="@B_A2_Q_QuestDescLabel" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@B_A2_Q_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="36000000" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="QP_EG_GoToSF" AreaRadius="50" Name="DisableLong_EnableShort_TraceKeyword" Type="ApplyKeyword" EnableKeywords="C1_Hunt_FirstTrace_Short" DisableKeywords="C1_Hunt_FirstTrace_Long" AffectSecondaryAreaManager="1" CleanPreviousEvents="0" Delay="5" />
+      <Event Trigger="NewDungeonFloor" Name="Disable_TraceKeyword_All" Type="ApplyKeyword" EnableKeywords="" DisableKeywords="C1_Hunt_FirstTrace" AffectSecondaryAreaManager="1" CleanPreviousEvents="0" Delay="5" />
+    </Step>
+  </Quest>
+  <Quest Name="Quest_Dummy_Expedition_FloorTransition" UIName="@B_A2_Q_QuestNameLabel" UIDesc="@B_A2_Q_QuestDescLabel" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@B_A2_Q_StepNameLabel2" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="36000000">
+        <ArrowMarker Target="endgame_dungeon_portal_stormfall" Area="" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" ShowMinimapIcon="1" Threshold="15" />
+        <ArrowMarker Target="endgame_dungeon_portal_next_level" Area="" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" ShowMinimapIcon="1" Threshold="15" />
+      </Goal>
+      <GoalLogic Formula="00" />
+    </Step>
+  </Quest>
+  <Quest Name="Quest_Dummy_Expedition_LastFloor" UIName="@B_A2_Q_QuestNameLabel" UIDesc="@B_A2_Q_QuestDescLabel" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_confirm_end_npc2_quest_content2" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="36000000">
+        <ArrowMarker Target="endgame_dungeon_portal_stormfall" Area="" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" ShowMinimapIcon="1" Threshold="15" />
+      </Goal>
+      <GoalLogic Formula="00" />
+    </Step>
+  </Quest>
+  <Quest Name="Adventure_SariselMode_RewardChest_Quest" UIName="@ui_Adventure_SariselMode_RewardChest_QuestLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@B_A2_Q_SariselOpenChestStepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="Sarisel_Reward_Chest" InteractCount="1">
+        <ArrowMarker Target="Sarisel_Reward_Chest" Area="dungeon" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" ShowMinimapIcon="1" Threshold="15" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="36000000" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_UI" Type="StepUpdate" Localization="@ui_Adventure_SariselMode_RewardChest_StepLabel" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+</MetaData>

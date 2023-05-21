@@ -1,0 +1,18 @@
+<MetaData>
+  <Skill UID="AI_Eviscerator_ShadowStrike" ESkill="AI_republicassassin_shadowstrike" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_02" ActionString_OutMissed="monster_skill_loop_01_out_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_Assassin_01" Direction="-1,0,0" />
+    </ParticleList>
+    <Range AttackRange="20" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_ShadowStrike_Shape" />
+    </Shapes>
+    <SkillSpecific MaxDuration="2" IndicatorTimer="1" TeleportRadiusMin="4.5" TeleportRadiusMax="5.5" />
+  </Skill>
+</MetaData>

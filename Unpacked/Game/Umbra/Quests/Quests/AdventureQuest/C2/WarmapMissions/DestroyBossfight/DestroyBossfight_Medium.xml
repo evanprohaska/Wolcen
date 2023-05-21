@@ -1,0 +1,332 @@
+<MetaData>
+  <Quest Name="WM_Q2_Main_REPU_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Republic.Ammunitions_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_R_Assassin_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_REPURED_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Republic.Ammunitions_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_RR_Justicar_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_OUTWF_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Kill" ClassToKill="HangedPillar_Destroyable" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_OF_HangedPillar_Destroyable" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_H_OF_SadisticThug_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_OUTWS_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Kill" ClassToKill="HangedPillar_Destroyable" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_OF_HangedPillar_Destroyable" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_OS_SadisticThugShadow_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_OUTWWS_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Kill" ClassToKill="HangedPillar_Destroyable" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_OF_HangedPillar_Destroyable" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_OWS_WarbeastShadow_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_COSST_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Kill" ClassToKill="Soul_Destroyable" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_COSS_Soul_Destroyable" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_COSST_Butcher_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_COSSS_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Kill" ClassToKill="Soul_Destroyable" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_COSS_Soul_Destroyable" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_COSSS_DemonOfSouls_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_COSSD1_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Kill" ClassToKill="Soul_Destroyable" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_COSS_Soul_Destroyable" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_COSSD1_Corrupted_PrimordialGuardian_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_COSSD2_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Kill" ClassToKill="Soul_Destroyable" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_COSS_Soul_Destroyable" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_COSSD2_Corrupted_PrimordialGuardian_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_COSSU1_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Kill" ClassToKill="Soul_Destroyable" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_COSS_Soul_Destroyable" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_COSSU1_Butcher_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_COSSU2_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Kill" ClassToKill="Soul_Destroyable" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_COSS_Soul_Destroyable" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_COSSU2_DemonOfSouls_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_COSSW_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Kill" ClassToKill="Soul_Destroyable" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_COSS_Soul_Destroyable" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_COSSW_Butcher_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_SVRIL1_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Svriir.Bodypile_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_SL1_AlphaPoison_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_SVRIL2_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Svriir.Bodypile_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_SL2_AlphaPoison_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_SVRIS1_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Svriir.Bodypile_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_SS1_AlphaPoison_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_SVRIS2_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Svriir.Bodypile_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_SS2_AlphaPoison_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_SVRIC_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Svriir.Bodypile_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_SC_AlphaPoison_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_SVRIF_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Svriir.Bodypile_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_SF_Alpha_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_SVRIWF_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Svriir.Bodypile_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_SWF_Alpha_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_SVRIWP_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Svriir.Bodypile_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_SWP_AlphaPoison_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_SVRIWS_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Svriir.Bodypile_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_SWS_AlphaPoison_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_Main_SVRIWC_Medium" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="4" ShowProgression="1">
+        <ArrowMarker Target="Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Boss_Spawn" KillCount="1">
+        <ArrowMarker Target="Boss_Spawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Destroy" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Svriir.Bodypile_Destroyable_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="5" OneSpawnPerArea="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="Boss_Spawn" SpawnClass="Sc_WM_M_SWC_AlphaPoison_Boss" TargetEntityName="#Player" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+</MetaData>

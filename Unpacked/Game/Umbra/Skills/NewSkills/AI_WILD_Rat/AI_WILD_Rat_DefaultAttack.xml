@@ -1,0 +1,35 @@
+<MetaData>
+  <Skill UID="AI_WILD_Rat_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="WILD_Rat_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_WILD_Rat_Attack_Swing" OnHit="Play_WILD_Rat_Attack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_COFE_Rat_DefaultAttack" ESkill="default_melee" Keywords="">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="WILD_Rat_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_WILD_Rat_Attack_Swing" OnHit="Play_WILD_Rat_Attack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Summon_Rat_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="WILD_Rat_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_WILD_Rat_Attack_Swing" OnHit="Play_WILD_Rat_Attack_Impact" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

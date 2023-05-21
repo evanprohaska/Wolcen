@@ -1,0 +1,35 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_REPU_Heimlock02_FireProjectiles_FromGround">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <SoundTrigger OnAnimStart="" />
+    <Explosion ExplosionRadius="4" />
+    <Projectile Name="heimlock_02_fireprojectile" ProjectileCount="5" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="2" distanceMax="7" totalAngleAtDistanceMin="60" totalAngleAtDistanceMax="60" projectileAngleAtDistanceMin="60" projectileAngleAtDistanceMax="60" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="9.5" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_REPU_Heimlock02_FireProjectiles_FromSky">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1.8" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <SoundTrigger OnAnimStart="Play_Heimlock_RainFireProjectiles" />
+    <Explosion ExplosionRadius="4" />
+    <Projectile Name="heimlock_02_fireprojectile_FromSky" ProjectileCount="30" PenetrationLimit="2" />
+    <Range AttackRange="15" />
+    <IsIgnoredBySafeZoneGPIPreset SafeZoneGroupNames="heimlock_safezone" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.1" CastMode="FromSky" KillProjsOnCasterDeath="1">
+      <CastAttributes OnTarget="0" StartZOffset="30" AngleFromZAxis="45" ZPadding="0" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

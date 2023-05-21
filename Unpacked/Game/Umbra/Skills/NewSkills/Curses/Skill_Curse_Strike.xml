@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill UID="MapModifier_Curse_LightningStrike" ESkill="MapModifier_Curse_Strike" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="Indicator" Name="u_bossmodifiers.siegebeast_rnd_lightning.start" Offset="0,0,0" Direction="1,0,0" Scale="0.4" TimeScale="1.5" />
+      <Particle Key="Explosion" Name="U_VFX_Oskar.Bossmodifiers.RandomLightnings_AoE" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <DamageBase Max="2000" Min="2000" Type="lightning" />
+    <SkillSpecific MinTime="5" MaxTime="6" IndicatorTime="1" ExplosionTime="5" ExplosionRadius="2" MinSpawnRadius="5" MaxSpawnRadius="20" Margin="4" StrikeCount="10" />
+    <SoundTrigger OnAnimStart="Play_Curse_Lightning_Strike_Indicator" OnAnimEnd="Play_Curse_Lightning_Strike" />
+  </Skill>
+  <Skill UID="MapModifier_Curse_MeteorStrike" ESkill="MapModifier_Curse_Strike" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="Indicator" Name="COFY_Ahriman_bys.Waves_of_Meteor.Waves_of_Meteor_Curse" Offset="0,0,0" Direction="1,0,0" Scale="1.5" TimeScale="1" />
+    </ParticleList>
+    <DamageBase Max="4000" Min="4000" Type="Fire" />
+    <SkillSpecific MinTime="6" MaxTime="7" IndicatorTime="2.5" IndicatorTTL="10" ExplosionRadius="6" MinSpawnRadius="25" MaxSpawnRadius="45" Margin="4" StrikeCount="4" />
+    <SoundTrigger OnAnimStart="Play_Curse_Meteor_Strike_Indicator" OnAnimEnd="Play_Curse_Meteor_Strike_Impact" />
+  </Skill>
+</MetaData>

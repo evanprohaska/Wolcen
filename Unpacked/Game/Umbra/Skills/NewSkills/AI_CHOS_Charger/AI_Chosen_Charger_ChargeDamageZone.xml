@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill UID="AI_Chosen_Charger_ChargeDamageZone" ESkill="AI_Chosen_Charger_ChargeDamageZone" Keywords="">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="0.2" />
+    <CastingParams />
+    <ParticleList>
+      <Particle Key="Trail" Name="U_Monster.Charger.Charger_Dash_Under_01" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <DamageZone RateOfFire="0.5" Duration="5" MaxEntityHits="0" MaxHitsTotal="0" />
+    <SkillSpecific DamageZoneWidth="4" NumberOfTrailVFX="3" />
+  </Skill>
+</MetaData>

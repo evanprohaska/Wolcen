@@ -1,0 +1,25 @@
+<MetaData>
+  <CastEffect Name="LightningStaff1">
+    <Param Type="Arc" From="Bip01 L Hand" To="Bip01 Head" ArcLifeTime="-1" ArcPreset="LightningStaff1" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0.33" />
+    <Param Type="Arc" From="Bip01 R Hand" To="Bip01 Head" ArcLifeTime="-1" ArcPreset="LightningStaff1" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0.33" />
+    <Param Type="Particle" ParticleName="OnCast.lightning.staff_bowl" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle2" />
+  </CastEffect>
+  <CastEffect Name="LightningStaff2">
+    <Param Type="Arc" From="Bip01 L Hand" To="Bip01 Head" ArcLifeTime="-1" ArcPreset="LightningStaff1" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0.33" />
+    <Param Type="Arc" From="Bip01 R Hand" To="Bip01 Head" ArcLifeTime="-1" ArcPreset="LightningStaff1" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0.33" />
+    <Param Type="Arc" From="Bip01 L Foot" To="Bip01 Pelvis" ArcLifeTime="-1" ArcPreset="LightningStaff1" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0.33" />
+    <Param Type="Arc" From="Bip01 R Foot" To="Bip01 Pelvis" ArcLifeTime="-1" ArcPreset="LightningStaff1" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0.33" />
+    <Param Type="Particle" ParticleName="OnCast.lightning.staff_bowl" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle2" />
+  </CastEffect>
+  <CastEffect Name="LightningStaff_Ray">
+    <Param Type="Arc" From="particle2" To="Bip01 L Hand" ArcLifeTime="-1" ArcPreset="LightningStaff1" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0.33" />
+    <Param Type="Particle" ParticleName="OnCast.lightning.staff_bowl" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle2" />
+    <Param Type="Particle" ParticleName="OnCast.lightning.staff_l_hand" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 L Hand" />
+  </CastEffect>
+  <CastEffect Name="LightningStaff_Final">
+    <Param Type="Arc" From="Locator_Locomotion" To="Bip01 Head" ArcLifeTime="-1" ArcPreset="LightningStaff_Final" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0.33" />
+    <Param Type="Particle" ParticleName="OnCast.lightning.cast" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 L Hand" />
+    <Param Type="Particle" ParticleName="OnCast.lightning.cast2" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R Hand" />
+    <Param Type="Particle" ParticleName="OnCast.lightning.staff_bowl" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="particle2" />
+  </CastEffect>
+</MetaData>

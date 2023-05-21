@@ -1,0 +1,44 @@
+<MetaData>
+  <EntityList Name="Artefact_Test_AlexMap_EL" NoDropWeight="0">
+    <Entry Weight="30">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="1" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_AlexTrash.xml" PrefabName="ArtefactsQuest.ClickableTest_ArtefactExisting" />
+      </Variants>
+    </Entry>
+    <Entry Weight="70">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="1" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_AlexTrash.xml" PrefabName="ArtefactsQuest.ClickableTest_ArtefactMissing" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="Prison_Test_AlexMap_EL" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="manual" Entity_Min="3" Entity_Max="3" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_AlexTrash.xml" PrefabName="PrisonQuest.ClickableTest_Prison" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="RewardZone_Test_AlexMap_EL" NoDropWeight="0">
+    <Entry Weight="50">
+      <Budget Mode="manual" Entity_Min="1" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="30">
+      <Budget Mode="manual" Entity_Min="1" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="15">
+      <Budget Mode="manual" Entity_Min="1" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+</MetaData>

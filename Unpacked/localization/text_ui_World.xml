@@ -1,0 +1,2537 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Title>Audio script template</Title>
+  <Author>Maëlenn Lumineau</Author>
+  <LastAuthor>Pierre Techoueyres</LastAuthor>
+  <LastPrinted>2003-10-30T09:38:41Z</LastPrinted>
+  <Created>2002-06-17T19:14:00Z</Created>
+  <LastSaved>2022-09-27T14:39:10Z</LastSaved>
+  <Company>Electronic Arts</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\Copy of Dialog_Asset_List_Final_edit.xls</Path>
+   <SheetName>DropDown</SheetName>
+   <SheetName>Conversations</SheetName>
+   <Xct>
+    <Count>-2</Count>
+    <SheetIndex>0</SheetIndex>
+    <Crn>
+     <Row>6</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>4</ColLast>
+     <Text>clean</Text>
+     <Text>TV</Text>
+     <Text>radio (disturbed) </Text>
+     <Text>radio (low)</Text>
+     <Text>radio (heavy)</Text>
+    </Crn>
+    <Crn>
+     <Row>9</Row>
+     <ColFirst>0</ColFirst>
+     <ColLast>41</ColLast>
+     <Text>Player</Text>
+     <Text>Barnes</Text>
+     <Text>Hawker</Text>
+     <Text>Sykes</Text>
+     <Text>Johnson</Text>
+     <Text>Cortez</Text>
+     <Text>Beck</Text>
+     <Text>Miller</Text>
+     <Text>Baxter</Text>
+     <Text>American scientist</Text>
+     <Text>Shark</Text>
+     <Text>Chia</Text>
+     <Text>Kirovski</Text>
+     <Text>Michaels</Text>
+     <Text>Chang</Text>
+     <Text>Marine Soldier a</Text>
+     <Text>Marine Soldier b</Text>
+     <Text>Chinese Soldier a</Text>
+     <Text>Chinese Soldier b</Text>
+     <Text>Chinese Soldier c</Text>
+     <Text>Chinese Soldier d</Text>
+     <Text>Chinese Soldier e</Text>
+     <Text>Chinese Soldier f</Text>
+     <Text>Chinese Officer a</Text>
+     <Text>Chinese Officer b</Text>
+     <Text>Chinese Scientist a</Text>
+     <Text>Chinese Scientist b</Text>
+     <Text>Chinese Scientist Female a</Text>
+     <Text>Chinese Scientist Female b</Text>
+     <Text>Filmcrew Member</Text>
+     <Text>Morrison</Text>
+     <Text>C17 Pilot a</Text>
+     <Text>C17 Pilot b</Text>
+     <Text>Submarine Commander Davis</Text>
+     <Text>Pilot (camera)</Text>
+     <Text>Bridge officer 1</Text>
+     <Text>Bridge officer 2</Text>
+     <Text>Carrier deck guide</Text>
+     <Text>Jet Pilot</Text>
+     <Text>VTOL Pilot</Text>
+     <Text>Commander (camera)</Text>
+     <Text>Team Two (camera)</Text>
+    </Crn>
+   </Xct>
+  </SupBook>
+  <WindowHeight>15165</WindowHeight>
+  <WindowWidth>32767</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <TabRatio>274</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s40" ss:Name="40&#160;% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#BDD7EE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="Neutral">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#993300"/>
+   <Interior ss:Color="#FFEB9C" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s28" ss:Name="Neutre">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#993300"/>
+   <Interior ss:Color="#FFEB9C" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s26" ss:Name="Satisfaisant">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s68" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s74" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s75" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s79" ss:Parent="s28">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s80">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s81" ss:Parent="s26">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="1"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#333333"/>
+  </Style>
+  <Style ss:ID="s83" ss:Parent="s28">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s84">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#333333"/>
+  </Style>
+  <Style ss:ID="s86" ss:Parent="s62">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#C6EFCE" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s87">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#333333"/>
+  </Style>
+  <Style ss:ID="s88" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Italic="1"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="characters"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R10C1:R10C42"/>
+  <NamedRange ss:Name="type"
+   ss:RefersTo="='\DOCUME~1\jack\LOCALS~1\Temp\p4v\PC025 perforce 1666\data\Game02\Game\Languages\[Copy of Dialog_Asset_List_Final_edit.xls]DropDown'!R7C1:R7C5"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="_FilterDatabase" ss:RefersTo="=Sheet1!R1C1:R370C2"
+    ss:Hidden="1"/>
+   <NamedRange ss:Name="Print_Area" ss:RefersTo="=Sheet1!R1C2:R1C2"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="763" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="13.3125">
+   <Column ss:AutoFitWidth="0" ss:Width="312"/>
+   <Column ss:AutoFitWidth="0" ss:Width="281.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s63">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">KEY</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ORIGINAL TEXT</Data><NamedCell
+      ss:Name="Print_Area"/><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="1" ss:StyleID="s68"><Data ss:Type="String">WORLD</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">NPC Names</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s75"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_StormfallMerchant_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Mohabi</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_AdventureCharacter1_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Mandates Board</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_AdventureCharacter2_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">War Table</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_DashingEugene_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">“Dashing” Eugene</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_CitybuildingCharacter_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Thunderblade Zalahir</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_StormfallArchivist_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Demetra</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_StormfallJeweler_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Zanafer Stark</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Valeria_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Valeria</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Edric_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Edric</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Maelys_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Justicar Maëlys</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ThunderBlade_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Thunderblade</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ThunderBladeFaarad_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Thunderblade Faärad</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ThunderBladeSandor_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Thunderblade Sandor</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_FlayerWarrior_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Flayer Warrior</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_FlayerArcher_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Flayer Archer</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_FlayerSapper_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Flayer Sapper</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Yudai_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Yudaï</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_StormfallGuard_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Stormfall Guard</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_StormfallConscript_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Stormfall Conscript</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_StormfallNoble_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Stormfall Noble</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Refugee_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Refugee</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Damaskus_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Merchant Prince Damaskus</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Alastor_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Alastor</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Naarlog_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Naärlog</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Cultist_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Cultist of the Sleeper</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_AuroraKnightCalahad_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Aurora Knight Calahad</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_GrandInquisitorHeimlock_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Grand Inquisitor Heimlock</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Vhegguad_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Vhegguad, Seal of Anankis</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Neiddrerym_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Neiddrerym</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Nazim_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Nazim</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Mizzeonth_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Mizzeonth</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Lambach_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">The Lambach</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Zima_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Zima</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Janaris_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Janaris</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Mercy_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Mercy</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_JusticarAzenhal_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Justicar Azenhal</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_RepublicanSoldier_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Republican Soldier</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_AIName_Templars_Priest</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Hierophant of the Searing Song</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_AIName_Templars_Knight</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Aurora Knight</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_AIName_Templars_Squire_Sword</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Brother</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_AIName_Templars_Squire_Hammer</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Brothers</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Nerukaï_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Nerukaï</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Zaälbezül_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Zaälbezül, Arm of Ashtaroth</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_AIName_Gernese</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Gernese</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Shaman_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Dying Morosian Seer</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Fanatic_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Fanatic of the Sleeper</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Tabbitha_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Tabbitha of House Longshore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Valense_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Valense of House Blacktide</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Annaruz_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Annaruz of House Brightgale</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Citizen_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Stormfall Citizen</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Gendris_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Aurora Knight Gendris</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Together_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Together</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Hektor_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Hektor</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Kickstarter NPCs</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s75"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_JerrykDarkwater_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Jerryk Darkwater</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_EllilMoria_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Ellil Moria</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_EmmusTelhis_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Emmus Telhis</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_LysandreNightshell_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Lysandre Nightshell</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_NicoletteCaladon_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Nicolette Caladon</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_RokitavStormstrike_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Rokitav Stormstrike</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Chronicle 1 NPCS</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s75"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_KnightIlthain_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Ilthain</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ElderOndar_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Ondar</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_DrakeKnight_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Drake Knight</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_RepublicHunter_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Republic Hunter</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_RepublicCaptain_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Republic Captain</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_RepublicSoldier_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Republic Soldier</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_CommanderLucan_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Commander Lucan</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_RepublicScout_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Injured Republic Scout</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Belizul_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Belizul</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_CultistofFLesh_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Cultist of the Aberrant</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Caravaner_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Merchant</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WalkingCorpse_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Walking Corpse</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Oshara_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Oshara, Voice of Naedre</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Selena_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Selena, Demetra’s Apprentice</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_Dog_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Stray Dog</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_StormfallHuntMerchant_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Quartermaster Havar</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">C1 Hunt NPC Labels</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s75"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_StandardShaman_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Shaman of the Jackals</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_UnknownDemon_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Unknown Demon</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_ghost_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Ghost</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_memory_CharacterName_Label</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Memory</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_FleshFanatic_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Fanatic of the Aberrant</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_FuryFanatic_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Fanatic of the Blind Prince</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_FuryCultist_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Cultist of the Blind Prince</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_UndeadFanatic_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Undead Fanatic</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_WildlingArcher_CharacterNameLabel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Wildling Archer</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">World Waypoints</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s75"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_waypoint</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Waypoint</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_WaypointUnlocked</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">%1 waypoint unlocked</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_reset_dungeon</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Interact to generate a new dungeon</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Sleeping</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s75"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_innkeeper</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Innkeeper</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_sleep</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Sleep</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_sleepingmenu_title</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Rest</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_currenttime</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Current time: </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_sleepuntil</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Sleep until: </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Environments</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s75"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_chest_inventory_title</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Personal Chest</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_chest_inventory_description</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Your very own Personal Chest. Here you can hoard to your heart's content.\nWell, at least until you have filled it brimful. </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_PlayerChest</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Personal Chest</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Environments</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s75"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_crypt</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Crypt entrance</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Act 1 World Map Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s75"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">The Coast of Wrecks</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_worldmap_you_are_here</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Your Position</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_worldmap_quest_objective</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Quest Objective</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_worldmap_explored_dungeon</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Explored Area</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_worldmap_unexplored_dungeon</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Unexplored Area</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_worldmap_waypoint</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Waypoint</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_worldmap_act_hub</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">City Hub</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_worldmap_camp</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Safe Area</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_worldmap_locked_path</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Locked Area</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_coast_of_wrecks_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Svriir Grotto</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_highlands_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Highlands</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_stormfall_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Stormfall - Palace District</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_stormfall_farmlands_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Farmlands</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_svriir_network_1_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Svriir Cave Network 1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_svriir_tributes_storage_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Tributes Chamber</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_svriir_network_2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Svriir Cave Network 2</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_flayer_outpost_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Flayers Outpost</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_ravaged_camp_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Ravaged Brotherhood Camp</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_green_bluffs_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Green Bluffs</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_smuggler_path_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Smuggler’s Path</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_necropolis_1_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Urhan Necropolis 1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_necropolis_3_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Urhan Necropolis 2</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_gates_of_anankis_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Gate of Anankis</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_halls_1_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Anankis’ Halls 1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_halls_2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Anankis’ Halls 2</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_core_overlook_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Anankis’ Core Overlook</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_halls_3_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Anankis’ Halls 3</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_act_1_anankis_core_overlook_2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Anankis' Core Overlook 2</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Act 1 World Map Desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_coast_of_wrecks_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The caves along the &lt;b&gt;Coast of Wrecks&lt;/b&gt; were carved out by the &lt;b&gt;Sea of Torment&lt;/b&gt;, its monstrous tide having eroded the rockface over thousands of years. Countless vessels have shattered against the shore, and &lt;b&gt;Sea Svriir&lt;/b&gt; sift among the wreckage, looking for baubles and trinkets to take back to their nests. &lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_highlands_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The &lt;b&gt;Svriir&lt;/b&gt;have made short work of colonizing the country surrounding &lt;b&gt;Stormfall&lt;/b&gt;. As a desperate final bid for survival, the city guard has retreated to the city and established fortifications, hoping it is enough to save their homes. Along the coastal highlands, the bodies of refugees litter the trails leading to the city.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_stormfall_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;Stormfall&lt;/b&gt;, otherwise known as the Jewel of the Sea, is a coastal city state renowned for its shipbuilding, cartographical archives, and bustling Diamond trade. It has remained a sovereign state, despite the &lt;b&gt;Republic’s&lt;/b&gt; advances, thanks to its alliance with the &lt;b&gt;Jewelled Concordat&lt;/b&gt; and the natural barrier offered by the &lt;b&gt;Salt Deserts of Morkaï.&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_stormfall_farmlands_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The merchant road is the main trade route used by caravans to reach Stormfall, leading out from the farmlands to a crossroads where it splits. The roads lead to the &lt;b&gt;Republic&lt;/b&gt;, the city state of &lt;b&gt;Vulkain&lt;/b&gt;, and Greyharbour far to the north. During this time of crisis, the roads are empty. None dare travel the roads for fear of slaughter.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_svriir_network_1_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The caves beneath the farmlands were dug by the &lt;b&gt;Svriir&lt;/b&gt; as a means of reaching the surface. Several lairs have been connected to form an enormous supercluster. The presence of nests and beta females is indicative of two things: first, that the &lt;b&gt;Svriir&lt;/b&gt; are here to stay; and second, that something is driving them from the depths.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_svriir_tributes_storage_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;A hoard of baubles, trinkets, and bodies is amassed in the &lt;b&gt;Svriir’s&lt;/b&gt; tribute chamber. Anything perceived to have value, from ornate forks to radiant diamonds.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_svriir_network_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The soul surges have weakened the structural integrity of the tunnel network. &lt;b&gt;Svriir&lt;/b&gt; flee to the surface or defend their eggs from the tormented souls rising from the depths. Either way, their actions leave the Alpha’s lair relatively undefended.&lt;/Font&gt; </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_flayer_outpost_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;Since the soul surges began, surviving on the &lt;b&gt;Coast of Wrecks&lt;/b&gt; has become an increasingly perilous affair. It was difficult before, with just the waves and the weather to contend with, but the tormented souls are an unprecedented threat to the &lt;b&gt;Flayers&lt;/b&gt; living here. Their outpost may not survive the crisis.&#10;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_ravaged_camp_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;This is the &lt;b&gt;Brotherhood of Dawn&lt;/b&gt; encampment targeted by the &lt;b&gt;Republic&lt;/b&gt; during &lt;b&gt;Operation Dawnbane&lt;/b&gt;. The &lt;b&gt;Republic&lt;/b&gt; used the cover of darkness to sneak along the shore and flank the &lt;b&gt;Brotherhood&lt;/b&gt; soldiers, setting fire to their encampment. The &lt;b&gt;Brothers&lt;/b&gt; were unable to rally before being slaughtered.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_green_bluffs_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The &lt;b&gt;Green Bluffs&lt;/b&gt; has a microclimate that makes it the driest region in &lt;b&gt;Stormfall’s&lt;/b&gt; territory. The climate and the tree cover made the forest an ideal hiding spot for the &lt;b&gt;Flayers&lt;/b&gt;. When the opportunity presented itself, they spilled from the bluffs to raid the farmlands.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_smuggler_path_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The smuggler’s path is an ancient network of caves that leads down to sea level. It has been the site of cat and mouse encounters between guards and smugglers for hundreds of years. That was before the Sea Svriir began to emerge from the sea.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_necropolis_1_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The halls of a forgotten civilization, fallen into ruin long before &lt;b&gt;Stormfall&lt;/b&gt; was conceived. It has remained undisturbed for centuries, but with the arrival of the Sleeper’s procession, the dead have risen to roam their ruined city.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_necropolis_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;There is nothing but death in this place. A suffocating darkness engulfs the halls, emanating a paralysing cold. The bones of the builders form mounds of human suffering, rising high above the darkness. &lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_necropolis_3_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;In the dark corners of the &lt;b&gt;Necropolis&lt;/b&gt;, sculptures and tablets lie hidden with stories etched into stone. Terrifying beasts of light and shadow oppress human figures, the builders of this city that would become their grave. The beasts have since disappeared, but a new oppressor, the &lt;b&gt;Sleeper&lt;/b&gt;, has come to terrorize the city’s resting spirits.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_gates_of_anankis_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The builders of the &lt;b&gt;Necropolis&lt;/b&gt; kept digging until they excavated a pristine, golden, gate, barring the way to an ancient structure. Around the gate, the scattered bodies of the excavators suggest this was their last discovery before they became the bones decorating the halls of the &lt;b&gt;Necropolis.&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_halls_1_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;At the centre of &lt;b&gt;Anankis&lt;/b&gt; a catalyst hums. The most extraordinary feats of Creation would have been impossible without these catalysts; the &lt;b&gt;Primordials&lt;/b&gt; wielded their power to perform their greatest deeds. It may be this power that the &lt;b&gt;Sleeper&lt;/b&gt; seeks.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_halls_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The &lt;b&gt;Primordial Guardians&lt;/b&gt; protect &lt;b&gt;Anankis&lt;/b&gt;, ever diligent despite the disappearance of their &lt;b&gt;Primordial&lt;/b&gt; masters. They are all that remain of Anankis’ history, and without them, all knowledge regarding the catalysts and their function will be lost. Now, the &lt;b&gt;Cult of the Sleeper&lt;/b&gt; threatens to erase them.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_core_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;Primordial&lt;/b&gt; catalysts were designed to channel faith to the centre of the superstructure that connects them. The &lt;b&gt;Cult of the Sleeper&lt;/b&gt; have twisted its purpose, siphoning fear from the surface to fuel the catalyst and their nefarious ambitions.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_core_overlook_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The soul magic that pervades the &lt;b&gt;Necropolis&lt;/b&gt; is the &lt;b&gt;Cult of the Sleeper's&lt;/b&gt; work. The procession passed through here on their way to the &lt;b&gt;Halls of Anankis&lt;/b&gt;, where their ultimate objective lay. The shards of ice are the residue left behind by their magic.&lt;/Font&gt; </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_halls_3_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The catalyst in &lt;b&gt;Anankis&lt;/b&gt; emanates a radiant aura of &lt;b&gt;Primordial&lt;/b&gt; energy. The power of &lt;b&gt;Creation&lt;/b&gt;. All humans have come from this source, and all of them hold a slice of its power in their hearts. This connection draws them to these auras, giving rise to settlements that thrive in their glow.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_act_1_anankis_core_overlook_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The &lt;b&gt;Anankis&lt;/b&gt; catalyst has exceeded its power threshold, causing the soul surges around &lt;b&gt;Stormfall&lt;/b&gt;. The surges create a feedback loop; the fear they generate is absorbed by the catalyst, fuelling its power until it reaches another threshold. Unless this loop can be interrupted, &lt;b&gt;Stormfall&lt;/b&gt; will fall. The &lt;b&gt;Cult of the Sleeper&lt;/b&gt; protects &lt;b&gt;Anankis’&lt;/b&gt; core, determined despite the loss of &lt;b&gt;Yudaï&lt;/b&gt;.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Act 1 World Map Lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_coast_of_wrecks_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Merchants around the world go to great lengths avoiding the Sea of Torment. But if they find themselves needing a crew to sail it, we’re the ones they turn to. We know its treacherous waters better than anyone.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Sataë, 12th Captain of Stormfall’s Merchant Fleet&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_highlands_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;I lost my mother in the crowd that amassed before the city gates. I saw her pushed into a stream of panicked refugees forcing their way into the city. When I reached the gates, the guards were ordered to close them in front of us. Now we have resigned ourselves to our fate: death in the crossfire.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Ebira, Stormfall Refugee&lt;/b&gt; &lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_stormfall_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Closing the gates on my people was by far the hardest decision I have ever made. We allowed as many as we could behind the walls, but now the lower rings are packed with refugees… we will soon have famine and disease to contend with. Letting any more of them inside would tear apart the city. &lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Merchant-Prince Damaskus of Stormfall, Keeper of the Sea Jewel&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_stormfall_farmlands_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The Merchant-Prince has rented out our war fleet and none of us know where to. He must be receiving a lot of coin for their services, but without them we are ill-equipped to fight the Svriir at our gates! Conscripts are not enough; we need real soldiers!&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Sandor, Thunderblade of Stormfall&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_svriir_network_1_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;When Svriir eggs hatch, the Svriirlings that emerge are physiologically identical. Only once the hive has assigned them their role do they mutate into something more useful. Simply put, they are the most adaptable creatures I have ever studied. I would not be surprised if we started to see more variants soon.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Achemid, Advisor of Merchant-Prince Damaskus on the Svriir crisis&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_svriir_tributes_storage_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Omega males are cowardly creatures; you’ll rarely find them leading the charge. They hunt in groups for baubles and trinkets to give as tribute to the hive’s beta females. If a tribute is accepted, the females will spit some sort of mucus onto their chosen omega. The dominating theory is that it contains mutagens, causing further mutations amongst the omegas so that they become unique beta males, rising in the hierarchy of Svriir society.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Achemid, Advisor of Merchant-Prince Damaskus on the Svriirs crisis&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_svriir_network_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The Svriir are highly intelligent, social creatures; far more than the mindless beasts we perceive them to be. They have hierarchies, practice modesty, and have established norms regarding courtship. Perhaps by studying this behaviour, we could find a way to undermine their expansion efforts.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Achemid, Advisor of Merchant-Prince Damaskus on the Svriir crisis&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_flayer_outpost_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The Flayers used the chaos of the Svriir crisis to raid the farmlands. Now they’re the ones being raided by these souls. I’m enjoying the irony. Maybe some of those souls are the innocents they slaughtered, taking their revenge. Who knows?&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Edric, Veteran Purifier of the Republic&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_ravaged_camp_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;&lt;b&gt;Crimson Keep&lt;/b&gt; has been lost to the occult corruption of the &lt;b&gt;Brotherhood of Dawn&lt;/b&gt;.&lt;br/&gt;&lt;br/&gt;We shall not be tarnished.&lt;br/&gt;We shall not stand down.&lt;br/&gt;&lt;br/&gt;An army of &lt;b&gt;Purifiers&lt;/b&gt; is to be sent North to retake what is ours.&lt;br/&gt;All known locations of the &lt;b&gt;Brotherhood of Dawn&lt;/b&gt; are to be attacked in retaliation and purified at once.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Edict 3.3.3.4.6. from the United Republic of Mankind’s Senate&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_green_bluffs_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;It used to be a place for romantic ballads and weddings. But with recent events, I start to realize: should we survive, there won’t be any celebration for my people, only grief and sorrow.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Merchant-Prince Damaskus of Stormfall, Keeper of the Sea Jewel&lt;/b&gt; &lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_smuggler_path_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Thunderblade Odao asked the Merchant-Prince to blow up the caves below Stormfall. He wanted to destroy the black market undermining our economy. I had to step in to explain that doing so would cause the entire city to collapse on itself. He hasn't spoken to me since.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Lord Arkan, Engineering Counsellor in Merchant-Prince Damaskus’s court&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_necropolis_1_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;We tracked the Cult of the Sleeper’s procession to the Necropolis. Apparently, they were already aware of its existence and location. I’m concerned that this means they are led by a supernatural being, from another time. May the Searing Song protect us all.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Calahad, Aurora Knight of the Brotherhood of Dawn&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_necropolis_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;There are Necropoles buried all across the four realms. They share an identical iconography, and all have been found to preserve human bones on a similar scale to each other. One wonders what series of events led to such a mass extermination of human life.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Xil’Sarei, famous historian&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_necropolis_3_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;We humans forget our history. We forget the rise and fall of past civilizations, and doom ourselves to make the same mistakes. We drown in our petty squabbles when there is so much more at stake. But don’t fret. The Sleeper is here to guide us, to turn our gaze to the glorious shared future that awaits us all.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Vhegguad, Seal of Anankis&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_gates_of_anankis_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The power of Anankis slumbers, all but forgotten. But the Sleeper remembers. He knew of its location and shared it with me. I will bend this catalyst to our cause – harness its power to fuel his ambitions.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Yudaï, Whisper of Anameterassü&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_halls_1_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The earthquakes and soul surges are spreading. We were barely coping with the Svriir, and now this… Our citizens are losing hope. They talk about their options: they can leave and be torn apart by &lt;b&gt;Flayers&lt;/b&gt; and souls, or stay here, and wait for the Svriir to breach the city walls. Either way, all that awaits them is death.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Faärad, Thunderblade of Stormfall&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_halls_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The dissident Primordials betrayed Creation, but they were outmatched by their loyalist kin. During their banishment to the Abyss they became Abbathus, discovering that fear generated more faith from their followers than other emotions. They reaped this faith, its twisted source reflecting their own twisted ambitions.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Mizzeonth, Primordial Guardian of Anankis&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_core_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;A new era awaits. One without Primordials. It will be an era of peace, free of the trivial conflicts that have always plagued Creation. The Covenant of the Blind will provide.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Yudaï, Whisper of Anameterassü&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_core_overlook_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;It is my divine duty to fight. As long as I am able, I shall be a shackle on the Abbathus’ greed. I will be the guiding hand, leading humanity to its survival.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Mizzeonth, Primordial Guardian&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_halls_3_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Humans dream of the day their benevolent creators return. I cannot fathom why. If their Primordial benefactors were so benevolent, then this structure would hardly gorge itself on their fear now, would it?&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Yudaï, Whisper of Anameterassü&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_act_1_anankis_core_overlook_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The faith reaped by fear is unparalleled. Once you have felt its power, nothing else can match it. Stormfall will quake with fear, and we will be sure to feed upon it.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Yudaï, Whisper of Anameterassü&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Act 1 Area Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_1_farmstead_hornet_lair_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Wedding Circle</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_anankis_core_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Anankis' Core</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_republic_camp_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Republican Camp Outskirts</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_tavern_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Stormfall - The Laughing Sea Gal</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_palace_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Stormfall - Palace</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_act_1_sirkiss_lair_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Sirkis's Lair</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act1_republic_camp_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Purifiers Warcamp Outskirt</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Act 2 World Map Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Galathä Vales</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_VOS1_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Shadaron Forest</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_VOS2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Helmshire</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_stormfall_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Stormfall - Palace District</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_InnerSanctum_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Sanctum of Hope</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_WarlordLair_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Galathä Lake</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_TemplarCamp_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Daybreakers Breached Fort</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_PSOverlook_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Corrupted Catalyst Overlook</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_FleshForest1_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Flesh Frontier</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_FleshForest2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Flesh Forest</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_FleshCity_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Cordanon's Outskirts</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_TempleOfJustice_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Vault of Hope</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_IncubationChamber1_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Incubation Chambers 1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_IncubationChamber2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Incubation Chambers 2</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_SvriirCave_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Echoing Path</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_ICWaypointArea_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Experimentation Room</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_TemplarCampExterior_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Daybreakers' Valley</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_Flesh_City_Inner_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Cordanon</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Act 2 Area Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_VOS2_HiddenBossSpot_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Helmshire's Townhall</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_2_LambachP1Arena_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Genesis</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Act 2 World Map Desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_vos_1_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;Totems and corpses litter the &lt;b&gt;Jackals of Dusk’s&lt;/b&gt; stronghold, where human offerings are used to empower the darkest shadow magic. Roars and screams are heard echoing in the distance from &lt;b&gt;Mercy&lt;/b&gt;’s barbaric arena, where hopefuls fight to the death for a chance at wealth and glory.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_vos_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;This once-quaint township, famed for its woodworking, now stands as a base of operations for a nefarious cult of necromancers. The &lt;b&gt;Galathä River&lt;/b&gt; no longer flows and the land lies damp, punctuated with the debris of a decaying army.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_Stormfall_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;As a mysterious mist envelops the lower rings of &lt;b&gt;Stormfall&lt;/b&gt;, citizens and refugees alike are fearful and desperate. But the gates to the upper ring remain closed. Nobles secure their wealth as unrest threatens to turn into chaos.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_inner_sanctum_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The Vault of Hope’s inner sanctum houses a piece of the &lt;b&gt;Helion&lt;/b&gt;, a legendary weapon that summons the power of &lt;b&gt;Anathëa, Lady of Dawn&lt;/b&gt;. Adorned with other religious iconography, this chamber has hosted the most important ceremonies conducted by the &lt;b&gt;Brotherhood of Dawn&lt;/b&gt;.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_warlord_lair_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The &lt;b&gt;Jackals of Dusk&lt;/b&gt; settled here after being exiled from &lt;b&gt;C’tul&lt;/b&gt;. Verdant and green, the settlement is situated over a river. Rudimentary houses are poised on stilts, built into the canopy of the forest. Slave cages litter the area, mostly empty after lucrative dealings with the &lt;b&gt;Cult of the Sleeper&lt;/b&gt;.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_templar_camp_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;A makeshift Brotherhood camp outside the devastated &lt;b&gt;Vault of Hope&lt;/b&gt;. Here, survivors of the &lt;b&gt;Cult of the Sleeper’s&lt;/b&gt; ambush regain their strength. Hierophants are healing injured knights while those still standing clear the remaining undead from the area.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_ps_overlook_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;This &lt;b&gt;Primordial&lt;/b&gt; structure that once sustained the Primordials now feeds the &lt;b&gt;Covenant of the Blind&lt;/b&gt; and their Abbathus lords. As they grow in power, hope slips further and further away from humanity’s grasp.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_flesh_forest_1_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;On the fringes of flesh’s domain, the corruption creeps through the ancient forest on the outskirts of &lt;b&gt;Cordanon&lt;/b&gt;. Blades of grass grow veins and trees fester with boils, converting the land into a corpulent, red hellscape.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_flesh_forest_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The fleshy foliage is thick here, the organic corruption almost fully complete; pools of tainted water, fruit that bleeds to the touch. A once-busy thoroughfare that connects &lt;b&gt;Cordanon&lt;/b&gt; to the rest of the continent now lies unused, covered in a layer of dust.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_LambachP1Arena_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;Where it all started, the original summoning circle that brought &lt;b&gt;Lambach&lt;/b&gt; into the mortal plane, now a chasm of pulsating sinew. While expanding their empire of corrupted flesh, &lt;b&gt;Lambach&lt;/b&gt; changed forms multiple times, each iteration more gruesome and deadly than the last.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_flesh_city_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;A near-silent city, corrupted by flesh and inhabited by a single lifeform, the &lt;b&gt;Lambach&lt;/b&gt;. Veins run down the buildings, weeds are blood red, denizens of the flesh file through the streets to push the frontier of corruption.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_temple_of_justice_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;A remarkable temple, the &lt;b&gt;Vault of Hope&lt;/b&gt; was built by the &lt;b&gt;Brotherhood of Dawn&lt;/b&gt; to house a piece of the &lt;b&gt;Helion&lt;/b&gt;. Now it is plagued with an army of the dead, its sacraments defiled by the unsavoury magic of the &lt;b&gt;Cult of the Sleeper&lt;/b&gt;.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_incubation_chamber_1_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;Fleshy creatures pour from the walls, created from the recycled flesh of &lt;b&gt;Cordanon&lt;/b&gt;’s people. Failed experiments lie here, festering and decomposing. The walls pulsate and groan like machinery, manufacturing an unending flood of twisted monsters.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_incubation_chamber_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;Failed clones of &lt;b&gt;Valeria&lt;/b&gt; line the walls of this underground chamber. An oozing, putrid workshop, the smell of forged flesh dominates the atmosphere; fresh tests spawn out of the walls and collapse in pain on the meaty floor.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_svriir_cave_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;This cavern remains relatively unaffected by the corruption of flesh, providing temporary refuge from the &lt;b&gt;Lambach&lt;/b&gt;. Creatures untainted by flesh’s corruption seek refuge here, but their assimilation is inevitable.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_incubation_chamber_waypoint_area_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;A twisted laboratory, here the &lt;b&gt;Lambach&lt;/b&gt; builds its latest fetid creations. The walls are littered with failures, hybrid animals that never took a second breath, deformed abominations and clones of “interesting specimens.”&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_templar_camp_exterior_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;An undead horde has swept through this land, ambushing the &lt;b&gt;Brotherhood of Dawn&lt;/b&gt; in the process. Now, reanimated bodies of the holy warriors wander this blood-soaked earth alongside their assailants.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Act 2 World Map Lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_vos_1_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;A slave for every victory! Who’s next to face my champions? Strike true, or you’ll beg for mercy from Mer– oh, who cares? Just start fighting already.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Mercy, Dark Paragon of the Jackals of Dusk&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_vos_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;I think of myself as a benefactor: humans are cattle, herded by tyrants and put to work until the day they die. By gifting them with undeath, I free them of their mortal obligations.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Nerukaï, Demon of Souls&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_Stormfall_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;One must feel for the peasants as they flock desperately to our homes in the upper ring. However, to let them enter would doom the entire city. It is better for us to survive than no-one at all.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Salomë Vengd of House Streamrunner&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_inner_sanctum_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;If you understood what the Helion was, you would not be so flippant about your guard duties. That spear once summoned the Lady of Dawn Herself! It cannot fall into the wrong hands.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Gernese, Eos of the Brotherhood of Dawn&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_warlord_lair_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;It was childishly simple for me to borrow the power of Shadow: one must only sacrifice a worshipper to the lost Primordial Moros. In this world full of traitors and heretics, there’s no lack of suitable subjects.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Janaris, Emissary of the Sleeper&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_templar_camp_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The Vault of Hope has fallen, but the message it carried lives within us: there is a future for the Brotherhood. We must make camp and rest if we hope to meet that future at full strength.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Gernese, Eos of the Brotherhood of Dawn&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_ps_overlook_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Cooperation is a virtue; we should know. Every individual that joins us finds a purpose. And soon, they will find Him too: Ashtaroth. With Him, we will merge into our full body. With Him, we will have our full mind.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;The Lambach&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_flesh_forest_1_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Of course they rushed into danger. They had the Helion on their side. Why fear the woods? Poor fools. What if some part of them’s still alive, somewhere inside that abomination?&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Ilan, Aurora Knight&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_flesh_forest_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;When I got off my horse, I saw her hooves were covered in blood. I searched the soil: no body. It was the earth that was bleeding. Cordanon is my biggest market, but I’m not going back there for any price.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Olyffe Theobor, Travelling Merchant&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_LambachP1Arena_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;We treasure the mortal idea of self-improvement. Our own form will improve until it becomes unstoppable. We will be Ashtaroth’s ultimate champion.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;The Lambach&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_flesh_city_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;There was a kind of illness going ’round. Bulging veins, reddish eyes, swelling necks. The sick’d leave their beds at night and vanish into the fields for hours. Glad I got out while I could.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Robin, migrant from Cordanon&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_temple_of_justice_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;We were not only the guardians of humanity, but the watch people of Our Lady. We keep Her tenets intact within our Vaults. In thanks, She blesses our rituals and shares Her power.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Lucinda, Hierophant of the Searing Song&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_incubation_chamber_1_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The Cult of the Aberrant is known to treat human flesh as a raw material. Worshippers undergo extensive body modifications, or even donate their bodies to build new creations. During the disaster of Fellerton, they harvested unconsenting individuals for the very first time, and have continued since.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Xil’Sarei, famous historian&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_incubation_chamber_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;We must not overlook this one. Oh, the things we could do with her. Her fierce disposition, her unbreakable will; she will enrich us, and we will enrich her.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;The Lambach&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_svriir_cave_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;There was an earthquake. The ground cracked. Then, it happened. Canopies of meat stretched over the streets. Our own neighbours were cutting us down and feeding us to that thing. I hid until the screams stopped. Oh, don’t look at me like that. What else could I have done?&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Carmine, refugee from Cordanon&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_incubation_chamber_waypoint_area_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;We intend to create a world of perfect beings. That does not mean we demand conformity. When one integrates unique and improbable humans to the greater whole, the reaction can be most fascinating.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;The Lambach&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ui_act_2_templar_camp_exterior_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;My tribe was swayed by the call of demon tamers and corpse stalkers. They forgot the old ways: honouring the spirits, communing with the dusk, consecrating slain beasts as was done in C’tul. I will restore these traditions.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Zima, She Who Ferries The Lost&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Act 3 World Map Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Exiles Septentrional Wasteland</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_BattlefieldOverlook_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Battlefield Overlook</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_CoreOverlook_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Conflux</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_dawn_gate_hall_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Vault of Truth's Dawngate</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_elevator_platform_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Conflux</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Monolith1_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Monolith - Lower Halls</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Monolith2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Monolith - Upper Halls</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_monolith_gate_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Monolith's Gate</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Nowhere_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Dawn's Crest Camp</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_rempart_1_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Cell-H Ramparts</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_tower_transition_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Eastern Tower</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_stronghold_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Geothermal Plant</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_rempart_2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Cell-F Ramparts</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Redwaste1_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Red Wastes</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Redwaste2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Republican Backline</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_republican_trench_warfare_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Cell-H</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_stormfall_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Stormfall - Palace District</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_tower_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Western Tower</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Tower_2_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Western Tower 1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Tower_3_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Western Tower 2</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Tower_4_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Western Tower 3</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Tower_5_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Western Tower 4</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Tower_6_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Western Tower 5</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_Tower_7_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Western Tower's Machinery</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_RampartGatePlatform_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Western Tower's Top</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Act 3 Area Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_palace_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Stormfall - Palace</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_TempleOfSerenity_WingOfFaith_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Wing of Faith</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_TempleOfSerenity_WingOfWar_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Wing of Light</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_InnerSanctum_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Sanctum of Truth</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_HeimlockArena_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Fury's Ascent Ritual</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_VaultOfTruthOverlook_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Vault of Truth Overlook</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_RepublicanTrenchWarfare_HiddenBossSpot_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Purifiers Camp Outskirts</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s88"><Data ss:Type="String">Act 3 World Map Desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s40"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_stormfall_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;Far gone is the &lt;b&gt;Jewel of the Sea’s&lt;/b&gt; splendour. The filtered lanterns that lit the streets are now replaced by ghostly orbs of light in the fog. They murmur, insinuate, spark paranoia in those who will listen. The noble circles are frozen over with the same terror as every other borough.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_nowhere_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;When the &lt;b&gt;Kingdom of Alia&lt;/b&gt; fell, becoming the United Republic of Mankind, the &lt;b&gt;Brotherhood of Dawn&lt;/b&gt; fled Republican persecution. They were forced into an underground existence both literal and figurative. Networks of subterranean havens sprouted all over Wolcen, including below the &lt;b&gt;Vault of Truth&lt;/b&gt;.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_dawn_gate_hall_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The Brotherhood of Dawn built this temple to contain the Helion. The alarm system releases clots of yellow smoke, delivering a singular message: the &lt;b&gt;Vault of Truth&lt;/b&gt; has been breached. The &lt;b&gt;Covenant of the Blind&lt;/b&gt; is here.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_temple_1_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The Dawngate doesn’t open for just anyone. In the wing dedicated to light, devotees of &lt;b&gt;Anathëa&lt;/b&gt; must find clarity and purpose. Before they’re able to wield the dawn in battle, they must fully comprehend its power through meditation and ritual.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_temple_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;Until a few weeks ago, the faithful came to this wing to find conviction in the darkest of days. Now, the halls lie deserted, theology books hastily abandoned by the Brotherhood Hierophants. Steel hearted men once walked here, now wandering as thralls of Fury.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_redwaste_1_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The &lt;b&gt;Southern Red Wastes&lt;/b&gt; crawl with the bones of foolhardy explorers, insectoid monsters, and a stubborn &lt;b&gt;Svriir&lt;/b&gt; population. But anyone fighting through the beasts can look up and glimpse the frozen plains of the north, and recall that a far more lifeless terrain lies close by.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_battlefield_overlook_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The Republic’s usual strategy is to divide the battlefield into a grid, coldly assigning forces from cell to cell. Today, because of the two-pronged attack of the Purifiers and the Instigators, that strategy falters like it has never done before.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_redwaste_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;A bloody waltz has consolidated at the heart of the battle. The &lt;b&gt;Purifier&lt;/b&gt; forces dance back as the &lt;b&gt;Instigators&lt;/b&gt; pacify their men, and stop at the end of a supply line from Republic territory. The Senate feeds the fight with wrought steel and Federator cannons, which maintain a steady fire on the keep.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_republican_trench_warfare_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The smell of blood and sulphur imbues every grain of sand. The &lt;b&gt;Purifiers&lt;/b&gt; who don’t fall in line with the forces of Fury are torn through with cauterized wounds. Pacified units approach their unsuspecting fellows, and spread the curse of the &lt;b&gt;Blind Prince&lt;/b&gt;.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_rempart_1_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;Most would consider Crimson Keep’s location a nightmare; arid, hostile, and distant from any trading posts. But the Keep never was concerned with the outside world. It pulls inwards by some inexplicable gravity, containing something which defies containment.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_tower_transition_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;As Fury’s Ascent drives relentlessly onward, the elevator mechanism in the Eastern Tower groans. The metal expands with the heat of rising magma. As temperatures climb, it becomes inevitable: one day the chains will melt away, and when they do, Crimson Keep will be lost completely.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_stronghold_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;Crimson Keep&lt;/b&gt;’s generators are powered with geothermal energy. Sharp rises in seismic activity have made the plant increasingly volatile. A recent eruption of hot magma eroded the structure’s integrity, and as engineers struggled to make increasingly unrealistic repairs, &lt;i&gt;they&lt;/i&gt; arrived: Fury.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_rempart_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The Republic never intended to build &lt;b&gt;Crimson Keep&lt;/b&gt;. In the desert, they encountered the &lt;b&gt;Monolith&lt;/b&gt;, a strange construct which seemed to emanate the power of Fury. First, they attempted to destroy it, testing all manner of conventional weapons. When all failed, they chose to quarantine the artefact.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_tower_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;The lock mechanism barring the &lt;b&gt;Monolith&lt;/b&gt; prevents anything from coming out. The Republicans neglected anything that might come in. The &lt;b&gt;Brotherhood of Dawn&lt;/b&gt; entered, attempting to study the facility, just as Fury demons began pouring into &lt;b&gt;Crimson Keep&lt;/b&gt;. This fateful coincidence would define the conflict at hand.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_monolith_gate_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;This bridge is the only way in or out of the &lt;b&gt;Monolith&lt;/b&gt;’s enclave. Access is highly restricted. Only a few Republican scholars come in, seeking ways to destroy the artefact. Little progress has been made, but one discovery haunts their research: the structure had lain for aeons under the sand, waiting to be found.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_monolith_1_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;Pristine concentric vistas dominate the interior of the &lt;b&gt;Monolith&lt;/b&gt;. All this combination of movement serves an arcane purpose: processing and focusing the power of faith. A soundless wave beats at the inner ear while the wheels turn: the &lt;b&gt;Abyss&lt;/b&gt; knocking at the fabric of the world.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_monolith_2_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;A conflux of energy rages at the summit of the &lt;b&gt;Monolith&lt;/b&gt;, and every step closer brings a sense of dread. Something akin to thunderclaps resounds from the structure’s heights, snuffing out all sound for a moment. Apparitions shift right below the skin of the guests in faint iridescent light.&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_elevator_platform_desc</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;18&quot; Color=&quot;#FFFFFF&quot;&gt;Three beams scorch a path through the earth, finding their origin in &lt;b&gt;Cordanon&lt;/b&gt;, &lt;b&gt;Gehenna&lt;/b&gt;, and &lt;b&gt;Stormfall&lt;/b&gt;. They converge here; the energy and fear of thousands, fed to the &lt;b&gt;Monolith&lt;/b&gt;. Its appetite is nearly satisfied, and the world waits. &lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s88"><Data ss:Type="String">Act 3 World Map Lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s40"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_stormfall_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;I can’t explain these seizures. A few of my patients have demonstrated such symptoms before; eyes rolling back, a pale sheen over their face, convulsing muscles. But there’s something different. A single word can’t do it justice: a single spark of electricity from their skin to mine, a whisper that seems to disappear before I can truly hear it. Am I touched with some dark spirit? Should I stay away from my own children when they need me most dearly?&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Artemy Beckraft, Physician&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_nowhere_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Take these bindings off me! Pacified or not, we need to go back for the others. We swore an oath, didn’t we? Brothers and Sisters, till the sun bleaches our bones!&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Imogen, Initiate of the Brotherhood of Dawn&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_dawn_gate_hall_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;I offer peace to the Dawn worshippers, and they respond by sealing the door to their &lt;b&gt;Inner Sanctum&lt;/b&gt;. Come now, if their Lady shines so bright, my presence won’t obscure Her.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Sinadrahel, Herald of the Blind Prince&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_temple_1_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Our fallen warriors sleep within that hall. To think of their tombs being desecrated by our own men is intolerable. We must act fast to preserve our Brothers’ legacy.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Gernese, Eos of the Brotherhood of Dawn&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_temple_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;A Brother of Dawn’s education is erudite. We do not place a sword in the hand of any tempestuous child. First, we quiet the whirlwind within their hearts, so they might see a way forward without bloodshed. Before they wield our spears, they must sing our songs.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Lucinda, Hierophant of the Searing Song&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_redwaste_1_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Archion has an entire economy founded on guides to the &lt;b&gt;Northern Red Wastes&lt;/b&gt;. They claim us, the &lt;b&gt;Departed Rangers&lt;/b&gt;, as their sources. Rubbish. Three of us left for that frontier. I was the only one to make it halfway. If I couldn’t make it, no one did.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Djohariah, Ranger of The Departed&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_battlefield_overlook_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Retreat now? While the demons sleepwalk on the battlefield? I’d rather hand my resignation to the Inquisitor in person. Victory is at hand. Keep at them!&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Talrog, Justicar of the Purifier Army&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_redwaste_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;I have gone through our inventory, I have placed every order we could possibly need, but none of this will help if we don’t have the forces to defend our camp. We’re fighting on two fronts, and no weaponry is going to change that. If we don’t get reinforcements by tomorrow, this fight is over.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Gerta Hollis, Logistics Officer in the Purifier Army&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_republican_trench_warfare_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Keep your bandages. You might be one of them. I’d rather bleed out here than let them take me. Leave me to die! And if you are who you seem… then tell Ithra I’m sorry.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Nameless Soldier of the Purifier Army&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_rempart_1_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Events like those at &lt;b&gt;Crimson Keep&lt;/b&gt; may teach us a lesson: that our greatest weakness lies in the evils we must tolerate. The diseases we quarantine, rather than exterminate, are those that will infect us in the end.&lt;/i&gt;&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Johan Bereich, Senator of the United Republic of Mankind&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_tower_transition_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The mechanism can’t take much more of this heat. The more it expands, the harder it will be to operate the elevator. Should it fail, the keep will be cut off from reinforcements, and if that happens… well, if that happens then there will be no hope for us at all…&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Argon Valkner, Republican Engineer&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_stronghold_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;How did we miss this? Where were the signs? Now magma rains on the Keep, destroying everything we’ve worked so tirelessly to build. But we cannot stop. If the plant’s generators fail, the Keep will fall apart. That cannot happen. The stakes are too great. We must keep going, work harder. There is nothing else.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Argon Valkner, Republican Engineer&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_rempart_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The Senate is unsatisfied with the Purifiers’ progress. If Grand Inquisitor Otranto is unable to destroy the &lt;b&gt;Monolith&lt;/b&gt;, then the Senate will assign a new expert.\n\nWe will dispatch our demonologists to the &lt;b&gt;Red Wastes&lt;/b&gt; to begin plans for containment.\n\nWe shall make no concessions to heresy.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Edict 3.3.3.6.7. from the United Republic of Mankind’s Senate&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_tower_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;The &lt;b&gt;Crimson Keep&lt;/b&gt; was built with a spine, veins, and nerves. The electrified traction system is a living core, meant to hold unspeakable evil inside.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Argon Valkner, Republican Engineer&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_monolith_gate_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;We were hoping to study the &lt;b&gt;Monolith&lt;/b&gt; and finish what the Purifiers had started. All the evidence indicated that this was a structure far more ancient than even the Helion fragments. We might have clarified all this, were it not for the Republic’s pride.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Calahad, Aurora Knight of the Brotherhood of Dawn&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_monolith_1_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Make no mistake. We may protect the Primordial structures, but we also protect you &lt;i&gt;from&lt;/i&gt; them.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt;&lt;b&gt;Anasareth, Primordial Guardian&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_monolith_2_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;Question the Primordials however much you like, but you have reaped the bulk of their gifts. We Guardians sacrifice our lives to thankless service, but never doubt for even a moment.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Anasareth, Primordial Guardian&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_act_3_elevator_platform_lore</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">&lt;Font Size=&quot;15&quot; Color=&quot;#E6C138&quot;&gt;“&lt;i&gt;For a time, I believed &lt;b&gt;Anathëa&lt;/b&gt; abandoned us. Now, I realize it does not matter.  She could not help us if She wanted to. If the &lt;b&gt;Daybreakers&lt;/b&gt; wish to prove me wrong, let them try. That is a battle I hope to lose.&lt;/i&gt;”&lt;/Font&gt;&lt;br/&gt;&lt;br/&gt;&lt;Font Size=&quot;17&quot; Color=&quot;#E6C138&quot;&gt; &lt;b&gt;Heimlock, Grand Inquisitor of the Purifiers&lt;/b&gt;&lt;/Font&gt;</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Endgame areas</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_TPS_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Halls of Anankis</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_TempleTemplar_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Daybreakers' Hold</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_TempleFlesh_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Cordanon's Dawn Chapel</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_TempleDesert_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Daybreakers' Abandoned Shrine</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_Svriir_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Svriir Hivecluster</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_SoulCave_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Caves of the Sleeper</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_RedWasteRepublic_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Republican Territory - Southern Red Wastes</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_RedWaste_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Southern Red Wastes</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_PPS_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Primordial Catalyst</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_NecropolisMossy_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Breached Urhan Necropolis</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_NecropolisImpaled_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Defiled Urhan Necropolis</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_Necropolis_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Urhan Necropolis</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_IncubationChamber_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Remains of the Lambach</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_GenericCave_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Caverns Network</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_ForestGore_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Woods of the Defiler</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_ForestAutumn_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Republican Forest</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_Stronghold_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Crimson Keep</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_Wetlands_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">The Sunken Lands</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_Swamp_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">The Garadalug Bowels</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_Forest_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Green Bluffs - Deep Thicket</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_PPSSvriir_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Infested Primordial Catalyst</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_PPSFlesh_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Aberrant Halls of Adrastis</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_ForestSvriir_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Infested Adrigion Woodlands</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_ForestFlesh_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Aberrant Bluffs</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_SwampSvriir_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Infested Elghion Marsh</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_SwampFlesh_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Aberrant Ghastra Morass</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_WetlandFlesh_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Aberrant Marsh</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s84"><Data ss:Type="String">ui_NPC2_WetlandSvriir_Name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Infested Bog</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Secondary Areas</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s74"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Cave_Basic_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Warbler's Caverns</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Cave_Fleshed_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Blood-Curdled Grotto</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Cave_Foggy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">The Misty Hollow</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Cave_Mossy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Overgrown Subterrane</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Cave_Sandy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Parched Chasm</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Cellar_Basic_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Deserted Cellar</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Cellar_Fleshed_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Cellar of Flesh</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Cellar_Foggy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">The Whirling Basement</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Cellar_Mossy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Moulding Cellar</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Cellar_Sandy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Arid Basement</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Mine_Basic_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">The Forsaken Mines</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Mine_Fleshed_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">The Gored Pits</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Mine_Foggy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Veiled Excavation Site</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Ossuary_Basic_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Plundered Ossuary</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Ossuary_Foggy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Muted Undercroft</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Ossuary_Sandy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Desolate Crypt</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_PPS_Basic_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Primordial Superstructure </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_WRepu_Basic_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Republican Warehouse</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_TemplarWarehouse_Basic_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Brotherhood Storerooms</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_TemplarWarehouse_Fleshed_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Infested Brotherhood Storerooms</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_TemplarWarehouse_Foggy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Dawn-starved Warehouse</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_TemplarWarehouse_Sandy_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Barren Brotherhood Storerooms</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_TPS_Basic_name</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Tainted Primordial Superstructure </Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">ui_SecondaryArea_Canyon_Basic_name</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Fallen Citadel</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="57"/>
+   <Row ss:Index="462" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="466" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="78"/>
+   <Row ss:Index="545" ss:AutoFitHeight="0" ss:Height="18"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="550" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="553" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="557" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="560" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="564" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="567" ss:AutoFitHeight="0" ss:Height="15" ss:Span="13"/>
+   <Row ss:Index="581" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="51"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:Span="1"/>
+   <Row ss:Index="586" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="590" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="594" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="63.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="47.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="51"/>
+   <Row ss:AutoFitHeight="0" ss:Height="45"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="603" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="606" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="610" ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="75.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="85.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="624" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="626" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="633" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="4"/>
+   <Row ss:Index="638" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="642" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="3"/>
+   <Row ss:Index="646" ss:AutoFitHeight="0" ss:Height="15" ss:Span="1"/>
+   <Row ss:Index="648" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="2"/>
+   <Row ss:Index="651" ss:AutoFitHeight="0" ss:Height="15" ss:Span="3"/>
+   <Row ss:Index="655" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="657" ss:AutoFitHeight="0" ss:Height="15"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:Span="1"/>
+   <Row ss:Index="661" ss:AutoFitHeight="0" ss:Height="15" ss:Span="2"/>
+   <Row ss:Index="664" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="6"/>
+   <Row ss:Index="671" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="1"/>
+   <Row ss:Index="674" ss:AutoFitHeight="0" ss:Height="38.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="25.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:Span="6"/>
+   <Row ss:Index="683" ss:AutoFitHeight="0" ss:Height="25.5" ss:Span="6"/>
+   <Row ss:Index="690" ss:AutoFitHeight="0" ss:Height="15" ss:Span="73"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.51181102362204722"
+     x:Data="&amp;LTime restriction sample script"/>
+    <Footer x:Margin="0.51181102362204722" x:Data="Page &amp;P"/>
+    <PageMargins x:Bottom="0.98425196850393704" x:Left="0" x:Right="0"
+     x:Top="0.98425196850393704"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>70</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>40</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>64</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <AutoFilter x:Range="R1C1:R370C2"
+   xmlns="urn:schemas-microsoft-com:office:excel">
+  </AutoFilter>
+ </Worksheet>
+</Workbook>

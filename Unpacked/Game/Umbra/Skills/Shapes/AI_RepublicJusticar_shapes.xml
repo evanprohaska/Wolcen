@@ -1,0 +1,97 @@
+<MetaData>
+  <Shape ID="RepublicJusticar01_DefaultAttackShape" Type="Cone">
+    <Data Radius="5" Angle="50" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar01_RangedAttackShape" Type="Cone">
+    <Data Radius="11" Angle="90" BoundingBoxHeight="2" />
+    <Position ForwardOffset="2" RightOffset="0.7" StartingAngle="0" />
+  </Shape>
+  <Shape ID="RepublicJusticar02_DefaultAttackShape" Type="Cone">
+    <Data Radius="5" Angle="100" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_DefaultAttackShape" Type="Cone">
+    <Data Radius="5" Angle="120" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar01_ShieldBash" Type="Rectangle">
+    <Data Length="7" Width="3" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar01_InexorableAdvance" Type="Cone">
+    <Data Radius="2" Angle="180" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar01_InexorableCharge" Type="Circle">
+    <Data Radius="2" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar01_RepeatingShots_ExclusionZone" Type="Trapezium">
+    <Position ForwardOffset="0.75" RightOffset="-0.35" />
+    <Data Height="1.5" Top="4" Bottom="2" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar02_ChargeBurst_Charge" Type="Circle">
+    <Data Radius="2" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar02_ChargeBurst_Swipe" Type="Arc">
+    <Data RadiusIn="2" RadiusOut="5" Angle="180" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="RepublicJusticar02_BumpShotCombo_Punch" Type="Rectangle">
+    <Data Length="7" Width="3" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar02_BumpShotCombo_Shotgun" Type="Arc">
+    <Data RadiusIn="2" RadiusOut="8" Angle="90" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="RepublicJusticar02_MeleeShotgunCombo_Shotgun_01" Type="Arc">
+    <Data RadiusIn="1" RadiusOut="6" Angle="90" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="RepublicJusticar02_MeleeShotgunCombo_Shotgun_02" Type="Arc">
+    <Data RadiusIn="6" RadiusOut="12" Angle="90" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="RepublicJusticar02_MeleeShotgunCombo_Shotgun_03" Type="Arc">
+    <Data RadiusIn="12" RadiusOut="18" Angle="90" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="RepublicJusticar02_MeleeShotgunCombo_Shotgun_04" Type="Arc">
+    <Data RadiusIn="18" RadiusOut="24" Angle="90" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="RepublicJusticar02_MeleeShotgunCombo_Shotgun_05" Type="Arc">
+    <Data RadiusIn="24" RadiusOut="30" Angle="90" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_TourbiCharge_Charge" Type="Circle">
+    <Data Radius="3" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_TourbiCharge_Swipe" Type="Circle">
+    <Data Radius="5" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_TourbiCharge_Wave" Type="Arc">
+    <Data RadiusIn="5" RadiusOut="5.1" Angle="90" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+    <Scale Data="RadiusOut" Target="16" Duration="0.5" Delay="0" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_EnrageWarcry" Type="Circle">
+    <Data Radius="4" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_EnergyNuke_ExclusionZone" Type="Circle">
+    <Data Radius="2" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_EnergyNuke_Explosion" Type="Circle">
+    <Data Radius="4" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_EnergyNuke_FinalExplosion" Type="Circle">
+    <Data Radius="6" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_EnergyNuke_EnergyWave" Type="Ring">
+    <Data RadiusIn="5" RadiusOut="10" BoundingBoxHeight="2" />
+    <Scale Data="RadiusIn" Target="30" Duration="2.2" Delay="0.3" />
+    <Scale Data="RadiusOut" Target="35" Duration="2.2" Delay="0.3" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_ExplosiveLeap_Explosion" Type="Circle">
+    <Data Radius="4" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="RepublicJusticar03_ExplosiveLeap_Trail" Type="Circle">
+    <Data Radius="2" BoundingBoxHeight="2" />
+    <Position ForwardOffset="6" RightOffset="0" StartingAngle="0" />
+  </Shape>
+</MetaData>

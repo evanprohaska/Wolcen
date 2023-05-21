@@ -1,0 +1,13 @@
+<MetaData>
+  <Skill UID="AI_Chosen_Charger_Recall" ESkill="AI_Chosen_Charger_Recall" Keywords="magic_spell,projectile">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.0" />
+    <CastingParams />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <Projectile Name="chosen_charger_recall_projectile" ProjectileCount="1" PenetrationLimit="999" />
+    <HealthTransfer Ratio="0.1" Timer="2" Delay="0" />
+    <SkillSpecific ProjectileStartBone="Bip01 Spine3" ProjectileEndBone="Bip01 Crown02" MinimumNumberOfSummons="5" />
+  </Skill>
+</MetaData>

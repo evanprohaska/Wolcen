@@ -1,0 +1,66 @@
+<MetaData>
+  <Projectile ID="player_owlshot_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Skill_OwlShot.Owlshot_Frost.Owlshot_Frost_Projectile_01" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Skill_OwlShot.Owlshot_Frost.Owlshot_Frost_Impact_01" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="7" SpeedMax="7" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Owlshot_Cast_Proj_Launch_Frost" />
+      <Removed SoundTriggerName="Stop_Skill_OwlShot_Proj_Loop" />
+      <Hit SoundTriggerName="Play_Skill_OwlShot_Impact_Frost" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_owlshot_proj_physical" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Skill_OwlShot.Owlshot_Physical.Owlshot_Physical_Projectile_01" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Skill_OwlShot.Owlshot_Physical.Owlshot_Physical_Impact_01" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="7" SpeedMax="7" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Owlshot_Proj_Launch" />
+      <Removed SoundTriggerName="Stop_Skill_OwlShot_Proj_Loop" />
+      <Hit SoundTriggerName="Play_Skill_OwlShot_Impact" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_owlshot_proj_lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Skill_OwlShot.Owlshot_Lightning.Owlshot_Lightning_Projectile_01" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Skill_OwlShot.Owlshot_Lightning.Owlshot_Lightning_Impact_01" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="7" SpeedMax="7" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Owlshot_Cast_Proj_Launch_Lightning" />
+      <Removed SoundTriggerName="Stop_Skill_OwlShot_Proj_Loop" />
+      <Hit SoundTriggerName="Play_Skill_OwlShot_Impact_Lightning" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_owlshot_proj_shadow" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Skill_OwlShot.Owlshot_Shadow.Owlshot_Shadow_Projectile_01" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Skill_OwlShot.Owlshot_Shadow.Owlshot_Shadow_Impact_01" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="7" SpeedMax="7" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Owlshot_Cast_Proj_Launch_Shadow" />
+      <Removed SoundTriggerName="Stop_Skill_OwlShot_Proj_Loop" />
+      <Hit SoundTriggerName="Play_Skill_OwlShot_Impact_Shadow" />
+    </Audio>
+  </Projectile>
+</MetaData>

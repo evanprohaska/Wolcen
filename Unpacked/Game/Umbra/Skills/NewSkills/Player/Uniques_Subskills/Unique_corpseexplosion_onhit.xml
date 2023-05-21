@@ -1,0 +1,15 @@
+<MetaData>
+  <Skill UID="unique_corpseexplosion_onhit" ESkill="player_corpseexplosion" Keywords="magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_corpseexplosion" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_weapon_bone" CanMultiCast="1" CasterImmobilizationTime="0" CanCastWhileMoving="1" MaximumTurnRate="0" ShouldMoveInRange="0" CancellableByDefault="1" />
+    <DamageWeapon WeaponMultiplier="1.7" />
+    <Damage_Conversion>
+      <Entry From="physical" To="toxic" ConversionRate="100" />
+    </Damage_Conversion>
+    <Cooldown Cooldown="2" CooldownPerLevel="0" />
+    <SoundTrigger OnAnimStart="Play_Skill_CorpseExplosion_Cast" />
+    <DamageZone Duration="5" RateOfFire="1" />
+    <Explosion ExplosionRadius="2" />
+    <Specific_CorpseExplosion Radius="6.5" ChanceToSummonAlly="0" CanBeCastedAway="1" CloudRadius="0" CloudDamageMultiplier="0" TTL="10" ExplosionTimer="0.01" CloudLoopSoundTrigger="Play_Skill_CorpseExplosion_Cloud_Loop" CloudEndSoundTrigger="Stop_Skill_CorpseExplosion_Cloud_Loop" />
+  </Skill>
+</MetaData>

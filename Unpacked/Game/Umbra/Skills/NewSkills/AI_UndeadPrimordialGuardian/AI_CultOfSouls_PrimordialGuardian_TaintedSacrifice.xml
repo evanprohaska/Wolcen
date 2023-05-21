@@ -1,0 +1,14 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_corruptedprimordialguardian_taintedsacrifice" ESkill="AI_cultofsouls_corruptedprimordialguardian_taintedsacrifice" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_07" ScaleWithCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="15" />
+    <HealthTransfer Ratio="0.025" Timer="1" Delay="1" />
+    <ParticleList>
+      <Particle Key="ConsumeGhost" Name="U_Monster.Primordiar.Primordiar_Armor.Primordiar_Ghost_02" Offset="0,0,2" Direction="1,0,0" Bone="Bip01" />
+      <Particle Key="ConsumeImpact" Name="U_Monster.Primordiar.Primordiar_Guardian.Consume_Impact" Offset="0,0,1" Direction="1,0,0" Bone="Bip01" />
+      <Particle Key="Healing" Name="U_Monster.Primordiar.Primordiar_Guardian.Consume_Heal" Offset="0,0,1" Direction="1,0,0" Bone="Bip01" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Primordial_GuardianCorrupt_Sacrifice" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

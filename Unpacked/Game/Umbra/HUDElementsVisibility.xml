@@ -1,0 +1,348 @@
+<MetaData>
+  <HUDVisibilitySystem>
+    <HUDelement Name="activeskills">
+      <VisibilityEntry Visible="1" PlaySound="1">
+        <AffectedElement Name="AdventureModeLevelSelection" Visible="0" PlaySound="1" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="character_sheet" Visible="0" />
+        <AffectedElement Name="chest_inventory" Visible="0" />
+        <AffectedElement Name="inventory" Visible="0" />
+        <AffectedElement Name="merchant" Visible="0" />
+        <AffectedElement Name="tabLayout" Visible="1" />
+        <AffectedOverlay ParentName="minimap" OverlayName="minimap_overlay" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="tabLayout" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="apo_selection">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="AdventureModeLevelSelection" Visible="0" />
+        <AffectedElement Name="city_building_production_summary" Visible="0" />
+        <AffectedElement Name="cosmeticinventory" Visible="0" PlaySound="1" />
+        <AffectedElement Name="character_sheet" Visible="0" PlaySound="0" />
+        <AffectedElement Name="tabLayout" Visible="1" />
+        <AffectedElement Name="friendlist" Visible="0" />
+        <AffectedOverlay ParentName="minimap" OverlayName="minimap_overlay" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="tabLayout" Visible="0" />
+        <AffectedElement Name="friendlist" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="char_custo">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="chat" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="character_list">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="chat" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="character_sheet">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="activeskills" Visible="0" />
+        <AffectedElement Name="AdventureModeLevelSelection" Visible="0" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="craft_window" Visible="0" />
+        <AffectedElement Name="loot_filter" Visible="0" />
+        <AffectedElement Name="merchant" Visible="0" />
+        <AffectedElement Name="portraits" Visible="0" />
+        <AffectedElement Name="tabLayout" Visible="1" />
+        <AffectedOverlay ParentName="minimap" OverlayName="minimap_overlay" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="portraits" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="chest_inventory">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="inventory" Visible="1" />
+        <AffectedElement Name="activeskills" Visible="0" />
+        <AffectedElement Name="AdventureModeLevelSelection" Visible="0" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="character_sheet" Visible="0" />
+        <AffectedElement Name="cosmeticinventory" Visible="0" />
+        <AffectedElement Name="craft_window" Visible="0" />
+        <AffectedElement Name="merchant" Visible="0" />
+        <AffectedElement Name="passiveskills" Visible="0" />
+        <AffectedElement Name="loot_filter" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="city_building">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="AdventureModeLevelSelection" Visible="0" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="chat" Visible="0" />
+        <AffectedElement Name="city_building_production_summary" Visible="0" />
+        <AffectedElement Name="city_building_blackscreen" Visible="1" />
+        <AffectedElement Name="cosmeticinventory" Visible="0" />
+        <AffectedElement Name="tabLayout" Visible="1" />
+        <AffectedElement Name="friendlist" Visible="0" />
+        <AffectedOverlay ParentName="minimap" OverlayName="minimap_overlay" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="city_building_blackscreen" Visible="0" />
+        <AffectedElement Name="chat" Visible="1" />
+        <AffectedElement Name="tabLayout" Visible="0" />
+        <AffectedElement Name="friendlist" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="cosmeticinventory">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="xp_bar" Visible="0" />
+        <AffectedElement Name="AdventureModeLevelSelection" Visible="0" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="city_building" Visible="0" />
+        <AffectedElement Name="city_building_blackscreen" Visible="0" />
+        <AffectedElement Name="passiveskills" Visible="0" />
+        <AffectedElement Name="friendlist" Visible="0" />
+        <AffectedOverlay ParentName="minimap" OverlayName="minimap_overlay" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="friendlist" Visible="1" />
+        <AffectedElement Name="xp_bar" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="craft_window">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="inventory" Visible="1" />
+        <AffectedElement Name="character_sheet" Visible="0" />
+        <AffectedElement Name="chest_inventory" Visible="0" />
+        <AffectedElement Name="merchant" Visible="0" />
+        <AffectedElement Name="passiveskills" Visible="0" />
+        <AffectedElement Name="loot_filter" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="credits">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="chat" Visible="0" />
+        <AffectedElement Name="mainmenu_options" Visible="0" />
+        <AffectedElement Name="mainmenu_gamesettings" Visible="0" />
+        <AffectedElement Name="newmainmenu" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="chat" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="death_screen">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="activeskills" Visible="0" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="chest_inventory" Visible="0" />
+        <AffectedElement Name="character_sheet" Visible="0" />
+        <AffectedElement Name="cosmeticinventory" Visible="0" />
+        <AffectedElement Name="inventory" Visible="0" />
+        <AffectedElement Name="merchant" Visible="0" />
+        <AffectedElement Name="passiveskills" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="eula">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="mainmenu_blackfade" Visible="1" />
+        <AffectedElement Name="newmainmenu" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="mainmenu_blackfade" Visible="0" />
+        <AffectedElement Name="newmainmenu" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="friendlist">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="activeskills" Visible="0" />
+        <AffectedElement Name="chest_inventory" Visible="0" />
+        <AffectedElement Name="cosmeticinventory" Visible="0" />
+        <AffectedOverlay ParentName="minimap" OverlayName="minimap_overlay" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="friendlist_addfriend">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="mainmenu_blackfade" Visible="1" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="mainmenu_blackfade" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="inventory">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="promptBar" Visible="1" />
+        <AffectedElement Name="activeskills" Visible="0" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="cosmeticinventory" Visible="0" />
+        <AffectedElement Name="loot_filter" Visible="0" />
+        <AffectedElement Name="quest_tracker" Visible="0" />
+        <AffectedOverlay ParentName="minimap" OverlayName="minimap_overlay" Visible="0" />
+        <AffectedElement Name="friendlist" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="promptBar" Visible="0" />
+        <AffectedElement Name="chest_inventory" Visible="0" />
+        <AffectedElement Name="craft_window" Visible="0" />
+        <AffectedElement Name="loot_filter" Visible="0" />
+        <AffectedElement Name="quest_tracker" Visible="1" />
+        <AffectedElement Name="tabLayout" Visible="0" />
+        <AffectedElement Name="trading" Visible="0" />
+        <AffectedElement Name="friendlist" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="loot_filter">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="chest_inventory" Visible="0" />
+        <AffectedElement Name="craft_window" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="passiveskills">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="AdventureModeLevelSelection" Visible="0" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="cosmeticinventory" Visible="0" />
+        <AffectedElement Name="tabLayout" Visible="1" />
+        <AffectedElement Name="friendlist" Visible="0" />
+        <AffectedOverlay ParentName="minimap" OverlayName="minimap_overlay" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="tabLayout" Visible="0" />
+        <AffectedElement Name="friendlist" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="mainmenu_options">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="promptBar" Visible="1" />
+        <AffectedElement Name="mainmenu_blackfade" Visible="1" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="promptBar" Visible="0" />
+        <AffectedElement Name="mainmenu_blackfade" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="mainmenu_gamesettings">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="mainmenu_blackfade" Visible="1" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="mainmenu_blackfade" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="minimap">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="inventory" Visible="0" />
+        <AffectedElement Name="activeskills" Visible="0" />
+        <AffectedElement Name="chest_inventory" Visible="0" />
+        <AffectedElement Name="character_sheet" Visible="0" />
+      </VisibilityEntry>
+      <Overlay Name="minimap_overlay">
+        <VisibilityEntry Visible="1">
+          <AffectedElement Name="inventory" Visible="0" />
+          <AffectedElement Name="passiveskills" Visible="0" />
+          <AffectedElement Name="cosmeticinventory" Visible="0" />
+          <AffectedElement Name="activeskills" Visible="0" />
+          <AffectedElement Name="merchant" Visible="0" />
+          <AffectedElement Name="chest_inventory" Visible="0" />
+          <AffectedElement Name="character_sheet" Visible="0" />
+        </VisibilityEntry>
+      </Overlay>
+    </HUDelement>
+    <HUDelement Name="merchant">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="activeskills" Visible="0" />
+        <AffectedElement Name="AdventureModeLevelSelection" Visible="0" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="character_sheet" Visible="0" />
+        <AffectedElement Name="chest_inventory" Visible="0" />
+        <AffectedElement Name="craft_window" Visible="0" />
+        <AffectedElement Name="inventory" Visible="1" />
+        <AffectedElement Name="loot_filter" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="friendlist" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="newmainmenu">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="global_container" Visible="1" />
+        <AffectedElement Name="chat" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="newspopup">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="mainmenu_blackfade" Visible="1" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="mainmenu_blackfade" Visible="0" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="trading">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="activeskills" Visible="0" />
+        <AffectedElement Name="AdventureModeLevelSelection" Visible="0" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="character_sheet" Visible="0" />
+        <AffectedElement Name="chest_inventory" Visible="0" />
+        <AffectedElement Name="cosmeticinventory" Visible="0" />
+        <AffectedElement Name="craft_window" Visible="0" />
+        <AffectedElement Name="loot_filter" Visible="0" />
+        <AffectedElement Name="merchant" Visible="0" />
+        <AffectedElement Name="passiveskills" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="xp_bar" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="worldmap">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="promptBar" Visible="1" />
+        <AffectedElement Name="activeskills" Visible="0" />
+        <AffectedElement Name="inventory" Visible="0" />
+        <AffectedElement Name="cosmeticinventory" Visible="0" />
+        <AffectedElement Name="passiveskills" Visible="0" />
+        <AffectedElement Name="merchant" Visible="0" />
+        <AffectedElement Name="chest_inventory" Visible="0" />
+        <AffectedElement Name="character_sheet" Visible="0" />
+        <AffectedElement Name="minimap" Visible="0" />
+        <AffectedElement Name="hunt_progression" Visible="0" />
+        <AffectedElement Name="tabLayout" Visible="1" />
+        <AffectedElement Name="friendlist" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="minimap" Visible="1" />
+        <AffectedElement Name="hunt_progression" Visible="1" />
+        <AffectedElement Name="tabLayout" Visible="0" />
+        <AffectedElement Name="friendlist" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="expedition_ui">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="activeskills" Visible="0" />
+        <AffectedElement Name="inventory" Visible="0" />
+        <AffectedElement Name="cosmeticinventory" Visible="0" />
+        <AffectedElement Name="character_sheet" Visible="0" />
+        <AffectedElement Name="apo_selection" Visible="0" />
+        <AffectedElement Name="xp_bar" Visible="0" />
+        <AffectedElement Name="friendlist" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="friendlist" Visible="1" />
+        <AffectedElement Name="xp_bar" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+    <HUDelement Name="VictoryScreenBottom">
+      <VisibilityEntry Visible="1">
+        <AffectedElement Name="xp_bar" Visible="0" />
+        <AffectedElement Name="minimap" Visible="0" />
+        <AffectedElement Name="friendlist" Visible="0" />
+        <AffectedElement Name="global_container" Visible="0" />
+        <AffectedElement Name="quest_tracker" Visible="0" />
+        <AffectedElement Name="portraits" Visible="0" />
+      </VisibilityEntry>
+      <VisibilityEntry Visible="0">
+        <AffectedElement Name="xp_bar" Visible="1" />
+        <AffectedElement Name="minimap" Visible="1" />
+        <AffectedElement Name="friendlist" Visible="1" />
+        <AffectedElement Name="global_container" Visible="1" />
+        <AffectedElement Name="quest_tracker" Visible="1" />
+        <AffectedElement Name="portraits" Visible="1" />
+      </VisibilityEntry>
+    </HUDelement>
+  </HUDVisibilitySystem>
+</MetaData>

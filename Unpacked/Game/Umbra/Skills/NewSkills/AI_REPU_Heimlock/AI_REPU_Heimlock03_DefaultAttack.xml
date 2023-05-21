@@ -1,0 +1,106 @@
+<MetaData>
+  <Skill UID="AI_REPU_Heimlock03_DefaultAttack" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Monster.Heimlock_APO.BasicAttack_Impact_01_Shadow" Offset="0,2,0" Direction="0,0,1" Scale="1.3" />
+    </ParticleList>
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_REPU_Heimlock03_DefaultAttack_Shapes01" />
+      <SkillSpecificParams Index="1" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_REPU_Heimlock03_DefaultAttack_Shapes02,AI_REPU_Heimlock03_DefaultAttack_Projectiles" />
+      <SkillSpecificParams Index="2" IndicatorKeys="" ParticleKeys="Impact" SecondarySkillUIDs="AI_REPU_Heimlock03_DefaultAttack_Shapes03,AI_REPU_Heimlock03_DefaultAttack_DamageZone" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock03_DefaultAttack_Shapes01" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock03_combo1" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock03_DefaultAttack_Shapes02" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="80" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock03_combo2" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock03_DefaultAttack_Shapes03" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <DamageAsPercentageOfParent Percent="130" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock03_combo3" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock03_DefaultAttack_Projectiles" ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageAsPercentageOfParent Percent="20" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="4" />
+    <Projectile Name="heimlock_02_shadowprojectile" ProjectileCount="8" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="50" totalAngleAtDistanceMin="150" totalAngleAtDistanceMax="150" projectileAngleAtDistanceMin="150" projectileAngleAtDistanceMax="150" />
+    </Projectile>
+    <Range AttackRange="25" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround">
+      <CastAttributes FromCaster="1" BaseDirIsForwardDir="1" RandomDir="0" MaxZOffset="1.5" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock03_DefaultAttack_DamageZone" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageAsPercentageOfParent Percent="50" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Heimlock03_combo3_DZ" />
+    </Shapes>
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <DamageZone Duration="1" RateOfFire="0.25" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock_APO.MultiSlash_Projectile_01_Shadow" Offset="0,0,0" Direction="1,0,0" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones AbsoluteForwardOffset="0,2,0" RandomBaseDistMin="2" RandomBaseDistMax="2" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="17" MaxLinearSpeed="17" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="6" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock02_DefaultAttack" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="1" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Monster.Heimlock_APO.BasicAttack_Impact_01_Shadow" Offset="0,2,0" Direction="0,0,1" Scale="1.3" />
+    </ParticleList>
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_REPU_Heimlock02_DefaultAttack_Shapes01" />
+      <SkillSpecificParams Index="1" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_REPU_Heimlock02_DefaultAttack_Shapes02" />
+      <SkillSpecificParams Index="2" IndicatorKeys="" ParticleKeys="Impact" SecondarySkillUIDs="AI_REPU_Heimlock02_DefaultAttack_Shapes03" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock02_DefaultAttack_Shapes01" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock03_combo1" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock02_DefaultAttack_Shapes02" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="80" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock03_combo2" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock02_DefaultAttack_Shapes03" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <DamageAsPercentageOfParent Percent="130" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock03_combo3" />
+    </Shapes>
+  </Skill>
+</MetaData>

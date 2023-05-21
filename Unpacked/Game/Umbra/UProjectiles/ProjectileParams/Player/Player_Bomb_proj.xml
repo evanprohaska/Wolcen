@@ -1,0 +1,401 @@
+<MetaData>
+  <Projectile ID="player_bomb_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Physical_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_glue" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Glue_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_rend" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Rend_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_sacred" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Sacred_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Lightning_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_fire" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Fire_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_missile" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_Rocket_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_glue_missile" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_Rocket_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_rend_missile" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_Rocket_01_Rend" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_sacred_missile" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_Rocket_01_Sacred" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_lightning_missile" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_Rocket_01_Lightning" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_fire_missile" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_Rocket_01_Fire" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_missile_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_RocketMine_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_glue_missile_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_RocketMine_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_rend_missile_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_RocketMine_01_Rend" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_sacred_missile_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_RocketMine_01_Sacred" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_lightning_missile_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_RocketMine_01_Lightning" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_fire_missile_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Summon_Bomb_RocketMine_01_Fire" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_cluster" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_withoutSmoke_01_Cluster" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb_Cluster" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_BulletImpact" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_cluster_rend" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Rend_01" Direction="0,0,1" WorldSpace="0" Scale="0.5" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb_Cluster" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_BulletImpact" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_cluster_sacred" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Sacred_01" Direction="0,0,1" WorldSpace="0" Scale="0.5" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb_Cluster" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_BulletImpact" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_cluster_lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Lightning_01" Direction="0,0,1" WorldSpace="0" Scale="0.5" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb_Cluster" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_BulletImpact" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bomb_proj_cluster_fire" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Fire_01" Direction="0,0,1" WorldSpace="0" Scale="0.5" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Bomb_Cluster" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_BulletImpact" />
+      <Launch SoundTriggerName="" />
+      <Removed SoundTriggerName="Stop_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

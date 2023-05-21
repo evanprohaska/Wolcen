@@ -1,0 +1,38 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RendCircle_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <Bleed Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RendCircle_DZ" />
+    </Shapes>
+    <DamageZone Duration="30" RateOfFire="0.2" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.Bossmodifiers.CirclingBlades_Projectile" Offset="0,0,1" Direction="1,0,0" Scale="0.33" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="10" RandomBaseDistMax="20" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="75" MaxAngularSpeed="75" IndicatorMaxTimer="0" NumberOfDZ="1" BaseDirIsClockwise="1" AllowRandomDir="1" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_HalfRendCircle_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <Bleed Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RendCircle_DZ" />
+    </Shapes>
+    <DamageZone Duration="30" RateOfFire="0.2" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="U_Character.Skills.Bladeslinger_Spining_01" Offset="0,0,1" Direction="1,0,0" Scale="0.33" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="10" RandomBaseDistMax="20" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="75" MaxAngularSpeed="75" IndicatorMaxTimer="0" NumberOfDZ="1" BaseDirIsClockwise="1" AllowRandomDir="1" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" />
+  </Skill>
+</MetaData>

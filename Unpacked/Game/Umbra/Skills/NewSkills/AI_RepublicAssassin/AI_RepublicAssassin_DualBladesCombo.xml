@@ -1,0 +1,127 @@
+<MetaData>
+  <Skill UID="AI_RepublicAssassin_DualBladesCombo_01" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <Combo ComboStarter="Combo_RepublicAssassin_DualBlades" />
+    <DamageWeapon WeaponMultiplier=".6" />
+    <Cooldown Cooldown="0.5" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_DualBlade_Impact" />
+  </Skill>
+  <Skill UID="AI_RepublicAssassin_DualBladesCombo_02" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".5" />
+    <Cooldown Cooldown="0.5" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_DualBlade_Impact" />
+  </Skill>
+  <Skill UID="AI_RepublicAssassin_DualBladesCombo_03" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".5" />
+    <Cooldown Cooldown="0.5" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_DualBlade_Impact" />
+  </Skill>
+  <Skill UID="AI_RepublicAssassin_DualBladesCombo_04" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".5" />
+    <Cooldown Cooldown="0.5" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_DualBlade_Impact" />
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_DualBladesCombo_01" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <Combo ComboStarter="Combo_Hunt_Assassin_DualBlades" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier=".6" />
+    <StatusAilment>
+      <curse Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0.5" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_DualBlade_Impact" />
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_DualBladesCombo_02" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <curse Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0.5" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_DualBlade_Impact" />
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_DualBladesCombo_03" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <curse Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0.5" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_DualBlade_Impact" />
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_DualBladesCombo_04" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <curse Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_Hunt_Assassin_DualBladesCombo_04_Shape,AI_Hunt_Assassin_DualBladesCombo_04_Projectile" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_DualBladesCombo_04_Shape" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_Shape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_DualBladesCombo_04_Projectile" ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageAsPercentageOfParent Percent="50" />
+    <StatusAilment>
+      <curse Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger />
+    <Projectile Name="hunt_assassin_dualbladecombo_proj" ProjectileCount="5" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="50" totalAngleAtDistanceMin="100" totalAngleAtDistanceMax="100" projectileAngleAtDistanceMin="20" projectileAngleAtDistanceMax="20" />
+    </Projectile>
+    <Range AttackRange="25" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround">
+      <CastAttributes FromCaster="1" BaseDirIsForwardDir="1" RandomDir="0" MaxZOffset="1.5" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

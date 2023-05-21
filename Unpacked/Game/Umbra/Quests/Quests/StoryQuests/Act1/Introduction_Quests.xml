@@ -1,0 +1,157 @@
+<MetaData>
+  <Quest Name="INTRO_Quest1" StartDialog="" Type="Main" UIName="@ui_A0_Q0_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT1">
+    <Step Order="0" UIName="@ui_A0_Q0_S1_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="Qp_Intro_SpawnPointIntroduction1">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_Intro_ladder2" Radius="8" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_Intro0_Maelys" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Talk" EntityName="NPC_Intro0_Maelys" DialogName="INTRO_Quest1_Maelis_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_Intro0_Maelys" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Interact" Names="ClickableEntity_Intro_ladder2" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_Intro_ladder2" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideSkill" Name="Intro_Restrict_Skill" Skill="playerskill_introduction_lightning_attack" Slot="12" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideSkill" Name="Intro_Restrict_Skill_1" Skill="" Slot="1" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideSkill" Name="Intro_Restrict_Skill_2" Skill="" Slot="2" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideSkill" Name="Intro_Restrict_Skill_3" Skill="" Slot="3" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideSkill" Name="Intro_Restrict_Skill_4" Skill="" Slot="4" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideSkill" Name="Intro_Restrict_Skill_5" Skill="" Slot="5" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Restrict_Stuff3" BodyPart="chest_armor" ItemName="Intro_Veteran_Chest" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Restrict_Stuff4" BodyPart="arm_l" ItemName="Intro_Veteran_Armband" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Restrict_Stuff5" BodyPart="arm_r" ItemName="Intro_Veteran_Armband" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Restrict_Stuff6" BodyPart="legs" ItemName="Intro_Veteran_Pants" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Restrict_Stuff7" BodyPart="feet" ItemName="Intro_Veteran_Boots" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Restrict_Stuff8" BodyPart="helmet" ItemName="Intro_Veteran_Helmet" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Restrict_Stuff9" BodyPart="shoulder_l" ItemName="Intro_Veteran_Shoulder" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Restrict_Stuff10" BodyPart="shoulder_r" ItemName="Intro_Veteran_Shoulder" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Restrict_Stuff1" BodyPart="weapon_l" ItemName="unique_intro_shield" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Restrict_Stuff2" BodyPart="weapon_r" ItemName="Unique_intro_sword" Clear="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="Restriction" Name="Intro_Restrict_Rule" Mode="Set" Restrictions="TownPortal,UsePotion,DieFromDownState,OpenPST,ChangeEquipement,UnlockedROS,OpenInventory,ChangeSkills,OpenAST,ForceInstaRevive,ReceiveRessources,OpenMap,CanLoot" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="Intro_LockLadder" ClickableEntityName="ClickableEntity_Intro_ladder2" MakeClickable="0" FilterEvents="1" />
+      <Event Trigger="EventEnd" EventName="CinematicIntro" Type="EntityIsHidden" Name="SF_Hide_AO_Valeria" EntityNames="AnimObject_Intro_0_Valeria" Hide="1" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="CinematicIntro" Type="EntityIsHidden" Name="SF_Hide_AO_Edric" EntityNames="AnimObject_Intro_0_Edric" Hide="1" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="CinematicInterTitle" SequenceName="A1_2D_Cutscene" FemaleSequenceName="A1_2D_Cutscene_female" />
+      <Event Trigger="EventEnd" EventName="CinematicInterTitle" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="CinematicIntro" SequenceName="A0_OperationDawnbane" />
+      <Event Trigger="EventEnd" EventName="CinematicIntro" Type="EntitySpawn" MinimumRadius="0.1" MaximumRadius="5" SpawnFrequency="0" Name="IntroValeriaSpawn1" SpawnClass="Sc_Sty_Intro_QVV1" TargetEntityName="#Player" />
+      <Event Trigger="EventEnd" EventName="CinematicIntro" Type="EntitySpawn" MinimumRadius="0.1" MaximumRadius="5" SpawnFrequency="0" Name="IntroEdricSpawn1" SpawnClass="Sc_Sty_A1_R_QVE1" TargetEntityName="#Player" />
+      <Event Trigger="EventEnd" EventName="IntroValeriaSpawn1" Type="EntityFollow" Name="IntroValeriaFollow1" FollowerEntityName="Valeria" Follow="#Player" />
+      <Event Trigger="EventEnd" EventName="IntroEdricSpawn1" Type="EntityFollow" Name="IntroEdricFollow1" FollowerEntityName="Edric" Follow="#Player" />
+      <Event Trigger="EventEnd" EventName="CinematicIntro" Type="GlobalDialog" Delay="2" Name="Intro_MaelisBeginning_Talk" DialogName="INTRO_Quest1_MaelisBeginning_Talk" />
+      <Event Trigger="EventEnd" EventName="Intro_MaelisBeginning_Talk" Type="GlobalDialog" Delay=".1" Name="Intro_SiblingTalk" DialogName="INTRO_Quest1_Siblings_Talk" />
+      <Event Trigger="EventEnd" EventName="CinematicIntro" Type="GlobalTutorial" Name="Intro_Tuto0" TutorialName="Quest_Movement" />
+      <Event Trigger="EventEnd" EventName="CinematicIntro" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="Maelis_Intro" SequenceName="DynScene_Act0_Intro_ladder1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="SpawnPoint_Prologue_zone2" AreaRadius="14" Type="EntityFollow" Name="IntroValeriaUnfollow1" FollowerEntityName="Valeria" Follow="" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="SpawnPoint_Prologue_zone2" AreaRadius="14" Type="EntityFollow" Name="IntroEdricUnfollow1" FollowerEntityName="Edric" Follow="" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Qp_Intro_SiblingTalkTrigger" AreaRadius="8" Type="GlobalAnnouncement" Name="A0_Q0_SA_AN_QuestName" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="@ui_A0_Q0_QuestLabel" DisplayTime="2" />
+      <Event Trigger="EventEnd" EventName="IntroValeriaUnfollow1" Type="EntityMove" Delay="0.1" TargetMinDistance="0.1" OverrideSpeed="0" Name="INTRO_Quest1_ValeriaPos" EntityName="Valeria" TargetName="AnimObject_Intro_0_Valeria" RemainScripted="1" />
+      <Event Trigger="EventEnd" EventName="IntroEdricUnfollow1" Type="EntityMove" Delay="" TargetMinDistance="0.1" OverrideSpeed="0" Name="INTRO_Quest1_EdricaPos" EntityName="Edric" TargetName="AnimObject_Intro_0_Edric" RemainScripted="1" />
+      <Event Trigger="EventEnd" EventName="INTRO_Quest1_ValeriaPos" Type="EntityRotate" Delay="0.1" Name="INTRO_Quest1_ValeriaRPos" RotatedEntityName="Valeria" Target="QP_Intro_RotationPos_Valeria" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="INTRO_Quest1_EdricaPos" Type="EntityRotate" Delay="0.1" Name="INTRO_Quest1_EdricaRPos" RotatedEntityName="Edric" Target="QP_Intro_RotationPos_Edric" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="INTRO_Quest1_ValeriaRPos" Type="EntityIsHidden" Name="Intro_Hide_Valeria" EntityNames="Valeria" Hide="1" />
+      <Event Trigger="EventEnd" EventName="INTRO_Quest1_EdricaRPos" Type="EntityIsHidden" Name="Intro_Hide_Edric" EntityNames="Edric" Hide="1" />
+      <Event Trigger="EventEnd" EventName="INTRO_Quest1_ValeriaRPos" Type="EntityIsHidden" Name="Intro_Unhide_AO_Valeria" EntityNames="AnimObject_Intro_0_Valeria" Hide="0" />
+      <Event Trigger="EventEnd" EventName="INTRO_Quest1_EdricaRPos" Type="EntityIsHidden" Name="Intro_Unhide_AO_Edric" EntityNames="AnimObject_Intro_0_Edric" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Delay="1" Name="Intro_PlayerThought_Talk" DialogName="INTRO_Quest1_PlayerThought_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="CinematicLadder" SequenceName="DynScene_Act0_Intro_ladder2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionClickable" Name="Intro_UnlockLadder" ClickableEntityName="ClickableEntity_Intro_ladder2" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="IntroStepUpdateTalktoMaelis" Localization="@ui_A0_Q0_S1_StepNameLabelUpdate1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="IntroStepUpdateReachLedge" Localization="@ui_A0_Q0_S1_StepNameLabelUpdate2" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="1" UIName="@ui_A0_Q0_S2_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="Qp_Intro_SpawnPointIntroduction2">
+      <Goal Order="0" Type="Go" Destination="Qp_Intro_TrapperKill" Radius="78" RequireAllPlayers="0" />
+      <Goal Order="1" Type="Go" Destination="Qp_Intro_TrapperKill" Radius="73" RequireAllPlayers="0" />
+      <Goal Order="2" Type="Go" Destination="Qp_Intro_TrapperKill" Radius="40" RequireAllPlayers="0" />
+      <Goal Order="3" Type="Go" Destination="Qp_Intro_TrapperKill" Radius="10" RequireAllPlayers="0" />
+      <Goal Order="4" Type="Go" Destination="Qp_Intro_TrapperKill" Radius="7" RequireAllPlayers="0" />
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Delay="1" Name="ValClimbingLadder" SequenceName="A0_Q1_ValeriaClimbing" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="LeaveAreaOne" AreaRadius="3" CenterEntityName="Qp_Intro_SpawnPointIntroduction2" Type="GlobalTutorial" Name="Dialog_INTRO_Q1_Tutorial2_Talk" TutorialName="Quest_Dodgeroll" />
+      <Event Trigger="LeaveAreaOne" AreaRadius="6" CenterEntityName="Qp_Intro_SpawnPointIntroduction2" Type="GlobalDialog" Name="Dialog_INTRO_Q1_Beginning_Talk" DialogName="INTRO_Quest1_Beginning_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="Dialog_INTRO_Q1_FlayersWarrior_Talk" DialogName="INTRO_Quest1_FlayersWarrior_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalDialog" Name="Dialog_INTRO_Q1_FlayersArcher_Talk" DialogName="INTRO_Quest1_FlayersArcher_Talk" />
+    </Step>
+    <Step Order="2" UIName="@ui_A0_Q0_S3_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="Kill" ClassToKill="TrapperIntro" KillCount="1" />
+      <Goal Order="1" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="INTRO_Quest1_SapperEncounter_Talk" DialogName="INTRO_Quest1_SapperEncounter_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay="1" Name="Dialog_INTRO_Quest1_SapperDefeated_Talk" DialogName="INTRO_Quest1_SapperDefeated_Talk" />
+      <Event Trigger="EventEnd" EventName="Dialog_INTRO_Quest1_SapperDefeated_Talk" Type="GlobalCameraShake" Name="CameraShakeTRemors" PresetName="COSS_SoulsTremor_Event" OriginEntityName="Qp_Intro_TrapperKill" MaxDistance="120" />
+      <Event Trigger="EventEnd" EventName="Dialog_INTRO_Quest1_SapperDefeated_Talk" Type="GoalAchieve" Delay="0.5" Name="WaitEnd_INTRO_Quest1_SapperDefeated_Talk" SimulateOnly="1" GoalIndexToAchieve="-1" />
+    </Step>
+    <Step Order="3" UIName="@ui_A0_Q0_S4_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="Qp_Intro_SpawnPointIntroduction3">
+      <Goal Order="0" Type="Go" Destination="Qp_Intro_DialogArea_SoulsEncounter_Talk1" Radius="70" RequireAllPlayers="0" />
+      <Goal Order="1" Type="Go" Destination="Qp_Intro_DialogArea_SoulsEncounter_Talk2" Radius="20" RequireAllPlayers="0" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="INTRO_Q1_ClearUI_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="Intro_LadderEdricKill" EntityName="Edric" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="Intro_LadderValeriaKill" EntityName="Valeria" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="CinematicSoulsTremors" SequenceName="A0_Q1_SoulsTremors" />
+      <Event Trigger="EventEnd" EventName="CinematicSoulsTremors" Type="EntitySpawn" MinimumRadius="0.1" MaximumRadius="1" SpawnFrequency="0" Name="IntroValeriaSpawn2" SpawnClass="Sc_Sty_Intro_QVV2" TargetEntityName="Qp_Intro_ValeriaSpawnPointIntroduction3" FaceAtSpawn="Qp_Intro_TriggerFollowPostSoulTremors" />
+      <Event Trigger="EventEnd" EventName="CinematicSoulsTremors" Type="EntitySpawn" MinimumRadius="0.1" MaximumRadius="1" SpawnFrequency="0" Name="IntroEdricSpawn2" SpawnClass="Sc_Sty_A1_R_QVE2" TargetEntityName="Qp_Intro_EdricSpawnPointIntroduction3" FaceAtSpawn="Qp_Intro_TriggerFollowPostSoulTremors" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFollow" Name="IntroValeriaFollow2" FollowerEntityName="Valeria2" Follow="#Player" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFollow" Name="IntroEdricFollow2" FollowerEntityName="Edric2" Follow="#Player" Delay="1" />
+      <Event Trigger="EventEnd" EventName="CinematicSoulsTremors" Type="EntityTeleport" MinRadius="5" Name="Intro_playerTPHigherLedge" TeleportedEntityName="#Player" DestinationName="Qp_Intro_SpawnPointIntroduction3" />
+      <Event Trigger="EventEnd" EventName="Intro_playerTPHigherLedge" Type="GlobalDialog" Delay="5" Name="Dialog_INTRO_Quest1_SoulsEncounter_Talk1" DialogName="INTRO_Quest1_SoulsEncounter_Talk1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Qp_Intro_DialogArea_SoulsEncounter_Talk1" AreaRadius="20" Type="GlobalDialog" Name="Dialog_INTRO_Quest1_SoulsEncounter_Talk2" DialogName="INTRO_Quest1_SoulsEncounter_Talk2" />
+    </Step>
+    <Step Order="4" UIName="@ui_A0_Q0_S5_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="Q_NPC_Intro_WoundedSoldier" Radius="13" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="Dialog_INTRO_Quest1_SoulsEncounter_Talk3" DialogName="INTRO_Quest1_SoulsEncounter_Talk3" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="INTRO_Q1_ClearUI_2" />
+    </Step>
+    <Step Order="5" UIName="@ui_A0_Q0_S6_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="Qp_Intro_SpawnPointIntroduction4">
+      <Goal Order="0" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="Dialog_INTRO_Quest1_SoldierEncounter_Talk" DialogName="INTRO_Quest1_SoldierEncounter_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityFollow" Name="INTRO_Quest1_SoldierEncounter_EdricUnfollow" FollowerEntityName="Edric2" Follow="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityFollow" Name="INTRO_Quest1_SoldierEncounter_ValeriaPosUnfollow" FollowerEntityName="Valeria2" Follow="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Delay="0.1" MinRadius="20" Name="INTRO_Quest1_SoldierEncounter_EdricPosTeleport" TeleportedEntityName="Edric2" DestinationName="Qp_Intro_EdricPos_SoulsEncounter" />
+      <Event Trigger="EventEnd" EventName="INTRO_Quest1_SoldierEncounter_ValeriaPosTeleport" Type="EntityMove" Delay="0.1" TargetMinDistance="0.1" OverrideSpeed="0" Name="INTRO_Quest1_SoldierEncounter_EdricPos" EntityName="Edric2" TargetName="Qp_Intro_EdricPos_SoulsEncounter" RemainScripted="1" />
+      <Event Trigger="EventEnd" EventName="INTRO_Quest1_SoldierEncounter_EdricPos" Type="EntityRotate" Delay="0.1" Name="Intro_Q1_EdricRotate" RotatedEntityName="Edric2" Target="Q_NPC_Intro_WoundedSoldier" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="Intro_Q1_EdricRotate" Type="EntityWait" Delay="0.05" Duration="0.05" Name="Intro_Q1_EdricWait" EntityName="Edric2" RemainScripted="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Delay="0.1" MinRadius="20" Name="INTRO_Quest1_SoldierEncounter_ValeriaPosTeleport" TeleportedEntityName="Valeria2" DestinationName="Qp_Intro_ValeriaPos_SoulsEncounter" />
+      <Event Trigger="EventEnd" EventName="INTRO_Quest1_SoldierEncounter_ValeriaPosTeleport" Type="EntityMove" Delay="0.1" TargetMinDistance="0.1" OverrideSpeed="0" Name="INTRO_Quest1_SoldierEncounter_ValeriaPos" EntityName="Valeria2" TargetName="Qp_Intro_ValeriaPos_SoulsEncounter" RemainScripted="1" />
+      <Event Trigger="EventEnd" EventName="INTRO_Quest1_SoldierEncounter_ValeriaPos" Type="EntityRotate" Delay="0.1" Name="Intro_Q1_ValeriaRotate" RotatedEntityName="Valeria2" Target="Q_NPC_Intro_WoundedSoldier" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="Intro_Q1_ValeriaRotate" Type="EntityWait" Delay="0.05" Duration="0.05" Name="Intro_Q1_ValeriaWait" EntityName="Valeria2" RemainScripted="1" />
+      <Event Trigger="EventEnd" EventName="Dialog_INTRO_Quest1_SoldierEncounter_Talk" Type="GoalAchieve" Name="WaitEnd_INTRO_Quest1_SoldierEncounter_Talk" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="INTRO_Q1_ClearUI_3" />
+    </Step>
+    <Step Order="6" UIName="@ui_A0_Q0_S7_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Talk" EntityName="Q_NPC_Intro_WoundedSoldier" DialogName="INTRO_Quest1_SoldierDialog_Talk">
+        <ArrowMarker ShowMinimapIcon="1" Target="Q_NPC_Intro_WoundedSoldier" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2.5" Area="" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0" />
+      <Goal Order="2" Type="BossFight" FightPreset="BossFight_YudaiIntro" />
+      <Goal Order="3" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0" />
+      <Goal Order="4" Type="BossFight" FightPreset="BossFight_YudaiIntro2" />
+      <Goal Order="5" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0" />
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="Q_NPC_Intro_WoundedSoldier" Type="GlobalFlowGraph" Name="SoldierStopMumbling" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="DefendValUpdate" Localization="@ui_A0_Q0_S7_StepNameLabelUpdate1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Intro_HideWoundedSoldier" EntityNames="Q_NPC_Intro_WoundedSoldier" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionSequence" Delay="0.1" Name="CinematicValInDanger" SequenceName="A0_Q1_ValInDanger" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityKill" Delay="" Name="Intro_KillValeria" EntityName="Valeria2" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityKill" Delay="" Name="Intro_KillEdric" EntityName="Edric2" Hide="1" Remove="1" />
+      <Event Trigger="EventEnd" EventName="CinematicValInDanger" Type="ActionSequence" Delay=".01" Name="CinematicYudaiIntroSpawn" SequenceName="DynScene_Intro_Yudai_Appears" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="Intro_playerTeleportArena" Type="GlobalDialog" Delay="2" Name="Dialog_INTRO_Q1_Arena_Talk" DialogName="INTRO_Quest1_Arena_Talk" />
+      <Event Trigger="EventEnd" EventName="Dialog_INTRO_Q1_Arena_Talk" Type="GlobalDialog" Delay="1" Name="Dialog_INTRO_Q1_Yudai_Talk" DialogName="INTRO_Quest1_Yudai_Talk1" />
+      <Event Trigger="EventEnd" EventName="CinematicValInDanger" Type="EntityTeleport" Name="Intro_playerTeleportArena" TeleportedEntityName="#Player" DestinationName="Qp_Intro_SpawnPointIntroduction5" MinRadius="5" />
+      <Event Trigger="EventEnd" EventName="CinematicValInDanger" Type="GlobalCheckpoint" Name="Intro_playerTeleportArena_Checkpoint" CheckpointEntityName="Qp_Intro_SpawnPointIntroduction4" />
+      <Event Trigger="EventEnd" EventName="CinematicValInDanger" Type="GoalAchieve" Delay="4" Name="WaitEndValInDanger_INTRO_Quest1" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" Name="SpawnIntroLostSouls" SpawnClass="Sc_LostSoul_COSDamned_YudaiFirstEncounter_1" TargetEntityName="Qp_Intro_SpawnPointIntroduction5" FaceAtSpawn="" MinimumRadius="5" MaximumRadius="20" SpawnFrequency="10" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="INTRO_Q1_ClearUI_4" StepToKeep="2" />
+      <Event Trigger="GoalEnd" GoalIndex="2" Type="EventEnd" Name="EndSpawnIntroLostSouls1" EventsName="SpawnIntroLostSouls" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityKill" Name="Intro_RemoveYudai1" EntityName="Yudai" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="ActionSequence" Name="CinematicTemporaryIntroEnd1" SequenceName="A0_Q1_TemporaryIntroEnd1" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="CinematicTemporaryIntroEnd1" Type="GoalAchieve" Name="WaitEndTemporaryIntroEnd1" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityTeleport" Name="Intro_playerTeleportPostCutscene" TeleportedEntityName="#Player" DestinationName="Qp_Intro_SpawnPointIntroduction6" MinRadius="5" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="PlayerApocalypticForm" Name="YudaiFight2ForcePlayerApoFormOff" Limited="1" Transformation="ForceOff" Preset="" Ressource="-1000" Delay="3.5" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="ActionSequence" Name="CinematicTemporaryIntroEnd2" SequenceName="A0_Q1_TemporaryIntroEnd2" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Delay="4" />
+      <Event Trigger="EventEnd" EventName="CinematicTemporaryIntroEnd2" Type="GoalAchieve" Name="WaitEndBossFight_YudaiIntro2" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityKill" Name="Intro_RemoveYudai2" EntityName="Yudai2" Hide="1" Remove="1" Delay="3.8" />
+    </Step>
+  </Quest>
+</MetaData>

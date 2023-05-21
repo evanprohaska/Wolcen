@@ -1,0 +1,862 @@
+<MetaData>
+  <HuntEffectsFamily Name="Mindgame">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mindgame_1" UITitle="@ui_hunteffect_title_Mindgame_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Mindgame_2" UITitle="@ui_hunteffect_title_Mindgame_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-15" />
+          <HiRoll DamagePercentInt="-15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Mindgame_3" UITitle="@ui_hunteffect_title_Mindgame_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="health_percent">
+          <LoRoll HealthPercentInt="-15" />
+          <HiRoll HealthPercentInt="-15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Mindgame_4" UITitle="@ui_hunteffect_title_Mindgame_4" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M6_Hold_Arena/AoEGenerator" BossFilter="Hunt_Justicar">
+        <Data Quest="QN_HE_M6_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M6_Hold_Arena/AoEGenerator" BossFilter="Hunt_SadisticThug">
+        <Data Quest="QN_HE_M6_OTWF_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M6_Hold_Arena/AoEGenerator" BossFilter="Hunt_OutlawsAssassin">
+        <Data Quest="QN_HE_M6_OTWSB_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M6_Hold_Arena/AoEGenerator" BossFilter="Hunt_Golgoth">
+        <Data Quest="QN_HE_M6_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M6_Hold_Arena/AoEGenerator" BossFilter="Hunt_DragonRider">
+        <Data Quest="QN_HE_M6_REPU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="4" UILore="@ui_hunteffect_desc_Mindgame_5" UITitle="@ui_hunteffect_title_Mindgame_5" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_justicar_skill_2" BossFilter="Hunt_Justicar">
+        <Data OldSkill="AI_republicjusticarElite_repeatingshots" NewSkill="AI_hunt_justicarElite_repeatingshots_2" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_thug_skill_3" BossFilter="Hunt_SadisticThug">
+        <Data OldSkill="AI_OutlawWarlord_atk_01" NewSkill="AI_Hunt_Warlord_atk_01" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_assassin_skill_1" BossFilter="Hunt_OutlawsAssassin">
+        <Data OldSkill="AI_RepublicAssassin_CrossbowShot" NewSkill="AI_Hunt_Assassin_CrossbowShot_1" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_golgoth_skill_5" BossFilter="Hunt_Golgoth">
+        <Data OldSkill="AI_REPU_Golgoth_IEM" NewSkill="AI_Hunt_Golgoth_IEM_1" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DragonRider">
+        <MagicEffect Name="damage_percent_as_fire">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="5" UILore="@ui_hunteffect_desc_Mindgame_6" UITitle="@ui_hunteffect_title_Mindgame_6" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_justicar_skill_4" BossFilter="Hunt_Justicar">
+        <Data OldSkill="AI_republicjusticarElite_shieldbash" NewSkill="AI_hunt_justicarElite_shieldbash" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_thug_skill_6" BossFilter="Hunt_SadisticThug">
+        <Data OldSkill="AI_outlaw_warlord_kick" NewSkill="AI_hunt_warlord_kick" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_assassin_skill_3" BossFilter="Hunt_OutlawsAssassin">
+        <Data OldSkill="AI_RepublicAssassin_EvadeDash" NewSkill="AI_Hunt_Assassin_EvadeDash" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_Golgoth">
+        <MagicEffect Name="chance_shock_on_hit">
+          <LoRoll ChancePercentInt="25" />
+          <HiRoll ChancePercentInt="25" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DragonRider">
+        <MagicEffect Name="chance_burn_on_hit">
+          <LoRoll ChancePercentInt="25" />
+          <HiRoll ChancePercentInt="25" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Scouts">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Scouts_1" UITitle="@ui_hunteffect_title_Scouts_1" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_percent">
+          <LoRoll ArmorPercentFloat="50" />
+          <HiRoll ArmorPercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Scouts_2" UITitle="@ui_hunteffect_title_Scouts_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="elemental_damage_percent">
+          <LoRoll DamagePercentInt="15" />
+          <HiRoll DamagePercentInt="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Scouts_3" UITitle="@ui_hunteffect_title_Scouts_3" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Justicar">
+        <Data BossModfier="AI_Hunt_BossMod_Snipers" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_SadisticThug">
+        <Data BossModfier="AI_Hunt_BossMod_Trappers" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_OutlawsAssassin">
+        <Data BossModfier="AI_Hunt_BossMod_Shamans" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Golgoth">
+        <Data BossModfier="AI_Hunt_BossMod_SiegeBeasts" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DragonRider">
+        <Data BossModfier="AI_Hunt_BossMod_Veterans" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M2_Defend_NPC" BossFilter="Hunt_Justicar">
+        <Data Quest="QN_HE_M2_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M2_Defend_NPC" BossFilter="Hunt_SadisticThug">
+        <Data Quest="QN_HE_M2_OTWF_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M2_Defend_NPC" BossFilter="Hunt_OutlawsAssassin">
+        <Data Quest="QN_HE_M2_OTWSB_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M2_Defend_NPC" BossFilter="Hunt_Golgoth">
+        <Data Quest="QN_HE_M2_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M2_Defend_NPC" BossFilter="Hunt_DragonRider">
+        <Data Quest="QN_HE_M2_REPU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="High_speed_chase">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_High_speed_chase_1" UITitle="@ui_hunteffect_title_High_speed_chase_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C5_Kill_HuntingChallengers">
+        <Data Quest="QN_HE_C5_REPU_Final" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-15" />
+          <HiRoll DamagePercentInt="-15" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_High_speed_chase_2" UITitle="@ui_hunteffect_title_High_speed_chase_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_percent">
+          <LoRoll ArmorPercentFloat="-20" />
+          <HiRoll ArmorPercentFloat="-20" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_High_speed_chase_3" UITitle="@ui_hunteffect_title_High_speed_chase_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="offensivespeed_final_percent">
+          <LoRoll CharacteristicFinalPercentFloat="-20" />
+          <HiRoll CharacteristicFinalPercentFloat="-20" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Fools_Gold_A">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Fools_Gold_A_1" UITitle="@ui_hunteffect_title_Fools_Gold_A_1" IconPath="../u_resources/hunt/EIM_01.png" />
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Fools_Gold_A_2" UITitle="@ui_hunteffect_title_Fools_Gold_A_2" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_R5_Wait_FreeRareLoot">
+        <Data Quest="QN_HE_R5_Final" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Fools_Gold_B">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Fools_Gold_B_1" UITitle="@ui_hunteffect_title_Fools_Gold_B_1" IconPath="../u_resources/hunt/EIM_01.png" />
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Fools_Gold_B_2" UITitle="@ui_hunteffect_title_Fools_Gold_B_2" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C2_Hold_ArenaV2">
+        <Data Quest="QN_HE_C2_REPU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Fools_Gold_C">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Fools_Gold_C_1" UITitle="@ui_hunteffect_title_Fools_Gold_C_1" IconPath="../u_resources/hunt/EIM_01.png" />
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Fools_Gold_C_2" UITitle="@ui_hunteffect_title_Fools_Gold_C_2" IconPath="../u_resources/hunt/EIM_01.png" />
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Fools_Gold_C_6" UITitle="@ui_hunteffect_title_Fools_Gold_C_6" IconPath="../u_resources/hunt/EIM_01.png" />
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Fools_Gold_D">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Fools_Gold_D_1" UITitle="@ui_hunteffect_title_Fools_Gold_D_1" IconPath="../u_resources/hunt/EIM_01.png" />
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Fools_Gold_D_2" UITitle="@ui_hunteffect_title_Fools_Gold_D_2" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Justicar">
+        <Data BossModfier="AI_Hunt_BossModifier_RandomBullets" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_SadisticThug">
+        <Data BossModfier="AI_Hunt_BossModifier_BombsFromSky" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_OutlawsAssassin">
+        <Data BossModfier="AI_Hunt_BossModifier_MovingShadows_DZ" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Golgoth">
+        <Data BossModfier="AI_Hunt_BossModifier_BoltFromSky" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_DragonRider">
+        <Data BossModfier="AI_hunt_Bossmodifier_Meteors" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_3">
+        <Data AddedLootClass="Gold_Hunt_3" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="White_Flag_A">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_White_Flag_A_1" UITitle="@ui_hunteffect_title_White_Flag_A_1" IconPath="../u_resources/hunt/EIM_01.png" />
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_White_Flag_A_2" UITitle="@ui_hunteffect_title_White_Flag_A_2" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M3_Hold_Ambush" BossFilter="Hunt_Justicar">
+        <Data Quest="QN_HE_M3_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M3_Hold_Ambush" BossFilter="Hunt_SadisticThug">
+        <Data Quest="QN_HE_M3_OTWF_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M3_Hold_Ambush" BossFilter="Hunt_OutlawsAssassin">
+        <Data Quest="QN_HE_M3_OTWSB_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M3_Hold_Ambush" BossFilter="Hunt_Golgoth">
+        <Data Quest="QN_HE_M3_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M3_Hold_Ambush" BossFilter="Hunt_DragonRider">
+        <Data Quest="QN_HE_M3_REPU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="White_Flag_B">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_White_Flag_B_1" UITitle="@ui_hunteffect_title_White_Flag_B_1" IconPath="../u_resources/hunt/EIM_01.png" />
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_White_Flag_B_2" UITitle="@ui_hunteffect_title_White_Flag_B_2" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="Players_Increased_Speed" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Hubris_Rider">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Hubris_Rider_1" UITitle="@ui_hunteffect_title_Hubris_Rider_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Hubris_Rider_2" UITitle="@ui_hunteffect_title_Hubris_Rider_2" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="MonstersHealth" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Hubris_Rider_3" UITitle="@ui_hunteffect_title_Hubris_Rider_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Hubris_Rider_4" UITitle="@ui_hunteffect_title_Hubris_Rider_4" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="AI_BossModifier_Hunt_AirSupport" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_justicar_skill_1" BossFilter="Hunt_Justicar">
+        <Data OldSkill="AI_republicjusticarElite_repeatingshots" NewSkill="AI_hunt_justicarElite_repeatingshots_1" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_thug_skill_2" BossFilter="Hunt_SadisticThug">
+        <Data OldSkill="AI_outlaw_warlord_axethrow" NewSkill="AI_hunt_warlord_axethrow_2" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_assassin_skill_2" BossFilter="Hunt_OutlawsAssassin">
+        <Data OldSkill="AI_RepublicAssassin_CrossbowShot" NewSkill="AI_Hunt_Assassin_CrossbowShot_2" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_golgoth_skill_3" BossFilter="Hunt_Golgoth">
+        <Data OldSkill="AI_REPU_Golgoth_Fulguropunch" NewSkill="AI_Hunt_Golgoth_Fulguropunch_1" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DragonRider_Skill_1" BossFilter="Hunt_DragonRider">
+        <Data OldSkill="AI_DragonRider_SpearBlast_Front" NewSkill="AI_Hunt_DragonRider_SpearBlast_Front" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_3">
+        <Data AddedLootClass="Gold_Hunt_3" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="The_Informant_A">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_The_Informant_A_1" UITitle="@ui_hunteffect_title_The_Informant_A_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_The_Informant_A_2" UITitle="@ui_hunteffect_title_The_Informant_A_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_The_Informant_A_3" UITitle="@ui_hunteffect_title_The_Informant_A_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-35" />
+          <HiRoll DamagePercentInt="-35" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="The_Informant_B">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_The_Informant_B_1" UITitle="@ui_hunteffect_title_The_Informant_B_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_The_Informant_B_2" UITitle="@ui_hunteffect_title_The_Informant_B_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_The_Informant_B_3" UITitle="@ui_hunteffect_title_The_Informant_B_3" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_justicar_skill_3" BossFilter="Hunt_Justicar">
+        <Data OldSkill="AI_RepublicJusticarElite_DefaultAttack_Ranged" NewSkill="AI_Hunt_JusticarElite_DefaultAttack_Ranged" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_thug_skill_5" BossFilter="Hunt_SadisticThug">
+        <Data OldSkill="AI_outlaw_warlord_whirlwind" NewSkill="AI_hunt_warlord_whirlwind" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_assassin_skill_5" BossFilter="Hunt_OutlawsAssassin">
+        <Data OldSkill="AI_RepublicAssassin_ShadowStrike_01" NewSkill="AI_Hunt_Assassin_ShadowStrike_01" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_golgoth_skill_1" BossFilter="Hunt_Golgoth">
+        <Data OldSkill="AI_REPU_Golgoth_JusticeFromAbove" NewSkill="AI_Hunt_Golgoth_JusticeFromAbove_1" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DragonRider_Skill_2" BossFilter="Hunt_DragonRider">
+        <Data OldSkill="AI_DragonRider_ScorchedEarth" NewSkill="AI_Hunt_DragonRider_ScorchedEarth" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="The_psychic">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_The_psychic_1" UITitle="@ui_hunteffect_title_The_psychic_1" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="20" />
+          <HiRoll DamagePercentInt="20" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="50" />
+          <HiRoll ResourcePercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_The_psychic_2" UITitle="@ui_hunteffect_title_The_psychic_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier">
+        <Data BossModfier="BossModifier_OccultShield" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_The_psychic_3" UITitle="@ui_hunteffect_title_The_psychic_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_percent">
+          <LoRoll ArmorPercentFloat="100" />
+          <HiRoll ArmorPercentFloat="100" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_The_psychic_4" UITitle="@ui_hunteffect_title_The_psychic_4" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Justicar">
+        <Data BossModfier="AI_Hunt_BossModifier_RandomBullets" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_SadisticThug">
+        <Data BossModfier="AI_Hunt_BossModifier_BombsFromSky" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_OutlawsAssassin">
+        <Data BossModfier="AI_Hunt_BossModifier_MovingShadows_DZ" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Golgoth">
+        <Data BossModfier="AI_Hunt_BossModifier_BoltFromSky" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_DragonRider">
+        <Data BossModfier="AI_hunt_BossModifier_RandomLightning" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_3">
+        <Data AddedLootClass="Gold_Hunt_3" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Senates_Imperatum">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Senates_Imperatum_1" UITitle="@ui_hunteffect_title_Senates_Imperatum_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Senates_Imperatum_2" UITitle="@ui_hunteffect_title_Senates_Imperatum_2" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_R4_Wait_FreeCommonLoot">
+        <Data Quest="QN_HE_R4_Final" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Senates_Imperatum_3" UITitle="@ui_hunteffect_title_Senates_Imperatum_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="movespeed">
+          <LoRoll SpeedPercentInt="25" />
+          <HiRoll SpeedPercentInt="25" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="30" />
+          <HiRoll ResourcePercentFloat="30" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="3" UILore="@ui_hunteffect_desc_Senates_Imperatum_4" UITitle="@ui_hunteffect_title_Senates_Imperatum_4" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_justicar_skill_3" BossFilter="Hunt_Justicar">
+        <Data OldSkill="AI_RepublicJusticarElite_DefaultAttack_Ranged" NewSkill="AI_Hunt_JusticarElite_DefaultAttack_Ranged" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_thug_skill_2" BossFilter="Hunt_SadisticThug">
+        <Data OldSkill="AI_outlaw_warlord_axethrow" NewSkill="AI_hunt_warlord_axethrow_1" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_assassin_skill_4" BossFilter="Hunt_OutlawsAssassin">
+        <Data OldSkill="AI_RepublicAssassin_DualBladesCombo_01" NewSkill="AI_Hunt_Assassin_DualBladesCombo_01" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_golgoth_skill_2" BossFilter="Hunt_Golgoth">
+        <Data OldSkill="AI_REPU_Golgoth_JusticeFromAbove" NewSkill="AI_Hunt_Golgoth_JusticeFromAbove_2" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DragonRider">
+        <MagicEffect Name="damage_percent_as_fire">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_3">
+        <Data AddedLootClass="Gold_Hunt_3" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="From_Prey_To_Hunter">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_From_Prey_To_Hunter_1" UITitle="@ui_hunteffect_title_From_Prey_To_Hunter_1" IconPath="../u_resources/hunt/BuffAllEnemies.png">
+      <Entry Type="MapModifier" UILoc="@ui_huntmodifier_mapmodifier">
+        <Data ModifierId="MonstersLessCC" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_From_Prey_To_Hunter_2" UITitle="@ui_hunteffect_title_From_Prey_To_Hunter_2" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Justicar">
+        <Data BossModfier="AI_Hunt_BossMod_Snipers" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_thug_skill_3" BossFilter="Hunt_SadisticThug">
+        <Data OldSkill="AI_OutlawWarlord_atk_01" NewSkill="AI_Hunt_Warlord_atk_01" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_assassin_skill_4" BossFilter="Hunt_OutlawsAssassin">
+        <Data OldSkill="AI_RepublicAssassin_DualBladesCombo_01" NewSkill="AI_Hunt_Assassin_DualBladesCombo_01" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_golgoth_skill_5" BossFilter="Hunt_Golgoth">
+        <Data OldSkill="AI_REPU_Golgoth_IEM" NewSkill="AI_Hunt_Golgoth_IEM_1" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DragonRider">
+        <MagicEffect Name="chance_burn_on_hit">
+          <LoRoll ChancePercentInt="50" />
+          <HiRoll ChancePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_From_Prey_To_Hunter_3" UITitle="@ui_hunteffect_title_From_Prey_To_Hunter_3" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="offensivespeed_final_percent">
+          <LoRoll CharacteristicFinalPercentFloat="35" />
+          <HiRoll CharacteristicFinalPercentFloat="35" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="50" />
+          <HiRoll ResourcePercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Mankind_11">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mankind_11" UITitle="@ui_hunteffect_title_Mankind_11" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="elemental_damage_percent">
+          <LoRoll DamagePercentInt="30" />
+          <HiRoll DamagePercentInt="30" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Mankind_12">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mankind_12" UITitle="@ui_hunteffect_title_Mankind_12" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Justicar">
+        <Data BossModfier="AI_Hunt_BossModifier_RandomBullets" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_SadisticThug">
+        <Data BossModfier="AI_Hunt_BossModifier_BombsFromSky" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_OutlawsAssassin">
+        <Data BossModfier="AI_Hunt_BossModifier_HomingShadows" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_bossmodifier" BossFilter="Hunt_Golgoth">
+        <Data BossModfier="AI_Hunt_BossModifier_BoltFromSky" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DragonRider">
+        <MagicEffect Name="chance_burn_on_hit">
+          <LoRoll ChancePercentInt="100" />
+          <HiRoll ChancePercentInt="100" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_3">
+        <Data AddedLootClass="Gold_Hunt_3" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Mankind_13">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mankind_13" UITitle="@ui_hunteffect_title_Mankind_13" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_justicar_skill_5" BossFilter="Hunt_Justicar">
+        <Data OldSkill="AI_republicjusticarElite_inexorablecharge" NewSkill="AI_Hunt_justicarElite_inexorablecharge" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_thug_skill_4" BossFilter="Hunt_SadisticThug">
+        <Data OldSkill="AI_default_leap" NewSkill="AI_hunt_warlord_leap" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_OutlawsAssassin">
+        <MagicEffect Name="chance_curse_on_hit">
+          <LoRoll ChancePercentInt="25" />
+          <HiRoll ChancePercentInt="25" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_Golgoth">
+        <MagicEffect Name="chance_shock_on_hit">
+          <LoRoll ChancePercentInt="25" />
+          <HiRoll ChancePercentInt="25" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DragonRider">
+        <MagicEffect Name="chance_burn_on_hit">
+          <LoRoll ChancePercentInt="25" />
+          <HiRoll ChancePercentInt="25" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Mankind_14">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mankind_14" UITitle="@ui_hunteffect_title_Mankind_14" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M4_Kill_InvincibleMaster" BossFilter="Hunt_Justicar">
+        <Data Quest="QN_HE_M4_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M4_Kill_InvincibleMaster" BossFilter="Hunt_SadisticThug">
+        <Data Quest="QN_HE_M4_OTWF_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M4_Kill_InvincibleMaster" BossFilter="Hunt_OutlawsAssassin">
+        <Data Quest="QN_HE_M4_OTWSB_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M4_Kill_InvincibleMaster" BossFilter="Hunt_Golgoth">
+        <Data Quest="QN_HE_M4_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M4_Kill_InvincibleMaster" BossFilter="Hunt_DragonRider">
+        <Data Quest="QN_HE_M4_REPU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Mankind_15">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mankind_15" UITitle="@ui_hunteffect_title_Mankind_15" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M5_Hold_AvoidProjectiles" BossFilter="Hunt_Justicar">
+        <Data Quest="QN_HE_M5_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M5_Hold_AvoidProjectiles" BossFilter="Hunt_SadisticThug">
+        <Data Quest="QN_HE_M5_OTWF_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M5_Hold_AvoidProjectiles" BossFilter="Hunt_OutlawsAssassin">
+        <Data Quest="QN_HE_M5_OTWSB_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M5_Hold_AvoidProjectiles" BossFilter="Hunt_Golgoth">
+        <Data Quest="QN_HE_M5_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M5_Hold_AvoidProjectiles" BossFilter="Hunt_DragonRider">
+        <Data Quest="QN_HE_M5_REPU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Mankind_16">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mankind_16" UITitle="@ui_hunteffect_title_Mankind_16" IconPath="../u_resources/hunt/Event.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M1_Frenzy" BossFilter="Hunt_Justicar">
+        <Data Quest="QN_HE_M1_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M1_Frenzy" BossFilter="Hunt_SadisticThug">
+        <Data Quest="QN_HE_M1_OTWF_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M1_Frenzy" BossFilter="Hunt_OutlawsAssassin">
+        <Data Quest="QN_HE_M1_OTWSB_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M1_Frenzy" BossFilter="Hunt_Golgoth">
+        <Data Quest="QN_HE_M1_REPU_Final" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M1_Frenzy" BossFilter="Hunt_DragonRider">
+        <Data Quest="QN_HE_M1_REPU_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Mankind_17">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mankind_17" UITitle="@ui_hunteffect_title_Mankind_17" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Justicar">
+        <Data BossModfier="AI_Hunt_BossMod_Snipers" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_SadisticThug">
+        <Data BossModfier="AI_Hunt_BossMod_Trappers" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_OutlawsAssassin">
+        <Data BossModfier="AI_Hunt_BossMod_Shamans" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Golgoth">
+        <Data BossModfier="AI_Hunt_BossMod_SiegeBeasts" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DragonRider">
+        <Data BossModfier="AI_Hunt_BossMod_Veterans" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Mankind_18">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mankind_18" UITitle="@ui_hunteffect_title_Mankind_18" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_justicar_skill_2" BossFilter="Hunt_Justicar">
+        <Data OldSkill="AI_republicjusticarElite_repeatingshots" NewSkill="AI_hunt_justicarElite_repeatingshots_2" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_thug_skill_2" BossFilter="Hunt_SadisticThug">
+        <Data OldSkill="AI_outlaw_warlord_axethrow" NewSkill="AI_hunt_warlord_axethrow_1" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_assassin_skill_5" BossFilter="Hunt_OutlawsAssassin">
+        <Data OldSkill="AI_RepublicAssassin_ShadowStrike_01" NewSkill="AI_Hunt_Assassin_ShadowStrike_01" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_golgoth_skill_1" BossFilter="Hunt_Golgoth">
+        <Data OldSkill="AI_REPU_Golgoth_JusticeFromAbove" NewSkill="AI_Hunt_Golgoth_JusticeFromAbove_1" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DragonRider">
+        <MagicEffect Name="chance_burn_on_hit">
+          <LoRoll ChancePercentInt="50" />
+          <HiRoll ChancePercentInt="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Mankind_19">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mankind_19" UITitle="@ui_hunteffect_title_Mankind_19" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_justicar_skill_4" BossFilter="Hunt_Justicar">
+        <Data OldSkill="AI_republicjusticarElite_shieldbash" NewSkill="AI_hunt_justicarElite_shieldbash" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_thug_skill_4" BossFilter="Hunt_SadisticThug">
+        <Data OldSkill="AI_default_leap" NewSkill="AI_hunt_warlord_leap" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_OutlawsAssassin">
+        <MagicEffect Name="damage_percent_as_shadow">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_Golgoth">
+        <MagicEffect Name="damage_percent_as_lightning">
+          <LoRoll DamagePercentInt="10" />
+          <HiRoll DamagePercentInt="10" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_DragonRider_Skill_3" BossFilter="Hunt_DragonRider">
+        <Data OldSkill="AI_DragonRider_DefaultMelee" NewSkill="AI_Hunt_DragonRider_DefaultMelee" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Mankind_20">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Mankind_20" UITitle="@ui_hunteffect_title_Mankind_20" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_justicar_skill_5" BossFilter="Hunt_Justicar">
+        <Data OldSkill="AI_republicjusticarElite_inexorablecharge" NewSkill="AI_Hunt_justicarElite_inexorablecharge" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_thug_skill_6" BossFilter="Hunt_SadisticThug">
+        <Data OldSkill="AI_outlaw_warlord_kick" NewSkill="AI_hunt_warlord_kick" />
+      </Entry>
+      <Entry Type="OverrideSkill" UILoc="@ui_huntmodifier_assassin_skill_3" BossFilter="Hunt_OutlawsAssassin">
+        <Data OldSkill="AI_RepublicAssassin_EvadeDash" NewSkill="AI_Hunt_Assassin_EvadeDash" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_Golgoth">
+        <MagicEffect Name="chance_shock_on_hit">
+          <LoRoll ChancePercentInt="25" />
+          <HiRoll ChancePercentInt="25" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM" BossFilter="Hunt_DragonRider">
+        <MagicEffect Name="chance_burn_on_hit">
+          <LoRoll ChancePercentInt="25" />
+          <HiRoll ChancePercentInt="25" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_1">
+        <Data AddedLootClass="Gold_Hunt_1" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="Scouts_A3">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_Scouts_1" UITitle="@ui_hunteffect_title_Scouts_1" IconPath="../u_resources/hunt/EIM_02.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_percent">
+          <LoRoll ArmorPercentFloat="50" />
+          <HiRoll ArmorPercentFloat="50" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_Scouts_2" UITitle="@ui_hunteffect_title_Scouts_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="elemental_damage_percent">
+          <LoRoll DamagePercentInt="15" />
+          <HiRoll DamagePercentInt="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_Scouts_3" UITitle="@ui_hunteffect_title_Scouts_3" IconPath="../u_resources/hunt/EIM_03.png">
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Justicar">
+        <Data BossModfier="AI_Hunt_BossMod_Snipers" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_SadisticThug">
+        <Data BossModfier="AI_Hunt_BossMod_Trappers" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_OutlawsAssassin">
+        <Data BossModfier="AI_Hunt_BossMod_Shamans" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_Golgoth">
+        <Data BossModfier="AI_Hunt_BossMod_SiegeBeasts" />
+      </Entry>
+      <Entry Type="BossModifier" UILoc="@ui_huntmodifier_SpawnLieutenants" BossFilter="Hunt_DragonRider">
+        <Data BossModfier="AI_Hunt_BossMod_Veterans" />
+      </Entry>
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_M2_Defend_NPC">
+        <Data Quest="QN_HE_STORYA3_TOS1_M2_OTWSB_Final" />
+      </Entry>
+      <Entry Type="Lootclass" UILoc="@ui_HuntReward_Gold_2">
+        <Data AddedLootClass="Gold_Hunt_2" RemoveExistingOnes="0" />
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+  <HuntEffectsFamily Name="High_speed_chase_A3">
+    <HuntEffect Index="0" UILore="@ui_hunteffect_desc_High_speed_chase_1" UITitle="@ui_hunteffect_title_High_speed_chase_1" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="Quest" UILoc="@ui_hunt_Event_C5_Kill_HuntingChallengers">
+        <Data Quest="QN_HE_STORYA3_TOS1_C5_COFU_Final" />
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_eim_damage">
+        <MagicEffect Name="damage_percent">
+          <LoRoll DamagePercentInt="-15" />
+          <HiRoll DamagePercentInt="-15" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="1" UILore="@ui_hunteffect_desc_High_speed_chase_2" UITitle="@ui_hunteffect_title_High_speed_chase_2" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="breakbar_percent">
+          <LoRoll ArmorPercentFloat="-20" />
+          <HiRoll ArmorPercentFloat="-20" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+    <HuntEffect Index="2" UILore="@ui_hunteffect_desc_High_speed_chase_3" UITitle="@ui_hunteffect_title_High_speed_chase_3" IconPath="../u_resources/hunt/EIM_01.png">
+      <Entry Type="EIM" UILoc="@ui_huntmodifier_EIM">
+        <MagicEffect Name="offensivespeed_final_percent">
+          <LoRoll CharacteristicFinalPercentFloat="-20" />
+          <HiRoll CharacteristicFinalPercentFloat="-20" />
+        </MagicEffect>
+      </Entry>
+      <Entry Type="EIM" UILoc="@ui_hunt_rewards_magicfind">
+        <MagicEffect Name="magic_find_when_killed">
+          <LoRoll ResourcePercentFloat="15" />
+          <HiRoll ResourcePercentFloat="15" />
+        </MagicEffect>
+      </Entry>
+    </HuntEffect>
+  </HuntEffectsFamily>
+</MetaData>

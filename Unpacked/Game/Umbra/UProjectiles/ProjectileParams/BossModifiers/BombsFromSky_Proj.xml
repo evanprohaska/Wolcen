@@ -1,0 +1,24 @@
+<MetaData>
+  <Projectile ID="BombsFromSky_Proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+      <param name="explosion_radius" value="1" />
+    </Explosion>
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="u_bossmodifiers.bombsky.proj" Direction="0,1,0" WorldSpace="0" Scale="1.5" />
+      <Hit ParticleName="u_bossmodifiers.bombsky.explode" Direction="0,0,1" WorldSpace="1" Scale="1.5" />
+      <Indicator ParticleName="u_bossmodifiers.bombsky.indicator" Direction="0,0,1" WorldSpace="1" Scale="2" />
+      <HitEnvironment ParticleName="u_bossmodifiers.bombsky.explode" Direction="0,0,1" WorldSpace="1" Scale="1.5" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_BossModifier_BombsFromSky_Proj_Lp" />
+      <Hit SoundTriggerName="Play_BossModifier_BombsFromSky_Impact" />
+      <Removed SoundTriggerName="Stop_BossModifier_BombsFromSky_Proj_Lp" />
+    </Audio>
+  </Projectile>
+</MetaData>

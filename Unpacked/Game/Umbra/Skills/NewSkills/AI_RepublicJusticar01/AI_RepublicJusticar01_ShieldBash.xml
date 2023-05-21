@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar01_shieldbash" ESkill="AI_outlaw_warlord_kick" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="4.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_ShieldBash" />
+    </Shapes>
+    <Blownaway Height="1" Distance="10" StunDuration="1" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="0.5" />
+      <EmissiveIntensity From="500" To="origin" In="1" />
+    </Material>
+    <SoundTrigger OnHit="Play_Edric_Justicar1_ShieldBash_Impact" />
+  </Skill>
+</MetaData>

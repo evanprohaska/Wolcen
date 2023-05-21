@@ -1,0 +1,101 @@
+<MetaData>
+  <ContentGenerator Name="CG_EG_DungeonChallenge" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="GoblinDungeon" PriorityTag="GoblinDungeon" ExcludeTag="ChestDungeon" Weight="1" />
+      <Archetype Tag="ChestDungeon" PriorityTag="ChestDungeon,Basic" ExcludeTag="GoblinDungeon" Weight="1" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="Canyon_LabyrinthDungeon_CG" Tag="Canyon" PriorityTag="Canyon" ExcludeTag="COST,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Cellar_LabyrinthDungeon_CG" Tag="Cellar" PriorityTag="Cellar" ExcludeTag="COST,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Cellar_Foggy_LabyrinthDungeon_CG" Tag="Cellar" PriorityTag="Cellar" ExcludeTag="COST,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Cellar_Mossy_LabyrinthDungeon_CG" Tag="Cellar_Mossy" PriorityTag="Cellar_Mossy" ExcludeTag="COST,COSS,COSU,COSW,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIW,CALL,COSD" />
+      <LevelGenerator DungeonName="Cellar_Fleshed_LabyrinthDungeon_CG" Tag="Cellar_Fleshed" PriorityTag="Cellar_Fleshed" ExcludeTag="OTWF,OTWSB,OTWSBW,COST,COSS,COSU,COSW,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Cellar_Sandy_LabyrinthDungeon_CG" Tag="Cellar_Sandy" PriorityTag="Cellar_Sandy" ExcludeTag="OTWF,OTWSB,OTWSBW,COST,COSS,COSU,COSW,COFLW,COFLVR,COFMSR,COFLVT,SVRIP,SVRIW,CALL,COSD" />
+      <LevelGenerator DungeonName="Cave_LabyrinthDungeon_CG" Tag="Cave" PriorityTag="Cave" ExcludeTag="COST,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Cave_Foggy_LabyrinthDungeon_CG" Tag="Cave" PriorityTag="Cave" ExcludeTag="COST,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Cave_Mossy_LabyrinthDungeon_CG" Tag="Cave_Mossy" PriorityTag="Cave_Mossy" ExcludeTag="COST,COSS,COSU,COSW,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIW,CALL,COSD" />
+      <LevelGenerator DungeonName="Cave_Fleshed_LabyrinthDungeon_CG" Tag="Cave_Fleshed" PriorityTag="Cave_Fleshed" ExcludeTag="OTWF,OTWSB,OTWSBW,COST,COSS,COSU,COSW,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Cave_Sandy_LabyrinthDungeon_CG" Tag="Cave_Sandy" PriorityTag="Cave_Sandy" ExcludeTag="OTWF,OTWSB,OTWSBW,COST,COSS,COSU,COSW,COFLW,COFLVR,COFMSR,COFLVT,SVRIP,SVRIW,CALL,COSD" />
+      <LevelGenerator DungeonName="Mine_LabyrinthDungeon_CG" Tag="Mine" PriorityTag="Mine" ExcludeTag="COST,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Mine_Foggy_LabyrinthDungeon_CG" Tag="Mine" PriorityTag="Mine" ExcludeTag="COST,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Mine_Fleshed_LabyrinthDungeon_CG" Tag="Mine_Fleshed" PriorityTag="Mine_Fleshed" ExcludeTag="OTWF,OTWSB,OTWSBW,COST,COSS,COSU,COSW,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Ossuary_LabyrinthDungeon_CG" Tag="Ossuary" PriorityTag="Ossuary" ExcludeTag="OTWF,OTWSB,OTWSBW,COST,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Ossuary_Foggy_LabyrinthDungeon_CG" Tag="Ossuary" PriorityTag="Ossuary" ExcludeTag="OTWF,OTWSB,OTWSBW,COST,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="Ossuary_Sandy_LabyrinthDungeon_CG" Tag="Ossuary_Sandy" PriorityTag="Ossuary_Sandy" ExcludeTag="OTWF,OTWSB,OTWSBW,COST,COFLW,COFLVR,COFMSR,COFLVT,SVRIP,SVRIF,SVRIW,CALL,COSD" />
+      <LevelGenerator DungeonName="WTemplar_LabyrinthDungeon_CG" Tag="WTemplar" PriorityTag="WTemplar" ExcludeTag="OTWF,OTWSB,OTWSBW,COSW,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="WTemplar_Foggy_LabyrinthDungeon_CG" Tag="WTemplar" PriorityTag="WTemplar" ExcludeTag="OTWF,OTWSB,OTWSBW,COSW,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="WTemplar_Fleshed_LabyrinthDungeon_CG" Tag="WTemplar_Fleshed" PriorityTag="WTemplar_Fleshed" ExcludeTag="OTWF,OTWSB,OTWSBW,COST,COSS,COSU,COFLVR,REPU,COFUT,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_LabyrinthDungeon_CG" Tag="WTemplar_Sandy" PriorityTag="WTemplar_Sandy" ExcludeTag="OTWF,OTWSB,OTWSBW,COSW,COFLW,COFLVR,COFMSR,COFLVT,REPU,COFUR,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+      <LevelGenerator DungeonName="WRepu_LabyrinthDungeon_CG" Tag="WRepu" PriorityTag="WRepu" ExcludeTag="OTWF,OTWSB,OTWSBW,COST,COSS,COSU,COSW,COFLW,COFLVR,COFMSR,COFLVT,COFUT,SVRIP,SVRIF,SVRIW,SVRIFW,CALL,COSD" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_EG_Wait_GoblinDungeonChallenge" Tag="GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_Wait_ChestDungeonChallenge" Tag="ChestDungeon" PriorityTag="" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_OTWF_Basic_Normal" BiomeName="default" Tag="Normal,OTWF,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_OTWSB_Basic_Normal" BiomeName="default" Tag="Normal,OTWSB,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_OTWSBW_Basic_Normal" BiomeName="default" Tag="Normal,OTWSBW,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COST_Basic_Normal" BiomeName="default" Tag="Normal,COST,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COSS_Basic_Normal" BiomeName="default" Tag="Normal,COSS,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COSD_Basic_Normal" BiomeName="default" Tag="Normal,COSD,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COSU_Basic_Normal" BiomeName="default" Tag="Normal,COSU,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COSW_Basic_Normal" BiomeName="default" Tag="Normal,COSW,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFLW_Basic_Normal" BiomeName="default" Tag="Normal,COFLW,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFLVR_Basic_Normal" BiomeName="default" Tag="Normal,COFLVR,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFMSR_Basic_Normal" BiomeName="default" Tag="Normal,COFMSR,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFLVT_Basic_Normal" BiomeName="default" Tag="Normal,COFLVT,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_REPU_Basic_Normal" BiomeName="default" Tag="Normal,REPU,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFUT_Basic_Normal" BiomeName="default" Tag="Normal,COFUT,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_COFUR_Basic_Normal" BiomeName="default" Tag="Normal,COFUR,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_SVRIP_Basic_Normal" BiomeName="default" Tag="Normal,SVRIP,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_SVRIF_Basic_Normal" BiomeName="default" Tag="Normal,SVRIF,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_SVRIW_Basic_Normal" BiomeName="default" Tag="Normal,SVRIW,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_SVRIFW_Basic_Normal" BiomeName="default" Tag="Normal,SVRIFW,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC1_CALL_Basic_Normal" BiomeName="default" Tag="Normal,CALL,Basic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_OTWF_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,OTWF,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_OTWSB_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,OTWSB,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_OTWSBW_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,OTWSBW,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COST_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COST,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COSS_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COSS,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COSD_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COSD,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COSU_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COSU,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COSW_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COSW,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COFLW_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COFLW,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COFLVR_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COFLVR,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COFMSR_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COFMSR,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COFLVT_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COFLVT,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_REPU_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,REPU,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COFUT_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COFUT,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_COFUR_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,COFUR,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_SVRIP_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,SVRIP,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_SVRIF_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,SVRIF,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_SVRIW_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,SVRIW,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_SVRIFW_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,SVRIFW,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_EG_NPC2_CALL_GoblinDungeon_Normal" BiomeName="default" Tag="Normal,CALL,GoblinDungeon" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_CG_EndGame_Canyon_BigLoot" Tag="ChestDungeon,Canyon" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Canyon_Mossy_BigLoot" Tag="ChestDungeon,Canyon_Mossy" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Canyon_Fleshed_BigLoot" Tag="ChestDungeon,Canyon_Fleshed" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Canyon_Sandy_BigLoot" Tag="ChestDungeon,Canyon_Sandy" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Cellar_BigLoot" Tag="ChestDungeon,Cellar" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Cellar_Mossy_BigLoot" Tag="ChestDungeon,Cellar_Mossy" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Cellar_Fleshed_BigLoot" Tag="ChestDungeon,Cellar_Fleshed" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Cellar_Sandy_BigLoot" Tag="ChestDungeon,Cellar_Sandy" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Cave_BigLoot" Tag="ChestDungeon,Cave" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Cave_Mossy_BigLoot" Tag="ChestDungeon,Cave_Mossy" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Cave_Fleshed_BigLoot" Tag="ChestDungeon,Cave_Fleshed" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Cave_Sandy_BigLoot" Tag="ChestDungeon,Cave_Sandy" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Mine_BigLoot" Tag="ChestDungeon,Mine" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Mine_Fleshed_BigLoot" Tag="ChestDungeon,Mine_Fleshed" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Ossuary_BigLoot" Tag="ChestDungeon,Ossuary" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Ossuary_Sandy_BigLoot" Tag="ChestDungeon,Ossuary_Sandy" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Templar_BigLoot" Tag="ChestDungeon,WTemplar" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Templar_Fleshed_BigLoot" Tag="ChestDungeon,WTemplar_Fleshed" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Templar_Sandy_BigLoot" Tag="ChestDungeon,WTemplar_Sandy" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_EndGame_Republic_BigLoot" Tag="ChestDungeon,WRepu" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_FixedEpicLoot" Tag="GoblinDungeon" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

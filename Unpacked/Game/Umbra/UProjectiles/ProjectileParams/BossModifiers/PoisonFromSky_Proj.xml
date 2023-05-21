@@ -1,0 +1,22 @@
+<MetaData>
+  <Projectile ID="PoisonFromSky_Proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="u_bossmodifiers.toxic_sky.proj" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="u_bossmodifiers.toxic_sky.impact" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="u_bossmodifiers.toxic_sky.indicator" Direction="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_BossModifier_PoisonFromSky_Proj_Lp" />
+      <Hit SoundTriggerName="Play_BossModifier_PoisonFromSky_Proj_Impact" />
+      <Removed SoundTriggerName="Stop_BossModifier_PoisonFromSky_Proj_Lp" />
+    </Audio>
+  </Projectile>
+</MetaData>

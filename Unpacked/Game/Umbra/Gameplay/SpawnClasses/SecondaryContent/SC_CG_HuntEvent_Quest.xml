@@ -1,0 +1,236 @@
+<MetaData>
+  <SpawnClass Name="Sc_CG_HE_BufferMinion_Enforcer">
+    <Spawn Type="Actor" ClassName="hunt_enforcer" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_GrowEventBoss">
+    <Spawn Type="Actor" ClassName="Hunt_GrowEvent_HalfBreed" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_Hunt_HE_O5_Specter">
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Fanatic" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_EnemyDefend_Trash">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O2_Destroyable">
+    <Spawn Type="Actor" ClassName="Hunt_HE_O2_Destroyable_Fury" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_O2_Destroyable1" />
+    <Spawn Type="Actor" ClassName="Hunt_HE_O2_Destroyable_Fury" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_O2_Destroyable2" />
+    <Spawn Type="Actor" ClassName="Hunt_HE_O2_Destroyable_Fury" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_O2_Destroyable3" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O2_Wave1">
+    <Spawn Type="Actor" ClassName="CultOfFlesh_ColossalBreeder" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Spreader" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Scarab" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_MiniHalfBreed" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Zombie" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Fanatic" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O2_Wave2">
+    <Spawn Type="Actor" ClassName="CultOfFlesh_ColossalBreeder" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Spreader" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Scarab" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_MiniHalfBreed" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Zombie" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Fanatic" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O2_Wave3">
+    <Spawn Type="Actor" ClassName="CultOfFlesh_ColossalBreeder" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Spreader" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Scarab" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_MiniHalfBreed" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Zombie" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Fanatic" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O3_Golgoth">
+    <Spawn Type="Actor" ClassName="PacifiedGolgoth" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O3_Cultist">
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O3_Priest">
+    <Spawn Type="Actor" ClassName="PacifiedPriest" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O4_Destroyable">
+    <Spawn Type="Actor" ClassName="Hunt_HE_O4_Destroyable_Fury" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_O4_Destroyable1" />
+    <Spawn Type="Actor" ClassName="Hunt_HE_O4_Destroyable_Fury" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_O4_Destroyable2" />
+    <Spawn Type="Actor" ClassName="Hunt_HE_O4_Destroyable_Fury" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_O4_Destroyable3" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O4_Wave1">
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Sniper" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Scarab" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_MiniHalfBreed" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Zombie" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Fanatic" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O4_Wave2">
+    <Spawn Type="Actor" ClassName="CultOfFlesh_ColossalBreeder" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Sniper" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Scarab" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_MiniHalfBreed" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Zombie" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Fanatic" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O4_Wave3">
+    <Spawn Type="Actor" ClassName="CultOfFlesh_ColossalBreeder" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="Sc_CG_HE_O4_Wave3_Target">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Sniper" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Scarab" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_MiniHalfBreed" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Zombie" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Fanatic" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O4_Wave0">
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Scarab" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_MiniHalfBreed" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Zombie" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Fanatic" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_O3_BuffScarab">
+    <Spawn Type="Actor" ClassName="Buff_Scarab_Proto" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_M4_OutlawsTrapper">
+    <Spawn Type="Actor" ClassName="Hunt_HE_M4_Trapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M4_Boss">
+      <BossRank Id="3" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_M5_OutlawsBrute">
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_M5_OutlawsTrapper">
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_M6_RepublicVeteran">
+    <Spawn Type="Actor" ClassName="RepublicVeteran" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_Hunt_HE_O1_AlphaF">
+    <Spawn Type="Actor" ClassName="Hunt_HE_O1_AlphaF" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="4" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_Hunt_HE_O1_ScarabF">
+    <Spawn Type="Actor" ClassName="CultOfFlesh_Scarab" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_M1_Wave1">
+    <Spawn Type="Actor" ClassName="RepublicHeavyInfantry" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_Republic_HeavyInfantry" />
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_RepublicInfantryRanged" />
+    <Spawn Type="Actor" ClassName="Republic_Wardog" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_Republic_Wardog" />
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_RepublicInfantrySword" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_M1_Wave2">
+    <Spawn Type="Actor" ClassName="RepublicVeteran" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_RepublicVeteran" />
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_RepublicSiegebeast" />
+    <Spawn Type="Actor" ClassName="RepublicHeavyInfantry" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_HE_M1_Republic_HeavyInfantry" />
+    <Spawn Type="Actor" ClassName="RepublicInfantryRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_HE_M1_RepublicInfantryRanged" />
+    <Spawn Type="Actor" ClassName="Republic_Wardog" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_HE_M1_Republic_Wardog" />
+    <Spawn Type="Actor" ClassName="RepublicInfantrySword" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_HE_M1_RepublicInfantrySword" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_M1_SB">
+    <Spawn Type="Actor" ClassName="RepublicSiegebeast" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M1_RepublicSiegebeast" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_M1_HM_Globe">
+    <Spawn Type="Actor" ClassName="Hunt_HE_M1_Republic_HeavyInfantry" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_DOF_BossSpawn">
+    <Spawn Type="Actor" ClassName="CultOfFlesh_DemonOfFlesh" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="4" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_WarBeast_BossSpawn">
+    <Spawn Type="Actor" ClassName="SvriirAlphaPoison" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="4" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_CG_HE_TameBeast">
+    <Spawn Type="Actor" ClassName="SvriirAlpha_Fire" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="3" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_C4_Final_Destroyable1">
+    <Spawn Type="Actor" ClassName="Hunt_HE_C4_Destroyable" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_C4_Final_Defend1" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_C4_Final_Destroyable2">
+    <Spawn Type="Actor" ClassName="Hunt_HE_C4_Destroyable" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_C4_Final_Defend2" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_M2_AuroraKnight">
+    <Spawn Type="Actor" ClassName="Hunt_HE_M2_AuroraKnight" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_M2_AuroraKnight" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_R1_Final_Golden_Scarab">
+    <Spawn Type="Actor" ClassName="Hunt_HE_R1_GoldenScarab" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" ForceEntityName="SC_GoldenScarab_Weak" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_R2_Final_Golden_Scarab">
+    <Spawn Type="Actor" ClassName="Hunt_HE_R2_GoldenScarab" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" ForceEntityName="SC_GoldenScarab_Weak" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_B3_Final_Buff_Scarab">
+    <Spawn Type="Actor" ClassName="Hunt_HE_R2_GoldenScarab" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" ForceEntityName="SC_GoldenScarab_Weak" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_B3_Final_SvriirOmegaFemale">
+    <Spawn Type="Actor" ClassName="SvriirOmegaFemale" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmegaFemale" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_B3_Final_SvriirOmega">
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_B3_Final_SvriirOmegaBaby">
+    <Spawn Type="Actor" ClassName="SvriirOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_B3_Final_SvriirBetaSpitter">
+    <Spawn Type="Actor" ClassName="SvriirBetaSpitter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_B3_Final_SvriirBetaSpawner">
+    <Spawn Type="Actor" ClassName="SvriirBetaSpawner" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_B3_Final_SvriirBetaSpitter_BR">
+    <Spawn Type="Actor" ClassName="SvriirBetaSpitter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="3" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_B3_Final_SvriirBetaSpawner_BR">
+    <Spawn Type="Actor" ClassName="SvriirBetaSpawner" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="3" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_HE_R3_Final_Spirit">
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="300" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="HE_R3_Final_Spirit" />
+  </SpawnClass>
+</MetaData>

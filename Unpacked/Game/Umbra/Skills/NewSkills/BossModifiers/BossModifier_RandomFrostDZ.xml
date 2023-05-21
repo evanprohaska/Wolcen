@@ -1,0 +1,42 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RandomFrostDZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Frost" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <Freeze Chance="100" ChanceMode="ignored" />
+    </StatusAilment>
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomFrostDZ" />
+    </Shapes>
+    <StatusEffect_MovementSpeed SlowPercent="35" SlowPercentPerLevel="0" Duration="0.6" DurationPerLevel="0" />
+    <DamageZone Duration="120" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="u_bossmodifiers.rnd_ice_dz.indicator" Offset="0,0,0" Direction="0,0,1" Scale="1.25" InstantKill="0" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.rnd_ice_dz.dz" Offset="0,0,0" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.rnd_ice_dz.dz_Fade" Offset="0,0,0" Direction="0,0,1" Scale="1.25" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="0" RandomBaseDistMax="0" RandomBaseAngleMin="0" RandomBaseAngleMax="0" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="2" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_Hunt_BossModifier_RandomFrostDZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Frost" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <Freeze Chance="100" ChanceMode="ignored" />
+    </StatusAilment>
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomFrostDZ" />
+    </Shapes>
+    <StatusEffect_MovementSpeed SlowPercent="35" SlowPercentPerLevel="0" Duration="0.6" DurationPerLevel="0" />
+    <DamageZone Duration="120" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="u_bossmodifiers.rnd_ice_dz.indicator" Offset="0,0,0" Direction="0,0,1" Scale="1.25" InstantKill="0" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.rnd_ice_dz.dz" Offset="0,0,0" Direction="0,0,1" Scale="1.25" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.rnd_ice_dz.dz_Fade" Offset="0,0,0" Direction="0,0,1" Scale="1.25" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="0" RandomBaseDistMax="0" RandomBaseAngleMin="0" RandomBaseAngleMax="0" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="2" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

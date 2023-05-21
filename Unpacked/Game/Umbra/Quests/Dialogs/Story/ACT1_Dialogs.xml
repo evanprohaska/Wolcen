@@ -1,0 +1,1759 @@
+<MetaData>
+  <Dialog ID="ACT1_Tutorial01" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="@ui_Tutorial_21_title" Content="@ui_Tutorial_21_content" Duration="6" Portrait="..\u_resources\tuto\loot.png" PortraitOrbis="..\u_resources\tuto\loot_orbis.png" PortraitDurango="..\u_resources\tuto\loot_durango.png" CanBeSkipped="1" PositionOffset="150" />
+  </Dialog>
+  <Dialog ID="ACT1_Q1_Escape1_Talk" Type="Gameplay" LockPlayer="0" Local="0" SkipDistance="115" EntityToComputeDistanceFrom="QP_SC_FirstSvriirs">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_Escape1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene10\a1_sc10_l002_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene10\a1_sc10_l003_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene10\a1_sc10_l004_player_male_alt1.wem" StartDelay="1" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q1_Escape2_Talk" Type="Gameplay" LockPlayer="0" Local="0" SkipDistance="115" EntityToComputeDistanceFrom="QP_SC_FirstSvriirs">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_Escape2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene10\a1_sc10_l005_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene10\a1_sc10_l006_player_male_alt1.wem" StartDelay="0" Filename_Female="ES\scene10\a1_sc10_l006_player_female.wem" StartDelay_Female="0.5" />
+      <Audio Filename="ES\scene10\a1_sc10_l007_player_male.wem" StartDelay="0.5" />
+      <Audio Filename="ES\scene10\a1_sc10_l008_player_male.wem" StartDelay="1" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q1_Escape3_Talk" Type="Gameplay" LockPlayer="0" Local="1" SkipDistance="115" EntityToComputeDistanceFrom="QP_SC_FirstSvriirs">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_Escape3" Duration="30" StopAfterAudio="0.5" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l007_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_Escape4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l008_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q1_MeetValeria_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@ACT1_Quest1_MeetValeria_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_light_armor.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l001_valeria_alt2.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_MeetValeria_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l002_player_male.wem" StartDelay="0" Filename_Female="ES\scene12\a1_sc12_l003_player_female_alt1.wem" StartDelay_Female="0" />
+    </Entry>
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@ACT1_Quest1_MeetValeria_3" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\valeria_light_armor.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l004_valeria.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_MeetValeria_4" Duration="30" StopAfterAudio="0.05" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l005_player_male_alt2.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@ACT1_Quest1_MeetValeria_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_light_armor.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l006_valeria.wem" StartDelay="0" />
+      <Audio Filename="ES\scene12\a1_sc12_l007_valeria.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q1_SpitterEncounter_Talk" Type="Gameplay" LockPlayer="0" Local="0" SkipDistance="30" EntityToComputeDistanceFrom="QP_SC_SpitterSpawn">
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@ACT1_Quest1_SpitterEncounter_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_light_armor.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l008_valeria.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_SpitterEncounter_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l009_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@ACT1_Quest1_SpitterEncounter_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_light_armor.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l010_valeria.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_SpitterEncounter_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l011_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q1_ApproachingSF_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_ApproachingSF_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l012_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@ACT1_Quest1_ApproachingSF_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_light_armor.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l013_valeria_alt1.wem" StartDelay="0" />
+      <Audio Filename="ES\scene12\a1_sc12_l013a_valeria.wem" StartDelay="1" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_ApproachingSF_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l014_player_male.wem" StartDelay="0.5" />
+      <Audio Filename="ES\scene12\a1_sc12_l015_player_male.wem" StartDelay="1" />
+    </Entry>
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@ACT1_Quest1_MeetValeria_6" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_light_armor.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l006_valeria.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest1_HangedTreePanel_1" Type="Gameplay" LockPlayer="0" Local="1">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_HangedTreePanel_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l038_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q1_SFGuardFight_Talk" Type="Gameplay" LockPlayer="0" Local="0" SkipDistance="20" EntityToComputeDistanceFrom="QP_SC_SFOutskirt">
+    <Entry Entity="A1SFGuard1" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest1_SFGuardFight_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l017_c_male_sf_guard1_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1SFGuard2" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest1_SFGuardFight_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l018_b_male_sf_guard2_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1SFGuard1" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest1_SFGuardFight_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l019_c_male_sf_guard1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q1_SFBridgeAngryCrowd_Talk" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="AnimObject268" Title="@ui_Refugee_CharacterNameLabel" Content="@ACT1_Quest1_SFCrowd_2" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\sf_refugee_man1 copy 2.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l019_c_male_refugee2_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="AnimObject190" Title="@ui_Refugee_CharacterNameLabel" Content="@ACT1_Quest1_SFCrowd_3" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\sf_refugee_woman2.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l020_c_female_refugee3.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="AnimObject203" Title="@ui_Refugee_CharacterNameLabel" Content="@ACT1_Quest1_SFCrowd_4" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\sf_refugee_woman2.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l021_b_female_refugee4.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="AnimObject201" Title="@ui_Refugee_CharacterNameLabel" Content="@ACT1_Quest1_SFCrowd_5" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\sf_refugee_man2.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l022_b_male_refugee5_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="AnimObject567" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest1_SFCrowd_6" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l023_b_male_sf_guard3.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q1_SFBridgeValeria_Talk" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_SFBridgeValeria_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l024_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene12\a1_sc12_l025_player_male.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@ACT1_Quest1_SFBridgeValeria_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_light_armor.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l026_valeria.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@ACT1_Quest1_SFBridgeValeria_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_light_armor.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l027_valeria.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_SFBridgeValeria_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l028_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Valeria" Title="@ui_Valeria_CharacterNameLabel" Content="@ACT1_Quest1_SFBridgeValeria_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\valeria_light_armor.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l029_valeria.wem" StartDelay="0.2" />
+      <Audio Filename="ES\scene12\a1_sc12_l029a_valeria.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q1_SFBridgeSFGuard_Talk" Type="Main" LockPlayer="0" Local="0" Sequence="A1_SFBridgeGuard">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_SFBridgeSFGuard_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l030_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SFBridge_Guard" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest1_SFBridgeSFGuard_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l031_b_male_sf_guard3.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_SFBridgeSFGuard_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l032_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SFBridge_Guard" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest1_SFBridgeSFGuard_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l033_b_male_sf_guard3.wem" StartDelay="0" />
+      <Audio Filename="ES\scene12\a1_sc12_l034_b_male_sf_guard3.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest1_SFBridgeSFGuard_5" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l035_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SFBridge_Guard" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest1_SFBridgeSFGuard_6" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene12\a1_sc12_l036_b_male_sf_guard3.wem" StartDelay="0" />
+      <Audio Filename="ES\scene12\a1_sc12_l037_b_male_sf_guard3.wem" StartDelay="0.5" />
+      <Audio Filename="ES\scene12\a1_sc12_l038_b_male_sf_guard3_alt1.wem" StartDelay="1.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SF_GuardWelcoming" Type="Bubble" LockPlayer="0" Local="1" SkipDistance="20" EntityToComputeDistanceFrom="MaleCaucasianGuard20">
+    <Entry Entity="MaleCaucasianGuard20" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_SF_GuardWelcoming" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l010_male_guard26_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SF_ConscriptComment" Type="Bubble" SkipDistance="20" EntityToComputeDistanceFrom="ArabMaleConscript1" LockPlayer="0" Local="1">
+    <Entry Entity="ArabMaleConscript1" Title="@ui_StormfallConscript_CharacterNameLabel" Content="@ACT1_Quest2_SF_ConscriptComment_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\placeholder.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l003_male_conscript1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleGuard4" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_SF_ConscriptComment_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l004_c_male_sf_guard4.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="ArabMaleConscript1" Title="@ui_StormfallConscript_CharacterNameLabel" Content="@ACT1_Quest2_SF_ConscriptComment_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\placeholder.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l005_male_conscript1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="AfricanMaleGuard5" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_SF_ConscriptComment_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l006_b_male_sf_guard5.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="ArabMaleConscript1" Title="@ui_StormfallConscript_CharacterNameLabel" Content="@ACT1_Quest2_SF_ConscriptComment_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\placeholder.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l007_male_conscript1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleGuard4" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_SF_ConscriptComment_6" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l008_c_male_sf_guard4_alt3.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SF_PlayerEnteringPlaza" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SF_PlayerEnteringPlaza" Duration="30" StopAfterAudio="0.01" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l001_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_C1_SF_TalkToPet" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Pet_Meeting_1" Duration="30" StopAfterAudio="0.01" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\Pet\a1_huntintro_pet_l001_player_male_alt2.wem" Filename_Female="ES\C1\ACT1\HuntIntro\Pet\a1_huntintro_pet_l001_player_female.wem" />
+    </Entry>
+    <Entry Entity="HT1_NPC_FS_Pet1" Title="@ui_Dog_CharacterNameLabel" Content="@ui_C1_A1_Pet_Meeting_4" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\Pet\portraits_pets_dog_normal.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\Pet\a1_huntintro_pet_l001_dog.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Pet_Meeting_2" Duration="30" StopAfterAudio="0.01" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\Pet\a1_huntintro_pet_l002_player_male_alt1.wem" Filename_Female="ES\C1\ACT1\HuntIntro\Pet\a1_huntintro_pet_l002_player_female.wem" />
+    </Entry>
+    <Entry Entity="HT1_NPC_FS_Pet1" Title="@ui_Dog_CharacterNameLabel" Content="@ui_C1_A1_Pet_Meeting_4" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\Pet\portraits_pets_dog_normal.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\Pet\a1_huntintro_pet_l001_dog_alt1.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Pet_Meeting_3" Duration="30" StopAfterAudio="0.01" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\Pet\a1_huntintro_pet_l003_player_male_alt1.wem" Filename_Female="ES\C1\ACT1\HuntIntro\Pet\a1_huntintro_pet_l003_player_female.wem" />
+    </Entry>
+    <Entry Entity="HT1_NPC_FS_Pet1" Title="@ui_Dog_CharacterNameLabel" Content="@ui_C1_A1_Pet_Meeting_4" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\Pet\portraits_pets_dog_normal.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\Pet\a1_huntintro_pet_l001_dog_alt2.wem" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SF_Stormfallguard" Type="Bubble" SkipDistance="20" EntityToComputeDistanceFrom="ArabMaleGuard6" LockPlayer="0" Local="1">
+    <Entry Entity="ArabMaleGuard6" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_SF_Stormfallguard" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l008_c_male_sf_guard6_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SF_NobleConspiracy" Type="Bubble" SkipDistance="20" EntityToComputeDistanceFrom="Act1_Stormfall_Nobleman2" LockPlayer="0" Local="1">
+    <Entry Entity="ArabMaleNoble2" Title="@ui_StormfallNoble_CharacterNameLabel" Content="@ACT1_Quest2_SF_NobleConspiracy_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\sf_noble_man2.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l010_male_sf_noble2.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="ArabMaleNoble3" Title="@ui_StormfallNoble_CharacterNameLabel" Content="@ACT1_Quest2_SF_NobleConspiracy_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\sf_noble_man3.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l011_male_sf_noble3.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="ArabFemaleNoble3" Title="@ui_StormfallNoble_CharacterNameLabel" Content="@ACT1_Quest2_SF_NobleConspiracy_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\sf_noble_woman1.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l012_female_sf_noble3.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="ArabMaleNoble3" Title="@ui_StormfallNoble_CharacterNameLabel" Content="@ACT1_Quest2_SF_NobleConspiracy_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\sf_noble_man3.png" Width="500" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l013_male_sf_noble3.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="ArabMaleNoble2" Title="@ui_StormfallNoble_CharacterNameLabel" Content="@ACT1_Quest2_SF_NobleConspiracy_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\sf_noble_man2.png" Width="500" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l014_male_sf_noble2_alt2.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="ArabFemaleNoble3" Title="@ui_StormfallNoble_CharacterNameLabel" Content="@ACT1_Quest2_SF_NobleConspiracy_6" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\sf_noble_woman1.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene13\a1_sc13_l015_female_sf_noble3.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_Conscript_Comment" Type="Gameplay" LockPlayer="0" Local="0" Sequence="A1_FaaradAndConscripts">
+    <Entry Entity="Q_NPC_SFBridge_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_FS_ConscriptComment_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l001_faarad.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CausasianMaleConscript2" Title="@ui_StormfallConscript_CharacterNameLabel" Content="@ACT1_Quest2_FS_ConscriptComment_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\sf_refugee_man1.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l002_male_conscript2.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SFBridge_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_FS_ConscriptComment_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l003_faarad.wem" StartDelay="0" Important="0" />
+      <Audio Filename="ES\scene14\a1_sc14_l004_faarad.wem" StartDelay="1" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_ThunderBladeFaraad1_Talk" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Q_NPC_SFBridge_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeFaarad_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l005_faarad.wem" StartDelay="0" />
+      <Audio Filename="ES\scene14\a1_sc14_l006_faarad.wem" StartDelay="0.1" />
+      <Audio Filename="ES\scene14\a1_sc14_l007_faarad_alt1.wem" StartDelay="0.75" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_ThunderbladeFaarad_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l008_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SFBridge_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeFaarad_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l009_faarad_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_ThunderbladeFaarad_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l010_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SFBridge_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeFaarad_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l011_faarad.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SFBridge_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeFaarad_6_A" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l012_faarad_Part1_LHEdit.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SFBridge_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeFaarad_6_B" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l012_faarad_Part2_LHEdit.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_BridgeComments1_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Q_NPC_SFBridge_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_FS_BridgeComments1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l013_faarad.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_BridgeComments2_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="ArabMaleGuard7" Title="@ui_ThunderBlade_CharacterNameLabel" Content="@ACT1_Quest2_FS_BridgeComments2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l014_a_male_sf_guard7.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_BridgeComments3_Talk" Type="Gameplay" LockPlayer="0" Local="0" Sequence="A1_SFGuardGossiping">
+    <Entry Entity="CaucasianMaleGuard8" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_FS_BridgeComments3_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l015_c_male_sf_guard8_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleGuard9" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_FS_BridgeComments3_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l016_c_male_sf_guard9.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_BridgeComments4_Talk" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="AfricanFemaleRefugee10" Title="@ui_Refugee_CharacterNameLabel" Content="@ACT1_Quest2_FS_BridgeComments4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\sf_refugee_woman3.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l017_b_female_refugee10.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_BridgeComments5_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="CaucasianMaleGuard17" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_FS_BridgeComments5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l018_c_male_sf_guard17_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_FS_SFCamp" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_SFCamp" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l019_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_FS_Stormfallguard_Talk" Type="Main" LockPlayer="0" Local="0" Sequence="A1_DYN_Farmstead">
+    <Entry Entity="Q_NPC_FS_Sergent" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_FS_Stormfallguard_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l020_a_male_sf_guard10.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_Stormfallguard_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l021_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_FS_Sergent" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_FS_Stormfallguard_3" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l022_a_male_sf_guard10.wem" StartDelay="0" />
+      <Audio Filename="ES\scene14\a1_sc14_l023_a_male_sf_guard10.wem" StartDelay="0.75" />
+    </Entry>
+    <Entry Entity="" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_FS_Stormfallguard_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l024_c_male_sf_guard11.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_Stormfallguard_6" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l025_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_FS_Sergent" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_FS_Stormfallguard_7" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l026_a_male_sf_guard10.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_Stormfallguard_8" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene14\a1_sc14_l027_player_male_alt2.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_FS_SvriirEvent_Talk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="AnimObject_A1_Q2_S5_Static_SANDOR" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_EventSvriir1_3" Duration="30" StopAfterAudio="0.5" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene15\a1_sc15_l015_sandor.wem" StartDelay="0" />
+      <Audio Filename="ES\scene15\a1_sc15_l016_sandor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="AnimObject_A1_Q2_S5_Static_SANDOR" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_EventSvriir1_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene16\a1_sc16_l001_sandor.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_FS_SvriirEvent_Talk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="AnimObject_A1_Q2_S5_Static_SANDOR" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_EventSvriir1_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene16\a1_sc16_l002_sandor.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_FS_Stormfallguard_Talk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="AnimObject_A1_Q2_S5_Archer6" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_FS_EventSvriir2_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene16\a1_sc16_l003_c_guard11.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="AnimObject_A1_Q2_S5_Static_SANDOR" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_EventSvriir2_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene16\a1_sc16_l004_sandor.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_FS_Stormfallguard_Talk4" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="AnimObject_A1_Q2_S5_Static_SANDOR" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_EventSvriir4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l001_sandor.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_FS_Stormfallguard_Talk5" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="AnimObject_A1_Q2_S5_Static_SANDOR" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_EventSvriir5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l002_sandor_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_ThunderBladeSandor1_Talk" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Q_NPC_FS_Sergent2" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeSandor_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l003_sandor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_ThunderbladeSandor_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l004_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_FS_Sergent2" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeSandor_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l005_sandor.wem" StartDelay="0" />
+      <Audio Filename="ES\scene18\a1_sc18_l006_sandor.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_ThunderbladeSandor_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l007_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_FS_Sergent2" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeSandor_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l008_sandor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_ThunderbladeSandor_6" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l009_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene18\a1_sc18_l010_player_male.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Q_NPC_FS_Sergent2" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeSandor_7" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l011_sandor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_FS_Sergent2" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeSandor_8_A" Duration="30" StopAfterAudio="0.5" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l012_sandor.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Q_NPC_FS_Sergent2" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeSandor_8_B" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l013_sandor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_ThunderbladeSandor_9" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l014_player_male_alt2.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_FS_Sergent2" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeSandor_10" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l015_sandor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_ThunderbladeSandor_11" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l016_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_FS_Sergent2" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeSandor_12" Duration="30" StopAfterAudio="0.6" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l017_sandor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_ThunderbladeSandor_13" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l018_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_ThunderBladeSandor2_Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Q_NPC_FS_Sergent2" Title="@ui_ThunderBladeSandor_CharacterNameLabel" Content="@ACT1_Quest2_FS_ThunderbladeSandor2_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l019_sandor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_ThunderbladeSandor2_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l020_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_FS_PlayerComment1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_PlayerComment1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l021_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene18\a1_sc18_l022_player_male.wem" StartDelay="0.75" />
+      <Audio Filename="ES\scene18\a1_sc18_l023_player_male_alt1.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_C1_SF_IlthainApproach" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Ilthain_Meeting_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l001_player_male_alt2.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l001_player_female.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Meeting_2" Duration="30" StopAfterAudio="1.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l002_ilthain.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Meeting_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l003_ilthain.wem" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_C1_SF_TalkToIlthain1" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Ilthain_Meeting_4" Duration="30" StopAfterAudio="0.3" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l004_player_male_alt3.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l004_player_female_alt1.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Meeting_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l005_ilthain.wem" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@ui_C1_A1_Ilthain_Meeting_6" Duration="30" StopAfterAudio="0.4" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l006_player_male.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l006_player_female.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Meeting_7" Duration="30" StopAfterAudio="0.7" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l007_ilthain.wem" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@ui_C1_A1_Ilthain_Meeting_8" Duration="30" StopAfterAudio="0.3" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l008_player_male_alt1.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l008_player_female.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Meeting_9" Duration="30" StopAfterAudio="0.4" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l009_ilthain_alt1.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Meeting_10" Duration="30" StopAfterAudio="0.8" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l010_ilthain.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Meeting_11" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l011_ilthain.wem" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@ui_C1_A1_Ilthain_Meeting_12" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l012_player_male_alt2.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l012_player_female_alt1.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Meeting_13" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l013_ilthain.wem" />
+    </Entry>
+    <Entry Entity="player" Title="player" Content="@ui_C1_A1_Ilthain_Meeting_14" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l014_player_male.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainMeeting\a1_huntintro_meeting_l014_player_female_alt1.wem" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_FS_PlayerComment2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_PlayerComment2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l024_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene18\a1_sc18_l025_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Trail_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l001_ilthain.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Trail_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l002_ilthain_a.wem" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_FS_PlayerComment2_Standard" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_FS_PlayerComment2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l024_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene18\a1_sc18_l025_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SL_PlayerComment1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SL_PlayerComment1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l026_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SL_PlayerComment2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SL_PlayerComment2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l027_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Trail_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l003_ilthain_alt1.wem" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SL_PhenomenonComment1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SL_PhenomenonComment1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l028_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene18\a1_sc18_l029_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Trail_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l004_ilthain.wem" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SL_PlayerComment2_Standard" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SL_PlayerComment2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l027_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SL_PhenomenonComment1_Standard" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SL_PhenomenonComment1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l028_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene18\a1_sc18_l029_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_C1_SF_TalkToIlthain2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Ilthain_Trail_5" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l005_player_male.wem" Filename_Female="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l005_player_female_alt1.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Trail_6" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l006_ilthain.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="Player" Content="@ui_C1_A1_Ilthain_Trail_7" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l007_player_male.wem" Filename_Female="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l007_player_female.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Trail_8" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l008_ilthain_alt1.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Trail_9" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l009_ilthain.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Trail_10" Duration="30" StopAfterAudio="0.3" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l010_ilthain.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="Player" Content="@ui_C1_A1_Ilthain_Trail_11" Duration="30" StopAfterAudio="0.4" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l011_player_male_alt1.wem" Filename_Female="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l011_player_female.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Trail_12" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l012_ilthain.wem" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SL_PhenomenonComment2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SL_PhenomenonComment2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l030_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Trail_13" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\SirkisTrail\a1_huntintro_trail_l013_ilthain.wem" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SL_PhenomenonComment2_Standard" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SL_PhenomenonComment2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l030_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SL_PlayerComment3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SL_PlayerComment3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene18\a1_sc18_l031_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene18\a1_sc18_l032_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SL_PlayerComment5" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SL_PlayerComment6" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene20\a1_sc20_l001_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene20\a1_sc20_l002_player_male.wem" StartDelay="0.25" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_C1_SF_TalkToIlthain3" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Departure_1" Duration="30" StopAfterAudio="0.5" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l001_ilthain_alt1.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Departure_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l003_ilthain.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Ilthain_Departure_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l004_player_male.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l004_player_female_alt2.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Departure_5" Duration="30" StopAfterAudio="0.6" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l005_ilthain_alt1.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Ilthain_Departure_6" Duration="30" StopAfterAudio="0.5" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l006_player_male_alt1.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l006_player_female.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Ilthain_Departure_7" Duration="30" StopAfterAudio="0.3" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l007_player_male.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l007_player_female_alt1.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Departure_8" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l008_ilthain.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Ilthain_Departure_9" Duration="30" StopAfterAudio="0.5" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l009_player_male.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l009_player_female.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Departure_10" Duration="30" StopAfterAudio="0.3" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l010_ilthain_alt1.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Ilthain_Departure_11" Duration="30" StopAfterAudio="0.4" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l011_player_male.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l011_player_female.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Departure_12" Duration="30" StopAfterAudio="0.4" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l012_ilthain.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Ilthain_Departure_13" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l013_player_male.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l013_player_female_alt1.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Departure_14" Duration="30" StopAfterAudio="0.3" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l014_ilthain_alt1.wem" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ui_C1_A1_Ilthain_Departure_15" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l015_player_male_alt1.wem" Filename_Female="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l015_player_female.wem" />
+    </Entry>
+    <Entry Entity="A1_DYN_Ilthain_CalmingDrake_01" Title="@ui_KnightIlthain_CharacterNameLabel" Content="@ui_C1_A1_Ilthain_Departure_16" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\portraits_ilthain.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio StartDelay="0" Filename="ES\C1\ACT1\HuntIntro\IlthainDeparture\a1_huntintro_departure_l016_ilthain_alt4.wem" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_NobleQueeing_Talk" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="CaucasianMaleGuard18" Title="" Content="@ACT1_Quest2_SF_NobleQueeing_1" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l001_c_m_sf_guard18.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="ArabMaleNoble1" Title="" Content="@ACT1_Quest2_SF_NobleQueeing_2" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l002_a_m_sf_noble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianFemaleNoble2" Title="" Content="@ACT1_Quest2_SF_NobleQueeing_3" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l003_c_m_sf_guard2.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="BlackMaleNoble5" Title="" Content="@ACT1_Quest2_SF_NobleQueeing_4" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l004_b_m_sf_noble5.wem" StartDelay="0.2" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_ThunderBladeFaraad2_Talk" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Q_NPC_SF_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_SF_ThunderbladeFaarad_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l005_faarad.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SF_ThunderbladeFaarad_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l007_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SF_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_SF_ThunderbladeFaarad_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l008_faarad_alt2.wem" StartDelay="0" />
+      <Audio Filename="ES\scene21\a1_sc21_l009_faarad.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SF_ThunderbladeFaarad_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l010_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SF_Lieutenant" Title="@ui_ThunderBladeFaarad_CharacterNameLabel" Content="@ACT1_Quest2_SF_ThunderbladeFaarad_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l011_faarad_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_SF_PlayerComment" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SF_PlayerComment_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l012_player_male_alt2.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SF_PlayerComment_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene21\a1_sc21_l013_player_male.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_TeachingGeography_Talk" Type="Bubble" Family="StormfallJewel" LockPlayer="0" Local="0" Sequence="A1_TeachingGeography">
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_SF_TeachingGeography_1" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l001_c_m_sf_noble4_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_SF_TeachingGeography_2" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l002_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+      <Audio Filename="ES\scene22\a1_sc22_l003_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_SF_TeachingGeography_3" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l004_c_m_sf_noble4.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_JewelStormfall_1" Type="Bubble" Family="StormfallJewel" LockPlayer="0" Local="1">
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelStormfall_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l011_c_m_sf_ynoble1_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelStormfall_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l012_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_JewelStormfall_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l013_c_m_sf_noble4.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_JewelGomora_1" Type="Bubble" Family="StormfallJewel" LockPlayer="0" Local="1">
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_JewelGomora_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l014_c_m_sf_noble4_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelGomora_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l015_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelGomora_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l016_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_JewelGomora_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l017_c_m_sf_noble4.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_JewelThreepeaks_1" Type="Bubble" Family="StormfallJewel" LockPlayer="0" Local="1">
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelThreepeaks_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l018_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelThreepeaks_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l019_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_JewelThreepeaks_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l020_c_m_sf_noble4.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelThreepeaks_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l021_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_JewelThreepeaks_5" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l022_c_m_sf_noble4.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_JewelVulcain_1" Type="Bubble" Family="StormfallJewel" LockPlayer="0" Local="1">
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelVulcain_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l023_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelVulcain_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l024_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_JewelSalander_1" Type="Bubble" Family="StormfallJewel" LockPlayer="0" Local="1">
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelSalander_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l025_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_JewelSalander_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l026_c_m_sf_noble4.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelSalander_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l027_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelSalander_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l028_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_JewelArchion_1" Type="Bubble" Family="StormfallJewel" LockPlayer="0" Local="1">
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelArchion_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l029_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelArchion_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l030_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_JewelArchion_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l031_c_m_sf_noble4.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_JewelArchion_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l032_c_m_sf_noble4.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Quest2_JewelCtul_1" Type="Bubble" Family="StormfallJewel" LockPlayer="0" Local="1">
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelCtul_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l033_c_m_sf_ynoble1_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelCtul_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l034_c_m_sf_ynoble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_JewelCtul_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l035_c_m_sf_noble4.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleYoungNoble1" Title="" Content="@ACT1_Quest2_JewelCtul_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l036_c_m_sf_ynoble1_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleNoble4" Title="" Content="@ACT1_Quest2_JewelCtul_5" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l037_c_m_sf_noble4.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_PalaceGuard_Talk" Type="Bubble" LockPlayer="0" Local="0" Sequence="NPC_MH_Stand_Gesture_Announce_01">
+    <Entry Entity="AfricanMaleGuard14" Title="" Content="@ACT1_Quest2_SF_PalaceGuard" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l006_b_m_sf_guard14.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q2_Damaskus1_Talk" Type="Main" LockPlayer="0" Local="0" Sequence="A1_Q2_S16_Damaskus_1">
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l008_damaskus.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SF_DamaskusTalk1_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l009_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l010_damaskus_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SF_DamaskusTalk1_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l011_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l012_damaskus.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SF_DamaskusTalk1_6" Duration="30" StopAfterAudio="0.001" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l013_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_7" Duration="30" StopAfterAudio="1" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l014_damaskus.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_8" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l015_damaskus.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="AfricanMaleGuard14" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_9" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l016_b_m_sf_guard14_alt1.wem" StartDelay="0.1" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_10" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l017_damaskus.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="AfricanMaleGuard14" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_11" Duration="30" StopAfterAudio="2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l018_b_m_sf_guard14_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_12" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l019_damaskus.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SF_DamaskusTalk1_13" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l020_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_14" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l021_damaskus.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest2_SF_DamaskusTalk1_15" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l022_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_16" Duration="30" StopAfterAudio="1.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l023_damaskus.wem" StartDelay="0" />
+      <Audio Filename="ES\scene22\a1_sc22_l023a_damaskus.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest2_SF_DamaskusTalk1_17" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l024_damaskus.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_PlayerComment1_1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_PlayerComment1_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l026_player_male_alt1.wem" StartDelay="0" Filename_female="ES\scene22\a1_sc22_l0026_player_female.wem" StartDelay_Female="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_PlayerComment1_2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_PlayerComment1_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene22\a1_sc22_l025_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_FoodRationing" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="ArabMaleGuard15" Title="" Content="@ACT1_Quest3_SF_FoodRationing" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l001_a_m_sf_guard15.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_BrokenCart" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="NPC91" Title="" Content="@ACT1_Quest3_SF_BrokenCart" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l002_b_m_refugee6.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_Harlan" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="AfricanMaleGuard19" Title="" Content="@ACT1_Quest3_SF_Harlan_1" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l003_b_m_sf_guard19_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="Harlantheboatmaker" Title="" Content="@ACT1_Quest3_SF_Harlan_2" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l004_harlan.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="AfricanMaleGuard19" Title="" Content="@ACT1_Quest3_SF_Harlan_3" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l005_b_m_sf_guard19.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_CitizenDebate" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="ArabMaleCitizen7" Title="" Content="@ACT1_Quest3_SF_CitizenDebate_1" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l006_a_m_sf_citizen7.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="ArabMaleCitizen8" Title="" Content="@ACT1_Quest3_SF_CitizenDebate_2" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l007_a_m_sf_citizen8.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_OldLadyWantsAction" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="CaucasianMaleCitizen4" Title="" Content="@ACT1_Quest3_SF_OldLadyWantsAction_1" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l008_c_m_sf_citizen4.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="BlackMaleCitizen5" Title="" Content="@ACT1_Quest3_SF_OldLadyWantsAction_2" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l009_b_m_sf_citizen5.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianFemaleNoble1" Title="" Content="@ACT1_Quest3_SF_OldLadyWantsAction_3" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l010_c_m_sf_noble1_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianFemaleNoble1" Title="" Content="@ACT1_Quest3_SF_OldLadyWantsAction_4" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l011_c_m_sf_noble1.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_YellingLunatic" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="CaucasianMaleCitizen6" Title="" Content="@ACT1_Quest3_SF_YellingLunatic" Duration="30" StopAfterAudio="0.2" Portrait="" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l012_c_m_sf_citizen6.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_PlayerComment2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_PlayerComment2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene23\a1_sc23_l013_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_InnEvent_1" Type="Main" LockPlayer="0" Local="0" Sequence="A1_Q3_S3_InnAmbush" StopSequenceWhenFinished="0">
+    <Entry Entity="EfraimFaarad" Title="@ui_Nazim_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\innkeeper.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l001_nazim.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="EfraimFaarad" Title="@ui_Nazim_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\innkeeper.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l003_nazim_alt1.wem" StartDelay="0.2" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_InnEvent_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l004_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene24\a1_sc24_l005_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="EfraimFaarad" Title="@ui_Nazim_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\innkeeper.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l006_nazim_alt5.wem" StartDelay="0" Filename_female="ES\scene24\a1_sc24_l006_nazim_alt5_LHEdit_Female.wem" StartDelay_Female="0.2" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_InnEvent_5" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l007_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene24\a1_sc24_l008_player_male.wem" StartDelay="1.25" />
+    </Entry>
+    <Entry Entity="EfraimFaarad" Title="@ui_Nazim_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_6" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\innkeeper.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l009_nazim_alt1.wem" StartDelay="0.1" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_InnEvent_7" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l010_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SF_RepublicanAlastor" Title="@ui_Alastor_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_8" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\republic_assassin.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l012_alastor.wem" StartDelay="0" />
+      <Audio Filename="ES\scene24\a1_sc24_l013_alastor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="EfraimFaarad" Title="@ui_Nazim_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_9" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\innkeeper.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l014_nazim_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_InnEvent_10" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l015_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SF_RepublicanAlastor" Title="@ui_Alastor_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_11" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\republic_assassin.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l016_alastor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="EfraimFaarad" Title="@ui_Nazim_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_12" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\innkeeper.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l017_nazim.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_InnEvent_13" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l018_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_InnEvent_14" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l019_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SF_RepublicanAlastor" Title="@ui_Alastor_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_15" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\republic_assassin.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l020_alastor_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_InnEvent_16" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l021_player_male_alt2.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_SF_RepublicanAlastor" Title="@ui_Alastor_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_17" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\republic_assassin.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l022_alastor.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_InnEvent_18" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l023_player_male_alt1.wem" StartDelay="0" />
+      <Audio Filename="ES\scene24\a1_sc24_l024_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene24\a1_sc24_l025_player_male.wem" StartDelay="0.75" />
+    </Entry>
+    <Entry Entity="Q_NPC_SF_RepublicanAlastor" Title="@ui_Alastor_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent_19" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\republic_assassin.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l026_alastor.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_InnEvent_3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Alastor" Title="@ui_Alastor_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\republic_assassin.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene24\a1_sc24_l027_alastor.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_InnEvent_4" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Alastor" Title="@ui_Alastor_CharacterNameLabel" Content="@ACT1_Quest3_SF_InnEvent4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\republic_assassin.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene24\a1_sc24_l028_alastor.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_PlayerComment3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_PlayerComment3_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l026_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene24\a1_sc24_l027_player_male.wem" StartDelay="1" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_PlayerComment3_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene24\a1_sc24_l028_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_PlayerComment5" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_PlayerComment3_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l002_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_FS_PlayerComment" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_PlayerComment3_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene25\a1_sc25_l001_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene25\a1_sc25_l002_player_male.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_FS_Phenomenon" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_FS_Phenomenon1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene26\a1_sc26_l001_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene26\a1_sc26_l002_player_male.wem" StartDelay="0" StartDelay_Female="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_BO_Phenomenon1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_Phenomenon1_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l009_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_Phenomenon1_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l010_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_Phenomenon1_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l011_edric.wem" StartDelay="0" />
+      <Audio Filename="ES\scene28\a1_sc28_l012_edric.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_Phenomenon1_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l013_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_Phenomenon1_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l014_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_Phenomenon1_6" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l015_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_BO_Phenomenon2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_Phenomenon2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l008_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_BO_MeetEdric1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_MeetEdric_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l001_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_MeetEdric_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l002_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_MeetEdric_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l003_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_MeetEdric_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l004_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_MeetEdric_5" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l005_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_MeetEdric_6" Duration="30" StopAfterAudio="0.05" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l006_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_MeetEdric_7" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l007_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_BO_MeetEdric2" Type="Gameplay" LockPlayer="0" Local="1">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_MeetEdric2_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l016_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_MeetEdric2_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l017_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_MeetEdric2_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l018_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_MeetEdric2_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l019_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene28\a1_sc28_l020_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_MeetEdric2_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l021_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_MeetEdric2_6" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l022_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_MeetEdric2_7" Duration="30" StopAfterAudio="0.7" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l023_edric.wem" StartDelay="0" />
+      <Audio Filename="ES\scene28\a1_sc28_l024_edric.wem" StartDelay="0" Filename_Female="ES\Scene28\a1_sc28_l025_edric.wem" StartDelay_Female="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_MeetEdric2_8" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l026_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_BO_MeetEdric3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_MeetEdric3_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l027_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_BO_OutlawAmbush1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_OutlawAmbush1_1" Duration="30" StopAfterAudio="0.3" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l028_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_OutlawAmbush1_2" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l029_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_OutlawAmbush1_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l030_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_BO_OutlawAmbush2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_BO_OutlawAmbush2_1" Duration="30" StopAfterAudio="0.01" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l031_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_OutlawAmbush2_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l032_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_BO_OutlawAmbush3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Naarlog" Title="@ui_Naarlog_CharacterNameLabel" Content="@ACT1_Quest3_BO_OutlawAmbush3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\flayer_thug.png" CanBeSkipped="1" PositionOffset="6">
+      <Audio Filename="ES\scene28\a1_sc28_l033_naarlog_alt4.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_BO_OutlawAmbushOver" Type="Gameplay" LockPlayer="0" Local="1">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_BO_OutlawAmbushOver" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene28\a1_sc28_l034_edric_alt2.wem" StartDelay="0" Filename_Female="ES\Scene28\a1_sc28_l035_edric.wem" StartDelay_Female="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_TC_EdricTalk" Type="Gameplay" LockPlayer="0" Local="1">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_TC_EdricTalk_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l001_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene29\a1_sc29_l002_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_TC_EdricTalk_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l003_edric.wem" StartDelay="0" />
+      <Audio Filename="ES\scene29\a1_sc29_l004_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_TC_EdricTalk_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l005_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene29\a1_sc29_l006_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_TC_EdricTalk_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l007_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_TC_EdricTalk_5" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l008_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_TC_EdricTalk_6" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l009_edric.wem" StartDelay="0" />
+      <Audio Filename="ES\scene29\a1_sc29_l010_edric.wem" StartDelay="0.5" Filename_Female="ES\Scene29\a1_sc29_l011_edric.wem" StartDelay_Female="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_TC_WoundedTemplarEncounter" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l012_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_TC_WoundedTemplarTalk1" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l013_edric.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Q_NPC_TC_AuroraKnight" Title="@ui_AuroraKnightCalahad_CharacterNameLabel" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\wounded_aurora_knight.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l014_calahad.wem" StartDelay="0" />
+      <Audio Filename="ES\scene29\a1_sc29_l015_calahad.wem" StartDelay="0" />
+      <Audio Filename="ES\scene29\a1_sc29_l016_calahad.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l017_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TC_AuroraKnight" Title="@ui_AuroraKnightCalahad_CharacterNameLabel" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\wounded_aurora_knight.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l018_calahad_alt2.wem" StartDelay="0" />
+      <Audio Filename="ES\scene29\a1_sc29_l019_calahad_alt2.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TC_AuroraKnight" Title="@ui_AuroraKnightCalahad_CharacterNameLabel" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_6" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\wounded_aurora_knight.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l020_calahad.wem" StartDelay="0" />
+      <Audio Filename="ES\scene29\a1_sc29_l021_calahad.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_7" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l022_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TC_AuroraKnight" Title="@ui_AuroraKnightCalahad_CharacterNameLabel" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_8" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\wounded_aurora_knight.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l023_calahad.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_9" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l024_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TC_AuroraKnight" Title="@ui_AuroraKnightCalahad_CharacterNameLabel" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_10" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\wounded_aurora_knight.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l025_calahad.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_TC_WoundedTemplarTalk1_11" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l025_edric_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_TC_WoundedTemplarTalk2" Type="Gameplay" LockPlayer="0" Local="1">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_TC_WoundedTemplarTalk2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene29\a1_sc29_l026_edric.wem" StartDelay="0" Filename_Female="ES\Scene29\a1_sc29_l027_edric.wem" StartDelay_Female="0" />
+      <Audio Filename="ES\scene29\a1_sc29_l028_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_G_EdricTalk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_G_EdricTalk1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene30\a1_sc30_l001_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_G_EdricTalk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_G_EdricTalk2_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene30\a1_sc30_l002_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_G_EdricTalk2_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene30\a1_sc30_l003_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_G_EdricTalk2_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene30\a1_sc30_l004_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_G_EdricTalk2_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene30\a1_sc30_l005_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_G_EdricTalk2_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene30\a1_sc30_l006_edric_alt1.wem" StartDelay="0" />
+      <Audio Filename="ES\scene30\a1_sc30_l007_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_G_EdricTalk2_6" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene30\a1_sc30_l008_player_male_alt1.wem" StartDelay="0" Filename_Female="ES\Scene30\a1_sc30_l009_player_female_alt1.wem" StartDelay_Female="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_G_EdricTalk2_7" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene30\a1_sc30_l010_edric.wem" StartDelay="0" />
+      <Audio Filename="ES\scene30\a1_sc30_l011_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest3_G_EdricTalk2_8" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric_veteran.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene30\a1_sc30_l012_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_RC_HeimlockTalk" Type="Main" LockPlayer="0" Local="0" Sequence="A1_TakingToHeimlock">
+    <Entry Entity="Q_NPC_RepublicCamp_Heimlock" Title="@ui_GrandInquisitorHeimlock_CharacterNameLabel" Content="@ACT1_Quest3_RC_HeimlockTalk_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\heimlock.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene32\a1_sc32_l001_heimlock.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_RC_HeimlockTalk_2" Duration="30" StopAfterAudio="1.5" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene32\a1_sc32_l002_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_RepublicCamp_Heimlock" Title="@ui_GrandInquisitorHeimlock_CharacterNameLabel" Content="@ACT1_Quest3_RC_HeimlockTalk_3" Duration="30" StopAfterAudio="0.7" Portrait="..\u_resources\avatar\heimlock.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene32\a1_sc32_l004_heimlock.wem" StartDelay="0" />
+      <Audio Filename="ES\scene32\a1_sc32_l005_heimlock.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Q_NPC_RepublicCamp_Heimlock" Title="@ui_GrandInquisitorHeimlock_CharacterNameLabel" Content="@ACT1_Quest3_RC_HeimlockTalk_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\heimlock.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene32\a1_sc32_l006_heimlock.wem" StartDelay="0" />
+      <Audio Filename="ES\scene32\a1_sc32_l007_heimlock.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_RC_HeimlockTalk_5" Duration="30" StopAfterAudio="0.001" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene32\a1_sc32_l008_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_RepublicCamp_Heimlock" Title="@ui_GrandInquisitorHeimlock_CharacterNameLabel" Content="@ACT1_Quest3_RC_HeimlockTalk_6" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\heimlock.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene32\a1_sc32_l009_heimlock.wem" StartDelay="0" />
+      <Audio Filename="ES\scene32\a1_sc32_l010_heimlock.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_RC_HeimlockTalk_7" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene32\a1_sc32_l011_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene32\a1_sc32_l012_player_male.wem" StartDelay="0.1" />
+    </Entry>
+    <Entry Entity="Q_NPC_RepublicCamp_Heimlock" Title="@ui_GrandInquisitorHeimlock_CharacterNameLabel" Content="@ACT1_Quest3_RC_HeimlockTalk_8" Duration="30" StopAfterAudio="1" Portrait="..\u_resources\avatar\heimlock.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l039_heimlock_alt3.wem" StartDelay="0" />
+      <Audio Filename="ES\scene32\a1_sc32_l014_heimlock.wem" StartDelay="1" />
+      <Audio Filename="ES\scene32\a1_sc32_l015_heimlock.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Q_NPC_RepublicCamp_Heimlock" Title="@ui_GrandInquisitorHeimlock_CharacterNameLabel" Content="@ACT1_Quest3_RC_HeimlockTalk_9" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\heimlock.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\A1 retakes\a1_retakes_l040_heimlock.wem" StartDelay="0" />
+      <Audio Filename="ES\scene32\a1_sc32_l017_heimlock.wem" StartDelay="1" />
+      <Audio Filename="ES\scene32\a1_sc32_l018_heimlock.wem" StartDelay="1.2" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q3_SF_PlayerComment4" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_PlayerComment4_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l001_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene33\a1_sc33_l002_player_male.wem" StartDelay="1" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest3_SF_PlayerComment4_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l003_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_Damaskus1Talk" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_SF_DamaskusTalk1_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l004_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene33\a1_sc33_l005_player_male.wem" StartDelay="0.25" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest4_SF_DamaskusTalk1_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l006_damaskus_alt1.wem" StartDelay="0" />
+      <Audio Filename="ES\scene33\a1_sc33_l007_damaskus.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_SF_DamaskusTalk1_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l008_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest4_SF_DamaskusTalk1_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l009_damaskus.wem" StartDelay="0" />
+      <Audio Filename="ES\scene33\a1_sc33_l009a_damaskus.wem" StartDelay="0.25" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_SF_DamaskusTalk1_5" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l011_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene33\a1_sc33_l012_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_SF_DamaskusTalk1_6" Duration="30" StopAfterAudio="0.5" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l013_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene33\a1_sc33_l014_player_male.wem" StartDelay="0.1" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest4_SF_DamaskusTalk1_7" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l015_damaskus.wem" StartDelay="0" />
+      <Audio Filename="ES\scene33\a1_sc33_l016_damaskus.wem" StartDelay="0" />
+      <Audio Filename="ES\scene33\a1_sc33_l017_damaskus.wem" StartDelay="1" />
+      <Audio Filename="ES\scene33\a1_sc33_l018_damaskus.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_Damaskus2Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest4_SF_DamaskusTalk2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l019_damaskus.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_SF_AngryCrowdTalk" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="Odao" Title="" Content="@ACT1_Quest4_SF_AngryCrowdTalk_1" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l020_odao.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="AnimObject32" Title="" Content="@ACT1_Quest4_SF_AngryCrowdTalk_2" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\sf_refugee_man2.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l021_a_m_refugee7_alt3.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="AnimObject21" Title="" Content="@ACT1_Quest4_SF_AngryCrowdTalk_3" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\sf_refugee_woman2.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l022_b_f_refugee8_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="AnimObject27" Title="" Content="@ACT1_Quest4_SF_AngryCrowdTalk_4" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\sf_refugee_woman1.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l023_c_f_refugee9.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_SF_MoronsTalk" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="CaucasianMaleCitizen1" Title="" Content="@ACT1_Quest4_SF_MoronsTalk_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l025_c_m_citizen1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleCitizen2" Title="" Content="@ACT1_Quest4_SF_MoronsTalk_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l026_c_m_citizen2.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleCitizen1" Title="" Content="@ACT1_Quest4_SF_MoronsTalk_3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l027_c_m_citizen1.wem" StartDelay="0" Important="0" />
+    </Entry>
+    <Entry Entity="CaucasianMaleCitizen1" Title="" Content="@ACT1_Quest4_SF_MoronsTalk_4" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l028_c_m_citizen1.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_SF_MeasuredObeserverTalk" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="CaucasianMaleNoble6" Title="" Content="@ACT1_Quest4_SF_MeasuredObeserverTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l024_c_m_noble6.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_SF_PanickedObeserverTalk" Type="Bubble" LockPlayer="0" Local="0">
+    <Entry Entity="CaucasianMaleCitizen3" Title="" Content="@ACT1_Quest4_SF_PanickedObeserverTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l029_c_m_citizen3.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_SF_SmugglerPathTalk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_SF_SmugglerPathTalk1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l030_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_SF_SmugglerPathTalk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="DO_AnimObject_Unblocking_guard_l_SF_cave" Title="@ui_StormfallGuard_CharacterNameLabel" Content="@ACT1_Quest4_SF_SmugglerPathTalk2_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_guard.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l031_c_m_sf_guard16_alt2.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_SF_SmugglerPathTalk2_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene33\a1_sc33_l032_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_SP_SmugglerPathTalk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_SP_SmugglerPathTalk1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene34\a1_sc34_l001_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_SP_SmugglerPathTalk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_SP_SmugglerPathTalk2_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene34\a1_sc34_l002_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_SP_SmugglerPathTalk2_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene34\a1_sc34_l003_player_male.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_SP_SmugglerPathTalk3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_SP_SmugglerPathTalk3" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene34\a1_sc34_l004_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_EnteringN1Talk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N1_EnteringN1Talk1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene34\a1_sc34_l005_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene34\a1_sc34_l006_player_male.wem" StartDelay="0.25" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_EnteringN1Talk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N1_EnteringN1Talk2_1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene34\a1_sc34_l007_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene34\a1_sc34_l008_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_CultistKillTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N1_CultistKillTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene34\a1_sc34_l010_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene34\a1_sc34_l011_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_HalfbreedKillTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N1_HalfbreedKillTalk_1" Duration="30" StopAfterAudio="2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene34\a1_sc34_l013_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N1_HalfbreedKillTalk_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene34\a1_sc34_l014_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene34\a1_sc34_l015_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene34\a1_sc34_l016_player_male.wem" StartDelay="0.4" />
+      <Audio Filename="ES\scene34\a1_sc34_l017_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_UmbraCrystalTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N1_UmbraCrystalTalk" Duration="30" StopAfterAudio="0.5" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene36\a1_sc36_l001_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_YudaiTauntTalk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="" Title="@ui_Yudai_CharacterNameLabel" Content="@ACT1_Quest4_N1_YudaiTauntTalk1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="500">
+      <Audio Filename="ES\scene36\a1_sc36_l002_yudai.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_YudaiTauntTalk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="" Title="@ui_Yudai_CharacterNameLabel" Content="@ACT1_Quest4_N1_YudaiTauntTalk2_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="500">
+      <Audio Filename="ES\scene36\a1_sc36_l003_yudai.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="" Title="@ui_Yudai_CharacterNameLabel" Content="@ACT1_Quest4_N1_YudaiTauntTalk2_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="500">
+      <Audio Filename="ES\scene36\a1_sc36_l004_yudai_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_YudaiTauntTalk3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="" Title="@ui_Yudai_CharacterNameLabel" Content="@ACT1_Quest4_N1_YudaiTauntTalk3_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="500">
+      <Audio Filename="ES\scene36\a1_sc36_l005_yudai.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="" Title="@ui_Yudai_CharacterNameLabel" Content="@ACT1_Quest4_N1_YudaiTauntTalk3_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="500">
+      <Audio Filename="ES\scene36\a1_sc36_l006_yudai.wem" StartDelay="1" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_YudaiTauntTalk4" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="" Title="@ui_Yudai_CharacterNameLabel" Content="@ACT1_Quest4_N1_YudaiTauntTalk4_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="500">
+      <Audio Filename="ES\scene36\a1_sc36_l007_yudai.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="" Title="@ui_Yudai_CharacterNameLabel" Content="@ACT1_Quest4_N1_YudaiTauntTalk4_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="500">
+      <Audio Filename="ES\scene36\a1_sc36_l008_yudai.wem" StartDelay="1" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_UmbraCrystalP2Talk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N1_UmbraCrystalP2Talk1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene36\a1_sc36_l009_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N1_UmbraCrystalEndTalk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N1_UmbraCrystalEndTalk1" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene36\a1_sc36_l010_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N3_BoneBridgeTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N3_BoneBridgeTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene37\a1_sc37_l001_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene37\a1_sc37_l002_player_male.wem" StartDelay="0.75" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N3_BoneBridgeCrossTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N3_BoneBridgeCrossTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene37\a1_sc37_l003_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene37\a1_sc37_l004_player_male.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_N3_ReachTheEndTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_N3_ReachTheEndTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene37\a1_sc37_l005_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_AG_VhegguadhTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="" Title="@ui_Vhegguad_CharacterNameLabel" Content="@ACT1_Quest4_AG_VhegguadhTalk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\vhegguad.png" CanBeSkipped="1" PositionOffset="50">
+      <Audio Filename="ES\scene38\a1_sc38_l001_vhegguad.wem" StartDelay="0" />
+      <Audio Filename="ES\scene38\a1_sc38_l002_vhegguad.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_AG_VhegguadhP1Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Vhegguadh" Title="@ui_Vhegguad_CharacterNameLabel" Content="@ACT1_Quest4_AG_VhegguadhP1Talk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\vhegguad.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene38\a1_sc38_l016_vhegguad.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_AG_VhegguadhP2Talk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="" Title="@ui_Vhegguad_CharacterNameLabel" Content="@ACT1_Quest4_AG_VhegguadhP2Talk" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\vhegguad.png" CanBeSkipped="1" PositionOffset="500">
+      <Audio Filename="ES\scene38\a1_sc38_l017_vhegguad_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_AG_ButcherSpawnPlayerTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_AG_ButcherSpawnPlayerTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene38\a1_sc38_l018_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q4_AG_ButcherDeadPlayerTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest4_AG_ButcherDeadPlayerTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene38\a1_sc38_l019_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_AG_DoorOpenedPlayerTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_AG_DoorOpenedPlayerTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene38\a1_sc38_l020_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_AG_ExploringPlayerTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_AG_ExploringPlayerTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene38\a1_sc38_l021_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_ExploringPlayerTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_ExploringPlayerTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene39\a1_sc39_l001_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_EngravingPlayerTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_EngravingPlayerTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene39\a1_sc39_l002_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene39\a1_sc39_l003_player_male.wem" StartDelay="1" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_FaceToFaceTalk1" Type="Gameplay" LockPlayer="0" Local="0" Sequence="A1_Q5_S1_FaceToFace">
+    <Entry Entity="A1_Q5_S1_Cutist3" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_FaceToFaceTalk1_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene39\a1_sc39_l004_yudai_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1_Q5_S1_PrimoGuardian6" Title="@ui_Neiddrerym_CharacterNameLabel" Content="@ACT1_Quest5_TPS_FaceToFaceTalk1_2" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene39\a1_sc39_l005_neiddrerym.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1_Q5_S1_Cutist3" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_FaceToFaceTalk1_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene39\a1_sc39_l006_yudai.wem" StartDelay="0" />
+      <Audio Filename="ES\scene39\a1_sc39_l007_yudai.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1_Q5_S1_PrimoGuardian5" Title="@ui_Mizzeonth_CharacterNameLabel" Content="@ACT1_Quest5_TPS_FaceToFaceTalk1_4" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene39\a1_sc39_l008_mizzeonth.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1_Q5_S1_PrimoGuardian6" Title="@ui_Neiddrerym_CharacterNameLabel" Content="@ACT1_Quest5_TPS_FaceToFaceTalk2" Duration="30" StopAfterAudio="5.5" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene39\a1_sc39_l009_neiddrerym.wem" StartDelay="0" />
+      <Audio Filename="ES\scene39\a1_sc39_l010_neiddrerym.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_PGCorruptionTalk1" Type="Gameplay" LockPlayer="0" Local="0" Sequence="A1_YudaiCorruptsGuardian" StopSequenceWhenFinished="0">
+    <Entry Entity="A1_Q5_S1_PGCorruption_Cultist2" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_PGCorruptionTalk1_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene39\a1_sc39_l011_yudai.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1_Q5_S1_PGCorruption_PrimoGuardian" Title="@ui_Neiddrerym_CharacterNameLabel" Content="@ACT1_Quest5_TPS_PGCorruptionTalk1_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene39\a1_sc39_l012_neiddrerym.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="A1_Q5_S1_PGCorruption_Cultist2" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_PGCorruptionTalk1_3" Duration="30" StopAfterAudio="3.2" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene39\a1_sc39_l013_yudai_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_PGCorruptionTalk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="A1_Q5_S1_PGCorruption_Cultist2" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_PGCorruptionTalk2" Duration="30" StopAfterAudio="0.5" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene39\a1_sc39_l015_yudai.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_PGCorruptionTalk3" Type="Gameplay" LockPlayer="0" Local="0" SkipDistance="150" EntityToComputeDistanceFrom="QP_A1Q5S1_PGCorruption2">
+    <Entry Entity="Neiddrerym" Title="@ui_Neiddrerym_CharacterNameLabel" Content="@ACT1_Quest5_TPS_PGCorruptionTalk3" Duration="30" StopAfterAudio="0.5" Portrait="..\u_resources\avatar\totocorrupted.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene39\a1_sc39_l016_neiddrerym_alt1.wem" StartDelay="0" Important="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_PGCorruptionPlayerTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_PGCorruptionPlayerTalk" Duration="30" StopAfterAudio="0.5" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene39\a1_sc39_l017_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_YudaiFightIntroTalk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Q_NPC_TPS_PG" Title="@ui_Mizzeonth_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk1_1" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="3.5">
+      <Audio Filename="ES\scene40\a1_sc40_l001_mizzeonth_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TPS_Yudai" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk1_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene40\a1_sc40_l002_yudai.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l003_yudai.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TPS_Yudai" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk1_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene40\a1_sc40_l004_yudai.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Q_NPC_TPS_PG" Title="@ui_Mizzeonth_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk1_4" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="3.5">
+      <Audio Filename="ES\scene40\a1_sc40_l005_mizzeonth.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l006_mizzeonth.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TPS_Yudai" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk1_5" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene40\a1_sc40_l007_yudai.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l008_yudai.wem" StartDelay="0.5" />
+      <Audio Filename="ES\scene40\a1_sc40_l009_yudai_alt2.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_YudaiFightIntroTalk2" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Q_NPC_TPS_Yudai" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk2_1" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene40\a1_sc40_l010_yudai.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk2_2" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene40\a1_sc40_l011_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TPS_Yudai" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk2_3" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene40\a1_sc40_l012_yudai.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l013_yudai_alt1.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l014_yudai.wem" StartDelay="0.75" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk2_4" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene40\a1_sc40_l015_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TPS_PG" Title="@ui_Mizzeonth_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk2_5" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="3.5">
+      <Audio Filename="ES\scene40\a1_sc40_l016_mizzeonth.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk2_6" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene40\a1_sc40_l017_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk2_7" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene40\a1_sc40_l018_player_male.wem" StartDelay="0.5" />
+    </Entry>
+    <Entry Entity="Q_NPC_TPS_Yudai" Title="@ui_Cultist_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightIntroTalk2_8" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\cultist_of_the_sleeper_black.png" CanBeSkipped="1" PositionOffset="4">
+      <Audio Filename="ES\scene40\a1_sc40_l019_yudai.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l020_yudai.wem" StartDelay="0.5" />
+      <Audio Filename="ES\scene40\a1_sc40_l021_yudai.wem" StartDelay="0.5" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_YudaiFightTalk_1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Yudai" Title="@ui_Yudai_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightTalk_1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="6">
+      <Audio Filename="ES\scene40\a1_sc40_l024_yudai.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_YudaiFightTalk_2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Yudai" Title="@ui_Yudai_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightTalk_2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="6">
+      <Audio Filename="ES\scene40\a1_sc40_l025_yudai.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_YudaiFightTalk_3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Yudai" Title="@ui_Yudai_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiFightTalk_3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\yudai_pink.png" CanBeSkipped="1" PositionOffset="6">
+      <Audio Filename="ES\scene40\a1_sc40_l026_yudai.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_YudaiDeadTalk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_YudaiDeadTalk1" Duration="30" StopAfterAudio="0.4" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene40\a1_sc40_l027_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l028_player_male.wem" StartDelay="1" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_YudaiDeadTalk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Q_NPC_TPS_PG" Title="@ui_Mizzeonth_CharacterNameLabel" Content="@ACT1_Quest5_TPS_YudaiDeadTalk2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="3.5">
+      <Audio Filename="ES\scene40\a1_sc40_l029_mizzeonth.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l030_mizzeonth.wem" StartDelay="0.375" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_DyingGuardianTalk" Type="Main" LockPlayer="0" Local="0" Sequence="A1_Q5_S7_DyngPrimoGardian">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_DyingGuardianTalk_1" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene40\a1_sc40_l031_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TPS_PG" Title="@ui_Mizzeonth_CharacterNameLabel" Content="@ACT1_Quest5_TPS_DyingGuardianTalk_2" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="3.5">
+      <Audio Filename="ES\scene40\a1_sc40_l032_mizzeonth.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l033_mizzeonth.wem" StartDelay="0.12" />
+      <Audio Filename="ES\scene40\a1_sc40_l034_mizzeonth.wem" StartDelay="0.12" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_DyingGuardianTalk_3" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene40\a1_sc40_l035_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TPS_PG" Title="@ui_Mizzeonth_CharacterNameLabel" Content="@ACT1_Quest5_TPS_DyingGuardianTalk_4" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="3.5">
+      <Audio Filename="ES\scene40\a1_sc40_l036_mizzeonth.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l037_mizzeonth.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l038_mizzeonth.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_DyingGuardianTalk_5" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene40\a1_sc40_l039_player_male_alt2.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Q_NPC_TPS_PG" Title="@ui_Mizzeonth_CharacterNameLabel" Content="@ACT1_Quest5_TPS_DyingGuardianTalk_6" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\totolerobot1.png" CanBeSkipped="1" PositionOffset="3.5">
+      <Audio Filename="ES\scene40\a1_sc40_l040_mizzeonth.wem" StartDelay="0" />
+      <Audio Filename="ES\scene40\a1_sc40_l041_mizzeonth.wem" StartDelay="0.2" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_DyingGuardianTalk_7" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene40\a1_sc40_l042_player_male.wem" StartDelay="0" Filename_Female="ES\scene40\a1_sc40_l043_player_female.wem" StartDelay_Female="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_2ndFloorEntrancePlayerTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_2ndFloorEntrancePlayerTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene41\a1_sc41_l013_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_2ndFloorPlayerTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_2ndFloorPlayerTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene42\a1_sc42_l014_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPS_EntranceEdricArenaTalk" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPS_EntranceEdricArenaTalk" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene42\a1_sc42_l015_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricFightP1Talk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricFightP1Talk1_1" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene43\a1_sc43_l035a_edric.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPSC_EdricFightP1Talk1_2" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene43\a1_sc43_l034a_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricFightP1Talk1_3" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene43\a1_sc43_l035b_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricFightP1Talk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricFightP1Talk2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene43\a1_sc43_l037_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricFightP1Talk3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricFightP1Talk3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene43\a1_sc43_l038_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricFightP2Talk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricFightP2Talk1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene43\a1_sc43_l044_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricFightP2Talk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricFightP2Talk2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene43\a1_sc43_l045_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricFightP2Talk3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricFightP2Talk3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene43\a1_sc43_l046_edric.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricFightP3Talk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricFightP3Talk1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene43\a1_sc43_l052_edric_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricFightP3Talk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricFightP3Talk2" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene43\a1_sc43_l053_edric_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricFightP3Talk3" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricFightP3Talk3" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene43\a1_sc43_l054_edric_alt1.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricDeadTalk1" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="Edric" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricDeadTalk1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene43\a1_sc43_l055_edric_alt2.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_EdricDeadTalk2" Type="Gameplay" LockPlayer="0" Local="0">
+    <Entry Entity="" Title="@ui_Edric_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_EdricDeadTalk1" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\edric.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene43\a1_sc43_l055_edric_alt2.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPSC_EdricDeadTalk2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene43\a1_sc43_l056_player_male.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_GuardianSpiritTalk1" Type="Gameplay" LockPlayer="0" Local="0" Sequence="A1_GuardianSpirit">
+    <Entry Entity="Q_NPC_TPSC_CPG" Title="@ui_Mizzeonth_CharacterNameLabel" Content="@ACT1_Quest5_TPSC_GuardianSpiritTalk1_1" Duration="30" StopAfterAudio="0.01" Portrait="..\u_resources\avatar\totofantome.png" CanBeSkipped="1" PositionOffset="5">
+      <Audio Filename="ES\scene44\a1_sc44_l001_mizzeonth.wem" StartDelay="0" />
+      <Audio Filename="ES\scene44\a1_sc44_l002_mizzeonth.wem" StartDelay="0" />
+      <Audio Filename="ES\scene44\a1_sc44_l003_mizzeonth.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPSC_GuardianSpiritTalk1_2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene44\a1_sc44_l004_player_male_alt3.wem" StartDelay="0" />
+    </Entry>
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_GuardianSpiritTalk2" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_TPSC_GuardianSpiritTalk2" Duration="30" StopAfterAudio="0.2" Portrait="Player" CanBeSkipped="1" PositionOffset="3" />
+  </Dialog>
+  <Dialog ID="ACT1_Q5_TPSC_SF_DamaskusTalk1" Type="Main" LockPlayer="0" Local="0">
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest5_SF_DamaskusTalk1_1" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene45\a1_sc45_l001_damaskus.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_SF_DamaskusTalk1_2" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene45\a1_sc45_l002_player_male_alt1.wem" StartDelay="0" />
+      <Audio Filename="ES\scene45\a1_sc45_l003_player_male.wem" StartDelay="0.3" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest5_SF_DamaskusTalk1_3" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene45\a1_sc45_l004_damaskus_alt2.wem" StartDelay="0" />
+      <Audio Filename="ES\scene45\a1_sc45_l005_damaskus.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_SF_DamaskusTalk1_4" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene45\a1_sc45_l006_player_male_alt1.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest5_SF_DamaskusTalk1_5" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene45\a1_sc45_l007_damaskus.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_SF_DamaskusTalk1_6" Duration="30" StopAfterAudio="0.1" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene45\a1_sc45_l008_player_male.wem" StartDelay="0" />
+      <Audio Filename="ES\scene45\a1_sc45_l009_player_male.wem" StartDelay="0.75" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest5_SF_DamaskusTalk1_7" Duration="30" StopAfterAudio="0.2" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene45\a1_sc45_l010_damaskus.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_SF_DamaskusTalk1_8" Duration="30" StopAfterAudio="0.5" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene45\a1_sc45_l011_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Player" Title="player" Content="@ACT1_Quest5_SF_DamaskusTalk1_9" Duration="30" StopAfterAudio="0.5" Portrait="Player" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene45\a1_sc45_l012_player_male.wem" StartDelay="0" />
+    </Entry>
+    <Entry Entity="Act1_StormfallPalace_Damaskus" Title="@ui_Damaskus_CharacterNameLabel" Content="@ACT1_Quest5_SF_DamaskusTalk1_10" Duration="30" StopAfterAudio="0.1" Portrait="..\u_resources\avatar\stormfall_prince.png" CanBeSkipped="1" PositionOffset="3">
+      <Audio Filename="ES\scene45\a1_sc45_l013_damaskus.wem" StartDelay="0" />
+      <Audio Filename="ES\scene45\a1_sc45_l013a_damaskus_alt1.wem" StartDelay="0.33" />
+    </Entry>
+  </Dialog>
+</MetaData>

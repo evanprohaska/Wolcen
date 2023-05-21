@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="attack_skill" UID="AI_DeathCloak_DefaultAttack">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1.3" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="DeathCloak_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_Undead_DeathCloak_Attack" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

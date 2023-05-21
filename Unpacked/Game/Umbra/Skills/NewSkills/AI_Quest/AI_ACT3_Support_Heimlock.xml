@@ -1,0 +1,97 @@
+<MetaData>
+  <Skill UID="AI_Support_Heimlock_Leap" ESkill="AI_TMPL_Knight_HolyDive" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_Leap" />
+    </Shapes>
+    <ParticleList>
+      <Particles Key="Impact" Name="U_Monster.Heimlock.Jump_Impact_01" Offset="0,0,-1" Direction="0,0,1" Scale="1.5" />
+    </ParticleList>
+    <SkillSpecific DelayBeforeLanding="0.5" IndicatorDelay="0.1" IndicatorDuration="0.9" />
+    <SoundTrigger OnAnimStart="Play_Skill_Heimlock_Leap_Jump" OnAnimCast="Play_Skill_Valeria_Leap_Land" />
+  </Skill>
+  <Skill UID="AI_Support_Heimlock_BleedingEdge" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <SoundTrigger onHit="Play_hero_default_damage_large" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="FrostNova" />
+    </Shapes>
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Spawn" Name="U_Monster.Heimlock.BleedingEdge_Start_01" Offset="0,0,0" Direction="0,0,1" Scale="2" />
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock.BleedingEdge_Pro_01" Offset="0,0,1" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="4" RandomBaseDistMax="4" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="120" MaxAngularSpeed="120" IndicatorMaxTimer="1" NumberOfDZ="1" BaseDirIsClockwise="1" AllowRandomDir="1" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" />
+  </Skill>
+  <Skill UID="AI_Support_Heimlock_Meteor" ESkill="AI_Default_GenericProjectiles" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_05" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="25" CooldownTrigger="OnEnd" />
+    <SoundTrigger onHit="Play_hero_default_damage_large" />
+    <Explosion ExplosionRadius="4" />
+    <Projectile Name="heimlock_support_meteor" ProjectileCount="3" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="2" distanceMax="7" totalAngleAtDistanceMin="120" totalAngleAtDistanceMax="120" projectileAngleAtDistanceMin="45" projectileAngleAtDistanceMax="10" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="1.5" CastMode="FromSky" KillProjsOnCasterDeath="1">
+      <CastAttributes OnTarget="1" StartZOffset="15" AngleFromZAxis="40" ZPadding="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill UID="AI_Support_Heimlock_DefaultAttack" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="0.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_Support_Heimlock01_DefaultAttack_Shapes01" />
+      <SkillSpecificParams Index="1" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_Support_Heimlock01_DefaultAttack_Shapes02" />
+      <SkillSpecificParams Index="2" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_Support_Heimlock01_DefaultAttack_Shapes03" />
+      <SkillSpecificParams Index="3" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_Support_Heimlock01_DefaultAttack_Shapes04" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+    <SoundTrigger PlayAttackVoice="0" onAnimStart="Play_ally_melee_attack_swing_Delayed" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" />
+  </Skill>
+  <Skill UID="AI_Support_Heimlock01_DefaultAttack_Shapes01" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_combo1" />
+    </Shapes>
+    <SoundTrigger PlayAttackVoice="0" onAnimStart="Play_ally_melee_attack_swing_Delayed" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" />
+  </Skill>
+  <Skill UID="AI_Support_Heimlock01_DefaultAttack_Shapes02" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_combo2" />
+    </Shapes>
+    <SoundTrigger PlayAttackVoice="0" onAnimStart="Play_ally_melee_attack_swing_Delayed" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" />
+  </Skill>
+  <Skill UID="AI_Support_Heimlock01_DefaultAttack_Shapes03" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_combo3" />
+    </Shapes>
+    <SoundTrigger PlayAttackVoice="0" onAnimStart="Play_ally_melee_attack_swing_Delayed" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" />
+  </Skill>
+  <Skill UID="AI_Support_Heimlock01_DefaultAttack_Shapes04" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_combo4" />
+    </Shapes>
+    <SoundTrigger PlayAttackVoice="0" onAnimStart="Play_ally_melee_attack_swing_Delayed" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" />
+  </Skill>
+</MetaData>

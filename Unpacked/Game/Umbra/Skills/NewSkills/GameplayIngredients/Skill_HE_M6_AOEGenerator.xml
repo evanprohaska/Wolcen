@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill ESkill="gameplay_ingredient_flowofsouls" Keywords="attack_skill" UID="Skill_HE_M6_AOEGenerator">
+    <DamageWeapon Type="lightning" WeaponMultiplier="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnHit="Play_hero_default_dot_burn" />
+    <Projectile Name="HE_M6_AOEGenerator_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <Shapes>
+      <Entry ShapeName="Skill_HE_M6_AOEGeneratort_Shape" />
+    </Shapes>
+  </Skill>
+</MetaData>

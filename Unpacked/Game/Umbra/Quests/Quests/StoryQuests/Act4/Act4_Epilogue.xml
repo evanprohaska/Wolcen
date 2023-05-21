@@ -1,0 +1,87 @@
+<MetaData>
+  <Quest Name="ACT4_Epilogue" StartDialog="" Type="Main" UIName="@ui_A4_Q7_QuestLabel" UIDesc="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_A4_Q7_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Talk" EntityName="ACT4_Epilogue_Damaskus" DialogName="ACT4_Q7_DamaskusTalk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Epilogue_Damaskus" Area="Stormfall" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="1" Type="Talk" EntityName="ACT4_Epilogue_Ilthain" DialogName="ACT4_Q7_IlthainTalk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Epilogue_Ilthain" Area="Stormfall" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="ACT4_Epilogue_Zalahir" DialogName="ACT4_Q7_ZalahirTalk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Epilogue_Zalahir" Area="Stormfall" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="3" Type="Talk" EntityName="ACT4_Epilogue_Gernese" DialogName="ACT4_Q7_GerneseTalk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Epilogue_Gernese" Area="Stormfall" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="4" Type="Talk" EntityName="ACT4_Epilogue_Valeria" DialogName="ACT4_Q7_ValeriaTalk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Epilogue_Valeria" Area="Stormfall" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="5" Type="Impossible" />
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMusic" Name="Music_ACT4_Epilogue" MusicName="ACT4_Epilogue" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_Hellion_Hide" Modifier="HellionCosmetic" Remove="1" Target="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ClearSpawn" Name="A4_ClearAllArena" Events="SpawnArena_Coss,SpawnArena_Cofe,SpawnArena_Cofy" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="D_TeleportPlayersInSF" TeleportedEntityName="#Player" DestinationName="SpawnPoint_frompalace" MinRadius="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Unhide_ACT4_Epilogue_Zalahir" EntityNames="ACT4_Epilogue_Zalahir" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Unhide_ACT4_Epilogue_Valeria" EntityNames="ACT4_Epilogue_Valeria" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Unhide_ACT4_Epilogue_Ilthain" EntityNames="ACT4_Epilogue_Ilthain" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Unhide_ACT4_Epilogue_Gernese" EntityNames="ACT4_Epilogue_Gernese" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Unhide_ACT4_Epilogue_Damaskus" EntityNames="ACT4_Epilogue_Damaskus" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_sua_productionUpdated_Hide" EntityNames="AlphaFlow_IncreaseLoop" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_sua_launchQuest_Hide" EntityNames="AlphaFlow_StartFight" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_sua_productionUpdated_Hide3" EntityNames="Act4_sua_productionUpdated" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_sua_launchQuest_Hide3" EntityNames="Act4_sua_launchQuest" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Quest_1_Zalahir" EntityNames="ACT4_Quest_1_Zalahir" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Quest_1_Ilthain" EntityNames="ACT4_Quest_1_Ilthain" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Quest_1_Valense" EntityNames="ACT4_Quest_1_Valense" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Quest_1_Annaruz" EntityNames="ACT4_Quest_1_Annaruz" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Quest_1_Tabbitha" EntityNames="ACT4_Quest_1_Tabbitha" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Quest_1_Ondar" EntityNames="ACT4_Quest_1_Ondar" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Quest_1_Sandor" EntityNames="ACT4_Quest_1_Sandor" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Loop_Annaruz" EntityNames="ACT4_Loop_Annaruz" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Loop_Valense" EntityNames="ACT4_Loop_Valense" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Loop_Tabbitha" EntityNames="ACT4_Loop_Tabbitha" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Loop_Ilthain" EntityNames="ACT4_Loop_Ilthain" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Loop_Gernese" EntityNames="ACT4_Loop_Gernese" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_ACT4_Loop_Damaskus" EntityNames="ACT4_Loop_Damaskus" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Epilogue_Hide_CityBuilding_NPC2" EntityNames="CityBuilding_NPC2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Valeria_Move" MinRadius="0" TeleportedEntityName="A4_DYN_TenseFamilyMeeting_Valeria" DestinationName="QP_DoubleValeria_Palace" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Heimlock_Move" MinRadius="0" TeleportedEntityName="A4_DYN_TenseFamilyMeeting_Heimlock" DestinationName="QP_DoubleHeimlock_Palace" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Valeria_Move2" MinRadius="0" TeleportedEntityName="A4_DYN_HeimlockAndValeriaPossessed_Valeria" DestinationName="QP_HeimlockPossessed_Palace_Valeria" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Heimlock_Move2" MinRadius="0" TeleportedEntityName="A4_DYN_HeimlockAndValeriaPossessed_Heimlock" DestinationName="QP_HeimlockPossessed_Palace_Heimlock" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Valeria_Move3" MinRadius="0" TeleportedEntityName="A4_DYN_HeimlockAndValeriaPossessed_Valeria_Shader" DestinationName="QP_HeimlockPossessed_Palace_Valeria" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="A4_DYN_TenseFamilyMeeting_Heimlock_Move3" MinRadius="0" TeleportedEntityName="A4_DYN_HeimlockAndValeriaPossessed_Heimlock_Shader" DestinationName="QP_HeimlockPossessed_Palace_Heimlock" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="ACT4_Epilogue_Update1" Localization="@ui_A4_Q7_S1_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="ACT4_Epilogue_Update2" Localization="@ui_A4_Q7_S1_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="ACT4_Epilogue_Update3" Localization="@ui_A4_Q7_S1_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="ACT4_Epilogue_Update4" Localization="@ui_A4_Q7_S1_UpdateStepNameLabel4" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="Player_Dialog" DialogName="ACT4_Q7_EpilogueStart" IsCST="false" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="Player_Dialog" Type="GlobalDialog" Name="Damaskus_BubbleDialog" DialogName="ACT4_Q7_DamaskusCall" IsCST="false" Delay=".5" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Epilogue_Damaskus" Type="EventEnd" Name="EndDamaskus_Dialog" EventsName="Damaskus_BubbleDialog" Remove="1" TriggerEnd="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Epilogue_Damaskus" Type="GlobalStopAllDialogs" Name="EndDamaskus_Dialog2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ACT4_Epilogue_Zalahir" AreaRadius="15" Type="GlobalDialog" Name="Zalahir_BubbleDialog" DialogName="ACT4_Q7_ZalahirCall" IsCST="false" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Epilogue_Zalahir" Type="EventEnd" Name="EndZalahir_Dialog" EventsName="Zalahir_BubbleDialog" Remove="1" TriggerEnd="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Epilogue_Zalahir" Type="GlobalStopAllDialogs" Name="EndZalahir_Dialog2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ACT4_Epilogue_Gernese" AreaRadius="15" Type="GlobalDialog" Name="Gernese_BubbleDialog" DialogName="ACT4_Q7_GerneseTired" IsCST="false" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Epilogue_Gernese" Type="EventEnd" Name="EndGernese_Dialog" EventsName="Gernese_BubbleDialog" Remove="1" TriggerEnd="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Epilogue_Gernese" Type="GlobalStopAllDialogs" Name="EndGernese_Dialog2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ACT4_Epilogue_Ilthain" AreaRadius="15" Type="GlobalDialog" Name="Ilthain_BubbleDialog" DialogName="ACT4_Q7_IlthainCall" IsCST="false" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Epilogue_Ilthain" Type="EventEnd" Name="EndIlthain_Dialog" EventsName="Ilthain_BubbleDialog" Remove="1" TriggerEnd="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Epilogue_Ilthain" Type="GlobalStopAllDialogs" Name="EndIlthain_Dialog2" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Epilogue_Valeria" Type="GlobalStopAllDialogs" Name="EndValeria_Dialog2" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionSequence" Name="A4_DragonRide" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="A4_DragonRide" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="A4_DragonRide" Type="GoalAchieve" Name="A4_DragonRide_End" SimulateOnly="1" Delay=".1" GoalIndexToAchieve="5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="ACT4_Epilogue_UnHide_CityBuilding_NPC2" EntityNames="CityBuilding_NPC2" Hide="0" Delay=".5" />
+    </Step>
+    <Step Order="1" UIName="" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Impossible" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EndOfStoryMode" Name="A4_EndOfStoryMode" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GoalAchieve" Name="A4_EndOfStoryMode_End" SimulateOnly="1" Delay=".1" GoalIndexToAchieve="0" />
+    </Step>
+    <Step Order="2" UIName="" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Impossible" />
+      <GoalLogic Formula="00" />
+    </Step>
+  </Quest>
+</MetaData>

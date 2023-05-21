@@ -1,0 +1,23 @@
+<MetaData>
+  <Skill UID="AI_RepublicAssassin_EvadeDash" ESkill="AI_republicassassin_evadedash" Keywords="attack_skill,projectile">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_06" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".33" />
+    <CastingParams CastBone="Bip01 Spine1" CanBeInterrupted="0" />
+    <Cooldown Cooldown="6" CooldownTrigger="OnEnd" />
+    <Projectile Name="assassin_evadedash_proj" ProjectileCount="3" AngleBetweenProjectiles="9" />
+    <SkillSpecific DashSpeed="9" DashDistance="9" TargetBone="Bip01 Spine1" />
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_EvadeDash" ESkill="AI_republicassassin_evadedash" Keywords="attack_skill,projectile">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_06" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".66" />
+    <StatusAilment>
+      <Poison Chance="100" ChanceMode="override" Duration="10" DurationMode="override" Stacks="5" StacksMode="addtobase" />
+    </StatusAilment>
+    <CastingParams CastBone="Bip01 Spine1" CanBeInterrupted="0" />
+    <Cooldown Cooldown="6" CooldownTrigger="OnEnd" />
+    <Projectile Name="assassin_evadedash_proj" ProjectileCount="3" AngleBetweenProjectiles="9" />
+    <SkillSpecific DashSpeed="9" DashDistance="9" TargetBone="Bip01 Spine1" />
+  </Skill>
+</MetaData>

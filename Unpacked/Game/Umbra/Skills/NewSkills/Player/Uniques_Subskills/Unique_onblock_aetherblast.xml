@@ -1,0 +1,78 @@
+<MetaData>
+  <Skill UID="unique_onblock_aetherblast" ESkill="player_frostnova" Keywords="projectile,magic_spell,attack_skill,passive_effect,">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="3" />
+    <CastingParams CanMultiCast="1" />
+    <Targeting TargetingType="self" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/frostnova.png" UIName="@ui_AST_FrostNova" Lore="@ui_AST_FrostNova_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="2" ShowParamsInAST="Cost,ROSTime,Cooldown,DamageDetail,StatusAilmentsChance" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Frost" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Frost" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Frost" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ETHELIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Frost" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Frost" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Frost" Inventory_HUDPicture="../u_resources/enneracts/frostnova.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <DamageWeapon Type="umbra" WeaponMultiplier="20" />
+    <StatusAilment>
+      <curse Chance="100" ChanceMode="override" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <ParticleList>
+      <Particle Key="nova" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShape_01" Direction="0,0,1" Offset="0,0,1.2" />
+      <Paticle Key="zone" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShpae_02" Direction="0,0,1" Delay=".15" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_Frost_Nova_Impact_Pre" OnHit="Play_Skill_FrostNova_Shadow_Impact" OnCriticalHit="" />
+    <Specific_FrostNova LaunchSound="Play_Skill_FrostNova_Shadow" />
+  </Skill>
+  <Skill UID="unique_sacred_onblock_aetherblast" ESkill="player_frostnova" Keywords="projectile,magic_spell,attack_skill,passive_effect,">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="3" />
+    <CastingParams CanMultiCast="1" />
+    <Targeting TargetingType="self" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/frostnova.png" UIName="@ui_AST_FrostNova" Lore="@ui_AST_FrostNova_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="2" ShowParamsInAST="Cost,ROSTime,Cooldown,DamageDetail,StatusAilmentsChance" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Frost" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Frost" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Frost" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ETHELIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Frost" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Frost" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Frost" Inventory_HUDPicture="../u_resources/enneracts/frostnova.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <DamageWeapon Type="sacred" WeaponMultiplier="20" />
+    <StatusAilment>
+      <curse Chance="100" ChanceMode="override" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <ParticleList>
+      <Particle Key="nova" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShape_01_Sacred" Direction="0,0,1" Offset="0,0,1.2" />
+      <Paticle Key="zone" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShpae_02_Sacred" Direction="0,0,1" Delay=".15" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_Frost_Nova_Impact_Pre" OnHit="Play_Skill_FrostNova_Shadow_Impact" OnCriticalHit="" />
+    <Specific_FrostNova LaunchSound="Play_Skill_FrostNova_Shadow" />
+  </Skill>
+  <Skill UID="unique_lightning_onblock_aetherblast" ESkill="player_frostnova" Keywords="projectile,magic_spell,attack_skill,passive_effect,">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="3" />
+    <CastingParams CanMultiCast="1" />
+    <Targeting TargetingType="self" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/frostnova.png" UIName="@ui_AST_FrostNova" Lore="@ui_AST_FrostNova_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="2" ShowParamsInAST="Cost,ROSTime,Cooldown,DamageDetail,StatusAilmentsChance" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Frost" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Frost" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Frost" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ETHELIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Frost" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Frost" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Frost" Inventory_HUDPicture="../u_resources/enneracts/frostnova.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="20" />
+    <StatusAilment>
+      <curse Chance="100" ChanceMode="override" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <ParticleList>
+      <Particle Key="nova" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShape_01_Lightning" Direction="0,0,1" Offset="0,0,1.2" />
+      <Paticle Key="zone" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShpae_02_Lightning" Direction="0,0,1" Delay=".15" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_Frost_Nova_Impact_Pre" OnHit="Play_Skill_FrostNova_Shadow_Impact" OnCriticalHit="" />
+    <Specific_FrostNova LaunchSound="Play_Skill_FrostNova_Shadow" />
+  </Skill>
+  <Skill UID="unique_fire_onblock_aetherblast" ESkill="player_frostnova" Keywords="projectile,magic_spell,attack_skill,passive_effect,">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="3" />
+    <CastingParams CanMultiCast="1" />
+    <Targeting TargetingType="self" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/frostnova.png" UIName="@ui_AST_FrostNova" Lore="@ui_AST_FrostNova_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="2" ShowParamsInAST="Cost,ROSTime,Cooldown,DamageDetail,StatusAilmentsChance" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Frost" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Frost" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Frost" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ETHELIEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Frost" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Frost" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Frost" Inventory_HUDPicture="../u_resources/enneracts/frostnova.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <DamageWeapon Type="fire" WeaponMultiplier="20" />
+    <StatusAilment>
+      <curse Chance="100" ChanceMode="override" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <ParticleList>
+      <Particle Key="nova" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShape_01_Fire" Direction="0,0,1" Offset="0,0,1.2" />
+      <Paticle Key="zone" Name="U_Character_02.ShadowBlast.ShadowBlast_CircleShpae_02_Fire" Direction="0,0,1" Delay=".15" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="Play_Skill_Frost_Nova_Impact_Pre" OnHit="Play_Skill_FrostNova_Shadow_Impact" OnCriticalHit="" />
+    <Specific_FrostNova LaunchSound="Play_Skill_FrostNova_Shadow" />
+  </Skill>
+</MetaData>

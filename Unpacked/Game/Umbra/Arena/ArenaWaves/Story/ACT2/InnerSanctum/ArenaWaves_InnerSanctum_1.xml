@@ -1,0 +1,13 @@
+<MetaData>
+  <ArenaWaves Name="InnerSanctum">
+    <Wave Type="Killcount" TargetKillCount="43" Tag="1">
+      <PrefabParams PrefabName="arena_InnerSanctum" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="11" Type="once" NumberOfEntitiesPerSpawn="2" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="11" Type="once" NumberOfEntitiesPerSpawn="6" TargetSpawnClass="sc_COSS_InnerSanctum_Squire" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="15" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Squire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.75" MaxNumberOfSpawnedEntities="20" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" TargetSpawnLocationID="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

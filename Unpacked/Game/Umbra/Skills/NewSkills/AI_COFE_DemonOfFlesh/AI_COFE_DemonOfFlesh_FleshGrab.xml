@@ -1,0 +1,36 @@
+<MetaData>
+  <Skill UID="AI_CultOfFlesh_DemonOfFlesh_FleshGrab" ESkill="AI_cultofflesh_DemonOfFlesh_GrabFlesh" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="1.0" TriggerCooldownAtSkillEnd="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SkillSpecific GrabbingTime="0.28" ForceStun="1" EndStunTime="0.2" FishNetRadius="4" StunPrimaryTarget="1" RetractDelay="0.43" RetractTime="0.13" />
+    <ParticleList>
+      <Particle Key="Expand" Name="U_Monster_Alt.DemonOfFlesh.fleshgrab_expand" Direction="1,0,0" Scale="1" />
+      <Particle Key="Retract" Name="U_Monster_Alt.DemonOfFlesh.fleshgrab_retract" Direction="1,0,0" Scale="1" />
+      <Particle Key="Connector" Name="U_Monster.Lumbach.FleshBeam_01" Direction="1,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="OnPull" Name="U_CommonVFX.Hook.Hook_follow_Blue_01" Offset="0,0,0" Direction="0,0,1" Bone="Bip01 Spine2" />
+      <Particle Key="Indicator" Name="U_Monster_Alt.DemonOfFlesh.fleshgrab_indicator" Direction="0,0,1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="DemonOfFlesh_FleshGrabShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="" OnHit="Play_Halfbreed_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_DemonOfFlesh_FleshGrab" ESkill="AI_cultofflesh_DemonOfFlesh_GrabFlesh" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="1.0" TriggerCooldownAtSkillEnd="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SkillSpecific GrabbingTime="0.28" ForceStun="1" EndStunTime="1" FishNetRadius="6" StunPrimaryTarget="1" RetractDelay="0.43" RetractTime="0.13" />
+    <ParticleList>
+      <Particle Key="Expand" Name="U_Monster_Alt.DemonOfFlesh.fleshgrab_expand" Direction="1,0,0" Scale="1" />
+      <Particle Key="Retract" Name="U_Monster_Alt.DemonOfFlesh.fleshgrab_retract" Direction="1,0,0" Scale="1.5" />
+      <Particle Key="Connector" Name="U_Monster.Lumbach.FleshBeam_01" Direction="1,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="OnPull" Name="U_CommonVFX.Hook.Hook_follow_Blue_01" Offset="0,0,0" Direction="0,0,1" Bone="Bip01 Spine2" />
+      <Particle Key="Indicator" Name="U_Monster_Alt.DemonOfFlesh.fleshgrab_indicator" Direction="0,0,1" Scale="1.5" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="DemonOfFlesh_FleshGrabShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="" OnHit="Play_Halfbreed_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

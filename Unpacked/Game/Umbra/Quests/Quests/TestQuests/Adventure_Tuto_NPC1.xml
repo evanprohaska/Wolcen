@@ -1,0 +1,122 @@
+<MetaData>
+  <Quest Name="B_A3_Q1" UIName="@ui_gold" UIDesc="@ui_gold" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="KillCP" KillValue="40" AreaPercent="1" ShowProgression="0" />
+      <Goal Order="2" Type="Wait" TimeLimit="2" />
+      <Goal Order="3" Type="KillAll" EventsName="B_A3_Q1_BossSpawn">
+        <ArrowMarker Target="B_A3_Q1_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="B_A3_Q1_1_Goal4UI1" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q1_BossSpawn" Type="EntitySpawn" SpawnClass="Scf_Adv_Svriir_TutoQuest1" TargetEntityName="#Player" FaceAtSpawn="" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q1_1_Goal4UI2" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="300" />
+        <XP Amount="1100" />
+        <FixedLootClass Name="Potion_Reward" MinItemNumber="1" MaxItemNumber="1" SortByRarity="1" />
+        <ChoiceLootClass Name="Weapons_Starter" MinItemNumber="3" MaxItemNumber="3" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="B_A3_Q2" UIName="@ui_gold" UIDesc="@ui_gold" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="KillCP" KillValue="63" AreaPercent="1" ShowProgression="0" />
+      <Goal Order="2" Type="Wait" TimeLimit="2" />
+      <Goal Order="3" Type="KillAll" EventsName="B_A3_Q2_BossSpawn1">
+        <ArrowMarker Target="B_A3_Q2_BossSpawn1" Area="dungeon" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="4" Type="Wait" TimeLimit="2" />
+      <Goal Order="5" Type="KillAll" EventsName="B_A3_Q2_BossSpawn2">
+        <ArrowMarker Target="B_A3_Q2_BossSpawn2" Area="dungeon" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q2_BossSpawn1" Type="AdventureSpawn" SpawnClass="Scf_Adv_COSS_TutoQuest3" MinSpawnPercent="10" MaxSpawnPercent="30" MinRadius="0" MaxRadius="5" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="5" Name="B_A3_Q2_BossSpawn2" Type="EntitySpawn" SpawnClass="Scf_Adv_COSS_TutoQuest1" TargetEntityName="#Player" FaceAtSpawn="" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Name="B_A3_Q2_1_Goal4UI1" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="1000" />
+        <XP Amount="4000" />
+        <FixedLootClass Name="Enneracts_Starter" MinItemNumber="3" MaxItemNumber="3" SortByRarity="1" />
+        <ChoiceLootClass Name="Resource_Potion_Reward" MinItemNumber="3" MaxItemNumber="3" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="B_A3_Q3" UIName="@ui_gold" UIDesc="@ui_gold" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="KillCP" KillValue="30" AreaPercent="1" ShowProgression="0" />
+      <Goal Order="2" Type="Wait" TimeLimit="2" />
+      <Goal Order="3" Type="KillAll" EventsName="B_A3_Q3_BossSpawn">
+        <ArrowMarker Target="B_A3_Q3_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q3_BossSpawn" Type="EntitySpawn" SpawnClass="Scf_Adv_Outlaw_TutoQuest1" TargetEntityName="#Player" FaceAtSpawn="" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q3_1_Goal4UI1" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="500" />
+        <XP Amount="4500" />
+        <FixedLootClass Name="Gems_Reward" MinItemNumber="3" MaxItemNumber="3" SortByRarity="1" />
+        <ChoiceLootClass Name="Socketable_Reward" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="B_A3_Q4" UIName="@ui_gold" UIDesc="@ui_gold" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="KillCP" KillValue="44" AreaPercent="1" ShowProgression="0" />
+      <Goal Order="2" Type="Wait" TimeLimit="2" />
+      <Goal Order="3" Type="KillAll" EventsName="B_A3_Q4_BossSpawn">
+        <ArrowMarker Target="B_A3_Q4_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q4_BossSpawn" Type="EntitySpawn" SpawnClass="Scf_Adv_COSS_TutoQuest2" TargetEntityName="#Player" FaceAtSpawn="" MinimumRadius="10" MaximumRadius="15" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q4_1_Goal4UI1" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="800" />
+        <XP Amount="5000" />
+        <FixedLootClass Name="Beta_AdventureQuest_Easy" MinItemNumber="2" MaxItemNumber="2" SortByRarity="1" />
+        <ChoiceLootClass Name="Beta_AdventureQuest_Easy" MinItemNumber="3" MaxItemNumber="3" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="B_A3_Q5" UIName="@ui_gold" UIDesc="@ui_gold" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="KillCP" KillValue="20" AreaPercent="1" ShowProgression="0" />
+      <Goal Order="2" Type="Wait" TimeLimit="2" />
+      <Goal Order="3" Type="KillAll" EventsName="B_A3_Q5_BossSpawn">
+        <ArrowMarker Target="B_A3_Q5_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4.5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q5_BossSpawn" Type="EntitySpawn" SpawnClass="Scf_Adv_Svriir_TutoQuest2" TargetEntityName="#Player" FaceAtSpawn="" MinimumRadius="10" MaximumRadius="15" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q5_1_Goal4UI1" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="1000" />
+        <XP Amount="6000" />
+        <FixedLootClass Name="Beta_AdventureQuest_Easy" MinItemNumber="2" MaxItemNumber="2" SortByRarity="1" />
+        <ChoiceLootClass Name="Beta_AdventureQuest_Easy" MinItemNumber="3" MaxItemNumber="3" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="B_A3_Q6" UIName="@ui_gold" UIDesc="@ui_gold" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="KillCP" KillValue="40" AreaPercent="1" ShowProgression="0" />
+      <Goal Order="2" Type="Wait" TimeLimit="2" />
+      <Goal Order="3" Type="KillAll" EventsName="B_A3_Q6_BossSpawn">
+        <ArrowMarker Target="B_A3_Q6_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q6_BossSpawn" Type="EntitySpawn" SpawnClass="Scf_Adv_Outlaw_TutoQuest2" TargetEntityName="#Player" FaceAtSpawn="" MinimumRadius="10" MaximumRadius="15" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="B_A3_Q6_1_Goal4UI1" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="1200" />
+        <XP Amount="6500" />
+        <FixedLootClass Name="Beta_AdventureQuest_Easy" MinItemNumber="2" MaxItemNumber="2" SortByRarity="1" />
+        <ChoiceLootClass Name="Beta_AdventureQuest_Easy" MinItemNumber="3" MaxItemNumber="3" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

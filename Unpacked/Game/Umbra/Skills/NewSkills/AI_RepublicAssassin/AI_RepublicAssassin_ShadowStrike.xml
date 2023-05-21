@@ -1,0 +1,70 @@
+<MetaData>
+  <Skill UID="AI_RepublicAssassin_ShadowStrike_01" ESkill="AI_republicassassin_shadowstrike" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_02" ActionString_OutMissed="monster_skill_loop_01_out_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_ShadowStrike_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_Assassin_01" Direction="-1,0,0" />
+    </ParticleList>
+    <Range AttackRange="20" />
+    <SkillSpecific MaxDuration="1.2" IndicatorTimer="1.2" TeleportRadiusMin="4.5" TeleportRadiusMax="5.5" />
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_ShadowStrike_Vanish" OnAnimLoopOut="Play_Republic_Alastor_ShadowStrike_Strike" OnAnimCast="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_ShadowStrike_Impact" />
+  </Skill>
+  <Skill UID="AI_Hunt_Assassin_ShadowStrike_01" ESkill="AI_republicassassin_shadowstrike" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_02" ActionString_OutMissed="monster_skill_loop_01_out_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <RandomCastingParams RandomNumberRangeMin="3" RandomNumberRangeMax="3" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_ShadowStrike_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_Assassin_01" Direction="-1,0,0" />
+    </ParticleList>
+    <Range AttackRange="20" />
+    <SkillSpecific MaxDuration="0.8" IndicatorTimer="0.8" TeleportRadiusMin="4.5" TeleportRadiusMax="5.5" />
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_ShadowStrike_Vanish" OnAnimLoopOut="Play_Republic_Alastor_ShadowStrike_Strike" OnAnimCast="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_ShadowStrike_Impact" />
+  </Skill>
+  <Skill UID="AI_RepublicAssassinTavern_ShadowStrike_01_voiceline" ESkill="AI_republicassassin_shadowstrike" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_02" ActionString_OutMissed="monster_skill_loop_01_out_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <RandomCastingParams RandomNumberRangeMin="3" RandomNumberRangeMax="3" />
+    <Cooldown Cooldown="999" TriggerCooldownAtSkillEnd="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_ShadowStrike_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_Assassin_01" Direction="-1,0,0" />
+    </ParticleList>
+    <Range AttackRange="20" />
+    <SkillSpecific MaxDuration="1.2" IndicatorTimer="1.2" TeleportRadiusMin="4.5" TeleportRadiusMax="5.5" />
+    <SoundTrigger OnAnimStart="Play_a1_sc24_l029_alastor" OnAnimLoopOut="Play_Republic_Alastor_ShadowStrike_Strike" OnAnimCast="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_ShadowStrike_Impact" />
+  </Skill>
+  <Skill UID="AI_RepublicAssassinTavern_ShadowStrike_01" ESkill="AI_republicassassin_shadowstrike" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_02" ActionString_OutMissed="monster_skill_loop_01_out_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <RandomCastingParams RandomNumberRangeMin="3" RandomNumberRangeMax="3" />
+    <Cooldown Cooldown="25" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicAssassin_ShadowStrike_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_Assassin_01" Direction="-1,0,0" />
+    </ParticleList>
+    <Range AttackRange="20" />
+    <SkillSpecific MaxDuration="1.2" IndicatorTimer="1.2" TeleportRadiusMin="4.5" TeleportRadiusMax="5.5" />
+    <SoundTrigger OnAnimStart="Play_Republic_Alastor_ShadowStrike_Vanish" OnAnimLoopOut="Play_Republic_Alastor_ShadowStrike_Strike" OnAnimCast="Play_Republic_Alastor_DualBlade_Swing" OnHit="Play_Republic_Alastor_ShadowStrike_Impact" />
+  </Skill>
+</MetaData>

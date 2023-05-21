@@ -1,0 +1,32 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="attack_skill" UID="AI_SvriirMiniSpitter_DefaultAttack_melee">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="SvriirOmega_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="PLAY_AI_SvriirOmega_ClawSwipe" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_SvriirMiniSpitter_DefaultAttack_range" ESkill="default_ranged" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.0" TriggerCooldownAtSkillEnd="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <Projectile Name="spit_proj_minispitter" ProjectileCount="1" PenetrationLimit="3" />
+    <SoundTrigger OnAnimCast="Play_Svriir_Spitter_Mini_Spit_Shoot" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+    <Targeting ComputeTargetPosAtCast="1" />
+  </Skill>
+  <Skill UID="AI_SvriirMiniSpitter_DefaultAttack_range_fire" ESkill="default_ranged" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.0" TriggerCooldownAtSkillEnd="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <Projectile Name="spit_proj_minispitter_fire" ProjectileCount="1" PenetrationLimit="3" />
+    <SoundTrigger OnAnimCast="Play_Svriir_Spitter_Mini_Spit_Shoot" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+    <Targeting ComputeTargetPosAtCast="1" />
+  </Skill>
+</MetaData>

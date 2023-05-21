@@ -1,0 +1,90 @@
+<MetaData>
+  <Affix AffixId="ar_health_percent" Class="health_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords MandatoryKeywords="armor" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_percent">
+      <LoRoll HealthPercentInt="15" />
+      <HiRoll HealthPercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ar_health_regen_percent" Class="health_regen_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords MandatoryKeywords="armor" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="health_regen_percent">
+      <LoRoll ResourcePercentFloat="15" />
+      <HiRoll ResourcePercentFloat="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ar_forceshield_percent" Class="forceshield_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords MandatoryKeywords="armor" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_percent">
+      <LoRoll ArmorPercentFloat="15" />
+      <HiRoll ArmorPercentFloat="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ar_minion_health_percent" Class="minion_health_percent" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords MandatoryKeywords="armor" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="minion_health_percent">
+      <LoRoll HealthPercentInt="15" />
+      <HiRoll HealthPercentInt="20" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ar_max_stacks_capacity" Class="max_stacks_capacity" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords MandatoryKeywords="armor" OptionalKeywords="hand,shoulder,feet" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="max_stacks_capacity">
+      <LoRoll StackCountInt="1" />
+      <HiRoll StackCountInt="1" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ar_max_stacks_capacity_2" Class="max_stacks_capacity" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords MandatoryKeywords="armor" OptionalKeywords="chest,legs,head" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="max_stacks_capacity">
+      <LoRoll StackCountInt="1" />
+      <HiRoll StackCountInt="2" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ar_blockefficiency_flat" Class="blockefficiency_flat" AffixType="suffix" Tier="1">
+    <DropParams Frequency="10000" AffixOrigin="Ahriman">
+      <ItemLevel LevelMin="1" LevelMax="300" />
+      <Keywords MandatoryKeywords="armor" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="blockefficiency_flat">
+      <LoRoll ResourcePercentFloat="2.5" />
+      <HiRoll ResourcePercentFloat="2.5" />
+    </MagicEffect>
+  </Affix>
+  <Affix AffixId="ar_forceshield_lock_timer_percent_ahriman" Class="forceshieldregentimer" AffixType="suffix" Tier="12">
+    <DropParams Frequency="1">
+      <ItemLevel LevelMin="190" LevelMax="300" />
+      <Keywords MandatoryKeywords="armor" OptionalKeywords="hand,shoulder,feet" />
+      <ItemRarity Magic="1" Rare="1" Set="1" Legendary="1" />
+    </DropParams>
+    <MagicEffect EffectId="forceshield_lock_timer_percent">
+      <LoRoll DurationPercentFloat="15" />
+      <HiRoll DurationPercentFloat="25" />
+    </MagicEffect>
+  </Affix>
+</MetaData>

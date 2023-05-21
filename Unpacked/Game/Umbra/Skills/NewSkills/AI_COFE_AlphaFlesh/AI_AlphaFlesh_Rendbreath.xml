@@ -1,0 +1,27 @@
+<MetaData>
+  <Skill UID="AI_AlphaFlesh_bloodbreath" ESkill="AI_default_maintainedskillwithdamageinshape" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01 Jaw0" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="ShapeParticle" Name="U_Monster.Siviir.Alpha_Breath_Blood_Loop_02" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="GroundEffect" Name="U_Monster.Siviir.Alpha_Breath_Blood_Ground_Loop_01" Offset="0,0,0" Direction="0,1,0" />
+    </ParticleList>
+    <DamageWeapon Type="rend" WeaponMultiplier="0.5" />
+    <Cooldown Cooldown="20.0" />
+    <DamageZone Duration="5" RateOfFire="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_PoisonBreath" />
+    </Shapes>
+    <SoundTrigger OnAnimLoopIn="PLAY_AI_SvriirAlpha_FirebreathStart" OnAnimLoopOut="PLAY_AI_SvriirAlpha_FirebreathEnd" OnInterrupt="PLAY_AI_SvriirAlpha_FirebreathEnd" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.3" MaxDuration="4" MaxTimeOutDuration="1" DistanceBetweenParticles="4" DZForwardOffset="2" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="100" In="0.5" />
+      <EmissiveIntensity From="100" To="150" In="0.7" />
+      <EmissiveIntensity From="150" To="175" In="1" />
+      <EmissiveIntensity From="175" To="200" In="2" />
+      <EmissiveIntensity From="180" To="100" In="1" />
+      <EmissiveIntensity From="100" To="origin" In="1" />
+    </Material>
+  </Skill>
+</MetaData>

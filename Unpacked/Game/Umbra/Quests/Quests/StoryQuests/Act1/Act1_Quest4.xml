@@ -1,0 +1,230 @@
+<MetaData>
+  <Quest Name="ACT1_Quest4" StartDialog="" Type="Main" UIDesc="" UIName="@ui_A1_Q4_QuestLabel" BoundToMap="Wolcen_ACT1">
+    <Step Order="0" UIName="@ui_A1_Q4_S1_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="Act1_StormfallPalace_Damaskus" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="Act1_StormfallPalace_Damaskus" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="PlayerLockTP" Name="RC_A1_Q3_UnlockockTP" Lock="0" />
+    </Step>
+    <Step Order="1" UIName="@ui_A1_Q4_S2_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="Talk" EntityName="Act1_StormfallPalace_Damaskus" DialogName="ACT1_Q4_Damaskus1Talk">
+        <ArrowMarker ShowMinimapIcon="1" Target="Act1_StormfallPalace_Damaskus" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalDialog" Name="SF_Damaskus2_Talk" DialogName="ACT1_Q4_Damaskus2Talk" />
+    </Step>
+    <Step Order="2" AutoClearEvents="1" Save="1" UIName="@ui_A1_Q4_S3_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="QP_SF_Sewers" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_SF_Sewers" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_palace_to_stormfall" Area="ACT1_Palace" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_SF_Sewers" Radius="40" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_SF_Sewers" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_palace_to_stormfall" Area="ACT1_Palace" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_SF_Sewers" Radius="8" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="DungeonEntrance_SmugglerPath" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_palace_to_stormfall" Area="ACT1_Palace" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Interact" Names="DungeonEntrance_SmugglerPath" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" Target="QP_SF_Sewers" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q4_ClearUI_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Stormfall_RestrictedArea3" EntityNames="Stormfall_RestrictedArea3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_r_SF_UnderCity" EntityNames="DO_AnimObject_blocking_guard_r_SF_UnderCity" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_l_SF_UnderCity" EntityNames="DO_AnimObject_blocking_guard_l_SF_UnderCity" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_Undercity_Audio" EntityNames="Audio_ATS_Stormfall_Guardsblock_Undercity" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Unblocking_guard_r_SF_UnderCity" EntityNames="DO_AnimObject_Unblocking_guard_r_SF_UnderCity" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Unblocking_guard_l_SF_UnderCity" EntityNames="DO_AnimObject_Unblocking_guard_l_SF_UnderCity" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_SF_Crowd" AreaRadius="10" Type="GlobalDialog" Delay="1" Name="SF_AngryCrowdTalk" DialogName="ACT1_Q4_SF_AngryCrowdTalk" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_SF_Morons" AreaRadius="5" Type="GlobalDialog" Name="SF_MoronsTalk" DialogName="ACT1_Q4_SF_MoronsTalk" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="CaucasianMaleNoble6" AreaRadius="13" Type="GlobalDialog" Name="SF_MeasuredObeserverTalk" DialogName="ACT1_Q4_SF_MeasuredObeserverTalk" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Stormfall_RestrictedArea2" AreaRadius="8" Type="GlobalDialog" Name="SF_PanickedObeserverTalk" DialogName="ACT1_Q4_SF_PanickedObeserverTalk" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_SF_Crowd" AreaRadius="16" Type="GlobalDialog" Name="SF_SmugglerPathTalk1" DialogName="ACT1_Q4_SF_SmugglerPathTalk1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_SF_Sewers_GP_Dialog" AreaRadius="10" Type="GlobalDialog" Name="SF_SmugglerPathTalk2" DialogName="ACT1_Q4_SF_SmugglerPathTalk2" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="EnterSmugglerPathUpdate" Localization="@ui_A1_Q4_S3_UpdateStepNameLabel" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="3" AutoClearEvents="1" Save="0" UIName="@ui_A1_Q4_S4_StepNameLabel">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_SF_Sewers" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="SmugglersPath_Exit" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="QP_SF_Sewers" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="SmugglersPath_Exit" Area="ACT1_Smuggler_Path" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="SmugglersPath_Exit" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="QP_SF_Sewers" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="SmugglersPath_Exit" Area="ACT1_Smuggler_Path" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="SpawnPoint_nowhere_to_necro" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="SmugglersPath_Exit" Area="ACT1_Smuggler_Path" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q4_ClearUI_2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Delay="3" Name="SP_SmugglerPathTalk1" DialogName="ACT1_Q4_SP_SmugglerPathTalk1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="SF_Hide_ClickableEntity_necropart1_to_part2" EntityNames="ClickableEntity_necropart1_to_part2" Hide="1" />
+    </Step>
+    <Step Order="4" AutoClearEvents="1" Save="1" UIName="@ui_A1_Q4_S5_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="QP_Necropolis1_Entrance" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_to_yudai_crystal_arena" Area="ACT1_NecropolisPart1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="ClickableEntity_necro_part1_to_part2" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_necro_part1_to_part2" Area="ACT1_NecropolisPart1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q4_ClearUI_3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HideNecropolis_part1_Forcefield" EntityNames="Necropolis_part1_ForceField_Event_0" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Delay="2" Type="GlobalDialog" Name="N1_EnteringN1Talk1" DialogName="ACT1_Q4_N1_EnteringN1Talk1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="ExploreTheNecropolisUpdate" Localization="@ui_A1_Q4_S5_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Necropolis1_Entrance" AreaRadius="15" Type="GlobalDialog" Name="N1_EnteringN1Talk2" DialogName="ACT1_Q4_N1_EnteringN1Talk2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Necropolis1_Cultist" AreaRadius="15" Type="GlobalDialog" Name="N1_CultistKillTalk" DialogName="ACT1_Q4_N1_CultistKillTalk" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Necropolis1_Halfbreed" AreaRadius="15" Type="GlobalDialog" Name="N1_HalfbreedKillTalk" DialogName="ACT1_Q4_N1_HalfbreedKillTalk" />
+    </Step>
+    <Step Order="5" AutoClearEvents="1" Save="1" UIName="@ui_A1_Q4_S7_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="SpawnPoint_necro_to_part2" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ClickableEntity_necro_part1_to_part2" Area="ACT1_NecropolisPart1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q4_ClearUI_5" />
+    </Step>
+    <Step Order="6" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q4_S8_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="QP_N_BoneBridge" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_N_BoneBridge" Area="ACT1_NecropolisPart2" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ClickableEntity_bonebridgetrigger_R,ClickableEntity_bonebridgetrigger_L" InteractCount="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_bonebridgetrigger_R" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3.5" Area="ACT1_NecropolisPart3" Threshold="85" UseAreaSize="17" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_bonebridgetrigger_L" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3.5" Area="ACT1_NecropolisPart3" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q4_ClearUI_6" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Unhide_Clickable_yudaicrystalarena" EntityNames="ClickableEntity_to_yudai_crystal_arena" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="N3_BoneBridgeTalk" DialogName="ACT1_Q4_N3_BoneBridgeTalk" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="BoneBridgeUpdate1" Localization="@ui_A1_Q4_S8_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ClickableEntity_bonebridgetrigger_R" Type="EntityIsHidden" Name="HideRPillar" EntityNames="ClickableEntity_bonebridgetrigger_R" Hide="1" />
+      <Event Trigger="EventEnd" EventName="HideRPillar" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="AnimRPillar" AnimatedEntityName="AnimObject_bonebridgetrigger_R" Play="Default" Loop="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ClickableEntity_bonebridgetrigger_L" Type="EntityIsHidden" Name="HideLPillar" EntityNames="ClickableEntity_bonebridgetrigger_L" Hide="1" />
+      <Event Trigger="EventEnd" EventName="HideLPillar" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="AnimLPillar" AnimatedEntityName="AnimObject_bonebridgetrigger_L" Play="Default" Loop="0" />
+      <Event Trigger="EventStart" EventName="AnimLPillar" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="Bonebridge_Sequence1" SequenceName="Q_Necro_BonesBridge_L" />
+      <Event Trigger="EventStart" EventName="AnimRPillar" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="Bonebridge_Sequence2" SequenceName="Q_Necro_BonesBridge_R" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="N3_Hide_N3_RestrictedArea_Event1" EntityNames="BoneBridge_RestrictedArea1" Hide="1" />
+    </Step>
+    <Step Order="7" AutoClearEvents="0" Save="0" UIName="@ui_A1_Q4_S9_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="QP_N_BoneBridge2" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_necro_part3_to_boss" Area="ACT1_NecropolisPart2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q4_ClearUI_7" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalDialog" Name="N3_BoneBridgeCrossTalk" DialogName="ACT1_Q4_N3_BoneBridgeCrossTalk" />
+    </Step>
+    <Step Order="8" AutoClearEvents="1" Save="1" UIName="@ui_A1_Q4_S6_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_to_yudai_crystal_arena" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_to_yudai_crystal_arena" Area="ACT1_NecropolisPart2" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ClickableEntity_to_yudai_crystal_arena" InteractCount="1">
+        <ArrowMarker Target="ClickableEntity_to_yudai_crystal_arena" ShowOnWorldmap="1" Area="ACT1_NecropolisPart2" Threshold="85" ShowMinimapIcon="1" />
+      </Goal>
+      <Goal Order="2" Type="Vote" Duration="20" VotePreset="VotePreset_ACT1_UmbraRelay" GameplayEventPresetName="ACT1_UmbraRelay">
+        <ArrowMarker Target="ClickableEntity_to_yudai_crystal_arena" ShowOnWorldmap="1" Area="ACT1_NecropolisPart2" Threshold="85" ShowMinimapIcon="1" />
+      </Goal>
+      <Goal Order="3" Type="Interact" Names="YudaiCrystal_1,YudaiCrystal_2,YudaiCrystal_3,YudaiCrystal_4" InteractCount="4">
+        <ArrowMarker Target="ProximityTrigger_Graveyard_part2_circular_room_stairs" ShowOnWorldmap="1" Area="ACT1_NecropolisPart2" Threshold="85" ShowMinimapIcon="1" UseAreaSize="35" />
+      </Goal>
+      <Goal Order="4" Type="KillAll" EventsName="N_Wailon_Spawn">
+        <ArrowMarker Target="N_Wailon_Spawn" ShowOnWorldmap="1" Area="ACT1_NecropolisPart2" Threshold="85" ShowMinimapIcon="1" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="AG_Reveal_TPS_ForceField_Event1" EntityNames="AnankisGate_ForceField_Event" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HideNecropolis_part1_Forcefield2" EntityNames="Necropolis_part1_ForceField_Event_0" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HideNecropolis_part1_Exit" EntityNames="ClickableEntity_necropart2_to_AnankisGate" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="N1_LockUmbraRelay" ClickableEntityName="ClickableEntity_to_yudai_crystal_arena" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="N1_LockDoorUmbraRelay" DoorName="AnimDoor5" Action="Lock" AnimationSpeed="0" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q4_ClearUI_4" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="HideNecropolis_part1_EventDoor" EntityNames="ClickableEntity_to_yudai_crystal_arena" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityTeleport" MinRadius="1" Name="Player_TP_N1" TeleportedEntityName="#Player" DestinationName="QP_A1_Q4_S6_PlayerTP" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="CutsceneUmbraCrystal" SequenceName="A1_Q4_S6_YudaiCrystal" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalReleaseGameplayEvent" Name="N_ReleaseUmbraRelayEvent" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="UmbraRelayUpdate1" Localization="@ui_A1_Q4_S6_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="EntitySpawn" MinimumRadius="2" MaximumRadius="5" SpawnFrequency="0" Name="N_Wailon_Spawn" SpawnClass="Sc_DemonicCrystal_Wailon" TargetEntityName="QP_N1_DemonicCrystal_SpawnWailon" FaceAtSpawn="" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="GlobalDialog" Name="N1_DomeRuptured" DialogName="ACT1_Q4_N1_UmbraCrystalP2Talk1" Delay=".5" />
+      <Event Trigger="EventStart" EventName="CutsceneUmbraCrystal" Type="GlobalRevivePlayers" Name="N1_CutsceneRevive" RevivePostion="" />
+      <Event Trigger="EventEnd" EventName="CutsceneUmbraCrystal" Type="GlobalDialog" Name="N1_YudaiTauntTalk1" DialogName="ACT1_Q4_N1_YudaiTauntTalk4" Delay="" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_N1_YudaiDialog2" AreaRadius="8" Type="GlobalDialog" Name="N1_YudaiTauntTalk2" DialogName="ACT1_Q4_N1_YudaiTauntTalk2" Delay=".5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_N1_YudaiDialog3" AreaRadius="8" Type="GlobalDialog" Name="N1_YudaiTauntTalk3" DialogName="ACT1_Q4_N1_YudaiTauntTalk3" Delay=".5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_N1_YudaiDialog4" AreaRadius="8" Type="GlobalDialog" Name="N1_YudaiTauntTalk4" DialogName="ACT1_Q4_N1_YudaiTauntTalk1" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="DynsceneUmbraCrystal" SequenceName="DynScene_YudaiCrystal_DomeDisappear" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="UmbraRelayUpdate2" Localization="@ui_A1_Q4_S6_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="ActionDoor" Name="N1_OpenDoorUmbraRelay" DoorName="AnimDoor5" Action="Open" AnimationSpeed="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityIsHidden" Name="RevealNecropolis_part1_Exit" EntityNames="ClickableEntity_necropart2_to_AnankisGate" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="GlobalDialog" Name="N1_StairsDown" DialogName="ACT1_Q4_N1_UmbraCrystalEndTalk1" Delay=".5" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="QuestFail" Name="FailHunt_HuntQuest" QuestName="QN_HS_A1_WarBeastHunt_2F" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="QuestFail" Name="FailHunt_BossFightQuest" QuestName="QN_HE_BF_WarBeast_S" />
+    </Step>
+    <Step Order="9" UIName="@ui_A1_Q4_S10_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_necropart2_to_AnankisGate" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_necropart2_to_AnankisGate" Area="ACT1_NecropolisPart3" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q4_ClearUI_8" />
+    </Step>
+    <Step Order="10" UIName="@ui_A1_Q4_S9_StepNameLabel" AutoClearEvents="0" Save="1">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_Vheguaad_BossFight_Trigger" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_Vheguaad_BossFight_Trigger" Area="ACT1_NecropolisPart2" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_Vheguaad_BossFight_Trigger" Area="ACT1_NecropolisPart2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalCheckpoint" Name="ResetCheckpointVheguaadFight" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ClickableEntity_Vheguaad_BossFight_Trigger" AreaRadius="50" Type="GlobalDialog" Name="N3_ReachTheEndTalk" DialogName="ACT1_Q4_N3_ReachTheEndTalk" Delay="2" />
+      <Event Trigger="EventEnd" EventName="N3_ReachTheEndTalk" Type="GlobalDialog" Name="AG_VhegguadhTalk" DialogName="ACT1_Q4_AG_VhegguadhTalk" />
+      <Event Trigger="EventEnd" EventName="N3_ReachTheEndTalk" Type="StepUpdate" Name="A1_Q4_S11_Update" Localization="@ui_A1_Q4_S9_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="AG_VhegguadhTalk" Type="GoalAchieve" Name="WaitEnd_AG_VhegguadhTalk" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="30" Type="GlobalCheckpoint" Name="Veghuaad_Remove_Checkpoint_SF" CheckpointEntityName="" />
+    </Step>
+    <Step Order="11" UIName="@ui_A1_Q4_S9_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_Vheguaad_BossFight_Trigger" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_necro_part3_to_boss" Area="ACT1_NecropolisPart3" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_Vheguaad_BossFight_Trigger" Area="ACT1_AnankisGate" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" Duration="20" VotePreset="VotePreset_ACT1_BossFight_Vheguaad">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_necro_part3_to_boss" Area="ACT1_NecropolisPart3" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="BossFight" FightPreset="BossFight_Vheguaad">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_necro_part3_to_boss" Area="ACT1_NecropolisPart3" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_necro_part3_to_boss" Area="ACT1_AnankisGate" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q4_ClearUI_11" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" AnimationSpeed="3" Name="LockAnankisGate" DoorName="AnimDoor7" Action="Lock" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Vheguaad_BlockingRoad_off" EmitterEntityName="PrimordialGate_BlockingRoad" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalRevivePlayers" Delay=".2" Name="AG_EventStartRevive" RevivePostion="" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="AG_Entering_StepUpdate" Localization="@ui_A1_Q4_S10_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalReserveGameplayEvent" Name="ReverveSlotVhegguadhFight" EventDescriptorName="ACT1_BossFight_Vhegguad" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="AG_Hide_TPS_BossFightTrigger" EntityNames="ClickableEntity_Vheguaad_BossFight_Trigger" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityTeleport" MinRadius="1" Name="Player_TP_N3" TeleportedEntityName="#Player" DestinationName="SpawnPoint_necroboss_from_part3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalCheckpoint" Name="SetCheckpointVheguaadFight" CheckpointEntityName="SpawnPoint_AnankisGate_From_NecroPart2" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalReleaseGameplayEvent" Name="ReleaseSlotVhegguadhFight" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="AG_Hide_TPS_ForceField_Event2" EntityNames="AnankisGate_ForceField_Event" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalDialog" Delay="1" Name="AG_ButcherDead" DialogName="ACT1_Q4_AG_ButcherDeadPlayerTalk" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionParticleEmitter" Name="Vheguaad_BlockingRoad_win" EmitterEntityName="PrimordialGate_BlockingRoad" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalRevivePlayers" Name="AG_EventSuccessRevive" RevivePostion="" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="AG_Bossfight_StepUpdate" Localization="@ui_A1_Q4_S10_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="QuestFail" Name="FailHunt_HuntQuest" QuestName="QN_HS_A1_WarBeastHunt_2F" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="QuestFail" Name="FailHunt_BossFightQuest" QuestName="QN_HE_BF_WarBeast_S" />
+      <Event Trigger="BossfightLost" Type="ActionParticleEmitter" Name="Vheguaad_BlockingRoad_Fail" EmitterEntityName="PrimordialGate_BlockingRoad" Activate="0" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="Vheguaad_StopDialog_Fail" />
+      <Event Trigger="BossfightLost" Type="StepFail" Name="AD_VhegguadhArena_FailStep" RollbackToPreviousStep="1" />
+      <Event Trigger="BossfightLost" Type="EntityIsHidden" Name="AG_Unhide_TPS_BossFightTrigger" EntityNames="ClickableEntity_Vheguaad_BossFight_Trigger" Hide="0" />
+      <Event Trigger="BossfightLost" Type="GlobalReleaseGameplayEvent" Name="ReleaseSlotVhegguadhFightLost" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="2000" />
+        <XP Amount="180000" />
+        <ChoiceLootClass Name="A1_Q4_Reward" MinItemNumber="6" MaxItemNumber="6" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

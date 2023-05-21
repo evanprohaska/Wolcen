@@ -1,0 +1,53 @@
+<MetaData>
+  <Skill UID="AI_REPU_Golgoth_JusticeFromAbove" ESkill="AI_REPU_Golgoth_JusticeFromAbove" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="REPU_Golgoth_JusticeFromAbove_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.jfa_indicator" Offset="0,0,0" Direction="-1,0,0" Scale="0.6" InstantKill="0" />
+    </ParticleList>
+    <Targeting TargetingType="Directional" />
+    <Projectile Name="repu_golgoth_justicefromabove_bolt_proj" ProjectileCount="1" AngleBetweenProjectiles="180" PenetrationLimit="0" />
+    <SkillSpecific ProjectileLaunchTickRate="0.5" ProjectileSpawnRadiusIn="2" ProjectileSpawnRadiusOut="3" />
+    <SoundTrigger OnAnimCast="Play_Republic_Golgoth_JusticeFromAbove_Fire" OnAnimStart="" OnHit="Play_staff_electric_storm_strike" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_Golgoth_JusticeFromAbove_1" ESkill="AI_REPU_Golgoth_JusticeFromAbove" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="REPU_Golgoth_JusticeFromAbove_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.jfa_indicator" Offset="0,0,0" Direction="-1,0,0" Scale="0.6" InstantKill="0" />
+    </ParticleList>
+    <Targeting TargetingType="Directional" />
+    <Projectile Name="repu_golgoth_justicefromabove_bolt_proj" ProjectileCount="1" AngleBetweenProjectiles="180" PenetrationLimit="0" />
+    <SkillSpecific ProjectileLaunchTickRate="0.5" ProjectileSpawnRadiusIn="2" ProjectileSpawnRadiusOut="3" />
+    <SoundTrigger OnAnimCast="Play_Republic_Golgoth_JusticeFromAbove_Fire" OnAnimStart="" OnHit="Play_staff_electric_storm_strike" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_Golgoth_JusticeFromAbove_2" ESkill="AI_REPU_Golgoth_JusticeFromAbove" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="REPU_Golgoth_JusticeFromAbove_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.jfa_indicator" Offset="0,0,0" Direction="-1,0,0" Scale="0.6" InstantKill="0" />
+    </ParticleList>
+    <Targeting TargetingType="Directional" />
+    <Projectile Name="hunt_golgoth_justicefromabove_bolt_2_proj" ProjectileCount="2" AngleBetweenProjectiles="180" PenetrationLimit="0" />
+    <SkillSpecific ProjectileLaunchTickRate="0.5" ProjectileSpawnRadiusIn="2" ProjectileSpawnRadiusOut="3" />
+    <SoundTrigger OnAnimCast="Play_Republic_Golgoth_JusticeFromAbove_Fire" OnAnimStart="" OnHit="Play_staff_electric_storm_strike" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

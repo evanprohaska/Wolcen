@@ -1,0 +1,21 @@
+<MetaData>
+  <Quest Name="QN_EG_BossFight_UberBoss_LambachP1" StartDialog="" Type="BossFight" UIName="@ui_EG_UB_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_UB_StepNameLabel_UberLambach" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="QN_EG_KillTarget_UberBoss_LambachP1_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_UberBoss_LambachP1_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="20" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0.1" SpawnFrequency="" Name="QN_EG_KillTarget_UberBoss_LambachP1_Spawn1" Delay="0.1" SpawnClass="Sc_CG_UB_LambachP1" TargetEntityName="QP_EG_UB_Lambach_P1" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="QN_EG_KillTarget_UberBoss_LambachP1_HideGI_1" EntityNames="GI_IncubationChamber01" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="QN_EG_KillTarget_UberBoss_LambachP1_HideGI_2" EntityNames="GI_IncubationChamber02" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="QN_EG_KillTarget_UberBoss_LambachP1_HideGI_3" EntityNames="GI_IncubationChamber03" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="QN_EG_KillTarget_UberBoss_LambachP1_HideGI_4" EntityNames="GI_IncubationChamber04" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="QN_EG_KillTarget_UberBoss_LambachP1_HideGI_5" EntityNames="GI_IncubationChamber05" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="QN_EG_KillTarget_UberBoss_LambachP1_UnhideGI_1" EntityNames="GI_IncubationChamber01" Hide="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="QN_EG_KillTarget_UberBoss_LambachP1_UnhideGI_2" EntityNames="GI_IncubationChamber02" Hide="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="QN_EG_KillTarget_UberBoss_LambachP1_UnhideGI_3" EntityNames="GI_IncubationChamber03" Hide="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="QN_EG_KillTarget_UberBoss_LambachP1_UnhideGI_4" EntityNames="GI_IncubationChamber04" Hide="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="QN_EG_KillTarget_UberBoss_LambachP1_UnhideGI_5" EntityNames="GI_IncubationChamber05" Hide="0" Delay="1" />
+    </Step>
+  </Quest>
+</MetaData>

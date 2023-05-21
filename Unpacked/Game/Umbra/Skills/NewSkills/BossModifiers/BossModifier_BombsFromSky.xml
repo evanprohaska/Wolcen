@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_BombsFromSky">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <SoundTrigger OnHit="Play_hero_default_damage_large" />
+    <Explosion ExplosionRadius="6" />
+    <Projectile Name="BombsFromSky_Proj" ProjectileCount="2" PenetrationLimit="2" />
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="1" CastMode="FromSky" KillProjsOnCasterDeath="1">
+      <CastAttributes OnTarget="0" StartZOffset="30" AngleFromZAxis="25" ZPadding="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_Hunt_BossModifier_BombsFromSky">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <SoundTrigger OnHit="Play_hero_default_damage_large" />
+    <Explosion ExplosionRadius="6" />
+    <Projectile Name="BombsFromSky_Proj" ProjectileCount="2" PenetrationLimit="2" />
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="1" CastMode="FromSky" KillProjsOnCasterDeath="1">
+      <CastAttributes OnTarget="0" StartZOffset="30" AngleFromZAxis="25" ZPadding="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

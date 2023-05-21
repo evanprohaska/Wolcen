@@ -1,0 +1,15 @@
+<MetaData>
+  <CastEffect Name="hidden_lurker">
+    <Param Type="Particle" ParticleName="OnCast.hidden_lurker.loop" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Locator_Locomotion" Target="" />
+  </CastEffect>
+  <CastEffect Name="hidden_lurker_atk">
+    <Param Type="Particle" ParticleName="OnCast.hidden_lurker.loop" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Locator_Locomotion" Target="" />
+  </CastEffect>
+  <CastEffect Name="remove_lurker">
+    <Param Type="Particle" ParticleName="OnCast.hidden_lurker.remove" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Pelvis" Target="" KillAfter="1" />
+  </CastEffect>
+  <CastEffect Name="ghoul_charge_claws">
+    <Param Type="Particle" ParticleName="U_Flow.Griffe.Griffe_continuous" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 L Hand" Target="" KillAfter="1" />
+    <Param Type="Particle" ParticleName="U_Flow.Griffe.Griffe_continuous" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R Hand" Target="" KillAfter="1" />
+  </CastEffect>
+</MetaData>

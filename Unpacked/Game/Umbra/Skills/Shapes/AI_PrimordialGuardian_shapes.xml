@@ -1,0 +1,17 @@
+<MetaData>
+  <Shape ID="PrimordialGuardian_DefaultAttackShape" Type="Circle">
+    <Data Radius="4.5" BoundingBoxHeight="4" />
+  </Shape>
+  <Shape ID="PrimordialGuardian_SearchingLightShape" Type="Cone">
+    <Data Radius="7" Angle="60" BoundingBoxHeight="2" />
+    <Position ForwardOffset="2" StartingAngle="0" />
+  </Shape>
+  <Shape ID="PrimordialGuardian_Laser" Type="Circle">
+    <Data Radius="1" BoundingBoxHeight="4" />
+  </Shape>
+  <Shape ID="PrimordialGuardian_MoveAndShoot" Type="Rectangle">
+    <Data Length="8" Width="16" BoundingBoxHeight="2" />
+    <Position ForwardOffset="7" StartingAngle="0" />
+    <Animation MovementDelay="0" MovementSpeed="0" MovementDuration="0" RotationDelay="0" RotationAngle="0" RotationDuration="0" SnapToGround="1" />
+  </Shape>
+</MetaData>

@@ -1,0 +1,25 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar01_inexorableadvance" ESkill="AI_republicjusticar01_inexorableadvance" Keywords="attack_skill">
+    <VisualFeedback FeedbackPresetBase="default_ai_attacks" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaximumTurnRate="30" CanBeInterrupted="0" />
+    <Blownaway Height="0" Distance="3.5" StunDuration="0.1" />
+    <SpecialShield ShieldAngle="90" BounceProjectiles="1" IgnoreDirectionalDamage="1" ResistsCrowdControl="1" ProtectionType="ProjectilesOnly" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_InexorableAdvance" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Shield" Name="U_Monster.Justica.Shield_Bash_04" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="ShieldOut" Name="U_Monster.Justica.Shield_Bash_04_End" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Reflection" Name="U_Monster.Justica.Shield_Bounds_02" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+    </ParticleList>
+    <Cooldown Cooldown="4.0" CooldownPerLevel="0" CooldownTrigger="OnEnd" />
+    <SkillSpecific AccelerationTime="0.8" RelativeSpeedMultiplier="2.5" MaxTimeOutDuration="10" BreakBarDamagePercent="50" StopIfStuck="1" TickRate="0.5" BlowAwayAllies="1" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="5" />
+      <EmissiveIntensity From="500" To="origin" In="1" />
+    </Material>
+  </Skill>
+</MetaData>

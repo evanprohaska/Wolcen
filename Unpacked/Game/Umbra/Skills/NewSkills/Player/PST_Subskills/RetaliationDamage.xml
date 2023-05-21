@@ -1,0 +1,17 @@
+<MetaData>
+  <Skill UID="pst_retaliation" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="PST_Retaliation" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Specific_PST RelatedPSTEffect="Retaliation" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="0" ApplicationRadius="" DamageOnEnemies="1" />
+  </Skill>
+  <Skill UID="pst_retaliation_rend" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="PST_Retaliation" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Damage_Conversion>
+      <Entry From="physical" To="rend" ConversionRate="100" />
+    </Damage_Conversion>
+    <Specific_PST RelatedPSTEffect="Retaliation" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="1" ApplicationRadius="" DamageOnEnemies="1" />
+  </Skill>
+</MetaData>

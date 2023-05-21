@@ -1,0 +1,106 @@
+<MetaData>
+  <Skill UID="AI_SvriirAlpha_atk_01" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <Combo ComboStarter="Combo_SvriirAlpha" />
+    <DamageWeapon Type="physical" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_SvriirAlpha_atk_02" ESkill="default_melee" Keywords="">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="physical" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_SvriirAlpha_atk_03" ESkill="default_melee" Keywords="">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="physical" WeaponMultiplier="1.4" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape_Circle" />
+    </Shapes>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_SvriirAlpha_atk_04" ESkill="AI_svriiralpha_tailattack" Keywords="">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="physical" WeaponMultiplier="1.6" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape" />
+    </Shapes>
+    <Blownaway Height="1" Distance="6" StunDuration="2" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_Hunt_SvriirAlpha_atk_01" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <Combo ComboStarter="Combo_Hunt_SvriirAlpha" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1" />
+    <StatusAilment>
+      <Poison Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_SvriirAlpha_atk_02" ESkill="default_melee" Keywords="">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1.2" />
+    <StatusAilment>
+      <Poison Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_SvriirAlpha_atk_03" ESkill="default_melee" Keywords="">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1.4" />
+    <StatusAilment>
+      <Poison Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape_Circle" />
+    </Shapes>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_SvriirAlpha_atk_04" ESkill="AI_svriiralpha_tailattack" Keywords="">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1.6" />
+    <StatusAilment>
+      <Poison Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_DefaultAttackShape" />
+    </Shapes>
+    <Blownaway Height="1" Distance="6" StunDuration="2" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

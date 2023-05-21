@@ -1,0 +1,16 @@
+<MetaData>
+  <Skill UID="AI_COFE_Leech_MeleeAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Leech_DefaultAttackShape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Attack" Name="U_Monster.Bloodworm_COFE.Attack" Offset="0,0,0.6" Direction="0,1,0" />
+    </ParticleList>
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Mandible" />
+    <SoundTrigger OnAnimStart="Play_Svriir_Swarmcrawler_Attack_Start" OnAnimCast="Play_Svriir_Swarmcrawler_Attack" OnHit="Play_Svriir_Swarmcrawler_Attack_Hit" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

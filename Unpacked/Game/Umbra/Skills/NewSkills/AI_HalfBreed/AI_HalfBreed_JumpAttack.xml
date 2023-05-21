@@ -1,0 +1,68 @@
+<MetaData>
+  <Skill UID="AI_halfbreed_jumpattack" ESkill="AI_svriiralpha_jumpattack" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="8.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="HalfBreed_JumpAttack_jumping" />
+      <Entry ShapeName="HalfBreed_JumpAttack_landing" />
+    </Shapes>
+    <Blownaway Height="0" Distance="4" />
+    <SkillSpecific TimeBetweenHits="0.2" Speed="30" MoveDistance="15" />
+    <SoundTrigger OnAnimStart="Play_Halfbreed_Jump" OnHit="Play_Halfbreed_BumpAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_halfbreed_jumpattack_rend" ESkill="AI_svriiralpha_jumpattack" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1" />
+    <Cooldown Cooldown="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="HalfBreed_JumpAttack_jumping" />
+      <Entry ShapeName="HalfBreed_JumpAttack_landing" />
+    </Shapes>
+    <SkillSpecific TimeBetweenHits="0.2" Speed="30" MoveDistance="15" />
+    <SoundTrigger OnAnimStart="Play_Halfbreed_Jump" OnHit="Play_Halfbreed_BumpAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_minihalfbreed_jumpattack_shadow" ESkill="AI_svriiralpha_jumpattack" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="shadow" WeaponMultiplier=".5" />
+    <Cooldown Cooldown="20.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Mini_HalfBreed_JumpAttack_jumping" />
+      <Entry ShapeName="Mini_HalfBreed_JumpAttack_landing" />
+    </Shapes>
+    <SkillSpecific TimeBetweenHits="0.2" Speed="30" MoveDistance="15" />
+    <SoundTrigger OnAnimStart="Play_Halfbreed_Mini_JumpAttack_Leap" OnHit="Play_Halfbreed_Mini_JumpAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_minihalfbreed_jumpattack_physical" ESkill="AI_svriiralpha_jumpattack" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="physical" WeaponMultiplier=".5" />
+    <Cooldown Cooldown="20.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Mini_HalfBreed_JumpAttack_jumping" />
+      <Entry ShapeName="Mini_HalfBreed_JumpAttack_landing" />
+    </Shapes>
+    <SkillSpecific TimeBetweenHits="0.2" Speed="30" MoveDistance="15" />
+    <SoundTrigger OnAnimStart="Play_Halfbreed_Mini_JumpAttack_Leap" OnHit="Play_Halfbreed_Mini_JumpAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_minihalfbreed_jumpattack_rend" ESkill="AI_svriiralpha_jumpattack" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".5" />
+    <Cooldown Cooldown="20.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Mini_HalfBreed_JumpAttack_jumping" />
+      <Entry ShapeName="Mini_HalfBreed_JumpAttack_landing" />
+    </Shapes>
+    <SkillSpecific TimeBetweenHits="0.2" Speed="30" MoveDistance="15" />
+    <SoundTrigger OnAnimStart="Play_Halfbreed_Mini_JumpAttack_Leap" OnHit="Play_Halfbreed_Mini_JumpAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,110 @@
+<MetaData>
+  <ArenaWaves Name="ArenaWaves_WM_Q1_3">
+    <Wave Type="Survival" Tag="1" TimeLimit="600">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfFury_Fanatic_Ranged" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfFuryFurySpawn" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.75" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfFury_Enforcer" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_Q2_3">
+    <Wave Type="Survival" Tag="1" TimeLimit="600">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfFlesh_Runner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfFlesh_Zombie" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.75" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfFlesh_Spreader" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_Q4_1">
+    <Wave Type="Survival" Tag="1" TimeLimit="600">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfSouls_Fanatic" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfSouls_DeathCloak" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.75" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfSouls_Cultist" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_Q4_3">
+    <Wave Type="Survival" Tag="1" TimeLimit="50">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfSouls_Fanatic" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfSouls_DeathCloak" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.75" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfSouls_Cultist" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="CultOfSouls_DemonOfSouls" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfSouls_Fanatic" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_CultOfSouls_DeathCloak" NumberOfEntitiesPerSpawn="3" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="once" TargetSpawnClass="Sc_WM_CultOfSouls_DemonOfSouls" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_Q5_3">
+    <Wave Type="Survival" Tag="1" TimeLimit="180">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_SvriirOmega" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_Swarmtail" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.75" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_SvriirBetaSpitter" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_SvriirOmegaFemale" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_SvriirMiniSpitter" NumberOfEntitiesPerSpawn="3" SpawnFrequency="2" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="once" TargetSpawnClass="Sc_WM_SvriirAlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_Q7_Escort_ShadowScarab_1">
+    <Wave Type="Survival" Tag="1" TimeLimit="10000">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_WM_Q7_Escort_Shadow" NumberOfEntitiesPerSpawn="3" SpawnFrequency="3" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_WM_Q7_Escort_Scarab" NumberOfEntitiesPerSpawn="1" SpawnFrequency="10" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="3" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_Q7_Escort_ShadowScarab_2">
+    <Wave Type="Survival" Tag="1" TimeLimit="10000">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_WM_Q7_Escort_Shadow" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="5" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_WM_Q7_Escort_Scarab" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="3" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_Q7_Escort_ShadowScarab_3">
+    <Wave Type="Survival" Tag="1" TimeLimit="10000">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_WM_Q7_Escort_Shadow" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_WM_Q7_Escort_Scarab" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="3" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_Q7_Escort_ShadowScarab_4">
+    <Wave Type="Survival" Tag="1" TimeLimit="10000">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_WM_Q7_Escort_Shadow" NumberOfEntitiesPerSpawn="2" SpawnFrequency=".75" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="15" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill_forever" TargetSpawnClass="Sc_WM_Q7_Escort_Scarab" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="3" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

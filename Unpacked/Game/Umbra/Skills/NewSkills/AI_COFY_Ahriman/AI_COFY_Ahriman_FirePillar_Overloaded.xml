@@ -1,0 +1,36 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_FirePillar_OverloadedP3" ESkill="AI_REPU_Golgoth_JusticeFromAbove" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="25" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="Ahriman_FirePillaroverloaded_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Indicator" Name="COFY_Ahriman.OverloadedFirePillar.Indicator" Offset="0,0,-1.3" Direction="0,0,1" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <Targeting TargetingType="Directional" />
+    <Projectile Name="COFY_FirePillar_Overloaded_proj" ProjectileCount="8" AngleBetweenProjectiles="45" PenetrationLimit="0" />
+    <SkillSpecific ProjectileLaunchTickRate="3" ProjectileSpawnRadiusIn="0.1" ProjectileSpawnRadiusOut="0.2" />
+    <SoundTrigger OnAnimCast="Play_Ahriman_Fire_Pillar_Overloaded_Cast_P3" OnAnimStart="Play_Ahriman_Fire_Pillar_Overloaded_PreCast_P3" OnHit="Play_DOT_Burn" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FirePillar_OverloadedP3_Nerfed" ESkill="AI_REPU_Golgoth_JusticeFromAbove" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="25" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="Ahriman_FirePillaroverloadedNerfed_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Indicator" Name="COFY_Ahriman.OverloadedFirePillar.Indicator" Offset="0,0,-1.3" Direction="0,0,1" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <Targeting TargetingType="Directional" />
+    <Projectile Name="COFY_FirePillar_Overloaded_proj" ProjectileCount="5" AngleBetweenProjectiles="72" PenetrationLimit="0" />
+    <SkillSpecific ProjectileLaunchTickRate="4.5" ProjectileSpawnRadiusIn="0.1" ProjectileSpawnRadiusOut="0.2" />
+    <SoundTrigger OnAnimCast="Play_Ahriman_Fire_Pillar_Overloaded_Cast_P3" OnAnimStart="Play_Ahriman_Fire_Pillar_Overloaded_PreCast_P3" OnHit="Play_DOT_Burn" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

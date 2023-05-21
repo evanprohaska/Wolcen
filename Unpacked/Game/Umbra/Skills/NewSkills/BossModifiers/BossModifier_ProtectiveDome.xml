@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="BossModifier_ProtectiveDome" ESkill="BossModifier_ProtectiveDome" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="Dome" Name="U_Monster.Templar_Priest.Protect_Dome_01" Direction="1,0,0" Scale="1.2" />
+      <Particle Key="DomeReaction" Name="U_Monster.Templar_Priest.Protect_Dome_Reaction_01" Direction="1,0,0" Scale="1.2" />
+      <Particle Key="DomeRemove" Name="U_Monster.Templar_Priest.Protect_Dome_End_01" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <SkillSpecific DomeRadius="5" TTL="-1" />
+  </Skill>
+  <Skill UID="BossModifier_ProtectiveDome_Neutral" ESkill="BossModifier_ProtectiveDome" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="Dome" Name="u_bossmodifiers.protective_dome.neutral" Direction="1,0,0" Scale="1" />
+      <Particle Key="DomeImpact" Name="u_bossmodifiers.protective_dome.impact" Direction="1,0,0" Scale="1" />
+      <Particle Key="DomeRemove" Name="u_bossmodifiers.protective_dome.remove" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <SkillSpecific DomeRadius="5" TTL="-1" />
+  </Skill>
+  <Skill UID="BossModifier_ProtectiveDome_COSS" ESkill="BossModifier_ProtectiveDome" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="Dome" Name="U_Monster_Alt.soul_priest.protectivedome" Direction="1,0,0" Scale="1" />
+      <Particle Key="DomeImpact" Name="U_Monster_Alt.soul_priest.dome_impact" Direction="1,0,0" Scale="1" />
+      <Particle Key="DomeRemove" Name="U_Monster_Alt.soul_priest.protectivedome_remove" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <SkillSpecific DomeRadius="5" TTL="-1" />
+  </Skill>
+</MetaData>

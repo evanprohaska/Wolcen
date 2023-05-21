@@ -1,0 +1,219 @@
+<MetaData>
+  <Quest Name="HL_M3" UIName="@ui_C1_M3_QuestLabel" UIDesc="" Type="Main" StartDialog="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_C1_M3_S1_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_M3_DS_49-1_50" Radius="14" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestFail" Name="FailQuest" QuestName="HL_M3" Delay="0.2" />
+    </Step>
+    <Step Order="1" UIName="@ui_C1_M3_S1_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_M3_DS_49-1_50" Radius="14" RequireAllPlayers="0">
+        <ArrowMarker Target="QP_M3_DS_49-1_50" Area="" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_Dragon_Egg_Init" EntityNames="Dragon_Egg" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="PLAYER_TP" TeleportedEntityName="#Player" DestinationName="TEST_PLAYER_TP" MinRadius="1" Delay="1.5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_FirstCheckpoint" CheckpointEntityName="TEST_PLAYER_TP" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GameplayAreaReset" Name="HL_C3_GameplayAreaReset" GameplayAreaName="C1_M3" PrepareAreaIfPlayerInside="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="M3_Oshara_P1_FX_Blocker1_Init" EmitterEntityName="M3_Oshara_P1_BlockingRoad_FX_1" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="M3_Oshara_P1_FX_Blocker2_Init" EmitterEntityName="M3_Oshara_P1_BlockingRoad_FX_2" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="M3_Oshara_P2_FX_Blocker1_Init" EmitterEntityName="M3_Oshara_P2_BlockingRoad_FX_1" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="M3_Oshara_P2_FX_Blocker2_Init" EmitterEntityName="M3_Oshara_P2_BlockingRoad_FX_2" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="M3_Oshara_P3_BlockingRoad_FX_1_Init" EmitterEntityName="M3_Oshara_P3_BlockingRoad_FX" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_DYN_C1_M3_RecoveringGoods" SequenceName="DYN_C1_M3_RecoveringGoods" ResetAtLastFrame="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_DYN_C1_M3_MerchantsTrapped" SequenceName="DYN_C1_M3_MerchantsTrapped" ResetAtLastFrame="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_DYN_C1_M3_CultFleshConfrontation" SequenceName="DYN_C1_M3_CultFleshConfrontation" ResetAtLastFrame="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_DYN_C1_M3_RepuCanon" SequenceName="DYN_C1_M3_RepuCanon" ResetAtLastFrame="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_DYN_C1_M3_RepuSniper" SequenceName="DYN_C1_M3_RepuSniper" ResetAtLastFrame="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P3_Dead_Oshara_Init" EntityNames="Dead_Oshara" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Init_1" EntityNames="Dead_Oshara_Collider_1" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Init_2" EntityNames="Dead_Oshara_Collider_2" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Init_3" EntityNames="Dead_Oshara_Collider_3" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Init_4" EntityNames="Dead_Oshara_Collider_4" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Init_5" EntityNames="Dead_Oshara_Collider_5" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Init_6" EntityNames="Dead_Oshara_Collider_6" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Init_7" EntityNames="Dead_Oshara_Collider_7" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P1_Blocker1_Init" EntityNames="Blocker_M3_OsharaP1_1" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P1_Blocker2_Init" EntityNames="Blocker_M3_OsharaP1_2" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P2_Blocker1_Init" EntityNames="Blocker_M3_OsharaP2_1" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P2_Blocker2_Init" EntityNames="Blocker_M3_OsharaP2_2" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_P3_Blocker1_Init" EntityNames="Blocker_M3_OsharaP3" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Oshara_Dead_Hide" EntityNames="Dead_Oshara" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="PlayerLockTP" Name="M3_PlayerLockTP" Lock="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Init_DynScene_SniperCamera" EntityNames="ProximityTrigger_dynscene_M3_sniper_camera" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Init_DynScene_Canon" EntityNames="ProximityTrigger_camera_vista_canon" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Init_DynScene_Cultist" EntityNames="ProximityTrigger_dynscene_M3_cultist_camera" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Init_DynScene_RecoveringGoods" EntityNames="ProximityTrigger_dynscene_M3_recoveringgoods_Camera" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntityIsHidden" Name="M3_Init_DynScene_MerchantsTrapped" EntityNames="ProximityTrigger_dynscene_M3_MerchantsTrapped_Camera" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="40" Type="EntityKill" Name="HLC1_Kill_BurnedCivilian_1" EntityName="C1_M3_Hunt_BurnedCivilian_1" Hide="1" Remove="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="40" Type="EntityKill" Name="HLC1_Kill_BurnedCivilian_2" EntityName="C1_M3_Hunt_BurnedCivilian_2" Hide="1" Remove="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="40" Type="EntityKill" Name="HLC1_Kill_BurnedCivilian_3" EntityName="C1_M3_Hunt_BurnedCivilian_3" Hide="1" Remove="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="40" Type="EntityKillAll" Name="HLC1_Kill_Hunt_BurnedCivilian" MonsterClass="Hunt_BurnedCivilian" Area="C1_M3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="TEST_PLAYER_TP" AreaRadius="15" Type="GlobalDialog" Name="M3_DS_47" DialogName="HLC3_SwampArea_Player_47" Delay="3" />
+      <Event Trigger="EventEnd" EventName="M3_DS_47" Type="GlobalAnnouncement" Name="C1_M3_SA_AN_StartQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="@ui_C1_M3_QuestLabel" DisplayTime="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="15" Type="EntitySound" Name="M3_DS_48_Sound" EntityName="QP_M3_GD_48" SoundName="Play_DYN_C1_Wetlands_OsharaDistantRoar1" />
+      <Event Trigger="EventStart" EventName="M3_DS_48_Sound" Type="GlobalCameraShake" Name="M3_DS_48_CamShake" PresetName="C1_M3_OsharaRoar_Wetlands" />
+      <Event Trigger="EventEnd" EventName="M3_DS_48_Sound" Type="GlobalDialog" Name="M3_DS_48" DialogName="HLC3_SwampArea_Oshara_48" Delay="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-1_CivilianSpawn1" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian_1" TargetEntityName="QP_M3_DS_49-1_BurntCivilianSpawnPoint1" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-1_CivilianSpawn2" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-1_BurntCivilianSpawnPoint2" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-1_CivilianSpawn3" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-1_BurntCivilianSpawnPoint3" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-1_CivilianSpawn4" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-1_BurntCivilianSpawnPoint4" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-1_CivilianSpawn5" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-1_BurntCivilianSpawnPoint5" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-2_CivilianSpawn1" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian_2" TargetEntityName="QP_M3_DS_49-2_BurntCivilianSpawnPoint1" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-2_CivilianSpawn2" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-2_BurntCivilianSpawnPoint2" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-2_CivilianSpawn3" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-2_BurntCivilianSpawnPoint3" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-2_CivilianSpawn4" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-2_BurntCivilianSpawnPoint4" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-2_CivilianSpawn5" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-2_BurntCivilianSpawnPoint5" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-3_CivilianSpawn1" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian_3" TargetEntityName="QP_M3_DS_49-3_BurntCivilianSpawnPoint1" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-3_CivilianSpawn2" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-3_BurntCivilianSpawnPoint2" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-3_CivilianSpawn3" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-3_BurntCivilianSpawnPoint3" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-3_CivilianSpawn4" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-3_BurntCivilianSpawnPoint4" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_GD_48" AreaRadius="20" Type="EntitySpawn" Name="M3_DS_49-3_CivilianSpawn5" SpawnClass="Sc_C1_M3_Hunt_BurnedCivilian" TargetEntityName="QP_M3_DS_49-3_BurntCivilianSpawnPoint5" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+    </Step>
+    <Step Order="2" UIName="@ui_C1_M3_S2_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_M3_DS_51" Radius="10" RequireAllPlayers="0">
+        <ArrowMarker Target="QP_M3_GOTO_Step2" Area="" ShowMinimapIcon="1" Threshold="10" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_49-1_50" AreaRadius="14" Type="ActionSequence" Name="M3_DS_RecoveringGoods_pre" SequenceName="DYN_C1_M3_RecoveringGoods_pre" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="M3_DS_49-1_Dialog" DialogName="HLC3_CommercialRoad_Merchant_49-1" Delay="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_49-1_Dialog" Type="GlobalDialog" Name="M3_DS_50" DialogName="HLC3_CommercialRoad_Player_50" Delay="0.5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_49-2" AreaRadius="20" Type="GlobalDialog" Name="M3_DS_49-2" DialogName="HLC3_CommercialRoad_Merchant_49-2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_49-3" AreaRadius="10" Type="GlobalDialog" Name="M3_DS_49-3" DialogName="HLC3_CommercialRoad_Merchant_49-3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_50-1" AreaRadius="24" Type="GlobalDialog" Name="M3_DS_50-1_Dialog" DialogName="HLC3_CommercialRoad_Merchant_50-1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_50-1" AreaRadius="22" Type="EntityIsHidden" Name="M3_DS_50-1_Camera_ZoomOut" EntityNames="ProximityTrigger_dynscene_M3_recoveringgoods_Camera" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_50-1" AreaRadius="22" Type="GlobalFlowGraph" Name="M3_DS_50-1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="M3_DS_50-1" Type="EntityIsHidden" Name="M3_DS_50-1_Camera_ZoomIn" EntityNames="ProximityTrigger_dynscene_M3_recoveringgoods_Camera" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_50-2" AreaRadius="15" Type="GlobalDialog" Name="M3_DS_50-2_Dialog" DialogName="HLC3_CommercialRoad_Merchant_50-2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_50-2" AreaRadius="13" Type="EntityIsHidden" Name="M3_DS_50-2_Camera_ZoomOut-Teleport" EntityNames="ProximityTrigger_dynscene_M3_MerchantsTrapped_Camera" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_50-2" AreaRadius="13" Type="GlobalFlowGraph" Name="M3_DS_50-2" Delay="1" />
+      <Event Trigger="EventEnd" EventName="M3_DS_50-2" Type="EntityIsHidden" Name="M3_DS_50-2_Camera_ZoomIn-Teleport" EntityNames="ProximityTrigger_dynscene_M3_MerchantsTrapped_Camera" Hide="1" />
+    </Step>
+    <Step Order="3" UIName="@ui_C1_M3_S3_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="BossFight" FightPreset="BossFight_Oshara1" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="BossfightLost" Type="GlobalFlowGraph" Name="HL_M3_OsharaP1_CamOff" />
+      <Event Trigger="BossfightLost" Type="GlobalCheckpoint" Name="HLC3_OsharaBosfight1Fail_ResetCheckpoint" CheckpointEntityName="" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="HLC3_OsharaBosfight1Fail_StopDial" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="FailStateOsharaBossfight1" QuestName="HL_C3_BossFight_Oshara1" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="FailState_HL_M3" QuestName="HL_M3" />
+    </Step>
+    <Step Order="4" UIName="@ui_C1_M3_S4_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_M3_DS_57_58" Radius="42" RequireAllPlayers="0">
+        <ArrowMarker Target="QP_M3_GOTO_Step5" Area="" ShowMinimapIcon="1" Threshold="10" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_OsharaP1Checkpoint" CheckpointEntityName="QP_M3_OsharaP1_PlayerSpawnPoint" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M3_OsharaP1_CamOff" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="M3_DS_52" DialogName="HLC3_Crossroads_Player_54" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC3_Step3_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EventEnd" EventName="M3_DS_52" Type="EntityIsHidden" Name="M3_Oshara_P1_Blocker1_End" EntityNames="Blocker_M3_OsharaP1_1" Hide="1" Delay="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_52" Type="EntityIsHidden" Name="M3_Oshara_P1_Blocker2_End" EntityNames="Blocker_M3_OsharaP1_2" Hide="1" Delay="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_52" Type="ActionParticleEmitter" Name="M3_Oshara_P1_FX_Blocker1_End" EmitterEntityName="M3_Oshara_P1_BlockingRoad_FX_1" Activate="0" Delay="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_52" Type="ActionParticleEmitter" Name="M3_Oshara_P1_FX_Blocker2_End" EmitterEntityName="M3_Oshara_P1_BlockingRoad_FX_2" Activate="0" Delay="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_55" AreaRadius="20" Type="GlobalDialog" Name="M3_DS_55" DialogName="HLC3_HighlandLowerPart_Player_55" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_55" AreaRadius="20" Type="GlobalStartQuest" Name="HLC3_Wetlands_UnlockSecondaryQuest" QuestName="HL_C3_SQ" StopOnQuestEnding="False" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_56" AreaRadius="20" Type="GlobalDialog" Name="M3_DS_56" DialogName="HLC3_HighlandLowerPart_Player_56" />
+      <Event Trigger="GoalFailure" GoalIndex="-1" Type="GlobalCheckpoint" Name="Leave_Reset_Checkpoint" CheckpointEntityName="" />
+      <Event Trigger="PlayerWipe" Type="QuestFail" Name="FailQuest" QuestName="HL_M3" />
+      <Event Trigger="PlayerWipe" Type="GlobalCheckpoint" Name="Reset_FirstCheckpoint" CheckpointEntityName="" />
+      <Event Trigger="PlayerWipe" Type="PlayerLockTP" Name="M3_PlayerUnlockTP" Lock="0" />
+    </Step>
+    <Step Order="5" UIName="@ui_C1_M3_S5_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_M3_DS_59" Radius="25" RequireAllPlayers="0">
+        <ArrowMarker Target="QP_M3_GOTO_Step6" Area="" ShowMinimapIcon="1" Threshold="10" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC3_Step4_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="M3_DS_58_Camera_ZoomOut" EntityNames="ProximityTrigger_dynscene_M3_cultist_camera" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_57_58" AreaRadius="40" Type="GlobalDialog" Name="M3_DS_58" DialogName="HLC3_HighlandLowerPart_Cultist_58" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_57_58" AreaRadius="38" Type="GlobalFlowGraph" Name="M3_DS_57" />
+      <Event Trigger="EventEnd" EventName="M3_DS_57" Type="EntityIsHidden" Name="M3_DS_58_Camera_ZoomIn" EntityNames="ProximityTrigger_dynscene_M3_cultist_camera" Hide="1" />
+    </Step>
+    <Step Order="6" UIName="@ui_C1_M3_S6_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_M3_Cutscene_Gating_OsharaP2" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker Target="QP_M3_GOTO_Step7" Area="" ShowMinimapIcon="1" Threshold="10" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC3_Step5_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="M3_DS_59" DialogName="HLC3_HighlandHigherPart1_Player_59" Delay="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_60" AreaRadius="25" Type="GlobalFlowGraph" Name="M3_DS_60" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_60" AreaRadius="25" Type="GlobalDialog" Name="M3_DS_60_Dialog" DialogName="HLC3_HighlandHigherPart1_Repu_60" Delay="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_60" AreaRadius="25" Type="EntityIsHidden" Name="M3_DS_60_Camera_ZoomOut" EntityNames="ProximityTrigger_camera_vista_canon" Hide="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_60" Type="EntityIsHidden" Name="M3_DS_60_Camera_ZoomIn" EntityNames="ProximityTrigger_camera_vista_canon" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="M3_Oshara_P2_Blocker1" EntityNames="Blocker_M3_OsharaP2_1" Hide="1" />
+    </Step>
+    <Step Order="7" UIName="@ui_C1_M3_S7_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="BossFight" FightPreset="BossFight_Oshara2" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC3_Step6_Limit_UI" StepToKeep="2" />
+      <Event Trigger="BossfightLost" Type="GlobalFlowGraph" Name="HL_M3_OsharaP2_CamOff" />
+      <Event Trigger="BossfightLost" Type="GlobalCheckpoint" Name="HLC3_OsharaBosfight2Fail_ResetCheckpoint" CheckpointEntityName="" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="HLC3_OsharaBosfight2Fail_StopDial" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="FailStateOsharaBossfight2" QuestName="HL_C3_BossFight_Oshara2" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="FailState_HL_M3" QuestName="HL_M3" />
+    </Step>
+    <Step Order="8" UIName="@ui_C1_M3_S8_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_M3_Cutscene_Gating_OsharaP3" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker Target="QP_M3_GOTO_FinalStep" Area="" ShowMinimapIcon="1" Threshold="10" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_OsharaP2Checkpoint" CheckpointEntityName="QP_M3_OsharaP2_PlayerSpawnPoint" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC3_Step7_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M3_OsharaP2_CamOff" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="M3_DS_63" DialogName="HLC3_HighlandHigherPart1_Player_63" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="M3_Oshara_P2_Blocker1_End" EntityNames="Blocker_M3_OsharaP2_1" Hide="1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="M3_Oshara_P2_Blocker2_End" EntityNames="Blocker_M3_OsharaP2_2" Hide="1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="M3_Oshara_P2_FX_Blocker1_End" EmitterEntityName="M3_Oshara_P2_BlockingRoad_FX_1" Activate="0" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="M3_Oshara_P2_FX_Blocker2_End" EmitterEntityName="M3_Oshara_P2_BlockingRoad_FX_2" Activate="0" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_64" AreaRadius="15" Type="GlobalDialog" Name="M3_DS_64" DialogName="HLC3_HighlandHigherPart2_Player_64" Delay="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_65-66" AreaRadius="40" Type="GlobalFlowGraph" Name="M3_DS_65" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_65-66" AreaRadius="40" Type="GlobalDialog" Name="M3_DS_65_Dialog" DialogName="HLC3_HighlandHigherPart2_Player_65" Delay="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_65-66" AreaRadius="40" Type="EntityIsHidden" Name="M3_DS_65_Camera_ZoomOut" EntityNames="ProximityTrigger_dynscene_M3_sniper_camera" Hide="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_65" Type="EntityIsHidden" Name="M3_DS_65_Camera_ZoomIn" EntityNames="ProximityTrigger_camera_vista_canon" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_65-66" AreaRadius="40" Type="GlobalDialog" Name="M3_DS_66" DialogName="HLC3_HighlandHigherPart2_Player_66" Delay="9" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_M3_DS_67" AreaRadius="10" Type="GlobalDialog" Name="M3_DS_67" DialogName="HLC3_HighlandHigherPart2_Player_67" Delay="0.5" />
+    </Step>
+    <Step Order="9" UIName="@ui_C1_M3_S9_StepNametLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="BossFight" FightPreset="BossFight_Oshara3" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC3_Step8_Limit_UI" StepToKeep="2" />
+      <Event Trigger="BossfightLost" Type="GlobalFlowGraph" Name="HL_M3_OsharaP3_CamOff" />
+      <Event Trigger="BossfightLost" Type="GlobalCheckpoint" Name="HLC3_OsharaBosfight3Fail_ResetCheckpoint" CheckpointEntityName="" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="HLC3_OsharaBosfight3Fail_StopDial" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="FailStateOsharaBossfight3" QuestName="HL_C3_BossFight_Oshara3" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="FailState_HL_M3" QuestName="HL_M3" />
+    </Step>
+    <Step Order="10" UIName="@ui_C1_M3_S10_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="Impossible" />
+      <Goal Order="1" Type="Interact" Names="Dragon_Egg" InteractCount="1">
+        <ArrowMarker Target="Dragon_Egg" Area="" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <Goal Order="2" Type="Impossible" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_OsharaP3Checkpoint" CheckpointEntityName="QP_M3_OsharaP3_PlayerSpawnPoint" />
+      <Event Trigger="EventEnd" EventName="M3_DS_72" Type="GoalAchieve" Name="Achieve_EndOfDialog" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC3_Step9_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="A4_Exorcism_part1" SequenceName="A4_Exorcism_part1" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionSequence" Name="A4_Exorcism_part2" SequenceName="A4_Exorcism_part2" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part2" Type="GoalAchieve" Name="Achieve_EndOfCutscene" GoalIndexToAchieve="2" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="GlobalDialog" Name="M3_DS_72" DialogName="HLC3_OsharasNest_Oshara_72" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="GlobalAnnouncement" Name="C1_M3_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="QuestFail" Name="HLC3_Fail_SecondaryQuest" QuestName="HL_C3_SQ" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="PlayerLockTP" Name="C2_SuccessPlayerUnlockTP" Lock="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M3_OsharaP3_CamOff" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="M3_Oshara_P3_Blocker1_End" EntityNames="Blocker_M3_OsharaP3" Hide="1" Delay="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="M3_Oshara_P3_FX_Blocker1_End" EmitterEntityName="M3_Oshara_P3_BlockingRoad_FX" Activate="0" Delay="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Unhide_1" EntityNames="Dead_Oshara_Collider_1" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Unhide_2" EntityNames="Dead_Oshara_Collider_2" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Unhide_3" EntityNames="Dead_Oshara_Collider_3" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Unhide_4" EntityNames="Dead_Oshara_Collider_4" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Unhide_5" EntityNames="Dead_Oshara_Collider_5" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Unhide_6" EntityNames="Dead_Oshara_Collider_6" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="EntityIsHidden" Name="M3_Oshara_P3_DeadBlocker_Unhide_7" EntityNames="Dead_Oshara_Collider_7" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="EntityIsHidden" Name="M3_Oshara_Dead_Reveal" EntityNames="Dead_Oshara" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="EntityIsHidden" Name="M3_Dragon_Egg_Reveal" EntityNames="Dragon_Egg" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="GlobalLoot" Name="M3_Oshara_P3_LootFontain" AffixOrigin="Hunt" LootClass="LC_UberLambach" Target="LootFontainPosition" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A4_Exorcism_part1" Type="EntityTeleport" Name="PLAYER_TP_MISSION_END" TeleportedEntityName="#Player" DestinationName="QP_M3_OsharaP3_PlayerSpawnPoint_PostCutscene" MinRadius="1" />
+    </Step>
+  </Quest>
+</MetaData>

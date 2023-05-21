@@ -1,0 +1,22 @@
+<MetaData>
+  <Quest Name="HL_M3_SQ" UIName="@ui_C1_M3_Secondary_QuestLabel" UIDesc="" Type="Adventure" StartDialog="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_C1_M3_SecondaryStepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Destroy" Names="HL_C3_IncubationPod" DestroyCount="5">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="M3_QS_Area_1" Area="" Threshold="85" UseAreaSize="50" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="M3_QS_Area_2" Area="" Threshold="85" UseAreaSize="35" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="HL_C3_IncubationPod" Area="" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" ShowArrow="0" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+        <XP Amount="4500" />
+        <ChoiceLootClass Name="Hunt_Q3_Secondary" MinItemNumber="5" MaxItemNumber="5" SortByRarity="1" />
+      </Reward>
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_EG_GoToSF" AreaRadius="60" Type="QuestFail" Name="FailStateSecondaryQuest3_InSF" QuestName="HL_M3_SQ" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_M2_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_C1_M3_Secondary_QuestLabel" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="C1_M2_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="@ui_C1_M3_Secondary_QuestLabel" DisplayTime="2" />
+      <Event Trigger="PlayerWipe" Type="QuestFail" Name="FailStateSecondaryQuest3" QuestName="HL_M3_SQ" />
+    </Step>
+  </Quest>
+</MetaData>

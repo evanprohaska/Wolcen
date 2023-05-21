@@ -1,0 +1,41 @@
+<MetaData>
+  <Skill UID="AI_outlaw_warlord_kick" ESkill="AI_outlaw_warlord_kick" Keywords="attack_skill">
+    <Animation AnimationDrivenMovement="1" ActionString="monster_skill_06" ScaleWithAttackSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="10.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Outlaw_Warlord_Kick" />
+    </Shapes>
+    <Blownaway Height="0" Distance="8" StunDuration="0.3" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+    <SoundTrigger OnAnimStart="PLAY_AI_SadisticThug_MeleeSwing" OnHit="PLAY_AI_SadisticThug_MeleeImpact" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_hunt_warlord_kick" ESkill="AI_outlaw_warlord_kick" Keywords="attack_skill">
+    <Animation AnimationDrivenMovement="1" ActionString="monster_skill_06" ScaleWithAttackSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="10.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Outlaw_Warlord_Kick" />
+    </Shapes>
+    <Blownaway Height="0" Distance="8" StunDuration="1.5" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+    <SoundTrigger OnAnimStart="PLAY_AI_SadisticThug_MeleeSwing" OnHit="PLAY_AI_SadisticThug_MeleeImpact" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_ShadowOutlaw_warlord_kick" ESkill="AI_outlaw_warlord_kick" Keywords="attack_skill">
+    <Animation AnimationDrivenMovement="1" ActionString="monster_skill_06" ScaleWithAttackSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Outlaw_Warlord_Kick" />
+    </Shapes>
+    <Blownaway Height="0" Distance="8" StunDuration="0.3" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+    <SoundTrigger OnAnimStart="PLAY_AI_SadisticThug_MeleeSwing" OnHit="PLAY_AI_SadisticThug_MeleeImpact" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

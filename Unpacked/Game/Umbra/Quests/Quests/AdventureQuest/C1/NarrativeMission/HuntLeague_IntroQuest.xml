@@ -1,0 +1,21 @@
+<MetaData>
+  <Quest Name="C1_EG_SF_Q1" UIName="@ui_C1_M1_IntroMission_QuestLabel" UIDesc="" Type="Main" StartDialog="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_C1_M1_IntroMission_S1_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Talk" EntityName="NPC_HL_Valense" DialogName="HLC1_EG_SF_Q1_Council">
+        <ArrowMarker Target="NPC_HL_Valense" Area="Stormfall" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="HuntLeague_C1_InitPos" TeleportedEntityName="#Player" DestinationName="QP_EG_GoToSF" MinRadius="30" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_C1_OpenPathToPalace" SequenceName="C1_OpenPathToPalace" ResetAtLastFrame="0" />
+    </Step>
+    <Step Order="1" UIName="@ui_C1_M1_IntroMission_S2_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Talk" EntityName="NPC_HL_Ilthain_V1" DialogName="HLC1_EG_SF_Q1_Ilthain">
+        <ArrowMarker ShowMinimapIcon="1" Target="NPC_HL_Ilthain_V1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_palacedoor" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="DYN_C1_SF_GuardLetYouIn" SequenceName="DYN_C1_SF_GuardLetYouIn" FemaleSequenceName="DYN_C1_SF_GuardLetYouIn" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="DYN_C1_SF_GuardLetYouIn" Type="EntityIsHidden" Name="Hide_C1_Stormfall_Palace_Blocker" EntityNames="C1_Stormfall_Palace_Blocker" Hide="1" />
+    </Step>
+  </Quest>
+</MetaData>

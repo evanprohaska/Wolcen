@@ -1,0 +1,293 @@
+<MetaData>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Small.Staff_Projectile_Normal" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Normal_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_fire">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Small.Staff_Projectile_Fire" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Fire_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_frost">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Small.Staff_Projectile_Frost" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Frost_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_lightning">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Small.Staff_Projectile_Lightning" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Lightning_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_umbra">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Small.Staff_Projectile_Umbra" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Umbra_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_sacred">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Small.Staff_Projectile_Sacred" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Sacred_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_shadow">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Small.Staff_Projectile_Shadow" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Shadow_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_rend">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Small.Staff_Projectile_Rend" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Rend_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_toxic">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Small.Staff_Projectile_Toxic" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe_02.Directional_Hit_01.Staff_Hit_Toxic_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_big">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Big.Staff_Projectile_Normal" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Normal_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_big_fire">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Big.Staff_Projectile_Fire" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Fire_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_big_frost">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Big.Staff_Projectile_Frost" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Frost_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_big_lightning">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Big.Staff_Projectile_Lightning" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Lightning_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_big_umbra">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Big.Staff_Projectile_Umbra" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Umbra_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_big_sacred">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Big.Staff_Projectile_Sacred" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Sacred_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_big_shadow">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Big.Staff_Projectile_Shadow" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Shadow_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_big_rend">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Big.Staff_Projectile_Rend" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Rend_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ClassName="UProjectile_Exploding" ID="staff_proj_big_toxic">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_Projectile.Staff.Projectile_Big.Staff_Projectile_Toxic" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Swipe.Directional_Hit_01.Directional_Hit_Toxic_01" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_StaffProjectileLoop" />
+      <Removed SoundTriggerName="STOP_Skill_DefaultWeapon_StaffProjectileLoop" />
+    </Audio>
+  </Projectile>
+</MetaData>

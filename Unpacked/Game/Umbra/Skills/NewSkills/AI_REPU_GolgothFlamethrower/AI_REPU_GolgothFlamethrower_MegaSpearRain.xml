@@ -1,0 +1,18 @@
+<MetaData>
+  <Skill ESkill="AI_default_projectileskillwithaoe" Keywords="magic_spell" UID="AI_REPU_GolgothFlamethrower_SpearRain">
+    <Projectile Name="repu_golgothflamethrower_megaspearrain_proj" ProjectileCount="1" PenetrationLimit="100" />
+    <Targeting TargetingType="target" ComputeTargetPosAtCast="1" />
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <CastingParams CastBone="Bip01 L FlameThrowerBladeVFX" CanBeInterrupted="0" MaximumTurnRate="180" />
+    <Explosion ExplosionRadius="3" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="12.0" />
+    <Shapes>
+      <Entry ShapeName="AI_REPU_Golgoth_Flamethrower_Cone" />
+    </Shapes>
+    <Range AttackRange="15" />
+    <SkillSpecific AlwaysOrient="1" />
+    <SoundTrigger OnAnimStart="Play_REPU_GolgothFlamethrower_DefaultAttack_PreCast" OnHit="Play_REPU_GolgothFlamethrower_SpearRain_Impact" OnInterrupt="Stop_REPU_GolgothFlamethrower_SpearRain" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

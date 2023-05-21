@@ -1,0 +1,10 @@
+<MetaData>
+  <SpawnClass Name="Exemple_SpawnClass">
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" LevelMin="2" LevelMax="2" LevelOffset="1" Center="0" SpawnOverTime="0.5" BossProba="0.5" LootClassOverride="" XPBonusPercent="100" ForceEntityName="NameOverride" IgnoreAnimation="1">
+      <BossRank Id="1" Frequency="10" />
+      <BossRank Id="2" Frequency="1" />
+      <FixedBossModifiers Id="another_override_modifier" />
+      <ChoiceBossModifiers Id="extra_health" />
+    </Spawn>
+  </SpawnClass>
+</MetaData>

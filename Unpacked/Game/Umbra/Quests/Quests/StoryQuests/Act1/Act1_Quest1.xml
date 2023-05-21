@@ -1,0 +1,128 @@
+<MetaData>
+  <Quest Name="ACT1_Quest1" StartDialog="" Type="Main" UIName="@ui_A1_Q1_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT1">
+    <Step Order="0" UIName="@ui_A1_Q1_S1_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="Qp_Act1_SpawnPointQuest1">
+      <Goal Order="0" Type="Go" Destination="QP_SC_FirstSvriirs" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_golum_part1_to_part2" Area="ACT1_SvriirCave" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideSkill" Name="Intro_Unrestrict_Skill" Skill="" Slot="0" Clear="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="OverrideEquipement" Name="Intro_Unrestrict_Stuff1" BodyPart="" ItemName="" Clear="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="Restriction" Name="Intro_Unrestrict_Rule" Mode="Set" Restrictions="ReviveInTown,TownPortal" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="CinematicChapter" SequenceName="A1_CHAPTER" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Delay="0.1" />
+      <Event Trigger="EventEnd" EventName="CinematicChapter" Type="ActionSequence" Name="CinematicPlayerSpawn" SequenceName="A1_Q1_S1_Start_02" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="CinematicPlayerSpawn" Type="GlobalRevivePlayers" Name="ACT1_Quest1_InitialRevive" RevivePostion="Qp_Act1_SpawnPointQuest1" />
+      <Event Trigger="EventEnd" EventName="CinematicPlayerSpawn" Type="PlayerSetHealth" Name="HurtPlayer" HealthPercent="20" Delay="0.1" />
+      <Event Trigger="EventEnd" EventName="CinematicPlayerSpawn" Delay="2" Type="GlobalDialog" Name="Dialog_ACT1_Q1_Escape1_Talk" DialogName="ACT1_Q1_Escape1_Talk" />
+      <Event Trigger="EventEnd" EventName="CinematicPlayerSpawn" Delay="4" Type="GlobalTutorial" Name="Dialog_ACT1_Q1_Tutorial3_Talk" TutorialName="Quest_Potion" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_SC_FirstSvriirs" AreaRadius="18" Type="GlobalTutorial" Name="Dialog_ACT1_Q1_Tutorial4_Talk" TutorialName="Quest_Skill" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_SC_TutoLootable" AreaRadius="12" Type="GlobalTutorial" Name="Dialog_ACT1_Q1_Tutorial5_Talk" TutorialName="Quest_Loot" />
+    </Step>
+    <Step Order="1" UIName="@ui_A1_Q1_S2_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_golum_part1_to_part2" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_golum_part1_to_part2" Area="ACT1_SvriirCave" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" Duration="20" VotePreset="VotePreset_ACT1_LeaveTheCoast">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_golum_part1_to_part2" Area="ACT1_SvriirCave" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="1" Name="A1_Q1_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="DisableGolumPortal" ClickableEntityName="ClickableEntity_golum_part1_to_part2" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="Qp_Act1_SpawnPointQuest1" AreaRadius="30" Type="GlobalDialog" Name="Dialog_ACT1_Q1_Escape2_Talk" DialogName="ACT1_Q1_Escape2_Talk" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_SC_TransformComment" AreaRadius="12" Type="GlobalDialog" Name="Dialog_ACT1_Q1_Escape3_Talk" DialogName="ACT1_Q1_Escape3_Talk" />
+    </Step>
+    <Step Order="2" UIName="@ui_A1_Q1_S3_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="QP_SC_SpitterSpawn" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_SC_StormfallBridge" Area="ACT1_Highlands" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_SC_ApproachingSF_talk" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_SC_StormfallBridge" Area="ACT1_Highlands" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_SC_HangedTree" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_SC_StormfallBridge" Area="ACT1_Highlands" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_SC_SFOutskirt" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_SC_StormfallBridge" Area="ACT1_Highlands" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Go" Destination="QP_SC_StormfallBridge" Radius="12" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_SC_StormfallBridge" Area="ACT1_Highlands" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q1_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="2" MaximumRadius="5" SpawnFrequency="0" Name="Sc_SFguardsSpawn" SpawnClass="Sc_Sty_A1_SC_SFGuard" TargetEntityName="QP_SC_HangedTree" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Delay="0.1" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="CinematicValeriaSpawn" SequenceName="A1_Q1_S5_MeetValeria" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="MeetValTeleportPlayer" TeleportedEntityName="#Player" DestinationName="QP_SC_Cliff1" />
+      <Event Trigger="EventEnd" EventName="CinematicValeriaSpawn" Type="ActionClickable" Name="EnableGolumPortal" ClickableEntityName="ClickableEntity_golum_part1_to_part2" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="EventEnd" EventName="CinematicValeriaSpawn" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" Name="ValeriaSpawn" SpawnClass="Sc_Sty_R_QJV1" TargetEntityName="QP_SC_Cliff1" />
+      <Event Trigger="EventEnd" EventName="ValeriaSpawn" Type="EntityIsGod" Delay=".2" Name="ValeriaGod" EntityName="Valeria" Invincible="1" />
+      <Event Trigger="EventEnd" EventName="ValeriaSpawn" Type="EntityFollow" Name="ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" />
+      <Event Trigger="EventEnd" EventName="CinematicValeriaSpawn" Type="GlobalDialog" Delay="2" Name="Dialog_ACT1_Q1_MeetValeria_Talk" DialogName="ACT1_Q1_MeetValeria_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay="2" Name="Dialog_ACT1_Q1_SpitterEncounter_Talk" DialogName="ACT1_Q1_SpitterEncounter_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Delay="0.5" Name="Dialog_ACT1_Q1_ApproachingSF_Talk" DialogName="ACT1_Q1_ApproachingSF_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalDialog" Name="Dialog_ACT1_Q1_SFGuardFight_Talk" DialogName="ACT1_Q1_SFGuardFight_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="2" SpawnFrequency="0" Name="Sc_SFguardsSpawn1" SpawnClass="Sc_Sty_A1_SC_SFGuard1" TargetEntityName="QP_SC_SFOutskirt_POS1" FaceAtSpawn="QP_SC_SFOutskirt" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="2" SpawnFrequency="0" Name="Sc_SFguardsSpawn2" SpawnClass="Sc_Sty_A1_SC_SFGuard2" TargetEntityName="QP_SC_SFOutskirt_POS2" FaceAtSpawn="QP_SC_SFOutskirt" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="2" SpawnFrequency="0" Name="Sc_SFguardsSpawn3" SpawnClass="Sc_Sty_A1_SC_SFGuard3" TargetEntityName="QP_SC_SFOutskirt_POS3" FaceAtSpawn="QP_SC_SFOutskirt" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="2" SpawnFrequency="0" Name="Sc_SFguardsSpawn1_Dead" SpawnClass="Sc_Sty_A1_SC_SFGuardDead" TargetEntityName="QP_SC_SFOutskirt_POS1_Dead" FaceAtSpawn="QP_SC_SFOutskirt_Dead" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="2" SpawnFrequency="0" Name="Sc_SFguardsSpawn2_Dead" SpawnClass="Sc_Sty_A1_SC_SFGuardDead" TargetEntityName="QP_SC_SFOutskirt_POS2_Dead" FaceAtSpawn="QP_SC_SFOutskirt_Dead" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="2" SpawnFrequency="0" Name="Sc_SFguardsSpawn3_Dead" SpawnClass="Sc_Sty_A1_SC_SFGuardDead" TargetEntityName="QP_SC_SFOutskirt_POS3_Dead" FaceAtSpawn="QP_SC_SFOutskirt_Dead" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AISpawner_FixedGroup24" AreaRadius="15" Type="EntityMove" TargetMinDistance="0.5" OverrideSpeed="0" Delay="6" Name="SFguardsSpawn1_ResetPos" EntityName="A1SFGuard1" TargetName="QP_SC_SFOutskirt_POS1" RemainScripted="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AISpawner_FixedGroup24" AreaRadius="15" Type="EntityMove" TargetMinDistance="0.5" OverrideSpeed="0" Delay="6.1" Name="SFguardsSpawn2_ResetPos" EntityName="A1SFGuard2" TargetName="QP_SC_SFOutskirt_POS2" RemainScripted="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AISpawner_FixedGroup24" AreaRadius="15" Type="EntityMove" TargetMinDistance="0.5" OverrideSpeed="0" Delay="6.2" Name="SFguardsSpawn3_ResetPos" EntityName="A1SFGuard3" TargetName="QP_SC_SFOutskirt_POS3" RemainScripted="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AISpawner_FixedGroup24" AreaRadius="15" Type="EntityMove" TargetMinDistance="0.5" OverrideSpeed="0" Delay="12" Name="SFguardsSpawn1_ResetPos_2" EntityName="A1SFGuard1" TargetName="QP_SC_SFOutskirt_POS1" RemainScripted="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AISpawner_FixedGroup24" AreaRadius="15" Type="EntityMove" TargetMinDistance="0.5" OverrideSpeed="0" Delay="12.1" Name="SFguardsSpawn2_ResetPos_2" EntityName="A1SFGuard2" TargetName="QP_SC_SFOutskirt_POS2" RemainScripted="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AISpawner_FixedGroup24" AreaRadius="15" Type="EntityMove" TargetMinDistance="0.5" OverrideSpeed="0" Delay="12.2" Name="SFguardsSpawn3_ResetPos_2" EntityName="A1SFGuard3" TargetName="QP_SC_SFOutskirt_POS3" RemainScripted="0" />
+      <Event Trigger="EventEnd" EventName="SFguardsSpawn1_ResetPos" Type="EntityRotate" Name="SFguardsSpawn1_Rotate" RotatedEntityName="A1SFGuard1" Target="QP_SC_SFOutskirt" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="SFguardsSpawn2_ResetPos" Type="EntityRotate" Name="SFguardsSpawn2_Rotate" RotatedEntityName="A1SFGuard2" Target="QP_SC_SFOutskirt" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="SFguardsSpawn3_ResetPos" Type="EntityRotate" Name="SFguardsSpawn3_Rotate" RotatedEntityName="A1SFGuard3" Target="QP_SC_SFOutskirt" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="SFguardsSpawn1_ResetPos_2" Type="EntityRotate" Name="SFguardsSpawn1_Rotate_2" RotatedEntityName="A1SFGuard1" Target="QP_SC_SFOutskirt" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="SFguardsSpawn2_ResetPos_2" Type="EntityRotate" Name="SFguardsSpawn2_Rotate_2" RotatedEntityName="A1SFGuard2" Target="QP_SC_SFOutskirt" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="SFguardsSpawn3_ResetPos_2" Type="EntityRotate" Name="SFguardsSpawn3_Rotate_2" RotatedEntityName="A1SFGuard3" Target="QP_SC_SFOutskirt" FaceTarget="1" />
+    </Step>
+    <Step Order="3" UIName="@ui_A1_Q1_S4_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0" />
+      <Goal Order="1" Type="Talk" EntityName="Q_NPC_SFBridge_Valeria" DialogName="ACT1_Q1_SFBridgeValeria_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_SFBridge_Valeria" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Highlands" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Qp_Act1_SpawnPointQuest1" AreaRadius="100" Type="EntityTeleport" Name="BridgeTalkVal_TeleportPlayer" TeleportedEntityName="#Player" DestinationName="QP_SC_StormfallBridge" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="ACT1_Q1_AngryCrowd_Talk" DialogName="ACT1_Q1_SFBridgeAngryCrowd_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityFollow" Name="ValeriaUnfollow" FollowerEntityName="Valeria" Follow="" />
+      <Event Trigger="EventEnd" EventName="ACT1_Q1_AngryCrowd_Talk" Type="GoalAchieve" Delay="0.5" Name="WaitEnd_ACT1_Q1_AngryCrowd_Talk" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A1_Q1_S4_StepUpdate" Localization="@ui_A1_Q1_S4_StepNameLabelUpdate" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="ValeriaUnfollow" Type="EntityTeleport" MinRadius="15" Name="Valeria_TP_H" TeleportedEntityName="Valeria" DestinationName="QP_SC_ValeriaPos" />
+      <Event Trigger="EventEnd" EventName="Valeria_TP_H" Type="EntityMove" Name="MoveValeraiSwitch" EntityName="Valeria" TargetName="QP_SC_ValeriaPos" RemainScripted="1" TargetMinDistance=".01" OverrideSpeed="0" />
+      <Event Trigger="EventEnd" EventName="Valeria_TP_H" Type="EntityTeleport" Delay="2" MinRadius="1" Name="SC_MoveValeria1" TeleportedEntityName="Q_NPC_SFBridge_Valeria" DestinationName="QP_SC_ValeriaPos" />
+      <Event Trigger="EventEnd" EventName="MoveValeraiSwitch" Type="EntityKill" Name="SC_KillValeria1" EntityName="Valeria" Hide="1" Remove="1" />
+      <Event Trigger="EventEnd" EventName="SC_KillValeria1" Type="EntityIsHidden" Delay=".01" Name="SC_RevealValeria1" EntityNames="Q_NPC_SFBridge_Valeria" Hide="0" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q1_ClearUI_1" />
+    </Step>
+    <Step Order="4" UIName="@ui_A1_Q1_S5_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="Talk" EntityName="Q_NPC_SFBridge_Guard" DialogName="ACT1_Q1_SFBridgeSFGuard_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_SFBridge_Guard" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT1_Highlands" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q1_ClearUI_2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Delay="0.1" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="CinematicValeriaLeave" SequenceName="A1_ValGoAway" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="CinematicGuardsletYouIn" SequenceName="A1_SFBridgeGuardLetYouIn" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalTutorial" Name="tuto" TutorialName="Quest_CSheet" />
+      <Reward ShowRewardPanel="None" Order="1">
+        <Gold Amount="0" />
+        <XP Amount="600" />
+      </Reward>
+    </Step>
+    <Step Order="5" UIName="@ui_A1_Q1_S6_StepNameLabel" AutoClearEvents="0" Save="0">
+      <Goal Order="0" Type="Go" Destination="SpawnPoint_sf_from_highlands" Radius="12" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_highlandspart2_to_stormfall" Area="ACT1_Highlands" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Impossible" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SC_HideGuard" EntityNames="SvriirCoast_RestrictedArea1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_HideFarmsteadsPortal" EntityNames="ClickableEntity_from_stormfall_to_farmstead" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Q_NPC_SF_Lieutenant" EntityNames="Q_NPC_SF_Lieutenant" Hide="1" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q1_ClearUI_3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionSequence" Name="CinematicStromfallEntrance" SequenceName="A1_Event_IntroStormfall" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityTeleport" Delay="0" MinRadius="5" Name="A1_Event_TPlayer" TeleportedEntityName="#Player" DestinationName="QuestPoint1" />
+      <Event Trigger="EventEnd" EventName="CinematicStromfallEntrance" Type="GoalAchieve" Name="WaitEnd_ACT1_Q1_CinematicStromfallEntrance" SimulateOnly="0" GoalIndexToAchieve="1" />
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,562 @@
+<MetaData>
+  <Projectile ID="player_bladeslinger_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="PLAY_Skill_Bladeslinger_Loop" />
+      <Hit SoundTriggerName="PLAY_Skill_Bladeslinger_Impact" />
+      <Removed SoundTriggerName="STOP_Skill_Bladeslinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_3M" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="PLAY_Skill_Bladeslinger_Loop" />
+      <Hit SoundTriggerName="PLAY_Skill_Bladeslinger_Impact" />
+      <Removed SoundTriggerName="STOP_Skill_Bladeslinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_chakram" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="PLAY_Skill_Bladeslinger_Loop" />
+      <Hit SoundTriggerName="PLAY_Skill_Bladeslinger_Impact" />
+      <Removed SoundTriggerName="STOP_Skill_Bladeslinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_chakram" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_3M" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="PLAY_Skill_Bladeslinger_Loop" />
+      <Hit SoundTriggerName="PLAY_Skill_Bladeslinger_Impact" />
+      <Removed SoundTriggerName="STOP_Skill_Bladeslinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_poison" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Poison" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Toxic" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_poison" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Poison" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Toxic" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_chakram_poison" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Poison" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Toxic" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_chakram_poison" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Poison" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Toxic" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="PLAY_Skill_Bladeslinger_Loop" />
+      <Hit SoundTriggerName="PLAY_Skill_Bladeslinger_Impact" />
+      <Removed SoundTriggerName="STOP_Skill_Bladeslinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="PLAY_Skill_Bladeslinger_Loop" />
+      <Hit SoundTriggerName="PLAY_Skill_Bladeslinger_Impact" />
+      <Removed SoundTriggerName="STOP_Skill_Bladeslinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_chakram_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="PLAY_Skill_Bladeslinger_Loop" />
+      <Hit SoundTriggerName="PLAY_Skill_Bladeslinger_Impact" />
+      <Removed SoundTriggerName="STOP_Skill_Bladeslinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_chakram_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="PLAY_Skill_Bladeslinger_Loop" />
+      <Hit SoundTriggerName="PLAY_Skill_Bladeslinger_Impact" />
+      <Removed SoundTriggerName="STOP_Skill_Bladeslinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_poison_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Poison" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Toxic" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_poison_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Poison" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Toxic" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_chakram_poison_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Poison" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Toxic" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_chakram_poison_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Poison" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Toxic" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_frost" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Frost" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Frost" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Frost" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_frost" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Frost" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Frost" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Frost" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_chakram_frost" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Frost" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Frost" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Frost" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_chakram_frost" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Frost" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Frost" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Frost" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_frost_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Frost" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Frost" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Frost" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_frost_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Frost" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Frost" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Frost" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_chakram_frost_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Frost" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Frost" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Frost" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_chakram_frost_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Frost" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Frost" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Frost" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_aether" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Aether" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Aether" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Aether" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_aether" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Aether" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Aether" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Aether" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_chakram_aether" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Aether" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Aether" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Aether" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_chakram_aether" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Aether" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Aether" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Aether" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_aether_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Aether" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Aether" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Aether" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_aether_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Aether" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Aether" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Aether" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_chakram_aether_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Aether" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Aether" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Aether" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_chakram_aether_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Aether" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Aether" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Aether" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Lightning" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Lightning" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Lightning" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Lightning" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Lightning" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Lightning" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_chakram_lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Lightning" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Lightning" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Lightning" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_chakram_lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Lightning" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Lightning" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Lightning" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_lightning_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Lightning" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Lightning" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Lightning" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_lightning_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Lightning" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Lightning" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Lightning" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_chakram_lightning_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="2.2,2.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Lightning" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Lightning" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Lightning" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_bladeslinger_proj_big_chakram_lightning_bolas" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="3.2,3.2,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="0">
+      <Travel ParticleName="U_Character.Skills.Bladeslinger_Spining_01_Bola_Lightning" Direction="0,1,0" WorldSpace="0" Scale="1.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_BladeslingerChakram" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_BladeSlinger_Loop_Lightning" />
+      <Hit SoundTriggerName="Play_Skill_BladeSlinger_Impact_Lightning" />
+      <Removed SoundTriggerName="Stop_Skill_BladeSlinger_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

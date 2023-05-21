@@ -1,0 +1,40 @@
+<MetaData>
+  <StatusAilments>
+    <physical Id="Ailment_Stun" Title="@ui_ActiveEffect_Stunned_title" Description="@ui_ActiveEffect_Stunned_desc" Icon="../u_resources/spells/conditions/stun.png" />
+    <toxic Id="Ailment_Poison" Title="@ui_ActiveEffect_Poisoned_title" Description="@ui_ActiveEffect_Poisoned_desc" Icon="../u_resources/spells/conditions/poison.png" />
+    <rend Id="Ailment_Bleed" Title="@ui_ActiveEffect_Bleeding_title" Description="@ui_ActiveEffect_Bleeding_desc" Icon="../u_resources/spells/conditions/bleed.png" />
+    <fire Id="Ailment_Burn" Title="@ui_ActiveEffect_Burning_title" Description="@ui_ActiveEffect_Burning_desc" Icon="../u_resources/spells/conditions/burn.png" />
+    <frost Id="Ailment_Freeze" Title="@ui_ActiveEffect_Frozen_title" Description="@ui_ActiveEffect_Frozen_desc" Icon="../u_resources/spells/conditions/freeze.png" />
+    <lightning Id="Ailment_Shock" Title="@ui_ActiveEffect_Shocked_title" Description="@ui_ActiveEffect_Shocked_desc" Icon="../u_resources/spells/conditions/fear.png" />
+    <shadow Id="Ailment_Curse" Title="@ui_ActiveEffect_Cursed_title" Description="@ui_ActiveEffect_Cursed_desc" Icon="../u_resources/spells/conditions/curse.png" />
+    <sacred Id="Ailment_Weakness" Title="@ui_ActiveEffect_Weakened_title" Description="@ui_ActiveEffect_Weakened_desc" Icon="../u_resources/spells/conditions/weakness.png" />
+    <umbra Id="Ailment_Stasis" Title="@ui_ActiveEffect_Stasis_title" Description="@ui_ActiveEffect_Stasis_desc" Icon="../u_resources/spells/conditions/frailty.png" />
+  </StatusAilments>
+  <BuffFromAilments>
+    <physical Id="Buff_Stun" Title="@ui_AilmentsStacks_PhysicalBuff_title" Description="@ui_AilmentsStacks_PhysicalBuff_desc" Icon="../u_resources/spells/buffs/buff_physical.png" />
+    <toxic Id="Buff_Poison" Title="@ui_AilmentsStacks_ToxicBuff_title" Description="@ui_AilmentsStacks_ToxicBuff_desc" Icon="../u_resources/spells/buffs/buff_poison.png" />
+    <rend Id="Buff_Bleed" Title="@ui_AilmentsStacks_RendBuff_title" Description="@ui_AilmentsStacks_RendBuff_desc" Icon="../u_resources/spells/buffs/buff_bleed.png" />
+    <fire Id="Buff_Burn" Title="@ui_AilmentsStacks_FireBuff_title" Description="@ui_AilmentsStacks_FireBuff_desc" Icon="../u_resources/spells/buffs/buff_fire.png" />
+    <frost Id="Buff_Freeze" Title="@ui_AilmentsStacks_FrostBuff_title" Description="@ui_AilmentsStacks_FrostBuff_desc" Icon="../u_resources/spells/buffs/buff_ice.png" />
+    <lightning Id="Buff_Shock" Title="@ui_AilmentsStacks_LightningBuff_title" Description="@ui_AilmentsStacks_LightningBuff_desc" Icon="../u_resources/spells/buffs/buff_lightning.png" />
+    <shadow Id="Buff_Curse" Title="@ui_AilmentsStacks_ShadowBuff_title" Description="@ui_AilmentsStacks_ShadowBuff_desc" Icon="../u_resources/spells/buffs/buff_shadow.png" />
+    <sacred Id="Buff_Weakness" Title="@ui_AilmentsStacks_SacredBuff_title" Description="@ui_AilmentsStacks_SacredBuff_desc" Icon="../u_resources/spells/buffs/buff_sacred.png" />
+    <umbra Id="Buff_Stasis" Title="@ui_AilmentsStacks_UmbraBuff_title" Description="@ui_AilmentsStacks_UmbraBuff_desc" Icon="../u_resources/spells/buffs/buff_umbra.png" />
+  </BuffFromAilments>
+  <AttunementBuffs>
+    <fire Id="Attunement_Fire" Title="@ui_Attunement_Fire_title" Description="@ui_Attunement_Fire_desc" Icon="../u_resources/spells/pst_buffs/Fire_Attunement.png" />
+    <frost Id="Attunement_Frost" Title="@ui_Attunement_Frost_title" Description="@ui_Attunement_Frost_desc" Icon="../u_resources/spells/pst_buffs/Frost_Attunement.png" />
+    <lightning Id="Attunement_Lightning" Title="@ui_Attunement_Lightning_title" Description="@ui_Attunement_Lightning_desc" Icon="../u_resources/spells/pst_buffs/Lightning_Attunement.png" />
+  </AttunementBuffs>
+  <ApoStacks Id="Apo_Stacks" Title="" Description="" Icon="" />
+  <PassiveStacks>
+    <Hybrid_Attack Id="Hybrid_Attack_Stacks" Title="@ui_Hybrid_Attack_Stacks_title" Description="@ui_Hybrid_Attack_Stacks_desc" Icon="../u_resources/spells/pst_buffs/Hybrid_Attack.png" />
+    <Hybrid_Spell Id="Hybrid_Spell_Stacks" Title="@ui_Hybrid_Spell_Stacks_title" Description="@ui_Hybrid_Spell_Stacks_desc" Icon="../u_resources/spells/pst_buffs/Hybrid_Spell.png" />
+    <HeadHunter Id="HeadHunter_Stacks" Title="@ui_HeadHunter_Stacks_title" Description="@ui_HeadHunter_Stacks_desc" Icon="../u_resources/spells/pst_buffs/HeadHunter.png" />
+    <SpellCastSlow Id="SpellCastSlow_Stacks" Title="@ui_modifier_Curse_Exhaustion_tooltip" Description="@eim_stack_slow_on_skill_cast_tooltip" Icon="../u_resources/cursesAndBlessing/Curse_Exhaustion.png" IsBonus="0" />
+  </PassiveStacks>
+  <Stances>
+    <Offensive Id="Offensive_Stance" Title="@ui_Offensive_Stance_title" Description="@ui_Offensive_Stance_desc" Icon="../u_resources/spells/pst_buffs/Off_Stance.png" />
+    <Defensive Id="Defensive_Stance" Title="@ui_Defensive_Stance_title" Description="@ui_Defensive_Stance_desc" Icon="../u_resources/spells/pst_buffs/Def_Stance.png" />
+  </Stances>
+</MetaData>

@@ -1,0 +1,20 @@
+<MetaData>
+  <Projectile ID="REPU_Grenadier_LightningOrb_Proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Monster.REPU_Grenade_Launcher_LightningOrb_Projectile" Direction="0,1,0" WorldSpace="0" Scale="0.6" />
+      <Hit ParticleName="U_VFX_Oskar.Monster.REPU_Grenade_Launcher_LightningOrb_AoE" Direction="0,0,1" WorldSpace="1" Scale="0.65" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Air_Resistance" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="5" SpeedMax="5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_REPU_GrenadeLauncher_LightningOrb_Impact" />
+      <Launch SoundTriggerName="Play_REPU_GrenadeLauncher_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_REPU_GrenadeLauncher_Projectile_Loop" />
+    </Audio>
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+  </Projectile>
+</MetaData>

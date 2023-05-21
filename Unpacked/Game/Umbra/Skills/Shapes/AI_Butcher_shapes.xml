@@ -1,0 +1,45 @@
+<MetaData>
+  <Shape ID="Butcher_Multislash" Type="Arc">
+    <Data RadiusIn="1" RadiusOut="10" Angle="30" BoundingBoxHeight="4" />
+    <Position ForwardOffset="-2" StartingAngle="0" />
+  </Shape>
+  <Shape ID="Butcher_SoulMeatShape" Type="Arc">
+    <Data RadiusIn="1" RadiusOut="5" Angle="180" BoundingBoxHeight="4" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+    <Scale Data="RadiusIn" Target="17" Duration="5" Delay="0" />
+    <Scale Data="RadiusOut" Target="21" Duration="5" Delay="0" />
+    <Scale Data="Angle" Target="180" Duration="5" Delay="0" />
+  </Shape>
+  <Shape ID="Butcher_SoulMeatShape_Ring" Type="Ring">
+    <Data RadiusIn="2" RadiusOut="4" BoundingBoxHeight="4" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+    <Scale Data="RadiusIn" Target="18" Duration="5" Delay="0" />
+    <Scale Data="RadiusOut" Target="20" Duration="5" Delay="0" />
+  </Shape>
+  <Shape ID="Butcher_BellyAttackShape" Type="Rectangle">
+    <Data Length="6" Width="4.0" BoundingBoxHeight="4" />
+  </Shape>
+  <Shape ID="Butcher_HookShape" Type="Cone">
+    <Data Radius="20" Angle="10" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0.1" StartingAngle="0" />
+  </Shape>
+  <Shape ID="Butcher_CleaveShape" Type="Circle">
+    <Data Radius="2" BoundingBoxHeight="4" />
+  </Shape>
+  <Shape ID="Butcher_SoulVortex_01" Type="Circle">
+    <Data Radius="2" BoundingBoxHeight="4" />
+  </Shape>
+  <Shape ID="Butcher_SoulVortex_02" Type="Circle">
+    <Data Radius="3.5" BoundingBoxHeight="4" />
+  </Shape>
+  <Shape ID="Hunt_Butcher_SoulVortex_01" Type="Circle">
+    <Data Radius="4" BoundingBoxHeight="4" />
+  </Shape>
+  <Shape ID="Hunt_Butcher_SoulVortex_02" Type="Circle">
+    <Data Radius="7" BoundingBoxHeight="4" />
+  </Shape>
+  <Shape ID="Butcher_HookShape_CleaveAttack" Type="Circle">
+    <Data Radius="2" BoundingBoxHeight="4" />
+    <Position ForwardOffset="2" />
+  </Shape>
+</MetaData>

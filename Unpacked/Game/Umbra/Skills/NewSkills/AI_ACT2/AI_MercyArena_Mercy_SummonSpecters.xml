@@ -1,0 +1,11 @@
+<MetaData>
+  <Skill UID="AI_MercyArena_Mercy_SummonSpecters" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+    <Particles ParticleName="U_Monster.Primordiar.Primordiar_Armor.Primordiar_Assemble_01" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="5.0" />
+    <Summoning MaxSummons="10" SummonDuration="0" MinRadiusAroundSpawnPosition="2" MaxRadiusAroundSpawnPosition="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_MercyArena_Minispecters" />
+    </Summoning>
+  </Skill>
+</MetaData>

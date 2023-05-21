@@ -1,0 +1,282 @@
+<MetaData>
+  <Quest Name="QN_EG_KNT_Consu_OTWF_Trapper_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_OTWF_Trapper_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_OTWF_Trapper_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_OTWF_Trapper_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_OTWF_Trapper" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Delay=".5" Localization="@ui_EG_KNT_StepNameLabel_OTWF_Trapper" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_OTWSB_KennelMaster_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_OTWSB_KennelMaster_6_Spawn1" KillCount="6" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_OTWSB_KennelMaster_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_OTWSB_KennelMaster_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_OTWSB_KennelMaster" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_OTWSB_KennelMaster" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_OTWSBW_Shaman_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_OTWSBW_Shaman_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_OTWSBW_Shaman_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_OTWSBW_Shaman_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_OTWSBW_Shaman" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Delay=".5" Localization="@ui_EG_KNT_StepNameLabel_OTWSBW_Shaman" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COST_Priest_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COST_Priest_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COST_Priest_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COST_Priest_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COST_Priest" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COST_Priest" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COSS_Halfbreed_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COSS_Halfbreed_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COSS_Halfbreed_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COSS_Halfbreed_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COSS_Halfbreed" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COSS_Halfbreed" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COSD_Tomberear_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COSD_Tomberear_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COSD_Tomberear_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COSD_Tomberear_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COSD_Tomberear" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COSD_Tomberear" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COSU_Spiker_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COSU_Spiker_6_Spawn1" KillCount="6" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COSU_Spiker_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COSU_Spiker_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COSU_Spiker" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COSU_Spiker" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COW_Reaper_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COW_Reaper_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COW_Reaper_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COW_Reaper_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COW_Reaper" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COW_Reaper" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COFLW_Spreader_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COFLW_Spreader_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COFLW_Spreader_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COFLW_Spreader_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COFLW_Spreader" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COFLW_Spreader" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COFLVR_Sniper_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COFLVR_Sniper_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COFLVR_Sniper_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COFLVR_Sniper_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COFLVR_Sniper" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COFLVR_Sniper" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COFMSR_Colossalbreader_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COFMSR_Colossalbreader_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COFMSR_Colossalbreader_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COFMSR_Colossalbreader_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COFMSR_Colossalbreader" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COFMSR_Colossalbreader" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COFLVT_Cultist_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COFLVT_Cultist_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COFLVT_Cultist_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COFLVT_Cultist_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COFLVT_Cultist" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COFLVT_Cultist" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_REPU_SiegeBeast_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_REPU_SiegeBeast_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_REPU_SiegeBeast_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_REPU_SiegeBeast_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_REPU_SiegeBeast" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_REPU_SiegeBeast" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COFUT_Enforcer_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COFUT_Enforcer_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COFUT_Enforcer_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COFUT_Enforcer_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COFUT_Enforcer" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COFUT_Enforcer" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_COFUR_Veteran_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_COFUR_Veteran_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_COFUR_Veteran_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_COFUR_Veteran_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_COFUR_Veteran" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_COFUR_Veteran" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_SVRIP_Spitter_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_SVRIP_Spitter_6_Spawn1" KillCount="6" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_SVRIP_Spitter_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_SVRIP_Spitter_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_SVRIP_Spitter" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_SVRIP_Spitter" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_SVRIW_Spawner_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_SVRIW_Spawner_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_SVRIW_Spawner_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_SVRIW_Spawner_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_SVRIW_Spawner" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_SVRIW_Spawner" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_SVRIF_Spitter_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_SVRIF_Spitter_6_Spawn1" KillCount="6" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_SVRIF_Spitter_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_SVRIF_Spitter_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_SVRIF_Spitter" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_SVRIF_Spitter" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_SVRIFW_Screecher_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_SVRIFW_Screecher_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_SVRIFW_Screecher_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_SVRIFW_Screecher_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_SVRIFW_Screecher" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_SVRIFW_Screecher" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KNT_Consu_CALL_Cultist_6" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KNT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KNT_Consu_CALL_Cultist_6_Spawn1" KillCount="" ShowTimer="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KNT_Consu_CALL_Cultist_6_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="6" Name="QN_EG_KNT_Consu_CALL_Cultist_6_Spawn1" Delay=".5" SpawnClass="Sc_EG_KNT_CALL_Cultist" MinSpawnPercent="30" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KNT_StepNameLabel_CALL_Cultist" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,115 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_FleshForest1" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="LuckyDungeon" PriorityTag="LotOfLoot" ExcludeTag="Room,MMGoblin,Named,NoMonster,BossArea" Weight="8" />
+      <Archetype Tag="ChestRoom" PriorityTag="EpicFixedLoot,Room,NoMonster" ExcludeTag="KillCP,KillTarget,CursedChestRoom" Weight="4" />
+      <Archetype Tag="CursedChestRoom" PriorityTag="CursedChestRoom,Room,NoMonster" ExcludeTag="EpicFixedLoot,KillCP,KillTarget" Weight="4" />
+      <Archetype Tag="GoblinDungeon" PriorityTag="MMGoblin,SmallArea,NormalLoot" ExcludeTag="NoMonster,Room,KillCP,KillTarget,MediumArea,BossArea" Weight="4" />
+      <Archetype Tag="KillOneTarget" PriorityTag="KillTarget,OneGoal,NormalLoot" ExcludeTag="Room,MMGoblin,Named,Hard,BossArea" Weight="20" />
+      <Archetype Tag="KillNumerousTarget" PriorityTag="KillTarget,NumerousGoal,MediumArea,NormalLoot,Easy" ExcludeTag="Room,MMGoblin,BossArea" Weight="20" />
+      <Archetype Tag="KillCP" PriorityTag="KillCP,NormalLoot" ExcludeTag="Room,MMGoblin,NoMonster,BossArea,MediumArea" Weight="20" />
+      <Archetype Tag="NoQuestEODReward" PriorityTag="EODReward" ExcludeTag="KillCP,KillTarget,MediumArea,Room,NoMonster,MMGoblin,BossArea" Weight="20" />
+      <Archetype Tag="KillOneNamed" PriorityTag="KillTarget,OneGoal,NormalLoot,BossArea,Named" ExcludeTag="Room,MMGoblin,Hard" Weight="0.000000000001" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="Cellar_Room_CG" Tag="Room,Cellar" PriorityTag="Cellar" ExcludeTag="Templar,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Cellar_VerySmallDungeon_CG" Tag="Cellar,VerySmallArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="Templar,NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cellar_SmallDungeon_CG" Tag="Cellar,SmallArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="Templar,NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cellar_MediumDungeon_CG" Tag="Cellar,MediumArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="Templar,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cellar_Foggy_Room_CG" Tag="Room,Cellar" PriorityTag="Cellar" ExcludeTag="Templar,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Cellar_Foggy_VerySmallDungeon_CG" Tag="Cellar,VerySmallArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="Templar,NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cellar_Foggy_SmallDungeon_CG" Tag="Cellar,SmallArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="Templar,NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cellar_Foggy_MediumDungeon_CG" Tag="Cellar,MediumArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="Templar,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Room_CG" Tag="Room,Cave" PriorityTag="Cave" ExcludeTag="Templar,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Cave_VerySmallDungeon_CG" Tag="Cave,VerySmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_SmallDungeon_CG" Tag="Cave,SmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_MediumDungeon_CG" Tag="Cave,MediumArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Foggy_Room_CG" Tag="Room,Cave" PriorityTag="Cave" ExcludeTag="Templar,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Cave_Foggy_VerySmallDungeon_CG" Tag="Cave,VerySmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Foggy_SmallDungeon_CG" Tag="Cave,SmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Foggy_MediumDungeon_CG" Tag="Cave,MediumArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cellar_Mossy_Room_CG" Tag="Room,Cellar_Mossy" PriorityTag="Cellar" ExcludeTag="Templar,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Cellar_Mossy_VerySmallDungeon_CG" Tag="Cellar_Mossy,VerySmallArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="Templar,NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cellar_Mossy_SmallDungeon_CG" Tag="Cellar_Mossy,SmallArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="Templar,NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cellar_Mossy_MediumDungeon_CG" Tag="Cellar_Mossy,MediumArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="Templar,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Mossy_Room_CG" Tag="Room,Cave_Mossy" PriorityTag="Cave" ExcludeTag="Templar,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Cave_Mossy_VerySmallDungeon_CG" Tag="Cave_Mossy,VerySmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Mossy_SmallDungeon_CG" Tag="Cave_Mossy,SmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Mossy_MediumDungeon_CG" Tag="Cave_Mossy,MediumArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,COFY,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Fleshed_Room_CG" Tag="Room,WTemplar_Fleshed" PriorityTag="WTemplar,COFE,Templar" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="WTemplar_Fleshed_VerySmallDungeon_CG" Tag="WTemplar_Fleshed,VerySmallArea,ClassicArea" PriorityTag="WTemplar,COFE,Templar" ExcludeTag="NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Fleshed_SmallDungeon_CG" Tag="WTemplar_Fleshed,SmallArea,ClassicArea" PriorityTag="WTemplar,COFE,Templar" ExcludeTag="NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Fleshed_MediumDungeon_CG" Tag="WTemplar_Fleshed,MediumArea,ClassicArea" PriorityTag="WTemplar,COFE,Templar" ExcludeTag="COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Room_CG" Tag="Room,Mine" PriorityTag="Mine" ExcludeTag="Templar,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Mine_VerySmallDungeon_CG" Tag="Mine,VerySmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="Templar,NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_SmallDungeon_CG" Tag="Mine,SmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="Templar,NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_MediumDungeon_CG" Tag="Mine,MediumArea,ClassicArea" PriorityTag="Mine" ExcludeTag="Templar,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_Room_CG" Tag="Room,Mine" PriorityTag="Mine" ExcludeTag="Templar,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Mine_Foggy_VerySmallDungeon_CG" Tag="Mine,VerySmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="Templar,NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_SmallDungeon_CG" Tag="Mine,SmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="Templar,NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_MediumDungeon_CG" Tag="Mine,MediumArea,ClassicArea" PriorityTag="Mine" ExcludeTag="Templar,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Swamp_BossArea_CG" Tag="Swamp,SmallArea,BossArea" PriorityTag="Swamp,SOUTW,Named" ExcludeTag="NumerousGoal,FewGoal" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_FleshForest1_KillTarget_REPU_Sniper_4" Tag="KillTarget,NumerousGoal,REPU" PriorityTag="KillTarget,REPU,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_FleshForest1_KillTarget_COFE_Spreader_4" Tag="KillTarget,NumerousGoal,COFE" PriorityTag="KillTarget,COFE,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_FleshForest1_KillTarget_SVRI_Spawner_4" Tag="KillTarget,NumerousGoal,SVRI" PriorityTag="KillTarget,SVRI,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_FleshForest1_KillTarget_REPU_Assassin" Tag="KillTarget,OneGoal,REPU" PriorityTag="KillTarget,REPU,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_FleshForest1_KillTarget_COFE_Cultist" Tag="KillTarget,OneGoal,COFE" PriorityTag="KillTarget,COFE,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_FleshForest1_KillTarget_SVRI_AlphaPoison" Tag="KillTarget,OneGoal,SVRI" PriorityTag="KillTarget,SVRI,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_WarlordLair_KillTarget_SOUTW_NamedBrute" Tag="KillTarget,OneGoal,SOUTW,Named" PriorityTag="KillTarget,SOUTW,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_FleshForest1_KillCP_1" Tag="KillCP,SVRI" PriorityTag="SVRI,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_FleshForest1_KillCP_1" Tag="KillCP,WILD" PriorityTag="WILD,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_FleshForest1_KillCP_1" Tag="KillCP,REPU" PriorityTag="REPU,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_FleshForest1_KillCP_1" Tag="KillCP,COFE" PriorityTag="COFE,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_FleshForest1_KillCP_1" Tag="KillCP,COFE,Templar" PriorityTag="COFE,EMQuest" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_Mammals" Tag="Easy,WILD,Mammals,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_Insects" Tag="Easy,WILD,insect,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_SVRI_Easy" Tag="Easy,SVRI,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_REPU_Easy" Tag="Easy,REPU,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_COFE_Easy" Tag="Easy,COFE,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_COFE_Templar_Easy" Tag="Easy,COFE,Templar,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_SVRI_Medium" Tag="Medium,LotOfMonster,SVRI" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_REPU_Medium" Tag="Medium,LotOfMonster,REPU" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_COFE_Medium" Tag="Medium,LotOfMonster,COFE" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_COFE_Templar_Medium" Tag="Medium,LotOfMonster,COFE,Templar" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_SVRI_Hard" Tag="Hard,LotOfMonster,SVRI" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_REPU_Hard" Tag="Hard,LotOfMonster,REPU" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_COFE_Hard" Tag="Hard,LotOfMonster,COFE" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_COFE_Templar_Hard" Tag="Hard,LotOfMonster,COFE,Templar" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_Mammals_Goblin" Tag="MMGoblin,Easy,WILD,Mammals,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_FleshForest1_COFE_Templar_Goblin" Tag="MMGoblin,Easy,COFE,Templar,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_WarlordLair_SOUTW_Easy" Tag="Easy,SOUTW,LotOfMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Cave,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Cellar,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="WTemplar,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Mine,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Cave_ChestRoom" Tag="Cave,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Cellar_ChestRoom" Tag="Cellar,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Templar_ChestRoom" Tag="WTemplar,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Mine_ChestRoom" Tag="Mine,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Cave_CursedChestRoom" Tag="Cave,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Cellar_CursedChestRoom" Tag="Cellar,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Templar_CursedChestRoom" Tag="WTemplar,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Mine_CursedChestRoom" Tag="Mine,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Cave_EODReward" Tag="Cave,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Cellar_EODReward" Tag="Cellar,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Templar_EODReward" Tag="WTemplar,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Mine_EODReward" Tag="Mine,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Cave_BigLoot" Tag="Cave,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Cellar_BigLoot" Tag="Cellar,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Templar_BigLoot" Tag="WTemplar,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Mine_BigLoot" Tag="Mine,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Cave" Tag="Cave,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Cellar" Tag="Cellar,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Templar" Tag="WTemplar,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_FleshForest1_Mine" Tag="Mine,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Warlordlair_Swamp" Tag="Swamp,NormalLoot" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

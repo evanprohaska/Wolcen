@@ -1,0 +1,59 @@
+<MetaData>
+  <BaseEntity ID="CultOfSouls_Skeleton_Melee_2hAxe" EntityName="cultofsouls_lanternbearer" Scale="1" CanKillAllies="0" />
+  <Faction Name="CultOfSouls" />
+  <Keywords Value="coss,lieutenant,physical,melee" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="1" CombatPointValueMultiplier="1.5" />
+  <Attributes Archetype="archetype_lieutenant" HealthModifier="2" DamageModifier="1.0" XPModifier="1" Protection="" />
+  <Movement MovementSpeed="5" WalkSpeed="5" />
+  <InterruptionParams InterruptChance="0.0" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BlownAwayParams CanBeBlownAway="1" BlownAwayAnimationTag="" />
+  <DefaultBossModifiers />
+  <LootClass>
+    <Loot Class="LC_lieutenant" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="OnHitLoot_Lieutenant" />
+  <OnDeathLootPreset Name="OnDeathLoot_Lieutenant" />
+  <Corpses PresetName="LieutenantCadaverPreset" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="360" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Generic" />
+    <BT FleeOnLowHealthChance="0.0" EngageRange="20.0" MeleeAttack="True" FallBack="True" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="None" />
+  </Kythera>
+  <Skills>
+    <DefaultBasicAttack />
+    <Offensive>
+      <Skill Name="AI_COSS_Skeleton_2hAxe_DefaultAttack" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.0" Preferred="1.0" Max="4.0" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_COSS_Skeleton_2hAxe_ComboAttack" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.0" Preferred="2.0" Max="4.0" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_COSS_Skeleton_2hAxe_Charge" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="5.0" Preferred="7.0" Max="15.0" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </Offensive>
+    <Approach />
+  </Skills>
+  <RandomModel>
+    <ModelChoice Model="Objects\characters\mobs\Humanoid\SkeletonGiant\COSS_SkeletonGiant_2Axe\COSS_Skeletongiant_2Axe_01.cdf" Weight="1">
+      <ADBChoice ADB="Animations\Mannequin\ADB\Mobs\Humanoid\SkeletonGiant\COSS_SkeletonGiant_2Axe.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIName_COSS_SkeletonMelee2HAxe" ZIconOffset="3.0" />
+  <Spawn SpawnAnimation="rise_out_ground_fast" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="0.1" DeathSkill="" CosmeticDropPreset="AI_COSS_SkeletonGiant_01" OnDeathMaterial="Objects/characters/Textures/invisible.mtl" />
+  <GameplayParticles PresetName="size_Summons" />
+  <Capsules>
+    <EntityPhysics ColliderSize="0.85,0.85,0.5" IsPushable="0" RagdollMass="400" />
+    <MouseSelection SelectionCapsuleRadius="1.1" SelectionCapsuleHeight="0.6" SelectionCapsuleZOffset="0" />
+    <ProjectileCollision ProjectileCapsuleRadius="0.75" ProjectileCapsuleHeight="5.0" CanSnapOnCenterWhenColliding="1" />
+    <VegetationCollision SphereRadius="0.3" SphereZOffset="0.3" />
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="default" OverrideScale="1" />
+  </VisualParams>
+</MetaData>

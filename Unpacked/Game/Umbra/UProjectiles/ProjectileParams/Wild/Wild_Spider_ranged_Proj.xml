@@ -1,0 +1,32 @@
+<MetaData>
+  <Projectile ID="spit_proj_spider" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Spider.Spider_Projectile_01" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Projectile.Spider.Spider_Projectile_Hit_01" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="spit_proj_spider_frost" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.MiniSpitter.MiniSpitter_Projectile_01_Frost" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Projectile.MiniSpitter.MiniSpitter_Projectile_Hit_01_Frost" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+</MetaData>

@@ -1,0 +1,37 @@
+<MetaData>
+  <Quest Name="Quest_VheguaadFight" StartDialog="" Type="BossFight" UIName="@ui_A1_Q4_EventQuestLabel2" UIDesc="@">
+    <Step Order="0" UIName="@ui_A1_Q4_EventStepLabel2_1" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="VhegguadhsSpawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Vhegguadh" Area="ACT1_AnankisCore" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="Vheguaad_Sequence" SequenceName="A1_Q4_S8_Vheguaad" />
+      <Event Trigger="EventEnd" EventName="Vheguaad_Sequence" Type="GlobalAnnouncement" Name="A1_Q4_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A1_Q4_EventQuestLabel2" DisplayTime="3" />
+      <Event Trigger="EventEnd" EventName="Vheguaad_Sequence" Type="ActionParticleEmitter" Name="Vheguaad_BlockingRoad_on" EmitterEntityName="PrimordialGate_BlockingRoad" Activate="1" />
+      <Event Trigger="EventEnd" EventName="Vheguaad_Sequence" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="VhegguadhsSpawn" SpawnClass="Sc_Sty_A1_CoS_Vhegguadh" TargetEntityName="Vhegguadh_SpawnPoint" FaceAtSpawn="AnankinsGate_PlayerTP_SpawnPoint2" />
+      <Event Trigger="EventEnd" EventName="Vheguaad_Sequence" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="Cultist1Spawn" SpawnClass="Sc_PrimordialGate_CoS_F" TargetEntityName="Fanatic_SpawnPoint1" FaceAtSpawn="Vhegguadh_SpawnPoint" />
+      <Event Trigger="EventEnd" EventName="Vheguaad_Sequence" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="Cultist2Spawn" SpawnClass="Sc_PrimordialGate_CoS_F" TargetEntityName="Fanatic_SpawnPoint2" FaceAtSpawn="Vhegguadh_SpawnPoint" />
+      <Event Trigger="EventEnd" EventName="Vheguaad_Sequence" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="Cultist3Spawn" SpawnClass="Sc_PrimordialGate_CoS_F" TargetEntityName="Fanatic_SpawnPoint3" FaceAtSpawn="Vhegguadh_SpawnPoint" />
+      <Event Trigger="EventEnd" EventName="Vheguaad_Sequence" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="Cultist4Spawn" SpawnClass="Sc_PrimordialGate_CoS_F" TargetEntityName="Fanatic_SpawnPoint4" FaceAtSpawn="Vhegguadh_SpawnPoint" />
+      <Event Trigger="EventEnd" EventName="Vheguaad_Sequence" Type="GlobalDialog" Delay="3" Name="AG_VhegguadhP1Talk" DialogName="ACT1_Q4_AG_VhegguadhP1Talk" />
+      <Event Trigger="EventEnd" EventName="Vheguaad_Sequence" Type="EntityIsHidden" Name="AG_Reveal_TPS_ForceField_Event" EntityNames="AnankisGate_ForceField_Event" Hide="0" />
+      <Event Trigger="EventEnd" EventName="Vheguaad_Sequence" Type="EntityTeleport" MinRadius="1" Name="Player_TP_AG" TeleportedEntityName="#Player" DestinationName="AnankinsGate_PlayerTP_SpawnPoint2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Vhegguadh" PercentLeft="98" Type="GlobalDialog" Name="AG_VhegguadhP2Talk" DialogName="ACT1_Q4_AG_VhegguadhP2Talk" />
+    </Step>
+  </Quest>
+  <Quest Name="Quest_DeteronFight" StartDialog="" Type="BossFight" UIName="@ui_A1_Q4_EventQuestLabel2" UIDesc="@">
+    <Step Order="0" UIName="@ui_A1_Q4_EventStepLabel2_2" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0" />
+      <Goal Order="1" Type="KillAll" EventsName="ButcherSpawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="CultOfSouls_Butcher" Area="ACT1_AnankisCore" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Wait" ReferenceEntityName="" TimeLimit="2" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="ButcherSpawnFX" SequenceName="A1_Q4_S8_Vheguaad_Ritual" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="ButcherSpawn" MinimumRadius="0.1" MaximumRadius="1" SpawnFrequency="0" SpawnClass="Sc_PrimordialGate_CoS_Deteron" TargetEntityName="Butcher_SpawnPoint" />
+      <Event Trigger="EventEnd" EventName="ButcherSpawn" Type="GoalAchieve" Name="Wait_A1_Q4_Butcher_Spawn" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="ButcherSpawn" Type="GlobalDialog" Name="ButcherSpawnTalk" DialogName="ACT1_Q4_AG_ButcherSpawnPlayerTalk" Delay="1.5" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalAnnouncement" Name="A1_Q4_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+</MetaData>

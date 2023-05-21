@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill UID="mapmodifier_skill_resurectsimilar" ESkill="MapModifier_ResurectSimilar" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="Mark" Name="U_Buff.Debuff.Cultist_Summon_Aura_02" Offset="0,0,1" Direction="0,1,0" Scale="1" />
+      <Particle Key="Spawn" Name="U_Monster.Primordiar.Primordiar_Armor.Primordiar_Assemble_02" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+    <Summoning MaxSummons="1000" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" />
+    <SkillSpecific ResurectionTimer="3" ResurectionChance="20">
+      <SpawnEntry Faction="Svriirs" SpawnClass="sc_MapMod_Svriirs" />
+      <SpawnEntry Faction="CultOfSouls" SpawnClass="sc_MapMod_CultOfSouls" />
+      <SpawnEntry Faction="Outlaws" SpawnClass="sc_MapMod_Outlaws" />
+      <SpawnEntry Faction="Wild" SpawnClass="sc_MapMod_Wild" />
+      <SpawnEntry Faction="CultOfFlesh" SpawnClass="sc_MapMod_CultOfFlesh" />
+      <SpawnEntry Faction="Templars" SpawnClass="sc_MapMod_Templars" />
+      <SpawnEntry Faction="CultOfFury" SpawnClass="sc_MapMod_CultOfFury" />
+      <SpawnEntry Faction="Republic" SpawnClass="sc_MapMod_Republic" />
+    </SkillSpecific>
+  </Skill>
+</MetaData>

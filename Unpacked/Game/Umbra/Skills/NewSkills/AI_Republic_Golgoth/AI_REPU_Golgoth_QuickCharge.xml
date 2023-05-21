@@ -1,0 +1,27 @@
+<MetaData>
+  <Skill UID="AI_REPU_Golgoth_QuickCharge" ESkill="ai_default_charge" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.6" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="REPU_Golgoth_QuickCharge_TargetDetection_Shape" />
+    </Shapes>
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="REPU_Golgoth_QuickCharge_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.charge_indicator" Offset="0,0,0" Direction="-1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="TrailBackpack" Name="U_Monster_Alt.golgoth.charge_backpack" Offset="0,-3.3,0" Direction="0,0,-1" Scale="1" Bone="Bip01" InstantKill="0" />
+      <Particle Key="TrailWind" Name="U_Monster.Golgoth.Charge_Wind_01" Offset="0,0,2.5" Direction="0,1,0" Scale="1.5" Bone="Bip01" InstantKill="1" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="36" ChargeDistance="30" StopChargeAtTarget="1">
+      <Extra Type="CastDamageZone">
+        <Entry DamageZoneName="REPU_Golgoth_QuickCharge_DZ" Trigger="OnDashEnd" LinkedVFX="Wave" ParticleTiling="3" />
+      </Extra>
+      <Extra Type="Particles" />
+    </SkillSpecific>
+    <SoundTrigger PlayAttackVoice="1" OnAnimStart="Play_Republic_Golgoth_QuickCharge_Start" OnAnimLoopIn="Play_Republic_Golgoth_QuickCharge_Charge_Loop" OnAnimLoopOut="Stop_Republic_Golgoth_QuickCharge_Charge_Loop" OnInterrupt="Stop_Republic_Golgoth_QuickCharge_Charge_Loop" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,18 @@
+<MetaData>
+  <ArenaWaves Name="Svriirs_Raid_Part2">
+    <Wave Type="killtarget" Tag="5">
+      <PrefabParams PrefabName="arena_svriirsraid_part2" />
+      <KillTargets>
+        <Entry ClassName="SvriirSobok" Amount="1" />
+      </KillTargets>
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="Sc_svriir_A_svriirsraid" TargetSpawnLocationID="1" SpawnDir="local_y" MustLoot="1" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="until_spawn_count" TargetSpawnClass="Sc_svriir_O_svriirsraid" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" TargetSpawnLocationID="2" MaxNumberOfSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="11.5" Type="until_spawn_count" TargetSpawnClass="Sc_svriir_O_svriirsraid" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" TargetSpawnLocationID="3" MaxNumberOfSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="until_spawn_count" TargetSpawnClass="Sc_svriir_O_svriirsraid" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" TargetSpawnLocationID="4" MaxNumberOfSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="14.5" Type="until_spawn_count" TargetSpawnClass="Sc_svriir_O_svriirsraid" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" TargetSpawnLocationID="5" MaxNumberOfSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="until_spawn_count" TargetSpawnClass="Sc_svriir_O_svriirsraid" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" TargetSpawnLocationID="6" MaxNumberOfSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

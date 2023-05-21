@@ -1,0 +1,46 @@
+<MetaData>
+  <BaseEntity ID="HangedPillar_Destroyable" EntityName="cultofflesh_heart" Scale="1" CanKillAllies="0" />
+  <Faction Name="Outlaws" />
+  <Keywords Value="outw,trash" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="1" />
+  <Attributes Archetype="archetype_trash" HealthModifier="1" DamageModifier="1" XPModifier="1" DamageTakenModifier="1" AttackSpeedModifier="1" Protection="" Movable="" Hookable="" />
+  <Movement MovementSpeed="0" WalkSpeed="0" />
+  <InterruptionParams InterruptChance="1.0" />
+  <StunParams IgnoreStunChance="1" />
+  <BlownAwayParams CanBeBlownAway="0" BlownAwayAnimationTag="" />
+  <DefaultBossModifiers />
+  <LootClass>
+    <Loot Class="LC_trash" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="" />
+  <OnDeathLootPreset Name="OnDeathLoot_Trash" />
+  <Corpses PresetName="TrashCadaverPreset" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="0" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Motionless" />
+    <BT FleeOnLowHealthChance="0.0" EngageRange="10.0" MeleeAttack="True" FallBack="True" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="Melee" />
+  </Kythera>
+  <Skills />
+  <RandomModel>
+    <ModelChoice Model="Objects\Animated_Object\Destroyable\DEST_HangedPillar\DEST_HangedPillar_01.cdf" Weight="1">
+      <ADBChoice ADB="Animations\Mannequin\ADB\Animated_Object\DEST_HangedPillar.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIname_Outw_HangedPillar_Destroyable" ZIconOffset="5.5" />
+  <Spawn SpawnAnimation="0" TransparencyAtSpawn="0" SpawnTowardCamera="1" />
+  <Death UseDeathAnimation="0" DeathSkill="" CosmeticDropPreset="HangedPillar" OnDeathMaterial="Objects/characters/Textures/invisible.mtl" />
+  <GameplayParticles PresetName="size_medium" />
+  <Capsules>
+    <EntityPhysics ColliderSize="1.5,1.5,0.5" IsPushable="0" />
+    <MouseSelection SelectionCapsuleRadius="1" SelectionCapsuleHeight="3.0" SelectionCapsuleZOffset="0" />
+    <ProjectileCollision ProjectileCapsuleRadius="1.5" ProjectileCapsuleHeight="4.0" CanSnapOnCenterWhenColliding="1" />
+    <VegetationCollision SphereRadius="0.0" SphereZOffset="0.0" />
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="default" OverrideScale="1" />
+  </VisualParams>
+  <Audio AllowGroupSounds="0" SurfaceType="" />
+</MetaData>

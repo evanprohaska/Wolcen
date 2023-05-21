@@ -1,0 +1,110 @@
+<MetaData>
+  <Skill UID="Skill_Fire_Tile" ESkill="Fire_Tile" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Range AttackRange="150" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="3" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="COFY_Ahriman.FlameSquare.Indicator" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="AOE" Name="COFY_Ahriman.FlameSquare.AoELoop" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Fire_Tile_Shape" />
+    </Shapes>
+    <SkillSpecific FireDelay="15" BossName="A4_P3_Ahriman" Anticipation="2">
+      <Upgrade AssociatedProject="seal_the_flames_construct" UpgradedFireDelay="30" />
+      <HpTresholds>
+        <Treshhold Hp="0.9" />
+        <Treshhold Hp="0.75" />
+        <Treshhold Hp="0.50" />
+        <Treshhold Hp="0.25" />
+      </HpTresholds>
+      <Patterns>
+        <Pattern>
+          <Tile Index="0" State="1" />
+          <Tile Index="1" State="1" />
+          <Tile Index="2" State="1" />
+          <Tile Index="3" State="1" />
+          <Tile Index="4" State="1" />
+          <Tile Index="5" State="1" />
+          <Tile Index="6" State="0" />
+          <Tile Index="7" State="0" />
+          <Tile Index="8" State="0" />
+          <Tile Index="9" State="1" />
+          <Tile Index="10" State="1" />
+          <Tile Index="11" State="0" />
+          <Tile Index="12" State="0" />
+          <Tile Index="13" State="0" />
+          <Tile Index="14" State="1" />
+          <Tile Index="15" State="1" />
+          <Tile Index="16" State="0" />
+          <Tile Index="17" State="0" />
+          <Tile Index="18" State="0" />
+          <Tile Index="19" State="1" />
+          <Tile Index="20" State="1" />
+          <Tile Index="21" State="1" />
+          <Tile Index="22" State="1" />
+          <Tile Index="23" State="1" />
+          <Tile Index="24" State="1" />
+        </Pattern>
+        <Pattern>
+          <Tile Index="0" State="1" />
+          <Tile Index="1" State="0" />
+          <Tile Index="2" State="0" />
+          <Tile Index="3" State="0" />
+          <Tile Index="4" State="1" />
+          <Tile Index="5" State="0" />
+          <Tile Index="6" State="1" />
+          <Tile Index="7" State="0" />
+          <Tile Index="8" State="1" />
+          <Tile Index="9" State="0" />
+          <Tile Index="10" State="0" />
+          <Tile Index="11" State="0" />
+          <Tile Index="12" State="0" />
+          <Tile Index="13" State="0" />
+          <Tile Index="14" State="0" />
+          <Tile Index="15" State="0" />
+          <Tile Index="16" State="1" />
+          <Tile Index="17" State="0" />
+          <Tile Index="18" State="1" />
+          <Tile Index="19" State="0" />
+          <Tile Index="20" State="1" />
+          <Tile Index="21" State="0" />
+          <Tile Index="22" State="0" />
+          <Tile Index="23" State="0" />
+          <Tile Index="24" State="1" />
+        </Pattern>
+        <Pattern>
+          <Tile Index="0" State="0" />
+          <Tile Index="1" State="0" />
+          <Tile Index="2" State="0" />
+          <Tile Index="3" State="0" />
+          <Tile Index="4" State="0" />
+          <Tile Index="5" State="0" />
+          <Tile Index="6" State="0" />
+          <Tile Index="7" State="1" />
+          <Tile Index="8" State="0" />
+          <Tile Index="9" State="0" />
+          <Tile Index="10" State="0" />
+          <Tile Index="11" State="1" />
+          <Tile Index="12" State="1" />
+          <Tile Index="13" State="1" />
+          <Tile Index="14" State="0" />
+          <Tile Index="15" State="0" />
+          <Tile Index="16" State="0" />
+          <Tile Index="17" State="1" />
+          <Tile Index="18" State="0" />
+          <Tile Index="19" State="0" />
+          <Tile Index="20" State="0" />
+          <Tile Index="21" State="0" />
+          <Tile Index="22" State="0" />
+          <Tile Index="23" State="0" />
+          <Tile Index="24" State="0" />
+        </Pattern>
+      </Patterns>
+    </SkillSpecific>
+    <DamageZone RateOfFire="0.5" Duration="20000" RemoveParticleWithShape="1" />
+    <SoundTrigger />
+  </Skill>
+</MetaData>

@@ -1,0 +1,89 @@
+<MetaData>
+  <Spell Name="AST_AetherBlade_TakeMoreDamage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_taken_percent_from_spell" Permanent="0">
+        <Semantics DamagePercentFloat="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_AetherBlade_SkillRequirement" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="skillrequirement_keyword_melee" Permanent="0">
+        <Semantics CountInt="1" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades.png" Description="@ui_skillrequirement_keyword_melee_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+  <Spell Name="AST_AetherBlade_Block" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="blockchance_unconditional_flat" Permanent="0">
+        <Semantics ChanceFlatFloat="17" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades.png" Description="@ui_blockchance_unconditional_flat_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+  <Spell Name="AST_AetherBlade_IncreaseDamage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_umbra" Permanent="0">
+        <Semantics DamagePercentInt="30" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades_Aether.png" Description="@ui_damage_percent_as_umbra_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+  <Spell Name="AST_AetherBlade_BuffAllies" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_umbra" Permanent="0">
+        <Semantics DamagePercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades_Aether.png" Description="@ui_damage_percent_as_umbra_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+  <Spell Name="AST_AetherBlade_IncreaseDamage_Shadow" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_shadow" Permanent="0">
+        <Semantics DamagePercentInt="30" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades_Shadow.png" Description="@ui_damage_percent_as_shadow_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+  <Spell Name="AST_AetherBlade_BuffAllies_Shadow" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_shadow" Permanent="0">
+        <Semantics DamagePercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades_Shadow.png" Description="@ui_damage_percent_as_shadow_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+  <Spell Name="AST_AetherBlade_IncreaseDamage_Rend" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_rend" Permanent="0">
+        <Semantics DamagePercentInt="30" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades_Rend.png" Description="@ui_damage_percent_as_rend_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+  <Spell Name="AST_AetherBlade_BuffAllies_Rend" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_rend" Permanent="0">
+        <Semantics DamagePercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades_Rend.png" Description="@ui_damage_percent_as_rend_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+  <Spell Name="AST_AetherBlade_IncreaseDamage_Frost" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_frost" Permanent="0">
+        <Semantics DamagePercentInt="30" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades_Frost.png" Description="@ui_damage_percent_as_frost_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+  <Spell Name="AST_AetherBlade_BuffAllies_Frost" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_frost" Permanent="0">
+        <Semantics DamagePercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades_Frost.png" Description="@ui_damage_percent_as_frost_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+</MetaData>

@@ -1,0 +1,45 @@
+<MetaData>
+  <Skill UID="AI_Svriir_GiantSpawner_Buff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="20" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="GiantSpawner_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_GiantSpawner_AttackSpeedBuff" Targeting="OnSummons" Duration="5" />
+    </PassiveSkills>
+  </Skill>
+  <Skill UID="AI_GiantSpawner_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams />
+    <Shapes>
+      <Entry ShapeName="GiantSpawner_DefaultAttack_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="PLAY_AI_SvriirOmega_ClawSwipe" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Svriir_GiantSpawner_Eggthrow" ESkill="AI_svriirbeta_spawner_eggthrow" Keywords="projectile,magic_spell">
+    <Projectile Name="Svriir_GiantSpawner_Eggthrow_proj" ProjectileCount="3" AngleBetweenProjectiles="120" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".3" />
+    <CastingParams CastBone="Bip01 Spine3" CasterImmobilizationTime="1" CastDelay="0" AnimationTrigger="1" CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Cooldown Cooldown="25.0" CooldownTrigger="OnEnd" />
+    <Explosion ExplosionRadius="3.5" />
+    <Range AttackRange="10" />
+    <Summoning MaxSummons="20" SummonDuration="0" MinRadiusAroundSpawnPosition="0.5" MaxRadiusAroundSpawnPosition="3.5" KillLowestHPOnOversummoning="1" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Default" Name="sc_GiantSpawner" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_AI_SvriirSpawner_SpawnStart" OnAnimCast="PLAY_AI_SvriirSpawner_SpawnShot" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="10" In="0.5" />
+      <EmissiveIntensity From="10" To="30" In="1" />
+      <EmissiveIntensity From="30" To="origin" In="1.5" />
+    </Material>
+  </Skill>
+</MetaData>

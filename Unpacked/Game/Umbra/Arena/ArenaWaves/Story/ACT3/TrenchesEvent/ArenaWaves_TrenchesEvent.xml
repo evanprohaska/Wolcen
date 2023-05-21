@@ -1,0 +1,78 @@
+<MetaData>
+  <ArenaWaves Name="ArenaWaves_TrenchesEvent">
+    <Wave Type="killcount" TargetKillCount="26" Tag="1">
+      <PrefabParams PrefabName="arena_TrenchesEvent" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Instigator_TrenchesEvent" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="4.5" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Instigator_TrenchesEvent" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Instigator_TrenchesEvent" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="until_spawn_count" TargetSpawnClass="sc_Instigator_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="6.5" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticRanged_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="until_spawn_count" TargetSpawnClass="sc_Instigator_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="9.5" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticRanged_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="11" Type="until_spawn_count" TargetSpawnClass="sc_Instigator_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="12.5" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticRanged_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="14" Type="until_spawn_count" TargetSpawnClass="sc_Instigator_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="15.5" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticRanged_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="17" Type="until_spawn_count" TargetSpawnClass="sc_Instigator_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="18.5" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticRanged_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="20" Type="until_spawn_count" TargetSpawnClass="sc_Instigator_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="21.5" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticRanged_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="until_spawn_count" TargetSpawnClass="sc_FurySpirit_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.4" MaxNumberOfSpawnedEntities="4" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="17" Type="until_spawn_count" TargetSpawnClass="sc_FurySpirit_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.4" MaxNumberOfSpawnedEntities="4" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="until_spawn_count" TargetSpawnClass="sc_PacifiedSniper_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="14" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="until_spawn_count" TargetSpawnClass="sc_PacifiedSniper_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="14" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="14" Type="until_spawn_count" TargetSpawnClass="sc_Enforcer_TrenchesEvent_R1" NumberOfEntitiesPerSpawn="1" SpawnFrequency="14" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="killcount" TargetKillCount="32" Tag="2">
+      <PrefabParams PrefabName="arena_TrenchesEvent" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" NumberOfEntitiesPerSpawn="3" TargetSpawnClass="sc_FuryFanaticMelee_TrenchesEvent" TargetSpawnLocationID="11" />
+        <Spawner DelayBeforeFirstSpawn="2.25" Type="once" NumberOfEntitiesPerSpawn="3" TargetSpawnClass="sc_FuryFanaticMelee_TrenchesEvent" TargetSpawnLocationID="22" />
+        <Spawner DelayBeforeFirstSpawn="2.5" Type="once" NumberOfEntitiesPerSpawn="3" TargetSpawnClass="sc_FuryFanaticMelee_TrenchesEvent" TargetSpawnLocationID="33" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="11" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="14" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="15.5" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="17" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="18.5" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="20" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="21.5" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="23" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="until_spawn_count" TargetSpawnClass="sc_PacifiedSniper_TrenchesEvent_R1" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="until_spawn_count" TargetSpawnClass="sc_RepublicVeteran_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="until_spawn_count" TargetSpawnClass="sc_RepublicVeteran_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticMelee_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.4" MaxNumberOfSpawnedEntities="4" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticMelee_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.4" MaxNumberOfSpawnedEntities="4" TargetSpawnLocationID="3" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="killcount" TargetKillCount="25" Tag="3">
+      <PrefabParams PrefabName="arena_TrenchesEvent" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_RepublicVeteran_TrenchesEvent" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_PacifiedSniper_TrenchesEvent" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="11" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="14" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="15" Type="until_spawn_count" TargetSpawnClass="sc_MeleeInfantry_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="until_spawn_count" TargetSpawnClass="sc_CultistOfFury_TrenchesEvent_R2" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="until_spawn_count" TargetSpawnClass="sc_Enforcer_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="until_spawn_count" TargetSpawnClass="sc_Enforcer_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="20" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticMelee_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="4" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="24" Type="until_spawn_count" TargetSpawnClass="sc_FuryFanaticMelee_TrenchesEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="4" TargetSpawnLocationID="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

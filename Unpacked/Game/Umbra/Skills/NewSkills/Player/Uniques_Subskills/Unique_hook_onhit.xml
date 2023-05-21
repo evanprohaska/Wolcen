@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill UID="unique_hook_onhit" ESkill="player_hook" Keywords="attack_skill,passive_effect">
+    <CastingParams CastBone="R_Weapon_Bone" CancellableByDefault="1" CanMultiCast="1" CanCastWhileMoving="1" />
+    <Cooldown Cooldown="10" />
+    <Aggression TargetValueOnHit="40" />
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <Shapes>
+      <Entry ShapeName="Player_HookShape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Head" Name="U_Character.Skills.Hook_Head_01" Offset="0,0.4,0" Direction="0,1,0" />
+      <Particle Key="Chain" Name="U_Character.Skills.Hook_Chain_01" Bone="R_Weapon_Bone" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="Chain2" Name="U_Character.Skills.Hook_Chain_02" Offset="0,0,1.5" Direction="0,1,0" />
+      <Particle Key="Aura" Name="U_Character.Skills.Hook_AoE_01" Offset="0,0.2,1.5" Direction="0,1,0" />
+      <Particle Key="PullTrail" Name="U_CommonVFX.Hook.Hook_follow_Red_01" Bone="Bip01 Spine1" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="Hit" Name="U_Swipe_02.Directional_Hit_01.Staff_Hit_Normal_01" Offset="0,0,1.35" Direction="0,1,0" />
+    </ParticleList>
+    <Specific_Hook OnHookSoundTrigger="Play_Skill_Hook_Impact" OnHookReleaseSoundTrigger="Play_Skill_Hook_Cast" OnHookRetractSoundTrigger="" SpeedForLaunch="36" SpeedForPull="48" NumberOfHooks="1" PiercingHooks="1" HookParticleTTL="0.6">
+      <HookForwardMovementKeyFrames>
+        <KeyFrame Time="0" Value="0" />
+        <KeyFrame Time="0.1" Value="0" />
+        <KeyFrame Time="0.3" Value="1" />
+        <KeyFrame Time="0.55" Value="1" />
+        <KeyFrame Time="0.6" Value="0" />
+      </HookForwardMovementKeyFrames>
+    </Specific_Hook>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_skill_hook" TrailPresetBase="default" />
+    <SoundTrigger OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Default" />
+  </Skill>
+</MetaData>

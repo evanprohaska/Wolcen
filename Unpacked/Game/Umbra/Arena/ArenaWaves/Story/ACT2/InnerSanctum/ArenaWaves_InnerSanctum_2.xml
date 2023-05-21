@@ -1,0 +1,70 @@
+<MetaData>
+  <ArenaWaves Name="InnerSanctum_2">
+    <Wave Type="Killcount" TargetKillCount="75" Tag="2">
+      <PrefabParams PrefabName="arena_InnerSanctum" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="5" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="3" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="3" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxNumberOfSpawnedEntities="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxNumberOfSpawnedEntities="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxNumberOfSpawnedEntities="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Tombearer" NumberOfEntitiesPerSpawn="1" SpawnFrequency="5" MaxNumberOfSpawnedEntities="3" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="2" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Tombearer" NumberOfEntitiesPerSpawn="1" SpawnFrequency="5" MaxNumberOfSpawnedEntities="3" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="2" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Tombearer" NumberOfEntitiesPerSpawn="1" SpawnFrequency="5" MaxNumberOfSpawnedEntities="3" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="2" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Squire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxNumberOfSpawnedEntities="18" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="6" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="3" SpawnFrequency="6" MaxNumberOfSpawnedEntities="9" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="6" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="3" SpawnFrequency="6" MaxNumberOfSpawnedEntities="9" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="6" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Butcher" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0" MaxNumberOfSpawnedEntities="1" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killcount" TargetKillCount="50" Tag="3">
+      <PrefabParams PrefabName="arena_InnerSanctum" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="5" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="5" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Tombearer_R1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="2" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="2" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="2" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Squire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2.5" MaxNumberOfSpawnedEntities="9" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="4" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2.5" MaxNumberOfSpawnedEntities="9" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="4" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2.5" MaxNumberOfSpawnedEntities="9" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="4" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Spiker" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6.5" MaxNumberOfSpawnedEntities="3" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="2" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Spiker" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6.5" MaxNumberOfSpawnedEntities="3" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="2" TargetSpawnLocationID="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killcount" TargetKillCount="74" Tag="4">
+      <PrefabParams PrefabName="arena_InnerSanctum" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="3" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="3" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="3" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Spiker_R1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Spiker_R1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="22" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Spiker_R1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="22" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Spiker_R1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxNumberOfSpawnedEntities="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="8.5" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxNumberOfSpawnedEntities="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Soldier" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" MaxNumberOfSpawnedEntities="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Squire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxNumberOfSpawnedEntities="13" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="5" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxNumberOfSpawnedEntities="12" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="5" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="fill" TargetSpawnClass="sc_COSS_InnerSanctum_Runner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" MaxNumberOfSpawnedEntities="12" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="5" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="36" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Spiker_R1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="36" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Spiker_R1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Tombearer" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Tombearer" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="30" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Tombearer" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="42" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Tombearer" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killcount" TargetKillCount="3" Tag="5">
+      <PrefabParams PrefabName="arena_InnerSanctum" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Butcher_R1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="99" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Priest_R1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" TargetSpawnClass="sc_COSS_InnerSanctum_Priest_R1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

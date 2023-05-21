@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_Chosen_Tracker_BigProjectile" ESkill="AI_Chosen_Tracker_Projectile" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="0" />
+    <CastingParams InterruptIfTargetGoesInvisible="1" />
+    <Cooldown Cooldown="0" />
+    <Projectile Name="chosen_tracker_projectile" AngleBetweenProjectiles="30" ProjectileCount="1" PenetrationLimit="9999" />
+    <ParticleList>
+      <Particle Key="ProjBodyAura" Name="U_Monster.Tracker.Projectile_Aura_01" Bone="Bip01" Offset="0,0.5,0.1" Direction="0,0,1" Scale="1.6" />
+      <Particle Key="ProjEyeLight" Name="U_Monster.Tracker.Projectile_Eye_Light_02" Direction="0,1,0" Bone="Bip01 Head" />
+    </ParticleList>
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_Chosen_Tracker_BigProjectileDamageZone" />
+    </SecondarySkillToCast>
+    <Collisions IgnoreTerrainCollisions="1" />
+    <SkillSpecific TriggerCooldownWhenProjectileIsDead="1" ProjectileStartPosForwardOffset="8" ProjectileSpawnDelay="0.75" ProjectileMesh1Cdf="Game/objects/characters/mobs/Humanoid/LanternBearer/CHOS_Shadow_LanternBearer/CHOS_Shadow_LanternBearer.cdf" ProjectileMesh1SpawnAnim="chos_shadow_lanternbearer_spawn_01" ProjectileMesh1IdleAnim="chos_shadow_lanternbearer_idle_01" ProjectileMesh1MoveAnim="chos_shadow_lanternbearer_move_01" ProjectileMesh1DeathAnim="chos_shadow_lanternbearer_death_01" ProjectileMesh1ExplosionAnim="chos_shadow_lanternbearer_skill_explosion_01" ProjectileMesh1Scale="0.7" ProjectileMesh1Offset="0,0,0" ProjectileMesh2Cdf="Game/objects/characters/mobs/Humanoid/Runner/CHOS_Shadow_Runner/CHOS_Shadow_Runner_01.cdf" ProjectileMesh2SpawnAnim="chos_shadow_runner_spawn_01" ProjectileMesh2IdleAnim="chos_shadow_runner_idle_01" ProjectileMesh2MoveAnim="chos_shadow_runner_move_01" ProjectileMesh2DeathAnim="chos_shadow_runner_death_01" ProjectileMesh2ExplosionAnim="chos_shadow_runner_skill_explosion_01" ProjectileMesh2Scale="1.3" ProjectileMesh2Offset="0,-0.5,0" />
+    <SoundTrigger OnAnimStart="Play_CHOS_Tracker_BigProjectile_Charge" OnAnimCast="Play_CHOS_Tracker_BigProjectile_Shoot" OnHit="" />
+  </Skill>
+</MetaData>

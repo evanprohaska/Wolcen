@@ -1,0 +1,40 @@
+<MetaData>
+  <Skill UID="AI_coss_butcher_soulvortex" ESkill="AI_coss_butcher_soulvortex" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="4.82" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01_Weapon_Particle5" />
+    <Shapes>
+      <Entry ShapeName="Butcher_SoulVortex_01" />
+      <Entry ShapeName="Butcher_SoulVortex_02" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="FirstImpact" Name="U_CommonVFX.Impact_Ground.Physical_01_Blue_3M" Offset="0,0,0" Direction="0,0,1" Scale="0.83" />
+      <Particle Key="Indicator" Name="U_Monster.Butcher.Indicator_6M" Offset="0,0,0" Direction="0,0,1" Scale="0.58" />
+      <Particle Key="Channeling" Name="U_Monster.Butcher.Impact_Gain_01" Offset="0,0,0" Direction="0,1,0" Scale="0.58" />
+      <Particle Key="SecondImpact" Name="U_Monster.Tomb_Bearer.Soul_Impact" Offset="0,0,0" Direction="0,0,1" Scale="0.58" />
+    </ParticleList>
+    <SkillSpecific ChannelingVFXTTL="1.15" SlashDamageInPercentOfVortexDamage="10" SlashDamageType="physical" />
+    <SoundTrigger OnAnimCast="" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_hunt_butcher_soulvortex" ESkill="AI_coss_butcher_soulvortex" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="4.82" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01_Weapon_Particle5" />
+    <Shapes>
+      <Entry ShapeName="Hunt_Butcher_SoulVortex_01" />
+      <Entry ShapeName="Hunt_Butcher_SoulVortex_02" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="FirstImpact" Name="U_CommonVFX.Impact_Ground.Physical_01_Blue_3M" Offset="0,0,0" Direction="0,0,1" Scale="1." />
+      <Particle Key="Indicator" Name="U_Monster.Butcher.Indicator_6M" Offset="0,0,0" Direction="0,0,1" Scale="1.2" />
+      <Particle Key="Channeling" Name="U_Monster.Butcher.Impact_Gain_01" Offset="0,0,0" Direction="0,1,0" Scale="1.2" />
+      <Particle Key="SecondImpact" Name="U_Monster.Tomb_Bearer.Soul_Impact" Offset="0,0,0" Direction="0,0,1" Scale="1.2" />
+    </ParticleList>
+    <SkillSpecific ChannelingVFXTTL="1.15" SlashDamageInPercentOfVortexDamage="10" SlashDamageType="physical" />
+    <SoundTrigger OnAnimCast="" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

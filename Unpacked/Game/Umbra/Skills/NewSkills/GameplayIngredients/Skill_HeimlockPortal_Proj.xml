@@ -1,0 +1,48 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill" UID="HeimlockPortal_Proj_01">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="10" />
+    <SoundTrigger />
+    <Projectile Name="HeimlockPortal_proj_01" ProjectileCount="2" PenetrationLimit="0">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="210" totalAngleAtDistanceMax="40" projectileAngleAtDistanceMin="360" projectileAngleAtDistanceMax="360" />
+    </Projectile>
+    <Range AttackRange="40" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.5" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="1" MaxZOffset="3" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill" UID="HeimlockPortal_Proj_02">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="15" />
+    <SoundTrigger />
+    <Projectile Name="HeimlockPortal_proj_01" ProjectileCount="3" PenetrationLimit="0">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="210" totalAngleAtDistanceMax="40" projectileAngleAtDistanceMin="360" projectileAngleAtDistanceMax="360" />
+    </Projectile>
+    <Range AttackRange="40" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.5" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="1" MaxZOffset="3" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill" UID="HeimlockPortal_Proj_03">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="20" />
+    <SoundTrigger />
+    <Projectile Name="HeimlockPortal_proj_01" ProjectileCount="5" PenetrationLimit="0">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="210" totalAngleAtDistanceMax="40" projectileAngleAtDistanceMin="360" projectileAngleAtDistanceMax="360" />
+    </Projectile>
+    <IsIgnoredBySafeZoneGPIPreset SafeZoneGroupNames="heimlock_safezone" />
+    <Range AttackRange="40" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.5" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="1" MaxZOffset="3" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

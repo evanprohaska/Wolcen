@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill UID="AI_COSS_Mystagogue_Summon" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnAnimStart="Play_COSS_Mystagogue_Summon" />
+    <Particles ParticleName="U_Monster_Alt.cultist_fury.monster_spawn" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="15.0" />
+    <Summoning MaxSummons="3" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="5" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_Mystagogue" />
+    </Summoning>
+  </Skill>
+</MetaData>

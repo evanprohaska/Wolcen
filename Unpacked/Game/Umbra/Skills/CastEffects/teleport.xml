@@ -1,0 +1,15 @@
+<MetaData>
+  <CastEffect Name="teleport">
+    <Param Type="Particle" ParticleName="OnCast.teleport.start" Scale="1" Offset="0,0,0" Direction="1,0,0" BonePos="" Target="ground" NoUpdate="1" />
+  </CastEffect>
+  <CastEffect Name="teleport_trigger">
+    <Param Type="Particle" ParticleName="OnCast.teleport.end" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="" Target="ground" NoUpdate="1" />
+  </CastEffect>
+  <CastEffect Name="teleport_trigger2" />
+  <CastEffect Name="teleport_ai">
+    <Param Type="Arc" From="Pos" To="Bip01 Look" OffsetFrom="0,0,15" OffsetTo="0,0,0" ArcLifeTime="0.15" ArcPreset="MagneticStrike_Short" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0" />
+  </CastEffect>
+  <CastEffect Name="teleport_trigger_ai">
+    <Param Type="Arc" From="Pos" To="Bip01 Look" OffsetFrom="0,0,15" OffsetTo="0,0,0" ArcLifeTime="0.15" ArcPreset="MagneticStrike_Short" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0" />
+  </CastEffect>
+</MetaData>

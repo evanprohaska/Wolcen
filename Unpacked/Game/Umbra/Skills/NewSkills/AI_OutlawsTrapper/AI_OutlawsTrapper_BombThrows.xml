@@ -1,0 +1,180 @@
+<MetaData>
+  <Skill UID="AI_outlaw_trapper_singlebombthrow_fire" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTurnRate="360" CanBeInterrupted="0" MaximumTargetingHalfAngle="30" />
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_singlebombfire_proj" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="2.5" />
+    <Range ProjectileMinDistance="4" AttackRange="15" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="Play_Trapper_Bomb_Throw_Short" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outlaw_trapper_singlebombthrow_stun" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTurnRate="360" CanBeInterrupted="0" MaximumTargetingHalfAngle="30" />
+    <DamageWeapon WeaponMultiplier=".1" />
+    <StatusAilment>
+      <stun Chance="100" ChanceMode="override" Duration="0.5" DurationMode="override" />
+    </StatusAilment>
+    <StatusEffect_MovementSpeed SlowPercent="50" Duration="4" />
+    <Cooldown Cooldown="8.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_singlebombstun_proj" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="2.5" />
+    <Range ProjectileMinDistance="4" AttackRange="13" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="Play_Trapper_Bomb_Throw_Short" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outw_trapper_carpetmines" ESkill="AI_outw_trapper_carpetmines" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="10" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="bomb04" CasterImmobilizationTime="0.33" MaximumTurnRate="360" MaximumTargetingHalfAngle="17" CanBeInterrupted="0" />
+    <Cooldown Cooldown="15" />
+    <DamageWeapon Type="fire" WeaponMultiplier="3.6" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_carpetbombing_proj" ProjectileCount="3" AngleBetweenProjectiles="33" MaxBounceCount="2" BounceFallback="5" />
+    <Targeting TargetingType="target" ComputeTargetPosAtCast="0" />
+    <Range ProjectileMinDistance="4" AttackRange="13" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="3" />
+    <Traps Name="trap_outlaw_trapper_carpetmines" />
+    <ParticleList>
+      <Particle Key="Mine" Name="U_Projectile.Bomb.Bomb_Trapper_03" Direction="0,0,1" />
+      <Particle Key="Explosion" Name="U_Monster.Trapper.Explosion_Bomb_01_Fire_3m_Secondary" Direction="0,0,1" />
+    </ParticleList>
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="PLAY_AI_Trapper_BombThrow" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outlaw_trapper_singlebombthrow_sacred" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTurnRate="360" CanBeInterrupted="0" MaximumTargetingHalfAngle="30" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_singlebombsacred_proj" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="2" />
+    <Range ProjectileMinDistance="4" AttackRange="13" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="Play_Trapper_Bomb_Throw_Short" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outlaw_trapper_singlebombthrow_aether" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTurnRate="360" CanBeInterrupted="0" MaximumTargetingHalfAngle="30" />
+    <DamageWeapon Type="Umbra" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_singlebombaether_proj" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="2" />
+    <Range ProjectileMinDistance="4" AttackRange="13" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="Play_Trapper_Bomb_Throw_Short" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outw_trapper_carpetmines_sacred" ESkill="AI_outw_trapper_carpetmines" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="10" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="bomb04" CasterImmobilizationTime="0.33" MaximumTurnRate="360" MaximumTargetingHalfAngle="17" CanBeInterrupted="0" />
+    <Cooldown Cooldown="10.0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_carpetbombing_S_proj" ProjectileCount="3" AngleBetweenProjectiles="33" MaxBounceCount="2" BounceFallback="5" />
+    <Targeting TargetingType="target" ComputeTargetPosAtCast="0" />
+    <Range ProjectileMinDistance="4" AttackRange="13" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="1.5" />
+    <Traps Name="trap_outlaw_trapper_sacred_carpetmines" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="PLAY_AI_Trapper_BombThrow" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outw_trapper_carpetmines_aether" ESkill="AI_outw_trapper_carpetmines" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="10" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="bomb04" CasterImmobilizationTime="0.33" MaximumTurnRate="360" MaximumTargetingHalfAngle="17" CanBeInterrupted="0" />
+    <Cooldown Cooldown="10.0" />
+    <DamageWeapon Type="Umbra" WeaponMultiplier="1.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_carpet_aether" ProjectileCount="3" AngleBetweenProjectiles="33" MaxBounceCount="2" BounceFallback="5" />
+    <Targeting TargetingType="target" ComputeTargetPosAtCast="0" />
+    <Range ProjectileMinDistance="4" AttackRange="13" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="1.5" />
+    <Traps Name="trap_outlaw_trapper_Aether_carpetmines" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="PLAY_AI_Trapper_BombThrow" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outlaw_trapper_singlebombthrow_frost" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTurnRate="360" CanBeInterrupted="0" MaximumTargetingHalfAngle="30" />
+    <DamageWeapon Type="Frost" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_singlebombfrost_proj" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="2" />
+    <Range ProjectileMinDistance="4" AttackRange="13" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="Play_Trapper_Bomb_Throw_Short" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outlaw_trapper_singlebombthrow_shadow" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTurnRate="360" CanBeInterrupted="0" MaximumTargetingHalfAngle="30" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_singlebombshadow_proj" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="2" />
+    <Range ProjectileMinDistance="4" AttackRange="13" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="Play_Trapper_Bomb_Throw_Short" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outw_trapper_carpetmines_frost" ESkill="AI_outw_trapper_carpetmines" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="10" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="bomb04" CasterImmobilizationTime="0.33" MaximumTurnRate="360" MaximumTargetingHalfAngle="17" CanBeInterrupted="0" />
+    <Cooldown Cooldown="10.0" />
+    <DamageWeapon Type="Frost" WeaponMultiplier="1.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_carpetbombing_f_proj" ProjectileCount="3" AngleBetweenProjectiles="33" MaxBounceCount="2" BounceFallback="5" />
+    <Targeting TargetingType="target" ComputeTargetPosAtCast="0" />
+    <Range ProjectileMinDistance="4" AttackRange="13" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="1.5" />
+    <Traps Name="trap_outlaw_trapper_frost_carpetmines" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="PLAY_AI_Trapper_BombThrow" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outw_trapper_carpetmines_shadow" ESkill="AI_outw_trapper_carpetmines" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="10" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="bomb04" CasterImmobilizationTime="0.33" MaximumTurnRate="360" MaximumTargetingHalfAngle="17" CanBeInterrupted="0" />
+    <Cooldown Cooldown="10.0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="1.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_trapper_carpetbombing_shadow_proj" ProjectileCount="3" AngleBetweenProjectiles="33" MaxBounceCount="2" BounceFallback="5" />
+    <Targeting TargetingType="target" ComputeTargetPosAtCast="0" />
+    <Range ProjectileMinDistance="4" AttackRange="13" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="1.5" />
+    <Traps Name="trap_outlaw_trapper_S_carpetmines" />
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="PLAY_AI_Trapper_BombThrow" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

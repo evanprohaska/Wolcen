@@ -1,0 +1,18 @@
+<MetaData>
+  <Quest Name="test_pec" StartDialog="" Type="Secondary" UIName="@ui_SvriirCoast" UIDesc="@ui_LeaveTheSvriirCoast">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <GoalLogic Formula="00" />
+      <Goal Order="0" Type="Impossible" />
+      <Event Name="apply_tag_1" Trigger="GoalStart" GoalIndex="0" Delay="0" Type="CGApplyTag" PriorityTag="OTWSBW" ExcludeTag="SvriirLair,dummy" RemovePriorityTag="" RemoveExcludeTag="" AffectSecondaryAreaCG="1" CleanPreviousEvents="0" />
+      <Event Name="apply_tag_2" Trigger="GoalStart" GoalIndex="0" Delay="1" Type="CGApplyTag" PriorityTag="" ExcludeTag="" RemovePriorityTag="" RemoveExcludeTag="dummy" AffectSecondaryAreaCG="1" CleanPreviousEvents="0" />
+      <Event Name="unapply_tag_2" Trigger="GoalFailure" GoalIndex="0" Delay="0" Type="CGUnapplyTag" CGApplyTagEventName="apply_tag_2" />
+      <Event Name="unapply_tag_1" Trigger="GoalFailure" GoalIndex="0" Delay="0" Type="CGUnapplyTag" CGApplyTagEventName="apply_tag_1" />
+      <Event Name="apply_kw_1" Trigger="GoalStart" GoalIndex="0" Delay="2" Type="ApplyKeyword" EnableKeywords="enable_1,enable_2" DisableKeywords="disable_1,disable_2" ResetKeywords="" AffectSecondaryAreaManager="1" CleanPreviousEvents="0" />
+      <Event Name="apply_kw_2" Trigger="GoalStart" GoalIndex="0" Delay="3" Type="ApplyKeyword" EnableKeywords="" DisableKeywords="" ResetKeywords="enable_2,disable_2" AffectSecondaryAreaManager="1" CleanPreviousEvents="0" />
+      <Event Name="apply_kw_3" Trigger="GoalStart" GoalIndex="0" Delay="4" Type="ApplyKeyword" EnableKeywords="svriir" DisableKeywords="cellar,disable" ResetKeywords="" AffectSecondaryAreaManager="1" CleanPreviousEvents="0" />
+      <Event Name="unapply_kw_3" Trigger="GoalFailure" GoalIndex="0" Delay="0" Type="UnapplyKeyword" ApplyKeywordEventName="apply_kw_3" />
+      <Event Name="unapply_kw_2" Trigger="GoalFailure" GoalIndex="0" Delay="0" Type="UnapplyKeyword" ApplyKeywordEventName="apply_kw_2" />
+      <Event Name="unapply_kw_1" Trigger="GoalFailure" GoalIndex="0" Delay="0" Type="UnapplyKeyword" ApplyKeywordEventName="apply_kw_1" />
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,134 @@
+<MetaData>
+  <ArenaWaves Name="ArenaWaves_WM_E_SVRIWS_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWS_SeaSwarmcrawler" NumberOfEntitiesPerSpawn="10" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWS_Pleuzoan" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWS_Pleuzoan_Melee" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWS_SnakeDesert" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWS_SeaOmegaFemale" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SWS_SeaBetaSpitter" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="36" TargetSpawnClass="Sc_WM_E_SWS_SeaSwarmcrawler" NumberOfEntitiesPerSpawn="12" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="20" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWS_Pleuzoan" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWS_Pleuzoan_Melee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWS_SnakeDesert" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_E_SWS_SeaOmegaFemale" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWS_SeaBetaSpitter" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_SWS_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="33" TargetSpawnClass="Sc_WM_E_SWS_SeaSwarmcrawler" NumberOfEntitiesPerSpawn="11" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="19" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWS_Pleuzoan" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWS_Pleuzoan_Melee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWS_SnakeDesert" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_E_SWS_SeaOmegaFemale" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWS_SeaBetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SWS_SeaBetaScreecher" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_SWS_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_M_SVRIWS_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWS_SeaSwarmcrawler" NumberOfEntitiesPerSpawn="10" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWS_Pleuzoan" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWS_Pleuzoan_Melee" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWS_SnakeDesert" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWS_SeaOmegaFemale" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SWS_SeaBetaSpitter" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="36" TargetSpawnClass="Sc_WM_M_SWS_SeaSwarmcrawler" NumberOfEntitiesPerSpawn="12" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="20" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWS_Pleuzoan" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWS_Pleuzoan_Melee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWS_SnakeDesert" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_M_SWS_SeaOmegaFemale" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWS_SeaBetaSpitter" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_SWS_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="33" TargetSpawnClass="Sc_WM_M_SWS_SeaSwarmcrawler" NumberOfEntitiesPerSpawn="11" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="19" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWS_Pleuzoan" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWS_Pleuzoan_Melee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWS_SnakeDesert" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_M_SWS_SeaOmegaFemale" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWS_SeaBetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SWS_SeaBetaScreecher" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_SWS_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_H_SVRIWS_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWS_SeaSwarmcrawler" NumberOfEntitiesPerSpawn="10" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWS_Pleuzoan" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWS_Pleuzoan_Melee" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWS_SnakeDesert" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWS_SeaOmegaFemale" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SWS_SeaBetaSpitter" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="36" TargetSpawnClass="Sc_WM_H_SWS_SeaSwarmcrawler" NumberOfEntitiesPerSpawn="12" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="20" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWS_Pleuzoan" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWS_Pleuzoan_Melee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWS_SnakeDesert" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_H_SWS_SeaOmegaFemale" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWS_SeaBetaSpitter" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_SWS_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlphaPoison" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="33" TargetSpawnClass="Sc_WM_H_SWS_SeaSwarmcrawler" NumberOfEntitiesPerSpawn="11" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="19" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWS_Pleuzoan" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWS_Pleuzoan_Melee" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWS_SnakeDesert" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_H_SWS_SeaOmegaFemale" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWS_SeaBetaSpawner" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SWS_SeaBetaScreecher" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_SWS_AlphaPoison" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

@@ -1,0 +1,265 @@
+<MetaData>
+  <LevelSheet Name="GameplayArea_Intro0" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="Qp_Intro_SpawnPointIntroduction1" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_StoryMode_Act1_WreckCoast" />
+    <EntityManager Name="EM_StoryMode_Act1_WreckCoast" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-45" />
+    <HUD UIName="" />
+  </LevelSheet>
+  <LevelSheet Name="GameplayArea_Intro1" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="Qp_Intro_SpawnPointIntroduction1" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_StoryMode_Act1_WreckCoast" />
+    <EntityManager Name="EM_StoryMode_Act1_WreckCoast" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="135" />
+    <HUD UIName="" />
+  </LevelSheet>
+  <LevelSheet Name="GameplayArea_Intro2" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="Qp_Intro_SpawnPointIntroduction2" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_StoryMode_Act1_WreckCoast" />
+    <EntityManager Name="EM_StoryMode_Act1_WreckCoast" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="135" />
+    <HUD UIName="" />
+  </LevelSheet>
+  <LevelSheet Name="GameplayArea_Intro3" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="Qp_Intro_SpawnPointIntroduction3" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_StoryMode_Act1_WreckCoast" />
+    <EntityManager Name="EM_StoryMode_Act1_WreckCoast" />
+    <EnvironmentVisualVariations Choices="0" />
+    <CameraVariations Angles="-135" />
+    <HUD UIName="" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_SvriirCave" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_StoryMode_Act1_WreckCoast" />
+    <EntityManager Name="EM_StoryMode_Act1_WreckCoast" />
+    <EnvironmentVisualVariations Choices="0" />
+    <HUD UIName="@ui_act_1_coast_of_wrecks_name" />
+    <EnemiesLevel Min="1" Max="3" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Highlands" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_StoryMode_Act1_Highlands" />
+    <EntityManager Name="EM_StoryMode_Act1_Highlands" />
+    <EnvironmentVisualVariations Choices="0" />
+    <HUD UIName="@ui_act_1_highlands_name" />
+    <EnemiesLevel Min="1" Max="3" />
+  </LevelSheet>
+  <LevelSheet Name="Stormfall" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_stormfall_name" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Farmstead" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_StoryMode_Act1_Farmlands" />
+    <EntityManager Name="EM_StoryMode_Act1_Farmlands" />
+    <EnvironmentVisualVariations Choices="2" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Farmstead" />
+    <HUD UIName="@ui_act_1_stormfall_farmlands_name" />
+    <EnemiesLevel Min="2" Max="10" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Svriir_Network_1" GameMode="campaign" Type="random_dungeon">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_svriir_network_1_name" />
+    <MonsterManager Name="MM_StoryMode_Act1_SvriirsNetwork1" />
+    <EntityManager Name="EM_StoryMode_Act1_SvriirsNetwork1" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_SvriirLair" />
+    <EnemiesLevel Min="5" Max="8" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Svriir_Tribute_Storage" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_SvriirLair" />
+    <HUD UIName="@ui_act_1_svriir_tributes_storage_name" />
+    <EnemiesLevel Min="5" Max="8" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Republic_Camp" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <EnvironmentVisualVariations Choices="2" />
+    <HUD UIName="@ui_act1_republic_camp_name" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Svriir_Network_2" GameMode="campaign" Type="random_dungeon">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_StoryMode_Act1_SvriirsNetwork2" />
+    <EntityManager Name="EM_StoryMode_Act1_SvriirsNetwork2" />
+    <HUD UIName="@ui_act_1_svriir_network_2_name" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_SvriirLair" />
+    <EnemiesLevel Min="6" Max="9" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_BanditOutpost" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_flayer_outpost_name" />
+    <MonsterManager Name="MM_StoryMode_Act1_FlayersOutpost" />
+    <EntityManager Name="EM_StoryMode_Act1_FlayersOutpost" />
+    <EnvironmentVisualVariations Choices="2" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_BanditOutpost" />
+    <EnemiesLevel Min="8" Max="11" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Forest" GameMode="campaign" Type="random_dungeon">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_green_bluffs_name" />
+    <MonsterManager Name="MM_StoryMode_Act1_Forest" />
+    <EntityManager Name="EM_StoryMode_Act1_Forest" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Forest" />
+    <EnemiesLevel Min="9" Max="11" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Smuggler_Path" GameMode="campaign" Type="random_dungeon">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_smuggler_path_name" />
+    <MonsterManager Name="MM_StoryMode_Act1_SmugglersPath" />
+    <EntityManager Name="EM_StoryMode_Act1_SmugglersPath_C1" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_SmugglersPath" />
+    <EnemiesLevel Min="10" Max="12" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_NecropolisPart1" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_necropolis_1_name" />
+    <MonsterManager Name="MM_StoryMode_Act1_Necropolis1" />
+    <EntityManager Name="EM_StoryMode_Act1_Necropolis1" />
+    <EnvironmentVisualVariations Choices="3" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Necropolis" />
+    <EnemiesLevel Min="10" Max="13" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_NecropolisPart2" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_necropolis_3_name" />
+    <MonsterManager Name="MM_StoryMode_Act1_Necropolis2" />
+    <EntityManager Name="EM_StoryMode_Act1_Necropolis2" />
+    <EnvironmentVisualVariations Choices="0" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_Necropolis" />
+    <EnemiesLevel Min="11" Max="15" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_AnankisGate" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_gates_of_anankis_name" />
+    <EnvironmentVisualVariations Choices="0" />
+    <EnemiesLevel Min="13" Max="16" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Anankis_Halls_1" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_anankis_halls_1_name" />
+    <MonsterManager Name="MM_StoryMode_Act1_TPS1" />
+    <EntityManager Name="EM_StoryMode_Act1_TPS1" />
+    <EnvironmentVisualVariations Choices="0" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_TPS" />
+    <EnemiesLevel Min="14" Max="17" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Anankis_Halls_2" GameMode="campaign" Type="random_dungeon">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_anankis_halls_2_name" />
+    <MonsterManager Name="MM_StoryMode_Act1_TPS2" />
+    <EntityManager Name="EM_StoryMode_Act1_TPS2" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_TPS" />
+    <EnemiesLevel Min="15" Max="18" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_AnankisCore" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_anankis_core_name" />
+    <EnvironmentVisualVariations Choices="0" />
+    <EnemiesLevel Min="16" Max="19" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Anankis_Halls_3" GameMode="campaign" Type="random_dungeon">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_StoryMode_Act1_TPS3" />
+    <EntityManager Name="EM_StoryMode_Act1_TPS3" />
+    <HUD UIName="@ui_act_1_anankis_halls_3_name" />
+    <EnemiesLevel Min="17" Max="19" />
+    <SecondaryContentGenerator Name="CG_SC_StoryMode_TPS" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_TemplarCamp" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_ravaged_camp_name" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_SirkisArena" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_sirkiss_lair_name" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Palace" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_palace_name" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Tavern" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_tavern_name" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_AnankisCoreOverlook" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_anankis_core_overlook_name" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_AnankisCoreOverlook2" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <HUD UIName="@ui_act_1_anankis_core_overlook_2_name" />
+    <EnvironmentVisualVariations Choices="0" />
+  </LevelSheet>
+  <LevelSheet Name="ACT1_Farmstead_Hornet_Lair" GameMode="campaign" Type="fixed_level">
+    <PlayerSpawnPoints>
+      <Entry EntityName="SpawnPoint_underTerrainRecover" />
+    </PlayerSpawnPoints>
+    <MonsterManager Name="MM_StoryMode_Act1_HiddenBossArea" />
+    <HUD UIName="@ui_act_1_farmstead_hornet_lair_name" />
+    <EnvironmentVisualVariations Choices="0" />
+    <EnemiesLevel Min="1" Max="20" />
+  </LevelSheet>
+</MetaData>

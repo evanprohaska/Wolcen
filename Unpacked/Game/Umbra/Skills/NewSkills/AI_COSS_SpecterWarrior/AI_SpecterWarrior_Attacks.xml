@@ -1,0 +1,53 @@
+<MetaData>
+  <Skill UID="AI_SpecterWarrior_DefaultAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.4" />
+    <Cooldown Cooldown="2.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 R Hand" />
+    <Projectile Name="COSS_SpecterWarrior_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_COSS_SpecterWarrior_Default_Attack_PreAttack" OnHit="Play_COSS_SpecterWarrior_Default_Attack_Impact" OnAnimCast="Play_COSS_SpecterWarrior_Default_Attack" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_SpecterWarrior_WormholeStab" ESkill="AI_Default_DamageZone" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Range AttackRange="15" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.6" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="COSS_SpecterWarrior.WormholeStab.Indicator" Offset="0,0,0" Direction="0,0,1" Delay="0" />
+      <Particle Key="OnSpawn" Name="COSS_SpecterWarrior.WormholeStab.AoE" Offset="0,0,0" Direction="0,0,1" Delay="1" />
+      <Particle Key="DamageZone" Name="COSS_SpecterWarrior.WormholeStab.AoE" Offset="0,0,-50" Direction="0,1,0" Delay="1" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="7" />
+    <SoundTrigger OnAnimStart="Play_COSS_SpecterWarrior_WormholeStab_PreCast" OnAnimCast="" OnHit="Play_COSS_SpecterWarrior_WormholeStab_Impact" PlayAttackVoice="1" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="SpecterWarrior_WormholeStab_Shape" />
+    </Shapes>
+    <DamageZone RateOfFire="0.5" Duration="1.5" />
+  </Skill>
+  <Skill UID="AI_SpecterWarrior_WeaponThrow" ESkill="AI_COSS_SpecterWarrior_WeaponThrow" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithSpellCastingSpeed="1" />
+    <Projectile Name="COSS_SpecterWarrior_ProjInvisible" ProjectileCount="1" PenetrationLimit="100" />
+    <CastingParams CanBeInterrupted="0" />
+    <Range AttackRange="15" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.6" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Projectile" Name="COSS_SpecterWarrior.WeaponThrow.Projectile" Offset="0,0,2" Direction="-1,0,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Explosion1" Name="COSS_SpecterWarrior.WeaponThrow.Impact" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="Explosion2" Name="COSS_SpecterWarrior.WeaponThrow.ImpactBig" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Frost" Offset="0,0,1.5" Direction="0,0,1" Scale="2" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="7" />
+    <SoundTrigger OnAnimStart="Play_COSS_SpecterWarrior_WeaponThrow_PreThrow" OnAnimCast="Play_COSS_SpecterWarrior_WeaponThrow" OnHit="Play_COSS_SpecterWarrior_WeaponThrow_Impact" PlayAttackVoice="1" />
+    <Shapes>
+      <Entry Key="Shape0" ShapeName="SpecterWarrior_WeaponThrow_ShapeImpact" />
+      <Entry Key="Shape1" ShapeName="SpecterWarrior_WeaponThrow_ShapeExplosion" />
+    </Shapes>
+    <SkillSpecific UseReorientBetweenStartAndLock="0" TimeToExplode="1.5" ReturnParticleSpeed="20.0" CurveMidHeight="4.0" />
+  </Skill>
+</MetaData>

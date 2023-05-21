@@ -1,0 +1,38 @@
+<MetaData>
+  <Projectile ID="apo_mage_defaultattack_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vOffset="0,0,0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_ApocalypticForm.Mage_ApocalypticFrom.BasicAttack_Projectile_01" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Projectile.Bullet.BullEye_Impact_01_Aether" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="35" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="50" SpeedMin="15" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Launch SoundTriggerName="Play_APO_Mage_DefaultAttack_Projectile_Loop" />
+      <Hit SoundTriggerName="Play_APO_Mage_DefaultAttack_Projectile_Impact" />
+      <Removed SoundTriggerName="Stop_APO_Mage_DefaultAttack_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="apo_mage_mob_defaultattack_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vOffset="0,0,-0.5" vSize="0.5,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel Direction="0,1,0" ParticleName="U_ApocalypticForm.Mage_ApocalypticFrom.BasicAttack_Projectile_01" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Projectile.Bullet.BullEye_Impact_01_Aether" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" MaxTurnRate="600" Rotation="0" Force="1" Randomize="0" MaxLifeTime="5" MaxTravelDistance="20" />
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="600" TimeBeforeHoming="0.2" MaxLifeTime="5" MaxTravelDistance="20" />
+    <Speed Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" SpeedMax="15" SpeedMin="15" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Launch SoundTriggerName="Play_APO_Mage_DefaultAttack_Projectile_Loop" />
+      <Hit SoundTriggerName="Play_APO_Mage_DefaultAttack_Projectile_Impact" />
+      <Removed SoundTriggerName="Stop_APO_Mage_DefaultAttack_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

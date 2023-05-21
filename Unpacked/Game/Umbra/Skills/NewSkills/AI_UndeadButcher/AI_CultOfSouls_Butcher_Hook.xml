@@ -1,0 +1,50 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_butcher_hook" ESkill="AI_cultofsouls_butcher_hook" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" />
+    <CastingParams CastBone="Bip01 L Hand" CanBeInterrupted="0" />
+    <CastingImmunity IgnoreStasisEffect="1" />
+    <DamageWeapon WeaponMultiplier="3.22" />
+    <Cooldown Cooldown="6" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Butcher_HookShape" />
+      <Entry ShapeName="Butcher_HookShape_CleaveAttack" />
+    </Shapes>
+    <AnimationList>
+      <Animation Key="PullFrontwards" ActionString_In="status_pullfrontward_in_01" ActionString_Loop="status_pullfrontward_loop_01" ActionString_Out="status_pullfrontward_out_01" />
+      <Animation Key="PullBackwards" ActionString_In="status_pullbackward_in_01" ActionString_Loop="status_pullbackward_loop_01" ActionString_Out="status_pullbackward_out_01" />
+    </AnimationList>
+    <ParticleList>
+      <Particle Key="Head" Name="U_Monster.Butcher.Skill_Hook_02.Hook_Head_01" Offset="0,0.4,0" Direction="0,1,0" />
+      <Particle Key="Chain" Name="U_Monster.Butcher.Skill_Hook_02.Hook_Chain_01_20M" Offset="0,0.3,0" Direction="0,1,0" />
+      <Particle Key="OnHit" Name="U_CommonVFX.Hook.Hook_Hit_Blood" Offset="0,0,1.5" Direction="0,0,1" />
+      <Particle Key="OnPull" Name="U_CommonVFX.Hook.Hook_follow_Blue_01" Offset="0,0,0" Direction="0,0,1" Bone="Bip01 Spine2" />
+    </ParticleList>
+    <SkillSpecific SpeedForLaunch="24" SpeedForPull="36" NumberOfHooks="6" PiercingHooks="1" ParticleZOffsetFromGround="0.75" OnHookSoundTrigger="PLAY_AI_Butcher_HookImpact" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_hunt_butcher_hook" ESkill="AI_cultofsouls_butcher_hook" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" />
+    <CastingParams CastBone="Bip01 L Hand" CanBeInterrupted="0" />
+    <CastingImmunity IgnoreStasisEffect="1" />
+    <DamageWeapon WeaponMultiplier="3.22" />
+    <Cooldown Cooldown="6" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Butcher_HookShape" />
+      <Entry ShapeName="Butcher_HookShape_CleaveAttack" />
+    </Shapes>
+    <AnimationList>
+      <Animation Key="PullFrontwards" ActionString_In="status_pullfrontward_in_01" ActionString_Loop="status_pullfrontward_loop_01" ActionString_Out="status_pullfrontward_out_01" />
+      <Animation Key="PullBackwards" ActionString_In="status_pullbackward_in_01" ActionString_Loop="status_pullbackward_loop_01" ActionString_Out="status_pullbackward_out_01" />
+    </AnimationList>
+    <ParticleList>
+      <Particle Key="Head" Name="U_Monster.Butcher.Skill_Hook_02.Hook_Head_01" Offset="0,0.4,0" Direction="0,1,0" />
+      <Particle Key="Chain" Name="U_Monster.Butcher.Skill_Hook_02.Hook_Chain_01_20M" Offset="0,0.3,0" Direction="0,1,0" />
+      <Particle Key="OnHit" Name="U_CommonVFX.Hook.Hook_Hit_Blood" Offset="0,0,1.5" Direction="0,0,1" />
+      <Particle Key="OnPull" Name="U_CommonVFX.Hook.Hook_follow_Blue_01" Offset="0,0,0" Direction="0,0,1" Bone="Bip01 Spine2" />
+    </ParticleList>
+    <SkillSpecific SpeedForLaunch="24" SpeedForPull="36" NumberOfHooks="12" PiercingHooks="1" ParticleZOffsetFromGround="0.75" OnHookSoundTrigger="PLAY_AI_Butcher_HookImpact" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,22 @@
+<MetaData>
+  <Skill UID="AI_coss_spiker_deathskill" ESkill="default_ranged" Keywords="deathskill">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1.4" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01 Spear" />
+    <Projectile Name="undeadlancer_spear_proj" ProjectileCount="5" PenetrationLimit="99" AngleBetweenProjectiles="72" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_Spiker_DeathSkill_Explode_Pre" OnAnimCast="Play_Spiker_DeathSkill_Explode" />
+  </Skill>
+  <Skill UID="AI_coss_spiker_deathskill_frost" ESkill="default_ranged" Keywords="deathskill,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.4" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01 Spear" />
+    <Projectile Name="undeadlancer_spear_proj_frost" ProjectileCount="5" PenetrationLimit="99" AngleBetweenProjectiles="72" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_Spiker_DeathSkill_Explode_Pre" OnAnimCast="Play_Spiker_DeathSkill_Explode" />
+  </Skill>
+</MetaData>

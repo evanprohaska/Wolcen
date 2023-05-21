@@ -1,0 +1,9 @@
+<MetaData>
+  <Quest Name="Quest_Lieutenant_Dummy" Type="Adventure" Hidden="1">
+    <Step Order="0" UIName="@B_A2_Q_StepNameLabel1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="5" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="Lieutenant_InitPos" TeleportedEntityName="#Player" DestinationName="stormfall_adventure_rift" MinRadius="0.1" Delay="0.1" />
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,55 @@
+<MetaData>
+  <BaseEntity ID="Hunt_RepublicGenerator" EntityName="cultofflesh_heart" Scale="1" CanKillAllies="0" />
+  <Faction Name="Republic" />
+  <Keywords Value="repu,elite,melee" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="1" />
+  <Attributes Archetype="archetype_elite" HealthModifier="1" DamageModifier="1" XPModifier="1" Protection="" Movable="0" Hookable="0" />
+  <Movement MovementSpeed="0" WalkSpeed="0" />
+  <InterruptionParams InterruptChance="0" />
+  <StunParams IgnoreStunChance="1" />
+  <BlownAwayParams CanBeBlownAway="0" BlownAwayAnimationTag="" />
+  <DefaultBossModifiers>
+    <BossModifier Name="AI_republic_generator_drop" />
+    <BossModifier Name="AI_republic_generator_summons" />
+  </DefaultBossModifiers>
+  <LootClass>
+    <Loot Class="" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="" />
+  <OnDeathLootPreset Name="" />
+  <Corpses PresetName="" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="0" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Motionless" />
+    <BT FleeOnLowHealthChance="0.0" EngageRange="10.0" MeleeAttack="True" FallBack="True" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="Melee" />
+  </Kythera>
+  <Skills />
+  <RandomModel>
+    <ModelChoice Model="objects/animated_object/generator/repu_generator/repu_stronghold_generator.cdf" Weight="1">
+      <ADBChoice ADB="Animations/Mannequin/ADB/Animated_Object/REPU_Generator.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIName_RepublicGenerator" ZIconOffset="2.5" />
+  <Spawn SpawnAnimation="rise_out_ground" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="1" DeathSkill="" CannotBeOverkilled="1" />
+  <GameplayParticles PresetName="size_medium" />
+  <Capsules>
+    <EntityPhysics ColliderSize="1.5,1.5,0.5" IsPushable="0" />
+    <MouseSelection SelectionCapsuleRadius="4" SelectionCapsuleHeight="0" SelectionCapsuleZOffset="-5" />
+    <ProjectileCollision ProjectileCapsuleRadius="4" ProjectileCapsuleHeight="10" CanSnapOnCenterWhenColliding="1" />
+    <VegetationCollision SphereRadius="0.4" SphereZOffset="0.4" />
+    <DummyProxies>
+      <Dummy Rotation="270" Dimensions="5,2,4" Offset="3,0,-1.5" CenterOffset="0,-1.0,0" />
+      <Dummy Rotation="180" Dimensions="4,1.5,4" Offset="0,1,-1.5" CenterOffset="0,-1.0,0" />
+      <Dummy Rotation="90" Dimensions="5,4,4" Offset="-3,0,-1.5" CenterOffset="0,-1.0,0" />
+      <Dummy Rotation="0" Dimensions="4,1.5,4" Offset="0,-1,-1.5" CenterOffset="0,-1.0,0" />
+    </DummyProxies>
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="" OverrideScale="1" />
+  </VisualParams>
+  <Audio AllowGroupSounds="0" SurfaceType="metal" />
+</MetaData>

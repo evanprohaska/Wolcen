@@ -1,0 +1,17 @@
+<MetaData>
+  <Projectile ID="COSS_Skeleton_Caster_Proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.7,0.7,0.7" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Skeleton.Caster_Proj" Direction="0,1,0" WorldSpace="0" Scale="1" PosOffset="0,0.3,0" />
+      <Hit ParticleName="U_Monster.Skeleton.Caster_Proj_Impact" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="10" SpeedMax="10" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_COSS_Skeleton_Caster_DefaultAttack_Loop" />
+      <Hit SoundTriggerName="Play_Hero_TakeDamage_Ice_Medium" />
+      <Removed SoundTriggerName="Stop_COSS_Skeleton_Caster_DefaultAttack_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

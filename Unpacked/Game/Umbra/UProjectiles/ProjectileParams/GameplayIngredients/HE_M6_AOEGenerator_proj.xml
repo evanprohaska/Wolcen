@@ -1,0 +1,36 @@
+<MetaData>
+  <Projectile ID="HE_M6_AOEGenerator_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.AoE.Republic_Lightning_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="1.5" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Republic_Siegebeast_Bombardment_Shower" />
+      <Hit SoundTriggerName="Play_MapModifier_Artillery_Explosion" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="HE_M6_AOEGenerator_Bandit_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.AoEOutlaws_Fire_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="1.5" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Republic_Siegebeast_Bombardment_Shower" />
+      <Hit SoundTriggerName="Play_MapModifier_Artillery_Explosion" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+</MetaData>

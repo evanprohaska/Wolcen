@@ -1,0 +1,35 @@
+<MetaData>
+  <Projectile ID="Homingshadows_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Bossmodifiers.ShadowBacknForth_Projectile_NoVertical" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Character.Skills.Chain_Lightning_Hit_Shadow.Circle_Impact" Direction="0,1,0" WorldSpace="0" Scale="0.5" />
+      <HitEnvironment ParticleName="u_bossmodifiers.shadow_back_forth.ShadowBacknForth_Fade" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="50" TimeBeforeHoming="1" MaxLifeTime="-1" MaxTravelDistance="-1" />
+    <Speed SpeedMin="2" SpeedMax="2" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+    <Audio>
+      <Launch SoundTriggerName="Play_BossModifier_HomingShadow_Proj_Launch" />
+      <Hit SoundTriggerName="Play_BossModifier_HomingShadow_Proj_Impact_Env" />
+      <Removed SoundTriggerName="Stop_BossModifier_HomingShadow_Proj_Lp" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="Shaman_defaultattack_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Bossmodifiers.HomingShadow_Projectile" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Character.Skills.Chain_Lightning_Hit_Shadow.Circle_Impact" Direction="0,1,0" WorldSpace="0" Scale="0.5" />
+      <HitEnvironment ParticleName="u_bossmodifiers.homing_shadows.HomingShadow_Fade" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Homing Type="Homing" MaxTurnRate="50" TimeBeforeHoming="1" MaxLifeTime="-1" MaxTravelDistance="-1" />
+    <Speed SpeedMin="16" SpeedMax="16" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="1" />
+  </Projectile>
+</MetaData>

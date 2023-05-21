@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_REPU_Heimlock02_MultiSlash">
+    <Animation ActionString="monster_skill_03" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="fire" WeaponMultiplier=".6" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <SoundTrigger OnAnimStart="Play_Heimlock_MultiSlash_StartFull" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Heimlock02_Multislash" />
+    </Shapes>
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <DamageZone Duration="3" RateOfFire="0.2" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock_APO.MultiSlash_Projectile_01" Offset="0,0,0" Direction="1,0,0" Scale="1.5" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="2" RandomBaseDistMax="2" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="130" MinLinearSpeed="25" MaxLinearSpeed="-25" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="5" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

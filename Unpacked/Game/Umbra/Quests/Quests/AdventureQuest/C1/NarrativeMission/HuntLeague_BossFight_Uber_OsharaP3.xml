@@ -1,0 +1,13 @@
+<MetaData>
+  <Quest Name="QN_EG_BossFight_UberBoss_OsharaP3" UIName="@ui_EG_UB_Oshara_QuestLabel" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_EG_UB_StepNameLabel_UberOshara" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <Goal Order="1" Type="KillAll" EventsName="M3_SpawnOshara_P3" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Oshara_P3" Area="" VFX="U_Utils.Quest.Objective" VFXOffsetZ="8" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="M3_SpawnOshara_P3" SpawnClass="Sc_CG_UB_OsharaP3_120" TargetEntityName="QP_EG_UB_Oshara_P3" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" FaceAtSpawn="QP_EG_UB_Oshara_P3_Facing" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M3_OsharaP2_CamOn" Delay="1" />
+    </Step>
+  </Quest>
+</MetaData>

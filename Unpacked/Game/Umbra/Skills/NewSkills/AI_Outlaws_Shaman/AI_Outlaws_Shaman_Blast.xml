@@ -1,0 +1,28 @@
+<MetaData>
+  <Skill UID="AI_Outlaws_Shaman_Blast" ESkill="AI_TMPL_Knight_SacredFire" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithCastSpeed="1" />
+    <Cooldown Cooldown="12" CooldownTrigger="OnEnd" />
+    <StatusEffect_MovementSpeed SlowPercent="1000" SlowPercentPerLevel="0" Duration="1" DurationPerLevel="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="3" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone RateOfFire="0.2" Duration="1.9" MaxEntityHits="1" />
+    <Shapes>
+      <Entry Key="DamageZoneShape01" ShapeName="Shaman_Blast_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Outlaw_Shaman_Blast_Start" OnAnimCast="Play_Outlaw_Shaman_Blast_Cast" OnHit="Play_hero_default_damage" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_Named_Shaman_Blast" ESkill="AI_TMPL_Knight_SacredFire" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithCastSpeed="1" />
+    <Cooldown Cooldown="12" CooldownTrigger="OnEnd" />
+    <StatusEffect_MovementSpeed SlowPercent="1000" SlowPercentPerLevel="0" Duration="1" DurationPerLevel="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="3" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone RateOfFire="0.2" Duration="1.9" MaxEntityHits="1" />
+    <Shapes>
+      <Entry Key="DamageZoneShape01" ShapeName="Named_Shaman_Blast_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Outlaw_Shaman_Blast_Start" OnAnimCast="Play_Outlaw_Shaman_Blast_Cast" OnHit="Play_hero_default_damage" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

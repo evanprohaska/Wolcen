@@ -1,0 +1,44 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_Bossmodifier_Meteors">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Burn" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="Bossmod_Meteors_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="0" RandomDir="1" MaxZOffset="20" CastAtTargetPos="1" TargetBone="Bip01" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_hunt_Bossmodifier_Meteors">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Burn" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="Bossmod_Meteors_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="0" RandomDir="1" MaxZOffset="20" CastAtTargetPos="1" TargetBone="Bip01" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_Bossmodifier_Meteors_Lieutenant">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Burn" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="Bossmod_Meteors_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="0" RandomDir="1" MaxZOffset="20" CastAtTargetPos="1" TargetBone="Bip01" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

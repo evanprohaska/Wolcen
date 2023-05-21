@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="AI_CultOfSouls_PrimordialGuardian_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="5.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="PrimordialGuardian_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Primordial_Guardian_SpinAttack" OnHit="Play_Primordial_Guardian_Dash_Impact" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_CultOfSouls_PrimordialGuardian_DefaultAttack_Ranged" ESkill="AI_default_projectileskillwithaoe" Keywords="projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="2" />
+    <Cooldown Cooldown="0.0" />
+    <Explosion ExplosionRadius="4" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" CanBeInterrupted="0" />
+    <Projectile Name="cultofsouls_corruptedprimordialguardian_missileshot" ProjectileCount="1" PenetrationLimit="1" />
+    <SoundTrigger OnAnimStart="Play_Primordial_GuardianCorrupt_Ranged_Fire" OnHit="Play_Primordial_GuardianCorrupt_Ranged_Impact_Hit" PlayAttackVoice="0" />
+    <Targeting TargetingType="target" ComputeTargetPosAtCast="0" />
+    <Collisions IgnoreEntityCollisions="0" />
+    <Range AttackRange="13" />
+  </Skill>
+</MetaData>

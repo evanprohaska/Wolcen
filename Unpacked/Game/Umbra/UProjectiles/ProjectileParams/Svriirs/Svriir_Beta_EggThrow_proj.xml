@@ -1,0 +1,41 @@
+<MetaData>
+  <Projectile ID="svriir_beta_spawner_eggthrow_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Siviir.Spawner_Spawn_Projectile_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Siviir.Spawner_Spawn_Explosion_01" Direction="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_svriir_beta_spawner_eggthrow" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+  </Projectile>
+  <Projectile ID="svriir_beta_spawner_eggthrow_fire_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.svriir_red.spawner_fireproj" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster_Alt.svriir_red.spawner_spawn_explo" Direction="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_svriir_beta_spawner_eggthrow" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+  </Projectile>
+  <Projectile ID="Svriir_GiantSpawner_Eggthrow_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Siviir.Spawner_Spawn_Projectile_01" Direction="0,1,0" WorldSpace="0" Scale="2" />
+      <Hit ParticleName="U_Monster.Siviir.Spawner_Spawn_Explosion_01" Direction="0,0,1" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_svriir_beta_spawner_eggthrow" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+  </Projectile>
+</MetaData>

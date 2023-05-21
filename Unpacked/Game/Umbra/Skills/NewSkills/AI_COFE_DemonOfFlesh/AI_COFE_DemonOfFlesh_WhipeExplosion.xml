@@ -1,0 +1,34 @@
+<MetaData>
+  <Skill UID="AI_cultofflesh_DemonOfFlesh_ExplosionWhipe" ESkill="AI_cultofflesh_DemonOfFlesh_ExplosionWhipe" Keywords="attack_skill">
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="0.6" />
+    <ParticleList>
+      <Particle Key="Spikes" Name="U_Monster_Alt.DemonOfFlesh.whipexplo_sideexplo" Direction="1,0,0" Scale="1" />
+      <Particle Key="Indicator" Name="U_Monster_Alt.DemonOfFlesh.whipexplo_indicator" Direction="-1,0,0" />
+    </ParticleList>
+    <Cooldown Cooldown="15.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SkillSpecific SpikeNumber="5" SpikeRate="0.15" SpikeInterval="1" />
+    <Shapes>
+      <Entry ShapeName="DemonOfFlesh_StraightWhipeAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="" OnHit="Play_Halfbreed_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_hunt_DemonOfFlesh_ExplosionWhipe" ESkill="AI_cultofflesh_DemonOfFlesh_ExplosionWhipe" Keywords="attack_skill">
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="0.9" />
+    <ParticleList>
+      <Particle Key="Spikes" Name="U_Monster_Alt.DemonOfFlesh.whipexplo_sideexplo" Direction="1,0,0" Scale="1.5" />
+      <Particle Key="Indicator" Name="U_Monster_Alt.DemonOfFlesh.whipexplo_indicator" Direction="-1,0,0" Scale="1.5" />
+    </ParticleList>
+    <Cooldown Cooldown="15.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SkillSpecific SpikeNumber="6" SpikeRate="0.15" SpikeInterval="1" />
+    <Shapes>
+      <Entry ShapeName="Hunt_DemonOfFlesh_StraightWhipeAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="" OnHit="Play_Halfbreed_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

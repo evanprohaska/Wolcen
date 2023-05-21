@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_REPU_Heimlock01_Meteor" ESkill="AI_Default_GenericProjectiles" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_05" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <SoundTrigger OnAnimStart="Play_Heimlock_Meteor_Summon" />
+    <Explosion ExplosionRadius="4" />
+    <Projectile Name="heimlock_01_meteor" ProjectileCount="5" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="2" distanceMax="7" totalAngleAtDistanceMin="120" totalAngleAtDistanceMax="120" projectileAngleAtDistanceMin="45" projectileAngleAtDistanceMax="10" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <IsIgnoredBySafeZoneGPIPreset SafeZoneGroupNames="heimlock_safezone" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="1.5" CastMode="FromSky" KillProjsOnCasterDeath="1">
+      <CastAttributes OnTarget="1" StartZOffset="15" AngleFromZAxis="40" ZPadding="0" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

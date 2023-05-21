@@ -1,0 +1,37 @@
+<MetaData>
+  <Trap Name="trap_ahriman_sigil">
+    <Trigger InactivityDelay="1" TriggerDelay="1.5" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="20" MaximumInWorld="10" TriggerOnRemove="0.1" />
+    <States>
+      <Inactive>
+        <Particle Name="U_Monster.Lumbach.Mine_01" Direction="0,1,0" />
+        <Audio Trigger="" />
+      </Inactive>
+      <PreTriggered>
+        <Audio Trigger="Play_Ahriman_Flaming_Sigil_Impact_P2" />
+      </PreTriggered>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_GlueBomb_02_Rend_3m" Direction="0,0,1" />
+        <Audio Trigger="" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_ahriman_sigil2">
+    <Trigger TriggerDelay="1.5" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0.1" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character_02.Vault.Vault_Mine_01" Direction="0,0,1" />
+        <Audio Trigger="" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="" />
+      </PreTriggered>
+      <Triggered>
+        <Audio Trigger="" />
+      </Triggered>
+    </States>
+  </Trap>
+</MetaData>

@@ -1,0 +1,167 @@
+<MetaData>
+  <Projectile ID="summon_range_melee_Lightning" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="skill_rangedsummon.RangedSummonProjectiles.Lightning" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Monster_Alt.repu_sniper.aim_proj_impact" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Summoned_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Summoned_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Summoned_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_range_melee_Shadow" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="skill_rangedsummon.RangedSummonProjectiles.Shadow" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Shadow" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Summoned_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Summoned_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Summoned_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_range_melee_Rend" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="skill_rangedsummon.RangedSummonProjectiles.Rend" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Rend" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Summoned_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Summoned_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Summoned_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_range_melee_Poison" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="skill_rangedsummon.RangedSummonProjectiles.Poison" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Poison" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Summoned_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Summoned_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Summoned_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_range_melee_Sacred" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="skill_rangedsummon.RangedSummonProjectiles.Sacred" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Sacred" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Summoned_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Summoned_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Summoned_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_range_melee_explosive_Lightning" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Sniper.Projectile_01_Lightning" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Monster_Alt.repu_sniper.aim_proj_impact" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Summoned_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Summoned_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Summoned_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_range_melee_explosive_Shadow" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="skill_rangedsummon.RangedSummonProjectiles.Shadow" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Shadow" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Summoned_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Summoned_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Summoned_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_range_melee_explosive_Rend" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="skill_rangedsummon.RangedSummonProjectiles.Rend" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Rend" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Summoned_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Summoned_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Summoned_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_range_melee_explosive_Poison" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="skill_rangedsummon.RangedSummonProjectiles.Poison" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Poison" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Summoned_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Summoned_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Summoned_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="summon_range_melee_explosive_Sacred" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="skill_rangedsummon.RangedSummonProjectiles.Sacred" Scale="0.75" Direction="0,0,1" WorldSpace="0" />
+      <Hit ParticleName="U_Character_02.Summon.Projectile_Explosion_01_Sacred" Scale="1" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <Explosion>
+      <param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Summoned_Sniper_Projectile_Hit" />
+      <Launch SoundTriggerName="Play_Summoned_Sniper_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_Summoned_Sniper_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

@@ -1,0 +1,41 @@
+<MetaData>
+  <Skill ESkill="AI_undeadlancer_spearthrow" Keywords="attack_skill,projectile" UID="AI_undeadlancer_spearthrow">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="rend" WeaponMultiplier="2" />
+    <CastingParams MaximumTurnRate="360" CastBone="Bip01 Spine" CasterImmobilizationTime="1" MaximumTargetingHalfAngle="10" CanBeInterrupted="0" />
+    <Cooldown Cooldown="0.5" />
+    <Projectile Name="undeadlancer_spear_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <StatusAilment>
+      <bleed Chance="100" ChanceMode="override" Duration="3" DurationMode="override" />
+    </StatusAilment>
+    <Particles ParticleName="U_Monster.Spiker.Spiker_Blood_01" />
+    <SkillSpecific ParticleTimeToLive="5" BlowAwayDistanceThreshold="5" UseReorientBetweenStartAndLock="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+  </Skill>
+  <Skill ESkill="AI_undeadlancer_spearthrow" Keywords="attack_skill,projectile" UID="AI_named_spiker_spearthrow">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="rend" WeaponMultiplier="2" />
+    <CastingParams MaximumTurnRate="360" CastBone="Bip01 Spine" CasterImmobilizationTime="1" MaximumTargetingHalfAngle="10" CanBeInterrupted="0" />
+    <Cooldown Cooldown="0.5" />
+    <Projectile Name="named_spiker_spear_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <StatusAilment>
+      <bleed Chance="100" ChanceMode="override" Duration="3" DurationMode="override" />
+    </StatusAilment>
+    <Particles ParticleName="U_Monster.Spiker.Spiker_Blood_01" />
+    <SkillSpecific ParticleTimeToLive="5" BlowAwayDistanceThreshold="5" UseReorientBetweenStartAndLock="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+  </Skill>
+  <Skill ESkill="AI_undeadlancer_spearthrow" Keywords="attack_skill,projectile" UID="AI_undeadlancer_spearthrow_frost">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="2" />
+    <CastingParams MaximumTurnRate="360" CastBone="Bip01 Spine" CasterImmobilizationTime="1" MaximumTargetingHalfAngle="10" CanBeInterrupted="0" />
+    <Cooldown Cooldown="0.5" />
+    <Projectile Name="undeadlancer_spear_proj_frost" ProjectileCount="1" PenetrationLimit="999" />
+    <StatusAilment>
+      <freeze Chance="100" ChanceMode="override" Duration="1" DurationMode="override" />
+    </StatusAilment>
+    <Particles ParticleName="U_Monster.Spiker.Spiker_Blood_01_frost" />
+    <SkillSpecific ParticleTimeToLive="5" BlowAwayDistanceThreshold="5" UseReorientBetweenStartAndLock="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+  </Skill>
+</MetaData>

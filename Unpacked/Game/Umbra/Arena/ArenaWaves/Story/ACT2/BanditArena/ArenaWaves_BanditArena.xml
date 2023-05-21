@@ -1,0 +1,78 @@
+<MetaData>
+  <ArenaWaves Name="BanditArena">
+    <Wave Type="Killtarget" Tag="1">
+      <PrefabParams PrefabName="arena_BanditArena" />
+      <KillTargets>
+        <Entry ClassName="OutlawsDenMaster" Amount="1" />
+      </KillTargets>
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="once" TargetSpawnClass="Sc_MercyArena_DenMaster" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill_forever" TargetSpawnClass="Sc_MercyArena_Spitter" NumberOfEntitiesPerSpawn="1" SpawnFrequency="6" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="4" TargetSpawnLocationID="-2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="clearwave" Tag="2">
+      <PrefabParams PrefabName="arena_BanditArena" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" TargetSpawnClass="Sc_MercyArena_Shaman" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="once" TargetSpawnClass="Sc_MercyArena_SpecterAether" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="9" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="once" TargetSpawnClass="Sc_MercyArena_SpecterShadow" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="10" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="clearwave" Tag="3">
+      <PrefabParams PrefabName="arena_BanditArena" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="once" TargetSpawnClass="Sc_MercyArena_Scorpion" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="once" TargetSpawnClass="Sc_MercyArena_Scorpion" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="once" TargetSpawnClass="Sc_MercyArena_Scorpion" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="9" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="once" TargetSpawnClass="Sc_MercyArena_Scorpion" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="10" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="once" TargetSpawnClass="Sc_MercyArena_Scorpion" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="5" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="once" TargetSpawnClass="Sc_MercyArena_Scorpion" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="6" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="until_time_passed" TargetSpawnClass="Sc_MercyArena_Scorpion" NumberOfEntitiesPerSpawn="1" SpawnFrequency="2" TargetSpawnLocationID="-2" TimeActive="12" />
+        <Spawner DelayBeforeFirstSpawn="3" Type="once" TargetSpawnClass="Sc_MercyArena_Snake" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="once" TargetSpawnClass="Sc_MercyArena_Snake" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="13" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="once" TargetSpawnClass="Sc_MercyArena_Snake" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="10" />
+        <Spawner DelayBeforeFirstSpawn="15" Type="once" TargetSpawnClass="Sc_MercyArena_Snake" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="once" TargetSpawnClass="Sc_MercyArena_SnakeDesert" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="14" />
+        <Spawner DelayBeforeFirstSpawn="11" Type="once" TargetSpawnClass="Sc_MercyArena_SnakeDesert" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="6" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="once" TargetSpawnClass="Sc_MercyArena_SnakeDesert" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="17" Type="once" TargetSpawnClass="Sc_MercyArena_SnakeDesert" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="9" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="clearwave" Tag="4">
+      <PrefabParams PrefabName="arena_BanditArena" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="12" Type="once" TargetSpawnClass="Sc_MercyArena_Trapper" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="once" TargetSpawnClass="Sc_MercyArena_Bandit_Worg" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="5" />
+        <Spawner DelayBeforeFirstSpawn="12" Type="once" TargetSpawnClass="Sc_MercyArena_Bandit_Brute" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="6" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="5">
+      <PrefabParams PrefabName="arena_BanditArena" />
+      <KillTargets>
+        <Entry ClassName="WildBossSpiderRanged" Amount="1" />
+        <Entry ClassName="MercyArena_Assassin" Amount="1" />
+      </KillTargets>
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="16" Type="once" TargetSpawnClass="Sc_MercyArena_AssassinNamed" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="once" TargetSpawnClass="Sc_MercyArena_OUTW_Round4" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="fill_forever" TargetSpawnClass="Sc_MercyArena_WILD_SmallSpider" NumberOfEntitiesPerSpawn="1" SpawnFrequency="1" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="10" TargetSpawnLocationID="-2" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="clearwave" Tag="6">
+      <PrefabParams PrefabName="arena_BanditArena" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="once" TargetSpawnClass="Sc_MercyArena_Bandit_Melee1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="4.5" Type="once" TargetSpawnClass="Sc_MercyArena_Bandit_Melee2" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="once" TargetSpawnClass="Sc_MercyArena_Bandit_Melee3" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="5.5" Type="once" TargetSpawnClass="Sc_MercyArena_Bandit_Melee1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="once" TargetSpawnClass="Sc_MercyArena_Bandit_Melee2" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="4.5" Type="once" TargetSpawnClass="Sc_MercyArena_Bandit_Melee3" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="once" TargetSpawnClass="Sc_MercyArena_Bandit_Melee1" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="5.5" Type="once" TargetSpawnClass="Sc_MercyArena_Bandit_Melee2" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="until_time_passed" TargetSpawnClass="Sc_MercyArena_Bandit_Melee2" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" TargetSpawnLocationID="3" TimeActive="8" />
+        <Spawner DelayBeforeFirstSpawn="8" Type="until_time_passed" TargetSpawnClass="Sc_MercyArena_Bandit_Melee3" NumberOfEntitiesPerSpawn="1" SpawnFrequency="4" TargetSpawnLocationID="4" TimeActive="7" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="until_time_passed" TargetSpawnClass="Sc_MercyArena_Bandit_Ranged" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" TargetSpawnLocationID="-2" TimeActive="11" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

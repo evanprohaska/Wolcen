@@ -1,0 +1,24 @@
+<MetaData>
+  <Shape ID="Warbeast_Charge_Shape" Type="Rectangle">
+    <Data Length="2" Width="4" BoundingBoxHeight="4" />
+    <Position ForwardOffset="2" StartingAngle="0" />
+  </Shape>
+  <Shape ID="Warbeast_DZ_Shape" Type="Circle">
+    <Data Radius="1.5" BoundingBoxHeight="4" />
+  </Shape>
+  <Shape ID="Warbeast_Explosion_Shape" Type="Circle">
+    <Data Radius="7" BoundingBoxHeight="4" />
+  </Shape>
+  <Shape ID="Warbeast_RelentlessRun_Shape" Type="Cone">
+    <Data Radius="3" Angle="180" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Warbeast_DefaultAttack_Shape" Type="Cone">
+    <Data Radius="4" Angle="70" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Warbeast_InfernalCharge_DZ_Shape" Type="Rectangle">
+    <Data Length="4" Width="4" BoundingBoxHeight="4" />
+    <Position ForwardOffset="0" StartingAngle="0" />
+    <Scale Data="Length" Target="14" Duration="0.5" Delay="0" />
+    <Animation MovementDelay="0" MovementSpeed="10" MovementDuration="0.5" RotationDelay="0" RotationAngle="0" RotationDuration="0" SnapToGround="1" />
+  </Shape>
+</MetaData>

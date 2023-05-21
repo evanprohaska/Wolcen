@@ -1,0 +1,34 @@
+<MetaData>
+  <Skill UID="AI_ACT2_Support_Valeria_WarCry" ESkill="AI_republicjusticar03_enragewarcry" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="0" StunDuration="2" />
+    <Shapes>
+      <Entry ShapeName="REPU_Veteran_DamageBuff_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Warcry" Name="U_Character.Skills.Warcry_01" Offset="0,1.5,0" Direction="0,0,1" Scale="1" Delay="0.13" Bone="Bip01" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_ACT2_Support_Valeria_WarCry_passive" Targeting="OnSelf,OnAllies" Duration="10" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimStart="Play_Skill_Valeria_Warcry_Shout" />
+  </Skill>
+  <Skill UID="AI_Hunt_Valeria_WarCry" ESkill="AI_republicjusticar03_enragewarcry" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="REPU_Veteran_DamageBuff_Shape" />
+    </Shapes>
+    <Blownaway Height="0" Distance="0" StunDuration="0" />
+    <ParticleList>
+      <Particle Key="Warcry" Name="U_Character.Skills.Warcry_01" Offset="0,1.5,0" Direction="0,0,1" Scale="1" Delay="0.13" Bone="Bip01" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_ACT2_Support_Valeria_WarCry_passive" Targeting="OnSelf,OnAllies" Duration="10" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimStart="Play_Skill_Valeria_Warcry_Shout" />
+  </Skill>
+</MetaData>

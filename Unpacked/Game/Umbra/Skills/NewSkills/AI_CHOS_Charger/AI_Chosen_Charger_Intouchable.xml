@@ -1,0 +1,13 @@
+<MetaData>
+  <Skill UID="AI_Chosen_Charger_Intouchable" ESkill="BossModifier_Intouchable" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="OnHitShield" Name="U_CommonVFX.Shield.OnHitShield.OnHitShield_Sarisel_Basic" Direction="0,0,1" Bone="Bip01 Spine2" Scale="1.7" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="AI_Chosen_Charger_SummonDamageForward" ESkill="BossModifier_SummonDamageForward" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="OnHitDamage" Name="U_Monster.Charger.Charger_Back_Aura_01_BW_Damage" Offset="0,0.75,0" Direction="0,1,0" Bone="Bip01 Crown02" Scale="1" />
+    </ParticleList>
+    <SkillSpecific DamagePercentDealtOnCloneDeath="10" DamagePercentDealtOnCloneHit="0" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,32 @@
+<MetaData>
+  <Projectile ID="Svriir_Swarmatail_Proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.6,0.6,0.6" vOffset="0,0,1" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Monster.Tadpole_Cave_Projectile_01" PosOffset="0,1,0" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Monster.Tadpole_Cave_Hit_01" PosOffset="0,0,0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Svriir_Swarmtail_Attack_Spit_Projectile_Loop" />
+      <Hit SoundTriggerName="Play_Svriir_Swarmtail_Attack_Spit_Projectile_Impact_Env" />
+      <Removed SoundTriggerName="Stop_Svriir_Swarmtail_Attack_Spit_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="Svriir_Swarmatail_Fire_Proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.6,0.6,0.6" vOffset="0,0,1" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Monster.Tadpole_Fire_Projectile_01" Direction="0,1,0" PosOffset="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Monster.Tadpole_Fire_Hit_01" PosOffset="0,0,0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Svriir_Swarmtail_Fire_Attack_Spit_Projectile_Loop" />
+      <Hit SoundTriggerName="Play_Svriir_Swarmtail_Fire_Attack_Spit_Projectile_Impact_Env" />
+      <Removed SoundTriggerName="Stop_Svriir_Swarmtail_Fire_Attack_Spit_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

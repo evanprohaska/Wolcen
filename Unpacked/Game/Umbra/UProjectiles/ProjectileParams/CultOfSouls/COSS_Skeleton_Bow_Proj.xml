@@ -1,0 +1,16 @@
+<MetaData>
+  <Projectile ID="COSS_Skeleton_Bow_Proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Arrow.Arrow.Arrow_Small_Normal" Direction="0,1,0" WorldSpace="0" PosOffset="-0.25,0.5,0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="12" SpeedMax="12" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="Play_Enemy_Arrow_Impact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+    </Audio>
+  </Projectile>
+</MetaData>

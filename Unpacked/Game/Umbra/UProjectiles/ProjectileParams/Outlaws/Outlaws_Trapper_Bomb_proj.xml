@@ -1,0 +1,208 @@
+<MetaData>
+  <Projectile ID="outlaw_trapper_singlebombfire_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Trapper_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Trapper.Explosion_Bomb_01_Fire_3m" Direction="0,0,1" WorldSpace="1" Scale="1" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="0.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="Play_Trapper_Bomb_Impact" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_singlebombpoison_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Poison_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Trapper.Explosion_Bomb_01_Poison_3m" Direction="0,0,1" Scale="1" WorldSpace="1" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="0.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="Play_Trapper_Bomb_Stun_Explode" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_singlebombshadow_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Shadow_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Trapper.Explosion_Bomb_01_Shadow_3m" Scale="1" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="0.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="Play_Trapper_Bomb_Stun_Explode" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_singlebombstun_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Trapper_01_FlashBang" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Trapper.Explosion_FlashBomb_01_3m" Direction="0,0,1" WorldSpace="1" Scale="1" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="0.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="Play_Trapper_Bomb_Stun_Explode" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_carpetbombing_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Trapper_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Bounce SoundTriggerName="Play_Trapper_Bomb_Collision" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_carpetbombing_S_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Sacred_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Bounce SoundTriggerName="Play_Trapper_Bomb_Collision" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_carpetbombing_shadow_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.trapper.bomb_shadow" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Bounce SoundTriggerName="Play_Trapper_Bomb_Collision" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_singlebombaether_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Aether_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Trapper.Explosion_Bomb_01_Aether_3m" Scale="0.575" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="0.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="Play_Trapper_Bomb_Stun_Explode" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_carpet_aether" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Aether_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="Play_Trapper_Bomb_Stun_Explode" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_carpetbombing_f_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Frost_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="Play_Trapper_Bomb_Stun_Explode" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_singlebombfrost_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Frost_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Trapper.Explosion_Bomb_01_Frost_3m" Scale="1" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="0.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="Play_Trapper_Bomb_Stun_Explode" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="outlaw_trapper_singlebombsacred_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Sacred_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Trapper.Explosion_Bomb_01_Sacred_3m" Scale="1" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="0.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_outlaw_trapper_bomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Trapper_Bomb_Fuse_Loop" />
+      <Hit SoundTriggerName="Play_Trapper_Bomb_Stun_Explode" />
+    </Audio>
+  </Projectile>
+</MetaData>

@@ -1,0 +1,62 @@
+<MetaData>
+  <BaseEntity ID="SkillSummon_Range_Melee_Explosive_Shadow" EntityName="cultofsouls_undead" Scale="1.0" CanKillAllies="0" />
+  <Faction Name="Players" />
+  <Keywords Value="undead,trash,range" />
+  <MinionParams DamageType="shadow" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="90" SpawnWeight="1" CombatPointValueMultiplier="0.9" />
+  <Attributes Archetype="archetype_summons" HealthModifier="0.3" DamageModifier="0.6" XPModifier="1" Protection="" />
+  <Movement MovementSpeed="6" WalkSpeed="6" />
+  <InterruptionParams InterruptChance="0" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BlownAwayParams CanBeBlownAway="1" BlownAwayAnimationTag="" />
+  <LootClass>
+    <Loot Class="" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="" />
+  <OnDeathLootPreset Name="" />
+  <Corpses PresetName="TrashCadaverPreset" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="360" UseAvoidance="0" />
+  <Kythera>
+    <Behavior Name="Warrior">
+      <EngageOverride type="string" />
+    </Behavior>
+    <BT FleeOnLowHealthChance="0.0" EngageRange="50.0" MeleeAttack="True" FallBack="False" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Target SticknessBias="30.0" DistanceBias="20.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="Melee" />
+    <Support PresenceRadius="10.0" CombatRadius="40.0" TravelRadius="5.0" />
+  </Kythera>
+  <Skills>
+    <DefaultBasicAttack>
+      <Skill Name="Summon_Range_Melee_Default_Explosive" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0" Preferred="15" Max="20" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </DefaultBasicAttack>
+    <Approach />
+  </Skills>
+  <RandomModel>
+    <ModelChoice Model="Objects\characters\mobs\Humanoid\Sniper\REPU_Sniper\REPU_Sniper.cdf" Weight="1">
+      <ADBChoice ADB="Animations\Mannequin\ADB\Mobs\Humanoid\Sniper\MISC_Sniper.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_SummonRangeMelee_Sniper" ZIconOffset="2.1" />
+  <Spawn SpawnAnimation="rise_out_ground_fast" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="0.01" DeathSkill="" CosmeticDropPreset="Infantry_1snp_01" OnDeathMaterial="Objects/characters/mobs/Humanoid/Sniper/REPU_Sniper/REPU_Sniper_NoWeapon.mtl" />
+  <GameplayParticles PresetName="size_medium" />
+  <Capsules>
+    <EntityPhysics ColliderSize="0.4,0.4,0.4" IsPushable="0" RagdollMass="345" />
+    <MouseSelection SelectionCapsuleRadius="0.7" SelectionCapsuleHeight="1" SelectionCapsuleZOffset="-0.4" />
+    <ProjectileCollision ProjectileCapsuleRadius="0.4" ProjectileCapsuleHeight="4.0" CanSnapOnCenterWhenColliding="1" />
+    <VegetationCollision SphereRadius="0.5" SphereZOffset="0.5" />
+  </Capsules>
+  <BoneParticles>
+    <BoneParticle BoneName="Bip01 Spine3" ParticleName="U_Monster.Sniper.BodyLight_01_Shadow" Offset="0,0.33,0" Dir="0,1,0" Scale="1" FadeOut="0" />
+  </BoneParticles>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="default" OverrideScale="1" />
+  </VisualParams>
+  <Audio AllowGroupSounds="1" SurfaceType="armour" />
+  <RandomVoice>
+    <VoiceChoice VoiceName="Summoned_Sniper_voice" Weight="1" />
+  </RandomVoice>
+</MetaData>

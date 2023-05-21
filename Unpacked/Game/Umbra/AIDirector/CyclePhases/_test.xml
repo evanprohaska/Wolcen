@@ -1,0 +1,12 @@
+<MetaData>
+  <Phase Name="test_phase_0" MetricsName="test_metrics_0" MinimumPhaseDuration="5" CIOverrideOnPhaseStart="-1" CIMaxGain_PerSecond_Pts="100" CIMaxLoss_PerSecond_Pts="100" SPMSlotCooldown_Override="10" SPMRespawnTimerFactor="1" MaxAliveSPM_Override="100" AllowedSPMMonsters="OutlawsBanditMeleeIntro">
+    <Condition_NextPhase Condition="HighestCIAbovePercentage" Threshold="10" />
+  </Phase>
+  <Phase Name="test_phase_1" MetricsName="test_metrics_0" MinimumPhaseDuration="6" CIOverrideOnPhaseStart="-1" CIMaxGain_PerSecond_Pts="100" CIMaxLoss_PerSecond_Pts="100" SPMSlotCooldown_Override="10" SPMRespawnTimerFactor="1" MaxAliveSPM_Override="100" AllowedSPMMonsters="OutlawsBanditRanged">
+    <Condition_NextPhase Condition="HighestCIAbovePercentage" Threshold="20" />
+    <Condition_PreviousPhase Condition="ElapsedTime" Threshold="8" />
+  </Phase>
+  <Phase Name="test_phase_2" MetricsName="test_metrics_0" MinimumPhaseDuration="5" CIOverrideOnPhaseStart="-1" CIMaxGain_PerSecond_Pts="100" CIMaxLoss_PerSecond_Pts="100" SPMSlotCooldown_Override="10" SPMRespawnTimerFactor="1" MaxAliveSPM_Override="100" AllowedSPMMonsters="OutlawsBanditRanged,OutlawsBanditMeleeIntro">
+    <Condition_NextPhase Condition="HighestCIBelowPercentage" Threshold="10" />
+  </Phase>
+</MetaData>

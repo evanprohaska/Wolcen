@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_cofe_cultist_infection" ESkill="AI_wild_infection" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnWaitingForSpawn="" OnSpawn="" />
+    <ParticleList>
+      <Particle Key="Resurrect" Name="U_Monster_Alt.cultist_flesh.infected_spawn" Direction="0,0,1" Scale="1.5" />
+      <Particle Key="InfectionMark" Name="U_Monster_Alt.cultist_flesh.infected" Direction="0,0,1" Scale="1.5" Offset="0,0,0" Bone="Bip01" Delay="0.75" />
+      <Particle Key="Connector" Name="U_Monster_Alt.cultist_flesh.infection_connection" Direction="0,0,-1" Bone="Bip01" Offset="0,-2.2,1.8" Delay="0.7" />
+    </ParticleList>
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="6" />
+    <SkillSpecific InfectionTime="4" />
+    <Shapes>
+      <Entry ShapeName="COFE_Cultist_FriendlyTargetingShape" />
+    </Shapes>
+    <Summoning MaxSummons="5" SummonDuration="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Default" Name="sc_CultOfFleshCultist_infection" />
+    </Summoning>
+  </Skill>
+</MetaData>

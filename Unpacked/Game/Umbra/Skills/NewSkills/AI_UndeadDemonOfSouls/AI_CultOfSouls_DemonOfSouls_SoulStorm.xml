@@ -1,0 +1,152 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_demonofsouls_soulstorm_part1" ESkill="AI_cultofsouls_demonofsouls_soulstorm_part1" Keywords="magic_spell,projectile">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.6" />
+    <Range AttackRange="15" />
+    <StatusAilment>
+      <freeze Chance="100" ChanceMode="override" Duration="1.5" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="20" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.DeomonOfSoul.Possess_Projectile_Indicator_01" Direction="0,1,0" />
+    </ParticleList>
+    <Collisions IgnoreTerrainCollisions="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="20" />
+    <Projectile Name="demonofsouls_soulprojectile_proj03" ProjectileCount="12" PenetrationLimit="999" />
+    <SkillSpecific RangeOfProjectiles="15" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_cultofsouls_demonofsouls_soulstorm_part2" />
+    </SecondarySkillToCast>
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="30" To="300" In="2" />
+      <EmissiveIntensity From="300" To="800" In="3" />
+      <EmissiveIntensity From="800" To="30" In="3" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_cultofsouls_demonofsouls_soulstorm_part2" ESkill="AI_cultofsouls_demonofsouls_soulstorm_part2" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_ai_attacks" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MinimumCastDuration="0.4" MaximumTurnRate="24" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="0.15" />
+    <StatusAilment>
+      <freeze Chance="0" ChanceMode="ignored" Duration="1.5" DurationMode="override" />
+    </StatusAilment>
+    <ParticleList>
+      <Particle Key="Ready" Name="U_Monster.DeomonOfSoul.Soul_Beam_Ready_01" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_Monster.DeomonOfSoul.Soul_Beam_01" Direction="0,0,-1" Scale="1.5" />
+      <Particle Key="Hit" Name="U_Monster.DeomonOfSoul.Soul_Beam_Hit_01" Direction="0,0,1" />
+    </ParticleList>
+    <Range ProjectileMinDistance="2" AttackRange="20" />
+    <Cooldown Cooldown="20" CooldownPerLevel="0" />
+    <Specific_AI_Laser NumberOfBeams="1" LengthPadding="0.1" MaxZOffset="1.5" LaserWidth="2" AngleAtDistanceMin="10" AngleAtDistanceMax="75" TimeBetweenHits="0.1" CanHitMultipleTargets="1" MinLaserRangeForAngleComputation="2" IsInLoopOutLaser="1" MaximumDuration="8" TimeOutDuration="3" TargetBone="Bip01 Spine" SoundStart="Play_DemonOfSouls_Ray_Loop" SoundEnd="Play_DemonOfSouls_Ray_End" SoundHitStart="Play_DemonOfSouls_Ray_Impact_Loop" SoundHitEnd="Stop_DemonOfSouls_Ray_Impact_Loop" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="100" To="500" In="0.5" />
+      <EmissiveIntensity From="500" To="400" In="1" />
+      <EmissiveIntensity From="400" To="500" In="2" />
+      <EmissiveIntensity From="500" To="origin" In="2" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_Hunt_demonofsouls_soulstorm_part1_1" ESkill="AI_cultofsouls_demonofsouls_soulstorm_part1" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.6" />
+    <Range AttackRange="15" />
+    <StatusAilment>
+      <freeze Chance="100" ChanceMode="override" Duration="1.5" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="20" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.DeomonOfSoul.Possess_Projectile_Indicator_01" Direction="0,1,0" />
+    </ParticleList>
+    <Collisions IgnoreTerrainCollisions="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="20" />
+    <Projectile Name="demonofsouls_soulprojectile_proj03" ProjectileCount="12" PenetrationLimit="999" />
+    <SkillSpecific RangeOfProjectiles="15" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_hunt_demonofsouls_soulstorm_part2_1" />
+    </SecondarySkillToCast>
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="30" To="300" In="2" />
+      <EmissiveIntensity From="300" To="800" In="3" />
+      <EmissiveIntensity From="800" To="30" In="3" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_hunt_demonofsouls_soulstorm_part2_1" ESkill="AI_cultofsouls_demonofsouls_soulstorm_part2" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_ai_attacks" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MinimumCastDuration="0.4" MaximumTurnRate="40" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="0.15" />
+    <StatusAilment>
+      <freeze Chance="0" ChanceMode="ignored" Duration="1.5" DurationMode="override" />
+    </StatusAilment>
+    <ParticleList>
+      <Particle Key="Ready" Name="U_Monster.DeomonOfSoul.Soul_Beam_Ready_01" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_Monster.DeomonOfSoul.Soul_Beam_01" Direction="0,0,-1" Scale="1.5" />
+      <Particle Key="Hit" Name="U_Monster.DeomonOfSoul.Soul_Beam_Hit_01" Direction="0,0,1" />
+    </ParticleList>
+    <Range ProjectileMinDistance="2" AttackRange="20" />
+    <Cooldown Cooldown="20" CooldownPerLevel="0" />
+    <Specific_AI_Laser NumberOfBeams="2" LengthPadding="0.1" MaxZOffset="1.5" LaserWidth="2" AngleAtDistanceMin="10" AngleAtDistanceMax="75" TimeBetweenHits="0.1" CanHitMultipleTargets="1" MinLaserRangeForAngleComputation="2" IsInLoopOutLaser="1" MaximumDuration="8" TimeOutDuration="3" TargetBone="Bip01 Spine" SoundStart="Play_DemonOfSouls_Ray_Loop" SoundEnd="Play_DemonOfSouls_Ray_End" SoundHitStart="Play_DemonOfSouls_Ray_Impact_Loop" SoundHitEnd="Stop_DemonOfSouls_Ray_Impact_Loop" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="100" To="500" In="0.5" />
+      <EmissiveIntensity From="500" To="400" In="1" />
+      <EmissiveIntensity From="400" To="500" In="2" />
+      <EmissiveIntensity From="500" To="origin" In="2" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_Hunt_demonofsouls_soulstorm_part1_2" ESkill="AI_cultofsouls_demonofsouls_soulstorm_part1" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" PWeaponMultiplier="1.6" />
+    <Range AttackRange="25" />
+    <StatusAilment>
+      <freeze Chance="100" ChanceMode="override" Duration="1.5" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="20" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.DeomonOfSoul.Possess_Projectile_Indicator_01" Direction="0,1,0" />
+    </ParticleList>
+    <Collisions IgnoreTerrainCollisions="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="20" />
+    <Projectile Name="demonofsouls_soulprojectile_proj03" ProjectileCount="24" PenetrationLimit="999" />
+    <SkillSpecific RangeOfProjectiles="15" />
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_hunt_demonofsouls_soulstorm_part2_2" />
+    </SecondarySkillToCast>
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="30" To="300" In="2" />
+      <EmissiveIntensity From="300" To="800" In="3" />
+      <EmissiveIntensity From="800" To="30" In="3" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_hunt_demonofsouls_soulstorm_part2_2" ESkill="AI_cultofsouls_demonofsouls_soulstorm_part2" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_ai_attacks" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MinimumCastDuration="0.4" MaximumTurnRate="24" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="0.15" />
+    <StatusAilment>
+      <freeze Chance="0" ChanceMode="ignored" Duration="1.5" DurationMode="override" />
+    </StatusAilment>
+    <ParticleList>
+      <Particle Key="Ready" Name="U_Monster.DeomonOfSoul.Soul_Beam_Ready_01" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_Monster.DeomonOfSoul.Soul_Beam_01" Direction="0,0,-1" Scale="1.5" />
+      <Particle Key="Hit" Name="U_Monster.DeomonOfSoul.Soul_Beam_Hit_01" Direction="0,0,1" />
+    </ParticleList>
+    <Range ProjectileMinDistance="2" AttackRange="20" />
+    <Cooldown Cooldown="20" CooldownPerLevel="0" />
+    <Specific_AI_Laser NumberOfBeams="1" LengthPadding="0.1" MaxZOffset="1.5" LaserWidth="2" AngleAtDistanceMin="10" AngleAtDistanceMax="75" TimeBetweenHits="0.1" CanHitMultipleTargets="1" MinLaserRangeForAngleComputation="2" IsInLoopOutLaser="1" MaximumDuration="8" TimeOutDuration="3" TargetBone="Bip01 Spine" SoundStart="Play_DemonOfSouls_Ray_Loop" SoundEnd="Play_DemonOfSouls_Ray_End" SoundHitStart="Play_DemonOfSouls_Ray_Impact_Loop" SoundHitEnd="Stop_DemonOfSouls_Ray_Impact_Loop" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="100" To="500" In="0.5" />
+      <EmissiveIntensity From="500" To="400" In="1" />
+      <EmissiveIntensity From="400" To="500" In="2" />
+      <EmissiveIntensity From="500" To="origin" In="2" />
+    </Material>
+  </Skill>
+</MetaData>

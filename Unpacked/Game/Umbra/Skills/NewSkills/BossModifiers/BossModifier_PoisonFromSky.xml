@@ -1,0 +1,54 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_PoisonFromSky">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Poison" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="PoisonFromSky_Proj" ProjectileCount="3" PenetrationLimit="2" />
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromSky" KillProjsOnCasterDeath="1">
+      <CastAttributes OnTarget="0" StartZOffset="30" AngleFromZAxis="10" ZPadding="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_Hunt_BossModifier_PoisonFromSky">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Poison" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="PoisonFromSky_Proj" ProjectileCount="3" PenetrationLimit="2" />
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromSky" KillProjsOnCasterDeath="1">
+      <CastAttributes OnTarget="0" StartZOffset="30" AngleFromZAxis="10" ZPadding="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_PoisonFromSky_Lieutenant">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="2" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Poison" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="PoisonFromSky_Proj" ProjectileCount="2" PenetrationLimit="2" />
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromSky" KillProjsOnCasterDeath="1">
+      <CastAttributes OnTarget="0" StartZOffset="30" AngleFromZAxis="10" ZPadding="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_PoisonFromSky_OnTarget">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="2" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Poison" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="PoisonFromSky_Proj" ProjectileCount="1" PenetrationLimit="2" />
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromSky" KillProjsOnCasterDeath="1">
+      <CastAttributes OnTarget="1" StartZOffset="30" AngleFromZAxis="10" ZPadding="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

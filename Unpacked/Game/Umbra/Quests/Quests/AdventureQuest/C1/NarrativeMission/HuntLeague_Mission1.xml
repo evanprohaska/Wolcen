@@ -1,0 +1,732 @@
+<MetaData>
+  <Quest Name="HL_M1" UIName="@ui_C1_M1_QuestLabel" UIDesc="" Type="Main" StartDialog="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_C1_M1_S1_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="QP_CampEntrance" Radius="20" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestFail" Name="FailQuest" QuestName="HL_M1" Delay="0.2" />
+    </Step>
+    <Step Order="1" UIName="@ui_C1_M1_S1_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="EM_PrefabLoader_HL_C1_Altar_F1_Prefab13">
+      <Goal Order="0" Type="Talk" EntityName="NPC_HLC1_Forest_IlthainIntro" DialogName="HLC1_Forest_IlthainIntro">
+        <ArrowMarker Target="NPC_HLC1_Forest_IlthainIntro" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_DragonBlocker" EntityNames="A4_Stormfall_SouthWayDragon_Blocker" Hide="1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="HuntLeague_C1_InitPos" TeleportedEntityName="#Player" DestinationName="HL_C1_SpawnPoint_Forest" MinRadius="10" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_IlthainIdle" AnimatedEntityName="NPC_HLC1_Forest_IlthainIntro" Play="REPU_DragonRider_Idle_02" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_OndarIdle" AnimatedEntityName="NPC_HLC1_Forest_OndarIntro" Play="REPU_DragonRider_Idle_03" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_M1_SA_AN_QuestName" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="@ui_C1_M1_QuestLabel" DisplayTime="2" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GameplayAreaReset" Name="HL_C1_GameplayAreaReset_C1_M1" GameplayAreaName="C1_M1" PrepareAreaIfPlayerInside="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Unhide_IlthainTalkToBlocker_01" EntityNames="CE_HLC_C1_IlthainTalkToBlocker_01" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Unhide_IlthainTalkToBlocker_02" EntityNames="CE_HLC_C1_IlthainTalkToBlocker_02" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Unhide_IlthainTalkToBlocker_03" EntityNames="CE_HLC_C1_IlthainTalkToBlocker_03" Hide="0" />
+    </Step>
+    <Step Order="2" UIName="@ui_C1_M1_S2_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_CampEntrance" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker Target="QP_CampEntrance" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HL_M1_Clickable_Door1" DoorName="AnimDoor_RepublicanDoor_1" Action="Lock" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HL_M1_Clickable_Door2" DoorName="AnimDoor_RepublicanDoor_2" Action="Lock" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HL_M1_Clickable_Door3" DoorName="AnimDoor_RepublicanDoor_3" Action="Lock" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HL_M1_Close_Door1" DoorName="AnimDoor_RepublicanDoor_1" Action="Close" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HL_M1_Close_Door2" DoorName="AnimDoor_RepublicanDoor_2" Action="Close" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HL_M1_Close_Door3" DoorName="AnimDoor_RepublicanDoor_3" Action="Close" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLM1_UnHide_Blocker_AnimDoor3" EntityNames="Blocker_AnimDoor3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Unhide_ArenaBlocker" EntityNames="HL_C1_ArenaBlocker" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_REPU_ForestPatrollTalk" SpawnClass="Sc_Sty_HLC1_REPU_ForestPatrollTalk" TargetEntityName="QP_HLC1_REPU_ForestPatrollTalk_SpawnPoint" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_ForestPatrollTalk_SpawnPoint" AreaRadius="25" Type="GlobalDialog" Name="HLC1_Forest_Rep_Patrol1" DialogName="HLC1_Forest_Rep_Patrol1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_ForestPatrollTalk_SpawnPoint" AreaRadius="16" Type="GlobalStopAllDialogs" Name="HLC1_Forest_Rep_PatrolClearDial" />
+      <Event Trigger="EventEnd" EventName="HLC1_Forest_Rep_PatrolClearDial" Type="GlobalDialog" Name="HLC1_Forest_Rep_Patrol2" DialogName="HLC1_Forest_Rep_Patrol2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Unhide_CE_RepublicanDoor_3" EntityNames="ClickableEntity_RepublicanDoor_3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_IlthainTakingOff" AnimatedEntityName="NPC_HLC1_Forest_IlthainIntro" Play="REPU_DragonRider_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="4" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_OndarTakingOff" AnimatedEntityName="NPC_HLC1_Forest_OndarIntro" Play="REPU_DragonRider_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1.5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="HLC1_Forest_IlthainLeaving" DialogName="HLC1_Forest_IlthainLeaving" Delay=".5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Forest_Repu" AreaRadius="50" Type="GlobalDialog" Name="HLC1_Forest_Repu" DialogName="HLC1_Forest_Repu" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC1_Step1_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_IlthainFinal" EntityNames="NPC_HLC1_Forest_IlthainFinal" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_TransitionToStables" EntityNames="HL_C1_ClickableEntity_FromCampToStables" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_TransitionToCamp" EntityNames="HL_C1_ClickableEntity_FromStabToCamp" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_TransitionFromPitToStab" EntityNames="HL_C1_ClickableEntity_FromPitToStab" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_AnimDoor_RepublicanDoor_3" EntityNames="AnimDoor_RepublicanDoor_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_Door1_Reset" AnimatedEntityName="AnimDoor_RepublicanDoor_1" Play="door_01_close" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_Door2_Reset" AnimatedEntityName="AnimDoor_RepublicanDoor_2" Play="door_01_close" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_RepublicInfantrySword" EntityName="RepublicInfantrySword" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_RepublicInfantryRanged" EntityName="RepublicInfantryRanged" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_RepublicHeavyInfantry" EntityName="RepublicHeavyInfantry" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_RepublicVeteran" EntityName="RepublicVeteran" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_RepublicSniper" EntityName="RepublicSniper" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_Hunt_RepublicAssassin" EntityName="Hunt_RepublicAssassin" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_Hunt_RepublicGenerator_1" EntityName="Hunt_RepublicGenerator_1" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_Hunt_RepublicGenerator_2" EntityName="Hunt_RepublicGenerator_2" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_Hunt_RepublicGenerator_3" EntityName="Hunt_RepublicGenerator_3" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_Hunt_Lucan" EntityName="Hunt_Lucan" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_Hunt_SoldierPatrollTalk" EntityName="SoldierPatrollTalk" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_Hunt_SoldierAttackFromTheSky" EntityName="SoldierAttackFromTheSky" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC1_Kill_Hunt_OfficerRaisingAlarm" EntityName="OfficerRaisingAlarm" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="HLC1_Reset_DYN_C1_M1_LucanQuestionning" SequenceName="DYN_C1_M1_LucanQuestionning" ResetAtLastFrame="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Unhide_GeneratorBlocker1" EntityNames="CE_HLC_C1_GeneratorDoorBlocker1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Unhide_GeneratorBlocker2" EntityNames="CE_HLC_C1_GeneratorDoorBlocker2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M1_LightOn" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor01" EntityNames="HL_C1_AD_DragonCage_01" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor02" EntityNames="HL_C1_AD_DragonCage_02" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor03" EntityNames="HL_C1_AD_DragonCage_03" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor04" EntityNames="HL_C1_AD_DragonCage_04" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor05" EntityNames="HL_C1_AD_DragonCage_05" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor06" EntityNames="HL_C1_AD_DragonCage_06" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor07" EntityNames="HL_C1_AD_DragonCage_07" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor08" EntityNames="HL_C1_AD_DragonCage_08" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor09" EntityNames="HL_C1_AD_DragonCage_09" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor10" EntityNames="HL_C1_AD_DragonCage_10" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor11" EntityNames="HL_C1_AD_DragonCage_11" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor12" EntityNames="HL_C1_AD_DragonCage_12" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor13" EntityNames="HL_C1_AD_DragonCage_13" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor14" EntityNames="HL_C1_AD_DragonCage_14" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor15" EntityNames="HL_C1_AD_DragonCage_15" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor16" EntityNames="HL_C1_AD_DragonCage_16" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor17" EntityNames="HL_C1_AD_DragonCage_17" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor18" EntityNames="HL_C1_AD_DragonCage_18" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor19" EntityNames="HL_C1_AD_DragonCage_19" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor20" EntityNames="HL_C1_AD_DragonCage_20" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_SQ_Hide_AnimDoor21" EntityNames="HL_C1_AD_DragonCage_21" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor01" AnimatedEntityName="HL_C1_Dragon_01" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor02" AnimatedEntityName="HL_C1_Dragon_02" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor03" AnimatedEntityName="HL_C1_Dragon_03" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor04" AnimatedEntityName="HL_C1_Dragon_04" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor05" AnimatedEntityName="HL_C1_Dragon_05" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor06" AnimatedEntityName="HL_C1_Dragon_06" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor07" AnimatedEntityName="HL_C1_Dragon_07" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor08" AnimatedEntityName="HL_C1_Dragon_08" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor09" AnimatedEntityName="HL_C1_Dragon_09" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor10" AnimatedEntityName="HL_C1_Dragon_10" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor11" AnimatedEntityName="HL_C1_Dragon_11" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor12" AnimatedEntityName="HL_C1_Dragon_12" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor13" AnimatedEntityName="HL_C1_Dragon_13" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor14" AnimatedEntityName="HL_C1_Dragon_14" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor15" AnimatedEntityName="HL_C1_Dragon_15" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor16" AnimatedEntityName="HL_C1_Dragon_16" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor17" AnimatedEntityName="HL_C1_Dragon_17" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor18" AnimatedEntityName="HL_C1_Dragon_18" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor19" AnimatedEntityName="HL_C1_Dragon_19" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor20" AnimatedEntityName="HL_C1_Dragon_20" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Closing_AnimDoor21" AnimatedEntityName="HL_C1_Dragon_21" Play="dragoncage_animated_close" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake01" AnimatedEntityName="HL_C1_Dragon_01" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake02" AnimatedEntityName="HL_C1_Dragon_02" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake03" AnimatedEntityName="HL_C1_Dragon_03" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake04" AnimatedEntityName="HL_C1_Dragon_04" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake05" AnimatedEntityName="HL_C1_Dragon_05" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake06" AnimatedEntityName="HL_C1_Dragon_06" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake07" AnimatedEntityName="HL_C1_Dragon_07" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake08" AnimatedEntityName="HL_C1_Dragon_08" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake09" AnimatedEntityName="HL_C1_Dragon_09" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake10" AnimatedEntityName="HL_C1_Dragon_10" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake11" AnimatedEntityName="HL_C1_Dragon_11" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake12" AnimatedEntityName="HL_C1_Dragon_12" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake13" AnimatedEntityName="HL_C1_Dragon_13" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake14" AnimatedEntityName="HL_C1_Dragon_14" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake15" AnimatedEntityName="HL_C1_Dragon_15" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake16" AnimatedEntityName="HL_C1_Dragon_16" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake17" AnimatedEntityName="HL_C1_Dragon_17" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake18" AnimatedEntityName="HL_C1_Dragon_18" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake19" AnimatedEntityName="HL_C1_Dragon_19" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake20" AnimatedEntityName="HL_C1_Dragon_20" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_SQ_Resting_Drake21" AnimatedEntityName="HL_C1_Dragon_21" Play="REPU_DragonRider_Stun_Cage_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M1_DestroyGateOff" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M1_WatchTowerOff" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M1_LucanQuestioningOff" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_AnimObject_DYN_LucanAtk_Lucan" EntityNames="AnimObject_DYN_LucanAtk_Lucan" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_AnimObject_DYN_LucanAtk_Ilthain" EntityNames="AnimObject_DYN_LucanAtk_Ilthain" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_AnimObject_DYN_LucanAtk_Ondar" EntityNames="AnimObject_DYN_LucanAtk_Ondar" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_IlthainTalkToBlocker_01" EntityNames="CE_HLC_C1_IlthainTalkToBlocker_01" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_IlthainTalkToBlocker_02" EntityNames="CE_HLC_C1_IlthainTalkToBlocker_02" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_IlthainTalkToBlocker_03" EntityNames="CE_HLC_C1_IlthainTalkToBlocker_03" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_GeneratorTrigger1" EntityNames="HL_C1_GeneratorAreaBox1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_GeneratorGPI1" EntityNames="HL_C1_Generator_IcySoul_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_GeneratorTrigger2" EntityNames="HL_C1_GeneratorAreaBox2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_GeneratorGPI2" EntityNames="HL_C1_Generator_IcySoul_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_GeneratorTrigger3" EntityNames="HL_C1_GeneratorAreaBox3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_GeneratorGPI3" EntityNames="HL_C1_Generator_IcySoul_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_Generator1Base" EntityNames="AnimObject_CampGenerator_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_Generator2Base" EntityNames="AnimObject_CampGenerator_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_Generator3Base" EntityNames="AnimObject_CampGenerator_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase1" EntityNames="GPI_DragonBreath_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger1" EntityNames="AreaBox_DragonBreath_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase2" EntityNames="GPI_DragonBreath_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger2" EntityNames="AreaBox_DragonBreath_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase3" EntityNames="GPI_DragonBreath_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger3" EntityNames="AreaBox_DragonBreath_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase4" EntityNames="GPI_DragonBreath_4" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger4" EntityNames="AreaBox_DragonBreath_4" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase5" EntityNames="GPI_DragonBreath_5" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger5" EntityNames="AreaBox_DragonBreath_5" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase6" EntityNames="GPI_DragonBreath_6" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger6" EntityNames="AreaBox_DragonBreath_6" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase7" EntityNames="GPI_DragonBreath_7" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger7" EntityNames="AreaBox_DragonBreath_7" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase8" EntityNames="GPI_DragonBreath_8" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger8" EntityNames="AreaBox_DragonBreath_8" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase9" EntityNames="GPI_DragonBreath_9" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger9" EntityNames="AreaBox_DragonBreath_9" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase10" EntityNames="GPI_DragonBreath_10" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger10" EntityNames="AreaBox_DragonBreath_10" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase11" EntityNames="GPI_DragonBreath_11" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger11" EntityNames="AreaBox_DragonBreath_11" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase12" EntityNames="GPI_DragonBreath_12" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger12" EntityNames="AreaBox_DragonBreath_12" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase13" EntityNames="GPI_DragonBreath_13" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger13" EntityNames="AreaBox_DragonBreath_13" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase14" EntityNames="GPI_DragonBreath_14" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger14" EntityNames="AreaBox_DragonBreath_14" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase15" EntityNames="GPI_DragonBreath_15" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger15" EntityNames="AreaBox_DragonBreath_15" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase16" EntityNames="GPI_DragonBreath_16" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger16" EntityNames="AreaBox_DragonBreath_16" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase17" EntityNames="GPI_DragonBreath_17" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger17" EntityNames="AreaBox_DragonBreath_17" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase18" EntityNames="GPI_DragonBreath_18" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger18" EntityNames="AreaBox_DragonBreath_18" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase19" EntityNames="GPI_DragonBreath_19" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger19" EntityNames="AreaBox_DragonBreath_19" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase20" EntityNames="GPI_DragonBreath_20" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger20" EntityNames="AreaBox_DragonBreath_20" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase21" EntityNames="GPI_DragonBreath_21" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger21" EntityNames="AreaBox_DragonBreath_21" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase22" EntityNames="GPI_DragonBreath_22" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger22" EntityNames="AreaBox_DragonBreath_22" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase23" EntityNames="GPI_DragonBreath_23" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger23" EntityNames="AreaBox_DragonBreath_23" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase24" EntityNames="GPI_DragonBreath_24" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger24" EntityNames="AreaBox_DragonBreath_24" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase25" EntityNames="GPI_DragonBreath_25" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger25" EntityNames="AreaBox_DragonBreath_25" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase26" EntityNames="GPI_DragonBreath_26" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger26" EntityNames="AreaBox_DragonBreath_26" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase27" EntityNames="GPI_DragonBreath_27" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger27" EntityNames="AreaBox_DragonBreath_27" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase28" EntityNames="GPI_DragonBreath_28" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger28" EntityNames="AreaBox_DragonBreath_28" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase29" EntityNames="GPI_DragonBreath_29" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger29" EntityNames="AreaBox_DragonBreath_29" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase30" EntityNames="GPI_DragonBreath_30" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger30" EntityNames="AreaBox_DragonBreath_30" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase31" EntityNames="GPI_DragonBreath_31" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger31" EntityNames="AreaBox_DragonBreath_31" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase32" EntityNames="GPI_DragonBreath_32" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger32" EntityNames="AreaBox_DragonBreath_32" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase33" EntityNames="GPI_DragonBreath_33" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger33" EntityNames="AreaBox_DragonBreath_33" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase34" EntityNames="GPI_DragonBreath_34" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger34" EntityNames="AreaBox_DragonBreath_34" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase35" EntityNames="GPI_DragonBreath_35" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger35" EntityNames="AreaBox_DragonBreath_35" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathBase36" EntityNames="GPI_DragonBreath_36" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DragonFireBreathTrigger36" EntityNames="AreaBox_DragonBreath_36" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="HLC1_Deactivate_RepublicanCamp_VFX_Generator_01" EmitterEntityName="HL_C2_RepublicanCamp_VFX_Generator_01" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="HLC1_Deactivate_RepublicanCamp_VFX_Generator_02" EmitterEntityName="HL_C2_RepublicanCamp_VFX_Generator_02" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="HLC1_Deactivate_RepublicanCamp_VFX_Generator_03" EmitterEntityName="HL_C2_RepublicanCamp_VFX_Generator_03" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="HLC1_Activate_RepublicanCamp_VFX_ElectricGate_01" EmitterEntityName="RepublicanCamp_VFX_ElectricGate_01" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="HLC1_Activate_RepublicanCamp_VFX_ElectricGate_02" EmitterEntityName="RepublicanCamp_VFX_ElectricGate_02" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Unhide_DoorLight1" EntityNames="Light_Republican_ElectricGate_1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Unhide_DoorLight2" EntityNames="Light_Republican_ElectricGate_2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="HLC1_Unhide_ArenaBlockerFX" EmitterEntityName="HLC1_ParticleEffect_ArenaBlocker" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="HLC1_Unhide_ArenaBlockerFX2" EmitterEntityName="HLC1_ParticleEffect_ArenaBlocker2" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_SpawnSoldierPatrollTalk" SpawnClass="Sc_Sty_HLC1_REPU_PatrollTalk" TargetEntityName="QP_HLC1_Clearing_PlayerReact2" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+    </Step>
+    <Step Order="3" UIName="@ui_C1_M1_S3_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="AnimDoor_RepublicanDoor_1" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker Target="AnimDoor_RepublicanDoor_1" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="AnimDoor_RepublicanDoor_1_clickable" InteractCount="1" ChannelingTime="4" Animation="status_targetEntityChanneling_loop">
+        <ArrowMarker Target="AnimDoor_RepublicanDoor_1_clickable" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HL_M1_Open_Door1_Hide" EntityNames="AnimDoor_RepublicanDoor_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HL_M1_Open_Door1_clickableUnHide" EntityNames="AnimDoor_RepublicanDoor_1_clickable" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_M1_SA_AN_QuestHintName" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_QuestHintName" ContextualMessage="@ui_C1_M1_SA_CM_QuestHintDescription" DisplayTime="3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact1" AreaRadius="15.5" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReact1Talk" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReact1Talk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact1" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact1" AreaRadius="15.5" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReactTalk_1" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReactTalk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact1" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact1" AreaRadius="15.5" Type="GlobalDialog" Name="HLC1_Ext_PyreReact1" DialogName="HLC1_Camp_Ext_PyreReact1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact2" AreaRadius="15.5" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReact2Talk" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReact2Talk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact2" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact2" AreaRadius="15.5" Type="GlobalDialog" Name="HLC1_Ext_PyreReact2" DialogName="HLC1_Camp_Ext_PyreReact2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact3" AreaRadius="15.5" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReact3Talk" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReact3Talk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact3" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact3" AreaRadius="15.5" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReactTalk_2" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReactTalk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact3" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact3" AreaRadius="15.5" Type="GlobalDialog" Name="HLC1_Ext_PyreReact3" DialogName="HLC1_Camp_Ext_PyreReact3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_Camp_Ext_GateReact1Talk" SpawnClass="Sc_Sty_HLC1_Camp_Ext_GateReact1Talk" TargetEntityName="QP_HLC1_Camp_Ext_GateReact1" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_Ext_GateReact1" AreaRadius="25" Type="GlobalDialog" Name="HLC1_Camp_Ext_GateReact1" DialogName="HLC1_Camp_Ext_GateReact1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC1_Step2_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Clearing_PlayerReact1" AreaRadius="20" Type="GlobalDialog" Name="HLC1_Clearing_PlayerReact1" DialogName="HLC1_Clearing_PlayerReact1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Clearing_PlayerReact2" AreaRadius="32" Type="GlobalDialog" Name="HLC1_Clearing_PlayerReact2" DialogName="HLC1_Clearing_PlayerReact2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="HLC1_Clearing_StepUpdate1" Localization="@ui_C1_M1_S3_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="HLC1_Clearing_RemoveStep" Localization="" DisplayNewIcon="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger0" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_1" EmitterEntityName="Particle_C1_M1_firearea_warning_1" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger1" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_4" EmitterEntityName="Particle_C1_M1_firearea_warning_4" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger2" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_3" EmitterEntityName="Particle_C1_M1_firearea_warning_3" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger3" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_6" EmitterEntityName="Particle_C1_M1_firearea_warning_6" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger4" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_2" EmitterEntityName="Particle_C1_M1_firearea_warning_2" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger5" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_5" EmitterEntityName="Particle_C1_M1_firearea_warning_5" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger6" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_7" EmitterEntityName="Particle_C1_M1_firearea_warning_7" Activate="0" />
+    </Step>
+    <Step Order="4" UIName="@ui_C1_M1_S4_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="AnimDoor_RepublicanDoor_2" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker Target="AnimDoor_RepublicanDoor_2" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="AnimDoor_RepublicanDoor_2_clickable" InteractCount="1" ChannelingTime="4" Animation="status_targetEntityChanneling_loop">
+        <ArrowMarker Target="AnimDoor_RepublicanDoor_2_clickable" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HL_M1_Open_Door1" DoorName="AnimDoor_RepublicanDoor_1" Action="Open" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HL_M1_Unclickable_Door1" DoorName="AnimDoor_RepublicanDoor_1" Action="Lock" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HL_M1_Open_Door1_UnHide" EntityNames="AnimDoor_RepublicanDoor_1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HL_M1_Open_Door1_clickableHide" EntityNames="AnimDoor_RepublicanDoor_1_clickable" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HL_M1_Open_Door2_Hide" EntityNames="AnimDoor_RepublicanDoor_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HL_M1_Open_Door2_clickableUnHide" EntityNames="AnimDoor_RepublicanDoor_2_clickable" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M1_Sound_GateOpenning1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact4" AreaRadius="15.5" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReact4Talk" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReact4Talk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact4" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact4" AreaRadius="15.5" Type="GlobalDialog" Name="HLC1_Ext_PyreReact4" DialogName="HLC1_Camp_Ext_PyreReact4" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact5" AreaRadius="15.5" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReact5Talk" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReact5Talk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact5" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact5" AreaRadius="15.5" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReactTalk_3" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReactTalk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact5" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact5" AreaRadius="15.5" Type="GlobalDialog" Name="HLC1_Ext_PyreReact5" DialogName="HLC1_Camp_Ext_PyreReact5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact6" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReact6Talk" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReact6Talk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact6" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact6" AreaRadius="15.5" Type="GlobalDialog" Name="HLC1_Ext_PyreReact6" DialogName="HLC1_Camp_Ext_PyreReact6" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact7" AreaRadius="15.5" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReact7Talk" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReact7Talk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact7" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact7" AreaRadius="15.5" Type="EntitySpawn" Name="HuntLeague_C1_REPU_Ext_PyreReactTalk_4" SpawnClass="Sc_Sty_HLC1_REPU_Ext_PyreReactTalk" TargetEntityName="QP_HLC1_REPU_Ext_PyreReact7" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_REPU_Ext_PyreReact7" AreaRadius="15.5" Type="GlobalDialog" Name="HLC1_Ext_PyreReact7" DialogName="HLC1_Camp_Ext_PyreReact7" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_Camp_Ext_GateReact2Talk" SpawnClass="Sc_Sty_HLC1_Camp_Ext_GateReact2Talk" TargetEntityName="QP_HLC1_Camp_Ext_GateReact2" FaceAtSpawn="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_Ext_GateReact2" AreaRadius="25" Type="GlobalDialog" Name="HLC1_Camp_Ext_GateReact2" DialogName="HLC1_Camp_Ext_GateReact2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC1_Step3_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_Door1_Openning" AnimatedEntityName="AnimDoor_RepublicanDoor_1" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_TentTalk1" AreaRadius="20" Type="GlobalDialog" Name="HLC1_RepublicanSoldier1" DialogName="HLC1_Camp_TentTalk1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="HLC1_Clearing_StepUpdate2" Localization="@ui_C1_M1_S4_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_SpawnGenerator1" SpawnClass="Sc_Sty_HLC1_REPU_Gen_1" TargetEntityName="QP_Generator1" FaceAtSpawn="QP_Generator1_FacePoint" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_SpawnGenerator2" SpawnClass="Sc_Sty_HLC1_REPU_Gen_2" TargetEntityName="QP_Generator2" FaceAtSpawn="QP_Generator2_FacePoint" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_SpawnGenerator3" SpawnClass="Sc_Sty_HLC1_REPU_Gen_3" TargetEntityName="QP_Generator3" FaceAtSpawn="QP_Generator3_FacePoint" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger0" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_1" EmitterEntityName="Particle_C1_M1_firearea_warning_1" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger1" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_4" EmitterEntityName="Particle_C1_M1_firearea_warning_4" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger2" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_3" EmitterEntityName="Particle_C1_M1_firearea_warning_3" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger3" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_6" EmitterEntityName="Particle_C1_M1_firearea_warning_6" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger4" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_2" EmitterEntityName="Particle_C1_M1_firearea_warning_2" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger5" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_5" EmitterEntityName="Particle_C1_M1_firearea_warning_5" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger6" AreaRadius="15.5" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_7" EmitterEntityName="Particle_C1_M1_firearea_warning_7" Activate="0" />
+    </Step>
+    <Step Order="5" UIName="@ui_C1_M1_S5_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Kill" ClassToKill="Hunt_RepublicGenerator" KillCount="3">
+        <ArrowMarker Target="Hunt_RepublicGenerator_1" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="Hunt_RepublicGenerator_2" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="Hunt_RepublicGenerator_3" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HL_M1_Open_Door2" DoorName="AnimDoor_RepublicanDoor_2" Action="Open" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HL_M1_Unclickable_Door2" DoorName="AnimDoor_RepublicanDoor_2" Action="Lock" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HL_M1_Open_Door2_UnHide" EntityNames="AnimDoor_RepublicanDoor_2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HL_M1_Open_Door2_clickableHide" EntityNames="AnimDoor_RepublicanDoor_2_clickable" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HL_M1_Open_Door3_Hide" EntityNames="AnimDoor_RepublicanDoor_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HL_M1_Open_Door3_clickableUnHide" EntityNames="AnimDoor_RepublicanDoor_3_clickable" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M1_Sound_GateOpenning2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC1_Step4_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HLC1_Door2_Openning" AnimatedEntityName="AnimDoor_RepublicanDoor_2" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_2" Type="EntityIsHidden" Name="HLC1_Unhide_TransitionToStables" EntityNames="HL_C1_ClickableEntity_FromCampToStables" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_PlayerReact" AreaRadius="20" Type="GlobalDialog" Name="HLC1_Camp_PlayerReact" DialogName="HLC1_Camp_PlayerReact" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_Camp_Gen1_IntroSpawn" SpawnClass="Sc_Sty_HLC1_Camp_Gen1_IntroTalk" TargetEntityName="QP_HLC1_Camp_Gen1_IntroTalk" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_1" Type="EntitySpawn" Name="HLC1_Camp_Gen1_OutroSpawn" SpawnClass="Sc_Sty_HLC1_Camp_Gen1_OutroTalk" TargetEntityName="QP_HLC1_Camp_Gen1_OutroTalk" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_Camp_Gen2_IntroSpawn" SpawnClass="Sc_Sty_HLC1_Camp_Gen2_IntroTalk" TargetEntityName="QP_HLC1_Camp_Gen2_IntroTalk" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_Camp_Gen3_IntroSpawn" SpawnClass="Sc_Sty_HLC1_Camp_Gen3_IntroTalk" TargetEntityName="QP_HLC1_Camp_Gen3_IntroTalk" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_Gen1_IntroTalk" AreaRadius="20" Type="GlobalDialog" Name="HLC1_Camp_Gen1_IntroTalk" DialogName="HLC1_Camp_Gen1_Intro" />
+      <Event Trigger="EventEnd" EventName="HLC1_Camp_Gen1_OutroSpawn" Type="GlobalDialog" Name="HLC1_Camp_Gen1_OutroTalk" DialogName="HLC1_Camp_Gen1_Outro" Delay="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_Gen2_IntroTalk" AreaRadius="20" Type="GlobalDialog" Name="HLC1_Camp_Gen2_IntroTalk" DialogName="HLC1_Camp_Gen2_Intro" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_Gen3_IntroTalk" AreaRadius="20" Type="GlobalDialog" Name="HLC1_Camp_Gen3_IntroTalk" DialogName="HLC1_Camp_Gen3_Intro" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_TentTalk2" AreaRadius="20" Type="GlobalDialog" Name="HLC1_RepublicanSoldier2" DialogName="HLC1_Camp_TentTalk2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_RepublicanSoldier28" AreaRadius="10" Type="GlobalDialog" Name="HLC1_RepublicanSoldier3" DialogName="HLC1_Camp_TentTalk3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Hunt_RepublicGenerator_1" PercentLeft="95" Type="EntityIsHidden" Name="HLC1_Reveal_GeneratorTrigger1" EntityNames="HL_C1_GeneratorAreaBox1" Hide="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Hunt_RepublicGenerator_1" PercentLeft="95" Type="EntityIsHidden" Name="HLC1_Reveal_GeneratorGPI1" EntityNames="HL_C1_Generator_IcySoul_1" Hide="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Hunt_RepublicGenerator_2" PercentLeft="95" Type="EntityIsHidden" Name="HLC1_Reveal_GeneratorTrigger2" EntityNames="HL_C1_GeneratorAreaBox2" Hide="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Hunt_RepublicGenerator_2" PercentLeft="95" Type="EntityIsHidden" Name="HLC1_Reveal_GeneratorGPI2" EntityNames="HL_C1_Generator_IcySoul_2" Hide="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Hunt_RepublicGenerator_3" PercentLeft="95" Type="EntityIsHidden" Name="HLC1_Reveal_GeneratorTrigger3" EntityNames="HL_C1_GeneratorAreaBox3" Hide="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Hunt_RepublicGenerator_3" PercentLeft="95" Type="EntityIsHidden" Name="HLC1_Reveal_GeneratorGPI3" EntityNames="HL_C1_Generator_IcySoul_3" Hide="0" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_1" Type="EntityIsHidden" Name="HLC1_HidePostEvent_GeneratorTrigger1" EntityNames="HL_C1_GeneratorAreaBox1" Hide="1" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_1" Type="EntityIsHidden" Name="HLC1_HidePostEvent_GeneratorGPI1" EntityNames="HL_C1_Generator_IcySoul_1" Hide="1" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_2" Type="EntityIsHidden" Name="HLC1_HidePostEvent_GeneratorTrigger2" EntityNames="HL_C1_GeneratorAreaBox2" Hide="1" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_2" Type="EntityIsHidden" Name="HLC1_HidePostEvent_GeneratorGPI2" EntityNames="HL_C1_Generator_IcySoul_2" Hide="1" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_3" Type="EntityIsHidden" Name="HLC1_HidePostEvent_GeneratorTrigger3" EntityNames="HL_C1_GeneratorAreaBox3" Hide="1" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_3" Type="EntityIsHidden" Name="HLC1_HidePostEvent_GeneratorGPI3" EntityNames="HL_C1_Generator_IcySoul_3" Hide="1" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_1" Type="ActionParticleEmitter" Name="HLC1_Activate_RepublicanCamp_VFX_Generator_01" EmitterEntityName="HL_C2_RepublicanCamp_VFX_Generator_01" Activate="1" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_2" Type="ActionParticleEmitter" Name="HLC1_Activate_RepublicanCamp_VFX_Generator_02" EmitterEntityName="HL_C2_RepublicanCamp_VFX_Generator_02" Activate="1" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_3" Type="ActionParticleEmitter" Name="HLC1_Activate_RepublicanCamp_VFX_Generator_03" EmitterEntityName="HL_C2_RepublicanCamp_VFX_Generator_03" Activate="1" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_1" Type="ActionParticleEmitter" Name="HLC1_Activate_RepublicanCamp_VFX_DisableSound_Generator_01" EmitterEntityName="HL_C2_RepublicanCamp_VFX_Generator_OperatingSound_1" Activate="0" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_2" Type="ActionParticleEmitter" Name="HLC1_Activate_RepublicanCamp_VFX_DisableSound_Generator_02" EmitterEntityName="HL_C2_RepublicanCamp_VFX_Generator_OperatingSound_2" Activate="0" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_3" Type="ActionParticleEmitter" Name="HLC1_Activate_RepublicanCamp_VFX_DisableSound_Generator_03" EmitterEntityName="HL_C2_RepublicanCamp_VFX_Generator_OperatingSound_3" Activate="0" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_1" Type="EntityIsHidden" Name="HLC1_Unhide_Generator1Base" EntityNames="AnimObject_CampGenerator_1" Hide="0" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_2" Type="EntityIsHidden" Name="HLC1_Unhide_Generator2Base" EntityNames="AnimObject_CampGenerator_2" Hide="0" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Hunt_RepublicGenerator_3" Type="EntityIsHidden" Name="HLC1_Unhide_Generator3Base" EntityNames="AnimObject_CampGenerator_3" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger0" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_1" EmitterEntityName="Particle_C1_M1_firearea_warning_1" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger1" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_4" EmitterEntityName="Particle_C1_M1_firearea_warning_4" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger2" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_3" EmitterEntityName="Particle_C1_M1_firearea_warning_3" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger3" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_6" EmitterEntityName="Particle_C1_M1_firearea_warning_6" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger4" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_2" EmitterEntityName="Particle_C1_M1_firearea_warning_2" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger5" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_5" EmitterEntityName="Particle_C1_M1_firearea_warning_5" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger6" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_7" EmitterEntityName="Particle_C1_M1_firearea_warning_7" Activate="0" />
+    </Step>
+    <Step Order="6" UIName="@ui_C1_M1_S6_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="HL_C1_ClickableEntity_FromCampToStables" InteractCount="1">
+        <ArrowMarker Target="HL_C1_ClickableEntity_FromCampToStables" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_Camp_Gen3_OutroSpawn" SpawnClass="Sc_Sty_HLC1_Camp_Gen3_OutroTalk" TargetEntityName="QP_HLC1_Camp_Gen3_OutroTalk" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EventEnd" EventName="HLC1_Camp_Gen3_OutroSpawn" Type="GlobalDialog" Name="HLC1_Camp_Gen3_OutroTalk" DialogName="HLC1_Camp_Gen3_Outro" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M1_LightOff" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M1_DestroyGateOn" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalFlowGraph" Name="HL_M1_WatchTowersOn" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC1_Step5_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_SoldierAttackFromTheSky" SpawnClass="Sc_Sty_HLC1_REPU_AttackFromTheSky" TargetEntityName="QP_HLC1_Camp_AttackFromTheSky" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_SoldierAttackFromTheSky_2" SpawnClass="Sc_Sty_HLC1_Camp_AttackFromTheSky_2" TargetEntityName="QP_HLC1_SoldierAttackFromTheSky_2" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_AttackFromTheSky" AreaRadius="20" Type="GlobalDialog" Name="HLC1_Clearing_AttackFromTheSky" DialogName="HLC1_Clearing_AttackFromTheSky" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_SoldierAttackFromTheSky_3" SpawnClass="Sc_Sty_HLC1_Camp_AttackFromTheSky_3" TargetEntityName="QP_HLC1_SoldierAttackFromTheSky_3" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_SoldierAttackFromTheSky_3" AreaRadius="15" Type="GlobalDialog" Name="HLC1_Camp_AttackFromTheSky_3" DialogName="HLC1_Camp_AttackFromTheSky_3" />
+      <Event Trigger="EventEnd" EventName="HLC1_Clearing_AttackFromTheSky" Type="ActionSequence" Name="HuntLeague_C1_Shadowdrake" SequenceName="DYN_C1_M1_ShadowDrake" FemaleSequenceName="DYN_C1_M1_ShadowDrake" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_SoldierAttackFromTheSky_2" AreaRadius="16" Type="GlobalDialog" Name="HLC1_Clearing_AttackFromTheSky_2" DialogName="HLC1_Clearing_AttackFromTheSky_2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_PlayerReact" AreaRadius="22" Type="ActionSequence" Name="HuntLeague_C1_DestroyGate" SequenceName="DYN_C1_M1_DestroyGate" FemaleSequenceName="DYN_C1_M1_DestroyGate" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="GlobalMusic" Name="PostDestroyGate_Start_Music" MusicName="ACT3_Rempart2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Camp_Repu2" AreaRadius="20" Type="ActionSequence" Name="HuntLeague_C1_Watchtowers" SequenceName="DYN_C1_M1_WatchTowers" FemaleSequenceName="DYN_C1_M1_WatchTowers" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_Embankment_Cable1" EntityNames="Aset_Embankment_Cable1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_Embankment_Cable2" EntityNames="Aset_Embankment_Cable2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_Embankment_Cable3" EntityNames="Aset_Embankment_Cable3" Hide="1" />
+      <Event Trigger="EventStart" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Hide_GeneratorBlocker1" EntityNames="CE_HLC_C1_GeneratorDoorBlocker1" Hide="1" Delay="3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_GeneratorBlocker2" EntityNames="CE_HLC_C1_GeneratorDoorBlocker2" Hide="1" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase1" EntityNames="GPI_DragonBreath_1" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger1" EntityNames="AreaBox_DragonBreath_1" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase2" EntityNames="GPI_DragonBreath_2" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger2" EntityNames="AreaBox_DragonBreath_2" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase3" EntityNames="GPI_DragonBreath_3" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger3" EntityNames="AreaBox_DragonBreath_3" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase4" EntityNames="GPI_DragonBreath_4" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger4" EntityNames="AreaBox_DragonBreath_4" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase5" EntityNames="GPI_DragonBreath_5" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger5" EntityNames="AreaBox_DragonBreath_5" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase6" EntityNames="GPI_DragonBreath_6" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger6" EntityNames="AreaBox_DragonBreath_6" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase7" EntityNames="GPI_DragonBreath_7" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger7" EntityNames="AreaBox_DragonBreath_7" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase8" EntityNames="GPI_DragonBreath_8" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger8" EntityNames="AreaBox_DragonBreath_8" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase9" EntityNames="GPI_DragonBreath_9" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger9" EntityNames="AreaBox_DragonBreath_9" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase10" EntityNames="GPI_DragonBreath_10" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger10" EntityNames="AreaBox_DragonBreath_10" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase11" EntityNames="GPI_DragonBreath_11" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger11" EntityNames="AreaBox_DragonBreath_11" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase12" EntityNames="GPI_DragonBreath_12" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger12" EntityNames="AreaBox_DragonBreath_12" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase13" EntityNames="GPI_DragonBreath_13" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger13" EntityNames="AreaBox_DragonBreath_13" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase14" EntityNames="GPI_DragonBreath_14" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger14" EntityNames="AreaBox_DragonBreath_14" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase15" EntityNames="GPI_DragonBreath_15" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger15" EntityNames="AreaBox_DragonBreath_15" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase16" EntityNames="GPI_DragonBreath_16" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger16" EntityNames="AreaBox_DragonBreath_16" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase17" EntityNames="GPI_DragonBreath_17" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger17" EntityNames="AreaBox_DragonBreath_17" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase18" EntityNames="GPI_DragonBreath_18" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger18" EntityNames="AreaBox_DragonBreath_18" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase19" EntityNames="GPI_DragonBreath_19" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger19" EntityNames="AreaBox_DragonBreath_19" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase20" EntityNames="GPI_DragonBreath_20" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger20" EntityNames="AreaBox_DragonBreath_20" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase21" EntityNames="GPI_DragonBreath_21" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger21" EntityNames="AreaBox_DragonBreath_21" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase22" EntityNames="GPI_DragonBreath_22" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger22" EntityNames="AreaBox_DragonBreath_22" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase23" EntityNames="GPI_DragonBreath_23" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger23" EntityNames="AreaBox_DragonBreath_23" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase24" EntityNames="GPI_DragonBreath_24" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger24" EntityNames="AreaBox_DragonBreath_24" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase25" EntityNames="GPI_DragonBreath_25" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger25" EntityNames="AreaBox_DragonBreath_25" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase26" EntityNames="GPI_DragonBreath_26" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger26" EntityNames="AreaBox_DragonBreath_26" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase27" EntityNames="GPI_DragonBreath_27" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger27" EntityNames="AreaBox_DragonBreath_27" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase28" EntityNames="GPI_DragonBreath_28" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger28" EntityNames="AreaBox_DragonBreath_28" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase29" EntityNames="GPI_DragonBreath_29" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger29" EntityNames="AreaBox_DragonBreath_29" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase30" EntityNames="GPI_DragonBreath_30" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger30" EntityNames="AreaBox_DragonBreath_30" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase31" EntityNames="GPI_DragonBreath_31" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger31" EntityNames="AreaBox_DragonBreath_31" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase32" EntityNames="GPI_DragonBreath_32" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger32" EntityNames="AreaBox_DragonBreath_32" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase33" EntityNames="GPI_DragonBreath_33" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger33" EntityNames="AreaBox_DragonBreath_33" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase34" EntityNames="GPI_DragonBreath_34" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger34" EntityNames="AreaBox_DragonBreath_34" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase35" EntityNames="GPI_DragonBreath_35" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger35" EntityNames="AreaBox_DragonBreath_35" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathBase36" EntityNames="GPI_DragonBreath_36" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C1_DestroyGate" Type="EntityIsHidden" Name="HLC1_Unide_DragonFireBreathTrigger36" EntityNames="AreaBox_DragonBreath_36" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="HLC1_Deactivate_RepublicanCamp_VFX_ElectricGate_01" EmitterEntityName="RepublicanCamp_VFX_ElectricGate_01" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="HLC1_Deactivate_RepublicanCamp_VFX_ElectricGate_02" EmitterEntityName="RepublicanCamp_VFX_ElectricGate_02" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_Soldier_RaisingAlarm" SpawnClass="Sc_Sty_HLC1_REPU_RaisingAlarm" TargetEntityName="QP_HLC1_Gorge_RaisingAlarm" FaceAtSpawn="HL_C1_SpawnPoint_Gorge" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DoorLight1" EntityNames="Light_Republican_ElectricGate_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_DoorLight2" EntityNames="Light_Republican_ElectricGate_2 " Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger0" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_1" EmitterEntityName="Particle_C1_M1_firearea_warning_1" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger1" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_4" EmitterEntityName="Particle_C1_M1_firearea_warning_4" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger2" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_3" EmitterEntityName="Particle_C1_M1_firearea_warning_3" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger3" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_6" EmitterEntityName="Particle_C1_M1_firearea_warning_6" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger4" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_2" EmitterEntityName="Particle_C1_M1_firearea_warning_2" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger5" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_5" EmitterEntityName="Particle_C1_M1_firearea_warning_5" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger6" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_7" EmitterEntityName="Particle_C1_M1_firearea_warning_7" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="StepUpdate" Name="HLC1_Gorge_StepUpdate" Localization="" DisplayNewIcon="0" />
+    </Step>
+    <Step Order="7" UIName="@ui_C1_M1_S6_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="HL_C1_SpawnPoint_Gorge">
+      <Goal Order="0" Type="Interact" Names="AnimDoor_RepublicanDoor_3_clickable" InteractCount="1" ChannelingTime="4" Animation="status_targetEntityChanneling_loop">
+        <ArrowMarker Target="AnimDoor_RepublicanDoor_3_clickable" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Impossible" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HL_M1_Open_Door3_Hide" EntityNames="AnimDoor_RepublicanDoor_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionDoor" Name="HL_M1_Open_Door3" DoorName="AnimDoor_RepublicanDoor_3" Action="Open" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionDoor" Name="HL_M1_Unclickable_Door3" DoorName="AnimDoor_RepublicanDoor_3" Action="Lock" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HL_M1_Open_Door3_UnHide" EntityNames="AnimDoor_RepublicanDoor_3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HL_M1_Open_Door3_clickableHide" EntityNames="AnimDoor_RepublicanDoor_3_clickable" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HLM1_Hide_Blocker_AnimDoor3" EntityNames="Blocker_AnimDoor3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalFlowGraph" Name="HL_M1_Sound_GateOpenning3" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="Event_Arena_Start" WaveIndex="1" Type="GlobalAnnouncement" Name="C1_M1_EA_AN_Event" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_C1_M1_EA_CM_ArenaDescription_1" DisplayTime="3" Delay="10" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AnimDoor_RepublicanDoor_3" AreaRadius="15" Type="StepUpdate" Name="HLC1_Gorge_StepUpdate1" Localization="@ui_C1_M1_S4_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="HLC1_Gorge_StepUpdate2" Localization="@ui_C1_M1_S6_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="HLC1_Gorge_RepuOfficer" Type="StepUpdate" Name="HLC1_Gorge_StepUpdate3" Localization="@ui_C1_M1_S7_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="HLC1_Gorge_StepUpdate4" Localization="@ui_C1_M1_S1_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalCheckpoint" Name="Set_ArenaCheckpoint" CheckpointEntityName="HL_C1_SpawnPoint_Gorge" />
+      <Event Trigger="EventStart" EventName="HLC1_Gorge_RepuOfficer" Type="ArenaStart" Name="Event_Arena_Start" ArenaPreset="GorgeArena_HLC1" LocationEntityName="BanditArena_Act2" />
+      <Event Trigger="EventStart" EventName="HLC1_Gorge_RepuOfficer" Type="GlobalFlowGraph" Name="HL_M1_Bossfight_CamOn" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="Event_Arena_Start" WaveIndex="1" Type="GlobalMusic" Name="Arena_Start_Music" MusicName="ACT3_TowerRoofEvent" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="Event_Arena_Start" Type="GoalAchieve" Name="Event_Arena_Victory" GoalIndexToAchieve="1" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC1_Step6_Limit_UI" StepToKeep="2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="Event_Arena_Start" WaveIndex="3" Type="GlobalDialog" Name="HLC1_Gorge_Alastor" DialogName="HLC1_Gorge_Alastor" Delay="10.5" />
+      <Event Trigger="EventEnd" EventName="HLC1_Gorge_Alastor" Type="GlobalAnnouncement" Name="C1_M1_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_C1_M1_EA_CM_ArenaDescription_2" DisplayTime="3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Gorge_RaisingAlarm" AreaRadius="15" Type="GlobalDialog" Name="HLC1_Gorge_RepuOfficer" DialogName="HLC1_Gorge_RepuOfficer" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="HLC1_Gorge_RepuOfficer" Type="GlobalFlowGraph" Name="HL_M1_Sound_Alarm" Delay="9" />
+      <Event Trigger="EventEnd" EventName="HLC1_Gorge_RepuOfficer" Type="GlobalDialog" Name="HLC1_Gorge_PlayerReact1" DialogName="HLC1_Gorge_PlayerReact1" />
+      <Event Trigger="Eventstart" EventName="HLC1_Gorge_RepuOfficer" Type="ActionSequence" Name="HL_C1_LucanAttack1" SequenceName="DYN_C1_M1_LucanAttack_FirstPart" FemaleSequenceName="DYN_C1_M1_LucanAttack_FirstPart" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger0" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_1" EmitterEntityName="Particle_C1_M1_firearea_warning_1" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger1" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_4" EmitterEntityName="Particle_C1_M1_firearea_warning_4" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger2" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_3" EmitterEntityName="Particle_C1_M1_firearea_warning_3" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger3" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_6" EmitterEntityName="Particle_C1_M1_firearea_warning_6" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger4" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_2" EmitterEntityName="Particle_C1_M1_firearea_warning_2" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger5" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_5" EmitterEntityName="Particle_C1_M1_firearea_warning_5" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger6" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_7" EmitterEntityName="Particle_C1_M1_firearea_warning_7" Activate="0" />
+    </Step>
+    <Step Order="8" UIName="@ui_C1_M1_S6_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="HL_C1_SpawnPoint_Gorge">
+      <Goal Order="0" Type="Go" Destination="HL_C1_ArenaBlocker" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker Target="QP_HLC1_Gorge_AreaMarker" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="1" Type="Impossible" />
+      <Goal Order="2" Type="Talk" EntityName="NPC_HL_C1_LucanAttack_Ilthain" DialogName="HLC1_Gorge_Ilthain">
+        <ArrowMarker Target="NPC_HL_C1_LucanAttack_Ilthain" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="HLC1_Gorge_PlayerReact2" DialogName="HLC1_Gorge_PlayerReact2" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_M1_EA_AN_EventEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC1_Step7_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionSequence" Name="HL_C1_LucanAttack2" SequenceName="DYN_C1_M1_LucanAttack" FemaleSequenceName="DYN_C1_M1_LucanAttack" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="HLC1_Gorge_PostArena" Type="GoalAchieve" Name="End_HLC1_Gorge_Ilthain" GoalIndexToAchieve="1" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="1" Delay="13" Type="GlobalDialog" Name="HLC1_Gorge_PostArena" DialogName="HLC1_Gorge_PostArena" />
+      <Event Trigger="Eventstart" EventName="HL_C1_LucanAttack2" Type="ActionSequenceReset" Name="HL_C1_EndLucanAttack1" SequenceName="DYN_C1_M1_LucanAttack_FirstPart" ResetAtLastFrame="0" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="AnimDoor_RepublicanDoor_3" AreaRadius="35" Type="GlobalFlowGraph" Name="HL_M1_Bossfight_CamOff" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="HLC1_Gorge_StepUpdate2" Localization="@ui_C1_M2_S2_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="HLC1_Gorge_StepUpdate3" Localization="@ui_C1_M1_S1_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalMusic" Name="Arena_End_Music" MusicName="C1_M1_Cages" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionParticleEmitter" Name="HLC1_Hide_ArenaBlockerFX" EmitterEntityName="HLC1_ParticleEffect_ArenaBlocker" Activate="False" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger0" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_1" EmitterEntityName="Particle_C1_M1_firearea_warning_1" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger1" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_4" EmitterEntityName="Particle_C1_M1_firearea_warning_4" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger2" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_3" EmitterEntityName="Particle_C1_M1_firearea_warning_3" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger3" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_6" EmitterEntityName="Particle_C1_M1_firearea_warning_6" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger4" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_2" EmitterEntityName="Particle_C1_M1_firearea_warning_2" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger5" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_5" EmitterEntityName="Particle_C1_M1_firearea_warning_5" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger6" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_7" EmitterEntityName="Particle_C1_M1_firearea_warning_7" Activate="0" />
+    </Step>
+    <Step Order="9" UIName="@ui_C1_M1_S8_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="HL_C1_ClickableEntity_FromStablesToPit" InteractCount="1">
+        <ArrowMarker Target="HL_C1_ClickableEntity_FromStablesToPit" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="BossFight" FightPreset="BossFight_Lucan" />
+      <Goal Order="2" Type="Go" Destination="QP_Unreachable" Radius="20" RequireAllPlayers="0" />
+      <Goal Order="3" Type="Talk" EntityName="NPC_HLC1_Forest_IlthainFinal" DialogName="HLC1_TP_Ilthain">
+        <ArrowMarker Target="QP_HLC1_Ilthain_Arrowmarker_EndMission" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="C1_M1_EA_AN_BossFight" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_C1_M1_EA_CM_BossFightDescription" DisplayTime="2" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HLC1_Hide_NPC_HLC1_Forest_IlthainFinal" EntityNames="NPC_HLC1_Forest_IlthainFinal" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HLC1_Hide_AnimObject_LucanQuestionning_Ondar_1" EntityNames="AnimObject_LucanQuestionning_Ondar_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HLC1_Hide_AnimObject_LucanQuestionning_LucanDrake_1" EntityNames="AnimObject_LucanQuestionning_LucanDrake_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HLC1_Hide_AnimObject_LucanQuestionning_Lucan_1" EntityNames="AnimObject_LucanQuestionning_Lucan_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="HL_C1_LucanAttack3" SequenceName="DYN_C1_M1_LucanAttack_EndPart" FemaleSequenceName="DYN_C1_M1_LucanAttack_EndPart" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Unhide_TransitionToCamp" EntityNames="HL_C1_ClickableEntity_FromStabToCamp" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_DrakeStables_React1Spawn" SpawnClass="Sc_Sty_HLC1_DrakeStables_React1" TargetEntityName="QP_HLC1_DrakeStables_React1" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_DrakeStables_React2Spawn" SpawnClass="Sc_Sty_HLC1_DrakeStables_React2" TargetEntityName="QP_HLC1_DrakeStables_React2" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_DrakeStables_React3Spawn" SpawnClass="Sc_Sty_HLC1_DrakeStables_React3" TargetEntityName="QP_HLC1_DrakeStables_React3" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HLC1_DrakeStables_React4Spawn" SpawnClass="Sc_Sty_HLC1_DrakeStables_React4" TargetEntityName="QP_HLC1_DrakeStables_React4" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_DrakeStables_React1" AreaRadius="15" Type="GlobalDialog" Name="HLC1_DrakeStables_React1Talk" DialogName="HLC1_DrakeStables_React1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_DrakeStables_React2" AreaRadius="15" Type="GlobalDialog" Name="HLC1_DrakeStables_React2Talk" DialogName="HLC1_DrakeStables_React2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_DrakeStables_React3" AreaRadius="15" Type="GlobalDialog" Name="HLC1_DrakeStables_React3Talk" DialogName="HLC1_DrakeStables_React3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_DrakeStables_React4" AreaRadius="15" Type="GlobalDialog" Name="HLC1_DrakeStables_React4Talk" DialogName="HLC1_DrakeStables_React4" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC1_Hide_ArenaBlocker" EntityNames="HL_C1_ArenaBlocker" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="HLC1_Hide_ArenaBlockerFX2" EmitterEntityName="HLC1_ParticleEffect_ArenaBlocker2" Activate="False" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC1_Step7_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Gorge_Repu" AreaRadius="20" Type="GlobalFlowGraph" Name="HL_M1_StunningDrake_CamOn" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Gorge_Repu" AreaRadius="20" Type="GlobalFlowGraph" Name="HL_M1_StunningDrake_CamOff" Delay="18" />
+      <Event Trigger="EventStart" EventName="HL_M1_StunningDrake_CamOn" Type="GlobalDialog" Name="HLC1_Gorge_Repu" DialogName="HLC1_Gorge_Repu" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Mapmarker_SceondaryQuest" AreaRadius="55" Type="GlobalDialog" Name="HLC1_Gorge_PlayerReact" DialogName="HLC1_Gorge_PlayerReact" Delay="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Mapmarker_SceondaryQuest" AreaRadius="55" Type="GlobalAnnouncement" Name="C1_M1_SA_AN_SecondaryQuestName" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_C1_M1_Secondary_QuestLabel" DisplayTime="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC1_Mapmarker_SceondaryQuest" AreaRadius="55" Type="GlobalStartQuest" Name="HLC1_UnlockSecondaryQuest" QuestName="HL_C1_Secondary" StopOnQuestEnding="False" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalCheckpoint" Name="Set_LucanCheckpoint" CheckpointEntityName="HL_C1_SpawnPoint_Pit" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalAnnouncement" Name="C1_M1_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="HLC1_TP_Final" DialogName="HLC1_TP_Final" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalFlowGraph" Name="HL_M1_Bossfight_CamOff" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalFlowGraph" Name="HL_M1_LucanQuestioningOn" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionSequence" Name="HLC1_LucanQuestionning" SequenceName="DYN_C1_M1_LucanQuestionning" FemaleSequenceName="DYN_C1_M1_LucanQuestionning" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="HLC1_LucanQuestionning" Type="GoalAchieve" Name="HLC1_TP_Achieved_DS18" SimulateOnly="0" GoalIndexToAchieve="2" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="HLC1_Reveal_IlthainFinal" EntityNames="NPC_HLC1_Forest_IlthainFinal" Hide="False" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="HLC1_TrainingPit_StepUpdate1" Localization="@ui_C1_M1_S8_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="HLC1_TrainingPit_StepUpdate2" Localization="@ui_C1_M1_S8_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="QuestFail" Name="HLC1_Fail SecondaryQuest" QuestName="HL_C1_Secondary" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="HLC1_Unhide_TransitionFromPitToStab" EntityNames="HL_C1_ClickableEntity_FromPitToStab" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="SpawnNPC1ExitPortal" Name="HLC1_SpawnPortal" BackToTown="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_01" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor01" EntityNames="HL_C1_AD_DragonCage_01" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_02" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor02" EntityNames="HL_C1_AD_DragonCage_02" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_03" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor03" EntityNames="HL_C1_AD_DragonCage_03" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_04" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor04" EntityNames="HL_C1_AD_DragonCage_04" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_05" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor05" EntityNames="HL_C1_AD_DragonCage_05" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_06" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor06" EntityNames="HL_C1_AD_DragonCage_06" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_07" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor07" EntityNames="HL_C1_AD_DragonCage_07" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_08" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor08" EntityNames="HL_C1_AD_DragonCage_08" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_09" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor09" EntityNames="HL_C1_AD_DragonCage_09" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_10" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor10" EntityNames="HL_C1_AD_DragonCage_10" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_11" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor11" EntityNames="HL_C1_AD_DragonCage_11" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_12" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor12" EntityNames="HL_C1_AD_DragonCage_12" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_13" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor13" EntityNames="HL_C1_AD_DragonCage_13" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_14" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor14" EntityNames="HL_C1_AD_DragonCage_14" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_15" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor15" EntityNames="HL_C1_AD_DragonCage_15" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_16" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor16" EntityNames="HL_C1_AD_DragonCage_16" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_17" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor17" EntityNames="HL_C1_AD_DragonCage_17" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_18" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor18" EntityNames="HL_C1_AD_DragonCage_18" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_19" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor19" EntityNames="HL_C1_AD_DragonCage_19" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_20" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor20" EntityNames="HL_C1_AD_DragonCage_20" Hide="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="HL_C1_DragonCage_21" Type="EntityIsHidden" Name="HLC1_SQ_Unhide_AnimDoor21" EntityNames="HL_C1_AD_DragonCage_21" Hide="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor01" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door01" AnimatedEntityName="HL_C1_AD_DragonCage_01" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor02" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door02" AnimatedEntityName="HL_C1_AD_DragonCage_02" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor03" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door03" AnimatedEntityName="HL_C1_AD_DragonCage_03" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor04" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door04" AnimatedEntityName="HL_C1_AD_DragonCage_04" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor05" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door05" AnimatedEntityName="HL_C1_AD_DragonCage_05" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor06" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door06" AnimatedEntityName="HL_C1_AD_DragonCage_06" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor07" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door07" AnimatedEntityName="HL_C1_AD_DragonCage_07" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor08" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door08" AnimatedEntityName="HL_C1_AD_DragonCage_08" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor09" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door09" AnimatedEntityName="HL_C1_AD_DragonCage_09" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor10" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door10" AnimatedEntityName="HL_C1_AD_DragonCage_10" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor11" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door11" AnimatedEntityName="HL_C1_AD_DragonCage_11" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor12" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door12" AnimatedEntityName="HL_C1_AD_DragonCage_12" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor13" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door13" AnimatedEntityName="HL_C1_AD_DragonCage_13" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor14" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door14" AnimatedEntityName="HL_C1_AD_DragonCage_14" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor15" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door15" AnimatedEntityName="HL_C1_AD_DragonCage_15" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor16" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door16" AnimatedEntityName="HL_C1_AD_DragonCage_16" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor17" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door17" AnimatedEntityName="HL_C1_AD_DragonCage_17" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor18" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door18" AnimatedEntityName="HL_C1_AD_DragonCage_18" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor19" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door19" AnimatedEntityName="HL_C1_AD_DragonCage_19" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor20" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door20" AnimatedEntityName="HL_C1_AD_DragonCage_20" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Unhide_AnimDoor21" Type="EntityAnimate" Name="HLC1_SQ_Openning_Door21" AnimatedEntityName="HL_C1_AD_DragonCage_21" Play="Default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door01" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door01" EntityNames="HL_C1_DragonCage_01" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door02" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door02" EntityNames="HL_C1_DragonCage_02" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door03" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door03" EntityNames="HL_C1_DragonCage_03" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door04" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door04" EntityNames="HL_C1_DragonCage_04" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door05" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door05" EntityNames="HL_C1_DragonCage_05" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door06" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door06" EntityNames="HL_C1_DragonCage_06" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door07" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door07" EntityNames="HL_C1_DragonCage_07" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door08" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door08" EntityNames="HL_C1_DragonCage_08" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door09" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door09" EntityNames="HL_C1_DragonCage_09" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door10" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door10" EntityNames="HL_C1_DragonCage_10" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door11" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door11" EntityNames="HL_C1_DragonCage_11" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door12" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door12" EntityNames="HL_C1_DragonCage_12" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door13" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door13" EntityNames="HL_C1_DragonCage_13" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door14" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door14" EntityNames="HL_C1_DragonCage_14" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door15" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door15" EntityNames="HL_C1_DragonCage_15" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door16" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door16" EntityNames="HL_C1_DragonCage_16" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door17" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door17" EntityNames="HL_C1_DragonCage_17" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door18" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door18" EntityNames="HL_C1_DragonCage_18" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door19" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door19" EntityNames="HL_C1_DragonCage_19" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door20" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door20" EntityNames="HL_C1_DragonCage_20" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door21" Type="EntityIsHidden" Name="HLC1_SQ_Hide_Door21" EntityNames="HL_C1_DragonCage_21" Hide="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door01" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake01" AnimatedEntityName="HL_C1_Dragon_01" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door02" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake02" AnimatedEntityName="HL_C1_Dragon_02" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door03" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake03" AnimatedEntityName="HL_C1_Dragon_03" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door04" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake04" AnimatedEntityName="HL_C1_Dragon_04" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door05" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake05" AnimatedEntityName="HL_C1_Dragon_05" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door06" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake06" AnimatedEntityName="HL_C1_Dragon_06" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door07" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake07" AnimatedEntityName="HL_C1_Dragon_07" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door08" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake08" AnimatedEntityName="HL_C1_Dragon_08" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door09" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake09" AnimatedEntityName="HL_C1_Dragon_09" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door10" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake10" AnimatedEntityName="HL_C1_Dragon_10" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door11" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake11" AnimatedEntityName="HL_C1_Dragon_11" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door12" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake12" AnimatedEntityName="HL_C1_Dragon_12" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door13" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake13" AnimatedEntityName="HL_C1_Dragon_13" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door14" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake14" AnimatedEntityName="HL_C1_Dragon_14" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door15" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake15" AnimatedEntityName="HL_C1_Dragon_15" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door16" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake16" AnimatedEntityName="HL_C1_Dragon_16" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door17" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake17" AnimatedEntityName="HL_C1_Dragon_17" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door18" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake18" AnimatedEntityName="HL_C1_Dragon_18" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door19" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake19" AnimatedEntityName="HL_C1_Dragon_19" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door20" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake20" AnimatedEntityName="HL_C1_Dragon_20" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door21" Type="EntityAnimate" Name="HLC1_SQ_Flying_Drake21" AnimatedEntityName="HL_C1_Dragon_21" Play="REPU_Dragon_Dyn_TakeOff_01" Loop="0" SpeedScale="1" BlendingTime="1" Delay="1" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door01" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound01" EntityName="HL_C1_DragonCage_01" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door02" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound02" EntityName="HL_C1_DragonCage_02" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door03" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound03" EntityName="HL_C1_DragonCage_03" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door04" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound04" EntityName="HL_C1_DragonCage_04" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door05" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound05" EntityName="HL_C1_DragonCage_05" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door06" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound06" EntityName="HL_C1_DragonCage_06" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door07" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound07" EntityName="HL_C1_DragonCage_07" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door08" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound08" EntityName="HL_C1_DragonCage_08" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door09" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound09" EntityName="HL_C1_DragonCage_09" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door10" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound10" EntityName="HL_C1_DragonCage_10" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door11" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound11" EntityName="HL_C1_DragonCage_11" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door12" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound12" EntityName="HL_C1_DragonCage_12" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door13" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound13" EntityName="HL_C1_DragonCage_13" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door14" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound14" EntityName="HL_C1_DragonCage_14" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door15" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound15" EntityName="HL_C1_DragonCage_15" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door16" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound16" EntityName="HL_C1_DragonCage_16" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door17" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound17" EntityName="HL_C1_DragonCage_17" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door18" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound18" EntityName="HL_C1_DragonCage_18" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door19" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound19" EntityName="HL_C1_DragonCage_19" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door20" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound20" EntityName="HL_C1_DragonCage_20" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EventStart" EventName="HLC1_SQ_Openning_Door21" Type="EntitySound" Name="HLC1_SQ_Openning_Door_Sound21" EntityName="HL_C1_DragonCage_21" SoundName="Play_RepublicCamp_DragonCage_Open" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger0" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_1" EmitterEntityName="Particle_C1_M1_firearea_warning_1" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger1" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_4" EmitterEntityName="Particle_C1_M1_firearea_warning_4" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger2" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_3" EmitterEntityName="Particle_C1_M1_firearea_warning_3" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger3" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_6" EmitterEntityName="Particle_C1_M1_firearea_warning_6" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger4" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_2" EmitterEntityName="Particle_C1_M1_firearea_warning_2" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger5" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_5" EmitterEntityName="Particle_C1_M1_firearea_warning_5" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger6" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_7" EmitterEntityName="Particle_C1_M1_firearea_warning_7" Activate="0" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="30000" />
+        <XP Amount="450000" />
+        <Cosmetics>
+          <Cosmetic Name="u_Hunt_Pant" Weapon="0" />
+          <Cosmetic Name="u_Hunt_Boots" Weapon="0" />
+          <Cosmetic Name="u_Hunt_Arm" Weapon="0" />
+        </Cosmetics>
+      </Reward>
+    </Step>
+    <Step Order="10" UIName="@ui_C1_M1_S9_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="npc1_exit_portal" InteractCount="1">
+        <ArrowMarker Target="npc1_exit_portal" Area="C1_M1" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="C1_M1_SA_AN_EndQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndQuest" ContextualMessage="@ui_C1_M1_QuestLabel" DisplayTime="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger0" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_1" EmitterEntityName="Particle_C1_M1_firearea_warning_1" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger1" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_4" EmitterEntityName="Particle_C1_M1_firearea_warning_4" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger2" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_3" EmitterEntityName="Particle_C1_M1_firearea_warning_3" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger3" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_6" EmitterEntityName="Particle_C1_M1_firearea_warning_6" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger4" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_2" EmitterEntityName="Particle_C1_M1_firearea_warning_2" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger5" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_5" EmitterEntityName="Particle_C1_M1_firearea_warning_5" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="HL_C1_AreaSphere_SentriesSpawnTrigger6" AreaRadius="15" Type="ActionParticleEmitter" Name="HLC1_Deactivate_S2_Particle_C1_M1_firearea_warning_7" EmitterEntityName="Particle_C1_M1_firearea_warning_7" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Reset_FinalCheckpoint" CheckpointEntityName="" />
+    </Step>
+  </Quest>
+</MetaData>

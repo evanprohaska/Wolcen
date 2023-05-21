@@ -1,0 +1,43 @@
+<MetaData>
+  <Skill UID="AI_CultOfFlesh_Siamese_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="2.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="CultOfFlesh_Siamese_DefaultAttack_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Outlaw_Brute_Attack_Swing" OnAnimCast="Play_Outlaw_Brute_Attack_Impact" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_CultOfFlesh_Siamese_ElasticArm" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="4.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="CultOfFlesh_Siamese_ElasticArm_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Outlaw_Brute_Attack_Swing" OnAnimCast="Play_Outlaw_Brute_Attack_Impact" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_CultOfFlesh_Siamese_BloodPuke" ESkill="AI_cultofsouls_demonofsouls_bansheescream" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="rend" WeaponMultiplier=".25" />
+    <StatusAilment>
+      <bleed Chance="100" ChanceMode="Ignored" Duration="3" DurationMode="override" />
+    </StatusAilment>
+    <StatusEffect_MovementSpeed SlowPercent="50" SlowPercentPerLevel="0" Duration="1" DurationPerLevel="0" />
+    <Cooldown Cooldown="6.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Range AttackRange="6" />
+    <DamageZone RateOfFire="1" Duration="5" />
+    <Shapes>
+      <Entry ShapeName="CultOfFlesh_Siamese_Bloodpuke_Shape" />
+    </Shapes>
+    <ParticleList />
+    <SkillSpecific DistanceBetweenParticles="4" />
+    <SoundTrigger OnAnimStart="" OnAnimCast="" OnHit="" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

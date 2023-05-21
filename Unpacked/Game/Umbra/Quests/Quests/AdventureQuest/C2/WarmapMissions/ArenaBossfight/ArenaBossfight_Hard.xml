@@ -1,0 +1,466 @@
+<MetaData>
+  <Quest Name="WM_Q5_Main_COFYR1_Hard" UIName="@WM_Q5_Main_COFY_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COFY_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COFYR1_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COFYR1_PacifiedGolgoth_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COFYR2_Hard" UIName="@WM_Q5_Main_COFY_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COFY_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COFYR2_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COFYR2_PacifiedGolgoth_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COFYT1_Hard" UIName="@WM_Q5_Main_COFY_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COFY_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COFYT1_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COFYT1_Knight_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COFYT2_Hard" UIName="@WM_Q5_Main_COFY_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COFY_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COFYT2_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COFYT2_Knight_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COSSD1_Hard" UIName="@WM_Q5_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COSSD1_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COSSD1_PrimoGuardian_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COSSD2_Hard" UIName="@WM_Q5_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COSSD2_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COSSD2_PrimoGuardian_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COSSS_Hard" UIName="@WM_Q5_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COSSS_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COSSS_DoS_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COSST_Hard" UIName="@WM_Q5_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COSST_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COSST_Butcher_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COSSU1_Hard" UIName="@WM_Q5_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COSSU1_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COSSU1_Butcher_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COSSU2_Hard" UIName="@WM_Q5_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COSSU2_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COSSU2_Butcher_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COSSW_Hard" UIName="@WM_Q5_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COSSW_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COSSW_Butcher_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COFEM_Hard" UIName="@WM_Q5_Main_COFE_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COFE_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COFEM_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COFEM_DoF_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COFER_Hard" UIName="@WM_Q5_Main_COFE_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COFE_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COFER_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COFER_DoF_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COFET_Hard" UIName="@WM_Q5_Main_COFE_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COFE_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COFET_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COFET1_DoF_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_COFEW_Hard" UIName="@WM_Q5_Main_COFE_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_COFE_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_COFEW_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_COFEW_DoF_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_SVRIC_Hard" UIName="@WM_Q5_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_SVRIC_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_SC_AlphaPoison_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_SVRIF_Hard" UIName="@WM_Q5_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_SVRIF_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_SF_AlphaPoison_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_SVRIL1_Hard" UIName="@WM_Q5_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_SVRIL1_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_SL1_AlphaPoison_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_SVRIL2_Hard" UIName="@WM_Q5_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_SVRIL2_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_SL2_AlphaPoison_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_SVRIS1_Hard" UIName="@WM_Q5_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_SVRIS1_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_SS1_AlphaPoison_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_SVRIS2_Hard" UIName="@WM_Q5_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_SVRIS2_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_SS2_AlphaPoison_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_SVRIWC_Hard" UIName="@WM_Q5_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_SVRIWC_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_SWC_AlphaPoison_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_SVRIWS_Hard" UIName="@WM_Q5_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_SVRIWS_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_SWS_AlphaPoison_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_SVRIWF_Hard" UIName="@WM_Q5_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_SVRIWF_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_SWF_AlphaPoison_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_OUTWF_Hard" UIName="@WM_Q5_Main_OUTW_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_OUTW_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_OUTWF_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_OF_Thug_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_OUTS_Hard" UIName="@WM_Q5_Main_OUTW_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_OUTW_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_OUTWF_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_OS_Thug_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_OUTWS_Hard" UIName="@WM_Q5_Main_OUTW_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_OUTW_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_OUTWF_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_OWS_Warbeast_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_REPU_Hard" UIName="@WM_Q5_Main_REPU_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_REPU_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_REPU_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_R_Assassin_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_Main_RR_Hard" UIName="@WM_Q5_Main_REPU_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q5_Main_REPU_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="Arena_BossSpawn">
+        <ArrowMarker Target="Arena_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="15" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena" ArenaPreset="ArenaPreset_WM_H_REPURED_Final" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EventEnd" Name="EndtArena" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EndtArena" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="3" Type="EntitySpawn" Name="Arena_BossSpawn" SpawnClass="Sc_WM_H_RR_Justicar_FinalBoss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+</MetaData>

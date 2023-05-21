@@ -1,0 +1,34 @@
+<MetaData>
+  <Spell Name="AST_Fireball_DamageBoost" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_fire" Permanent="0">
+        <Semantics DamagePercentInt="35" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_fire.png" Description="@ui_FireballFireDamageBoost_Desc" Title="@ui_FireballFireDamageBoost_Title" />
+  </Spell>
+  <Spell Name="AST_Fireball_DamageBoost_Lightning" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_lightning" Permanent="0">
+        <Semantics DamagePercentInt="35" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_lightning.png" Description="@ui_FireballLightningDamageBoost_Desc" Title="@ui_FireballLightningDamageBoost_Title" />
+  </Spell>
+  <Spell Name="AST_Fireball_DamageBoost_Poison" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_toxic" Permanent="0">
+        <Semantics DamagePercentInt="35" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_poison.png" Description="@ui_FireballPoisonDamageBoost_Desc" Title="@ui_FireballPoisonDamageBoost_Title" />
+  </Spell>
+  <Spell Name="AST_Fireball_DamageBoost_Shadow" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_shadow" Permanent="0">
+        <Semantics DamagePercentInt="35" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_shadow.png" Description="@ui_FireballShadowDamageBoost_Desc" Title="@ui_FireballShadowDamageBoost_Title" />
+  </Spell>
+</MetaData>

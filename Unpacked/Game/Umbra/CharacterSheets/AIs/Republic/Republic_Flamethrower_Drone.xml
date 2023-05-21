@@ -1,0 +1,62 @@
+<MetaData>
+  <BaseEntity ID="Republic_Flamethrower_Drone" EntityName="republic_infantry_sword" Scale="1" CanKillAllies="0" />
+  <Faction Name="Republic" />
+  <Keywords Value="repu,trash,melee,weak,fire" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="0.5" CombatPointValueMultiplier="0.5" />
+  <Attributes Archetype="archetype_trash" HealthModifier="0.5" DamageModifier="0.5" XPModifier="0.5" Protection="" />
+  <Movement MovementSpeed="3" WalkSpeed="3" />
+  <InterruptionParams InterruptChance="1.00" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BlownAwayParams CanBeBlownAway="1" BlownAwayAnimationTag="" />
+  <DefaultBossModifiers />
+  <LootClass>
+    <Loot Class="LC_trash" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="" />
+  <OnDeathLootPreset Name="OnDeathLoot_Trash" />
+  <Corpses PresetName="TrashCadaverPreset" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="360" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Generic" />
+    <BT FleeOnLowHealthChance="0.0" EngageRange="15.0" MeleeAttack="True" FallBack="True" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="Melee" />
+  </Kythera>
+  <Skills>
+    <DefaultBasicAttack>
+      <Skill Name="AI_Flamethrower_Drone_MeleeAttack" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.0" Preferred="1.5" Max="3.0" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </DefaultBasicAttack>
+  </Skills>
+  <RandomModel>
+    <ModelChoice Model="Objects\characters\mobs\Robot\Drone\REPU_Drone_FlameThrower\REPU_Drone_FlameThrower_01.cdf" Weight="1">
+      <ADBChoice ADB="Animations\Mannequin\ADB\Mobs\Robot\Drone\REPU_Drone_Flamethrower.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIName_Republic_FlamethrowerDrone" ZIconOffset="2.3" />
+  <Spawn SpawnAnimation="rise_out_ground_fast" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation=".1" DeathSkill="" CosmeticDropPreset="Drone_Flamethrower" OnDeathMaterial="Objects/characters/Textures/invisible.mtl" />
+  <GameplayParticles PresetName="size_medium">
+    <Particle Name="Event_death" ParticleName="U_Monster.Drone.Death" Offset="0,0,0" Dir="0,0,0" Scale="1" />
+  </GameplayParticles>
+  <Capsules>
+    <EntityPhysics ColliderSize="0.5,0.5,0.5" IsPushable="0" RagdollMass="300" />
+    <MouseSelection SelectionCapsuleRadius="0.7" SelectionCapsuleHeight="0.7" SelectionCapsuleZOffset="0" />
+    <ProjectileCollision ProjectileCapsuleRadius="0.4" ProjectileCapsuleHeight="4.0" CanSnapOnCenterWhenColliding="1" />
+    <VegetationCollision SphereRadius="0.4" SphereZOffset="0.4" />
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="default" OverrideScale="1" />
+  </VisualParams>
+  <BoneParticles>
+    <BoneParticle BoneName="Bip01 L Wing" ParticleName="U_Monster.Drone.Ambient_Flying" Offset="0,0,0" Dir="0,1,0" Scale="1" />
+    <BoneParticle BoneName="Bip01 R Wing" ParticleName="U_Monster.Drone.Ambient_Flying" Offset="0,0,0" Dir="0,-1,0" Scale="1" />
+  </BoneParticles>
+  <Audio AllowGroupSounds="1" SurfaceType="metal" />
+  <RandomVoice />
+  <SoundTriggers>
+    <SoundTrigger SoundName="Play_REPU_Drone_Movement_Loop" />
+  </SoundTriggers>
+</MetaData>

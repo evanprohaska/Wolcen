@@ -1,0 +1,16 @@
+<MetaData>
+  <Projectile ID="halfbreed_soulcharge_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_SoulEliment.Soul_Ribon.DOS_Soul_Projectile_05" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Halfbreed_SoulCharge_Charge" />
+      <Removed SoundTriggerName="Play_Halfbreed_SoulCharge_Charge_HitEnv" />
+      <HitEnvironment SoundTriggerName="Play_Halfbreed_SoulCharge_Charge_HitEnv" />
+    </Audio>
+  </Projectile>
+</MetaData>

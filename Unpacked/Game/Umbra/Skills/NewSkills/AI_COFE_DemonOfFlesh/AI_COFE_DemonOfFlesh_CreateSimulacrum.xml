@@ -1,0 +1,32 @@
+<MetaData>
+  <Skill UID="AI_CultOfFlesh_DemonOfFlesh_CreateSimulacrum" ESkill="AI_cultofflesh_DemonOfFlesh_CreateSimulacrum" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ActionString_OutMissed="monster_skill_loop_02_out_01" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="15.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Summoning MaxSummons="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Male" Name="sc_SimulacrumMale" />
+      <SummonedSpawnClass Key="Female" Name="sc_SimulacrumFemale" />
+    </Summoning>
+    <SkillSpecific BossModifierToApply="AI_COFE_Simulacrum_DebuffTarget" />
+    <Shapes>
+      <Entry ShapeName="DemonOfFlesh_DrainForSimulacrum" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="" OnHit="Play_Halfbreed_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Endgame_CultOfFlesh_DemonOfFlesh_CreateSimulacrum" ESkill="AI_cultofflesh_DemonOfFlesh_CreateSimulacrum" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ActionString_OutMissed="monster_skill_loop_02_out_01" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="15.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Summoning MaxSummons="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Male" Name="sc_Endgame_SimulacrumMale" />
+      <SummonedSpawnClass Key="Female" Name="sc_Endgame_SimulacrumFemale" />
+    </Summoning>
+    <SkillSpecific BossModifierToApply="AI_COFE_Simulacrum_DebuffTarget" />
+    <Shapes>
+      <Entry ShapeName="DemonOfFlesh_DrainForSimulacrum" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="" OnHit="Play_Halfbreed_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

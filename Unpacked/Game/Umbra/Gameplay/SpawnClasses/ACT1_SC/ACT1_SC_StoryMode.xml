@@ -1,0 +1,957 @@
+<MetaData>
+  <SpawnClass Name="Sc_Prologue_B_Me1">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01_Intro" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Prologue_B_Me2">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02_Intro" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Prologue_B_Me3">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03_Intro" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Prologue_B_R">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged_Intro" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Prologue_B_Tr">
+    <Spawn Type="Actor" ClassName="OutlawsNormalTrapper_Intro" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Prologue_COS_LS">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Prologue_COS_C">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Cultist" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Prologue_B_Named_Me1">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01_Intro" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="BanditMeleePrologue" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Prologue_B_Named_R">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged_Intro" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="BanditRangePrologue" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Prologue_B_Named_TrapperIntro">
+    <Spawn Type="Actor" ClassName="OutlawsTrapperIntro" NumberMin="1" NumberMax="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="TrapperIntro" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_WreckCoast_S_O">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_WreckCoast_S_B">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_WreckCoast_S_Medium1">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_WreckCoast_S_Medium2">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_WreckCoast_S_Medium3">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Highlands_S_O">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Highlands_S_B">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Highlands_S_Named_Spi">
+    <Spawn Type="Actor" ClassName="SvriirNoxwing" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Highlands_S_Medium1">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Highlands_S_Medium2">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Highlands_S_Medium3">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Highlands_S_Hard1">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Highlands_S_Hard2">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Highlands_S_Hard3">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="10" NumberMax="10" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Conscript_Small_1">
+    <Spawn Type="Actor" ClassName="Conscript_Archer" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="Conscript_Melee" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Conscript_Small_2">
+    <Spawn Type="Actor" ClassName="Conscript_Melee" NumberMin="3" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Conscript_Small_3">
+    <Spawn Type="Actor" ClassName="Conscript_Archer" NumberMin="3" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Conscript_Medium_1">
+    <Spawn Type="Actor" ClassName="Conscript_Archer" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="Conscript_Melee" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Conscript_Medium_2">
+    <Spawn Type="Actor" ClassName="Conscript_Melee" NumberMin="5" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Conscript_Medium_3">
+    <Spawn Type="Actor" ClassName="Conscript_Archer" NumberMin="5" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Conscript_Large_1">
+    <Spawn Type="Actor" ClassName="Conscript_Archer" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="Conscript_Melee" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Conscript_Large_2">
+    <Spawn Type="Actor" ClassName="Conscript_Melee" NumberMin="7" NumberMax="8" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Conscript_Large_3">
+    <Spawn Type="Actor" ClassName="Conscript_Archer" NumberMin="7" NumberMax="8" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_S_O">
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_S_B">
+    <Spawn Type="Actor" ClassName="SvriirOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_S_Spi">
+    <Spawn Type="Actor" ClassName="SvriirBetaSpitter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_S_Scr">
+    <Spawn Type="Actor" ClassName="SvriirBetaScreecher" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_S_TM">
+    <Spawn Type="Actor" ClassName="SvriirMorgon_toxic" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_S_BR1_Scr">
+    <Spawn Type="Actor" ClassName="SvriirBetaScreecher" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Br">
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_B_Me1">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_B_Me2">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_B_Me3">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_B_R">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_B_Tr">
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Trash_B_CP4_1">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Trash_B_CP4_2">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Trash_B_CP4_3">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Trash_B_CP6_1">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="6" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Trash_B_CP6_2">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="3" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Trash_B_CP6_3">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01" NumberMin="2" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Trash_B_CP8_1">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01" NumberMin="2" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Trash_B_CP8_2">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="8" NumberMax="10" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Trash_B_CP8_3">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="2" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Lieutenant_B_CP6_1">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Lieutenant_B_CP6_2">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Lieutenant_B_CP6_3">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Lieutenant_B_CP6_4">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Lieutenant_B_CP6_5">
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Lieutenant_B_CP6_6">
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Lieutenant_B_CP6_7">
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Lieutenant_B_CP6_8">
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Rat_W_CP4">
+    <Spawn Type="Actor" ClassName="WildRat" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Rat_W_CP6">
+    <Spawn Type="Actor" ClassName="WildRat" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Rat_W_CP8">
+    <Spawn Type="Actor" ClassName="WildRat" NumberMin="8" NumberMax="8" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Hornet_W_CP4">
+    <Spawn Type="Actor" ClassName="WildHornet" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Hornet_W_CP6">
+    <Spawn Type="Actor" ClassName="WildHornet" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_Hornet_W_CP8">
+    <Spawn Type="Actor" ClassName="WildHornet" NumberMin="8" NumberMax="8" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_S_BR1_Br">
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_S_BR1_Tr">
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_S_O">
+    <Spawn Type="Actor" ClassName="SvriirCaveOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_S_MS">
+    <Spawn Type="Actor" ClassName="SvriirCaveMiniSpitter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_S_B">
+    <Spawn Type="Actor" ClassName="SvriirCaveOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_S_Spa">
+    <Spawn Type="Actor" ClassName="SvriirCaveBetaSpawner" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_S_Scr">
+    <Spawn Type="Actor" ClassName="SvriirCaveBetaScreecher" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_S_OF">
+    <Spawn Type="Actor" ClassName="SvriirCaveOmegaFemale" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_COS_LS">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_COS_SSS">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniSpecter_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_S_MS">
+    <Spawn Type="Actor" ClassName="SvriirCaveMiniSpitter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_S_O">
+    <Spawn Type="Actor" ClassName="SvriirCaveOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_S_B">
+    <Spawn Type="Actor" ClassName="SvriirCaveOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_S_TM">
+    <Spawn Type="Actor" ClassName="SvriirMorgon_toxic" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_S_Spa">
+    <Spawn Type="Actor" ClassName="SvriirCaveBetaSpawner" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_S_Scr">
+    <Spawn Type="Actor" ClassName="SvriirCaveBetaScreecher" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_S_Spi">
+    <Spawn Type="Actor" ClassName="SvriirCaveBetaSpitter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_S_OF">
+    <Spawn Type="Actor" ClassName="SvriirCaveOmegaFemale" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_Wild_S">
+    <Spawn Type="Actor" ClassName="WildSnake" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_B_Me1">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_B_Me2">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_B_Me3">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_B_W1">
+    <Spawn Type="Actor" ClassName="OutlawsWorg01" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="1" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_B_HeavyWorg">
+    <Spawn Type="Actor" ClassName="OutlawsWorgAlpha" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="1" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_B_R">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_B_Tr">
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_B_Km">
+    <Spawn Type="Actor" ClassName="OutlawsKennelMaster" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_B_Br">
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_B_R">
+    <Spawn Type="Actor" ClassName="OutlawsBanditRanged" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_B_W">
+    <Spawn Type="Actor" ClassName="OutlawsWorg01" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_B_Me1">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee01" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_B_Me2">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee02" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_B_Me3">
+    <Spawn Type="Actor" ClassName="OutlawsBanditMelee03" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_B_Br">
+    <Spawn Type="Actor" ClassName="OutlawsBrute" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_B_Tr">
+    <Spawn Type="Actor" ClassName="OutlawsTrapper" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_B_Km">
+    <Spawn Type="Actor" ClassName="OutlawsKennelMaster" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_B_AW">
+    <Spawn Type="Actor" ClassName="OutlawsWorgAlpha" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_W_H">
+    <Spawn Type="Actor" ClassName="WildHornet" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_W_SmallSpider">
+    <Spawn Type="Actor" ClassName="WildSpiderMeleeSmall" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_W_MeleeSpider">
+    <Spawn Type="Actor" ClassName="WildSpiderMelee" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Forest_W_RangedSpider">
+    <Spawn Type="Actor" ClassName="WildSpiderRanged" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="9" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SmugglersPath_S_MS">
+    <Spawn Type="Actor" ClassName="SvriirSeaMiniSpitter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="6" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SmugglersPath_S_O">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="10" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SmugglersPath_S_B">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="10" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SmugglersPath_S_TM">
+    <Spawn Type="Actor" ClassName="SvriirMorgon_toxic" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="10" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SmugglersPath_S_M">
+    <Spawn Type="Actor" ClassName="SvriirMorgon" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="10" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SmugglersPath_S_RM">
+    <Spawn Type="Actor" ClassName="SvriirMorgon_rend" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="10" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SmugglersPath_S_Spa">
+    <Spawn Type="Actor" ClassName="SvriirSeaBetaSpawner" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="10" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SmugglersPath_S_Scr">
+    <Spawn Type="Actor" ClassName="SvriirSeaBetaScreecher" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="10" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SmugglersPath_S_Spi">
+    <Spawn Type="Actor" ClassName="SvriirSeaBetaSpitter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="10" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SmugglersPath_W_SC">
+    <Spawn Type="Actor" ClassName="WildSnakeCave" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="10" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_COS_ZF">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Zombie_frost" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_COS_DC">
+    <Spawn Type="Actor" ClassName="CultOfSouls_DeathCloak" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_COS_ZS">
+    <Spawn Type="Actor" ClassName="CultOfSouls_ZombieSoldier" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_COS_SF">
+    <Spawn Type="Actor" ClassName="CultOfSouls_UndeadSpiker_frost" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_COS_HB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_COS_C">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_COS_F">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Fanatic" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_COS_MLB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniLanternBearer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_AllTrash">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_Bat">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP4_1">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP4_2">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP4_3">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP4_4">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP4_5">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP4_6">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP4_7">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP7_1">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="12" NumberMax="12" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP7_2">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP7_3">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP7_4">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP7_5">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP7_6">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP7_7">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP10_1">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP10_2">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP10_3">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP10_4">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP10_5">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis1_W_TrashCP10_6">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="10" LevelMax="11" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_COS_ZF">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Zombie_frost" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_COS_F">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Fanatic" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_COS_DC">
+    <Spawn Type="Actor" ClassName="CultOfSouls_DeathCloak" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_COS_ZS">
+    <Spawn Type="Actor" ClassName="CultOfSouls_ZombieSoldier" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_COS_HB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_COS_C">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_COS_SF">
+    <Spawn Type="Actor" ClassName="CultOfSouls_UndeadSpiker_frost" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_AllTrash">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_SpiderMeleeSmall">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP4_1">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP4_2">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP4_3">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP4_4">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP4_5">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP4_6">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP4_7">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP7_1">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="12" NumberMax="12" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP7_2">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP7_3">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP7_4">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP7_5">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP7_6">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP7_7">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP10_1">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP10_2">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP10_3">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP10_4">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP10_5">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis2_W_TrashCP10_6">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="11" LevelMax="12" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_F">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Fanatic" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_DC">
+    <Spawn Type="Actor" ClassName="CultOfSouls_DeathCloak" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_ZS">
+    <Spawn Type="Actor" ClassName="CultOfSouls_ZombieSoldier" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_ZF">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Zombie_frost" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_HB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_LB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LanternBearer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_SF">
+    <Spawn Type="Actor" ClassName="CultOfSouls_UndeadSpiker_frost" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_C">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_MLB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniLanternBearer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_Sequence1_1">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Zombie_frost" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_Sequence1_2">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Zombie_frost" NumberMin="10" NumberMax="10" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_COS_Sequence1_3">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LanternBearer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_UndeadSpiker_frost" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_AllTrash">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_SpiderMeleeSmall">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP4_1">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP4_2">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP4_3">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP4_4">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP4_5">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP4_6">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP4_7">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP7_1">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="12" NumberMax="12" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP7_2">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP7_3">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP7_4">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP7_5">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP7_6">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP7_7">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP10_1">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP10_2">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP10_3">
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP10_4">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP10_5">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMeleeSmall" NumberMin="7" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Necropolis3_W_TrashCP10_6">
+    <Spawn Type="Actor" ClassName="WildBat" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderRanged" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSoulsSpiderMelee" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="12" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_SSA">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniSpecter_aether" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_LS">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_FMMelee">
+    <Spawn Type="Actor" ClassName="CultOfSouls_FirstmanMelee" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_FMRanged">
+    <Spawn Type="Actor" ClassName="CultOfSouls_FirstmanMage" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_TPA">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Corrupted_PrimordialArmor" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_C">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_S">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Specter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_LB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LanternBearer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_HB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_F">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Fanatic" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_TPG">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Corrupted_PrimordialGuardian" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="Neiddrerym" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_Sequence1_1">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_Sequence1_2">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="10" NumberMax="10" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall1_COS_Sequence1_3">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LanternBearer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_Specter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_SHBP">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniHalfBreed_physical" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_F">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Fanatic" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_FMMelee">
+    <Spawn Type="Actor" ClassName="CultOfSouls_FirstmanMelee" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_FMRanged">
+    <Spawn Type="Actor" ClassName="CultOfSouls_FirstmanMage" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_LS">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_TPA">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Corrupted_PrimordialArmor" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_HB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_S">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Specter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_LB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LanternBearer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_TPG">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Corrupted_PrimordialGuardian" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall2_COS_C">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="15" LevelMax="16" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_SHBP">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniHalfBreed_physical" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_FMMelee">
+    <Spawn Type="Actor" ClassName="CultOfSouls_FirstmanMelee" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_FMRanged">
+    <Spawn Type="Actor" ClassName="CultOfSouls_FirstmanMage" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_F">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Fanatic" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_LostSoul">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_TPA">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Corrupted_PrimordialArmor" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_HB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_S">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Specter" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_C">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_TPG">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Corrupted_PrimordialGuardian" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_AnankisHall3_COS_LB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LanternBearer" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="17" LevelMax="17" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_SoulTremor_LostSoul">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_SoulTremor_MiniHalfBreedShadow">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniHalfBreed_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_SoulTremor_MiniSpecterShadow">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniSpecter_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_SoulTremor_HB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_SoulTremor_All">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniSpecter_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_SoulTremor_CP6_1">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_SoulTremor_CP6_2">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniSpecter_shadow" NumberMin="10" NumberMax="10" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_SoulTremor_CP6_3">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniSpecter_shadow" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_SoulTremor_LostSoul">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork1_SoulTremor_MiniSpecterShadow">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniSpecter_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="5" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_SoulTremor_All">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniHalfBreed_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_SoulTremor_LostSoul">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_SoulTremor_MiniHalfBreedShadow">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniHalfBreed_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_SoulTremor_CP6_1">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_SoulTremor_CP6_2">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniHalfBreed_shadow" NumberMin="10" NumberMax="10" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_SvriirsNetwork2_SoulTremor_CP6_3">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniHalfBreed_shadow" NumberMin="5" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="6" LevelMax="8" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_SoulTremorAll">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniHalfBreed_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniSpecter_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_SoulTremor_LostSoul">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_SoulTremor_MiniHalfBreedShadow">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniHalfBreed_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_SoulTremor_MiniSpecterShadow">
+    <Spawn Type="Actor" ClassName="CultOfSouls_MiniSpecter_shadow" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_SoulTremor_HB">
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_FlayersOutpost_SoulTremor_HB_R1">
+    <Spawn Type="Actor" ClassName="CultOfSouls_HalfBreed" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="8" LevelMax="9" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_StormfallGuardRanged">
+    <Spawn Type="Actor" ClassName="StormfallGuardRanged" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="6" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Farmlands_StormfallGuardMelee">
+    <Spawn Type="Actor" ClassName="StormfallGuardMelee" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="3" LevelMax="6" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Sty_A1_SC_SFGuard">
+    <Spawn Type="Actor" ClassName="StormfallGuardMelee" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="1" LevelMax="1" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Sty_A1_SC_SVR">
+    <Spawn Type="Actor" ClassName="SvriirSeaOmega" NumberMin="5" NumberMax="7" UseMonsterManagerMonsterLevel="1" LevelMin="2" LevelMax="2" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.01" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="SvriirSeaOmegaBaby" NumberMin="10" NumberMax="15" UseMonsterManagerMonsterLevel="1" LevelMin="2" LevelMax="2" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.01" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Sty_A1_COS_TPS2">
+    <Spawn Type="Actor" ClassName="CultOfSouls_LostSoul" NumberMin="7" NumberMax="10" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0.01" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Sty_A1_COS_TPS">
+    <Spawn Type="Actor" ClassName="PrimordialsArmor" NumberMin="4" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_Sty_A1_COS_TPS3">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Corrupted_PrimordialArmor" NumberMin="4" NumberMax="5" UseMonsterManagerMonsterLevel="1" LevelMin="14" LevelMax="15" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_DemonicCrystal_Right_TLGroup1">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="13" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_UndeadSpiker_frost" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="13" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_Zombie_frost" NumberMin="4" NumberMax="4" UseMonsterManagerMonsterLevel="1" LevelMin="13" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_DemonicCrystal_Right_TLGroup2">
+    <Spawn Type="Actor" ClassName="CultOfSouls_UndeadSpiker_frost" NumberMin="3" NumberMax="3" UseMonsterManagerMonsterLevel="1" LevelMin="13" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_DemonicCrystal_Left_TLGroup1">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Cultist" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="13" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_UndeadSpiker_frost" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="13" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_DeathCloak" NumberMin="6" NumberMax="6" UseMonsterManagerMonsterLevel="1" LevelMin="13" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_DemonicCrystal_Left_TLGroup2">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Cultist" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="13" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+    <Spawn Type="Actor" ClassName="CultOfSouls_ZombieSoldier" NumberMin="2" NumberMax="2" UseMonsterManagerMonsterLevel="1" LevelMin="13" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="Sc_DemonicCrystal_ZF">
+    <Spawn Type="Actor" ClassName="CultOfSouls_Zombie_frost" NumberMin="1" NumberMax="1" UseMonsterManagerMonsterLevel="1" LevelMin="13" LevelMax="13" LevelOffset="0" Center="0" SpawnOverTime="1" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+</MetaData>

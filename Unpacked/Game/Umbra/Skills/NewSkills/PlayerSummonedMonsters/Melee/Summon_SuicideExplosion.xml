@@ -1,0 +1,28 @@
+<MetaData>
+  <Skill UID="summon_suicide_explosion" ESkill="summon_suicide_explosion" Keywords="deathskill">
+    <HUD ShowParamsInTooltip="Explosion" ShowParamsInAST="Explosion" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="3" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="explosion" ShapeName="SummonSkill_Explosion_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="overKill" Name="U_Explosions.corpse.OverKill_Physical_Skeleton" Direction="0,0,1" Offset="0,1.25,0" />
+      <Particle Key="explosion" Name="U_Character_02.Summon.Summon_Zombie_Explosion_01_Physical" Direction="0,1,0" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="summon_suicide_explosion_damage" ESkill="summon_suicide_explosion" Keywords="deathskill">
+    <HUD ShowParamsInTooltip="Explosion" ShowParamsInAST="Explosion" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="4" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="explosion" ShapeName="SummonSkill_Explosion_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="overKill" Name="U_Explosions.corpse.OverKill_Physical_Skeleton" Direction="0,0,1" Offset="0,1.25,0" />
+      <Particle Key="explosion" Name="U_Character_02.Summon.Summon_Zombie_Explosion_01_Physical" Direction="0,1,0" />
+    </ParticleList>
+  </Skill>
+</MetaData>

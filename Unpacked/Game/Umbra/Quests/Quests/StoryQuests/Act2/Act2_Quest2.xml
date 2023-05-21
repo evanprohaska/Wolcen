@@ -1,0 +1,218 @@
+<MetaData>
+  <Quest Name="ACT2_Quest2" StartDialog="" Type="Main" UIName="@ui_A2_Q2_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT2">
+    <Step Order="0" UIName="@ui_A2_Q2_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="NPC_A2_Q1_Shaman" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q1_Shaman" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ClickableEntity_TemplarCamp2_to_VOS1" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_TemplarCamp2_to_VOS1" Area="ACT2_Templar_Camp_Exterior" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q2_S3_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionClickable" Name="A2_Q2_S1_VOS1_Activate" ClickableEntityName="ClickableEntity_TemplarCamp2_to_VOS1" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="A2_Q2_S1_DynS_Player_Talk1" DialogName="ACT2_Q2_S1_DynS_Player_Talk1" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="A2_Q2_S1_ClearUI" Localization="" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q2_S2_HideArenaDoorCollisionFirst" EntityNames="CE_A2_Q2_ArenaDoor" Hide="1" Delay=".5" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ActionClickable" Name="A2_Q2_S1_ArenaDoor_DesactivateFirst" ClickableEntityName="CE_A2_Q2_ArenaDoor" MakeClickable="0" FilterEvents="0" />
+    </Step>
+    <Step Order="1" UIName="@ui_A2_Q2_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="QP_A2_Q2_Zima_SpawnPoint" Radius="140" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_A2_Q2_S2_ValleyOfSerenity1_AreaMarker" VFX="U_Utils.Quest.Objective" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_A2_Q2_Zima_SpawnPoint" Radius="35" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_A2_Q2_S2_ValleyOfSerenity1_AreaMarker" VFX="U_Utils.Quest.Objective" Area="ACT2_VOS1" Threshold="85" UseAreaSize="50" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="AnimObject_A2_Zima_Cage" Area="ACT2_VOS1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3.5" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Talk" EntityName="NPC_A2_Zima" DialogName="ACT2_Q2_S1_Zima_Talk1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="AnimObject_A2_Zima_Cage" Area="ACT2_VOS1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3.5" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Interact" Names="Clickable_A2_Zima_Cage" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Clickable_A2_Zima_Cage" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Clickable_A2_Zima_Cage" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntitySound" Name="SFUA_Sound_ZimaCage" EntityName="Clickable_A2_Zima_Cage" SoundName="Play_DYN_ACT2_ZimaCage" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q2_S2_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q2_S2_Hide_CE_Cage1" EntityNames="Clickable_A2_Zima_Cage" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q2_S2_DynS_Player_Talk1" AreaRadius="33" Type="GlobalDialog" Name="A2_Q2_S1_DynS_Player_Talk1" DialogName="ACT2_Q2_S2_DynS_Player_Talk1" />
+      <Event Trigger="EventStart" EventName="A2_Q2_S1_DynS_Player_Talk1" Type="StepUpdate" Name="A2_Q2_S1_StepUpdate1" Localization="@ui_A2_Q2_S1_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Clickable_A2_Zima_Cage" AreaRadius="20" Type="GlobalDialog" Name="A2_Q2_S2_DynS_Zima_Talk1" DialogName="ACT2_Q2_S2_DynS_Zima_Talk" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_DynS_Zima_Talk1" Type="GoalAchieve" Name="A2_Q2_S1_Goal2Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A2_Q2_S1_StepUpdate2" Localization="@ui_A2_Q2_S1_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="A2_Q2_S1_StepUpdate3" Localization="@ui_A2_Q2_S1_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="A2_Q2_S2_Unhide_CE_Cage" EntityNames="Clickable_A2_Zima_Cage" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="A2_Q2_S2_Hide_CE_Cage2" EntityNames="Clickable_A2_Zima_Cage" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityAnimate" SpeedScale=".5" BlendingTime="0" Name="A2_Q2_S1_ZimaCage" AnimatedEntityName="AnimObject_A2_Zima_Cage" Play="Default" Loop="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S1_ZimaCage" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="A2_Q2_S1_ZimaGettingOut" AnimatedEntityName="NPC_A2_Zima" Play="OUTW_Shaman_Move_Cage_01" Loop="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S1_ZimaGettingOut" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="A2_Q2_S1_ZimaIdling" AnimatedEntityName="NPC_A2_Zima" Play="outw_shaman_idle_01" Loop="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S1_ZimaGettingOut" Type="GlobalDialog" Name="A2_Q2_S2_DynS_Zima_Talk2" DialogName="ACT2_Q2_S2_DynS_Zima_Talk1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S1_ZimaFollow" Type="GoalAchieve" Name="A2_Q2_S1_Goal5Achieved" SimulateOnly="1" GoalIndexToAchieve="5" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_DynS_Zima_Talk2" Type="EntityIsHidden" Name="A2_Q2_S2_HideNpcZima" EntityNames="NPC_A2_Zima" Hide="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_HideNpcZima" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="A2_Q2_S1_ZimaSpawn" SpawnClass="Sc_Sty_AC2_QZV1" TargetEntityName="QP_A2_Q2_Zima_SpawnPoint" FaceAtSpawn="ClickableEntity_BanditCamp3_to_TemplarCamp" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S1_ZimaSpawn" Type="EntityFollow" Name="A2_Q2_S1_ZimaFollow" FollowerEntityName="Zima" Follow="#Player" Constraints="not:ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_Templar_Camp_Exterior" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="5" Type="GlobalTutorial" Name="Dialog_ACT2_Q2_Tutorial_Craft" TutorialName="Quest_Craft" Delay="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+        <XP Amount="150000" />
+        <ChoiceLootClass Name="A2_Q2_Reward" MinItemNumber="6" MaxItemNumber="6" SortByRarity="1" />
+        <FixedLootClass Name="A2_Q2_Reward_Fixe" MinItemNumber="2" MaxItemNumber="2" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="2" UIName="@ui_A2_Q2_S2_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="Door_ShadowBandit" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Door_ShadowBandit" Area="ACT2_VOS1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Door_ShadowBandit" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_A2_Q2_S2_Mercy" Radius="85" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_A2_Q2_S2_Mercy" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_A2_Q2_S2_Mercy" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Talk" EntityName="Zima" DialogName="ACT2_Q2_S2_Zima_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Zima" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q2_S3_ClearUI" StepToKeep="2" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q2_S2_ZimaSpawn" SpawnClass="Sc_Sty_AC2_QZV1" TargetEntityName="QP_A2_Q2_Zima_SpawnPoint" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A2_Q2_S2_ZimaFollow1" FollowerEntityName="Zima" Follow="#Player" Constraints="not:ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_Templar_Camp_Exterior" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFollow" Name="A2_Q2_S2_ZimaUnfollow1" FollowerEntityName="Zima" Follow="" Constraints="" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_ZimaUnfollow1" Type="EntityTeleport" MinRadius="1" Name="A2_Q2_S2_Zima_Tp1" TeleportedEntityName="Zima" DestinationName="Door_ShadowBandit" Delay="3" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_ZimaUnfollow1" Type="EntityMove" TargetMinDistance="8" OverrideSpeed="10" Name="A2_Q2_S2_ZimaMove1" EntityName="Zima" TargetName="Door_ShadowBandit" RemainScripted="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_ZimaMove1" Type="EntityRotate" Name="A2_Q2_S2_ZimaRotate1" RotatedEntityName="Zima" Target="Door_ShadowBandit" FaceTarget="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_ZimaRotate1" Type="GoalAchieve" Name="A2_Q2_S2_Goal2Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionDoor" AnimationSpeed="0" Name="A2_Q2_S1_DoorOpening" DoorName="Door_ShadowBandit" Action="Open" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A2_Q2_S2_StepUpdate1" Localization="@ui_A2_Q2_S2_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S1_DoorOpening" Type="EntityIsHidden" Name="A2_Q2_S2_HideDoorBlocker" EntityNames="CE_A2_Q2_CampDoor" Hide="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S1_DoorOpening" Type="GlobalDialog" Name="A2_Q2_S3_DynS_Zima_Talk1" DialogName="ACT2_Q2_S2_DynS_Zima_Talk2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFollow" Name="A2_Q2_S2_ZimaFollow2" FollowerEntityName="Zima" Follow="#Player" Constraints="not:ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_Templar_Camp_Exterior" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S3_DynS_Zima_Talk1" Type="GlobalDialog" Name="A2_Q2_S3_DynS_Zima_Talk2" DialogName="ACT2_Q2_S2_DynS_Zima_Talk3" Delay="5" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityFollow" Name="A2_Q2_S2_ZimaUnfollow2" FollowerEntityName="Zima" Follow="" Constraints="" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_ZimaUnfollow2" Type="EntityTeleport" MinRadius="1" Name="A2_Q2_S2_Zima_Tp2" TeleportedEntityName="Zima" DestinationName="QP_A2_Q2_Zima_TalktoPos" Delay="3" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_ZimaUnfollow2" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="10" Name="A2_Q2_S2_ZimaMove2" EntityName="Zima" TargetName="QP_A2_Q2_Zima_TalktoPos" RemainScripted="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_ZimaMove2" Type="EntityRotate" Name="A2_Q2_S2_ZimaRotate2" RotatedEntityName="Zima" Target="QP_A2_Q2_Zima_TalktoPos" FaceTarget="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_ZimaRotate2" Type="GlobalDialog" Name="A2_Q2_S3_DynS_Zima_Talk3" DialogName="ACT2_Q2_S2_DynS_Zima_Talk4" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_ZimaRotate2" Type="EntityWait" Duration="1" Name="A2_Q2_S2_ZimaWait" EntityName="Zima" RemainScripted="1" Delay="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S3_DynS_Zima_Talk3" Type="GoalAchieve" Name="A2_Q2_S2_Goal4Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S2_ZimaRotate2" Type="StepUpdate" Name="A2_Q2_S2_StepUpdate2" Localization="@ui_A2_Q2_S2_UpdateStepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="3" UIName="@ui_A2_Q2_S3_StepNameLabel" AutoClearEvents="0" Save="1">
+      <Goal Order="0" Type="Go" Destination="CE_A2_Q2_ArenaDoor" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="CE_A2_Q2_ArenaDoor" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="CE_A2_Q2_ArenaDoor" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A2_Q2_ArenaDoor" VFX="" VFXOffsetZ="" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Vote" VotePreset="VotePreset_ACT2_MercyArena" GameplayEventPresetName="ACT2_Mercy_Arena">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q2_S2_Mercy" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q2_S4_ClearUI" StepToKeep="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Checkpoint_MercyArena" AreaRadius="20" Type="GlobalCheckpoint" Name="Set_VOS1Event_FailReleaseCheckpoint" CheckpointEntityName="" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="30" Type="GlobalCheckpoint" Name="Mercy_Remove_Checkpoint_SF" CheckpointEntityName="" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="MercyArenaCollisionHideFail" EntityNames="primitive_box_BlockRoadMercyArena" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionParticleEmitter" Name="MercyArenaParticleHideFail" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.MercyArena" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityKillAll" Name="VOS1_BanditArena_FailKillAll1" Delay=".2" MonsterClass="Outlaws_MercyArena_Mercy" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityKillAll" Name="VOS1_BanditArena_FailKillAll2" Delay=".2" MonsterClass="MercyArena_MiniSpecter_shadow" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q2_S2_HideMercySpawn" EntityNames="NPC_A2_Q2_S2_Mercy" Hide="0" Delay="0.2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" AnimationSpeed="0" Name="A2_Q2_S4_ArenaDoorOpening" DoorName="Door_ShadowBanditArena" Action="Open" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q2_S2_UnhideArenaDoorCollisionFirst" EntityNames="CE_A2_Q2_ArenaDoor" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionClickable" Name="A2_Q2_S3_ArenaDoor_Activate" ClickableEntityName="CE_A2_Q2_ArenaDoor" MakeClickable="1" FilterEvents="0" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="ACT2_Q2_S3_DynS_Mercy_idlReset" AnimatedEntityName="NPC_A2_Q2_S2_Mercy" Play="OUTW_Mercy_Sit_Loop_01" Loop="1" />
+      <Event Trigger="GoalFailure" GoalIndex="2" Type="GlobalReleaseGameplayEvent" Name="VOS1_BanditArena_FailVoteEventSlotRelease" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKill" Name="A2_Q5_S9_RemoveZima" EntityName="Zima" Hide="1" Remove="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="MercyArenaFadeStart" SequenceName="A2_Q2_S3_BanditArena" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="MercyArenaCollisionUnhide" EntityNames="primitive_box_BlockRoadMercyArena" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionParticleEmitter" Name="MercyArenaParticleUnhide" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.MercyArena" Activate="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityTeleport" MinRadius="0" Name="MercyArenaTPPlayerStart" TeleportedEntityName="#Player" DestinationName="QP_A2_Q2_S2_ArenaPlayerSpawn" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityTeleport" MinRadius="1" Name="A2_Q2_S3_Portal_tp1" TeleportedEntityName="CE_A2_Q2_ShadowPortal" DestinationName="QP_Unreachable" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionClickable" Name="A2_Q2_S3_Portal_Deactivate" ClickableEntityName="CE_A2_Q2_ShadowPortal" MakeClickable="0" FilterEvents="0" Delay="0.1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityTeleport" MinRadius="1" Name="A2_Q2_S3_Portal_tp2" TeleportedEntityName="CE_A2_Q2_ShadowPortal" DestinationName="QP_Unreachable" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalRevivePlayers" Name="VOS1_1stArenaRevive" RevivePostion="" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="QuestFail" Name="FailHunt_HuntQuest" QuestName="QN_HS_A2_ButcherHunt_2F" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="QuestFail" Name="FailHunt_BossFightQuest" QuestName="QN_HE_BF_Butcher_S" />
+    </Step>
+    <Step Order="4" UIName="@ui_A2_Q2_S3_UpdateStepNameLabel2" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q2_S2_Mercy" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Talk" EntityName="NPC_A2_Q2_S2_Mercy" DialogName="ACT2_Q2_S3_Mercy_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q2_S2_Mercy" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q2_S2_Mercy" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="BossFight" FightPreset="BossFight_Mercy">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="A2_Q2_S2_SpawnBoss" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q2_S5_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_MercyArena_Checkpoint" CheckpointEntityName="Checkpoint_MercyArena" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Delay="2" Name="VOS1_BanditArena_Taunt" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk1" />
+      <Event Trigger="EventEnd" EventName="VOS1_BanditArena_Taunt" Type="GoalAchieve" Name="A2_Q2_S5_Goal1Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Delay="1" Name="VOS1_BanditArena_Toremy" DialogName="ACT2_Q2_S3_DynS_Mercy_Talk2" />
+      <Event Trigger="EventEnd" EventName="VOS1_BanditArena_Toremy" Type="GoalAchieve" Name="A2_Q2_S5_Goal3Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="A2_Q2_S3_StepUpdate" Localization="@ui_A2_Q2_S3_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="BossfightLost" Type="GlobalReleaseGameplayEvent" Name="VOS1_BanditArena_FailEventSlotRelease" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="VOS1_BanditArena_FailStopAllDialogs" />
+      <Event Trigger="BossfightLost" Type="StepFail" Name="VOS1_MercyArena_EventFailBis" RollbackToPreviousStep="1" />
+    </Step>
+    <Step Order="5" UIName="@ui_A2_Q2_S4_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q2_S2_Mercy" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q2_S6_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="A2_Q2_S6_DynS_Player_Talk" DialogName="ACT2_Q2_S6_DynS_Player_Talk" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q2_S6_RevealPortal" EntityNames="CE_A2_Q2_ShadowPortal" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q2_S4_Portal_Activate" ClickableEntityName="CE_A2_Q2_ShadowPortal" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="1" Name="A2_Q2_S3_Portal_tp3" TeleportedEntityName="CE_A2_Q2_ShadowPortal" DestinationName="QP_A2_Q2_S2_PortalPos" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S6_DynS_Player_Talk" Type="GlobalDialog" Name="A2_Q2_S6_DynS_Zima_Talk" DialogName="ACT2_Q2_S6_DynS_Zima_Talk1" Delay="3" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S6_DynS_Zima_Talk" Type="GoalAchieve" Name="A2_Q2_S6_Goal2Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalReleaseGameplayEvent" Name="VOS1_BanditArena_SucceedEventSlotRelease" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="StepUpdate" Name="A2_Q2_S6_StepUpdate" Localization="" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q2_S5_ZimaSpawn" SpawnClass="Sc_Sty_AC2_QZV1" TargetEntityName="QP_A2_Q1_S2_OutlawSpawn" FaceAtSpawn="CE_TemplarCampShadowWall" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="4500" />
+        <XP Amount="200000" />
+      </Reward>
+    </Step>
+    <Step Order="6" UIName="@ui_A2_Q2_S5_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="QP_A2_Q1_S2_OutlawSpawn" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_A2_Q1_S2_OutlawSpawn" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Talk" EntityName="Zima" DialogName="ACT2_Q2_S4__Zima_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Zima" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_VOS1" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="CE_A2_Q2_ShadowPortal" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Vote" VotePreset="VotePreset_ACT2_TC_LegionOfDeath">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q2_S2_Mercy" Area="ACT2_VOS1" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Impossible" />
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q2_S3_ArenaDoor_Desactivate" ClickableEntityName="CE_A2_Q2_ArenaDoor" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q2_S2_RevealShadowPortal" EntityNames="CE_A2_Q2_ShadowPortal" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q2_S2_HideVal" EntityNames="NPC_A2_Q1_Valeria" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q2_S2_RevealTemplarCampEntrance" EntityNames="CE_TemplarCampEntrance" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q2_S2_HideArenaDoorCollision" EntityNames="CE_A2_Q2_ArenaDoor" Hide="1" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_VOS1Event_SuccessReleaseCheckpoint" CheckpointEntityName="" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q2_S7_ClearUI" StepToKeep="2" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="CE_A2_Q2_ShadowPortal" Type="EntityTeleport" MinRadius="1" Name="A2_Q2_S4_Player_Tp" TeleportedEntityName="#Player" DestinationName="QP_A2_Q2_S2_Player_TP_Pos" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" Name="A2_Q2_S6_ZimaSpawn" SpawnClass="Sc_Sty_AC2_QZV1" TargetEntityName="QP_A2_Q1_S2_OutlawSpawn" FaceAtSpawn="CE_TemplarCampShadowWall" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="A2_Q2_S6_Zima_Channeling" AnimatedEntityName="NPC_A2_Zima" Play="outw_shaman_skill_channeling_01" Loop="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A2_Q2_S6_StepUpdate" Localization="@ui_A2_Q2_S5_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="A2_Q2_S4_HideTemplarCampShadowWall" EntityNames="CE_TemplarCampShadowWall" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionSequence" Name="A2_Q2_S4_TemplarCampEntrance" SequenceName="A2_LEGIONSOFDEATH" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalRevivePlayers" Name="ACT2_Quest2_CutsceneRevive" RevivePostion="" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S4_TemplarCampEntrance" Type="EntityTeleport" MinRadius="1" Name="A2_Q2_S4_Player_Tp3" TeleportedEntityName="#Player" DestinationName="QP_A3_Q3_S1_PlayerTpPoint" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKill" Name="A2_Q2_S7_RemoveZima" EntityName="Zima" Hide="1" Remove="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q2_S4_TemplarCampEntrance" Type="GoalAchieve" Name="WaitEnd_ACT2_Q2_TemplarCampEntrance" SimulateOnly="0" GoalIndexToAchieve="3" />
+    </Step>
+  </Quest>
+</MetaData>

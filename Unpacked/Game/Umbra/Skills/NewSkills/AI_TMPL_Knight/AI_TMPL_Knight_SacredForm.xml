@@ -1,0 +1,127 @@
+<MetaData>
+  <Skill UID="AI_TMPL_Knight_SacredForm" ESkill="AI_TMPL_Knight_SacredForm" Keywords="magic_spell">
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Templars_Knight_SacredForm_Wave" />
+    </Shapes>
+    <DamageZone RateOfFire="0.7" Duration="1" />
+    <SkillStateSwitch>
+      <Skill UID="AI_TMPL_Knight_Prayer" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_HolyDive_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_SacredCharge_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_SacredFire_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_SacredOrbs_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_HolyDive_Level2" Enabled="1" />
+      <Skill UID="AI_TMPL_Knight_SacredCharge_Level2" Enabled="1" />
+      <Skill UID="AI_TMPL_Knight_SacredFire_Level2" Enabled="1" />
+      <Skill UID="AI_TMPL_Knight_SacredOrbs_Level2" Enabled="1" />
+    </SkillStateSwitch>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_TMPL_Knight_SacredForm_Passive" Targeting="OnSelf" />
+    </PassiveSkills>
+    <ParticleList>
+      <Particle Key="EyeLight" Name="U_Monster.AuroraKnight.Prayer_EyeLight_01" Offset="0,0,0" Direction="0,1,0" Scale="1" Bone="Bip01 Head" />
+      <Particle Key="WeaponAura" Name="U_Monster.AuroraKnight.Prayer_SacredWeapon_01" Offset="0,0,0" Angle="-20,0,0" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="BodyAura" Name="U_Monster.AuroraKnight.Prayer_BodyAura_01" Offset="0,0,0" Direction="0,0,1" Scale="1.5" Bone="Bip01 Spine2" />
+      <Particle Key="HealWave" Name="U_Monster.AuroraKnight.Prayer_Transformation_Ring_01" Offset="0,0,0" Direction="1,0,0" Scale="1.9" />
+    </ParticleList>
+    <SkillSpecific CasterHealPercent="25" AlliesHealPercent="40" />
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_SacredForm" ESkill="AI_TMPL_Knight_SacredForm" Keywords="magic_spell">
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Templars_Knight_SacredForm_Wave" />
+    </Shapes>
+    <DamageZone RateOfFire="0.7" Duration="1" />
+    <SkillStateSwitch>
+      <Skill UID="AI_TMPL_Knight_Prayer" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_Prayer" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_Prayer_SacredFire" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_Prayer_SacredOrbs" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_HolyDive_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_SacredCharge_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_SacredFire_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_SacredOrbs_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_HolyDive_Level2" Enabled="1" />
+      <Skill UID="AI_TMPL_Knight_SacredCharge_Level2" Enabled="1" />
+      <Skill UID="AI_TMPL_Knight_SacredFire_Level2" Enabled="1" />
+      <Skill UID="AI_TMPL_Knight_SacredOrbs_Level2" Enabled="1" />
+    </SkillStateSwitch>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_TMPL_Knight_SacredForm_Passive" Targeting="OnSelf" />
+    </PassiveSkills>
+    <ParticleList>
+      <Particle Key="EyeLight" Name="U_Monster.AuroraKnight.Prayer_EyeLight_01" Offset="0,0,0" Direction="0,1,0" Scale="1" Bone="Bip01 Head" />
+      <Particle Key="WeaponAura" Name="U_Monster.AuroraKnight.Prayer_SacredWeapon_01" Offset="0,0,0" Angle="-20,0,0" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="BodyAura" Name="U_Monster.AuroraKnight.Prayer_BodyAura_01" Offset="0,0,0" Direction="0,0,1" Scale="1.5" Bone="Bip01 Spine2" />
+      <Particle Key="HealWave" Name="U_Monster.AuroraKnight.Prayer_Transformation_Ring_01" Offset="0,0,0" Direction="1,0,0" Scale="1.9" />
+    </ParticleList>
+    <SkillSpecific CasterHealPercent="25" AlliesHealPercent="40" />
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_SacredForm_SacredFire" ESkill="AI_TMPL_Knight_SacredForm" Keywords="magic_spell">
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Templars_Knight_SacredForm_Wave" />
+    </Shapes>
+    <DamageZone RateOfFire="0.7" Duration="1" />
+    <SkillStateSwitch>
+      <Skill UID="AI_TMPL_Knight_Prayer" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_Prayer" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_Prayer_SacredFire" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_Prayer_SacredOrbs" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_HolyDive_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_SacredCharge_Level1" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_SacredFire_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_SacredOrbs_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_HolyDive_Level2" Enabled="1" />
+      <Skill UID="AI_TMPL_Knight_SacredCharge_Level2" Enabled="1" />
+      <Skill UID="AI_Hunt_Knight_SacredFire_Level2" Enabled="1" />
+      <Skill UID="AI_TMPL_Knight_SacredOrbs_Level2" Enabled="1" />
+    </SkillStateSwitch>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_TMPL_Knight_SacredForm_Passive" Targeting="OnSelf" />
+    </PassiveSkills>
+    <ParticleList>
+      <Particle Key="EyeLight" Name="U_Monster.AuroraKnight.Prayer_EyeLight_01" Offset="0,0,0" Direction="0,1,0" Scale="1" Bone="Bip01 Head" />
+      <Particle Key="WeaponAura" Name="U_Monster.AuroraKnight.Prayer_SacredWeapon_01" Offset="0,0,0" Angle="-20,0,0" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="BodyAura" Name="U_Monster.AuroraKnight.Prayer_BodyAura_01" Offset="0,0,0" Direction="0,0,1" Scale="1.5" Bone="Bip01 Spine2" />
+      <Particle Key="HealWave" Name="U_Monster.AuroraKnight.Prayer_Transformation_Ring_01" Offset="0,0,0" Direction="1,0,0" Scale="1.9" />
+    </ParticleList>
+    <SkillSpecific CasterHealPercent="25" AlliesHealPercent="40" />
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_SacredForm_SacredOrbs" ESkill="AI_TMPL_Knight_SacredForm" Keywords="magic_spell">
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Templars_Knight_SacredForm_Wave" />
+    </Shapes>
+    <DamageZone RateOfFire="0.7" Duration="1" />
+    <SkillStateSwitch>
+      <Skill UID="AI_TMPL_Knight_Prayer" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_Prayer" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_Prayer_SacredFire" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_Prayer_SacredOrbs" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_HolyDive_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_SacredCharge_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_SacredFire_Level1" Enabled="0" />
+      <Skill UID="AI_Hunt_Knight_SacredOrbs_Level1" Enabled="0" />
+      <Skill UID="AI_TMPL_Knight_HolyDive_Level2" Enabled="1" />
+      <Skill UID="AI_TMPL_Knight_SacredCharge_Level2" Enabled="1" />
+      <Skill UID="AI_TMPL_Knight_SacredFire_Level2" Enabled="1" />
+      <Skill UID="AI_Hunt_Knight_SacredOrbs_Level2" Enabled="1" />
+    </SkillStateSwitch>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_TMPL_Knight_SacredForm_Passive" Targeting="OnSelf" />
+    </PassiveSkills>
+    <ParticleList>
+      <Particle Key="EyeLight" Name="U_Monster.AuroraKnight.Prayer_EyeLight_01" Offset="0,0,0" Direction="0,1,0" Scale="1" Bone="Bip01 Head" />
+      <Particle Key="WeaponAura" Name="U_Monster.AuroraKnight.Prayer_SacredWeapon_01" Offset="0,0,0" Angle="-20,0,0" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="BodyAura" Name="U_Monster.AuroraKnight.Prayer_BodyAura_01" Offset="0,0,0" Direction="0,0,1" Scale="1.5" Bone="Bip01 Spine2" />
+      <Particle Key="HealWave" Name="U_Monster.AuroraKnight.Prayer_Transformation_Ring_01" Offset="0,0,0" Direction="1,0,0" Scale="1.9" />
+    </ParticleList>
+    <SkillSpecific CasterHealPercent="25" AlliesHealPercent="40" />
+  </Skill>
+</MetaData>

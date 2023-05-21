@@ -1,0 +1,65 @@
+<MetaData>
+  <BaseEntity ID="Republic_Flamethrower" EntityName="republic_sniper" Scale="1.15" CanKillAllies="0" />
+  <Faction Name="Republic" />
+  <Keywords Value="repu,lieutenant,melee,fire" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="1" CombatPointValueMultiplier="1" />
+  <Attributes Archetype="archetype_lieutenant" HealthModifier="2" DamageModifier="1" XPModifier="1" Protection="" Movable="0" Hookable="0" />
+  <Movement MovementSpeed="5" WalkSpeed="5" />
+  <InterruptionParams InterruptChance="0.05" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BlownAwayParams CanBeBlownAway="0" BlownAwayAnimationTag="" />
+  <DefaultBossModifiers />
+  <LootClass>
+    <Loot Class="LC_Lieutenant" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="OnHitLoot_Lieutenant" />
+  <OnDeathLootPreset Name="OnDeathLoot_Lieutenant" />
+  <Corpses PresetName="LieutenantCadaverPreset" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="360" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Generic" />
+    <BT FleeOnLowHealthChance="0.0" EngageRange="20.0" MeleeAttack="True" FallBack="True" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="Melee" />
+  </Kythera>
+  <Skills>
+    <DefaultBasicAttack />
+    <Offensive>
+      <Skill Name="AI_REPU_Flamethrow_Cone" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0" Preferred="3" Max="5" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+        <Health Min="0.3" Max="1" Weight="0.0" />
+      </Skill>
+      <Skill Name="AI_REPU_Flamethrow_Line" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="2.0">
+        <Range Min="0" Preferred="7" Max="10" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+        <Health Min="0.3" Max="1" Weight="0.0" />
+      </Skill>
+      <Skill Name="Flamethrower_Overheat_Republic" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="15.0">
+        <Range Min="0" Preferred="5" Max="10" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+        <Health Min="0.0" Max="0.3" Weight="0.0" />
+      </Skill>
+    </Offensive>
+  </Skills>
+  <RandomModel>
+    <ModelChoice Model="Objects/characters/mobs/Humanoid/Flamethrower/REPU_Flamethrower/REPU_Flamethrower_01.cdf" Weight="1">
+      <ADBChoice ADB="Animations/Mannequin/ADB/Mobs/Humanoid/Flamethrower/REPU_FlameThrower.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIName_Republic_Flamethrower" ZIconOffset="2.7" />
+  <Spawn SpawnAnimation="rise_out_ground" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="1" />
+  <GameplayParticles PresetName="size_medium" />
+  <Capsules>
+    <EntityPhysics ColliderSize="0.4,0.4,0.4" IsPushable="0" RagdollMass="345" />
+    <MouseSelection SelectionCapsuleRadius="0.7" SelectionCapsuleHeight="1" SelectionCapsuleZOffset="-0.4" />
+    <ProjectileCollision ProjectileCapsuleRadius="0.4" ProjectileCapsuleHeight="4.0" CanSnapOnCenterWhenColliding="1" />
+    <VegetationCollision SphereRadius="0.5" SphereZOffset="0.5" />
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="default" OverrideScale="1" />
+  </VisualParams>
+  <Audio AllowGroupSounds="1" SurfaceType="armour" />
+  <RandomVoice>
+    <VoiceChoice VoiceName="Republic_Sniper_voice" EnemyBark="Play_DX_EnemyBark_Sniper_Notice" Weight="1" />
+  </RandomVoice>
+</MetaData>

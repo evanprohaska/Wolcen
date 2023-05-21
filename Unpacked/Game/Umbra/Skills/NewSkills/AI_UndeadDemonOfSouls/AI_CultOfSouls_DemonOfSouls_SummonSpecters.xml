@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_demonofsouls_summonlostsouls" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_08" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="25.0" />
+    <Summoning MaxSummons="12" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="6" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_CultOfSoulsDemonOfSouls_lostsouls" />
+    </Summoning>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_cultofsouls_demonofsouls_summonspecters" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_08" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="999.0" />
+    <Summoning MaxSummons="2" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="5" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_CultOfSoulsDemonOfSouls_specters" />
+    </Summoning>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,17 @@
+<MetaData>
+  <Projectile ID="UberLambach_melee_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.cultist_flesh.proj" Direction="-1,0,0" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Monster_Alt.cultist_flesh.impact_target" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="25" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_Spiker_SpearImpact" />
+      <Launch SoundTriggerName="PLAY_AI_Spiker_SpearLoop" />
+    </Audio>
+  </Projectile>
+</MetaData>

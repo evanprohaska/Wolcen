@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="unique_ironguard_on_being_hit" ESkill="player_ironguard" Keywords="attack_skill,passive_effect,">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_ironguard" BloodDecalOrientation="forward" />
+    <Animation SkipAnimationWhileMoving="1" />
+    <CastingParams CastBone="R_weapon_bone" CanMultiCast="1" CancellableByDefault="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/juggernaut_Physical.png" UIName="@ui_AST_Ironguard" Lore="@ui_AST_Ironguard_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="8" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,Explosion,SpecificIronguard" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance,SpecificIronguard" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Physical" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Physical" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Physical" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Physical" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Physical" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/juggernaut.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <DamageWeapon WeaponMultiplier="7" />
+    <ParticleList>
+      <Particle Key="Aura" Name="U_Character_02.IronGuard.IronGuard_Start_01" Direction="0,0,1" Scale="0.5" Bone="Bip01" />
+      <Particle Key="Shield" Name="U_Character_02.IronGuard.IronGuard_Shield_01" Direction="0,1,0" Offset="0,0,1.2" Bone="Bip01" Scale="1" />
+      <Particle Key="ShieldExplode" Name="U_Character_02.Charge.Charge_Impact_01" Direction="0,0,1" Scale="1.1" />
+      <Particle Key="ShieldBreak" Name="U_Character_02.IronGuard.IronGuard_Expire_01" Direction="0,1,0" Offset="0,0,1.2" Scale="1.4" />
+      <Particle Key="ShieldAbsorb" Name="U_Character_02.IronGuard.IronGuard_Shield_Reaction_01" Direction="0,1,0" Offset="0,0,1.2" Bone="Bip01" Scale="1.15" />
+      <Particle Key="MeshExplode" Name="U_Character_02.IronGuard.IronGuard_Explo_Mesh_01" Direction="0,1,0" Offset="0,0,1.2" Scale="1.2" />
+    </ParticleList>
+    <SpecialShield ShieldAngle="360" ProtectionType="ProjectilesOnly" />
+    <Specific_Ironguard MaxDuration="20" MaxAbsorption="35000" MaxAbsorptionPerLevel="0" MinDamageMultiplier="1" MaxDamageMultiplier="2" DamageMultiplierPerLevel="0" DamageRadius="3.5" EndingSoundTrigger="Play_Skill_IronGuard_End" BlockSoundTrigger="Play_Skill_IronGuard_Block" CastSoundTrigger="Play_Skill_IronGuard_Start" />
+  </Skill>
+</MetaData>

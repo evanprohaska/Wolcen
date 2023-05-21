@@ -1,0 +1,34 @@
+<MetaData>
+  <Skill UID="AI_svriirbeta_spawner_mucusspit" ESkill="AI_svriirbeta_spawner_mucusspit" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithCastingSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".05" />
+    <Cooldown Cooldown="8.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirBeta_Spawner_MucusSpit" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="AtCast" Name="U_Buff.Buff.Fury_Icon_01" Bone="Bip01" Direction="0,1,0" OffSet="0,0,1" Scale="1" />
+      <Particle Key="BuffPool" Name="U_Monster.Siviir.Spawner_GroundBuff_01" Bone="" Direction="0,0,1" OffSet="0,3.4,0" Scale="1" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_svriirspawner_mucusspit_passive" Targeting="OnAllies" Duration="4" />
+    </PassiveSkills>
+  </Skill>
+  <Skill UID="AI_svriirbeta_spawner_mucusspit_fire" ESkill="AI_svriirbeta_spawner_mucusspit" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithCastingSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier=".05" />
+    <Cooldown Cooldown="8.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="SvriirBeta_Spawner_MucusSpit" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="AtCast" Name="U_Buff.Buff.Fury_Icon_01" Bone="Bip01" Direction="0,1,0" OffSet="0,0,1" Scale="1" />
+      <Particle Key="BuffPool" Name="U_Monster_Alt.svriir_red.spawner_area" Bone="" Direction="0,0,1" OffSet="0,3.4,0" Scale="1" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_svriirspawner_mucusspit_passive" Targeting="OnAllies" Duration="4" />
+    </PassiveSkills>
+  </Skill>
+</MetaData>

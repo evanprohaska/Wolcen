@@ -1,0 +1,27 @@
+<MetaData>
+  <ContentGenerator Name="CG_EG_Consumable_CursedChestChallenge" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="CursedChestChallenge" PriorityTag="CursedChestChallenge,Room,NoMonster" ExcludeTag="" Weight="10" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WRepu_Room_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="WTemplar_Room_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cellar_Room_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cave_Room_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Mine_Room_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Ossuary_Room_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="Ossuary_Sandy_Room_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_Room_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+      <LevelGenerator DungeonName="WTemplar_Fleshed_Room_CG" Tag="Room" PriorityTag="" ExcludeTag="" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_EG_Wait_CursedChestChallenge1" Tag="CursedChestChallenge" PriorityTag="" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_CG_CursedChestChallenge" Tag="CursedChestChallenge" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

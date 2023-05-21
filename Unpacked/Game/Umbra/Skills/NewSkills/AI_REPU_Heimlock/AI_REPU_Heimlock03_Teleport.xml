@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_REPU_Heimlock03_Teleport" ESkill="ai_default_charge" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="REPU_Golgoth_QuickCharge_TargetDetection_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Start" Name="U_Monster.Heimlock_APO.Teleport_In" Offset="0,0,0" Direction="0,0,1" Scale="2.5" />
+      <Particle Key="End" Name="U_Monster.Heimlock_APO.Teleport_In" Offset="0,0,0" Direction="0,0,1" Scale="2.5" />
+      <Particle Key="Trail" Name="U_Monster.Heimlock_APO.Teleport_Trail" Bone="Bip01" Offset="0,0,2" Direction="1,0,0" Scale="2" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="100" ChargeDistance="30" StopChargeAtTarget="1" HideDuringCharge="1">
+      <Extra Type="Particles" />
+    </SkillSpecific>
+  </Skill>
+</MetaData>

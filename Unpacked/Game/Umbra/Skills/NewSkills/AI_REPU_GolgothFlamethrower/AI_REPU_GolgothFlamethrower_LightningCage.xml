@@ -1,0 +1,24 @@
+<MetaData>
+  <Skill UID="GolgothFlamethrower_LightningCage_Republic" ESkill="AI_REPU_GolgothFlamethrower_LightningCage" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Lightning" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="Cage" ShapeName="REPU_GolgothFlamethrower_LightningCage_Shape" />
+    </Shapes>
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="REPU_GolgothFlamethrower_LightningCage_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Wall" Name="REPU_Golgoth_Flamethrower.Lightning Cage.Wall Loop" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Corner" Name="REPU_Golgoth_Flamethrower.Lightning Cage.Corner Loop" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="Arrow" Name="U_Monster.Golgoth.Charge_Wind_01" Offset="0,0,0" Direction="0,1,0" Scale="1" InstantKill="0" />
+      <Particle Key="Hit" Name="REPU_Golgoth_Flamethrower.Lightning Cage.Wall Hit" Direction="0,0,1" />
+    </ParticleList>
+    <Range AttackRange="20" />
+    <SkillSpecific TimeBeforeSquareCreation="1" SquareSideLength="10" SquareDuration="15" WallDelay="0.5" LoopSoundTriggerStart="Play_REPU_GolgothFlamethrower_LightningCage_Loop" LoopSoundTriggerEnd="Stop_REPU_GolgothFlamethrower_LightningCage_Loop" CageCreationSoundTrigger="Play_REPU_GolgothFlamethrower_LightningCage_Cage_Impact" />
+    <SoundTrigger PlayAttackVoice="1" OnAnimStart="monster_skill_03" OnAnimEnd="monster_skill_03" OnHit="Play_REPU_GolgothFlamethrower_LightningCage_Fence_Damge" />
+  </Skill>
+</MetaData>

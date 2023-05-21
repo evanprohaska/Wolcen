@@ -1,0 +1,82 @@
+<MetaData>
+  <Skill UID="pst_meteor_on_fire_skil" ESkill="player_frostcomet" Keywords="magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostcomet" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="60" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="6" />
+    <Projectile Name="player_frostcomet_proj_fire" ProjectileCount="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Targeting TargetOnGround="1" />
+    <Explosion ExplosionRadius="3" />
+    <Specific_FrostComet InitialProjectileHeight="7.5" ProjectileIndicatorTimeScale="1.1" IsFire="1" />
+  </Skill>
+  <Skill UID="pst_frostlance_on_frost_skil" ESkill="player_frostlance" Keywords="magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostlance" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="20" />
+    <CastingParams CastBone="" CastDelay="0.7" />
+    <DamageWeapon Type="Frost" WeaponMultiplier="6" />
+    <Range AttackRange="20" />
+    <Projectile Name="player_frostlance_proj" ProjectileCount="1" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="2" distanceMax="7" totalAngleAtDistanceMin="120" totalAngleAtDistanceMax="120" projectileAngleAtDistanceMin="45" projectileAngleAtDistanceMax="10" />
+    </Projectile>
+    <Specific_Frostlance RandomAngle="0" />
+  </Skill>
+  <Skill UID="pst_lightningstrike_on_lightning_skil" ESkill="player_chainlightning" Keywords="magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="" FeedbackPresetBase="Player_skill_chainlightning" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="6" />
+    <Range AttackRange="40" />
+    <ParticleList>
+      <Particle Key="ChainSkillBeam" Name="U_Character.Skills.Chain_Lightning_01" Direction="0,0,-1" />
+      <Particle Key="ChainSkillHit" Name="U_Character.Skills.Chain_Lightning_Hit" Direction="0,0,1" />
+    </ParticleList>
+    <ChainSkill MaxBounce="4" HitBounceDelay="0.1" TargetBone="Bip01 Spine1" SoundTriggerOnFirstHit="PLAY_Skill_ChainLightning_FirstImpact" SoundTriggerOnMiss="PLAY_Skill_ChainLightning_Miss">
+      <SpreadDatas>
+        <Entry Probability="100" Radius="8" DamagePercent="50" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="50" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+        <Entry Probability="100" Radius="5" DamagePercent="50" SoundTriggerHit="PLAY_Skill_ChainLightning_FourthImpact" />
+        <Entry Probability="100" Radius="8" DamagePercent="50" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+      </SpreadDatas>
+    </ChainSkill>
+    <Specific_ChainLightning SnapToTargetTolerance="5" />
+  </Skill>
+  <Skill UID="pst_meteor_on_fire_skil_2" ESkill="player_frostcomet" Keywords="magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostcomet" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="60" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="9" />
+    <Projectile Name="player_frostcomet_proj_fire" ProjectileCount="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Targeting TargetOnGround="1" />
+    <Explosion ExplosionRadius="3" />
+    <Specific_FrostComet InitialProjectileHeight="7.5" ProjectileIndicatorTimeScale="1.1" IsFire="1" />
+  </Skill>
+  <Skill UID="pst_frostlance_on_frost_skil_2" ESkill="player_frostlance" Keywords="magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostlance" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="20" />
+    <DamageWeapon Type="Frost" WeaponMultiplier="9" />
+    <CastingParams CastBone="" CastDelay="0.7" />
+    <Range AttackRange="20" />
+    <Projectile Name="player_frostlance_proj" ProjectileCount="1" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="2" distanceMax="7" totalAngleAtDistanceMin="120" totalAngleAtDistanceMax="120" projectileAngleAtDistanceMin="45" projectileAngleAtDistanceMax="10" />
+    </Projectile>
+    <Specific_Frostlance RandomAngle="0" />
+  </Skill>
+  <Skill UID="pst_lightningstrike_on_lightning_skil_2" ESkill="player_chainlightning" Keywords="magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="" FeedbackPresetBase="Player_skill_chainlightning" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="9" />
+    <Range AttackRange="40" />
+    <ParticleList>
+      <Particle Key="ChainSkillBeam" Name="U_Character.Skills.Chain_Lightning_01" Direction="0,0,-1" />
+      <Particle Key="ChainSkillHit" Name="U_Character.Skills.Chain_Lightning_Hit" Direction="0,0,1" />
+    </ParticleList>
+    <ChainSkill MaxBounce="4" HitBounceDelay="0.1" TargetBone="Bip01 Spine1" SoundTriggerOnFirstHit="PLAY_Skill_ChainLightning_FirstImpact" SoundTriggerOnMiss="PLAY_Skill_ChainLightning_Miss">
+      <SpreadDatas>
+        <Entry Probability="100" Radius="8" DamagePercent="50" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="50" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+        <Entry Probability="100" Radius="5" DamagePercent="50" SoundTriggerHit="PLAY_Skill_ChainLightning_FourthImpact" />
+        <Entry Probability="100" Radius="8" DamagePercent="50" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+      </SpreadDatas>
+    </ChainSkill>
+    <Specific_ChainLightning SnapToTargetTolerance="5" />
+  </Skill>
+</MetaData>

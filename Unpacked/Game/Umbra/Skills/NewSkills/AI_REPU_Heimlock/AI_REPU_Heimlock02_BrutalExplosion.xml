@@ -1,0 +1,46 @@
+<MetaData>
+  <Skill UID="AI_REPU_Heimlock02_BrutalExplosion" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator01" Name="u_bossmodifiers.bombsky.indicator" Offset="0,0,0" Direction="0,0,1" Scale="0.75" TimeScale="6" />
+      <Particle Key="Indicator02" Name="u_bossmodifiers.bombsky.indicator" Offset="0,0,0" Direction="0,0,1" Scale="1.8" TimeScale="6" />
+      <Particle Key="Indicator03" Name="u_bossmodifiers.bombsky.indicator" Offset="0,0,0" Direction="0,0,1" Scale="2.64" TimeScale="6" />
+      <Particle Key="Impact01" Name="U_Monster.Heimlock_APO.BrutalExplosion_Impact_01" Offset="0,0,0" Direction="0,0,1" Scale="0.75" />
+      <Particle Key="Impact02" Name="U_Monster.Heimlock_APO.BrutalExplosion_Impact_01" Offset="0,0,0" Direction="0,0,1" Scale="1.18" />
+      <Particle Key="Impact03_01" Name="U_Monster.Heimlock_APO.BrutalExplosion_Impact_01" Offset="0,0,0" Direction="0,0,1" Scale="1.5" />
+      <Particle Key="Impact03_02" Name="U_ApocalypticForm.Worrior_ApocalypticFrom.Ulti_Charging_Ground" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="Impact03_03" Name="U_Monster.Heimlock_APO.BrutalExploaion_Camera_Blur_01" Offset="0,0,1.5" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="Indicator01" ParticleKeys="Impact01" SecondarySkillUIDs="AI_REPU_Heimlock02_BrutalExplosion_Shapes01" />
+      <SkillSpecificParams Index="1" IndicatorKeys="Indicator02" ParticleKeys="Impact02" SecondarySkillUIDs="AI_REPU_Heimlock02_BrutalExplosion_Shapes02" />
+      <SkillSpecificParams Index="2" IndicatorKeys="Indicator03" ParticleKeys="Impact03_01,Impact03_02,Impact03_03" SecondarySkillUIDs="AI_REPU_Heimlock02_BrutalExplosion_Shapes03" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+    <SoundTrigger OnAnimStart="Play_Heimlock_BrutalExplosion_Start" OnAnimCast="" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock02_BrutalExplosion_Shapes01" ESkill="AI_Default_GenericShapes" Keywords="magic_spell">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_BrutalExplosion1" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock02_BrutalExplosion_Shapes02" ESkill="AI_Default_GenericShapes" Keywords="magic_spell">
+    <DamageAsPercentageOfParent Percent="130" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_BrutalExplosion2" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock02_BrutalExplosion_Shapes03" ESkill="AI_Default_GenericShapes" Keywords="magic_spell">
+    <DamageAsPercentageOfParent Percent="160" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_BrutalExplosion3" />
+    </Shapes>
+  </Skill>
+</MetaData>

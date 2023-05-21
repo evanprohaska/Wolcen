@@ -1,0 +1,19 @@
+<MetaData>
+  <ArenaWaves Name="ArenaWaves_TowerTop_Final">
+    <Wave Type="killtarget" Tag="2">
+      <PrefabParams PrefabName="arena_TowerTop" />
+      <KillTargets>
+        <Entry ClassName="Tower_Veteran" Amount="1" />
+      </KillTargets>
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_VeteranBoss_TowerEvent" TargetSpawnLocationID="301" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Sniper_Prespawn_TowerEvent" TargetSpawnLocationID="302" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="sc_Sniper_Prespawn_TowerEvent" TargetSpawnLocationID="303" SpawnDir="local_y" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill_forever" TargetSpawnClass="sc_Instigator_TowerEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="11" Type="fill_forever" TargetSpawnClass="sc_Instigator_TowerEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="3" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill_forever" TargetSpawnClass="sc_Instigator_TowerEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="5" />
+        <Spawner DelayBeforeFirstSpawn="21" Type="fill_forever" TargetSpawnClass="sc_Instigator_TowerEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="1" TargetSpawnLocationID="7" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

@@ -1,0 +1,60 @@
+<MetaData>
+  <Shape ID="Templars_Knight_SacredCombo" Type="Cone">
+    <Data Radius="4" Angle="80" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Templars_Knight_SacredForm_Wave" Type="Ring">
+    <Data RadiusIn="0" RadiusOut="3" BoundingBoxHeight="2" />
+    <Scale Data="RadiusIn" Target="10" Duration="1" Delay="0" />
+    <Scale Data="RadiusOut" Target="13" Duration="1" Delay="0" />
+  </Shape>
+  <Shape ID="Templars_Knight_SacredFire_Level1_Shape01" Type="Arc">
+    <Data RadiusIn="1" RadiusOut="3" Angle="60" BoundingBoxHeight="4" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="-30" />
+    <Scale Data="RadiusIn" Target="8" Duration="2" Delay="0" />
+    <Scale Data="RadiusOut" Target="10" Duration="2" Delay="0" />
+    <Scale Data="Angle" Target="40" Duration="2" Delay="0" />
+  </Shape>
+  <Shape ID="Templars_Knight_SacredFire_Level1_Shape02" Type="Arc">
+    <Data RadiusIn="1" RadiusOut="3" Angle="60" BoundingBoxHeight="4" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="30" />
+    <Scale Data="RadiusIn" Target="8" Duration="2" Delay="0" />
+    <Scale Data="RadiusOut" Target="10" Duration="2" Delay="0" />
+    <Scale Data="Angle" Target="40" Duration="2" Delay="0" />
+  </Shape>
+  <Shape ID="Templars_Knight_SacredFire_Level2_Shape01" Type="Arc">
+    <Data RadiusIn="1" RadiusOut="3" Angle="60" BoundingBoxHeight="4" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="-30" />
+    <Scale Data="RadiusIn" Target="8" Duration="1" Delay="0" />
+    <Scale Data="RadiusOut" Target="10" Duration="1" Delay="0" />
+    <Scale Data="Angle" Target="40" Duration="1" Delay="0" />
+  </Shape>
+  <Shape ID="Templars_Knight_SacredFire_Level2_Shape02" Type="Arc">
+    <Data RadiusIn="1" RadiusOut="3" Angle="60" BoundingBoxHeight="4" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="30" />
+    <Scale Data="RadiusIn" Target="8" Duration="1" Delay="0" />
+    <Scale Data="RadiusOut" Target="10" Duration="1" Delay="0" />
+    <Scale Data="Angle" Target="40" Duration="1" Delay="0" />
+  </Shape>
+  <Shape ID="Templars_Knight_SacredCombo_1" Type="Cone">
+    <Data Radius="5" Angle="80" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Templars_Knight_SacredCombo_2" Type="Rectangle">
+    <Data Width="2.5" Length="5" BoundingBoxHeight="2" />
+    <Position ForwardOffset="2" />
+  </Shape>
+  <Shape ID="Templars_Knight_HolyDive_Level1_Shape" Type="Circle">
+    <Data Radius="3" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Templars_Knight_HolyDive_Level2_Shape" Type="Circle">
+    <Data Radius="5" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Templars_Knight_HolyDive_Prison_Shape" Type="Ring">
+    <Data RadiusIn="5" RadiusOut="6" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Templars_Knight_SacredCharge_FrontAttack_Shape" Type="Cone">
+    <Data Radius="3" Angle="120" BoundingBoxHeight="2" />
+  </Shape>
+  <Shape ID="Templars_Knight_SacredCharge_TargetDetection_Shape" Type="Cone">
+    <Data Radius="1.5" Angle="120" BoundingBoxHeight="2" />
+  </Shape>
+</MetaData>

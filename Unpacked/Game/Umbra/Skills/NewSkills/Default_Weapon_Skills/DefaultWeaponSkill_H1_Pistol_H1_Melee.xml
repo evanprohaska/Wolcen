@@ -1,0 +1,57 @@
+<MetaData>
+  <Skill UID="playerskill_H1_Melee_H1_Pistol_atk_01" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="default" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/pistol_h1_melee.png" UIName="@ui_AST_ComboMeleePistol" Lore="@ui_AST_ComboMeleePistol_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance" />
+    <Combo ComboStarter="Combo_H1_Melee_H1_Pistol" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier=".95" />
+    <Shapes>
+      <Entry ShapeName="GunMelee_1" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger AttackingHand="left" OnAnimStart="Play_Foley_Move_Short" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H1_Melee_H1_Pistol_atk_02" ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/pistol_h1_melee.png" UIName="@ui_AST_ComboMeleePistol" />
+    <Animation ActionString="player_skill_atk_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier=".95" />
+    <SoundTrigger AttackingHand="right" OnAnimCast="PLAY_Skill_DefaultWeapon_PistolShot" OnHit="Play_Bullet_Impact" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+    <Range AttackRange="20" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+  </Skill>
+  <Skill UID="playerskill_H1_Melee_H1_Pistol_atk_loop_01" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_loop_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="default" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/pistol_h1_melee.png" UIName="@ui_AST_ComboMeleePistol" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier=".95" />
+    <Shapes>
+      <Entry ShapeName="GunMelee_1" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger AttackingHand="left" OnAnimStart="Play_Foley_Move_Short" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H1_Melee_H1_Pistol_atk_loop_02" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback BloodDecalOrientation="left" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="pistol_swipe" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/pistol_h1_melee.png" UIName="@ui_AST_ComboMeleePistol" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier=".95" />
+    <Shapes>
+      <Entry ShapeName="GunMelee_2" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger AttackingHand="right" OnAnimCast="PLAY_Skill_DefaultWeapon_PistolBurstShot" OnHit="Play_Bullet_Impact" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,22 @@
+<MetaData>
+  <Projectile ID="COSS_Mystagogue_Proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Monster.Mystagogue_Projectile_01" Direction="0,-1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_VFX_Oskar.Monster.Mystagogue_Projectile_AoE" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="u_bossmodifiers.bombsky.indicator" Direction="0,0,1" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Air_Resistance" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="10" SpeedMax="10" Acceleration="0" AccelerationCurveID="Acc_Flat" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="Play_COSS_Mystagogue_RangedAttack_Charge" />
+      <Launch SoundTriggerName="Play_COSS_Mystagogue_RangedAttack_Proj_Launch" />
+      <Hit SoundTriggerName="Play_COSS_Mystagogue_RangedAttack_Proj_Impact" />
+      <Removed SoundTriggerName="Stop_COSS_Mystagogue_RangedAttack_Proj_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

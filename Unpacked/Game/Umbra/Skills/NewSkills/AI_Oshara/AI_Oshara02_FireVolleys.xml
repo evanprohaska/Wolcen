@@ -1,0 +1,101 @@
+<MetaData>
+  <Skill UID="AI_Oshara02_FireVolleys" ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" AnimationDrivenMovement="1" ScaleWithAttackSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimStart="" OnAnimLoopIn="Play_Dragon_Oshara_Firevolleys_Loop" OnAnimLoopOut="Stop_Dragon_Oshara_Firevolleys_Loop" OnInterrupt="Stop_Dragon_Oshara_Firevolleys_Loop" OnHit="Play_BossModifier_FireHoming_Proj_Impact" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" CastDelay="0" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon WeaponMultiplier="1" Type="Fire" />
+    <Projectile Name="Oshara02_FireVolleys_proj" ProjectileCount="5" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="3" distanceMax="12" totalAngleAtDistanceMin="300" totalAngleAtDistanceMax="300" projectileAngleAtDistanceMin="10" projectileAngleAtDistanceMax="10" />
+    </Projectile>
+    <Range AttackRange="50" />
+    <EnableCondition DisableIfBroken="1" />
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Monster.Oshara.Oshara_fireShield_01" Offset="0,0,0" Direction="0,0,1" Scale="2" />
+    </ParticleList>
+    <Explosion ExplosionRadius="2" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.01" CastMode="FromGround" SkillToCastOnInEnd="AI_Oshara02_FireVolleys_Buff" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="30" CastAtTargetPos="1" TargetBone="Bip01" />
+      <LoopAttributes NumberOfLoops="10" AdditionnalProjectilesPerLoop="1" TimeBetweenLoopsBase="2" TimeBetweenLoopsDecrement="0.18" ResetTargetPosBetweenLoops="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill UID="AI_Oshara02_FireVolleys_Buff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Oshara03_Trap_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_Oshara02_ShieldBuff_passive" Targeting="OnSelf" Duration="12" />
+    </PassiveSkills>
+  </Skill>
+  <Skill UID="AI_Oshara03_FireVolleys" ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" AnimationDrivenMovement="1" ScaleWithAttackSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimStart="" OnAnimLoopIn="Play_Dragon_Oshara_Firevolleys_Loop" OnAnimLoopOut="Stop_Dragon_Oshara_Firevolleys_Loop" OnInterrupt="Stop_Dragon_Oshara_Firevolleys_Loop" OnHit="Play_BossModifier_FireHoming_Proj_Impact" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" CastDelay="0" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon WeaponMultiplier="1" Type="Fire" />
+    <Projectile Name="Oshara02_FireVolleys_proj" ProjectileCount="5" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="3" distanceMax="12" totalAngleAtDistanceMin="300" totalAngleAtDistanceMax="300" projectileAngleAtDistanceMin="10" projectileAngleAtDistanceMax="10" />
+    </Projectile>
+    <Range AttackRange="50" />
+    <EnableCondition DisableIfBroken="1" />
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Monster.Oshara.Oshara_fireShield_01" Offset="0,0,0" Direction="0,0,1" Scale="2" />
+    </ParticleList>
+    <Explosion ExplosionRadius="2" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.01" CastMode="FromGround" SkillToCastOnInEnd="AI_Oshara03_FireVolleys_Buff" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="30" CastAtTargetPos="1" TargetBone="Bip01" />
+      <LoopAttributes NumberOfLoops="10" AdditionnalProjectilesPerLoop="1" TimeBetweenLoopsBase="2" TimeBetweenLoopsDecrement="0.18" ResetTargetPosBetweenLoops="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill UID="AI_Oshara03_FireVolleys_Buff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Oshara03_Trap_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_Oshara03_ShieldBuff_passive" Targeting="OnSelf" Duration="12" />
+    </PassiveSkills>
+  </Skill>
+  <Skill UID="AI_OsharaUber_FireVolleys" ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" AnimationDrivenMovement="1" ScaleWithAttackSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimStart="" OnAnimLoopIn="Play_Dragon_Oshara_Firevolleys_Loop" OnAnimLoopOut="Stop_Dragon_Oshara_Firevolleys_Loop" OnInterrupt="Stop_Dragon_Oshara_Firevolleys_Loop" OnHit="Play_BossModifier_FireHoming_Proj_Impact" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="60" CanBeInterrupted="0" CastDelay="0" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon WeaponMultiplier="1" Type="Fire" />
+    <Projectile Name="Oshara02_FireVolleys_proj" ProjectileCount="5" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="3" distanceMax="12" totalAngleAtDistanceMin="300" totalAngleAtDistanceMax="300" projectileAngleAtDistanceMin="10" projectileAngleAtDistanceMax="10" />
+    </Projectile>
+    <Range AttackRange="50" />
+    <EnableCondition DisableIfBroken="1" />
+    <ParticleList>
+      <Particle Key="Loop" Name="U_Monster.Oshara.Oshara_fireShield_01" Offset="0,0,0" Direction="0,0,1" Scale="2" />
+    </ParticleList>
+    <Explosion ExplosionRadius="2" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.01" CastMode="FromGround" SkillToCastOnInEnd="AI_OsharaUber_FireVolleys_Buff" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="30" CastAtTargetPos="1" TargetBone="Bip01" />
+      <LoopAttributes NumberOfLoops="10" AdditionnalProjectilesPerLoop="1" TimeBetweenLoopsBase="2" TimeBetweenLoopsDecrement="0.18" ResetTargetPosBetweenLoops="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill UID="AI_OsharaUber_FireVolleys_Buff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Oshara03_Trap_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_OsharaUber_ShieldBuff_passive" Targeting="OnSelf" Duration="12" />
+    </PassiveSkills>
+  </Skill>
+</MetaData>

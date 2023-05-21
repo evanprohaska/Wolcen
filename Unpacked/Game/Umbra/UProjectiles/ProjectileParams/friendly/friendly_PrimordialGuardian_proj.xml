@@ -1,0 +1,20 @@
+<MetaData>
+  <Projectile ID="friendly_primordialguardian_missileshot" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,-0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.primordialguardian.proj" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster_Alt.primordialguardian.proj_explo" Direction="0,1,0" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="5" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Primordial_GuardianCorrupt_Ranged_Proj_Loop" />
+      <Hit SoundTriggerName="Play_Primordial_GuardianCorrupt_Ranged_Impact" />
+      <Removed SoundTriggerName="Stop_Primordial_GuardianCorrupt_Ranged_Proj_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

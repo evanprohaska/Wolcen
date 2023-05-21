@@ -1,0 +1,55 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar03_explosiveleap" ESkill="AI_default_leap" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1.2" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Cooldown Cooldown="4" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="2" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar03_ExplosiveLeap_Explosion" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="LeapImpact" Name="U_Monster.Justica.Explosion_01" Offset="0,0,0" Direction="0,0,1" Scale="0.70" />
+      <Particle Key="Indicator" Name="u_bossmodifiers.bombsky.indicator" Offset="0,0,0" Direction="0,0,1" Scale="1.35" />
+    </ParticleList>
+    <SkillSpecific Speed="20" MoveDistanceMinimum="1" MoveDistanceMaximum="30" MidPointAdvancement="0.3" RaycastHeightOffset="10" JumpHeight="5.0" JumpZOnlyForce="16" JumpZOnlyFallingGravityMultiplier="8" HeightLimit="2" NavPathLengthLimit="20" TriggerDistance="0.5" LeapGravity="-30" SpecialTargetEntity="" />
+    <SoundTrigger OnAnimStart="Play_Edric_Justicar3_ExplosiveLeap_Jump" OnAnimLoopOut="Play_Edric_Justicar3_ExplosiveLeap_Land" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="100" In="0.5" />
+      <EmissiveIntensity From="100" To="150" In="0.7" />
+      <EmissiveIntensity From="150" To="175" In="1" />
+      <EmissiveIntensity From="175" To="200" In="2" />
+      <EmissiveIntensity From="180" To="100" In="1" />
+      <EmissiveIntensity From="100" To="origin" In="1" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_republicjusticar03_explosiveleap_targetpoint" ESkill="AI_default_leap">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1.2" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Cooldown Cooldown="60" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="2" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar03_ExplosiveLeap_Explosion" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="LeapImpact" Name="U_Monster.Justica.Explosion_01" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="Indicator" Name="u_bossmodifiers.bombsky.indicator" Offset="0,0,0" Direction="0,0,1" Scale="1.35" />
+    </ParticleList>
+    <SkillSpecific Speed="20" MoveDistanceMinimum="1" MoveDistanceMaximum="30" MidPointAdvancement="0.3" RaycastHeightOffset="10" JumpHeight="5.0" JumpZOnlyForce="16" JumpZOnlyFallingGravityMultiplier="8" HeightLimit="2" NavPathLengthLimit="20" TriggerDistance="0.5" LeapGravity="-30" SpecialTargetEntity="BOSS_Spawn_Point_Edric03" />
+    <SoundTrigger OnAnimStart="Play_Edric_Justicar3_ExplosiveLeap_Jump" OnAnimLoopOut="Play_Edric_Justicar3_ExplosiveLeap_Land" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_republicjusticar03_energynuke" />
+    </SecondarySkillToCast>
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="100" In="0.5" />
+      <EmissiveIntensity From="100" To="150" In="0.7" />
+      <EmissiveIntensity From="150" To="175" In="1" />
+      <EmissiveIntensity From="175" To="200" In="2" />
+      <EmissiveIntensity From="180" To="100" In="1" />
+      <EmissiveIntensity From="100" To="origin" In="1" />
+    </Material>
+  </Skill>
+</MetaData>

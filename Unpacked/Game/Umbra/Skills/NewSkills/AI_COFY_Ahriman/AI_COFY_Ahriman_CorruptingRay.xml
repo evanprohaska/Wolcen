@@ -1,0 +1,77 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_CorruptingRayP2_1" ESkill="AI_COFY_AHRIMAN_CORRUPTINGRAY" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_06_in" ActionString_Loop="monster_skill_loop_06_loop" ActionString_Out="monster_skill_loop_06_out" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnAnimStart="" OnAnimEnd="" />
+    <ParticleList>
+      <Particle Key="TargetLink" Name="COFY_Ahriman.CorruptingRay.Target" Direction="0,0,1" Offset="0,0,0" Bone="Bip01 Spine2" />
+      <Particle Key="Link" Name="U_Monster.Lumbach.FleshBeam_01" Direction="0,0,1" Offset="0,0,0" Bone="Bip01 R Weapon_Bone" />
+    </ParticleList>
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <SkillSpecific EssenceDrainInterval="0.25" EssenceDrainPercentage="25" NumOfSpawns="1" AssociatedProject="anti_demonic_forces_construct" ReducedSpawnFromProject="0" />
+    <Summoning MaxSummons="1" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="5" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="0" Name="sc_AhrimanSummon_DemonOfSouls" />
+      <SummonedSpawnClass Key="1" Name="sc_AhrimanSummon_Butcher" />
+      <SummonedSpawnClass Key="2" Name="sc_AhrimanSummon_SkeletonGolem" />
+      <SummonedSpawnClass Key="3" Name="sc_AhrimanSummon_DemonOfFlesh" />
+      <SummonedSpawnClass Key="4" Name="sc_AhrimanSummon_SvriirFlesh" />
+      <SummonedSpawnClass Key="5" Name="sc_AhrimanSummon_RepublicJusticar" />
+      <SummonedSpawnClass Key="6" Name="sc_AhrimanSummon_PacifiedAssassin" />
+      <SummonedSpawnClass Key="7" Name="sc_AhrimanSummon_PacifiedKnight" />
+      <SummonedSpawnClass Key="8" Name="sc_AhrimanSummon_PacifiedGolgoth" />
+    </Summoning>
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_ThroneLeapP2_1" />
+    </SecondarySkillToCast>
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_CorruptingRayP2_2" ESkill="AI_COFY_AHRIMAN_CORRUPTINGRAY" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_06_in" ActionString_Loop="monster_skill_loop_06_loop" ActionString_Out="monster_skill_loop_06_out" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnAnimStart="" OnAnimEnd="" />
+    <ParticleList>
+      <Particle Key="TargetLink" Name="COFY_Ahriman.CorruptingRay.Target" Direction="0,0,1" Offset="0,0,0" Bone="Bip01 Spine2" />
+      <Particle Key="Link" Name="U_Monster.Lumbach.FleshBeam_01" Direction="0,0,1" Offset="0,0,0" Bone="Bip01 R Weapon_Bone" />
+    </ParticleList>
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <SkillSpecific EssenceDrainInterval="0.25" EssenceDrainPercentage="25" NumOfSpawns="2" AssociatedProject="anti_demonic_forces_construct" ReducedSpawnFromProject="1" />
+    <Summoning MaxSummons="2" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="5" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="0" Name="sc_AhrimanSummon_DemonOfSouls" />
+      <SummonedSpawnClass Key="1" Name="sc_AhrimanSummon_Butcher" />
+      <SummonedSpawnClass Key="2" Name="sc_AhrimanSummon_SkeletonGolem" />
+      <SummonedSpawnClass Key="3" Name="sc_AhrimanSummon_DemonOfFlesh" />
+      <SummonedSpawnClass Key="4" Name="sc_AhrimanSummon_SvriirFlesh" />
+      <SummonedSpawnClass Key="5" Name="sc_AhrimanSummon_RepublicJusticar" />
+      <SummonedSpawnClass Key="6" Name="sc_AhrimanSummon_PacifiedAssassin" />
+      <SummonedSpawnClass Key="7" Name="sc_AhrimanSummon_PacifiedKnight" />
+      <SummonedSpawnClass Key="8" Name="sc_AhrimanSummon_PacifiedGolgoth" />
+    </Summoning>
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_ThroneLeapP2_2" />
+    </SecondarySkillToCast>
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_CorruptingRayP2_3" ESkill="AI_COFY_AHRIMAN_CORRUPTINGRAY" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_06_in" ActionString_Loop="monster_skill_loop_06_loop" ActionString_Out="monster_skill_loop_06_out" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnAnimStart="" OnAnimEnd="" />
+    <ParticleList>
+      <Particle Key="TargetLink" Name="COFY_Ahriman.CorruptingRay.Target" Direction="0,0,1" Offset="0,0,0" Bone="Bip01 Spine2" />
+      <Particle Key="Link" Name="U_Monster.Lumbach.FleshBeam_01" Direction="0,0,1" Offset="0,0,0" Bone="Bip01 R Weapon_Bone" />
+    </ParticleList>
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <SkillSpecific EssenceDrainInterval="0.25" EssenceDrainPercentage="25" NumOfSpawns="3" AssociatedProject="anti_demonic_forces_construct" ReducedSpawnFromProject="1" />
+    <Summoning MaxSummons="3" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="5" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="0" Name="sc_AhrimanSummon_DemonOfSouls" />
+      <SummonedSpawnClass Key="1" Name="sc_AhrimanSummon_Butcher" />
+      <SummonedSpawnClass Key="2" Name="sc_AhrimanSummon_SkeletonGolem" />
+      <SummonedSpawnClass Key="3" Name="sc_AhrimanSummon_DemonOfFlesh" />
+      <SummonedSpawnClass Key="4" Name="sc_AhrimanSummon_SvriirFlesh" />
+      <SummonedSpawnClass Key="5" Name="sc_AhrimanSummon_RepublicJusticar" />
+      <SummonedSpawnClass Key="6" Name="sc_AhrimanSummon_PacifiedAssassin" />
+      <SummonedSpawnClass Key="7" Name="sc_AhrimanSummon_PacifiedKnight" />
+      <SummonedSpawnClass Key="8" Name="sc_AhrimanSummon_PacifiedGolgoth" />
+    </Summoning>
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_ThroneLeapP2_3" />
+    </SecondarySkillToCast>
+  </Skill>
+</MetaData>

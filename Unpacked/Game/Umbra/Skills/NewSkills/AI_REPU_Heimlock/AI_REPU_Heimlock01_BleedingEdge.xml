@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_REPU_Heimlock01_BleedingEdge">
+    <Animation ActionString="monster_skill_04" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="rend" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Heimlock01_BleedingEdge" />
+    </Shapes>
+    <DamageZone Duration="4" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="U_Monster.Heimlock.BleedingEdge_Start_01" Offset="0,0,0" Direction="0,0,1" Scale="1" Timescale="0.75" />
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock.BleedingEdge_Pro_01" Offset="0,0,2" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="3" RandomBaseDistMax="3" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="5" MaxLinearSpeed="5" MinAngularSpeed="150" MaxAngularSpeed="150" IndicatorMaxTimer="3" NumberOfDZ="1" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

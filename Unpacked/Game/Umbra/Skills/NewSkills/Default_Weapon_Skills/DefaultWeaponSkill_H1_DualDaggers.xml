@@ -1,0 +1,59 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="playerskill_H1_DualDaggers_atk_01">
+    <Animation ActionString="player_skill_atk_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_weapon_daggers" TrailPresetBase="dagger_swipe" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_daggers.png" UIName="@ui_AST_ComboDualDaggers" Lore="@ui_AST_ComboDualDaggers_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance" />
+    <Combo ComboStarter="Combo_H1_DualDaggers" />
+    <Aggression TargetValueOnHit="7" />
+    <DamageWeapon WeaponMultiplier=".65" />
+    <Shapes>
+      <Entry ShapeName="Daggers_1" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="75" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="playerskill_H1_DualDaggers_atk_02">
+    <Animation ActionString="player_skill_atk_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback BloodDecalOrientation="left" FeedbackPresetBase="Player_weapon_daggers" TrailPresetBase="dagger_swipe" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_daggers.png" UIName="@ui_AST_ComboDualDaggers" />
+    <Aggression TargetValueOnHit="7" />
+    <DamageWeapon WeaponMultiplier=".65" />
+    <Shapes>
+      <Entry ShapeName="Daggers_2" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="75" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="playerskill_H1_DualDaggers_atk_loop_01">
+    <Animation ActionString="player_skill_atk_loop_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_daggers" TrailPresetBase="dagger_swipe" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_daggers.png" UIName="@ui_AST_ComboDualDaggers" />
+    <Aggression TargetValueOnHit="7" />
+    <DamageWeapon WeaponMultiplier=".65" />
+    <Shapes>
+      <Entry ShapeName="Daggers_3" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="75" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="playerskill_H1_DualDaggers_atk_loop_02">
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_daggers" TrailPresetBase="dagger_swipe" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_daggers.png" UIName="@ui_AST_ComboDualDaggers" />
+    <Aggression TargetValueOnHit="7" />
+    <DamageWeapon WeaponMultiplier=".65" />
+    <Shapes>
+      <Entry ShapeName="Daggers_3" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="75" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+</MetaData>

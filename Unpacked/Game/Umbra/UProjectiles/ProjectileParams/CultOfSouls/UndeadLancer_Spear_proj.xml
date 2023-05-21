@@ -1,0 +1,80 @@
+<MetaData>
+  <Projectile ID="undeadlancer_spear_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Spiker.Spiker_Spear_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="30" SpeedMax="30" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_Spiker_SpearImpact" />
+      <Launch SoundTriggerName="PLAY_AI_Spiker_SpearLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="named_spiker_spear_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Spiker.Spiker_Spear_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="30" SpeedMax="30" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_Spiker_SpearImpact" />
+      <Launch SoundTriggerName="PLAY_AI_Spiker_SpearLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="undeadlancer_spear_proj_frost" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Spiker.Spiker_Spear_01_frost" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="30" SpeedMax="30" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_Spiker_SpearImpact" />
+      <Launch SoundTriggerName="PLAY_AI_Spiker_SpearLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="undeadlancer_mortar_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Spiker.Spiker_Spear_03_Trail" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_Monster.Spiker.Spiker_Spear_Impact_01" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_Monster.Indicator.Indicator_3M_01" Direction="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="50" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_Spiker_SpearImpact" />
+      <Launch SoundTriggerName="PLAY_AI_Spiker_SpearLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="undeadlancer_mortar_proj_frost" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Spiker.Spiker_Spear_03_Trail_frost" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_Monster.Spiker.Spiker_Spear_Impact_01_frost" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_Monster.Indicator.Indicator_3M_01" Direction="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="50" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_Spiker_SpearImpact" />
+      <Launch SoundTriggerName="PLAY_AI_Spiker_SpearLoop" />
+    </Audio>
+  </Projectile>
+</MetaData>

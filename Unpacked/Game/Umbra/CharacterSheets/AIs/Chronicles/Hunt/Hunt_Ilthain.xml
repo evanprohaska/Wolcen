@@ -1,0 +1,57 @@
+<MetaData>
+  <BaseEntity ID="Hunt_Ilthain" EntityName="republic_edric_friendly" Scale="1.2" CanKillAllies="0" />
+  <Faction Name="PlayerFriendly" />
+  <Keywords Value="republic,boss,melee" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="1" />
+  <Attributes Archetype="archetype_summons" HealthModifier="2" DamageModifier="0.5" XPModifier="1" Protection="" />
+  <Movement MovementSpeed="6" WalkSpeed="6" />
+  <InterruptionParams InterruptChance="0.00" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BlownAwayParams CanBeBlownAway="1" BlownAwayAnimationTag="" />
+  <DefaultBossModifiers />
+  <Corpses PresetName="EliteCadaverPreset" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="360" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Generic">
+      <EngageOverride type="string" />
+    </Behavior>
+    <BT FleeOnLowHealthChance="0.0" EngageRange="50.0" MeleeAttack="True" FallBack="False" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="Melee" />
+    <Support PresenceRadius="10.0" CombatRadius="25.0" TravelRadius="5.0" />
+  </Kythera>
+  <Skills>
+    <DefaultBasicAttack />
+    <Offensive>
+      <Skill Name="AI_Ondar_DefaultAttack" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.0" Preferred="1.5" Max="3.0" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </Offensive>
+  </Skills>
+  <RandomModel>
+    <ModelChoice Model="Objects/characters/npc/Primary/Ilthain/NPC_Ilthain_H2Spear.cdf" Weight="1">
+      <ADBChoice ADB="Animations/Mannequin/ADB/NPC/DRAG_Ondar.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIName_Ilthain" ZIconOffset="2.7" />
+  <Spawn SpawnAnimation="rise_out_ground" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="1" DeathSkill="" CanUseDownState="1" CanSelfRevive="1" SpendReviveTokensIfSelfRevive="0" DownStateDuration="10" DownStateReviveDuration="10" DownSkill="" LifeWhileDownAsPercentOfTotalLife="0" DefaultReviveTokens="1" MaximumReviveTokens="1" />
+  <GameplayParticles PresetName="size_Trapper" />
+  <Capsules>
+    <EntityPhysics ColliderSize="0.55,0.55,0.5" />
+    <MouseSelection SelectionCapsuleRadius="1.0" SelectionCapsuleHeight="0.7" SelectionCapsuleZOffset="-0.3" />
+    <ProjectileCollision ProjectileCapsuleRadius="0.4" ProjectileCapsuleHeight="3.0" CanSnapOnCenterWhenColliding="0" />
+    <VegetationCollision SphereRadius="0.5" SphereZOffset="0.5" />
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="default" OverrideScale="1" />
+  </VisualParams>
+  <Audio AllowGroupSounds="0" SurfaceType="armour">
+    <RandomVoice>
+      <VoiceChoice VoiceName="Edric_Justicar_Voice" EnemyBark="" Weight="1" />
+    </RandomVoice>
+    <ContextualSoundTrigger PresetName="Preset_IlthainWaitsToBeRevived" />
+    <ContextualSoundTrigger PresetName="Preset_IlthainIsGettingRevived" />
+  </Audio>
+</MetaData>

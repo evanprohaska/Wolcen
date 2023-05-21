@@ -1,0 +1,42 @@
+<MetaData>
+  <ContentGenerator Name="CG_EG_Consumable_EliteBossFight" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="EliteBossFight" PriorityTag="" ExcludeTag="" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WRepu_Room_CG" Tag="Room" PriorityTag="Golgoth" ExcludeTag="" />
+      <LevelGenerator DungeonName="WTemplar_Fleshed_Room_CG" Tag="Room" PriorityTag="DoF" ExcludeTag="" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_Room_CG" Tag="Room" PriorityTag="Knight" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cellar_Foggy_Room_CG" Tag="Room" PriorityTag="Assassin" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cave_Mossy_Room_CG" Tag="Room" PriorityTag="Alpha" ExcludeTag="" />
+      <LevelGenerator DungeonName="Cave_Foggy_Room_CG" Tag="Room" PriorityTag="Butcher" ExcludeTag="" />
+      <LevelGenerator DungeonName="Mine_Room_CG" Tag="Room" PriorityTag="Justicar" ExcludeTag="" />
+      <LevelGenerator DungeonName="Ossuary_Room_CG" Tag="Room" PriorityTag="Thug" ExcludeTag="" />
+      <LevelGenerator DungeonName="Ossuary_Foggy_Room_CG" Tag="Room" PriorityTag="DoS" ExcludeTag="" />
+      <LevelGenerator DungeonName="RandomTPS_Room" Tag="Room" PriorityTag="Primo" ExcludeTag="" />
+      <LevelGenerator DungeonName="Canyon_Room_CG" Tag="Room" PriorityTag="Knight" ExcludeTag="" />
+      <LevelGenerator DungeonName="LambachP1_BossArea_CG" Tag="LambachArena" PriorityTag="Lambach" ExcludeTag="" />
+      <LevelGenerator DungeonName="OsharaP3_BossArea_CG" Tag="OsharaArena" PriorityTag="Oshara" ExcludeTag="" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_EG_KillTarget_EBF_RepublicJusticar" Tag="Justicar" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_RepublicAssassin" Tag="Assassin" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_OutlawsSadisticThug" Tag="Thug" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_CultOfSouls_DemonOfSouls" Tag="DoS" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_CultOfSouls_Butcher" Tag="Butcher" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_PacifiedKnight" Tag="Knight" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_PacifiedGolgoth" Tag="Golgoth" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_CultOfFlesh_DemonOfFlesh" Tag="DoF" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_SvriirAlphaPoison" Tag="Alpha" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_EBF_CultOfSouls_Corrupted_PrimordialGuardian" Tag="Primo" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_UberBoss_LambachP1" Tag="LambachP1_80" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_UberBoss_LambachP1_100" Tag="LambachP1_100" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_UberBoss_LambachP1_120" Tag="LambachP1_120" PriorityTag="" ExcludeTag="" />
+      <Quest QuestName="QN_EG_KillTarget_UberBoss_OsharaP3" Tag="OsharaP3_120" PriorityTag="" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" BiomeName="default" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices />
+  </ContentGenerator>
+</MetaData>

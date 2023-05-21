@@ -1,0 +1,21 @@
+<MetaData>
+  <Skill UID="AI_Summon_Champion_Lightning_Default_Attack" ESkill="default_ranged" Keywords="magic_spell,default_ranged,projectile,additional_projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="0.8" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="R_Weapon_Bone" />
+    <Projectile Name="staff_proj_lightning" ProjectileCount="1" AngleBetweenProjectiles="10" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Summon_Champion_Lightning_Protection" ESkill="BossModifier_ProtectiveDome" Keywords="magic_spell">
+    <HUD ShowParamsInTooltip="SpecificProtectiveDome" ShowParamsInAST="SpecificProtectiveDome" />
+    <Animation ActionString="monster_skill_02" />
+    <ParticleList>
+      <Particle Key="Dome" Name="U_Character_02.Summon.Summon_lightning_Dome" Direction="1,0,0" Scale="1.1" />
+    </ParticleList>
+    <SkillSpecific DomeRadius="4" TTL="5" />
+    <SoundTrigger OnAnimStart="Play_Summoned_Champion_Lightning_ProtectiveDome_Start" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,15 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="ArtilleryStrikes">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="u_gameplay_ingredients.a3_artillery_strike.indicator" Direction="0,0,1" Offset="0,0,0" Scale="0.85" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.a3_artillery_strike.explosion" Direction="0,0,1" Scale="0.6" />
+      <Particle Key="ProjectileCastVFX" Name="" Direction="0,0,1" Scale="1.5" />
+    </Particles>
+    <Iterations Number="3" WarmUpTime="1.5" CooldownMin="0.1" CooldownMax="0.2" DelayBeforeFirstIteration="20" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_ArtilleryStrikes" Targeting="TrackingPlayer" ProjectileStartingPosition="AboveTarget" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="ArtilleryStrikes_PresetList" Loop="1" NewStartingPosition="0">
+    <Preset Name="ArtilleryStrikes" />
+  </FlowOfSoulsPresetList>
+</MetaData>

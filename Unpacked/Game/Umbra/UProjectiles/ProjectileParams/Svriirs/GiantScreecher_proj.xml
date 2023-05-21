@@ -1,0 +1,17 @@
+<Metadata>
+  <Projectile ID="GiantScreecher_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Trails.Fire.TurbulenceProjOptim2" Direction="1,0,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Monster.Heimlock.Meteo_Impact_01" Direction="0,0,1" WorldSpace="1" Scale="0.6" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Heimlock_FireProjectiles" Rotation="0" Force="0" Randomize="1" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="PLAY_Skill_FrostLance_BuildUp" />
+      <Launch SoundTriggerName="PLAY_Skill_FrostMeteor_Trail" />
+      <Hit SoundTriggerName="PLAY_Skill_FrostMeteor_Impact" />
+    </Audio>
+  </Projectile>
+</Metadata>

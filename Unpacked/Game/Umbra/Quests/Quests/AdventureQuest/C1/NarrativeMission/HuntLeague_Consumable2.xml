@@ -1,0 +1,257 @@
+<MetaData>
+  <Quest Name="HL_C2" UIName="@ui_C1_M2_QuestLabel" UIDesc="" Type="Adventure" StartDialog="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_C1_M2_S1_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_HLC2_Ondar_SpawnPoint" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker Target="QP_HLC2_Ondar_SpawnPoint" Area="" ShowMinimapIcon="1" Threshold="50" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="InitState_KillOndar" EntityName="Ondar" Hide="True" Remove="True" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_M2_SA_AN_StartQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="@ui_C1_M2_QuestLabel" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC2_Hide_IlthainFinal" EntityNames="NPC_HLC2_Forest_IlthainFinal" Hide="True" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="HuntLeague_C2_InitPos" TeleportedEntityName="#Player" DestinationName="HL_C2_SpawnPoint_Swamp" MinRadius="10" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="HLC2_Swamp_PlayerReact" DialogName="HLC2_Swamp_PlayerReact" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="HLC2_Deactivate_IC_Entrance" ClickableEntityName="HL_C2_ClickableEntity_FromSwampToIncubationChamber" MakeClickable="0" FilterEvents="0" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_InitCheckpoint" CheckpointEntityName="HL_C2_SpawnPoint_Swamp" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Unhide_Ondar_NPC" EntityNames="Ondar_NPC" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_dead_drake_collider_1" EntityNames="Dead_Drake_Collider_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_dead_drake_collider_2" EntityNames="Dead_Drake_Collider_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_DYN_C1_M2_RepuSoldierQuestionning" SequenceName="DYN_C1_M2_RepuSoldierQuestionning" ResetAtLastFrame="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_DYN_C1_M2_IlthainSpeech" SequenceName="DYN_C1_M2_IlthainSpeech" ResetAtLastFrame="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="Reset_DYN_C1_M2_CultistReport" SequenceName="DYN_C1_M2_CultistReport" ResetAtLastFrame="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="InitState_KillOndarNoBuff" EntityName="Ondar_NoBuff" Hide="True" Remove="True" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_1" AnimatedEntityName="HL_C2_FleshDoor4" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_2" AnimatedEntityName="HL_C2_FleshDoor5" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_3" AnimatedEntityName="HL_C2_FleshDoor6" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_4" AnimatedEntityName="HL_C2_FleshDoor11" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_5" AnimatedEntityName="HL_C2_FleshDoor10" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_6" AnimatedEntityName="HL_C2_FleshDoor17" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_7" AnimatedEntityName="HL_C2_FleshDoor16" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_8" AnimatedEntityName="HL_C2_FleshDoor15" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLM2_Unhide_ArenaBlocker" EntityNames="CE_HLC_C2_ArenaBlocker" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC2_Unhide_Arena1Blocker" EntityNames="CE_HLC_C2_Arena1Blocker" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLM2_Unhide_Arena2Blocker" EntityNames="CE_HLC_C2_Arena2Blocker" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLM2_Unhide_Arena3Blocker" EntityNames="CE_HLC_C2_Arena3Blocker" Hide="0" />
+    </Step>
+    <Step Order="1" UIName="@ui_C1_M2_S2_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_Unreachable" Radius="20" RequireAllPlayers="0" />
+      <Goal Order="1" Type="Talk" EntityName="Ondar_NPC" DialogName="HLC2_FleshSwamp_OndarIntro">
+        <ArrowMarker Target="Ondar_NPC" Area="" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC2_Step1_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC2_FleshSwamp_Ondar" AreaRadius="30" Type="GlobalDialog" Name="HLC2_FleshSwamp_Ondar" DialogName="HLC2_FleshSwamp_Ondar" />
+      <Event Trigger="EventEnd" EventName="HLC2_FleshSwamp_Ondar" Type="GoalAchieve" Name="Achieve_HLC2_FleshSwamp_Ondar" SimulateOnly="false" GoalIndexToAchieve="0" />
+      <Event Trigger="EventEnd" EventName="HLC2_FleshSwamp_Ondar" Type="StepUpdate" Name="HLC2_RitualArea_StepUpdate" Localization="@ui_C1_M2_S2_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_SpawnCultist1" SpawnClass="Sc_Sty_HLC2_Cultist1" TargetEntityName="QP_HL_C2_CultistsSpawnPoints_1" FaceAtSpawn="#Player" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_SpawnCultist2" SpawnClass="Sc_Sty_HLC2_Cultist2" TargetEntityName="QP_HL_C2_CultistsSpawnPoints_2" FaceAtSpawn="#Player" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_SpawnCultist3" SpawnClass="Sc_Sty_HLC2_Cultist3" TargetEntityName="QP_HL_C2_CultistsSpawnPoints_3" FaceAtSpawn="#Player" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C1_SpawnCultist4" SpawnClass="Sc_Sty_HLC2_Cultist4" TargetEntityName="QP_HL_C2_CultistsSpawnPoints_4" FaceAtSpawn="#Player" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+    </Step>
+    <Step Order="2" UIName="@ui_C1_M2_S3_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="HL_C2_ClickableEntity_FromSwampToIncubationChamber" InteractCount="1">
+        <ArrowMarker Target="HL_C2_ClickableEntity_FromSwampToIncubationChamber" Area="" ShowMinimapIcon="1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Unreachable" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="HL_C2_AnimDoor_RitualArea" Area="" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_HL_C2_Start_Arena1" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="HL_C2_AnimDoor_RitualArea" Area="" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="HuntLeague_C2_SpawnOndar_WithoutBuff" SpawnClass="Sc_Sty_HLC2_Ondar_NoBuff" TargetEntityName="Ondar_NPC" FaceAtSpawn="AnimObject_RepuSoldierQuestionning_Soldier_1" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_SpawnOndar_WithoutBuff" Type="EntityFollow" Name="HLC2_Ondar_NoBuff_Follow" FollowerEntityName="Ondar_NoBuff" Follow="#Player" Constraints="C1_M2" Delay="2" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_SpawnOndar_WithoutBuff" Type="EntityIsHidden" Name="HLC2_Hide_Ondar_NPC" EntityNames="Ondar_NPC" Hide="1" Delay="2.1" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_SpawnOndar_WithoutBuff" Type="ActionClickable" Name="HLC2_Activate_IC_Entrance" ClickableEntityName="HL_C2_ClickableEntity_FromSwampToIncubationChamber" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC2_Step2_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EventEnd" Name="HuntLeague_C2_OndarNoBuffStopWait" EventsName="HuntLeague_C2_WaitOndar" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="HLC2_FleshSwamp_Ilthain" DialogName="HLC2_FleshSwamp_Ilthain" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_OndarNoBuffStopWait" Type="EntityFollow" Name="HuntLeague_C2_FollowOndarNoBuff" FollowerEntityName="Ondar_NoBuff" Follow="#Player" Constraints="C1_M2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="C1_M2_SA_AN_QuestHintName" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_QuestHintName" ContextualMessage="@ui_C1_M2_SA_CM_QuestHintDescription" DisplayTime="3" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityKill" Name="HLC2_Kill_Ondar_WithoutBuff" EntityName="Ondar_NoBuff" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" Name="HuntLeague_C2_SpawnOndar" SpawnClass="Sc_Sty_HLC2_Ondar" TargetEntityName="QP_HL_C2_SpawnOndarWithBuff" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_SpawnOndar" Type="EntityFollow" Name="HuntLeague_C2_FollowOndar" FollowerEntityName="Ondar" Follow="#Player" Constraints="C1_M2" Delay="2" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_FollowOndar" Type="GlobalDialog" Name="HLC2_IncubationChamber_Player1" DialogName="HLC2_IncubationChamber_Player1" />
+      <Event Trigger="EventEnd" EventName="HLC2_IncubationChamber_Player1" Type="GoalAchieve" Name="Achieve_HLC2_IncubationChamber_Player1" SimulateOnly="false" GoalIndexToAchieve="1" />
+      <Event Trigger="GoalFailure" GoalIndex="-1" Type="EntityKill" Name="FailState_KillOndarNoBuff" EntityName="Ondar_NoBuff" Hide="True" Remove="True" />
+      <Event Trigger="GoalFailure" GoalIndex="-1" Type="EntityKill" Name="FailState_KillOndar" EntityName="Ondar" Hide="True" Remove="True" />
+    </Step>
+    <Step Order="3" UIName="@ui_C1_M2_S4_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_HL_C2_ArrowMarker_Arena1" Area="" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_Arena1Checkpoint" CheckpointEntityName="QP_HL_C2_ArrowMarker_Arena1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_1" AnimatedEntityName="HL_C2_FleshDoor4" Play="cofe_wall_spawn_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_2" AnimatedEntityName="HL_C2_FleshDoor5" Play="cofe_wall_spawn_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_3" AnimatedEntityName="HL_C2_FleshDoor6" Play="cofe_wall_spawn_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC2_Step3_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EventEnd" EventName="HLC2_IncubationChamber_Belizul1" Type="ArenaStart" Name="Event_Arena_Start" ArenaPreset="FleshArena1_HLC2" LocationEntityName="FleshArena1_HLC2" />
+      <Event Trigger="ArenaWaveStart" WaveIndex="1" ArenaStartEventName="Event_Arena_Start" Type="GlobalMusic" Name="Arena_Start_Music_1" MusicName="C1_M2_CultStronghold_Ambush" />
+      <Event Trigger="EventEnd" EventName="HLC2_IncubationChamber_Belizul1" Type="GlobalAnnouncement" Name="C1_M2_EA_AN_EventStart1" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_C1_M2_EA_CM_ArenaDescription" DisplayTime="3" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="Event_Arena_Start" Type="GoalAchieve" Name="Event_Arena_Victory" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="HLC2_IncubationChamber_Belizul1" DialogName="HLC2_IncubationChamber_Belizul1" />
+      <Event Trigger="ArenaWaveStart" WaveIndex="2" ArenaStartEventName="Event_Arena_Start" Type="GlobalDialog" Name="HLC2_IncubationChamber_Ondar1" DialogName="HLC2_IncubationChamber_Ondar1" />
+      <Event Trigger="GoalFailure" GoalIndex="-1" Type="EntityKill" Name="FailState_KillOndar" EntityName="Ondar" Hide="True" Remove="True" />
+    </Step>
+    <Step Order="4" UIName="@ui_C1_M2_S5_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_Unreachable" Radius="20" RequireAllPlayers="0" />
+      <Goal Order="1" Type="Go" Destination="QP_HL_C2_Start_Arena2" Radius="18" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="HL_C2_AnimDoor_RitualArea" Area="" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMusic" Name="Arena_End_Music_1" MusicName="C1_M2_CultStronghold" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_M2_EA_AN_EventEnd1" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC2_Step4_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EventEnd" EventName="C1_M2_EA_AN_EventEnd1" Type="GlobalDialog" Name="HLC2_IncubationChamber_Player2" DialogName="HLC2_IncubationChamber_Player2" Delay="2.5" />
+      <Event Trigger="EventStart" EventName="HLC2_IncubationChamber_Player2" Type="GoalAchieve" Name="Achieve_HLC2_IncubationChamber_Player2" SimulateOnly="false" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorOpening_1" AnimatedEntityName="HL_C2_FleshDoor4" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorOpening_2" AnimatedEntityName="HL_C2_FleshDoor5" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorOpening_3" AnimatedEntityName="HL_C2_FleshDoor6" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="EventStart" EventName="HuntLeague_C2_DoorOpening_3" Type="EntityIsHidden" Name="HLC2_Hide_Arena1Blocker" EntityNames="CE_HLC_C2_Arena1Blocker" Hide="1" Delay=".5" />
+      <Event Trigger="GoalFailure" GoalIndex="-1" Type="EntityKill" Name="FailState_KillOndar" EntityName="Ondar" Hide="True" Remove="True" />
+    </Step>
+    <Step Order="5" UIName="@ui_C1_M2_S6_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_HL_C2_ArrowMarker_Arena2" Area="" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_Arena2Checkpoint" CheckpointEntityName="QP_HL_C2_ArrowMarker_Arena2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_4" AnimatedEntityName="HL_C2_FleshDoor11" Play="cofe_wall_spawn_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_5" AnimatedEntityName="HL_C2_FleshDoor10" Play="cofe_wall_spawn_01" Loop="0" />
+      <Event Trigger="EventEnd" EventName="HLC2_IncubationChamber_Belizul2" Type="GlobalAnnouncement" Name="C1_M2_EA_AN_EventStart2" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_C1_M2_EA_CM_ArenaDescription" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC2_Step5_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EventEnd" EventName="HLC2_IncubationChamber_Belizul2" Type="ArenaStart" Name="Event_Arena_Start" ArenaPreset="FleshArena2_HLC2" LocationEntityName="FleshArena2_HLC2" />
+      <Event Trigger="ArenaWaveStart" WaveIndex="1" ArenaStartEventName="Event_Arena_Start" Type="GlobalMusic" Name="Arena_Start_Music_2" MusicName="C1_M2_CultStronghold_Ambush" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="Event_Arena_Start" Type="GoalAchieve" Name="Event_Arena_Victory" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="HLC2_IncubationChamber_Belizul2" DialogName="HLC2_IncubationChamber_Belizul2" />
+      <Event Trigger="EventEnd" EventName="HLC2_IncubationChamber_Belizul2" Type="GlobalDialog" Name="HLC2_IncubationChamber_Ondar2" DialogName="HLC2_IncubationChamber_Ondar2" />
+      <Event Trigger="GoalFailure" GoalIndex="-1" Type="EntityKill" Name="FailState_KillOndar" EntityName="Ondar" Hide="True" Remove="True" />
+    </Step>
+    <Step Order="6" UIName="@ui_C1_M2_S7_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_Unreachable" Radius="20" RequireAllPlayers="0" />
+      <Goal Order="1" Type="Go" Destination="QP_HL_C2_Start_Arena3" Radius="18" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="HL_C2_AnimDoor_RitualArea" Area="" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMusic" Name="Arena_End_Music_2" MusicName="C1_M2_CultStronghold" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_M2_EA_AN_EventEnd2" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC2_Step6_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="HLC2_IncubationChamber_Player3" DialogName="HLC2_IncubationChamber_Player3" />
+      <Event Trigger="EventStart" EventName="HLC2_IncubationChamber_Player3" Type="GoalAchieve" Name="Achieve_HLC2_IncubationChamber_Player3" SimulateOnly="false" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorOpening_4" AnimatedEntityName="HL_C2_FleshDoor11" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorOpening_5" AnimatedEntityName="HL_C2_FleshDoor10" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC2_Hide_Arena2Blocker" EntityNames="CE_HLC_C2_Arena2Blocker" Hide="1" />
+      <Event Trigger="GoalFailure" GoalIndex="-1" Type="EntityKill" Name="FailState_KillOndar" EntityName="Ondar" Hide="True" Remove="True" />
+    </Step>
+    <Step Order="7" UIName="@ui_C1_M2_S8_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_HL_C2_ArrowMarker_Arena3" Area="" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_Arena3Checkpoint" CheckpointEntityName="QP_HL_C2_ArrowMarker_Arena3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_6" AnimatedEntityName="HL_C2_FleshDoor17" Play="cofe_wall_spawn_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_7" AnimatedEntityName="HL_C2_FleshDoor16" Play="cofe_wall_spawn_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_DoorClosing_8" AnimatedEntityName="HL_C2_FleshDoor15" Play="cofe_wall_spawn_01" Loop="0" />
+      <Event Trigger="EventEnd" EventName="HLC2_IncubationChamber_Belizul3" Type="GlobalAnnouncement" Name="C1_M2_EA_AN_EventStart3" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_C1_M2_EA_CM_ArenaDescription" DisplayTime="3" />
+      <Event Trigger="EventEnd" EventName="HLC2_IncubationChamber_Belizul3" Type="QuestClearUI" Name="HLC2_Step7_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ArenaStart" Name="Event_Arena_Start" ArenaPreset="FleshArena3_HLC2" LocationEntityName="FleshArena3_HLC2" />
+      <Event Trigger="ArenaWaveStart" WaveIndex="1" ArenaStartEventName="Event_Arena_Start" Type="GlobalMusic" Name="Arena_Start_Music_3" MusicName="ACT2_DemonOfSoulsAndMercy" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="Event_Arena_Start" Type="GoalAchieve" Name="Event_Arena_Victory" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="HLC2_IncubationChamber_Belizul3" DialogName="HLC2_IncubationChamber_Belizul3" />
+      <Event Trigger="ArenaWaveStart" WaveIndex="2" ArenaStartEventName="Event_Arena_Start" Type="GlobalDialog" Name="HLC2_IncubationChamber_Ondar3" DialogName="HLC2_IncubationChamber_Ondar3" />
+      <Event Trigger="GoalFailure" GoalIndex="-1" Type="EntityKill" Name="FailState_KillOndar" EntityName="Ondar" Hide="True" Remove="True" />
+    </Step>
+    <Step Order="8" UIName="@ui_C1_M2_S9_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="HL_C2_AnimDoor_RitualArea" InteractCount="1">
+        <ArrowMarker Target="HL_C2_AnimDoor_RitualArea" Area="" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMusic" Name="Arena_End_Music_3" MusicName="C1_M2_CultStronghold" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="C1_M2_EA_AN_EventEnd2" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC2_FleshTemple_Oshara" AreaRadius="35" Type="GlobalStartQuest" Name="HLC2_FleshTemple_UnlockSecondaryQuest" QuestName="HL_C2_Secondary" StopOnQuestEnding="False" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC2_IncubationChamber_Cultist" AreaRadius="20" Type="GlobalDialog" Name="HLC2_IncubationChamber_Cultist" DialogName="HLC2_IncubationChamber_Cultist" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC2_Step8_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC2_FleshTemple_Oshara" AreaRadius="15" Type="EntitySound" Name="HLC2_FleshTemple_OsharaWail" EntityName="QP_HLC2_FleshTemple_Oshara" SoundName="Play_DYN_C1_TempleOfFlesh_OsharaDistantRoar1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC2_FleshTemple_Oshara" AreaRadius="15" Type="GlobalCameraShake" Name="HLC2_FleshTemple_OsharaRoarCamShake" PresetName="C1_M2_OsharaRoar_Fleshtemple" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_HLC2_FleshTemple_Oshara" AreaRadius="15" Type="GlobalDialog" Name="HLC2_FleshTemple_Oshara" DialogName="HLC2_FleshTemple_Oshara" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_Opening_6" AnimatedEntityName="HL_C2_FleshDoor17" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_Opening_7" AnimatedEntityName="HL_C2_FleshDoor16" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="HuntLeague_C2_Opening_8" AnimatedEntityName="HL_C2_FleshDoor15" Play="cofe_wall_death_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC2_Hide_Arena3Blocker" EntityNames="CE_HLC_C2_Arena3Blocker" Hide="1" />
+      <Event Trigger="GoalFailure" GoalIndex="-1" Type="EntityKill" Name="FailState_KillOndar" EntityName="Ondar" Hide="True" Remove="True" />
+    </Step>
+    <Step Order="9" UIName="@ui_C1_M2_S10_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_Unreachable" Radius="20" RequireAllPlayers="0" />
+      <Goal Order="1" Type="Impossible" />
+      <Goal Order="2" Type="BossFight" FightPreset="BossFight_Belizul" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_dead_drake_collider_1" EntityNames="Dead_Drake_Collider_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_dead_drake_collider_2" EntityNames="Dead_Drake_Collider_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_Arena4Checkpoint" CheckpointEntityName="QP_HLC1_Belizul_SpawnPoint" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestFail" Name="HLC2_Fail_SecondaryQuest" QuestName="HL_C2_Secondary" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC2_Step9_Limit_UI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="HLC2_RitualArea_Cultist1" DialogName="HLC2_RitualArea_Cultist1" Delay="2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="HLC2_CultistArena" PercentLeft="50" Type="GlobalDialog" Name="HLC2_RitualArea_Cultist2" DialogName="HLC2_RitualArea_Cultist2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="HuntLeague_C2_TP_IntoArena" TeleportedEntityName="#Player" DestinationName="QP_HLC1_Belizul_SpawnPoint" MinRadius="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_TP_IntoArena" Type="ActionSequence" Name="HuntLeague_C2_IntroCutscene" SequenceName="C1_RitualChamber" FemaleSequenceName="C1_RitualChamber" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_IntroCutscene" Type="GoalAchieve" Name="HLC2_Achieve_C1_RitualChamber" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="Event_Arena_Start" ArenaPreset="CultistArena_HLC2" LocationEntityName="HL_C2_Arena_Belizul" />
+      <Event Trigger="ArenaWaveStart" WaveIndex="1" ArenaStartEventName="Event_Arena_Start" Type="GlobalMusic" Name="Arena_Start_Music_4" MusicName="C1_M2_CultStronghold_Inside" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="C1_M2_EA_AN_EventStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_C1_M2_EA_CM_BossFightDescription_1" DisplayTime="2" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="Event_Arena_Start" Type="GoalAchieve" Name="Event_Arena_Victory" GoalIndexToAchieve="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="HLC2_RitualArea_StepUpdate" Localization="@ui_C1_M2_S10_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HLC2_Kill_Ondar" EntityName="Ondar" Remove="1" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_IntroCutscene" Type="EntitySpawn" Name="HuntLeague_C2_SpawnOndarWithoutBuff" SpawnClass="Sc_Sty_HLC2_Ondar_NoBuff" TargetEntityName="QP_HLC1_Belizul_SpawnPoint" MinimumRadius="1" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_IntroCutscene" Type="EntityFollow" Name="HuntLeague_C2_FollowOndarWithoutBuff" FollowerEntityName="Ondar_NoBuff" Follow="#Player" Constraints="C1_M2" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="-1" Type="EntityKill" Name="FailState_KillOndarNoBuff" EntityName="Ondar_NoBuff" Hide="True" Remove="True" />
+    </Step>
+    <Step Order="10" UIName="@ui_C1_M2_S11_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Impossible" />
+      <Goal Order="1" Type="Wait" TimeLimit="1.1" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Unhide_dead_drake_collider_1" EntityNames="Dead_Drake_Collider_1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Unhide_dead_drake_collider_2" EntityNames="Dead_Drake_Collider_2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="Player_Final_TP" TeleportedEntityName="#Player" DestinationName="QP_HLC1_Player_FinalSpawnPoint" MinRadius="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="C1_M2_EA_AN_EventEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="HuntLeague_C2_Kill1_Squire" MonsterClass="Endgame_CultOfFlesh_Squire" Area="C1_M2" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="HuntLeague_C2_Kill1_ColossalBreeder" MonsterClass="Endgame_CultOfFlesh_ColossalBreeder" Area="C1_M2" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="HuntLeague_C2_Kill1_Zombie" MonsterClass="Endgame_CultOfFlesh_Zombie" Area="C1_M2" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="HuntLeague_C2_Kill1_Halfbreed" MonsterClass="Endgame_CultOfFlesh_Halfbreed" Area="C1_M2" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="HuntLeague_C2_Kill1_MiniHalfBreed" MonsterClass="Endgame_CultOfFlesh_MiniHalfBreed" Area="C1_M2" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="HuntLeague_C2_Kill1_Fanatic" MonsterClass="Endgame_CultOfFlesh_Fanatic" Area="C1_M2" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="HuntLeague_C2_Kill1_Simulacrum_Male" MonsterClass="Endgame_CultOfFlesh_Simulacrum_Male" Area="C1_M2" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="HuntLeague_C2_Kill1_Simulacrum" MonsterClass="Endgame_CultOfFlesh_Simulacrum" Area="C1_M2" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="HuntLeague_C2_Kill1_Simulacrum_Female" MonsterClass="Endgame_CultOfFlesh_Simulacrum_Female" Area="C1_M2" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="LockDoor_HL_C2_AnimDoor_RitualArea" DoorName="HL_C2_AnimDoor_RitualArea" Action="Lock" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="OpenDoor_HL_C2_AnimDoor_RitualArea" DoorName="HL_C2_AnimDoor_RitualArea" Action="Open" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HuntLeague_C2_DoorOpenning10" DoorName="HL_C2_FleshDoor18" Action="Open" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" Name="HuntLeague_C2_DoorOpenning11" DoorName="HL_C2_FleshDoor19" Action="Open" AnimationSpeed="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HLC2_Hide_Arena4Blocker" EntityNames="CE_HLC_C2_Arena4Blocker" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HuntLeague_C2_Hide_InPodsArea" EntityNames="AreaBox_BelizulIncubationChambers" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HuntLeague_C2_Hide_InPods1" EntityNames="IncubationChamber6" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HuntLeague_C2_Hide_InPods2" EntityNames="IncubationChamber2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HuntLeague_C2_Hide_InPods3" EntityNames="IncubationChamber3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="HuntLeague_C2_Hide_InPods4" EntityNames="IncubationChamber4" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="HuntLeague_C2_FinalCutscene" SequenceName="C1_OsharaEscape" FemaleSequenceName="C1_OsharaEscape" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKill" Name="HuntLeague_C2_KillOndar" EntityName="Ondar_NoBuff" Hide="True" Remove="True" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalFlowGraph" Name="HL_M2_Bossfight_CamOff" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HLC2_Reveal_IlthainFinal" EntityNames="NPC_HLC2_RitualArea_IlthainFinal" Hide="False" />
+      <Event Trigger="EventEnd" EventName="HuntLeague_C2_FinalCutscene" Type="GlobalDialog" Name="HLC2_RitualArea_Ilthain_Call" DialogName="HLC2_RitualArea_Ilthain_Call" Delay="1" />
+      <Event Trigger="EventEnd" EventName="HLC2_RitualArea_Ilthain_Call" Type="GoalAchieve" Name="HLC2_Achieve_C1_OsharaEscape" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="SpawnNPC1ExitPortal" Name="HLC2_SpawnPortal" BackToTown="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="30000" />
+        <XP Amount="450000" />
+      </Reward>
+    </Step>
+    <Step Order="11" UIName="@ui_C1_M2_S12_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="npc1_exit_portal" InteractCount="1">
+        <ArrowMarker Target="npc1_exit_portal" Area="" ShowMinimapIcon="1" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="C1_M2_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndQuest" ContextualMessage="@ui_C1_M2_QuestLabel" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC2_Step11_Limit_UI" StepToKeep="2" />
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,121 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_outlaws_warbeast_convergingflames_part1">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <Cooldown Cooldown="45" TriggerCooldown="OnEnd" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="2.4" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnAnimStart="Play_Outlaw_Warbeast_ConvergingFlames_Start" OnAnimCast="" OnHit="Play_Outlaw_Warbeast_ConvergingFlames_Impact" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Warbeast_DZ_Shape" />
+    </Shapes>
+    <DamageZone Duration="4" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" RemoveDamageZoneWhenCasterIsCC="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_DamageZone_Indicator" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Spawn" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_DamageZone_IndicatorReady" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="DamageZone" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_DamageZone" Offset="0,0,0" Direction="1,0,0" />
+      <Particle Key="EntityAttachedIndicator" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_Explosion_IndicatorBuildUp" Bone="Bip01" Offset="0,0,0" Direction="0,0,1" Delay="0.6" InstantKill="0" />
+      <Particle Key="EntityAttachedIndicatorCosmetic" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_Explosion_HeadEffect" Bone="Bip01 Head" Offset="0,0,0" Direction="0,1,0" Delay="2.3" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones AbsoluteForwardOffset="0,1.7,0" RandomBaseDistMin="20" RandomBaseDistMax="20" LimitAngle="360" MinLinearSpeed="-3" MaxLinearSpeed="-7" MinAngularSpeed="10" MaxAngularSpeed="360" IndicatorMaxTimer="1.5" NumberOfDZ="8" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" LoopAnimationUntilDZEnd="1" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_outlaws_warbeast_convergingflames_part2" />
+    </SecondarySkillToCast>
+  </Skill>
+  <Skill UID="AI_outlaws_warbeast_convergingflames_part2" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Impact03_01" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_Explosion" Offset="0,0,0" Direction="0,1,0" InstantKill="0" />
+      <Particle Key="Impact03_02" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_CamEffect" Offset="0,0,1.5" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="Impact03_01,Impact03_02" SecondarySkillUIDs="AI_outlaws_warbeast_convergingflames_explosion,AI_outlaws_warbeast_convergingflames_buff" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+    <SoundTrigger OnAnimStart="Play_Outlaw_Warbeast_ConvergingFlames_Cast" OnAnimCast="" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_outlaws_warbeast_convergingflames_buff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Tower_Veteran_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_Outlaws_Warbeast_Passive_Speed" Targeting="OnSelf" Duration="15" />
+    </PassiveSkills>
+  </Skill>
+  <Skill UID="AI_outlaws_warbeast_convergingflames_explosion" ESkill="AI_Default_GenericShapes" Keywords="magic_spell">
+    <DamageAsPercentageOfParent Percent="160" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Warbeast_Explosion_Shape" />
+    </Shapes>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_hunt_warbeast_convergingflames_part1">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="2.4" />
+    <Cooldown Cooldown="45" TriggerCooldown="OnEnd" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Warbeast_DZ_Shape" />
+    </Shapes>
+    <DamageZone Duration="4" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" RemoveDamageZoneWhenCasterIsCC="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_DamageZone_Indicator" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Spawn" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_DamageZone_IndicatorReady" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="DamageZone" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_DamageZone" Offset="0,0,0" Direction="1,0,0" />
+      <Particle Key="EntityAttachedIndicator" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_Explosion_IndicatorBuildUp" Bone="Bip01" Offset="0,0,0" Direction="0,0,1" Delay="0.6" InstantKill="1" />
+      <Particle Key="EntityAttachedIndicatorCosmetic" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_Explosion_HeadEffect" Bone="Bip01 Head" Offset="0,0,0" Direction="0,1,0" Delay="2.3" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="20" RandomBaseDistMax="20" LimitAngle="360" MinLinearSpeed="-3" MaxLinearSpeed="-7" MinAngularSpeed="10" MaxAngularSpeed="360" IndicatorMaxTimer="1.5" NumberOfDZ="8" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" LoopAnimationUntilDZEnd="1" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_hunt_warbeast_convergingflames_part2" />
+    </SecondarySkillToCast>
+  </Skill>
+  <Skill UID="AI_Hunt_warbeast_convergingflames_part2" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="2.4" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Impact03_01" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_Explosion" Offset="0,0,0" Direction="0,1,0" InstantKill="0" />
+      <Particle Key="Impact03_02" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_CamEffect" Offset="0,0,1.5" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="Impact03_01,Impact03_02" SecondarySkillUIDs="AI_hunt_warbeast_convergingflames_2,AI_Hunt_warbeast_convergingflames_buff" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+    <SoundTrigger OnAnimStart="" OnAnimCast="" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_warbeast_convergingflames_buff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Tower_Veteran_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_Outlaws_Warbeast_Passive_Speed" Targeting="OnSelf" Duration="15" />
+    </PassiveSkills>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_hunt_warbeast_convergingflames_2">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="2.4" />
+    <SoundTrigger OnAnimStart="" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Warbeast_DZ_Shape" />
+    </Shapes>
+    <DamageZone Duration="8" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" RemoveDamageZoneWhenCasterIsCC="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_DamageZone" Offset="0,0,0" Direction="1,0,0" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="4" MinAngularSpeed="10" MaxAngularSpeed="60" IndicatorMaxTimer="0" NumberOfDZ="8" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,40 @@
+<MetaData>
+  <Skill UID="AI_CultOfSouls_SkeletonGolem_ChargeSmash01" ESkill="ai_charge_smash" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="12" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="SkeletonGolem_ChargeSmashFinal_Shape" />
+    </Shapes>
+    <Blownaway Height="0" Distance="3.5" StunDuration="0.1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_InfernalCharge_Indicator" Offset="0,0,0" Direction="-1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="SideDZ" Name="U_Monster.Siviir.Alpha_Breath_Fire_Ground_Loop_01" Direction="0,0,1" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="10" ChargeDistance="12.5" StopChargeAtTarget="1">
+      <Extra Type="SideAttack">
+        <Shape ShapeWidth="2.5" RightOffset="0" WidthFactorForParticlePacing="2" />
+      </Extra>
+      <Extra Type="Particles" />
+    </SkillSpecific>
+    <SoundTrigger OnHit="Play_COSS_SkeletonGolem_ChargeSmash_ImpactDmg" />
+  </Skill>
+  <Skill UID="AI_CultOfSouls_SkeletonGolem_ChargeSmash" ESkill="AI_cultofflesh_DemonOfFlesh_Charge" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithSpellCastingSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="12" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="2" Distance="4" StunDuration="0.3" />
+    <SkillSpecific ChargingSpeed="12.5" ChargeDamage="25" MaxTurnRate="20" MaxChargingTime="3" MinSwipeDistance="2.5" MinStopSpeed="1" MinStartSpeed="8" DirectionMissTimer="1" SwipeWhenFail="1" />
+    <Shapes>
+      <Entry ShapeName="SkeletonGolem_ChargeSmash_Shape" />
+      <Entry ShapeName="SkeletonGolem_ChargeSmashFinal_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="indicator" Name="U_Monster_Alt.DemonOfFlesh.charge_indicator" Direction="-1,0,0" InstantKill="0" />
+    </ParticleList>
+    <SoundTrigger OnHit="Play_COSS_SkeletonGolem_ChargeSmash_ImpactDmg" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

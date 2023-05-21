@@ -1,0 +1,193 @@
+<MetaData>
+  <Skill UID="alternativeWeaponCombos_2hBow" ESkill="default_ranged" Keywords="default_ranged,attack_skill,projectile,additional_projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_bow.png" UIName="@ui_AST_Bow" Lore="@ui_AST_Bow_lore" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_bow" TrailPresetBase="ranged" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="L_Weapon_Bone" />
+    <Range AttackRange="20" />
+    <Projectile Name="bow_proj" ProjectileCount="6" AppendElementalSuffixToProjectileName="1" PositionOffset="0,1,0" MakeProjectilesSpreadIn360Degrees="1" />
+    <ParticleList LoadFromPreset="bow_default_muzzle" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_BowShot" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+  </Skill>
+  <Skill UID="alternativeWeaponCombos_2hStaff" ESkill="default_homingprojectile" Keywords="default_ranged,attack_skill,additional_projectile,default_staff">
+    <HUD HUDPicture="../u_resources\spells\weapon_combo_icons/h2_staff.png" UIName="@ui_AST_FireStaff" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_staff" TrailPresetBase="staff" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastFromWeaponHelper="Blood" CastBone="R_Weapon_Bone" />
+    <Range AttackRange="20" />
+    <Projectile Name="staff_proj" ProjectileCount="3" AppendElementalSuffixToProjectileName="1">
+      <AutomaticCastAngle distanceMin="2" distanceMax="9" angleAtDistanceMin="90" angleAtDistanceMax="90" />
+    </Projectile>
+    <ParticleList LoadFromPreset="staff_default_muzzle" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnAnimCast="PLAY_Skill_DefaultWeapon_StaffShot" />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="-100" />
+    <Explosion ExplosionRadius="0.5" />
+    <SkillSpecific RandomInitialRotationMax="80" LerpRatioTowardsZAxis="0.5" />
+  </Skill>
+  <Skill UID="alternativeWeaponCombos_2hAxe" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_axe.png" UIName="@ui_AST_ComboBattleaxe" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback TrailPresetBase="2hsword" FeedbackPresetBase="Player_weapon_2h_axe" BloodDecalOrientation="left" />
+    <Aggression TargetValueOnHit="20" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="Battleaxe_3" />
+    </Shapes>
+    <SkillSpecific />
+    <StatusAilment AllAilmentsInflictScoreIncreasePercent="0">
+      <stun Chance="100" ChanceMode="override" />
+    </StatusAilment>
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="150" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="alternativeWeaponCombos_2hHammer" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback TrailPresetBase="2hHammer" FeedbackPresetBase="Player_weapon_2h_hammer" BloodDecalOrientation="forward" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_hammer.png" UIName="@ui_AST_ComboWarhammer" />
+    <Aggression TargetValueOnHit="25" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="Warhammer_4" />
+    </Shapes>
+    <SkillSpecific />
+    <StatusAilment AllAilmentsInflictScoreIncreasePercent="0">
+      <stun Chance="100" ChanceMode="override" />
+    </StatusAilment>
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="200" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="alternativeWeaponCombos_2hSword" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_sword.png" UIName="@ui_AST_ComboGreatSword" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback TrailPresetBase="2hsword" FeedbackPresetBase="Player_weapon_2h_sword" BloodDecalOrientation="left" />
+    <Aggression TargetValueOnHit="20" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="BroadSword_2" />
+    </Shapes>
+    <SkillSpecific />
+    <StatusAilment AllAilmentsInflictScoreIncreasePercent="0">
+      <stun Chance="100" ChanceMode="override" />
+    </StatusAilment>
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="150" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="alternativeWeaponCombos_DualDagger">
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_daggers" TrailPresetBase="dagger_stab" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_daggers.png" UIName="@ui_AST_ComboDualDaggers" />
+    <Aggression TargetValueOnHit="7" />
+    <DamageWeapon WeaponMultiplier="0.65" />
+    <Shapes>
+      <Entry ShapeName="Daggers_3" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="75" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+    <DamageCritical CriticalChanceOverride="100" />
+  </Skill>
+  <Skill UID="alternativeWeaponCombos_DualMelee" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_weapon_1h" BloodDecalOrientation="left" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/double_h1_melee.png" UIName="@ui_AST_ComboDualWield" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1.1" />
+    <Shapes>
+      <Entry ShapeName="DualWield_2" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+    <DamageCritical CriticalChanceOverride="100" />
+  </Skill>
+  <Skill ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile,projectile" UID="alternativeWeaponCombos_DualPistol">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/double_pistol.png" UIName="@ui_AST_ComboDualPistols" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Range AttackRange="20" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="2" />
+    <DamageWeapon WeaponMultiplier="0.6" />
+    <SoundTrigger OnAnimCast="Play_Pistol_Fire_Dual" />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="100" />
+    <CastingParams CastFromWeaponHelper="Caster" />
+    <DamageCritical CriticalChanceOverride="100" />
+  </Skill>
+  <Skill UID="alternativeWeaponCombos_MeleeShield" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_1h_shield" TrailPresetBase="shield_swipe" BloodDecalOrientation="left" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee_shield.png" UIName="@ui_AST_ComboOneHanded" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="0.95" />
+    <Shapes>
+      <Entry ShapeName="Shield_2" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+    <DamageCritical CriticalChanceOverride="100" />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="alternativeWeaponCombos_1hMelee">
+    <Animation ActionString="player_skill_atk_loop_02" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="default" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee.png" UIName="@ui_AST_ComboOneHanded" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="OneHanded_1" />
+    </Shapes>
+    <CastingParams InputQueueTTL="0.3" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+    <SkillSpecific />
+    <DamageCritical CriticalChanceOverride="100" />
+  </Skill>
+  <Skill UID="alternativeWeaponCombos_PistolShield" ESkill="default_ranged" Keywords="default_ranged,attack_skill,projectile,additional_projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/pistol_shield.png" UIName="@ui_AST_ComboPistolShield" Lore="@ui_AST_ComboPistolShield_lore" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Projectile Name="gun_proj" ProjectileCount="5" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="17" PenetrationLimit="3" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="3" />
+    <DamageWeapon WeaponMultiplier="0.25" />
+    <SoundTrigger OnAnimCast="Play_Pistol_Fire_ShieldShot" />
+    <Range AttackRange="6" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" ShouldMoveInRange="1" />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="20" />
+    <DamageCritical CriticalChanceOverride="100" />
+  </Skill>
+  <Skill UID="alternativeWeaponCombos_1hPistol" ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile,projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_pistol.png" UIName="@ui_AST_ComboPistol" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="6" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_PistolShot" />
+    <Range AttackRange="20" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" />
+    <DamageCritical CriticalChanceOverride="100" />
+  </Skill>
+  <Skill UID="alternativeWeaponCombos_PistolMelee" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback BloodDecalOrientation="left" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="pistol_swipe" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/pistol_h1_melee.png" UIName="@ui_AST_ComboMeleePistol" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="0.95" />
+    <Shapes>
+      <Entry ShapeName="GunMelee_2" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_PistolBurstShot" />
+    <DamageCritical CriticalChanceOverride="100" />
+  </Skill>
+</MetaData>

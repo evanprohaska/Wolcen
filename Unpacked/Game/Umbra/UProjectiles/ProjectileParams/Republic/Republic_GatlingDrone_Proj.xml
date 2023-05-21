@@ -1,0 +1,17 @@
+<MetaData>
+  <Projectile ID="Republic_GatlingDrone_Proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.7,0.7,0.7" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Drone.Projectile_Lightning" Direction="0,1,0" WorldSpace="0" Scale="1.5" />
+      <Hit ParticleName="U_Monster.Drone.Impact_Lightning" Direction="0,0,1" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="12" SpeedMax="12" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="Play_Edric_Justicar1_RepeatingShots_Projectile_Impact" />
+    </Audio>
+  </Projectile>
+</MetaData>

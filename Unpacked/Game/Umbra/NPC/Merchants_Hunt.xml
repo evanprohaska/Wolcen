@@ -1,0 +1,17 @@
+<MetaData>
+  <Panel Id="Hunt_Merchant_weapon" IconId="1" Currency="Hunt" SellingPriceMultiplier="0.02" AffixOrigin="Hunt">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="lc_weapon_HuntMerchant" />
+  </Panel>
+  <Panel Id="Hunt_Merchant_armor" IconId="2" Currency="Hunt" SellingPriceMultiplier="0.02" AffixOrigin="Hunt" Lock="1">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="lc_armor_HuntMerchant" />
+  </Panel>
+  <Panel Id="Hunt_Merchant_accessories" IconId="3" Currency="Hunt" SellingPriceMultiplier="0.02" AffixOrigin="Hunt" Lock="1">
+    <LevelParams LevelMin="1" LevelMax="300" LootClass="lc_accessories_HuntMerchant" />
+  </Panel>
+  <Merchant Name="Hunt_Merchant" UIName="@ui_hunt_merchant" ScalingTable="Item_level_offset_scale">
+    <Panel Id="Hunt_Merchant_weapon" />
+    <Panel Id="Hunt_Merchant_armor" />
+    <Panel Id="Hunt_Merchant_accessories" />
+    <Panel Id="reclaim" />
+  </Merchant>
+</MetaData>

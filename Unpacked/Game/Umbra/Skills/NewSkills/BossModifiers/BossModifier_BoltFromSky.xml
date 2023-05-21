@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_BoltFromSky">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier=".4" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Shock" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="BoltFromSky_Proj" ProjectileCount="10" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="3" distanceMax="12" totalAngleAtDistanceMin="360" totalAngleAtDistanceMax="360" projectileAngleAtDistanceMin="36" projectileAngleAtDistanceMax="36" />
+    </Projectile>
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.02" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="0" RandomDir="1" MaxZOffset="30" CastAtTargetPos="1" TargetBone="Bip01" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_Hunt_BossModifier_BoltFromSky">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier=".4" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Shock" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="BoltFromSky_Proj" ProjectileCount="10" PenetrationLimit="2">
+      <AutomaticCastAngle distanceMin="3" distanceMax="12" totalAngleAtDistanceMin="360" totalAngleAtDistanceMax="360" projectileAngleAtDistanceMin="36" projectileAngleAtDistanceMax="36" />
+    </Projectile>
+    <Range AttackRange="15" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.02" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="0" RandomDir="1" MaxZOffset="30" CastAtTargetPos="1" TargetBone="Bip01" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

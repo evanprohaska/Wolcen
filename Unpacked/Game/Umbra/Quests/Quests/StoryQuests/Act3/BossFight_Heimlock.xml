@@ -1,0 +1,83 @@
+<MetaData>
+  <Quest Name="Quest_HeimlockFight1" StartDialog="" Type="BossFight" UIName="@ui_A3_Q5_EventQuestLabel2" UIDesc="@">
+    <Step Order="0" UIName="@ui_A3_Q5_EventStepNametLabel2_1" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" TimeLimit="1" />
+      <Goal Order="1" Type="KillAll" EventsName="HA_HeimlockP1_Spawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Heimlock" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" Delay="0" StepToKeep="2" Name="A1_Q5_ClearUI_7" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalRevivePlayers" Name="ACT3_HeimlockBossfight1_CutsceneRevive" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="HeimlockPreBetrayal_Sequence" SequenceName="A3_PRE_BETRAYAL" />
+      <Event Trigger="EventEnd" EventName="HeimlockPreBetrayal_Sequence" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="HeimlockBetrayal_Sequence" SequenceName="A3_HEIMLOCKBETRAYAL" />
+      <Event Trigger="EventEnd" EventName="HeimlockBetrayal_Sequence" Type="GlobalAnnouncement" Name="A3_Q5_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A3_Q5_EventQuestLabel2" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A3_Q5_HA_HideSafeZone_1" EntityNames="HeimlockSafeZone1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A3_Q5_HA_HideSafeZone_2" EntityNames="HeimlockSafeZone2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A3_Q5_HA_HideSafeZone_3" EntityNames="HeimlockSafeZone3" Hide="1" />
+      <Event Trigger="EventEnd" EventName="HeimlockBetrayal_Sequence" Type="EntityTeleport" MinRadius="5" Name="Player_TP_HA" TeleportedEntityName="#Player" DestinationName="QP_HeimlockFight_PlayerSpawn" />
+      <Event Trigger="EventEnd" EventName="Player_TP_HA" Type="EntitySpawn" Delay="1" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="HA_HeimlockP1_Spawn" SpawnClass="sc_fury_Heimlock_P1" TargetEntityName="QP_HeimlockFight_HeimlockSpawn" FaceAtSpawn="QP_HeimlockFight_PlayerSpawn" />
+      <Event Trigger="EventEnd" EventName="Player_TP_HA" Type="EntitySpawn" Delay="1" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="HA_CultistP1_Spawn1" SpawnClass="sc_CultistOfFury_HeimlockBossFight" TargetEntityName="QP_HeimlockFight_CultistSpawn1" FaceAtSpawn="Heimlock_PortalCenter_Helper" />
+      <Event Trigger="EventEnd" EventName="Player_TP_HA" Type="EntitySpawn" Delay="1" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="HA_CultistP1_Spawn2" SpawnClass="sc_CultistOfFury_HeimlockBossFight" TargetEntityName="QP_HeimlockFight_CultistSpawn2" FaceAtSpawn="Heimlock_PortalCenter_Helper" />
+      <Event Trigger="EventEnd" EventName="Player_TP_HA" Type="EntitySpawn" Delay="1" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="HA_CultistP1_Spawn3" SpawnClass="sc_CultistOfFury_HeimlockBossFight" TargetEntityName="QP_HeimlockFight_CultistSpawn3" FaceAtSpawn="Heimlock_PortalCenter_Helper" />
+      <Event Trigger="EventEnd" EventName="HeimlockBetrayal_Sequence" Type="GlobalDialog" Delay="3" Name="A3_Quest5_HA_Heimlock1" DialogName="ACT3_Quest5_HA_Heimlock1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock" PercentLeft="35" Type="GlobalDialog" Name="A3_Quest5_HA_Heimlock2_1" DialogName="ACT3_Quest5_HA_Heimlock2_1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock" PercentLeft="55" Type="GlobalDialog" Name="A3_Quest5_HA_Heimlock2_2" DialogName="ACT3_Quest5_HA_Heimlock2_2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock" PercentLeft="80" Type="GlobalDialog" Name="A3_Quest5_HA_Heimlock2_3" DialogName="ACT3_Quest5_HA_Heimlock2_3" />
+    </Step>
+  </Quest>
+  <Quest Name="Quest_HeimlockFight2" StartDialog="" Type="BossFight" UIName="@ui_A3_Q5_EventQuestLabel2" UIDesc="@">
+    <Step Order="0" UIName="@ui_A3_Q5_EventStepNametLabel2_2" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="7" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Heimlock2" Area="" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="KillAll" EventsName="HA_HeimlockP2_Spawn">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Heimlock2" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalRevivePlayers" Name="ACT3_HeimlockBossfight2_CutsceneRevive" RevivePostion="" />
+      <Event Trigger="EventEnd" EventName="HeimlockP2_Sequence" Type="GoalAchieve" Delay="0.1" Name="WaitEnd_A3_Quest5_HeimlockP2" SimulateOnly="0" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="HeimlockP2_Sequence" SequenceName="A3_HEIMLOCKP1TOP2" />
+      <Event Trigger="EventEnd" EventName="HeimlockP2_Sequence" Type="EntityTeleport" MinRadius="5" Name="Player_TP_HA2" TeleportedEntityName="#Player" DestinationName="QP_HeimlockFight_PlayerSpawnP2" />
+      <Event Trigger="EventEnd" EventName="HeimlockP2_Sequence" Type="EntitySpawn" Delay="0.5" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="HA_HeimlockP2_Spawn" SpawnClass="sc_fury_Heimlock_P2" TargetEntityName="QP_HeimlockFight_HeimlockSpawnP2" FaceAtSpawn="QP_HeimlockFight_PlayerSpawnP2" />
+      <Event Trigger="EventEnd" EventName="HeimlockP2_Sequence" Type="GlobalDialog" Delay="3" Name="A3_Quest5_HA_Heimlock3" DialogName="ACT3_Quest5_HA_Heimlock3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock2" PercentLeft="20" Type="GlobalDialog" Name="A3_Quest5_HA_Heimlock4_1" DialogName="ACT3_Quest5_HA_Heimlock4_1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock2" PercentLeft="40" Type="GlobalDialog" Name="A3_Quest5_HA_Heimlock4_2" DialogName="ACT3_Quest5_HA_Heimlock4_2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock2" PercentLeft="75" Type="GlobalDialog" Name="A3_Quest5_HA_Heimlock4_3" DialogName="ACT3_Quest5_HA_Heimlock4_3" />
+    </Step>
+  </Quest>
+  <Quest Name="Quest_HeimlockFight3" StartDialog="" Type="BossFight" UIName="@ui_A3_Q5_EventQuestLabel2" UIDesc="@">
+    <Step Order="0" UIName="@ui_A3_Q5_EventStepNametLabel2_3" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="7" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Heimlock3" Area="" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="KillAll" EventsName="HA_HeimlockP3_Spawn">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Heimlock3" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalAnnouncement" Name="A3_Q4_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalRevivePlayers" Name="ACT3_HeimlockBossfight3_CutsceneRevive" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="HA_HeimlockP3_Sequence" SequenceName="A3_HEIMLOCK_P2TOP3" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A3_Q5_HA_UnhideSafeZone_1" EntityNames="HeimlockSafeZone1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A3_Q5_HA_UnhideSafeZone_2" EntityNames="HeimlockSafeZone2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A3_Q5_HA_UnhideSafeZone_3" EntityNames="HeimlockSafeZone3" Hide="0" />
+      <Event Trigger="EventEnd" EventName="HA_HeimlockP3_Sequence" Type="GoalAchieve" Delay="0.1" Name="WaitEnd_A3_Quest5_HA_HeimlockP3" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="EventEnd" EventName="HA_HeimlockP3_Sequence" Type="EntitySpawn" Delay="0.5" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="HA_HeimlockP3_Spawn" SpawnClass="sc_fury_Heimlock_P3" TargetEntityName="QP_HeimlockFight_HeimlockSpawnP3" FaceAtSpawn="QP_HeimlockFight_PlayerSpawnP3" />
+      <Event Trigger="EventEnd" EventName="HA_HeimlockP3_Sequence" Type="GlobalDialog" Delay="3" Name="A3_Quest5_HA_Heimlock5" DialogName="ACT3_Quest5_HA_Heimlock5" />
+      <Event Trigger="EventEnd" EventName="HA_HeimlockP3_Sequence" Type="EntityTeleport" MinRadius="5" Name="Player_TP_HA3" TeleportedEntityName="#Player" DestinationName="QP_HeimlockFight_PlayerSpawnP3" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalDialog" Delay="2" Name="A3_Quest5_HA_Heimlock7" DialogName="ACT3_Quest5_HA_Heimlock7" />
+      <Event Trigger="KilledEntity" TriggerEntityName="Heimlock3" Type="GoalAchieve" Name="A3_GoalAchieve_EndBossfight" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock3" PercentLeft="10" Type="GlobalDialog" Name="A3_Quest5_HA_Gernese1" DialogName="ACT3_Quest5_HA_Gernese1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock3" PercentLeft="25" Type="GlobalDialog" Name="A3_Quest5_HA_Gernese2_1" DialogName="ACT3_Quest5_HA_Gernese2_1" />
+      <Event Trigger="EventStart" EventName="A3_Quest5_HA_Gernese2_1" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="HA_Gernese_Sequence1" SequenceName="A3_DYN_ALLSTARGAME" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock3" PercentLeft="35" Type="GlobalDialog" Name="A3_Quest5_HA_Heimlock6_1" DialogName="ACT3_Quest5_HA_Heimlock6_1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock3" PercentLeft="50" Type="GlobalDialog" Name="A3_Quest5_HA_Gernese2_2" DialogName="ACT3_Quest5_HA_Gernese2_2" />
+      <Event Trigger="EventStart" EventName="A3_Quest5_HA_Gernese2_2" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="HA_Gernese_Sequence2" SequenceName="A3_DYN_ALLSTARGAME" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock3" PercentLeft="55" Type="GlobalDialog" Name="A3_Quest5_HA_Heimlock6_2" DialogName="ACT3_Quest5_HA_Heimlock6_2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock3" PercentLeft="70" Type="GlobalDialog" Name="A3_Quest5_HA_Gernese2_3" DialogName="ACT3_Quest5_HA_Gernese2_3" />
+      <Event Trigger="EventStart" EventName="A3_Quest5_HA_Gernese2_3" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="HA_Gernese_Sequence3" SequenceName="A3_DYN_ALLSTARGAME" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock3" PercentLeft="75" Type="GlobalDialog" Name="A3_Quest5_HA_Heimlock6_3" DialogName="ACT3_Quest5_HA_Heimlock6_3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Heimlock3" PercentLeft="90" Type="GlobalDialog" Name="A3_Quest5_HA_Gernese2_4" DialogName="ACT3_Quest5_HA_Gernese2_4" />
+      <Event Trigger="EventStart" EventName="A3_Quest5_HA_Gernese2_4" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="HA_Gernese_Sequence4" SequenceName="A3_DYN_ALLSTARGAME" />
+    </Step>
+  </Quest>
+</MetaData>

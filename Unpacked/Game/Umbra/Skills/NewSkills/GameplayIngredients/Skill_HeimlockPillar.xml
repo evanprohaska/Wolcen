@@ -1,0 +1,40 @@
+<MetaData>
+  <Skill ESkill="instant_explosion" Keywords="attack_skill" UID="heimlockpillar_soul">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <DamageWeapon Type="frost" WeaponMultiplier="0.01" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="8.5" />
+    <StatusAilment>
+      <freeze Chance="100" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+  </Skill>
+  <Skill ESkill="instant_explosion" Keywords="attack_skill" UID="heimlockpillar_oblivion">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <DamageWeapon Type="shadow" WeaponMultiplier="3" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="8.5" />
+  </Skill>
+  <Skill ESkill="gameplay_ingredient_summonminions" Keywords="attack_skill" UID="heimlockpillar_flesh">
+    <Summoning MaxSummons="15" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="10" KillLowestHPOnOversummoning="1" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="1" Name="Sc_HeimlockFleshPillar_01" />
+      <SummonedSpawnClass Key="2" Name="Sc_HeimlockFleshPillar_02" />
+      <SummonedSpawnClass Key="3" Name="Sc_HeimlockFleshPillar_03" />
+    </Summoning>
+  </Skill>
+  <Skill UID="portal_explosions" ESkill="AI_Default_GenericExplosionsAround" Keywords="">
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry Key="ExplosionShape" ShapeName="RepublicJusticar03_EnergyNuke_Explosion" />
+    </Shapes>
+    <RandomCastingParams RandomNumberRangeMin="4" RandomNumberRangeMax="8" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Justica.EnergyNuke_Indicator_01" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Explosion" Name="U_Monster.Justica.EnergyNuke_Impact_Small" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <Range ProjectileMinDistance="4" AttackRange="20" />
+    <SkillSpecific NumberOfExplosionsPerLoop="16" DelayBetweenExplosionsOfASameLoop="0.1" AnticipationTimerForExplosion="1.5" ComputeExplosionExclusionRange="1" TimeBetweenLoops="1" />
+  </Skill>
+</MetaData>

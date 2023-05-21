@@ -1,0 +1,38 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="attack_skill" UID="AI_SvriirOmegaFemale_DefaultAttack">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="SvriirOmegaFemale_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="PLAY_AI_SvriirOmega_ClawSwipe" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="attack_skill" UID="AI_SvriirOmegaFemale_Vomit">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".5" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="BuffPool" Name="U_Monster.Siviir.Spawner_GroundBuff_01" Bone="" Direction="0,0,1" OffSet="0,3.4,0" Scale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="SvriirOmegaFemale_PoisonVomitShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="PLAY_AI_SvriirOmega_ClawSwipe" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="attack_skill" UID="AI_SvriirOmegaFemale_Vomit_Fire">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier=".5" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="BuffPool" Name="U_Monster.Siviir.Spawner_GroundBuff_01" Bone="" Direction="0,0,1" OffSet="0,3.4,0" Scale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="SvriirOmegaFemale_PoisonVomitShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="PLAY_AI_SvriirOmega_ClawSwipe" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

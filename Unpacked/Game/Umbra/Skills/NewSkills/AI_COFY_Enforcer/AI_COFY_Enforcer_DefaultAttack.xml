@@ -1,0 +1,24 @@
+<MetaData>
+  <Skill UID="AI_COFY_Enforcer_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <CastingParams />
+    <Shapes>
+      <Entry ShapeName="COFY_Enforcer_DefaultAttack" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Enforcer_DefaultAttack_SwingA" OnHit="Play_hero_default_damage" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Enforcer_DefaultAttack_Enraged" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier=".7" />
+    <Cooldown Cooldown="0.5" />
+    <CastingParams />
+    <Shapes>
+      <Entry ShapeName="COFY_Enforcer_DefaultAttack" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Enforcer_DefaultAttack_SwingB" OnHit="Play_hero_default_damage" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

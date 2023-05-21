@@ -1,0 +1,47 @@
+<MetaData>
+  <Shape ID="Oshara02_ScorchedEarth_LineShape" Type="Rectangle">
+    <Data Length="0.1" Width="6" BoundingBoxHeight="2" />
+    <Scale Data="Length" Target="12" Duration="1" Delay="0" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+    <Animation MovementDelay="0" MovementSpeed="6" MovementDuration="1" RotationDelay="0" RotationAngle="0" RotationDuration="0" SnapToGround="1" />
+  </Shape>
+  <Shape ID="Oshara02_ScorchedEarth_ArcShape" Type="Arc">
+    <Data RadiusIn="12" RadiusOut="18" Angle="20" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+    <Scale Data="Angle" Target="359.9" Duration="2" Delay="0" />
+  </Shape>
+  <Shape ID="Oshara02_ScorchedEarth_ConeShape" Type="Trapezium">
+    <Data Top="7.5" Bottom="4.5" Height="3" BoundingBoxHeight="2" />
+    <Position ForwardOffset="2" RightOffset="0" StartingAngle="0" />
+    <Scale Data="Top" Target="24" Duration="2" Delay="0" />
+    <Scale Data="Height" Target="18" Duration="2" Delay="0" />
+    <Animation MovementDelay="0" MovementSpeed="3.75" MovementDuration="2" RotationDelay="0" RotationAngle="0" RotationDuration="0" SnapToGround="1" />
+  </Shape>
+  <Shape ID="Oshara01_DefaultMelee_Shape" Type="Cone">
+    <Data Radius="8" Angle="120" BoundingBoxHeight="2" />
+    <Position ForwardOffset="3" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="Oshara01_DragonLeap_DZ_Shape" Type="Rectangle">
+    <Data Width="8" Length="2" BoundingBoxHeight="2" />
+    <Animation MovementSpeed="20" MovementDuration="1.5" SnapToGround="1" />
+  </Shape>
+  <Shape ID="Oshara01_Tailswipe" Type="Circle">
+    <Data Radius="12" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="Oshara03_Trap_Shape" Type="Circle">
+    <Data Radius="3" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+  </Shape>
+  <Shape ID="Oshara01_Tailswipe_test" Type="Arc">
+    <Data RadiusIn="0" RadiusOut="12" Angle="20" BoundingBoxHeight="2" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="190" />
+    <Animation MovementDelay="0" MovementSpeed="0" MovementDuration="0" RotationDelay="0" RotationAngle="150" RotationDuration="1" SnapToGround="1" />
+  </Shape>
+  <Shape ID="Oshara01_Leap_DetectionShape" Type="Arc">
+    <Data Angle="120" RadiusIn="1" RadiusOut="4" BoundingBoxHeight="0" />
+  </Shape>
+  <Shape ID="OsharaUber_Traps_Explosion_Shape" Type="Circle">
+    <Data Radius="5" BoundingBoxHeight="2" />
+  </Shape>
+</MetaData>

@@ -1,0 +1,823 @@
+<MetaData>
+  <MonsterManager Name="MM_StoryMode_Act3_HiddenBossArea">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="2" HConstraint_TriggerFactorPercent="30" CConstraint_CountThreshold="2" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="100" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="10" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="S_B" SpawnClassFamily="Scf_WreckCoast_S_B" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="S_B" Percentage="100" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Named_SiegeBeast01" />
+    </FMP>
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_TOS_WingOfFaith">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="80" SpreadPercent="10" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="deduced" CPPerSquareMeter="0.0181" DefaultSpawnerSpawnRadius="12" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="Trash" SpawnClassFamily="Scf_PacifiedSquire" MandatoryContentKeywords="" />
+      <Entry Category="Heavy" SpawnClassFamily="Scf_CultOfFury_PacifiedCleric" MandatoryContentKeywords="" />
+      <Entry Category="Weak" SpawnClassFamily="Scf_CultOfFury_BlindMourner" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedTemplarPriest" SpawnClassFamily="Scf_PacifiedPriest" MandatoryContentKeywords="" />
+      <Entry Category="Instigator" SpawnClassFamily="Scf_CultOfFury_Enforcer" MandatoryContentKeywords="" />
+      <Entry Category="AllLieutenant" SpawnClassFamily="Scf_AllLieutenant_TOS" MandatoryContentKeywords="" />
+      <Entry Category="Elite" SpawnClassFamily="Scf_PacifiedKnight" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="Trash" Percentage="35" />
+      <Entry Category="Heavy" Percentage="20" />
+      <Entry Category="Weak" Percentage="30" />
+      <Entry Category="Instigator" Percentage="5" />
+      <Entry Category="PacifiedTemplarPriest" Percentage="10" />
+    </RMP>
+    <FMP />
+    <Constraints MaxDifferentMonstersInGroup="3">
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="5" />
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Limitation_ByName AIName="PacifiedPriest" MaxNumberInGroup="2" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="Trash" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="Heavy" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="Weak" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="115" CPMax="115" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="15" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="champion" />
+          <EventChoice Weight="25" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="30" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="20" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="1" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="300" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns />
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_TOS_WingOfWar">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="80" SpreadPercent="10" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="deduced" CPPerSquareMeter="0.0181" DefaultSpawnerSpawnRadius="12" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="Trash" SpawnClassFamily="Scf_PacifiedSquire" MandatoryContentKeywords="" />
+      <Entry Category="Heavy1" SpawnClassFamily="Scf_CultOfFury_PacifiedCleric" MandatoryContentKeywords="" />
+      <Entry Category="Heavy2" SpawnClassFamily="Scf_CultOfFury_Instigator" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedTemplarPriest" SpawnClassFamily="Scf_PacifiedPriest" MandatoryContentKeywords="" />
+      <Entry Category="Instigator" SpawnClassFamily="Scf_CultOfFury_Enforcer" MandatoryContentKeywords="" />
+      <Entry Category="AllLieutenant" SpawnClassFamily="Scf_AllLieutenant_TOS" MandatoryContentKeywords="" />
+      <Entry Category="Elite" SpawnClassFamily="Scf_PacifiedKnight" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="Trash" Percentage="50" />
+      <Entry Category="Heavy2" Percentage="15" />
+      <Entry Category="Heavy1" Percentage="20" />
+      <Entry Category="Instigator" Percentage="5" />
+      <Entry Category="PacifiedTemplarPriest" Percentage="10" />
+    </RMP>
+    <FMP />
+    <Constraints MaxDifferentMonstersInGroup="3">
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="5" />
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Limitation_ByName AIName="PacifiedPriest" MaxNumberInGroup="2" />
+      <Diversity_SingleCategory_SingleMonster Percentage="20" Category="Trash" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="Heavy1" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="Heavy2" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="115" CPMax="115" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="15" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="champion" />
+          <EventChoice Weight="25" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="30" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="20" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="1" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="300" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns />
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_RedWaste1">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="15" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50" SpawnerCountBeforeFirstSpawnPattern="4">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="45" SpreadPercent="10" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="deduced" CPPerSquareMeter="0.0161" DefaultSpawnerSpawnRadius="12" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="SwarmTailFire" SpawnClassFamily="Scf_SvriirFireSwarmtail" MandatoryContentKeywords="" />
+      <Entry Category="Hornet" SpawnClassFamily="Scf_WildHornet02" MandatoryContentKeywords="" />
+      <Entry Category="Scarab" SpawnClassFamily="Scf_WildScarab02" MandatoryContentKeywords="" />
+      <Entry Category="Omega" SpawnClassFamily="Scf_SvriirOmega_Fire" MandatoryContentKeywords="" />
+      <Entry Category="DesertSnake" SpawnClassFamily="Scf_WildSnakeDesert" MandatoryContentKeywords="" />
+      <Entry Category="Screecher" SpawnClassFamily="Scf_SvriirBetaScreecher_Fire" MandatoryContentKeywords="" />
+      <Entry Category="Spawner" SpawnClassFamily="Scf_SvriirBetaSpawner_Fire" MandatoryContentKeywords="" />
+      <Entry Category="Spitter" SpawnClassFamily="Scf_SvriirBetaSpitter_Fire" MandatoryContentKeywords="" />
+      <Entry Category="AllLieutenant" SpawnClassFamily="Scf_AllLieutenant_RedWaste" MandatoryContentKeywords="" />
+      <Entry Category="Elite" SpawnClassFamily="Scf_SvriirAlpha_Fire" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="SwarmTailFire" Percentage="30" />
+      <Entry Category="Hornet" Percentage="17.5" />
+      <Entry Category="Scarab" Percentage="15" />
+      <Entry Category="Omega" Percentage="17.5" />
+      <Entry Category="Screecher" Percentage="6" />
+      <Entry Category="Spawner" Percentage="7" />
+      <Entry Category="Spitter" Percentage="7" />
+    </RMP>
+    <FMP />
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="summoner" MaxNumberInGroup="2" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="Hornet" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="Scarab" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="275" CPMax="275" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="12" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="champion" />
+          <EventChoice Weight="23" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="28" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="17" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="1" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_Named_Scorpion" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="900" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns>
+      <SurroundingAssault Percentage="7.5" TriggerRadiusOverride="15" SpawnRadiusMin="7" SpawnRadiusMax="9" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="0.1" SpawnCountPerTick="1" />
+      <Ambush Percentage="7.5" TriggerRadiusOverride="9" BaseSpawnRadiusOverride="15" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="0.2" SpawnCountPerTick="1" />
+      <ReinforcementGroup Percentage="15" GroupCountMin="1" GroupCountMax="2" Category="DesertSnake" Category_CPMin="2" Category_CPMax="3" DelayBeforeFirstSpawn="1" DelayBetweenGroups="2" DelayBetweenMonsterSpawn="0.2" SpawnDistanceFromPlayer="10" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_RedWaste2">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="15" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50" SpawnerCountBeforeFirstSpawnPattern="10">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="90" SpreadPercent="10" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="deduced" CPPerSquareMeter="0.012" DefaultSpawnerSpawnRadius="10" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="MiniSpitter" SpawnClassFamily="Scf_SvriirMiniSpitter_Fire" MandatoryContentKeywords="" />
+      <Entry Category="OmegaFemale" SpawnClassFamily="Scf_SvriirOmegaFemale_Fire" MandatoryContentKeywords="" />
+      <Entry Category="Scarab" SpawnClassFamily="Scf_WildScarab02" MandatoryContentKeywords="" />
+      <Entry Category="Scorpion" SpawnClassFamily="Scf_WildScorpion" MandatoryContentKeywords="" />
+      <Entry Category="DesertSnake" SpawnClassFamily="Scf_WildSnakeDesert" MandatoryContentKeywords="" />
+      <Entry Category="Screecher" SpawnClassFamily="Scf_SvriirBetaScreecher_Fire" MandatoryContentKeywords="" />
+      <Entry Category="Spawner" SpawnClassFamily="Scf_SvriirBetaSpawner_Fire" MandatoryContentKeywords="" />
+      <Entry Category="Spitter" SpawnClassFamily="Scf_SvriirBetaSpitter_Fire" MandatoryContentKeywords="" />
+      <Entry Category="AllLieutenant" SpawnClassFamily="Scf_AllLieutenant_RedWaste" MandatoryContentKeywords="" />
+      <Entry Category="Elite" SpawnClassFamily="Scf_SvriirAlpha_Fire" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="MiniSpitter" Percentage="17.5" />
+      <Entry Category="OmegaFemale" Percentage="20" />
+      <Entry Category="Scarab" Percentage="15" />
+      <Entry Category="Scorpion" Percentage="27.5" />
+      <Entry Category="Screecher" Percentage="7" />
+      <Entry Category="Spawner" Percentage="7" />
+      <Entry Category="Spitter" Percentage="6" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_EasyMix" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_EasyMixMelee" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_MediumMix" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_MediumMixMelee" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_HardMixMelee" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_HardMix" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_RW2_Medium" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_RW2_Large" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RedRepublicSiegebeast" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_BigFormation" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="4" />
+      <Limitation_ByKeyword AIKeyword="summoner" MaxNumberInGroup="2" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="Scarab" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="Scorpion" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="190" CPMax="190" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="champion" />
+          <EventChoice Weight="20" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="35" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="25" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="900" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns>
+      <SurroundingAssault Percentage="7.5" TriggerRadiusOverride="15" SpawnRadiusMin="7" SpawnRadiusMax="9" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="0.1" SpawnCountPerTick="1" />
+      <Ambush Percentage="7.5" TriggerRadiusOverride="9" BaseSpawnRadiusOverride="15" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="0.2" SpawnCountPerTick="1" />
+      <ReinforcementGroup Percentage="15" GroupCountMin="1" GroupCountMax="2" Category="DesertSnake" Category_CPMin="2" Category_CPMax="3" DelayBeforeFirstSpawn="1" DelayBetweenGroups="2" DelayBetweenMonsterSpawn="0.2" SpawnDistanceFromPlayer="10" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_Trenches">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="15" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="100" SpreadPercent="0" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="340" DefaultSpawnerSpawnRadius="12" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="TrashMelee" SpawnClassFamily="Scf_RedRepublicInfantrySword_Formation" MandatoryContentKeywords="" />
+      <Entry Category="TrashRanged" SpawnClassFamily="Scf_RedRepublicInfantryRanged_Formation" MandatoryContentKeywords="" />
+      <Entry Category="TrashWeak" SpawnClassFamily="Scf_RedRepublicWardog" MandatoryContentKeywords="" />
+      <Entry Category="RepublicanSniper" SpawnClassFamily="Scf_RedRepublicSniper" MandatoryContentKeywords="" />
+      <Entry Category="Veteran" SpawnClassFamily="Scf_RedRepublicVeteran" MandatoryContentKeywords="" />
+      <Entry Category="SiegeBeast" SpawnClassFamily="Scf_RedRepublicSiegebeast" MandatoryContentKeywords="" />
+      <Entry Category="AllLieutenant" SpawnClassFamily="Scf_AllLieutenant_Trenches" MandatoryContentKeywords="" />
+      <Entry Category="Elite" SpawnClassFamily="Scf_RedRepublicJusticar" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="TrashMelee" Percentage="30" />
+      <Entry Category="TrashRanged" Percentage="30" />
+      <Entry Category="TrashWeak" Percentage="20" />
+      <Entry Category="RepublicanSniper" Percentage="4" />
+      <Entry Category="SiegeBeast" Percentage="8" />
+      <Entry Category="Veteran" Percentage="8" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_EasyMix" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_MediumMix" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_HardMix" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_EasyMixMelee" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_MediumMixMelee" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_Formation_HardMixMelee" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_AllLieutenant_Trenches" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RedRepublicSniper" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RedRepublicSiegebeast" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RedRepublicVeteran" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RedRepublicInfantryRanged" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RedRepublicInfantrySword" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_PacifiedInfantryRanged" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_PacifiedInfantrySword" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_CultOfFury_Instigator" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_CultOfFury_Enforcer" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RepuMixElite_RedWaste_Trenches" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RedRepublicJusticar" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RedRepublicAssassin" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Trenches_Small_Fury" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Trenches_Medium_Fury" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Trenches_Large_Fury" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Repu_BigFormation" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RepublicInfantryRanged_Formation" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RepublicInfantrySword_Formation" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RedRepublicInfantryRanged" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_RedRepublicInfantrySword" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByName AIName="RepublicSiegebeast" MaxNumberInGroup="2" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="TrashMelee" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="TrashRanged" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="TrashWeak" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="150" CPMax="150" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="champion" />
+          <EventChoice Weight="16" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="32" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="22" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="1" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_Named_TrenchesStory" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="400" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns />
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_Rampart1">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="15" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50" SpawnerCountBeforeFirstSpawnPattern="4">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="70" SpreadPercent="10" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="684" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="Weak" SpawnClassFamily="ScF_CultOfFury_FuryConjuration" MandatoryContentKeywords="" />
+      <Entry Category="TrashMelee" SpawnClassFamily="Scf_CultOfFuryFurySpawn" MandatoryContentKeywords="" />
+      <Entry Category="TrashRanged" SpawnClassFamily="Scf_CultOfFury_Fanatic_Ranged" MandatoryContentKeywords="" />
+      <Entry Category="Heavy" SpawnClassFamily="Scf_PacifiedHeavyInfantry" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedSniper" SpawnClassFamily="Scf_PacifiedSniper" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedVeteran" SpawnClassFamily="Scf_PacifiedVeteran" MandatoryContentKeywords="" />
+      <Entry Category="CultistOfFury" SpawnClassFamily="Scf_CultOfFury_Cultist" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedSiegeBeast" SpawnClassFamily="Scf_PacifiedSiegebeast" MandatoryContentKeywords="" />
+      <Entry Category="InstigatorOfFury" SpawnClassFamily="Scf_CultOfFury_Enforcer" MandatoryContentKeywords="" />
+      <Entry Category="AllLieutenant" SpawnClassFamily="Scf_AllLieutenant_Rampart" MandatoryContentKeywords="" />
+      <Entry Category="Assassin" SpawnClassFamily="Scf_PacifiedAssassin" MandatoryContentKeywords="" />
+      <Entry Category="Golgoth" SpawnClassFamily="Scf_PacifiedGolgoth" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="Weak" Percentage="20" />
+      <Entry Category="TrashMelee" Percentage="25" />
+      <Entry Category="TrashRanged" Percentage="20" />
+      <Entry Category="Heavy" Percentage="15" />
+      <Entry Category="PacifiedSniper" Percentage="4" />
+      <Entry Category="PacifiedVeteran" Percentage="4" />
+      <Entry Category="CultistOfFury" Percentage="8" />
+      <Entry Category="InstigatorOfFury" Percentage="4" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Rampart_SiegeBeast_R1" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_WildRat" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="5" />
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Limitation_ByName AIName="PacifiedSiegebeast" MaxNumberInGroup="2" />
+      <Limitation_ByName AIName="CultOfFury_Cultist" MaxNumberInGroup="1" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="Weak" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashMelee" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashRanged" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="Heavy" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="275" CPMax="275" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="champion" />
+          <EventChoice Weight="14" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="33" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="5.25" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Assassin" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="17.75" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="1" SCF="" Category="Golgoth" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="2.5" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Assassin" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+          <EventChoice Weight="7.5" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Golgoth" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_Named_InfantryCrossBow" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="684" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns />
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_Stronghold">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50" SpawnerCountBeforeFirstSpawnPattern="6">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="80" SpreadPercent="10" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="deduced" CPPerSquareMeter="0.0181" DefaultSpawnerSpawnRadius="12" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="TrashRange" SpawnClassFamily="Scf_CultOfFury_FireRagingMourner" MandatoryContentKeywords="" />
+      <Entry Category="TrashMelee" SpawnClassFamily="Scf_PacifiedInfantrySword" MandatoryContentKeywords="" />
+      <Entry Category="Weak" SpawnClassFamily="Scf_CultOfFury_BlindMourner" MandatoryContentKeywords="" />
+      <Entry Category="Heavy" SpawnClassFamily="Scf_PacifiedHeavyInfantry" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedSniper" SpawnClassFamily="Scf_PacifiedSniper" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedVeteran" SpawnClassFamily="Scf_PacifiedVeteran" MandatoryContentKeywords="" />
+      <Entry Category="CultistOfFury" SpawnClassFamily="Scf_CultOfFury_Cultist" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedSiegeBeast" SpawnClassFamily="Scf_PacifiedSiegebeast" MandatoryContentKeywords="" />
+      <Entry Category="InstigatorOfFury" SpawnClassFamily="Scf_CultOfFury_Enforcer" MandatoryContentKeywords="" />
+      <Entry Category="AllLieutenant" SpawnClassFamily="Scf_AllLieutenant_Rampart" MandatoryContentKeywords="" />
+      <Entry Category="Assassin" SpawnClassFamily="Scf_PacifiedAssassin" MandatoryContentKeywords="" />
+      <Entry Category="Golgoth" SpawnClassFamily="Scf_PacifiedGolgoth" MandatoryContentKeywords="" />
+      <Entry Category="FurySpirit" SpawnClassFamily="Scf_CultOfFury_Spirit" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="TrashRange" Percentage="30" />
+      <Entry Category="TrashMelee" Percentage="15" />
+      <Entry Category="Weak" Percentage="20" />
+      <Entry Category="Heavy" Percentage="15" />
+      <Entry Category="PacifiedSniper" Percentage="4" />
+      <Entry Category="PacifiedVeteran" Percentage="4" />
+      <Entry Category="PacifiedSiegeBeast" Percentage="4" />
+      <Entry Category="CultistOfFury" Percentage="4" />
+      <Entry Category="InstigatorOfFury" Percentage="4" />
+    </RMP>
+    <FMP />
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="4" />
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Limitation_ByName AIName="PacifiedSiegebeast" MaxNumberInGroup="2" />
+      <Limitation_ByName AIName="CultOfFury_Cultist" MaxNumberInGroup="1" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="TrashRange" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="Weak" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="125" CPMax="125" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="champion" />
+          <EventChoice Weight="14" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="33" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="5.25" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Assassin" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="17.75" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Golgoth" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="2.5" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Assassin" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+          <EventChoice Weight="7.5" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Golgoth" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_Named_Golgoth" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="400" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns>
+      <ReinforcementGroup Percentage="15" GroupCountMin="2" GroupCountMax="3" Category="FurySpirit" Category_CPMin="6" Category_CPMax="6" DelayBeforeFirstSpawn="1" DelayBetweenGroups="3" DelayBetweenMonsterSpawn="0.1" SpawnDistanceFromPlayer="10" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_Rampart2">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50" SpawnerCountBeforeFirstSpawnPattern="4">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="70" SpreadPercent="10" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="330" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="TrashRange" SpawnClassFamily="Scf_PacifiedInfantryRanged" MandatoryContentKeywords="" />
+      <Entry Category="TrashMelee" SpawnClassFamily="Scf_PacifiedInfantrySword" MandatoryContentKeywords="" />
+      <Entry Category="Weak" SpawnClassFamily="ScF_CultOfFury_FuryConjuration" MandatoryContentKeywords="" />
+      <Entry Category="Heavy" SpawnClassFamily="Scf_PacifiedHeavyInfantry" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedSniper" SpawnClassFamily="Scf_PacifiedSniper" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedVeteran" SpawnClassFamily="Scf_PacifiedVeteran" MandatoryContentKeywords="" />
+      <Entry Category="CultistOfFury" SpawnClassFamily="Scf_CultOfFury_Cultist" MandatoryContentKeywords="" />
+      <Entry Category="PacifiedSiegeBeast" SpawnClassFamily="Scf_PacifiedSiegebeast" MandatoryContentKeywords="" />
+      <Entry Category="InstigatorOfFury" SpawnClassFamily="Scf_CultOfFury_Enforcer" MandatoryContentKeywords="" />
+      <Entry Category="AllLieutenant" SpawnClassFamily="Scf_AllLieutenant_Rampart" MandatoryContentKeywords="" />
+      <Entry Category="Assassin" SpawnClassFamily="Scf_PacifiedAssassin" MandatoryContentKeywords="" />
+      <Entry Category="Golgoth" SpawnClassFamily="Scf_PacifiedGolgoth" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="TrashRange" Percentage="10" />
+      <Entry Category="TrashMelee" Percentage="30" />
+      <Entry Category="Weak" Percentage="25" />
+      <Entry Category="Heavy" Percentage="15" />
+      <Entry Category="PacifiedSniper" Percentage="4" />
+      <Entry Category="PacifiedVeteran" Percentage="4" />
+      <Entry Category="PacifiedSiegeBeast" Percentage="4" />
+      <Entry Category="CultistOfFury" Percentage="4" />
+      <Entry Category="InstigatorOfFury" Percentage="4" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Rampart_SiegeBeast_R1" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_WildBat" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Random_WildBat" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Rampart2_FurySpawn_5CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Rampart2_FurySpawn_10CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Rampart2_FurySpawn_15CP" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="4" />
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Limitation_ByName AIName="PacifiedSiegebeast" MaxNumberInGroup="2" />
+      <Limitation_ByName AIName="CultOfFury_Cultist" MaxNumberInGroup="1" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashRange" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="TrashMelee" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="Weak" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="Heavy" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="160" CPMax="160" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="champion" />
+          <EventChoice Weight="20" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="35" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="7.25" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Assassin" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="17.75" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Golgoth" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="2.5" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Assassin" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+          <EventChoice Weight="7.5" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Golgoth" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="330" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns />
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_TowerFloor2">
+    <DesignParams />
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="0" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories />
+    <RMP />
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP5" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP10" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP15" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP20" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4" />
+    <AdditiveEvents />
+    <SpawnPatterns />
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_TowerFloor3">
+    <DesignParams />
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="0" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories />
+    <RMP />
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP5" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP10" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP15" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP20" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4" />
+    <AdditiveEvents />
+    <SpawnPatterns />
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_TowerFloor4">
+    <DesignParams />
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="0" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories />
+    <RMP />
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP5" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP10" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP15" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP20" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4" />
+    <AdditiveEvents />
+    <SpawnPatterns />
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_TowerFloor5">
+    <DesignParams />
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="0" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories />
+    <RMP />
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP5" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP10" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP15" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP20" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4" />
+    <AdditiveEvents />
+    <SpawnPatterns />
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_TowerFloor6">
+    <DesignParams />
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="0" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories />
+    <RMP />
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP5" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP10" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP15" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Tower_CP20" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4" />
+    <AdditiveEvents />
+    <SpawnPatterns />
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_Monolith1">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="70" SpreadPercent="20" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="deduced" CPPerSquareMeter="0.0166" DefaultSpawnerSpawnRadius="12" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="TrashMelee" SpawnClassFamily="Scf_CultOfSouls_FirstmanMelee" MandatoryContentKeywords="" />
+      <Entry Category="TrashRanged" SpawnClassFamily="Scf_CultOfSouls_FirstmanMage" MandatoryContentKeywords="" />
+      <Entry Category="Heavy1" SpawnClassFamily="Scf_CultOfFury_Rabiaphage" MandatoryContentKeywords="" />
+      <Entry Category="Heavy2" SpawnClassFamily="Scf_CultOfSouls_Corrupted_PrimordialArmor" MandatoryContentKeywords="" />
+      <Entry Category="CultistOfFury" SpawnClassFamily="Scf_CultOfFury_Cultist" MandatoryContentKeywords="" />
+      <Entry Category="CultistOfSoul" SpawnClassFamily="Scf_CultOfSouls_Cultist" MandatoryContentKeywords="" />
+      <Entry Category="CultistOfFlesh" SpawnClassFamily="Scf_CultOfFlesh_Cultist" MandatoryContentKeywords="" />
+      <Entry Category="AllLieutenant" SpawnClassFamily="Scf_AllLieutenant_Monolith1" MandatoryContentKeywords="" />
+      <Entry Category="Elite" SpawnClassFamily="Scf_AllElite_Monolith" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="Heavy1" Percentage="20" />
+      <Entry Category="TrashMelee" Percentage="25" />
+      <Entry Category="TrashRanged" Percentage="25" />
+      <Entry Category="Heavy2" Percentage="10" />
+      <Entry Category="CultistOfFury" Percentage="7" />
+      <Entry Category="CultistOfFlesh" Percentage="6" />
+      <Entry Category="CultistOfSoul" Percentage="7" />
+    </RMP>
+    <FMP />
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="5" />
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="summoner" MaxNumberInGroup="2" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Limitation_ByName AIName="CultOfFury_Cultist" MaxNumberInGroup="1" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="Heavy1" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashMelee" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashRanged" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="Heavy2" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="200" CPMax="200" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="champion" />
+          <EventChoice Weight="13" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="22" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="22" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="13" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="Lord" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_Named_Instigator" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="450" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns>
+      <SurroundingAssault Percentage="7.5" TriggerRadiusOverride="15" SpawnRadiusMin="7" SpawnRadiusMax="9" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="0.1" SpawnCountPerTick="1" />
+      <Ambush Percentage="7.5" TriggerRadiusOverride="9" BaseSpawnRadiusOverride="15" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="0.1" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+  <MonsterManager Name="MM_StoryMode_Act3_Monolith2">
+    <DesignParams GroupValueModifierPercent="25" GroupValueDispersionPercent="15" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50" SpawnerCountBeforeFirstSpawnPattern="3">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="70" SpreadPercent="20" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="532" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="TrashMeleeCOS" SpawnClassFamily="Scf_CultOfSouls_Fanatic" MandatoryContentKeywords="" />
+      <Entry Category="TrashMeleeCOFE" SpawnClassFamily="Scf_CultOfFlesh_Fanatic" MandatoryContentKeywords="" />
+      <Entry Category="TrashMeleeCOF" SpawnClassFamily="Scf_CultOfFury_Fanatic_Melee" MandatoryContentKeywords="" />
+      <Entry Category="Rabiaphage" SpawnClassFamily="Scf_CultOfFury_Rabiaphage" MandatoryContentKeywords="" />
+      <Entry Category="TrashRanged" SpawnClassFamily="Scf_CultOfFury_Fanatic_Ranged" MandatoryContentKeywords="" />
+      <Entry Category="FuryConjuration" SpawnClassFamily="ScF_CultOfFury_FuryConjuration" MandatoryContentKeywords="" />
+      <Entry Category="FurySpirit" SpawnClassFamily="Scf_CultOfFury_Spirit" MandatoryContentKeywords="" />
+      <Entry Category="Spreader" SpawnClassFamily="Scf_CultOfFlesh_Spreader" MandatoryContentKeywords="" />
+      <Entry Category="HalfBreedOfSoul" SpawnClassFamily="Scf_CultOfSouls_HalfBreed" MandatoryContentKeywords="" />
+      <Entry Category="Instigator" SpawnClassFamily="Scf_CultOfFury_Enforcer" MandatoryContentKeywords="" />
+      <Entry Category="AllLieutenant" SpawnClassFamily="Scf_AllLieutenant_Monolith2" MandatoryContentKeywords="" />
+      <Entry Category="Elite" SpawnClassFamily="Scf_AllElite_Monolith" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="TrashMeleeCOS" Percentage="10" />
+      <Entry Category="TrashMeleeCOFE" Percentage="10" />
+      <Entry Category="TrashMeleeCOF" Percentage="10" />
+      <Entry Category="Rabiaphage" Percentage="20" />
+      <Entry Category="TrashRanged" Percentage="15" />
+      <Entry Category="FuryConjuration" Percentage="15" />
+      <Entry Category="Spreader" Percentage="8" />
+      <Entry Category="HalfBreedOfSoul" Percentage="8" />
+      <Entry Category="Instigator" Percentage="4" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Cultist1_Monolith2" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Cultist2_Monolith2" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Cultist3_Monolith2" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="5" />
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Limitation_ByKeyword AIKeyword="summoner" MaxNumberInGroup="2" />
+      <Limitation_ByName AIName="CultOfFury_Cultist" MaxNumberInGroup="1" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashMeleeCOS" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashMeleeCOFE" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashMeleeCOF" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="FuryConjuration" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashRanged" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="220" CPMax="220" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" BossRank="champion" />
+          <EventChoice Weight="13" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="22" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="AllLieutenant" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="22" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="13" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="champion" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="1" SCF="" Category="Elite" Category_EntityMin="1" Category_EntityMax="1" BossRank="Lord" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_Named_Enforcer" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="550" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns>
+      <SurroundingAssault Percentage="7.5" TriggerRadiusOverride="15" SpawnRadiusMin="7" SpawnRadiusMax="9" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="0.1" SpawnCountPerTick="1" />
+      <Ambush Percentage="7.5" TriggerRadiusOverride="9" BaseSpawnRadiusOverride="15" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="0.1" SpawnCountPerTick="1" />
+      <ReinforcementGroup Percentage="10" GroupCountMin="2" GroupCountMax="3" Category="FurySpirit" Category_CPMin="6" Category_CPMax="6" DelayBeforeFirstSpawn="1" DelayBetweenGroups="3" DelayBetweenMonsterSpawn="0.1" SpawnDistanceFromPlayer="10" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+</MetaData>

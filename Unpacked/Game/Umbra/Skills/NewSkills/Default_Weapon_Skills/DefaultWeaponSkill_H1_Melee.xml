@@ -1,0 +1,73 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="playerskill_H1_Melee_atk_01">
+    <Animation ActionString="player_skill_atk_01" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" />
+    <VisualFeedback BloodDecalOrientation="left" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="default" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee.png" UIName="@ui_AST_ComboOneHanded" Lore="@ui_AST_ComboOneHanded_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance" />
+    <Combo ComboStarter="Combo_H1_Melee" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="OneHanded_1" />
+    </Shapes>
+    <CastingParams InputQueueTTL="0.3" CancellableByDefault="1" />
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="playerskill_H1_Melee_atk_02">
+    <Animation ActionString="player_skill_atk_02" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" />
+    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="default" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee.png" UIName="@ui_AST_ComboOneHanded" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="OneHanded_1" />
+    </Shapes>
+    <CastingParams InputQueueTTL="0.3" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+    <SkillSpecific />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="playerskill_H1_Melee_atk_loop_01">
+    <Animation ActionString="player_skill_atk_loop_01" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" />
+    <VisualFeedback BloodDecalOrientation="left" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="default" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee.png" UIName="@ui_AST_ComboOneHanded" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="OneHanded_1" />
+    </Shapes>
+    <CastingParams InputQueueTTL="0.3" CancellableByDefault="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+    <SkillSpecific />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="playerskill_H1_Melee_atk_loop_02">
+    <Animation ActionString="player_skill_atk_loop_02" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" />
+    <VisualFeedback BloodDecalOrientation="right" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="default" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee.png" UIName="@ui_AST_ComboOneHanded" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="OneHanded_1" />
+    </Shapes>
+    <CastingParams InputQueueTTL="0.3" CancellableByDefault="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+    <SkillSpecific />
+  </Skill>
+  <Skill ESkill="default_melee" Keywords="default_melee,attack_skill" UID="playerskill_H1_Melee_atk_finisher">
+    <Animation ActionString="player_skill_atk_finisher" IgnoreAnimationMovementWhenHoldingShift="1" ScaleWithAttackSpeed="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="Player_weapon_1h" TrailPresetBase="default" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_melee.png" UIName="@ui_AST_ComboOneHanded" />
+    <Aggression TargetValueOnHit="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="OneHanded_1" />
+    </Shapes>
+    <CastingParams InputQueueTTL="0.3" CancellableByDefault="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+    <SkillSpecific />
+  </Skill>
+</MetaData>

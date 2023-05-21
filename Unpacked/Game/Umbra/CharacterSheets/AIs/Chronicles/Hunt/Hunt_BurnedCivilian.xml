@@ -1,0 +1,55 @@
+<MetaData>
+  <BaseEntity ID="Hunt_BurnedCivilian" EntityName="cultofflesh_heart" Scale="1" CanKillAllies="0" />
+  <Faction Name="CultOfSouls" />
+  <Keywords Value="cofe,undead,trash,melee" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="1" />
+  <Attributes Archetype="archetype_trash" HealthModifier="0.01" DamageModifier="1" XPModifier="1" Protection="" Movable="0" Hookable="0" />
+  <Movement MovementSpeed="0" WalkSpeed="0" />
+  <InterruptionParams InterruptChance="0" />
+  <StunParams IgnoreStunChance="1" />
+  <BlownAwayParams CanBeBlownAway="0" BlownAwayAnimationTag="" />
+  <DefaultBossModifiers />
+  <LootClass>
+    <Loot Class="" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="" />
+  <OnDeathLootPreset Name="" />
+  <Corpses PresetName="" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="0" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Motionless" />
+    <BT FleeOnLowHealthChance="0.0" EngageRange="10.0" MeleeAttack="True" FallBack="True" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="Melee" />
+  </Kythera>
+  <Skills />
+  <RandomModel>
+    <ModelChoice Model="Objects/characters/npc/Secondary/Merchant/Male/NPC_MH_Merchant_06_burned.cdf" Weight="1">
+      <ADBChoice ADB="Animations/Mannequin/ADB/NPC/NPC_MH_BurnedGuy_01.adb" Weight="1" />
+      <ADBChoice ADB="Animations/Mannequin/ADB/NPC/NPC_MH_BurnedGuy_02.adb" Weight="1" />
+      <ADBChoice ADB="Animations/Mannequin/ADB/NPC/NPC_MH_BurnedGuy_03.adb" Weight="1" />
+    </ModelChoice>
+    <ModelChoice Model="Objects/characters/npc/Secondary/Merchant/Male/NPC_MH_Merchant_05_burned.cdf" Weight="1">
+      <ADBChoice ADB="Animations/Mannequin/ADB/NPC/NPC_MH_BurnedGuy_01.adb" Weight="1" />
+      <ADBChoice ADB="Animations/Mannequin/ADB/NPC/NPC_MH_BurnedGuy_02.adb" Weight="1" />
+      <ADBChoice ADB="Animations/Mannequin/ADB/NPC/NPC_MH_BurnedGuy_03.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIName_AgonizingMerchant" ZIconOffset="1" />
+  <Spawn SpawnAnimation="rise_out_ground_fast" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="1" CannotBeOverkilled="1" />
+  <GameplayParticles PresetName="size_medium" />
+  <Capsules>
+    <EntityPhysics ColliderSize="1,1,0.5" IsPushable="0" />
+    <MouseSelection SelectionCapsuleRadius="1" SelectionCapsuleHeight="1.0" SelectionCapsuleZOffset="0" />
+    <ProjectileCollision ProjectileCapsuleRadius="0.75" ProjectileCapsuleHeight="3.0" CanSnapOnCenterWhenColliding="1" />
+    <VegetationCollision SphereRadius="0.4" SphereZOffset="0.4" />
+  </Capsules>
+  <BoneParticles>
+    <BoneParticle BoneName="Bip01 Spine2" ParticleName="RnD.Fire.burned_civilian_C1" Offset="0,0,0" Dir="0,0,1" Scale="1" FadeOut="1" IgnoreRotation="0" />
+  </BoneParticles>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="default" OverrideScale="1" />
+  </VisualParams>
+</MetaData>

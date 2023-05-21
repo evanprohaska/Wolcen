@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill ESkill="AI_Repu_Golgoth_FlameThrower_SpearGrab" Keywords="magic_spell" UID="AI_Repu_Golgoth_FlameThrower_SpearGrab">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <PassiveSkills>
+      <Skill Index="0" Name="movespeed_slow_percent" Targeting="OnHostiles" />
+    </PassiveSkills>
+    <Projectile Name="repu_golgothflamethrower_speargrab_proj" ProjectileCount="1" PenetrationLimit="100" />
+    <Targeting TargetingType="target" ComputeTargetPosAtCast="1" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 L MachineGunFX" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_REPU_Golgoth_Flamethrow_SpearGrab_Part2" />
+    </SecondarySkillToCast>
+    <DamageWeapon Type="lightning" WeaponMultiplier="2" />
+    <Cooldown Cooldown="5.0" />
+    <ParticleList>
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Fire" Direction="1,0,0" />
+      <Particle Key="Proj" Name="U_VFX_Oskar.Monster.REPU_Grenade_Launcher_LightningOrb_Projectile" Direction="-1,0,0" Offset="0,0,0" Bone="Bip01 L FlameThrowerBladeVFX" />
+      <Particle Key="Pull" Name="REPU_Golgoth_Flamethrower.Spear Grab.Projectile" Direction="-1,0,0" Offset="0,0,0" Bone="Bip01 L FlameThrowerBladeVFX" />
+      <Particle Key="Link" Name="REPU_Golgoth_Flamethrower.Spear Grab.Link" Direction="1,0,0" Offset="0,0,0" Bone="Bip01 L MachineGunFX" />
+      <Particle Key="Indicator" Name="U_VFX_Oskar.Monster.REPU_Grenade_Launcher_LightningOrb_AoESpear" Direction="-1,0,0" Scale="0.75" TimeScale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="AI_REPU_Golgoth_Flamethrower_SpearGrabAoE" />
+    </Shapes>
+    <Range AttackRange="15" />
+    <SkillSpecific SlowDuration="1.0" MoveSpeedSlowPercent="50.0" TimeToPullSpear="0.25" DelayToPullSpear="1.0" PullStunTime="1.0" PullOffset="4.0" />
+    <SoundTrigger OnHit="Play_REPU_GrenadeLauncher_LightningOrb_Impact" OnAnimCast="" OnAnimLoopIn="Play_REPU_GolgothFlamethrower_SpearGrab_Loop" OnAnimLoopOut="Stop_REPU_GolgothFlamethrower_SpearGrab_Loop" />
+  </Skill>
+</MetaData>

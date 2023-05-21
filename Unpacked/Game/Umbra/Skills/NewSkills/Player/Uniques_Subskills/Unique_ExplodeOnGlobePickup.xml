@@ -1,0 +1,11 @@
+<MetaData>
+  <Skill UID="unique_skill_explosion_on_globe_pickup" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <ParticleList>
+      <Particle Key="damage" Name="U_CommonVFX.Uniques.Discordant_AoE" Scale="1.5" Direction="0,0,1" />
+    </ParticleList>
+    <DamageWeapon WeaponMultiplier="10" />
+    <Specific_PST RelatedPSTEffect="SelfExplode" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="" ApplicationRadius="5" DamageOnEnemies="1" DamageOnSelf="0" />
+  </Skill>
+</MetaData>

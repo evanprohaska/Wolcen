@@ -1,0 +1,1271 @@
+<MapModifiersPresets>
+  <Modifier Name="MonsterBossMod" HUDname="@ui_modifier_monsterBossMod">
+    <Archetype Boss="1" Elite="1" Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="MonsterBossMod" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantPoisonFromSky" HUDname="@ui_modifier_LieutenantPoisonFromSky">
+    <Archetype Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_PoisonFromSky_Lieutenant" />
+    </Value>
+  </Modifier>
+  <Modifier Name="ElitePoisonFromSky" HUDname="@ui_modifier_ElitePoisonFromSky">
+    <Archetype Elite="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_PoisonFromSky" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantRandomLightning" HUDname="@ui_modifier_LieutenantRandomLightning">
+    <Archetype Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_RandomLightning_Lieutenant" />
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteRandomLightning" HUDname="@ui_modifier_EliteRandomLightning">
+    <Archetype Elite="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_RandomLightning" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantToxicProjectiles_RandomDirection" HUDname="@ui_modifier_LieutenantToxicProjectiles_RandomDirection">
+    <Archetype Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_RandomBullets_Poison_Lieutenant" />
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteToxicProjectiles_RandomDirection" HUDname="@ui_modifier_EliteToxicProjectiles_RandomDirection">
+    <Archetype Elite="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_RandomBullets_Poison" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantAetherHomingProjectile" HUDname="@ui_modifier_LieutenantAetherHomingProjectile">
+    <Archetype Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_AetherHomingProjectile_Lieutenant" />
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteAetherHomingProjectile" HUDname="@ui_modifier_EliteAetherHomingProjectile">
+    <Archetype Elite="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_AetherHomingProjectile" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantRandomRend" HUDname="@ui_modifier_LieutenantRandomRend">
+    <Archetype Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_RandomFlesh_DZ_Lieutenant" />
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteRandomRend" HUDname="@ui_modifier_EliteRandomRend">
+    <Archetype Elite="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_RandomFlesh_DZ" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantMeteors" HUDname="@ui_modifier_LieutenantMeteors">
+    <Archetype Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_Bossmodifier_Meteors_Lieutenant" />
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteMeteors" HUDname="@ui_modifier_EliteMeteors">
+    <Archetype Elite="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_Bossmodifier_Meteors" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantBurnArea_Permanent" HUDname="@ui_modifier_LieutenantBurnArea_Permanent">
+    <Archetype Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_BurnArea_Permanent_Lieutenant" />
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteBurnArea_Permanent" HUDname="@ui_modifier_EliteBurnArea_Permanent">
+    <Archetype Elite="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_BurnArea_Permanent" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantFireHomingProjectile" HUDname="@ui_modifier_LieutenantFireHomingProjectile">
+    <Archetype Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_FireHomingProjectile_Lieutenant" />
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteFireHomingProjectile" HUDname="@ui_modifier_EliteFireHomingProjectile">
+    <Archetype Elite="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_FireHomingProjectile" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantRendCircle" HUDname="@ui_modifier_LieutenantRendCircle">
+    <Archetype Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_HalfRendCircle_DZ" />
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteRendCircle" HUDname="@ui_modifier_EliteRendCircle">
+    <Archetype Elite="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_RendCircle_DZ" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantSpearsFromSky" HUDname="@ui_modifier_LieutenantSpearsFromSky">
+    <Archetype Lieutenant="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_DeathlyStings_Lieutenant" />
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteSpearsFromSky" HUDname="@ui_modifier_EliteSpearsFromSky">
+    <Archetype Elite="1" />
+    <Target Type="MobSpawner" Attribut="BossModifier" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="AI_BossModifier_DeathlyStings" />
+    </Value>
+  </Modifier>
+  <Modifier Name="LightningStrike" HUDname="@ui_modifier_Curse_LightningStrike_desc">
+    <Archetype Elite="1" />
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="MapModifier_Curse_LightningStrike" />
+    </Value>
+  </Modifier>
+  <Modifier Name="MeteorStrike" HUDname="@ui_modifier_Curse_MeteorStrike_desc">
+    <Archetype Elite="1" />
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="MapModifier_Curse_MeteorStrike" />
+    </Value>
+  </Modifier>
+  <Modifier Name="Swarm" HUDname="@ui_modifier_Curse_Swarm_desc">
+    <Archetype Elite="1" />
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_curse_swarm" />
+    </Value>
+  </Modifier>
+  <Modifier Name="PowerUnleashed" HUDname="@ui_modifier_Blessing_PowerUnleashed_desc">
+    <Archetype Elite="1" />
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="MapModifier_Blessing_PowerUnleashed" />
+    </Value>
+  </Modifier>
+  <Modifier Name="Bloodlust" HUDname="@ui_modifier_Blessing_Bloodlust_desc">
+    <Archetype Elite="1" />
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="MapModifier_Blessing_Bloodlust" />
+    </Value>
+  </Modifier>
+  <Modifier Name="BloodRain" HUDname="@ui_modifier_Curse_BloodRain_desc">
+    <Archetype Elite="1" />
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="MapModifier_Curse_BloodRain" />
+    </Value>
+  </Modifier>
+  <Modifier Name="SoulExplosion" HUDname="@ui_modifier_soulexplosion">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_soulexplosion" />
+    </Value>
+  </Modifier>
+  <Modifier Name="RandomExplosion" HUDname="@ui_modifier_randomExplosion">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_randomexplosion" />
+    </Value>
+  </Modifier>
+  <Modifier Name="ResurectSimilar" HUDname="@ui_modifier_resurectSimilar">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_resurectsimilar" />
+    </Value>
+  </Modifier>
+  <Modifier Name="ExplosionOnPlayers" HUDname="@ui_modifier_explosiononplayer">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_explodeonplayers" />
+    </Value>
+  </Modifier>
+  <Modifier Name="MedicalGarrison" HUDname="">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_medicalgarrison" />
+    </Value>
+  </Modifier>
+  <Modifier Name="FightCorruption_Flesh" HUDname="">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_fightcorruption_flesh" />
+    </Value>
+  </Modifier>
+  <Modifier Name="FightCorruption_Souls" HUDname="">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_fightcorruption_soul" />
+    </Value>
+  </Modifier>
+  <Modifier Name="FightCorruption_Fury" HUDname="">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_fightcorruption_fury" />
+    </Value>
+  </Modifier>
+  <Modifier Name="WeakeningEvilForces_Flesh" HUDname="">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_WeakeningEvilForces_Flesh" />
+    </Value>
+  </Modifier>
+  <Modifier Name="WeakeningEvilForces_Souls" HUDname="">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_WeakeningEvilForces_Souls" />
+    </Value>
+  </Modifier>
+  <Modifier Name="WeakeningEvilForces_Fury" HUDname="">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_WeakeningEvilForces_Fury" />
+    </Value>
+  </Modifier>
+  <Modifier Name="TimeDistortion" HUDname="">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="mapmodifier_skill_timedistortion" />
+    </Value>
+  </Modifier>
+  <Modifier Name="HellionCosmetic" HUDname="">
+    <Target Type="WildSkills" Attribut="None" />
+    <Value Type="Asset">
+      <Entry Format="String" Value="cosmetic_hellion" />
+    </Value>
+  </Modifier>
+  <Modifier Name="Exhaustion" LocTargetType="0">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="stack_slow_on_skill_cast">
+        <LoRoll SpeedPercentInt="-3" PSTStackMaxCountInt="10" PSTStackResetTimer="2" />
+        <HiRoll SpeedPercentInt="-3" PSTStackMaxCountInt="10" PSTStackResetTimer="2" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="OffenseBestDefense" LocTargetType="0">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="health_gain_on_kill_depend_on_enemy_rank">
+        <LoRoll TriggerGainHealthAndShieldPercentFromEliteFloat="10" TriggerGainHealthAndShieldPercentFromLieutenantFloat="5" TriggerGainHealthAndShieldPercentFromTrashFloat="0.5" />
+        <HiRoll TriggerGainHealthAndShieldPercentFromEliteFloat="10" TriggerGainHealthAndShieldPercentFromLieutenantFloat="5" TriggerGainHealthAndShieldPercentFromTrashFloat="0.5" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="AchillesHeel" LocTargetType="0">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="blessing_achillesheel">
+        <LoRoll PossibilityInt="1" TriggeredSkillSelector="0" />
+        <HiRoll PossibilityInt="1" TriggeredSkillSelector="0" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersResistAll">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="all_resistance_percent">
+        <LoRoll CharacteristicPercentInt="12" />
+        <HiRoll CharacteristicPercentInt="16" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersResistElemental">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="elemental_resistance_percent">
+        <LoRoll CharacteristicPercentInt="20" />
+        <HiRoll CharacteristicPercentInt="25" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersResistOccult">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="occult_resistance_percent">
+        <LoRoll CharacteristicPercentInt="20" />
+        <HiRoll CharacteristicPercentInt="25" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersResistMaterial">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="material_resistance_percent">
+        <LoRoll CharacteristicPercentInt="20" />
+        <HiRoll CharacteristicPercentInt="25" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersDamageFire">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_fire">
+        <LoRoll DamagePercentInt="25" />
+        <HiRoll DamagePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashDamageFire">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_fire">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantDamageFire">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_fire">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteDamageFire">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_fire">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersDamageFrost">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_frost">
+        <LoRoll DamagePercentInt="25" />
+        <HiRoll DamagePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashDamageFrost">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_frost">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantDamageFrost">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_frost">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteDamageFrost">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_frost">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersDamageLighting">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_lightning">
+        <LoRoll DamagePercentInt="25" />
+        <HiRoll DamagePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashDamageLightning">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_lightning">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantDamageLightning">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_lightning">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteDamageLightning">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_lightning">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersDamageUmbra">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_umbra">
+        <LoRoll DamagePercentInt="25" />
+        <HiRoll DamagePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashDamageUmbra">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_umbra">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantDamageUmbra">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_umbra">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteDamageUmbra">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_umbra">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersDamageSacred">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_sacred">
+        <LoRoll DamagePercentInt="25" />
+        <HiRoll DamagePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashDamageSacred">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_sacred">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantDamageSacred">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_sacred">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteDamageSacred">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_sacred">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersDamageShadow">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_shadow">
+        <LoRoll DamagePercentInt="25" />
+        <HiRoll DamagePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashDamageShadow">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_shadow">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantDamageShadow">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_shadow">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteDamageShadow">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_shadow">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersDamageRend">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_rend">
+        <LoRoll DamagePercentInt="25" />
+        <HiRoll DamagePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashDamageRend">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_rend">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantDamageRend">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_rend">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteDamageRend">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_rend">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersDamageToxic">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_toxic">
+        <LoRoll DamagePercentInt="25" />
+        <HiRoll DamagePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashDamageToxic">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_toxic">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantDamageToxic">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_toxic">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteDamageToxic">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_toxic">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersDamagePhysical">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_physical">
+        <LoRoll DamagePercentInt="25" />
+        <HiRoll DamagePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashDamagePhysical">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_physical">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantDamagePhysical">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_physical">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteDamagePhysical">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent_as_physical">
+        <LoRoll DamagePercentInt="40" />
+        <HiRoll DamagePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="PlayerLessUmbra">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="umbra_regen_percent">
+        <LoRoll ResourcePercentFloat="-30" />
+        <HiRoll ResourcePercentFloat="-35" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="PlayerLessStamina">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="stamina_regeneration_percent">
+        <LoRoll ResourcePercentFloat="-40" />
+        <HiRoll ResourcePercentFloat="-50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="PlayerLessRage">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="rage_per_strike_percent">
+        <LoRoll ResourcePercentInt="-30" />
+        <HiRoll ResourcePercentInt="-35" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonsterCriticalResistance">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="critical_damage_resistance_percent">
+        <LoRoll DamagePercentFloat="32" />
+        <HiRoll DamagePercentFloat="40" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonsterDotResistance">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="ailment_damage_resistance_percent">
+        <LoRoll DamagePercentFloat="32" />
+        <HiRoll DamagePercentFloat="40" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="ProjDamageDistance">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="projectiles_damage_asdistance">
+        <LoRoll DamagePercentFloat="-40" RangeFloat_Min="1" RangeFloat_Max="15" />
+        <HiRoll DamagePercentFloat="-50" RangeFloat_Min="1" RangeFloat_Max="15" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersSpeed">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="movespeed">
+        <LoRoll SpeedPercentInt="16" />
+        <HiRoll SpeedPercentInt="20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashesSpeed">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="movespeed">
+        <LoRoll SpeedPercentInt="30" />
+        <HiRoll SpeedPercentInt="35" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantsSpeed">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="movespeed">
+        <LoRoll SpeedPercentInt="30" />
+        <HiRoll SpeedPercentInt="35" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="ElitesSpeed">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="movespeed">
+        <LoRoll SpeedPercentInt="30" />
+        <HiRoll SpeedPercentInt="35" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersHealth">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="health_percent">
+        <LoRoll HealthPercentInt="25" />
+        <HiRoll HealthPercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashesHealth">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="health_percent">
+        <LoRoll HealthPercentInt="90" />
+        <HiRoll HealthPercentInt="100" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantsHealth">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="health_percent">
+        <LoRoll HealthPercentInt="70" />
+        <HiRoll HealthPercentInt="80" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="ElitesHealth">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="health_percent">
+        <LoRoll HealthPercentInt="50" />
+        <HiRoll HealthPercentInt="60" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonstersLessCC">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="crowd_control_duration_percent">
+        <LoRoll DurationPercentFloat="-25" />
+        <HiRoll DurationPercentFloat="-30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashesLessCC">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="crowd_control_duration_percent">
+        <LoRoll DurationPercentFloat="-55" />
+        <HiRoll DurationPercentFloat="-65" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantsLessCC">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="crowd_control_duration_percent">
+        <LoRoll DurationPercentFloat="-55" />
+        <HiRoll DurationPercentFloat="-65" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="ElitesLessCC">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="crowd_control_duration_percent">
+        <LoRoll DurationPercentFloat="-55" />
+        <HiRoll DurationPercentFloat="-65" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonsterBurnOnHit">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_burn_on_hit">
+        <LoRoll ChancePercentInt="15" />
+        <HiRoll ChancePercentInt="20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashBurnOnHit">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_burn_on_hit">
+        <LoRoll ChancePercentInt="25" />
+        <HiRoll ChancePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantBurnOnHit">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_burn_on_hit">
+        <LoRoll ChancePercentInt="45" />
+        <HiRoll ChancePercentInt="55" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteBurnOnHit">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_burn_on_hit">
+        <LoRoll ChancePercentInt="70" />
+        <HiRoll ChancePercentInt="80" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonsterShockOnHit">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_shock_on_hit">
+        <LoRoll ChancePercentInt="15" />
+        <HiRoll ChancePercentInt="20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashShockOnHit">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_shock_on_hit">
+        <LoRoll ChancePercentInt="25" />
+        <HiRoll ChancePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantShockOnHit">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_shock_on_hit">
+        <LoRoll ChancePercentInt="45" />
+        <HiRoll ChancePercentInt="55" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteShockOnHit">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_shock_on_hit">
+        <LoRoll ChancePercentInt="70" />
+        <HiRoll ChancePercentInt="80" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonsterPoisonOnHit">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_poison_on_hit">
+        <LoRoll ChancePercentInt="15" />
+        <HiRoll ChancePercentInt="20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashPoisonOnHit">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_poison_on_hit">
+        <LoRoll ChancePercentInt="25" />
+        <HiRoll ChancePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantPoisonOnHit">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_poison_on_hit">
+        <LoRoll ChancePercentInt="45" />
+        <HiRoll ChancePercentInt="55" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="ElitePoisonOnHit">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_poison_on_hit">
+        <LoRoll ChancePercentInt="70" />
+        <HiRoll ChancePercentInt="80" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonsterBleedOnHit">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_bleed_on_hit">
+        <LoRoll ChancePercentInt="15" />
+        <HiRoll ChancePercentInt="20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashBleedOnHit">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_bleed_on_hit">
+        <LoRoll ChancePercentInt="25" />
+        <HiRoll ChancePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantBleedOnHit">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_bleed_on_hit">
+        <LoRoll ChancePercentInt="45" />
+        <HiRoll ChancePercentInt="55" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteBleedOnHit">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_bleed_on_hit">
+        <LoRoll ChancePercentInt="70" />
+        <HiRoll ChancePercentInt="80" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonsterWeaknessOnHit">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_weakness_on_hit">
+        <LoRoll ChancePercentInt="15" />
+        <HiRoll ChancePercentInt="20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashWeaknessOnHit">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_weakness_on_hit">
+        <LoRoll ChancePercentInt="25" />
+        <HiRoll ChancePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantWeaknessOnHit">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_weakness_on_hit">
+        <LoRoll ChancePercentInt="45" />
+        <HiRoll ChancePercentInt="55" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteWeaknessOnHit">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_weakness_on_hit">
+        <LoRoll ChancePercentInt="70" />
+        <HiRoll ChancePercentInt="80" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonsterCurseOnHit">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_curse_on_hit">
+        <LoRoll ChancePercentInt="15" />
+        <HiRoll ChancePercentInt="20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashCurseOnHit">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_curse_on_hit">
+        <LoRoll ChancePercentInt="25" />
+        <HiRoll ChancePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantCurseOnHit">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_curse_on_hit">
+        <LoRoll ChancePercentInt="45" />
+        <HiRoll ChancePercentInt="55" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteCurseOnHit">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_curse_on_hit">
+        <LoRoll ChancePercentInt="70" />
+        <HiRoll ChancePercentInt="80" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="MonsterStasisOnHit">
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_stasis_on_hit">
+        <LoRoll ChancePercentInt="15" />
+        <HiRoll ChancePercentInt="20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="TrashStasisOnHit">
+    <Archetype Trash="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_stasis_on_hit">
+        <LoRoll ChancePercentInt="25" />
+        <HiRoll ChancePercentInt="30" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="LieutenantStasisOnHit">
+    <Archetype Lieutenant="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_stasis_on_hit">
+        <LoRoll ChancePercentInt="45" />
+        <HiRoll ChancePercentInt="55" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="EliteStasisOnHit">
+    <Archetype Elite="1" />
+    <Target Type="Mobs" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="chance_stasis_on_hit">
+        <LoRoll ChancePercentInt="70" />
+        <HiRoll ChancePercentInt="80" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Additional_Proj">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="additional_projectile">
+        <LoRoll ProjectileCountInt="2" />
+        <HiRoll ProjectileCountInt="2" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Increased_Damage">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent">
+        <LoRoll DamagePercentInt="25" />
+        <HiRoll DamagePercentInt="25" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Increased_Speed">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="movespeed">
+        <LoRoll SpeedPercentInt="25" />
+        <HiRoll SpeedPercentInt="25" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Increased_CritChance">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="criticalchance_final_percent">
+        <LoRoll CharacteristicFinalPercentFloat="100" />
+        <HiRoll CharacteristicFinalPercentFloat="100" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Increased_AllRes">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="all_resistance_final_percent">
+        <LoRoll CharacteristicFinalPercentFloat="25" />
+        <HiRoll CharacteristicFinalPercentFloat="25" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Ghost_Damage">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="ghost_damage">
+        <LoRoll DamagePercentInt="100" ChancePercentInt="50" />
+        <HiRoll DamagePercentInt="100" ChancePercentInt="50" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Reduced_Damage_1">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent">
+        <LoRoll DamagePercentInt="-10" />
+        <HiRoll DamagePercentInt="-10" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Reduced_Damage_2">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent">
+        <LoRoll DamagePercentInt="-15" />
+        <HiRoll DamagePercentInt="-15" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Reduced_Damage_3">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="damage_percent">
+        <LoRoll DamagePercentInt="-20" />
+        <HiRoll DamagePercentInt="-20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Reduced_Offensivespeed_1">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="offensivespeed_final_percent">
+        <LoRoll CharacteristicFinalPercentFloat="-10" />
+        <HiRoll CharacteristicFinalPercentFloat="-10" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Reduced_Offensivespeed_2">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="offensivespeed_final_percent">
+        <LoRoll CharacteristicFinalPercentFloat="-15" />
+        <HiRoll CharacteristicFinalPercentFloat="-15" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Reduced_Offensivespeed_3">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="offensivespeed_final_percent">
+        <LoRoll CharacteristicFinalPercentFloat="-20" />
+        <HiRoll CharacteristicFinalPercentFloat="-20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Reduced_AllRes_1">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="all_resistance_final_percent">
+        <LoRoll CharacteristicFinalPercentFloat="-10" />
+        <HiRoll CharacteristicFinalPercentFloat="-10" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Reduced_AllRes_2">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="all_resistance_final_percent">
+        <LoRoll CharacteristicFinalPercentFloat="-15" />
+        <HiRoll CharacteristicFinalPercentFloat="-15" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="Players_Reduced_AllRes_3">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="all_resistance_final_percent">
+        <LoRoll CharacteristicFinalPercentFloat="-20" />
+        <HiRoll CharacteristicFinalPercentFloat="-20" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+  <Modifier Name="CounterAttack" LocTargetType="0">
+    <Target Type="Players" Attribut="None" />
+    <Value Type="EIM">
+      <MagicEffect Name="counter_attack">
+        <LoRoll PossibilityInt="100" />
+        <HiRoll PossibilityInt="100" />
+      </MagicEffect>
+    </Value>
+  </Modifier>
+</MapModifiersPresets>

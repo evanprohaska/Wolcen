@@ -1,0 +1,115 @@
+<MetaData>
+  <Preset Name="preset_name" StatsName="tank_stats" Type="tank" MinApoResourceToTransform="0" RestoredHealthPercentOnDropForm="0">
+    <UIParams Name="@ui_gold" Lore="@ui_gold" />
+    <Visuals AnimationActionTag="player_skill_spawn_tank" ADB="Animations/Mannequin/ADB/Apocalyptic/APO_Tank.adb" CDF="objects/characters/players/apocalyptic/APO_Tank/APO_Tank.cdf" Scale="1.15" />
+    <Skills>
+      <Entry Slot="16" SkillUID="apo_player_chainlightning" />
+      <Entry Slot="17" SkillUID="apo_player_fireball" />
+      <Entry Slot="20" SkillUID="apo_player_brutalstrike" />
+      <Entry Slot="22" SkillUID="apo_player_activedodge" />
+    </Skills>
+    <Stacks MaxStacks="5" />
+  </Preset>
+  <Preset Name="animator_mage" StatsName="mage_stats" Type="mage" MinApoResourceToTransform="0" RestoredHealthPercentOnDropForm="0">
+    <UIParams Name="@ui_gold" Lore="@ui_gold" />
+    <Visuals AnimationActionTag="player_skill_spawn_mage" ADB="Animations/Mannequin/ADB/Apocalyptic/APO_Mage.adb" CDF="objects/characters/players/apocalyptic/APO_Mage/APO_Mage.cdf" Scale="1.35">
+      <VFX_OnBeginPlayerToApo>
+        <Entry VFX="U_ApocalypticForm.Mage_ApocalypticFrom.Transform_Camera_Fadeout" Bone="Bip01" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0.01" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+        <Entry VFX="U_ApocalypticForm.Mage_ApocalypticFrom.Transform_Camera" Bone="Bip01" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0.45" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+      </VFX_OnBeginPlayerToApo>
+      <VFX_OnBeginApoToPlayer>
+        <Entry VFX="U_ApocalypticForm.Mage_ApocalypticFrom.TransformToHuman" Bone="Bip01 Spine2" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+        <Entry VFX="U_ApocalypticForm.Mage_ApocalypticFrom.TransformToHuman_Camera" Bone="Bip01" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+      </VFX_OnBeginApoToPlayer>
+      <MutationSkins>
+        <Entry MutationName="apo_mage_permanent_vfx" SkinName="apo_mage_skin_permanent_vfx" />
+      </MutationSkins>
+    </Visuals>
+    <TransformationSkill SkillUID="apo_mage_apotransform" />
+    <Skills>
+      <Entry Slot="16" SkillUID="apo_mage_projectile" />
+      <Entry Slot="17" SkillUID="apo_mage_multitarget" />
+      <Entry Slot="18" SkillUID="apo_mage_laser" />
+      <Entry Slot="24" SkillUID="apo_mage_default_attack_01" />
+      <Entry Slot="25" SkillUID="apo_mage_teleport" />
+      <Entry Slot="26" SkillUID="apo_mage_teleport" />
+    </Skills>
+    <Stacks MaxStacks="30" />
+  </Preset>
+  <Preset Name="animator_tank" StatsName="tank_stats" Type="tank" MinApoResourceToTransform="0" RestoredHealthPercentOnDropForm="0">
+    <UIParams Name="@ui_gold" Lore="@ui_gold" />
+    <Visuals AnimationActionTag="player_skill_spawn_tank" ADB="Animations/Mannequin/ADB/Apocalyptic/APO_Tank.adb" CDF="objects/characters/players/apocalyptic/APO_Tank/APO_Tank.cdf" Scale="1.15" />
+    <TransformationSkill SkillUID="apo_tank_apotransform" />
+    <Skills>
+      <Entry Slot="16" SkillUID="apo_animator_skill_01" />
+      <Entry Slot="17" SkillUID="apo_animator_skill_02" />
+      <Entry Slot="18" SkillUID="apo_animator_skill_03" />
+      <Entry Slot="19" SkillUID="apo_animator_skill_04" />
+      <Entry Slot="20" SkillUID="apo_animator_skill_loop_01" />
+      <Entry Slot="21" SkillUID="apo_animator_skill_loop_02" />
+      <Entry Slot="22" SkillUID="apo_animator_skill_loop_03" />
+      <Entry Slot="23" SkillUID="apo_animator_skill_loop_04" />
+      <Entry Slot="24" SkillUID="apo_animator_atk_01" />
+      <Entry Slot="25" SkillUID="apo_animator_skill_move" />
+      <Entry Slot="26" SkillUID="apo_animator_skill_loop_move" />
+    </Skills>
+    <Stacks MaxStacks="25" />
+  </Preset>
+  <Preset Name="animator_rogue" StatsName="rogue_stats" Type="rogue" MinApoResourceToTransform="0" RestoredHealthPercentOnDropForm="0">
+    <UIParams Name="@ui_gold" Lore="@ui_gold" />
+    <Visuals AnimationActionTag="player_skill_spawn_rogue" ADB="Animations/Mannequin/ADB/Apocalyptic/APO_Rogue.adb" CDF="objects/characters/players/apocalyptic/APO_Rogue/APO_Rogue.cdf" Scale="1.1">
+      <VFX_OnBeginPlayerToApo>
+        <Entry VFX="U_ApocalypticForm.Rogue_ApocalypticForm.Transform_Camera_Fadeout" Bone="Bip01" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0.01" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+        <Entry VFX="U_ApocalypticForm.Rogue_ApocalypticForm.Transform_Camera" Bone="Bip01" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0.41" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+      </VFX_OnBeginPlayerToApo>
+      <VFX_OnBeginApoToPlayer>
+        <Entry VFX="U_ApocalypticForm.Rogue_ApocalypticForm.TransformToHuman" Bone="Bip01 Spine2" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+        <Entry VFX="U_ApocalypticForm.Rogue_ApocalypticForm.TransformTo Human_Camera" Bone="Bip01" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+      </VFX_OnBeginApoToPlayer>
+      <MutationSkins>
+        <Entry MutationName="apo_rogue_permanent_vfx" SkinName="apo_rogue_skin_permanent_vfx" />
+      </MutationSkins>
+    </Visuals>
+    <TransformationSkill SkillUID="apo_rogue_apotransform" />
+    <Skills>
+      <Entry Slot="16" SkillUID="apo_rogue_backdash" />
+      <Entry Slot="17" SkillUID="apo_rogue_airstrike" />
+      <Entry Slot="18" SkillUID="apo_rogue_multihit" />
+      <Entry Slot="24" SkillUID="apo_rogue_default_attack_01" />
+      <Entry Slot="25" SkillUID="apo_rogue_moveattack" />
+      <Entry Slot="26" SkillUID="apo_rogue_moveattack" />
+    </Skills>
+    <Stacks MaxStacks="30" />
+  </Preset>
+  <Preset Name="animator_warrior" StatsName="warrior_stats" Type="warrior" MinApoResourceToTransform="0" RestoredHealthPercentOnDropForm="0">
+    <UIParams Name="@ui_gold" Lore="@ui_gold" />
+    <Visuals AnimationActionTag="player_skill_spawn_warrior" ADB="Animations/Mannequin/ADB/Apocalyptic/APO_Warrior.adb" CDF="objects/characters/players/apocalyptic/APO_Warrior/APO_Warrior.cdf" Scale="1.3">
+      <VFX_OnBeginPlayerToApo>
+        <Entry VFX="U_ApocalypticForm.Worrior_ApocalypticFrom.Transform_Camera_Fadeout" Bone="Bip01 Spine" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0.05" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+        <Entry VFX="U_ApocalypticForm.Worrior_ApocalypticFrom.Transform_Camera" Bone="Bip01 Spine" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0.55" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+      </VFX_OnBeginPlayerToApo>
+      <VFX_OnBeginApoToPlayer>
+        <Entry VFX="U_ApocalypticForm.Worrior_ApocalypticFrom.TransformToHuman" Bone="Bip01 Spine2" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+        <Entry VFX="U_ApocalypticForm.Worrior_ApocalypticFrom.TransformToHuman_Camera" Bone="Bip01 Spine" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+      </VFX_OnBeginApoToPlayer>
+      <MutationSkins>
+        <Entry MutationName="apo_warrior_permanent_vfx" SkinName="apo_warrior_skin_permanent_vfx" />
+      </MutationSkins>
+    </Visuals>
+    <TransformationSkill SkillUID="apo_warrior_apotransform" />
+    <Skills>
+      <Entry Slot="16" SkillUID="apo_animator_skill_01" />
+      <Entry Slot="17" SkillUID="apo_animator_skill_02" />
+      <Entry Slot="18" SkillUID="apo_animator_skill_03" />
+      <Entry Slot="19" SkillUID="apo_animator_skill_04" />
+      <Entry Slot="20" SkillUID="apo_animator_skill_loop_01" />
+      <Entry Slot="21" SkillUID="apo_animator_skill_loop_02" />
+      <Entry Slot="22" SkillUID="apo_animator_skill_loop_03" />
+      <Entry Slot="23" SkillUID="apo_animator_skill_loop_04" />
+      <Entry Slot="24" SkillUID="apo_animator_atk_01" />
+      <Entry Slot="25" SkillUID="apo_animator_skill_move" />
+      <Entry Slot="26" SkillUID="apo_animator_skill_loop_move" />
+    </Skills>
+    <Stacks MaxStacks="5" />
+  </Preset>
+</MetaData>

@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_Summon_Champion_ToxicBreeder_Default_Attack" ESkill="default_melee" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <DamageWeapon Type="Toxic" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Summon_Melee_DefaultAttack" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_COFE_Speader_DefaultAttack_Swing" OnHit="Play_COFE_Speader_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Summon_Champion_ToxicBreeder_Taunt" ESkill="Misc_Taunt" Keywords="">
+    <Animation ActionString="monster_skill_02" />
+    <Taunt AggressionValue="500" MaxNumberOfTargets="10" />
+    <Shapes>
+      <Entry Key="enemies" ShapeName="Summon_Champion_TauntShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_Skill_Summon_Command_Warcy" />
+  </Skill>
+</MetaData>

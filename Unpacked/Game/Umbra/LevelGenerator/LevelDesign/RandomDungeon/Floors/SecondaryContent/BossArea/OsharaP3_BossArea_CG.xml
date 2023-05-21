@@ -1,0 +1,30 @@
+<RandomDungeon>
+  <Dungeon Name="OsharaP3_BossArea_CG" Architecture="Library_BossArena.Oshara_Phase3" TileSize="150" LibraryPath="Prefabs/Library_BossArena.xml" IsRoguelike="0" NumberOfCPTiles="0" IsSPOnlyConnectedToCP="1" MinimumNumberOfLoop="0" MaximumNumberOfLoop="0" MinimumNumberOfDeadEnd="0" MaximumNumberOfDeadEnd="0" MinimumLoopSize="2" MaximumLoopSize="2" MinimumDeadEndSize="1" MaximumDeadEndSize="1" DisplayDungeonExitMinimapIcon="0" DisplayDungeonNextLevelMinimapIcon="0">
+    <SpawnClassFamilies />
+    <LevelSheetName Name="Test_Forest_Small_Level" />
+    <Rendering>
+      <Entry Weight="1">
+        <Sun Latitude="259" Longitude="144" />
+        <Tod Filename="tod_act2_lamback_part1.xml" Time="12" />
+        <ColorGradient Texture="textures/colorcharts/default_cch.dds" Time="1" />
+        <RimLight Color="241,217,136" Azimuth="170" Site="70" FresnelPower="2" FresnelMultiplier="1.4" Power="1" Multiplier="0.03" />
+        <PlayerLights Toggles="" />
+        <CameraAngle Angles="45" />
+        <CloudShadow Texture="textures/clouds/Cumulus_bright.dds" Speed="0.02,0.04,0" Tiling="50" Brightness="1" />
+      </Entry>
+    </Rendering>
+    <MusicState AudioSwitch="MusicStateBeta" AudioState="Boss_Alpha" />
+  </Dungeon>
+  <Tiles>
+    <Entrance RandomSelection="1">
+      <TypeN Weight="1">
+        <Tile Name="Arena" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeN>
+    </Entrance>
+    <Exit RandomSelection="1">
+      <TypeS Weight="1">
+        <Tile Name="FakeExit" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeS>
+    </Exit>
+  </Tiles>
+</RandomDungeon>

@@ -1,0 +1,15 @@
+<MetaData>
+  <Skill UID="AI_Prim_Architect_PunchAttack" ESkill="default_melee" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Physical" WeaponMultiplier="2" />
+    <Cooldown Cooldown="6" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01" />
+    <Shapes>
+      <Entry ShapeName="AI_COSS_Architect_Punch_Shape_Short" />
+      <Entry ShapeName="AI_COSS_Architect_Punch_Shape_Medium" />
+      <Entry ShapeName="AI_COSS_Architect_Punch_Shape_Long" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_COSS_Architect_PunchAttack" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

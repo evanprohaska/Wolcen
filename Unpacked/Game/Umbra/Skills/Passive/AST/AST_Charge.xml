@@ -1,0 +1,18 @@
+<MetaData>
+  <Spell Name="AST_Charge_Buff_Allies" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="all_resistance_score_percent" Permanent="0">
+        <Semantics CharacteristicScorePercentInt="40" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/charge_buff.png" Description="@ui_all_resistance_score_percent_buff_skill" Title="@ui_Charge_buff_title" />
+  </Spell>
+  <Spell Name="AST_Charge_Buff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="blockchance_unconditional_flat" Permanent="0">
+        <Semantics ChanceFlatFloat="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/charge_buff.png" Description="@ui_blockchance_unconditional_flat_buff_skill" Title="@ui_Charge_buff_title" />
+  </Spell>
+</MetaData>

@@ -1,0 +1,29 @@
+<MetaData>
+  <Skill UID="AI_Summon_Champion_Rend_Default_Attack" ESkill="default_ranged" Keywords="magic_spell,default_ranged,projectile,additional_projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="0.8" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 L Finger22" />
+    <Projectile Name="summon_champion_rend_missile" ProjectileCount="1" AngleBetweenProjectiles="10" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <Explosion ExplosionRadius="1.5" />
+    <SoundTrigger OnAnimStart="" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Summon_Champion_Rend_Targeted_Attack" ESkill="AI_default_projectileskillwithaoe" Keywords="magic_spell,projectile,additional_projectile">
+    <HUD ShowParamsInTooltip="Explosion,Range" ShowParamsInAST="Explosion,Range" />
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" />
+    <CastingParams CastBone="Bip01 R Forearm" CasterImmobilizationTime="0.33" MaximumTurnRate="360" CanBeInterrupted="0" MaximumTargetingHalfAngle="30" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="summon_champion_rend_bomb" ProjectileCount="1" AngleBetweenProjectiles="15" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="3" />
+    <Range ProjectileMinDistance="0" AttackRange="15" />
+    <SkillSpecific />
+    <SoundTrigger OnAnimStart="PLAY_AI_Trapper_BombStart" OnAnimCast="Play_Trapper_Bomb_Throw_Short" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

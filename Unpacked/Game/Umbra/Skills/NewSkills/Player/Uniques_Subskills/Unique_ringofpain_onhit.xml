@@ -1,0 +1,67 @@
+<MetaData>
+  <Skill UID="unique_ringofpain_onhit" ESkill="player_ringofpain" Keywords="attack_skill,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_ringofpain" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimCast="Play_Skill_RingOfPain_Cast" />
+    <ParticleList>
+      <Particle Key="Ring" Name="U_Character_02.RingOgPain.RingOfPain_Ground_01" Direction="0,0,1" Delay="0" />
+      <Particle Key="RingEnd" Name="U_Character_02.RingOgPain.RingOfPain_Ground_Finish_01" Direction="0,0,1" />
+      <Particle Key="RingIncrease" Name="U_Character_02.RingOgPain.RingOfPain_SizeChange_01" Direction="0,0,1" />
+      <Particle Key="RingDecrease" Name="U_Character_02.RingOgPain.RingOfPain_SizeChange_02" Direction="0,0,1" />
+      <Particle Key="OverHead" Name="U_Buff.Buff.Offensive_Bonus_Buff" Direction="0,1,0" Offset="0,0,3" Bone="Bip01" />
+    </ParticleList>
+    <Specific_RingOfPain Duration="8" RingRadius="4" MainPassiveEffect="AST_RingOfPain_RendDamage" FollowTarget="1" />
+    <CastingParams CanMultiCast="1" CastBone="R_weapon_bone" CasterImmobilizationTime="0" CanCastWhileMoving="1" MaximumTurnRate="0" ShouldMoveInRange="0" CancellableByDefault="1" GamepadPreferFriendlyTargetAcquisition="0" />
+  </Skill>
+  <Skill UID="unique_ringofpain_aether_onhit" ESkill="player_ringofpain" Keywords="attack_skill,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_ringofpain" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimCast="Play_Skill_RingOfPain_Cast" />
+    <ParticleList>
+      <Particle Key="Ring" Name="U_Character_02.RingOgPain.RingOfPain_Ground_01_Aether" Direction="0,0,1" Delay="0" />
+      <Particle Key="RingEnd" Name="U_Character_02.RingOgPain.RingOfPain_Ground_Finish_01_Aether" Direction="0,0,1" />
+      <Particle Key="RingIncrease" Name="U_Character_02.RingOgPain.RingOfPain_SizeChange_01_Aether" Direction="0,0,1" />
+      <Particle Key="RingDecrease" Name="U_Character_02.RingOgPain.RingOfPain_SizeChange_02_Aether" Direction="0,0,1" />
+      <Particle Key="OverHead" Name="U_Buff.Buff.Offensive_Bonus_Buff" Direction="0,1,0" Offset="0,0,3" Bone="Bip01" />
+    </ParticleList>
+    <Specific_RingOfPain Duration="8" RingRadius="4" MainPassiveEffect="AST_RingOfPain_AetherDamage" FollowTarget="1" />
+    <CastingParams CanMultiCast="1" CastBone="R_weapon_bone" CasterImmobilizationTime="0" CanCastWhileMoving="1" MaximumTurnRate="0" ShouldMoveInRange="0" CancellableByDefault="1" GamepadPreferFriendlyTargetAcquisition="0" />
+  </Skill>
+  <Skill UID="unique_ringofpain_shadow_onhit" ESkill="player_ringofpain" Keywords="attack_skill,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_ringofpain" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimCast="Play_Skill_RingOfPain_Cast" />
+    <ParticleList>
+      <Particle Key="Ring" Name="U_Character_02.RingOgPain.RingOfPain_Ground_01_Shadow" Direction="0,0,1" Delay="0" />
+      <Particle Key="RingEnd" Name="U_Character_02.RingOgPain.RingOfPain_Ground_Finish_01_Shadow" Direction="0,0,1" />
+      <Particle Key="RingIncrease" Name="U_Character_02.RingOgPain.RingOfPain_SizeChange_01_Shadow" Direction="0,0,1" />
+      <Particle Key="RingDecrease" Name="U_Character_02.RingOgPain.RingOfPain_SizeChange_02_Shadow" Direction="0,0,1" />
+      <Particle Key="OverHead" Name="U_Buff.Buff.Offensive_Bonus_Buff" Direction="0,1,0" Offset="0,0,3" Bone="Bip01" />
+    </ParticleList>
+    <Specific_RingOfPain Duration="8" RingRadius="4" MainPassiveEffect="AST_RingOfPain_ShadowDamage" FollowTarget="1" />
+    <CastingParams CanMultiCast="1" CastBone="R_weapon_bone" CasterImmobilizationTime="0" CanCastWhileMoving="1" MaximumTurnRate="0" ShouldMoveInRange="0" CancellableByDefault="1" GamepadPreferFriendlyTargetAcquisition="0" />
+  </Skill>
+  <Skill UID="unique_ringofpain_lightning_onhit" ESkill="player_ringofpain" Keywords="attack_skill,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_ringofpain" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimCast="Play_Skill_RingOfPain_Cast" />
+    <ParticleList>
+      <Particle Key="Ring" Name="U_Character_02.RingOgPain.RingOfPain_Ground_01_Lightning" Direction="0,0,1" Delay="0" />
+      <Particle Key="RingEnd" Name="U_Character_02.RingOgPain.RingOfPain_Ground_Finish_01_Lightning" Direction="0,0,1" />
+      <Particle Key="RingIncrease" Name="U_Character_02.RingOgPain.RingOfPain_SizeChange_01_Lightning" Direction="0,0,1" />
+      <Particle Key="RingDecrease" Name="U_Character_02.RingOgPain.RingOfPain_SizeChange_02_Lightning" Direction="0,0,1" />
+      <Particle Key="OverHead" Name="U_Buff.Buff.Offensive_Bonus_Buff" Direction="0,1,0" Offset="0,0,3" Bone="Bip01" />
+    </ParticleList>
+    <Specific_RingOfPain Duration="8" RingRadius="4" MainPassiveEffect="AST_RingOfPain_LightningDamage" FollowTarget="1" />
+    <CastingParams CanMultiCast="1" CastBone="R_weapon_bone" CasterImmobilizationTime="0" CanCastWhileMoving="1" MaximumTurnRate="0" ShouldMoveInRange="0" CancellableByDefault="1" GamepadPreferFriendlyTargetAcquisition="0" />
+  </Skill>
+  <Skill UID="unique_ringofpain_frost_onhit" ESkill="player_ringofpain" Keywords="attack_skill,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_ringofpain" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimCast="Play_Skill_RingOfPain_Cast" />
+    <ParticleList>
+      <Particle Key="Ring" Name="U_Character_02.RingOgPain.RingOfPain_Ground_01_Frost" Direction="0,0,1" Delay="0" />
+      <Particle Key="RingEnd" Name="U_Character_02.RingOgPain.RingOfPain_Ground_Finish_01_Frost" Direction="0,0,1" />
+      <Particle Key="RingIncrease" Name="U_Character_02.RingOgPain.RingOfPain_SizeChange_01_Frost" Direction="0,0,1" />
+      <Particle Key="RingDecrease" Name="U_Character_02.RingOgPain.RingOfPain_SizeChange_02_Frost" Direction="0,0,1" />
+      <Particle Key="OverHead" Name="U_Buff.Buff.Offensive_Bonus_Buff" Direction="0,1,0" Offset="0,0,3" Bone="Bip01" />
+    </ParticleList>
+    <Specific_RingOfPain Duration="8" RingRadius="4" MainPassiveEffect="AST_RingOfPain_FrostDamage" FollowTarget="1" />
+    <CastingParams CanMultiCast="1" CastBone="R_weapon_bone" CasterImmobilizationTime="0" CanCastWhileMoving="1" MaximumTurnRate="0" ShouldMoveInRange="0" CancellableByDefault="1" GamepadPreferFriendlyTargetAcquisition="0" />
+  </Skill>
+</MetaData>

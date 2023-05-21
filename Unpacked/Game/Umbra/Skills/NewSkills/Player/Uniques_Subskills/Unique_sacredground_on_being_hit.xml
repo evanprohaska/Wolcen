@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="unique_sacredground_on_being_hit" ESkill="player_sacredground" Keywords="magic_spell,passive_effect,">
+    <WeaponRequirements Requirements="sacred" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/sacredground.png" UIName="@ui_AST_SacredGround" Lore="@ui_AST_SacredGround_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="3" ShowParamsInAST="Cost,ROSTime,Cooldown,Range" ShowParamsInTooltip="Cost,Cooldown" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Sacred" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Sacred" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Sacred" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.ANATHEA" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Sacred" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Sacred" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Sacred" Inventory_HUDPicture="../u_resources/enneracts/sacred_ground.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Shapes>
+      <Entry ShapeName="player_sacredground_shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_01" Direction="0,0,1" Scale="1" />
+      <Particle Key="AreaDefenseUp" Name="U_Character.Skills.Sacred_Ground_Shield" Direction="0,0,1" Scale="1" />
+      <Particle Key="AreaDisappear" Name="U_Character.Skills.Sacred_Ground_Disappear_01" Direction="0,0,1" Scale="1" />
+      <Particle Key="Heal" Name="U_Buff.Heal.Usage_HolyHeal_Loop_01" Direction="0,0,1" Offset="0,0,1" Scale="1" />
+    </ParticleList>
+    <HealthTransfer Value="5" Timer="0" ValuePerLevel="0" ValuesAsPercent="1" />
+    <Specific_SacredGround HealCaster="1" HealthRegenUpdateTick="2" TimeToLive="9" />
+    <SoundTrigger OnAnimStart="PLAY_Skill_SacredGround" />
+    <Targeting TargetingType="self" />
+  </Skill>
+</MetaData>

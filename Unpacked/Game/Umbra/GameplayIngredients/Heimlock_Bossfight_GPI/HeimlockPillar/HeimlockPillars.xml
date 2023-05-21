@@ -1,0 +1,32 @@
+<MetaData>
+  <HeimlockPillarPreset PillarType="soul" ModelBase="objects/animated_object/misc/pillarofpower/misc_pillarofpower_soul.cdf" SkillUID="heimlockpillar_soul">
+    <PillarAnimation Key="Deactivated" Path="misc_pillarofpower_idle_inactive" />
+    <PillarAnimation Key="RisingUp" Path="misc_pillarofpower_activated" />
+    <PillarAnimation Key="Idle" Path="misc_pillarofpower_idle_active" />
+    <PillarAnimation Key="CastSkill" Path="misc_pillarofpower_cast" />
+    <PillarAnimation Key="GoingDown" Path="misc_pillarofpower_desactivated" />
+    <PillarVFX Key="Activating" Name="U_Monster.Heimlock.Pillar_Activate_01_Frost" Direction="0,1,0" Bone="Bip01 Sphere" />
+    <PillarVFX Key="CastSkill" Name="U_Monster.Heimlock.Pillar_Gaining_01_Frost" Direction="0,1,0" Offset="0,0,-0.5" Scale="1.5" />
+    <PillarVFX Key="Impact" Name="U_Monster.Heimlock.Pillar_Impact_01_Frost" Direction="0,0,1" />
+  </HeimlockPillarPreset>
+  <HeimlockPillarPreset PillarType="flesh" ModelBase="objects/animated_object/misc/pillarofpower/misc_pillarofpower_flesh.cdf" SkillUID="heimlockpillar_flesh">
+    <PillarAnimation Key="Deactivated" Path="misc_pillarofpower_idle_inactive" />
+    <PillarAnimation Key="RisingUp" Path="misc_pillarofpower_activated" />
+    <PillarAnimation Key="Idle" Path="misc_pillarofpower_idle_active" />
+    <PillarAnimation Key="CastSkill" Path="misc_pillarofpower_cast" />
+    <PillarAnimation Key="GoingDown" Path="misc_pillarofpower_desactivated" />
+    <PillarVFX Key="Activating" Name="U_Monster.Heimlock.Pillar_Activate_01_Flesh" Direction="0,1,0" Bone="Bip01 Sphere" />
+    <PillarVFX Key="CastSkill" Name="U_Monster.Heimlock.Pillar_Gaining_01_Flesh" Direction="0,1,0" Offset="0,0,-0.5" Scale="1.5" />
+    <PillarVFX Key="Impact" Name="U_Monster.Heimlock.Pillar_Impact_01_Flesh" Direction="0,0,1" />
+  </HeimlockPillarPreset>
+  <HeimlockPillarPreset PillarType="oblivion" ModelBase="objects/animated_object/misc/pillarofpower/misc_pillarofpower_oblivion.cdf" SkillUID="heimlockpillar_oblivion">
+    <PillarAnimation Key="Deactivated" Path="misc_pillarofpower_idle_inactive" />
+    <PillarAnimation Key="RisingUp" Path="misc_pillarofpower_activated" />
+    <PillarAnimation Key="Idle" Path="misc_pillarofpower_idle_active" />
+    <PillarAnimation Key="CastSkill" Path="misc_pillarofpower_cast" />
+    <PillarAnimation Key="GoingDown" Path="misc_pillarofpower_desactivated" />
+    <PillarVFX Key="Activating" Name="U_Monster.Heimlock.Pillar_Activate_01_Shadow" Direction="0,1,0" Bone="Bip01 Sphere" />
+    <PillarVFX Key="CastSkill" Name="U_Monster.Heimlock.Pillar_Gaining_01_Shadow" Direction="0,1,0" Offset="0,0,-0.5" Scale="1.5" />
+    <PillarVFX Key="Impact" Name="U_Monster.Heimlock.Pillar_Impact_01_Shadow" Direction="0,0,1" />
+  </HeimlockPillarPreset>
+</MetaData>

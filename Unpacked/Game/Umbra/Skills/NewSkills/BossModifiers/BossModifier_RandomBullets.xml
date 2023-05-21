@@ -1,0 +1,59 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RandomBullets">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <Bleed Chance="100" ChanceMode="override" Duration="10" DurationMode="override" Stacks="5" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_DOT_DZ_Bleed" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomBullets" />
+    </Shapes>
+    <DamageZone Duration="3" RateOfFire="0.1" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_VFX_Oskar.Bossmodifiers.RendProjectiles_Cast" Offset="0,0,1" Direction="1,0,0" TimeScale="0.5" />
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.Bossmodifiers.RendProjectiles_Projectile" Offset="0,0,2" Direction="0,1,0" Scale="0.5" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1.5" RandomBaseDistMax="1.5" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="30" MaxLinearSpeed="30" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1.5" NumberOfDZ="8" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RandomBullets_Poison">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <Poison Chance="100" ChanceMode="override" Duration="10" DurationMode="override" Stacks="2" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_DOT_DZ_Bleed" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomBullets" />
+    </Shapes>
+    <DamageZone Duration="3" RateOfFire="0.1" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="u_bossmodifiers.rend_proj_all_dir.toxic_indicator" Offset="0,0,2" Direction="1,0,0" Scale="0.3" TimeScale="1" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.rend_proj_all_dir.toxic_dz" Offset="0,0,2" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1.5" RandomBaseDistMax="1.5" RandomBaseAngleMin="0" RandomBaseAngleMax="360" LimitAngle="360" MinLinearSpeed="30" MaxLinearSpeed="30" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1.5" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RandomBullets_Poison_Lieutenant">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <Poison Chance="100" ChanceMode="override" Duration="10" DurationMode="override" Stacks="2" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_DOT_DZ_Bleed" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomBullets" />
+    </Shapes>
+    <DamageZone Duration="3" RateOfFire="0.1" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="u_bossmodifiers.rend_proj_all_dir.toxic_indicator" Offset="0,0,2" Direction="1,0,0" Scale="0.3" TimeScale="1" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.rend_proj_all_dir.toxic_dz" Offset="0,0,2" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1.5" RandomBaseDistMax="1.5" RandomBaseAngleMin="0" RandomBaseAngleMax="360" LimitAngle="360" MinLinearSpeed="30" MaxLinearSpeed="30" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1.5" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,23 @@
+<MetaData>
+  <Skill ESkill="AI_coss_specter_reap" Keywords="magic_spell" UID="AI_COSS_Specter_Reap">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_02" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="frost" WeaponMultiplier="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Cooldown Cooldown="20.0" />
+    <ParticleList>
+      <Particle Key="Line" Name="U_Monster.Specter.Consume_line_01" Direction="0,1,0" Bone="Bip01 Spine2" />
+      <Particle Key="Target" Name="U_Monster.Specter.Consume_Weapon_01" Direction="0,1,0" Bone="Bip01 Spine2" />
+      <Particle Key="Weapon" Name="U_Monster.Specter.Consume_Weapon_01" Direction="0,1,0" Offset="0,-1,0" Bone="R_Weapon_Bone" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="Specter_Reap" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_coss_specter_reap_passive" Targeting="OnHostiles" Duration="3" />
+    </PassiveSkills>
+    <Range AttackRange="15" />
+    <SkillSpecific TimeBeforeTeleport="1.5" StaminaPointsDepleted="2" />
+    <SoundTrigger OnAnimStart="" OnAnimCast="Play_Spectre_Reap_Soul_Start" OnHit="Play_Spectre_Attack_Impact" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

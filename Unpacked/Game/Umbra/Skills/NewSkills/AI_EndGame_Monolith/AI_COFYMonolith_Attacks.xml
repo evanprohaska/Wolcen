@@ -1,0 +1,307 @@
+<MetaData>
+  <Skill UID="AI_COFYMonolith_Phase01_Attack01" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Bloc" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="COFYMonolith_Projectile" SpeedScale="0.2" ProjectileCount="8" AngleBetweenProjectiles="45.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase01_Attack02" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Bloc" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="COFYMonolith_Projectile" SpeedScale="0.2" ProjectileCount="6" AngleBetweenProjectiles="10.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase01_Attack03" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Bloc" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="COFYMonolith_Projectile" SpeedScale="0.15" ProjectileCount="4" AngleBetweenProjectiles="90.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase01_Attack04" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="8" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="Bip01" />
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="Missions.KillArena.Fire_Projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="0" MinAngularSpeed="20" MaxAngularSpeed="20" IndicatorMaxTimer="0" NumberOfDZ="6" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase01_Attack05" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="8" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="Bip01" />
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="Missions.KillArena.Fire_Projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="0" MinAngularSpeed="-20" MaxAngularSpeed="-20" IndicatorMaxTimer="0" NumberOfDZ="6" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase01_Attack06" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="Bip01" />
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="Missions.KillArena.Fire_Projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="-4" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="6" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase02_Attack01" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_02" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Bloc" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="COFYMonolith_Projectile" SpeedScale="0.2" ProjectileCount="12" AngleBetweenProjectiles="30.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase02_Attack02" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_02" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Bloc" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="COFYMonolith_Projectile" SpeedScale="0.2" ProjectileCount="8" AngleBetweenProjectiles="10.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase02_Attack03" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_04_out_02" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Bloc" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="COFYMonolith_Projectile" SpeedScale="0.2" ProjectileCount="4" AngleBetweenProjectiles="90.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase02_Attack04" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_02" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="Bip01" />
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="Missions.KillArena.Fire_Projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="0" MinAngularSpeed="20" MaxAngularSpeed="20" IndicatorMaxTimer="0" NumberOfDZ="8" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase02_Attack05" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_02" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="Bip01" />
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="Missions.KillArena.Fire_Projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="0" MinAngularSpeed="-20" MaxAngularSpeed="-20" IndicatorMaxTimer="0" NumberOfDZ="8" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase02_Attack06" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_03" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="Bip01" />
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="Missions.KillArena.Fire_Projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="-4" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="8" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase03_Attack01" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_03" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Bloc" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="COFYMonolith_Projectile" SpeedScale="0.2" ProjectileCount="16" AngleBetweenProjectiles="22.5" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase03_Attack02" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_04_out_02" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Bloc" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="COFYMonolith_Projectile" SpeedScale="0.2" ProjectileCount="8" AngleBetweenProjectiles="10.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase03_Attack03" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_02_out_03" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Bloc" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="40" />
+    <Projectile Name="COFYMonolith_Projectile" SpeedScale="0.2" ProjectileCount="4" AngleBetweenProjectiles="90.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase03_Attack04" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_03" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="Bip01" />
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="Missions.KillArena.Fire_Projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="0" MinAngularSpeed="20" MaxAngularSpeed="20" IndicatorMaxTimer="0" NumberOfDZ="12" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase03_Attack05" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_03" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="Bip01" />
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="Missions.KillArena.Fire_Projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="0" MinAngularSpeed="-20" MaxAngularSpeed="-20" IndicatorMaxTimer="0" NumberOfDZ="12" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill UID="AI_COFYMonolith_Phase03_Attack06" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <EventEffectOverride>
+      <AnimEvent Original="Missions.KillArena.Lightning_Anticipation" Override="Missions.KillArena.Fire_Anticipation" />
+      <AnimEvent Original="Missions.KillArena.Lightning_Impact" Override="Missions.KillArena.Fire_Impact" />
+    </EventEffectOverride>
+    <Animation ActionString="monster_skill_loop_01_out_03" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="EndGame_GenericMonolith_ProjectilesShape" />
+    </Shapes>
+    <CastingParams CastBone="Bip01" />
+    <DamageZone Duration="10" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="Missions.KillArena.Fire_Projectile" Offset="0,0,1" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="1" RandomBaseDistMax="1" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="4" MaxLinearSpeed="-4" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="12" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

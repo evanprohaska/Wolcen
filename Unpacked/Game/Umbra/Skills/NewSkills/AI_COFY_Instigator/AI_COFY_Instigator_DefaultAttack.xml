@@ -1,0 +1,46 @@
+<MetaData>
+  <Skill UID="AI_COFY_Instigator_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="0.0" />
+    <CastingParams />
+    <Shapes>
+      <Entry ShapeName="Instigator_DefaultAttack" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Instigator_DefaultAttack_Swing" OnHit="Play_Instigator_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Named_Instigator_DefaultAttack" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="0.5" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_Named_Instigator_DefaultAttack_Shape,AI_Named_Instigator_DefaultAttack_DZ" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+    <SoundTrigger OnAnimStart="Play_Instigator_DefaultAttack_Swing" OnHit="Play_Instigator_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Named_Instigator_DefaultAttack_Shape" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Named_Instigator_DefaultAttack" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_Named_Instigator_DefaultAttack_DZ" ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageAsPercentageOfParent Percent="75" />
+    <SoundTrigger OnHit="Play_Named_Instigator_DefaultAttack_Fire_Impact" PlayAttackVoice="0" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Named_Instigator_DefaultAttack_DZ" />
+    </Shapes>
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <DamageZone Duration="5" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="U_Monster_Alt.Instigator.FireGround_Projectile" Offset="0,0,0" Direction="0,1,0" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="5" RandomBaseDistMax="5" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="13" MaxLinearSpeed="13" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="1" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

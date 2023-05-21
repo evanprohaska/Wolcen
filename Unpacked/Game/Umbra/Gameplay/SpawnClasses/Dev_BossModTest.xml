@@ -1,0 +1,13 @@
+<MetaData>
+  <SpawnClass Name="Dev_BossModsTest">
+    <Spawn Type="Actor" ClassName="SvriirOmega" NumberMin="1" NumberMax="1" LevelMin="5" LevelMax="5" LevelOffset="1" Center="0" SpawnOverTime="0.5" BossProba="1.0" LootClassOverride="" XPBonusPercent="100" ForceEntityName="NameOverride" IgnoreAnimation="1">
+      <BossRank Id="1" Frequency="1" />
+      <BossRank Id="2" Frequency="1" />
+      <BossRank Id="3" Frequency="1" />
+      <BossRank Id="4" Frequency="1" />
+      <FixedBossModifiers Id="BossModifier_ElementalShield" />
+      <FixedBossModifiers Id="BossModifier_MaterialShield" />
+      <FixedBossModifiers Id="BossModifier_OccultShield" />
+    </Spawn>
+  </SpawnClass>
+</MetaData>

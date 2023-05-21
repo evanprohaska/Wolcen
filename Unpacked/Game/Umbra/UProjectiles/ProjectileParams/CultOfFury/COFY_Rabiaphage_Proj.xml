@@ -1,0 +1,63 @@
+<MetaData>
+  <Projectile ID="COFY_Rabiaphage_Meteor_Proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,-0.5,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Temp.Temp_Chaguk.IceSpear_Projectile_Large" Direction="0,-1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Scanning_Explosion_01" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Scaning_Explosion_Indicator_02" Direction="0,1,0" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="40" Acceleration="20" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="pressure" value="300" />
+      <param name="explosion_radius" value="1" />
+      <param name="hole_size" value="3" />
+      <param name="terrain_hole_size" value="4" />
+      <param name="effect" value="U_Monster.Primordiar.Primordiar_Guardian.Scanning_Explosion_01" />
+      <param name="effect_scale" value="1" />
+      <param name="type" value="basictrap" />
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <Hit SoundTriggerName="Play_Primordial_GuardianCorrupt_MissileLaunch_Impact" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="COFY_Rabiaphage_Meteor_Proj2" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Monster.ArmillarySphere_Meteor_Projectile01" Direction="0,-1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_VFX_Oskar.Monster.ArmillarySphere_Meteor_Impact01" Direction="0,0,1" WorldSpace="1" Scale="1" />
+      <Indicator ParticleName="U_VFX_Oskar.Monster.ArmillarySphere_Meteor_Indicator01" Direction="0,0,1" WorldSpace="1" Scale="1" Delay="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="Play_COFY_Rabiaphage_Attack_Impact" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="AI_COFY_Rabiaphage_Sniper_Proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Monster.ArmillarySphere_Meteor_Projectile01" Direction="0,-1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_VFX_Oskar.Monster.ArmillarySphere_Meteor_Impact01" Direction="0,0,1" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_COFY_Rabiaphage_Attack_Impact" />
+      <Launch SoundTriggerName="Play_COFY_Rabiaphage_Attack_Projectile_Loop" />
+      <Removed SoundTriggerName="Stop_COFY_Rabiaphage_Attack_Projectile_Loop" />
+    </Audio>
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+  </Projectile>
+</MetaData>

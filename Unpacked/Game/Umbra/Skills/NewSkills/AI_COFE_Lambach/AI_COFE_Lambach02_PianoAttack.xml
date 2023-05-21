@@ -1,0 +1,190 @@
+<MetaData>
+  <Skill UID="AI_COFE_Lambach02_PianoAttack" ESkill="AI_COFE_Lambach02_PianoAttack" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="25" CooldownTrigger="OnEnd" />
+    <SpecialShield ShieldAngle="360" BounceProjectiles="0" IgnoreDirectionalDamage="1" ResistsCrowdControl="1" ProtectionType="AnyDamage" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <StringList>
+      <String Key="Character" String="Game/Objects/characters/mobs/Non_Humanoid/Tentacle/COFE_Tentacle/COFE_Tentacle_Lambach.cdf" />
+      <String Key="Animation01_In" String="COFE_Tentacle_skill_Piano_01_In" />
+      <String Key="Animation01_Loop" String="COFE_Tentacle_skill_Piano_01_Loop" />
+      <String Key="Animation01_Out" String="COFE_Tentacle_skill_Piano_01_Out" />
+      <String Key="Animation01_Atk" String="COFE_Tentacle_skill_Piano_01_Atk" />
+      <String Key="Animation02_In" String="COFE_Tentacle_skill_Piano_02_In" />
+      <String Key="Animation02_Loop" String="COFE_Tentacle_skill_Piano_02_Loop" />
+      <String Key="Animation02_Out" String="COFE_Tentacle_skill_Piano_02_Out" />
+      <String Key="Animation02_Atk" String="COFE_Tentacle_skill_Piano_02_Atk" />
+      <String Key="Animation03_In" String="COFE_Tentacle_skill_Piano_03_In" />
+      <String Key="Animation03_Loop" String="COFE_Tentacle_skill_Piano_03_Loop" />
+      <String Key="Animation03_Out" String="COFE_Tentacle_skill_Piano_03_Out" />
+      <String Key="Animation03_Atk" String="COFE_Tentacle_skill_Piano_03_Atk" />
+      <String Key="Animation04_In" String="COFE_Tentacle_skill_Piano_04_In" />
+      <String Key="Animation04_Loop" String="COFE_Tentacle_skill_Piano_04_Loop" />
+      <String Key="Animation04_Out" String="COFE_Tentacle_skill_Piano_04_Out" />
+      <String Key="Animation04_Atk" String="COFE_Tentacle_skill_Piano_04_Atk" />
+      <String Key="Animation05_In" String="COFE_Tentacle_skill_Piano_05_In" />
+      <String Key="Animation05_Loop" String="COFE_Tentacle_skill_Piano_05_Loop" />
+      <String Key="Animation05_Out" String="COFE_Tentacle_skill_Piano_05_Out" />
+      <String Key="Animation05_Atk" String="COFE_Tentacle_skill_Piano_05_Atk" />
+      <String Key="Animation06_In" String="COFE_Tentacle_skill_Piano_06_In" />
+      <String Key="Animation06_Loop" String="COFE_Tentacle_skill_Piano_06_Loop" />
+      <String Key="Animation06_Out" String="COFE_Tentacle_skill_Piano_06_Out" />
+      <String Key="Animation06_Atk" String="COFE_Tentacle_skill_Piano_06_Atk" />
+      <String Key="Animation07_In" String="COFE_Tentacle_skill_Piano_Flesh_01_In" />
+      <String Key="Animation07_Loop" String="COFE_Tentacle_skill_Piano_Flesh_01_Loop" />
+      <String Key="Animation07_Out" String="COFE_Tentacle_skill_Piano_Flesh_01_Out" />
+      <String Key="Animation07_Atk" String="not_used" />
+    </StringList>
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <Shapes>
+      <Entry Key="SideShape" ShapeName="Lambach02_PianoAttackSideShape" />
+      <Entry Key="CenterShape" ShapeName="Lambach02_PianoAttackCenterShape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="CentralIndicator" Name="U_Monster.Lumbach.Flesh_Area_warningMiddle_Piano_01" Offset="0,0,0" Direction="0,1,0" Scale="1.5" />
+      <Particle Key="TentacleIndicator" Name="U_Monster.Lumbach.Flesh_Area_warning_Piano_01" Offset="0,0,0" Direction="0,1,0" Scale="1.5" />
+      <Particle Key="TentacleSpikes" Name="U_Monster.Lumbach.Flesh_Spikes_02" Offset="0,0,0" Direction="0,1,0" Scale="1.5" />
+      <Particle Key="DamageZone" Name="U_Monster.Lumbach.Flesh_Area_IncubationChamber_02" Offset="0,0,0" Direction="0,1,0" />
+    </ParticleList>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+    <DamageZone RateOfFire="0.5" />
+    <Specific_AI_COFE_Lambach02_PianoAttack TentacleScale="1" TentacleIndicatorTimer="0.5" CentralZoneIndicatorTimer="0.5" InvulnerabilityTimer="1" DamageZoneDamageInPercentOfTentacleDamage="100" CenterZonePosHelper="QP_Lambach02_CenterPosHelper" CenterZoneDirHelper="QP_Lambach02_FacePoint" CenterZoneSoundTriggerStart="Play_LambachBig_Piano_AcidBlood_Loop" CenterZoneSoundTriggerStop="Stop_LambachBig_Piano_AcidBlood_Loop">
+      <Patterns Health="100">
+        <Pattern Id="1" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="1" Timer="1" />
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="3" Timer="1" />
+            <Zones Zone="2" Timer="1" />
+          </PatternStep>
+        </Pattern>
+        <Pattern Id="2" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="3" Timer="1" />
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="1" Timer="1" />
+            <Zones Zone="2" Timer="1" />
+          </PatternStep>
+        </Pattern>
+        <Pattern Id="3" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="3" Timer="1" />
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="1" Timer="1" />
+          </PatternStep>
+        </Pattern>
+      </Patterns>
+      <Patterns Health="80">
+        <Pattern Id="1" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="1" Timer="1" />
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="3" Timer="1" />
+            <Zones Zone="2,1" Timer="1" />
+          </PatternStep>
+        </Pattern>
+        <Pattern Id="2" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="3" Timer="1" />
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="3" Timer="1" />
+            <Zones Zone="2,1" Timer="1" />
+          </PatternStep>
+        </Pattern>
+        <Pattern Id="3" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="3" Timer="1" />
+            <Zones Zone="1" Timer="1" />
+            <Zones Zone="2,3" Timer="1" />
+          </PatternStep>
+        </Pattern>
+      </Patterns>
+      <Patterns Health="60">
+        <Pattern Id="1" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="1" Timer="1" />
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="1,3" Timer="1" />
+            <Zones Zone="2,1" Timer="1" />
+          </PatternStep>
+        </Pattern>
+        <Pattern Id="2" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="3" Timer="1" />
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="2,3" Timer="1" />
+            <Zones Zone="2,1" Timer="1" />
+          </PatternStep>
+        </Pattern>
+        <Pattern Id="3" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="3" Timer="1" />
+            <Zones Zone="1,2" Timer="1" />
+            <Zones Zone="2,3" Timer="1" />
+          </PatternStep>
+        </Pattern>
+      </Patterns>
+      <Patterns Health="40">
+        <Pattern Id="1" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="3" Timer="1" />
+            <Zones Zone="2,1" Timer="1" />
+            <Zones Zone="1,3" Timer="1" />
+            <Zones Zone="2,1" Timer="1" />
+          </PatternStep>
+        </Pattern>
+        <Pattern Id="2" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="2" Timer="1" />
+            <Zones Zone="1,3" Timer="1" />
+            <Zones Zone="2,3" Timer="1" />
+            <Zones Zone="2,1" Timer="1" />
+          </PatternStep>
+        </Pattern>
+        <Pattern Id="3" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="1" Timer="1" />
+            <Zones Zone="2,3" Timer="1" />
+            <Zones Zone="1,2" Timer="1" />
+            <Zones Zone="2,3" Timer="1" />
+          </PatternStep>
+        </Pattern>
+      </Patterns>
+      <Patterns Health="20">
+        <Pattern Id="1" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="1,3" Timer="1" />
+            <Zones Zone="2,1" Timer="1" />
+            <Zones Zone="1,3" Timer="1" />
+            <Zones Zone="2,1" Timer="1" />
+          </PatternStep>
+        </Pattern>
+        <Pattern Id="2" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="2,3" Timer="1" />
+            <Zones Zone="1,2" Timer="1" />
+            <Zones Zone="2,3" Timer="1" />
+            <Zones Zone="2,1" Timer="1" />
+          </PatternStep>
+        </Pattern>
+        <Pattern Id="3" TimeScaleForTentacles="1.5">
+          <PatternStep Sides="both">
+            <Zones Zone="1,2" Timer="1" />
+            <Zones Zone="2,3" Timer="1" />
+            <Zones Zone="1,2" Timer="1" />
+            <Zones Zone="2,3" Timer="1" />
+          </PatternStep>
+        </Pattern>
+      </Patterns>
+      <SideZoneHelpers>
+        <Zone Side="left" PosHelper="QP_Lambach02_PianoAttack_LeftPos" DirHelper="QP_Lambach02_PianoAttack_LeftDir" />
+        <Zone Side="right" PosHelper="QP_Lambach02_PianoAttack_RightPos" DirHelper="QP_Lambach02_PianoAttack_RightDir" />
+      </SideZoneHelpers>
+    </Specific_AI_COFE_Lambach02_PianoAttack>
+  </Skill>
+</MetaData>

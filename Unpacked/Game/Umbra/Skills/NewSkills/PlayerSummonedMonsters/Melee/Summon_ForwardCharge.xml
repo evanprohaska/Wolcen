@@ -1,0 +1,64 @@
+<MetaData>
+  <Skill UID="summon_melee_forwardcharge_base" ESkill="summon_forwardcharge" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="impact" ShapeName="SummonSkill_ForwardCharge_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Summoned_Skeleton_Melee_TeleportSwordStrike" OnHit="PLAY_AI_Undead_Attack" PlayAttackVoice="1" />
+    <ParticleList>
+      <Particle Key="impact" Name="U_Summons.Thrust.Melee_Physical" Direction="0,1,0" Offset="0,-0.4,0" Bone="R_Weapon_Bone" />
+      <Particle Key="dash" Name="U_Summons.Dash.Skeleton.Dash_Physical" Bone="Bip01" Direction="0,1,0" Offset="0,0,1.25" Delay="0.2" />
+    </ParticleList>
+    <Specific_ForwardCharge DashSpeed="15" />
+  </Skill>
+  <Skill UID="summon_melee_forwardcharge_base_damage" ESkill="summon_forwardcharge" Keywords="magic_spell">
+    <HUD ShowParamsInTooltip="Explosion" ShowParamsInAST="Explosion" />
+    <Animation ActionString="monster_skill_02" AnimationDrivenMovement="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="impact" ShapeName="SummonSkill_ForwardCharge_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Summoned_Skeleton_Melee_TeleportSwordStrike" OnHit="PLAY_AI_Undead_Attack" PlayAttackVoice="1" />
+    <ParticleList>
+      <Particle Key="impact" Name="U_Summons.Thrust.Melee_Physical" Direction="0,1,0" Offset="0,-0.4,0" Bone="R_Weapon_Bone" />
+      <Particle Key="dash" Name="U_Summons.Dash.Skeleton.Dash_Physical" Bone="Bip01" Direction="0,1,0" Offset="0,0,1.25" Delay="0.2" />
+    </ParticleList>
+    <Specific_ForwardCharge DashSpeed="15" />
+  </Skill>
+  <Skill UID="summon_melee_forwardcharge_explosion" ESkill="summon_forwardcharge" Keywords="magic_spell">
+    <HUD ShowParamsInTooltip="Explosion" ShowParamsInAST="Explosion" />
+    <Animation ActionString="monster_skill_02" AnimationDrivenMovement="1" />
+    <DamageWeapon UseMinionDamageType="1" WeaponMultiplier="3" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="impact" ShapeName="SummonSkill_ForwardCharge_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Summoned_Skeleton_Melee_TeleportExpCharge" OnHit="PLAY_AI_Undead_Attack" PlayAttackVoice="1" />
+    <ParticleList>
+      <Particle Key="impact" Name="U_Summons.Thrust.Melee_Physical" Direction="0,1,0" Offset="0,-0.4,0" Bone="R_Weapon_Bone" />
+      <Particle Key="dash" Name="U_Summons.Dash.Skeleton.Dash_Physical" Bone="Bip01" Direction="0,1,0" Offset="0,0,1.25" Delay="0.2" />
+    </ParticleList>
+    <Specific_ForwardCharge DashSpeed="15" ExplodeOnEndPosReached="1" />
+  </Skill>
+  <Skill UID="summon_melee_forwardcharge_explosion_damage" ESkill="summon_forwardcharge" Keywords="magic_spell">
+    <HUD ShowParamsInTooltip="Explosion" ShowParamsInAST="Explosion" />
+    <Animation ActionString="monster_skill_02" AnimationDrivenMovement="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="6" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="impact" ShapeName="SummonSkill_ForwardCharge_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Summoned_Skeleton_Melee_TeleportExpCharge" OnHit="PLAY_AI_Undead_Attack" PlayAttackVoice="1" />
+    <ParticleList>
+      <Particle Key="impact" Name="U_Summons.Thrust.Melee_Physical" Direction="0,1,0" Offset="0,-0.4,0" Bone="R_Weapon_Bone" />
+      <Particle Key="dash" Name="U_Summons.Dash.Skeleton.Dash_Physical" Bone="Bip01" Direction="0,1,0" Offset="0,0,1.25" Delay="0.2" />
+    </ParticleList>
+    <Specific_ForwardCharge DashSpeed="15" ExplodeOnEndPosReached="1" />
+  </Skill>
+</MetaData>

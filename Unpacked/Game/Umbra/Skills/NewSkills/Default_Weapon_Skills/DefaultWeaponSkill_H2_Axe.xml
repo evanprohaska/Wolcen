@@ -1,0 +1,59 @@
+<MetaData>
+  <Skill UID="playerskill_H2_Axe_atk_01" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback TrailPresetBase="2hsword" FeedbackPresetBase="Player_weapon_2h_axe" BloodDecalOrientation="center" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_axe.png" UIName="@ui_AST_ComboBattleaxe" Lore="@ui_AST_ComboBattleaxe_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance" />
+    <Combo ComboStarter="Combo_H2_Axe" />
+    <Aggression TargetValueOnHit="20" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="Battleaxe_1" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="150" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H2_Axe_atk_02" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback TrailPresetBase="2hsword" FeedbackPresetBase="Player_weapon_2h_axe" BloodDecalOrientation="left" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_axe.png" UIName="@ui_AST_ComboBattleaxe" />
+    <Aggression TargetValueOnHit="20" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="Battleaxe_2" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="150" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H2_Axe_atk_loop_01" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_loop_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback TrailPresetBase="2hsword" FeedbackPresetBase="Player_weapon_2h_axe" BloodDecalOrientation="center" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_axe.png" UIName="@ui_AST_ComboBattleaxe" />
+    <Aggression TargetValueOnHit="20" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="Battleaxe_3" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="150" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+  <Skill UID="playerskill_H2_Axe_atk_loop_02" ESkill="default_melee" Keywords="default_melee,attack_skill">
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <CastingParams CancellableByDefault="1" />
+    <VisualFeedback TrailPresetBase="2hsword" FeedbackPresetBase="Player_weapon_2h_axe" BloodDecalOrientation="forward" />
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h2_axe.png" UIName="@ui_AST_ComboBattleaxe" />
+    <Aggression TargetValueOnHit="20" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Shapes>
+      <Entry ShapeName="Battleaxe_4" />
+    </Shapes>
+    <SkillSpecific />
+    <ResourceGain UseDefaultRageGeneration="1" DefaultRageGenerationFactor="150" />
+    <SoundTrigger OnAnimStart="Play_Foley_Move_Short" OnHit="PLAY_Skill_DefaultWeapon_Impact" OnCriticalHit="PLAY_Skill_DefaultWeapon_CriticalImpact" OnKill="Play_OnKill_Impact_Lethal_Melee" />
+  </Skill>
+</MetaData>

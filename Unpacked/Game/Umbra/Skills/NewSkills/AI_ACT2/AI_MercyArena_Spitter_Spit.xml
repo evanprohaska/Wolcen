@@ -1,0 +1,33 @@
+<MetaData>
+  <Skill UID="AI_MercyArena_spitter_acidspit" ESkill="AI_default_projectileskillwithdamagezone" Keywords="projectile,magic_spell">
+    <Projectile Name="svriir_beta_spitter_acidspit_proj" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <StatusAilment>
+      <poison Chance="100" ChanceMode="ignored" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <CastingParams MaximumTurnRate="360" CastBone="Bip01 Jaw0" CasterImmobilizationTime="1" MaximumTargetingHalfAngle="10" CanBeInterrupted="0" />
+    <Cooldown Cooldown="2.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Explosion ExplosionRadius="3" />
+    <Range AttackRange="15" />
+    <SoundTrigger onAnimCast="PLAY_AI_SvriirSpitter_SpitShot" OnHit="PLAY_AI_SvriirSpitter_AcidDamage" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_MercyArena_spitter_acidspit_damagezone" />
+    </SecondarySkillToCast>
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+  </Skill>
+  <Skill UID="AI_MercyArena_spitter_acidspit_damagezone" ESkill="AI_default_projectileskillwithdamagezone_damagezone" Keywords="magic_spell">
+    <DamageWeapon Type="toxic" WeaponMultiplier="1" />
+    <StatusAilment>
+      <poison Chance="100" ChanceMode="Ignored" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="MercyArena_Spitter_Spit_DZ" />
+    </DamageZone>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <SoundTrigger OnHit="PLAY_AI_SvriirSpitter_AcidDamage" />
+  </Skill>
+</MetaData>

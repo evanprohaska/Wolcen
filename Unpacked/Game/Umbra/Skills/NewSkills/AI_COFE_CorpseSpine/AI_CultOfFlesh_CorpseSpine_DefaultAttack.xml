@@ -1,0 +1,33 @@
+<MetaData>
+  <Skill UID="AI_COFE_CorpseSpine_DefaultAttack" ESkill="AI_default_projectileskillwithdamagezone" Keywords="projectile,magic_spell">
+    <Projectile Name="COFE_CorpseSpine_Proj_DefaultAttack" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <Burn Chance="100" ChanceMode="ignored" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <CastingParams MaximumTurnRate="360" CastBone="Bip01 BigHead" CasterImmobilizationTime="1" MaximumTargetingHalfAngle="10" CanBeInterrupted="0" />
+    <Cooldown Cooldown="3.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Explosion ExplosionRadius="3" />
+    <Range AttackRange="15" />
+    <SoundTrigger onAnimCast="PLAY_AI_SvriirSpitter_SpitShot" OnHit="PLAY_AI_SvriirSpitter_AcidDamage" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFE_CorpseSpine_RangedAttack_DamageZone" />
+    </SecondarySkillToCast>
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+  </Skill>
+  <Skill UID="AI_COFE_CorpseSpine_RangedAttack_DamageZone" ESkill="AI_default_projectileskillwithdamagezone_damagezone" Keywords="magic_spell,projectile">
+    <DamageWeapon Type="Rend" WeaponMultiplier=".8" />
+    <StatusAilment>
+      <Burn Chance="100" ChanceMode="ignored" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="COFE_CorpseSpine_RangedAttack_DZ" />
+    </DamageZone>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <SoundTrigger OnHit="PLAY_AI_SvriirSpitter_AcidDamage" />
+  </Skill>
+</MetaData>

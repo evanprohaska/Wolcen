@@ -1,0 +1,225 @@
+<MetaData>
+  <Skill UID="unique_brutalstrike_onhit" ESkill="player_brutalstrike" Keywords="explosion,attack_skill,passive_effect">
+    <WeaponRequirements Requirements="melee" />
+    <CastingParams CastBone="Bip01 Spine" MaximumTurnRate="180" CanMultiCast="1" CancellableByDefault="1" />
+    <Aggression TargetValueOnHit="20" />
+    <Targeting TargetOnGround="1" />
+    <DamageWeapon WeaponMultiplier="7" />
+    <Damage_Conversion>
+      <Entry From="physical" To="rend" ConversionRate="100" />
+    </Damage_Conversion>
+    <StatusAilment AilmentEffectiveness="115" />
+    <PostProcess CameraZoomStartTime=".2" CameraZoomDuration="0.5" CameraUnzoomDuration="0.08" CameraZoomFov="32" ChromaShiftStartTime="0.4" ChromaShiftLerpDuration="0.2" ChromaShiftRestoreLerpDuration="0.15" ChromaShiftMaxAmount=".65" />
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <ParticleList>
+      <Particle Key="Impact_Base" Name="U_CommonVFX.Impact_Ground.Physical_01_Fire_2M" Direction="0,0,1" Scale="1" OffSet="0,0,0" />
+      <Particle Key="appear" Name="U_Character.Skills.BrutalStrike_Hammer_Appear_01_Fire" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="loop" Name="U_Character.Skills.BrutalStrike_Hammer_Looping_01_Fire" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="disappear" Name="U_Character.Skills.BrutalStrike_Hammer_Disappear_01_Fire" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Fire" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="wind" Name="U_Character.Skills.BrutalStrike_Wind_01_Fire" Scale="1" Direction="0,1,0" />
+      <Particle Key="blink" Name="U_Character.Skills.BrutalStrike_Hammer_Blink_01_Fire" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.BrutalStrike_Charging_Fire_01" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.BrutalStrike_Charging_Fire_02" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.BrutalStrike_Charging_Fire_03" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.BrutalStrike_Charging_Fire_04" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.BrutalStrike_Charging_Trigger_Fire" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1.2" Direction="0,1,0" />
+      <Particle Key="impact" Name="U_Character.Skills.BrutalStrike_Impact_Ground_Fire" Direction="0,0,1" Scale=".75" />
+      <Particle Key="Wave" Name="U_Character.Skills.BrutalStrike_Impact_Wave_01_Fire" Direction="0,1,0" />
+    </ParticleList>
+    <Specific_BrutalStrike HitForwardOffset="1.8" SubSkillToCast="secondary_chainlightning_physical" MaxHitPerEntity="1" WaveDamageMultiplier="0.85" WaveComponentRadius="2">
+      <ExplosionSequence>
+        <Entry Offset="0,2,0" Delay="0" />
+        <Entry Offset="1.5,4,0" Delay="0.05" />
+        <Entry Offset="-1.5,4,0" Delay="0.1" />
+        <Entry Offset="-3,6,0" Delay="0.15" />
+        <Entry Offset="3,6,0" Delay="0.2" />
+        <Entry Offset="0,6.5,0" Delay="0.25" />
+      </ExplosionSequence>
+    </Specific_BrutalStrike>
+    <Explosion ExplosionRadius="3" />
+    <SoundTrigger OnAnimStart="PLAY_Skill_BrutalStrike_Swing" OnAnimCast="PLAY_Skill_BrutalStrike_Impact" OnHit="Play_Skill_BrutalStrike_Damage" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Hammer" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_brutalstrike" BloodDecalOrientation="forward" />
+    <Shapes>
+      <Entry Key="Wave" ShapeName="Player_BrutalStrike_Wave_Shape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="unique_lightningbrutalstrike_onhit" ESkill="player_brutalstrike" Keywords="explosion,attack_skill,passive_effect">
+    <WeaponRequirements Requirements="melee" />
+    <CastingParams CastBone="Bip01 Spine" MaximumTurnRate="180" CanMultiCast="1" CancellableByDefault="1" />
+    <Aggression TargetValueOnHit="20" />
+    <Targeting TargetOnGround="1" />
+    <DamageWeapon WeaponMultiplier="7" />
+    <Damage_Conversion>
+      <Entry From="physical" To="lightning" ConversionRate="100" />
+    </Damage_Conversion>
+    <StatusAilment AilmentEffectiveness="115" />
+    <PostProcess CameraZoomStartTime=".2" CameraZoomDuration="0.5" CameraUnzoomDuration="0.08" CameraZoomFov="32" ChromaShiftStartTime="0.4" ChromaShiftLerpDuration="0.2" ChromaShiftRestoreLerpDuration="0.15" ChromaShiftMaxAmount=".65" />
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <ParticleList>
+      <Particle Key="Impact_Base" Name="U_CommonVFX.Impact_Ground.Physical_01_Lightning_2M" Direction="0,0,1" Scale="1" OffSet="0,0,0" />
+      <Particle Key="appear" Name="U_Character.Skills.BrutalStrike_Hammer_Appear_01_Lightning" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="loop" Name="U_Character.Skills.BrutalStrike_Hammer_Looping_01_Lightning" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="disappear" Name="U_Character.Skills.BrutalStrike_Hammer_Disappear_01_Lightning" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.BrutalStrike_ChargingAura_01_Lightning" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.BrutalStrike_Charge_01_Lightning" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.BrutalStrike_Charge_02_Lightning" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.BrutalStrike_Charge_03_Lightning" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.BrutalStrike_Charge_04_Lightning" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.BrutalStrike_Charge_Final_Lightning" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1.2" Direction="0,1,0" />
+      <Particle Key="impact" Name="U_CommonVFX.Impact_Ground.Physical_01_Lightning_2M" Direction="0,0,1" Scale=".75" />
+      <Particle Key="Wave" Name="U_Character.Skills.BrutalStrike_Impact_Wave_01_Lightning" Direction="0,1,0" />
+    </ParticleList>
+    <Specific_BrutalStrike HitForwardOffset="1.8" SubSkillToCast="secondary_chainlightning_physical" MaxHitPerEntity="1" WaveDamageMultiplier="0.85" WaveComponentRadius="2">
+      <ExplosionSequence>
+        <Entry Offset="0,2,0" Delay="0" />
+        <Entry Offset="1.5,4,0" Delay="0.05" />
+        <Entry Offset="-1.5,4,0" Delay="0.1" />
+        <Entry Offset="-3,6,0" Delay="0.15" />
+        <Entry Offset="3,6,0" Delay="0.2" />
+        <Entry Offset="0,6.5,0" Delay="0.25" />
+      </ExplosionSequence>
+    </Specific_BrutalStrike>
+    <Explosion ExplosionRadius="3" />
+    <SoundTrigger OnAnimStart="PLAY_Skill_BrutalStrike_Swing" OnAnimCast="PLAY_Skill_BrutalStrike_Impact" OnHit="Play_Skill_BrutalStrike_Damage" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Hammer" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_brutalstrike" BloodDecalOrientation="forward" />
+    <Shapes>
+      <Entry Key="Wave" ShapeName="Player_BrutalStrike_Wave_Shape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="unique_firebrutalstrike_onhit" ESkill="player_brutalstrike" Keywords="explosion,attack_skill,passive_effect">
+    <WeaponRequirements Requirements="melee" />
+    <CastingParams CastBone="Bip01 Spine" MaximumTurnRate="180" CanMultiCast="1" CancellableByDefault="1" />
+    <Aggression TargetValueOnHit="20" />
+    <Targeting TargetOnGround="1" />
+    <DamageWeapon WeaponMultiplier="7" />
+    <Damage_Conversion>
+      <Entry From="physical" To="fire" ConversionRate="100" />
+    </Damage_Conversion>
+    <StatusAilment AilmentEffectiveness="115" />
+    <PostProcess CameraZoomStartTime=".2" CameraZoomDuration="0.5" CameraUnzoomDuration="0.08" CameraZoomFov="32" ChromaShiftStartTime="0.4" ChromaShiftLerpDuration="0.2" ChromaShiftRestoreLerpDuration="0.15" ChromaShiftMaxAmount=".65" />
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <ParticleList>
+      <Particle Key="Impact_Base" Name="U_CommonVFX.Impact_Ground.Physical_01_Fire_2M" Direction="0,0,1" Scale="1" OffSet="0,0,0" />
+      <Particle Key="appear" Name="U_Character.Skills.BrutalStrike_Hammer_Appear_01_Fire" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="loop" Name="U_Character.Skills.BrutalStrike_Hammer_Looping_01_Fire" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="disappear" Name="U_Character.Skills.BrutalStrike_Hammer_Disappear_01_Fire" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character_02.Sniper.Sniper_Charging_Aura_01_Fire" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="wind" Name="U_Character.Skills.BrutalStrike_Wind_01_Fire" Scale="1" Direction="0,1,0" />
+      <Particle Key="blink" Name="U_Character.Skills.BrutalStrike_Hammer_Blink_01_Fire" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.BrutalStrike_Charging_Fire_01" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.BrutalStrike_Charging_Fire_02" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.BrutalStrike_Charging_Fire_03" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.BrutalStrike_Charging_Fire_04" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.BrutalStrike_Charging_Trigger_Fire" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1.2" Direction="0,1,0" />
+      <Particle Key="impact" Name="U_Character.Skills.BrutalStrike_Impact_Ground_Fire" Direction="0,0,1" Scale=".75" />
+      <Particle Key="Wave" Name="U_Character.Skills.BrutalStrike_Impact_Wave_01_Fire" Direction="0,1,0" />
+    </ParticleList>
+    <Specific_BrutalStrike HitForwardOffset="1.8" SubSkillToCast="secondary_chainlightning_physical" MaxHitPerEntity="1" WaveDamageMultiplier="0.85" WaveComponentRadius="2">
+      <ExplosionSequence>
+        <Entry Offset="0,2,0" Delay="0" />
+        <Entry Offset="1.5,4,0" Delay="0.05" />
+        <Entry Offset="-1.5,4,0" Delay="0.1" />
+        <Entry Offset="-3,6,0" Delay="0.15" />
+        <Entry Offset="3,6,0" Delay="0.2" />
+        <Entry Offset="0,6.5,0" Delay="0.25" />
+      </ExplosionSequence>
+    </Specific_BrutalStrike>
+    <Explosion ExplosionRadius="3" />
+    <SoundTrigger OnAnimStart="PLAY_Skill_BrutalStrike_Swing" OnAnimCast="PLAY_Skill_BrutalStrike_Impact" OnHit="Play_Skill_BrutalStrike_Damage" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Hammer" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_brutalstrike" BloodDecalOrientation="forward" />
+    <Shapes>
+      <Entry Key="Wave" ShapeName="Player_BrutalStrike_Wave_Shape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="unique_umbrabrutalstrike_onhit" ESkill="player_brutalstrike" Keywords="explosion,attack_skill,passive_effect">
+    <WeaponRequirements Requirements="melee" />
+    <CastingParams CastBone="Bip01 Spine" MaximumTurnRate="180" CanMultiCast="1" CancellableByDefault="1" />
+    <Aggression TargetValueOnHit="20" />
+    <Targeting TargetOnGround="1" />
+    <DamageWeapon WeaponMultiplier="7" />
+    <Damage_Conversion>
+      <Entry From="physical" To="umbra" ConversionRate="100" />
+    </Damage_Conversion>
+    <StatusAilment AilmentEffectiveness="115" />
+    <PostProcess CameraZoomStartTime=".2" CameraZoomDuration="0.5" CameraUnzoomDuration="0.08" CameraZoomFov="32" ChromaShiftStartTime="0.4" ChromaShiftLerpDuration="0.2" ChromaShiftRestoreLerpDuration="0.15" ChromaShiftMaxAmount=".65" />
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <ParticleList>
+      <Particle Key="Impact_Base" Name="U_CommonVFX.Impact_Ground.Physical_01_Aether_2M" Direction="0,0,1" Scale="1" OffSet="0,0,0" />
+      <Particle Key="appear" Name="U_Character.Skills.BrutalStrike_Hammer_Appear_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="loop" Name="U_Character.Skills.BrutalStrike_Hammer_Looping_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="disappear" Name="U_Character.Skills.BrutalStrike_Hammer_Disappear_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.BrutalStrike_Charging_Aura_Aether" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="wind" Name="U_Character.Skills.BrutalStrike_Wind_01_Aether" Scale="1" Direction="0,1,0" />
+      <Particle Key="blink" Name="U_Character.Skills.BrutalStrike_Hammer_Blink_01_Aether" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.BrutalStrike_Charging_Aether_01" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.BrutalStrike_Charging_Aether_02" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.BrutalStrike_Charging_Aether_03" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.BrutalStrike_Charging_Aether_04" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.BrutalStrike_Charging_Trigger_Aether" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1.2" Direction="0,1,0" />
+      <Particle Key="impact" Name="U_CommonVFX.Impact_Ground.Physical_01_Aether_2M" Direction="0,0,1" Scale=".75" />
+      <Particle Key="Wave" Name="U_Character.Skills.BrutalStrike_Impact_Wave_01_Aether" Direction="0,1,0" />
+    </ParticleList>
+    <Specific_BrutalStrike HitForwardOffset="1.8" SubSkillToCast="secondary_chainlightning_physical" MaxHitPerEntity="1" WaveDamageMultiplier="0.85" WaveComponentRadius="2">
+      <ExplosionSequence>
+        <Entry Offset="0,2,0" Delay="0" />
+        <Entry Offset="1.5,4,0" Delay="0.05" />
+        <Entry Offset="-1.5,4,0" Delay="0.1" />
+        <Entry Offset="-3,6,0" Delay="0.15" />
+        <Entry Offset="3,6,0" Delay="0.2" />
+        <Entry Offset="0,6.5,0" Delay="0.25" />
+      </ExplosionSequence>
+    </Specific_BrutalStrike>
+    <Explosion ExplosionRadius="3" />
+    <SoundTrigger OnAnimStart="PLAY_Skill_BrutalStrike_Swing" OnAnimCast="PLAY_Skill_BrutalStrike_Impact" OnHit="Play_Skill_BrutalStrike_Damage" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Hammer" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_brutalstrike" BloodDecalOrientation="forward" />
+    <Shapes>
+      <Entry Key="Wave" ShapeName="Player_BrutalStrike_Wave_Shape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="unique_sacredbrutalstrike_onhit" ESkill="player_brutalstrike" Keywords="explosion,attack_skill,passive_effect">
+    <WeaponRequirements Requirements="melee" />
+    <CastingParams CastBone="Bip01 Spine" MaximumTurnRate="180" CanMultiCast="1" CancellableByDefault="1" />
+    <Aggression TargetValueOnHit="20" />
+    <Targeting TargetOnGround="1" />
+    <DamageWeapon WeaponMultiplier="7" />
+    <Damage_Conversion>
+      <Entry From="physical" To="sacred" ConversionRate="100" />
+    </Damage_Conversion>
+    <StatusAilment AilmentEffectiveness="115" />
+    <PostProcess CameraZoomStartTime=".2" CameraZoomDuration="0.5" CameraUnzoomDuration="0.08" CameraZoomFov="32" ChromaShiftStartTime="0.4" ChromaShiftLerpDuration="0.2" ChromaShiftRestoreLerpDuration="0.15" ChromaShiftMaxAmount=".65" />
+    <Cooldown Cooldown="0" CooldownPerLevel="0" />
+    <ParticleList>
+      <Particle Key="Impact_Base" Name="U_CommonVFX.Impact_Ground.Physical_01_Sacred_2M" Direction="0,0,1" Scale="1" OffSet="0,0,0" />
+      <Particle Key="appear" Name="U_Character.Skills.BrutalStrike_Hammer_Appear_01_Sacred" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="loop" Name="U_Character.Skills.BrutalStrike_Hammer_Looping_01_Sacred" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="disappear" Name="U_Character.Skills.BrutalStrike_Hammer_Disappear_01_Sacred" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="aura" Name="U_Character.Skills.BrutalStrike_Charging_Aura_Sacred" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="wind" Name="U_Character.Skills.BrutalStrike_Wind_01_Sacred" Scale="1" Direction="0,1,0" />
+      <Particle Key="blink" Name="U_Character.Skills.BrutalStrike_Hammer_Blink_01_Sacred" Bone="R_Weapon_Bone" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow1" Name="U_Character.Skills.BrutalStrike_Charging_Sacred_01" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow2" Name="U_Character.Skills.BrutalStrike_Charging_Sacred_02" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow3" Name="U_Character.Skills.BrutalStrike_Charging_Sacred_03" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glow4" Name="U_Character.Skills.BrutalStrike_Charging_Sacred_04" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1" Direction="0,1,0" />
+      <Particle Key="glowf" Name="U_Character.Skills.BrutalStrike_Charging_Trigger_Sacred" Bone="R_Weapon_Bone" OffSet="0,1.5,0" Scale="1.2" Direction="0,1,0" />
+      <Particle Key="impact" Name="U_CommonVFX.Impact_Ground.Physical_01_Sacred_2M" Direction="0,0,1" Scale=".75" />
+      <Particle Key="Wave" Name="U_Character.Skills.BrutalStrike_Impact_Wave_01_Sacred" Direction="0,1,0" />
+    </ParticleList>
+    <Specific_BrutalStrike HitForwardOffset="1.8" SubSkillToCast="secondary_chainlightning_physical" MaxHitPerEntity="1" WaveDamageMultiplier="0.85" WaveComponentRadius="2">
+      <ExplosionSequence>
+        <Entry Offset="0,2,0" Delay="0" />
+        <Entry Offset="1.5,4,0" Delay="0.05" />
+        <Entry Offset="-1.5,4,0" Delay="0.1" />
+        <Entry Offset="-3,6,0" Delay="0.15" />
+        <Entry Offset="3,6,0" Delay="0.2" />
+        <Entry Offset="0,6.5,0" Delay="0.25" />
+      </ExplosionSequence>
+    </Specific_BrutalStrike>
+    <Explosion ExplosionRadius="3" />
+    <SoundTrigger OnAnimStart="PLAY_Skill_BrutalStrike_Swing" OnAnimCast="PLAY_Skill_BrutalStrike_Impact" OnHit="Play_Skill_BrutalStrike_Damage" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Hammer" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_brutalstrike" BloodDecalOrientation="forward" />
+    <Shapes>
+      <Entry Key="Wave" ShapeName="Player_BrutalStrike_Wave_Shape" />
+    </Shapes>
+  </Skill>
+</MetaData>

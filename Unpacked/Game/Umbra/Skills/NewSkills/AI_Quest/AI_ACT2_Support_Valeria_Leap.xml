@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="AI_ACT2_Support_Valeria_Leap" ESkill="AI_default_leap" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="2" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar03_ExplosiveLeap_Explosion" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="LeapImpact" Name="U_CommonVFX.Impact_Ground.Physical_01_3M" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <SkillSpecific Speed="40" MoveDistanceMinimum="1" MoveDistanceMaximum="30" MidPointAdvancement="0.75" RaycastHeightOffset="10" JumpHeight="5.0" JumpZOnlyForce="16" JumpZOnlyFallingGravityMultiplier="8" HeightLimit="2" NavPathLengthLimit="20" TriggerDistance="2" LeapGravity="-30" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="100" In="0.5" />
+      <EmissiveIntensity From="100" To="150" In="0.7" />
+      <EmissiveIntensity From="150" To="175" In="1" />
+      <EmissiveIntensity From="175" To="200" In="2" />
+      <EmissiveIntensity From="180" To="100" In="1" />
+      <EmissiveIntensity From="100" To="origin" In="1" />
+    </Material>
+    <SoundTrigger OnAnimStart="Play_Skill_Valeria_Leap_Jump" OnAnimCast="Play_Skill_Valeria_Leap_Land" PlayAttackvoice="1" />
+  </Skill>
+</MetaData>

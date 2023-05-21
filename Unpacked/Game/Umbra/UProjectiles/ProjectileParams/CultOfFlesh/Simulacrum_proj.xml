@@ -1,0 +1,18 @@
+<MetaData>
+  <Projectile ID="Simulacrum_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.simulacrum.proj" Direction="0,1,0" WorldSpace="0" />
+      <Hit Direction="0,1,0" ParticleName="U_Monster_Alt.cultist_flesh.impact_target" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="Play_COFE_Simulacrum_Projectile_Impact" />
+      <Launch SoundTriggerName="Play_COFE_Simulacrum_Projectile_Cast" />
+      <Removed SoundTriggerName="Stop_COFE_Simulacrum_Projectile_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

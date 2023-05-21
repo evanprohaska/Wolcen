@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill ESkill="AI_halfbreed_soulcharge" Keywords="magic_spell" UID="AI_HalfBreed_SoulCharge">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out_01" ActionString_OutMissed="monster_skill_loop_02_out_02" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="8.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Projectile Name="halfbreed_soulcharge_proj" ProjectileCount="1" PenetrationLimit="99" />
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.HalfBread.HalfBread_Disappear_01" Direction="0,1,0" />
+      <Particle Key="Move" Name="U_Monster.HalfBread.HalfBread_MoveAura_01" Direction="0,1,0" Bone="Bip01 Spine" />
+      <Particle Key="CastAura" Name="U_Monster.HalfBread.Charging_Aura_01" Direction="0,1,0" Bone="Bip01 Spine3" />
+    </ParticleList>
+    <StatusAilment>
+      <freeze Chance="100" ChanceMode="override" Duration="1" DurationMode="override" />
+    </StatusAilment>
+    <SkillSpecific AlwaysTeleport="1" ProjectileExtraRange="10" DistanceFromTargetAfterTeleport="1.0" MoveSpeedAfterImpact="24" DecoyCharacterFilepath="Game/objects/characters/mobs/Non_Humanoid/Halfbreed/COSS_Halfbreed_Skill/COSS_Halfbreed.cdf" DecoyAnim="coss_halfbreed_move_01" DecoyAnimSpeed="2" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_halfbreed_soulcharge_explosion" />
+    </SecondarySkillToCast>
+    <SoundTrigger OnAnimStart="Play_Halfbreed_SoulCharge_Buildup" OnAnimCast="Play_Halfbreed_SoulCharge_Disappear" OnHit="Play_Halfbreed_SoulCharge_Pre_Impact" PlayAttackVoice="0" />
+  </Skill>
+  <Skill ESkill="AI_default_explosiononself" Keywords="magic_spell" UID="AI_halfbreed_soulcharge_explosion">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageWeapon Type="frost" WeaponMultiplier="2" />
+    <Explosion ExplosionRadius="3" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="U_Monster.HalfBread.HalfBread_Impact_01" Direction="0,1,0" />
+    </ParticleList>
+    <SoundTrigger OnAnimStart="" OnAnimCast="" OnHit="Play_Halfbreed_SoulCharge_Impact" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

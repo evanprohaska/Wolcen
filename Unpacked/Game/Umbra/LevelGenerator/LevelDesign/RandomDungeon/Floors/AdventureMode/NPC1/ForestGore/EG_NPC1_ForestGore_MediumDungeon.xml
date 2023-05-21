@@ -1,0 +1,153 @@
+<RandomDungeon>
+  <Dungeon Name="EG_NPC1_BloodyForest_MediumDungeon" Architecture="BloodyForest" DisplayDungeonExitMinimapIcon="0" DisplayDungeonNextLevelMinimapIcon="0" TileSize="150" LibraryPath="Prefabs/dungeon_BloodyForest.xml" IsRoguelike="0" NumberOfCPTiles="3" IsSPOnlyConnectedToCP="0" MinimumNumberOfLoop="0" MaximumNumberOfLoop="0" MinimumNumberOfDeadEnd="2" MaximumNumberOfDeadEnd="2" MinimumLoopSize="2" MaximumLoopSize="2" MinimumDeadEndSize="1" MaximumDeadEndSize="1">
+    <SpawnClassFamilies />
+    <LevelSheetName Name="Stormfall" />
+    <Rendering>
+      <Entry Weight="2">
+        <Sun Latitude="259" Longitude="144" />
+        <Tod Filename="tod_dungeon_gloomyforest.xml" Time="12" />
+        <ColorGradient Texture="textures/colorcharts/default_cch.dds" Time="1" />
+        <RimLight Color="241,217,136" Azimuth="170" Site="70" FresnelPower="2" FresnelMultiplier="1.4" Power="1" Multiplier="0.03" />
+        <PlayerLights Toggles="10" />
+        <CameraAngle Angles="30,45,60" />
+        <CloudShadow Texture="textures/clouds/Cumulus_bright.dds" Speed="0.02,0.04,0" Tiling="50" Brightness="1" />
+      </Entry>
+      <Entry Weight="1">
+        <Sun Latitude="259" Longitude="144" />
+        <Tod Filename="tod_dungeon_bloodyforest.xml" Time="12" />
+        <ColorGradient Texture="textures/colorcharts/default_cch.dds" Time="1" />
+        <RimLight Color="241,217,136" Azimuth="170" Site="70" FresnelPower="2" FresnelMultiplier="1.4" Power="1" Multiplier="0.03" />
+        <PlayerLights Toggles="12" />
+        <CameraAngle Angles="30,45,60" />
+        <CloudShadow Texture="textures/clouds/Cumulus_bright.dds" Speed="0.02,0.04,0" Tiling="50" Brightness="1" />
+      </Entry>
+      <Entry Weight="1">
+        <Sun Latitude="259" Longitude="144" />
+        <Tod Filename="tod_dungeon_mossyforest_red.xml" Time="12" />
+        <ColorGradient Texture="textures/colorcharts/default_cch.dds" Time="1" />
+        <RimLight Color="241,217,136" Azimuth="170" Site="70" FresnelPower="2" FresnelMultiplier="1.4" Power="1" Multiplier="0.03" />
+        <PlayerLights Toggles="13" />
+        <CameraAngle Angles="30,45,60" />
+        <CloudShadow Texture="textures/clouds/Cumulus_bright.dds" Speed="0.02,0.04,0" Tiling="50" Brightness="1" />
+      </Entry>
+    </Rendering>
+    <MusicState AudioSwitch="MusicStateBeta" AudioState="Graveyard" />
+  </Dungeon>
+  <Tiles>
+    <Entrance RandomSelection="1">
+      <TypeN Weight="1">
+        <Tile Name="Entrance1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+        <Tile Name="Entrance2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeN>
+    </Entrance>
+    <Exit RandomSelection="1">
+      <TypeS Weight="1">
+        <Tile Name="ExitDeadEnd" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeS>
+    </Exit>
+    <CP RandomSelection="1">
+      <TypeNS Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNS>
+      <TypeSW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeSW>
+      <TypeNW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNW>
+      <TypeWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeWE>
+      <TypeSE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeSE>
+      <TypeNE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNE>
+    </CP>
+    <SP RandomSelection="1">
+      <TypeNS Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNS>
+      <TypeSW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeSW>
+      <TypeNW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNW>
+      <TypeWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeWE>
+      <TypeSE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeSE>
+      <TypeNE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNE>
+    </SP>
+    <CCP RandomSelection="1">
+      <TypeNSW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNSW>
+      <TypeNSE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNSE>
+      <TypeNSWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNSWE>
+      <TypeNWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNWE>
+      <TypeSWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeSWE>
+    </CCP>
+    <CSP RandomSelection="1">
+      <TypeNSW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNSW>
+      <TypeNSE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNSE>
+      <TypeNSWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNSWE>
+      <TypeNWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+        <Tile Name="2" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeNWE>
+      <TypeSWE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" StringLimitation="2" />
+      </TypeSWE>
+    </CSP>
+    <DeadEnd RandomSelection="1">
+      <TypeS Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeS>
+      <TypeN Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeN>
+      <TypeW Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeW>
+      <TypeE Weight="1">
+        <Tile Name="1" Weight="1" Minimum="0" Maximum="0" PositionOnCP="0" IsConvergencePoint="0" />
+      </TypeE>
+    </DeadEnd>
+  </Tiles>
+</RandomDungeon>

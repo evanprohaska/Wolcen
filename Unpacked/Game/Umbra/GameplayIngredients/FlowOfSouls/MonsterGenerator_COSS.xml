@@ -1,0 +1,122 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="MonsterGenerator_CultOfSouls_Zombie">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_undead" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_undead" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Undead_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Undead_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_CultOfSouls_Zombie" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_CultOfSouls_Zombie_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_COS" Model="objects/animated_object/misc/spawner/cosundead_mobspawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_CultOfSouls_Zombie" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_CultOfSouls_ZombieSoldier">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_undead" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_undead" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Undead_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Undead_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1.5" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_CultOfSouls_ZombieSoldier" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_CultOfSouls_ZombieSoldier_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_COS" Model="objects/animated_object/misc/spawner/cosundead_mobspawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_CultOfSouls_ZombieSoldier" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_CultOfSouls_LostSoul">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_undead" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_undead" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Undead_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Undead_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_CultOfSouls_LostSoul" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_CultOfSouls_LostSoul_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_COS" Model="objects/animated_object/misc/spawner/cosundead_mobspawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_CultOfSouls_LostSoul" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_CultOfSouls_MiniHalfBreed_physical">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_undead" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_undead" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Undead_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Undead_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_CultOfSouls_MiniHalfBreed_physical" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_CultOfSouls_MiniHalfBreed_physical_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_COS" Model="objects/animated_object/misc/spawner/cosundead_mobspawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_CultOfSouls_MiniHalfBreed_physical" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_CultOfSouls_MiniSpecter_shadow">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_undead" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_undead" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Undead_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Undead_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_CultOfSouls_MiniSpecter_shadow" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_CultOfSouls_MiniSpecter_shadow_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_COS" Model="objects/animated_object/misc/spawner/cosundead_mobspawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_CultOfSouls_MiniSpecter_shadow" />
+  </FlowOfSoulsPresetList>
+</MetaData>

@@ -1,0 +1,24 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="FlowOfSouls_edric_p2_outer">
+    <Particles>
+      <Particle Key="WarmUpVFX" Name="U_CommonVFX.FlowOfSoul.FlowOfSoul_AOE_01_Ready" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="SkillCastVFX" Name="U_CommonVFX.FlowOfSoul.FlowOfSoul_AOE_01" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+    </Particles>
+    <Iterations Number="0" WarmUpTime="5" CooldownMin="5.0" CooldownMax="5.0" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="1" FireRate="0.5" SkillUID="Skill_FlowOfSouls_edric_p2_outer" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPreset Name="FlowOfSouls_edric_p2_center">
+    <Particles>
+      <Particle Key="WarmUpVFX" Name="U_CommonVFX.FlowOfSoul.FlowOfSoul_AOE_01_Ready" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="U_CommonVFX.FlowOfSoul.FlowOfSoul_AOE_01" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+    </Particles>
+    <Iterations Number="0" WarmUpTime="5" CooldownMin="5.0" CooldownMax="5.0" DelayBeforeFirstIteration="10.5" />
+    <SkillCast Number="1" FireRate="0.5" SkillUID="Skill_FlowOfSouls" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="FlowOfSoulsPreset_edric_p2_center" Loop="0" NewStartingPosition="0">
+    <Preset Name="FlowOfSouls_edric_p2_center" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPresetList Name="FlowOfSoulsPreset_edric_p2_outer" Loop="0" NewStartingPosition="0">
+    <Preset Name="FlowOfSouls_edric_p2_outer" />
+  </FlowOfSoulsPresetList>
+</MetaData>

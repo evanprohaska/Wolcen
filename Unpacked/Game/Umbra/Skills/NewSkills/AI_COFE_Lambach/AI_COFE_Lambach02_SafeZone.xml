@@ -1,0 +1,52 @@
+<MetaData>
+  <Skill UID="AI_COFE_Lambach02_SafeZone" ESkill="AI_COFE_Lambach02_SafeZone" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="0.5" />
+    <Cooldown Cooldown="7" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <StringList>
+      <String Key="Character" String="Game/Objects/characters/mobs/Non_Humanoid/Tentacle/COFE_Tentacle/COFE_Tentacle_Lambach.cdf" />
+      <String Key="Animation01_In" String="COFE_Tentacle_skill_SafeZone_01_In" />
+      <String Key="Animation01_Loop" String="COFE_Tentacle_skill_SafeZone_01_Loop" />
+      <String Key="Animation01_Out" String="COFE_Tentacle_skill_SafeZone_01_Out" />
+      <String Key="Animation02_In" String="COFE_Tentacle_skill_SafeZone_02_In" />
+      <String Key="Animation02_Loop" String="COFE_Tentacle_skill_SafeZone_02_Loop" />
+      <String Key="Animation02_Out" String="COFE_Tentacle_skill_SafeZone_02_Out" />
+      <String Key="Animation03_In" String="COFE_Tentacle_skill_SafeZone_03_In" />
+      <String Key="Animation03_Loop" String="COFE_Tentacle_skill_SafeZone_03_Loop" />
+      <String Key="Animation03_Out" String="COFE_Tentacle_skill_SafeZone_03_Out" />
+      <String Key="Animation04_In" String="COFE_Tentacle_skill_SafeZone_04_In" />
+      <String Key="Animation04_Loop" String="COFE_Tentacle_skill_SafeZone_04_Loop" />
+      <String Key="Animation04_Out" String="COFE_Tentacle_skill_SafeZone_04_Out" />
+      <String Key="Animation05_In" String="COFE_Tentacle_skill_SafeZone_05_In" />
+      <String Key="Animation05_Loop" String="COFE_Tentacle_skill_SafeZone_05_Loop" />
+      <String Key="Animation05_Out" String="COFE_Tentacle_skill_SafeZone_05_Out" />
+      <String Key="Animation06_In" String="COFE_Tentacle_skill_SafeZone_06_In" />
+      <String Key="Animation06_Loop" String="COFE_Tentacle_skill_SafeZone_06_Loop" />
+      <String Key="Animation06_Out" String="COFE_Tentacle_skill_SafeZone_06_Out" />
+    </StringList>
+    <ParticleList>
+      <Particle Key="SmallZone" Name="U_Monster.Lumbach.Flesh_Area_01_Small" Offset="0,0,0" Direction="1,0,0" />
+      <Particle Key="LargeZone" Name="U_Monster.Lumbach.Flesh_Area_01" Offset="0,0,0" Direction="1,0,0" />
+      <Particle Key="SpreadingBarrier" Name="U_Monster.Lumbach.Flesh_Area_01_SafetyZone" Offset="0,0,0" Direction="1,0,0" />
+      <Particle Key="BloodBarrier" Name="U_Monster.Lumbach.Flesh_Area_01_SafetyZone_Blood" Offset="0,0,0" Direction="1,0,0" />
+      <Particle Key="SafeZoneRemove" Name="U_Monster.Lumbach.Flesh_Area_SafetyZone_Gone" Offset="0,0,0" Direction="1,0,0" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="7" />
+    <SoundTrigger OnAnimLoopIn="Play_LambachBig_Safezone_Spread" OnHit="PLAY_Player_DefaultHitLarge" PlayAttackVoice="0" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Lambach02_SafeZone_DamageZoneShape" />
+    </Shapes>
+    <DamageZone RateOfFire="0.5" />
+    <Specific_AI_COFE_Lambach02_SafeZone TentacleScale=".7" FleshZoneSmallRadius="4" FleshZoneLargeRadius="5" SafeZoneInitialRadius="40" DamageZoneSpreadTime="4" DamageZoneDuration="2" FleshZoneSmallHelperName="QP_Lambach02_SafeZone_helper_small" FleshZoneLargeHelperName="QP_Lambach02_SafeZone_helper_large" CenterZonePosHelper="QP_Lambach02_CenterPosHelper">
+      <TentaclesToToggle SafeZoneIndex="1" TentaclesIndex="1,2,3,6,5" />
+      <TentaclesToToggle SafeZoneIndex="2" TentaclesIndex="1,2,3,6" />
+      <TentaclesToToggle SafeZoneIndex="3" TentaclesIndex="1,2,3,4" />
+      <TentaclesToToggle SafeZoneIndex="4" TentaclesIndex="1,2,5,4" />
+      <TentaclesToToggle SafeZoneIndex="5" TentaclesIndex="2,3,5,4" />
+      <TentaclesToToggle SafeZoneIndex="6" TentaclesIndex="3,6,5,4" />
+      <TentaclesToToggle SafeZoneIndex="7" TentaclesIndex="2,3,6,5,4" />
+    </Specific_AI_COFE_Lambach02_SafeZone>
+  </Skill>
+</MetaData>

@@ -1,0 +1,35 @@
+<MetaData>
+  <Skill UID="AI_COFE_Lambach01_FleshLaser" ESkill="AI_COFE_Lambach01_FleshLaser" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_ai_attacks" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 LFX" CanCastWhileMoving="0" MinimumCastDuration="0.4" MaximumTurnRate="30" CanBeInterrupted="0" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".4" />
+    <ParticleList>
+      <Particle Key="Ready" Name="U_Monster.Lumbach.FleshBeam_Ready_01" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_Monster.Lumbach.FleshBeam_01" Direction="0,0,-1" Scale="1.5" />
+      <Particle Key="Hit" Name="U_Monster.Lumbach.FleshBeam_Hit_01" Direction="0,0,1" />
+    </ParticleList>
+    <Range AttackRange="20" />
+    <Cooldown Cooldown="12.0" CooldownTrigger="OnEnd" />
+    <Specific_AI_Laser NumberOfBeams="1" LengthPadding="0.1" MaxZOffset="1" LaserWidth="2" AngleAtDistanceMin="10" AngleAtDistanceMax="75" TimeBetweenHits="0.1" CanHitMultipleTargets="1" MinLaserRangeForAngleComputation="2" IsInLoopOutLaser="0" CasterVFXBone="Bip01 FX" TargetBone="Bip01 Spine" SoundStart="Play_DemonOfSouls_Ray_Loop" SoundEnd="Play_DemonOfSouls_Ray_End" SoundHitStart="Play_DemonOfSouls_Ray_Impact_Loop" SoundHitEnd="Stop_DemonOfSouls_Ray_Impact_Loop" />
+    <SoundTrigger onHit="Play_hero_default_damage" />
+  </Skill>
+  <Skill UID="AI_Uber_Lambach01_FleshLaser" ESkill="AI_COFE_Lambach01_FleshLaser" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_ai_attacks" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 LFX" CanCastWhileMoving="0" MinimumCastDuration="0.4" MaximumTurnRate="30" CanBeInterrupted="0" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".3" />
+    <StatusAilment>
+      <bleed Chance="100" ChanceMode="override" Duration="10" DurationMode="override" Stacks="1" StacksMode="override" />
+    </StatusAilment>
+    <ParticleList>
+      <Particle Key="Ready" Name="U_Monster.Lumbach.FleshBeam_Ready_01" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_Monster.Lumbach.FleshBeam_01" Direction="0,0,-1" Scale="1.5" />
+      <Particle Key="Hit" Name="U_Monster.Lumbach.FleshBeam_Hit_01" Direction="0,0,1" />
+    </ParticleList>
+    <Range AttackRange="20" />
+    <Cooldown Cooldown="12.0" CooldownTrigger="OnEnd" />
+    <Specific_AI_Laser NumberOfBeams="1" LengthPadding="0.1" MaxZOffset="1" LaserWidth="2" AngleAtDistanceMin="10" AngleAtDistanceMax="75" TimeBetweenHits="0.1" CanHitMultipleTargets="1" MinLaserRangeForAngleComputation="2" IsInLoopOutLaser="0" CasterVFXBone="Bip01 FX" TargetBone="Bip01 Spine" SoundStart="Play_DemonOfSouls_Ray_Loop" SoundEnd="Play_DemonOfSouls_Ray_End" SoundHitStart="Play_DemonOfSouls_Ray_Impact_Loop" SoundHitEnd="Stop_DemonOfSouls_Ray_Impact_Loop" />
+    <SoundTrigger onHit="Play_hero_default_damage" />
+  </Skill>
+</MetaData>

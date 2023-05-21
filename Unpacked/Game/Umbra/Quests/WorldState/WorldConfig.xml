@@ -1,0 +1,2045 @@
+<MetaData>
+  <Quest Name="INTRO_Quest1">
+    <Step Value="0">
+      <ParticleEmitter EntityName="Yudai_Arena_BlockingRoad_Left" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="Yudai_Arena_BlockingRoad_Right" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="Yudai_Arena_BlockingRoad_Top" Position="" IsHidden="" IsEnabled="0" />
+      <NPC EntityName="Q_NPC_SFBridge_Valeria" Position="" IsHidden="1" CanBeUsed="1" />
+      <Player SpawnPosition="Qp_Intro_SpawnPointIntroduction1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_UnderCity" Position="" IsHidden="1" />
+      <Entity EntityName="DungeonEntrance_TPS3" Position="" IsHidden="1" />
+      <GameplayRules CanPlayerTransformInApoManually="0" IsWorldStateAllowingUsingPets="1" />
+    </Step>
+    <Step Value="2">
+      <Player SpawnPosition="Qp_Intro_SpawnPointIntroduction2" />
+    </Step>
+    <Step Value="4">
+      <Player SpawnPosition="Qp_Intro_SpawnPointIntroduction3" />
+    </Step>
+    <Step Value="6">
+      <Player SpawnPosition="Qp_Intro_SpawnPointIntroduction4" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT1_Quest1">
+    <Step Value="0">
+      <Clickable EntityName="Dynamic_object_after_svriir_raid" Position="" IsHidden="1" IsClickable="1" />
+      <Player SpawnPosition="Qp_Act1_SpawnPointQuest1" />
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_coast_of_wrecks" LevelNodesForWhichToUnlockWaypoints="" />
+      <ParticleEmitter EntityName="BlockingRoad_Sirkis" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="PrimordialGate_BlockingRoad" Position="" IsHidden="" IsEnabled="0" />
+    </Step>
+    <Step Value="3">
+      <NPC EntityName="Q_NPC_SFBridge_Valeria" Position="" IsHidden="0" CanBeUsed="1" />
+    </Step>
+    <Step Value="4">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_highlands" LevelNodesForWhichToUnlockWaypoints="" />
+    </Step>
+    <Step Value="5">
+      <Clickable EntityName="SvriirCoast_RestrictedArea1" Position="" IsHidden="1" IsClickable="0" />
+      <NPC EntityName="Q_NPC_SF_Lieutenant" Position="" IsHidden="1" CanBeUsed="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT1_Quest2">
+    <Step Value="0">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_stormfall" LevelNodesForWhichToUnlockWaypoints="act_1_stormfall" />
+      <NPC EntityName="Q_NPC_SFBridge_Valeria" Position="" IsHidden="1" CanBeUsed="1" />
+      <Clickable EntityName="ClickableEntity_from_stormfall_to_farmstead" Position="" IsHidden="1" IsClickable="1" />
+      <Player SpawnPosition="townportal_stormfall" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_UnderCity" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_UnderCity" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_BackCity" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_BackCity" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_Palace" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_Palace" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_SF_Inn" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_SF_Inn" Position="" IsHidden="1" />
+      <NPC EntityName="Q_NPC_FS_Sergent2" Position="" IsHidden="1" CanBeUsed="1" />
+    </Step>
+    <Step Value="3">
+      <GameplayRules CanPlayerTransformInApoManually="X" IsWorldStateAllowingUsingPets="1" />
+      <Clickable EntityName="ClickableEntity_from_stormfall_to_farmstead" Position="" IsHidden="0" IsClickable="1" />
+      <NPC EntityName="HT1_NPC_FS_Pet1" Position="" IsHidden="1" CanBeUsed="0" />
+    </Step>
+    <Step Value="4">
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_Farm" Position="" IsHidden="1" />
+      <Clickable EntityName="Farmsteads_RestrictedArea3" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="5">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_stormfall_farmlands" LevelNodesForWhichToUnlockWaypoints="act_1_stormfall_farmlands" />
+      <Entity EntityName="Farmsteads_RestrictedArea3" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_BarricadeToOutpost" Position="" IsHidden="1" />
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_FarmSvriirsLair" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_Farm" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_Farm" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="6">
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_FarmSvriirsLair" Position="" IsHidden="1" />
+      <Clickable EntityName="Farmsteads_RestrictedArea4" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="DynamicObject_ACT1.Farmstead_Barricade1_Unbroken_prc" Position="" IsHidden="1" />
+      <NPC EntityName="Q_NPC_FS_Sergent" Position="" IsHidden="1" CanBeUsed="1" />
+      <Entity EntityName="DynamicObject_ACT1.Farmstead_Barricade1_Broken_prc" Position="" IsHidden="0" />
+      <Clickable EntityName="Farmsteads_RestrictedArea1" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_SvriirLair" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_SvriirLair" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_SvriirLair" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_SvriirLair" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_Outpost" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_Outpost" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_Outpost" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_Outpost" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_Camp" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_Camp" Position="" IsHidden="1" />
+      <ParticleEmitter EntityName="ParticleEffect_spawn_svriirRaid_S" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="ParticleEffect_spawn_svriirRaid_E" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="ParticleEffect_spawn_svriirRaid_W" Position="" IsHidden="" IsEnabled="0" />
+      <NPC EntityName="Q_NPC_FS_Sergent2" Position="" IsHidden="0" CanBeUsed="0" />
+      <ParticleEmitter EntityName="BlockingRoadSvriirEvent_West" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="BlockingRoadSvriirEvent_SF" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="BlockingRoadSvriirEvent_North" Position="" IsHidden="" IsEnabled="0" />
+    </Step>
+    <Step Value="7">
+      <NPC EntityName="Q_NPC_FS_Sergent2" Position="" IsHidden="0" CanBeUsed="0" />
+    </Step>
+    <Step Value="10">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_svriir_network_1" LevelNodesForWhichToUnlockWaypoints="" />
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_svriir_tributes_storage" LevelNodesForWhichToUnlockWaypoints="act_1_svriir_tributes_storage" />
+    </Step>
+    <Step Value="12">
+      <NPC EntityName="Q_NPC_SF_Lieutenant" Position="" IsHidden="0" CanBeUsed="1" />
+      <NPC EntityName="Q_NPC_SFBridge_Lieutenant" Position="" IsHidden="1" CanBeUsed="1" />
+      <ParticleEmitter EntityName="BlockingRoad_Sirkis" Position="" IsHidden="" IsEnabled="0" />
+    </Step>
+    <Step Value="13">
+      <Clickable EntityName="SirkisArena_ForceField_Event_1" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_Palace" Position="" IsHidden="1" />
+      <Clickable EntityName="Dynamic_object_after_svriir_raid" Position="" IsHidden="0" IsClickable="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_SvriirLair" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_SvriirLair" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="14">
+      <Clickable EntityName="Stormfall_RestrictedArea1" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_Palace" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_Palace" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_SF_Palace" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_SF_Palace" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT1_Quest2_C1">
+    <Step Value="0">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_stormfall" LevelNodesForWhichToUnlockWaypoints="act_1_stormfall" />
+      <NPC EntityName="Q_NPC_SFBridge_Valeria" Position="" IsHidden="1" CanBeUsed="1" />
+      <Clickable EntityName="ClickableEntity_from_stormfall_to_farmstead" Position="" IsHidden="1" IsClickable="1" />
+      <Player SpawnPosition="townportal_stormfall" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_UnderCity" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_UnderCity" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_BackCity" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_BackCity" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_Palace" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_Palace" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_SF_Inn" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_SF_Inn" Position="" IsHidden="1" />
+      <NPC EntityName="Q_NPC_FS_Sergent2" Position="" IsHidden="1" CanBeUsed="1" />
+    </Step>
+    <Step Value="3">
+      <GameplayRules CanPlayerTransformInApoManually="X" IsWorldStateAllowingUsingPets="1" />
+      <Clickable EntityName="ClickableEntity_from_stormfall_to_farmstead" Position="" IsHidden="0" IsClickable="1" />
+      <NPC EntityName="HT1_NPC_FS_Pet1" Position="" IsHidden="1" CanBeUsed="0" />
+      <Entity EntityName="BasicEntity_sf_door_closed" Position="" IsHidden="1" />
+      <Entity EntityName="BasicEntity_sf_door_opened" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="4">
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_Farm" Position="" IsHidden="1" />
+      <Clickable EntityName="Farmsteads_RestrictedArea3" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="5">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_stormfall_farmlands" LevelNodesForWhichToUnlockWaypoints="act_1_stormfall_farmlands" />
+      <Entity EntityName="A1_DYN_Ilthain_CalmingDrake_01" Position="" IsHidden="0" />
+      <Clickable EntityName="Farmsteads_RestrictedArea3" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_Farm" Position="" IsHidden="1" />
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_BarricadeToOutpost" Position="" IsHidden="1" />
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_FarmSvriirsLair" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_Farm" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_Farm" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="7">
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_FarmSvriirsLair" Position="" IsHidden="1" />
+      <Entity EntityName="IlthainAndDrake_RestrictedArea" Position="" IsHidden="0" />
+      <Clickable EntityName="HS_A1_SvriirHunt_T0" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="Farmsteads_RestrictedArea4" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="DynamicObject_ACT1.Farmstead_Barricade1_Unbroken_prc" Position="" IsHidden="1" />
+      <NPC EntityName="Q_NPC_FS_Sergent" Position="" IsHidden="1" CanBeUsed="1" />
+      <Entity EntityName="DynamicObject_ACT1.Farmstead_Barricade1_Broken_prc" Position="" IsHidden="0" />
+      <Clickable EntityName="Farmsteads_RestrictedArea1" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_SvriirLair" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_SvriirLair" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_Outpost" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_Outpost" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_Outpost" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_Outpost" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_Camp" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_Camp" Position="" IsHidden="1" />
+      <Entity EntityName="Dynamic_object_after_svriir_raid" Position="" IsHidden="0" />
+      <ParticleEmitter EntityName="ParticleEffect_spawn_svriirRaid_S" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="ParticleEffect_spawn_svriirRaid_E" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="ParticleEffect_spawn_svriirRaid_W" Position="" IsHidden="" IsEnabled="0" />
+      <NPC EntityName="Q_NPC_FS_Sergent2" Position="" IsHidden="0" CanBeUsed="0" />
+      <ParticleEmitter EntityName="BlockingRoadSvriirEvent_West" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="BlockingRoadSvriirEvent_SF" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="BlockingRoadSvriirEvent_North" Position="" IsHidden="" IsEnabled="0" />
+    </Step>
+    <Step Value="8">
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_FarmSvriirsLair" Position="" IsHidden="1" />
+      <Clickable EntityName="Farmsteads_RestrictedArea4" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="DynamicObject_ACT1.Farmstead_Barricade1_Unbroken_prc" Position="" IsHidden="1" />
+      <NPC EntityName="Q_NPC_FS_Sergent" Position="" IsHidden="1" CanBeUsed="1" />
+      <Entity EntityName="DynamicObject_ACT1.Farmstead_Barricade1_Broken_prc" Position="" IsHidden="0" />
+      <Clickable EntityName="Farmsteads_RestrictedArea1" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_SvriirLair" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_SvriirLair" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_Outpost" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_Outpost" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_Outpost" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_Outpost" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_Camp" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_Camp" Position="" IsHidden="1" />
+      <Entity EntityName="Dynamic_object_after_svriir_raid" Position="" IsHidden="0" />
+      <ParticleEmitter EntityName="ParticleEffect_spawn_svriirRaid_S" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="ParticleEffect_spawn_svriirRaid_E" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="ParticleEffect_spawn_svriirRaid_W" Position="" IsHidden="" IsEnabled="0" />
+      <NPC EntityName="Q_NPC_FS_Sergent2" Position="" IsHidden="0" CanBeUsed="0" />
+      <ParticleEmitter EntityName="BlockingRoadSvriirEvent_West" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="BlockingRoadSvriirEvent_SF" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="BlockingRoadSvriirEvent_North" Position="" IsHidden="" IsEnabled="0" />
+      <Clickable EntityName="HS_A1_SvriirHunt_T0" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="9">
+      <Clickable EntityName="HS_A1_SvriirHunt_T0" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="11">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_svriir_network_1" LevelNodesForWhichToUnlockWaypoints="" />
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_svriir_tributes_storage" LevelNodesForWhichToUnlockWaypoints="act_1_svriir_tributes_storage" />
+    </Step>
+    <Step Value="16">
+      <NPC EntityName="Q_NPC_SF_Lieutenant" Position="" IsHidden="0" CanBeUsed="1" />
+      <NPC EntityName="Q_NPC_SFBridge_Lieutenant" Position="" IsHidden="1" CanBeUsed="1" />
+      <ParticleEmitter EntityName="BlockingRoad_Sirkis" Position="" IsHidden="" IsEnabled="0" />
+      <Entity EntityName="CE_SirkisTrigger" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="17">
+      <Clickable EntityName="SirkisArena_ForceField_Event_1" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_Palace" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="18">
+      <Clickable EntityName="Dynamic_object_after_svriir_raid_soldiers" Position="" IsHidden="0" IsClickable="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_SvriirLair" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_SvriirLair" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="19">
+      <Clickable EntityName="Stormfall_RestrictedArea1" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_Palace" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_Palace" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_SF_Palace" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_SF_Palace" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT1_Quest3">
+    <Step Value="0">
+      <Clickable EntityName="HS_A1_SvriirHunt_T0" Position="" IsHidden="1" IsClickable="0" />
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_svriir_network_2" LevelNodesForWhichToUnlockWaypoints="" />
+      <Clickable EntityName="Stormfall_RestrictedArea2" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_BackCity" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_BackCity" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_SF_BackCity" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_SF_BackCity" Position="" IsHidden="1" />
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_Backcity" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="2">
+      <Entity EntityName="Q_NPC_SF_RepublicanAlastor" Position="" IsHidden="1" />
+      <Entity EntityName="Farmsteads_RestrictedArea2" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="AnimObject_A1_Q2_S5_Guard7" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_A1_Q2_S5_Guard6" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_A1_Q2_S5_Guard9" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_Farm_Outpost" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_Farm_Outpost" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_Farm_Outpost" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_Farm_Outpost" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="4">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_flayer_outpost" LevelNodesForWhichToUnlockWaypoints="act_1_flayer_outpost" />
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_Tavern" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_Inn" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_Inn" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_SF_Inn" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_SF_Inn" Position="" IsHidden="0" />
+      <Clickable EntityName="ClickableEntity_from_stormfall_to_Inn" Position="" IsHidden="0" IsClickable="0" />
+    </Step>
+    <Step Value="7">
+      <Clickable EntityName="ClickableEntity_BanditOutpost_to_boss" Position="" IsHidden="1" IsClickable="1" />
+    </Step>
+    <Step Value="8">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_ravaged_camp" LevelNodesForWhichToUnlockWaypoints="act_1_ravaged_camp" />
+      <Clickable EntityName="ClickableEntity_from_outpost_to_templarcamp" Position="" IsHidden="0" IsClickable="1" />
+      <Clickable EntityName="TC_TemplarCamp_RestrictedArea" Position="" IsHidden="1" IsClickable="1" />
+    </Step>
+    <Step Value="10">
+      <Clickable EntityName="ClickableEntity_from_heimlock_to_SF" Position="" IsHidden="1" IsClickable="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT1_Quest4">
+    <Step Value="0">
+      <Clickable EntityName="ClickableEntity_from_heimlock_to_SF" Position="" IsHidden="0" IsClickable="1" />
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_green_bluffs" LevelNodesForWhichToUnlockWaypoints="" />
+    </Step>
+    <Step Value="2">
+      <Entity EntityName="Audio_ATS_Stormfall_Guardsblock_Undercity" Position="" IsHidden="1" />
+      <Clickable EntityName="Stormfall_RestrictedArea3" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="Necropolis_part1_ForceField_Event_0" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="ClickableEntity_necropart1_to_part2" Position="" IsHidden="1" IsClickable="1" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_r_SF_UnderCity" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_UnderCity" Position="" IsHidden="0" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_r_SF_UnderCity" Position="" IsHidden="1" />
+      <Entity EntityName="DO_AnimObject_blocking_guard_l_SF_UnderCity" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="3">
+      <Clickable EntityName="ClickableEntity_necropart1_to_part2" Position="" IsHidden="0" IsClickable="1" />
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_smuggler_path" LevelNodesForWhichToUnlockWaypoints="" />
+    </Step>
+    <Step Value="4">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_necropolis_1" LevelNodesForWhichToUnlockWaypoints="act_1_necropolis_1" />
+    </Step>
+    <Step Value="5">
+      <Clickable EntityName="Necropolis_part1_ForceField_Event_0" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="6">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_necropolis_3" LevelNodesForWhichToUnlockWaypoints="act_1_necropolis_3" />
+    </Step>
+    <Step Value="7">
+      <Sequence Name="Q_Necro_BonesBridge_L" State="end" />
+      <Sequence Name="Q_Necro_BonesBridge_R" State="end" />
+      <Entity EntityName="BoneBridge_RestrictedArea1" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="9">
+      <Clickable EntityName="ClickableEntity_necropart1_to_part2" Position="" IsHidden="1" IsClickable="1" />
+      <Clickable EntityName="ClickableEntity_to_yudai_crystal_arena" Position="" IsHidden="1" IsClickable="1" />
+      <Clickable EntityName="ClickableEntity_Vheguaad_BossFight_Trigger" Position="" IsHidden="0" IsClickable="1" />
+      <Sequence Name="DynsceneUmbraCrystal" State="end" />
+      <Clickable EntityName="ClickableEntity_necropart1_to_part2" Position="" IsHidden="0" IsClickable="1" />
+    </Step>
+    <Step Value="10">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_gates_of_anankis" LevelNodesForWhichToUnlockWaypoints="act_1_gates_of_anankis" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT1_Quest5">
+    <Step Value="0">
+      <Clickable EntityName="ClickableEntity_Vheguaad_BossFight_Trigger" Position="" IsHidden="1" IsClickable="1" />
+      <Clickable EntityName="AnankisGate_ForceField_Event" Position="" IsHidden="1" IsClickable="1" />
+      <NPC EntityName="Q_NPC_TPSC_CPG" Position="" IsHidden="1" CanBeUsed="1" />
+      <Door EntityName="AnimDoor7" Position="" IsHidden="" IsLocked="0" IsOpened="0" />
+      <Entity EntityName="AnimObject_A1_Q5_S5_Yudai_DemonSoul" Position="" IsHidden="1" />
+      <Entity EntityName="Yudai_P1" Position="" IsHidden="1" />
+      <Entity EntityName="Yudai_P2" Position="" IsHidden="1" />
+      <ParticleEmitter EntityName="PrimordialGate_BlockingRoad" Position="" IsHidden="" IsEnabled="0" />
+    </Step>
+    <Step Value="2">
+      <Door EntityName="AnimDoor7" Position="" IsHidden="" IsLocked="1" IsOpened="1" />
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_anankis_halls_1" LevelNodesForWhichToUnlockWaypoints="act_1_anankis_halls_1" />
+    </Step>
+    <Step Value="4">
+      <Sequence Name="A1_Q5_S1_FaceToFace" State="end" />
+      <Sequence Name="A1_YudaiCorruptsGuardian" State="end" />
+      <Entity EntityName="A1_Q5_S1_PGCorruption_PrimoGuardian" Position="" IsHidden="1" />
+      <Entity EntityName="A1_Q5_S1_PGCorruption_PrimoGuardian_Corrupt" Position="" IsHidden="1" />
+      <Entity EntityName="A1_Q5_S1_PGCorruption_Cultist2" Position="" IsHidden="1" />
+      <Entity EntityName="A1_Q5_S1_Cutist3" Position="" IsHidden="1" />
+      <Entity EntityName="A1_Q5_S1_PrimoGuardian6" Position="" IsHidden="1" />
+      <Entity EntityName="A1_Q5_S1_PrimoGuardian5" Position="" IsHidden="1" />
+      <Entity EntityName="Yudai_P1" Position="" IsHidden="1" />
+      <Entity EntityName="Yudai_P2" Position="" IsHidden="1" />
+      <Clickable EntityName="TPS_ForceField_Event_1" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="TPS_ForceField_Event_2" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="TPS_ForceField_Event_3" Position="" IsHidden="1" IsClickable="0" />
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_anankis_halls_2" LevelNodesForWhichToUnlockWaypoints="" />
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_anankis_core_overlook" LevelNodesForWhichToUnlockWaypoints="act_1_anankis_core_overlook" />
+    </Step>
+    <Step Value="7">
+      <NPC EntityName="Q_NPC_TPS_Yudai" Position="" IsHidden="1" CanBeUsed="1" />
+      <NPC EntityName="Q_NPC_TPS_PG" Position="" IsHidden="1" CanBeUsed="1" />
+      <NPC EntityName="Q_NPC_TPS_PG_click" Position="" IsHidden="1" CanBeUsed="1" />
+      <ParticleEmitter EntityName="Aura_permanent_goreGpower1" Position="" IsHidden="1" IsEnabled="0" />
+    </Step>
+    <Step Value="8">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_anankis_halls_3" LevelNodesForWhichToUnlockWaypoints="act_1_anankis_halls_3" />
+      <ParticleEmitter EntityName="Yudai_Arena_BlockingRoad_Left" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="Yudai_Arena_BlockingRoad_Right" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="Yudai_Arena_BlockingRoad_Top" Position="" IsHidden="" IsEnabled="0" />
+      <Entity EntityName="DungeonEntrance_TPS3" Position="" IsHidden="0" />
+      <Entity EntityName="Yudai_P1" Position="" IsHidden="1" />
+      <Entity EntityName="Yudai_P2" Position="" IsHidden="1" />
+      <Sequence Name="A1_Q5_S10_CoreGainingPower1" State="end" />
+      <Clickable EntityName="TPS_ForceField_Event_1" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="TPS_ForceField_Event_2" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="TPS_ForceField_Event_3" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="9">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_anankis_halls_3" LevelNodesForWhichToUnlockWaypoints="act_1_anankis_halls_3" />
+    </Step>
+    <Step Value="10">
+      <Clickable EntityName="CE_A1_Q3_S10_Exit" Position="" IsHidden="1" IsClickable="0" />
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_anankis_core_overlook_2" LevelNodesForWhichToUnlockWaypoints="act_1_anankis_core_overlook_2" />
+    </Step>
+    <Step Value="11">
+      <WorldMap ActIdent="act_1" LevelNodesToDiscover="act_1_anankis_core" LevelNodesForWhichToUnlockWaypoints="" />
+      <Entity EntityName="Q_NPC_TPSC_CPG" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="12">
+      <GameplayRules CanPlayerTransformInApoManually="1" IsWorldStateAllowingUsingPets="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT2_Quest1">
+    <Step Value="0">
+      <ParticleEmitter EntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum2" Position="" IsHidden="" IsEnabled="0" />
+      <Clickable EntityName="CE_A2_Q2_ShadowPortal" Position="QP_Unreachable" IsHidden="1" IsClickable="1" />
+      <Clickable EntityName="ClickableEntity_TemplarCamp_to_FleshForest1" Position="" IsHidden="0" IsClickable="0" />
+      <Entity EntityName="InnerSanctumDoorCollision2" Position="" IsHidden="1" />
+      <Entity EntityName="InnerSanctumDoorCollision" Position="" IsHidden="1" />
+      <Entity EntityName="TemplarCamp_VOS2_Access" Position="" IsHidden="1" />
+      <Entity EntityName="AO_Valeria_Q6_S2" Position="" IsHidden="1" />
+      <Player SpawnPosition="QP_A2_Q1_S1_PlayerTP" />
+      <NPC EntityName="NPC_A2_Q2_Valeria" Position="" IsHidden="1" CanBeUsed="1" />
+      <NPC EntityName="NPC_A2_Q6_S1_Lambach" Position="" IsHidden="0" CanBeUsed="0" />
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_warlord_lair" LevelNodesForWhichToUnlockWaypoints="act_2_warlord_lair" />
+      <ParticleEmitter EntityName="U_EnvironmentParticle.BlockingRoad.MercyArena" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="CE_A2_Q2_ShadowPortal" Position="" IsHidden="0" IsEnabled="0" />
+      <Entity EntityName="primitive_box_BlockRoadMercyArena" Position="" IsHidden="1" />
+      <Entity EntityName="Trigger_A2_Zima_DynS_Crying" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="2">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_templar_camp_exterior" LevelNodesForWhichToUnlockWaypoints="act_2_templar_camp_exterior" />
+      <Player SpawnPosition="townportal_stormfall" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT2_Quest2">
+    <Step Value="0">
+      <NPC EntityName="NPC_A2_Q1_Valeria" Position="" IsHidden="1" CanBeUsed="1" />
+    </Step>
+    <Step Value="1">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_vos_1" LevelNodesForWhichToUnlockWaypoints="act_2_vos_1" />
+      <Door EntityName="Door_ShadowBandit" Position="" IsHidden="" IsLocked="1" IsOpened="0" />
+    </Step>
+    <Step Value="2">
+      <NPC EntityName="NPC_A2_Zima_Cage" Position="" IsHidden="1" CanBeUsed="1" />
+      <NPC EntityName="NPC_A2_Zima" Position="" IsHidden="1" CanBeUsed="1" />
+    </Step>
+    <Step Value="3">
+      <Door EntityName="Door_ShadowBandit" Position="" IsHidden="" IsLocked="1" IsOpened="1" />
+      <Clickable EntityName="CE_A2_Q2_CampDoor" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="6">
+      <Clickable EntityName="CE_A2_Q2_ArenaDoor" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT2_Quest3">
+    <Step Value="0">
+      <Sequence Name="A2_LEGIONSOFDEATH" State="end" />
+      <Sequence Name="A2_DYN_VALERIABREAKINGTHEGATE" State="start" />
+      <ParticleEmitter EntityName="shadowwall_particle" Position="" IsHidden="1" IsEnabled="0" />
+      <Entity EntityName="A2_Zima_DynS_Crying" Position="" IsHidden="0" />
+      <Entity EntityName="Trigger_A2_Zima_DynS_Crying" Position="" IsHidden="0" />
+      <Clickable EntityName="CE_TemplarCampShadowWall" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="1">
+      <Sequence Name="A2_DYN_VALERIABREAKINGTHEGATE" State="end" />
+      <Clickable EntityName="CE_TemplarCampEntrance" Position="" IsHidden="1" IsClickable="1" />
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_templar_camp" LevelNodesForWhichToUnlockWaypoints="act_2_templar_camp" />
+    </Step>
+    <Step Value="2">
+      <Clickable EntityName="CE_TempleBlock" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="3">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_temple_of_justice" LevelNodesForWhichToUnlockWaypoints="" />
+    </Step>
+    <Step Value="4">
+      <NPC EntityName="NPC_A2_Q2_Valeria" Position="" IsHidden="0" CanBeUsed="1" />
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_inner_sanctum" LevelNodesForWhichToUnlockWaypoints="act_2_inner_sanctum" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT2_Quest4">
+    <Step Value="0">
+      <Sequence Name="A2_DYN_INNERSANCTUMLIGHTING" State="end" />
+      <ParticleEmitter EntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum" Position="" IsHidden="1" IsEnabled="0" />
+      <ParticleEmitter EntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum2" Position="" IsHidden="1" IsEnabled="0" />
+      <Clickable EntityName="InnerSanctumDoorCollision" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="InnerSanctumDoorCollision2" Position="" IsHidden="1" IsClickable="0" />
+      <NPC EntityName="NPC_A2_Q3_Gernez" Position="" IsHidden="1" CanBeUsed="0" />
+      <NPC EntityName="NPC_A2_Q3_Gernez2" Position="" IsHidden="1" CanBeUsed="0" />
+      <NPC EntityName="NPC_A2_Q3_Gernez3" Position="" IsHidden="1" CanBeUsed="0" />
+      <NPC EntityName="NPC_A2_Q3_TemplarKnight" Position="" IsHidden="1" CanBeUsed="0" />
+      <Entity EntityName="InnerSanctum_Squire2hhmr1" Position="" IsHidden="1" />
+      <Entity EntityName="InnerSanctum_Squire2hhmr2" Position="" IsHidden="1" />
+      <Entity EntityName="InnerSanctum_Squire2hhmr3" Position="" IsHidden="1" />
+      <Entity EntityName="InnerSanctum_Squire2hswd1" Position="" IsHidden="1" />
+      <Entity EntityName="InnerSanctum_Squire2hswd2" Position="" IsHidden="1" />
+      <Entity EntityName="InnerSanctum_Squire2hswd3" Position="" IsHidden="1" />
+      <Entity EntityName="InnerSanctum_Priest1" Position="" IsHidden="1" />
+      <Entity EntityName="ApoGlobe_InnerSanctum_ACT2_Left" Position="" IsHidden="1" />
+      <Entity EntityName="ApoGlobe_InnerSanctum_ACT2_Right" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="1">
+      <Clickable EntityName="CE_A2_VOS2_Blocker" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="TemplarCamp_VOS2_Blocker" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="TemplarCamp_ForestClearing_AccessBlocker" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="3">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_vos_2" LevelNodesForWhichToUnlockWaypoints="act_2_vos_2" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT2_Quest5">
+    <Step Value="0">
+      <NPC EntityName="NPC_A2_Q2_Valeria" Position="" IsHidden="1" CanBeUsed="1" />
+      <Entity EntityName="TemplarCamp_ForestClearing_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_A2_Q4_Cultist" Position="" IsHidden="1" />
+      <ParticleEmitter EntityName="U_EnvironmentParticle.BlockingRoad.VOS2Event2" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="U_EnvironmentParticle.BlockingRoad.VOS2Event1" Position="" IsHidden="" IsEnabled="0" />
+      <Clickable EntityName="primitive_box_BlockRoadVOS2Event2" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="primitive_box_BlockRoadVOS2Event1" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="ClickableEntity_VOS2Event_Gating" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="2">
+      <Clickable EntityName="ClickableEntity_TemplarCamp_to_FleshForest1" Position="" IsHidden="0" IsClickable="1" />
+    </Step>
+    <Step Value="3">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_flesh_forest_1" LevelNodesForWhichToUnlockWaypoints="act_2_flesh_forest_1" />
+      <Entity EntityName="Collider_ForestClearing_Right" Position="" IsHidden="1" />
+      <Entity EntityName="Collider_ForestClearing_Left" Position="" IsHidden="1" />
+      <ParticleEmitter EntityName="BlockingRoad_ForestClearing_Right" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="BlockingRoad_ForestClearing_Left" Position="" IsHidden="" IsEnabled="0" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS11" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS1" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS9" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS2" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS12" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS4" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS13" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS10" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS5" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS6" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS18" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS8" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS3" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS7" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS22" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS28" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS24" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS27" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS21" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS17" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS16" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS19" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS15" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS14" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS25" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS26" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS20" Position="" IsHidden="1" />
+      <Entity EntityName="Infantry_A2_DYN_REPUBLICANFORMATIONS23" Position="" IsHidden="1" />
+      <Entity EntityName="Azenhal_KO" Position="" IsHidden="1" />
+      <Entity EntityName="LambachTentacle_Slow" Position="" IsHidden="1" />
+      <Entity EntityName="LambachTentacle_Slow_AreaTrigger" Position="" IsHidden="1" />
+      <Entity EntityName="LambachTentacle_Fast" Position="" IsHidden="1" />
+      <Entity EntityName="LambachTentacle_Fast_AreaTrigger" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="4">
+      <NPC EntityName="NPC_A2_Q2_Valeria" Position="" IsHidden="1" CanBeUsed="1" />
+      <NPC EntityName="NPC_A2_Q5_S4_Lambach" Position="" IsHidden="1" CanBeUsed="1" />
+      <Clickable EntityName="CP_A2_Q5_S4_WallOfFlesh" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="CP_A2_Q5_S4_WallOfFlesh2" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="CP_A2_Q5_S4_WallOfFlesh3" Position="" IsHidden="1" IsClickable="0" />
+      <Sequence Name="DynScene_WallOfFlesh_part1_FleshForest1" State="end" />
+      <Sequence Name="DynScene_WallOfFlesh_part2_FleshForest1" State="end" />
+    </Step>
+    <Step Value="5">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_flesh_forest_2" LevelNodesForWhichToUnlockWaypoints="act_2_flesh_forest_2" />
+    </Step>
+    <Step Value="6">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_svriir_cave" LevelNodesForWhichToUnlockWaypoints="act_2_svriir_cave" />
+      <Entity EntityName="DO_AnimObject_Unblocking_guard_l_SF_UnderCity" Position="" IsHidden="0" />
+      <Sequence Name="DynScene_WallOfFlesh_FleshForest2" State="end" />
+      <Clickable EntityName="CP_A2_Q5_S6_WallOfFlesh" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="CP_A2_Q5_S6_WallOfFlesh2" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="CP_A2_Q5_S6_WallOfFlesh3" Position="" IsHidden="1" IsClickable="0" />
+      <Sequence Name="DynScene_WallOfFlesh_FleshForest2" State="end" />
+    </Step>
+    <Step Value="8">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_flesh_city" LevelNodesForWhichToUnlockWaypoints="act_2_flesh_city" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT2_Quest6">
+    <Step Value="0">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_flesh_city" LevelNodesForWhichToUnlockWaypoints="act_2_flesh_city" />
+      <Clickable EntityName="CE_A2_Q5_S9_EventVoteTrigger" Position="QP_Unreachable" IsHidden="1" IsClickable="0" />
+      <Sequence Name="A2_FleshBridge" State="end" />
+      <Sequence Name="A2_DYN_MEETDEMONOFFLESH" State="end" />
+      <Sequence Name="A2_HEIMLOCKFACEOFF2" State="end" />
+      <Entity EntityName="Dyn_FleshCity_Bridge_Step1" Position="" IsHidden="1" />
+      <Entity EntityName="Dyn_FleshCity_Bridge_Step2" Position="" IsHidden="1" />
+      <Entity EntityName="FleshCity_FurySpark_GpIngredient" Position="" IsHidden="1" />
+      <Entity EntityName="FleshCity_FurySpark_Area" Position="" IsHidden="1" />
+      <Entity EntityName="GeomCache6" Position="" IsHidden="1" />
+      <Entity EntityName="FleshCityBridge_Wall1" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="1">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_incubation_chamber_1" LevelNodesForWhichToUnlockWaypoints="" />
+    </Step>
+    <Step Value="2">
+      <Entity EntityName="AO_Valeria_Q6_S2" Position="" IsHidden="0" />
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_incubation_chamber_waypoint_area" LevelNodesForWhichToUnlockWaypoints="act_2_incubation_chamber_waypoint_area" />
+      <Sequence Name="A2_DYN_LAMBACHFACTORY3_WallOfFlesh" State="start" />
+      <Entity EntityName="Audio_ATS_IncubationExperiRoom_HeimlockGrunts" Position="" IsHidden="0" />
+      <Clickable EntityName="CE_A2_Q6_S2_WallOfFlesh" Position="" IsHidden="0" IsClickable="0" />
+      <NPC EntityName="NPC_A2_Q6_S3_Lambach" Position="" IsHidden="0" CanBeUsed="1" />
+    </Step>
+    <Step Value="3">
+      <NPC EntityName="NPC_A2_Q6_S3_Lambach" Position="" IsHidden="1" CanBeUsed="1" />
+      <Clickable EntityName="CE_A2_Q6_S2_WallOfFlesh" Position="" IsHidden="1" IsClickable="0" />
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_incubation_chamber_2" LevelNodesForWhichToUnlockWaypoints="" />
+      <Sequence Name="A2_DYN_LAMBACHFACTORY3_WallOfFlesh" State="end" />
+      <Entity EntityName="Audio_ATS_IncubationExperiRoom_HeimlockGrunts" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="4">
+      <WorldMap ActIdent="act_2" LevelNodesToDiscover="act_2_ps_overlook" LevelNodesForWhichToUnlockWaypoints="act_2_ps_overlook" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT3_Quest1">
+    <Step Value="0">
+      <ParticleEmitter EntityName="explosions.C4_explosion.c3" Position="" IsHidden="" IsEnabled="0" />
+      <DungeonEntrance EntityName="DungeonEntrance_Monolith1" IsLocked="1" />
+      <Player SpawnPosition="SpawnPoint_start" />
+      <NPC EntityName="NPC_ACT3_Q1_S9_Gernez" Position="" IsHidden="1" CanBeUsed="1" />
+      <NPC EntityName="NPC_A3_Q5_S1_Heimlock2" Position="" IsHidden="1" CanBeUsed="1" />
+      <Door EntityName="AnimDoor_A3_innersanctum" Position="" IsHidden="" IsLocked="1" IsOpened="0" />
+    </Step>
+    <Step Value="1">
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_nowhere" LevelNodesForWhichToUnlockWaypoints="act_3_nowhere" />
+      <Player SpawnPosition="waypoint_stormfall" />
+    </Step>
+    <Step Value="3">
+      <Door EntityName="AnimDoor_Lever" Position="" IsHidden="" IsLocked="1" IsOpened="1" />
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_dawn_gate_hall" LevelNodesForWhichToUnlockWaypoints="act_3_dawn_gate_hall" />
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_temple_1" LevelNodesForWhichToUnlockWaypoints="act_3_temple_1" />
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_temple_2" LevelNodesForWhichToUnlockWaypoints="act_3_temple_2" />
+    </Step>
+    <Step Value="4">
+      <Door EntityName="AnimDoor_A3_innersanctum" Position="" IsHidden="" IsLocked="0" IsOpened="0" />
+    </Step>
+    <Step Value="6">
+      <Door EntityName="AnimDoor_A3_innersanctum" Position="" IsHidden="" IsLocked="1" IsOpened="1" />
+      <Clickable EntityName="BlockingRoad_InnerSanctumEvent" Position="" IsHidden="1" IsClickable="0" />
+      <Clickable EntityName="CE_Helion" Position="" IsHidden="1" IsClickable="0" />
+      <ParticleEmitter EntityName="BlockingRoad_FX_InnerSanctumEvent" Position="" IsHidden="" IsEnabled="0" />
+      <Entity EntityName="ProximityTrigger_ACT3_Quest1_NW_CampChatter3" Position="QP_Unreachable" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT3_Quest2">
+    <Step Value="0">
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_redwaste_1" LevelNodesForWhichToUnlockWaypoints="act_3_redwaste_1" />
+      <Clickable EntityName="CE_A3_Q1_S7_ValDiscussion" Position="" IsHidden="1" IsClickable="1" />
+    </Step>
+    <Step Value="2">
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_redwaste_2" LevelNodesForWhichToUnlockWaypoints="act_3_redwaste_2" />
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_battlefield_overlook" LevelNodesForWhichToUnlockWaypoints="act_3_battlefield_overlook" />
+      <Entity EntityName="Squire_6" Position="" IsHidden="1" />
+      <Entity EntityName="Squire_9" Position="" IsHidden="1" />
+      <Entity EntityName="Squire_8" Position="" IsHidden="1" />
+      <Entity EntityName="Squire_7" Position="" IsHidden="1" />
+      <Entity EntityName="Squire_14" Position="" IsHidden="1" />
+      <Entity EntityName="Squire_13" Position="" IsHidden="1" />
+      <Entity EntityName="Squire_12" Position="" IsHidden="1" />
+      <Entity EntityName="Squire_11" Position="" IsHidden="1" />
+      <Entity EntityName="Squire_10" Position="" IsHidden="1" />
+      <Entity EntityName="Hierophant_of_the_Searing_Song_5" Position="" IsHidden="1" />
+      <Entity EntityName="Aurora_knight_3" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject1468" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject523" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject522" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject521" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject520" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject519" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject518" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject517" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject516" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject515" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject514" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject513" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject512" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject511" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject510" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject507" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject505" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject504" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject502" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject501" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject500" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject498" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject496" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject495" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject493" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject492" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject488" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject484" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject482" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject481" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject480" Position="" IsHidden="1" />
+      <Entity EntityName="AO_A3_Q1_S7_TemplarSquire" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_Aurora_Knight_Gendris" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_ACT3_Quest1_NW_CampChatter2" Position="QP_Unreachable" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_ACT3_Quest1_NW_CampChatter1" Position="QP_Unreachable" IsHidden="1" />
+      <NPC EntityName="NPC_ACT3_Q1_S9_Gernez" Position="" IsHidden="1" CanBeUsed="1" />
+    </Step>
+    <Step Value="4">
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_republican_trench_warfare" LevelNodesForWhichToUnlockWaypoints="act_3_republican_trench_warfare" />
+    </Step>
+    <Step Value="6">
+      <Clickable EntityName="BlockingRoad_TrenchesEvent" Position="" IsHidden="1" IsClickable="0" />
+      <Entity EntityName="FurySpark_A3_Fast" Position="" IsHidden="1" />
+      <Entity EntityName="FurySpark_A3_Fast_AreaTrigger" Position="" IsHidden="1" />
+      <Entity EntityName="FurySpark_A3_Slow" Position="" IsHidden="1" />
+      <Entity EntityName="FurySpark_A3_Slow_AreaTrigger" Position="" IsHidden="1" />
+      <Entity EntityName="Heimlock_Collision" Position="" IsHidden="1" />
+      <ParticleEmitter EntityName="FuryPortal_Right" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="FuryPortal_Left" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="FuryPortal_Top" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="FXBlockingRoad_TrenchesEvent" Position="" IsHidden="" IsEnabled="0" />
+      <Entity EntityName="Heimlock_KO" Position="" IsHidden="1" />
+      <Clickable EntityName="ClickableEntity_A3_Q2_S5_Event" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT3_Quest3">
+    <Step Value="0">
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_rempart_1" LevelNodesForWhichToUnlockWaypoints="act_3_rempart_1" />
+    </Step>
+    <Step Value="2">
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_stronghold" LevelNodesForWhichToUnlockWaypoints="" />
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_tower_transition" LevelNodesForWhichToUnlockWaypoints="act_3_tower_transition" />
+    </Step>
+    <Step Value="3">
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_rempart_2" LevelNodesForWhichToUnlockWaypoints="act_3_rempart_2" />
+    </Step>
+    <Step Value="4">
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_tower" LevelNodesForWhichToUnlockWaypoints="act_3_tower" />
+    </Step>
+    <Step Value="5">
+      <Door EntityName="Door_RepublicanTower" Position="" IsHidden="" IsLocked="1" IsOpened="1" />
+      <Clickable EntityName="ClickableEntity_from_GateTowerLvl6_to_GateTowerTop" Position="" IsHidden="0" IsClickable="1" />
+    </Step>
+    <Step Value="7">
+      <Sequence Name="A3_TOPTOWER" State="end" />
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_monolith_gate" LevelNodesForWhichToUnlockWaypoints="act_3_monolith_gate" />
+      <Entity EntityName="BlockerTop_TowerEvent" Position="" IsHidden="1" />
+      <Entity EntityName="BlockerLeft_TowerEvent" Position="" IsHidden="1" />
+      <Entity EntityName="Generator_State1_GameplayIngredient" Position="" IsHidden="1" />
+      <Entity EntityName="Generator_State2_GameplayIngredient" Position="" IsHidden="1" />
+      <Entity EntityName="Generator_State1_TriggerArea" Position="" IsHidden="1" />
+      <Entity EntityName="Generator_State2_TriggerArea" Position="" IsHidden="1" />
+      <ParticleEmitter EntityName="FX_BlockerTop_TowerEvent" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="FX_BlockerLeft_TowerEvent" Position="" IsHidden="" IsEnabled="0" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT3_Quest4">
+    <Step Value="0">
+      <DungeonEntrance EntityName="DungeonEntrance_Monolith1" IsLocked="0" />
+      <ParticleEmitter EntityName="Fury_Sphere_Shield2" Position="" IsHidden="1" IsEnabled="0" />
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_monolith_1" LevelNodesForWhichToUnlockWaypoints="act_3_monolith_1" />
+      <Clickable EntityName="CE_A3_Q3_S8_HeimlockValeria_Blocker" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="1">
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_monolith_2" LevelNodesForWhichToUnlockWaypoints="act_3_monolith_2" />
+    </Step>
+    <Step Value="2">
+      <Clickable EntityName="CE_A3_Q4_S2_Blocker" Position="" IsHidden="1" IsClickable="0" />
+    </Step>
+    <Step Value="3">
+      <Entity EntityName="Blocker_sphere_totalaroba" Position="" IsHidden="1" />
+      <WorldMap ActIdent="act_3" LevelNodesToDiscover="act_3_elevator_platform" LevelNodesForWhichToUnlockWaypoints="act_3_elevator_platform" />
+      <ParticleEmitter EntityName="Fury_Sphere_Shield" Position="" IsHidden="1" IsEnabled="0" />
+    </Step>
+    <Step Value="5">
+      <Sequence Name="A3_PRE_BETRAYAL" State="end" />
+      <Sequence Name="A3_HEIMLOCKBETRAYAL" State="end" />
+      <Sequence Name="A3_HEIMLOCKP1TOP2" State="end" />
+      <Sequence Name="A3_HEIMLOCK_P2TOP3" State="end" />
+      <Sequence Name="A3_DYN_ALLSTARGAME" State="end" />
+      <Sequence Name="A3_DYN_FINALMOMENTS" State="end" />
+      <Sequence Name="A3_DYN_TENDERDEFEAT" State="end" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT4_Intro">
+    <Step Value="0">
+      <Entity EntityName="ACT4_Epilogue_Zalahir" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Epilogue_Valeria" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Epilogue_Ilthain" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Epilogue_Gernese" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Epilogue_Damaskus" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Loop_Valense" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Loop_Tabbitha" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Loop_Gernese" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Loop_Damaskus" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Loop_Annaruz" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Loop_Ilthain" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject396" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject394" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_HL_Valense" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_HL_Ilthain_V1" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_HL_Ondar" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Annaruz" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Quest_1_Tabbitha" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Quest_1_Valense" Position="" IsHidden="0" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="1">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="3">
+      <Entity EntityName="AnimObject396" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject394" Position="" IsHidden="0" />
+      <Entity EntityName="NPC_HL_Valense" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Quest_1_Annaruz" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Tabbitha" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Valense" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Zalahir" Position="" IsHidden="1" />
+      <Entity EntityName="CityBuilding_NPC2" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT4_Loop1">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Loop_Valense" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Loop_Tabbitha" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Loop_Gernese" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Loop_Damaskus" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Loop_Annaruz" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Loop_Ilthain" Position="" IsHidden="0" />
+      <Entity EntityName="A4_Stormfall_SouthWayDragon_Blocker" Position="" IsHidden="0" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject393" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="0" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="1">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject393" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="0" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="2">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="0" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="3">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="0" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="5">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_PlayerInterruptsDamaskus" State="end" />
+      <Sequence Name="DYN_A4_PalaceOpenTheWay" State="end" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="0" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="0" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT4_Loop2">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="A4_Stormfall_SouthWayDragon_Blocker" Position="" IsHidden="0" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+    </Step>
+    <Step Value="1">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="2">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT4_Loop3">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="A4_Stormfall_SouthWayDragon_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="A4_Stormfall_SouthWayDragon_Blocker2" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_Intro_Annaruz_End" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_Intro_Valense_End" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_Intro_Tabbitha_End" Position="" IsHidden="1" />
+      <Entity EntityName="MaleGuard59" Position="" IsHidden="1" />
+      <Entity EntityName="MaleGuard45" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar2" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain3" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+    </Step>
+    <Step Value="1">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_Intro_Annaruz_End" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_Intro_Valense_End" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_Intro_Tabbitha_End" Position="" IsHidden="1" />
+      <Entity EntityName="MaleGuard59" Position="" IsHidden="1" />
+      <Entity EntityName="MaleGuard45" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar2" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain3" Position="" IsHidden="1" />
+      <Entity EntityName="NPC426" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject929" Position="" IsHidden="1" />
+      <Entity EntityName="CaucasianFemaleNoble6" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ENDGAME_EndlessLoop">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="A4_Stormfall_SouthWayDragon_Blocker" Position="" IsHidden="0" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+    </Step>
+    <Step Value="1">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="C1_EG_SF_Q1_2">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ParticleEffect111" Position="" IsHidden="0" />
+      <Entity EntityName="CityBuilding_NPC2" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT4_C1_WaitQ1">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="CityBuilding_NPC2" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="C1_EG_SF_Q2">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="CityBuilding_NPC2" Position="" IsHidden="0" />
+      <Entity EntityName="DYN_C1_M1_AnimObject_StunnedDrake_REPU_Soldier_11" Position="" IsHidden="1" />
+      <Entity EntityName="DYN_C1_M1_AnimObject_StunnedDrake_REPU_Soldier_10" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT4_C1_WaitQ2">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="1">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="2">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="C1_EG_SF_Q3">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT4_C1_WaitQ3">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="1">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="2">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ilthain1" Position="" IsHidden="1" />
+      <Entity EntityName="ACT4_Quest_1_Ondar1" Position="" IsHidden="1" />
+      <Sequence Name="DYN_A4_GuardingPalace" State="end" />
+      <Entity EntityName="AnimObject543" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject563" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject494" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject712" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject461" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject457" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject562" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject471" Position="" IsHidden="1" />
+      <Entity EntityName="NPC_guard_palace2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject497" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg4" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg7" Position="" IsHidden="1" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT4_SFUA_End">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_TenseFamilyMeeting_Valeria" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_TenseFamilyMeeting_Heimlock" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_HeimlockAndValeriaPossessed_Heimlock" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_HeimlockAndValeriaPossessed_Valeria" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_HeimlockAndValeriaPossessed_Heimlock_Shader" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_HeimlockAndValeriaPossessed_Valeria_Shader" Position="" IsHidden="1" />
+      <Entity EntityName="A4_Valeria_TenseFamily_NPC" Position="" IsHidden="0" />
+      <Entity EntityName="A4_Heimlock_TenseFamily_NPC" Position="" IsHidden="0" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="1">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="A4_Valeria_TenseFamily_NPC" Position="" IsHidden="0" />
+      <Entity EntityName="A4_Heimlock_TenseFamily_NPC" Position="" IsHidden="0" />
+      <Entity EntityName="A4_DYN_TenseFamilyMeeting_Valeria" Position="" IsHidden="0" />
+      <Entity EntityName="A4_DYN_TenseFamilyMeeting_Heimlock" Position="" IsHidden="0" />
+      <Entity EntityName="drag_oshara_egg3" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ENDGAME_SFUA_End">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_TenseFamilyMeeting_Valeria" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_TenseFamilyMeeting_Heimlock" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_HeimlockAndValeriaPossessed_Heimlock" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_HeimlockAndValeriaPossessed_Valeria" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_HeimlockAndValeriaPossessed_Heimlock_Shader" Position="" IsHidden="1" />
+      <Entity EntityName="A4_DYN_HeimlockAndValeriaPossessed_Valeria_Shader" Position="" IsHidden="1" />
+      <Entity EntityName="A4_Valeria_TenseFamily_NPC" Position="" IsHidden="0" />
+      <Entity EntityName="A4_Heimlock_TenseFamily_NPC" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="1">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="A4_Valeria_TenseFamily_NPC" Position="" IsHidden="0" />
+      <Entity EntityName="A4_Heimlock_TenseFamily_NPC" Position="" IsHidden="0" />
+      <Entity EntityName="A4_DYN_TenseFamilyMeeting_Valeria" Position="" IsHidden="0" />
+      <Entity EntityName="A4_DYN_TenseFamilyMeeting_Heimlock" Position="" IsHidden="0" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT4_Epilogue">
+    <Step Value="0">
+      <Entity EntityName="C1_Stormfall_Palace_Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="C1_Stormfall_Palace_Blocker_DamaskusBegging" Position="" IsHidden="1" />
+      <Entity EntityName="A4_Stormfall_SouthWayDragon_Blocker" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Epilogue_Zalahir" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Epilogue_Valeria" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Epilogue_Ilthain" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Epilogue_Gernese" Position="" IsHidden="0" />
+      <Entity EntityName="ACT4_Epilogue_Damaskus" Position="" IsHidden="0" />
+    </Step>
+  </Quest>
+  <Quest Name="HL_M1">
+    <Step Value="0">
+      <Entity EntityName="NPC_HLC1_Forest_IlthainIntro" Position="" IsHidden="0" />
+      <Entity EntityName="NPC_HLC1_Forest_OndarIntro" Position="" IsHidden="0" />
+      <Entity EntityName="ClickableEntity_RepublicanDoor_3" Position="" IsHidden="0" />
+      <Entity EntityName="AnimDoor_RepublicanDoor_3" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="2">
+      <Entity EntityName="NPC_HLC1_Forest_IlthainFinal" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_ClickableEntity_FromCampToStables" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_ClickableEntity_FromStabToCamp" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_ClickableEntity_FromPitToStab" Position="" IsHidden="1" />
+      <Entity EntityName="AnimDoor_RepublicanDoor_3" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C1_GeneratorDoorBlocker1" Position="" IsHidden="0" />
+      <Entity EntityName="CE_HLC_C1_GeneratorDoorBlocker2" Position="" IsHidden="0" />
+      <Entity EntityName="HL_C1_AD_DragonCage_01" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_02" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_03" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_04" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_05" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_06" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_07" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_08" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_09" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_10" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_11" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_12" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_13" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_14" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_15" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_16" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_17" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_18" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_19" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_20" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_21" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_DYN_LucanAtk_Lucan" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_DYN_LucanAtk_Ilthain" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_DYN_LucanAtk_Ondar" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C1_IlthainTalkToBlocker_01" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C1_IlthainTalkToBlocker_02" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C1_IlthainTalkToBlocker_03" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_1" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_1" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_2" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_2" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_3" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_3" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_4" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_4" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_5" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_5" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_6" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_6" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_7" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_7" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_8" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_8" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_9" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_9" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_10" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_10" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_11" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_11" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_12" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_12" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_13" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_13" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_14" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_14" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_15" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_15" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_16" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_16" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_17" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_17" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_18" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_18" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_19" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_19" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_20" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_20" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_21" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_21" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_22" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_22" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_23" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_23" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_24" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_24" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_25" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_25" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_26" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_26" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_27" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_27" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_28" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_28" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_29" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_29" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_30" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_30" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_31" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_31" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_32" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_32" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_33" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_33" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_34" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_34" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_35" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_35" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_36" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_36" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_GeneratorAreaBox1" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_Generator_IcySoul_1" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_GeneratorAreaBox2" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_Generator_IcySoul_2" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_GeneratorAreaBox3" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_Generator_IcySoul_3" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_CampGenerator_1" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_CampGenerator_2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_CampGenerator_3" Position="" IsHidden="1" />
+      <ParticleEmitter EntityName="HL_C2_RepublicanCamp_VFX_Generator_01" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="HL_C2_RepublicanCamp_VFX_Generator_02" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="HL_C2_RepublicanCamp_VFX_Generator_03" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_01" Position="" IsHidden="0" IsEnabled="1" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_02" Position="" IsHidden="0" IsEnabled="1" />
+      <Entity EntityName="Light_Republican_ElectricGate_1" Position="" IsHidden="0" />
+      <Entity EntityName="Light_Republican_ElectricGate_2" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="4">
+      <Door EntityName="AnimDoor_RepublicanDoor_1" Position="" IsHidden="" IsLocked="0" IsOpened="1" />
+    </Step>
+    <Step Value="5">
+      <Door EntityName="AnimDoor_RepublicanDoor_2" Position="" IsHidden="" IsLocked="0" IsOpened="1" />
+    </Step>
+    <Step Value="6">
+      <Entity EntityName="CE_HLC_C1_GeneratorDoorBlocker1" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C1_GeneratorDoorBlocker2" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorTrigger1" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorGPI1" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorTrigger2" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorGPI2" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorTrigger3" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorGPI3" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_CampGenerator_1" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject_CampGenerator_2" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject_CampGenerator_3" Position="" IsHidden="0" />
+      <Entity EntityName="Aset_Embankment_Cable1" Position="" IsHidden="1" />
+      <Entity EntityName="Aset_Embankment_Cable2" Position="" IsHidden="1" />
+      <Entity EntityName="Aset_Embankment_Cable3" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_1" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_1" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_2" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_2" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_3" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_3" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_4" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_4" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_5" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_5" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_6" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_6" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_7" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_7" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_8" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_8" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_9" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_9" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_10" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_10" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_11" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_11" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_12" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_12" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_13" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_13" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_14" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_14" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_15" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_15" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_16" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_16" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_17" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_17" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_18" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_18" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_19" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_19" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_20" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_20" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_21" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_21" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_22" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_22" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_23" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_23" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_24" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_24" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_25" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_25" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_26" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_26" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_27" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_27" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_28" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_28" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_29" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_29" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_30" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_30" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_31" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_31" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_32" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_32" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_33" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_33" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_34" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_34" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_35" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_35" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_36" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_36" Position="" IsHidden="0" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_01" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_02" Position="" IsHidden="" IsEnabled="0" />
+      <Entity EntityName="Light_Republican_ElectricGate_1" Position="" IsHidden="0" />
+      <Entity EntityName="Light_Republican_ElectricGate_2" Position="" IsHidden="0" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_1" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_2" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_3" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_4" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_5" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_6" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_7" Position="" IsHidden="" IsEnabled="1" />
+    </Step>
+    <Step Value="7">
+      <Entity EntityName="ClickableEntity_RepublicanDoor_3" Position="" IsHidden="0" />
+      <Entity EntityName="AnimDoor_RepublicanDoor_3" Position="" IsHidden="0" />
+      <Entity EntityName="DYN_C1_M1_AnimObject_RaisingAlarm_1" Position="" IsHidden="1" />
+      <Door EntityName="AnimDoor_RepublicanDoor_3" Position="" IsHidden="" IsLocked="0" IsOpened="0" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_01" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_02" Position="" IsHidden="" IsEnabled="0" />
+    </Step>
+    <Step Value="9">
+      <Entity EntityName="NPC_HLC1_Forest_IlthainFinal" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_LucanQuestionning_Ondar_1" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_LucanQuestionning_LucanDrake_1" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_LucanQuestionning_Lucan_1" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="10">
+      <Entity EntityName="NPC_HLC1_Forest_IlthainFinal" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject_LucanQuestionning_Ondar_1" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject_LucanQuestionning_LucanDrake_1" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject_LucanQuestionning_Lucan_1" Position="" IsHidden="0" />
+    </Step>
+  </Quest>
+  <Quest Name="HL_M2">
+    <Step Value="0">
+      <Entity EntityName="NPC_HLC1_Forest_IlthainFinal" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Drake_Collider_1" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Drake_Collider_2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_RepuSoldierQuestionning_Soldier_2" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="4">
+      <Entity EntityName="Ondar_NPC" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="5">
+      <Entity EntityName="HL_C2_FleshDoor4" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C2_FleshDoor5" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C2_FleshDoor6" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C2_Arena1Blocker" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="7">
+      <Entity EntityName="HL_C2_FleshDoor11" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C2_FleshDoor10" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C2_Arena2Blocker" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="9">
+      <Entity EntityName="HL_C2_FleshDoor17" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C2_FleshDoor16" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C2_FleshDoor15" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C2_Arena3Blocker" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="11">
+      <Sequence Name="C1_RitualChamber" State="end" />
+      <Entity EntityName="Dead_Drake_Collider_1" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Drake_Collider_2" Position="" IsHidden="0" />
+      <Entity EntityName="CE_HLC_C2_Arena4Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_BelizulIncubationChambers" Position="" IsHidden="1" />
+      <Entity EntityName="IncubationChamber1" Position="" IsHidden="1" />
+      <Entity EntityName="IncubationChamber2" Position="" IsHidden="1" />
+      <Entity EntityName="IncubationChamber3" Position="" IsHidden="1" />
+      <Entity EntityName="IncubationChamber4" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="12">
+      <Entity EntityName="NPC_HLC2_RitualArea_IlthainFinal" Position="" IsHidden="0" />
+    </Step>
+  </Quest>
+  <Quest Name="HL_M3">
+    <Step Value="0">
+      <Entity EntityName="M3_Oshara_P1_Blocker1_Init" Position="" IsHidden="1" />
+      <Entity EntityName="M3_Oshara_P1_Blocker2_Init" Position="" IsHidden="0" />
+      <Entity EntityName="Blocker_M3_OsharaP2_1" Position="" IsHidden="1" />
+      <Entity EntityName="Blocker_M3_OsharaP2_2" Position="" IsHidden="0" />
+      <Entity EntityName="Blocker_M3_OsharaP3" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara" Position="" IsHidden="1" />
+      <Entity EntityName="Dragon_Egg" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_1" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_2" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_3" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_4" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_5" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_6" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_7" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_dynscene_M3_sniper_camera" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_camera_vista_canon" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_dynscene_M3_cultist_camera" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_dynscene_M3_recoveringgoods_Camera" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_dynscene_M3_MerchantsTrapped_Camera" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="2">
+      <Sequence Name="DYN_C1_M3_RecoveringGoods_pre" State="end" />
+    </Step>
+    <Step Value="3">
+      <Entity EntityName="ProximityTrigger_dynscene_M3_MerchantsTrapped_Camera" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="4">
+      <Entity EntityName="Blocker_M3_OsharaP1_1" Position="" IsHidden="1" />
+      <Entity EntityName="Blocker_M3_OsharaP1_2" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="6">
+      <Entity EntityName="ProximityTrigger_dynscene_M3_cultist_camera" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="7">
+      <Entity EntityName="ProximityTrigger_camera_vista_canon" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="8">
+      <Entity EntityName="M3_Oshara_P2_BlockingRoad_FX_1" Position="" IsHidden="1" />
+      <Entity EntityName="M3_Oshara_P2_BlockingRoad_FX_2" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="11">
+      <Entity EntityName="Dead_Oshara_Collider_1" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_2" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_3" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_4" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_5" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_6" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_7" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara" Position="" IsHidden="0" />
+      <Entity EntityName="M3_Dragon_Egg_Taken" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+  <Quest Name="HL_C1">
+    <Step Value="0">
+      <Entity EntityName="NPC_HLC1_Forest_IlthainIntro" Position="" IsHidden="0" />
+      <Entity EntityName="NPC_HLC1_Forest_OndarIntro" Position="" IsHidden="0" />
+      <Entity EntityName="ClickableEntity_RepublicanDoor_3" Position="" IsHidden="0" />
+      <Entity EntityName="AnimDoor_RepublicanDoor_3" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="1">
+      <Entity EntityName="NPC_HLC1_Forest_IlthainFinal" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_ClickableEntity_FromCampToStables" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_ClickableEntity_FromStabToCamp" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_ClickableEntity_FromPitToStab" Position="" IsHidden="1" />
+      <Entity EntityName="AnimDoor_RepublicanDoor_3" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C1_GeneratorDoorBlocker1" Position="" IsHidden="0" />
+      <Entity EntityName="CE_HLC_C1_GeneratorDoorBlocker2" Position="" IsHidden="0" />
+      <Entity EntityName="HL_C1_AD_DragonCage_01" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_02" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_03" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_04" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_05" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_06" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_07" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_08" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_09" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_10" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_11" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_12" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_13" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_14" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_15" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_16" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_17" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_18" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_19" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_20" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_AD_DragonCage_21" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_DYN_LucanAtk_Lucan" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_DYN_LucanAtk_Ilthain" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_DYN_LucanAtk_Ondar" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C1_IlthainTalkToBlocker_01" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C1_IlthainTalkToBlocker_02" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C1_IlthainTalkToBlocker_03" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_1" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_1" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_2" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_2" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_3" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_3" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_4" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_4" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_5" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_5" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_6" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_6" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_7" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_7" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_8" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_8" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_9" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_9" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_10" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_10" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_11" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_11" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_12" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_12" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_13" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_13" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_14" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_14" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_15" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_15" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_16" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_16" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_17" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_17" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_18" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_18" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_19" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_19" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_20" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_20" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_21" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_21" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_22" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_22" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_23" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_23" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_24" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_24" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_25" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_25" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_26" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_26" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_27" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_27" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_28" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_28" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_29" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_29" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_30" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_30" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_31" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_31" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_32" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_32" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_33" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_33" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_34" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_34" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_35" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_35" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_36" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_DragonBreath_36" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_GeneratorAreaBox1" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_Generator_IcySoul_1" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_GeneratorAreaBox2" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_Generator_IcySoul_2" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_GeneratorAreaBox3" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C1_Generator_IcySoul_3" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_CampGenerator_1" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_CampGenerator_2" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_CampGenerator_3" Position="" IsHidden="1" />
+      <ParticleEmitter EntityName="HL_C2_RepublicanCamp_VFX_Generator_01" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="HL_C2_RepublicanCamp_VFX_Generator_02" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="HL_C2_RepublicanCamp_VFX_Generator_03" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_01" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_02" Position="" IsHidden="" IsEnabled="1" />
+      <Entity EntityName="Light_Republican_ElectricGate_1" Position="" IsHidden="0" />
+      <Entity EntityName="Light_Republican_ElectricGate_2" Position="" IsHidden="0" />
+    </Step>
+    <Step Value="5">
+      <Entity EntityName="HLC1_Reveal_GeneratorTrigger1" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorGPI1" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorTrigger2" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorGPI2" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorTrigger3" Position="" IsHidden="1" />
+      <Entity EntityName="HLC1_Reveal_GeneratorGPI3" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_CampGenerator_1" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject_CampGenerator_2" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject_CampGenerator_3" Position="" IsHidden="0" />
+      <Entity EntityName="Aset_Embankment_Cable1" Position="" IsHidden="1" />
+      <Entity EntityName="Aset_Embankment_Cable2" Position="" IsHidden="1" />
+      <Entity EntityName="Aset_Embankment_Cable3" Position="" IsHidden="1" />
+      <Entity EntityName="GPI_DragonBreath_1" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_1" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_2" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_2" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_3" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_3" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_4" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_4" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_5" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_5" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_6" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_6" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_7" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_7" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_8" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_8" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_9" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_9" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_10" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_10" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_11" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_11" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_12" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_12" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_13" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_13" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_14" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_14" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_15" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_15" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_16" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_16" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_17" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_17" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_18" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_18" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_19" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_19" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_20" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_20" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_21" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_21" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_22" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_22" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_23" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_23" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_24" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_24" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_25" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_25" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_26" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_26" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_27" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_27" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_28" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_28" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_29" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_29" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_30" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_30" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_31" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_31" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_32" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_32" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_33" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_33" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_34" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_34" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_35" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_35" Position="" IsHidden="0" />
+      <Entity EntityName="GPI_DragonBreath_36" Position="" IsHidden="0" />
+      <Entity EntityName="AreaBox_DragonBreath_36" Position="" IsHidden="0" />
+      <Entity EntityName="Light_Republican_ElectricGate_1" Position="" IsHidden="1" />
+      <Entity EntityName="Light_Republican_ElectricGate_2" Position="" IsHidden="1" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_01" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_02" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_1" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_2" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_3" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_4" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_5" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_6" Position="" IsHidden="" IsEnabled="1" />
+      <ParticleEmitter EntityName="HLC1_Deactivate_S5_Particle_C1_M1_firearea_warning_7" Position="" IsHidden="" IsEnabled="1" />
+    </Step>
+    <Step Value="6">
+      <Entity EntityName="CE_HLC_C1_GeneratorDoorBlocker1" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C1_GeneratorDoorBlocker2" Position="" IsHidden="1" />
+      <Entity EntityName="ClickableEntity_RepublicanDoor_3" Position="" IsHidden="1" />
+      <Entity EntityName="AnimDoor_RepublicanDoor_3" Position="" IsHidden="0" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_01" Position="" IsHidden="" IsEnabled="0" />
+      <ParticleEmitter EntityName="RepublicanCamp_VFX_ElectricGate_02" Position="" IsHidden="" IsEnabled="0" />
+    </Step>
+    <Step Value="8">
+      <Entity EntityName="NPC_HLC1_Forest_IlthainFinal" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_LucanQuestionning_Ondar_1" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_LucanQuestionning_LucanDrake_1" Position="" IsHidden="1" />
+      <Entity EntityName="AnimObject_LucanQuestionning_Lucan_1" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="9">
+      <Entity EntityName="NPC_HLC1_Forest_IlthainFinal" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject_LucanQuestionning_Ondar_1" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject_LucanQuestionning_LucanDrake_1" Position="" IsHidden="0" />
+      <Entity EntityName="AnimObject_LucanQuestionning_Lucan_1" Position="" IsHidden="0" />
+    </Step>
+  </Quest>
+  <Quest Name="HL_C2">
+    <Step Value="0">
+      <Entity EntityName="NPC_HLC1_Forest_IlthainFinal" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Drake_Collider_1" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Drake_Collider_2" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="3">
+      <Entity EntityName="Ondar_NPC" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="4">
+      <Entity EntityName="HL_C2_FleshDoor4" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C2_FleshDoor5" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C2_FleshDoor6" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C2_Arena1Blocker" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="6">
+      <Entity EntityName="HL_C2_FleshDoor11" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C2_FleshDoor10" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C2_Arena2Blocker" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="8">
+      <Entity EntityName="HL_C2_FleshDoor17" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C2_FleshDoor16" Position="" IsHidden="1" />
+      <Entity EntityName="HL_C2_FleshDoor15" Position="" IsHidden="1" />
+      <Entity EntityName="CE_HLC_C2_Arena3Blocker" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="10">
+      <Sequence Name="C1_RitualChamber" State="end" />
+      <Entity EntityName="Dead_Drake_Collider_1" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Drake_Collider_2" Position="" IsHidden="0" />
+      <Entity EntityName="CE_HLC_C2_Arena4Blocker" Position="" IsHidden="1" />
+      <Entity EntityName="AreaBox_BelizulIncubationChambers" Position="" IsHidden="1" />
+      <Entity EntityName="IncubationChamber1" Position="" IsHidden="1" />
+      <Entity EntityName="IncubationChamber2" Position="" IsHidden="1" />
+      <Entity EntityName="IncubationChamber3" Position="" IsHidden="1" />
+      <Entity EntityName="IncubationChamber4" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="11">
+      <Entity EntityName="NPC_HLC2_RitualArea_IlthainFinal" Position="" IsHidden="0" />
+    </Step>
+  </Quest>
+  <Quest Name="HL_C3">
+    <Step Value="0">
+      <Entity EntityName="M3_Oshara_P1_Blocker1_Init" Position="" IsHidden="1" />
+      <Entity EntityName="M3_Oshara_P1_Blocker2_Init" Position="" IsHidden="0" />
+      <Entity EntityName="Blocker_M3_OsharaP2_1" Position="" IsHidden="1" />
+      <Entity EntityName="Blocker_M3_OsharaP2_2" Position="" IsHidden="0" />
+      <Entity EntityName="Blocker_M3_OsharaP3" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara" Position="" IsHidden="1" />
+      <Entity EntityName="Dragon_Egg" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_1" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_2" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_3" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_4" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_5" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_6" Position="" IsHidden="1" />
+      <Entity EntityName="Dead_Oshara_Collider_7" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_dynscene_M3_sniper_camera" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_camera_vista_canon" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_dynscene_M3_cultist_camera" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_dynscene_M3_recoveringgoods_Camera" Position="" IsHidden="1" />
+      <Entity EntityName="ProximityTrigger_dynscene_M3_MerchantsTrapped_Camera" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="1">
+      <Sequence Name="DYN_C1_M3_RecoveringGoods_pre" State="end" />
+    </Step>
+    <Step Value="2">
+      <Entity EntityName="ProximityTrigger_dynscene_M3_MerchantsTrapped_Camera" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="3">
+      <Entity EntityName="Blocker_M3_OsharaP1_1" Position="" IsHidden="1" />
+      <Entity EntityName="Blocker_M3_OsharaP1_2" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="5">
+      <Entity EntityName="ProximityTrigger_dynscene_M3_cultist_camera" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="6">
+      <Entity EntityName="ProximityTrigger_camera_vista_canon" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="7">
+      <Entity EntityName="M3_Oshara_P2_BlockingRoad_FX_1" Position="" IsHidden="1" />
+      <Entity EntityName="M3_Oshara_P2_BlockingRoad_FX_2" Position="" IsHidden="1" />
+    </Step>
+    <Step Value="10">
+      <Entity EntityName="Dead_Oshara_Collider_1" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_2" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_3" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_4" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_5" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_6" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara_Collider_7" Position="" IsHidden="0" />
+      <Entity EntityName="Dead_Oshara" Position="" IsHidden="0" />
+      <Entity EntityName="M3_Dragon_Egg_Taken" Position="" IsHidden="1" />
+    </Step>
+  </Quest>
+</MetaData>

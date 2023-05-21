@@ -1,0 +1,60 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_FlameWaveP2" ESkill="AI_DEFAULT_COMBO" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_08" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FlameWaveIn_Shape" />
+      <Entry ShapeName="Ahriman_FlameWaveOut1_Shape" />
+    </Shapes>
+    <SkillSpecific NumberOfAttacks="2" />
+    <SoundTrigger OnAnimCast="Play_Ahriman_FlameWave_Cast_P2" OnAnimStart="Play_Ahriman_FlameWave_PreCast_P2" OnHit="Play_DOT_Burn" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlameWaveP2_Nerfed" ESkill="AI_DEFAULT_COMBO" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_08" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FlameWaveIn_Shape_Nerfed" />
+      <Entry ShapeName="Ahriman_FlameWaveOut1_Shape_Nerfed" />
+    </Shapes>
+    <SkillSpecific NumberOfAttacks="2" />
+    <EventEffectOverride>
+      <AnimEvent Original="COFY_Ahriman_bys.Flame_Wave.Indicator" Override="COFY_Ahriman_bys.Flame_Wave.Indicator_Nerf" />
+      <AnimEvent Original="COFY_Ahriman_bys.Flame_Wave.Flame_Wave" Override="COFY_Ahriman_bys.Flame_Wave.Flame_Wave_Nerf" />
+    </EventEffectOverride>
+    <SoundTrigger OnAnimCast="Play_Ahriman_FlameWave_Cast_P2" OnAnimStart="Play_Ahriman_FlameWave_PreCast_P2" OnHit="Play_DOT_Burn" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlameWaveP3" ESkill="AI_DEFAULT_COMBO" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_06" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FlameWaveIn_Shape" />
+      <Entry ShapeName="Ahriman_FlameWaveOut1_Shape" />
+      <Entry ShapeName="Ahriman_FlameWave2_Shape" />
+    </Shapes>
+    <SkillSpecific NumberOfAttacks="3" />
+    <SoundTrigger OnAnimCast="Play_Ahriman_Flame_Wave_Cast_P3" OnAnimStart="Play_Ahriman_Flame_Wave_Indicator_P3" OnHit="Play_DOT_Burn" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FlameWaveP3_Nerfed" ESkill="AI_DEFAULT_COMBO" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_06" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FlameWaveIn_Shape_Nerfed" />
+      <Entry ShapeName="Ahriman_FlameWaveOut1_Shape_Nerfed" />
+      <Entry ShapeName="Ahriman_FlameWave2_Shape_Nerfed" />
+    </Shapes>
+    <SkillSpecific NumberOfAttacks="3" />
+    <EventEffectOverride>
+      <AnimEvent Original="COFY_Ahriman_bys.Flame_Wave.Indicator" Override="COFY_Ahriman_bys.Flame_Wave.Indicator_Nerf" />
+      <AnimEvent Original="COFY_Ahriman_bys.Flame_Wave.Flame_Wave" Override="COFY_Ahriman_bys.Flame_Wave.Flame_Wave_Nerf" />
+    </EventEffectOverride>
+    <SoundTrigger OnAnimCast="Play_Ahriman_Flame_Wave_Cast_P3" OnAnimStart="Play_Ahriman_Flame_Wave_Indicator_P3" OnHit="Play_DOT_Burn" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

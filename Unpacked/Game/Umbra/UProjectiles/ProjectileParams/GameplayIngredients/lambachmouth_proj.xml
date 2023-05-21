@@ -1,0 +1,21 @@
+<MetaData>
+  <Projectile ID="lambachmouth_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="u_gameplay_ingredient2.flesh_mouth.projectile" Scale="1" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="u_gameplay_ingredient2.flesh_mouth.explosion" Scale="1" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="u_gameplay_ingredient2.flesh_mouth.indicator" Scale="1" Direction="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_LambachMouth_Curve" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="15" SpeedMax="15" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+</MetaData>

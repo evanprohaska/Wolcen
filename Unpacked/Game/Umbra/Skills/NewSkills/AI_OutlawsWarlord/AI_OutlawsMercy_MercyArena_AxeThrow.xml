@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_outlaw_mercy_MercyArena_axethrow" ESkill="AI_default_projectileskillwithaoe" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Attachments HideEquippedItemsWhilecasting_Right="1" CanBeInterrupted="0" />
+    <CastingParams CastBone="Bip01 R Hand" CasterImmobilizationTime="0.33" MaximumTargetingHalfAngle="25" />
+    <DamageWeapon WeaponMultiplier="2" />
+    <Cooldown Cooldown="0.0" />
+    <Blownaway Chance="100" Height="0" Distance="8" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Projectile Name="outlaw_warlord_axe_proj" ProjectileCount="3" PenetrationLimit="999" />
+    <Targeting TargetingType="target" TargetPositionOffset="0,2,0" />
+    <Collisions IgnoreEntityCollisions="0" IgnoreTerrainCollisions="1" />
+    <Range ProjectileMinDistance="4" AttackRange="15" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+    <StatusAilment>
+      <Bleed Chance="500" ChanceMode="override" Duration="2.0" DurationMode="override" Stacks="2" StacksMode="override" />
+    </StatusAilment>
+    <SoundTrigger PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

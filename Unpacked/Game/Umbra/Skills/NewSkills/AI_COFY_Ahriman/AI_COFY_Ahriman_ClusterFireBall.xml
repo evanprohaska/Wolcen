@@ -1,0 +1,34 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_ClusterFireBallP3" ESkill="AI_COFY_AHRIMAN_CLUSTERFIREBALL" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_08" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimCast="Play_Ahriman_Cluster_Fireball_Cast_P3" OnAnimStart="Play_Ahriman_Cluster_Fireball__PreCast_P3" OnHit="Play_Halfbreed_DefaultAttack_Impact" PlayAttackVoice="1" />
+    <CastingParams CastBone="Bip01 R Hand" />
+    <Range ProjectileMinDistance="7" AttackRange="15" />
+    <Projectile Name="Ahriman_ClusterFireball_proj" ProjectileCount="1" PenetrationLimit="3" AngleBetweenProjectiles="20" />
+    <Explosion ExplosionRadius="1" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="COFY_Ahriman_bys.Cluster_Fire_Ball.AOE_1_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_Bomb ClusterRadius="6" ClusterProjectileCount="6" ClusterProjectileName="Ahriman_ClusterFireball_proj" ClusterDamageMultiplier="1" />
+    <SkillSpecific TimeBetweenExplosions="0.5" FirstExplosionRadius="4" SecondExplosionRadius="3" ThirdExplosionRadius="2" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_ClusterFireBallP3_Nerfed" ESkill="AI_COFY_AHRIMAN_CLUSTERFIREBALL" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_08" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimCast="Play_Ahriman_Cluster_Fireball_Cast_P3" OnAnimStart="Play_Ahriman_Cluster_Fireball__PreCast_P3" OnHit="Play_Halfbreed_DefaultAttack_Impact" PlayAttackVoice="1" />
+    <CastingParams CastBone="Bip01 R Hand" />
+    <Range ProjectileMinDistance="7" AttackRange="15" />
+    <Projectile Name="Ahriman_ClusterFireball_proj" ProjectileCount="1" PenetrationLimit="1" AngleBetweenProjectiles="20" />
+    <Explosion ExplosionRadius="1" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="COFY_Ahriman_bys.Cluster_Fire_Ball.AOE_1_3m" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_Bomb ClusterRadius="6" ClusterProjectileCount="6" ClusterProjectileName="Ahriman_ClusterFireball_proj" ClusterDamageMultiplier="1" />
+    <SkillSpecific TimeBetweenExplosions="1.5" FirstExplosionRadius="3" SecondExplosionRadius="2" ThirdExplosionRadius="1" />
+  </Skill>
+</MetaData>

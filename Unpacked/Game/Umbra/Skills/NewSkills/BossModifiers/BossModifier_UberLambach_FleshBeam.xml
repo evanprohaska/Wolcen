@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_UberLambach_FleshBeam">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".3" />
+    <StatusAilment>
+      <Bleed Chance="100" ChanceMode="override" Duration="1" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_FleshBeam_DZ" />
+    </Shapes>
+    <DamageZone Duration="10" RateOfFire="0.1" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="U_Monster.Indicator.Indicator_3M_02" Offset="0,0,0" Direction="0,0,1" Scale="0.66" TimeScale="0.5" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.rend_beam.dz" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="6" RandomBaseDistMax="13" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="25" MaxAngularSpeed="25" IndicatorMaxTimer="2" NumberOfDZ="2" BaseDirIsClockwise="0" AllowRandomDir="1" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

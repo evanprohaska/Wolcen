@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="unique_laceration_onhit" ESkill="player_laceration" Keywords="attack_skill,passive_effect,">
+    <CastingParams CastBone="R_weapon_bone" CanMultiCast="1" CasterImmobilizationTime="0" CanCastWhileMoving="1" MaximumTurnRate="0" ShouldMoveInRange="0" CancellableByDefault="1" />
+    <CastingImmunity IgnoreCrowdControlDuringCast="1" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/laceration_Rend.png" UIName="@ui_AST_Laceration" Lore="@ui_AST_Laceration_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="1" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,DamageWeapon,DamageCritical,StatusAilmentsChance,LifeLeech,SpecificLaceration" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,DamageWeapon,StatusAilmentsChance,SpecificLaceration" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Rend" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Rend" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Rend" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.HEPHAARON" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Rend" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Rend" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Rend" Inventory_HUDPicture="../u_resources/enneracts/laceration.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Aggression TargetValueOnHit="40" />
+    <DamageWeapon WeaponMultiplier="3" />
+    <Damage_Conversion>
+      <Entry From="physical" To="rend" ConversionRate="100" />
+    </Damage_Conversion>
+    <StatusAilment>
+      <bleed Chance="20" ChanceMode="AddToBase" Duration="6" DurationMode="override" />
+    </StatusAilment>
+    <DamageZone RateOfFire="0.5" />
+    <ParticleList>
+      <Particle Key="appear" Name="U_Character.Skills.Laceration_Axe_Summon_01_Blood" Direction="0,0,1" />
+      <Particle Key="disappear" Name="U_Character.Skills.Laceration_Axe_Disappear_01_Blood" Direction="0,0,1" />
+      <Particle Key="wind" Name="U_Character.Skills.Laceration_Wind_Blood" Direction="0,0,1" />
+      <Particle Key="loop" Name="U_Character.Skills.Laceration_Axe_Loop_01_Blood" Direction="0,0,1" Offset="0,0,1.35" />
+    </ParticleList>
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_laceration" BloodDecalOrientation="forward" />
+    <SoundTrigger OnAnimStart="Play_Skill_Laceration_Summon" OnAnimCast="Play_Skill_Laceration" OnCrticalHit="Play_Skill_Laceration_Impact" OnHit="Play_Skill_Laceration_Impact" OnKill="Play_OnKill_Impact_Lethal_Melee_Skill_Default" />
+    <Specific_Laceration BladeStartDistanceFromCaster="2.5" BladeEndDistanceFromCaster="2.5" ProjectileSpeedMultiplier="1.8" ProjectileLifeTime="2.45" DamageZoneRadius="1.5" DamageZoneHeightOffset="1.35" SoundTriggerOnVFXKill="" />
+  </Skill>
+</MetaData>

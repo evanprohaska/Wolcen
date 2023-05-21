@@ -1,0 +1,58 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_BanditOutpost" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="LuckyDungeon" PriorityTag="LotOfLoot" ExcludeTag="Room,MMGoblin,Named,NoMonster" Weight="8" />
+      <Archetype Tag="ChestRoom" PriorityTag="EpicFixedLoot,Room,NoMonster" ExcludeTag="KillCP,KillTarget,CursedChestRoom" Weight="4" />
+      <Archetype Tag="GoblinDungeon" PriorityTag="MMGoblin,SmallArea,NormalLoot" ExcludeTag="NoMonster,Room,KillCP,KillTarget,MediumArea,BossArea" Weight="4" />
+      <Archetype Tag="KillOneTarget" PriorityTag="KillTarget,OneGoal,NormalLoot" ExcludeTag="Room,MMGoblin,Named,Hard,Medium" Weight="20" />
+      <Archetype Tag="KillNumerousTarget" PriorityTag="KillTarget,NumerousGoal,MediumArea,NormalLoot" ExcludeTag="Room,MMGoblin,BossArea,Hard,Medium" Weight="20" />
+      <Archetype Tag="KillCP" PriorityTag="KillCP,NormalLoot" ExcludeTag="Room,MMGoblin,NoMonster,BossArea,MediumArea" Weight="20" />
+      <Archetype Tag="NoQuest" PriorityTag="EODReward" ExcludeTag="KillCP,KillTarget,MediumArea,Room,NoMonster,MMGoblin,BossArea" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="Cellar_Mossy_Room_CG" Tag="Room,Cellar_Mossy" PriorityTag="Cellar" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Cellar_Mossy_VerySmallDungeon_CG" Tag="Cellar_Mossy,VerySmallArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="NumerousGoal,FewGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cellar_Mossy_SmallDungeon_CG" Tag="Cellar_Mossy,SmallArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="NumerousGoal,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cellar_Mossy_MediumDungeon_CG" Tag="Cellar_Mossy,MediumArea,ClassicArea" PriorityTag="Cellar" ExcludeTag="COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Room_CG" Tag="Room,Mine" PriorityTag="Mine" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Cave,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Mine_VerySmallDungeon_CG" Tag="Mine,VerySmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,FewGoal,SVRI,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_SmallDungeon_CG" Tag="Mine,SmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,SVRI,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_MediumDungeon_CG" Tag="Mine,MediumArea,ClassicArea" PriorityTag="Mine" ExcludeTag="SVRI,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_Room_CG" Tag="Room,Mine" PriorityTag="Mine" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Forest,Tps,RandomNecro,Cave,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Mine_Foggy_VerySmallDungeon_CG" Tag="Mine,VerySmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,FewGoal,SVRI,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_SmallDungeon_CG" Tag="Mine,SmallArea,ClassicArea" PriorityTag="Mine" ExcludeTag="NumerousGoal,SVRI,COFE,REPU,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Mine_Foggy_MediumDungeon_CG" Tag="Mine,MediumArea,ClassicArea" PriorityTag="Mine" ExcludeTag="SVRI,COFE,REPU,COFY,PRIMO" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_BanditOutpost_KillTarget_OUTW_Trapper_4" Tag="KillTarget,NumerousGoal,OUTW" PriorityTag="KillTarget,OUTW,EMQuest" ExcludeTag="Hard,Medium" />
+      <Quest QuestName="QN_SC_BanditOutpost_KillTarget_COSS_Halfbreed_4" Tag="KillTarget,NumerousGoal,COSS" PriorityTag="KillTarget,COSS,EMQuest" ExcludeTag="Hard,Medium" />
+      <Quest QuestName="QN_SC_BanditOutpost_KillTarget_OUTW_Brute" Tag="KillTarget,OneGoal,OUTW" PriorityTag="KillTarget,OUTW,EMQuest" ExcludeTag="Hard,Medium" />
+      <Quest QuestName="QN_SC_BanditOutpost_KillTarget_COSS_Halfbreed" Tag="KillTarget,OneGoal,COSS" PriorityTag="KillTarget,COSS,EMQuest" ExcludeTag="Hard,Medium" />
+      <Quest QuestName="QN_SC_BanditOutpost_KillCP_1" Tag="KillCP,WILD" PriorityTag="WILD,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_BanditOutpost_KillCP_1" Tag="KillCP,OUTW" PriorityTag="OUTW,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_BanditOutpost_KillCP_1" Tag="KillCP,COSS" PriorityTag="COSS,EMQuest" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_BO_Mammals" Tag="Easy,WILD,Mammals,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_BO_Insects" Tag="Easy,WILD,insect,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_BO_OUTW_Easy" Tag="Easy,OUTW,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_BO_COSS_Easy" Tag="Easy,COSS,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_BO_OUTW_Medium" Tag="Medium,LotOfMonster,OUTW" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_BO_COSS_Medium" Tag="Medium,LotOfMonster,COSS" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_BO_Mammals_Goblin" Tag="MMGoblin,Easy,WILD,Mammals,LotOfMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Mine,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Cellar,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_BanditOutpost_Mine_ChestRoom" Tag="Mine,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_BanditOutpost_Cellar_ChestRoom" Tag="Cellar,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_BanditOutpost_Mine_EODReward" Tag="Mine,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_BanditOutpost_Cellar_EODReward" Tag="Cellar,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_BanditOutpost_Mine_BigLoot" Tag="Mine,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_BanditOutpost_Cellar_BigLoot" Tag="Cellar,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_BanditOutpost_Mine" Tag="Mine,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_BanditOutpost_Cellar" Tag="Cellar,NormalLoot" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

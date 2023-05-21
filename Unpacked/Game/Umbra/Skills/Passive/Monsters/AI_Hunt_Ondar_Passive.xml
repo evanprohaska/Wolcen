@@ -1,0 +1,16 @@
+<MetaData>
+  <Spell Name="AI_Hunt_Ondar_Allies_Buff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_major_all" Permanent="0">
+        <Semantics MajorDamageMultiplier="3" />
+      </EIM>
+      <EIM Name="damage_percent_major_dot" Permanent="0">
+        <Semantics MajorDamageMultiplier="3" />
+      </EIM>
+      <EIM Name="damage_taken_percent" Permanent="0">
+        <Semantics DamagePercentFloat="-50" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_physical.png" Description="@ui_AI_Hunt_Ondar_Allies_Buff_desc" Title="@ui_AI_Hunt_Ondar_Allies_Buff_title" />
+  </Spell>
+</MetaData>

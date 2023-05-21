@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_AetherArea_Expand">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Umbra" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <Stasis Chance="100" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_AetherArea_Expand" />
+    </Shapes>
+    <DamageZone Duration="10" RateOfFire="1" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="U_EnvironmentParticle.Soul.CultistRitual.Spread" Offset="0,0,0" Direction="1,0,0" Scale="1" TimeScale="0.1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="0" RandomBaseDistMax="20" RandomBaseAngleMin="0" RandomBaseAngleMax="0" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

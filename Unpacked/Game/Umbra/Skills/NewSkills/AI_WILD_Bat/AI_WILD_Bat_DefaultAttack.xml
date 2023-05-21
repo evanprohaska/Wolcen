@@ -1,0 +1,23 @@
+<MetaData>
+  <Skill UID="AI_WILD_Bat_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1.1" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="Default_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_WILD_Bat_DefaultAttack_Swing" OnHit="Play_hero_default_damage" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_WILD_Bat_ProjectileAttack" ESkill="default_ranged" Keywords="projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="0.8" />
+    <Cooldown Cooldown="0.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <Projectile Name="Bat_proj" ProjectileCount="1" PenetrationLimit="5" />
+    <SoundTrigger OnAnimCast="" OnHit="" PlayAttackVoice="0" />
+    <Targeting ComputeTargetPosAtCast="1" />
+  </Skill>
+</MetaData>

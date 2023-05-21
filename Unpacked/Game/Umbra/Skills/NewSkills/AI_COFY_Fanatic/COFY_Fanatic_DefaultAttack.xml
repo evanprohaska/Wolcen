@@ -1,0 +1,22 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="attack_skill" UID="AI_COFY_Fanatic_MeleeAttack">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="1.3" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="CulfOfSouls_Fanatic_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_COSS_Fantic_Attack_Swing" OnHit="Play_COSS_Fantic_Attack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Fanatic_RangedAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_03" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="1.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 L Hand" />
+    <Projectile Name="COFY_Fanatic_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_Fanatic_Fireball_Projectile_Buildup" OnHit="Play_hero_default_damage" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

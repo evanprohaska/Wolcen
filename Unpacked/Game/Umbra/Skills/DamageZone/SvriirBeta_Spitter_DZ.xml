@@ -1,0 +1,27 @@
+<MetaData>
+  <DamageZone ID="SvriirBeta_Spitter_Spit_DZ">
+    <Parameters Duration="5" MaxHitPerEntity="0" MaxHitTotal="0" RateOfFire="0.9" />
+    <Position Offset="0,0,0" StartingAngle="0" SnapToGround="1" />
+    <Shape ID="SvriirBeta_Spitter_Spit_shape" SpawnAngle="0" SpawnDelay="0" MaxHitPerEntity="0" MaxHitTotal="0" LinkedVFX="U_Monster.Siviir.Spitter_Toxic_GroundLoop_01" LinkedVFXRelPosOffset="0,0,0" LinkedVFXRelDirOverride="0,0,1" VFXTTL="5" MoveVFXWithShape="1" RemoveVFXWithShape="0" />
+  </DamageZone>
+  <DamageZone ID="SvriirBeta_Spitter_FireSpit_DZ">
+    <Parameters Duration="5" MaxHitPerEntity="0" MaxHitTotal="0" RateOfFire="0.9" />
+    <Position Offset="0,0,0" StartingAngle="0" SnapToGround="1" />
+    <Shape ID="SvriirBeta_Spitter_Spit_shape" SpawnAngle="0" SpawnDelay="0" MaxHitPerEntity="0" MaxHitTotal="0" LinkedVFX="U_VFX_Oskar.Monster.SvriirFireSpitter_FireSpit_GroundDoT" LinkedVFXRelPosOffset="0,0,0" LinkedVFXRelDirOverride="0,0,1" VFXTTL="5" MoveVFXWithShape="1" RemoveVFXWithShape="0" />
+  </DamageZone>
+  <DamageZone ID="SvriirBeta_Spitter_HeadExplosion_DZ">
+    <Parameters Duration="4" MaxHitPerEntity="0" MaxHitTotal="0" RateOfFire="0.3" />
+    <Position Offset="0,0,0" StartingAngle="0" SnapToGround="1" />
+    <Shape ID="SvriirBeta_Spitter_Spit_shape" SpawnAngle="0" SpawnDelay="0" MaxHitPerEntity="0" MaxHitTotal="0" LinkedVFX="U_Monster.Siviir.Spitter_Toxic_GroundLoop_01" LinkedVFXRelPosOffset="0,0,0" LinkedVFXRelDirOverride="0,0,1" VFXTTL="4" MoveVFXWithShape="1" RemoveVFXWithShape="0" />
+  </DamageZone>
+  <DamageZone ID="SvriirBeta_Spitter_HeadExplosion_fire_DZ">
+    <Parameters Duration="1" MaxHitPerEntity="0" MaxHitTotal="0" RateOfFire="2" />
+    <Position Offset="0,0,0" StartingAngle="0" SnapToGround="1" />
+    <Shape ID="SvriirBeta_Spitter_Fire_HeadExplosion_shape" SpawnAngle="0" SpawnDelay="0" MaxHitPerEntity="0" MaxHitTotal="0" LinkedVFX="U_VFX_Oskar.Monster.SvriirFireSpitter_FireSpit_DeathAoE" LinkedVFXScale="1" LinkedVFXRelPosOffset="0,0,0" LinkedVFXRelDirOverride="0,1,0" VFXTTL="4" MoveVFXWithShape="1" RemoveVFXWithShape="0" />
+  </DamageZone>
+  <DamageZone ID="MercyArena_Spitter_Spit_DZ">
+    <Parameters Duration="15" MaxHitPerEntity="0" MaxHitTotal="0" RateOfFire="0.9" />
+    <Position Offset="0,0,0" StartingAngle="0" SnapToGround="1" />
+    <Shape ID="SvriirBeta_Spitter_Spit_shape" SpawnAngle="0" SpawnDelay="0" MaxHitPerEntity="0" MaxHitTotal="0" LinkedVFX="U_Monster.Siviir.Spitter_Toxic_GroundLoop_01" LinkedVFXRelPosOffset="0,0,0" LinkedVFXRelDirOverride="0,0,1" VFXTTL="5" MoveVFXWithShape="1" RemoveVFXWithShape="0" />
+  </DamageZone>
+</MetaData>

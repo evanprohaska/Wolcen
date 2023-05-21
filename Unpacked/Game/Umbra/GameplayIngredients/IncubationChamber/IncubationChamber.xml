@@ -1,0 +1,16 @@
+<MetaData>
+  <IncubationChamberPreset GroupName="Lambach01" ModelBase="Objects/props/FleshForest/Boss_Arena_Spawner_Structure.cgf" ModelDestroyed="Objects/props/FleshForest/Boss_Arena_Spawner_Destroyable.cgf" DZSkillUID="gameplay_ingredient_incubationchamber_damagezone" Archetype="archetype_trash" Faction="CultOfFlesh" WarmUpTimer="10" SummonTimerMin="15" SummonTimerMax="20" RecoveringTimer="10" DeathTimer="20" HealthMultiplier="3">
+    <BossFight EntityToWatch="Lambach">
+      <Step Health="65" ChambersToTrigger="2" />
+      <Step Health="25" ChambersToTrigger="3" />
+    </BossFight>
+  </IncubationChamberPreset>
+  <IncubationChamberPreset GroupName="Uber_Lambach01" ModelBase="Objects/props/FleshForest/Boss_Arena_Spawner_Structure.cgf" ModelDestroyed="Objects/props/FleshForest/Boss_Arena_Spawner_Destroyable.cgf" DZSkillUID="gameplay_ingredient_uber_incubationchamber_damagezone" Archetype="archetype_trash" Faction="CultOfFlesh" WarmUpTimer="10" SummonTimerMin="10" SummonTimerMax="15" RecoveringTimer="10" DeathTimer="5" HealthMultiplier="3">
+    <BossFight EntityToWatch="Lambach">
+      <Step Health="65" ChambersToTrigger="2" />
+      <Step Health="25" ChambersToTrigger="3" />
+    </BossFight>
+  </IncubationChamberPreset>
+  <IncubationChamberPreset GroupName="Test_IncubationChambers" ModelBase="Objects/props/FleshForest/Boss_Arena_Spawner_Structure.cgf" ModelDestroyed="Objects/props/FleshForest/Boss_Arena_Spawner_Destroyable.cgf" DZSkillUID="gameplay_ingredient_uber_incubationchamber_damagezone" Archetype="archetype_trash" Faction="CultOfFlesh" WarmUpTimer="10" SummonTimerMin="10" SummonTimerMax="15" RecoveringTimer="10" DeathTimer="10" HealthMultiplier="3" />
+  <IncubationChamberPreset GroupName="HL_M2_Belizul" ModelBase="Objects/props/FleshForest/Belizul_Boss_Arena_Spawner_Structure.cgf" ModelDestroyed="Objects/props/FleshForest/Belizul_Boss_Arena_Spawner_Destroyable.cgf" DZSkillUID="gameplay_ingredient_Belizul_incubationchamber_damagezone" Archetype="archetype_trash" Faction="CultOfFlesh" WarmUpTimer="15" SummonTimerMin="5" SummonTimerMax="15" RecoveringTimer="10" DeathTimer="10" HealthMultiplier="6" />
+</MetaData>

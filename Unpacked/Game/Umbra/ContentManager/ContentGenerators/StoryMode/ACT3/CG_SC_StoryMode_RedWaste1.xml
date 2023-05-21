@@ -1,0 +1,82 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_RedWaste1" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="LuckyDungeon" PriorityTag="LotOfLoot" ExcludeTag="Room,MMGoblin,Named,NoMonster,BossArea" Weight="8" />
+      <Archetype Tag="ChestRoom" PriorityTag="EpicFixedLoot,Room,NoMonster" ExcludeTag="KillCP,KillTarget,CursedChestRoom" Weight="4" />
+      <Archetype Tag="CursedChestRoom" PriorityTag="CursedChestRoom,Room,NoMonster" ExcludeTag="EpicFixedLoot,KillCP,KillTarget" Weight="4" />
+      <Archetype Tag="GoblinDungeon" PriorityTag="MMGoblin,SmallArea,NormalLoot" ExcludeTag="NoMonster,Room,KillCP,KillTarget,MediumArea,BossArea" Weight="4" />
+      <Archetype Tag="KillOneNamed" PriorityTag="KillTarget,OneGoal,NormalLoot,BossArea,Named" ExcludeTag="Room,MMGoblin,Hard" Weight="0.0000000000000000000000000001" />
+      <Archetype Tag="KillOneTarget" PriorityTag="KillTarget,OneGoal,NormalLoot" ExcludeTag="Room,MMGoblin,Named,Hard,BossArea" Weight="20" />
+      <Archetype Tag="KillNumerousTarget" PriorityTag="KillTarget,NumerousGoal,MediumArea,NormalLoot,Easy" ExcludeTag="Room,MMGoblin,BossArea" Weight="20" />
+      <Archetype Tag="KillCP" PriorityTag="KillCP,NormalLoot" ExcludeTag="Room,MMGoblin,NoMonster,BossArea,MediumArea" Weight="20" />
+      <Archetype Tag="NoQuestEODReward" PriorityTag="EODReward" ExcludeTag="KillCP,KillTarget,MediumArea,Room,NoMonster,MMGoblin,BossArea" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="Cave_Sandy_Room_CG" Tag="Room,Cave_Sandy" PriorityTag="Cave" ExcludeTag="Templar,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Cave_Sandy_VerySmallDungeon_CG" Tag="Cave_Sandy,VerySmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Sandy_SmallDungeon_CG" Tag="Cave_Sandy,SmallArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Cave_Sandy_MediumDungeon_CG" Tag="Cave_Sandy,MediumArea,ClassicArea" PriorityTag="Cave" ExcludeTag="Templar,COFY,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_Room_CG" Tag="Room,WTemplar_Sandy" PriorityTag="WTemplar,COFY,Templar" ExcludeTag="GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_VerySmallDungeon_CG" Tag="WTemplar_Sandy,VerySmallArea,ClassicArea" PriorityTag="WTemplar,COFY,Templar" ExcludeTag="NumerousGoal,FewGoal,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_SmallDungeon_CG" Tag="WTemplar_Sandy,SmallArea,ClassicArea" PriorityTag="WTemplar,COFY,Templar" ExcludeTag="NumerousGoal,PRIMO" />
+      <LevelGenerator DungeonName="WTemplar_Sandy_MediumDungeon_CG" Tag="WTemplar_Sandy,MediumArea,ClassicArea" PriorityTag="WTemplar,COFY,Templar" ExcludeTag="PRIMO" />
+      <LevelGenerator DungeonName="Ossuary_Sandy_Room_CG" Tag="Room,Ossuary_Sandy" PriorityTag="Ossuary" ExcludeTag="Templar,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="Ossuary_Sandy_VerySmallDungeon_CG" Tag="Ossuary_Sandy,VerySmallArea,ClassicArea" PriorityTag="Ossuary" ExcludeTag="Templar,NumerousGoal,FewGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Ossuary_Sandy_SmallDungeon_CG" Tag="Ossuary_Sandy,SmallArea,ClassicArea" PriorityTag="Ossuary" ExcludeTag="Templar,NumerousGoal,COFY,PRIMO" />
+      <LevelGenerator DungeonName="Ossuary_Sandy_MediumDungeon_CG" Tag="Ossuary_Sandy,MediumArea,ClassicArea" PriorityTag="Ossuary" ExcludeTag="Templar,COFY,PRIMO" />
+      <LevelGenerator DungeonName="SandNecro_BossArea_CG" Tag="SandNecro,SmallArea,BossArea" PriorityTag="SandNecro,COSS,Named,Undead" ExcludeTag="NumerousGoal,FewGoal" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_RedWaste1_KillTarget_COSS_Tombbearer_4" Tag="KillTarget,NumerousGoal,COSS" PriorityTag="KillTarget,COSS,EMQuest,Undead" ExcludeTag="" />
+      <Quest QuestName="QN_SC_RedWaste1_KillTarget_COFY_Enforcer_4" Tag="KillTarget,NumerousGoal,COFY,Templar" PriorityTag="KillTarget,COFY,Templar,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_RedWaste1_KillTarget_SVRI_Spawner_4" Tag="KillTarget,NumerousGoal,SVRI" PriorityTag="KillTarget,SVRI,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_RedWaste1_KillTarget_COSS_Butcher" Tag="KillTarget,OneGoal,COSS" PriorityTag="KillTarget,COSS,EMQuest,Undead" ExcludeTag="" />
+      <Quest QuestName="QN_SC_RedWaste1_KillTarget_COFY_TemplarKnight" Tag="KillTarget,OneGoal,COFY,Templar" PriorityTag="KillTarget,COFY,Templar,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_RedWaste1_KillTarget_SVRI_AlphaFire" Tag="KillTarget,OneGoal,SVRI" PriorityTag="KillTarget,SVRI,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_RedWaste1_KillTarget_COSS_NamedMiniSpacter" Tag="KillTarget,OneGoal,COSS,Undead,Named" PriorityTag="EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_RedWaste1_KillCP_1" Tag="KillCP,SVRI" PriorityTag="SVRI,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_RedWaste1_KillCP_1" Tag="KillCP,WILD" PriorityTag="WILD,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_RedWaste1_KillCP_1" Tag="KillCP,COSS" PriorityTag="COSS,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_RedWaste1_KillCP_1" Tag="KillCP,COFY,Templar" PriorityTag="COFY,EMQuest" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_Insects" Tag="Easy,WILD,insect,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_SVRI_Easy" Tag="Easy,SVRI,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_COSS_Undead_Easy" Tag="Easy,COSS,Undead,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_COSS_Specter_Easy" Tag="Easy,COSS,Specter,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_COFY_Templar_Easy" Tag="Easy,COFY,Templar,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_SVRI_Medium" Tag="Medium,LotOfMonster,SVRI" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_COSS_Undead_Medium" Tag="Medium,LotOfMonster,COSS,Undead" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_COSS_Specter_Medium" Tag="Medium,LotOfMonster,COSS,Specter" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_COFY_Templar_Medium" Tag="Medium,LotOfMonster,COFY,Templar" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_SVRI_Hard" Tag="Hard,LotOfMonster,SVRI" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_COSS_Undead_Hard" Tag="Hard,LotOfMonster,COSS,Undead" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_COSS_Specter_Hard" Tag="Hard,LotOfMonster,COSS,Specter" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_COFY_Templar_Hard" Tag="Hard,LotOfMonster,COFY,Templar" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_Insects_Goblin" Tag="MMGoblin,Easy,WILD,Mammals,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_RedWaste1_COFY_Templar_Goblin" Tag="MMGoblin,Easy,COFY,Templar,LotOfMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Cave,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="WTemplar,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="Ossuary,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Cave_ChestRoom" Tag="Cave,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Templar_ChestRoom" Tag="WTemplar,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Ossuary_ChestRoom" Tag="Ossuary,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Cave_CursedChestRoom" Tag="Cave,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Templar_CursedChestRoom" Tag="WTemplar,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Ossuary_CursedChestRoom" Tag="Ossuary,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Cave_EODReward" Tag="Cave,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Templar_EODReward" Tag="WTemplar,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Ossuary_EODReward" Tag="Ossuary,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Cave_BigLoot" Tag="Cave,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Templar_BigLoot" Tag="WTemplar,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Ossuary_BigLoot" Tag="Ossuary,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Cave" Tag="Cave,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Templar" Tag="WTemplar,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Ossuary" Tag="Ossuary,NormalLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_RedWaste1_Ossuary" Tag="SandNecro,NormalLoot" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

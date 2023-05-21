@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_FleshRing_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Rend" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <Bleed Chance="100" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_hero_default_damage" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_FleshRing_DZ" />
+    </Shapes>
+    <DamageZone Duration="1000" RateOfFire="0.2" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="U_VFX_Oskar.Bossmodifiers.FleshRing_Cast" Offset="0,0,0" Direction="1,0,0" Scale="1.3" />
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.Bossmodifiers.FleshRing_Projectile" Offset="0,0,0" Direction="1,0,0" Scale="1.3" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="12" RandomBaseDistMax="12" RandomBaseAngleMin="0" RandomBaseAngleMax="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="100" MaxAngularSpeed="100" IndicatorMaxTimer="2" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" />
+  </Skill>
+</MetaData>

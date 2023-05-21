@@ -1,0 +1,63 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RandomLightning">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="1" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomLightning" />
+    </Shapes>
+    <DamageZone Duration="1" RateOfFire="2" RemoveParticleWithShape="0" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="u_bossmodifiers.siegebeast_rnd_lightning.start" Offset="0,0,0" Direction="1,0,0" Scale="0.4" TimeScale="1" />
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.Bossmodifiers.RandomLightnings_AoE" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="5" RandomBaseDistMax="20" RandomBaseAngleMin="0" RandomBaseAngleMax="90" LimitAngle="180" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1" NumberOfDZ="6" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_Hunt_BossModifier_RandomLightning">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="1" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomLightning" />
+    </Shapes>
+    <DamageZone Duration="1" RateOfFire="2" RemoveParticleWithShape="0" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="u_bossmodifiers.siegebeast_rnd_lightning.start" Offset="0,0,0" Direction="1,0,0" Scale="0.4" TimeScale="1" />
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.Bossmodifiers.RandomLightnings_AoE" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="5" RandomBaseDistMax="20" RandomBaseAngleMin="0" RandomBaseAngleMax="90" LimitAngle="180" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1" NumberOfDZ="6" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RandomLightning_Lieutenant">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="1" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomLightning" />
+    </Shapes>
+    <DamageZone Duration="1" RateOfFire="2" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_Character_02.Vortex.Vortex_Area_01_Lightning" Offset="0,0,0" Direction="1,0,0" Scale="0.4" TimeScale="1" />
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock.Lightningball_Body_01" Offset="0,0,0" Direction="1,0,0" Scale="1" />
+      <Particle Key="Disappear" Name="U_Monster.Heimlock.Lightningball_Ready_01" Offset="0,0,2.5" Direction="1,0,0" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="5" RandomBaseDistMax="20" RandomBaseAngleMin="0" RandomBaseAngleMax="90" LimitAngle="180" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1" NumberOfDZ="3" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RandomLightning_CloseRange">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="lightning" WeaponMultiplier="2" />
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomLightning_CloseRange" />
+    </Shapes>
+    <DamageZone Duration="1" RateOfFire="2" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Character_02.Vortex.Vortex_Area_01_Lightning" Offset="0,0,0" Direction="0,0,1" Scale=".34" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.closerange_light.strike" Offset="0,0,0" Direction="1,0,0" Scale=".85" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="2" RandomBaseDistMax="5" RandomBaseAngleMin="0" RandomBaseAngleMax="360" LimitAngle="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

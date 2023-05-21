@@ -1,0 +1,50 @@
+<MetaData>
+  <Quest Name="_bossfightteststart" UIName="" UIDesc="" Type="Secondary" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point_Edric01" Radius="20" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Vote" Duration="30" VotePreset="default" GameplayEventPresetName="GameplayEventPreset_TEST" />
+      <Goal Order="1" Type="BossFight" FightPreset="_bossfighttest" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="BossfightLost" Type="StepFail" Delay="0" Name="BossFightTestFail" RollbackToPreviousStep="1" />
+    </Step>
+  </Quest>
+  <Quest Name="_bossfighttest_01" UIName="" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="5" Name="Player_TP_Edric01" TeleportedEntityName="#Player" DestinationName="BOSS_Spawn_Point_Edric01" />
+      <Goal Order="0" Type="Wait" TimeLimit="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="B_A3_Q1_BossSpawn" Type="EntitySpawn" SpawnClass="sc_TEST_EDRIC01" TargetEntityName="BOSS_Spawn_Point_Edric01" FaceAtSpawn="" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Goal Order="1" Type="KillAll" EventsName="B_A3_Q1_BossSpawn">
+        <ArrowMarker Target="B_A3_Q1_BossSpawn" Area="" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="Wait" TimeLimit="1" />
+      <GoalLogic Formula="00-01-02" />
+    </Step>
+  </Quest>
+  <Quest Name="_bossfighttest_02" UIName="" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="5" Name="Player_TP_Edric02" TeleportedEntityName="#Player" DestinationName="BOSS_Spawn_Point_Edric02" />
+      <Goal Order="0" Type="Wait" TimeLimit="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="B_A3_Q1_BossSpawn" Type="EntitySpawn" SpawnClass="sc_TEST_EDRIC02" TargetEntityName="BOSS_Spawn_Point_Edric02" FaceAtSpawn="" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Goal Order="1" Type="KillAll" EventsName="B_A3_Q1_BossSpawn">
+        <ArrowMarker Target="B_A3_Q1_BossSpawn" Area="" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="Wait" TimeLimit="1" />
+      <GoalLogic Formula="00-01-02" />
+    </Step>
+  </Quest>
+  <Quest Name="_bossfighttest_03" UIName="" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="5" Name="Player_TP_Edric03" TeleportedEntityName="#Player" DestinationName="BOSS_Spawn_Point_Edric03" />
+      <Goal Order="0" Type="Wait" TimeLimit="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="B_A3_Q1_BossSpawn" Type="EntitySpawn" SpawnClass="sc_TEST_EDRIC03" TargetEntityName="BOSS_Spawn_Point_Edric03" FaceAtSpawn="" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Goal Order="1" Type="KillAll" EventsName="B_A3_Q1_BossSpawn">
+        <ArrowMarker Target="B_A3_Q1_BossSpawn" Area="" ShowMinimapIcon="1" Threshold="90" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="2" Type="Wait" TimeLimit="1" />
+      <GoalLogic Formula="00-01-02" />
+    </Step>
+  </Quest>
+</MetaData>

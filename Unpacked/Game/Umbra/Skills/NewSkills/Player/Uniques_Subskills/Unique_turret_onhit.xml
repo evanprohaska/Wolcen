@@ -1,0 +1,27 @@
+<MetaData>
+  <Skill UID="unique_turret_onhit" ESkill="player_turret" Keywords="projectile,gadget,passive_effect,">
+    <Range AttackRange="25" />
+    <Projectile Name="player_turret_proj" ProjectileCount="1" AngleBetweenProjectiles="1" BaseDamageBonusPercentPerNonUsedProjectile="20" />
+    <Aggression TargetValueOnHit="40" />
+    <DamageWeapon WeaponMultiplier="1.2" />
+    <StatusAilment AilmentEffectiveness="50" />
+    <Cooldown Cooldown="2" CooldownPerLevel="0" />
+    <ParticleList>
+      <Particle Key="SummonGround" Name="U_Character_02.Turret.Turret_Summon_01" Direction="0,1,0" />
+      <Particle Key="LegGround" Name="U_Character_02.Turret.Turret_Legs_01" Direction="0,1,0" />
+      <Particle Key="HeadGround" Name="U_Character_02.Turret.Turret_Head_Attack_02" Direction="0,1,0" />
+      <Particle Key="HeadDespawnGround" Name="U_Character_02.Turret.Turret_Disappear_01_Head" Direction="0,1,0" />
+      <Particle Key="LegDespawnGround" Name="U_Character_02.Turret.Turret_Disappear_01_Leg" Direction="0,1,0" />
+      <Particle Key="SummonHold" Name="U_Character_02.Turret.Turret_Summon_01_Hold" Direction="0,0,1" Bone="R_Weapon_Bone" />
+      <Particle Key="HeadHold" Name="U_Character_02.Turret.Turret_Head_Attack_02_Hold" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="DespawnHold" Name="U_Character_02.Turret.Turret_Disappear_01_Hold" Direction="0,1,0" Bone="R_Weapon_Bone" />
+      <Particle Key="Explosion" Name="U_Character_02.Turret.Turret_Exlonsion_01" Direction="0,0,1" Scale="1.65" />
+      <Particle Key="ShotGun" Name="U_Character_02.Turret.Turret_shotgun_01" Direction="0,1,0" />
+    </ParticleList>
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_turret" BloodDecalOrientation="forward" />
+    <Specific_Turret MaxTime="8" AutoTarget="1" AutoTargetRange="15" AutoTargetAngle="60" TurretSpawnDist="2" MaxTurnRate="90" DualCannon="1" ShotGun="0" CanonOffset="1.0,0.27,1.0" MaxTurret="1" FireRateMultiplierWhenHeld="2" SpawnSound="Skill_Turret_Summon" DespawnSound="Skill_Turret_Desummon" FireSound="Play_Skill_Turret_Shoot" />
+    <Tickrate BaseTickrate="3" MaxTickrate="5" SpeedScaleFactor="0.1" DamageOvercapFactor="1" />
+    <CastingParams CanCastWhileMoving="0" CanMultiCast="1" MaintainedCast="0" KeepAliveAfterReleasing="1" MaximumTurnRate="120" CancellableByDefault="1" />
+    <SoundTrigger OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+  </Skill>
+</MetaData>

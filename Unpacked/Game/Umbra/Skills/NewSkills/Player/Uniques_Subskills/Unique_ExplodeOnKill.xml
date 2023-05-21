@@ -1,0 +1,11 @@
+<MetaData>
+  <Skill UID="unique_skill_explode_on_target_kill" ESkill="player_pst" Keywords="passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostnova" BloodDecalOrientation="forward" />
+    <CastingParams CanMultiCast="1" />
+    <ParticleList>
+      <Particle Key="damage" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Lightning_2M" Scale="1.5" Direction="0,0,1" />
+    </ParticleList>
+    <DamageWeapon WeaponMultiplier="5" />
+    <Specific_PST RelatedPSTEffect="TargetExplode" CastersSFX="" TargetsSFX="" DamageSFX="" IsVariantActive="" ApplicationRadius="3" DamageOnEnemies="1" DamageOnSelf="0" />
+  </Skill>
+</MetaData>

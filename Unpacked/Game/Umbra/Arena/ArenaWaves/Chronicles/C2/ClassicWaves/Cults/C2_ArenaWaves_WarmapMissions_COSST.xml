@@ -1,0 +1,116 @@
+<MetaData>
+  <ArenaWaves Name="ArenaWaves_WM_E_COSST_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_E_COSST_WildRat_Black" NumberOfEntitiesPerSpawn="7" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_E_COSST_Squire" NumberOfEntitiesPerSpawn="7" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill_forever" TargetSpawnClass="Sc_WM_E_COSST_ZombieSoldier" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_E_COSST_Cultist" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="CultOfSouls_Butcher" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="24" TargetSpawnClass="Sc_WM_E_COSST_WildRat_Black" NumberOfEntitiesPerSpawn="8" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="fill" MaxNumberOfSpawnedEntities="27" TargetSpawnClass="Sc_WM_E_COSST_Squire" NumberOfEntitiesPerSpawn="9" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="15" />
+        <Spawner DelayBeforeFirstSpawn="14" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_E_COSST_ZombieSoldier" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_COSST_Priest" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_COSST_Butcher" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="CultOfSouls_DemonOfSouls" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="24" TargetSpawnClass="Sc_WM_E_COSST_WildRat_Black" NumberOfEntitiesPerSpawn="8" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="24" TargetSpawnClass="Sc_WM_E_COSST_Squire" NumberOfEntitiesPerSpawn="8" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_E_COSST_ZombieSoldier" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_COSST_Cultist" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_COSST_UndeadSpiker" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_COSST_DemonOfSouls" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_M_COSST_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_M_COSST_WildRat_Black" NumberOfEntitiesPerSpawn="7" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_M_COSST_Squire" NumberOfEntitiesPerSpawn="7" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill_forever" TargetSpawnClass="Sc_WM_M_COSST_ZombieSoldier" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_M_COSST_Cultist" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="CultOfSouls_Butcher" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="24" TargetSpawnClass="Sc_WM_M_COSST_WildRat_Black" NumberOfEntitiesPerSpawn="8" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="fill" MaxNumberOfSpawnedEntities="27" TargetSpawnClass="Sc_WM_M_COSST_Squire" NumberOfEntitiesPerSpawn="9" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="15" />
+        <Spawner DelayBeforeFirstSpawn="14" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_M_COSST_ZombieSoldier" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_COSST_Priest" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_COSST_Butcher" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="CultOfSouls_DemonOfSouls" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="24" TargetSpawnClass="Sc_WM_M_COSST_WildRat_Black" NumberOfEntitiesPerSpawn="8" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="24" TargetSpawnClass="Sc_WM_M_COSST_Squire" NumberOfEntitiesPerSpawn="8" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_M_COSST_ZombieSoldier" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_COSST_Cultist" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_COSST_UndeadSpiker" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_COSST_DemonOfSouls" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_H_COSST_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_H_COSST_WildRat_Black" NumberOfEntitiesPerSpawn="7" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_H_COSST_Squire" NumberOfEntitiesPerSpawn="7" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill_forever" TargetSpawnClass="Sc_WM_H_COSST_ZombieSoldier" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_H_COSST_Cultist" NumberOfEntitiesPerSpawn="3" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="CultOfSouls_Butcher" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="24" TargetSpawnClass="Sc_WM_H_COSST_WildRat_Black" NumberOfEntitiesPerSpawn="8" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="fill" MaxNumberOfSpawnedEntities="27" TargetSpawnClass="Sc_WM_H_COSST_Squire" NumberOfEntitiesPerSpawn="9" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="15" />
+        <Spawner DelayBeforeFirstSpawn="14" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_H_COSST_ZombieSoldier" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="19" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_COSST_Priest" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="1" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_COSST_Butcher" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="CultOfSouls_DemonOfSouls" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="24" TargetSpawnClass="Sc_WM_H_COSST_WildRat_Black" NumberOfEntitiesPerSpawn="8" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="24" TargetSpawnClass="Sc_WM_H_COSST_Squire" NumberOfEntitiesPerSpawn="8" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="12" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_H_COSST_ZombieSoldier" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_COSST_Cultist" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_COSST_UndeadSpiker" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_COSST_DemonOfSouls" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

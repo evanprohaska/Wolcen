@@ -1,0 +1,21 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="MonsterGenerator">
+    <Model>
+      <IdleActivatedAnim AnimName="WILD_Snake_Idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="WILD_Snake_Skill_Melee_01" PlaybackSpeed="1" />
+      <DeathAnim AnimName="WILD_Snake_Death_01" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="WILD_Snake_Death_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_gameplay_ingredient2.monster_generator.indicator" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="" Direction="0,0,1" Scale="1" />
+    </Particles>
+    <Iterations Number="3" WarmUpTime="1.7" CooldownMin="1" CooldownMax="1" DelayBeforeFirstIteration="1.5" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_MonsterGenerator" Targeting="Random" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator" Model="Objects/characters/mobs/Reptile/Snake/WILD_Snake/WILD_Snake_Cave.cdf" ModelScale="1" SurfaceType="rock" Loop="0" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="svriir_VERYHARD">
+    <Preset Name="MonsterGenerator" />
+  </FlowOfSoulsPresetList>
+</MetaData>

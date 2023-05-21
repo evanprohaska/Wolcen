@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill ESkill="gameplay_ingredient_burning_zone" Keywords="attack_skill" UID="Skill_Fire_Area">
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnHit="Play_DOT_Burn" />
+  </Skill>
+  <Skill ESkill="gameplay_ingredient_burning_zone" Keywords="attack_skill" UID="Skill_Tar_Pit">
+    <PassiveSkills>
+      <Skill Index="0" Name="TarPit_MoveSpeed" Targeting="OnHostiles,PlayersOnly" Duration="1" />
+    </PassiveSkills>
+  </Skill>
+</MetaData>

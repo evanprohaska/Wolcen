@@ -1,0 +1,116 @@
+<MetaData>
+  <ArenaWaves Name="ArenaWaves_WM_E_SVRIF_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SF_FireSwarmcrawler" NumberOfEntitiesPerSpawn="12" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="18" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SF_Omega_Fire" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SF_OmegaFemale_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_E_SF_BetaScreecher_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlpha" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="42" TargetSpawnClass="Sc_WM_E_SF_FireSwarmcrawler" NumberOfEntitiesPerSpawn="14" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="20" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_E_SF_Omega_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="11" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_E_SF_OmegaFemale_Fire" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SF_BetaScreecher_Fire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_SF_Alpha" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlpha" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="36" TargetSpawnClass="Sc_WM_E_SF_FireSwarmcrawler" NumberOfEntitiesPerSpawn="12" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="16" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_E_SF_Omega_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_E_SF_OmegaFemale_Fire" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SF_BetaScreecher_Fire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_E_SF_BetaSpitter_Fire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_E_SF_Alpha" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_M_SVRIF_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SF_FireSwarmcrawler" NumberOfEntitiesPerSpawn="12" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="18" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SF_Omega_Fire" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SF_OmegaFemale_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_M_SF_BetaScreecher_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlpha" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="42" TargetSpawnClass="Sc_WM_M_SF_FireSwarmcrawler" NumberOfEntitiesPerSpawn="14" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="20" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_M_SF_Omega_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="11" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_M_SF_OmegaFemale_Fire" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SF_BetaScreecher_Fire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_SF_Alpha" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlpha" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="36" TargetSpawnClass="Sc_WM_M_SF_FireSwarmcrawler" NumberOfEntitiesPerSpawn="12" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="16" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_M_SF_Omega_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_M_SF_OmegaFemale_Fire" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SF_BetaScreecher_Fire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_M_SF_BetaSpitter_Fire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_M_SF_Alpha" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="ArenaWaves_WM_H_SVRIF_Final">
+    <Wave Type="killcount" TargetKillCount="60" Tag="1">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="3" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SF_FireSwarmcrawler" NumberOfEntitiesPerSpawn="12" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="18" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SF_Omega_Fire" NumberOfEntitiesPerSpawn="4" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SF_OmegaFemale_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="10" Type="fill_forever" TargetSpawnClass="Sc_WM_H_SF_BetaScreecher_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="12" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="2">
+      <KillTargets>
+        <Entry ClassName="SvriirAlpha" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="42" TargetSpawnClass="Sc_WM_H_SF_FireSwarmcrawler" NumberOfEntitiesPerSpawn="14" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="20" />
+        <Spawner DelayBeforeFirstSpawn="7" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_H_SF_Omega_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="11" Type="fill" MaxNumberOfSpawnedEntities="9" TargetSpawnClass="Sc_WM_H_SF_OmegaFemale_Fire" NumberOfEntitiesPerSpawn="3" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="6" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SF_BetaScreecher_Fire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_SF_Alpha" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+    <Wave Type="Killtarget" Tag="3">
+      <KillTargets>
+        <Entry ClassName="SvriirAlpha" Amount="1" />
+      </KillTargets>
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill" MaxNumberOfSpawnedEntities="36" TargetSpawnClass="Sc_WM_H_SF_FireSwarmcrawler" NumberOfEntitiesPerSpawn="12" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="16" />
+        <Spawner DelayBeforeFirstSpawn="6" Type="fill" MaxNumberOfSpawnedEntities="6" TargetSpawnClass="Sc_WM_H_SF_Omega_Fire" NumberOfEntitiesPerSpawn="2" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="4" />
+        <Spawner DelayBeforeFirstSpawn="9" Type="fill" MaxNumberOfSpawnedEntities="12" TargetSpawnClass="Sc_WM_H_SF_OmegaFemale_Fire" NumberOfEntitiesPerSpawn="4" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="8" />
+        <Spawner DelayBeforeFirstSpawn="13" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SF_BetaScreecher_Fire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="18" Type="fill" MaxNumberOfSpawnedEntities="3" TargetSpawnClass="Sc_WM_H_SF_BetaSpitter_Fire" NumberOfEntitiesPerSpawn="1" SpawnFrequency="20" MaxActiveSpawnedEntitiesMode="OnKill" MaxActiveSpawnedEntities="2" />
+        <Spawner DelayBeforeFirstSpawn="2" Type="once" TargetSpawnClass="Sc_WM_H_SF_Alpha" NumberOfEntitiesPerSpawn="1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

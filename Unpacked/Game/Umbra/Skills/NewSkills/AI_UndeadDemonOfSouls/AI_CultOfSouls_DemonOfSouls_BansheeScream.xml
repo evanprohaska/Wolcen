@@ -1,0 +1,48 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_demonofsouls_bansheescream" ESkill="AI_cultofsouls_demonofsouls_bansheescream" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_06" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="frost" WeaponMultiplier=".25" />
+    <StatusAilment>
+      <freeze Chance="100" ChanceMode="Ignored" Duration="3" DurationMode="override" />
+    </StatusAilment>
+    <StatusEffect_MovementSpeed SlowPercent="50" SlowPercentPerLevel="0" Duration="1" DurationPerLevel="0" />
+    <Cooldown Cooldown="5.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Range AttackRange="22" />
+    <DamageZone RateOfFire="1" Duration="15" />
+    <Shapes>
+      <Entry ShapeName="DemonOfSouls_BansheeScream" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Scream" Name="U_Monster.DeomonOfSoul.Soul_Wave_01_Big" Offset="0,0,0" Direction="-1,0,0" />
+      <Particle Key="GroundEffect" Name="U_Monster.DeomonOfSoul.Soul_Wave_Under_01" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="GroundIndicator" Name="U_Monster.DeomonOfSoul.Soul_Wave_Indicator_01_Big" Offset="0,0,0" Direction="-1,0,0" />
+    </ParticleList>
+    <SkillSpecific DistanceBetweenParticles="4" />
+    <SoundTrigger OnAnimStart="Play_DemonOfSouls_BansheeScream_Frost_Warning" OnAnimCast="Play_DemonOfSouls_BansheeScream" OnHit="Play_Hero_TakeDamage_Ice_Medium" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_hunt_demonofsouls_bansheescream" ESkill="AI_cultofsouls_demonofsouls_bansheescream" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_06" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="frost" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <freeze Chance="100" ChanceMode="Ignored" Duration="3" DurationMode="override" />
+    </StatusAilment>
+    <StatusEffect_MovementSpeed SlowPercent="50" SlowPercentPerLevel="0" Duration="1" DurationPerLevel="0" />
+    <Cooldown Cooldown="5.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Range AttackRange="22" />
+    <DamageZone RateOfFire="1" Duration="30" />
+    <Shapes>
+      <Entry ShapeName="DemonOfSouls_BansheeScream" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Scream" Name="U_Monster.DeomonOfSoul.Soul_Wave_01_Big" Offset="0,0,0" Direction="-1,0,0" />
+      <Particle Key="GroundEffect" Name="U_Monster.DeomonOfSoul.Soul_Wave_Under_01" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="GroundIndicator" Name="U_Monster.DeomonOfSoul.Soul_Wave_Indicator_01_Big" Offset="0,0,0" Direction="-1,0,0" />
+    </ParticleList>
+    <SkillSpecific DistanceBetweenParticles="4" />
+    <SoundTrigger OnAnimStart="Play_DemonOfSouls_BansheeScream_Frost_Warning" OnAnimCast="Play_DemonOfSouls_BansheeScream" OnHit="Play_Hero_TakeDamage_Ice_Medium" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

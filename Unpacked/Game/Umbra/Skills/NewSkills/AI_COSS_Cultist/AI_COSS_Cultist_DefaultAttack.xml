@@ -1,0 +1,15 @@
+<MetaData>
+  <Skill UID="AI_CultOfSouls_Cultist_DefaultAttack_Ranged" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.4" />
+    <Cooldown Cooldown="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="L_Weapon_Bone" />
+    <Projectile Name="Cultist_FrostBolt_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_Undead_Cultise_RaiseDead_AttackRanged_Start" OnHit="Play_DemonOfSouls_Attack_Impact" PlayAttackVoice="1" />
+    <ParticleList>
+      <Particle Key="physical" Name="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Muzzle_01" Offset="0,0,0" Direction="0,1,0" Scale="0.7" />
+    </ParticleList>
+  </Skill>
+</MetaData>

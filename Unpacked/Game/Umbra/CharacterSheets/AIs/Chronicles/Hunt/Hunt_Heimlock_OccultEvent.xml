@@ -1,0 +1,67 @@
+<MetaData>
+  <BaseEntity ID="Hunt_Heimlock_OccultEvent" EntityName="republic_heimlock" Scale="0.7" CanKillAllies="0" />
+  <Faction Name="CultOfSouls" />
+  <Keywords Value="coss,,melee" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="1" />
+  <Attributes Archetype="archetype_lieutenant" HealthModifier="1" DamageModifier="1" XPModifier="1" Protection="" />
+  <Movement MovementSpeed="7" WalkSpeed="7" />
+  <InterruptionParams InterruptChance="0" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BlownAwayParams CanBeBlownAway="0" BlownAwayAnimationTag="" />
+  <DefaultBossModifiers />
+  <LootClass>
+    <Loot Class="" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="" />
+  <OnDeathLootPreset Name="" />
+  <Corpses PresetName="" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="360" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Generic" />
+    <BT FleeOnLowHealthChance="0.0" EngageRange="50.0" MeleeAttack="True" FallBack="False" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="Melee" />
+    <Support PresenceRadius="10.0" CombatRadius="25.0" TravelRadius="5.0" />
+  </Kythera>
+  <Skills>
+    <Offensive>
+      <Skill Name="AI_Support_Heimlock_BleedingEdge" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.0" Preferred="4" Max="7" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_REPU_Heimlock01_Leap" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="2.0">
+        <Range Min="8" Preferred="12" Max="20" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_Support_Heimlock_DefaultAttack" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.0" Preferred="3" Max="5" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+      <Skill Name="AI_REPU_Heimlock01_Meteor" Orientated="BeforeCast" Interruptible="False" Enabled="False" BaseWeight="1.0">
+        <Range Min="0" Preferred="10" Max="20" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+      </Skill>
+    </Offensive>
+    <Approach />
+  </Skills>
+  <RandomModel>
+    <ModelChoice Model="Objects/characters/mobs/Humanoid/Heimlock/REPU_Heimlock/repu_heimlock_ghost.cdf" Weight="1" />
+  </RandomModel>
+  <HUD UIName="@ui_AIName_Republic_Heimlock" ZIconOffset="3.5" />
+  <Spawn SpawnAnimation="" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="1" DeathSkill="" />
+  <GameplayParticles PresetName="size_Justicar" />
+  <Capsules>
+    <EntityPhysics ColliderSize="0.6,0.6,0.5" Ghost="1" />
+    <MouseSelection SelectionCapsuleRadius="1.5" SelectionCapsuleHeight="1.2" SelectionCapsuleZOffset="0.5" />
+    <ProjectileCollision ProjectileCapsuleRadius="0.4" ProjectileCapsuleHeight="5.0" CanSnapOnCenterWhenColliding="0" />
+    <VegetationCollision SphereRadius="0.6" SphereZOffset="0.6" />
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="default" OverrideScale="1" />
+  </VisualParams>
+  <Audio AllowGroupSounds="0" SurfaceType="armour" />
+  <RandomVoice>
+    <VoiceChoice VoiceName="Heimlock_voice" EnemyBark="" Weight="1" />
+  </RandomVoice>
+  <BoneParticles>
+    <BoneParticle BoneName="Bip01 Spine" ParticleName="U_VFX_Oskar.Auras.GhostAura_01" Direction="0,1,0" Offset="0,0,0" IgnoreRotation="1" />
+  </BoneParticles>
+</MetaData>

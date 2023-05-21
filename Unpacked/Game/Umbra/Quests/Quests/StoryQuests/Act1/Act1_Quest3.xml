@@ -1,0 +1,281 @@
+<MetaData>
+  <Quest Name="ACT1_Quest3" StartDialog="" Type="Main" UIDesc="" UIName="@ui_A1_Q3_QuestLabel" BoundToMap="Wolcen_ACT1">
+    <Step Order="0" UIName="@ui_A1_Q3_S1_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="QP_StormfallPlaza" Radius="40" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_palace_to_stormfall" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_Inn" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" TimeLimit="3">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_palace_to_stormfall" Area="ACT1_Palace" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_Inn" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="SpawnPoint_from_Inn_to_stormfall" Radius="12" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_Inn" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_palace_to_stormfall" Area="ACT1_Palace" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="7" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_Inn" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_palace_to_stormfall" Area="ACT1_Palace" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequenceReset" Name="SF_InitAmbushSequence" SequenceName="A1_Q3_S3_InnAmbush" ResetAtLastFrame="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalDialog" Name="SF_LeavingPalace" DialogName="ACT1_Q3_SF_PlayerComment1_1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_Stormfall_RestrictedArea2" EntityNames="Stormfall_RestrictedArea2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_r_SF_BackCity" EntityNames="DO_AnimObject_blocking_guard_r_SF_BackCity" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_l_SF_BackCity" EntityNames="DO_AnimObject_blocking_guard_l_SF_BackCity" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_BackCity_Audio" EntityNames="Audio_ATS_Stormfall_Guardsblock_Backcity" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Reveal_Unblocking_guard_r_SF_BackCity" EntityNames="DO_AnimObject_Unblocking_guard_r_SF_BackCity" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="SF_Reveal_Unblocking_guard_l_SF_BackCity" EntityNames="DO_AnimObject_Unblocking_guard_l_SF_BackCity" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="SF_LockTavern1" ClickableEntityName="ClickableEntity_from_stormfall_to_Inn" MakeClickable="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="SF_Hide_Assassin" EntityNames="Q_NPC_SF_RepublicanAlastor" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalDialog" Name="SF_LeavingPalace2" DialogName="ACT1_Q3_SF_PlayerComment1_2" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalDialog" Name="SF_FindingInn" DialogName="ACT1_Q3_SF_PlayerComment2" />
+      <Event Trigger="EventEnd" EventName="SF_FindingInn" Type="GoalAchieve" Name="WaitEnd_ACT1_Q3_SF_FindingInn_Talk" SimulateOnly="1" GoalIndexToAchieve="-1" />
+    </Step>
+    <Step Order="1" UIName="@ui_A1_Q3_S2_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_from_stormfall_to_Inn" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_Inn" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" Target="ClickableEntity_from_palace_to_stormfall" Area="ACT1_Palace" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" Duration="20" VotePreset="VotePreset_ACT1_BossFight_StormfallInn" />
+      <Goal Order="2" Type="BossFight" FightPreset="BossFight_StormfallInn" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="SF_LockTavern2" ClickableEntityName="ClickableEntity_from_Inn_to_stormfall" MakeClickable="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="SF_UnlockTavern1" ClickableEntityName="ClickableEntity_from_stormfall_to_Inn" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="GlobalReleaseGameplayEvent" Name="SF_InnEvent_EventSlotReleasedVoteFail" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q3_ClearUI_2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityTeleport" MinRadius="1" Name="Player_TP_Inn" TeleportedEntityName="#Player" DestinationName="SpawnPoint_from_stormfall_to_inn" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalReserveGameplayEvent" Name="SF_InnEvent_EventSlotReserve" EventDescriptorName="ACT1_StormfallInn" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalReleaseGameplayEvent" Name="SF_InnEvent_EventSlotReleasedEventSuccess" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A1_Q3_S2_StepUpdate" Localization="@ui_A1_Q3_S2_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalRevivePlayers" Delay=".2" Name="Inn_EventSuccessRevive" RevivePostion="" />
+      <Event Trigger="BossfightLost" Type="StepFail" Name="SF_AmbushFail" RollbackToPreviousStep="1" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="SF_Ambush_StopDialog_Fail" />
+      <Event Trigger="BossfightLost" Type="GlobalReleaseGameplayEvent" Name="SF_InnEvent_EventSlotReleasedEventFailed" />
+      <Reward ShowRewardPanel="None" Order="1">
+        <Gold Amount="500" />
+        <XP Amount="1500" />
+      </Reward>
+    </Step>
+    <Step Order="2" AutoClearEvents="0" Save="1" UIName="@ui_A1_Q3_S3_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="QP_Farmsteads" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowOnWorldmap="1" Target="QP_Farmsteads" Area="ACT1_Farmstead" Threshold="50" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="ClickableEntity_from_farmstead_to_outpost" Radius="90" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_stormfall_to_farmstead" Area="Stormfall" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_FS_FlayersOutpostAreaMarker" VFX="U_Utils.Quest.Objective" VFXOffsetZ="" Area="ACT1_Farmsteads" Threshold="85" UseAreaSize="60" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q3_ClearUI_3" />
+      <Event Trigger="LeaveAreaAll" CenterEntityName="Q_SF_InnCenterPoint" AreaRadius="30" Type="GlobalDialog" Name="SF_PlayerCommentAfterAlastorKilled" DialogName="ACT1_Q3_SF_PlayerComment5" Delay="1.5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalTutorial" Name="Dialog_ACT1_Q3_Tutorial" TutorialName="Quest_FastTravel" Delay="3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="SF_UnlockTavern2" ClickableEntityName="ClickableEntity_from_Inn_to_stormfall" MakeClickable="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="FS_HideSoldier2" EntityNames="AnimObject_A1_Q3_S5_Guard7" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="FS_HideSoldier3" EntityNames="AnimObject_A1_Q3_S5_Guard6" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="FS_HideSoldier4" EntityNames="AnimObject_A1_Q3_S5_Guard9" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="SF_Hide_Farmsteads_RestrictedArea2" EntityNames="Farmsteads_RestrictedArea2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_r_Farm_Farm_Outpost2" EntityNames="DO_AnimObject_blocking_guard_r_Farm_Outpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="FS_Hide_blocking_guard_l_Farm_Farm_Outpost2" EntityNames="DO_AnimObject_blocking_guard_l_Farm_Outpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="SF_Hide_blocking_guard_Palace_Audio" EntityNames="Audio_ATS_Stormfall_Guardsblock_BarricadeToOutpost" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="FS_Reveal_Unblocking_guard_r_Farm_Outpost" EntityNames="DO_AnimObject_Unblocking_guard_r_Farm_Outpost" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="FS_Reveal_Unblocking_guard_l_Farm_Outpost" EntityNames="DO_AnimObject_Unblocking_guard_l_Farm_Outpost" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionDungeonExit" Name="LockBanditOutpostEntrance" ExitEntityName="ClickableEntity_from_farmstead_to_outpost" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_ACT1_Q3_SF_PC3_4" AreaRadius="15" Type="GlobalDialog" Name="FS_Q3_PlayerComment" DialogName="ACT1_Q3_FS_PlayerComment" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".5" Name="FS_Reveal_Unblocking_guard_r_Farm_Farm_Outpost" EntityNames="DO_AnimObject_Unblocking_guard_r_Farm_Outpost" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".5" Name="FS_Reveal_Unblocking_guard_l_Farm_Farm_Outpost" EntityNames="DO_AnimObject_Unblocking_guard_l_Farm_Outpost" Hide="0" />
+    </Step>
+    <Step Order="3" AutoClearEvents="0" Save="0" UIName="@ui_A1_Q3_S4_StepNameLabel">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_from_farmstead_to_outpost" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_farmstead_to_outpost" VFX="U_Utils.Quest.Objective" VFXOffsetZ="" Area="ACT1_Farmsteads" Threshold="100" />
+      </Goal>
+      <Goal Order="1" Type="Vote" Duration="20" VotePreset="VotePreset_ACT1_BanditOutpost">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_farmstead_to_outpost" Area="ACT1_Farmstead" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ClickableEntity_from_farmstead_to_outpost" AreaRadius="35" Type="GlobalDialog" Name="FS_Q3_Phenomenon" DialogName="ACT1_Q3_FS_Phenomenon" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q3_ClearUI_4" />
+      <Event Trigger="Instant" Type="ActionClickable" Name="FS_LockBO" ClickableEntityName="ClickableEntity_from_farmstead_to_outpost" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityTeleport" MinRadius="30" Delay="0.1" Name="PlayerTP_toBO" TeleportedEntityName="#Player" DestinationName="SpawnPoint_outpost_from_fs" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionWaypoint" Delay="" Name="A1_Q3_UnlockWaypoint" WaypointEntityName="waypoint_act_1_flayer_outpost" Action="Lock" />
+    </Step>
+    <Step Order="4" AutoClearEvents="1" Save="1" UIName="@ui_A1_Q3_S5_StepNameLabel">
+      <Goal Order="0" Type="Go" Destination="QP_BO1_Entrance" Radius="35" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_BO_MercySpawn1" Area="ACT1_BanditOutpost" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="ClickableEntity_BanditOutpost_to_boss" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_BO_MercySpawn1" Area="ACT1_BanditOutpost" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q3_ClearUI_5" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityTeleport" MinRadius="1" Name="Player_TP_BO" TeleportedEntityName="#Player" DestinationName="SpawnPoint_outpost_from_fs" />
+      <Event Trigger="EventStart" EventName="Player_TP_BO" Type="ActionSequence" Delay="0.5" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="CinematicEdricSpawn" SequenceName="A1_Q3_S7_MeetEdric" />
+      <Event Trigger="EventStart" EventName="CinematicEdricSpawn" Type="GlobalRevivePlayers" Delay=".2" Name="BO_CutsceneRevive" RevivePostion="" />
+      <Event Trigger="EventEnd" EventName="CinematicEdricSpawn" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" Name="A1_Q3_EdricSpawn" SpawnClass="Sc_Sty_A1_R_QVE1" TargetEntityName="QP_BO1_Entrance" />
+      <Event Trigger="EventEnd" EventName="CinematicEdricSpawn" Type="ActionWaypoint" Delay=".5" Name="A1_Q3_UnlockWaypoint" WaypointEntityName="waypoint_act_1_flayer_outpost" Action="Forceunlock" />
+      <Event Trigger="EventEnd" EventName="CinematicEdricSpawn" Type="ActionClickable" Name="BO_UnlockBO" ClickableEntityName="ClickableEntity_from_farmstead_to_outpost" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_EdricSpawn" Type="EntityFollow" Delay="2" Name="A1_Q3_EdricFollow" FollowerEntityName="Edric" Follow="#Player" Constraints="not:ACT1_Farmstead_Hornet_Lair,ACT1_Farmstead,Stormfall,ACT1_Highlands,ACT1_SvriirCave,ACT1_Svriir_Network_1,ACT1_Svriir_Tribute_Storage,ACT1_Svriir_Network_2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="BO_Hide_ClickableEntity_from_outpost_to_templarcamp" EntityNames="ClickableEntity_from_outpost_to_templarcamp" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_BO1_EdricTalk" AreaRadius="125" Type="GlobalDialog" Name="BO_Phenomenon1" DialogName="ACT1_Q3_BO_Phenomenon1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_BO1_EdricTalk" AreaRadius="15" Type="GlobalDialog" Name="BO_Phenomenon2" DialogName="ACT1_Q3_BO_Phenomenon2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_BO1_EdricTalk2" AreaRadius="15" Type="GlobalDialog" Name="BO_MeetEdric1" DialogName="ACT1_Q3_BO_MeetEdric1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_BO1_EdricTalk3" AreaRadius="15" Type="GlobalDialog" Name="BO_MeetEdric2" DialogName="ACT1_Q3_BO_MeetEdric2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_BO1_EdricTalk4" AreaRadius="15" Type="GlobalDialog" Name="BO_MeetEdric3" DialogName="ACT1_Q3_BO_MeetEdric3" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="A1_Q3_S5_StepUpdate" Localization="" DisplayNewIcon="0" />
+    </Step>
+    <Step Order="5" AutoClearEvents="1" Save="1" UIName="@ui_A1_Q3_S5_StepNameLabel" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_BanditOutpost_to_boss" Radius="35" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_BanditOutpost_to_boss" Area="ACT1_BanditOutpost" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" Name="A1_Q3_S6_EdricSpawn" SpawnClass="Sc_Sty_A1_R_QVE1" TargetEntityName="#Player" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A1_Q3_S6_EdricFollow" FollowerEntityName="Edric" Follow="#Player" Constraints="not:ACT1_Farmstead_Hornet_Lair,ACT1_Farmstead,Stormfall,ACT1_Highlands,ACT1_SvriirCave,ACT1_Svriir_Network_1,ACT1_Svriir_Tribute_Storage,ACT1_Svriir_Network_2" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalCheckpoint" Name="BO_Remove_Checkpoint" CheckpointEntityName="" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="30" Type="GlobalCheckpoint" Name="BO_Remove_Checkpoint_SF" CheckpointEntityName="" />
+    </Step>
+    <Step Order="6" AutoClearEvents="0" Save="0" UIName="@ui_A1_Q3_S6_StepNameLabel" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_BanditOutpost_to_boss" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_BanditOutpost_to_boss" Area="ACT1_BanditOutpost" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" Duration="20" VotePreset="VotePreset_ACT1_BossFight_Naarlog">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_BO_MercySpawn1" Area="ACT1_BanditOutpost" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="BossFight" FightPreset="BossFight_Naarlog">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_BO_MercySpawn1" Area="ACT1_BanditOutpost" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="ActionClickable" Name="BO_LockBO" ClickableEntityName="ClickableEntity_BanditOutpost_to_boss" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalCheckpoint" Name="SetCheckpointNaarlogFight" CheckpointEntityName="QP_BO_BanditAmbushCheckpoint" />
+      <Event Trigger="ArenaWaveStart" WaveIndex="5" Type="GlobalDialog" Name="BO_OutlawAmbushOver" DialogName="ACT1_Q3_BO_OutlawAmbushOver" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalReserveGameplayEvent" Name="ReverveSlotNaarlogFight" EventDescriptorName="ACT1_BossFight_Naarlog" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="A1_Q3_EdricKill" EntityName="Edric" Hide="1" Remove="1" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_EdricKill" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" Delay="2" Name="A1_Q3_S7_EdricSpawn" SpawnClass="Sc_Sty_A1_R_QVE1" TargetEntityName="#Player" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_S7_EdricSpawn" Type="GlobalDialog" Delay="1" Name="A1_Q3_Edric_AmbushDial" DialogName="ACT1_Q3_BO_OutlawAmbush1" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_S7_EdricSpawn" Type="EntityFollow" Delay="2" Name="A1_Q3_EdricFollow" FollowerEntityName="Edric" Follow="#Player" Constraints="not:ACT1_Farmstead_Hornet_Lair,ACT1_Farmstead,Stormfall,ACT1_Highlands,ACT1_SvriirCave,ACT1_Svriir_Network_1,ACT1_Svriir_Tribute_Storage,ACT1_Svriir_Network_2" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalReleaseGameplayEvent" Name="ReleaseSlotNaarlogFight" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="BO_DoorOpenning" AnimatedEntityName="AnimObject231" Play="default" Loop="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="BO_HideEventTrigger" EntityNames="ClickableEntity_BanditOutpost_to_boss" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalRevivePlayers" Delay=".2" Name="BO_EventSuccessRevive" RevivePostion="" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalCheckpoint" Name="ResetCheckpointNaarlogFight" CheckpointEntityName="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionClickable" Name="SF_LockTavern3" ClickableEntityName="ClickableEntity_from_stormfall_to_Inn" MakeClickable="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="SF_Reveal_blocking_guard_Tavern_Audio" EntityNames="Audio_ATS_Stormfall_Guardsblock_Tavern" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="SF_Reveal_blocking_guard_r_SF_Inn" EntityNames="DO_AnimObject_blocking_guard_r_SF_Inn" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="SF_Reveal_blocking_guard_l_SF_Inn" EntityNames="DO_AnimObject_blocking_guard_l_SF_Inn" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="SF_Hide_Unblocking_guard_r_SF_Inn" EntityNames="DO_AnimObject_Unblocking_guard_r_SF_Inn" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="SF_Hide_Unblocking_guard_l_SF_Inn" EntityNames="DO_AnimObject_Unblocking_guard_l_SF_Inn" Hide="1" />
+      <Event Trigger="BossfightLost" Type="GlobalReleaseGameplayEvent" Name="ReleaseSlotNaarlogFightFail" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="BO_NaarlorgArena_StopDialog_Fail" />
+      <Event Trigger="BossfightLost" Type="StepFail" Name="BO_NaarlorgArena_EventFail" RollbackToPreviousStep="1" />
+      <Reward ShowRewardPanel="None" Order="1">
+        <Gold Amount="1000" />
+        <XP Amount="2000" />
+      </Reward>
+    </Step>
+    <Step Order="7" UIName="@ui_A1_Q3_S7_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="SpawnPoint_TemplarCamp" Radius="120" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_outpost_to_templarcamp" VFX="" VFXOffsetZ="" Area="ACT1_BanditOutpost" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q3_ClearUI_7" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" Name="A1_Q3_EdricReSpawn1" SpawnClass="Sc_Sty_A1_R_QVE1" TargetEntityName="#Player" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_EdricReSpawn1" Type="EntityFollow" Delay=".1" Name="A1_Q3_EdricRefollow1" FollowerEntityName="Edric" Follow="#Player" Constraints="not:ACT1_Farmstead_Hornet_Lair,ACT1_Farmstead,Stormfall,ACT1_Highlands,ACT1_SvriirCave,ACT1_Svriir_Network_1,ACT1_Svriir_Tribute_Storage,ACT1_Svriir_Network_2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="BO_Reveal_ClickableEntity_from_outpost_to_templarcamp" EntityNames="ClickableEntity_from_outpost_to_templarcamp" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityFollow" Delay="2" Name="A1_Q3_EdricFollow" FollowerEntityName="Edric" Follow="#Player" Constraints="not:ACT1_Farmstead_Hornet_Lair,ACT1_Farmstead,Stormfall,ACT1_Highlands,ACT1_SvriirCave,ACT1_Svriir_Network_1,ACT1_Svriir_Tribute_Storage,ACT1_Svriir_Network_2" />
+    </Step>
+    <Step Order="8" UIName="@ui_A1_Q3_S8_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="QP_A1_Q3_TC_EdricSpot" Radius="150" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TC_AuroraKnight" Area="ACT1_TemplarCamp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TC_AuroraKnight" Area="ACT1_TemplarCamp" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="Q_NPC_TC_AuroraKnight" Radius="10" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Q_NPC_TC_AuroraKnight" Area="ACT1_TemplarCamp" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Talk" EntityName="Q_NPC_TC_AuroraKnight" DialogName="ACT1_Q3_TC_WoundedTemplarTalk1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Q_NPC_TC_AuroraKnight" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" Area="ACT1_TemplarCamp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" Name="A1_Q3_EdricReSpawn2" SpawnClass="Sc_Sty_A1_R_QVE1" TargetEntityName="SpawnPoint_TemplarCamp" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_EdricReSpawn2" Type="EntityFollow" Name="A1_Q3_EdricRefollow2" FollowerEntityName="Edric" Follow="#Player" Constraints="not:ACT1_Farmstead_Hornet_Lair,ACT1_Farmstead,Stormfall,ACT1_Highlands,ACT1_SvriirCave,ACT1_Svriir_Network_1,ACT1_Svriir_Tribute_Storage,ACT1_Svriir_Network_2" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q3_ClearUI_8" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalDialog" Name="TC_WoundedTemplarEncounter" DialogName="ACT1_Q3_TC_WoundedTemplarEncounter" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityFollow" Name="A1_Q3_EdricUnfollow" FollowerEntityName="Edric" Follow="" Constraints="" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_EdricUnfollow" Type="EntityMove" TargetMinDistance="0.1" OverrideSpeed="0" Delay="0.1" Name="A1_Q3_EdricMove" EntityName="Edric" TargetName="QP_A1_Q3_TC_EdricSpot" RemainScripted="1" />
+      <Event Trigger="EventEnd" EventName="TC_EdricTalk" Type="GoalAchieve" Delay="0.1" Name="WaitEnd_A1_Quest3_TC_EdricTalk" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_EdricMove" Type="EntityRotate" Delay="0.1" Name="A1_Q3_EdricRotate" RotatedEntityName="Edric" Target="Q_NPC_TC_AuroraKnight" FaceTarget="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="A1_Q3_S8_StepUpdate" Localization="@ui_A1_Q3_S8_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="EntityTeleport" Name="A1_Q3_EdricTeleport" TeleportedEntityName="Edric" DestinationName="QP_A1_Q3_TC_EdricSpot" MinRadius="3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A1_Q3_TC_PlayerComment1" AreaRadius="8" Type="GlobalDialog" Name="TC_EdricTalk" DialogName="ACT1_Q3_TC_EdricTalk" />
+    </Step>
+    <Step Order="9" UIName="@ui_A1_Q3_S9_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="DungeonEntrance5" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance5" Area="ACT1_TemplarCamp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="DungeonEntrance5" Area="ACT1_TemplarCamp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TC_Hide_TemplarCamp_RestrictedArea" EntityNames="TC_TemplarCamp_RestrictedArea" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Delay="0.1" Name="Q_AnimObject_TC_Barricade_fall" AnimatedEntityName="Q_AnimObject_TC_Barricade" Play="default" Loop="0" SpeedScale="1" BlendingTime="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="TC_Hide_CE_A1_Q3_S10_Exit" EntityNames="CE_A1_Q3_S10_Exit" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="A1_Q3_EdricKillKnight" AnimatedEntityName="Edric" Play="repu_veteran_justicar_kill_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="A1_Q3_DyingKnight" AnimatedEntityName="Q_NPC_TC_AuroraKnight" Play="tmpl_knight_dying_killed_01" Loop="0" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_EdricKillKnight" Type="EntityFollow" Name="A1_Q3_EdricFollow2" FollowerEntityName="Edric" Follow="#Player" Constraints="not:ACT1_Farmstead_Hornet_Lair,ACT1_Farmstead,Stormfall,ACT1_Highlands,ACT1_SvriirCave,ACT1_Svriir_Network_1,ACT1_Svriir_Tribute_Storage,ACT1_Svriir_Network_2" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_EdricKillKnight" Type="GlobalDialog" Name="TC_WoundedTemplarTalk2" DialogName="ACT1_Q3_TC_WoundedTemplarTalk2" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q3_ClearUI_9" />
+    </Step>
+    <Step Order="10" UIName="@ui_A1_Q3_S10_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="ACT1_Grove_Exit" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowOnWorldmap="1" ShowMinimapIcon="0" Target="ACT1_Grove_Exit" Area="ACT1_Forest" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="DungeonEntrance5" Area="ACT1_TemplarCamp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ACT1_Grove_Exit" InteractCount="1">
+        <ArrowMarker ShowOnWorldmap="1" ShowMinimapIcon="0" Target="ACT1_Grove_Exit" Area="ACT1_Forest" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" Target="DungeonEntrance5" Area="ACT1_TemplarCamp" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Vote" Duration="20" VotePreset="VotePreset_ACT1_MeetHeimlock">
+        <ArrowMarker ShowMinimapIcon="0" Target="Q_NPC_RepublicCamp_Heimlock" Area="ACT1_Forest" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Talk" EntityName="Q_NPC_RepublicCamp_Heimlock" DialogName="ACT1_Q3_RC_HeimlockTalk">
+        <ArrowMarker ShowMinimapIcon="1" Target="Q_NPC_RepublicCamp_Heimlock" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="ACT1_Republic_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Interact" Names="ClickableEntity_from_heimlock_to_SF" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" Target="ClickableEntity_from_heimlock_to_SF" Area="ACT1_Republic_Camp" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Wait" ReferenceEntityName="" Radius="" TimeLimit="3" />
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="Instant" Delay="1" Type="EntityIsHidden" Name="EdricForceUnhide" EntityNames="Edric" Hide="0" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A1_Q3_ClearUI_10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDungeonNextLevel" Name="DeactivateRCEntrance" EntityName="ACT1_Grove_Exit" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="StepupdateEnterRC" Localization="@ui_A1_Q3_S10_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityTeleport" MinRadius="30" Delay="0.1" Name="PlayerTP_toHeimlock" TeleportedEntityName="#Player" DestinationName="SpawnPoint_fromforest_to_heimlock" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="RC_Hide_SF_Teleport" EntityNames="ClickableEntity_from_heimlock_to_SF" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityKill" Delay="" Name="A1_Q3_KillEdric" EntityName="Edric" Remove="1" />
+      <Event Trigger="EventStart" EventName="PlayerTP_toHeimlock" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="CinematicTalkToHeimlock" SequenceName="A1_Q3_S14_MeetHeimlock" FemaleSequenceName="1" />
+      <Event Trigger="EventStart" EventName="CinematicTalkToHeimlock" Type="GlobalRevivePlayers" Name="RC_CutsceneRevive" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="PlayerLockTP" Name="RC_A1_Q3_LockTP" Lock="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="RC_HideEdric" EntityNames="Edric" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="StepupdateTalkToHeimlock" Localization="@ui_A1_Q3_S10_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="EntityIsHidden" Name="RC_Reveal_SF_Teleport" EntityNames="ClickableEntity_from_heimlock_to_SF" Hide="0" />
+      <Event Trigger="Instant" Delay="2" Type="GlobalDialog" Name="G_EdricTalk1" DialogName="ACT1_Q3_G_EdricTalk1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_G_EdricTalk" AreaRadius="30" Type="GlobalDialog" Name="G_EdricTalk2" DialogName="ACT1_Q3_G_EdricTalk2" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="StepupdateLeaveArea" Localization="@ui_A1_Q3_S10_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="PlayerWipe" Type="PlayerLockTP" Name="RC_A1_Q3_UnockTP" Lock="0" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="StepFailSuicide" RollbackToPreviousStep="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="1500" />
+        <XP Amount="2000" />
+        <ChoiceLootClass Name="A1_Q3_Reward" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="11" UIName="@ui_A1_Q3_S11_StepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="SpawnPoint_from_stormfall_to_palace" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_stormfall_to_city" Area="Stormfall" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="SpawnPoint_sf_from_farmstead" AreaRadius="10" Type="GlobalDialog" Name="SF_A1_Q4_PlayerComment" DialogName="ACT1_Q3_SF_PlayerComment4" Delay="2" />
+    </Step>
+  </Quest>
+</MetaData>

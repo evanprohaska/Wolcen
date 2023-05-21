@@ -1,0 +1,16 @@
+<MetaData>
+  <CastEffect Name="butcher_permanent">
+    <Param Type="Particle" ParticleName="ai_butcher.default.belly" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R BodyMouth01" OrientToViewDir="1" />
+  </CastEffect>
+  <CastEffect Name="butcher_charge_init">
+    <Param Type="Particle" ParticleName="ai_butcher.mouth_charge.belly_start" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R BodyMouth01" OrientToViewDir="1" />
+  </CastEffect>
+  <CastEffect Name="butcher_charge_end">
+    <Param Type="Particle" ParticleName="ai_butcher.mouth_charge.belly_puke_end" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R BodyMouth01" OrientToViewDir="1" />
+  </CastEffect>
+  <CastEffect Name="butcher_main_attack_weapon_trail">
+    <Param Type="Particle" ParticleName="ai_butcher.default_attack.weapon_trail" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01_Weapon_Particle1" Target="" />
+    <Param Type="Particle" ParticleName="ai_butcher.default_attack.weapon_trail" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01_Weapon_Particle3" Target="" />
+    <Param Type="Particle" ParticleName="ai_butcher.default_attack.weapon_trail" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01_Weapon_Particle5" Target="" />
+  </CastEffect>
+</MetaData>

@@ -1,0 +1,51 @@
+<MetaData>
+  <Projectile ID="repu_golgoth_fulguropunch_bolt_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.golgoth.FulguroPunch_SecondaryProj" Direction="0,1,0" WorldSpace="0" Scale="0.5" />
+      <Hit ParticleName="U_Projectile.Lightning.Lightning_Ball_Impact_01" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="7" />
+    <Speed SpeedMin="7" SpeedMax="7" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="hunt_golgoth_fulguropunch_bolt_proj_1" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.golgoth.FulguroPunch_SecondaryProj" Direction="0,1,0" WorldSpace="0" Scale="0.5" />
+      <Hit ParticleName="U_Monster.Oshara.Dragon_Lightning_Impact_01.Impact.Circle_Impact" Direction="0,0,1" WorldSpace="0" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="0.72" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_hunt_fulguropunch_bolts" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="7" SpeedMax="7" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="hunt_golgoth_fulguropunch_bolt_proj_2" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.golgoth.FulguroPunch_SecondaryProj" Direction="0,1,0" WorldSpace="0" Scale="0.5" />
+      <Hit ParticleName="U_Projectile.Lightning.Lightning_Ball_Impact_01" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="15" />
+    <Speed SpeedMin="7" SpeedMax="7" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+</MetaData>

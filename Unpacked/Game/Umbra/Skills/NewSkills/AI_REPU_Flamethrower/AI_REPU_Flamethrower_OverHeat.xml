@@ -1,0 +1,18 @@
+<MetaData>
+  <Skill ESkill="AI_REPU_Flamethrower_OverHeat" Keywords="magic_spell" UID="Flamethrower_Overheat_Republic">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="3" />
+    <Cooldown Cooldown="20.0" />
+    <ParticleList>
+      <Particle Key="Loop" Name="U_VFX_Oskar.Monster.REPU_Soldier_Overheat_Loop" Offset="0,0,1" Direction="0,0,1" InstantKill="0" Scale="3" />
+      <Particle Key="Explosion" Name="U_VFX_Oskar.Monster.REPU_Soldier_Overheat_AoE" Offset="0,0,1" Direction="0,0,1" />
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Fire" Offset="0,0,1" Direction="0,0,1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="AI_REPU_Flamethrower_Overheat_Circle" />
+    </Shapes>
+    <Range AttackRange="15" />
+    <SkillSpecific MaxTurnRate="60.0" MovementSpeed="10.0" ExplosionRadius="3.0" ExplosionTriggerRadius="2.2" OverheatDuration="4.0" ExplosionTriggerTime="1" TimeToDieAfterExplosion="0.5" />
+  </Skill>
+</MetaData>

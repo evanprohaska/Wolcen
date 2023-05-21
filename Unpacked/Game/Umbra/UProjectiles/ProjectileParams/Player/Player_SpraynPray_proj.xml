@@ -1,0 +1,82 @@
+<MetaData>
+  <Projectile ID="player_spraynpray_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="Skill_SprayAndPray.Projectiles.Projectile_Default_Physical" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Fire" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_BulletImpact" />
+      <Launch SoundTriggerName="Play_Skill_SprayAndPray_Shoot" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_spraynpray_proj_Toxic" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="Skill_SprayAndPray.Projectiles.Projectile_Poison" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Poison" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_BulletImpact" />
+      <Launch SoundTriggerName="Play_Skill_SprayAndPray_Shoot_Toxic" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_spraynpray_proj_Frost" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="Skill_SprayAndPray.Projectiles.Projectile_Frost" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Frost" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_BulletImpact" />
+      <Launch SoundTriggerName="Play_Skill_SprayAndPray_Shoot_Frost" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_spraynpray_proj_Shadow" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="Skill_SprayAndPray.Projectiles.Projectile_Shadow" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Shadow" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_BulletImpact" />
+      <Launch SoundTriggerName="Play_Skill_SprayAndPray_Shoot_Shadow" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_spraynpray_proj_Sacred" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="Skill_SprayAndPray.Projectiles.Projectile_Sacred" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Sacred" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_BulletImpact" />
+      <Launch SoundTriggerName="Play_Skill_SprayAndPray_Shoot_Sacred" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+</MetaData>

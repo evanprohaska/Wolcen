@@ -1,0 +1,35 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_corruptedprimordialguardian_missilelaunch_part1" ESkill="AI_cultofsouls_corruptedprimordialguardian_missilelaunch_part1" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_05" ScaleWithCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="10" />
+    <Shapes>
+      <Entry ShapeName="PrimordialGuardian_SearchingLightShape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="SearchLight" Name="U_Monster.Primordiar.Primordiar_Guardian.Scanning_02" Scale="0.95" Offset="0,1.5,0" Direction="0,1,0" />
+      <Particle Key="Indicator" Name="U_Buff.Buff.Attack_Icon_Blue_02" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Target" Name="U_Buff.Buff.Attack_Icon_Blue_01" Offset="0,0,2" Direction="0,0,1" Bone="Bip01" />
+    </ParticleList>
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_cultofsouls_corruptedprimordialguardian_missilelaunch_part2" />
+    </SecondarySkillToCast>
+    <SkillSpecific Duration="1.5" SearchingAngle="100" SearchingRadius="5" />
+  </Skill>
+  <Skill UID="AI_cultofsouls_corruptedprimordialguardian_missilelaunch_part2" ESkill="AI_cultofsouls_corruptedprimordialguardian_missilelaunch_part2" Keywords="magic_spell,projectile">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastDelay="0.1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0" TriggerCooldownAtSkillEnd="0" />
+    <Range AttackRange="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="IndicatorFollow" Name="U_Monster.Primordiar.Primordiar_Guardian.Scaning_Explosion_Indicator_01" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" Delay="0.2" />
+      <Particle Key="Missile" Name="U_Monster.Primordiar.Primordiar_Guardian.IceProjectile_Goingup" Offset="0,0,1" Direction="0,1,0" Bone="Bip01" />
+    </ParticleList>
+    <Projectile Name="cultofsouls_corruptedprimordialguardian_missilelaunch" ProjectileCount="1" PenetrationLimit="1" />
+    <RandomCastingParams RandomNumberRangeMin="3" RandomNumberRangeMax="4" InterruptIfTargetGoesInvisible="1" />
+    <SkillSpecific DefaultZOffset="20" LCastBone="L_Weapon_Bone" RCastBone="R_Weapon_Bone" LForeTwistBone="Bip01 L Hand" RForeTwistBone="Bip01 R Hand" />
+    <SoundTrigger OnAnimCast="Play_Primordial_GuardianCorrupt_MissileLaunch_Fire" OnHit="" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

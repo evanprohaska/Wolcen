@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar01_inexorablecharge" ESkill="AI_republicjusticar01_inexorablecharge" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1.8" />
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="5" StunDuration="0.3" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_InexorableCharge" />
+    </Shapes>
+    <SkillSpecific BlowAwayAllies="1" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="0" In="2" />
+      <EmissiveIntensity From="30" To="45" In="1" />
+      <EmissiveIntensity From="50" To="origin" In="1.5" />
+    </Material>
+    <SoundTrigger OnAnimStart="Play_Edric_Justicar1_InexorableCharge_Warcry" OnHit="Play_Edric_Justicar1_InexorableCharge_Impact" />
+  </Skill>
+</MetaData>

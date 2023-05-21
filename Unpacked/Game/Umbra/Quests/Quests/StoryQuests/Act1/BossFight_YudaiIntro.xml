@@ -1,0 +1,15 @@
+<MetaData>
+  <Quest Name="Quest_YudaiIntroFight" StartDialog="" Type="BossFight" UIName="@ui_A0_Q0_S7_EventQuestNameLabel" UIDesc="@">
+    <Step Order="0" UIName="@ui_A0_Q0_S7_EventStepNameLabel" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Impossible" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ArenaStart" Name="INTRO_Q1_StartArena" ArenaPreset="YudaiFirstEncounter_Act1" LocationEntityName="YudaiFirstEncounter_ACT1" EntityToFollow="" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="INTRO_Q1_StartArena" Type="GoalAchieve" GoalIndexToAchieve="0" Name="INTRO_Q1_Arena8vICTORY" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="INTRO_Q1_StartArena" WaveIndex="1" Type="EntityIsHidden" Delay="0.7" Name="Intro_HideAssassin" EntityNames="Q_NPC_Intro_WoundedSoldier2" Hide="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Yudai" PercentLeft="25" Type="GoalAchieve" Delay="0" Name="WaitYudairWeaken_INTRO_Quest1" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="INTRO_Q1_StartArena" WaveIndex="2" Delay="18" Type="GoalAchieve" Name="WaitDelay_INTRO_Quest1" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="Instant" Type="QuestClearUI" Delay="0" Name="INTRO_Q1_ClearUI_5" StepToKeep="2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="INTRO_Q1_StartArena" WaveIndex="2" Type="GlobalAnnouncement" Name="A0_Q0_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A0_Q0_S7_EventQuestNameLabel" DisplayTime="3" />
+    </Step>
+  </Quest>
+</MetaData>

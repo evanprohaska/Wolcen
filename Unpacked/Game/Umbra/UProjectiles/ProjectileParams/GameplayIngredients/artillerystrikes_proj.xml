@@ -1,0 +1,87 @@
+<MetaData>
+  <Projectile ID="dragonbreath_proj_test" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.GPI.Oshara_FireBreath_ProjectileLooping_4x15" Scale="1" Direction="-1,0,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="25" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="dragonbreath_proj_test_02" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.GPI.Oshara_FireBreath_ProjectileLooping_15x30" Scale="1" Direction="-1,0,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="25" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="artillerystrikes_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="u_gameplay_ingredients.a3_artillery_strike.projectile" Scale="1" Direction="0,-1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="80" SpeedMax="80" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="osharabreath_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.GPI.Oshara_FireBreath_ProjectileLooping_4x15" Scale="1" Direction="-1,0,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="25" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="Drakebreath_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Projectiles.FireWave_Sky_01" Scale="1" Direction="-1,0,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="25" SpeedMax="25" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+</MetaData>

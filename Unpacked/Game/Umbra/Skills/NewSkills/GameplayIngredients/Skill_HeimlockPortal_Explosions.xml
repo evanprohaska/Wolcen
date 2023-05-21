@@ -1,0 +1,51 @@
+<MetaData>
+  <Skill UID="HeimlockPortal_Explosion_01" ESkill="AI_Default_GenericExplosionsAround" Keywords="">
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.8" />
+    <Cooldown Cooldown="1" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry Key="ExplosionShape" ShapeName="Heimlock_Portal_Explosions" />
+    </Shapes>
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Heimlock.Abyss_Explosion_Indicator" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Explosion" Name="U_Monster.Heimlock.Abyss_Explosion" Offset="0,0,0" Direction="0,0,1" Scale="1.75" />
+    </ParticleList>
+    <Range ProjectileMinDistance="12" AttackRange="20" />
+    <SkillSpecific NumberOfExplosionsPerLoop="7" DelayBetweenExplosionsOfASameLoop="0.1" AnticipationTimerForExplosion="1.5" ComputeExplosionExclusionRange="3" TimeBetweenLoops="1" />
+  </Skill>
+  <Skill UID="HeimlockPortal_Explosion_02" ESkill="AI_Default_GenericExplosionsAround" Keywords="">
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.8" />
+    <Cooldown Cooldown="8" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry Key="ExplosionShape" ShapeName="Heimlock_Portal_Explosions" />
+    </Shapes>
+    <RandomCastingParams RandomNumberRangeMin="2" RandomNumberRangeMax="2" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Heimlock.Abyss_Explosion_Indicator" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Explosion" Name="U_Monster.Heimlock.Abyss_Explosion" Offset="0,0,0" Direction="0,0,1" Scale="1.75" />
+    </ParticleList>
+    <Range ProjectileMinDistance="12" AttackRange="20" />
+    <SkillSpecific NumberOfExplosionsPerLoop="7" DelayBetweenExplosionsOfASameLoop="0.1" AnticipationTimerForExplosion="1.5" ComputeExplosionExclusionRange="3" TimeBetweenLoops="1" />
+  </Skill>
+  <Skill UID="HeimlockPortal_Explosion_03" ESkill="AI_Default_GenericExplosionsAround" Keywords="">
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.8" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry Key="ExplosionShape" ShapeName="Heimlock_Portal_Explosions" />
+    </Shapes>
+    <RandomCastingParams RandomNumberRangeMin="3" RandomNumberRangeMax="3" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Heimlock.Abyss_Explosion_Indicator" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Explosion" Name="U_Monster.Heimlock.Abyss_Explosion" Offset="0,0,0" Direction="0,0,1" Scale="1.75" />
+    </ParticleList>
+    <Range ProjectileMinDistance="12" AttackRange="20" />
+    <IsIgnoredBySafeZoneGPIPreset SafeZoneGroupNames="heimlock_safezone" />
+    <SkillSpecific NumberOfExplosionsPerLoop="7" DelayBetweenExplosionsOfASameLoop="0.1" AnticipationTimerForExplosion="1.5" ComputeExplosionExclusionRange="3" TimeBetweenLoops="1" />
+  </Skill>
+</MetaData>

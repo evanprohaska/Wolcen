@@ -1,0 +1,12 @@
+<MetaData>
+  <Quest Name="QN_EG_NPC2_Consu_KillCP_1" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_KCP_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="KillCP" AreaPercent="1" KillValue="70" ShowProgression="1" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate2" Localization="@ui_EG_KCP_StepNameLabel" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+</MetaData>

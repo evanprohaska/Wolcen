@@ -1,0 +1,43 @@
+<MetaData>
+  <Skill ESkill="AI_lanternbearer_soulrelease" Keywords="magic_spell" UID="AI_lanternbearer_soulrelease_OLD">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageWeapon Type="frost" WeaponMultiplier="4.7" />
+    <StatusAilment>
+      <freeze Chance="100" ChanceMode="override" Duration="1" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="12.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="LanternBearer_SoulReleaseShape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Butcher.Indicator_6M" Scale="1" Offset="2,0,0" Direction="0,0,1" Delay="0.5" />
+    </ParticleList>
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="1200" In="2.5" />
+      <EmissiveIntensity From="1200" To="origin" In="1" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_lanternbearer_soulrelease" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="frost" WeaponMultiplier="4.7" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_01" Offset="0,3.5,0" Direction="0,0,1" Scale="2" TimeScale="0.5" />
+      <Particle Key="DamageZone" Name="U_Monster.Tomb_Bearer.Soul_Impact" Offset="0,3.5,0" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="Indicator" ParticleKeys="DamageZone" SecondarySkillUIDs="AI_lanternbearer_soulrelease_shape" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+  </Skill>
+  <Skill UID="AI_lanternbearer_soulrelease_shape" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="LanternBearer_SoulReleaseShape" />
+    </Shapes>
+  </Skill>
+</MetaData>

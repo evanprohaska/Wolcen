@@ -1,0 +1,894 @@
+<MetaData>
+  <EntityList Name="F1" NoDropWeight="90">
+    <Entry Weight="10">
+      <Budget Mode="manual" Entity_Min="0" Entity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="MapModifier_Altar.MapModifier_Altar" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F2" NoDropWeight="65">
+    <Entry Weight="35">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="Gambling_Altar.Gambling_Altar" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="F3" NoDropWeight="80">
+    <Entry Weight="7">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00014285714" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Common" />
+      </Variants>
+    </Entry>
+    <Entry Weight="5.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00014285714" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="4.5">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00014285714" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="3">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00014285714" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Altar.xml" PrefabName="CursedChest_Altar.CursedChest_Altar_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="LDC_SvriirNetwork_ADV" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="StormfallSoldier.Lootable_StormFallSoldier_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="StormfallSoldier.Lootable_StormFallSoldier_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="StormfallSoldier.Lootable_StormFallSoldier_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="SvriirVictim.Lootable_SvriirVictim_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="SvriirVictim.Lootable_SvriirVictim_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="SvriirVictim.Lootable_SvriirVictim_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="SvriirVictim.Lootable_SvriirVictim_DC_LyingGround_4" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="SDC_SvriirNetwork_ADV" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="StormfallSoldier.Lootable_StormFallSoldier_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="StormfallSoldier.Lootable_StormFallSoldier_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="StormfallSoldier.Lootable_StormFallSoldier_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="SvriirVictim.Lootable_SvriirVictim_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="SvriirVictim.Lootable_SvriirVictim_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="SvriirVictim.Lootable_SvriirVictim_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="SvriirVictim.Lootable_SvriirVictim_DC_Sitting_4" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="FP_SvriirNetwork_ADV" NoDropWeight="0">
+    <Entry Weight="50">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Svriirs.Lootable_Svriir_FoodPouch" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="Chest_SvriirNetwork_ADV" NoDropWeight="0">
+    <Entry Weight="60">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Svriirs.Chest_Svriir_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="30">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Svriirs.Chest_Svriir_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="10">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Svriirs.Chest_Svriir_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="LDC_GenericCave_ADV" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_4" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_4" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="SDC_GenericCave_ADV" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_4" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_4" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="MC_GenericCave_ADV" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Stormfall.Lootable_Stormfall_MilitaryCrate" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="PB_GenericCave_ADV" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Usual.Lootable_UsualObject_PreciousBox" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="Chest_GenericCave_ADV" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="LDC_Forest_ADV" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_LyingGround_4" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_4" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="SDC_Forest_ADV" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Villager.Lootable_Villager_DC_Sitting_4" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_4" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Noble.Lootable_Noble_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="Chest_Forest_ADV" NoDropWeight="0">
+    <Entry Weight="60">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="30">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="10">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="LDC_RD_NecropolisR" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_4" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="SDC_RD_NecropolisR" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_4" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="SC_RD_NecropolisR" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Necropolis.Lootable_Necropolis_Coffin" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="PB_RD_NecropolisR" NoDropWeight="0">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Usual.Lootable_UsualObject_PreciousBox" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="Chest_RD_NecropolisR" NoDropWeight="0">
+    <Entry Weight="60">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Necropolis.Chest_Necropolis_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="30">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Necropolis.Chest_Necropolis_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="10">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Necropolis.Chest_Necropolis_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_DC_LyingGround_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="CultistOfSoulDC.Lootable_CultistOfSoul_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_DC_SittingGround_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TemplarDC.Lootable_TemplarSquire_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="CultistOfSoulDC.Lootable_CultistOfSoul_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_WeaponRack_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_WeapoinRack01" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_WeaponRack02" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_ArmorRack_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_ArmorRack" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_BrokenTile_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_BrokenTile" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_SacredJar_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_SacredJar" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_CommonChest_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Templar.Lootable_Templar_CommonChest" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TOJ_Chest_Templar_Adventure" NoDropWeight="0">
+    <Entry Weight="60">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Templar.Chest_Templar_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="30">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Templar.Chest_Templar_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="10">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Templar.Chest_Templar_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="RW_ADV_DC_LyingGround_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_LyingGround_4" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="RW_ADV_DC_SittingGround_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_3" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Adventurer.Lootable_Adventurer_DC_Sitting_4" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="RW_REP_DC_LyingGround_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="RepublicDC.Lootable_RepublicInfantry_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="RepublicDC.Lootable_RepublicInfantry_DC_LyingGround_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="RepublicDC.Lootable_RepublicSniper_DC_LyingGround_1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="RW_REP_DC_SittingGround_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="RepublicDC.Lootable_RepublicInfantry_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="RepublicDC.Lootable_RepublicInfantry_DC_Sitting_2" />
+      </Variants>
+    </Entry>
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="RepublicDC.Lootable_RepublicSniper_DC_Sitting_1" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="RW_REP_RepCanteen_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Republic.Lootable_Republic_Canteen" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="RW_REP_ArmorRack_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Republic.Lootable_Republic_ArmorRack" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="RW_REP_WeaponRack_Adventure">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="Republic.Lootable_Republic_WeaponRack" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="RW_Usual_Chest_Adventure" NoDropWeight="0">
+    <Entry Weight="60">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="30">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="10">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Usual.Chest_UsualChest_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="RW_REP_Chest_Adventure" NoDropWeight="0">
+    <Entry Weight="60">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Republic.Chest_Republic_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="30">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Republic.Chest_Republic_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="10">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="Republic.Chest_Republic_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TPS_Altar">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TPS.Lootable_TPS_Altar" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TPS_ArmorRack">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TPS.Lootable_TPS_ArmorRack" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TPS_GiftOrb">
+    <Entry Weight="100">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="1" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Lootable.xml" PrefabName="TPS.Lootable_TPS_GiftOrb" />
+      </Variants>
+    </Entry>
+  </EntityList>
+  <EntityList Name="TPS_Chest" NoDropWeight="0">
+    <Entry Weight="60">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="TPS.Chest_TPS_Uncommon" />
+      </Variants>
+    </Entry>
+    <Entry Weight="30">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="TPS.Chest_TPS_Rare" />
+      </Variants>
+    </Entry>
+    <Entry Weight="10">
+      <Budget Mode="auto" SquareMeterPerEntity_Min="0" SquareMeterPerEntity_Max="0.00025" />
+      <Variants>
+        <Variant PrefabLibrary="Prefabs/Library_Chest.xml" PrefabName="TPS.Chest_TPS_Legendary" />
+      </Variants>
+    </Entry>
+  </EntityList>
+</MetaData>

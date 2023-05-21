@@ -1,0 +1,112 @@
+<MetaData>
+  <Projectile ID="player_spreadshot_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.2,1,0.2" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Spread_Shot_Projectile_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="35" SpeedMax="35" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+  </Projectile>
+  <Projectile ID="player_spreadshot_proj_exploding" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.2,1,0.2" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Spread_Shot_Projectile_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Summon.SpreadShot_Explosion_01" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="35" SpeedMax="35" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Skill_Spreadshot_Impact_Explosion" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_spreadshot_proj_poison" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.2,1,0.2" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Spread_Shot_Projectile_01_Poison" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="35" SpeedMax="35" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+  </Projectile>
+  <Projectile ID="player_spreadshot_proj_exploding_poison" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.2,1,0.2" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Spread_Shot_Projectile_01_Poison" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Poison.SpreadShot_Explosion_01" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="35" SpeedMax="35" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Skill_Spreadshot_Impact_Explosion" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_spreadshot_proj_frost" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.2,1,0.2" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Spread_Shot_Projectile_01_Frost" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="35" SpeedMax="35" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+  </Projectile>
+  <Projectile ID="player_spreadshot_proj_exploding_frost" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.2,1,0.2" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Spread_Shot_Projectile_01_Frost" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Frost.SpreadShot_Explosion_01" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="35" SpeedMax="35" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Skill_Spreadshot_Impact_Explosion" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_spreadshot_proj_sacred" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.2,1,0.2" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Spread_Shot_Projectile_01_Sacred" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="35" SpeedMax="35" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+  </Projectile>
+  <Projectile ID="player_spreadshot_proj_exploding_sacred" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.2,1,0.2" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Spread_Shot_Projectile_01_Sacred" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Sacred.SpreadShot_Explosion_01" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="35" SpeedMax="35" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Skill_Spreadshot_Impact_Explosion" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_spreadshot_proj_fire" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.2,1,0.2" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Spread_Shot_Projectile_01_Explod" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="35" SpeedMax="35" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+  </Projectile>
+  <Projectile ID="player_spreadshot_proj_exploding_fire" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.2,1,0.2" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Character.Skills.Spread_Shot_Projectile_01_Explod" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Fire.SpreadShot_Explosion_01" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="35" SpeedMax="35" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="Play_Skill_Spreadshot_Impact_Explosion" />
+    </Audio>
+  </Projectile>
+</MetaData>

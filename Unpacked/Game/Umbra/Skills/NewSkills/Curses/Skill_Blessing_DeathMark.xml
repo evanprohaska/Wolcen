@@ -1,0 +1,20 @@
+<MetaData>
+  <Skill UID="blessing_deathmark" ESkill="player_deathmark" Keywords="passive_effect,">
+    <WeaponRequirements Requirements="rogue," />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_deathmark" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="" CanMultiCast="1" CanCastWhileMoving="0" MaximumTurnRate="0" ShouldMoveInRange="1" CancellableByDefault="1" />
+    <Range AttackRange="8" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/deathmark.png" UIName="@ui_AST_DeathMark" Lore="@ui_AST_DeathMark_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,Slow,SpecificDeathMark" ShowParamsInTooltip="Cost,Cooldown,Slow,SpecificDeathMark" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Nutral" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Nutral" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Nutral" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.SARISEL" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Nutral" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Nutral" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Physical" Inventory_HUDPicture="../u_resources/enneracts/deathmark.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <DamageWeapon WeaponMultiplier=".30" />
+    <ParticleList />
+    <Cooldown Cooldown="4.0" CooldownPerLevel="0" />
+    <Aggression TargetValueOnHit="0" />
+    <PassiveSkills>
+      <Skill Index="0" Name="AST_DeathMark_Base_Vulnerability" Duration="7" Targeting="OnTarget" />
+    </PassiveSkills>
+    <Mark PropagationChance="0" />
+    <ResourceCost RageCost="-125" ROSTransfertDuration="1.0" RageCostPerLevel="0" />
+    <Specific_DeathMark CastPlayerSound_FromItem="Play_Blessing_Achilles_Heel" IsBlessing="1" />
+  </Skill>
+</MetaData>

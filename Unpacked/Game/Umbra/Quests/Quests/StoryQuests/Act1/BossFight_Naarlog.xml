@@ -1,0 +1,19 @@
+<MetaData>
+  <Quest Name="Quest_NaarlogFight" StartDialog="" Type="BossFight" UIName="@ui_A1_Q3_EventQuestLabel2" UIDesc="@">
+    <Step Order="0" UIName="@ui_A1_Q3_S6_UpdateStepNameLabel1" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="BO_MercySpawn" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" Area="ACT1_BanditOutpost" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" Delay="0" StepToKeep="2" Name="A1_Q3_ClearUI_6" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ArenaStart" Name="ACT1_Q3_BO_StartArena" ArenaPreset="BanditAmbush_Act1" LocationEntityName="BanditAmbush_Act1" EntityToFollow="" />
+      <Event Trigger="EventEnd" EventName="A1_Q3_EA_AN_BossFightEnd" Type="GoalAchieve" GoalIndexToAchieve="0" Name="ACT1_Q3_BO_Arena_Victory" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="30" Delay="0.1" Name="PlayerTP_toBO_Arena" TeleportedEntityName="#Player" DestinationName="QP_BO_MercySpawn1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT1_Q3_BO_StartArena" WaveIndex="2" Type="GlobalDialog" Name="BO_OutlawAmbush_2" Delay="3" DialogName="ACT1_Q3_BO_OutlawAmbush2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT1_Q3_BO_StartArena" WaveIndex="4" Type="StepUpdate" Name="A1_Q3_S5_StepUpdate" Localization="@ui_A1_Q3_S6_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT1_Q3_BO_StartArena" WaveIndex="4" Type="GlobalDialog" Name="NaarlogIsComing" Delay="4" DialogName="ACT1_Q3_BO_OutlawAmbush3" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ACT1_Q3_BO_StartArena" WaveIndex="4" Type="GlobalAnnouncement" Name="A1_Q3_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A1_Q3_S6_UpdateStepNameLabel2" DisplayTime="3" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="ACT1_Q3_BO_StartArena" Type="GlobalAnnouncement" Name="A1_Q3_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+</MetaData>

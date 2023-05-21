@@ -1,0 +1,63 @@
+<MetaData>
+  <Skill UID="AI_COFY_Cultist_RangedAttack" ESkill="AI_default_projectileskillwithdamagezone" Keywords="projectile,magic_spell">
+    <Projectile Name="cofy_cultist_proj" ProjectileCount="1" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <Burn Chance="100" ChanceMode="ignored" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <CastingParams MaximumTurnRate="360" CastBone="Bip01 L Hand" CasterImmobilizationTime="1" MaximumTargetingHalfAngle="10" CanBeInterrupted="0" />
+    <Cooldown Cooldown="2.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Explosion ExplosionRadius="3" />
+    <Range AttackRange="15" />
+    <SoundTrigger onAnimCast="PLAY_AI_SvriirSpitter_SpitShot" OnHit="PLAY_AI_SvriirSpitter_AcidDamage" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Cultist_RangedAttack_DamageZone" />
+    </SecondarySkillToCast>
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Cultist_RangedAttack_NODZ" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="1.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 L Hand" />
+    <Projectile Name="COFY_Fanatic_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_Fanatic_Fireball_Projectile_Buildup" OnHit="Play_hero_default_damage" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_COFY_Cultist_MultipleFireballs" ESkill="AI_default_projectileskillwithdamagezone" Keywords="projectile,magic_spell">
+    <Projectile Name="cofy_cultist_proj" ProjectileCount="3" AngleBetweenProjectiles="40" />
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier=".7" />
+    <StatusAilment>
+      <Burn Chance="100" ChanceMode="ignored" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <CastingParams MaximumTurnRate="360" CastBone="Bip01 L Hand" CasterImmobilizationTime="1" MaximumTargetingHalfAngle="10" CanBeInterrupted="0" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Explosion ExplosionRadius="3" />
+    <Range AttackRange="15" />
+    <SoundTrigger onAnimCast="PLAY_AI_SvriirSpitter_SpitShot" OnHit="PLAY_AI_SvriirSpitter_AcidDamage" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Cultist_RangedAttack_DamageZone" />
+    </SecondarySkillToCast>
+    <SkillSpecific UseReorientBetweenStartAndLock="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Cultist_RangedAttack_DamageZone" ESkill="AI_default_projectileskillwithdamagezone_damagezone" Keywords="magic_spell,projectile">
+    <DamageWeapon Type="Fire" WeaponMultiplier=".2" />
+    <StatusAilment>
+      <Burn Chance="100" ChanceMode="ignored" Duration="2" DurationMode="override" />
+    </StatusAilment>
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="COFY_Cultist_DZ" />
+    </DamageZone>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <SoundTrigger OnHit="PLAY_AI_SvriirSpitter_AcidDamage" />
+  </Skill>
+</MetaData>

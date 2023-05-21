@@ -1,0 +1,325 @@
+<GamblingAltarPresets>
+  <Gambling PresetName="Gambling_Altar" Weight="1" MaxUses="1" TimeBetweenUses="5" DistanceEffect="35" PercentToDefeat="80" BuffDuration="90" SpawnRadius="15" MonsterModifier="0.5" ApplyOnMonsters="1" Geometry="objects/props/altar/Altar_Shrine.cgf" MinLevel="1" MaxLevel="10" MinCombatPoints="15" MaxCombatPoints="30" SpawnOffset="3,3,0" IconPath="">
+    <Spawn Mode="Predefined">
+      <SpawnClass SpawnClass="sc_Adv_NPC2_UncommonCC_1" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_NPC2_UncommonCC_2" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_NPC2_UncommonCC_3" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_NPC2_UncommonCC_4" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_NPC2_UncommonCC_5" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_NPC2_UncommonCC_6" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_NPC2_UncommonCC_7" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_NPC2_UncommonCC_8" Weight="1" />
+    </Spawn>
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="1" HUDDesc="@ui_eim_move_speed">
+        <Semantics SpeedPercentInt="70" />
+      </EIM>
+      <EIM Name="criticalchance_attackskill_final_percent" Permanent="1" HUDDesc="@ui_eim_criticalchance_attackskill_final_percent">
+        <Semantics CharacteristicFinalPercentFloat="100" />
+      </EIM>
+      <EIM Name="criticaldamage_pts" Permanent="1" HUDDesc="@ui_eim_criticaldamage_pts">
+        <Semantics DamagePercentInt="200" />
+      </EIM>
+      <EIM Name="life_leech_percent_global" Permanent="1" HUDDesc="@ui_eim_life_leech_percent_global">
+        <Semantics DamagePercentFloat="15" />
+      </EIM>
+      <EIM Name="statusailment_inflict_chance_final_percent" Permanent="1" HUDDesc="@ui_eim_statusailment_inflict_chance_final_percent">
+        <Semantics CharacteristicFinalPercentFloat="100" />
+      </EIM>
+      <EIM Name="dotdamage_percent_global" Permanent="1" HUDDesc="@ui_eim_dotdamage_percent_global">
+        <Semantics DamagePercentFloat="100" />
+      </EIM>
+      <EIM Name="ghost_damage" Permanent="1" HUDDesc="@ui_eim_ghost_damage">
+        <Semantics DamagePercentInt="50" ChancePercentInt="50" />
+      </EIM>
+      <EIM Name="all_resistance_final_percent" Permanent="1" HUDDesc="@ui_eim_all_resistance_final_percent">
+        <Semantics CharacteristicFinalPercentFloat="25" />
+      </EIM>
+      <EIM Name="dodgechance_final_percent" Permanent="1" HUDDesc="@ui_eim_dodgechance_final_percent">
+        <Semantics CharacteristicFinalPercentFloat="25" />
+      </EIM>
+      <EIM Name="offensivespeed_final_percent" Permanent="1" HUDDesc="@ui_eim_offensivespeed_final_percent">
+        <Semantics CharacteristicFinalPercentFloat="100" />
+      </EIM>
+    </MagicEffects>
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.Altars_Aura_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.Altars_Activate_01_Red" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Altars.Altars_Finish_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1.75" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="MarkPlayer" VFXName="U_CommonVFX.Altars.Altars_Player_Buff_01" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="PlayerBuff" VFXName="U_CommonVFX.Altars.Altars_BuffTake_01" Direction="0,1,0" Scale="1" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </Gambling>
+  <Gambling PresetName="Gambling_Altar_COS" Weight="1" MaxUses="1" TimeBetweenUses="5" DistanceEffect="35" PercentToDefeat="80" BuffDuration="90" SpawnRadius="15" MonsterModifier="0.5" ApplyOnMonsters="1" Geometry="objects/props/altar/Altar_Shrine.cgf" MinLevel="1" MaxLevel="10" MinCombatPoints="15" MaxCombatPoints="30" SpawnOffset="3,3,0" IconPath="">
+    <Spawn Mode="Predefined">
+      <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_1" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_2" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_3" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_4" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_5" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_6" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_7" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_8" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_9" Weight="1" />
+    </Spawn>
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="1" HUDDesc="@ui_eim_move_speed">
+        <Semantics SpeedPercentInt="70" />
+      </EIM>
+      <EIM Name="criticalchance_score_percent" Permanent="1" HUDDesc="@ui_eim_criticalchance_score_percent">
+        <Semantics CharacteristicScorePercentInt="50" />
+      </EIM>
+      <EIM Name="criticaldamage_pts" Permanent="1" HUDDesc="@ui_eim_criticaldamage_pts">
+        <Semantics DamagePercentInt="50" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1" HUDDesc="@ui_eim_damage_percent">
+        <Semantics DamagePercentInt="25" />
+      </EIM>
+      <EIM Name="all_resistance_score_percent" Permanent="1" HUDDesc="@ui_eim_all_resistance_score_percent">
+        <Semantics CharacteristicScorePercentInt="20" />
+      </EIM>
+      <EIM Name="life_leech_percent_global" Permanent="1" HUDDesc="@ui_eim_life_leech_percent_global">
+        <Semantics DamagePercentFloat="15" />
+      </EIM>
+      <EIM Name="health_percent" Permanent="1" HUDDesc="@ui_eim_health_percent">
+        <Semantics HealthPercentInt="25" />
+      </EIM>
+      <EIM Name="forceshield_percent" Permanent="1" HUDDesc="@ui_eim_forceshield_percent">
+        <Semantics ArmorPercentFloat="35" />
+      </EIM>
+      <EIM Name="statusailment_inflict_score_percent" Permanent="1" HUDDesc="@ui_eim_statusailment_inflict_score_percent">
+        <Semantics CharacteristicScorePercentInt="50" />
+      </EIM>
+      <EIM Name="all_attribute_pts" Permanent="1" HUDDesc="@ui_eim_all_attribute_pts">
+        <Semantics AttributeFlatInt="25" />
+      </EIM>
+      <EIM Name="ghost_damage" Permanent="1" HUDDesc="@ui_eim_ghost_damage">
+        <Semantics DamagePercentInt="50" ChancePercentInt="50" />
+      </EIM>
+      <EIM Name="ghost_damage" Permanent="1" HUDDesc="@ui_eim_ghost_damage">
+        <Semantics DamagePercentInt="50" ChancePercentInt="50" />
+      </EIM>
+    </MagicEffects>
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.Altars_Aura_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.Altars_Activate_01_Red" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Altars.Altars_Finish_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1.75" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="MarkPlayer" VFXName="U_CommonVFX.Altars.Altars_Player_Buff_01" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="PlayerBuff" VFXName="U_CommonVFX.Altars.Altars_BuffTake_01" Direction="0,1,0" Scale="1" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </Gambling>
+  <Gambling PresetName="Gambling_Altar_SVRIIR" Weight="1" MaxUses="1" TimeBetweenUses="5" DistanceEffect="35" PercentToDefeat="80" BuffDuration="90" SpawnRadius="15" MonsterModifier="0.5" ApplyOnMonsters="1" Geometry="objects/props/altar/Altar_Shrine.cgf" MinLevel="1" MaxLevel="10" MinCombatPoints="15" MaxCombatPoints="30" SpawnOffset="3,3,0" IconPath="">
+    <Spawn Mode="Predefined">
+      <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_1" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_2" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_3" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_4" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_5" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_6" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_7" Weight="1" />
+    </Spawn>
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="1" HUDDesc="@ui_eim_move_speed">
+        <Semantics SpeedPercentInt="70" />
+      </EIM>
+      <EIM Name="criticalchance_score_percent" Permanent="1" HUDDesc="@ui_eim_criticalchance_score_percent">
+        <Semantics CharacteristicScorePercentInt="50" />
+      </EIM>
+      <EIM Name="criticaldamage_pts" Permanent="1" HUDDesc="@ui_eim_criticaldamage_pts">
+        <Semantics DamagePercentInt="50" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1" HUDDesc="@ui_eim_damage_percent">
+        <Semantics DamagePercentInt="25" />
+      </EIM>
+      <EIM Name="all_resistance_score_percent" Permanent="1" HUDDesc="@ui_eim_all_resistance_score_percent">
+        <Semantics CharacteristicScorePercentInt="20" />
+      </EIM>
+      <EIM Name="life_leech_percent_global" Permanent="1" HUDDesc="@ui_eim_life_leech_percent_global">
+        <Semantics DamagePercentFloat="15" />
+      </EIM>
+      <EIM Name="health_percent" Permanent="1" HUDDesc="@ui_eim_health_percent">
+        <Semantics HealthPercentInt="25" />
+      </EIM>
+      <EIM Name="forceshield_percent" Permanent="1" HUDDesc="@ui_eim_forceshield_percent">
+        <Semantics ArmorPercentFloat="35" />
+      </EIM>
+      <EIM Name="statusailment_inflict_score_percent" Permanent="1" HUDDesc="@ui_eim_statusailment_inflict_score_percent">
+        <Semantics CharacteristicScorePercentInt="50" />
+      </EIM>
+      <EIM Name="all_attribute_pts" Permanent="1" HUDDesc="@ui_eim_all_attribute_pts">
+        <Semantics AttributeFlatInt="25" />
+      </EIM>
+      <EIM Name="ghost_damage" Permanent="1" HUDDesc="@ui_eim_ghost_damage">
+        <Semantics DamagePercentInt="50" ChancePercentInt="50" />
+      </EIM>
+    </MagicEffects>
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.Altars_Aura_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.Altars_Activate_01_Red" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Altars.Altars_Finish_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1.75" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="MarkPlayer" VFXName="U_CommonVFX.Altars.Altars_Player_Buff_01" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="PlayerBuff" VFXName="U_CommonVFX.Altars.Altars_BuffTake_01" Direction="0,1,0" Scale="1" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </Gambling>
+  <Gambling PresetName="Gambling_Altar_FLESH" Weight="1" MaxUses="1" TimeBetweenUses="5" DistanceEffect="35" PercentToDefeat="80" BuffDuration="90" SpawnRadius="15" MonsterModifier="0.5" ApplyOnMonsters="1" Geometry="objects/props/altar/Altar_Shrine.cgf" MinLevel="1" MaxLevel="10" MinCombatPoints="15" MaxCombatPoints="30" SpawnOffset="3,3,0" IconPath="">
+    <Spawn Mode="Predefined">
+      <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_1" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_2" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_3" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_4" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_5" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_6" Weight="1" />
+    </Spawn>
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="1" HUDDesc="@ui_eim_move_speed">
+        <Semantics SpeedPercentInt="70" />
+      </EIM>
+      <EIM Name="criticalchance_score_percent" Permanent="1" HUDDesc="@ui_eim_criticalchance_score_percent">
+        <Semantics CharacteristicScorePercentInt="50" />
+      </EIM>
+      <EIM Name="criticaldamage_pts" Permanent="1" HUDDesc="@ui_eim_criticaldamage_pts">
+        <Semantics DamagePercentInt="50" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1" HUDDesc="@ui_eim_damage_percent">
+        <Semantics DamagePercentInt="25" />
+      </EIM>
+      <EIM Name="all_resistance_score_percent" Permanent="1" HUDDesc="@ui_eim_all_resistance_score_percent">
+        <Semantics CharacteristicScorePercentInt="20" />
+      </EIM>
+      <EIM Name="life_leech_percent_global" Permanent="1" HUDDesc="@ui_eim_life_leech_percent_global">
+        <Semantics DamagePercentFloat="15" />
+      </EIM>
+      <EIM Name="health_percent" Permanent="1" HUDDesc="@ui_eim_health_percent">
+        <Semantics HealthPercentInt="25" />
+      </EIM>
+      <EIM Name="forceshield_percent" Permanent="1" HUDDesc="@ui_eim_forceshield_percent">
+        <Semantics ArmorPercentFloat="35" />
+      </EIM>
+      <EIM Name="statusailment_inflict_score_percent" Permanent="1" HUDDesc="@ui_eim_statusailment_inflict_score_percent">
+        <Semantics CharacteristicScorePercentInt="50" />
+      </EIM>
+      <EIM Name="all_attribute_pts" Permanent="1" HUDDesc="@ui_eim_all_attribute_pts">
+        <Semantics AttributeFlatInt="25" />
+      </EIM>
+      <EIM Name="ghost_damage" Permanent="1" HUDDesc="@ui_eim_ghost_damage">
+        <Semantics DamagePercentInt="50" ChancePercentInt="50" />
+      </EIM>
+    </MagicEffects>
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.Altars_Aura_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.Altars_Activate_01_Red" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Altars.Altars_Finish_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1.75" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="MarkPlayer" VFXName="U_CommonVFX.Altars.Altars_Player_Buff_01" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="PlayerBuff" VFXName="U_CommonVFX.Altars.Altars_BuffTake_01" Direction="0,1,0" Scale="1" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </Gambling>
+  <Gambling PresetName="Gambling_Altar_FURY" Weight="1" MaxUses="1" TimeBetweenUses="5" DistanceEffect="35" PercentToDefeat="80" BuffDuration="90" SpawnRadius="15" MonsterModifier="0.5" ApplyOnMonsters="1" Geometry="objects/props/altar/Altar_Shrine.cgf" MinLevel="1" MaxLevel="10" MinCombatPoints="15" MaxCombatPoints="30" SpawnOffset="3,3,0" IconPath="">
+    <Spawn Mode="Predefined">
+      <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_1" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_2" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_3" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_4" Weight="1" />
+    </Spawn>
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="1" HUDDesc="@ui_eim_move_speed">
+        <Semantics SpeedPercentInt="70" />
+      </EIM>
+      <EIM Name="criticalchance_score_percent" Permanent="1" HUDDesc="@ui_eim_criticalchance_score_percent">
+        <Semantics CharacteristicScorePercentInt="50" />
+      </EIM>
+      <EIM Name="criticaldamage_pts" Permanent="1" HUDDesc="@ui_eim_criticaldamage_pts">
+        <Semantics DamagePercentInt="50" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1" HUDDesc="@ui_eim_damage_percent">
+        <Semantics DamagePercentInt="25" />
+      </EIM>
+      <EIM Name="all_resistance_score_percent" Permanent="1" HUDDesc="@ui_eim_all_resistance_score_percent">
+        <Semantics CharacteristicScorePercentInt="20" />
+      </EIM>
+      <EIM Name="life_leech_percent_global" Permanent="1" HUDDesc="@ui_eim_life_leech_percent_global">
+        <Semantics DamagePercentFloat="15" />
+      </EIM>
+      <EIM Name="health_percent" Permanent="1" HUDDesc="@ui_eim_health_percent">
+        <Semantics HealthPercentInt="25" />
+      </EIM>
+      <EIM Name="forceshield_percent" Permanent="1" HUDDesc="@ui_eim_forceshield_percent">
+        <Semantics ArmorPercentFloat="35" />
+      </EIM>
+      <EIM Name="statusailment_inflict_score_percent" Permanent="1" HUDDesc="@ui_eim_statusailment_inflict_score_percent">
+        <Semantics CharacteristicScorePercentInt="50" />
+      </EIM>
+      <EIM Name="all_attribute_pts" Permanent="1" HUDDesc="@ui_eim_all_attribute_pts">
+        <Semantics AttributeFlatInt="25" />
+      </EIM>
+      <EIM Name="ghost_damage" Permanent="1" HUDDesc="@ui_eim_ghost_damage">
+        <Semantics DamagePercentInt="50" ChancePercentInt="50" />
+      </EIM>
+    </MagicEffects>
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.Altars_Aura_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.Altars_Activate_01_Red" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Altars.Altars_Finish_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1.75" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="MarkPlayer" VFXName="U_CommonVFX.Altars.Altars_Player_Buff_01" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="PlayerBuff" VFXName="U_CommonVFX.Altars.Altars_BuffTake_01" Direction="0,1,0" Scale="1" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </Gambling>
+  <Gambling PresetName="Gambling_Altar_BANDIT" Weight="1" MaxUses="1" TimeBetweenUses="5" DistanceEffect="35" PercentToDefeat="80" BuffDuration="90" SpawnRadius="15" MonsterModifier="0.5" ApplyOnMonsters="1" Geometry="objects/props/altar/Altar_Shrine.cgf" MinLevel="1" MaxLevel="10" MinCombatPoints="15" MaxCombatPoints="30" SpawnOffset="3,3,0" IconPath="">
+    <Spawn Mode="Predefined">
+      <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_1" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_2" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_3" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_4" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_5" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_6" Weight="1" />
+      <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_7" Weight="1" />
+    </Spawn>
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="1" HUDDesc="@ui_eim_move_speed">
+        <Semantics SpeedPercentInt="70" />
+      </EIM>
+      <EIM Name="criticalchance_score_percent" Permanent="1" HUDDesc="@ui_eim_criticalchance_score_percent">
+        <Semantics CharacteristicScorePercentInt="50" />
+      </EIM>
+      <EIM Name="criticaldamage_pts" Permanent="1" HUDDesc="@ui_eim_criticaldamage_pts">
+        <Semantics DamagePercentInt="50" />
+      </EIM>
+      <EIM Name="damage_percent" Permanent="1" HUDDesc="@ui_eim_damage_percent">
+        <Semantics DamagePercentInt="25" />
+      </EIM>
+      <EIM Name="all_resistance_score_percent" Permanent="1" HUDDesc="@ui_eim_all_resistance_score_percent">
+        <Semantics CharacteristicScorePercentInt="20" />
+      </EIM>
+      <EIM Name="life_leech_percent_global" Permanent="1" HUDDesc="@ui_eim_life_leech_percent_global">
+        <Semantics DamagePercentFloat="15" />
+      </EIM>
+      <EIM Name="health_percent" Permanent="1" HUDDesc="@ui_eim_health_percent">
+        <Semantics HealthPercentInt="25" />
+      </EIM>
+      <EIM Name="forceshield_percent" Permanent="1" HUDDesc="@ui_eim_forceshield_percent">
+        <Semantics ArmorPercentFloat="35" />
+      </EIM>
+      <EIM Name="statusailment_inflict_score_percent" Permanent="1" HUDDesc="@ui_eim_statusailment_inflict_score_percent">
+        <Semantics CharacteristicScorePercentInt="50" />
+      </EIM>
+      <EIM Name="all_attribute_pts" Permanent="1" HUDDesc="@ui_eim_all_attribute_pts">
+        <Semantics AttributeFlatInt="25" />
+      </EIM>
+      <EIM Name="ghost_damage" Permanent="1" HUDDesc="@ui_eim_ghost_damage">
+        <Semantics DamagePercentInt="50" ChancePercentInt="50" />
+      </EIM>
+    </MagicEffects>
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.Altars_Aura_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.Altars_Activate_01_Red" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Altars.Altars_Finish_01_Red" Direction="0,1,0" Offset="0,0,1.7" Scale="1.75" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="MarkPlayer" VFXName="U_CommonVFX.Altars.Altars_Player_Buff_01" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="PlayerBuff" VFXName="U_CommonVFX.Altars.Altars_BuffTake_01" Direction="0,1,0" Scale="1" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </Gambling>
+</GamblingAltarPresets>

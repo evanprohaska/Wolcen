@@ -1,0 +1,22 @@
+<MetaData>
+  <DamageZone ID="DragonRider_ScorchedEarth_DZ">
+    <Parameters Duration="15" MaxHitPerEntity="0" MaxHitTotal="0" RateOfFire="1" />
+    <Position Offset="0,0,0" StartingAngle="0" SnapToGround="1" />
+    <Shape ID="DragonRider_ScorchedEarth_moving_shape" SpawnAngle="0" SpawnDelay="0" MaxHitPerEntity="0" MaxHitTotal="0" LinkedVFX="U_VFX_Oskar.AoE.FireConeDoT_01" LinkedVFXRelDirOverride="0,1,0" VFXTTL="15" TimeScale="0.5" MoveVFXWithShape="1" RemoveVFXWithShape="0" />
+  </DamageZone>
+  <DamageZone ID="Oshara01_DragonLeap_DZ">
+    <Parameters Duration="1.5" MaxHitPerEntity="0" MaxHitTotal="0" RateOfFire="0.7" />
+    <Position Offset="0,0,0" StartingAngle="0" SnapToGround="1" />
+    <Shape ID="Oshara01_DragonLeap_DZ_Shape" SpawnAngle="0" SpawnDelay="0" MaxHitPerEntity="0" MaxHitTotal="0" LinkedVFX="" LinkedVFXRelPosOffset="0,2,0" LinkedVFXRelDirOverride="0,1,0" VFXTTL="1.5" Scale="2" MoveVFXWithShape="1" RemoveVFXWithShape="1" />
+  </DamageZone>
+  <DamageZone ID="Oshara02_ScorchedEarth_DZ">
+    <Parameters Duration="20" MaxHitPerEntity="0" MaxHitTotal="0" RateOfFire="1" />
+    <Position Offset="0,3,0" StartingAngle="0" SnapToGround="1" />
+    <Shape ID="Oshara02_ScorchedEarth_ConeShape" SpawnAngle="0" SpawnDelay="0" MaxHitPerEntity="0" MaxHitTotal="0" LinkedVFX="U_VFX_Oskar.AoE.FireConeDoT_01" LinkedVFXRelDirOverride="0,1,0" VFXTTL="20" Scale="1.5" MoveVFXWithShape="0" RemoveVFXWithShape="1" />
+  </DamageZone>
+  <DamageZone ID="Oshara03_ScorchedEarth_DZ">
+    <Parameters Duration="20" MaxHitPerEntity="0" MaxHitTotal="0" RateOfFire="1" />
+    <Position Offset="0,0,0" StartingAngle="0" SnapToGround="1" />
+    <Shape ID="Oshara02_ScorchedEarth_ArcShape" SpawnAngle="0" SpawnDelay="0" MaxHitPerEntity="0" MaxHitTotal="0" LinkedVFX="" LinkedVFXRelDirOverride="0,1,0" VFXTTL="20" MoveVFXWithShape="1" RemoveVFXWithShape="0" />
+  </DamageZone>
+</MetaData>

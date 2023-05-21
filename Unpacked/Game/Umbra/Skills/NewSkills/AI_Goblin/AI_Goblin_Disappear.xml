@@ -1,0 +1,21 @@
+<MetaData>
+  <Skill UID="AI_GoldenScarab_Disappear" ESkill="Misc_Hide" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_01" />
+  </Skill>
+  <Skill UID="AI_GoldenScarab_Buff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" />
+    <Cooldown Cooldown="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="GoldenScarab_Buff_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="BuffOnTarget" Name="U_Monster_Alt.RepuVeteran.buff_target" Direction="0,0,1" Scale="1" Offset="0,0.5,0" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_GoldenScarab_Speed_passive" Targeting="OnAllies" Duration="10" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimStart="Play_WealthOmen_Buff" />
+  </Skill>
+</MetaData>

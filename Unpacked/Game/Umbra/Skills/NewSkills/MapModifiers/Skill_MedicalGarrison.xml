@@ -1,0 +1,14 @@
+<MetaData>
+  <Skill UID="mapmodifier_skill_medicalgarrison" ESkill="MapModifier_MedicalGarrison" Keywords="">
+    <ParticleList>
+      <Particle Key="Area" Name="U_Character.Skills.Sacred_Ground_01_Heailng" Direction="0,0,1" Delay="0" />
+    </ParticleList>
+    <SkillSpecific TickRate="0.6" HealPercent="10" Radius="4" Position="QP_Act4_Quest1_PlayerSpawn_Start" TimeToGet="3" BuffDuration="120">
+      <Upgrade AssociatedProject="medical_garrison_construct" BaseBuff="MedicalGarrison_Base" BaseUpgradableBuff="MedicalGarrison_BasePerUpgrade">
+        <Data Keyword="souls" Buff="MedicalGarrison_Souls" />
+        <Data Keyword="flesh" Buff="MedicalGarrison_Flesh" />
+        <Data Keyword="fury" Buff="MedicalGarrison_Fury" />
+      </Upgrade>
+    </SkillSpecific>
+  </Skill>
+</MetaData>

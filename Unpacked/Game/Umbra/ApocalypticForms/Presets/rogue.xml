@@ -1,0 +1,28 @@
+<MetaData>
+  <Preset Name="apo_rogue" StatsName="rogue_stats" Type="rogue" MinApoResourceToTransform="300" RestoredHealthPercentOnDropForm="30">
+    <UIParams Name="@ui_apo_rogue_name" Lore="@ui_apo_rogue_lore" />
+    <Visuals AnimationActionTag="player_skill_spawn_rogue" ADB="Animations/Mannequin/ADB/Apocalyptic/APO_Rogue.adb" CDF="objects/characters/players/apocalyptic/APO_Rogue/APO_Rogue.cdf" Scale="1.1">
+      <VFX_OnBeginPlayerToApo>
+        <Entry VFX="U_ApocalypticForm.Rogue_ApocalypticForm.Transform_Camera_Fadeout" Bone="Bip01" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0.01" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+        <Entry VFX="U_ApocalypticForm.Rogue_ApocalypticForm.Transform_Camera" Bone="Bip01" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0.41" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+      </VFX_OnBeginPlayerToApo>
+      <VFX_OnBeginApoToPlayer>
+        <Entry VFX="U_ApocalypticForm.Rogue_ApocalypticForm.TransformToHuman" Bone="Bip01 Spine2" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+        <Entry VFX="U_ApocalypticForm.Rogue_ApocalypticForm.TransformTo Human_Camera" Bone="Bip01" Offset="0,0,0" Dir="0,0,1" TimeBeforeSpawn="0" AttachToPlayer="1" LocalPlayerOnly="1" TTL="5" />
+      </VFX_OnBeginApoToPlayer>
+      <MutationSkins>
+        <Entry MutationName="apo_rogue_permanent_vfx" SkinName="apo_rogue_skin_permanent_vfx" />
+      </MutationSkins>
+    </Visuals>
+    <TransformationSkill SkillUID="apo_rogue_apotransform" />
+    <Skills>
+      <Entry Slot="16" SkillUID="apo_rogue_backdash" />
+      <Entry Slot="17" SkillUID="apo_rogue_airstrike" />
+      <Entry Slot="18" SkillUID="apo_rogue_multihit" />
+      <Entry Slot="24" SkillUID="apo_rogue_default_attack_01" />
+      <Entry Slot="25" SkillUID="apo_rogue_moveattack" />
+      <Entry Slot="26" SkillUID="apo_rogue_moveattack" />
+    </Skills>
+    <Stacks MaxStacks="30" />
+  </Preset>
+</MetaData>

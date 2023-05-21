@@ -1,0 +1,23 @@
+<MetaData>
+  <Skill UID="AI_cultofflesh_colossalBreeder_drop" ESkill="AI_Default_DropCreature" Keywords="magic_spell">
+    <Particles ParticleName="U_Monster.Butcher.Skill_ShotGun" ParticleBone="Bip01" ParticleOffSet="0,0,-1.5" ParticleDirection="0,1,0" ParticleScale="0.6" />
+    <SkillSpecific SpawnerPool="10" TriggerPerLifePercent="10" ChanceToTriggerOnHit="0.5" ThrowSpawnAngle="90" AnimationTravelDistance="3" MinSpawn="1" MaxSpawn="1" CanTriggerWhenCC="0" IgnoreDots="1" OnDropSound="Play_COFE_CollossalBreeder_DropRunnerHit" />
+    <Summoning MaxSummons="10" SummonDuration="0" MinRadiusAroundSpawnPosition="0.0" MaxRadiusAroundSpawnPosition="0.0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_ColossalBreederSpawner" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_endgame_cultofflesh_colossalBreeder_drop" ESkill="AI_Default_DropCreature" Keywords="magic_spell">
+    <Particles ParticleName="U_Monster.Butcher.Skill_ShotGun" ParticleBone="Bip01" ParticleOffSet="0,0,-1.5" ParticleDirection="0,1,0" ParticleScale="0.6" />
+    <SkillSpecific SpawnerPool="10" TriggerPerLifePercent="10" ChanceToTriggerOnHit="0.5" ThrowSpawnAngle="90" AnimationTravelDistance="3" MinSpawn="1" MaxSpawn="1" CanTriggerWhenCC="0" IgnoreDots="1" OnDropSound="Play_COFE_CollossalBreeder_DropRunnerHit" />
+    <Summoning MaxSummons="10" SummonDuration="0" MinRadiusAroundSpawnPosition="0.0" MaxRadiusAroundSpawnPosition="0.0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_Endgame_ColossalBreederSpawner" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_cultofflesh_colossalBreeder_lambach_drop" ESkill="AI_Default_DropCreature" Keywords="magic_spell">
+    <Particles ParticleName="U_Monster.Butcher.Skill_ShotGun" ParticleBone="Bip01" ParticleOffSet="0,0,-1.5" ParticleDirection="0,1,0" ParticleScale="0.6" />
+    <SkillSpecific SpawnerPool="10" TriggerPerLifePercent="10" ChanceToTriggerOnHit="0.5" ThrowSpawnAngle="90" AnimationTravelDistance="3" MinSpawn="1" MaxSpawn="1" CanTriggerWhenCC="0" IgnoreDots="1" OnDropSound="Play_COFE_CollossalBreeder_DropRunnerHit" />
+    <Summoning MaxSummons="10" SummonDuration="0" MinRadiusAroundSpawnPosition="0.0" MaxRadiusAroundSpawnPosition="0.0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_ColossalBreederSpawner_Lambach" />
+    </Summoning>
+  </Skill>
+</MetaData>

@@ -1,0 +1,40 @@
+<MetaData>
+  <IcySoulPreset Name="ProjectileGenerator_1_1">
+    <WarmUpVFX Name="U_Character.Skills.Laser_Ready_01" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="2" FireRate="0.6" SkillUID="Skill_ProjectileGenerator_1" ProjectileRadius="1.0" ProjectileDamageTickRate="1.0" LineOfFire="3" LineOfFireRandomMode="0" />
+  </IcySoulPreset>
+  <IcySoulPreset Name="ProjectileGenerator_1_2">
+    <WarmUpVFX Name="U_Character.Skills.Laser_Ready_01" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="2" FireRate="0.6" SkillUID="Skill_ProjectileGenerator_1" ProjectileRadius="1.0" ProjectileDamageTickRate="1.0" LineOfFire="3" LineOfFireRandomMode="0" AngleOffset="180" />
+  </IcySoulPreset>
+  <IcySoulPreset Name="ProjectileGenerator_2_1">
+    <WarmUpVFX Name="U_Character.Skills.Laser_Ready_01" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+    <Iterations Number="1" WarmUpTime="0.8" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="2" FireRate="0.5" SkillUID="Skill_ProjectileGenerator_2" ProjectileRadius="1.0" ProjectileDamageTickRate="1.0" LineOfFire="3" LineOfFireRandomMode="0" />
+  </IcySoulPreset>
+  <IcySoulPreset Name="ProjectileGenerator_2_2">
+    <WarmUpVFX Name="U_Character.Skills.Laser_Ready_01" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+    <Iterations Number="1" WarmUpTime="0.8" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="2" FireRate="0.5" SkillUID="Skill_ProjectileGenerator_2" ProjectileRadius="1.0" ProjectileDamageTickRate="1.0" LineOfFire="3" LineOfFireRandomMode="0" AngleOffset="180" />
+  </IcySoulPreset>
+  <IcySoulPreset Name="ProjectileGenerator_3_1">
+    <WarmUpVFX Name="U_Character.Skills.Laser_Ready_01" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+    <Iterations Number="1" WarmUpTime="0.5" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="2" FireRate="0.3" SkillUID="Skill_ProjectileGenerator_3" ProjectileRadius="1.0" ProjectileDamageTickRate="1.0" LineOfFire="3" LineOfFireRandomMode="0" />
+  </IcySoulPreset>
+  <IcySoulPreset Name="ProjectileGenerator_3_2">
+    <WarmUpVFX Name="U_Character.Skills.Laser_Ready_01" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+    <Iterations Number="1" WarmUpTime="0.5" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0.5" />
+    <SkillCast Number="2" FireRate="0.3" SkillUID="Skill_ProjectileGenerator_3" ProjectileRadius="1.0" ProjectileDamageTickRate="1.0" LineOfFire="3" LineOfFireRandomMode="0" AngleOffset="180" />
+  </IcySoulPreset>
+  <IcySoulPresetList Name="ProjectileGenerator_PresetList" Loop="1" NewStartingPosition="4">
+    <Preset Name="ProjectileGenerator_1_1" />
+    <Preset Name="ProjectileGenerator_1_2" />
+    <Preset Name="ProjectileGenerator_2_1" />
+    <Preset Name="ProjectileGenerator_2_2" />
+    <Preset Name="ProjectileGenerator_3_1" />
+    <Preset Name="ProjectileGenerator_3_2" />
+  </IcySoulPresetList>
+</MetaData>

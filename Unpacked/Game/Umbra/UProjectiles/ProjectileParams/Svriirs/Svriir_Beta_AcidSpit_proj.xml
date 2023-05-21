@@ -1,0 +1,42 @@
+<MetaData>
+  <Projectile ID="svriir_beta_spitter_acidspit_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Siviir.Spitter_Toxic_Projectile_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Monster.Siviir.Spitter_Poision_Explosion_01" Direction="0,0,1" WorldSpace="1" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="0.72" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_svriir_beta_spitter_acidspit" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotImpact" />
+      <Launch SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotLoop" />
+      <Hit SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+      <Removed SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="svriir_beta_spitter_firespit_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_VFX_Oskar.Monster.SvriirFireSpitter_FireSpit_Projectile" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Monster.SvriirFireSpitter_FireSpit_AoE" Direction="0,1,0" WorldSpace="1" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="0.72" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_svriir_beta_spitter_acidspit" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotImpact" />
+      <Launch SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotLoop" />
+      <Hit SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+      <Removed SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+    </Audio>
+  </Projectile>
+</MetaData>

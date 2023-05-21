@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill UID="AI_Republic_Arbalester_RangeAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="lightning" WeaponMultiplier=".35" />
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 L Hand" />
+    <Projectile Name="AI_Republic_Arbalester_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimCast="Play_Republic_Arbalester_RangeAttack_Shoot" OnHit="" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

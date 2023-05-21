@@ -1,0 +1,17 @@
+<MetaData>
+  <Quest Name="HL_C1_BossFight_Belizul" UIName="@ui_C1_M2_E1_EventQuestLabel" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_C1_M2_E1_EventStepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" TimeLimit="1" />
+      <Event Type="ArenaStart" Trigger="GoalStart" GoalIndex="1" ArenaPreset="BelizulArena_HLC2" LocationEntityName="HL_C2_Arena_Belizul" Name="Event_Arena_Start" />
+      <Event Type="GoalAchieve" GoalIndexToAchieve="1" Trigger="ArenaWon" ArenaStartEventName="Event_Arena_Start" Name="Event_Arena_Victory" />
+      <Goal Order="1" Type="Impossible" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Delay="1.5" Type="GlobalDialog" Name="HLC2_RitualArea_Belizul1" DialogName="HLC2_RitualArea_Belizul1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="C1_M2_EA_AN_BossFightStar" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_C1_M2_EA_CM_BossFightDescription_2" DisplayTime="3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Belizul" PercentLeft="60" Type="GlobalDialog" Name="HLC2_RitualArea_Belizul2" DialogName="HLC2_RitualArea_Belizul2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Belizul" PercentLeft="30" Type="GlobalDialog" Name="HLC2_RitualArea_Belizul3" DialogName="HLC2_RitualArea_Belizul3" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalFlowGraph" Name="HL_M2_Bossfight_CamOn" />
+      <Event Trigger="PlayerWipe" Type="QuestFail" Name="FailStateBossFight_Belizul" QuestName="HL_C1_BossFight_Belizul" />
+    </Step>
+  </Quest>
+</MetaData>

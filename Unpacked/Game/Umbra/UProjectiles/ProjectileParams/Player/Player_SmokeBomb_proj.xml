@@ -1,0 +1,38 @@
+<MetaData>
+  <Projectile ID="player_smokebomb_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Grey_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_SmokeBomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="50" SpeedMax="50" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_smokebomb_proj_fire" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Fire_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_SmokeBomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="50" SpeedMax="50" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_smokebomb_proj_aether" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Aether_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_SmokeBomb" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="50" SpeedMax="50" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Skill_Bomb_Fuse_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

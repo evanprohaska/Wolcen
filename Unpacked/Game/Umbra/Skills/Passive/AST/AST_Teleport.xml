@@ -1,0 +1,35 @@
+<MetaData>
+  <Spell Name="AST_Teleport_Buff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="spellcastingspeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="5" />
+      </EIM>
+      <EIM Name="attackspeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/teleport_Buff.png" Description="@ui_attack_and_cast_speed_buff_skill" Title="@ui_teleport_buff_title" />
+  </Spell>
+  <Spell Name="AST_Teleport_Buff_2" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/teleport_Buff.png" Description="@ui_movespeed_buff_skill" Title="@ui_teleport_buff_title" />
+  </Spell>
+  <Spell Name="AST_Teleport_Buff_Combo" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="20" />
+      </EIM>
+      <EIM Name="spellcastingspeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="5" />
+      </EIM>
+      <EIM Name="attackspeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="5" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/teleport_Buff.png" Description="@ui_attack_cast_movement_speed_buff_skill" Title="@ui_teleport_buff_title" />
+  </Spell>
+</MetaData>

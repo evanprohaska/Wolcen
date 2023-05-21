@@ -1,0 +1,131 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_WavesOfMeteor_Leap1" ESkill="AI_COFY_AHRIMAN_LEAP" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Fire" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_WavesOfMeteorP3_1" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList />
+    <Range AttackRange="10" />
+    <SkillSpecific DelayBeforeLanding="0" TimeToLand="3.5" TargetPos="538,3545,150" PosForDir="533,3530,150" RemoveInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_WavesOfMeteorP3_1" ESkill="AI_COFY_AHRIMAN_WAVESOFMETEOR" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_RotatingFireWallsP3_1" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Meteor" Name="COFY_Ahriman_bys.Waves_of_Meteor.Waves_of_Meteor" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <Range AttackRange="40" />
+    <SkillSpecific MeteorFallTime="1.5" TimeBetweenWaves="1.5" MeteorRadius="1.5" NumberOfWaves="5" ProjectileTrailLength="0.4" InvulnerabilityTime="12" MeteorImpactSoundTrigger="Play_Ahriman_WavesOfMeteor_Impact" />
+    <SoundTrigger PlayAttackVoice="0" OnAnimCast="Play_Ahriman_WavesOfMeteor_Cast" OnAnimEnd="" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_WavesOfMeteorP3_Nerfed" ESkill="AI_COFY_AHRIMAN_WAVESOFMETEOR" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Meteor" Name="COFY_Ahriman_bys.Waves_of_Meteor.Waves_of_Meteor" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <Range AttackRange="40" />
+    <SkillSpecific MeteorFallTime="1.5" TimeBetweenWaves="1.5" MeteorRadius="1.5" NumberOfWaves="2" ProjectileTrailLength="0.4" MeteorImpactSoundTrigger="Play_Ahriman_WavesOfMeteor_Impact" />
+    <SoundTrigger PlayAttackVoice="0" OnAnimCast="Play_Ahriman_WavesOfMeteor_Cast" OnAnimEnd="" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_WavesOfMeteor_Leap2" ESkill="AI_COFY_AHRIMAN_LEAP" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Fire" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_WavesOfMeteorP3_2" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList />
+    <Range AttackRange="10" />
+    <SkillSpecific DelayBeforeLanding="0" TimeToLand="3.5" TargetPos="538,3545,150" PosForDir="533,3530,150" RemoveInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_WavesOfMeteorP3_2" ESkill="AI_COFY_AHRIMAN_WAVESOFMETEOR" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_RotatingFireWallsP3_2" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Meteor" Name="COFY_Ahriman_bys.Waves_of_Meteor.Waves_of_Meteor" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <Range AttackRange="40" />
+    <SkillSpecific MeteorFallTime="1.5" TimeBetweenWaves="1.5" MeteorRadius="1.5" NumberOfWaves="6" ProjectileTrailLength="0.4" InvulnerabilityTime="14" MeteorImpactSoundTrigger="Play_Ahriman_WavesOfMeteor_Impact" />
+    <SoundTrigger PlayAttackVoice="0" OnAnimCast="Play_Ahriman_WavesOfMeteor_Cast" OnAnimEnd="" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_WavesOfMeteor_Leap1_Nerfed" ESkill="AI_COFY_AHRIMAN_LEAP" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Fire" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_WavesOfMeteorP3_1_Nerfed" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList />
+    <Range AttackRange="10" />
+    <SkillSpecific DelayBeforeLanding="0" TimeToLand="3.5" TargetPos="538,3545,150" PosForDir="533,3530,150" RemoveInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_WavesOfMeteorP3_1_Nerfed" ESkill="AI_COFY_AHRIMAN_WAVESOFMETEOR" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_RotatingFireWallsP3_1_Nerfed" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Meteor" Name="COFY_Ahriman_bys.Waves_of_Meteor.Waves_of_Meteor" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <Range AttackRange="40" />
+    <SkillSpecific MeteorFallTime="1.5" TimeBetweenWaves="1.5" MeteorRadius="1.5" NumberOfWaves="5" ProjectileTrailLength="0.4" InvulnerabilityTime="12" MeteorImpactSoundTrigger="Play_Ahriman_WavesOfMeteor_Impact" />
+    <SoundTrigger PlayAttackVoice="0" OnAnimCast="Play_Ahriman_WavesOfMeteor_Cast" OnAnimEnd="" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_WavesOfMeteor_Leap2_Nerfed" ESkill="AI_COFY_AHRIMAN_LEAP" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="500.0" CooldownTrigger="OnStart" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="Fire" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_WavesOfMeteorP3_1_Nerfed" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList />
+    <Range AttackRange="10" />
+    <SkillSpecific DelayBeforeLanding="0" TimeToLand="3.5" TargetPos="538,3545,150" PosForDir="533,3530,150" RemoveInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_WavesOfMeteorP3_2_Nerfed" ESkill="AI_COFY_AHRIMAN_WAVESOFMETEOR" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <CastingParams CastBone="Bip01 Spine2" CanCastWhileMoving="0" CanBeInterrupted="0" CastDelay="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COFY_Ahriman_RotatingFireWallsP3_2_Nerfed" />
+    </SecondarySkillToCast>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Meteor" Name="COFY_Ahriman_bys.Waves_of_Meteor.Waves_of_Meteor" Offset="0,0,0" Direction="1,0,0" Scale="1" InstantKill="0" />
+    </ParticleList>
+    <Range AttackRange="40" />
+    <SkillSpecific MeteorFallTime="1.5" TimeBetweenWaves="1.5" MeteorRadius="1.5" NumberOfWaves="5" ProjectileTrailLength="0.4" InvulnerabilityTime="12" MeteorImpactSoundTrigger="Play_Ahriman_WavesOfMeteor_Impact" />
+    <SoundTrigger PlayAttackVoice="0" OnAnimCast="Play_Ahriman_WavesOfMeteor_Cast" OnAnimEnd="" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,32 @@
+<MetaData>
+  <Skill UID="AI_COFY_Rabaphiage_Meteor" ESkill="AI_Default_GenericProjectiles" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastingSpeed="1" ScaleWithSpellCastingSpeed="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier="0,8" />
+    <Cooldown Cooldown="3" TriggerCooldownAtSkillEnd="0" />
+    <Range AttackRange="15" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Explosion ExplosionRadius="1.5" />
+    <Projectile Name="COFY_Rabiaphage_Meteor_Proj2" ProjectileCount="1" PenetrationLimit="1" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="0" RandomDir="0" MaxZOffset="20" CastAtTargetPos="1" TargetBone="Bip01" />
+    </Specific_AI_Default_GenericProjectiles>
+    <SoundTrigger OnAnimCast="" OnHit="" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_COFY_Rabaphiage_Sniper" ESkill="AI_REPU_Sniper_TakeAim" Keywords="attack_skill,projectile">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="0.8" />
+    <Cooldown Cooldown="3.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01 Sphere" MaximumTurnRate="120" InterruptIfTargetGoesInvisible="1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.repu_sniper.aim" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <Projectile Name="AI_COFY_Rabiaphage_Sniper_Proj" ProjectileCount="1" />
+    <Explosion ExplosionRadius="1.5" />
+    <Targeting ComputeTargetPosAtCast="0" />
+    <SkillSpecific LoopDuration="1.5" MaintainAIMIndicatorAliveUntilCast="1" />
+    <SoundTrigger OnAnimStart="Play_COFY_Rabiaphage_Attack_Charge" OnAnimCast="Play_COFY_Rabiaphage_Attack_Shoot" OnHit="Play_hero_default_damage_large" OnInterrupt="Stop_COFY_Rabiaphage_Attack_Charge" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

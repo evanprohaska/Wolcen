@@ -1,0 +1,87 @@
+<MetaData>
+  <Trap Name="trap_player_vault">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character_02.Vault.Vault_Mine_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_vault_poison">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="60" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character_02.Vault.Vault_Mine_01_Poison" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_vault_fire">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="60" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character_02.Vault.Vault_Mine_01_Fire" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_vault_aether">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="60" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character_02.Vault.Vault_Mine_01_Aether" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_player_vault_rend">
+    <Trigger TriggerDelay="0.2" Radius="1.5" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="60" MaximumInWorld="10" TriggerOnRemove="0" />
+    <States>
+      <Activated>
+        <Particle Name="U_Character_02.Vault.Vault_Mine_01_Rend" Direction="0,0,1" />
+        <Audio Trigger="Play_Skill_Bomb_Deploy" />
+      </Activated>
+      <PreTriggered>
+        <Audio Trigger="Play_Skill_Bomb_Trigger" />
+      </PreTriggered>
+      <Triggered>
+        <Audio Trigger="Play_Skill_Bomb_Impact_Explosion_Basic" />
+      </Triggered>
+    </States>
+  </Trap>
+</MetaData>

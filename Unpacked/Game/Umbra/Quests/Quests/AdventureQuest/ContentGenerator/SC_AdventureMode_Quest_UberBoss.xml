@@ -1,0 +1,91 @@
+<MetaData>
+  <Quest Name="QN_EG_KillTarget_UberBoss_LambachP1" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_UB_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_EG_UB_Lambach_P1" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="BossFight" FightPreset="BossFight_Uber_LambachP1" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="QN_EG_Uberboss_StepUpdate2" Delay=".5" Localization="@ui_EG_Consumable_StepNameLabel_Finish" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll1" Delay=".2" MonsterClass="CultOfFlesh_Alpha" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll2" Delay=".2" MonsterClass="CultOfFlesh_Hornet" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll3" Delay=".2" MonsterClass="PacifiedKnight" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll4" Delay=".2" MonsterClass="CultOfFlesh_Squire" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll5" Delay=".2" MonsterClass="CultOfFlesh_DemonOfFlesh" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll6" Delay=".2" MonsterClass="CultOfFlesh_Halfbreed" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll7" Delay=".2" MonsterClass="RepublicGolgoth" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll8" Delay=".2" MonsterClass="CultOfFlesh_Infantry_Ranged" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="4500" />
+        <XP Amount="300000" />
+        <ChoiceLootClass Name="A1_Q5_Reward2" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_UberBoss_LambachP1_100" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_UB_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_EG_UB_Lambach_P1" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="BossFight" FightPreset="BossFight_Uber_LambachP1_100" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="QN_EG_Uberboss_StepUpdate2" Delay=".5" Localization="@ui_EG_Consumable_StepNameLabel_Finish" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll1" Delay=".2" MonsterClass="CultOfFlesh_Alpha" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll2" Delay=".2" MonsterClass="CultOfFlesh_Hornet" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll3" Delay=".2" MonsterClass="PacifiedKnight" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll4" Delay=".2" MonsterClass="CultOfFlesh_Squire" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll5" Delay=".2" MonsterClass="CultOfFlesh_DemonOfFlesh" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll6" Delay=".2" MonsterClass="CultOfFlesh_Halfbreed" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll7" Delay=".2" MonsterClass="RepublicGolgoth" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll8" Delay=".2" MonsterClass="CultOfFlesh_Infantry_Ranged" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="4500" />
+        <XP Amount="300000" />
+        <ChoiceLootClass Name="A1_Q5_Reward2" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_UberBoss_LambachP1_120" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_UB_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_EG_UB_Lambach_P1" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="BossFight" FightPreset="BossFight_Uber_LambachP1_120" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="QN_EG_Uberboss_StepUpdate2" Delay=".5" Localization="@ui_EG_Consumable_StepNameLabel_Finish" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll1" Delay=".2" MonsterClass="CultOfFlesh_Alpha" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll2" Delay=".2" MonsterClass="CultOfFlesh_Hornet" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll3" Delay=".2" MonsterClass="PacifiedKnight" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll4" Delay=".2" MonsterClass="CultOfFlesh_Squire" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll5" Delay=".2" MonsterClass="CultOfFlesh_DemonOfFlesh" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll6" Delay=".2" MonsterClass="CultOfFlesh_Halfbreed" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll7" Delay=".2" MonsterClass="RepublicGolgoth" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityKillAll" Name="QN_SC_Uberboss_KillAll8" Delay=".2" MonsterClass="CultOfFlesh_Infantry_Ranged" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="4500" />
+        <XP Amount="300000" />
+        <ChoiceLootClass Name="A1_Q5_Reward2" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_UberBoss_OsharaP3" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_UB_Oshara_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="80">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="BossFight" FightPreset="BossFight_Uber_OsharaP3" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="QN_EG_Uberboss_StepUpdate2" Delay=".5" Localization="@ui_EG_Consumable_StepNameLabel_Finish" DisplayNewIcon="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="4500" />
+        <XP Amount="300000" />
+        <Pets>
+          <Pet PetId="pet_babydragon_armor" />
+          <Pet PetId="pet_babydragon_armor_blue" />
+          <Pet PetId="pet_babydragon_armor_green" />
+          <Pet PetId="pet_babydragon_armor_red" />
+        </Pets>
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

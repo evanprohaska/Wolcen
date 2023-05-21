@@ -1,0 +1,48 @@
+<MetaData>
+  <City MaxActiveProjects="2" MaxForcedProjects="3">
+    <Buildings>
+      <city_hall BuildingName="building_city_stormfall_palace" RequiredQuest="ACT4_Loop0" />
+      <explorers_guild BuildingName="building_seekers_garrison" RequiredQuest="ACT4_Loop0" />
+      <diplomats_guild BuildingName="building_trade_assembly" RequiredQuest="ACT4_Epilogue" />
+      <crafting_building BuildingName="building_dark_market" RequiredQuest="ACT4_Epilogue" />
+      <alchesmith BuildingName="building_transmutation_forge" RequiredQuest="ACT4_Epilogue" />
+      <bankers_guild BuildingName="building_bank" RequiredQuest="ACT4_Loop0" />
+      <apocalyptic_building BuildingName="building_anankis_artifact" RequiredQuest="ACT4_Epilogue" />
+      <skills_building BuildingName="building_enneract_lab" RequiredQuest="ACT4_Epilogue" />
+      <pa_to_gold_converter BuildingName="building_siphon_chamber" RequiredQuest="ACT4_Epilogue" />
+      <gold_to_pa_converter BuildingName="building_injector_seat" RequiredQuest="ACT4_Epilogue" />
+      <shipyard BuildingName="building_shipyard" RequiredQuest="ACT4_Epilogue" />
+      <wonder_1 BuildingName="building_wonder_1" RequiredQuest="ACT4_Epilogue" />
+      <wonder_2 BuildingName="building_wonder_2" RequiredQuest="ACT4_Loop0" />
+      <wonder_3 BuildingName="building_wonder_3" RequiredQuest="ACT4_Epilogue" />
+      <wonder_4 BuildingName="building_wonder_4" RequiredQuest="ACT4_Epilogue" />
+      <wonder_5 BuildingName="building_wonder_5" RequiredQuest="ACT4_Epilogue" />
+      <wonder_6 BuildingName="building_wonder_6" RequiredQuest="ACT4_Epilogue" />
+      <hunt BuildingName="building_hunt" RequiredQuest="ACT4_Intro" />
+      <regent_assemblee BuildingName="building_regent_assemblee" RequiredQuest="ACT4_Loop0" BoundToTimeline="1" />
+      <expert_forge BuildingName="building_expert_forge" RequiredQuest="ACT4_Epilogue" />
+    </Buildings>
+    <CourierEvents Frequency_Min="5" Frequency_Max="8">
+      <Event Name="courier_1" RewardName="courier_reward_1" Weight="1" Cooldown="0" RequiredPlayerLevel="0" RequiredCityLevel="3" RequiredProjects="" />
+    </CourierEvents>
+    <Levels>
+      <Level Level="1" PPTThreshold="10" />
+      <Level Level="2" PPTThreshold="50" />
+      <Level Level="3" PPTThreshold="100" />
+      <Level Level="4" PPTThreshold="150" />
+      <Level Level="5" PPTThreshold="200" />
+      <Level Level="6" PPTThreshold="300" />
+      <Level Level="7" PPTThreshold="350" />
+      <Level Level="8" PPTThreshold="400" />
+      <Level Level="9" PPTThreshold="500" />
+      <Level Level="10" PPTThreshold="1000" />
+    </Levels>
+    <Help>
+      <Entry Title="@ui_cmuihelp_1_title" SubTitle="@ui_cmuihelp_1_subtitle" Content="@ui_cmuihelp_1_content" />
+      <Entry Title="@ui_cmuihelp_2_title" SubTitle="@ui_cmuihelp_2_subtitle" Content="@ui_cmuihelp_2_content" />
+      <Entry Title="@ui_cmuihelp_3_title" SubTitle="@ui_cmuihelp_3_subtitle" Content="@ui_cmuihelp_3_content" />
+      <Entry Title="@ui_cmuihelp_4_title" SubTitle="@ui_cmuihelp_4_subtitle" Content="@ui_cmuihelp_4_content" />
+      <Entry Title="@ui_cmuihelp_5_title" SubTitle="@ui_cmuihelp_5_subtitle" Content="@ui_cmuihelp_5_content" />
+    </Help>
+  </City>
+</MetaData>

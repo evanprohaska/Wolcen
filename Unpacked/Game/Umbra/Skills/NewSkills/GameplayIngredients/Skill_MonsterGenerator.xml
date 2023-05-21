@@ -1,0 +1,13 @@
+<MetaData>
+  <Skill ESkill="gameplay_ingredient_flowofsouls" Keywords="attack_skill" UID="Skill_MonsterGenerator">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Summoning MaxSummons="10" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Dummy" Name="sc_svriir_T5" />
+    </Summoning>
+    <SkillSpecific SpawnClassFamily="svriir_O" SummonOnlyOnHit="0" />
+    <Shapes>
+      <Entry ShapeName="Skill_MonsterGenerator_Shape" />
+    </Shapes>
+    <DamageZone Duration="3" RateOfFire="1" />
+  </Skill>
+</MetaData>

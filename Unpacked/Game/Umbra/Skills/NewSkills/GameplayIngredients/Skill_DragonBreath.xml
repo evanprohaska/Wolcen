@@ -1,0 +1,87 @@
+<MetaData>
+  <Skill ESkill="gameplay_ingredient_flowofsouls" Keywords="attack_skill" UID="Skill_DragonBreath_Test">
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnHit="Play_hero_default_dot_burn" />
+    <Projectile Name="dragonbreath_proj_test" ProjectileCount="1" PenetrationLimit="999" />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <ParticleList>
+      <Particle Key="DragonWave" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_WaveLooping_4x15" OffSet="0,0,0" Direction="0,1,0" Scale="1" TimeScale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="Skill_DragonBreath_Test_Shape" />
+    </Shapes>
+    <DamageZone Duration="7" RateOfFire="0.3" />
+  </Skill>
+  <Skill ESkill="gameplay_ingredient_flowofsouls" Keywords="attack_skill" UID="Skill_DragonBreath_Test_02">
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnHit="Play_hero_default_dot_burn" />
+    <Projectile Name="dragonbreath_proj_test_02" ProjectileCount="1" PenetrationLimit="999" />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <ParticleList>
+      <Particle Key="DragonWave" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_WaveLooping_15x30" OffSet="0,0,0" Direction="0,1,0" Scale="1" TimeScale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="Skill_DragonBreath_Test_02_Shape" />
+    </Shapes>
+    <DamageZone Duration="7" RateOfFire="0.3" />
+  </Skill>
+  <Skill ESkill="gameplay_ingredient_flowofsouls" Keywords="attack_skill" UID="Skill_DragonBreath_Test_03">
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnHit="Play_hero_default_dot_burn" />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <ParticleList>
+      <Particle Key="DragonWave" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_WaveLooping_4x15" OffSet="0,0,0" Direction="0,1,0" Scale="1" TimeScale="1" />
+      <Particle Key="DragonBreath" Name="U_Monster.Siviir.Alpha_Breath_Fire_Loop_01" OffSet="0,1,10" Angle="-45,0,0" Scale="1.5" />
+      <Particle Key="Tiling" Name="U_Monster.Siviir.Alpha_Breath_Fire_Ground_Loop_01" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="Skill_DragonBreath_Test_03_Shape" />
+    </Shapes>
+    <DamageZone Duration="7" RateOfFire="0.3" />
+  </Skill>
+  <Skill ESkill="gameplay_ingredient_flowofsouls" Keywords="attack_skill" UID="Skill_DragonBreath">
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnHit="Play_hero_default_dot_burn" />
+    <Projectile Name="osharabreath_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <ParticleList>
+      <Particle Key="DragonWave" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_WaveLooping_4x15" OffSet="0,0,0" Direction="0,1,0" Scale="1" TimeScale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="Skill_DragonBreath_Shape" />
+    </Shapes>
+    <DamageZone Duration="3" RateOfFire="0.3" />
+  </Skill>
+  <Skill ESkill="gameplay_ingredient_flowofsouls" Keywords="attack_skill" UID="Skill_DrakeBreath">
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnHit="Play_hero_default_dot_burn" />
+    <Projectile Name="Drakebreath_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <ParticleList>
+      <Particle Key="DragonWave" Name="U_VFX_Oskar.Projectiles.FireWave_Ground_02" OffSet="0,0,0" Direction="0,1,0" Scale="1" TimeScale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="Skill_DrakeBreath_Shape" />
+    </Shapes>
+    <DamageZone Duration="7" RateOfFire="0.3" />
+  </Skill>
+  <Skill ESkill="gameplay_ingredient_flowofsouls" Keywords="attack_skill" UID="Skill_OsharaBreath">
+    <DamageWeapon Type="fire" WeaponMultiplier="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <SoundTrigger OnHit="Play_hero_default_dot_burn" />
+    <Projectile Name="osharabreath_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <Collisions IgnoreTerrainCollisions="1" />
+    <ParticleList>
+      <Particle Key="DragonWave" Name="U_VFX_Oskar.GPI.Oshara_FireBreath_WaveLooping_15x30" OffSet="0,0,0" Direction="0,1,0" Scale="1" TimeScale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="Skill_OsharaBreath_Shape" />
+    </Shapes>
+    <DamageZone Duration="3.75" RateOfFire="0.1" MaxEntityHits="1" />
+  </Skill>
+</MetaData>

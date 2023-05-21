@@ -1,0 +1,26 @@
+<MetaData>
+  <ArenaWaves Name="test_arena_waves_mob_spawner_types">
+    <Wave Type="clearwave">
+      <PrefabParams PrefabName="test_arena_layout" />
+      <MobSpawners>
+        <Spawner Type="fill" TargetSpawnClass="test_arena_spawnclass_COSS_0" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.5" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="3" MaxNumberOfSpawnedEntities="15" TargetSpawnLocationID="-2" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="test_arena_waves_dynamic_no_prefab">
+    <Wave Type="clearwave">
+      <PrefabParams PrefabName="" />
+      <MobSpawners>
+        <Spawner Type="fill" TargetSpawnClass="test_arena_spawnclass_COSS_0" NumberOfEntitiesPerSpawn="1" SpawnFrequency="0.5" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="5" MaxNumberOfSpawnedEntities="15" TargetSpawnLocationID="-1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+  <ArenaWaves Name="test_arena_waves_dynamic_with_prefab">
+    <Wave Type="clearwave">
+      <PrefabParams PrefabName="test_arena_layout" />
+      <MobSpawners>
+        <Spawner Type="once" TargetSpawnClass="test_arena_spawnclass_COSS_0" NumberOfEntitiesPerSpawn="30" TargetSpawnLocationID="-1" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

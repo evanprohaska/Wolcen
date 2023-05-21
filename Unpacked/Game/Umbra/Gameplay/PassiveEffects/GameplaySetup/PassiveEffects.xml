@@ -1,0 +1,234 @@
+<MetaData>
+  <TriggeredBuffs>
+    <PassiveEffect FromEIM="shadow_nova_on_weakness_stacks" TriggerCondition="OnSacredStacksInflicted" Cooldown="3">
+      <SkillCast SkillName="unique_shadownova" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="sacred_ground_on_cursed_stacks" TriggerCondition="OnShadowStacksInflicted" Cooldown="3">
+      <SkillCast SkillName="unique_sacredground" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="lightning_strike_on_critical_hit" TriggerCondition="OnDealingCriticalHitWithDefaultAttack" Cooldown="3">
+      <SkillCast SkillName="unique_chainlightning" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_deathmark_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="0">
+      <SkillCast SkillName="player_deathmark" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_aetherblast_on_block" TriggerCondition="OnBlock" Cooldown="1">
+      <SkillCast SkillName="unique_onblock_aetherblast" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_sacred_aetherblast_on_block" TriggerCondition="OnBlock" Cooldown="1">
+      <SkillCast SkillName="unique_sacred_onblock_aetherblast" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_lightning_aetherblast_on_block" TriggerCondition="OnBlock" Cooldown="1">
+      <SkillCast SkillName="unique_lightning_onblock_aetherblast" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_fire_aetherblast_on_block" TriggerCondition="OnBlock" Cooldown="1">
+      <SkillCast SkillName="unique_fire_onblock_aetherblast" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_frostnova_on_block" TriggerCondition="OnBlock" Cooldown="4">
+      <SkillCast SkillName="unique_onblock_frostnova" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_shadow_frostnova_on_block" TriggerCondition="OnBlock" Cooldown="4">
+      <SkillCast SkillName="unique_shadow_onblock_frostnova" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_toxic_frostnova_on_block" TriggerCondition="OnBlock" Cooldown="4">
+      <SkillCast SkillName="unique_toxic_onblock_frostnova" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_fire_frostnova_on_block" TriggerCondition="OnBlock" Cooldown="4">
+      <SkillCast SkillName="unique_fire_onblock_frostnova" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_frostnova_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_frostnova_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_shadow_frostnova_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_shadow_frostnova_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_toxic_frostnova_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_toxic_frostnova_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_fire_frostnova_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_fire_frostnova_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_ringofpain_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="15">
+      <SkillCast SkillName="unique_ringofpain_onhit" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_shadow_ringofpain_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="15">
+      <SkillCast SkillName="unique_ringofpain_shadow_onhit" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_frost_ringofpain_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="15">
+      <SkillCast SkillName="unique_ringofpain_frost_onhit" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_aether_ringofpain_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="15">
+      <SkillCast SkillName="unique_ringofpain_aether_onhit" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_lightning_ringofpain_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="15">
+      <SkillCast SkillName="unique_ringofpain_lightning_onhit" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_ironguard_on_being_hit" TriggerCondition="OnBeingHit" Cooldown="60">
+      <SkillCast SkillName="unique_ironguard_on_being_hit" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_ironguard_on_block" TriggerCondition="OnBlock" Cooldown="40">
+      <SkillCast SkillName="unique_ironguard_on_block" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_warcry_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="10">
+      <SkillCast SkillName="unique_warcry_onhit" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_brutalstrike_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_brutalstrike_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_aether_brutalstrike_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_umbrabrutalstrike_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_fire_brutalstrike_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_firebrutalstrike_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_lightning_brutalstrike_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_lightningbrutalstrike_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_sacred_brutalstrike_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_sacredbrutalstrike_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_sacredground_on_being_hit" TriggerCondition="OnBeingHit" Cooldown="15">
+      <SkillCast SkillName="unique_sacredground_on_being_hit" Chance="10" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_firecomet_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_firecomet_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_sacred_firecomet_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_sacredcomet_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_rend_firecomet_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_rendcomet_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_frost_firecomet_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="3">
+      <SkillCast SkillName="unique_frostcomet_onhit" Chance="50" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="cast_healthexplosion_on_hit" TriggerCondition="OnHittingEnemies" Cooldown="1">
+      <SkillCast SkillName="unique_healthexplosion_on_hit" Chance="20" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="blessing_achillesheel" TriggerCondition="OnHittingEnemies" Cooldown="">
+      <SkillCast SkillName="blessing_deathmark" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="explosion_on_target_kill" TriggerCondition="OnKillingEnemy" Cooldown="">
+      <SkillCast SkillName="unique_skill_explode_on_target_kill" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="explosion_on_globe_pickup" TriggerCondition="OnGlobePickup" Cooldown="">
+      <SkillCast SkillName="unique_skill_explosion_on_globe_pickup" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="damage_on_block" TriggerCondition="OnBlock" Cooldown="0">
+      <SkillCast SkillName="pst_retaliation" />
+      <SkillCast SkillName="pst_retaliation_rend" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="burn_stacks_consumption_chance_for_instant_damage" TriggerCondition="OnBurnStacksConsumption" Cooldown="0">
+      <SkillCast SkillName="pst_skill_burnstacks_consumption" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="burn_stacks_consumption_propagate_stacks_on_kill" TriggerCondition="OnBurnStacksConsumptionKilledTarget" Cooldown="0">
+      <SkillCast SkillName="pst_skill_burnstacks_consumption_killed" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="explosion_on_low_willpower" TriggerCondition="OnSkillCastOnWillpowerBelowCVar" Cooldown="15" RandomRollSkillRange="3">
+      <SkillCast SkillName="pst_skill_selfexplode_fire" Chance="100" />
+      <SkillCast SkillName="pst_skill_selfexplode_frost" Chance="100" />
+      <SkillCast SkillName="pst_skill_selfexplode_lightning" Chance="100" />
+      <SkillCast SkillName="pst_skill_selfexplode_fire_moredamage" Chance="100" />
+      <SkillCast SkillName="pst_skill_selfexplode_frost_moredamage" Chance="100" />
+      <SkillCast SkillName="pst_skill_selfexplode_lightning_moredamage" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="meteor_on_casting_fire_skill" TriggerCondition="OnFireSpellCast" Cooldown="2.5">
+      <SkillCast SkillName="pst_meteor_on_fire_skil" Chance="100" />
+      <SkillCast SkillName="pst_meteor_on_fire_skil_2" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="frost_lance_on_casting_frost_skill" TriggerCondition="OnFrostSpellCast" Cooldown="2.5">
+      <SkillCast SkillName="pst_frostlance_on_frost_skil" Chance="100" />
+      <SkillCast SkillName="pst_frostlance_on_frost_skil_2" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="thunderstrike_on_casting_lightning_skill" TriggerCondition="OnLightningSpellCast" Cooldown="2.5">
+      <SkillCast SkillName="pst_lightningstrike_on_lightning_skil" Chance="100" />
+      <SkillCast SkillName="pst_lightningstrike_on_lightning_skil_2" Chance="100" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="defense_up_on_block" TriggerCondition="OnBlock">
+      <Buff ToEIM="all_resistance_score_percent" Duration="5" Shape="AOE_Buff" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="defense_up_on_globe_pickup" TriggerCondition="OnGlobePickUp">
+      <Buff ToEIM="all_resistance_score_percent" Duration="5" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="dodgechance_on_being_hit" TriggerCondition="OnBeingHit" Cooldown="10">
+      <Buff ToEIM="dodgechance_score_percent" Duration="5" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="health_regen_on_low_health" TriggerCondition="OnLifeDropBelowCVarLowerCeil" Cooldown="30">
+      <Buff ToEIM="health_regen_true_percent" Duration="1" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="slow_aoe_on_active_dodge" TriggerCondition="OnActiveDodge" Cooldown="20">
+      <Buff ToEIM="movespeed" Duration="2.5" Shape="AOE_Buff" AffectEnemies="1" CasterVFX="U_Character.Skills.Teleport_AoE_Stasis_01_White" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="attack_speed_on_critical_hit" TriggerCondition="OnDealingCriticalHit" Cooldown="3">
+      <Buff ToEIM="attackspeed_major" Duration="3" AffectEnemies="0" CasterVFX="U_Character.Skills.Teleport_AoE_Stasis_01_White" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="stamina_regen_on_critical_hit" TriggerCondition="OnDealingCriticalHit" Cooldown="">
+      <Buff ToEIM="stamina_regeneration_percent" Duration="3" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="speed_boost_on_active_dodge" TriggerCondition="OnActiveDodge" Cooldown="">
+      <Buff PassiveSkill="AST_SpeedBoostOnActiveDodge" Duration="2" Shape="" AffectEnemies="0" CasterVFX="" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="movement_speed_on_purged_stasis_stacks" TriggerCondition="OnPurgedAilmentStacks_Stasis" Cooldown="">
+      <Buff ToEIM="movespeed" Duration="7" Shape="AOE_Buff" AffectEnemies="0" CasterVFX="U_Character.Skills.Teleport_AoE_Stasis_01_White" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="all_resistances_score_on_purged_curse_stacks" TriggerCondition="OnPurgedAilmentStacks_Curse" Cooldown="">
+      <Buff ToEIM="all_resistance_score_percent" Duration="7" Shape="AOE_Buff" AffectEnemies="0" CasterVFX="U_Character.Skills.Teleport_AoE_Stasis_01_White" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="damage_on_purged_weakness_stacks" TriggerCondition="OnPurgedAilmentStacks_Weakness" Cooldown="">
+      <Buff ToEIM="damage_percent" Duration="7" Shape="AOE_Buff" AffectEnemies="0" CasterVFX="U_Character.Skills.Teleport_AoE_Stasis_01_White" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="heal_on_purged_dot_stacks" TriggerCondition="OnPurgedAilmentStacks_DOT" Cooldown="">
+      <ResourceGainOnTrigger ResourceType="healthPercent,forceShieldPercent" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="attunement_fire" TriggerCondition="OnFireSpellCast">
+      <Buff ToEIM="damage_percent" Duration="5" CasterVFX="U_Character.Skills.Teleport_AoE_Stasis_01_White" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="attunement_frost" TriggerCondition="OnFrostSpellCast">
+      <Buff ToEIM="statusailment_inflict_score_percent" Duration="5" CasterVFX="U_Character.Skills.Teleport_AoE_Stasis_01_White" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="attunement_lightning" TriggerCondition="OnLightningSpellCast">
+      <Buff ToEIM="criticalchance_score_percent" Duration="5" CasterVFX="U_Character.Skills.Teleport_AoE_Stasis_01_White" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="pray_on_low_health" TriggerCondition="OnLifeDropBelowCVarLowerCeil" Cooldown="30">
+      <SkillCast SkillName="player_pst_eos_raiseallies" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="pray_on_low_health_all_resistances" TriggerCondition="OnLifeDropBelowCVarLowerCeil" Cooldown="60">
+      <Buff ToEIM="all_resistance_score_percent" Duration="8" Shape="EOS_Pray" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="refill_stamina_on_low_health" TriggerCondition="OnLifeDropBelowCVarLowerCeil" Cooldown="20">
+      <ResourceGainOnTrigger ResourceType="stamina" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="rage_gain_on_globe_pickup" TriggerCondition="OnGlobePickup" Cooldown="0">
+      <ResourceGainOnTrigger ResourceType="rageFlat" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="counter_attack" TriggerCondition="OnActiveDodge" Cooldown="5">
+      <Buff PassiveSkill="AST_CounterAttack" Duration="4" />
+    </PassiveEffect>
+    <PassiveEffect FromEIM="health_gain_on_kill_depend_on_enemy_rank" TriggerCondition="OnKillingEnemy" Cooldown="">
+      <ResourceGainOnTrigger ResourceType="healthShieldPercentDependEnemyRank" />
+    </PassiveEffect>
+  </TriggeredBuffs>
+  <AlternativeFinishersForDefaultCombos>
+    <Entry BaseSkill="playerskill_H2_Bow_atk_loop_02" ChangedTo="alternativeWeaponCombos_2hBow" />
+    <Entry BaseSkill="playerskill_H2_Staff_atk_loop_02" ChangedTo="alternativeWeaponCombos_2hStaff" />
+    <Entry BaseSkill="playerskill_H2_Axe_atk_loop_02" ChangedTo="alternativeWeaponCombos_2hAxe" />
+    <Entry BaseSkill="playerskill_H2_Hammer_atk_loop_02" ChangedTo="alternativeWeaponCombos_2hHammer" />
+    <Entry BaseSkill="playerskill_H2_Sword_atk_loop_02" ChangedTo="alternativeWeaponCombos_2hSword" />
+    <Entry BaseSkill="playerskill_H1_DualDaggers_atk_loop_02" ChangedTo="alternativeWeaponCombos_DualDagger" />
+    <Entry BaseSkill="playerskill_H1_DualMelee_atk_loop_02" ChangedTo="alternativeWeaponCombos_DualMelee" />
+    <Entry BaseSkill="playerskill_H1_DualPistol_atk_loop_02" ChangedTo="alternativeWeaponCombos_DualPistol" />
+    <Entry BaseSkill="playerskill_H1_Melee_H1_Shield_atk_loop_02" ChangedTo="alternativeWeaponCombos_MeleeShield" />
+    <Entry BaseSkill="playerskill_H1_Melee_H1_Pistol_atk_loop_02" ChangedTo="alternativeWeaponCombos_PistolMelee" />
+    <Entry BaseSkill="playerskill_H1_Pistol_H1_Shield_atk_loop_02" ChangedTo="alternativeWeaponCombos_PistolShield" />
+    <Entry BaseSkill="playerskill_H1_Melee_atk_loop_02" ChangedTo="alternativeWeaponCombos_1hMelee" />
+    <Entry BaseSkill="playerskill_H1_Pistol_atk_loop_02" ChangedTo="alternativeWeaponCombos_1hPistol" />
+  </AlternativeFinishersForDefaultCombos>
+  <Particles>
+    <Particle Key="EosSmite" Name="u_bossmodifiers.pst.sacred" Direction="0,1,0" Scale="1" />
+    <Particle Key="AllRes" Name="U_Buff.Buff.Pray_ResUp_01" Direction="0,0,1" Scale="1" Bone="Bip01" />
+  </Particles>
+  <Shapes>
+    <Shape Name="EOS_Pray" Radius="10" />
+    <Shape Name="AOE_Buff" Radius="5" />
+  </Shapes>
+</MetaData>

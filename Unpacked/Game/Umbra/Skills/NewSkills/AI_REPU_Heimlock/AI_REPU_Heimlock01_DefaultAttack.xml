@@ -1,0 +1,43 @@
+<MetaData>
+  <Skill UID="AI_REPU_Heimlock01_DefaultAttack" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="0.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_REPU_Heimlock01_DefaultAttack_Shapes01" />
+      <SkillSpecificParams Index="1" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_REPU_Heimlock01_DefaultAttack_Shapes02" />
+      <SkillSpecificParams Index="2" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_REPU_Heimlock01_DefaultAttack_Shapes03" />
+      <SkillSpecificParams Index="3" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_REPU_Heimlock01_DefaultAttack_Shapes04" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock01_DefaultAttack_Shapes01" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_combo1" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock01_DefaultAttack_Shapes02" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_combo2" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock01_DefaultAttack_Shapes03" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="120" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_combo3" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_REPU_Heimlock01_DefaultAttack_Shapes04" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="140" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Heimlock01_combo4" />
+    </Shapes>
+  </Skill>
+</MetaData>

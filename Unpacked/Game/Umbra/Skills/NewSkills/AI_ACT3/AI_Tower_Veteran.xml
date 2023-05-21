@@ -1,0 +1,72 @@
+<MetaData>
+  <Skill UID="AI_Tower_Veteran_Speed_global" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="500" />
+    <SoundTrigger OnAnimStart="Play_Republic_Veteran_DamageBuff" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Tower_Veteran_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_Tower_Veteran_Speed_passive" Targeting="OnAllies" Duration="10" />
+    </PassiveSkills>
+  </Skill>
+  <Skill UID="AI_Tower_Veteran_ShieldBuff_global" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="500" />
+    <SoundTrigger OnAnimStart="Play_Republic_Veteran_ShieldBuff" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Tower_Veteran_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_REPU_Veteran_ShieldBuff_passive" Targeting="OnAllies" Duration="10" />
+    </PassiveSkills>
+  </Skill>
+  <Skill UID="AI_TowerVeteran_Summon01" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <SoundTrigger OnAnimStart="Play_Republic_Veteran_Summon" />
+    <Particles ParticleName="U_Monster.Charger.Charger_Spawn_01" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="500" />
+    <Summoning MaxSummons="100" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="10" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_TowerVeteran01" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_TowerVeteran_Summon02" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <SoundTrigger OnAnimStart="Play_Republic_Veteran_Summon" />
+    <Particles ParticleName="U_Monster.Charger.Charger_Spawn_01" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="500" />
+    <Summoning MaxSummons="100" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="10" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_TowerVeteran02" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_TowerVeteran_Summon03" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <SoundTrigger OnAnimStart="Play_Republic_Veteran_Summon" />
+    <Particles ParticleName="U_Monster.Charger.Charger_Spawn_01" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="500" />
+    <Summoning MaxSummons="100" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="10" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_TowerVeteran03" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Tower_Veteran_DoubleBuff_global" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="500" />
+    <SoundTrigger OnAnimStart="Play_Republic_Veteran_DamageBuff" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Tower_Veteran_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_REPU_Veteran_ShieldBuff_passive" Targeting="OnAllies" Duration="10" />
+      <Skill Index="0" Name="AI_Tower_Veteran_Speed_passive" Targeting="OnAllies" Duration="10" />
+    </PassiveSkills>
+  </Skill>
+</MetaData>

@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill UID="AI_Outlaws_Crystal_RangedAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".9" />
+    <Cooldown Cooldown="1.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Pelvis" />
+    <Projectile Name="Outlaws_Crystal_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_OUTW_Crystal_Projectile_Toxic_Buildup" OnHit="Play_hero_default_damage" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

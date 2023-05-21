@@ -1,0 +1,34 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_FireWallsP2" ESkill="AI_COFY_AHRIMAN_FIREWALLS" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_07" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="Bip01 R Foot" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" />
+      <Particle Key="ShapeParticle" Name="COFY_Ahriman_bys.Fire_Walls.Fire_Walls" Direction="0,0,1" />
+    </ParticleList>
+    <DamageWeapon Type="Fire" WeaponMultiplier=".66" />
+    <Cooldown Cooldown="20.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FireWall" />
+    </Shapes>
+    <SoundTrigger OnInterrupt="PLAY_AI_SvriirAlpha_PoisonbreathEnd" OnHit="PLAY_AI_SvriirSpitter_AcidDamage" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.3" SkillDuration="30" AngleBetweenWalls="60" WallsNumber="3" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_FireWallsP2_Nerfed" ESkill="AI_COFY_AHRIMAN_FIREWALLS" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_07" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="Bip01 Spine" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" />
+      <Particle Key="ShapeParticle" Name="COFY_Ahriman_bys.Fire_Walls.Fire_Walls" Direction="0,0,1" />
+    </ParticleList>
+    <DamageWeapon Type="Fire" WeaponMultiplier=".66" />
+    <Cooldown Cooldown="20.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FireWall" />
+    </Shapes>
+    <SoundTrigger OnInterrupt="PLAY_AI_SvriirAlpha_PoisonbreathEnd" OnHit="PLAY_AI_SvriirSpitter_AcidDamage" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.3" SkillDuration="15" AngleBetweenWalls="60" WallsNumber="3" />
+  </Skill>
+</MetaData>

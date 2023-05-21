@@ -1,0 +1,42 @@
+<MetaData>
+  <Skill UID="AI_Svriir_Land_Swarmtail_RangedAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".9" />
+    <Cooldown Cooldown="1.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Pelvis" />
+    <Projectile Name="Svriir_Swarmatail_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_Svriir_Swarmtail_Attack_Spit_Start" OnAnimCast="Play_Svriir_Swarmtail_Attack_Spit" OnHit="Play_Svriir_Swarmtail_Attack_Spit_Projectile_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Svriir_Cave_Swarmtail_RangedAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".9" />
+    <Cooldown Cooldown="1.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Pelvis" />
+    <Projectile Name="Svriir_Swarmatail_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_Svriir_Swarmtail_Attack_Spit_Start" OnAnimCast="Play_Svriir_Swarmtail_Attack_Spit" OnHit="Play_Svriir_Swarmtail_Attack_Spit_Projectile_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Svriir_Sea_Swarmtail_RangedAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".9" />
+    <Cooldown Cooldown="1.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Pelvis" />
+    <Projectile Name="Svriir_Swarmatail_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_Svriir_Swarmtail_Attack_Spit_Start" OnAnimCast="Play_Svriir_Swarmtail_Attack_Spit" OnHit="Play_Svriir_Swarmtail_Attack_Spit_Projectile_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Svriir_Fire_Swarmtail_RangedAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier=".9" />
+    <Cooldown Cooldown="1.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Pelvis" />
+    <Projectile Name="Svriir_Swarmatail_Fire_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_Svriir_Swarmtail_Fire_Attack_Spit_Start" OnAnimCast="Play_Svriir_Swarmtail_Fire_Attack_Spit" OnHit="Play_Svriir_Swarmtail_Fire_Attack_Spit_Projectile_Impact" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

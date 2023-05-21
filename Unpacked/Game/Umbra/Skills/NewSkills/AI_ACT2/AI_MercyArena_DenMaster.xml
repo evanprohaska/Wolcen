@@ -1,0 +1,23 @@
+<MetaData>
+  <Skill UID="AI_MercyArena_DenMaster_SummonMorgon" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Summoning MaxSummons="3" SummonDuration="0" MinRadiusAroundSpawnPosition="2" MaxRadiusAroundSpawnPosition="5" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_MercyArenaDenMaster" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_AI_KennelMaster_SummonHorn" />
+  </Skill>
+  <Skill UID="AI_MercyArena_DenMaster_Whiplash" ESkill="ai_default_zonebuff" Keywords="">
+    <Animation ActionString="monster_skill_05" ScaleWithCastingSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="10" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="KennelMaster_Buff_Shape" />
+    </Shapes>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_kennelmaster_whiplash_passive" Targeting="OnSummons" Duration="5" />
+    </PassiveSkills>
+    <SoundTrigger OnAnimCast="Play_KennelMaster_Whiplash" />
+  </Skill>
+</MetaData>

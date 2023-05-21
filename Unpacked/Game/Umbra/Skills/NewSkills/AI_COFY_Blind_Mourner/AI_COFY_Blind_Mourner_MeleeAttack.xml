@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="attack_skill" UID="AI_COFY_Blind_Mourner_MeleeAttack">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="fire" PWeaponMultiplier="1.2" />
+    <Cooldown Cooldown="3" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Blind_Mourner_DefaultAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_COFY_BlindMourner_MeleeAttack_Start" OnAnimCast="Play_COFY_BlindMourner_MeleeAttack_Cast" OnHit="Play_DOT_Burn" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

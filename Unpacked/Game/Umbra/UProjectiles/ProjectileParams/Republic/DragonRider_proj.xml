@@ -1,0 +1,38 @@
+<MetaData>
+  <Projectile ID="DragonRider_SpearBlast_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.Oshara.Dragon_Lightning_Projectile_01" Direction="1,0,0" WorldSpace="0" Scale="1.5" />
+      <HitEnvironment ParticleName="U_Character_02.Charge.Charge_Impact_Lightning_01" Direction="0,0,1" WorldSpace="1" Scale="1.5" />
+      <Hit ParticleName="U_Projectile.Lightning.Lightning_Ball_Impact_01" Direction="1,0,0" WorldSpace="0" />
+      <Indicator ParticleName="U_Monster.Primordiar.Primordiar_Guardian.Missileshot_Indicator_4M" Direction="0,0,1" WorldSpace="1" Scale="1.25" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="20" SpeedMax="20" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="DragonRider_ScorchedEarth_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="U_VFX_Oskar.Projectiles.DragonRider_ProjectileSpawner_01" Direction="0,1,0" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Oskar.Projectiles.Oshara_Slow_Projectile_01" Direction="0,1,0" PosOffset="0,0,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Projectile.Fire.Fireball_Impact_01.Circle_Impact" Direction="1,0,0" PosOffset="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="5" SpeedMax="5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+</MetaData>

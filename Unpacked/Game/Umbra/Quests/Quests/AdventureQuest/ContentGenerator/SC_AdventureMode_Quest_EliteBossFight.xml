@@ -1,0 +1,282 @@
+<MetaData>
+  <Quest Name="QN_EG_KillTarget_EBF_RepublicJusticar" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_EBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_EBF_RepublicJusticar_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_EBF_RepublicJusticar_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_EBF_RepublicJusticar_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_RepublicJusticar" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate" Localization="@ui_EG_EBF_StepNameLabel_Justicar" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_EBF_RepublicAssassin" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_EBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_EBF_RepublicAssassin_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_EBF_RepublicAssassin_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_EBF_RepublicAssassin_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_RepublicAssassin" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate" Localization="@ui_EG_EBF_StepNameLabel_Assassin" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_EBF_CultOfSouls_Corrupted_PrimordialGuardian" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_EBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_EBF_CultOfSouls_Corrupted_PrimordialGuardian_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_EBF_CultOfSouls_Corrupted_PrimordialGuardian_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_EBF_CultOfSouls_Corrupted_PrimordialGuardian_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_CultOfSouls_Corrupted_PrimordialGuardian" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate" Localization="@ui_EG_EBF_StepNameLabel_Primo" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_EBF_OutlawsSadisticThug" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_EBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_EBF_OutlawsSadisticThug_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_EBF_OutlawsSadisticThug_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_EBF_OutlawsSadisticThug_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_OutlawsSadisticThug" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate" Localization="@ui_EG_EBF_StepNameLabel_Thug" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_EBF_CultOfSouls_DemonOfSouls" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_EBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_EBF_CultOfSouls_DemonOfSouls_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_EBF_CultOfSouls_DemonOfSouls_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_EBF_CultOfSouls_DemonOfSouls_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_CultOfSouls_DemonOfSouls" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate" Localization="@ui_EG_EBF_StepNameLabel_DoS" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_EBF_CultOfSouls_Butcher" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_EBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_EBF_CultOfSouls_Butcher_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_EBF_CultOfSouls_Butcher_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_EBF_CultOfSouls_Butcher_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_CultOfSouls_Butcher" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate" Localization="@ui_EG_EBF_StepNameLabel_Butcher" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_EBF_PacifiedKnight" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_EBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_EBF_PacifiedKnight_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_EBF_PacifiedKnight_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_EBF_PacifiedKnight_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_PacifiedKnight" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate" Localization="@ui_EG_EBF_StepNameLabel_PacifiedKnight" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_EBF_PacifiedGolgoth" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_EBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_EBF_PacifiedGolgoth_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_EBF_PacifiedGolgoth_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_EBF_PacifiedGolgoth_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_PacifiedGolgoth" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate" Localization="@ui_EG_EBF_StepNameLabel_PacifiedGolgoth" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_EBF_CultOfFlesh_DemonOfFlesh" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_EBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_EBF_CultOfFlesh_DemonOfFlesh_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_EBF_CultOfFlesh_DemonOfFlesh_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_EBF_CultOfFlesh_DemonOfFlesh_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_CultOfFlesh_DemonOfFlesh" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate" Localization="@ui_EG_EBF_StepNameLabel_DoF" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_EBF_SvriirAlphaPoison" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_EBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_EBF_SvriirAlphaPoison_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_EBF_SvriirAlphaPoison_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_EBF_SvriirAlphaPoison_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_SvriirAlphaPoison" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_EBF_StepUpdate" Localization="@ui_EG_EBF_StepNameLabel_SvriirAlphaPoison" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_LBF_EndGame_AlphaPoison" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_LBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_LBF_EndGame_AlphaPoison_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_LBF_EndGame_AlphaPoison_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_LBF_EndGame_AlphaPoison_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_EndGame_AlphaPoison" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_LG_KillTarget_LBF_StepUpdate" Localization="@ui_EG_LBF_StepNameLabel_AlphaPoison" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_LBF_EndGame_Thug" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_LBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_LBF_EndGame_Thug_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_LBF_EndGame_Thug_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_LBF_EndGame_Thug_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_EndGame_Thug" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_LBF_StepUpdate" Localization="@ui_EG_LBF_StepNameLabel_Thug" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_LBF_EndGame_Assassin" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_LBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_LBF_EndGame_Assassin_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_LBF_EndGame_Assassin_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_LBF_EndGame_Assassin_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_EndGame_Assassin" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_LBF_StepUpdate" Localization="@ui_EG_LBF_StepNameLabel_Assassin" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_LBF_EndGame_Butcher" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_LBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_LBF_EndGame_Butcher_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_LBF_EndGame_Butcher_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_LBF_EndGame_Butcher_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_EndGame_Butcher" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_LBF_StepUpdate" Localization="@ui_EG_LBF_StepNameLabel_Butcher" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_LBF_EndGame_Corrupted_PrimordialGuardian" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_LBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_LBF_EndGame_Corrupted_PrimordialGuardian_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_LBF_EndGame_Corrupted_PrimordialGuardian_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_LBF_EndGame_Corrupted_PrimordialGuardian_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_EndGame_Corrupted_PrimordialGuardian" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_LBF_StepUpdate" Localization="@ui_EG_LBF_StepNameLabel_Corrupted_PrimordialGuardian" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_LBF_EndGame_PacifiedGolgoth" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_LBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_LBF_EndGame_PacifiedGolgoth_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_LBF_EndGame_PacifiedGolgoth_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_LBF_EndGame_PacifiedGolgoth_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_EndGame_PacifiedGolgoth" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_LBF_StepUpdate" Localization="@ui_EG_LBF_StepNameLabel_PacifiedGolgoth" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_LBF_Endgame_DemonOfFlesh" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_LBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_LBF_Endgame_DemonOfFlesh_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_LBF_Endgame_DemonOfFlesh_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_LBF_Endgame_DemonOfFlesh_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_Endgame_DemonOfFlesh" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_LBF_StepUpdate" Localization="@ui_EG_LBF_StepNameLabel_DemonOfFlesh" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_LBF_EndGame_DemonOfSouls" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_LBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_LBF_EndGame_DemonOfSouls_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_LBF_EndGame_DemonOfSouls_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_LBF_EndGame_DemonOfSouls_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_EndGame_DemonOfSouls" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_LBF_StepUpdate" Localization="@ui_EG_LBF_StepNameLabel_DemonOfSouls" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_LBF_EndGame_JusticarElite" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_LBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_LBF_EndGame_JusticarElite_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_LBF_EndGame_JusticarElite_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_LBF_EndGame_JusticarElite_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_EndGame_JusticarElite" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_LBF_StepUpdate" Localization="@ui_EG_LBF_StepNameLabel_JusticarElite" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="QN_EG_KillTarget_LBF_EndGame_Knight" StartDialog="" BoundToDynamicGameplayAreaIfPossible="0" Type="Dungeon" UIName="@ui_EG_LBF_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="QN_EG_KillTarget_LBF_EndGame_Knight_Spawn1" KillCount="4" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_EG_KillTarget_LBF_EndGame_Knight_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_EG_KillTarget_LBF_EndGame_Knight_Spawn1" Delay=".5" SpawnClass="Sc_CG_EBF_EndGame_Knight" MinSpawnPercent="-1" MaxSpawnPercent="-80" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="QN_EG_KillTarget_LBF_StepUpdate" Localization="@ui_EG_LBF_StepNameLabel_Knight" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+</MetaData>

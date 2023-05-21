@@ -1,0 +1,32 @@
+<MetaData>
+  <Skill UID="AI_COFY_Cultist_SummonFury" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+    <Particles ParticleName="U_Monster_Alt.cultist_fury.monster_spawn" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="15.0" />
+    <Summoning MaxSummons="5" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="5" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_CultOfFuryCultist" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Monolith_Cultist_SummonInstigator" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+    <Particles ParticleName="U_Monster_Alt.cultist_fury.monster_spawn" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="5.0" />
+    <Summoning MaxSummons="5" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="2" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_MonolithCultist02" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Monolith_Cultist_SummonKnight" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+    <Particles ParticleName="U_Monster_Alt.cultist_fury.monster_spawn" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="30.0" />
+    <Summoning MaxSummons="1" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="2" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_MonolithCultist03" />
+    </Summoning>
+  </Skill>
+</MetaData>

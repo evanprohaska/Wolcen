@@ -1,0 +1,16 @@
+<MetaData>
+  <Skill ESkill="AI_Default_Aura" Keywords="magic_spell" UID="SkeletonCultist_Aura_DamageBuff">
+    <CastingParams CanBeInterrupted="0" ShouldMoveInRange="0" CanCastWhileMoving="1" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <ParticleList>
+      <Particle Key="Cast" Name="U_VFX_Oskar.Hits.Hit_Fire" Offset="0,0,0" Direction="0,0,1" Scale="7" />
+    </ParticleList>
+    <Range AttackRange="20" />
+    <Cooldown Cooldown="15.0" />
+    <SkillSpecific AuraRadius="10.0" OverrideEffect="1" AffectCaster="0" IsNegativeEffect="0" AuraDuration="10" />
+    <SoundTrigger OnAnimCast="Play_COSS_Skeleton_Cultist_Aura_Cast" OnAnimStart="Play_COSS_Skeleton_Cultist_Aura_PreCast" />
+    <PassiveSkills>
+      <Skill Index="0" Name="Aura_DamageBuff_Passive" Targeting="OnAllies" />
+    </PassiveSkills>
+  </Skill>
+</MetaData>

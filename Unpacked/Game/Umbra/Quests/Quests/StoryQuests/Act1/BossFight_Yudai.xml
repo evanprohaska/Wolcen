@@ -1,0 +1,23 @@
+<MetaData>
+  <Quest Name="Quest_YudaiFight" StartDialog="" Type="BossFight" UIName="@ui_A1_Q5_EventQuestLabel1" UIDesc="@">
+    <Step Order="0" UIName="@ui_A1_Q5_EventSteptLabel1" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Go" Destination="QP_Intro_Unreachable_Area" Radius="1" RequireAllPlayers="0" />
+      <Goal Order="1" Type="KillAll" EventsName="TPS_YudaiSpawn" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Yudai" Area="ACT1_AnankisCore" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Wait" TimeLimit="3" ReferenceEntityName="" Radius="" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="1" Name="YudaiTransformation_Sequence" SequenceName="A1_YudaiTransformation" />
+      <Event Trigger="EventStart" EventName="YudaiTransformation_Sequence" Type="EntityIsHidden" Delay=".5" Name="CO_RevealDemonYudai" EntityNames="AnimObject_A1_Q5_S5_Yudai_DemonSoul" Hide="0" />
+      <Event Trigger="EventEnd" EventName="YudaiTransformation_Sequence" Type="EntityTeleport" MinRadius="1" Name="Player_TP_YudaiArena" TeleportedEntityName="#Player" DestinationName="QP_A1_Q5_S6_PlayerSpawnPoint" />
+      <Event Trigger="EventEnd" EventName="YudaiTransformation_Sequence" Type="GoalAchieve" Name="WaitEnd_YudaiTransformation_Sequence" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="YudaiTransformation_Sequence" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="TPS_YudaiSpawn" SpawnClass="Sc_Sty_A1_CoS_Yudai" TargetEntityName="YudaiSpawnPoint" FaceAtSpawn="#Player" />
+      <Event Trigger="EventEnd" EventName="YudaiTransformation_Sequence" Type="EntityIsHidden" Name="CO_HideDemonYudai" EntityNames="AnimObject_A1_Q5_S5_Yudai_DemonSoul" Hide="1" />
+      <Event Trigger="EventEnd" EventName="YudaiTransformation_Sequence" Type="GlobalDialog" Delay="2" Name="TPS_YudaiFightTalk_1" DialogName="ACT1_Q5_TPS_YudaiFightTalk_1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Yudai" PercentLeft="34" Type="GlobalDialog" Name="TPS_YudaiFightTalk_2" DialogName="ACT1_Q5_TPS_YudaiFightTalk_2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Yudai" PercentLeft="67" Type="GlobalDialog" Name="TPS_YudaiFightTalk_3" DialogName="ACT1_Q5_TPS_YudaiFightTalk_3" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="A1_Q5_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A1_Q5_EventQuestLabel1" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalAnnouncement" Name="A1_Q5_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+</MetaData>

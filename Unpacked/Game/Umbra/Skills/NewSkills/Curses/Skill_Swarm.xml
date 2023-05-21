@@ -1,0 +1,122 @@
+<MetaData>
+  <Skill UID="mapmodifier_curse_swarm" ESkill="MapModifier_Curse_Swarm" Keywords="magic_spell">
+    <ParticleList>
+      <Particle Key="Mark" Name="U_Buff.Debuff.Cultist_Summon_Aura_02" Offset="0,0,1" Direction="0,1,0" Scale="1" />
+      <Particle Key="Spawn" Name="U_Monster.Primordiar.Primordiar_Armor.Primordiar_Assemble_02" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+    <Summoning MaxSummons="1000" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" />
+    <SkillSpecific ResurectionTimer="3" ResurectionChance="100">
+      <SpawnEntry Faction="Svriirs">
+        <Lieutenant>
+          <Entry SpawnClass="sc_MapModSwarm__Scriirs_LScreecher" Weight="0.3" />
+          <Entry SpawnClass="sc_MapModSwarm__SvriirBetaSpitter" Weight="0.4" />
+          <Entry SpawnClass="sc_MapModSwarm__SvriirBetaSpawner" Weight="0.3" />
+        </Lieutenant>
+        <Trash>
+          <Entry SpawnClass="sc_MapModSwarm__SvriirOmegaBaby" Weight="0.3" />
+          <Entry SpawnClass="sc_MapModSwarm__SvriirMiniSpitter" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__SvriirSvriirOmegaFemale" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__Nosummoning" Weight="0.2" />
+        </Trash>
+      </SpawnEntry>
+      <SpawnEntry Faction="CultOfSouls">
+        <Lieutenant>
+          <Entry SpawnClass="sc_MapModSwarm__CultOfSouls_SpecterWarrior" Weight="0.3" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfSouls_LanternBearer" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfSouls_SpecterMage" Weight="0.3" />
+        </Lieutenant>
+        <Trash>
+          <Entry SpawnClass="sc_MapModSwarm__CultOfSouls_Skeleton_Cultist" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfSouls_Skeleton_Melee_2hAxe" Weight="0.1" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfSouls_Skeleton_2bow" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfSouls_Skeleton_1swd1Shd_Heavy" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfSouls_Skeleton_RangeCaster" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__COS_NoSummoning" Weight="0.1" />
+        </Trash>
+      </SpawnEntry>
+      <SpawnEntry Faction="Outlaws">
+        <Lieutenant>
+          <Entry SpawnClass="sc_MapModSwarm__OutlawsKennelMaster" Weight="0.4" />
+          <Entry SpawnClass="sc_MapModSwarm__OutlawsTrapper" Weight="0.3" />
+          <Entry SpawnClass="sc_MapModSwarm__OutlawsTrapper_flashbang" Weight="0.3" />
+        </Lieutenant>
+        <Trash>
+          <Entry SpawnClass="sc_MapModSwarm__OutlawsBanditRanged" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__OutlawsBrute" Weight="0.1" />
+          <Entry SpawnClass="sc_MapModSwarm__OutlawsWorgAlpha" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__OutlawsBanditMelee01" Weight="0.1" />
+          <Entry SpawnClass="sc_MapModSwarm__OutlawsBanditMelee02" Weight="0.1" />
+          <Entry SpawnClass="sc_MapModSwarm__OutlawsBanditMelee03" Weight="0.1" />
+          <Entry SpawnClass="sc_MapModSwarm__Outlaw_NoSummoning" Weight="0.2" />
+        </Trash>
+      </SpawnEntry>
+      <SpawnEntry Faction="CultOfFlesh">
+        <Lieutenant>
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFlesh_Spreader" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFlesh_ColossalBreeder" Weight="0.3" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFlesh_Cultist" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFlesh_Sniper" Weight="0.3" />
+        </Lieutenant>
+        <Trash>
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFlesh_Fanatic" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFlesh_Halfbreed" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFlesh_MiniHalfBreed" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFlesh_Crystal" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__COF_NoSummoning" Weight="0.2" />
+        </Trash>
+      </SpawnEntry>
+      <SpawnEntry Faction="Templars">
+        <Lieutenant>
+          <Entry SpawnClass="sc_MapModSwarm__PacifiedPriest" Weight="1" />
+        </Lieutenant>
+        <Trash>
+          <Entry SpawnClass="sc_MapModSwarm__PacifiedSquire" Weight="0.3" />
+          <Entry SpawnClass="sc_MapModSwarm__PacifiedSquireHammer" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__PacifiedCleric" Weight="0.3" />
+          <Entry SpawnClass="sc_MapModSwarm__Templar_NoSummoning" Weight="0.2" />
+        </Trash>
+      </SpawnEntry>
+      <SpawnEntry Faction="CultOfFury">
+        <Lieutenant>
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFury_Enforcer" Weight="0.5" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFury_Cultist" Weight="0.5" />
+        </Lieutenant>
+        <Trash>
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFury_Rabiaphage" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFury_Instigator" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFury_FurySpawn" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__CultOfFury_Spirit" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__COF_nospawning" Weight="0.2" />
+        </Trash>
+      </SpawnEntry>
+      <SpawnEntry Faction="Republic">
+        <Lieutenant>
+          <Entry SpawnClass="sc_MapModSwarm__Republic_Flamethrower" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__RepublicSniper" Weight="0.3" />
+          <Entry SpawnClass="sc_MapModSwarm__RepublicSiegebeast" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__RepublicVeteran" Weight="0.3" />
+        </Lieutenant>
+        <Trash>
+          <Entry SpawnClass="sc_MapModSwarm__Republic_Flamethrower_Drone" Weight="0.1" />
+          <Entry SpawnClass="sc_MapModSwarm__Republic_Gatling_Drone" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__RepublicInfantrySword" Weight="0.1" />
+          <Entry SpawnClass="sc_MapModSwarm__RepublicHeavyInfantry" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__Republic_Wardog" Weight="0.1" />
+          <Entry SpawnClass="sc_MapModSwarm__RepublicInfantryRanged" Weight="0.2" />
+          <Entry SpawnClass="sc_MapModSwarm__republic_nosummoning" Weight="0.1" />
+        </Trash>
+      </SpawnEntry>
+      <SpawnEntry Faction="Wild">
+        <Lieutenant>
+          <Entry SpawnClass="sc_MapMod_Wild" Weight="0.4" />
+          <Entry SpawnClass="sc_MapMod_Wild" Weight="0.6" />
+        </Lieutenant>
+        <Trash>
+          <Entry SpawnClass="sc_MapMod_Wild" Weight="0.4" />
+          <Entry SpawnClass="sc_MapMod_Wild" Weight="0.6" />
+        </Trash>
+      </SpawnEntry>
+    </SkillSpecific>
+    <SoundTrigger OnAnimStart="Play_Curse_Swarm_Rift_Loop" OnAnimEnd="Play_Curse_Swarm_Rift_Close" />
+  </Skill>
+</MetaData>

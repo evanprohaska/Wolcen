@@ -1,0 +1,57 @@
+<CompanionAltarPresets>
+  <Companion PresetName="Companion_Shrine_Story_A1_2" Weight="1" Geometry="Objects/props/altar/CompanionAI_Shrine.cgf">
+    <SpawnChoices>
+      <Spawn ClassName="WildBat_companion" Weight="1" />
+      <Spawn ClassName="WildBear_companion" Weight="1" />
+      <Spawn ClassName="WildSpiderRanged_companion" Weight="1" />
+      <Spawn ClassName="WildScarab_companion" Weight="1" />
+      <Spawn ClassName="WildHornet_companion" Weight="1" />
+      <Spawn ClassName="WildSnake_companion" Weight="1" />
+      <Spawn ClassName="WildRat_companion" Weight="1" />
+    </SpawnChoices>
+    <Particles>
+      <Particle Key="Mark" VFXName="U_Character_02.Summon.SummonLoop" Direction="0,1,0" Scale="1" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.Altars_Aura_01_Green" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.Altars_Activate_01_Green" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Altars.Altars_Finish_01_Green" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+    </Particles>
+  </Companion>
+  <Companion PresetName="Companion_Shrine_Story_A3" Weight="1" Geometry="Objects/props/altar/CompanionAI_Shrine.cgf">
+    <SpawnChoices>
+      <Spawn ClassName="WildBat_companion" Weight="1" />
+      <Spawn ClassName="WildScorpion_companion" Weight="1" />
+      <Spawn ClassName="WildSpiderRanged_companion" Weight="1" />
+      <Spawn ClassName="WildScarab02_companion" Weight="1" />
+      <Spawn ClassName="WildHornet02_companion" Weight="1" />
+      <Spawn ClassName="WildSnakeDesert_companion" Weight="1" />
+      <Spawn ClassName="WildRat_companion" Weight="1" />
+    </SpawnChoices>
+    <Particles>
+      <Particle Key="Mark" VFXName="U_Character_02.Summon.SummonLoop" Direction="0,1,0" Scale="1" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.Altars_Aura_01_Green" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.Altars_Activate_01_Green" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Altars.Altars_Finish_01_Green" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+    </Particles>
+  </Companion>
+  <Companion PresetName="Companion_Shrine_Adventure" Weight="1" Geometry="Objects/props/altar/CompanionAI_Shrine.cgf">
+    <SpawnChoices>
+      <Spawn ClassName="WildBat_companion" Weight="1" />
+      <Spawn ClassName="WildScorpion_companion" Weight="1" />
+      <Spawn ClassName="WildSpiderRanged_companion" Weight="1" />
+      <Spawn ClassName="WildScarab02_companion" Weight="0.5" />
+      <Spawn ClassName="WildHornet02_companion" Weight="0.5" />
+      <Spawn ClassName="WildSnakeDesert_companion" Weight="0.5" />
+      <Spawn ClassName="WildRat_companion" Weight="1" />
+      <Spawn ClassName="WildBear_companion" Weight="1" />
+      <Spawn ClassName="WildScarab_companion" Weight="0.5" />
+      <Spawn ClassName="WildHornet_companion" Weight="0.5" />
+      <Spawn ClassName="WildSnake_companion" Weight="0.5" />
+    </SpawnChoices>
+    <Particles>
+      <Particle Key="Mark" VFXName="U_Character_02.Summon.SummonLoop" Direction="0,1,0" Scale="1" Offset="0,0,0" Bone="Bip01" />
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Altars.Altars_Aura_01_Green" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Altars.Altars_Activate_01_Green" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Altars.Altars_Finish_01_Green" Direction="0,1,0" Offset="0,0,1.7" Scale="1" />
+    </Particles>
+  </Companion>
+</CompanionAltarPresets>

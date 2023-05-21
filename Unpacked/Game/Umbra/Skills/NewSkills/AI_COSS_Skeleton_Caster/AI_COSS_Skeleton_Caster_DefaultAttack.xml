@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill UID="AI_COSS_Skeleton_Caster_DefaultAttack" ESkill="default_ranged" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Frost" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="1.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" CastBone="Bip01 R Hand" />
+    <Projectile Name="COSS_Skeleton_Caster_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SoundTrigger OnAnimCast="Play_COSS_Skeleton_Caster_DefaultAttack" OnHit="Play_Hero_TakeDamage_Ice_Medium" PlayAttackVoice="0" />
+    <Targeting ComputeTargetPosAtCast="1" />
+  </Skill>
+</MetaData>

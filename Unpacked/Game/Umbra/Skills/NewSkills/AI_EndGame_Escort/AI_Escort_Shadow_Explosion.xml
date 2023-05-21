@@ -1,0 +1,18 @@
+<MetaData>
+  <Skill UID="AI_Escort_Shadow_Explosion" ESkill="AI_REPU_Flamethrower_OverHeat" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="shadow" WeaponMultiplier="0.1" />
+    <Cooldown Cooldown="20.0" />
+    <ParticleList>
+      <Particle Key="Explosion" Name="Missions.Escort.OilMonster_Explosion" Offset="0,0,1" Direction="0,0,1" Scale="1" />
+      <Particle Key="Hit" Name="Missions.Escort.Darkness_Hit" Offset="0,0,1" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="AI_EndGame_EscortShadow_Explosion" />
+    </Shapes>
+    <Range AttackRange="15" />
+    <SkillSpecific MaxTurnRate="60.0" MovementSpeed="11" ExplosionRadius="3.0" ExplosionTriggerRadius="1" OverheatDuration="10" ExplosionTriggerTime="0.3" TimeToDieAfterExplosion="0.3" />
+    <StatusEffect_MovementSpeed SlowPercent="50" SlowPercentPerLevel="0" Duration="5" DurationPerLevel="0" />
+  </Skill>
+</MetaData>

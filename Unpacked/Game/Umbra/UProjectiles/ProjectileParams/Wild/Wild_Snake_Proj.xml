@@ -1,0 +1,17 @@
+<MetaData>
+  <Projectile ID="snake_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.MiniSpitter.MiniSpitter_Projectile_01" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Swipe.Hit_01.Hit_Toxic_01_Low" Direction="0,1,0" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="13" SpeedMax="13" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowImpact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+</MetaData>

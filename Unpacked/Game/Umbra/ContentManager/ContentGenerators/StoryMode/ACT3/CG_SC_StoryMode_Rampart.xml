@@ -1,0 +1,42 @@
+<MetaData>
+  <ContentGenerator Name="CG_SC_StoryMode_Rampart" SecondaryContentGeneratorName="">
+    <ArchetypeChoices>
+      <Archetype Tag="LuckyDungeon" PriorityTag="LotOfLoot" ExcludeTag="Room,MMGoblin,Named,NoMonster,BossArea" Weight="8" />
+      <Archetype Tag="ChestRoom" PriorityTag="EpicFixedLoot,Room,NoMonster" ExcludeTag="KillCP,KillTarget,CursedChestRoom" Weight="4" />
+      <Archetype Tag="CursedChestRoom" PriorityTag="CursedChestRoom,Room,NoMonster" ExcludeTag="EpicFixedLoot,KillCP,KillTarget" Weight="4" />
+      <Archetype Tag="GoblinDungeon" PriorityTag="MMGoblin,SmallArea,NormalLoot" ExcludeTag="NoMonster,Room,KillCP,KillTarget,MediumArea,BossArea" Weight="4" />
+      <Archetype Tag="KillOneTarget" PriorityTag="KillTarget,OneGoal,NormalLoot" ExcludeTag="Room,MMGoblin,Named,Hard,BossArea" Weight="20" />
+      <Archetype Tag="KillNumerousTarget" PriorityTag="KillTarget,NumerousGoal,MediumArea,NormalLoot,Easy" ExcludeTag="Room,MMGoblin,BossArea" Weight="20" />
+      <Archetype Tag="KillCP" PriorityTag="KillCP,NormalLoot" ExcludeTag="Room,MMGoblin,NoMonster,BossArea,MediumArea" Weight="20" />
+      <Archetype Tag="NoQuestEODReward" PriorityTag="EODReward" ExcludeTag="KillCP,KillTarget,MediumArea,Room,NoMonster,MMGoblin,BossArea" Weight="20" />
+    </ArchetypeChoices>
+    <LevelGeneratorChoices>
+      <LevelGenerator DungeonName="WRepu_Room_CG" Tag="Room,WRepu" PriorityTag="WRepu" ExcludeTag="SVRI,WILD,GenericCave,SvriirLair,IncubationChamber,Tps,RandomNecro,Temple,Redwaste,FewMonster,AverageMonster,LotOfMonster,KillCP" />
+      <LevelGenerator DungeonName="WRepu_VerySmallDungeon_CG" Tag="WRepu,VerySmallArea,ClassicArea" PriorityTag="WRepu" ExcludeTag="SVRI,WILD,NumerousGoal,FewGoal,PRIMO" />
+      <LevelGenerator DungeonName="WRepu_SmallDungeon_CG" Tag="WRepu,SmallArea,ClassicArea" PriorityTag="WRepu" ExcludeTag="SVRI,WILD,NumerousGoal,PRIMO" />
+      <LevelGenerator DungeonName="WRepu_MediumDungeon_CG" Tag="WRepu,MediumArea,ClassicArea" PriorityTag="WRepu" ExcludeTag="SVRI,WILD,PRIMO" />
+    </LevelGeneratorChoices>
+    <QuestChoices>
+      <Quest QuestName="QN_SC_Rampart_KillTarget_COFY_Cultist_4" Tag="KillTarget,NumerousGoal,COFY,Republic" PriorityTag="KillTarget,COFY,Republic,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Rampart_KillTarget_COFY_Veteran_4" Tag="KillTarget,NumerousGoal,COFY,Republic" PriorityTag="KillTarget,COFY,Republic,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Rampart_KillTarget_COFY_RepublicSiegeBeast" Tag="KillTarget,OneGoal,COFY,Republic" PriorityTag="KillTarget,COFY,Republic,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Rampart_KillTarget_COFY_RepublicGolgoth" Tag="KillTarget,OneGoal,COFY,Republic" PriorityTag="KillTarget,COFY,Republic,EMQuest" ExcludeTag="" />
+      <Quest QuestName="QN_SC_Rampart_KillCP_1" Tag="KillCP,COFY" PriorityTag="COFY,EMQuest" ExcludeTag="" />
+    </QuestChoices>
+    <MonsterManagerChoices>
+      <MonsterManager MonsterManagerName="MM_ben_level_test" Tag="NoMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Rampart_COFY_Republic_Easy" Tag="Easy,COFY,Republic,LotOfMonster" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Rampart_COFY_Republic_Medium" Tag="Medium,LotOfMonster,COFY,Republic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Rampart_COFY_Republic_Hard" Tag="Hard,LotOfMonster,COFY,Republic" PriorityTag="" ExcludeTag="" />
+      <MonsterManager MonsterManagerName="MM_SC_StoryMode_Rampart_COFY_Republic_Goblin" Tag="MMGoblin,Easy,COFY,Republic,LotOfMonster" PriorityTag="" ExcludeTag="" />
+    </MonsterManagerChoices>
+    <EntityManagerChoices>
+      <EntityManager EntityManagerName="EM_Test_ContentGenerator_NoLoot" Tag="WRepu,Noloot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Rampart_Republic_ChestRoom" Tag="WRepu,EpicFixedLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Rampart_Republic_CursedChestRoom" Tag="WRepu,CursedChestRoom" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Rampart_Republic_EODReward" Tag="WRepu,EODReward" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Rampart_Republic_BigLoot" Tag="WRepu,LotOfLoot" PriorityTag="" ExcludeTag="" />
+      <EntityManager EntityManagerName="EM_CG_SC_Rampart_Republic" Tag="WRepu,NormalLoot" PriorityTag="" ExcludeTag="" />
+    </EntityManagerChoices>
+  </ContentGenerator>
+</MetaData>

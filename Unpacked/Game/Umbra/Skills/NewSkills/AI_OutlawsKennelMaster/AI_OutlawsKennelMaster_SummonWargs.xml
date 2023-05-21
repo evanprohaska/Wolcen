@@ -1,0 +1,29 @@
+<MetaData>
+  <Skill UID="AI_outlaw_kennelmaster_summonwargs" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="1000" />
+    <CastingParams CanBeInterrupted="0" />
+    <Summoning MaxSummons="1" SummonDuration="0" MinRadiusAroundSpawnPosition="2" MaxRadiusAroundSpawnPosition="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Default" Name="sc_OutlawKennelMaster" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_AI_KennelMaster_SummonHorn" />
+  </Skill>
+  <Skill UID="AI_outlaw_kennelmaster_summonbear" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="1000" />
+    <CastingParams CanBeInterrupted="0" />
+    <Summoning MaxSummons="1" SummonDuration="0" MinRadiusAroundSpawnPosition="2" MaxRadiusAroundSpawnPosition="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Default" Name="sc_OutlawKennelMaster_bear" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_AI_KennelMaster_SummonHorn" />
+  </Skill>
+  <Skill UID="AI_named_kennelmaster_summonworg" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="1000" />
+    <CastingParams CanBeInterrupted="0" />
+    <Summoning MaxSummons="1" SummonDuration="0" MinRadiusAroundSpawnPosition="2" MaxRadiusAroundSpawnPosition="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0">
+      <SummonedSpawnClass Key="Default" Name="sc_NamedKennelMaster" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_AI_KennelMaster_SummonHorn" />
+  </Skill>
+</MetaData>

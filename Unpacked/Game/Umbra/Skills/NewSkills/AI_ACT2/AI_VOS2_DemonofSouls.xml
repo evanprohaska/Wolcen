@@ -1,0 +1,52 @@
+<MetaData>
+  <Skill UID="AI_VOS2_SummonMercyZombie" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_08" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Summoning MaxSummons="1" SummonDuration="0" MinRadiusAroundSpawnPosition="6" MaxRadiusAroundSpawnPosition="8" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_MercyZombie" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_Player_DefaultHit" />
+  </Skill>
+  <Skill UID="AI_VOS2_SummonRunners" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+    <Particles ParticleName="U_Monster.Primordiar.Primordiar_Armor.Primordiar_Assemble_01" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="10.0" />
+    <Summoning MaxSummons="10" SummonDuration="0" MinRadiusAroundSpawnPosition="2" MaxRadiusAroundSpawnPosition="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_VOS2_Runners" />
+    </Summoning>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_VOS2DOS_proj">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 Head" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="frost" WeaponMultiplier=".75" />
+    <Cooldown Cooldown="0" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="4" />
+    <Projectile Name="VOS2_demonofsouls_proj" ProjectileCount="2" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="210" totalAngleAtDistanceMax="40" projectileAngleAtDistanceMin="360" projectileAngleAtDistanceMax="360" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_Hunt_BossModifier_VOS2DOS_proj">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 Head" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="frost" WeaponMultiplier=".75" />
+    <Cooldown Cooldown="0" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="4" />
+    <Projectile Name="VOS2_demonofsouls_proj" ProjectileCount="2" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="210" totalAngleAtDistanceMax="40" projectileAngleAtDistanceMin="360" projectileAngleAtDistanceMax="360" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

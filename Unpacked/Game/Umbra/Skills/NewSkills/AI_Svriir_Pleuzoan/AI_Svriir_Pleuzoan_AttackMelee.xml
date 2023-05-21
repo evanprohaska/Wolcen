@@ -1,0 +1,48 @@
+<MetaData>
+  <Skill UID="AI_Svriir_Pleuzoan_AttackMelee" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1" />
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01" />
+    <Shapes>
+      <Entry ShapeName="Svriir_Pleuzoan_AttackShape_Cone" />
+    </Shapes>
+    <SkillSpecific HitEntityOnlyOnce="0" />
+    <SoundTrigger OnAnimStart="Play_Jellyfish_Lightning_Melee_Attack_Start" OnAnimCast="Play_Jellyfish_Lightning_Melee_Attack_Swipe" OnHit="Play_Jellyfish_Lightning_Melee_Attack_Impact" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_Svriir_Toxic_Pleuzoan_AttackMelee" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1" />
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01" />
+    <Shapes>
+      <Entry ShapeName="Svriir_Pleuzoan_AttackShape_Cone" />
+    </Shapes>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Monster.Jellyfish_SVRI.HeadButtAnticipation" Override="U_Monster.Jellyfish_SVRI_Toxic.HeadButtAnticipation" />
+      <AnimEvent Original="U_Monster.Jellyfish_SVRI.HeadButt" Override="U_Monster.Jellyfish_SVRI_Toxic.HeadButt" />
+      <AnimEvent Original="U_Monster.Jellyfish_SVRI.HeadButtArea" Override="U_Monster.Jellyfish_SVRI_Toxic.HeadButtArea" />
+    </EventEffectOverride>
+    <SkillSpecific HitEntityOnlyOnce="0" />
+    <SoundTrigger OnAnimStart="Play_Jellyfish_Toxic_Melee_Attack_Start" OnAnimCast="Play_Jellyfish_Toxic_Melee_Attack_Swipe" OnHit="Play_Jellyfish_Toxic_Melee_Attack_Impact" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_Wild_Vesperal_Pleuzoan_AttackMelee" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="shadow" WeaponMultiplier="1" />
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01" />
+    <Shapes>
+      <Entry ShapeName="Svriir_Pleuzoan_AttackShape_Cone" />
+    </Shapes>
+    <EventEffectOverride>
+      <AnimEvent Original="U_Monster.Jellyfish_SVRI.HeadButtAnticipation" Override="U_Monster.Jellyfish_SVRI_Shadow.HeadButtAnticipation" />
+      <AnimEvent Original="U_Monster.Jellyfish_SVRI.HeadButt" Override="U_Monster.Jellyfish_SVRI_Shadow.HeadButt" />
+      <AnimEvent Original="U_Monster.Jellyfish_SVRI.HeadButtArea" Override="U_Monster.Jellyfish_SVRI_Shadow.HeadButtArea" />
+    </EventEffectOverride>
+    <SkillSpecific HitEntityOnlyOnce="0" />
+    <SoundTrigger OnAnimStart="Play_Jellyfish_Shadow_Melee_Attack_Start" OnAnimCast="Play_Jellyfish_Shadow_Melee_Attack_Swipe" OnHit="Play_Jellyfish_Shadow_Melee_Attack_Impact" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

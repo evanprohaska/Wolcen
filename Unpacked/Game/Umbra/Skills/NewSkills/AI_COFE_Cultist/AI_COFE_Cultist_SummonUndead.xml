@@ -1,0 +1,14 @@
+<MetaData>
+  <Skill UID="AI_cofe_cultist_summonundead" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+    <ParticleList>
+      <Particle Key="OnSummon" Name="U_Monster_Alt.cultist_flesh.summon2" Direction="0,1,0" />
+    </ParticleList>
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="15.0" />
+    <Summoning MaxSummons="5" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="2" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_CultOfFleshCultist" />
+    </Summoning>
+  </Skill>
+</MetaData>

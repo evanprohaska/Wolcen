@@ -1,0 +1,118 @@
+<MetaData>
+  <EntitiesManager Name="EM_CG_SC_A1_PPS">
+    <EntityLists>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="2500" SquareMeterPerEntity_Max="2500" />
+        <List Name="F2_A3_Monolith" Tag="F2_TPS_A" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="5000" SquareMeterPerEntity_Max="5000" />
+        <List Name="F3_A3_Monolith" Tag="F3_TPS_A" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="800" SquareMeterPerEntity_Max="800" />
+        <List Name="TPS_Altar" Tag="TPS_Altar" />
+        <List Name="TPS_ArmorRack" Tag="TPS_ArmorRack" />
+        <List Name="TPS_GiftOrb" Tag="TPS_GiftOrb" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="2500" SquareMeterPerEntity_Max="2500" />
+        <List Name="TPS_Chest" Tag="TPS_Chest" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="250" SquareMeterPerEntity_Max="250" />
+        <List Name="TPS_Small" Tag="TPS_Small" />
+        <List Name="TPS_Medium" Tag="TPS_Medium" />
+        <List Name="TPS_Large" Tag="TPS_Large" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="1000" SquareMeterPerEntity_Max="1000" />
+        <List Name="MobG_A3_Mono1" Tag="MobG_A1_TPS" />
+      </Entry>
+    </EntityLists>
+  </EntitiesManager>
+  <EntitiesManager Name="EM_CG_SC_A1_PPS_BigLoot">
+    <EntityLists>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="1250" SquareMeterPerEntity_Max="1250" />
+        <List Name="F2_A3_Monolith" Tag="F2_TPS_A" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="2500" SquareMeterPerEntity_Max="2500" />
+        <List Name="F3_A3_Monolith" Tag="F3_TPS_A" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="800" SquareMeterPerEntity_Max="800" />
+        <List Name="TPS_Altar" Tag="TPS_Altar" />
+        <List Name="TPS_ArmorRack" Tag="TPS_ArmorRack" />
+        <List Name="TPS_GiftOrb" Tag="TPS_GiftOrb" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="1250" SquareMeterPerEntity_Max="1250" />
+        <List Name="TPS_Chest" Tag="TPS_Chest" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="250" SquareMeterPerEntity_Max="250" />
+        <List Name="TPS_Small" Tag="TPS_Small" />
+        <List Name="TPS_Medium" Tag="TPS_Medium" />
+        <List Name="TPS_Large" Tag="TPS_Large" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="1000" SquareMeterPerEntity_Max="1000" />
+        <List Name="MobG_A3_Mono1" Tag="MobG_A1_TPS" />
+      </Entry>
+    </EntityLists>
+  </EntitiesManager>
+  <EntitiesManager Name="EM_CG_SC_A1_PPS_EODReward">
+    <EntityLists>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="2500" SquareMeterPerEntity_Max="2500" />
+        <List Name="F2_A3_Monolith" Tag="F2_TPS_A" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="5000" SquareMeterPerEntity_Max="5000" />
+        <List Name="F3_A3_Monolith" Tag="F3_TPS_A" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="800" SquareMeterPerEntity_Max="800" />
+        <List Name="TPS_Altar" Tag="TPS_Altar" />
+        <List Name="TPS_ArmorRack" Tag="TPS_ArmorRack" />
+        <List Name="TPS_GiftOrb" Tag="TPS_GiftOrb" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="2500" SquareMeterPerEntity_Max="2500" />
+        <List Name="TPS_Chest" Tag="TPS_Chest" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="250" SquareMeterPerEntity_Max="250" />
+        <List Name="TPS_Small" Tag="TPS_Small" />
+        <List Name="TPS_Medium" Tag="TPS_Medium" />
+        <List Name="TPS_Large" Tag="TPS_Large" />
+      </Entry>
+      <Entry>
+        <Budget Mode="auto" SquareMeterPerEntity_Min="1000" SquareMeterPerEntity_Max="1000" />
+        <List Name="MobG_A3_Mono1" Tag="MobG_A1_TPS" />
+      </Entry>
+      <Entry>
+        <Budget Mode="manual" Entity_Min="1" Entity_Max="1" />
+        <List Name="CG_EndOfDungeon_Reward" Tag="CG_EndOfDungeon_Reward_Spawner" />
+      </Entry>
+    </EntityLists>
+  </EntitiesManager>
+  <EntitiesManager Name="EM_CG_SC_A1_PPS_ChestRoom">
+    <EntityLists>
+      <Entry>
+        <Budget Mode="manual" Entity_Min="4" Entity_Max="4" />
+        <List Name="TPS_Chest" Tag="Chest" />
+      </Entry>
+    </EntityLists>
+  </EntitiesManager>
+  <EntitiesManager Name="EM_CG_SC_A1_PPS_CursedChestRoom">
+    <EntityLists>
+      <Entry>
+        <Budget Mode="manual" Entity_Min="1" Entity_Max="1" />
+        <List Name="F3_A3_Monolith_CCR" Tag="F3" />
+      </Entry>
+    </EntityLists>
+  </EntitiesManager>
+</MetaData>

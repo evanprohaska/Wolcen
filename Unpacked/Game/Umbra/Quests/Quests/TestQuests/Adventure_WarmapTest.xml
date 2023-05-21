@@ -1,0 +1,555 @@
+<MetaData>
+  <Quest Name="WM_Q1_1" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn1,NPC2_BossSpawn2,NPC2_BossSpawn3,NPC2_BossSpawn4,NPC2_BossSpawn5" KillCount="5" ShowProgression="1">
+        <ArrowMarker Target="NPC2_BossSpawn1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn4" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn5" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn1" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFury_Enforcer" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn2" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFury_Enforcer" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn3" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFury_Enforcer" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn4" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFury_Enforcer" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn5" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFury_Enforcer" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q1_1_Optional" StopOnQuestEnding="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q1_1_Optional" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Frenzy" ValueToReach="100" DropRate="50" TimeLimit="360" ShowTimer="1" ShowProgression="1" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalFailure" GoalIndex="0" Name="FailQuest" Type="QuestFail" QuestName="WM_Q1_1_Optional" />
+      <Event Trigger="EnterAreaAll" CenterEntityName="QP_EG_GoToSF" AreaRadius="50" Name="FailQuest_Main" Type="QuestFail" QuestName="WM_Q1_1_Optional" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q1_2" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="KillCP" KillValue="50" ShowProgression="1" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn1,NPC2_BossSpawn2,NPC2_BossSpawn3,NPC2_BossSpawn4,NPC2_BossSpawn5" KillCount="5" ShowProgression="1">
+        <ArrowMarker Target="NPC2_BossSpawn1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn4" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn5" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-0102#" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn1" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFury_Cultist" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn2" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFury_Cultist" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn3" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFury_Cultist" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn4" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFury_Cultist" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn5" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFury_Cultist" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q1_3" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="Wait" TimeLimit="2">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="DungeonStart_QP" AreaRadius="20" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="EventEnd" EventName="PlayerOutOfAltarF2" Type="DirectedEntitySpawn" Name="PortalSpawn1" Mode="Prefab" SpawnData="COFY.Fury_Portal" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="25" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinCollisionRadius="20" MinNaviguationRadius="0.01" MinGameplayRadius="25" MinGameplayPercentage="80" GameplayPercentTolerance="80" VFX="" Backup="COFY.Fury_Portal" />
+      <Event Trigger="EventEnd" EventName="PlayerOutOfAltarF2" Type="DirectedEntitySpawn" Name="PortalSpawn2" Mode="Prefab" SpawnData="COFY.Fury_Portal" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="50" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinCollisionRadius="20" MinNaviguationRadius="0.01" MinGameplayRadius="25" MinGameplayPercentage="80" GameplayPercentTolerance="80" VFX="" Backup="COFY.Fury_Portal" />
+      <Event Trigger="EventEnd" EventName="PlayerOutOfAltarF2" Type="DirectedEntitySpawn" Name="PortalSpawn3" Mode="Prefab" SpawnData="COFY.Fury_Portal" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="100" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinCollisionRadius="20" MinNaviguationRadius="0.01" MinGameplayRadius="25" MinGameplayPercentage="80" GameplayPercentTolerance="80" VFX="" Backup="COFY.Fury_Portal" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="PortalSpawn1" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker Target="PortalSpawn1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="40" ShowTimer="1" />
+      <Goal Order="2" Type="Interact" Names="WM_COFYPortal" InteractCount="1" Animation="status_targetEntityChanneling_loop">
+        <ArrowMarker Target="WM_COFYPortal" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="WM_COFYPortal0" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker Target="WM_COFYPortal0" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="4" Type="Wait" TimeLimit="45" ShowTimer="1" />
+      <Goal Order="5" Type="Interact" Names="WM_COFYPortal0" InteractCount="1" Animation="status_targetEntityChanneling_loop">
+        <ArrowMarker Target="WM_COFYPortal0" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="6" Type="Go" Destination="WM_COFYPortal1" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker Target="WM_COFYPortal1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="7" Type="Wait" TimeLimit="50" ShowTimer="1" />
+      <Goal Order="8" Type="Interact" Names="WM_COFYPortal1" InteractCount="1" Animation="status_targetEntityChanneling_loop">
+        <ArrowMarker Target="WM_COFYPortal1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="9" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05-06-07-08-09" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaPreset_WM_Q1_3" LocationEntityName="WM_COFYPortal" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ArenaStart" Name="StartArena2" ArenaPreset="ArenaPreset_WM_Q1_3" LocationEntityName="WM_COFYPortal0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="ArenaStart" Name="StartArena3" ArenaPreset="ArenaPreset_WM_Q1_3" LocationEntityName="WM_COFYPortal1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EventEnd" Name="EndtArena1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="HidePortal1" EntityNames="WM_COFYPortal0" Hide="1" VFX="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_Explosion" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EventEnd" Name="EndtArena2" EventsName="StartArena2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="HidePortal2" EntityNames="WM_COFYPortal1" Hide="1" VFX="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_Explosion" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="EventEnd" Name="EndtArena3" EventsName="StartArena3" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="EntityIsHidden" Name="HidePortal3" EntityNames="WM_COFYPortal2" Hide="1" VFX="U_Monster.WarBeast_OUTW.WarBeast_OUTW_ConvergingFlames_Explosion" />
+      <Event Trigger="GoalStart" GoalIndex="9" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="sc_NPC2_FloorBoss_Justicar" TargetEntityName="#Player" FaceAtSpawn="#Player" VFX="" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="WM_StepLabel1" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel2" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="WM_StepLabel3" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="WM_StepLabel4" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="StepUpdate" Name="WM_StepLabel5" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="WM_StepLabel6" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="StepUpdate" Name="WM_StepLabel7" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="StepUpdate" Name="WM_StepLabel8" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="9" Type="StepUpdate" Name="WM_StepLabel9" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q1_4" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="Wait" TimeLimit="2">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="DungeonStart_QP" AreaRadius="20" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="EventEnd" EventName="PlayerOutOfAltarF2" Name="SpawnPoint1" Type="DirectedEntitySpawn" Mode="Prefab" SpawnData="Templar.Shrine" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="98" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinNaviguationRadius="0.01" MinGameplayRadius="0" MinGameplayPercentage="0" GameplayPercentTolerance="0" VFX="" Backup="Templar.Shrine" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="WarmapMissionInteract" InteractCount="1" Animation="status_targetEntityChanneling_loop">
+        <ArrowMarker Target="SpawnPoint1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <Goal Order="1" Type="Hold" CenterEntityName="SpawnPoint1" Radius="7" Tolerance="5" ShowProgression="1" TimeLimit="180" ShowTimer="1">
+        <ArrowMarker Target="SpawnPoint1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartArena" Type="ArenaStart" ArenaPreset="ArenaPreset_WM_Q1_3" LocationEntityName="SpawnPoint1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="EndtArena" Type="EventEnd" EventsName="StartArena" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="WM_StepLabel1" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q1_5" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2">
+        <ArrowMarker Target="QP_WarmapMission_Main" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="Conquer" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Generic.QP_WarmapMission_Main" ExcludedTiles="Entrance,Exit" SpawnQuantity="5" DistanceMin="2" OneSpawnPerArea="1" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="QP_WarmapMission_Main" RequireAllPlayers="0" Radius="8">
+        <ArrowMarker Target="QP_WarmapMission_Main" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="1" Type="Conquer" CenterEntityNames="QP_WarmapMission_Main" Radius="5" RequiredPlayers="4" EarnPointPerSec="1" MaxPoints="20" CanDeplete="0" EnnemiesAreBlocking="1" ShowProgression="1">
+        <ArrowMarker Target="QP_WarmapMission_Main" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_WarmapMission_Main1" RequireAllPlayers="0" Radius="8">
+        <ArrowMarker Target="QP_WarmapMission_Main1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="3" Type="Conquer" CenterEntityNames="QP_WarmapMission_Main1" Radius="5" RequiredPlayers="4" EarnPointPerSec="1" MaxPoints="25" CanDeplete="0" EnnemiesAreBlocking="1" ShowProgression="1">
+        <ArrowMarker Target="QP_WarmapMission_Main1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="4" Type="Go" Destination="QP_WarmapMission_Main2" RequireAllPlayers="0" Radius="8">
+        <ArrowMarker Target="QP_WarmapMission_Main2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="5" Type="Conquer" CenterEntityNames="QP_WarmapMission_Main2" Radius="5" RequiredPlayers="4" EarnPointPerSec="1" MaxPoints="30" CanDeplete="0" EnnemiesAreBlocking="1" ShowProgression="1">
+        <ArrowMarker Target="QP_WarmapMission_Main2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartArena1" Type="ArenaStart" ArenaPreset="ArenaInfinitePreset_WM_H_REPU_Base" LocationEntityName="QP_WarmapMission_Main" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="StartArena2" Type="ArenaStart" ArenaPreset="ArenaInfinitePreset_WM_H_REPU_Base" LocationEntityName="QP_WarmapMission_Main1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Name="StartArena3" Type="ArenaStart" ArenaPreset="ArenaInfinitePreset_WM_H_REPU_Final" LocationEntityName="QP_WarmapMission_Main2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="EndtArena1" Type="EventEnd" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Name="EndtArena2" Type="EventEnd" EventsName="StartArena2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="6" Name="EndtArena3" Type="EventEnd" EventsName="StartArena3" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="WM_StepLabel2" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="WM_StepLabel3" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="WM_StepLabel4" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Name="WM_StepLabel5" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Name="WM_StepLabel6" Type="StepUpdate" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_1" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="5" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q2_1_Optional" StopOnQuestEnding="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_1_Optional" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Bloodthirst" DecayRate="1" MaxValue="50" TimeLimit="180" ShowProgression="1" ShowTimer="1" BlinkThreshold="15" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalFailure" GoalIndex="0" Name="FailQuest" Type="QuestFail" QuestName="WM_Q2_1_Optional" />
+      <Event Trigger="EnterAreaAll" CenterEntityName="QP_EG_GoToSF" AreaRadius="50" Name="FailQuest_Main" Type="QuestFail" QuestName="WM_Q2_1_Optional" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="npc1_exit_portal" AreaRadius="50" Name="SucceedQuest_Main" Type="GoalAchieve" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_2" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn1,NPC2_BossSpawn2,NPC2_BossSpawn3" KillCount="3" ShowProgression="1">
+        <ArrowMarker Target="NPC2_BossSpawn1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+        <ArrowMarker Target="NPC2_BossSpawn2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+        <ArrowMarker Target="NPC2_BossSpawn3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn1" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFlesh_Heart" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn2" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFlesh_Heart" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn3" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfFlesh_Heart" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_3" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="Wait" TimeLimit="2">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="DungeonStart_QP" AreaRadius="20" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="EventEnd" EventName="PlayerOutOfAltarF2" Name="ConquerPoint1" Type="DirectedEntitySpawn" Mode="Prefab" SpawnData="Generic.QP_WarmapMission_Main" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="25" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinCollisionRadius="15" MinNaviguationRadius="0.01" MinGameplayRadius="20" MinGameplayPercentage="80" GameplayPercentTolerance="80" VFX="" Backup="Generic.QP_WarmapMission_Main" />
+      <Event Trigger="EventEnd" EventName="PlayerOutOfAltarF2" Name="ConquerPoint2" Type="DirectedEntitySpawn" Mode="Prefab" SpawnData="Generic.QP_WarmapMission_Main" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="50" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinCollisionRadius="15" MinNaviguationRadius="0.01" MinGameplayRadius="20" MinGameplayPercentage="80" GameplayPercentTolerance="80" VFX="" Backup="Generic.QP_WarmapMission_Main" />
+      <Event Trigger="EventEnd" EventName="PlayerOutOfAltarF2" Name="ConquerPoint3" Type="DirectedEntitySpawn" Mode="Prefab" SpawnData="Generic.QP_WarmapMission_Main" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="100" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinCollisionRadius="15" MinNaviguationRadius="0.01" MinGameplayRadius="20" MinGameplayPercentage="80" GameplayPercentTolerance="80" VFX="" Backup="Generic.QP_WarmapMission_Main" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="ConquerPoint1" RequireAllPlayers="0" Radius="8">
+        <ArrowMarker Target="ConquerPoint1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="1" Type="Conquer" CenterEntityNames="ConquerPoint1" Radius="5" RequiredPlayers="4" EarnPointPerSec="1" MaxPoints="20" CanDeplete="0" EnnemiesAreBlocking="1" ShowProgression="1">
+        <ArrowMarker Target="ConquerPoint1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="ConquerPoint2" RequireAllPlayers="0" Radius="8">
+        <ArrowMarker Target="ConquerPoint2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="3" Type="Conquer" CenterEntityNames="ConquerPoint2" Radius="5" RequiredPlayers="4" EarnPointPerSec="1" MaxPoints="25" CanDeplete="0" EnnemiesAreBlocking="1" ShowProgression="1">
+        <ArrowMarker Target="ConquerPoint2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="4" Type="Go" Destination="ConquerPoint3" RequireAllPlayers="0" Radius="8">
+        <ArrowMarker Target="ConquerPoint3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="5" Type="Conquer" CenterEntityNames="ConquerPoint3" Radius="5" RequiredPlayers="4" EarnPointPerSec="1" MaxPoints="30" CanDeplete="0" EnnemiesAreBlocking="1" ShowProgression="1">
+        <ArrowMarker Target="ConquerPoint3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q2_3_Optional" StopOnQuestEnding="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartArena1" Type="ArenaStart" ArenaPreset="ArenaPreset_WM_Q2_3" LocationEntityName="ConquerPoint1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Name="StartArena2" Type="ArenaStart" ArenaPreset="ArenaPreset_WM_Q2_3" LocationEntityName="ConquerPoint2" />
+      <Event Trigger="GoalStart" GoalIndex="5" Name="StartArena3" Type="ArenaStart" ArenaPreset="ArenaPreset_WM_Q2_3" LocationEntityName="ConquerPoint3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="EndtArena1" Type="EventEnd" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Name="EndtArena2" Type="EventEnd" EventsName="StartArena2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="6" Name="EndtArena3" Type="EventEnd" EventsName="StartArena3" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="WM_StepLabel2" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="WM_StepLabel3" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="WM_StepLabel4" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="WM_StepLabel5" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="StepUpdate" Name="WM_StepLabel6" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_3_Optional" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Bloodthirst" DecayRate="1.5" MaxValue="100" TimeLimit="360" ShowProgression="1" ShowTimer="1" BlinkThreshold="15" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalFailure" GoalIndex="0" Name="FailQuest" Type="QuestFail" QuestName="WM_Q2_3_Optional" />
+      <Event Trigger="EnterAreaAll" CenterEntityName="QP_EG_GoToSF" AreaRadius="50" Name="FailQuest_Main" Type="QuestFail" QuestName="WM_Q2_3_Optional" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="npc1_exit_portal" AreaRadius="50" Name="SucceedQuest_Main" Type="GoalAchieve" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q2_4" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_IncubationPod" DestroyCount="10" ShowProgression="1">
+        <ArrowMarker Target="WM_IncubationPod" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q3_1" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="Wait" TimeLimit="2">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="DungeonStart_QP" AreaRadius="20" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="EventEnd" EventName="SpawnPoint1" Name="SpawnPoint1" Type="DirectedEntitySpawn" Mode="Prefab" SpawnData="Generic.QP_WarmapMission_Main" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="25" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinNaviguationRadius="0.01" MinGameplayRadius="0" MinGameplayPercentage="0" GameplayPercentTolerance="0" VFX="" Backup="Generic.QP_WarmapMission_Main" />
+      <Event Trigger="EventEnd" EventName="SpawnPoint1" Name="SpawnPoint2" Type="DirectedEntitySpawn" Mode="Prefab" SpawnData="Generic.QP_WarmapMission_Main" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="50" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinNaviguationRadius="0.01" MinGameplayRadius="0" MinGameplayPercentage="0" GameplayPercentTolerance="0" VFX="" Backup="Generic.QP_WarmapMission_Main" />
+      <Event Trigger="EventEnd" EventName="SpawnPoint2" Name="SpawnPoint3" Type="DirectedEntitySpawn" Mode="Prefab" SpawnData="Generic.QP_WarmapMission_Main" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="75" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinNaviguationRadius="0.01" MinGameplayRadius="0" MinGameplayPercentage="0" GameplayPercentTolerance="0" VFX="" Backup="Generic.QP_WarmapMission_Main" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="2" />
+      <Goal Order="1" Type="Kill" ClassToKill="Veteran" KillCount="3" ShowProgression="1">
+        <ArrowMarker Target="TargetSpawn_1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="TargetSpawn_2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="TargetSpawn_3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="TargetSpawn_1" Type="EntitySpawn" SpawnClass="Sc_WM_RepublicVeteran" TargetEntityName="SpawnPoint1" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="TargetSpawn_2" Type="EntitySpawn" SpawnClass="Sc_WM_RepublicVeteran" TargetEntityName="SpawnPoint2" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="TargetSpawn_3" Type="EntitySpawn" SpawnClass="Sc_WM_RepublicVeteran" TargetEntityName="SpawnPoint3" FaceAtSpawn="" VFX="" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ClearSpawn" Name="ClearDES" Events="SpawnPoint1,SpawnPoint2,SpawnPoint3" ClearAllDES="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q3_2" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Destroy" Names="WM_Republic_Ammo" DestroyCount="10" ShowProgression="1">
+        <ArrowMarker Target="WM_Republic_Ammo" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="sc_NPC2_FloorBoss_Justicar" TargetEntityName="#Player" FaceAtSpawn="#Player" VFX="" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="NPC2_BossSpawn_StepLabel" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q3_3" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="WarmapMissionInteract" InteractCount="5" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="sc_NPC2_FloorBoss_RepuAssassin" TargetEntityName="#Player" FaceAtSpawn="#Player" VFX="" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="NPC2_BossSpawn_StepLabel1" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q3_4" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="2" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1" ShowProgression="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q3_4_Optional" StopOnQuestEnding="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn" Type="EntitySpawn" SpawnClass="sc_WM_Boss_Justicar" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q3_4_Optional" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Bloodthirst" DecayRate="2" MaxValue="100" TimeLimit="180" ShowProgression="1" ShowTimer="1" BlinkThreshold="15" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="KilledEntity" TriggerEntityName="WM_Justicar" Type="GoalAchieve" Name="CompleteGoalOnBossfightWin" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalFailure" GoalIndex="0" Type="QuestFail" Name="FailQuest" QuestName="WM_Q3_4_Optional" />
+      <Event Trigger="EnterAreaAll" CenterEntityName="QP_EG_GoToSF" AreaRadius="50" Type="QuestFail" Name="FailQuest_Main" QuestName="WM_Q3_6_Optional" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="npc1_exit_portal" AreaRadius="50" Type="GoalAchieve" Name="SucceedQuest_Main" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q3_5" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn1,NPC2_BossSpawn2,NPC2_BossSpawn3" KillCount="3" ShowProgression="1">
+        <ArrowMarker Target="NPC2_BossSpawn1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="NPC2_BossSpawn2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="NPC2_BossSpawn3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn2" Type="EntityDistribution" Mode="SpawnClass" SpawnData="Sc_WM_RepublicGenerator" ExcludedTiles="Entrance,Exit,CriticalPath" SpawnQuantity="6" DistanceMin="50" OneSpawnPerArea="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q3_6" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillCP" KillValue="50" AreaPercent="1" ShowProgression="1" />
+      <GoalLogic Formula="00-01-02" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q3_6_Optional" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="WarmapMissionInteract" InteractCount="3" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" TimeLimit="300" ShowProgression="1" ShowTimer="1" BlinkThreshold="15">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <Event Trigger="GoalFailure" GoalIndex="0" Name="FailQuest" Type="QuestFail" QuestName="WM_Q3_6_Optional" />
+      <Event Trigger="EnterAreaAll" CenterEntityName="QP_EG_GoToSF" AreaRadius="50" Name="FailQuest_Main" Type="QuestFail" QuestName="WM_Q3_6_Optional" />
+      <GoalLogic Formula="00" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_1" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="Interact" Names="WarmapMissionInteract" InteractCount="3" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn2" Type="EntityDistribution" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|COSS.Shrine_01" ExcludedTiles="Entrance,Exit" SpawnQuantity="6" DistanceMin="2" OneSpawnPerArea="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_2" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="2" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn1,NPC2_BossSpawn2,NPC2_BossSpawn3,NPC2_BossSpawn4,NPC2_BossSpawn5" KillCount="5" ShowProgression="1">
+        <ArrowMarker Target="NPC2_BossSpawn1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn4" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+        <ArrowMarker Target="NPC2_BossSpawn5" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn1" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfSouls_Cultist" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn2" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfSouls_Cultist" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn3" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfSouls_Cultist" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn4" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfSouls_Cultist" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="0" Name="NPC2_BossSpawn5" Type="AdventureSpawn" SpawnClass="Sc_WM_CultOfSouls_Cultist" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_3" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="2" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="3" Type="Interact" Names="WarmapMissionInteract" InteractCount="5" ChannelingTime="0" Animation="status_targetEntityChanneling_loop">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="NPC2_BossSpawn_StepLabel1" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="StartArena" Type="ArenaStart" ArenaPreset="ArenaPreset_WM_Q4_3" LocationEntityName="BOSS_Spawn_Point" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="StartArena" WaveIndex="2" Type="GoalAchieve" Name="EndArena" SimulateOnly="0" GoalIndexToAchieve="2" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q4_4" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <Goal Order="2" Type="Wait" TimeLimit="2">
+        <ArrowMarker Target="BOSS_Spawn_Point" Area="dungeon" ShowMinimapIcon="1" Threshold="60" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="DungeonStart_QP" AreaRadius="20" Type="GoalAchieve" Name="PlayerOutOfAltarF2" SimulateOnly="0" GoalIndexToAchieve="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="DirectedEntitySpawn" Name="SpawnPoint1" Mode="Prefab" SpawnData="COSS.Chest_Cell" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="25" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinNaviguationRadius="0.01" MinGameplayRadius="0" MinGameplayPercentage="0" GameplayPercentTolerance="0" VFX="" Backup="COSS.Chest_Cell" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="DirectedEntitySpawn" Name="SpawnPoint2" Mode="Prefab" SpawnData="COSS.Chest_Cell" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="50" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinNaviguationRadius="0.01" MinGameplayRadius="0" MinGameplayPercentage="0" GameplayPercentTolerance="0" VFX="" Backup="COSS.Chest_Cell" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="DirectedEntitySpawn" Name="SpawnPoint3" Mode="Prefab" SpawnData="COSS.Chest_Cell" PrefabLibrary="Prefabs/Warmap_Missions_Entities.xml" StartEntity="DungeonStart_QP" EndEntity="NPC2NextLevelPortal_QP" UsePercentage="True" PathPosition="75" MinSpawnRadius="0" MaxSpawnRadius="0" SpawnFrequency="0" ExclusionDistance="0" MaxSlope="5" MinNaviguationRadius="0.01" MinGameplayRadius="0" MinGameplayPercentage="0" GameplayPercentTolerance="0" VFX="" Backup="COSS.Chest_Cell" />
+    </Step>
+    <Step Order="1" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Interact" Names="WarmapMissionInteract" InteractCount="3" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="1" Type="KillAll" EventsName="TargetSpawn_1,TargetSpawn_2,TargetSpawn_3" KillCount="3" ShowProgression="1">
+        <ArrowMarker Target="TargetSpawn_1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="TargetSpawn_2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="TargetSpawn_3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="0001#" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="TargetSpawn_1" SpawnClass="Sc_WM_CultOfSouls_LanternBearer" TargetEntityName="SpawnPoint1" FaceAtSpawn="" VFX="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="TargetSpawn_2" SpawnClass="Sc_WM_CultOfSouls_LanternBearer" TargetEntityName="SpawnPoint2" FaceAtSpawn="" VFX="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="TargetSpawn_3" SpawnClass="Sc_WM_CultOfSouls_LanternBearer" TargetEntityName="SpawnPoint3" FaceAtSpawn="" VFX="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="WM_PrisonnerCell" Type="EntitySpawn" Name="TargetSpawn_4" SpawnClass="Sc_WM_Refugee_Melee1" TargetEntityName="SpawnPoint1" FaceAtSpawn="" VFX="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="WM_PrisonnerCell0" Type="EntitySpawn" Name="TargetSpawn_5" SpawnClass="Sc_WM_Refugee_Melee2" TargetEntityName="SpawnPoint2" FaceAtSpawn="" VFX="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="WM_PrisonnerCell1" Type="EntitySpawn" Name="TargetSpawn_6" SpawnClass="Sc_WM_Refugee_Melee3" TargetEntityName="SpawnPoint3" FaceAtSpawn="" VFX="" MinimumRadius="1" MaximumRadius="2" SpawnFrequency="0" />
+      <Event Trigger="EventEnd" EventName="TargetSpawn_4" Type="EntityMove" Name="TargetMove_1" EntityName="Refugee1" TargetName="DungeonStart_QP" RemainScripted="1" TargetMinDistance="1" OverrideSpeed="6" Delay="2" />
+      <Event Trigger="EventEnd" EventName="TargetSpawn_5" Type="EntityMove" Name="TargetMove_2" EntityName="Refugee2" TargetName="DungeonStart_QP" RemainScripted="1" TargetMinDistance="1" OverrideSpeed="6" Delay="2" />
+      <Event Trigger="EventEnd" EventName="TargetSpawn_6" Type="EntityMove" Name="TargetMove_3" EntityName="Refugee3" TargetName="DungeonStart_QP" RemainScripted="1" TargetMinDistance="1" OverrideSpeed="6" Delay="2" />
+      <Event Trigger="EventEnd" EventName="TargetMove_1" Type="EntityKill" Name="TargetKill_1" EntityName="Refugee1" Hide="1" Remove="1" VFX="" Delay="1" />
+      <Event Trigger="EventEnd" EventName="TargetMove_2" Type="EntityKill" Name="TargetKill_2" EntityName="Refugee2" Hide="1" Remove="1" VFX="" Delay="1" />
+      <Event Trigger="EventEnd" EventName="TargetMove_3" Type="EntityKill" Name="TargetKill_3" EntityName="Refugee3" Hide="1" Remove="1" VFX="" Delay="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ClearSpawn" Name="ClearDES" Events="SpawnPoint1,SpawnPoint2,SpawnPoint3" ClearAllDES="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_1" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Destroy" Names="WM_Destroy" DestroyCount="10" ShowProgression="1">
+        <ArrowMarker Target="WM_Destroy" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_2" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="KillAll" EventsName="NPC2_BossSpawn1,NPC2_BossSpawn2,NPC2_BossSpawn3,NPC2_BossSpawn4,NPC2_BossSpawn5" KillCount="4" ShowProgression="1">
+        <ArrowMarker Target="NPC2_BossSpawn1" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="NPC2_BossSpawn2" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="NPC2_BossSpawn3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+        <ArrowMarker Target="NPC2_BossSpawn4" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="3" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="AdventureSpawn" Name="NPC2_BossSpawn1" SpawnClass="Sc_WM_SvriirBetaSpawner" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="AdventureSpawn" Name="NPC2_BossSpawn2" SpawnClass="Sc_WM_SvriirBetaSpawner" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="AdventureSpawn" Name="NPC2_BossSpawn3" SpawnClass="Sc_WM_SvriirBetaSpawner" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="AdventureSpawn" Name="NPC2_BossSpawn4" SpawnClass="Sc_WM_SvriirBetaSpawner" MinSpawnPercent="20" MaxSpawnPercent="90" MinRadius="0" MaxRadius="3" SpawnPoints="10" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="sc_NPC2_FloorBoss_AlphaPoison" TargetEntityName="#Player" FaceAtSpawn="#Player" VFX="" MinimumRadius="0" MaximumRadius="5" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="NPC2_BossSpawn_StepLabel1" Localization="@ui_gold" DisplayNewIcon="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_3" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" TimeLimit="2" />
+      <Goal Order="1" Type="Go" Destination="QP_EG_UB_Oshara_P3" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker Target="QP_EG_UB_Oshara_P3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="2" Type="Impossible">
+        <ArrowMarker Target="QP_EG_UB_Oshara_P3" Area="dungeon" ShowMinimapIcon="1" Threshold="60" UseAreaSize="17" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="2" Name="StartArena" Type="ArenaStart" ArenaPreset="ArenaPreset_WM_Q5_3" LocationEntityName="QP_EG_UB_Oshara_P3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="NPC2_BossSpawn_StepLabel1" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ArenaPreset_WM_Q4_3" WaveIndex="2" Type="StepUpdate" Name="NPC2_BossSpawn_StepLabel2" Localization="@ui_gold" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="StartArena" Type="GoalAchieve" Name="AchieveGoal2" SimulateOnly="0" GoalIndexToAchieve="2" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_4" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Interact" Names="WarmapMissionInteract" InteractCount="5" ChannelingTime="0" Animation="status_targetEntityChanneling_loop" ShowProgression="1">
+        <ArrowMarker Target="WarmapMissionInteract" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="2" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="StartOptionalQuest" Type="GlobalStartQuest" QuestName="WM_Q5_4_Optional" StopOnQuestEnding="1" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q5_4_Optional" UIName="@ui_gold" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Frenzy" ValueToReach="100" DropRate="50" TimeLimit="360" ShowTimer="1" ShowProgression="1" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalFailure" GoalIndex="0" Name="FailQuest" Type="QuestFail" QuestName="WM_Q5_4_Optional" />
+      <Event Trigger="EnterAreaAll" CenterEntityName="QP_EG_GoToSF" AreaRadius="50" Name="FailQuest_Main" Type="QuestFail" QuestName="WM_Q5_4_Optional" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

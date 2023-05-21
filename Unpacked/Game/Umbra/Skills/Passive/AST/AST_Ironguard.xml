@@ -1,0 +1,25 @@
+<MetaData>
+  <Spell Name="AST_Ironguard_Aggression" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="aggression_percent" Permanent="0">
+        <Semantics CharacteristicPercentInt="100" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/juggernaut.png" Description="@ui_aggression_percent_buff_skill" Title="@ui_ironguard_buff_title" />
+  </Spell>
+  <Spell Name="AST_Ironguard_Slow" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="-25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_Ironguard_ProjDamage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_taken_percent_from_projectile" Permanent="0">
+        <Semantics DamagePercentFloat="-15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/juggernaut.png" Description="@ui_damage_taken_percent_from_projectile_buff_skill" Title="@ui_ironguard_buff_title" />
+  </Spell>
+</MetaData>

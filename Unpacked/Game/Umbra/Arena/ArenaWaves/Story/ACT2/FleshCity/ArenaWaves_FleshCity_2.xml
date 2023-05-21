@@ -1,0 +1,15 @@
+<MetaData>
+  <ArenaWaves Name="FleshCity_2">
+    <Wave Type="Killtarget" Tag="4">
+      <PrefabParams PrefabName="Arena_FleshCity_Part2" />
+      <KillTargets>
+        <Entry ClassName="Fleshcity_DemonOfFlesh" Amount="1" />
+      </KillTargets>
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="1" Type="once" TargetSpawnClass="sc_COFE_FleshCity_DoF" NumberOfEntitiesPerSpawn="1" TargetSpawnLocationID="5" />
+        <Spawner DelayBeforeFirstSpawn="5" Type="fill_forever" TargetSpawnClass="sc_COFE_FleshCity_ZoF" NumberOfEntitiesPerSpawn="2" SpawnFrequency="9" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="6" TargetSpawnLocationID="4" />
+        <Spawner DelayBeforeFirstSpawn="4" Type="fill_forever" TargetSpawnClass="sc_COFE_FleshCity_FurySpirit" NumberOfEntitiesPerSpawn="1" SpawnFrequency="3" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="4" TargetSpawnLocationID="2" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

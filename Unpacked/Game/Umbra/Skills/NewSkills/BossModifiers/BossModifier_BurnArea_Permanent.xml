@@ -1,0 +1,56 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_BurnArea_Permanent">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Fire" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <burn Chance="100" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_DOT_DZ_Burn" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="BurnArea_Permanent_Shape" />
+    </Shapes>
+    <DamageZone Duration="1000" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="u_bossmodifiers.burning_area_perma.damagezone" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.burning_area_perma.damagezone_Fade" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="0" RandomBaseDistMax="0" RandomBaseAngleMin="0" RandomBaseAngleMax="0" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_BurnArea_Permanent_Lieutenant">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Fire" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <burn Chance="50" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_DOT_DZ_Burn" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="BurnArea_Permanent_Shape" />
+    </Shapes>
+    <DamageZone Duration="1000" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="u_bossmodifiers.burning_area_perma.damagezone" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.burning_area_perma.damagezone_Fade" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="0" RandomBaseDistMax="0" RandomBaseAngleMin="0" RandomBaseAngleMax="0" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_Hunt_BossModifier_BurnArea_Permanent">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Fire" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <burn Chance="100" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger OnHit="Play_DOT_DZ_Burn" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="hunt_BurnArea_Permanent_Shape" />
+    </Shapes>
+    <DamageZone Duration="1000" RateOfFire="0.5" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="u_bossmodifiers.burning_area_perma.damagezone" Offset="0,0,0" Direction="0,0,1" Scale="1.66" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.burning_area_perma.damagezone_Fade" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="0" RandomBaseDistMax="0" RandomBaseAngleMin="0" RandomBaseAngleMax="0" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" />
+  </Skill>
+</MetaData>

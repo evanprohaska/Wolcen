@@ -1,0 +1,55 @@
+<MetaData>
+  <Projectile ID="SiegeBeast_Bombardment_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster.SiegeBeast.Bombardment_Fall_01" Direction="0,0,1" WorldSpace="0" Scale="1.5" />
+      <Hit ParticleName="U_Monster.SiegeBeast.Bombardment_Impact_01" Direction="0,1,0" WorldSpace="1" Scale="0.5" />
+      <Indicator ParticleName="" Direction="0,1,0" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="100" SpeedMax="100" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="Play_Republic_Siegebeast_Bombardment_Shower" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="Named_SiegeBeast_Bombardment_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.RepuBeast.bomb_proj_falling2" Direction="0,1,0" WorldSpace="1" Delay="2" />
+      <Hit ParticleName="U_Monster_Alt.RepuBeast.bomb_explo" Direction="0,0,1" WorldSpace="1" Delay="2" />
+      <Indicator ParticleName="U_Monster_Alt.RepuBeast.bomb_indicator" Direction="0,1,0" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="10" SpeedMax="10" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="Play_Republic_Siegebeast_Bombardment_Shower" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="Named_SiegeBeast_justicefromabove_bolt_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.golgoth.jfa_bolt" Direction="0,1,0" WorldSpace="0" Scale="0.325" />
+      <Hit ParticleName="U_Projectile.Lightning.Lightning_Ball_Impact_01" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="4" />
+    <Speed SpeedMin="0.5" SpeedMax="0.5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="Play_Republic_Siegebeast_Bombardment_Shower" />
+    </Audio>
+  </Projectile>
+</MetaData>

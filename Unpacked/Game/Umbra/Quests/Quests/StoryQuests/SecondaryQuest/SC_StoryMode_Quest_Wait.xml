@@ -1,0 +1,14 @@
+<MetaData>
+  <Quest Name="QN_SC_Wait_CursedChestChallenge1" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_gold" UIDesc="@ui_gold">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="30" ShowTimer="1" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="EntityTeleport" MinRadius="0" Name="QN_SC_Wait_CursedChestChallenge1_PlayerTP" TeleportedEntityName="#Player" DestinationName="QP_Wait_Test" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="4500" />
+        <XP Amount="300000" />
+        <ChoiceLootClass Name="A1_Q5_Reward2" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,22 @@
+<MetaData>
+  <Skill UID="AI_REPU_Heimlock02_TeleportExplosion" ESkill="AI_REPU_Heimlock02_TeleportExplosion" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Shadow" WeaponMultiplier="5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="Play_Heimlock_TeleportExplosion_Start" />
+    <Shapes>
+      <Entry ShapeName="Heimlock02_TeleportExplosion" />
+      <Entry Key="DamageZoneShape" ShapeName="Heimlock02_TeleportExplosion" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.Heimlock_APO.TeleportExplosion_In" Offset="0,0,0" Direction="0,0,1" Scale="3" />
+      <Particle Key="Indicator" Name="U_Monster.Heimlock_APO.TeleportExplosion_Indicator_01" Offset="0,0,0" Direction="0,0,1" Scale="1.35" TimeScale="0.3" />
+      <Particle Key="DamageZone" Name="U_Monster.Heimlock_APO.TeleportExplosion_Impact_01" Offset="0,0,2" Direction="0,0,1" Scale="1.35" />
+    </ParticleList>
+    <DamageZone Duration="30" RateOfFire="0.5" RemoveDamageZoneWhenCasterDies="1" />
+    <StatusEffect_MovementSpeed SlowPercent="70" Duration="0.6" />
+    <SkillSpecific SlowZoneTimer="0" TeleportationTimer="3" DZDamageRatioOfMainDamage="0.05" />
+  </Skill>
+</MetaData>

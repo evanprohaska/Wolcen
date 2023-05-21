@@ -1,0 +1,21 @@
+<MetaData>
+  <Projectile ID="repu_golgothflamethrower_megaspearrain_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="REPU_Golgoth_Flamethrower.Mega Spear Rain.Projectile" WorldSpace="0" Direction="-1,0,0" />
+      <HitEnvironment ParticleName="REPU_Golgoth_Flamethrower.Mega Spear Rain.Impact AoE Spear" WorldSpace="0" Direction="-1,0,0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Lightning" WorldSpace="1" Direction="1,0,0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" MaxTravelDistance="500" />
+    <Speed SpeedMin="12" SpeedMax="12" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+    </Audio>
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+  </Projectile>
+</MetaData>

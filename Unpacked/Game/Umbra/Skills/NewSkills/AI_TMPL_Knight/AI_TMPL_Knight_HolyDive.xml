@@ -1,0 +1,42 @@
+<MetaData>
+  <Skill UID="AI_TMPL_Knight_HolyDive_Level1" ESkill="AI_TMPL_Knight_HolyDive" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1.8" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Templars_Knight_HolyDive_Level1_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_01" Direction="0,0,1" InstantKill="0" />
+    </ParticleList>
+    <SkillSpecific DelayBeforeLanding="2" IndicatorDelay="0.5" IndicatorDuration="1.5" />
+    <SoundTrigger OnAnimStart="" OnAnimCast="Play_TMPL_Knight_HolyDive_Jump" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_TMPL_Knight_HolyDive_Level2" ESkill="AI_TMPL_Knight_HolyDive" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1.8" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Templars_Knight_HolyDive_Level2_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Indicator.Indicator_3M_01" Direction="0,0,1" InstantKill="0" Scale="2" />
+    </ParticleList>
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_TMPL_Knight_HolyDive_Prison" />
+    </SecondarySkillToCast>
+    <SkillSpecific DelayBeforeLanding="2" IndicatorDelay="0.5" IndicatorDuration="1.5" />
+    <SoundTrigger OnAnimStart="" OnAnimCast="Play_TMPL_Knight_HolyDive_Jump" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_TMPL_Knight_HolyDive_Prison" ESkill="AI_TMPL_Knight_HolyDive_Prison" Keywords="magic_spell">
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="Templars_Knight_HolyDive_Prison_DZ" />
+    </DamageZone>
+  </Skill>
+</MetaData>

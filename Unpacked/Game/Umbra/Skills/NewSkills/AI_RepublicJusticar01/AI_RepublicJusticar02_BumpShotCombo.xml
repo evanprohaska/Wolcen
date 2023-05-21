@@ -1,0 +1,25 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar02_bumpshotcombo" ESkill="AI_republicjusticar02_bumpshotcombo" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier=".42" />
+    <Cooldown Cooldown="6.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="4" StunDuration="0.5" />
+    <CastingParams CastBone="Bip01_Cannons" CanBeInterrupted="0" />
+    <Projectile Name="Justicar_proj" ProjectileCount="7" PenetrationLimit="3" AngleBetweenProjectiles="4" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar02_BumpShotCombo_Punch" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Muzzle" Name="U_Monster.Justica.Muzzle_Fire_01" Offset="0,1,0.5" Direction="0,1,0" Scale="1.75" />
+    </ParticleList>
+    <SkillSpecific SoundTriggerOnCastPunch="" SoundTriggerOnCastGunshot="" SoundTriggerOnHitPunch="" WeaponHandBone="R_Weapon_Bone" PunchDamageInPercentOfShotgunDamage="25" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="0" In=".5" />
+      <EmissiveIntensity From="0" To="50" In=".5" />
+      <EmissiveIntensity From="50" To="70" In="1" />
+      <EmissiveIntensity From="70" To="origin" In=".5" />
+    </Material>
+    <SoundTrigger OnAnimStart="Play_Edric_Justicar2_BumpShotCombo_Punch" OnHit="Play_Edric_Justicar2_BumpShotCombo_Punch_Impact" />
+  </Skill>
+</MetaData>

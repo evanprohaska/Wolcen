@@ -1,0 +1,62 @@
+<MetaData>
+  <Quest Name="WM_Q7_2_Main_REPU_Easy" UIName="@WM_Q1_Main_REPU_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q1_Main_REPU_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStart_QP" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_AISpawn" SpawnClass="Sc_WM_Merchant_Escort" TargetEntityName="DungeonStart_QP" MinimumRadius="2" MaximumRadius="3" SpawnFrequency="0" />
+      <Event Trigger="EventEnd" EventName="NPC2_AISpawn" Type="EntityDistribution" Name="NPC2_TargetSpawn" Mode="Prefab" SpawnData="Prefabs/Warmap_Missions_Entities.xml|Generic.LootPiles" ExcludedTiles="" SpawnQuantity="4" DistanceMin="3" OneSpawnPerArea="1" />
+      <Event Trigger="EventEnd" EventName="NPC2_AISpawn" Type="EntityFaction" Name="FactionChange" EntityName="Merchant" FactionName="SuperFriendly" />
+    </Step>
+    <Step Order="1" UIName="@WM_Q1_Main_REPU_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker Target="Merchant" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalAnnouncement" Name="SP_SA_AN_StartOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityMove" Name="EntityMove1" EntityName="Merchant" Delay="2" TargetName="WM_LootPile0" RemainScripted="1" TargetMinDistance="2" OverrideSpeed="" />
+      <Event Trigger="EventEnd" EventName="EntityMove1" Type="EntityCastSkill" Name="EntityCastSkill1" EntityName="Merchant" Target="WM_LootPile0" SkillUID="AI_Escort_DummyInteract_Prayer" FaceTarget="1" />
+      <Event Trigger="EventStart" EventName="EntityCastSkill1" Type="EntityAnimate" Name="LootPile1_EntityAnimate1" AnimatedEntityName="WM_LootPile0" Play="MISC_ArmorPile_Skill_In_01" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="LootPile1_EntityAnimate1" Type="EntityAnimate" Name="LootPile1_EntityAnimate2" AnimatedEntityName="WM_LootPile0" Play="MISC_ArmorPile_Skill_Loop_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill1" Type="EntityAnimate" Name="LootPile1_EntityAnimate3" AnimatedEntityName="WM_LootPile0" Play="MISC_ArmorPile_Skill_Out_01" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="LootPile1_EntityAnimate3" Type="EntityAnimate" Name="LootPile1_EntityAnimate4" AnimatedEntityName="WM_LootPile0" Play="MISC_ArmorPile_Death_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill1" Type="GlobalLoot" Name="GlobalLoot1" LootClass="LC_Scarab_Rare" Target="WM_LootPile0" />
+      <Event Trigger="EventEnd" EventName="EntityMove1" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_E_REPU_Base" LocationEntityName="WM_LootPile" />
+      <Event Trigger="GoalFailure" GoalIndex="0" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill1" Type="EntityMove" Name="EntityMove2" EntityName="Merchant" Delay="2" TargetName="WM_LootPile" RemainScripted="1" TargetMinDistance="2" OverrideSpeed="" />
+      <Event Trigger="EventEnd" EventName="EntityMove2" Type="EntityCastSkill" Name="EntityCastSkill2" EntityName="Merchant" Target="WM_LootPile" SkillUID="AI_Escort_DummyInteract_Prayer" FaceTarget="1" />
+      <Event Trigger="EventStart" EventName="EntityCastSkill2" Type="EntityAnimate" Name="LootPile2_EntityAnimate1" AnimatedEntityName="WM_LootPile" Play="MISC_ArmorPile_Skill_In_01" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="LootPile2_EntityAnimate1" Type="EntityAnimate" Name="LootPile2_EntityAnimate2" AnimatedEntityName="WM_LootPile" Play="MISC_ArmorPile_Skill_Loop_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill2" Type="EntityAnimate" Name="LootPile2_EntityAnimate3" AnimatedEntityName="WM_LootPile" Play="MISC_ArmorPile_Skill_Out_01" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="LootPile2_EntityAnimate3" Type="EntityAnimate" Name="LootPile2_EntityAnimate4" AnimatedEntityName="WM_LootPile" Play="MISC_ArmorPile_Death_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill2" Type="GlobalLoot" Name="GlobalLoot2" LootClass="LC_Scarab_Rare" Target="WM_LootPile" />
+      <Event Trigger="EventEnd" EventName="EntityMove2" Type="ArenaStart" Name="StartArena2" ArenaPreset="ArenaInfinitePreset_WM_E_REPU_Base" LocationEntityName="WM_LootPile0" />
+      <Event Trigger="GoalFailure" GoalIndex="0" Type="EventEnd" Name="EndtArena2_1" EventsName="StartArena2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill2" Type="EventEnd" Name="EndtArena2_2" EventsName="StartArena2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill2" Type="EntityMove" Name="EntityMove3" EntityName="Merchant" Delay="2" TargetName="WM_LootPile1" RemainScripted="1" TargetMinDistance="2" OverrideSpeed="" />
+      <Event Trigger="EventEnd" EventName="EntityMove3" Type="EntityCastSkill" Name="EntityCastSkill3" EntityName="Merchant" Target="WM_LootPile1" SkillUID="AI_Escort_DummyInteract_Prayer" FaceTarget="1" />
+      <Event Trigger="EventStart" EventName="EntityCastSkill3" Type="EntityAnimate" Name="LootPile3_EntityAnimate1" AnimatedEntityName="WM_LootPile1" Play="MISC_ArmorPile_Skill_In_01" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="LootPile3_EntityAnimate1" Type="EntityAnimate" Name="LootPile3_EntityAnimate2" AnimatedEntityName="WM_LootPile1" Play="MISC_ArmorPile_Skill_Loop_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill3" Type="EntityAnimate" Name="LootPile3_EntityAnimate3" AnimatedEntityName="WM_LootPile1" Play="MISC_ArmorPile_Skill_Out_01" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="LootPile3_EntityAnimate3" Type="EntityAnimate" Name="LootPile3_EntityAnimate4" AnimatedEntityName="WM_LootPile1" Play="MISC_ArmorPile_Death_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill3" Type="GlobalLoot" Name="GlobalLoot3" LootClass="LC_Scarab_Rare" Target="WM_LootPile1" />
+      <Event Trigger="EventEnd" EventName="EntityMove3" Type="ArenaStart" Name="StartArena3" ArenaPreset="ArenaInfinitePreset_WM_E_REPU_Base" LocationEntityName="WM_LootPile1" />
+      <Event Trigger="GoalFailure" GoalIndex="0" Type="EventEnd" Name="EndtArena3_1" EventsName="StartArena3" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill3" Type="EventEnd" Name="EndtArena3_2" EventsName="StartArena3" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill3" Type="EntityMove" Name="EntityMove4" EntityName="Merchant" Delay="2" TargetName="WM_LootPile2" RemainScripted="1" TargetMinDistance="2" OverrideSpeed="" />
+      <Event Trigger="EventEnd" EventName="EntityMove4" Type="EntityCastSkill" Name="EntityCastSkill4" EntityName="Merchant" Target="WM_LootPile2" SkillUID="AI_Escort_DummyInteract_Prayer" FaceTarget="1" />
+      <Event Trigger="EventStart" EventName="EntityCastSkill4" Type="EntityAnimate" Name="LootPile4_EntityAnimate1" AnimatedEntityName="WM_LootPile2" Play="MISC_ArmorPile_Skill_In_01" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="LootPile4_EntityAnimate1" Type="EntityAnimate" Name="LootPile4_EntityAnimate2" AnimatedEntityName="WM_LootPile2" Play="MISC_ArmorPile_Skill_Loop_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill4" Type="EntityAnimate" Name="LootPile4_EntityAnimate3" AnimatedEntityName="WM_LootPile2" Play="MISC_ArmorPile_Skill_Out_01" Loop="0" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="LootPile4_EntityAnimate3" Type="EntityAnimate" Name="LootPile4_EntityAnimate4" AnimatedEntityName="WM_LootPile2" Play="MISC_ArmorPile_Death_01" Loop="1" SpeedScale="1" BlendingTime="1" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill4" Type="GlobalLoot" Name="GlobalLoot4" LootClass="LC_Scarab_Rare" Target="WM_LootPile2" />
+      <Event Trigger="EventEnd" EventName="EntityMove4" Type="ArenaStart" Name="StartArena4" ArenaPreset="ArenaInfinitePreset_WM_E_REPU_Base" LocationEntityName="WM_LootPile2" />
+      <Event Trigger="GoalFailure" GoalIndex="0" Type="EventEnd" Name="EndtArena4_1" EventsName="StartArena4" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill4" Type="EventEnd" Name="EndtArena4_2" EventsName="StartArena4" Remove="1" TriggerEnd="0" />
+      <Event Trigger="EventEnd" EventName="EntityCastSkill4" Type="EntityKill" Name="KillAI" EntityName="Merchant" Hide="1" Remove="1" />
+      <Event Trigger="EventEnd" EventName="KillAI" Type="GoalAchieve" Name="GoalAchieve" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_EndOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_EndQuest" ContextualMessage="" DisplayTime="2" />
+    </Step>
+  </Quest>
+</MetaData>

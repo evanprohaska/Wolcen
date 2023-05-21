@@ -1,0 +1,15 @@
+<MetaData>
+  <Spell Name="AI_GoldenScarab_Speed_passive" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dummy_ai_buff_attackspeed" Permanent="0">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="attackspeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="125" />
+      </EIM>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="20" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

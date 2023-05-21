@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill UID="AI_cultofflesh_fleshheart_drop" ESkill="AI_Default_DropCreature" Keywords="magic_spell">
+    <Particles ParticleName="U_Monster.Butcher.Skill_ShotGun" ParticleBone="Bip01" ParticleOffSet="0,0,-2" ParticleDirection="0,0,1" ParticleScale="0.3" />
+    <SkillSpecific SpawnerPool="100" TriggerPerLifePercent="30" ChanceToTriggerOnHit="0" ThrowSpawnAngle="360" AnimationTravelDistance="5" MinSpawn="1" MaxSpawn="1" CanTriggerWhenCC="0" IgnoreDots="1" OnDropSound="Play_COFE_CollossalBreeder_DropRunnerHit" />
+    <Summoning MaxSummons="100" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="10" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_FleshHeart_Spawner01" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_cultofflesh_fleshheart_deathdrop" ESkill="AI_Default_DropCreature" Keywords="deathskill">
+    <Particles ParticleName="U_Monster.Butcher.Skill_ShotGun" ParticleBone="Bip01" ParticleOffSet="0,0,-1.5" ParticleDirection="0,1,0" ParticleScale="0.6" />
+    <SkillSpecific SpawnerPool="100" TriggerPerLifePercent="40" ChanceToTriggerOnHit="0" ThrowSpawnAngle="360" AnimationTravelDistance="3" MinSpawn="1" MaxSpawn="1" CanTriggerWhenCC="0" IgnoreDots="1" OnDropSound="Play_COFE_CollossalBreeder_DropRunnerHit" />
+    <Summoning MaxSummons="100" SummonDuration="0" MinRadiusAroundSpawnPosition="0.0" MaxRadiusAroundSpawnPosition="0.0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_FleshHeart_Spawner04" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Endgame_cultofflesh_fleshheart_Elitedrop" ESkill="AI_Default_DropCreature" Keywords="magic_spell">
+    <Particles ParticleName="U_Monster.Butcher.Skill_ShotGun" ParticleBone="Bip01" ParticleOffSet="0,0,-2" ParticleDirection="0,0,1" ParticleScale="0.3" />
+    <SkillSpecific SpawnerPool="100" TriggerPerLifePercent="30" ChanceToTriggerOnHit="0" ThrowSpawnAngle="360" AnimationTravelDistance="5" MinSpawn="1" MaxSpawn="1" CanTriggerWhenCC="0" IgnoreDots="1" OnDropSound="Play_COFE_CollossalBreeder_DropRunnerHit" />
+    <Summoning MaxSummons="2" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="10" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="Sc_WM_E_COFEM_DemonOfFlesh_Boss" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_Endgame_cultofflesh_fleshheart_drop" ESkill="AI_Default_DropCreature" Keywords="magic_spell">
+    <Particles ParticleName="U_Monster.Butcher.Skill_ShotGun" ParticleBone="Bip01" ParticleOffSet="0,0,-2" ParticleDirection="0,0,1" ParticleScale="0.3" />
+    <SkillSpecific SpawnerPool="100" TriggerPerLifePercent="5" ChanceToTriggerOnHit="0" ThrowSpawnAngle="360" AnimationTravelDistance="5" MinSpawn="1" MaxSpawn="1" CanTriggerWhenCC="0" IgnoreDots="1" OnDropSound="Play_COFE_CollossalBreeder_DropRunnerHit" />
+    <Summoning MaxSummons="30" SummonDuration="0" MinRadiusAroundSpawnPosition="3" MaxRadiusAroundSpawnPosition="10" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="Sc_WM_CultOfFlesh_HeartSpawn" />
+    </Summoning>
+  </Skill>
+</MetaData>

@@ -1,0 +1,158 @@
+<MetaData>
+  <FloorGenerator Name="FG_EG_CUSTOM_ARCHI" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="NPC2_1stFloor" Activity="NPC2" Content="CG_EG_CUSTOM_ARCHI" Weight="1" Tag="NPC2" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Normal,NormalBoss" CGExcludeTag="FinalBoss" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_NPC2_Example" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="NPC2_1stFloor" Activity="NPC2" Content="CG_EG_NPC2_test" Weight="1" Tag="NPC2" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Normal,NormalBoss" CGExcludeTag="FinalBoss" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="NPC2_2ndFloor" Activity="NPC2" Content="CG_EG_NPC2_test" Weight="1" Tag="NPC2" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Normal,NormalBoss" CGExcludeTag="FinalBoss" />
+    </Floor>
+    <Floor>
+      <ContentChoice Name="NPC2_3rdFloor" Activity="NPC2" Content="CG_EG_NPC2_test" Weight="1" Tag="NPC2" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Normal,FinalBoss" CGExcludeTag="NormalBoss" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_NPC2_Sarisel" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="NPC2_1stFloor" Activity="NPC2" Content="CG_EG_NPC2_test" Weight="1" Tag="NPC2" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Sarisel,NormalBoss" CGExcludeTag="FinalBoss" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_NPC1_KillCP" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="NPC2_1stFloor" Activity="NPC2" Content="CG_EG_NPC1_test" Weight="1" Tag="NPC1" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="KillCP" CGExcludeTag="KillNumerousTarget,KillFewTarget" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_NPC1_KillFewTarget" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="NPC2_1stFloor" Activity="NPC2" Content="CG_EG_NPC1_test" Weight="1" Tag="NPC1" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="KillFewTarget" CGExcludeTag="KillCP,KillNumerousTarget" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_NPC1_KillNumerousTarget" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="NPC2_1stFloor" Activity="NPC2" Content="CG_EG_NPC1_test" Weight="1" Tag="NPC1" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="KillNumerousTarget" CGExcludeTag="KillCP,KillFewTarget" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_BossFight_Easy" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_BossFight_Easy" Activity="NPC2" Content="CG_EG_WM_Arena_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Bossfight" CGExcludeTag="Medium,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Kill_Arena_Easy" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Kill_Arena_Easy" Activity="NPC2" Content="CG_EG_WM1_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Kill_Arena,Colosseum,NormalMM,Lambach_Arena,Oshara_Arena" CGExcludeTag="Medium,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Kill_Arena_Easy_ARENA" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Kill_Arena_Easy" Activity="NPC2" Content="CG_EG_WM_Arena_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Kill_Arena,Colosseum,NormalMM,Lambach_Arena,Oshara_Arena" CGExcludeTag="Medium,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Arena_BossFight_Easy" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Arena_BossFight_Easy" Activity="NPC2" Content="CG_EG_WM_Arena_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Arena_BossFight" CGExcludeTag="Medium,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Escort_Easy" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Escort_Easy" Activity="NPC2" Content="CG_EG_WM1_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Escort,Loop,NormalMM" CGExcludeTag="Medium,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_EscortMerchant_Easy" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_EscortMerchant_Easy_Test" Activity="NPC2" Content="CG_EG_WM1_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="EscortMerchant,Loop,NormalMM" CGExcludeTag="Medium,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_BossFight_Medium" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_BossFight_Medium" Activity="NPC2" Content="CG_EG_WM_Arena_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Bossfight" CGExcludeTag="Easy,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Kill_Arena_Medium" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Kill_Arena_Medium" Activity="NPC2" Content="CG_EG_WM1_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Kill_Arena,Colosseum,NormalMM,Lambach_Arena,Oshara_Arena" CGExcludeTag="Easy,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Kill_Arena_Medium_ARENA" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Kill_Arena_Medium" Activity="NPC2" Content="CG_EG_WM_Arena_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Kill_Arena,Colosseum,NormalMM,Lambach_Arena,Oshara_Arena" CGExcludeTag="Easy,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Arena_BossFight_Medium" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Arena_BossFightum" Activity="NPC2" Content="CG_EG_WM_Arena_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Arena_BossFight" CGExcludeTag="Easy,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Escort_Medium" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Escort_Medium" Activity="NPC2" Content="CG_EG_WM1_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Escort,Loop,NormalMM" CGExcludeTag="Easy,Hard" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_BossFight_Hard" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_BossFight_Hard" Activity="NPC2" Content="CG_EG_WM_Arena_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Bossfight" CGExcludeTag="Easy,Medium" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Kill_Arena_Hard" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Kill_Arena_Hard" Activity="NPC2" Content="CG_EG_WM1_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Kill_Arena,Colosseum,NormalMM,Lambach_Arena,Oshara_Arena" CGExcludeTag="Easy,Medium" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Kill_Arena_Hard_ARENA" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Kill_Arena_Hard" Activity="NPC2" Content="CG_EG_WM_Arena_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Kill_Arena,Colosseum,NormalMM,Lambach_Arena,Oshara_Arena" CGExcludeTag="Easy,Medium" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Arena_BossFight_Hard" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Arena_BossFight_Hard" Activity="NPC2" Content="CG_EG_WM_Arena_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Arena_BossFight" CGExcludeTag="Easy,Medium" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="Test_FG_EG_WM_Escort_Hard" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_EG_WM_Escort_Hard" Activity="NPC2" Content="CG_EG_WM1_test" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Escort,Loop,NormalMM" CGExcludeTag="Easy,Medium" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="FG_Test_Canyon" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_Test_Canyon" Activity="NPC2" Content="CG_Test_LevelDesign" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Canyon" CGExcludeTag="Room,NormalDungeon" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="FG_Test_TempleSviir" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_Test_TempleSviir" Activity="NPC2" Content="CG_Test_LevelDesign" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="TempleSvriir" CGExcludeTag="Room,NormalDungeon,Monster" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="FG_Test_RedWaste_Sandstorm" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_Test_RedWaste_Sandstorm" Activity="NPC2" Content="CG_Test_LevelDesign" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="RedWaste_Sandstorm" CGExcludeTag="Room,NormalDungeon,Monster" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="FG_Test_Stronghold_soul" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_Test_Stronghold_soul" Activity="NPC2" Content="CG_Test_LevelDesign" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Stronghold_soul" CGExcludeTag="Room,NormalDungeon,Monster" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="FG_Test_Necropolis_Soul" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_Test_Necropolis_Soul" Activity="NPC2" Content="CG_Test_LevelDesign" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Necropolis_Soul" CGExcludeTag="Room,NormalDungeon,Monster" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="FG_Test_Swamp_soul" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_Test_Swamp_soul" Activity="NPC2" Content="CG_Test_LevelDesign" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="Swamp_soul" CGExcludeTag="Room,NormalDungeon,Monster" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="FG_Test_ForestSoul" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_Test_ForestSoul" Activity="NPC2" Content="CG_Test_LevelDesign" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="ForestSoul" CGExcludeTag="Room,NormalDungeon,Monster" />
+    </Floor>
+  </FloorGenerator>
+  <FloorGenerator Name="FG_Test_RedWaste_Soul" GiveTokenBack="1">
+    <Floor>
+      <ContentChoice Name="FG_Test_RedWaste_Soul" Activity="NPC2" Content="CG_Test_LevelDesign" Weight="1" Tag="" PriorityTag="" ExcludeTag="" TagsDuration="1" CGPriorityTag="RedWaste_Soul" CGExcludeTag="Room,NormalDungeon,Monster" />
+    </Floor>
+  </FloorGenerator>
+</MetaData>

@@ -1,0 +1,386 @@
+<MetaData>
+  <Quest Name="WM_Q1_Main_REPU_Hard" UIName="@WM_Q1_Main_REPU_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q1_Main_REPU_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStartPosition_RIFT1" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="3" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="4" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="5" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="6" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="7" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="8" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="9" Type="Impossible" />
+      <GoalLogic Formula="00-01-0208+-03-0408+-05-0608+-07-0908+" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalAnnouncement" Name="SP_SA_AN_StartOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_H_RepublicGenerator" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Delay=".2" Type="StepUpdate" Name="StepUpdate1" Localization="@WM_Q1_Main_REPU_StepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="StepUpdate2" Localization="@WM_Q1_Main_REPU_StepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="70" Type="GoalAchieve" Name="GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="2" Delay=".2" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve1" Type="EntityIsGod" Name="EntityIsGod1" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsGod" Name="EntityIsNotGod1" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod1" Type="EntitySpawn" Name="WarmapBoss1" SpawnClass="Sc_WM_H_R_Assassin_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Delay=".2" Type="StepUpdate" Name="StepUpdate3" Localization="@WM_Q1_Main_REPU_StepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="StepUpdate4" Localization="@WM_Q1_Main_REPU_StepNameLabel4" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="4" Delay=".4" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve2" Type="EntityIsGod" Name="EntityIsGod2" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityIsGod" Name="EntityIsNotGod2" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod2" Type="EntitySpawn" Name="WarmapBoss2" SpawnClass="Sc_WM_H_R_Assassin_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay=".2" Type="StepUpdate" Name="StepUpdate5" Localization="@WM_Q1_Main_REPU_StepNameLabel5" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="StepUpdate" Name="StepUpdate6" Localization="@WM_Q1_Main_REPU_StepNameLabel6" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="GoalAchieve3" SimulateOnly="0" GoalIndexToAchieve="6" Delay=".6" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve3" Type="EntityIsGod" Name="EntityIsGod3" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="9" Type="EntityIsGod" Name="EntityIsNotGod3" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="EntitySpawn" Name="WarmapBoss3" SpawnClass="Sc_WM_H_R_Assassin_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GlobalAnnouncement" Name="SP_SA_AN_EndOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_EndQuest" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="FastKill_GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="3" Delay=".3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="FastKill_GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="5" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="EventEnd" Name="FastKill_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="EventEnd" Name="FastKill_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GoalAchieve" Name="EdgeCase_GoalAchieve1" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="2" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve1" Type="GoalAchieve" Name="EdgeCase_GoalAchieve2" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="3" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve2" Type="GoalAchieve" Name="EdgeCase_GoalAchieve3" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="4" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve3" Type="GoalAchieve" Name="EdgeCase_GoalAchieve4" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="5" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve4" Type="GoalAchieve" Name="EdgeCase_GoalAchieve5" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="6" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve5" Type="GoalAchieve" Name="EdgeCase_GoalAchieve6" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="7" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve6" Type="GoalAchieve" Name="EdgeCase_GoalAchieve7" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="9" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd3" EventsName="WarmapBoss3" Remove="1" TriggerEnd="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q1_Main_COFE_Hard" UIName="@WM_Q1_Main_COFE_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q1_Main_COFE_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStartPosition_RIFT1" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="3" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="4" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="5" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="6" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="7" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="8" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="9" Type="Impossible" />
+      <GoalLogic Formula="00-01-0208+-03-0408+-05-0608+-07-0908+" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalAnnouncement" Name="SP_SA_AN_StartOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_H_CultOfFlesh_Heart" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Delay=".2" Type="StepUpdate" Name="StepUpdate1" Localization="@WM_Q1_Main_COFE_StepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="StepUpdate2" Localization="@WM_Q1_Main_COFE_StepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="70" Type="GoalAchieve" Name="GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="2" Delay=".2" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve1" Type="EntityIsGod" Name="EntityIsGod1" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsGod" Name="EntityIsNotGod1" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod1" Type="EntitySpawn" Name="WarmapBoss1" SpawnClass="Sc_WM_H_COFEM_DemonOfFlesh_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Delay=".2" Type="StepUpdate" Name="StepUpdate3" Localization="@WM_Q1_Main_COFE_StepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="StepUpdate4" Localization="@WM_Q1_Main_COFE_StepNameLabel4" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="4" Delay=".4" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve2" Type="EntityIsGod" Name="EntityIsGod2" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityIsGod" Name="EntityIsNotGod2" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod2" Type="EntitySpawn" Name="WarmapBoss2" SpawnClass="Sc_WM_H_COFEM_DemonOfFlesh_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay=".2" Type="StepUpdate" Name="StepUpdate5" Localization="@WM_Q1_Main_COFE_StepNameLabel5" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="StepUpdate" Name="StepUpdate6" Localization="@WM_Q1_Main_COFE_StepNameLabel6" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="GoalAchieve3" SimulateOnly="0" GoalIndexToAchieve="6" Delay=".6" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve3" Type="EntityIsGod" Name="EntityIsGod3" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="9" Type="EntityIsGod" Name="EntityIsNotGod3" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="EntitySpawn" Name="WarmapBoss3" SpawnClass="Sc_WM_H_COFEM_DemonOfFlesh_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GlobalAnnouncement" Name="SP_SA_AN_EndOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_EndQuest" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="FastKill_GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="3" Delay=".3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="FastKill_GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="5" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="EventEnd" Name="FastKill_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="EventEnd" Name="FastKill_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GoalAchieve" Name="EdgeCase_GoalAchieve1" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="2" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve1" Type="GoalAchieve" Name="EdgeCase_GoalAchieve2" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="3" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve2" Type="GoalAchieve" Name="EdgeCase_GoalAchieve3" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="4" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve3" Type="GoalAchieve" Name="EdgeCase_GoalAchieve4" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="5" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve4" Type="GoalAchieve" Name="EdgeCase_GoalAchieve5" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="6" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve5" Type="GoalAchieve" Name="EdgeCase_GoalAchieve6" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="7" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve6" Type="GoalAchieve" Name="EdgeCase_GoalAchieve7" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="9" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd3" EventsName="WarmapBoss3" Remove="1" TriggerEnd="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q1_Main_COSS_Hard" UIName="@WM_Q1_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q1_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStartPosition_RIFT1" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="3" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="4" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="5" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="6" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="7" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="8" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="9" Type="Impossible" />
+      <GoalLogic Formula="00-01-0208+-03-0408+-05-0608+-07-0908+" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalAnnouncement" Name="SP_SA_AN_StartOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_H_CultOfSouls_Monolith" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Delay=".2" Type="StepUpdate" Name="StepUpdate1" Localization="@WM_Q1_Main_COSS_StepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="StepUpdate2" Localization="@WM_Q1_Main_COSS_StepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="70" Type="GoalAchieve" Name="GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="2" Delay=".2" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve1" Type="EntityIsGod" Name="EntityIsGod1" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsGod" Name="EntityIsNotGod1" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod1" Type="EntitySpawn" Name="WarmapBoss1" SpawnClass="Sc_WM_H_COSSS_DemonOfSouls_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Delay=".2" Type="StepUpdate" Name="StepUpdate3" Localization="@WM_Q1_Main_COSS_StepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="StepUpdate4" Localization="@WM_Q1_Main_COSS_StepNameLabel4" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="4" Delay=".4" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve2" Type="EntityIsGod" Name="EntityIsGod2" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityIsGod" Name="EntityIsNotGod2" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod2" Type="EntitySpawn" Name="WarmapBoss2" SpawnClass="Sc_WM_H_COSSS_DemonOfSouls_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay=".2" Type="StepUpdate" Name="StepUpdate5" Localization="@WM_Q1_Main_COSS_StepNameLabel5" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="StepUpdate" Name="StepUpdate6" Localization="@WM_Q1_Main_COSS_StepNameLabel6" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="GoalAchieve3" SimulateOnly="0" GoalIndexToAchieve="6" Delay=".6" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve3" Type="EntityIsGod" Name="EntityIsGod3" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="9" Type="EntityIsGod" Name="EntityIsNotGod3" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="EntitySpawn" Name="WarmapBoss3" SpawnClass="Sc_WM_H_COSSS_DemonOfSouls_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GlobalAnnouncement" Name="SP_SA_AN_EndOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_EndQuest" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="FastKill_GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="3" Delay=".3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="FastKill_GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="5" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="EventEnd" Name="FastKill_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="EventEnd" Name="FastKill_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GoalAchieve" Name="EdgeCase_GoalAchieve1" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="2" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve1" Type="GoalAchieve" Name="EdgeCase_GoalAchieve2" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="3" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve2" Type="GoalAchieve" Name="EdgeCase_GoalAchieve3" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="4" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve3" Type="GoalAchieve" Name="EdgeCase_GoalAchieve4" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="5" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve4" Type="GoalAchieve" Name="EdgeCase_GoalAchieve5" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="6" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve5" Type="GoalAchieve" Name="EdgeCase_GoalAchieve6" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="7" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve6" Type="GoalAchieve" Name="EdgeCase_GoalAchieve7" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="9" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd3" EventsName="WarmapBoss3" Remove="1" TriggerEnd="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q1_Main_COFY_Hard" UIName="@WM_Q1_Main_COFY_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q1_Main_COFY_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStartPosition_RIFT1" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="3" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="4" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="5" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="6" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="7" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="8" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="9" Type="Impossible" />
+      <GoalLogic Formula="00-01-0208+-03-0408+-05-0608+-07-0908+" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalAnnouncement" Name="SP_SA_AN_StartOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_H_CultOfFury_Monolith" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Delay=".2" Type="StepUpdate" Name="StepUpdate1" Localization="@WM_Q1_Main_COFY_StepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="StepUpdate2" Localization="@WM_Q1_Main_COFY_StepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="70" Type="GoalAchieve" Name="GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="2" Delay=".2" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve1" Type="EntityIsGod" Name="EntityIsGod1" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsGod" Name="EntityIsNotGod1" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod1" Type="EntitySpawn" Name="WarmapBoss1" SpawnClass="Sc_WM_H_COFYT1_Knight_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Delay=".2" Type="StepUpdate" Name="StepUpdate3" Localization="@WM_Q1_Main_COFY_StepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="StepUpdate4" Localization="@WM_Q1_Main_COFY_StepNameLabel4" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="4" Delay=".4" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve2" Type="EntityIsGod" Name="EntityIsGod2" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityIsGod" Name="EntityIsNotGod2" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod2" Type="EntitySpawn" Name="WarmapBoss2" SpawnClass="Sc_WM_H_COFYT1_Knight_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay=".2" Type="StepUpdate" Name="StepUpdate5" Localization="@WM_Q1_Main_COFY_StepNameLabel5" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="StepUpdate" Name="StepUpdate6" Localization="@WM_Q1_Main_COFY_StepNameLabel6" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="GoalAchieve3" SimulateOnly="0" GoalIndexToAchieve="6" Delay=".6" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve3" Type="EntityIsGod" Name="EntityIsGod3" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="9" Type="EntityIsGod" Name="EntityIsNotGod3" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="EntitySpawn" Name="WarmapBoss3" SpawnClass="Sc_WM_H_COFYT1_Knight_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GlobalAnnouncement" Name="SP_SA_AN_EndOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_EndQuest" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="FastKill_GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="3" Delay=".3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="FastKill_GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="5" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="EventEnd" Name="FastKill_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="EventEnd" Name="FastKill_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GoalAchieve" Name="EdgeCase_GoalAchieve1" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="2" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve1" Type="GoalAchieve" Name="EdgeCase_GoalAchieve2" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="3" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve2" Type="GoalAchieve" Name="EdgeCase_GoalAchieve3" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="4" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve3" Type="GoalAchieve" Name="EdgeCase_GoalAchieve4" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="5" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve4" Type="GoalAchieve" Name="EdgeCase_GoalAchieve5" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="6" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve5" Type="GoalAchieve" Name="EdgeCase_GoalAchieve6" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="7" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve6" Type="GoalAchieve" Name="EdgeCase_GoalAchieve7" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="9" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd3" EventsName="WarmapBoss3" Remove="1" TriggerEnd="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q1_Main_SVRI_Hard" UIName="@WM_Q1_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q1_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStartPosition_RIFT1" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="3" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="4" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="5" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="6" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="7" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="8" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="9" Type="Impossible" />
+      <GoalLogic Formula="00-01-0208+-03-0408+-05-0608+-07-0908+" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalAnnouncement" Name="SP_SA_AN_StartOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_H_Svriir_Monolith" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Delay=".2" Type="StepUpdate" Name="StepUpdate1" Localization="@WM_Q1_Main_SVRI_StepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="StepUpdate2" Localization="@WM_Q1_Main_SVRI_StepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="70" Type="GoalAchieve" Name="GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="2" Delay=".2" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve1" Type="EntityIsGod" Name="EntityIsGod1" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsGod" Name="EntityIsNotGod1" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod1" Type="EntitySpawn" Name="WarmapBoss1" SpawnClass="Sc_WM_H_SL1_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Delay=".2" Type="StepUpdate" Name="StepUpdate3" Localization="@WM_Q1_Main_SVRI_StepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="StepUpdate4" Localization="@WM_Q1_Main_SVRI_StepNameLabel4" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="4" Delay=".4" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve2" Type="EntityIsGod" Name="EntityIsGod2" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityIsGod" Name="EntityIsNotGod2" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod2" Type="EntitySpawn" Name="WarmapBoss2" SpawnClass="Sc_WM_H_SL1_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay=".2" Type="StepUpdate" Name="StepUpdate5" Localization="@WM_Q1_Main_SVRI_StepNameLabel5" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="StepUpdate" Name="StepUpdate6" Localization="@WM_Q1_Main_SVRI_StepNameLabel6" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="GoalAchieve3" SimulateOnly="0" GoalIndexToAchieve="6" Delay=".6" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve3" Type="EntityIsGod" Name="EntityIsGod3" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="9" Type="EntityIsGod" Name="EntityIsNotGod3" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="EntitySpawn" Name="WarmapBoss3" SpawnClass="Sc_WM_H_SL1_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GlobalAnnouncement" Name="SP_SA_AN_EndOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_EndQuest" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="FastKill_GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="3" Delay=".3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="FastKill_GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="5" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="EventEnd" Name="FastKill_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="EventEnd" Name="FastKill_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GoalAchieve" Name="EdgeCase_GoalAchieve1" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="2" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve1" Type="GoalAchieve" Name="EdgeCase_GoalAchieve2" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="3" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve2" Type="GoalAchieve" Name="EdgeCase_GoalAchieve3" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="4" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve3" Type="GoalAchieve" Name="EdgeCase_GoalAchieve4" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="5" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve4" Type="GoalAchieve" Name="EdgeCase_GoalAchieve5" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="6" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve5" Type="GoalAchieve" Name="EdgeCase_GoalAchieve6" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="7" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve6" Type="GoalAchieve" Name="EdgeCase_GoalAchieve7" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="9" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd3" EventsName="WarmapBoss3" Remove="1" TriggerEnd="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q1_Main_OUTW_Hard" UIName="@WM_Q1_Main_OUTW_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q1_Main_OUTW_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="DungeonStartPosition_RIFT1" RequireAllPlayers="0" Radius="20" />
+      <Goal Order="1" Type="Wait" TimeLimit="2" />
+      <Goal Order="2" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="3" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="4" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="5" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="6" Type="Impossible">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="7" Type="Kill" ClassToKill="WarmapBoss" KillCount="1">
+        <ArrowMarker Target="WarmapBoss" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="8" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" />
+      </Goal>
+      <Goal Order="9" Type="Impossible" />
+      <GoalLogic Formula="00-01-0208+-03-0408+-05-0608+-07-0908+" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalAnnouncement" Name="SP_SA_AN_StartOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_StartQuest" ContextualMessage="" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_H_Outlaw_Monolith" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Delay=".2" Type="StepUpdate" Name="StepUpdate1" Localization="@WM_Q1_Main_OUTW_StepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="StepUpdate2" Localization="@WM_Q1_Main_OUTW_StepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="70" Type="GoalAchieve" Name="GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="2" Delay=".2" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve1" Type="EntityIsGod" Name="EntityIsGod1" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsGod" Name="EntityIsNotGod1" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod1" Type="EntitySpawn" Name="WarmapBoss1" SpawnClass="Sc_WM_H_OS_SadisticThugShadow_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Delay=".2" Type="StepUpdate" Name="StepUpdate3" Localization="@WM_Q1_Main_OUTW_StepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="StepUpdate4" Localization="@WM_Q1_Main_OUTW_StepNameLabel4" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="4" Delay=".4" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve2" Type="EntityIsGod" Name="EntityIsGod2" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityIsGod" Name="EntityIsNotGod2" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="EventEnd" EventName="EntityIsGod2" Type="EntitySpawn" Name="WarmapBoss2" SpawnClass="Sc_WM_H_OS_SadisticThugShadow_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Delay=".2" Type="StepUpdate" Name="StepUpdate5" Localization="@WM_Q1_Main_OUTW_StepNameLabel5" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="StepUpdate" Name="StepUpdate6" Localization="@WM_Q1_Main_OUTW_StepNameLabel6" DisplayNewIcon="1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="GoalAchieve3" SimulateOnly="0" GoalIndexToAchieve="6" Delay=".6" />
+      <Event Trigger="EventEnd" EventName="GoalAchieve3" Type="EntityIsGod" Name="EntityIsGod3" EntityName="WM_Monolith" Invincible="1" DisplayVFX="1" VFX="Missions.KillArena.Monolith_Invurnerable" />
+      <Event Trigger="GoalStart" GoalIndex="9" Type="EntityIsGod" Name="EntityIsNotGod3" EntityName="WM_Monolith" Invincible="0" DisplayVFX="0" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="EntitySpawn" Name="WarmapBoss3" SpawnClass="Sc_WM_H_OS_SadisticThugShadow_Boss" TargetEntityName="BOSS_Spawn_Point" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GlobalAnnouncement" Name="SP_SA_AN_EndOptionalQuest" UIReference="EventAnnouncement" AnnouncementName="@ui_All_SA_AN_EndQuest" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="GoalAchieve" Name="FastKill_GoalAchieve1" SimulateOnly="0" GoalIndexToAchieve="3" Delay=".3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="GoalAchieve" Name="FastKill_GoalAchieve2" SimulateOnly="0" GoalIndexToAchieve="5" Delay=".5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="50" Type="EventEnd" Name="FastKill_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="WM_Monolith" PercentLeft="30" Type="EventEnd" Name="FastKill_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GoalAchieve" Name="EdgeCase_GoalAchieve1" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="2" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve1" Type="GoalAchieve" Name="EdgeCase_GoalAchieve2" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="3" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve2" Type="GoalAchieve" Name="EdgeCase_GoalAchieve3" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="4" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve3" Type="GoalAchieve" Name="EdgeCase_GoalAchieve4" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="5" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve4" Type="GoalAchieve" Name="EdgeCase_GoalAchieve5" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="6" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve5" Type="GoalAchieve" Name="EdgeCase_GoalAchieve6" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="7" />
+      <Event Trigger="EventEnd" EventName="EdgeCase_GoalAchieve6" Type="GoalAchieve" Name="EdgeCase_GoalAchieve7" SimulateOnly="0" Delay=".2" GoalIndexToAchieve="9" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd1" EventsName="WarmapBoss1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd2" EventsName="WarmapBoss2" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="EventEnd" Name="EdgeCase_EventEnd3" EventsName="WarmapBoss3" Remove="1" TriggerEnd="0" />
+    </Step>
+  </Quest>
+</MetaData>

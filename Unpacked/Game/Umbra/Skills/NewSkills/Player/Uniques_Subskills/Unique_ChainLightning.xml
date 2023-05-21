@@ -1,0 +1,25 @@
+<MetaData>
+  <Skill UID="unique_chainlightning" ESkill="player_chainlightning" Keywords="magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="" FeedbackPresetBase="Player_skill_chainlightning" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" />
+    <HUD HUDPicture="../u_resources/spells/Active_Skills/chainlightning.png" UIName="@ui_AST_ChainLightning" Lore="@ui_AST_ChainLightning_Lore" ActiveEffectTitle="" ActiveEffectDesc="" ASTTreeNumber="2" ShowParamsInAST="Cost,ROSTime,Cooldown,Range,DamageDetail,StatusAilmentsChance" ShowParamsInTooltip="Cost,Cooldown,DamageOverview,StatusAilmentsChance" />
+    <Enneract PickableParticle_MoveToGround="U_CommonVFX_02.Esseract.Esseract_Projectile.Lightning" PickableParticle_OnGround_Shape="U_CommonVFX_02.Esseract.Esseract_Shape.Circle_Lightning" PickableParticle_OnGround_Damage="U_CommonVFX_02.Esseract.Esseract_Color.Lightning" PickableParticle_OnGround_Symbol="U_CommonVFX_02.Esseract.Esseract_Symbol.BEELMALIK" PickableParticle_OnGround_Indicator="U_CommonVFX_02.Esseract.Esseract_Indicator.Lightning" PickableParticle_OnGround_Pickup="U_CommonVFX_02.Esseract.Esseract_Loot.Lightning" SkillLearningParticle="U_CommonVFX.Skill_Learn.Skill_Learn_Lightning" Inventory_HUDPicture="../u_resources/enneracts/chainlightning.png" Inventory_LoreDesc="@ui_enneract_lore" />
+    <Range AttackRange="40" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="5" />
+    <ParticleList>
+      <Particle Key="ChainSkillBeam" Name="U_Character.Skills.Chain_Lightning_01" Direction="0,0,-1" />
+      <Particle Key="ChainSkillHit" Name="U_Character.Skills.Chain_Lightning_Hit" Direction="0,0,1" />
+    </ParticleList>
+    <ChainSkill MaxBounce="4" HitBounceDelay="0.1" TargetBone="Bip01 Spine1" SoundTriggerOnFirstHit="PLAY_Skill_ChainLightning_FirstImpact" SoundTriggerOnMiss="PLAY_Skill_ChainLightning_Miss">
+      <SpreadDatas>
+        <Entry Probability="100" Radius="8" DamagePercent="100" SoundTriggerHit="PLAY_Skill_ChainLightning_SecondImpact" />
+        <Entry Probability="100" Radius="6" DamagePercent="100" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+        <Entry Probability="100" Radius="5" DamagePercent="100" SoundTriggerHit="PLAY_Skill_ChainLightning_FourthImpact" />
+        <Entry Probability="100" Radius="8" DamagePercent="100" SoundTriggerHit="PLAY_Skill_ChainLightning_ThirdImpact" />
+      </SpreadDatas>
+    </ChainSkill>
+    <Specific_ChainLightning SnapToTargetTolerance="5" DamageMultiplierToCaster="0" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_ChainLightning_Cast" OnAnimStart="PLAY_Skill_ChainLightning_BuildUp" OnHit="" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,238 @@
+<MetaData>
+  <Skill UID="AI_RepublicJusticarElite_DefaultAttack_Melee" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="2" />
+    <Cooldown Cooldown="6.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <SoundTrigger OnAnimStart="Play_Edric_Justicar1_DefaultAttack_Swing" OnHit="Play_Edric_Justicar1_DefaultAttack_Impact" PlayAttackVoice="1" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_DefaultAttackShape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_RepublicJusticarElite_DefaultAttack_Ranged" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="10.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="Play_JusticarElite_BigShot_Cock_Warning" OnAnimCast="Play_Edric_Justicar1_DefaultRanged_BigShot" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_RangedAttackShape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_Hunt_JusticarElite_DefaultAttack_Ranged" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1.2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_Hunt_JusticarElite_DefaultAttack_Ranged_Shape,AI_Hunt_JusticarElite_DefaultAttack_Ranged_Projectiles" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+  </Skill>
+  <Skill UID="AI_Hunt_JusticarElite_DefaultAttack_Ranged_Shape" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="Play_JusticarElite_BigShot_Cock_Warning" OnAnimCast="Play_Edric_Justicar1_DefaultRanged_BigShot" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_RangedAttackShape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_Hunt_JusticarElite_DefaultAttack_Ranged_Projectiles" ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageAsPercentageOfParent Percent="50" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="Justicar_Homing_Proj" ProjectileCount="2" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="90" totalAngleAtDistanceMax="90" projectileAngleAtDistanceMin="90" projectileAngleAtDistanceMax="90" />
+    </Projectile>
+    <Range AttackRange="25" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" BaseDirIsForwardDir="1" RandomDir="0" MaxZOffset="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill UID="AI_republicjusticarElite_shieldbash" ESkill="AI_outlaw_warlord_kick" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="4.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_ShieldBash" />
+    </Shapes>
+    <Blownaway Height="1" Distance="10" StunDuration="1" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="0.5" />
+      <EmissiveIntensity From="500" To="origin" In="1" />
+    </Material>
+    <SoundTrigger OnHit="Play_Edric_Justicar1_ShieldBash_Impact" />
+  </Skill>
+  <Skill UID="AI_hunt_justicarElite_shieldbash" ESkill="AI_outlaw_warlord_kick" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="4.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_ShieldBash" />
+    </Shapes>
+    <Blownaway Height="1" Distance="10" StunDuration="2.5" />
+    <SkillSpecific ComputeTargetPosAtCast="0" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="0.5" />
+      <EmissiveIntensity From="500" To="origin" In="1" />
+    </Material>
+    <SoundTrigger OnHit="Play_Edric_Justicar1_ShieldBash_Impact" />
+  </Skill>
+  <Skill UID="AI_republicjusticarElite_inexorablecharge" ESkill="AI_republicjusticar01_inexorablecharge" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1.8" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="5" StunDuration="0.3" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_InexorableCharge" />
+    </Shapes>
+    <SkillSpecific BlowAwayAllies="1" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="0" In="2" />
+      <EmissiveIntensity From="30" To="45" In="1" />
+      <EmissiveIntensity From="50" To="origin" In="1.5" />
+    </Material>
+    <SoundTrigger OnAnimStart="Play_JusticarElite_InexorableCharge_Warcry_Warning" OnHit="Play_Edric_Justicar1_InexorableCharge_Impact" />
+  </Skill>
+  <Skill UID="AI_Hunt_justicarElite_inexorablecharge" ESkill="AI_republicjusticar01_inexorablecharge" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="1.8" />
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="5" StunDuration="0.3" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_InexorableCharge" />
+    </Shapes>
+    <SkillSpecific BlowAwayAllies="1" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="0" In="2" />
+      <EmissiveIntensity From="30" To="45" In="1" />
+      <EmissiveIntensity From="50" To="origin" In="1.5" />
+    </Material>
+    <SoundTrigger OnAnimStart="Play_JusticarElite_InexorableCharge_Warcry_Warning" OnHit="Play_Edric_Justicar1_InexorableCharge_Impact" />
+  </Skill>
+  <Skill UID="AI_republicjusticarElite_inexorableadvance" ESkill="AI_republicjusticar01_inexorableadvance" Keywords="attack_skill">
+    <VisualFeedback FeedbackPresetBase="default_ai_attacks" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaximumTurnRate="90" CanBeInterrupted="0" />
+    <Blownaway Height="0" Distance="3.5" StunDuration="0.1" />
+    <SpecialShield ShieldAngle="90" BounceProjectiles="1" IgnoreDirectionalDamage="1" ResistsCrowdControl="1" ProtectionType="ProjectilesOnly" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_InexorableAdvance" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Shield" Name="U_Monster.Justica.Shield_Bash_04" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="ShieldOut" Name="U_Monster.Justica.Shield_Bash_04_End" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Reflection" Name="U_Monster.Justica.Shield_Bounds_02" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+    </ParticleList>
+    <Cooldown Cooldown="60" CooldownPerLevel="0" CooldownTrigger="OnEnd" />
+    <SkillSpecific AccelerationTime="0.8" AbsoluteSpeed="3" MaxTimeOutDuration="10" StopIfStuck="0" TickRate="0.5" BlowAwayAllies="1" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="5" />
+      <EmissiveIntensity From="500" To="origin" In="1" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_republicjusticarElite_repeatingshots" ESkill="AI_republicjusticar01_repeatingshots" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".5" />
+    <CastingParams CastBone="Bip01_Cannons" CanCastWhileMoving="0" MaximumTurnRate="30" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <RandomCastingParams RandomNumberRangeMin="3" RandomNumberRangeMax="4" />
+    <SpecialShield ShieldAngle="90" BounceProjectiles="1" IgnoreDirectionalDamage="1" ResistsCrowdControl="1" />
+    <Blownaway Height="0" Distance="4" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <Range AttackRange="30" />
+    <Projectile Name="Justicar_proj" ProjectileCount="1" PenetrationLimit="3" />
+    <ParticleList>
+      <Particle Key="Muzzle" Name="U_Monster.Justica.Muzzle_Fire_01" Offset="0,0,0" Direction="0,1,0" Scale="1.25" />
+      <Particle Key="Shield" Name="U_Monster.Justica.Shield_Bash_04" Offset="0.35,-0.5,0" Direction="0,1,0" Bone="Bip01" Delay="0.17" />
+      <Particle Key="ShieldOut" Name="U_Monster.Justica.Shield_Bash_04_End" Offset="0.35,-0.5,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Reflection" Name="U_Monster.Justica.Shield_Bounds_02" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_RepeatingShots_ExclusionZone" />
+    </Shapes>
+    <SkillSpecific BulletFlurryNumber="3" TimeBetweenFlurryBullets="0.3" SoundTriggerOnBulletFire="Play_Edric_Justicar1_RepeatingShots" />
+    <Material ScaleWithAnimationSpeed="50" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="10" />
+      <EmissiveIntensity From="500" To="origin" In=".5" />
+    </Material>
+    <SoundTrigger OnAnimCast="" />
+  </Skill>
+  <Skill UID="AI_hunt_justicarElite_repeatingshots_1" ESkill="AI_republicjusticar01_repeatingshots" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".5" />
+    <CastingParams CastBone="Bip01_Cannons" CanCastWhileMoving="0" MaximumTurnRate="60" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <RandomCastingParams RandomNumberRangeMin="5" RandomNumberRangeMax="7" />
+    <SpecialShield ShieldAngle="90" BounceProjectiles="1" IgnoreDirectionalDamage="1" ResistsCrowdControl="1" />
+    <Blownaway Height="0" Distance="4" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <Range AttackRange="30" />
+    <Projectile Name="Justicar_proj" ProjectileCount="1" PenetrationLimit="3" />
+    <ParticleList>
+      <Particle Key="Muzzle" Name="U_Monster.Justica.Muzzle_Fire_01" Offset="0,0,0" Direction="0,1,0" Scale="1.25" />
+      <Particle Key="Shield" Name="U_Monster.Justica.Shield_Bash_04" Offset="0.35,-0.5,0" Direction="0,1,0" Bone="Bip01" Delay="0.17" />
+      <Particle Key="ShieldOut" Name="U_Monster.Justica.Shield_Bash_04_End" Offset="0.35,-0.5,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Reflection" Name="U_Monster.Justica.Shield_Bounds_02" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_RepeatingShots_ExclusionZone" />
+    </Shapes>
+    <SkillSpecific BulletFlurryNumber="10" TimeBetweenFlurryBullets="0.1" SoundTriggerOnBulletFire="Play_Edric_Justicar1_RepeatingShots" />
+    <Material ScaleWithAnimationSpeed="50" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="10" />
+      <EmissiveIntensity From="500" To="origin" In=".5" />
+    </Material>
+    <SoundTrigger OnAnimCast="" />
+  </Skill>
+  <Skill UID="AI_hunt_justicarElite_repeatingshots_2" ESkill="AI_republicjusticar01_repeatingshots" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier=".5" />
+    <CastingParams CastBone="Bip01_Cannons" CanCastWhileMoving="0" MaximumTurnRate="30" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <RandomCastingParams RandomNumberRangeMin="3" RandomNumberRangeMax="4" />
+    <SpecialShield ShieldAngle="90" BounceProjectiles="1" IgnoreDirectionalDamage="1" ResistsCrowdControl="1" />
+    <Blownaway Height="0" Distance="4" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <Range AttackRange="30" />
+    <Projectile Name="hunt_Justicar_proj" ProjectileCount="1" PenetrationLimit="3" />
+    <Explosion ExplosionRadius="2" />
+    <ParticleList>
+      <Particle Key="Muzzle" Name="U_Monster.Justica.Muzzle_Fire_01" Offset="0,0,0" Direction="0,1,0" Scale="1.25" />
+      <Particle Key="Shield" Name="U_Monster.Justica.Shield_Bash_04" Offset="0.35,-0.5,0" Direction="0,1,0" Bone="Bip01" Delay="0.17" />
+      <Particle Key="ShieldOut" Name="U_Monster.Justica.Shield_Bash_04_End" Offset="0.35,-0.5,0" Direction="0,1,0" Bone="Bip01" />
+      <Particle Key="Reflection" Name="U_Monster.Justica.Shield_Bounds_02" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar01_RepeatingShots_ExclusionZone" />
+    </Shapes>
+    <SkillSpecific BulletFlurryNumber="3" TimeBetweenFlurryBullets="0.3" SoundTriggerOnBulletFire="Play_Edric_Justicar1_RepeatingShots" />
+    <Material ScaleWithAnimationSpeed="50" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="200" In="0.5" />
+      <EmissiveIntensity From="200" To="500" In="10" />
+      <EmissiveIntensity From="500" To="origin" In=".5" />
+    </Material>
+    <SoundTrigger OnAnimCast="" />
+  </Skill>
+</MetaData>

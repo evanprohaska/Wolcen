@@ -1,0 +1,106 @@
+<MetaData>
+  <Preset Name="Preset_PlayerDied" Trigger="PlayerDied" Cooldown="1" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_PlayerDied_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerDied_02" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerWaitsToBeRevived" Trigger="ActorWaitsToBeRevived" Cooldown="5" ChanceToTrigger="60">
+    <Entry Dialogue="Bark_PlayerWaitsToBeRevived_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerWaitsToBeRevived_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerWaitsToBeRevived_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerWaitsToBeRevived_04" Weight="1" />
+    <Entry Dialogue="Bark_PlayerWaitsToBeRevived_05" Weight="1" />
+    <Entry Dialogue="Bark_PlayerWaitsToBeRevived_06" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerIsGettingRevived" Trigger="ActorIsGettingRevived" Cooldown="5" ChanceToTrigger="70">
+    <Entry Dialogue="Bark_PlayerIsGettingRevived_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerIsGettingRevived_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerIsGettingRevived_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerIsGettingRevived_04" Weight="1" />
+    <Entry Dialogue="Bark_PlayerIsGettingRevived_05" Weight="1" />
+    <Entry Dialogue="Bark_PlayerIsGettingRevived_06" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerRevivesSelf" Trigger="PlayerRevivesSelf" Cooldown="5" ChanceToTrigger="50">
+    <Entry Dialogue="Bark_PlayerRevivesSelf_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerRevivesSelf_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerRevivesSelf_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerRevivesSelf_04" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerRevivesSomeone" Trigger="PlayerRevivesSomeone" Cooldown="5" ChanceToTrigger="60">
+    <Entry Dialogue="Bark_PlayerRevivesSomeone_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerRevivesSomeone_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerRevivesSomeone_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerRevivesSomeone_04" Weight="1" />
+    <Entry Dialogue="Bark_PlayerRevivesSomeone_05" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerOutOfResource" Trigger="PlayerOutOfResource" Cooldown="10" ChanceToTrigger="30">
+    <Entry Dialogue="Bark_PlayerOutOfResource_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfResource_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfResource_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfResource_04" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfResource_05" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfResource_06" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerSkillInCooldown" Trigger="PlayerSkillInCooldown" Cooldown="10" ChanceToTrigger="30">
+    <Entry Dialogue="Bark_PlayerOutOfResource_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfResource_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfResource_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfResource_04" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfResource_05" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfResource_06" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerOutOfStamina" Trigger="PlayerOutOfStamina" Cooldown="20" ChanceToTrigger="30">
+    <Entry Dialogue="Bark_PlayerOutOfStamina_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfStamina_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerOutOfStamina_03" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerKilledElite" Trigger="PlayerKilledElite" Cooldown="7" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_PlayerKilledElite_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerKilledElite_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerKilledElite_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerKilledElite_04" Weight="1" />
+    <Entry Dialogue="Bark_PlayerKilledElite_05" Weight="1" />
+    <Entry Dialogue="Bark_PlayerKilledElite_06" Weight="1" />
+    <Entry Dialogue="Bark_PlayerKilledElite_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerFindsRareLoot" Trigger="PlayerFindsRareLoot" Cooldown="10" ChanceToTrigger="70">
+    <Entry Dialogue="Bark_PlayerFindsRareLoot_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerFindsRareLoot_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerFindsRareLoot_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerFindsRareLoot_04" Weight="1" />
+    <Entry Dialogue="Bark_PlayerFindsRareLoot_05" Weight="1" />
+    <Entry Dialogue="Bark_PlayerFindsRareLoot_06" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerInventoryFull" Trigger="PlayerInventoryFull" Cooldown="5" ChanceToTrigger="40">
+    <Entry Dialogue="Bark_PlayerInventoryFull_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerInventoryFull_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerInventoryFull_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerInventoryFull_04" Weight="1" />
+    <Entry Dialogue="Bark_PlayerInventoryFull_05" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerCannotEquipItem" Trigger="PlayerCannotEquipItem" Cooldown="6" ChanceToTrigger="100">
+    <Entry Dialogue="Bark_PlayerCannotEquipItem_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerCannotEquipItem_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerCannotEquipItem_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerCannotEquipItem_04" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerLevelUp" Trigger="PlayerLevelUp" Cooldown="10" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_PlayerLevelUp_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerLevelUp_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerLevelUp_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerLevelUp_04" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerLearnsSkill" Trigger="PlayerLearnsSkill" Cooldown="7" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_PlayerLearnsSkill_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerLearnsSkill_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerLearnsSkill_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerLearnsSkill_04" Weight="1" />
+    <Entry Dialogue="Bark_PlayerLearnsSkill_05" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_PlayerCannotDo" Trigger="PlayerCannotDo" Cooldown="6" ChanceToTrigger="60">
+    <Entry Dialogue="Bark_PlayerCannotDo_01" Weight="1" />
+    <Entry Dialogue="Bark_PlayerCannotDo_02" Weight="1" />
+    <Entry Dialogue="Bark_PlayerCannotDo_03" Weight="1" />
+    <Entry Dialogue="Bark_PlayerCannotDo_04" Weight="1" />
+    <Entry Dialogue="Bark_PlayerCannotDo_05" Weight="1" />
+  </Preset>
+</MetaData>

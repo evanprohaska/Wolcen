@@ -1,0 +1,76 @@
+<MetaData>
+  <Spell Name="MedicalGarrison_Base" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent" Permanent="0">
+        <Semantics DamagePercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/infinityblades.png" Description="@ui_blockchance_unconditional_flat_buff_skill" Title="@ui_Aetherblade_buff_title" />
+  </Spell>
+  <Spell Name="MedicalGarrison_BasePerUpgrade" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent" Permanent="0">
+        <Semantics DamagePercentInt="5" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MedicalGarrison_Fury" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="fire_resistance" Permanent="0">
+        <Semantics CharacteristicScoreInt="30" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MedicalGarrison_Souls" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="frost_resistance" Permanent="0">
+        <Semantics CharacteristicScoreInt="30" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="MedicalGarrison_Flesh" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="rend_resistance" Permanent="0">
+        <Semantics CharacteristicScoreInt="30" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="TimeDistortion_MainDebuff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="1">
+        <Semantics SpeedPercentInt="-50" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="TimeDistortion_SpecialDebuff_0" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="1">
+        <Semantics SpeedPercentInt="-80" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="TimeDistortion_SpecialBuff_1" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="all_resistance_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="10" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="TimeDistortion_SpecialBuff_2" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="all_resistance_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="20" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="TimeDistortion_SpecialBuff_3" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="health_regen_true_percent" Permanent="1">
+        <Semantics ResourcePercentInt="20" />
+      </EIM>
+      <EIM Name="all_resistance_final_percent" Permanent="1">
+        <Semantics CharacteristicFinalPercentFloat="20" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

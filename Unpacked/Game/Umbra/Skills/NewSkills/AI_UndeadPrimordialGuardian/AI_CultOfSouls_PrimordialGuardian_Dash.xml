@@ -1,0 +1,16 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_corruptedprimordialguardian_dash" ESkill="AI_cultofsouls_corruptedprimordialguardian_dash" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_03_in" ActionString_Loop="monster_skill_loop_03_loop" ActionString_Out="monster_skill_loop_03_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Blownaway Height="0.5" Distance="4" />
+    <DamageWeapon Type="physical" WeaponMultiplier="0.1" />
+    <Cooldown Cooldown="20" />
+    <ParticleList>
+      <Particle Key="Dust" Name="U_CommonVFX.Dust.Dust_dash_Loop_01" Offset="0,0,0" Direction="0,1,0" Bone="Bip01" Scale="1.5" />
+      <Particle Key="Wind" Name="U_CommonVFX.Dust.Dust_dash_Loop_02" Offset="0,2,0" Direction="0,1,0" Bone="Bip01" />
+    </ParticleList>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SkillSpecific Speed="20" DamageTargetsOnlyOnce="1" DistanceToPlayer="5" />
+    <SoundTrigger OnAnimLoopIn="Play_Primordial_Guardian_Dash" OnAnimLoopOut="Play_Primordial_Guardian_Dash_End" OnInterrupt="Play_Primordial_Guardian_Dash_End" OnHit="Play_Primordial_Guardian_Dash_Impact" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,52 @@
+<MetaData>
+  <Skill UID="AI_GiantScreecher_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams />
+    <Shapes>
+      <Entry ShapeName="GiantScreecher_DefaultAttack" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="PLAY_AI_SvriirOmega_ClawSwipe" OnHit="Play_hero_default_damage_large" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_GiantScreecher_Screech" ESkill="AI_default_maintainedskillwithdamageinshape">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01 Jaw0" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <VisualFeedback FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="ShapeParticle" Name="U_Monster.Siviir.Screecher_ShockWave_01" Offset="0,0,0" Direction="0,1,0" Scale="2" />
+    </ParticleList>
+    <DamageWeapon WeaponMultiplier=".5" />
+    <StatusEffect_MovementSpeed SlowPercent="50" SlowPercentPerLevel="0" Duration="0.34" DurationPerLevel="0" />
+    <Cooldown Cooldown="5.0" CooldownPerLevel="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry ShapeName="GiantScreecher_Screech_Shape" />
+    </Shapes>
+    <SkillSpecific TimeBetweenHits="0.33" MaxDuration="4" MaxTimeOutDuration="1.0" />
+    <SoundTrigger OnAnimStart="Play_Named_GiantScreecher_Start" OnAnimLoopOut="Play_Named_GiantScreecher_Scream_End" OnInterrupt="Play_Named_GiantScreecher_Scream_End" OnHit="Play_hero_default_damage" PlayAttackVoice="0" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="10" To="50" In="0.5" />
+      <EmissiveIntensity From="50" To="75" In="0.7" />
+      <EmissiveIntensity From="75" To="10" In="1.5" />
+    </Material>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="magic_spell" UID="AI_BossModifier_GiantScreecher">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <SoundTrigger OnHit="Play_hero_default_damage_large" />
+    <CastingParams CastDelay="0.5" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="GiantScreecher_BossMod_Shape" />
+    </Shapes>
+    <DamageZone Duration="1" RateOfFire="0.5" RemoveParticleWithShape="0" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="U_VFX_Oskar.Bossmodifiers.Wind_DZ_Cast" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="DamageZone" Name="U_VFX_Oskar.Bossmodifiers.Wind_DZ" Offset="0,0,0" Direction="0,0,1" Scale="1" FadeOut="1" />
+    </ParticleList>
+    <Blownaway Height="3" Distance="5" StunDuration="0.5" Chance="100" />
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="4" RandomBaseDistMax="15" RandomBaseAngleMin="0" RandomBaseAngleMax="360" LimitAngle="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="1.5" NumberOfDZ="3" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

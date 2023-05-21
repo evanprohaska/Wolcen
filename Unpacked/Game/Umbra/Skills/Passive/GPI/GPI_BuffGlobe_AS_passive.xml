@@ -1,0 +1,23 @@
+<MetaData>
+  <Spell Name="BuffGlobe_AttackSpeed" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dummy_ai_buff_attackspeed" Permanent="0">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="offensivespeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="25" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="OsharaGlobes_Damage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_major_all" Permanent="0">
+        <Semantics MajorDamageMultiplier="2" />
+      </EIM>
+      <EIM Name="minion_damage_percent" Permanent="0">
+        <Semantics DamagePercentFloat="150" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_OsharaVigor.png" Description="@ui_OsharaBuff_Description" Title="@ui_OsharaBuff_Title" />
+  </Spell>
+</MetaData>

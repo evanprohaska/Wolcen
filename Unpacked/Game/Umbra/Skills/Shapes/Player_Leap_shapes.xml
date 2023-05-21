@@ -1,0 +1,11 @@
+<MetaData>
+  <Shape ID="player_leap_shape" Type="Circle">
+    <Data Radius="3" />
+  </Shape>
+  <Shape ID="player_leap_shape_ring" Type="Ring">
+    <Data RadiusIn="0" RadiusOut="2" BoundingBoxHeight="4" />
+    <Position ForwardOffset="0" RightOffset="0" StartingAngle="0" />
+    <Scale Data="RadiusIn" Target="4" Duration="1.25" Delay="0" />
+    <Scale Data="RadiusOut" Target="6" Duration="1.25" Delay="0" />
+  </Shape>
+</MetaData>

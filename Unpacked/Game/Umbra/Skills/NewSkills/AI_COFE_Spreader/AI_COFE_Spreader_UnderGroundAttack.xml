@@ -1,0 +1,42 @@
+<MetaData>
+  <Skill UID="AI_cultofflesh_spreader_UnderGroundAttack" ESkill="AI_default_undergroundattack" Keywords="magic_spell">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="1" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <Cooldown Cooldown="2.0" CooldownTrigger="OnEnd" />
+    <DamageWeapon Type="rend" PercentMax="100" PercentMin="100" />
+    <ParticleList>
+      <Particle Key="Spike" Name="U_Monster.Spreader.Blood_Explosion" Offset="0,0,0" Direction="0,0,1" Scale="0.8" />
+      <Particle Key="SpikeIndicator" Name="u_bossmodifiers.toxic_sky.indicator" Offset="0,0,0" Direction="0,0,1" Scale="0.66" />
+    </ParticleList>
+    <SkillSpecific Radius="20" MaxTarget="2" SpikeBasicCD="0.6" SpikeIndicatorDuration="1.2" WaitingForTargetTime="1.2" ChanceToRelunchSpike="0.8" ChanceToBeInterruptedByHit="0.0" InterruptByCC="1" />
+    <Shapes>
+      <Entry ShapeName="Spreader_SpikeShape" />
+    </Shapes>
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_cultofflesh_spreader_MoveSpeedzone" />
+    </SecondarySkillToCast>
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="5">
+      <EmissiveIntensity From="origin" To="5" In="0.5" />
+      <EmissiveIntensity From="5" To="15" In="0.4" />
+      <EmissiveIntensity From="15" To="25" In="0.3" />
+      <EmissiveIntensity From="25" To="2" In="0.3" />
+      <EmissiveIntensity From="2" To="20" In="0.4" />
+      <EmissiveIntensity From="20" To="3" In="0.6" />
+      <EmissiveIntensity From="1" To="20" In="0.4" />
+      <EmissiveIntensity From="20" To="3" In="0.6" />
+      <EmissiveIntensity From="3" To="15" In="0.3" />
+      <EmissiveIntensity From="15" To="origin" In="1" />
+    </Material>
+    <SoundTrigger OnAnimStart="Play_COFE_Speader_UnderGroundAttack_Start" OnAnimCast="Play_COFE_Speader_UnderGroundAttack" OnHit="Play_COFE_Speader_UnderGroundAttack_Explode_Hit" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_cultofflesh_spreader_MoveSpeedzone" ESkill="AI_cultofflesh_spreader_MoveSpeedzone" Keywords="magic_spell">
+    <SkillSpecific AreaDuration="4" TickRate="0.2" />
+    <StatusEffect_MovementSpeed SlowPercent="50" Duration="0.5" />
+    <Particles ParticleName="U_Monster.Spreader.Blood_Ground_01" ParticleOffSet="0,0,0" ParticleDirection="0,0,1" ParticleScale="0.5" />
+    <SoundTrigger OnHit="PLAY_AI_SvriirSpitter_AcidDamage" />
+    <Shapes>
+      <Entry ShapeName="Spreader_SlowShape" />
+    </Shapes>
+  </Skill>
+</MetaData>

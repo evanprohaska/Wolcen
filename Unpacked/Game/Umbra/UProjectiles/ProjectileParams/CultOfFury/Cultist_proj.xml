@@ -1,0 +1,41 @@
+<MetaData>
+  <Projectile ID="cofy_cultist_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.cultist_fury.atk_proj" Direction="0,-1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Monster_Alt.cultist_fury.proj_explode" Direction="1,0,0" WorldSpace="1" />
+      <Indicator ParticleName="u_bossmodifiers.bombsky.indicator" Direction="0,0,1" WorldSpace="1" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_svriir_beta_spitter_acidspit" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="7" SpeedMax="7" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotImpact" />
+      <Launch SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotLoop" />
+      <Hit SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+      <Removed SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="cofy_fury_missile_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,1" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Monster_Alt.fury_lostsoul.Proj" Direction="0,1,0" PosOffset="0,0,1" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_Monster_Alt.fury_lostsoul.Impact" Direction="1,0,0" PosOffset="0,0,1" WorldSpace="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="5" SpeedMax="5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Hit SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotImpact" />
+      <Launch SoundTriggerName="PLAY_AI_SvriirSpitter_SpitShotLoop" />
+      <Hit SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+      <Removed SoundTriggerName="STOP_AI_SvriirSpitter_SpitShotLoop" />
+    </Audio>
+  </Projectile>
+</MetaData>

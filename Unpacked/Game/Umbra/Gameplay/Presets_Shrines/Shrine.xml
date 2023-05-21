@@ -1,0 +1,76 @@
+<MetaData>
+  <ShrinePreset Name="Shrine1" Model="" Particle="" ParticleScale="1" ParticleOffset="0,0,0" Sound="" NumberOfCharges="1" ChangeEffectBetweenUsing="0">
+    <EffectClass NumberOfPick="3" CanChooseTheSame="0">
+      <Effect Type="SpawnEnnemies" Probabilities="1" Name="test_shrine_with_starving_zombie" RadiusMin="0" RadiusMax="5" />
+      <Effect Type="SpawnEnnemies" Probabilities="1" Name="test_shrine_with_brigands" RadiusMin="0" RadiusMax="5" />
+      <Effect Type="SpawnAlly" Probabilities="1" />
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="health_globe" NumberOfLootMin="3" NumberOfLootMax="5" />
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="magic_effect_globe" NumberOfLootMin="2" NumberOfLootMax="3" />
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="magic_globe" NumberOfLootMin="1" NumberOfLootMax="2" />
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="mana_globe" NumberOfLootMin="1" NumberOfLootMax="1" />
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="rage_globe" NumberOfLootMin="1" NumberOfLootMax="1" />
+      <Effect Type="Heal" Probabilities="1" />
+      <Effect Type="HealStatus" Probabilities="1" />
+      <Effect Type="RefillPotion" Probabilities="1" />
+      <Effect Type="Quest" Probabilities="1" Name="" />
+      <Effect Type="XP" Probabilities="1" Name="test_shrine_xp_effect" />
+      <Effect Type="LootClass" Probabilities="1" Name="Unique_items" NumberOfLootMin="1" NumberOfLootMax="5" />
+      <Effect Type="Weather" Probabilities="1" />
+      <Effect Type="TimeOfDay" Probabilities="1" />
+      <Effect Type="Teleport" Probabilities="1" />
+      <Effect Type="Skill" Probabilities="1" Name="Frost_Nova" />
+      <Effect Type="Magic" Probabilities="1" Name="Infiltration_movespeed" Timer="10" />
+    </EffectClass>
+  </ShrinePreset>
+  <ShrinePreset Name="Shrine2" Model="objects/architecture/statues/womanbust/statue007.cgf" Particle="loot.chest.unique" ParticleScale="1" ParticleOffset="0,0,0.6" Sound="chest_open" NumberOfCharges="-1" ChangeEffectBetweenUsing="0">
+    <EffectClass NumberOfPick="3" CanChooseTheSame="0">
+      <Effect Type="Heal" Probabilities="2" />
+      <Effect Type="HealStatus" Probabilities="1" />
+      <Effect Type="RefillPotion" Probabilities="1" />
+    </EffectClass>
+    <EffectClass NumberOfPick="1" CanChooseTheSame="0">
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="health_globe" NumberOfLootMin="3" NumberOfLootMax="5" />
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="magic_effect_globe" NumberOfLootMin="2" NumberOfLootMax="3" />
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="magic_globe" NumberOfLootMin="1" NumberOfLootMax="2" />
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="mana_globe" NumberOfLootMin="1" NumberOfLootMax="1" />
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="rage_globe" NumberOfLootMin="1" NumberOfLootMax="1" />
+      <Effect Type="NoEffect" Probabilities="5" />
+    </EffectClass>
+  </ShrinePreset>
+  <ShrinePreset Name="Shrine3" Model="objects/architecture/statues/womanbust/statue007.cgf" Particle="loot.chest.unique" ParticleScale="1" ParticleOffset="0,0,0.6" Sound="chest_open" NumberOfCharges="3" ChangeEffectBetweenUsing="1">
+    <EffectClass NumberOfPick="1" CanChooseTheSame="0">
+      <Effect Type="XP" Probabilities="1" Name="test_shrine_xp_effect" />
+    </EffectClass>
+    <EffectClass NumberOfPick="1" CanChooseTheSame="0">
+      <Effect Type="SpawnEnnemies" Probabilities="1" Name="test_shrine_with_starving_zombie" RadiusMin="0" RadiusMax="5" />
+      <Effect Type="SpawnEnnemies" Probabilities="1" Name="test_shrine_with_brigands" RadiusMin="0" RadiusMax="5" />
+      <Effect Type="NoEffect" Probabilities="3" />
+    </EffectClass>
+    <EffectClass NumberOfPick="1" CanChooseTheSame="0">
+      <Effect Type="SpawnEnnemies" Probabilities="1" Name="test_shrine_with_starving_zombie" RadiusMin="0" RadiusMax="5" />
+      <Effect Type="SpawnEnnemies" Probabilities="1" Name="test_shrine_with_brigands" RadiusMin="0" RadiusMax="5" />
+      <Effect Type="NoEffect" Probabilities="3" />
+    </EffectClass>
+  </ShrinePreset>
+  <ShrinePreset Name="Shrine4" Model="objects/architecture/statues/womanbust/statue007.cgf" Particle="loot.chest.unique" ParticleScale="1" ParticleOffset="0,0,0.6" Sound="chest_open" NumberOfCharges="10" ChangeEffectBetweenUsing="0">
+    <EffectClass NumberOfPick="1" CanChooseTheSame="0">
+      <Effect Type="Heal" Probabilities="1" />
+    </EffectClass>
+    <EffectClass NumberOfPick="1" CanChooseTheSame="0">
+      <Effect Type="RefillPotion" Probabilities="1" />
+    </EffectClass>
+    <EffectClass NumberOfPick="1" CanChooseTheSame="0">
+      <Effect Type="HealStatus" Probabilities="1" />
+    </EffectClass>
+  </ShrinePreset>
+  <ShrinePreset Name="Shrine7" Model="objects/architecture/statues/womanbust/statue007.cgf" Particle="loot.chest.unique" ParticleScale="1" ParticleOffset="0,0,0.6" Sound="chest_open" NumberOfCharges="-1" ChangeEffectBetweenUsing="1">
+    <EffectClass NumberOfPick="1" CanChooseTheSame="0">
+      <Effect Type="Weather" Probabilities="1" />
+    </EffectClass>
+    <EffectClass NumberOfPick="2" CanChooseTheSame="0">
+      <Effect Type="SpawnEnnemies" Probabilities="1" Name="test_shrine_with_starving_zombie" RadiusMin="0" RadiusMax="5" />
+      <Effect Type="SpawnEnnemies" Probabilities="1" Name="test_shrine_with_brigands" RadiusMin="0" RadiusMax="5" />
+      <Effect Type="SpawnGlobes" Probabilities="1" Name="health_globe" NumberOfLootMin="2" NumberOfLootMax="4" />
+    </EffectClass>
+  </ShrinePreset>
+</MetaData>

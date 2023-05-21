@@ -1,0 +1,14 @@
+<MetaData>
+  <Skill UID="AI_Ondar_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="0.0" />
+    <Aggression TargetValueOnHit="5" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1.7" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="REPU_Veteran_DefaultAttack_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Republic_Veteran_DefaultAttack_Swing" OnCriticalHit="Play_Republic_Veteran_DefaultAttack_Impact" OnHit="Play_Republic_Veteran_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,153 @@
+<MetaData>
+  <SpawnClass Name="sc_republic_InnerSanctum_I">
+    <Spawn Type="Actor" ClassName="Republic_InnerSanctum_InfantrySword" NumberMin="1" NumberMax="1" LevelMin="33" LevelMax="35" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_republic_InnerSanctum_J">
+    <Spawn Type="Actor" ClassName="Republic_InnerSanctum_Justicar" NumberMin="1" NumberMax="1" LevelMin="33" LevelMax="35" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_COFY_InnerSanctum_S">
+    <Spawn Type="Actor" ClassName="CultOfSouls_InnerSanctum_LostSoul" NumberMin="5" NumberMax="7" LevelMin="33" LevelMax="35" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_DoS_InnerSanctumEvent">
+    <Spawn Type="Actor" ClassName="InnerSanctum_DemonOfSouls" NumberMin="1" NumberMax="1" LevelMin="33" LevelMax="35" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" ForceEntityName="Riri" />
+  </SpawnClass>
+  <SpawnClass Name="sc_DoF_InnerSanctumEvent">
+    <Spawn Type="Actor" ClassName="InnerSanctum_DemonOfFlesh" NumberMin="1" NumberMax="1" LevelMin="33" LevelMax="35" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" ForceEntityName="Fifi" />
+  </SpawnClass>
+  <SpawnClass Name="sc_Enforcer_InnerSanctumEvent">
+    <Spawn Type="Actor" ClassName="InnerSanctum_Enforcer" NumberMin="1" NumberMax="1" LevelMin="33" LevelMax="38" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" ForceEntityName="Sinadrahel">
+      <BossRank Id="5" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_PreSpawn_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="Trenches_InfantrySword" NumberMin="14" NumberMax="14" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" />
+    <Spawn Type="Actor" ClassName="Trenches_Veteran" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" />
+  </SpawnClass>
+  <SpawnClass Name="sc_FurySpirit_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_MeleeInfantry_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_Instigator_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_FuryFanaticRanged_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_FuryFanaticMelee_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Melee" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_BossEnforcer_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="Trenches_Enforcer" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="Instigator_3" />
+  </SpawnClass>
+  <SpawnClass Name="sc_BossGolgoth_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="Trenches_Golgoth" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="40" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="Trenches_Golgoth">
+      <BossRank Id="5" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_UberGolgoth_TrenchesEvent1">
+    <Spawn Type="Actor" ClassName="Trenches_Golgoth_Invulnerable" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="Trenches_UberGolgoth1" />
+  </SpawnClass>
+  <SpawnClass Name="sc_UberGolgoth_TrenchesEvent2">
+    <Spawn Type="Actor" ClassName="Trenches_Golgoth_Invulnerable" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="Trenches_UberGolgoth2" />
+  </SpawnClass>
+  <SpawnClass Name="sc_UberGolgoth_TrenchesEvent3">
+    <Spawn Type="Actor" ClassName="Trenches_Golgoth_Invulnerable" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="Trenches_UberGolgoth3" />
+  </SpawnClass>
+  <SpawnClass Name="sc_Enforcer_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_PacifiedSniper_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_RepublicVeteran_TrenchesEvent">
+    <Spawn Type="Actor" ClassName="PacifiedVeteran" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_PacifiedSniper_TrenchesEvent_R1">
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_RepublicVeteran_TrenchesEvent_R1">
+    <Spawn Type="Actor" ClassName="PacifiedVeteran" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_Enforcer_TrenchesEvent_R1">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="1" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_CultistOfFury_TrenchesEvent_R2">
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist" NumberMin="1" NumberMax="1" LevelMin="35" LevelMax="37" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_InfantrySword_TowerEvent">
+    <Spawn Type="Actor" ClassName="PacifiedInfantrySword" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" />
+  </SpawnClass>
+  <SpawnClass Name="sc_PacifiedSniper_TowerEvent">
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_FurySpirit_TowerEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Spirit" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_Enforcer_TowerEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_FuryFanaticRanged_TowerEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Ranged" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_FuryFanaticMelee_TowerEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Melee" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_FuryFanaticMelee_TowerEvent_Prespawn">
+    <Spawn Type="Actor" ClassName="CultOfFury_Fanatic_Melee" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" />
+  </SpawnClass>
+  <SpawnClass Name="sc_Instigator_TowerEvent_Prespawn">
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" />
+  </SpawnClass>
+  <SpawnClass Name="sc_Instigator_TowerEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Instigator" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_CultistOfFury_TowerEvent">
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" />
+  </SpawnClass>
+  <SpawnClass Name="sc_VeteranBoss_TowerEvent">
+    <Spawn Type="Actor" ClassName="Tower_Veteran" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="42" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" ForceEntityName="TowerBoss">
+      <BossRank Id="5" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_Sniper_Prespawn_TowerEvent">
+    <Spawn Type="Actor" ClassName="PacifiedSniper" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" />
+  </SpawnClass>
+  <SpawnClass Name="sc_Enforcer_TowerEvent_R2">
+    <Spawn Type="Actor" ClassName="CultOfFury_Enforcer" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_CultistOfFury_TowerEvent_R2">
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist" NumberMin="1" NumberMax="1" LevelMin="37" LevelMax="39" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="1" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0">
+      <BossRank Id="2" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_fury_Heimlock_P1">
+    <Spawn Type="Actor" ClassName="Heimlock_01" NumberMin="1" NumberMax="1" LevelMin="39" LevelMax="44" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="Heimlock">
+      <BossRank Id="5" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_fury_Heimlock_P2">
+    <Spawn Type="Actor" ClassName="Heimlock_02" NumberMin="1" NumberMax="1" LevelMin="39" LevelMax="44" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="Heimlock2">
+      <BossRank Id="5" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_fury_Heimlock_P3">
+    <Spawn Type="Actor" ClassName="Heimlock_03" NumberMin="1" NumberMax="1" LevelMin="39" LevelMax="44" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="100" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="0" ForceEntityName="Heimlock3">
+      <BossRank Id="5" Frequency="100" />
+    </Spawn>
+  </SpawnClass>
+  <SpawnClass Name="sc_CultistOfFury_HeimlockBossFight">
+    <Spawn Type="Actor" ClassName="CultOfFury_Cultist_Heimlock" NumberMin="1" NumberMax="1" LevelMin="39" LevelMax="44" LevelOffset="0" Center="0" SpawnOverTime="0" BossProba="0" LootClassOverride="" XPBonusPercent="0" IgnoreAnimation="1" />
+  </SpawnClass>
+</MetaData>

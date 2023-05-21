@@ -1,0 +1,19 @@
+<MetaData>
+  <ArenaWaves Name="TavernAmbush">
+    <Wave Type="killtarget" Tag="1">
+      <PrefabParams PrefabName="arena_TavernAmbush" />
+      <KillTargets>
+        <Entry ClassName="RepublicAssassinTavern" Amount="1" />
+      </KillTargets>
+      <MobSpawners>
+        <Spawner DelayBeforeFirstSpawn="0" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="Sc_TavernEvent_Alastor" TargetSpawnLocationID="10" MustLoot="1" />
+        <Spawner DelayBeforeFirstSpawn="0.5" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="Sc_R_I_TavernEvent" TargetSpawnLocationID="11" />
+        <Spawner DelayBeforeFirstSpawn="1" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="Sc_R_I_TavernEvent" TargetSpawnLocationID="12" />
+        <Spawner DelayBeforeFirstSpawn="1.5" Type="once" NumberOfEntitiesPerSpawn="1" TargetSpawnClass="Sc_R_I_TavernEvent" TargetSpawnLocationID="13" />
+        <Spawner DelayBeforeFirstSpawn="16" Type="fill_forever" TargetSpawnClass="Sc_R_I_TavernEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="2" TargetSpawnLocationID="1" />
+        <Spawner DelayBeforeFirstSpawn="16.5" Type="fill_forever" TargetSpawnClass="Sc_R_I_TavernEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="2" TargetSpawnLocationID="2" />
+        <Spawner DelayBeforeFirstSpawn="17" Type="fill_forever" TargetSpawnClass="Sc_R_I_TavernEvent" NumberOfEntitiesPerSpawn="1" SpawnFrequency="15" MaxActiveSpawnedEntitiesMode="OnSpawn" MaxActiveSpawnedEntities="2" TargetSpawnLocationID="3" />
+      </MobSpawners>
+    </Wave>
+  </ArenaWaves>
+</MetaData>

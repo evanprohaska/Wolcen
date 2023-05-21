@@ -1,0 +1,98 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="MonsterGenerator_CultOfFury_Spirit">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_fury" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_fury" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Fury_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Fury_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_CultOfFury_Spirit" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_CultOfFury_Spirit_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_Fury" Model="objects/animated_object/misc/spawner/cofy_mobspawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_CultOfFury_Spirit" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_CultOfFury_Fanatic_Ranged">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_fury" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_fury" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Fury_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Fury_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1.5" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_CultOfFury_Fanatic_Ranged" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_CultOfFury_Fanatic_Ranged_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_Fury" Model="objects/animated_object/misc/spawner/cofy_mobspawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_CultOfFury_Fanatic_Ranged" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_CultOfFury_Fanatic_Melee">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_fury" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_fury" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Fury_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Fury_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_CultOfFury_Fanatic_Melee" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_CultOfFury_Fanatic_Melee_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_Fury" Model="objects/animated_object/misc/spawner/cofy_mobspawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_CultOfFury_Fanatic_Melee" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="MonsterGenerator_CultOfFury_Instigator">
+    <Model>
+      <IdleDeactivatedAnim AnimName="misc_mobspawner_desactivated_idle_01" PlaybackSpeed="1" />
+      <OnActivationAnim AnimName="misc_mobspawner_activated_01" PlaybackSpeed="1" />
+      <IdleActivatedAnim AnimName="misc_mobspawner_idle_01" PlaybackSpeed="1" />
+      <WarmUpAnim AnimName="" PlaybackSpeed="1" />
+      <CastSkillAnim AnimName="" PlaybackSpeed="1" />
+      <DeathAnim AnimName="" PlaybackSpeed="1" />
+      <DisappearAnim AnimName="misc_mobspawner_desactivated_01" PlaybackSpeed="5" />
+    </Model>
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredients.spawner.spawn_fury" Direction="0,0,1" Scale="1" />
+      <Particle Key="SummonedEntityVFX" Name="u_gameplay_ingredients.spawner.target_fury" Direction="0,1,0" Scale="1" />
+      <Particle Key="DisappearVFX" Name="U_CommonVFX.MobGenerator.Fury_Finish" Direction="0,1,0" Scale="1" />
+      <Particle Key="DeathVFX" Name="U_CommonVFX.MobGenerator.Fury_Die" Direction="0,1,0" Scale="1" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="1.5" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="MonsterGenerator_CultOfFury_Instigator" Targeting="Self" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="MonsterGenerator_CultOfFury_Instigator_PresetList" UIName="@ui_GameplayIngredients_MonsterGenerator_Fury" Model="objects/animated_object/misc/spawner/cofy_mobspawner.cdf" ModelScale="1" SurfaceType="rock" Loop="1" NewStartingPosition="0" LootClass="LC_Lieutenant" DeathSCF="">
+    <Preset Name="MonsterGenerator_CultOfFury_Instigator" />
+  </FlowOfSoulsPresetList>
+</MetaData>

@@ -1,0 +1,38 @@
+<MetaData>
+  <Skill UID="AI_CultOfFlesh_DemonOfFlesh_Charge" ESkill="AI_cultofflesh_DemonOfFlesh_Charge" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1.5" />
+    <Cooldown Cooldown="12" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="2" Distance="4" StunDuration="0.3" />
+    <SkillSpecific ChargingSpeed="25" ChargeDamage="50" MaxTurnRate="90" MaxChargingTime="4" MinSwipeDistance="6" MinStopSpeed="6" MinStartSpeed="8" DirectionMissTimer="0.5" SwipeWhenFail="0" />
+    <Shapes>
+      <Entry ShapeName="DemonOfFlesh_BlownAwayChargeShape" />
+      <Entry ShapeName="DemonOfFlesh_EndChargeSwipeShape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="indicator" Name="U_Monster_Alt.DemonOfFlesh.charge_indicator" Direction="-1,0,0" InstantKill="0" />
+      <Particle Key="dust" Name="U_Monster_Alt.DemonOfFlesh.charge_loop_dust" Direction="0,1,0" Bone="Bip01" InstantKill="0" />
+      <Particle Key="spine" Name="U_Monster_Alt.DemonOfFlesh.charge_spine1_loop" Offset="0,-2,0" Direction="0,0,1" Bone="Bip01" InstantKill="0" />
+    </ParticleList>
+    <SoundTrigger OnAnimCast="" OnHit="Play_Halfbreed_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_DemonOfFlesh_Charge" ESkill="AI_cultofflesh_DemonOfFlesh_Charge" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="2" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="2" Distance="4" StunDuration="0.3" />
+    <SkillSpecific ChargingSpeed="25" ChargeDamage="50" MaxTurnRate="90" MaxChargingTime="4" MinSwipeDistance="6" MinStopSpeed="6" MinStartSpeed="8" DirectionMissTimer="0.5" SwipeWhenFail="0" />
+    <Shapes>
+      <Entry ShapeName="DemonOfFlesh_BlownAwayChargeShape" />
+      <Entry ShapeName="DemonOfFlesh_EndChargeSwipeShape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="indicator" Name="U_Monster_Alt.DemonOfFlesh.charge_indicator" Direction="-1,0,0" InstantKill="0" />
+      <Particle Key="dust" Name="U_Monster_Alt.DemonOfFlesh.charge_loop_dust" Direction="0,1,0" Bone="Bip01" InstantKill="0" />
+      <Particle Key="spine" Name="U_Monster_Alt.DemonOfFlesh.charge_spine1_loop" Offset="0,-2,0" Direction="0,0,1" Bone="Bip01" InstantKill="0" />
+    </ParticleList>
+    <SoundTrigger OnAnimCast="" OnHit="Play_Halfbreed_DefaultAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

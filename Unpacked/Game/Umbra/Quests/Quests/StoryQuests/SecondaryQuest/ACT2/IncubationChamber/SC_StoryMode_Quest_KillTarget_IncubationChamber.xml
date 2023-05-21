@@ -1,0 +1,77 @@
+<MetaData>
+  <Quest Name="QN_SC_IncubationChamber_KillTarget_COFE_Spreader_4" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KFT_StepNameLabel_COFE_Spreader" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_IncubationChamber_KillTarget_COSS_Spreader_4_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_IncubationChamber_KillTarget_COSS_Spreader_4_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_IncubationChamber_KillTarget_COSS_Spreader_4_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_Spreader_4" MinSpawnPercent="-1" MaxSpawnPercent="-70" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_SC_KFT_QuestLabel" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_IncubationChamber_KillTarget_COFE_Halfbreed_4" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KFT_StepNameLabel_COFE_Halfbreed" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_IncubationChamber_KillTarget_COFE_Halfbreed_4_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_IncubationChamber_KillTarget_COFE_Halfbreed_4_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_IncubationChamber_KillTarget_COFE_Halfbreed_4_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_FleshHalfbreed_4" MinSpawnPercent="-1" MaxSpawnPercent="-70" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_SC_KFT_QuestLabel" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_IncubationChamber_KillTarget_COFE_NamedFleshZombie" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KON_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KON_StepNameLabel_COFE_NamedFleshZombie" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="Kill" ClassToKill="Named_FleshZombie" KillCount="1" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_IncubationChamber_KillTarget_COFE_NamedFleshZombie_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawnWithDeactivation" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_IncubationChamber_KillTarget_COFE_NamedFleshZombie_Spawn1" Delay=".5" SpawnClass="Sc_Named_FleshZombie" MinSpawnPercent="90" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_SC_KON_QuestLabel" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_IncubationChamber_KillTarget_COFE_AlphaFlesh" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KOT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KOT_StepNameLabel_SVRI_AlphaFlesh" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_IncubationChamber_KillTarget_COFE_AlphaFlesh_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_IncubationChamber_KillTarget_COFE_AlphaFlesh_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_IncubationChamber_KillTarget_COFE_AlphaFlesh_Spawn1" Delay=".5" SpawnClass="Sc_CultOfFlesh_Alpha" MinSpawnPercent="90" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_SC_KOT_QuestLabel" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_IncubationChamber_KillTarget_COFE_ColossalBreeder" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KOT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KOT_StepNameLabel_COFE_ColossalBreeder" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_IncubationChamber_KillTarget_COFE_ColossalBreeder_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_IncubationChamber_KillTarget_COFE_ColossalBreeder_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_IncubationChamber_KillTarget_COFE_ColossalBreeder_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_ColossalBreeder_1" MinSpawnPercent="90" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_SC_KOT_QuestLabel" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

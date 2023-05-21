@@ -1,0 +1,42 @@
+<MetaData>
+  <Skill UID="playerskill_H1_Pistol_H1_Melee_alt_atk_01" ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile,projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/pistol_h1_melee.png" UIName="@ui_AST_ComboMeleePistol" Lore="@ui_AST_ComboMeleePistol_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance" />
+    <Combo ComboStarter="Combo_H1_Melee_H1_Pistol_ALT" />
+    <Animation ActionString="player_skill_atk_alt_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier=".95" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_PistolShot" onHit="Play_Bullet_Impact" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+    <Range AttackRange="20" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+  </Skill>
+  <Skill UID="playerskill_H1_Pistol_H1_Melee_alt_atk_02" ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile,projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/pistol_h1_melee.png" UIName="@ui_AST_ComboMeleePistol" />
+    <Animation ActionString="player_skill_atk_alt_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier=".95" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_PistolShot" onHit="Play_Bullet_Impact" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+    <Range AttackRange="20" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+  </Skill>
+  <Skill UID="playerskill_H1_Pistol_H1_Melee_alt_atk_loop_01" ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile,projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/pistol_h1_melee.png" UIName="@ui_AST_ComboMeleePistol" />
+    <Animation ActionString="player_skill_atk_alt_03" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier=".95" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_PistolShot" onHit="Play_Bullet_Impact" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+    <Range AttackRange="20" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+  </Skill>
+</MetaData>

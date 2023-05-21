@@ -1,0 +1,35 @@
+<MetaData>
+  <Skill UID="AI_COSS_SoulCasket_ProjectileSummon" ESkill="AI_Ranged_WithSecondarySkillOnEntityCollision" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="2.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 CasketHead" />
+    <Projectile Name="COSS_SoulCasket_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SoundTrigger OnAnimStart="Play_COSS_SoulCasket_ProjectileSummon_PreCast" OnHit="Play_COSS_SkullMourner_Crown_Projectile_Impact" PlayAttackVoice="0" OnAnimCast="Play_COSS_SoulCasket_ProjectileSummon_Cast" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_COSS_SoulCasket_ProjectileSummon_Summon" />
+    </SecondarySkillToCast>
+  </Skill>
+  <Skill UID="AI_COSS_SoulCasket_ProjectileSummon_Summon" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="0.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <Summoning MaxSummons="9" SummonDuration="0" MinRadiusAroundSpawnPosition="2" MaxRadiusAroundSpawnPosition="5" KillLowestHPOnOversummoning="0" SummonOnTargetPosition="1" SummonsSuicideWhenMasterDies="1">
+      <SummonedSpawnClass Key="Default" Name="sc_CultOfSouls_SoulCasket_Summon" />
+    </Summoning>
+    <SoundTrigger OnAnimStart="PLAY_AI_KennelMaster_SummonHorn" />
+  </Skill>
+  <Skill UID="AI_COSS_SoulCasket_TriSoulStream" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="physical" WeaponMultiplier="1.6" />
+    <Cooldown Cooldown="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="SoulCasket_TriSoulStream_Shape01" />
+      <Entry ShapeName="SoulCasket_TriSoulStream_Shape02" />
+      <Entry ShapeName="SoulCasket_TriSoulStream_Shape03" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_COSS_SoulCasket_TriSoulStream_PreCast" OnAnimCast="Play_COSS_SoulCasket_TriSoulStream_Cast" OnHit="Play_hero_default_damage" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

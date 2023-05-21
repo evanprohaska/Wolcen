@@ -1,0 +1,42 @@
+<MetaData>
+  <Skill UID="AI_REPU_Sniper_KillZone" ESkill="AI_REPU_Sniper_KillZone" Keywords="magic_spell,projectile">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out_01" ActionString_OutMissed="monster_skill_loop_02_out_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="3.6" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Sniper.KillZone_Area_01" Direction="0,1,0" Offset="0,0,1" Bone="Bip01" TimeScale="1.2" />
+      <Particle Key="TargetMark" Name="U_Monster_Alt.repu_sniper.killzone_targeted" Direction="0,1,0" Offset="1,0,0" Bone="Bip01 Head" />
+      <Particle Key="Warmup" Name="U_Monster_Alt.repu_sniper.cannon_prepare" Offset="0,0,0" Angle="180,0,0" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.BullEye_Muzzle_01_Lightning" Offset="1,0,1.1" Direction="0,1,0" Scale="2" Bone="Bip01" />
+    </ParticleList>
+    <Shapes>
+      <Entry Key="Detection" ShapeName="REPU_Sniper_KillZone_Detection_Shape" />
+    </Shapes>
+    <Projectile Name="repu_sniper_killzone_proj" ProjectileCount="1" />
+    <Targeting ComputeTargetPosAtCast="0" />
+    <SkillSpecific LoopDuration="1.5" />
+    <SoundTrigger OnAnimStart="Play_Republic_Sniper_DefaultRanged_Charge" OnAnimCast="Play_Republic_Sniper_DefaultRanged_Fire" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_COFE_Sniper_KillZone" ESkill="AI_REPU_Sniper_KillZone" Keywords="magic_spell,projectile">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out_01" ActionString_OutMissed="monster_skill_loop_02_out_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="3.6" />
+    <Cooldown Cooldown="20" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Sniper.KillZone_Area_01" Direction="0,1,0" Offset="0,0,1" Bone="Bip01" TimeScale="1.2" />
+      <Particle Key="TargetMark" Name="U_Monster_Alt.flesh_sniper.killzone_targeted" Direction="0,1,0" Offset="1,0,0" Bone="Bip01 Head" />
+      <Particle Key="Warmup" Name="U_Monster_Alt.flesh_sniper.cannon_prepare" Offset="0,0,0" Angle="180,0,0" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.BullEye_Muzzle_01_Rend" Offset="1,0,1.1" Direction="0,1,0" Scale="2" Bone="Bip01" />
+    </ParticleList>
+    <Shapes>
+      <Entry Key="Detection" ShapeName="REPU_Sniper_KillZone_Detection_Shape" />
+    </Shapes>
+    <Projectile Name="cofe_sniper_takeaim_proj" ProjectileCount="1" />
+    <Targeting ComputeTargetPosAtCast="0" />
+    <SkillSpecific LoopDuration="1.5" />
+    <SoundTrigger OnAnimStart="Play_Republic_Sniper_DefaultRanged_Charge" OnAnimCast="Play_Republic_Sniper_DefaultRanged_Fire" OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

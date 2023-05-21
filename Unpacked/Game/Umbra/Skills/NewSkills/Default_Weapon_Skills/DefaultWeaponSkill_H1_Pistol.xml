@@ -1,0 +1,68 @@
+<MetaData>
+  <Skill UID="playerskill_H1_Pistol_atk_01" ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile,projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_pistol.png" UIName="@ui_AST_ComboPistol" Lore="@ui_AST_ComboPistol_lore" ShowParamsInTooltip="DamageDetail,ResourceGain,StatusAilmentsChance,Projectiles,Range" />
+    <Animation ActionString="player_skill_atk_01" ScaleWithAttackSpeed="1" IgnoreAnimationMovementWhenHoldingShift="1" AnimationDrivenMovement="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Combo ComboStarter="Combo_H1_Pistol" />
+    <Range AttackRange="20" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="6" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_PistolShot" onHit="Play_Bullet_Impact" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+  </Skill>
+  <Skill UID="playerskill_H1_Pistol_atk_02" ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile,projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_pistol.png" UIName="@ui_AST_ComboPistol" />
+    <Animation ActionString="player_skill_atk_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="6" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_PistolShot" onHit="Play_Bullet_Impact" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+    <Range AttackRange="20" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+  </Skill>
+  <Skill UID="playerskill_H1_Pistol_atk_loop_01" ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile,projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_pistol.png" UIName="@ui_AST_ComboPistol" />
+    <Animation ActionString="player_skill_atk_loop_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="6" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_PistolShot" onHit="Play_Bullet_Impact" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+    <Range AttackRange="20" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+  </Skill>
+  <Skill UID="playerskill_H1_Pistol_atk_loop_02" ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile,projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_pistol.png" UIName="@ui_AST_ComboPistol" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="6" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_PistolShot" onHit="Play_Bullet_Impact" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+    <Range AttackRange="20" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+  </Skill>
+  <Skill UID="playerskill_H1_Pistol_atk_finisher" ESkill="default_ranged" Keywords="default_ranged,attack_skill,additional_projectile,projectile">
+    <HUD HUDPicture="../u_resources/spells/weapon_combo_icons/h1_pistol.png" UIName="@ui_AST_ComboPistol" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" IgnoreAnimationMovementWhenHoldingShift="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_pistols" TrailPresetBase="ranged" />
+    <Projectile Name="gun_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <ParticleList LoadFromPreset="pistol_default_muzzle" />
+    <Aggression TargetValueOnHit="6" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_PistolShot" onHit="Play_Bullet_Impact" OnKill="Play_OnKill_Impact_Lethal_Bullet" />
+    <Range AttackRange="20" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" CancellableByDefault="1" />
+  </Skill>
+</MetaData>

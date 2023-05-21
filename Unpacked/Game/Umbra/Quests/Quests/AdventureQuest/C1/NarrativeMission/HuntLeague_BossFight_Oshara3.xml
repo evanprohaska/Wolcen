@@ -1,0 +1,20 @@
+<MetaData>
+  <Quest Name="HL_C3_BossFight_Oshara3" UIName="@ui_C1_M3_E3_EventQuestLabel" UIDesc="" Type="BossFight" StartDialog="">
+    <Step Order="0" UIName="@ui_C1_M3_E3_EventStepLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="KillAll" EventsName="M3_SpawnOshara_P3" KillCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Oshara_P3" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="M3_DS_68" SequenceName="C1_OsharaIntroduction3" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestClearUI" Name="HLC3_Step2_Limit_UI" StepToKeep="2" />
+      <Event Trigger="EventEnd" EventName="M3_DS_68" Type="EntitySpawn" Name="M3_SpawnOshara_P3" SpawnClass="Sc_C1_M3_OsharaSpawn_P3" TargetEntityName="QP_M3_OsharaP3_OsharaSpawnPoint" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" FaceAtSpawn="QP_M3_OsharaP3_PlayerSpawnPoint" />
+      <Event Trigger="EventEnd" EventName="M3_DS_68" Type="GlobalDialog" Name="M3_DS_69" DialogName="HLC3_OsharasNest_Player_69" Delay="2" />
+      <Event Trigger="EventEnd" EventName="M3_DS_68" Type="EntityTeleport" Name="M3_SpawnOshara_P3_Player_TP_Start" TeleportedEntityName="#Player" DestinationName="QP_M3_OsharaP3_PlayerSpawnPoint" MinRadius="1" />
+      <Event Trigger="EventEnd" EventName="M3_DS_68" Type="EntityIsHidden" Name="M3_Oshara_P3_Blocker1_Start" EntityNames="Blocker_M3_OsharaP3" Hide="0" />
+      <Event Trigger="EventEnd" EventName="M3_DS_68" Type="ActionParticleEmitter" Name="M3_Oshara_P3_BlockingRoad_FX_1_Start" EmitterEntityName="M3_Oshara_P3_BlockingRoad_FX" Activate="1" />
+      <Event Trigger="EventEnd" EventName="M3_DS_68" Type="GlobalFlowGraph" Name="HL_M3_OsharaP2_CamOn" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Oshara_P3" PercentLeft="50" Type="GlobalDialog" Name="M3_DS_70" DialogName="HLC3_OsharasNest_Player_70" Delay="0" />
+      <Event Trigger="BossfightLost" Type="QuestFail" Name="FailStateOsharaBossfight3" QuestName="HL_C3_BossFight_Oshara3" />
+    </Step>
+  </Quest>
+</MetaData>

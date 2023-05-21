@@ -1,0 +1,18 @@
+<MetaData>
+  <Spell Name="AST_SpeedBoostOnActiveDodge" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="30" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_fire.png" Description="@ui_SpeedOnActiveDodge_Desc" Title="@ui_SpeedOnActiveDodge_Title" />
+  </Spell>
+  <Spell Name="AST_FadingSlowOnLightningHit" MaxStack="10">
+    <MagicEffects>
+      <EIM Name="curse_strike_fading_slow" Permanent="0">
+        <Semantics SpeedPercentInt="-5" PSTStackMaxCountInt="10" PSTStackResetTimer="1" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="" Description="@eim_curse_strike_fading_slow_Desc" Title="@eim_curse_strike_fading_slow_Title" />
+  </Spell>
+</MetaData>

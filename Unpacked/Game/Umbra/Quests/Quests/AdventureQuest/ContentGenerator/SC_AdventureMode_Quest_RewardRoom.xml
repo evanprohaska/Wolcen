@@ -1,0 +1,14 @@
+<MetaData>
+  <Quest Name="QN_EG_Wait_RewardRoom1" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Dungeon" UIName="@ui_EG_CDC_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_EG_Shared_StepNameLabel_Enter" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="#EndgameDungeonExit" RequireAllPlayers="0" Radius="20">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="stormfall_adventure_rift" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="stormfall" Threshold="80" />
+      </Goal>
+      <GoalLogic Formula="00" />
+    </Step>
+    <Step Order="1" UIName="@ui_EG_CR_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="10" ShowTimer="0" />
+      <GoalLogic Formula="00" />
+    </Step>
+  </Quest>
+</MetaData>

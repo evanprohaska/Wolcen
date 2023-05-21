@@ -1,0 +1,12 @@
+<MetaData>
+  <CastEffect Name="dash_start">
+    <Param Type="Particle" ParticleName="OnCast.dash.hand" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R Hand" />
+    <Param Type="Particle" ParticleName="OnCast.dash.spine" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Spine1" />
+  </CastEffect>
+  <CastEffect Name="dash_trigger">
+    <Param Type="Particle" ParticleName="OnCast.dash.ground" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Spine1" NoUpdate="1" />
+  </CastEffect>
+  <CastEffect Name="dash_start_dual">
+    <Param Type="Particle" ParticleName="OnCast.dash.spine_dual" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 Spine1" />
+  </CastEffect>
+</MetaData>

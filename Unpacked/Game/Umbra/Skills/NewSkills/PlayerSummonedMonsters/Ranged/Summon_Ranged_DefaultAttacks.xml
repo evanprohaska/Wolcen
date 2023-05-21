@@ -1,0 +1,24 @@
+<MetaData>
+  <Skill UID="summon_default_range" ESkill="default_ranged" Keywords="magic_spell,default_ranged,projectile,additional_projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="0.4" />
+    <Cooldown Cooldown=".2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <Projectile Name="summon_ranged" ProjectileCount="1" AngleBetweenProjectiles="5" PenetrationLimit="1" AppendElementalSuffixToProjectileName="1" />
+    <SoundTrigger OnAnimCast="PLAY_AI_DefaultBowShot" OnHit="" PlayAttackVoice="0" />
+    <Targeting ComputeTargetPosAtCast="1" />
+  </Skill>
+  <Skill UID="summon_default_range_explosive" ESkill="default_ranged" Keywords="magic_spell,default_ranged,projectile,additional_projectile">
+    <HUD ShowParamsInTooltip="Explosion" ShowParamsInAST="Explosion" />
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="physical" WeaponMultiplier="0.4" />
+    <Cooldown Cooldown="0.2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" />
+    <Projectile Name="summon_ranged_explosive" ProjectileCount="1" PenetrationLimit="1" AppendElementalSuffixToProjectileName="1" AngleBetweenProjectiles="5" />
+    <SoundTrigger OnAnimCast="PLAY_AI_DefaultBowShot" OnHit="" PlayAttackVoice="0" />
+    <Targeting ComputeTargetPosAtCast="1" />
+    <Explosion ExplosionRadius="2" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,77 @@
+<MetaData>
+  <Skill UID="AI_COFE_Lambach01_TentacleAttack" ESkill="AI_COFE_Lambach01_FleshTentacle" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="rend" PercentMin="80" PercentMax="80" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="Tentacle" Name="U_Monster.Lumbach.Flesh_Spikes_01" Direction="0,1,0" Scale="1.2" />
+      <Particle Key="Indicator" Name="U_Monster.Lumbach.Flesh_Spikes_Indicator" Direction="0,1,0" Offset="0,0,0.5" Scale="1.2" />
+    </ParticleList>
+    <Shapes>
+      <Entry ShapeName="Lambach01_TentacleAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_LambachP1_TentacleAttack" OnHit="Play_LambachP1_MeleeAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Uber_Lambach01_TentacleAttack" ESkill="AI_cultofflesh_DemonOfFlesh_ExplosionWhipe" Keywords="">
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1.2" />
+    <ParticleList>
+      <Particle Key="Spikes" Name="U_Monster_Alt.DemonOfFlesh.whipexplo_sideexplo" Direction="1,0,0" Scale="1" />
+      <Particle Key="Indicator" Name="U_Monster_Alt.DemonOfFlesh.whipexplo_indicator" Direction="-1,0,0" />
+    </ParticleList>
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SkillSpecific SpikeNumber="5" SpikeRate="0.1" SpikeInterval="1" />
+    <Shapes>
+      <Entry ShapeName="DemonOfFlesh_StraightWhipeAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_LambachP1_TentacleAttack" OnHit="Play_LambachP1_MeleeAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_COFE_Lambach01_MeleeAttack" ESkill="default_melee" Keywords="">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="rend" WeaponMultiplier="2" />
+    <Cooldown Cooldown="4" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry ShapeName="Lambach01_MeleeAttackShape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="Play_LambachP1_MeleeAttack_Swing" OnHit="Play_LambachP1_MeleeAttack_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Uber_Lambach01_MeleeAttack" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="4" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Rend" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_Uber_Lambach01_MeleeShape" />
+      <SkillSpecificParams Index="1" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_Uber_Lambach01_MeleeShape,AI_Uber_Lambach01_MeleeProjectiles" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+  </Skill>
+  <Skill UID="AI_Uber_Lambach01_MeleeShape" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="80" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Lambach01_MeleeAttackShape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_Uber_Lambach01_MeleeProjectiles" ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageAsPercentageOfParent Percent="20" />
+    <SoundTrigger />
+    <Explosion ExplosionRadius="4" />
+    <Projectile Name="UberLambach_melee_proj" ProjectileCount="10" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="20" totalAngleAtDistanceMin="140" totalAngleAtDistanceMax="140" projectileAngleAtDistanceMin="140" projectileAngleAtDistanceMax="140" />
+    </Projectile>
+    <Range AttackRange="25" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" BaseDirIsForwardDir="1" RandomDir="0" MaxZOffset="1.5" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

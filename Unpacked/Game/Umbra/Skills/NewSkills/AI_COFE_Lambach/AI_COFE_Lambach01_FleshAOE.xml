@@ -1,0 +1,40 @@
+<MetaData>
+  <Skill UID="AI_COFE_Lambach01_FleshAOE" ESkill="AI_Default_DamageZone" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Range AttackRange="20" />
+    <DamageWeapon Type="rend" WeaponMultiplier=".3" />
+    <Cooldown Cooldown="8" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Lumbach.FleshAOE_Indicator" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="OnSpawn" Name="U_Monster.Lumbach.FleshAOE_Explosion" Offset="0,0,0" Direction="0,0,1" Delay="1.5" />
+      <Particle Key="DamageZone" Name="U_Monster.Lumbach.Flesh_Area_02" Offset="0,0,0" Direction="0,1,0" Delay="1.5" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="7" />
+    <SoundTrigger OnHit="Play_Svriir_Spitter_Acid_Damage" PlayAttackVoice="1" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Lambach01_FleshAOEShape" />
+    </Shapes>
+    <DamageZone RateOfFire="0.5" Duration="30" />
+  </Skill>
+  <Skill UID="AI_UBER_Lambach01_FleshAOE" ESkill="AI_Default_DamageZone" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Range AttackRange="20" />
+    <DamageWeapon Type="rend" WeaponMultiplier=".5" />
+    <Cooldown Cooldown="8" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Lumbach.FleshAOE_Indicator" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="OnSpawn" Name="U_Monster.Lumbach.FleshAOE_Explosion" Offset="0,0,0" Direction="0,0,1" Delay="1.5" />
+      <Particle Key="DamageZone" Name="U_Monster.Lumbach.Flesh_Area_02" Offset="0,0,0" Direction="0,1,0" Delay="1.5" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="7" />
+    <SoundTrigger OnHit="Play_Svriir_Spitter_Acid_Damage" PlayAttackVoice="0" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Lambach01_FleshAOEShape" />
+    </Shapes>
+    <DamageZone RateOfFire="0.5" Duration="45" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,26 @@
+<MetaData>
+  <Skill UID="AI_Hunt_BuffCultist_Buff" ESkill="ai_default_zonebuff" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="0" />
+    <Cooldown Cooldown="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="BuffCultist_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="BuffOnTarget" Name="U_Monster_Alt.RepuVeteran.buff_target" Direction="0,0,1" Scale=".5" Offset="0,0.5,0" />
+    </ParticleList>
+    <PassiveSkills>
+      <Skill Index="0" Name="AI_REPU_Veteran_ShieldBuff_passive" Targeting="OnSummoner" Duration="50" />
+      <Skill Index="0" Name="AI_Tower_Veteran_Speed_passive" Targeting="OnSummoner" Duration="50" />
+    </PassiveSkills>
+    <SoundTrigger OnWaitingForSpawn="Play_DemonOfSouls_Attack_Swing" OnSwpan="Play_DemonOfSouls_Attack_Impact" />
+  </Skill>
+  <Skill UID="AI_Hunt_Enforcer_Summons" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="10" />
+    <Summoning MaxSummons="5" SummonDuration="0" MinRadiusAroundSpawnPosition="2" MaxRadiusAroundSpawnPosition="4" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_Hunt_Enforcer" />
+    </Summoning>
+  </Skill>
+</MetaData>

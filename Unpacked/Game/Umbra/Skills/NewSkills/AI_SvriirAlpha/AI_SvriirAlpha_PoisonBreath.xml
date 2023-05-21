@@ -1,0 +1,49 @@
+<MetaData>
+  <Skill UID="AI_svriiralpha_poisonbreath" ESkill="AI_default_maintainedskillwithdamageinshape" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01 Jaw0" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="ShapeParticle" Name="U_Monster.Siviir.Alpha_Breath_Poison_Loop_02" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="GroundEffect" Name="U_Monster.Siviir.Alpha_Breath_Poison_Ground_Loop_01" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <DamageWeapon Type="toxic" WeaponMultiplier=".5" />
+    <Cooldown Cooldown="15.0" CooldownTrigger="OnEnd" />
+    <DamageZone Duration="5" RateOfFire="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="SvriirAlpha_PoisonBreath" />
+    </Shapes>
+    <SoundTrigger OnAnimLoopIn="PLAY_AI_SvriirAlpha_PoisonbreathStart" OnAnimLoopOut="PLAY_AI_SvriirAlpha_PoisonbreathEnd" OnInterrupt="PLAY_AI_SvriirAlpha_PoisonbreathEnd" OnHit="PLAY_AI_SvriirSpitter_AcidDamage" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.33" MaxDuration="4" MaxTimeOutDuration="1" DistanceBetweenParticles="4" DZForwardOffset="2" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="100" In="0.5" />
+      <EmissiveIntensity From="100" To="150" In="0.7" />
+      <EmissiveIntensity From="150" To="175" In="1" />
+      <EmissiveIntensity From="175" To="200" In="2" />
+      <EmissiveIntensity From="180" To="100" In="1" />
+      <EmissiveIntensity From="100" To="origin" In="1" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_hunt_svriiralpha_poisonbreath" ESkill="AI_cultofsouls_demonofsouls_soulstorm_part2" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_ai_attacks" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 Head" CanCastWhileMoving="0" MinimumCastDuration="0.4" MaximumTurnRate="24" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="0.15" />
+    <ParticleList>
+      <Particle Key="Ready" Name="U_Monster.DeomonOfSoul.Soul_Beam_Ready_01" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_Monster.Siviir.Alpha_Breath_Poison_Loop_02" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="Hit" Name="U_Swipe_02.Directional_Hit_01.Staff_Hit_Toxic_01" Direction="0,1,0" />
+    </ParticleList>
+    <Range ProjectileMinDistance="2" AttackRange="20" />
+    <Cooldown Cooldown="15" CooldownTrigger="OnEnd" />
+    <Specific_AI_Laser NumberOfBeams="2" LengthPadding="0.1" MaxZOffset="1.5" LaserWidth="2" AngleAtDistanceMin="10" AngleAtDistanceMax="75" TimeBetweenHits="0.1" CanHitMultipleTargets="1" MinLaserRangeForAngleComputation="2" IsInLoopOutLaser="1" MaximumDuration="6" TimeOutDuration="3" TargetBone="Bip01 Spine" SoundStart="PLAY_AI_SvriirAlpha_PoisonbreathStart" SoundEnd="PLAY_AI_SvriirAlpha_PoisonbreathEnd" SoundHitStart="PLAY_AI_SvriirSpitter_AcidDamage" SoundHitEnd="PLAY_AI_SvriirSpitter_AcidDamage" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="100" In="0.5" />
+      <EmissiveIntensity From="100" To="150" In="0.7" />
+      <EmissiveIntensity From="150" To="175" In="1" />
+      <EmissiveIntensity From="175" To="200" In="2" />
+      <EmissiveIntensity From="180" To="100" In="1" />
+      <EmissiveIntensity From="100" To="origin" In="1" />
+    </Material>
+  </Skill>
+</MetaData>

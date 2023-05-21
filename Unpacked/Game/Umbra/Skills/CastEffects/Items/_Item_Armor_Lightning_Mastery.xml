@@ -1,0 +1,18 @@
+<MetaData>
+  <CastEffect Name="item_armor_ligthning_resist_chest">
+    <Param Type="Arc" From="Bip01 LUpArmTwist" To="Bip01 L ForeTwist" ArcLifeTime="-1" ArcPreset="item_arc1" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0.33" />
+    <Param Type="Arc" From="Bip01 RUpArmTwist" To="Bip01 R ForeTwist" ArcLifeTime="-1" ArcPreset="item_arc1" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0.33" />
+    <Param Type="Arc" From="Bip01 RUpArmTwist" To="Bip01 Spine1" ArcLifeTime="-1" ArcPreset="item_arc2" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0" />
+    <Param Type="Arc" From="Bip01 LUpArmTwist" To="Bip01 Spine1" ArcLifeTime="-1" ArcPreset="item_arc2" RayMaterial="Materials/effects/lighning_animated2" Delay="0" DelayVariation="0" />
+  </CastEffect>
+  <CastEffect Name="item_armor_ligthning_resist_shoulderR">
+    <Param Type="Particle" ParticleName="ItemMagicEffects.Lightning.glove_armor_resist" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 RUpArmTwist" />
+  </CastEffect>
+  <CastEffect Name="item_armor_ligthning_resist_shoulderL">
+    <Param Type="Particle" ParticleName="ItemMagicEffects.Lightning.glove_armor_resist" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 LUpArmTwist" />
+  </CastEffect>
+  <CastEffect Name="item_armor_ligthning_resist_hands">
+    <Param Type="Particle" ParticleName="ItemMagicEffects.Lightning.glove_armor_resist" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 L Hand" />
+    <Param Type="Particle" ParticleName="ItemMagicEffects.Lightning.glove_armor_resist" Scale="1" Offset="0,0,0" Direction="0,0,0" BonePos="Bip01 R Hand" />
+  </CastEffect>
+</MetaData>

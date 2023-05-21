@@ -1,0 +1,30 @@
+<MetaData>
+  <Skill UID="Summon_Range_Melee_TakeAim" ESkill="default_ranged" Keywords="attack_skill,default_ranged,projectile,additional_projectile">
+    <Animation ActionString="monster_skill_02" AnimationDrivenMovement="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="Lightning" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="Play_Summoned_Sniper_DefaultRanged_Charge" OnAnimCast="Play_Summoned_Sniper_DefaultRanged_Fire" OnHit="" PlayAttackVoice="0" />
+    <CastingParams MaximumTargetingHalfAngle="25" CastBone="R_Weapon_Bone" MaximumTurnRate="180" InterruptIfTargetGoesInvisible="1" />
+    <Targeting ComputeTargetPosAtCast="1" />
+    <Projectile Name="summon_range_melee" ProjectileCount="1" AngleBetweenProjectiles="0" PenetrationLimit="999" AppendElementalSuffixToProjectileName="1" />
+    <ParticleList>
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.BullEye_Muzzle_01_Lightning" Offset="0,0,0" Direction="0,1,0" Scale="2" Bone="Bip01" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="Summon_Range_Melee_TakeAim_Explosive" ESkill="default_ranged" Keywords="attack_skill,default_ranged,projectile,additional_projectile">
+    <HUD ShowParamsInTooltip="Explosion" ShowParamsInAST="Explosion" />
+    <Animation ActionString="monster_skill_02" AnimationDrivenMovement="1" />
+    <DamageWeapon UseMinionDamageType="1" Type="Lightning" WeaponMultiplier="1" />
+    <Cooldown Cooldown="0.5" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="Play_Summoned_Sniper_DefaultRanged_Charge" OnAnimCast="Play_Summoned_Sniper_DefaultRanged_Fire" OnHit="" PlayAttackVoice="0" />
+    <CastingParams MaximumTargetingHalfAngle="25" CastBone="R_Weapon_Bone" MaximumTurnRate="180" InterruptIfTargetGoesInvisible="1" />
+    <Targeting ComputeTargetPosAtCast="1" />
+    <Projectile Name="summon_range_melee_explosive" ProjectileCount="1" AngleBetweenProjectiles="0" PenetrationLimit="999" AppendElementalSuffixToProjectileName="1" />
+    <ParticleList>
+      <Particle Key="Muzzle" Name="U_Projectile.Bullet.BullEye_Muzzle_01_Lightning" Offset="0,0,0" Direction="0,1,0" Scale="2" Bone="Bip01" />
+    </ParticleList>
+    <Explosion ExplosionRadius="2" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,533 @@
+<MetaData>
+  <Preset Name="Preset_Endgame_OpenedIfNothingConstructed" Trigger="EndgameOpenedIfNothingConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_OpenedIfNothingConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Idle" Trigger="EndgameIdle" Cooldown="10" ChanceToTrigger="50" Frequency="30">
+    <Entry Dialogue="Bark_Endgame_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_08" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_09" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_10" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_11" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Idle_12" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Return" Trigger="EndgameReturn" Cooldown="10" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Return_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_08" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_09" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_10" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_11" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Return_12" Weight="1" />
+    <Entry Dialogue="Bark_EugeneCompleted_01" Weight="1" />
+    <Entry Dialogue="Bark_EugeneCompleted_02" Weight="1" />
+    <Entry Dialogue="Bark_EugeneCompleted_03" Weight="1" />
+    <Entry Dialogue="Bark_EugeneCompleted_04" Weight="1" />
+    <Entry Dialogue="Bark_EugeneCompleted_05" Weight="1" />
+    <Entry Dialogue="Bark_EugeneCompleted_06" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_CityHall_Opened" Trigger="Endgame_CityHall_Opened" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_CityHall_Opened_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Opened_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Opened_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Opened_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Opened_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Opened_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Opened_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Opened_08" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Opened_09" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Opened_10" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_CityHall_Idle" Trigger="Endgame_CityHall_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_CityHall_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Idle_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_Idle_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_CityHall_ProjectStarted" Trigger="Endgame_CityHall_ProjectStarted" Cooldown="3" ChanceToTrigger="100">
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectStarted_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectStarted_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectStarted_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectStarted_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectStarted_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectStarted_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectStarted_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectStarted_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_CityHall_ProjectCompleted" Trigger="Endgame_CityHall_ProjectCompleted" Cooldown="3" ChanceToTrigger="100">
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectCompleted_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectCompleted_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectCompleted_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectCompleted_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectCompleted_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectCompleted_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_CityHall_ProjectCompleted_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Apo_OpenedIfNotConstructed" Trigger="Endgame_Apo_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Apo_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Apo_ConstructionCompleted" Trigger="Endgame_Apo_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Apo_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Apo_OpenedIfConstructed" Trigger="Endgame_Apo_OpenedIfConstructed" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Apo_OpenedIfConstructed_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Apo_OpenedIfConstructed_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Apo_OpenedIfConstructed_03" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Apo_Idle" Trigger="Endgame_Apo_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_Apo_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Apo_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Apo_Idle_03" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_AdventurersGuild_OpenedIfNotConstructed" Trigger="Endgame_AdventurersGuild_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_AdventurersGuild_ConstructionCompleted" Trigger="Endgame_AdventurersGuild_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_AdventurersGuild_OpenedIfConstructed" Trigger="Endgame_AdventurersGuild_OpenedIfConstructed" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_OpenedIfConstructed_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_OpenedIfConstructed_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_OpenedIfConstructed_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_OpenedIfConstructed_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_OpenedIfConstructed_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_OpenedIfConstructed_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_OpenedIfConstructed_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_OpenedIfConstructed_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_AdventurersGuild_Idle" Trigger="Endgame_AdventurersGuild_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_Idle_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_Idle_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_AdventurersGuild_StartExpeditionEasy" Trigger="Endgame_AdventurersGuild_StartExpeditionEasy" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionEasy_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionEasy_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionEasy_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionEasy_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionEasy_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionEasy_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionEasy_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionEasy_08" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionEasy_09" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_AdventurersGuild_StartExpeditionMedium" Trigger="Endgame_AdventurersGuild_StartExpeditionMedium" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionMedium_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionMedium_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionMedium_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionMedium_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionMedium_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionMedium_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionMedium_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_AdventurersGuild_StartExpeditionHard" Trigger="Endgame_AdventurersGuild_StartExpeditionHard" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionHard_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionHard_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionHard_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionHard_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionHard_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionHard_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_StartExpeditionHard_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_AdventurersGuild_ExpeditionSuccess" Trigger="Endgame_AdventurersGuild_ExpeditionSuccess" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionSuccess_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionSuccess_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionSuccess_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionSuccess_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionSuccess_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionSuccess_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionSuccess_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_AdventurersGuild_ExpeditionFailure" Trigger="Endgame_AdventurersGuild_ExpeditionFailure" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionFailure_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionFailure_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionFailure_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionFailure_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionFailure_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionFailure_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_AdventurersGuild_ExpeditionFailure_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Bank_OpenedIfNotConstructed" Trigger="Endgame_Bank_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Bank_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Bank_ConstructionCompleted" Trigger="Endgame_Bank_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Bank_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Bank_UpgradeCompleted" Trigger="Endgame_Bank_UpgradeCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Bank_UpgradeCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Bank_OpenedIfConstructed" Trigger="Endgame_Bank_OpenedIfConstructed" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Bank_OpenedIfConstructed_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_OpenedIfConstructed_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_OpenedIfConstructed_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_OpenedIfConstructed_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_OpenedIfConstructed_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_OpenedIfConstructed_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_OpenedIfConstructed_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Bank_Idle" Trigger="Endgame_Bank_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_Bank_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Bank_Idle_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_OpenedIfNotConstructed" Trigger="Endgame_Crafting_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Crafting_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_ConstructionCompleted" Trigger="Endgame_Crafting_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Crafting_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_RarityUpgradeUnlocked" Trigger="Endgame_Crafting_RarityUpgradeUnlocked" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Crafting_RarityUpgradeUnlocked_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_QualityUpgradeUnlocked" Trigger="Endgame_Crafting_QualityUpgradeUnlocked" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Crafting_QualityUpgradeUnlocked_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_ReagentUpgradeUnlocked" Trigger="Endgame_Crafting_ReagentUpgradeUnlocked" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentUpgradeUnlocked_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_OpenedIfConstructed" Trigger="Endgame_Crafting_OpenedIfConstructed" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Crafting_OpenedIfConstructed_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_OpenedIfConstructed_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_OpenedIfConstructed_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_OpenedIfConstructed_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_OpenedIfConstructed_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_OpenedIfConstructed_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_OpenedIfConstructed_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_OpenedIfConstructed_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_Idle" Trigger="Endgame_Crafting_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_Crafting_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_Idle_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_ReagentAquisitionProjectCompleted" Trigger="Endgame_Crafting_ReagentAquisitionProjectCompleted" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentAquisitionProjectCompleted_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentAquisitionProjectCompleted_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentAquisitionProjectCompleted_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentAquisitionProjectCompleted_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentAquisitionProjectCompleted_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentAquisitionProjectCompleted_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentAquisitionProjectCompleted_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_RarityUpgradeProjectCompleted" Trigger="Endgame_Crafting_RarityUpgradeProjectCompleted" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Crafting_RarityUpgradeProjectCompleted_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_RarityUpgradeProjectCompleted_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_RarityUpgradeProjectCompleted_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_RarityUpgradeProjectCompleted_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_RarityUpgradeProjectCompleted_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_RarityUpgradeProjectCompleted_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_RarityUpgradeProjectCompleted_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_RarityUpgradeProjectCompleted_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_QualityUpgradeProjectCompleted" Trigger="Endgame_Crafting_QualityUpgradeProjectCompleted" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Crafting_QualityUpgradeProjectCompleted_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_QualityUpgradeProjectCompleted_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_QualityUpgradeProjectCompleted_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_QualityUpgradeProjectCompleted_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_QualityUpgradeProjectCompleted_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_QualityUpgradeProjectCompleted_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_QualityUpgradeProjectCompleted_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Crafting_ReagentUpgradeProjectCompleted" Trigger="Endgame_Crafting_ReagentUpgradeProjectCompleted" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentUpgradeProjectCompleted_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentUpgradeProjectCompleted_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentUpgradeProjectCompleted_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentUpgradeProjectCompleted_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentUpgradeProjectCompleted_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentUpgradeProjectCompleted_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentUpgradeProjectCompleted_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Crafting_ReagentUpgradeProjectCompleted_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_DiplomatsGuild_OpenedIfNotConstructed" Trigger="Endgame_DiplomatsGuild_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_DiplomatsGuild_ConstructionCompleted" Trigger="Endgame_DiplomatsGuild_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_DiplomatsGuild_OpenedIfConstructed" Trigger="Endgame_DiplomatsGuild_OpenedIfConstructed" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_OpenedIfConstructed_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_OpenedIfConstructed_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_OpenedIfConstructed_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_OpenedIfConstructed_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_OpenedIfConstructed_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_OpenedIfConstructed_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_OpenedIfConstructed_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_OpenedIfConstructed_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_DiplomatsGuild_Idle" Trigger="Endgame_DiplomatsGuild_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_Idle_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_Idle_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_DiplomatsGuild_StartExpeditionEasy" Trigger="Endgame_DiplomatsGuild_StartExpeditionEasy" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionEasy_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionEasy_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionEasy_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionEasy_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionEasy_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionEasy_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionEasy_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_DiplomatsGuild_StartExpeditionMedium" Trigger="Endgame_DiplomatsGuild_StartExpeditionMedium" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionMedium_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionMedium_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionMedium_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionMedium_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionMedium_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionMedium_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionMedium_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_DiplomatsGuild_StartExpeditionHard" Trigger="Endgame_DiplomatsGuild_StartExpeditionHard" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionHard_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionHard_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionHard_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionHard_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionHard_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionHard_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_StartExpeditionHard_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_DiplomatsGuild_ExpeditionSuccess" Trigger="Endgame_DiplomatsGuild_ExpeditionSuccess" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionSuccess_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionSuccess_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionSuccess_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionSuccess_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionSuccess_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionSuccess_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionSuccess_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_DiplomatsGuild_ExpeditionFailure" Trigger="Endgame_DiplomatsGuild_ExpeditionFailure" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionFailure_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionFailure_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionFailure_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionFailure_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionFailure_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionFailure_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_DiplomatsGuild_ExpeditionFailure_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Skills_OpenedIfNotConstructed" Trigger="Endgame_Skills_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Skills_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Skills_ConstructionCompleted" Trigger="Endgame_Skills_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Skills_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Skills_CopyProjectComplete" Trigger="Endgame_Skills_CopyProjectComplete" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Skills_CopyProjectComplete_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Skills_OpenedIfConstructed" Trigger="Endgame_Skills_OpenedIfConstructed" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Skills_OpenedIfConstructed_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_OpenedIfConstructed_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_OpenedIfConstructed_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_OpenedIfConstructed_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_OpenedIfConstructed_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_OpenedIfConstructed_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_OpenedIfConstructed_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Skills_Idle" Trigger="Endgame_Skills_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_Skills_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Skills_Idle_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_PAToGold_OpenedIfNotConstructed" Trigger="Endgame_PAToGold_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_PAToGold_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_PAToGold_ConstructionCompleted" Trigger="Endgame_PAToGold_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_PAToGold_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_PAToGold_OpenedIfConstructed" Trigger="Endgame_PAToGold_OpenedIfConstructed" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_PAToGold_OpenedIfConstructed_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_OpenedIfConstructed_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_OpenedIfConstructed_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_OpenedIfConstructed_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_OpenedIfConstructed_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_OpenedIfConstructed_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_OpenedIfConstructed_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_PAToGold_Idle" Trigger="Endgame_PAToGold_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_PAToGold_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_Idle_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_PAToGold_ConversionProjectCompleted" Trigger="Endgame_PAToGold_ConversionProjectCompleted" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_PAToGold_ConversionProjectCompleted_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_ConversionProjectCompleted_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_ConversionProjectCompleted_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_ConversionProjectCompleted_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_ConversionProjectCompleted_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_ConversionProjectCompleted_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_PAToGold_ConversionProjectCompleted_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_GoldToPA_OpenedIfNotConstructed" Trigger="Endgame_GoldToPA_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_GoldToPA_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_GoldToPA_ConstructionCompleted" Trigger="Endgame_GoldToPA_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_GoldToPA_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_GoldToPA_OpenedIfConstructed" Trigger="Endgame_GoldToPA_OpenedIfConstructed" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_GoldToPA_OpenedIfConstructed_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_OpenedIfConstructed_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_OpenedIfConstructed_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_OpenedIfConstructed_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_OpenedIfConstructed_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_OpenedIfConstructed_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_OpenedIfConstructed_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_GoldToPA_Idle" Trigger="Endgame_GoldToPA_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_GoldToPA_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_Idle_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_GoldToPA_ConversionProjectCompleted" Trigger="Endgame_GoldToPA_ConversionProjectCompleted" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_GoldToPA_ConversionProjectCompleted_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_ConversionProjectCompleted_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_ConversionProjectCompleted_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_ConversionProjectCompleted_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_ConversionProjectCompleted_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_ConversionProjectCompleted_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_GoldToPA_ConversionProjectCompleted_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Alchesmith_OpenedIfNotConstructed" Trigger="Endgame_Alchesmith_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Alchesmith_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Alchesmith_ConstructionCompleted" Trigger="Endgame_Alchesmith_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Alchesmith_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Alchesmith_UpgradeProjectCompleted" Trigger="Endgame_Alchesmith_UpgradeProjectCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Alchesmith_UpgradeProjectCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Alchesmith_OpenedIfConstructed" Trigger="Endgame_Alchesmith_OpenedIfConstructed" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Alchesmith_OpenedIfConstructed_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_OpenedIfConstructed_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_OpenedIfConstructed_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_OpenedIfConstructed_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_OpenedIfConstructed_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_OpenedIfConstructed_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_OpenedIfConstructed_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Alchesmith_Idle" Trigger="Endgame_Alchesmith_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_Alchesmith_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_Idle_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Alchesmith_TransmutationProjectCompleted" Trigger="Endgame_Alchesmith_TransmutationProjectCompleted" Cooldown="8" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Alchesmith_TransmutationProjectCompleted_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_TransmutationProjectCompleted_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_TransmutationProjectCompleted_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_TransmutationProjectCompleted_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_TransmutationProjectCompleted_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_TransmutationProjectCompleted_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Alchesmith_TransmutationProjectCompleted_07" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Shipyard_OpenedIfNotConstructed" Trigger="Endgame_Shipyard_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Shipyard_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Shipyard_ConstructionCompleted" Trigger="Endgame_Shipyard_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Shipyard_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Wonders_SkillPoint" Trigger="Endgame_Wonders_SkillPoint" Cooldown="4" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Wonders_SkillPoint_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Wonders_SkillSlot" Trigger="Endgame_Wonders_SkillSlot" Cooldown="4" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Wonders_SkillSlot_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Wonders_DecreaseBuyingPrice" Trigger="Endgame_Wonders_DecreaseBuyingPrice" Cooldown="4" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Wonders_DecreaseBuyingPrice_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Wonders_IncreaseSellingPrice" Trigger="Endgame_Wonders_IncreaseSellingPrice" Cooldown="4" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Wonders_IncreaseSellingPrice_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Wonders_GoldFindBoost" Trigger="Endgame_Wonders_GoldFindBoost" Cooldown="4" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Wonders_GoldFindBoost_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Wonders_MagicFindBoost" Trigger="Endgame_Wonders_MagicFindBoost" Cooldown="4" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Wonders_MagicFindBoost_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_Wonders_ApoResourceBoost" Trigger="Endgame_Wonders_ApoResourceBoost" Cooldown="4" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_Wonders_ApoResourceBoost_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_ExpertForge_OpenedIfNotConstructed" Trigger="Endgame_ExpertForge_OpenedIfNotConstructed" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_ExpertForge_OpenedIfNotConstructed_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_ExpertForge_ConstructionCompleted" Trigger="Endgame_ExpertForge_ConstructionCompleted" Cooldown="0" ChanceToTrigger="100" Once="1">
+    <Entry Dialogue="Bark_Endgame_ExpertForge_ConstructionCompleted_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_ExpertForge_OpenedIfConstructed" Trigger="Endgame_ExpertForge_OpenedIfConstructed" Cooldown="5" ChanceToTrigger="80">
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_OpenedIfConstructed_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_OpenedIfConstructed_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_OpenedIfConstructed_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_OpenedIfConstructed_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_OpenedIfConstructed_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_OpenedIfConstructed_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_OpenedIfConstructed_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_OpenedIfConstructed_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_ExpertForge_Idle" Trigger="Endgame_ExpertForge_Idle" Cooldown="5" ChanceToTrigger="50" Frequency="20">
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_Idle_01" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_Idle_02" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_Idle_03" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_Idle_04" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_Idle_05" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_Idle_06" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_Idle_07" Weight="1" />
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_Idle_08" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_ExpertForge_StartProject_Pillager" Trigger="Endgame_ExpertForge_StartProject_Pillager" Cooldown="5" ChanceToTrigger="100">
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_PillagerProjectStart_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_ExpertForge_StartProject_Liberator" Trigger="Endgame_ExpertForge_StartProject_Liberator" Cooldown="5" ChanceToTrigger="100">
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_LiberatorProjectStart_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_ExpertForge_FinishProject_Pillager" Trigger="Endgame_ExpertForge_FinishProject_Pillager" Cooldown="5" ChanceToTrigger="100">
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_PillagerProjectEnd_01" Weight="1" />
+  </Preset>
+  <Preset Name="Preset_Endgame_ExpertForge_FinishProject_Liberator" Trigger="Endgame_ExpertForge_FinishProject_Liberator" Cooldown="5" ChanceToTrigger="100">
+    <Entry Dialogue="Bark_Endgame_Expert_Forge_LiberatorProjectEnd_01" Weight="1" />
+  </Preset>
+</MetaData>

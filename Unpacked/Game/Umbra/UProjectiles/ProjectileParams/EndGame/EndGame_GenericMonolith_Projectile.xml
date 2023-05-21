@@ -1,0 +1,135 @@
+<MetaData>
+  <Projectile ID="GenericMonolith_Projectile" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="u_gameplay_ingredients.a3_repu_event_generator.projectile" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Lightning.Lightning_Ball_Impact_01" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Proj_ElectricalDischarge_Launch" />
+      <Hit SoundTriggerName="Play_Proj_ElectricalDischarge_Impact" />
+      <Removed SoundTriggerName="Stop_Proj_ElectricalDischarge_Lp" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="SvriirMonolith_Projectile" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="Missions.KillArena.Poison_Projectile" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Poison" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Proj_ElectricalDischarge_Launch" />
+      <Hit SoundTriggerName="Play_Proj_ElectricalDischarge_Impact" />
+      <Removed SoundTriggerName="Stop_Proj_ElectricalDischarge_Lp" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="RepublicMonolith_Projectile" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="Missions.KillArena.Lightning_Projectile" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Proj_ElectricalDischarge_Launch" />
+      <Hit SoundTriggerName="Play_Proj_ElectricalDischarge_Impact" />
+      <Removed SoundTriggerName="Stop_Proj_ElectricalDischarge_Lp" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="COFYMonolith_Projectile" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="Missions.KillArena.Fire_Projectile" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Fire" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Proj_ElectricalDischarge_Launch" />
+      <Hit SoundTriggerName="Play_Proj_ElectricalDischarge_Impact" />
+      <Removed SoundTriggerName="Stop_Proj_ElectricalDischarge_Lp" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="COSSMonolith_Projectile" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="Missions.KillArena.Frost_Projectile" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Frost" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Proj_ElectricalDischarge_Launch" />
+      <Hit SoundTriggerName="Play_Proj_ElectricalDischarge_Impact" />
+      <Removed SoundTriggerName="Stop_Proj_ElectricalDischarge_Lp" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="COFEMonolith_Projectile" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="Missions.KillArena.Flesh_Projectile" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Flesh" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Proj_ElectricalDischarge_Launch" />
+      <Hit SoundTriggerName="Play_Proj_ElectricalDischarge_Impact" />
+      <Removed SoundTriggerName="Stop_Proj_ElectricalDischarge_Lp" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="OutlawMonolith_Projectile" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="Missions.KillArena.Shadow_Projectile" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Shadow" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Proj_ElectricalDischarge_Launch" />
+      <Hit SoundTriggerName="Play_Proj_ElectricalDischarge_Impact" />
+      <Removed SoundTriggerName="Stop_Proj_ElectricalDischarge_Lp" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+</MetaData>

@@ -1,0 +1,29 @@
+<MetaData>
+  <Quest Name="Quest_LambachFight2" StartDialog="" Type="BossFight" UIName="@ui_A2_Q6_EventQuestLabel1" UIDesc="@">
+    <Step Order="0" UIName="@ui_A2_Q6_EventStepLabel2" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="A2_Q6_S6_Lambach02" KillCount="50">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A2_Q6_S6_Lambach02" VFX="" VFXOffsetZ="" Area="" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_Lambach02_SpawnPoint" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q6_S6_LambachP2_HideGI_1" EntityNames="GI_IncubationChamber01" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q6_S6_LambachP2_HideGI_2" EntityNames="GI_IncubationChamber02" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q6_S6_LambachP2_HideGI_3" EntityNames="GI_IncubationChamber03" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q6_S6_LambachP2_HideGI_4" EntityNames="GI_IncubationChamber04" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q6_S6_LambachP2_HideGI_5" EntityNames="GI_IncubationChamber05" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="3" Name="A1_Q6_PlayerTeleport" TeleportedEntityName="#Player" PreBlackScreen="2" DestinationName="QP_Lambach02_FacePoint" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalRevivePlayers" Name="ACT2_Quest6_EventRevive2" RevivePostion="SpawnPoint_arenaboss1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q6_S6_Lambach02" SpawnClass="sc_COFE_LambachArena2_LambachP2" TargetEntityName="QP_Lambach02_SpawnPoint" FaceAtSpawn="QP_Lambach02_FacePoint" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q6_S6_HideGI_6" EntityNames="EnvironmentWithADB1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q2_S6_UnhideGI_6" EntityNames="EnvironmentWithADB1" Hide="0" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionSequence" BlendingSpeed="1" PlaySpeed="1" EnableBlendOut="1" Name="A2_LambachFight_CutScene" SequenceName="A2_LAMBACHDEATH" />
+      <Event Trigger="EventEnd" EventName="A2_LambachFight_CutScene" Type="GoalAchieve" Name="A2_LambachFight_Goal1Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="A2_LambachFightP2Talk_1" DialogName="ACT2_Q6_S6_DynS_Lambach_Talk3_1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Lambach" PercentLeft="30" Type="GlobalDialog" Name="A2_LambachFightP2Talk_2" DialogName="ACT2_Q6_S6_DynS_Lambach_Talk3_2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Lambach" PercentLeft="55" Type="GlobalDialog" Name="A2_LambachFightP2Talk_3" DialogName="ACT2_Q6_S6_DynS_Lambach_Talk3_3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Lambach" PercentLeft="80" Type="GlobalDialog" Name="A2_LambachFightP2Talk_4" DialogName="ACT2_Q6_S6_DynS_Lambach_Talk3_4" />
+    </Step>
+  </Quest>
+</MetaData>

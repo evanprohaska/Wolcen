@@ -1,0 +1,12 @@
+<MetaData>
+  <Skill UID="AI_COSS_SkullMourner_Crown_RangedAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="frost" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="2.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Jaw" />
+    <Projectile Name="COSS_SkullMourner_Crown_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="" OnHit="Play_COSS_SkullMourner_Crown_Projectile_Impact" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

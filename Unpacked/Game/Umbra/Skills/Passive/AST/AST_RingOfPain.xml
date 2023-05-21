@@ -1,0 +1,116 @@
+<MetaData>
+  <Spell Name="AST_RingOfPain_RendDamage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="rend_damage_per_health_percent_missing" Permanent="0">
+        <Semantics DamagePercentFloat="0.8" />
+      </EIM>
+      <EIM Name="damage_percent_as_rend" Permanent="0">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/bloodforblood_Rend.png" Description="@ui_rend_damage_per_health_percent_missing_buff_skill" Title="@ui_ringofpain_buff_title" />
+  </Spell>
+  <Spell Name="AST_RingOfPain_ShadowDamage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="shadow_damage_per_health_percent_missing" Permanent="0">
+        <Semantics DamagePercentFloat="0.8" />
+      </EIM>
+      <EIM Name="damage_percent_as_shadow" Permanent="0">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/bloodforblood_Shadow.png" Description="@ui_shadow_damage_per_health_percent_missing_buff_skill" Title="@ui_ringofpain_buff_title" />
+  </Spell>
+  <Spell Name="AST_RingOfPain_FrostDamage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="frost_damage_per_health_percent_missing" Permanent="0">
+        <Semantics DamagePercentFloat="0.8" />
+      </EIM>
+      <EIM Name="damage_percent_as_frost" Permanent="0">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/bloodforblood_Frost.png" Description="@ui_frost_damage_per_health_percent_missing_buff_skill" Title="@ui_ringofpain_buff_title" />
+  </Spell>
+  <Spell Name="AST_RingOfPain_AetherDamage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="umbra_damage_per_health_percent_missing" Permanent="0">
+        <Semantics DamagePercentFloat="0.8" />
+      </EIM>
+      <EIM Name="damage_percent_as_umbra" Permanent="0">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/bloodforblood_Aether.png" Description="@ui_umbra_damage_per_health_percent_missing_buff_skill" Title="@ui_ringofpain_buff_title" />
+  </Spell>
+  <Spell Name="AST_RingOfPain_LightningDamage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="lightning_damage_per_health_percent_missing" Permanent="0">
+        <Semantics DamagePercentFloat="0.8" />
+      </EIM>
+      <EIM Name="damage_percent_as_lightning" Permanent="0">
+        <Semantics DamagePercentInt="15" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/bloodforblood_Lightning.png" Description="@ui_lightning_damage_per_health_percent_missing_buff_skill" Title="@ui_ringofpain_buff_title" />
+  </Spell>
+  <Spell Name="AST_RingOfPain_TakeMoreDamage" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="life_leech_percent_global" Permanent="0">
+        <Semantics DamagePercentFloat="1" />
+      </EIM>
+      <EIM Name="damage_taken_percent" Permanent="0">
+        <Semantics DamagePercentFloat="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_RingOfPain_ResourceGeneration" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="resourcegeneration_percent" Permanent="0">
+        <Semantics ResourcePercentFloat="25" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/bloodforblood.png" Description="@ui_resourcegeneration_percent_buff_skill" Title="@ui_ringofpain_buff_title" />
+  </Spell>
+  <Spell Name="AST_RingOfPain_CumulativeBuff" MaxStack="5">
+    <MagicEffects>
+      <EIM Name="spellcastingspeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="1" />
+      </EIM>
+      <EIM Name="attackspeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="4" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/bloodforblood.png" Description="@ui_attack_and_cast_speed_buff_skill" Title="@ui_ringofpain_buff_title" />
+  </Spell>
+  <Spell Name="AST_RingOfPain_GenericBuff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="statusailment_inflict_chance_score" Permanent="0">
+        <Semantics CharacteristicScoreInt="40" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/bloodforblood.png" Description="@ui_statusailment_inflict_chance_score_buff_skill" Title="@ui_ringofpain_buff_title" />
+  </Spell>
+  <Spell Name="AST_RingOfPain_GenericDebuff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="movespeed" Permanent="0">
+        <Semantics SpeedPercentInt="-20" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_RingOfPain_DotDebuff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="dotdamage_percent_received_increase" Permanent="0">
+        <Semantics DamagePercentFloat="40" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+  <Spell Name="AST_RingOfPain_HealthRegenBuff" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="health_regen_pts" Permanent="0">
+        <Semantics ResourceFlatFloat="80" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/bloodforblood.png" Description="@ui_health_regen_pts_buff_skill" Title="@ui_ringofpain_buff_title" />
+  </Spell>
+</MetaData>

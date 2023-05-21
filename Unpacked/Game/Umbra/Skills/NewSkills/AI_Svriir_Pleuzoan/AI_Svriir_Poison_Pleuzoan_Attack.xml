@@ -1,0 +1,18 @@
+<MetaData>
+  <Skill UID="AI_Svriir_Poison_Pleuzoan_Attack" ESkill="default_melee" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1" />
+    <Cooldown Cooldown="2" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="Bip01" />
+    <Shapes>
+      <Entry ShapeName="Svriir_Toxic_Pleuzoan_AttackShape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Anticipation" Name="U_Monster.Jellyfish_SVRI_Toxic.Anticipation" Bone="Bip01 Head" Offset="0,0,0" Direction="0,1,0" Scale="2" />
+      <Particle Key="DamageZone" Name="U_Monster.Jellyfish_SVRI_Toxic.PoisonAOE" Offset="0,0,1.8" Direction="0,1,0" Scale="0.85" />
+    </ParticleList>
+    <SkillSpecific HitEntityOnlyOnce="0" />
+    <SoundTrigger OnAnimStart="Play_Jellyfish_Shadow_Attack_Start" OnAnimCast="Play_Jellyfish_Shadow_Attack_Explosion" PlayAttackVoice="0" />
+  </Skill>
+</MetaData>

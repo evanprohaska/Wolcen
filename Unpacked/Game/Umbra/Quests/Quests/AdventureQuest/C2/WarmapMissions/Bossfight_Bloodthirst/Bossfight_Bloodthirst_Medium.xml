@@ -1,0 +1,392 @@
+<MetaData>
+  <Quest Name="WM_Q6_Main_REPU_Medium" UIName="@WM_Q6_Main_REPU_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_OUTW_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_REPU_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_R_Assassin_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_RR_Medium" UIName="@WM_Q6_Main_REPU_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_REPU_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_REPURED_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_RR_Justicar_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_OUTWF_Medium" UIName="@WM_Q6_Main_OUTW_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_OUTW_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_OUTWF_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_OF_SadisticThug_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_OUTWS_Medium" UIName="@WM_Q6_Main_OUTW_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_OUTW_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_OUTWS_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_OS_SadisticThugShadow_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_OUTWWS_Medium" UIName="@WM_Q6_Main_OUTW_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_OUTW_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_OUTWWS_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_OWS_WarbeastShadow_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_SVRIL1_Medium" UIName="@WM_Q6_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_SVRIL1_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_SL1_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_SVRIL2_Medium" UIName="@WM_Q6_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_SVRIL2_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_SL2_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_SVRIS1_Medium" UIName="@WM_Q6_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_SVRIS1_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_SS1_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_SVRIS2_Medium" UIName="@WM_Q6_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_SVRIS2_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_SS2_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_SVRIC_Medium" UIName="@WM_Q6_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_SVRIC_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_SC_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_SVRIF_Medium" UIName="@WM_Q6_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_SVRIF_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_SF_Alpha_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_SVRIWF_Medium" UIName="@WM_Q6_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_SVRIWF_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_SWF_Alpha_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_SVRIWP_Medium" UIName="@WM_Q6_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_SVRIWP_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_SWP_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_SVRIWS_Medium" UIName="@WM_Q6_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_SVRIWS_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_SWS_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_SVRIWC_Medium" UIName="@WM_Q6_Main_SVRI_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_SVRI_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_SVRIWC_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_SWC_AlphaPoison_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COFEM_Medium" UIName="@WM_Q6_Main_COFE_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COFE_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COFEM_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COFEM_DemonOfFlesh_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COFEW_Medium" UIName="@WM_Q6_Main_COFE_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COFE_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COFEW_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COFEW_Alpha_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COFER_Medium" UIName="@WM_Q6_Main_COFE_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COFE_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COFER_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COFER_DemonOfFlesh_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COFET1_Medium" UIName="@WM_Q6_Main_COFE_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COFE_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COFET_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COFET1_DemonOfFlesh_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COFYR1_Medium" UIName="@WM_Q6_Main_COFY_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COFY_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COFYR1_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COFYR1_Golgotht_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COFYR2_Medium" UIName="@WM_Q6_Main_COFY_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COFY_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COFYR2_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COFYR2_Assassin_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COFYT1_Medium" UIName="@WM_Q6_Main_COFY_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COFY_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COFYT1_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COFYT1_Knight_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COFYT2_Medium" UIName="@WM_Q6_Main_COFY_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COFY_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COFYT2_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COFYT2_Knight_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COSSD1_Medium" UIName="@WM_Q6_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COSSD1_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COSSD1_Corrupted_PrimordialGuardian_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COSSD2_Medium" UIName="@WM_Q6_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COSSD2_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COSSD2_Corrupted_PrimordialGuardian_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COSSS_Medium" UIName="@WM_Q6_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COSSS_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COSSS_DemonOfSouls_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COSST_Medium" UIName="@WM_Q6_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COSST_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COSST_Butcher_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COSSU1_Medium" UIName="@WM_Q6_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COSSU1_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COSSU1_Butcher_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COSSU2_Medium" UIName="@WM_Q6_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfinitePreset_WM_M_COSSU2_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COSSU2_Butcher_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+  <Quest Name="WM_Q6_Main_COSSW_Medium" UIName="@WM_Q6_Main_COSS_QuestNameLabel" UIDesc="" Type="Dungeon" StartDialog="">
+    <Step Order="0" UIName="@WM_Q6_Main_COSS_StepNameLabel" AutoClearEvents="1" Save="0">
+      <Goal Order="0" Type="Go" Destination="BOSS_Spawn_Point" RequireAllPlayers="0" Radius="50" />
+      <Goal Order="1" Type="KillAll" EventsName="NPC2_BossSpawn" KillCount="1">
+        <ArrowMarker Target="NPC2_BossSpawn" Area="dungeon" ShowMinimapIcon="1" Threshold="60" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="BOSS_Spawn_Point" AreaRadius="15" Type="ArenaStart" Name="StartArena1" ArenaPreset="ArenaInfiniteWaves_WM_M_COSSW_Base" LocationEntityName="BOSS_Spawn_Point" Delay="2" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="EventEnd" Name="EndtArena1_1" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EventEnd" Name="EndtArena1_2" EventsName="StartArena1" Remove="1" TriggerEnd="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" Name="NPC2_BossSpawn" SpawnClass="Sc_WM_M_COSSW_Butcher_Boss" TargetEntityName="BOSS_Spawn_Point" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="3" SpawnFrequency="0" />
+    </Step>
+  </Quest>
+</MetaData>

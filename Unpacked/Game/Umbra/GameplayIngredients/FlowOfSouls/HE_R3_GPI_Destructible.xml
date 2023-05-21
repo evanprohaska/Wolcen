@@ -1,0 +1,14 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="HE_R3_GPI_Destructible">
+    <Particles>
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredient2.flesh_mouth.spawn_ground" Direction="0,0,1" Scale="1" />
+      <Particle Key="ProjectileCastVFX" Name="u_gameplay_ingredient2.flesh_mouth.shoot" Direction="0,0,1" Scale="1.5" />
+    </Particles>
+    <Iterations Number="0" WarmUpTime="2" CooldownMin="1" CooldownMax="1" DelayBeforeFirstIteration="1.5" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_LambachMouth" Targeting="Random" ProjectileStartingPosition="FromCaster" CastOnlyIfCanSummon="1" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="HE_R3_GPI_Destructible_PresetList" UIName="@ui_GameplayIngredients_LambachMouth" Model="Objects/props/HuntMechanic/Props_HuntMechanics_Chest.cgf" ModelScale="1" Loop="1" NewStartingPosition="0" LootClass="LC_Elite">
+    <Preset Name="HE_R3_GPI_Destructible" />
+  </FlowOfSoulsPresetList>
+</MetaData>

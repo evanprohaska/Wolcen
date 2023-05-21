@@ -1,0 +1,74 @@
+<MetaData>
+  <FlowOfSoulsPreset Name="FurySpark_Begin">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_gameplay_ingredient2.fury.indicator" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredient2.fury.impact_no_target" Direction="0,0,1" Scale="1" />
+      <Particle Key="ProjectileCastVFX" Name="" Direction="0,0,1" Scale="1.5" />
+    </Particles>
+    <Iterations Number="3" WarmUpTime="0" CooldownMin="0" CooldownMax="0" DelayBeforeFirstIteration="2" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_FurySpark" Targeting="Random" ProjectileStartingPosition="FromCaster" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPreset Name="FurySpark_End">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_gameplay_ingredient2.fury.indicator" Direction="0,0,1" Offset="0,0,0" Scale="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredient2.fury.impact_no_target" Direction="0,0,1" Scale="1" />
+      <Particle Key="ProjectileCastVFX" Name="" Direction="0,0,1" Scale="1.5" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="0" CooldownMin="2" CooldownMax="4" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_FurySpark" Targeting="Random" ProjectileStartingPosition="FromCaster" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPreset Name="FurySpark_NoSummon">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_gameplay_ingredient2.fury.indicator" Direction="0,0,1" Offset="0,0,0" Scale="0.5" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredient2.fury.impact_no_target" Direction="0,0,1" Scale="0.5" />
+      <Particle Key="ProjectileCastVFX" Name="" Direction="0,0,1" Scale="1.5" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="0.3" CooldownMin="0.2" CooldownMax="0.5" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_FurySpark_NoSummon" Targeting="Random" ProjectileStartingPosition="FromCaster" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="FurySpark_NoSummon_PresetList" Loop="1" NewStartingPosition="0">
+    <Preset Name="FurySpark_NoSummon" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="FurySpark_slow">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_gameplay_ingredient2.fury.indicator" Direction="0,0,1" Offset="0,0,0" Scale="0.5" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredient2.fury.impact_no_target" Direction="0,0,1" Scale="0.5" />
+      <Particle Key="ProjectileCastVFX" Name="" Direction="0,0,1" Scale="0.5" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="0.3" CooldownMin="0.5" CooldownMax="1" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_FurySpark_NoSummon_Trenches" Targeting="Random" ProjectileStartingPosition="FromCaster" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="FurySpark_Slow_PresetList" Loop="1" NewStartingPosition="0">
+    <Preset Name="FurySpark_slow" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="FurySpark_fast">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_gameplay_ingredient2.fury.indicator" Direction="0,0,1" Offset="0,0,0" Scale="0.75" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="u_gameplay_ingredient2.fury.impact_no_target" Direction="0,0,1" Scale="0.75" />
+      <Particle Key="ProjectileCastVFX" Name="" Direction="0,0,1" Scale="1.5" />
+    </Particles>
+    <Iterations Number="20" WarmUpTime="0" CooldownMin="4" CooldownMax="4" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_FurySpark_fast" Targeting="Random" ProjectileStartingPosition="FromCaster" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="FurySpark_fast_PresetList" Loop="1" NewStartingPosition="0">
+    <Preset Name="FurySpark_fast" />
+  </FlowOfSoulsPresetList>
+  <FlowOfSoulsPreset Name="EndgameFurySpark">
+    <Particles>
+      <Particle Key="TargetLockVFX" Name="U_gameplay_ingredient2.fury.indicator" Direction="0,0,1" Offset="0,0,0" Scale="0.5" Delay="1" />
+      <Particle Key="WarmUpVFX" Name="" Direction="0,0,1" Offset="0,0,0" Scale="2" />
+      <Particle Key="SkillCastVFX" Name="Missions.KillArena.Flesh_Impact" Direction="0,0,1" Scale="0.5" />
+      <Particle Key="ProjectileCastVFX" Name="" Direction="0,0,1" Scale="1.5" />
+    </Particles>
+    <Iterations Number="1" WarmUpTime="0.3" CooldownMin="0.5" CooldownMax="1" DelayBeforeFirstIteration="0" />
+    <SkillCast Number="1" FireRate="0" SkillUID="Skill_EndgameFurySpark" Targeting="Random" ProjectileStartingPosition="FromCaster" TargetingRadiusMin="5" />
+  </FlowOfSoulsPreset>
+  <FlowOfSoulsPresetList Name="EndgameFurySpark_PresetList" Loop="1" NewStartingPosition="0">
+    <Preset Name="EndgameFurySpark" />
+  </FlowOfSoulsPresetList>
+</MetaData>

@@ -1,0 +1,60 @@
+<MetaData>
+  <Quest Name="ACT4_Loop2" StartDialog="" Type="Main" UIName="@ui_A4_Q4_QuestLabel" UIDesc="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_A4_Q4_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="QP_EG_GoToSF">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="NPC_END_LOOP1" Area="Stormfall" Threshold="85" UseAreaSize="25" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Quest_1_Zalahir" Type="EventEnd" Name="EndZalahir_Dialog" EventsName="ACT4_Q1_GuardingPalace" Remove="1" TriggerEnd="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_Hellion_Hide" Modifier="HellionCosmetic" Remove="1" Target="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ClearSpawn" Name="A4_ClearAllArena" Events="SpawnArena_Coss,SpawnArena_Cofe,SpawnArena_Cofy" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_sua_productionUpdated_Hide" EntityNames="AlphaFlow_IncreaseLoop" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_sua_launchQuest_Hide" EntityNames="AlphaFlow_StartFight" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_sua_productionUpdated_Hide3" EntityNames="Act4_sua_productionUpdated" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_sua_launchQuest_Hide3" EntityNames="Act4_sua_launchQuest" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestFail" Name="FailLoop3" QuestName="ACT4_Loop3" Delay=".2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestFail" Name="FailLoop1" QuestName="ACT4_Loop1" Delay=".2" />
+      <Event Trigger="EventEnd" EventName="A4_PeacefulAwakening" Type="GoalAchieve" Name="Achieve" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="A4_PeacefulAwakening" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="A4_PeacefulAwakening" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_Unhide_ACT4_Loop_Valense" EntityNames="ACT4_Loop_Valense" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_Unhide_ACT4_Loop_Tabbitha" EntityNames="ACT4_Loop_Tabbitha" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_hide_ACT4_Loop_Gernese" EntityNames="ACT4_Loop_Gernese" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_Unhide_ACT4_Loop_Damaskus" EntityNames="ACT4_Loop_Damaskus" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_Unhide_ACT4_Loop_Annaruz" EntityNames="ACT4_Loop_Annaruz" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_Unhide_ACT4_Loop_Ilthain" EntityNames="ACT4_Loop_Ilthain" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_Hide_ACT4_Quest_1_Annaruz" EntityNames="ACT4_Quest_1_Annaruz" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_Hide_ACT4_Quest_1_Valense" EntityNames="ACT4_Quest_1_Valense" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_Hide_ACT4_Quest_1_Tabbitha" EntityNames="ACT4_Quest_1_Tabbitha" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_Hide_ACT4_Quest_1_Zalahir" EntityNames="ACT4_Quest_1_Zalahir" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_DragonBlocker" EntityNames="A4_Stormfall_SouthWayDragon_Blocker" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_DragonBlocker2" EntityNames="A4_Stormfall_SouthWayDragon_Blocker2" Hide="1" />
+    </Step>
+    <Step Order="1" UIName="@ui_A4_Q4_S2_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="QP_EG_StartingPoint">
+      <Goal Order="0" Type="Talk" EntityName="ACT4_Loop_Gernese" DialogName="ACT4_Q4_Loop2GerneseCatchUp">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="ACT4_Loop_Gernese" Area="Stormfall" Threshold="85" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="D_TeleportPlayersInCity2" TeleportedEntityName="#Player" DestinationName="QP_EG_StartingPoint" MinRadius="1" />
+      <Event Trigger="ClickedEntity" TriggerEntityName="ACT4_Loop_Gernese" Type="GlobalStopAllDialogs" Name="EndGernese_Dialog" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_DragonBlocker_2" EntityNames="A4_Stormfall_SouthWayDragon_Blocker" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_DragonBlocker2_2" EntityNames="A4_Stormfall_SouthWayDragon_Blocker2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ACT4_Loop1_Unhide_ACT4_Loop_Gernese" EntityNames="ACT4_Loop_Gernese" Hide="0" />
+    </Step>
+    <Step Order="2" UIName="@ui_A4_Q4_S3_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Impossible" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="1" Name="A4_L2_ClearUI_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="Player_Dialog" DialogName="ACT4_Q5_Warned" IsCST="false" Delay="2.9" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Act4_Quest1_PlayerSpawn_Start" AreaRadius="65" Type="GoalAchieve" Name="Achieve_WhenInSFUA0" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_DragonBlocker_3" EntityNames="A4_Stormfall_SouthWayDragon_Blocker" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="EndgameIntro_DragonBlocker2_3" EntityNames="A4_Stormfall_SouthWayDragon_Blocker2" Hide="1" />
+    </Step>
+    <Step Order="3" UIName="@ui_A4_Q4_S4_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="QP_Act4_Quest1_PlayerSpawn_Start">
+      <Goal Order="0" Type="Impossible" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="1" Name="A4_L2_ClearUI_2" />
+      <Event Trigger="PlayerWipe" Type="GlobalStartQuest" Name="Act4_AhrimanQuest_UnlockLoop3_1" QuestName="ACT4_Loop3" StopOnQuestEnding="false" />
+      <Event Trigger="EventEnd" EventName="Act4_AhrimanQuest_UnlockLoop3_1" Type="GoalAchieve" Name="Act4_Loop2_Achieve_1" SimulateOnly="0" GoalIndexToAchieve="0" Delay=".1" />
+    </Step>
+  </Quest>
+</MetaData>

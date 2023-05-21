@@ -1,0 +1,11 @@
+<MetaData>
+  <Skill UID="AI_Eviscerator_EvadeDash" ESkill="AI_republicassassin_evadedash" Keywords="attack_skill">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Animation ActionString="monster_skill_05" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="1" />
+    <CastingParams CastBone="Bip01 Spine1" CanBeInterrupted="0" />
+    <Cooldown Cooldown="10" />
+    <SkillSpecific DashSpeed="15" DashDistance="9" TargetBone="Bip01 Spine1" />
+    <SoundTrigger OnAnimCast="Play_CHOS_Eviscerator_Evade_Vanish" />
+  </Skill>
+</MetaData>

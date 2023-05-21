@@ -1,0 +1,40 @@
+<MetaData>
+  <Projectile ID="icysoul_proj_1" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_SoulEliment.Soul_Ribon.DOS_Soul_Projectile_04" Scale="1" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="4" SpeedMax="4" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+  <Projectile ID="icysoul_proj_2" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="U_SoulEliment.Soul_Ribon.DOS_Soul_Projectile_04" Scale="1" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_CommonVFX.Icy_Soul.Icy_Soul_Impact_01" Direction="0,0,1" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="3.5" SpeedMax="3.5" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="" />
+      <Hit SoundTriggerName="" />
+      <Removed SoundTriggerName="" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+</MetaData>

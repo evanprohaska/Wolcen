@@ -1,0 +1,27 @@
+<MetaData>
+  <Skill UID="Skill_Summon_Specter" ESkill="Summon_Specter" Keywords="magic_spell">
+    <Particles ParticleName="U_Monster_Alt.cultist_fury.monster_spawn" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="15.0" />
+    <Summoning MaxSummons="8" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="0" Name="sc_SpecterP3" />
+      <SummonedSpawnClass Key="1" Name="sc_SpecterP3" />
+      <SummonedSpawnClass Key="2" Name="sc_SpecterP3_NerfedDamage" />
+      <SummonedSpawnClass Key="3" Name="sc_SpecterP3_NerfedDamageAndHP" />
+      <SummonedSpawnClass Key="4" Name="sc_SpecterP3_NerfedDamageAndHP2" />
+    </Summoning>
+    <SkillSpecific TimeToSpawn="20" SpawnIncreaseHPTreshhold="0.5" SpawnRateIncreasePerTreshold="5">
+      <Upgrade AssociatedProject="mysterious_shenanigans_construct" />
+    </SkillSpecific>
+  </Skill>
+  <Skill UID="Skill_Summon_SpecterP2" ESkill="Summon_Specter" Keywords="magic_spell">
+    <Particles ParticleName="U_Monster_Alt.cultist_fury.monster_spawn" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="15.0" />
+    <Summoning MaxSummons="8" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="0" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="0" SpawnOffset="0,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_SpecterP2" />
+      <SummonedSpawnClass Key="Default" Name="sc_SpecterP2" />
+    </Summoning>
+    <SkillSpecific TimeToSpawn="20" SpawnIncreaseHPTreshhold="0.5" SpawnRateIncreasePerTreshold="5" />
+  </Skill>
+</MetaData>

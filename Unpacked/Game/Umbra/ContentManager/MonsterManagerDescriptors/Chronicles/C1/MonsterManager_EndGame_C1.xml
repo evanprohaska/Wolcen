@@ -1,0 +1,237 @@
+<MetaData>
+  <MonsterManager Name="MM_Endgame_C1_M1">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="95" SpreadPercent="5" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="456" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="TrashMelee" SpawnClassFamily="Scf_RepublicInfantrySword" MandatoryContentKeywords="" />
+      <Entry Category="TrashRanged" SpawnClassFamily="Scf_RepublicInfantryRanged" MandatoryContentKeywords="" />
+      <Entry Category="Heavy" SpawnClassFamily="Scf_RepublicHeavyInfantry" MandatoryContentKeywords="" />
+      <Entry Category="RepublicSiegebeast" SpawnClassFamily="Scf_RepublicSiegebeast" MandatoryContentKeywords="" />
+      <Entry Category="RepublicVeteran" SpawnClassFamily="Scf_RepublicVeteran" MandatoryContentKeywords="" />
+      <Entry Category="RepublicSniper" SpawnClassFamily="Scf_RepublicSniper" MandatoryContentKeywords="" />
+      <Entry Category="Justicar" SpawnClassFamily="Scf_RepublicJusticar" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="TrashMelee" Percentage="30" />
+      <Entry Category="TrashRanged" Percentage="25" />
+      <Entry Category="Heavy" Percentage="25" />
+      <Entry Category="RepublicVeteran" Percentage="6" />
+      <Entry Category="RepublicSiegebeast" Percentage="6" />
+      <Entry Category="RepublicSniper" Percentage="8" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M1_Wild_6CP_FMP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M1_Wild_12CP_FMP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M1_Wild_18CP_FMP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Sty_HLC1_REPU_Sentry" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Sty_HLC1_REPU_Patrol" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M1_Republic_6CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M1_Republic_12CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M1_Republic_18CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M1_Republic_BossRank" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="5" />
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="summoner" MaxNumberInGroup="2" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashMelee" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="TrashRanged" />
+      <Diversity_SingleCategory_SingleMonster Percentage="10" Category="Heavy" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="200" CPMax="200" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="59" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="Justicar" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="17.5" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="RepublicVeteran" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="7.5" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="RepublicVeteran" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="17.5" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="RepublicSniper" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="7.5" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="RepublicSniper" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="1" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_Named_InfantryCrossBow" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="450" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns>
+      <ReinforcementGroup Percentage="10" GroupCountMin="1" GroupCountMax="3" Category="TrashMelee" Category_CPMin="4" Category_CPMax="6" DelayBeforeFirstSpawn="1" DelayBetweenGroups="2.5" DelayBetweenMonsterSpawn="0.1" SpawnDistanceFromPlayer="20" SpawnCountPerTick="1" />
+      <ReinforcementGroup Percentage="10" GroupCountMin="1" GroupCountMax="1" Category="Heavy" Category_CPMin="4" Category_CPMax="6" DelayBeforeFirstSpawn="1" DelayBetweenGroups="2.5" DelayBetweenMonsterSpawn="0.1" SpawnDistanceFromPlayer="20" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+  <MonsterManager Name="MM_Endgame_C1_M2">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="70" SpreadPercent="20" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <CombatPointsRepartition Mode="fixed" CP="264" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="TrashWeak" SpawnClassFamily="Scf_C1_M2_FleshTemple_Squire" MandatoryContentKeywords="" />
+      <Entry Category="TrashMelee" SpawnClassFamily="Scf_C1_M2_FleshTemple_Fanatic" MandatoryContentKeywords="" />
+      <Entry Category="ColossalBreeder" SpawnClassFamily="Scf_C1_M2_FleshTemple_ColossalBreeder" MandatoryContentKeywords="" />
+      <Entry Category="Spreader" SpawnClassFamily="Scf_C1_M2_FleshTemple_Spreader" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="TrashWeak" Percentage="50" />
+      <Entry Category="TrashMelee" Percentage="30" />
+      <Entry Category="ColossalBreeder" Percentage="15" />
+      <Entry Category="Spreader" Percentage="5" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Sty_HLC2_COFE_Swamp_6CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Sty_HLC2_COFE_Swamp_12CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Sty_HLC2_COFE_Swamp_18CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Sty_HLC2_COFE_Swamp_Civilian" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_Sty_HLC2_COFE_Swamp_Elite" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M2_FleshIC_12CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M2_FleshTemple_6CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M2_FleshTemple_12CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M2_FleshTemple_18CP" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="5" />
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="3" />
+      <Limitation_ByKeyword AIKeyword="summoner" MaxNumberInGroup="2" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Limitation_ByName AIName="Spreader" MaxNumberInGroup="1" />
+      <Diversity_SingleCategory_SingleMonster Percentage="20" Category="TrashMelee" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="200" CPMax="200" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="99" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="1" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_Named_FleshZombie" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="300" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns>
+      <SurroundingAssault Percentage="20" TriggerRadiusOverride="15" SpawnRadiusMin="7" SpawnRadiusMax="9" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="0.25" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+  <MonsterManager Name="MM_Endgame_C1_M3">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="25" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="70" SpreadPercent="20" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="100" />
+    <Population iPick="1">
+      <Entry SCF="Scf_C1_M3_CoFlesh_Part2" Weight="1" />
+    </Population>
+    <CombatPointsRepartition Mode="fixed" CP="168" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="100" />
+    <Categories>
+      <Entry Category="W" SpawnClassFamily="" MandatoryContentKeywords="weak" />
+      <Entry Category="T" SpawnClassFamily="" MandatoryContentKeywords="trash" />
+      <Entry Category="H" SpawnClassFamily="" MandatoryContentKeywords="heavy" />
+      <Entry Category="L" SpawnClassFamily="" MandatoryContentKeywords="lieutenant" />
+      <Entry Category="E" SpawnClassFamily="" MandatoryContentKeywords="elite" />
+    </Categories>
+    <RMP>
+      <Entry Category="W" Percentage="20" />
+      <Entry Category="T" Percentage="45" />
+      <Entry Category="H" Percentage="15" />
+      <Entry Category="L" Percentage="20" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_FireSvriir_Part1_6CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_FireSvriir_Part1_12CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_FireSvriir_Part1_18CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_FireSvriir_Part1_BossRank" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Republic_Part3_6CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Republic_Part3_12CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Republic_Part3_18CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_FRepublic_Part3_BossRank" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Republic_Part4_6CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Republic_Part4_12CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Republic_Part4_18CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Republic_Part4_BossRank" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Part4_6CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Part4_12CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Part4_18CP" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Part4_BossRank" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_WildRat_Black" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Civilian_Female" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Civilian_Male" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Rat" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Halfbreed" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Fanatic" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_MiniHalfBreed" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Spreader" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_Cultist" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_ColossalBreeder" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_DemonOfFlesh" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_CoFlesh_AlphaOfFlesh" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Repu_RepublicInfantrySword" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Repu_RepublicInfantryRanged" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Repu_RepublicHeavyInfantry" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Repu_RepublicVeteran" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Repu_RepublicSniper" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Repu_RepublicGolgoth" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Repu_RepublicJusticar" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="Scf_C1_M3_Repu_RepublicAssassin" />
+    </FMP>
+    <Constraints MaxDifferentMonstersInGroup="4">
+      <Limitation_ByName AIName="cultofsouls_lanternbearer" MaxNumberInGroup="1" />
+      <Limitation_ByName AIName="cultofsouls_specter" MaxNumberInGroup="1" />
+      <Limitation_ByKeyword AIKeyword="lieutenant" MaxNumberInGroup="4" />
+      <Limitation_ByKeyword AIKeyword="elite" MaxNumberInGroup="1" />
+      <Limitation_ByKeyword AIKeyword="heavy" MaxNumberInGroup="5" />
+      <Limitation_ByKeyword AIKeyword="summoner" MaxNumberInGroup="2" />
+      <Limitation_ByKeyword AIKeyword="weak" MaxNumberInGroup="10" />
+      <Diversity_SingleCategory_SingleMonster Percentage="15" Category="T" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="W" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="H" />
+      <Diversity_SingleCategory_SingleMonster Percentage="5" Category="L" />
+    </Constraints>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="108" CPMax="156" PercentageDispersion="25" />
+        <EventChoices>
+          <EventChoice Weight="40" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="L" Category_EntityMin="3" Category_EntityMax="3" BossRank="champion" />
+          <EventChoice Weight="20" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="L" Category_EntityMin="2" Category_EntityMax="2" BossRank="Lord" />
+          <EventChoice Weight="39" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" SCF="" Category="E" Category_EntityMin="1" Category_EntityMax="1" BossRank="Normal" />
+          <EventChoice Weight="1" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_Named_Biome_Named_COFlesh" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="0" CPMax="156" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="90" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="0" BossRank="Normal" />
+          <EventChoice Weight="10" ThresholdMode="fixed" ThresholdMax="1" ThresholdMin="0" SCF="Scf_GoldenScarab" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <SpawnPatterns>
+      <ReinforcementGroup Percentage="20" GroupCountMin="1" GroupCountMax="3" Category="T" Category_CPMin="4" Category_CPMax="6" DelayBeforeFirstSpawn="1" DelayBetweenGroups="2.5" DelayBetweenMonsterSpawn="0.1" SpawnDistanceFromPlayer="10" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+</MetaData>

@@ -1,0 +1,43 @@
+<MetaData>
+  <Skill UID="AI_Oshara02_ScorchedEarth" ESkill="AI_REPU_Golgoth_JusticeFromAbove" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 Head" CastDelay="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="2.7" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="1" RemoveDamageZoneWhenCasterDies="1">
+      <Entry DamageZoneName="Oshara02_ScorchedEarth_DZ" />
+    </DamageZone>
+    <Range AttackRange="20" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.Oshara.Oshara_Indicator_03" Offset="0,13,0" Direction="0,1,0" Scale="2.4" InstantKill="0" />
+    </ParticleList>
+    <Explosion ExplosionRadius="2" />
+    <Targeting TargetingType="Target" />
+    <Projectile Name="Oshara02_ScorchedEarth_proj" ProjectileCount="1" AngleBetweenProjectiles="180" PenetrationLimit="0" />
+    <SkillSpecific ProjectileLaunchTickRate="1" ProjectileSpawnRadiusIn="0" ProjectileSpawnRadiusOut="5" CastOnSelf="1" />
+    <SoundTrigger OnAnimStart="Play_Dragon_Oshara_ScorchedEarth_Pre" onAnimCast="Play_Dragon_Oshara_ScorchedEarth_Cast" onAnimEnd="Play_Dragon_Oshara_ScorchedEarth_Cast_End" OnInterrupt="Play_Dragon_Oshara_ScorchedEarth_Cast_End" OnHit="Play_staff_electric_storm_strike" />
+  </Skill>
+  <Skill UID="AI_Oshara03_ScorchedEarth" ESkill="AI_oshara_scorched_earth" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="30" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" CastDelay="1" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="2.7" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Targeting TargetingType="Target" />
+    <DamageZone RateOfFire="1" Duration="20" RemoveDamageZoneWhenCasterDies="1" />
+    <EnableCondition DisableIfBroken="0" />
+    <Shapes>
+      <Entry ShapeName="Oshara02_ScorchedEarth_LineShape" />
+      <Entry ShapeName="Oshara02_ScorchedEarth_ArcShape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Tiling" Name="U_VFX_Oskar.Projectiles.OsharaScorchedEarth_Ground_01" Offset="0,0,0" Direction="0,1,0" Scale="1.0" />
+    </ParticleList>
+    <Explosion ExplosionRadius="2" />
+    <Projectile Name="Oshara02_ScorchedEarth_proj" ProjectileCount="1" AngleBetweenProjectiles="180" PenetrationLimit="0" />
+    <Range AttackRange="50" />
+    <SkillSpecific ProjectileLaunchTickRateMaxHealth="1" ProjectileLaunchTickRateMinHealth="0.1" />
+    <SoundTrigger OnAnimStart="Play_Dragon_Oshara_ScorchedEarth_Pre" onAnimCast="Play_Dragon_Oshara_ScorchedEarth_Cast" onAnimEnd="Play_Dragon_Oshara_ScorchedEarth_Cast_End" OnInterrupt="Play_Dragon_Oshara_ScorchedEarth_Cast_End" OnHit="Play_staff_electric_storm_strike" />
+  </Skill>
+</MetaData>

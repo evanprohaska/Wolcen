@@ -1,0 +1,276 @@
+<MetaData>
+  <Quest Name="ACT3_Quest4" StartDialog="" Type="Main" UIName="@ui_A3_Q4_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT3">
+    <Step Order="0" UIName="@ui_A3_Q4_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="DungeonEntrance_Monolith1" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_Monolith1" Area="ACT3_MonolithGate" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_Monolith1" Area="ACT3_MonolithGate" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="Act3_Monolith1_Exit" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Act3_Monolith1_Exit" Area="Act3_Monolith1" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Interact" Names="Act3_Monolith1_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Act3_Monolith1_Exit" Area="Act3_Monolith1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="EntityKill" Name="A3_Q3_S5_ValeriaKill" EntityName="Valeria" Hide="1" Remove="1" Delay="15" />
+      <Event Trigger="Instant" Type="EntityKill" Name="A3_Q3_S5_HeimlockKill" EntityName="Heimlock" Hide="1" Remove="1" Delay="15" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q4_S1_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDungeonEntrance" Name="Unlock_DungeonEntrance" EntranceName="DungeonEntrance_Monolith1" Activate="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalDialog" Name="A3_Q4_PMB_MonolithEntry1" DialogName="ACT3_Quest4_PMB_MonolithEntry1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A3_Q4_S1_Goal3" Localization="@ui_A3_Q4_S1_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="A3_Q4_S1_Goal4" Localization="@ui_A3_Q4_S1_UpdateStepNameLabel2" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="1" UIName="@ui_A3_Q4_S2_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="" IgnoreAutomaticStepUIUpdate="1">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Act3_Monolith1_Exit" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="A3_Q4_S2_PG" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A3_Q4_S2_PG" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="A3_Q4_S2_PG" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A3_Q4_S2_PG" VFX="U_Utils.Quest.Objective" VFXOffsetZ="6" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Talk" EntityName="A3_Q4_S2_PG" DialogName="ACT3_Quest4_PM2_AnasarethTalk1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A3_Q4_S2_PG" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="KillAll" EventsName="A3_Q4_S2_C1Spawn1,A3_Q4_S2_C1Spawn2,A3_Q4_S2_C1Spawn3" KillCount="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A3_Q4_S2_C1Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" Area="ACT3_Monolith2" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A3_Q4_S2_C1Spawn2" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" Area="ACT3_Monolith2" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A3_Q4_S2_C1Spawn3" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q4_S2_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A3_Q4_S2_Monolith2_Deactivate" ClickableEntityName="ClickableEntity_from_Monolith2_to_MonolithElevator" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Anasareth" EntityNames="Anasareth" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_AnimObject_PA1" EntityNames="AnimObject_PA1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_AnimObject_PA2" EntityNames="AnimObject_PA2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_AnimObject_PA3" EntityNames="AnimObject_PA3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_AnimObject_PA4" EntityNames="AnimObject_PA4" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q4_S2_PGSpawn" SpawnClass="Sc_Sty_AC3_M_PG" TargetEntityName="QP_A3_Q4_S2_PG_Spawn" FaceAtSpawn="DungeonBack_Act3_Monolith1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q4_S2_PASpawn1" SpawnClass="Sc_Sty_AC3_M_PA1" TargetEntityName="QP_A3_Q4_S2_PA_Spawn1" FaceAtSpawn="QP_A1Q5S1_Entrance" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q4_S2_PASpawn2" SpawnClass="Sc_Sty_AC3_M_PA2" TargetEntityName="QP_A3_Q4_S2_PA_Spawn2" FaceAtSpawn="QP_A1Q5S1_Entrance" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q4_S2_PASpawn3" SpawnClass="Sc_Sty_AC3_M_PA3" TargetEntityName="QP_A3_Q4_S2_PA_Spawn3" FaceAtSpawn="QP_A1Q5S1_Entrance" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q4_S2_PASpawn4" SpawnClass="Sc_Sty_AC3_M_PA4" TargetEntityName="QP_A3_Q4_S2_PA_Spawn4" FaceAtSpawn="QP_A1Q5S1_Entrance" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q4_S2_C1Spawn1" SpawnClass="Sc_Sty_AC3_COFY_C1" TargetEntityName="QP_CultistSpawn1" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q4_S2_C1Spawn2" SpawnClass="Sc_Sty_AC3_COFY_C2" TargetEntityName="QP_CultistSpawn2" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q4_S2_C1Spawn3" SpawnClass="Sc_Sty_AC3_COFY_C3" TargetEntityName="QP_CultistSpawn3" FaceAtSpawn="" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q4_S2_Conflux" AreaRadius="17" Type="GlobalDialog" Name="A3_Q4_PM2_Conflux1" DialogName="ACT3_Quest4_PM2_Conflux1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_CultistSpawn1" AreaRadius="15" Type="GlobalDialog" Name="A3_Quest4_PM2_Cultist1Dial" DialogName="ACT3_Quest4_PM2_FirstInstrument1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_CultistSpawn2" AreaRadius="15" Type="GlobalDialog" Name="A3_Quest4_PM2_Cultist2Dial" DialogName="ACT3_Quest4_PM2_SecondInstrument1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_CultistSpawn3" AreaRadius="15" Type="GlobalDialog" Name="A3_Quest4_PM2_Cultist3Dial" DialogName="ACT3_Quest4_PM2_ThirdInstrument1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="A3_Q4_S2_Goal4" Localization="@ui_A3_Q4_S3_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="Hide_CE_A3_Q4_S2_Blocker" EntityNames="CE_A3_Q4_S2_Blocker" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="A3_Q4_S2_Goal5" Localization="@ui_A3_Q4_S2_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityFollow" Name="A3_Q4_S2_PGSFollow" FollowerEntityName="A3_Q4_S2_PG" Follow="#Player" Constraints="not:ACT3_Stormfall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith,ACT3_DawnGateHall,ACT3_Nowhere,ACT3_RedWaste1,ACT3_RedWaste1,ACT3_RedWaste2,ACT3_RepublicanTrenchWarfare,ACT3_Rampart1,ACT3_Rampart2,ACT3_Tower_1,ACT3_Tower_2,ACT3_Tower_3,ACT3_Tower_4,ACT3_Tower_5,ACT3_Tower_6,ACT3_Tower_7,ACT3_MonolithGate,ACT3_Monolith1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityFollow" Name="A3_Q4_S2_PASFollow1" FollowerEntityName="A3_Q4_S2_PA1" Follow="#Player" Constraints="not:ACT3_Stormfall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith,ACT3_DawnGateHall,ACT3_Nowhere,ACT3_RedWaste1,ACT3_RedWaste1,ACT3_RedWaste2,ACT3_RepublicanTrenchWarfare,ACT3_Rampart1,ACT3_Rampart2,ACT3_Tower_1,ACT3_Tower_2,ACT3_Tower_3,ACT3_Tower_4,ACT3_Tower_5,ACT3_Tower_6,ACT3_Tower_7,ACT3_MonolithGate,ACT3_Monolith1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityFollow" Name="A3_Q4_S2_PASFollow2" FollowerEntityName="A3_Q4_S2_PA2" Follow="#Player" Constraints="not:ACT3_Stormfall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith,ACT3_DawnGateHall,ACT3_Nowhere,ACT3_RedWaste1,ACT3_RedWaste1,ACT3_RedWaste2,ACT3_RepublicanTrenchWarfare,ACT3_Rampart1,ACT3_Rampart2,ACT3_Tower_1,ACT3_Tower_2,ACT3_Tower_3,ACT3_Tower_4,ACT3_Tower_5,ACT3_Tower_6,ACT3_Tower_7,ACT3_MonolithGate,ACT3_Monolith1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityFollow" Name="A3_Q4_S2_PASFollow3" FollowerEntityName="A3_Q4_S2_PA3" Follow="#Player" Constraints="not:ACT3_Stormfall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith,ACT3_DawnGateHall,ACT3_Nowhere,ACT3_RedWaste1,ACT3_RedWaste1,ACT3_RedWaste2,ACT3_RepublicanTrenchWarfare,ACT3_Rampart1,ACT3_Rampart2,ACT3_Tower_1,ACT3_Tower_2,ACT3_Tower_3,ACT3_Tower_4,ACT3_Tower_5,ACT3_Tower_6,ACT3_Tower_7,ACT3_MonolithGate,ACT3_Monolith1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityFollow" Name="A3_Q4_S2_PASFollow4" FollowerEntityName="A3_Q4_S2_PA4" Follow="#Player" Constraints="not:ACT3_Stormfall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith,ACT3_DawnGateHall,ACT3_Nowhere,ACT3_RedWaste1,ACT3_RedWaste1,ACT3_RedWaste2,ACT3_RepublicanTrenchWarfare,ACT3_Rampart1,ACT3_Rampart2,ACT3_Tower_1,ACT3_Tower_2,ACT3_Tower_3,ACT3_Tower_4,ACT3_Tower_5,ACT3_Tower_6,ACT3_Tower_7,ACT3_MonolithGate,ACT3_Monolith1" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="GlobalDialog" Name="A3_Quest4_PM2_Victory1" DialogName="ACT3_Quest4_PM2_Victory1" Delay="2" />
+    </Step>
+    <Step Order="2" UIName="@ui_A3_Q4_S3_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_from_Monolith2_to_MonolithElevator" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_Monolith2_to_MonolithElevator" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_Monolith2_to_MonolithElevator" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="Anasareth" DialogName="ACT3_Quest4_PM2_Anasareth1_2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Anasareth" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_from_Monolith2_to_MonolithElevator" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Interact" Names="ClickableEntity_from_Monolith2_to_MonolithElevator" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_Monolith2_to_MonolithElevator" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Wait" ReferenceEntityName="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" Area="ACT3_Monolith2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q4_S3_ClearUI" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalDialog" Name="A3_Quest4_PM2_Anasareth1_1" DialogName="ACT3_Quest4_PM2_Anasareth1_1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A3_Q4_S3_Goal2" Localization="@ui_A3_Q4_S3_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFollow" Name="A3_Q4_S3_PGSUnfollow" FollowerEntityName="A3_Q4_S2_PG" Follow="" Constraints="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFollow" Name="A3_Q4_S3_PASUnfollow1" FollowerEntityName="A3_Q4_S2_PA1" Follow="" Constraints="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFollow" Name="A3_Q4_S3_PASUnfollow2" FollowerEntityName="A3_Q4_S2_PA2" Follow="" Constraints="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFollow" Name="A3_Q4_S3_PASUnfollow3" FollowerEntityName="A3_Q4_S2_PA3" Follow="" Constraints="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFollow" Name="A3_Q4_S3_PASUnfollow4" FollowerEntityName="A3_Q4_S2_PA4" Follow="" Constraints="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="25" Name="A3_Q4_S3_PGSTeleport" TeleportedEntityName="A3_Q4_S2_PG" DestinationName="QP_A3_Q4_S3_PG_TargetPos" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="25" Name="A3_Q4_S3_PASTeleport1" TeleportedEntityName="A3_Q4_S2_PA1" DestinationName="QP_A3_Q4_S2_PA_TargetPos1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="25" Name="A3_Q4_S3_PASTeleport2" TeleportedEntityName="A3_Q4_S2_PA2" DestinationName="QP_A3_Q4_S3_PA_TargetPos2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="25" Name="A3_Q4_S3_PASTeleport3" TeleportedEntityName="A3_Q4_S2_PA3" DestinationName="QP_A3_Q4_S3_PA_TargetPos3" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="25" Name="A3_Q4_S3_PASTeleport4" TeleportedEntityName="A3_Q4_S2_PA4" DestinationName="QP_A3_Q4_S3_PA_TargetPos4" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFaction" Name="A3_Q4_S3_PGSFaction" EntityName="A3_Q4_S2_PG" FactionName="SuperFriendly" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFaction" Name="A3_Q4_S3_PASFaction1" EntityName="A3_Q4_S2_PA1" FactionName="SuperFriendly" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFaction" Name="A3_Q4_S3_PASFaction2" EntityName="A3_Q4_S2_PA2" FactionName="SuperFriendly" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFaction" Name="A3_Q4_S3_PASFaction3" EntityName="A3_Q4_S2_PA3" FactionName="SuperFriendly" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityFaction" Name="A3_Q4_S3_PASFaction4" EntityName="A3_Q4_S2_PA4" FactionName="SuperFriendly" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="6" Name="A3_Q4_S3_PGSMove" EntityName="A3_Q4_S2_PG" TargetName="QP_A3_Q4_S3_PG_TargetPos" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="6" Name="A3_Q4_S3_PASMove1" EntityName="A3_Q4_S2_PA1" TargetName="QP_A3_Q4_S3_PA_TargetPos1" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="6" Name="A3_Q4_S3_PASMove2" EntityName="A3_Q4_S2_PA2" TargetName="QP_A3_Q4_S3_PA_TargetPos2" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="6" Name="A3_Q4_S3_PASMove3" EntityName="A3_Q4_S2_PA3" TargetName="QP_A3_Q4_S3_PA_TargetPos3" RemainScripted="1" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityMove" TargetMinDistance="1" OverrideSpeed="6" Name="A3_Q4_S3_PASMove4" EntityName="A3_Q4_S2_PA4" TargetName="QP_A3_Q4_S3_PA_TargetPos4" RemainScripted="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S3_PGSMove" Type="EntityRotate" Name="A3_Q4_S3_PGSRotate" RotatedEntityName="A3_Q4_S2_PG" Target="QP_A3_Q4_S3_PG_TargetPos" FaceTarget="0" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S3_PASMove1" Type="EntityRotate" Name="A3_Q4_S3_PASRotate1" RotatedEntityName="A3_Q4_S2_PA1" Target="QP_A3_Q4_S3_PA_TargetPos1" FaceTarget="0" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S3_PASMove2" Type="EntityRotate" Name="A3_Q4_S3_PASRotate2" RotatedEntityName="A3_Q4_S2_PA2" Target="QP_A3_Q4_S3_PA_TargetPos2" FaceTarget="0" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S3_PASMove3" Type="EntityRotate" Name="A3_Q4_S3_PASRotate3" RotatedEntityName="A3_Q4_S2_PA3" Target="QP_A3_Q4_S3_PA_TargetPos3" FaceTarget="0" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S3_PASMove4" Type="EntityRotate" Name="A3_Q4_S3_PASRotate4" RotatedEntityName="A3_Q4_S2_PA4" Target="QP_A3_Q4_S3_PA_TargetPos4" FaceTarget="0" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S3_PGSRotate" Type="GoalAchieve" Name="A3_Q4_S3_GoalAchieve2" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A3_Q4_S3_Goal3" Localization="@ui_A3_Q4_S3_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="Kill_A3_Q4_S2_PG" EntityName="A3_Q4_S2_PG" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="Kill_A3_Q4_S2_PA1" EntityName="A3_Q4_S2_PA1" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="Kill_A3_Q4_S2_PA2" EntityName="A3_Q4_S2_PA2" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="Kill_A3_Q4_S2_PA3" EntityName="A3_Q4_S2_PA3" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="Kill_A3_Q4_S2_PA4" EntityName="A3_Q4_S2_PA4" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="Unhide_Anasareth" EntityNames="Anasareth" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="Unhide_AnimObject_PA1" EntityNames="AnimObject_PA1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="Unhide_AnimObject_PA2" EntityNames="AnimObject_PA2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="Unhide_AnimObject_PA3" EntityNames="AnimObject_PA3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="Unhide_AnimObject_PA4" EntityNames="AnimObject_PA4" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A3_Q4_S4_A3_DYN_TOTALAROBA" SequenceName="A3_DYN_TOTALAROBA" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S4_A3_DYN_TOTALAROBA" Type="GoalAchieve" Name="A3_Q4_S3_GoalAchieve3" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S4_A3_DYN_TOTALAROBA" Type="ActionClickable" Name="A3_Q4_S2_Monolith2_Activate" ClickableEntityName="ClickableEntity_from_Monolith2_to_MonolithElevator" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="GlobalDialog" Name="A3_Quest4_PM2_Anasareth2" DialogName="ACT3_Quest4_PM2_Anasareth2" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="Hide_Blocker_sphere" EntityNames="Blocker_sphere_totalaroba" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionParticleEmitter" Name="Hide_FX_sphere" EmitterEntityName="Fury_Sphere_Shield2" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" AreaRadius="60" Type="GlobalDialog" Name="A3_Quest5_PME_Conflux1" DialogName="ACT3_Quest5_PME_Conflux1" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" AreaRadius="40" Type="GlobalDialog" Name="A3_Quest5_PME_Portal1" DialogName="ACT3_Quest4_PME_Portal1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" AreaRadius="20" Type="GlobalDialog" Name="A3_Quest5_PME_Conflux2" DialogName="ACT3_Quest5_PME_Conflux2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="10000" />
+        <XP Amount="450000" />
+      </Reward>
+    </Step>
+    <Step Order="3" UIName="@ui_A3_Q4_S4_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" Radius="150" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" Area="ACT3_ElevatorPlatform" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q4_S4_ClearUI" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalCheckpoint" Name="ResetCheckpointHeimlockFight" CheckpointEntityName="" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_HeimlochEvent_SF" CheckpointEntityName="" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="PW_StepFail_Rollback_Kill_CultOfFlesh_Halfbreed" MonsterClass="CultOfFlesh_Halfbreed" Area="ACT3_HeimlockArena" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="PW_StepFail_Rollback_Kill_CultOfFlesh_Simulacrum" MonsterClass="CultOfFlesh_Simulacrum" Area="ACT3_HeimlockArena" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="PW_StepFail_Rollback_Kill_CultOfFlesh_Spreader" MonsterClass="CultOfFlesh_Spreader" Area="ACT3_HeimlockArena" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="PW_StepFail_Rollback_Kill_CultOfFlesh_Runner" MonsterClass="CultOfFlesh_Runner" Area="ACT3_HeimlockArena" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="PW_StepFail_Rollback_Kill_CultOfFlesh_Zombie" MonsterClass="CultOfFlesh_Zombie" Area="ACT3_HeimlockArena" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="PW_StepFail_Rollback_Kill_CultOfFlesh_Cultist" MonsterClass="CultOfFlesh_Cultist" Area="ACT3_HeimlockArena" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="PW_StepFail_Rollback_Kill_CultOfFlesh_MiniHalfBreed" MonsterClass="CultOfFlesh_MiniHalfBreed" Area="ACT3_HeimlockArena" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="PW_StepFail_Rollback_Kill_CultOfFlesh_DemonOfFlesh" MonsterClass="CultOfFlesh_DemonOfFlesh" Area="ACT3_HeimlockArena" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalReleaseGameplayEvent" Name="EventSlotRelease_Lost_HeimlockFightEvent" />
+    </Step>
+    <Step Order="4" UIName="@ui_A3_Q4_S4_UpdateStepNameLabel1" AutoClearEvents="1" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="waypoint_act_3_elvator_platform" Area="ACT3_ElevatorPlatform" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" Area="ACT3_ElevatorPlatform" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT3_HeimlockBossFight">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_HeimlockFight_PlayerSpawnP3" Area="ACT3_ElevatorPlatform" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="BossFight" FightPreset="BossFight_Heimlock">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_HeimlockFight_PlayerSpawnP3" Area="ACT3_ElevatorPlatform" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="HeimlockSafeZone2" Radius="20" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="HeimlockSafeZone2v" Area="ACT3_HeimlockArena" Threshold="85" UseAreaSize="17" />
+      </Goal>
+      <Goal Order="4" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_HeimlockFight_PlayerSpawnP3" Area="ACT3_ElevatorPlatform" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Talk" EntityName="NPC_A3_Q5_S1_Heimlock2" DialogName="ACT3_Quest6_HA_Heimlock1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A3_Q5_S1_Heimlock2" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q4_S5_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A3_Quest5_PME_LockPortal" ClickableEntityName="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalReserveGameplayEvent" Name="A3_Q4_S4_ReserveGameplayEvent" EventDescriptorName="ACT3_HeimlockBossFight" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A3_Q4_S4_Goal3" Localization="@ui_A3_Q4_S4_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalCheckpoint" Name="SetCheckpointHeimlockFight" CheckpointEntityName="SpawnPoint_MonolithElevator_From_Monolith2" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="A3_Q5_HA_HideideSafeZone_1" EntityNames="HeimlockSafeZone1" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="A3_Q5_HA_HideideSafeZone_2" EntityNames="HeimlockSafeZone2" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityIsHidden" Name="A3_Q5_HA_HideideSafeZone_3" EntityNames="HeimlockSafeZone3" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKillAll" Name="StepSuccess_Kill_CultOfFlesh_Halfbreed" MonsterClass="CultOfFlesh_Halfbreed" Area="ACT3_HeimlockArena" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKillAll" Name="StepSuccess_Kill_CultOfFlesh_Simulacrum" MonsterClass="CultOfFlesh_Simulacrum" Area="ACT3_HeimlockArena" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKillAll" Name="StepSuccess_Kill_CultOfFlesh_Spreader" MonsterClass="CultOfFlesh_Spreader" Area="ACT3_HeimlockArena" Delay=".5" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKillAll" Name="StepSuccess_Kill_CultOfFlesh_Runner" MonsterClass="CultOfFlesh_Runner" Area="ACT3_HeimlockArena" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKillAll" Name="StepSuccess_Kill_CultOfFlesh_Zombie" MonsterClass="CultOfFlesh_Zombie" Area="ACT3_HeimlockArena" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKillAll" Name="StepSuccess_Kill_CultOfFlesh_Cultist" MonsterClass="CultOfFlesh_Cultist" Area="ACT3_HeimlockArena" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKillAll" Name="StepSuccess_Kill_CultOfFury_Cultist" MonsterClass="CultOfFury_Cultist_Heimlock" Area="ACT3_HeimlockArena" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKillAll" Name="StepSuccess_Kill_CultOfFlesh_MiniHalfBreed" MonsterClass="CultOfFlesh_MiniHalfBreed" Area="ACT3_HeimlockArena" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="EntityKillAll" Name="StepSuccess_Kill_CultOfFlesh_DemonOfFlesh" MonsterClass="CultOfFlesh_DemonOfFlesh" Area="ACT3_HeimlockArena" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="A3_Q5_HA_UnhideHeimlock" EntityNames="NPC_A3_Q5_S1_Heimlock2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalDialog" Name="A3_Quest5_HA_Heimlock8" DialogName="ACT3_Quest5_HA_Heimlock8" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionSequence" Name="A3_Q4_S4_A3_TenderDefeat" SequenceName="A3_DYN_TENDERDEFEAT" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionSequence" Name="A3_Q4_S4_A3_FinalMoment" SequenceName="A3_DYN_FINALMOMENTS" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S4_A3_TenderDefeat" Type="GoalAchieve" Name="A3_Q4_S4_GoalAchieve1" SimulateOnly="0" Delay="2" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S4_A3_TenderDefeat" SpeedScale="1" BlendingTime="0" Type="EntityAnimate" Name="A3_Q4_S4_ValAnim" AnimatedEntityName="A3_DYN_TENDERDEFEAT_Valeria" Play="a3_dyn_tenderdefeat_inconsciousval_loop_01" Loop="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S4_A3_TenderDefeat" SpeedScale="1" BlendingTime=".5" Type="EntityAnimate" Name="A3_Q4_S4_HeimlockAnim" AnimatedEntityName="NPC_A3_Q5_S1_Heimlock2" Play="repu_heimlock_cine_tenderdefeat_loop_02" Loop="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q4_S4_A3_FinalMoment" SpeedScale="1" BlendingTime="0" Type="EntityAnimate" Name="HA_Gernese_AnimStart" AnimatedEntityName="NPC_A3_Q6_S1_Gernese" Play="apo_tank_cine_helionpower_cast_loop" Loop="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="5" Type="GlobalReleaseGameplayEvent" Name="EventSlotRelease_Won_HeimlockFightEvent" />
+      <Event Trigger="BossfightLost" Type="GlobalStopAllDialogs" Name="StopAllDialogs_HeimlockFightEvent" />
+      <Event Trigger="BossfightLost" Type="GlobalReleaseGameplayEvent" Name="EventSlotRelease_Lost_HeimlockFightEvent" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="StepFail_Kill_CultOfFlesh_Halfbreed" MonsterClass="CultOfFlesh_Halfbreed" Area="ACT3_HeimlockArena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="StepFail_Kill_CultOfFlesh_Simulacrum" MonsterClass="CultOfFlesh_Simulacrum" Area="ACT3_HeimlockArena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="StepFail_Kill_CultOfFlesh_Spreader" MonsterClass="CultOfFlesh_Spreader" Area="ACT3_HeimlockArena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="StepFail_Kill_CultOfFlesh_Runner" MonsterClass="CultOfFlesh_Runner" Area="ACT3_HeimlockArena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="StepFail_Kill_CultOfFlesh_Zombie" MonsterClass="CultOfFlesh_Zombie" Area="ACT3_HeimlockArena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="StepFail_Kill_CultOfFlesh_Cultist" MonsterClass="CultOfFlesh_Cultist" Area="ACT3_HeimlockArena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="StepFail_Kill_CultOfFlesh_MiniHalfBreed" MonsterClass="CultOfFlesh_MiniHalfBreed" Area="ACT3_HeimlockArena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="StepFail_Kill_CultOfFlesh_DemonOfFlesh" MonsterClass="CultOfFlesh_DemonOfFlesh" Area="ACT3_HeimlockArena" />
+      <Event Trigger="BossfightLost" Type="EntityKillAll" Name="StepFail_Kill_CultOfFury_Cultist" MonsterClass="CultOfFury_Cultist_Heimlock" Area="ACT3_HeimlockArena" />
+      <Event Trigger="BossfightLost" Type="StepFail" Name="HeimlockFight_FailStep" RollbackToPreviousStep="1" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="PW_StopAllDialogs_HeimlockFightEvent" />
+      <Event Trigger="PlayerWipe" Type="GlobalReleaseGameplayEvent" Name="PW_EventSlotRelease_Lost_HeimlockFightEvent" />
+      <Event Trigger="PlayerWipe" Type="EntityKillAll" Name="PW_StepFail_Kill_CultOfFlesh_Halfbreed" MonsterClass="CultOfFlesh_Halfbreed" Area="ACT3_HeimlockArena" />
+      <Event Trigger="PlayerWipe" Type="EntityKillAll" Name="PW_StepFail_Kill_CultOfFlesh_Simulacrum" MonsterClass="CultOfFlesh_Simulacrum" Area="ACT3_HeimlockArena" />
+      <Event Trigger="PlayerWipe" Type="EntityKillAll" Name="PW_StepFail_Kill_CultOfFlesh_Spreader" MonsterClass="CultOfFlesh_Spreader" Area="ACT3_HeimlockArena" Delay=".5" />
+      <Event Trigger="PlayerWipe" Type="EntityKillAll" Name="PW_StepFail_Kill_CultOfFlesh_Runner" MonsterClass="CultOfFlesh_Runner" Area="ACT3_HeimlockArena" />
+      <Event Trigger="PlayerWipe" Type="EntityKillAll" Name="PW_StepFail_Kill_CultOfFlesh_Zombie" MonsterClass="CultOfFlesh_Zombie" Area="ACT3_HeimlockArena" />
+      <Event Trigger="PlayerWipe" Type="EntityKillAll" Name="PW_StepFail_Kill_CultOfFlesh_Cultist" MonsterClass="CultOfFlesh_Cultist" Area="ACT3_HeimlockArena" />
+      <Event Trigger="PlayerWipe" Type="EntityKillAll" Name="PW_StepFail_Kill_CultOfFlesh_MiniHalfBreed" MonsterClass="CultOfFlesh_MiniHalfBreed" Area="ACT3_HeimlockArena" />
+      <Event Trigger="PlayerWipe" Type="EntityKillAll" Name="PW_StepFail_Kill_CultOfFlesh_DemonOfFlesh" MonsterClass="CultOfFlesh_DemonOfFlesh" Area="ACT3_HeimlockArena" />
+      <Event Trigger="PlayerWipe" Type="ActionSequenceReset" Name="PW_StepFail_A3_Q4_S5_DynEnd1" SequenceName="A3_DYN_TENDERDEFEAT" ResetAtLastFrame="0" />
+      <Event Trigger="PlayerWipe" Type="ActionSequenceReset" Name="PW_StepFail_A3_Q4_S5_DynEnd2" SequenceName="A3_DYN_FINALMOMENTS" ResetAtLastFrame="0" />
+      <Event Trigger="PlayerWipe" Type="EntityIsHidden" Name="PW_StepFail_A3_Q5_HA_HideHeimlock" EntityNames="NPC_A3_Q5_S1_Heimlock2" Hide="1" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="PW_HeimlockFight_FailStep" RollbackToPreviousStep="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="QuestFail" Name="FailHunt_HuntQuest" QuestName="QN_HS_A3_AKnightHunt_2F" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="QuestFail" Name="FailHunt_BossFightQuest" QuestName="QN_HE_BF_AuroraKnight_S" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="30000" />
+        <XP Amount="450000" />
+        <ChoiceLootClass Name="A3_Q4_Reward1" MinItemNumber="6" MaxItemNumber="6" SortByRarity="1" />
+        <FixedLootClass Name="A3_Q4_Reward_Fixe" MinItemNumber="2" MaxItemNumber="2" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="5" UIName="@ui_A3_Q4_S5_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="NPC_A3_Q6_S1_Gernese" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="NPC_A3_Q6_S1_Gernese" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT3_HeimlockArena" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" Area="ACT3_ElevatorPlatform" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT3_HA_ACT3_to_ACT4" GatedByReward="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A3_Q5_S1_Heimlock" Area="" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A3_Q5_S1_Heimlock" Area="" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q4_S6_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A3_Quest5_PME_UnlockPortal" ClickableEntityName="ClickableEntity_from_PrimordialElevator_to_BossFinalArena" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A3_Q6_S1_A3_ENDGAME" SequenceName="A3_ENDGAME" />
+      <Event Trigger="EventEnd" EventName="A3_Q6_S1_A3_ENDGAME" Type="GoalAchieve" Name="A3_Q6_S1_GoalAchieve3" SimulateOnly="1" GoalIndexToAchieve="-1" />
+    </Step>
+    <Step Order="6" UIName="" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="ChangeMapAndStartQuest" Name="ChangeMapAndStartQuest_ACT4_Quest1" QuestName="ACT4_Intro" />
+      <Event Trigger="Instant" Type="GoalAchieve" Name="A3_Q4_S7_GoalAchieve" SimulateOnly="1" Delay="0.01" GoalIndexToAchieve="-1" />
+    </Step>
+    <Step Order="7" UIName="" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ChangeMapAndStartQuest" Name="ChangeMap_Safety_PostConversion" QuestName="ACT4_Intro" Delay="5" />
+    </Step>
+  </Quest>
+</MetaData>

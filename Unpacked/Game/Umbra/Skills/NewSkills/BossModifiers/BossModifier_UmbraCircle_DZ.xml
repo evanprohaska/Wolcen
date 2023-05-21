@@ -1,0 +1,21 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_UmbraCircle_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="Umbra" WeaponMultiplier=".5" />
+    <StatusAilment>
+      <Stasis Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RendCircle_DZ" />
+    </Shapes>
+    <DamageZone Duration="5" RateOfFire="0.3" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="WarmUp" Name="u_bossmodifiers.spiral_aether.indicator" Offset="0,0,1" Direction="1,0,0" TimeScale="0.5" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.spiral_aether.dz" Offset="0,0,2" Direction="1,0,0" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.aether_homing.impact" Offset="0,0,2" Direction="1,0,0" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="2.5" RandomBaseDistMax="2.5" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="360" MinLinearSpeed="10" MaxLinearSpeed="-10" MinAngularSpeed="-75" MaxAngularSpeed="75" IndicatorMaxTimer="2" NumberOfDZ="8" BaseDirIsClockwise="1" AllowRandomDir="1" LockOnCasterBetweenWarmupAndCast="1" LockOnCasterAfterCast="1" />
+  </Skill>
+</MetaData>

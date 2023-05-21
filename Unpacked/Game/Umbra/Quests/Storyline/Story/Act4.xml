@@ -1,0 +1,20 @@
+<MetaData>
+  <QuestsLine Name="Act4" UnlockedBy="Act3" Last="ACT4_Epilogue" Mode="Campaign" League="Standard">
+    <Quest Name="ACT4_Intro" Order="1" ReqLevel="1" Giver="" UnlockedByOne="Auto" />
+    <Quest Name="ACT4_C1_WaitQ1" Order="2" ReqLevel="1" Giver="" UnlockedByOne="ACT4_Intro" />
+    <Quest Name="HL_M1" Order="3" ReqLevel="1" Giver="" UnlockedByOne="None" />
+    <Quest Name="C1_EG_SF_Q2" Order="4" ReqLevel="1" Giver="" UnlockedByOne="HL_M1" />
+    <Quest Name="ACT4_C1_WaitQ2" Order="5" ReqLevel="1" Giver="" UnlockedByOne="C1_EG_SF_Q2" />
+    <Quest Name="HL_M2" Order="6" ReqLevel="1" Giver="" UnlockedByOne="None" />
+    <Quest Name="C1_EG_SF_Q3" Order="7" ReqLevel="1" Giver="" UnlockedByOne="HL_M2" />
+    <Quest Name="ACT4_C1_WaitQ3" Order="8" ReqLevel="1" Giver="" UnlockedByOne="C1_EG_SF_Q3" />
+    <Quest Name="HL_M3" Order="9" ReqLevel="1" Giver="" UnlockedByOne="None" />
+    <Quest Name="ACT4_Loop0" Order="10" ReqLevel="1" Giver="" UnlockedByOne="HL_M3" />
+    <Quest Name="ACT4_Loop0_End" Order="11" ReqLevel="1" Giver="" UnlockedByOne="ACT4_Loop0" />
+    <Quest Name="ACT4_Loop1" Order="12" ReqLevel="1" Giver="" UnlockedByOne="ACT4_Loop0_End" />
+    <Quest Name="ACT4_Loop2" Order="13" ReqLevel="1" Giver="" UnlockedByOne="None" />
+    <Quest Name="ACT4_Loop3" Order="14" ReqLevel="1" Giver="" UnlockedByOne="None" />
+    <Quest Name="ACT4_SFUA_End" Order="15" ReqLevel="1" Giver="" UnlockedByOne="None" />
+    <Quest Name="ACT4_Epilogue" Order="16" ReqLevel="1" Giver="" UnlockedByOne="ACT4_SFUA_End" />
+  </QuestsLine>
+</MetaData>

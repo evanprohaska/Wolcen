@@ -1,0 +1,41 @@
+<MetaData>
+  <Skill UID="unique_firecomet_onhit" ESkill="player_frostcomet" Keywords="attack_skill,magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostcomet" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="60" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="12" />
+    <Projectile Name="player_frostcomet_proj_fire" ProjectileCount="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Explosion ExplosionRadius="3" />
+    <Specific_FrostComet InitialProjectileHeight="7.5" ProjectileIndicatorTimeScale="1.1" IsFire="1" />
+  </Skill>
+  <Skill UID="unique_sacredcomet_onhit" ESkill="player_frostcomet" Keywords="attack_skill,magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostcomet" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="60" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="12" />
+    <Projectile Name="player_frostcomet_proj_sacred" ProjectileCount="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Targeting TargetOnGround="1" />
+    <Explosion ExplosionRadius="3" />
+    <Specific_FrostComet InitialProjectileHeight="7.5" ProjectileIndicatorTimeScale="1.1" IsFire="1" />
+  </Skill>
+  <Skill UID="unique_rendcomet_onhit" ESkill="player_frostcomet" Keywords="attack_skill,magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostcomet" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="60" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="12" />
+    <Projectile Name="player_frostcomet_proj_rend" ProjectileCount="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Targeting TargetOnGround="1" />
+    <Explosion ExplosionRadius="3" />
+    <Specific_FrostComet InitialProjectileHeight="7.5" ProjectileIndicatorTimeScale="1.1" IsFire="1" />
+  </Skill>
+  <Skill UID="unique_frostcomet_onhit" ESkill="player_frostcomet" Keywords="attack_skill,magic_spell,passive_effect">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="Player_skill_frostcomet" BloodDecalOrientation="forward" />
+    <Aggression TargetValueOnHit="60" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="12" />
+    <Projectile Name="player_frostcomet_proj" ProjectileCount="1" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Targeting TargetOnGround="1" />
+    <Explosion ExplosionRadius="3" />
+    <Specific_FrostComet InitialProjectileHeight="7.5" ProjectileIndicatorTimeScale="1.1" IsFire="1" />
+  </Skill>
+</MetaData>

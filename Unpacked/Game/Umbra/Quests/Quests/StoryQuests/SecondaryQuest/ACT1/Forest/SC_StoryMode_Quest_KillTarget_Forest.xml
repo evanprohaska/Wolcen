@@ -1,0 +1,62 @@
+<MetaData>
+  <Quest Name="QN_SC_Forest_KillTarget_OUTW_Trapper_4" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KFT_Easy_StepNameLabel_OUTW_Trapper" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_Forest_KillTarget_OUTW_Trapper_4_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_Forest_KillTarget_OUTW_Trapper_4_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_Forest_KillTarget_OUTW_Trapper_4_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_Trapper_Easy_4" MinSpawnPercent="-1" MaxSpawnPercent="-70" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_SC_KFT_QuestLabel" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_Forest_KillTarget_COSS_Halfbreed_4" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KFT_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KFT_Easy_StepNameLabel_COSS_Halfbreed" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_Forest_KillTarget_COSS_Halfbreed_4_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_Forest_KillTarget_COSS_Halfbreed_4_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_Forest_KillTarget_COSS_Halfbreed_4_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_Halfbreed_Easy_4" MinSpawnPercent="-1" MaxSpawnPercent="-70" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_SC_KFT_QuestLabel" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_Forest_KillTarget_COSS_Halfbreed" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KON_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KOT_Easy_StepNameLabel_COSS_Halfbreed" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_Forest_KillTarget_COSS_Halfbreed_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_Forest_KillTarget_COSS_Halfbreed_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_Forest_KillTarget_COSS_Halfbreed_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_Halfbreed_Easy_1" MinSpawnPercent="90" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_SC_KON_QuestLabel" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+  <Quest Name="QN_SC_Forest_KillTarget_OUTW_Brute" StartDialog="" BoundToDynamicGameplayAreaIfPossible="1" Type="Secondary" UIName="@ui_SC_KON_QuestLabel" UIDesc="">
+    <Step Order="0" UIName="@ui_SC_KOT_Easy_StepNameLabel_OUTW_Brute" AutoClearEvents="1" Save="1">
+      <Goal Order="0" Type="KillAll" EventsName="QN_SC_Forest_KillTarget_OUTW_Brute_Spawn1" KillCount="" ShowTimer="">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QN_SC_Forest_KillTarget_OUTW_Brute_Spawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="quest" Threshold="80" />
+      </Goal>
+      <Goal Order="1" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="2" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="AdventureSpawn" MinRadius="0" MaxRadius="15" SpawnPoints="4" Name="QN_SC_Forest_KillTarget_OUTW_Brute_Spawn1" Delay=".5" SpawnClass="Sc_CG_KT_Brute_Easy_1" MinSpawnPercent="90" MaxSpawnPercent="100" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_StartSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_StartSecondaryQuest" ContextualMessage="@ui_SC_KON_QuestLabel" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalAnnouncement" Name="SP_SA_AN_EndSecondaryQuest" UIReference="StandardAnnouncement" AnnouncementName="@ui_All_SA_AN_EndSecondaryQuest" ContextualMessage="" DisplayTime="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <ChoiceLootClass Name="SecondaryQuest" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

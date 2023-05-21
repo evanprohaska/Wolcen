@@ -1,0 +1,82 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_RotatingFireWallsP3_1" ESkill="AI_COFY_Ahriman_RotatingFireWalls" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" />
+      <Particle Key="ShapeParticle" Name="COFY_Ahriman.RotatingBeam.AoECross" Offset="0,0,1" Direction="1,0,0" />
+    </ParticleList>
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.78" />
+    <Cooldown Cooldown="10.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FireWall" />
+    </Shapes>
+    <SoundTrigger OnInterrupt="PLAY_AI_SvriirAlpha_PoisonbreathEnd" OnHit="Play_DOT_Burn" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.3" DegreesPerSecond="45" Skillduration="11" AngleBetweenWalls="90" WallsNumber="2" InvulnerabilityTime="14" RemoveInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_RotatingFireWallsP3_1_Nerfed" ESkill="AI_COFY_Ahriman_RotatingFireWalls" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" />
+      <Particle Key="ShapeParticle" Name="COFY_Ahriman.RotatingBeam.AoECross" Offset="0,0,1" Direction="1,0,0" />
+    </ParticleList>
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.78" />
+    <Cooldown Cooldown="10.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FireWall" />
+    </Shapes>
+    <SoundTrigger OnInterrupt="PLAY_AI_SvriirAlpha_PoisonbreathEnd" OnHit="Play_DOT_Burn" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.3" DegreesPerSecond="20" Skillduration="8" AngleBetweenWalls="90" WallsNumber="2" InvulnerabilityTime="12" RemoveInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_RotatingFireWallsP3_2" ESkill="AI_COFY_Ahriman_RotatingFireWalls" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" />
+      <Particle Key="ShapeParticle" Name="COFY_Ahriman.RotatingBeam.AoECross" Offset="0,0,1" Direction="1,0,0" />
+    </ParticleList>
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.78" />
+    <Cooldown Cooldown="10.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FireWall" />
+    </Shapes>
+    <SoundTrigger OnInterrupt="PLAY_AI_SvriirAlpha_PoisonbreathEnd" OnHit="Play_DOT_Burn" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.3" DegreesPerSecond="45" Skillduration="11" AngleBetweenWalls="90" WallsNumber="2" InvulnerabilityTime="14" RemoveInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_RotatingFireWallsP3_2_Nerfed" ESkill="AI_COFY_Ahriman_RotatingFireWalls" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" />
+      <Particle Key="ShapeParticle" Name="COFY_Ahriman.RotatingBeam.AoECross" Offset="0,0,1" Direction="1,0,0" />
+    </ParticleList>
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.78" />
+    <Cooldown Cooldown="10.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FireWall" />
+    </Shapes>
+    <SoundTrigger OnInterrupt="PLAY_AI_SvriirAlpha_PoisonbreathEnd" OnHit="Play_DOT_Burn" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.3" DegreesPerSecond="20" Skillduration="8" AngleBetweenWalls="90" WallsNumber="2" InvulnerabilityTime="12" RemoveInvulnerability="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_RotatingFireWalls_Specter" ESkill="AI_COFY_Ahriman_RotatingFireWalls" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" />
+      <Particle Key="ShapeParticle" Name="COFY_Ahriman.RotatingBeam.AoECross" Offset="0,0,1" Direction="1,0,0" />
+    </ParticleList>
+    <DamageWeapon Type="Fire" WeaponMultiplier="1.78" />
+    <Cooldown Cooldown="10.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_FireWall" />
+    </Shapes>
+    <SoundTrigger OnInterrupt="PLAY_AI_SvriirAlpha_PoisonbreathEnd" OnHit="Play_DOT_Burn" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.3" DegreesPerSecond="45" Skillduration="6" AngleBetweenWalls="90" WallsNumber="2" InvulnerabilityTime="0" RemoveInvulnerability="1" />
+  </Skill>
+</MetaData>

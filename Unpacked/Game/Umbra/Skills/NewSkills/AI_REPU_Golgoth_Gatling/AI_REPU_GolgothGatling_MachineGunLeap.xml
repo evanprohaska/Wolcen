@@ -1,0 +1,31 @@
+<MetaData>
+  <Skill UID="AI_REPU_GolgothGatling_MachineGunLeap" ESkill="ai_default_charge" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="1" CooldownPerLevel="0" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="1.6" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="REPU_Golgoth_QuickCharge_TargetDetection_Shape" />
+    </Shapes>
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="REPU_GolgothGatling_MachineGunLeap_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Impact" Name="REPU_Golgoth_Gatling.Machine Gun Leap.Impact AoE" Direction="0,0,1" />
+      <Particle Key="EndIndicator" Name="REPU_Golgoth_Gatling.Machine Gun Leap.End Indicator" Direction="0,0,1" />
+      <Particle Key="LoopAOE" Name="REPU_Golgoth_Gatling.Machine Gun Leap Gatling.Loop AoE" Direction="0,0,1" />
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="10" ChargeDistance="15" StopChargeAtTarget="0">
+      <Extra Type="CastDamageZone">
+        <Entry DamageZoneName="REPU_GolgothGatling_MachineGunLeap_End_DZ" Trigger="OnDashEnd" LinkedVFX="Wave" ParticleTiling="3" />
+      </Extra>
+      <Extra Type="CastDamageZone">
+        <Entry DamageZoneName="REPU_GolgothGatling_MachineGunLeap_DZ" Trigger="OnDashStart" LinkedVFX="Wave" ParticleTiling="3" />
+      </Extra>
+      <Extra Type="Particles" />
+    </SkillSpecific>
+    <SoundTrigger PlayAttackVoice="1" OnAnimStart="Play_REPU_Golgoth_Gatling_MachinegunLeap_Start" OnAnimCast="Play_REPU_Golgoth_Gatling_MachinegunLeap_FlyShoot" OnAnimLoopOut="Play_REPU_Golgoth_Gatling_MachinegunLeap_FlyShoot_End" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,33 @@
+<MetaData>
+  <Skill UID="AI_COSS_SkeletonCultist_BurningSkull" ESkill="default_ranged" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Frost" WeaponMultiplier="1.45" />
+    <Cooldown Cooldown="1.5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams MaximumTargetingHalfAngle="25" CastBone="Bip01 L Hand" />
+    <Projectile Name="COSS_Skeleton_Cultist_Proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SoundTrigger OnAnimCast="Play_COSS_SkeletonCultist_BurningSkull_Cast" OnHit="Play_COSS_SkeletonCultist_BurningSkull_Impact" PlayAttackVoice="0" OnAnimStart="Play_COSS_SkeletonCultist_BurningSkull_PreCast" />
+    <Targeting ComputeTargetPosAtCast="1" />
+    <Explosion ExplosionRadius="2" />
+  </Skill>
+  <Skill UID="AI_COSS_SkeletonCultist_FrostGeyser" ESkill="AI_Default_DamageZone" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Range AttackRange="12" />
+    <DamageWeapon Type="frost" WeaponMultiplier="2.3" />
+    <Cooldown Cooldown="10" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="COSS_Skeleton_Cultist.FrostFlameGeyser.Indicator" Offset="0,0,0" Direction="0,1,0" />
+      <Particle Key="OnSpawn" Name="COSS_Skeleton_Cultist.FrostFlameGeyser.AoE" Offset="0,0,0" Direction="0,1,0" Delay="1.6" />
+      <Particle Key="DamageZone" Name="COSS_Skeleton_Cultist.FrostFlameGeyser.Empty" Offset="0,0,0" Direction="0,1,0" Delay="1.6" />
+    </ParticleList>
+    <RandomCastingParams RandomNumberRangeMin="0" RandomNumberRangeMax="7" />
+    <SoundTrigger PlayAttackVoice="1" OnAnimStart="Play_COSS_SkeletonCultist_FrostGeyser_PreCast" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Skeleton_Cultist_FrostGeyser_Shape" />
+    </Shapes>
+    <DamageZone RateOfFire="2" Duration="2" />
+    <SkillSpecific DamageZoneSoundTrigger="Play_COSS_SkeletonCultist_FrostGeyser_Cast" />
+  </Skill>
+</MetaData>

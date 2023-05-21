@@ -1,0 +1,59 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_FireHomingProjectile">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1" />
+    <StatusAilment>
+      <Burn Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Burn" />
+    <Explosion ExplosionRadius="2" />
+    <Projectile Name="bossmod_FireHomingProj" ProjectileCount="2" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="360" totalAngleAtDistanceMax="360" projectileAngleAtDistanceMin="180" projectileAngleAtDistanceMax="50" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.5" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_Hunt_BossModifier_FireHomingProjectile">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1" />
+    <StatusAilment>
+      <Burn Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Burn" />
+    <Explosion ExplosionRadius="2" />
+    <Projectile Name="bossmod_FireHomingProj" ProjectileCount="2" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="360" totalAngleAtDistanceMax="360" projectileAngleAtDistanceMin="180" projectileAngleAtDistanceMax="50" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.5" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericProjectiles" Keywords="attack_skill,projectile" UID="AI_BossModifier_FireHomingProjectile_Lieutenant">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <CastingParams CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" CastDelay="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="5" />
+    <DamageWeapon Type="Fire" WeaponMultiplier="1" />
+    <StatusAilment>
+      <Burn Chance="100" ChanceMode="override" Duration="10" DurationMode="override" />
+    </StatusAilment>
+    <Cooldown Cooldown="0" />
+    <SoundTrigger OnHit="Play_DOT_DZ_Burn" />
+    <Explosion ExplosionRadius="2" />
+    <Projectile Name="bossmod_FireHomingProj" ProjectileCount="1" PenetrationLimit="1">
+      <AutomaticCastAngle distanceMin="0" distanceMax="15" totalAngleAtDistanceMin="360" totalAngleAtDistanceMax="360" projectileAngleAtDistanceMin="180" projectileAngleAtDistanceMax="50" />
+    </Projectile>
+    <Range AttackRange="20" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.5" CastMode="FromGround" KillProjsOnCasterDeath="1">
+      <CastAttributes FromCaster="1" RandomDir="0" MaxZOffset="1" />
+    </Specific_AI_Default_GenericProjectiles>
+  </Skill>
+</MetaData>

@@ -1,0 +1,61 @@
+<MetaData>
+  <BaseEntity ID="CultOfFury_AhrimanSpecter_FirePillar" EntityName="cultofsouls_butcher" Scale="0.95" CanKillAllies="0" />
+  <Faction Name="CultOfFury" />
+  <Keywords Value="cofy,elite,fire,melee" />
+  <SpawnClassParams SpawnLevelMin="1" SpawnLevelMax="300" SpawnWeight="1" CombatPointValueMultiplier="1" />
+  <Attributes Archetype="archetype_elite" HealthModifier="100.0" DamageModifier="1.0" XPModifier="1" Protection="" />
+  <Movement MovementSpeed="0" WalkSpeed="0" />
+  <InterruptionParams InterruptChance="0.00" />
+  <StunParams IgnoreStunChance="0" StunCooldown="0" FreezeCooldown="0" />
+  <BlownAwayParams CanBeBlownAway="0" BlownAwayAnimationTag="" />
+  <StunParams IgnoreStunChance="1" StunCooldown="0" FreezeCooldown="0" />
+  <DefaultBossModifiers />
+  <LootClass>
+    <Loot Class="LC_elite" fProba="1" />
+  </LootClass>
+  <OnHitLootPreset Name="OnHitLoot_Elite" />
+  <OnDeathLootPreset Name="OnDeathLoot_Elite" />
+  <Corpses PresetName="EliteCadaverPreset" />
+  <BasicAIParams ClampToNavmesh="1" MaxTurnRate="360" UseAvoidance="1" />
+  <Kythera>
+    <Behavior Name="Generic" />
+    <BT FleeOnLowHealthChance="0.0" EngageRange="60.0" MeleeAttack="True" FallBack="True" IdleWander="False" />
+    <Movement ClampToNavMesh="True" />
+    <Reaction Enabled="true" Cooldown="5.0" />
+    <Target SticknessBias="30.0" DistanceBias="6.0" DamageBias="0.0" AggressionBias="1.0" AggressionDecay="10.0" Category="None" />
+  </Kythera>
+  <Skills>
+    <Offensive>
+      <Skill Name="AI_COFY_Ahriman_FirePillarP2" Orientated="BeforeCast" Interruptible="False" Enabled="True" BaseWeight="1.0">
+        <Range Min="0.5" Preferred="10" Max="100" MinWeight="0.0" PreferredWeight="0.0" MaxWeight="0.0" />
+        <Health Min="0" Max="1" Weight="0.0" />
+      </Skill>
+    </Offensive>
+  </Skills>
+  <BoneParticles>
+    <BoneParticle BoneName="Bip01 Spine3" ParticleName="COFY_Ahriman.Specter.Loop" Offset="0,0,0" Dir="1,0,0" Scale="1" FadeOut="0" />
+    <BoneParticle BoneName="Bip01" ParticleName="COFY_Ahriman.Specter.Root" Offset="0,0,0" Dir="1,0,0" Scale="1" FadeOut="0" />
+  </BoneParticles>
+  <RandomModel>
+    <ModelChoice Model="Objects/characters/mobs/Non_Humanoid/Ahriman/COFY_Ahriman/COFY_Ahriman_Specter.cdf" Weight="1">
+      <ADBChoice ADB="Animations\Mannequin\ADB\Mobs\Non_Humanoid\Ahriman\COFY_Ahriman_P2.adb" Weight="1" />
+    </ModelChoice>
+  </RandomModel>
+  <HUD UIName="@ui_AIName_COFY_Ahriman_Specter" ZIconOffset="3.5" />
+  <Spawn SpawnAnimation="rise_out_ground_fast" TransparencyAtSpawn="0" />
+  <Death UseDeathAnimation="1" DeathSkill="" CosmeticDropPreset="" OnDeathMaterial="" />
+  <GameplayParticles PresetName="size_large" />
+  <Capsules>
+    <EntityPhysics ColliderSize="0.1,0.1,0.1" />
+    <MouseSelection SelectionCapsuleRadius="0.0" SelectionCapsuleHeight="0.0" SelectionCapsuleZOffset="0.0" />
+    <ProjectileCollision ProjectileCapsuleRadius="0.0" ProjectileCapsuleHeight="0.0" CanSnapOnCenterWhenColliding="0" />
+    <VegetationCollision SphereRadius="0.0" SphereZOffset="0.0" />
+  </Capsules>
+  <VisualParams>
+    <HitParticleParams BaseHitScale="1" DirectionalHitScale="1" CriticalHitScale="1" />
+    <BloodDecals Preset="default" OverrideScale="1" />
+  </VisualParams>
+  <BoneParticles>
+    <BoneParticle BoneName="" ParticleName="" Offset="-0.5,0.5,0" Dir="0,1,0" Scale="1" />
+  </BoneParticles>
+</MetaData>

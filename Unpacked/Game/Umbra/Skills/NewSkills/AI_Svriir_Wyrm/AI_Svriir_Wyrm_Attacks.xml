@@ -1,0 +1,48 @@
+<MetaData>
+  <Skill ESkill="default_melee" Keywords="attack_skill" UID="AI_Svriir_Wyrm_DefaultAttack">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Svriir_Wyrm_DefaultAttack_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_Svriir_Swarmcrawler_Attack_Start" OnAnimCast="Play_Svriir_Swarmcrawler_Attack" OnHit="Play_Svriir_Swarmcrawler_Attack_Hit" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_Svriir_Wyrm_AcidWave" ESkill="AI_TMPL_Knight_SacredFire" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="6" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone RateOfFire="0.5" Duration="1.5" />
+    <Shapes>
+      <Entry Key="DamageZoneShape01" ShapeName="Svriir_Wyrm_AcidWave_Shape" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Monster.AuroraKnight.SacredFire_1Seconds" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+  </Skill>
+  <Skill UID="AI_Svriir_Wyrm_Dive" ESkill="ai_default_charge" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="6" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="2" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry Key="TargetDetection" ShapeName="Svriir_Wyrm_Dive_Shape" />
+    </Shapes>
+    <Blownaway Height="0" Distance="3.5" StunDuration="0.1" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster.WarBeast_OUTW.WarBeast_OUTW_InfernalCharge_Indicator" Offset="0,0,0" Direction="-1,0,0" Scale="1" InstantKill="0" />
+      <Particle Key="SideDZ" Name="U_Monster.Siviir.Alpha_Breath_Fire_Ground_Loop_01" Direction="0,0,1" />
+    </ParticleList>
+    <SkillSpecific ChargeSpeed="20" ChargeDistance="12.5" StopChargeAtTarget="0">
+      <Extra Type="SideAttack">
+        <Shape ShapeWidth="2.5" RightOffset="0" WidthFactorForParticlePacing="2" />
+      </Extra>
+      <Extra Type="Particles" />
+    </SkillSpecific>
+    <SoundTrigger OnAnimStart="" OnHit="" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,22 @@
+<MetaData>
+  <Skill UID="AI_republicjusticar02_chargeburst" ESkill="AI_republicjusticar02_chargeburst" Keywords="attack_skill,projectile">
+    <Animation ActionString="monster_skill_04" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon WeaponMultiplier="2" />
+    <Cooldown Cooldown="6.0" CooldownTrigger="OnEnd" />
+    <Range AttackRange="10" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Blownaway Height="0" Distance="5" />
+    <CastingParams CastBone="Bip01_Cannons" CanBeInterrupted="0" />
+    <Projectile Name="Justicar_proj" ProjectileCount="1" PenetrationLimit="999" />
+    <Shapes>
+      <Entry ShapeName="RepublicJusticar02_ChargeBurst_Charge" />
+      <Entry ShapeName="RepublicJusticar02_ChargeBurst_Swipe" />
+    </Shapes>
+    <SkillSpecific ChargeSpeed="40" ShootFrequency="0.001" ProjectileDamageInPercentOfChargeDamage="30" WeaponHandBone="R_Weapon_Bone" AllowBlowAwayMainTarget="1" StopChargeAtTarget="1" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="origin" To="0" In="2" />
+      <EmissiveIntensity From="30" To="45" In="1" />
+      <EmissiveIntensity From="50" To="origin" In="1.5" />
+    </Material>
+  </Skill>
+</MetaData>

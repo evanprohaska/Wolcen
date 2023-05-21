@@ -1,0 +1,532 @@
+<MetaData>
+  <Quest Name="ACT2_Quest5" StartDialog="" Type="Main" UIName="@ui_A2_Q5_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT2">
+    <Step Order="0" UIName="@ui_A2_Q5_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="NPC_A2_Q5_Gernez" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q5_Gernez" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q5_Gernez" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="NPC_A2_Q5_Gernez" DialogName="ACT2_Q5_S1_Gernese_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q5_Gernez" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q5_Gernez" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Go" Destination="ClickableEntity_TemplarCamp_to_FleshForest1" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_TemplarCamp_to_FleshForest1" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="VOS2_Event_SuccessKillMercy" MonsterClass="VOS2_Mercy_Zombie" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="VOS2EventCollisionHide1" EntityNames="primitive_box_BlockRoadVOS2Event1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="VOS2EventCollisionHide2" EntityNames="primitive_box_BlockRoadVOS2Event2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="VOS2EventParticleHide1" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.VOS2Event1" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="VOS2EventParticleHide2" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.VOS2Event2" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q4_S4_EventDoor_Desactivate" ClickableEntityName="ClickableEntity_VOS2Event_Gating" Delay="0.1" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q4_S4_HideEventDoorCollision" EntityNames="ClickableEntity_VOS2Event_Gating" Delay="0.2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalReleaseGameplayEvent" Name="VOS2_VOS2Event_SucceedEventSlotRelease" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="VOS2_Event_PlayerWin" DialogName="ACT2_Q4_S4_DynS_Player_Talk6" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_VOS2Event_SuccessReleaseCheckpoint" CheckpointEntityName="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q5_S1_ForestClearingEntrance_Desactivate" ClickableEntityName="ClickableEntity_TemplarCamp_to_FleshForest1" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q5_S1_HideFCBlocker" EntityNames="TemplarCamp_ForestClearing_Blocker" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S1_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="QP_A2_Q5_S1_ValeriaSpawn" FaceAtSpawn="NPC_A2_Q5_Gernez" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="A2_Q5_S1_DynS_Gernese_Talk1" DialogName="ACT2_Q5_S1_DynS_Gernese_Talk1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S1_DynS_Gernese_Talk1" Type="GoalAchieve" Name="A2_Q5_S1_Goal2Achieved" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalDialog" Name="A2_Q5_S1_DynS_Player_Talk1" DialogName="ACT2_Q5_S1_DynS_Player_Talk1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S1_DynS_Player_Talk1" Type="GoalAchieve" Name="A2_Q5_S1_Goal4Achieved" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityFollow" Delay="2" Name="A2_Q5_S1_ValeriFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="5000" />
+        <XP Amount="300000" />
+      </Reward>
+    </Step>
+    <Step Order="1" UIName="@ui_A2_Q5_S2_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_TemplarCamp_to_FleshForest1" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_TemplarCamp_to_FleshForest1" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S2_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A2_Q5_S2_ValeriFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_ForestClearingEvent_SF" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ClickableEntity_TemplarCamp_to_FleshForest1" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_ForestClearingEvent" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="StepUpdate" Name="A2_Q5_S2_StepUpdate1" Localization="" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q5_S1_ForestClearingEntrance_Activate" ClickableEntityName="ClickableEntity_TemplarCamp_to_FleshForest1" MakeClickable="1" FilterEvents="0" />
+    </Step>
+    <Step Order="2" UIName="@ui_A2_Q5_S2_StepNameLabel" AutoClearEvents="1" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_TemplarCamp_to_FleshForest1" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_TemplarCamp_to_FleshForest1" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT2_ForestClearing" GameplayEventPresetName="ACT2_Forest_Clearing">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_TemplarCamp_to_FleshForest1" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q5_S3_Lambach" Area="ACT2_Flesh_Forest1" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Impossible" />
+      <Goal Order="4" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q5_S3_Lambach" Area="ACT2_Flesh_Forest1" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Impossible" />
+      <Goal Order="6" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q5_S3_Lambach" Area="ACT2_Flesh_Forest1" Threshold="85" />
+      </Goal>
+      <Goal Order="7" Type="Talk" EntityName="NPC_A2_Q5_S3_Lambach" DialogName="ACT2_Q5_S3_Lambach_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q5_S3_Lambach" Area="ACT2_Flesh_Forest1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05-06-07" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A2_Q5_S3_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S3_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A2_Q5_S3_ValeriFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" Delay="2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part1" WaveIndex="1" Type="GlobalAnnouncement" Name="A2_Q3_EA_AN_EventStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_A2_Q5_S3_StepNameLabel" DisplayTime="3" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="ForestClearing_StartArena_Part2" Type="GlobalAnnouncement" Name="A2_Q3_EA_AN_EventEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A1_Q5_D_LockPortail" ClickableEntityName="ClickableEntity_TemplarCamp_to_FleshForest1" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="GlobalReleaseGameplayEvent" Name="Vote_Failure_ForestClearing" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionClickable" Name="A2_Q5_LockPortailCutscene1" ClickableEntityName="ClickableEntity_FleshForest1_to_TemplarCamp" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q5_HidePortailCutscene1" EntityNames="ClickableEntity_FleshForest1_to_TemplarCamp" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_1" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS11" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_2" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_3" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS9" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_4" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_5" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS12" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_6" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS4" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_7" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS13" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_8" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS10" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_9" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS5" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_10" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS6" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_11" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS18" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_12" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS8" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_13" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_14" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS7" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_15" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS22" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_16" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS28" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_17" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS24" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_18" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS27" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_19" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS21" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_20" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS17" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_21" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS16" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_22" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS19" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_23" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS15" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_24" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS14" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_25" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS25" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_26" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS26" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Soldier_27" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS20" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Justicar" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS23" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_GameplayJusticar" EntityNames="Azenhal_KO" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_ING_Slow" EntityNames="LambachTentacle_Slow" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_ING_Area_Slow" EntityNames="LambachTentacle_Slow_AreaTrigger" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_ING_Fast" EntityNames="LambachTentacle_Fast" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_ING_Area_Fast" EntityNames="LambachTentacle_Fast_AreaTrigger" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionParticleEmitter" Name="Hide_FX_Right" EmitterEntityName="BlockingRoad_ForestClearing_Right" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Collision_Right" EntityNames="Collider_ForestClearing_Right" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionParticleEmitter" Name="Hide_FX_Left" EmitterEntityName="BlockingRoad_ForestClearing_Left" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Collision_Left" EntityNames="Collider_ForestClearing_Left" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalCheckpoint" Name="GlobalCheckpoint_ForestClearing" CheckpointEntityName="CheckPoint_ForestClearing" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalRevivePlayers" Delay=".1" Name="ForestClearing_Revive1" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalMusic" Name="ForestClearingEvent_StartMusic" MusicName="ACT2_EventFleshRepu" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalMusic" Name="ForestClearingEvent_StartMusic_W2" MusicName="ACT2_EventFleshRepu" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="GlobalMusic" Name="ForestClearingEvent_StopMusic" MusicName="ACT2_FleshForest1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A2_Q5_S2_StepUpdate" Localization="@ui_A2_Q5_S3_StepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionSequence" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S2_CutScene" SequenceName="A2_HEIMLOCKFACEOFF1" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutScene" Type="ActionSequence" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S2_CutSceneBis" SequenceName="A2_HEIMLOCKFACEOFF1_P2" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityTeleport" MinRadius="3" Name="A1_Q5_D_PlayerTeleport" TeleportedEntityName="#Player" DestinationName="QuestPoint12" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="GoalAchieve" Name="A2_Q5_S2_Goal1Achieved" SimulateOnly="0" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="A2_Q5_S3_ResetRemoveValeria" EntityName="Valeria" Hide="1" Remove="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntitySpawn" MinimumRadius="2" MaximumRadius="5" SpawnFrequency="0" Name="A2_Q5_S3_ResetValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityFollow" Delay="2.2" Name="A2_Q5_S3_ResetValeriFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_1" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS11" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_2" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS1" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_3" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS9" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_4" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS2" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_5" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS12" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_6" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS4" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_7" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS13" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_8" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS10" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_9" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS5" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_10" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS6" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_11" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS18" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_12" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS8" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_13" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS3" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_14" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS7" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_15" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS22" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_16" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS28" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_17" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS24" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_18" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS27" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_19" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS21" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_20" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS17" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_21" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS16" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_22" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS19" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_23" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS15" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_24" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS14" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_25" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS25" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_26" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS26" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Soldier_27" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS20" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutSceneBis" Type="EntityIsHidden" Name="Unhide_Justicar" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS23" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="ArenaStart" Name="ForestClearing_StartArena_Part1" ArenaPreset="ForestClearingArena_1_Act2" LocationEntityName="ForestClearingArena_1_Act2" EntityToFollow="" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalDialog" Delay="1" Name="ForestClearing_Talk1" DialogName="ACT2_Q5_S1_DynS_Player_Talk2" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="ForestClearing_StartArena_Part1" Type="GoalAchieve" GoalIndexToAchieve="3" Name="ForestClearing_Arena_Part1_Victory" SimulateOnly="0" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part1" WaveIndex="1" Type="GlobalDialog" Delay="20" Name="ForestClearing_Talk2_1" DialogName="ACT2_Q5_S1_DynS_ForestClearing_Talk1_1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part1" WaveIndex="2" Type="GlobalDialog" Delay="25" Name="ForestClearing_Talk2_2" DialogName="ACT2_Q5_S1_DynS_ForestClearing_Talk1_2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part1" WaveIndex="2" Type="GlobalDialog" Delay="35" Name="ForestClearing_Talk2_3" DialogName="ACT2_Q5_S1_DynS_ForestClearing_Talk1_3" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalRevivePlayers" Delay="0" Name="ForestClearing_Revive2" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionSequence" BlendingSpeed="50" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S2_CutScene2" SequenceName="A2_CRUSHEDREPUBLICANS" Delay="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutScene2" Type="GoalAchieve" Name="A2_Q5_S2_GoalAchieved1" SimulateOnly="0" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_1" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS11" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_2" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS1" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_3" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS9" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_4" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS2" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_5" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS12" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_6" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS4" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_7" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS13" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_8" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS10" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_9" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS5" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_10" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS6" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_11" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS18" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_12" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS8" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_13" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS3" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_14" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS7" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_15" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS22" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_16" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS28" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_17" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS24" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_18" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS27" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_19" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS21" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_20" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS17" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_21" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS16" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_22" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS19" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_23" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS15" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_24" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS14" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_25" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS25" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_26" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS26" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Soldier_27" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS20" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Hide2_Justicar" EntityNames="Infantry_A2_DYN_REPUBLICANFORMATIONS23" Hide="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S2_CutScene2" Type="EntityIsHidden" Name="Unhide_GameplayJusticar" EntityNames="Azenhal_KO" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ArenaStart" Name="ForestClearing_StartArena_Part2" ArenaPreset="ForestClearingArena_2_Act2" LocationEntityName="ForestClearingArena_2_Act2" EntityToFollow="" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalDialog" Delay="2" Name="ForestClearing_Talk3" DialogName="ACT2_Q5_S1_DynS_ForestClearing_Talk2" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="ForestClearing_StartArena_Part2" Type="GoalAchieve" GoalIndexToAchieve="5" Name="ForestClearing_Arena_Part2_Victory" SimulateOnly="0" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part2" WaveIndex="3" Type="EntityIsHidden" Name="Start_ING_Fast" EntityNames="LambachTentacle_Fast" Hide="0" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part2" WaveIndex="3" Type="EntityIsHidden" Name="Start_ING_Area_Fast" EntityNames="LambachTentacle_Fast_AreaTrigger" Hide="0" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part2" WaveIndex="4" Type="EntityIsHidden" Name="HideEnd_ING_Fast" EntityNames="LambachTentacle_Fast" Hide="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part2" WaveIndex="4" Type="EntityIsHidden" Name="HideEnd_ING_Area_Fast" EntityNames="LambachTentacle_Fast_AreaTrigger" Hide="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part2" WaveIndex="4" Type="EntityIsHidden" Delay="3" Name="Start_ING_Slow" EntityNames="LambachTentacle_Slow" Hide="0" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part2" WaveIndex="4" Type="EntityIsHidden" Delay="3" Name="Start_ING_Area_Slow" EntityNames="LambachTentacle_Slow_AreaTrigger" Hide="0" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part2" WaveIndex="4" Type="StepUpdate" Name="ForestClearing_StepUpdate_2" Localization="@ui_A2_Q5_S3_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part2" WaveIndex="4" Type="GlobalDialog" Delay="0.2" Name="ForestClearing_Talk4_1" DialogName="ACT2_Q5_S1_DynS_ForestClearing_Talk3_1" />
+      <Event Trigger="EventEnd" EventName="ForestClearing_StepUpdate_2" Type="GlobalDialog" Name="ForestClearing_Talk4_2" DialogName="ACT2_Q5_S1_DynS_ForestClearing_Talk3_2" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Azenhal" PercentLeft="25" Type="GlobalDialog" Name="ForestClearing_Talk4_3" DialogName="ACT2_Q5_S1_DynS_ForestClearing_Talk3_3" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Azenhal" PercentLeft="55" Type="GlobalDialog" Name="ForestClearing_Talk4_4" DialogName="ACT2_Q5_S1_DynS_ForestClearing_Talk3_4" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Azenhal" PercentLeft="75" Type="GlobalDialog" Name="ForestClearing_Talk4_5" DialogName="ACT2_Q5_S1_DynS_ForestClearing_Talk3_5" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="ForestClearing_StartArena_Part2" WaveIndex="4" Type="EntityIsHidden" Delay="0.2" Name="Final_Hide_JusticarGameplay" EntityNames="Azenhal_KO" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="5" Type="EntityHeal" Name="Healing_ForestClearing_EventEnd" TargetEntityName="#Player" MinPercent="100" MaxPercent="100" Frequency="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="5" Type="GlobalDialog" Delay=".2" Name="ForestClearing_JusticarDeathTalk" DialogName="ACT2_Q5_S1_DynS_ForestClearing_Talk4" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="UnHide_FX_Right" EmitterEntityName="BlockingRoad_ForestClearing_Right" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="UnHide_Collision_Right" EntityNames="Collider_ForestClearing_Right" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="UnHide_FX_Left" EmitterEntityName="BlockingRoad_ForestClearing_Left" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="UnHide_Collision_Left" EntityNames="Collider_ForestClearing_Left" Hide="0" />
+      <Event Trigger="EventEnd" EventName="ForestClearing_Lambach_Teleport" Type="EntityAnimate" Name="ForestClearing_Lambach_Spawn" SpeedScale="1" BlendingTime="0" AnimatedEntityName="NPC_A2_Q5_S3_Lambach" Play="cofe_lambach_step1_spawn_02" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityTeleport" Delay="13.5" Name="ForestClearing_Lambach_Teleport" TeleportedEntityName="NPC_A2_Q5_S3_Lambach" DestinationName="Lambach_Teleport_ForestClearing" MinRadius="0" />
+      <Event Trigger="EventEnd" EventName="ForestClearing_Lambach_Spawn" Type="EntityAnimate" Name="ForestClearing_Lambach_SpawnIdle" SpeedScale="1" BlendingTime="0" AnimatedEntityName="NPC_A2_Q5_S3_Lambach" Play="cofe_lambach_step1_idle_03" Loop="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityIsHidden" Name="HideEnd_ING_Slow" EntityNames="LambachTentacle_Slow" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityIsHidden" Name="HideEnd_ING_Area_Slow" EntityNames="LambachTentacle_Slow_AreaTrigger" Hide="1" />
+      <Event Trigger="EventEnd" EventName="ForestClearing_Lambach_Teleport" Type="GoalAchieve" Delay="2" Name="A2_Q5_S2_GoalAchieved2" SimulateOnly="0" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="StepUpdate" Name="ForestClearing_StepUpdate_3" Localization="@ui_A2_Q5_S3_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="ForestClearing_StopDialog_Fail" />
+      <Event Trigger="PlayerWipe" Type="GlobalReleaseGameplayEvent" Name="ForestClearingFail_EventSlotRelease" />
+      <Event Trigger="PlayerWipe" Type="EntityTeleport" Name="ForestClearing_Lambach_TeleportBack" TeleportedEntityName="NPC_A2_Q5_S3_Lambach" DestinationName="Lambach_TeleportBack_ForestClearing" MinRadius="0" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="ForestClearingStepFail" RollbackToPreviousStep="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="7500" />
+        <XP Amount="300000" />
+        <ChoiceLootClass Name="A2_Q5_Reward1" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="3" UIName="@ui_A2_Q5_S4_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="" IgnoreAutomaticStepUIUpdate="1">
+      <Goal Order="0" Type="Go" Destination="NPC_A2_Q5_S4_Lambach" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q5_S4_Lambach" Area="ACT2_Flesh_Forest1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q5_S4_Lambach" Area="ACT2_Flesh_Forest1" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="NPC_A2_Q5_S4_Lambach" DialogName="ACT2_Q5_S4_Lambach_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q5_S4_Lambach" VFX="U_Utils.Quest.Objective" VFXOffsetZ="5" Area="ACT2_Flesh_Forest1" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_A2_Q5_S4_FleshForest1_Heart1" Radius="12" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_FleshForest1_to_FleshForest2" Area="ACT2_Flesh_Forest1" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Kill" ClassToKill="FleshHeart1,FleshHeart2" KillCount="2" ShowProgression="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_A2_Q5_S4_FleshForest1_AreaMarker" VFX="" VFXOffsetZ="QP_A2_Q5_S4_DynS_Lambach_Talk1" Area="ACT2_Flesh_Forest1" Threshold="85" UseAreaSize="25" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalReleaseGameplayEvent" Name="ForestClearing_EventSlotRelease" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="ForestClearing_Lambach_Despawn" SpeedScale="1" BlendingTime="0" AnimatedEntityName="NPC_A2_Q5_S3_Lambach" Play="COFE_Lambach_Step1_Quit_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay="2.5" Name="ForestClearing_Lambach_Hide" EntityNames="NPC_A2_Q5_S3_Lambach" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_Win_ForestClearing" CheckpointEntityName="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Delay="0.5" Name="ForestClearing_Talk6" DialogName="ACT2_Q5_S4_DynS_Player_Talk1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="FinalHide_FX_Right" EmitterEntityName="BlockingRoad_ForestClearing_Right" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FinalHide_Collision_Right" EntityNames="Collider_ForestClearing_Right" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="FinalHide_FX_Left" EmitterEntityName="BlockingRoad_ForestClearing_Left" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="FinalHide_Collision_Left" EntityNames="Collider_ForestClearing_Left" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q5_UnlockPortail1" ClickableEntityName="ClickableEntity_FleshForest1_to_TemplarCamp" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q5_UnhidePortail" EntityNames="ClickableEntity_FleshForest1_to_TemplarCamp" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q5_UnlockPortail2" ClickableEntityName="ClickableEntity_TemplarCamp_to_FleshForest1" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A2_Q5_S4_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S4_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A2_Q5_S4_ValeriFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S4_DynS_Lambach_Talk2" AreaRadius="100" Type="EntityAnimate" SpeedScale="2" BlendingTime="1" Name="A2_Q5_S4_LambachInit1" AnimatedEntityName="AO_A2_Q5_S4_Lambach" Play="COFE_Lambach_Step1_Quit_01" Loop="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S4_DynS_Lambach_Talk2" AreaRadius="100" Type="EntityAnimate" SpeedScale="2" BlendingTime="1" Name="A2_Q5_S4_LambachInit2" AnimatedEntityName="AO_A2_Q5_S4_Lambach2" Play="COFE_Lambach_Step1_Quit_01" Loop="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S4_DynS_Lambach_Talk2" AreaRadius="100" Type="EntityAnimate" SpeedScale="2" BlendingTime="1" Name="A2_Q5_S4_LambachInit3" AnimatedEntityName="AO_A2_Q5_S4_Lambach3" Play="COFE_Lambach_Step1_Quit_01" Loop="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S4_DynS_Lambach_Talk2" AreaRadius="100" Type="EntityAnimate" SpeedScale="2" BlendingTime="1" Name="A2_Q5_S4_LambachInit4" AnimatedEntityName="AO_A2_Q5_S4_Lambach4" Play="COFE_Lambach_Step1_Quit_01" Loop="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_RepublicanTransformed" AreaRadius="15" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S3_RepublicanTransformed" SpawnClass="Sc_Sty_AC2_COFE_RI" TargetEntityName="QP_RepublicanTransformed_spawn" FaceAtSpawn="" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_RepublicanTransformed" AreaRadius="15" Type="GlobalDialog" Name="A2_Q5_S4_DynS_Republican_Talk" DialogName="ACT2_Q5_S4_DynS_Republican_Talk" Delay="0.5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q5_UnlockPortail" ClickableEntityName="ClickableEntity_FleshForest1_to_TemplarCamp" MakeClickable="1" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="A2_Q5_S4_DynS_Lambach_Talk1" DialogName="ACT2_Q5_S4_DynS_Lambach_Talk1" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_TemplarTransformed" AreaRadius="30" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S3_TemplarTransformed" SpawnClass="Sc_Sty_AC2_COFE_RI" TargetEntityName="QP_RepublicanTransformed" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S3_TemplarTransformed" Type="GlobalDialog" Name="A2_Q5_S3_DynS_Templar_Talk" DialogName="ACT2_Q5_S4_DynS_Player_Talk3" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S4_DynS_Lambach_Talk1" Type="GoalAchieve" Name="A2_Q5_S4_GoalAchieved2" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_ACT2_Q5_S5_DynS_Player_Talk5" AreaRadius="75" Type="GlobalDialog" Name="A2_Q5_S5_DynS_Player_Talk4" DialogName="ACT2_Q5_S4_DynS_Player_Talk4" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A2_Q5_S3_StepUpdate1" Localization="@ui_A2_Q5_S4_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="A2_Q5_S3_Lambach_Despawn" AnimatedEntityName="NPC_A2_Q5_S4_Lambach" Play="COFE_Lambach_Step1_Quit_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityIsHidden" Name="A2_Q5_S4_HideCollisionWallOfFlesh" EntityNames="CP_A2_Q5_S4_WallOfFlesh" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S4_KillWallOfFlesh1" SequenceName="DynScene_WallOfFlesh_part1_FleshForest1" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="StepUpdate" Name="A2_Q5_S3_StepUpdate2" Localization="@ui_A2_Q5_S4_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Wall_Of_Flesh1" AreaRadius="10" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="WallOfFlesh1_spawn" AnimatedEntityName="AO_A2_Q5_S4_WallOfFlesh4" Play="COFE_Wall_Spawn_01" Loop="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Wall_Of_Flesh1" AreaRadius="10" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="WallOfFlesh1_idle" AnimatedEntityName="AO_A2_Q5_S4_WallOfFlesh4" Play="COFE_Wall_Idle_01" Loop="0" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Wall_Of_Flesh1" AreaRadius="10" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="WallOfFlesh2_spawn" AnimatedEntityName="AO_A2_Q5_S4_WallOfFlesh3" Play="COFE_Wall_Spawn_01" Loop="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Wall_Of_Flesh1" AreaRadius="10" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Name="WallOfFlesh2_idle" AnimatedEntityName="AO_A2_Q5_S4_WallOfFlesh4" Play="COFE_Wall_Idle_01" Loop="0" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S4_DynS_Lambach_Talk1" AreaRadius="20" Type="EntityAnimate" SpeedScale="2" BlendingTime="0" Name="A2_Q5_S4_LambachPeek1" AnimatedEntityName="AO_A2_Q5_S4_Lambach" Play="cofe_lambach_step1_spawn_02" Loop="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S4_LambachPeek1" Type="GlobalDialog" Name="A2_Q5_S4_DynS_Lambach_Talk2_1" DialogName="ACT2_Q5_S4_DynS_Lambach_Talk2_1" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S4_DynS_Lambach_Talk2_1" Type="EntityAnimate" SpeedScale="2" BlendingTime="0" Name="A2_Q5_S4_LambachLeave1" AnimatedEntityName="AO_A2_Q5_S4_Lambach" Play="COFE_Lambach_Step1_Quit_01" Loop="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S4_DynS_Lambach_Talk2" AreaRadius="20" Type="EntityAnimate" SpeedScale="2" BlendingTime="0" Name="A2_Q5_S4_LambachPeek2" AnimatedEntityName="AO_A2_Q5_S4_Lambach2" Play="cofe_lambach_step1_spawn_02" Loop="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S4_LambachPeek2" Type="GlobalDialog" Name="A2_Q5_S4_DynS_Lambach_Talk2_2" DialogName="ACT2_Q5_S4_DynS_Lambach_Talk2_2" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S4_DynS_Lambach_Talk2_2" Type="EntityAnimate" SpeedScale="2" BlendingTime="0" Name="A2_Q5_S4_LambachLeave2" AnimatedEntityName="AO_A2_Q5_S4_Lambach2" Play="COFE_Lambach_Step1_Quit_01" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="FF1_SpawnHeart1" SpawnClass="Sc_Sty_AC2_COFE_H1" TargetEntityName="QP_A2_Q5_S4_FleshForest1_Heart1" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="FF1_SpawnHeart2" SpawnClass="Sc_Sty_AC2_COFE_H2" TargetEntityName="QP_A2_Q5_S4_FleshForest1_Heart2" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityFaction" Delay="1" Name="FleshHeartAlly1" EntityName="FleshHeart1" FactionName="AllFriendly" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="EntityFaction" Delay="1" Name="FleshHeartAlly2" EntityName="FleshHeart2" FactionName="AllFriendly" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityFaction" Delay="0" Name="FleshHeartNotAlly1" EntityName="FleshHeart1" FactionName="CultOfSouls" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityFaction" Delay="0" Name="FleshHeartNotAlly2" EntityName="FleshHeart2" FactionName="CultOfSouls" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S4_FleshForest1_Heart1" AreaRadius="12" Type="GlobalDialog" Name="A2_Q5_S4_DynS_Player_Talk5" DialogName="ACT2_Q5_S4_DynS_Player_Talk5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S4_FleshForest1_Heart1" AreaRadius="12" Type="StepUpdate" Name="A2_Q5_S3_StepUpdate3" Localization="@ui_A2_Q5_S4_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S4_KillWallOfFlesh2" SequenceName="DynScene_WallOfFlesh_part2_FleshForest1" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityIsHidden" Name="A2_Q5_S4_HideCollisionWallOfFlesh1" EntityNames="CP_A2_Q5_S4_WallOfFlesh2" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="4" Type="EntityIsHidden" Name="A2_Q5_S4_HideCollisionWallOfFlesh2" EntityNames="CP_A2_Q5_S4_WallOfFlesh3" Hide="1" />
+    </Step>
+    <Step Order="4" UIName="@ui_A2_Q5_S6_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="ClickableEntity_FleshForest1_to_FleshForest2" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_FleshForest1_to_FleshForest2" Area="ACT2_Flesh_Forest1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ClickableEntity_FleshForest1_to_FleshForest2" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_FleshForest1_to_FleshForest2" Area="ACT2_Flesh_Forest1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A2_Q5_S5_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S5_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A2_Q5_S5_ValeriFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A2_Q5_S4_StepUpdate" Localization="@ui_A2_Q5_S5_UpdateStepNameLabel" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="5" UIName="@ui_A2_Q5_S6_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="" IgnoreAutomaticStepUIUpdate="1">
+      <Goal Order="0" Type="Go" Destination="QP_A2_Q5_S6_HeartsEventTrigger" Radius="45" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_A2_Q5_S6_HeartsEventTrigger" Area="ACT2_Flesh_Forest2" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Kill" ClassToKill="CultOfFlesh_FleshForest_Heart" KillCount="4" ShowProgression="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_A2_Q5_S6_FleshForest2_AreaMarker" Area="ACT2_Flesh_Forest2" Threshold="120" UseAreaSize="112" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A2_Q5_S6_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S6_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A2_Q5_S6_ValeriFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalDialog" Name="A2_Q5_S5_DynS_Player_Talk1" DialogName="ACT2_Q5_S5_DynS_Player_Talk1" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S6_HeartsEventTrigger" AreaRadius="100" Type="GlobalDialog" Name="A2_Q5_S6_DynS_Valeria_Talk1" DialogName="ACT2_Q5_S6_DynS_Valeria_Talk1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S6_HeartsEventTrigger" AreaRadius="45" Type="GlobalDialog" Name="A2_Q5_S6_DynS_Player_Talk2" DialogName="ACT2_Q5_S6_DynS_Player_Talk2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S6_HeartsEventTrigger" AreaRadius="45" Type="EntityAnimate" SpeedScale="2" BlendingTime="1" Name="A2_Q5_S6_Wall_Of_Flesh1_1" AnimatedEntityName="AO_A2_Q5_S6_WallOfFlesh1" Play="COFE_Wall_Spawn_01" Loop="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S6_HeartsEventTrigger" AreaRadius="45" Type="EntityAnimate" SpeedScale="2" BlendingTime="1" Name="A2_Q5_S6_Wall_Of_Flesh1_2" AnimatedEntityName="AO_A2_Q5_S6_WallOfFlesh1" Play="COFE_Wall_Idle_01" Loop="0" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S6_HeartsEventTrigger" AreaRadius="45" Type="EntityAnimate" SpeedScale="2" BlendingTime="1" Name="A2_Q5_S6_Wall_Of_Flesh2_1" AnimatedEntityName="AO_A2_Q5_S6_WallOfFlesh2" Play="COFE_Wall_Spawn_01" Loop="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q5_S6_HeartsEventTrigger" AreaRadius="45" Type="EntityAnimate" SpeedScale="2" BlendingTime="1" Name="A2_Q5_S6_Wall_Of_Flesh2_2" AnimatedEntityName="AO_A2_Q5_S6_WallOfFlesh2" Play="COFE_Wall_Idle_01" Loop="0" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A2_Q5_S6_StepUpdate" Localization="@ui_A2_Q5_S6_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="FF2_SpawnHeart1" SpawnClass="Sc_Sty_AC2_COFE_H" TargetEntityName="QP_A2_Q5_S4_FleshForest2_Heart1" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="FF2_SpawnHeart2" SpawnClass="Sc_Sty_AC2_COFE_H" TargetEntityName="QP_A2_Q5_S4_FleshForest2_Heart2" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="FF2_SpawnHeart3" SpawnClass="Sc_Sty_AC2_COFE_H" TargetEntityName="QP_A2_Q5_S4_FleshForest2_Heart3" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="FF2_SpawnHeart4" SpawnClass="Sc_Sty_AC2_COFE_H" TargetEntityName="QP_A2_Q5_S4_FleshForest2_Heart4" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="FF2_SpawnHeart5" SpawnClass="Sc_Sty_AC2_COFE_H" TargetEntityName="QP_A2_Q5_S4_FleshForest2_Heart5" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="FF2_SpawnHeart6" SpawnClass="Sc_Sty_AC2_COFE_H" TargetEntityName="QP_A2_Q5_S4_FleshForest2_Heart6" FaceAtSpawn="" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q5_S6_HideCollisionWallOfFlesh1" EntityNames="CP_A2_Q5_S6_WallOfFlesh" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q5_S6_HideCollisionWallOfFlesh2" EntityNames="CP_A2_Q5_S6_WallOfFlesh2" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="A2_Q5_S6_HideCollisionWallOfFlesh3" EntityNames="CP_A2_Q5_S6_WallOfFlesh3" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S6_KillWallOfFlesh2" SequenceName="DynScene_WallOfFlesh_FleshForest2" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalDialog" Name="A2_Q5_S6_DynS_Player_FinalTalk" DialogName="ACT2_Q5_S6_DynS_Player_Talk3" Delay="0.5" />
+    </Step>
+    <Step Order="6" UIName="@ui_A2_Q5_S7_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="DungeonEntrance_FleshForest2_to_FleshCity" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_FleshForest2_to_FleshCity" Area="ACT2_Flesh_Forest2" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="DungeonEntrance_FleshForest2_to_FleshCity" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_FleshForest2_to_FleshCity" Area="ACT2_Flesh_Forest2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A2_Q5_S7_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S7_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A2_Q5_S7_ValeriFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A2_Q5_S6_StepUpdate3" Localization="@ui_A2_Q5_S7_UpdateStepNameLabel" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="7" UIName="@ui_A2_Q5_S8_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Wait" ReferenceEntityName="" Radius="" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="SvriirCave_A2_Exit" Area="Act2_SvriirCave" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="SvriirCave_A2_Exit" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="SvriirCave_A2_Exit" Area="Act2_SvriirCave" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Interact" Names="SvriirCave_A2_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="SvriirCave_A2_Exit" Area="Act2_SvriirCave" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A2_Q5_S8_ClearUI" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="SvriirCave_A2_Entrance" AreaRadius="20" Type="GlobalDialog" Name="A2_Q5_S6_DynS_Valeria_Talk2" DialogName="ACT2_Q5_S6_DynS_Valeria_Talk2" />
+    </Step>
+    <Step Order="8" UIName="@ui_A2_Q5_S9_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="CE_A2_Q5_S9_EventVoteTrigger" Radius="50" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A2_Q5_S9_EventVoteTrigger" Area="ACT2_Flesh_City" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A2_Q5_S9_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S9_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A2_Q5_S9_ValeriFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_FleshCityEvent_SF" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="CE_A2_Q5_S9_EventVoteTrigger" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_FleshCityEvent" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay="2" Name="A2_Q5_S9_HideFurySpark_GpIngredient1" EntityNames="FleshCity_FurySpark_GpIngredient" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay="2" Name="A2_Q5_S9_HideFurySpark_Area1" EntityNames="FleshCity_FurySpark_Area" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="GlobalDialog" Name="A2_Q5_S9_DynS_Player_Talk1" DialogName="ACT2_Q5_S8_DynS_Player_Talk1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q5_S9_HideDynHeimlock_Reset" EntityNames="Heimlock_A2_DYN_VALERIAVSHEIMLOCK" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q5_S9_HideDynValeria_Reset" EntityNames="Valeria_A2_DYN_MEETDEMONFLESH" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="FleshCity_Event_FailKillAll1" Delay=".2" MonsterClass="CultOfFury_Instigator" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="FleshCity_Event_FailKillAll2" Delay=".2" MonsterClass="CultOfFlesh_RunnerBreeder" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="FleshCity_Event_FailKillAll3" Delay=".2" MonsterClass="CultOfFlesh_Spreader" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="FleshCity_Event_FailKillAll4" Delay=".2" MonsterClass="CultOfFlesh_Zombie" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="FleshCity_Event_FailKillAll5" Delay=".2" MonsterClass="CultOfFlesh_Simulacrum_Female" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Name="FleshCity_Event_FailKillAll6" Delay=".2" MonsterClass="CultOfFlesh_Simulacrum_Male" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalReleaseGameplayEvent" Name="FleshCity_Event_FailEventSlotRelease" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="A2_Q5_S10_EventDoor_Desactivate_FS" ClickableEntityName="CE_A2_Q5_S9_EventVoteTrigger" MakeClickable="1" FilterEvents="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q4_S10_HideEventDoorCollision_FS" EntityNames="CE_A2_Q5_S9_EventVoteTrigger" Hide="0" />
+    </Step>
+    <Step Order="9" UIName="@ui_A2_Q5_S10_StepNameLabel" AutoClearEvents="1" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="CE_A2_Q5_S9_EventVoteTrigger" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A2_Q5_S9_EventVoteTrigger" Area="ACT2_Flesh_City" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT2_FleshCity" GameplayEventPresetName="ACT2_Flesh_City">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A2_Q5_S9_EventVoteTrigger" Area="ACT2_Flesh_City" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A2_Q5_S9_EventVoteTrigger" Area="ACT2_Flesh_City" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Impossible" />
+      <Goal Order="4" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A2_Q5_S9_EventVoteTrigger" Area="ACT2_Flesh_City" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Impossible" />
+      <Goal Order="6" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A2_Q5_S9_EventVoteTrigger" Area="ACT2_Flesh_City" Threshold="85" />
+      </Goal>
+      <Goal Order="7" Type="Talk" EntityName="Valeria" DialogName="ACT2_Q5_S9_Valeria_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Valeria" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Flesh_City" Threshold="85" />
+      </Goal>
+      <Goal Order="8" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_A2_Q5_S9_EventVoteTrigger" Area="ACT2_Flesh_City" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05-06-07-08" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A2_Q5_S10_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q5_S10_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A2_Q5_S10_ValeriFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="CE_A2_Q5_S9_EventVoteTrigger" AreaRadius="20" Type="GlobalDialog" Name="A2_Q5_S8_DynS_Valeria_Talk" DialogName="ACT2_Q5_S8_DynS_Valeria_Talk" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="A2_Q5_S9_HideSafetyFurySpark_GpIngredient1" EntityNames="FleshCity_FurySpark_GpIngredient" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="A2_Q5_S9_HideSafetyFurySpark_Area1" EntityNames="FleshCity_FurySpark_Area" Hide="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="FleshCityEvent_StartArena_Part1" WaveIndex="1" Type="GlobalAnnouncement" Name="A2_Q3_EA_AN_EventStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_A2_Q5_S9_UpdateStepNameLabel1" DisplayTime="3" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="FleshCityEvent_StartArena_Part1" Type="GlobalAnnouncement" Name="A2_Q3_EA_AN_EventEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_DynScene3" Type="GlobalAnnouncement" Name="A2_Q5_EA_AN_BossFightStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightStart" ContextualMessage="@ui_A2_Q5_S9_UpdateStepNameLabel2" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="GlobalAnnouncement" Name="A2_Q5_EA_AN_BossFightEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_BossFightEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="ArenaStart" Name="FleshCityEvent_StartArena_Part1" ArenaPreset="FleshCity_Act2" LocationEntityName="Svriirs_Raid_Act1_Part1" EntityToFollow="" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="FleshCityEvent_StartArena_Part1" Type="GoalAchieve" GoalIndexToAchieve="3" Name="FleshCityEvent_Arena_Part1_Victory" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalMusic" Name="FleshCityEvent_StartMusic" MusicName="ACT2_EventFleshCityBridgePhase1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ArenaStart" Name="FleshCityEvent_StartArena_Part2" ArenaPreset="FleshCity_Act2_2" LocationEntityName="Svriirs_Raid_Act1_Part2" EntityToFollow="" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="FleshCityEvent_StartArena_Part2" Type="GoalAchieve" GoalIndexToAchieve="5" Name="FleshCityEvent_Arena_Part2_Victory" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalMusic" Name="FleshCityEvent_StartMusic2" MusicName="ACT2_EventFleshCityBridgePhase2" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="GlobalMusic" Name="FleshCityEvent_StopMusic" MusicName="ACT2_FleshCity" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalCheckpoint" Name="SetGlobalCheckpoint_FleshCityEvent" CheckpointEntityName="QP_FleshCityEvent_Checkpoint" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A2_Q5_S9_StepUpdate1" Localization="@ui_A2_Q5_S9_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityTeleport" Name="A2_Q5_PlayerTeleport" TeleportedEntityName="#Player" DestinationName="QP_A2_Q5_S9_EventSpawnPoint" MinRadius="3" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="A2_Q5_S9_RemoveValeria" EntityName="Valeria" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalRevivePlayers" Name="Fleshcity_1stArenaRevive" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S9_CutScene1" SequenceName="A2_HEIMLOCKFACEOFF2" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="ActionClickable" Name="A2_Q5_S10_EventDoor_Desactivate" ClickableEntityName="CE_A2_Q5_S9_EventVoteTrigger" MakeClickable="0" FilterEvents="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="A2_Q4_S10_HideEventDoorCollision" EntityNames="CE_A2_Q5_S9_EventVoteTrigger" Hide="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntityTeleport" Name="A2_Q5_PlayerTeleport2" TeleportedEntityName="#Player" DestinationName="QP_A2_Q5_S9_EventSpawnPoint" MinRadius="3" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn1" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity1" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn2" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity2" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn3" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity3" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn4" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity4" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn5" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity5" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn6" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity6" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn7" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity7" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn8" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity8" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn9" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity9" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn10" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity10" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn11" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity11" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".2" SpawnFrequency="0" Name="A3_Q5_S10_ZombieSpawn12" SpawnClass="sc_COFE_FleshCity_ZoF_CS" TargetEntityName="QP_PreSpawn_FleshCity12" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="GoalAchieve" Name="A2_Q5_S9_Goal1Achieved1" SimulateOnly="1" Delay="0.5" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S9_DynScene1" SequenceName="A2_DYN_VALERIAVSHEIMLOCK" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="GlobalDialog" Delay="2" Name="A2_Q5_S9_Dyn1Dial1" DialogName="ACT2_Q5_S9_DynS_Heimlock_Talk" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntityIsHidden" Delay="20" Name="A2_Q5_S10_UnhideFurySpark_GpIngredient1" EntityNames="FleshCity_FurySpark_GpIngredient" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="EntityIsHidden" Delay="20" Name="A2_Q5_S10_UnhideFurySpark_Area1" EntityNames="FleshCity_FurySpark_Area" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_DynScene1" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S9_DynScene2" SequenceName="A2_DYN_VALERIAVSHEIMLOCKEND" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene1" Type="GlobalDialog" Name="A2_Q5_S9_Dyn2Dial1" DialogName="ACT2_Q5_S9_DynS_Heimlock_Talk2" Delay="20.12" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionSequenceReset" Name="A2_Q5_S9_DynScene2End" Delay="5" SequenceName="A2_DYN_VALERIAVSHEIMLOCKEND" ResetAtLastFrame="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S9_DynScene3" Delay="5" SequenceName="A2_DYN_MEETDEMONOFFLESH" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityKillAll" Name="FleshCity_Event_WaveKillAll1" Delay=".1" MonsterClass="CultOfFury_Instigator" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityKillAll" Name="FleshCity_Event_WaveKillAll2" Delay=".1" MonsterClass="CultOfFlesh_RunnerBreeder" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityKillAll" Name="FleshCity_Event_WaveKillAll3" Delay=".1" MonsterClass="CultOfFlesh_Spreader" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="A2_Q5_S10_HideFurySpark_GpIngredient2" EntityNames="FleshCity_FurySpark_GpIngredient" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="A2_Q5_S10_HideFurySpark_Area2" EntityNames="FleshCity_FurySpark_Area" Hide="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_DynScene3" Type="GoalAchieve" Name="A2_Q5_S9_Goal5Achieved1" SimulateOnly="1" Delay="0.5" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_DynScene3" Type="StepUpdate" Name="A2_Q5_S9_StepUpdate2" Localization="@ui_A2_Q5_S9_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_DynScene3" Type="GlobalDialog" Delay="2" Name="A2_Q5_S9_DofDial1" DialogName="ACT2_Q5_S9_DynS_DoF_Talk1_1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="FleshCity_DOF" PercentLeft="35" Type="GlobalDialog" Name="A2_Q5_S9_DofDial2" DialogName="ACT2_Q5_S9_DynS_DoF_Talk1_2" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_DynScene3" Type="EntitySpawn" MinimumRadius="3" MaximumRadius="6" SpawnFrequency="0" Name="A3_Q5_S9_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_DynScene3" Type="EntityIsGod" Delay=".2" Name="A3_Q5_S9_ValeriaIsGod" EntityName="Valeria" Invincible="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_DynScene3" Type="EntityFollow" Delay="2" Name="A3_Q5_S9_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_VOS2_HiddenBossSpot,ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1,ACT2_VOS2,ACT2_InnerSanctum,Act2_TempleOfJustice" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_DynScene3" Type="EntityTeleport" Name="A1_Q5_PlayerTeleportCutsceneEventDOF" TeleportedEntityName="#Player" DestinationName="QP_A2_Q5_S9_EventSpawnPoint" MinRadius="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityKillAll" Name="FleshCity_Event_SuccessKillAll6" Delay=".2" MonsterClass="CultOfFlesh_Simulacrum_Female" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityKillAll" Name="FleshCity_Event_SuccessKillAll7" Delay=".2" MonsterClass="CultOfFlesh_Simulacrum_Male" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityMove" TargetMinDistance="1.5" OverrideSpeed="0" Name="A2_Q5_S10_ValeriaMove" EntityName="Valeria" TargetName="QP_ValeriaGo_FleshCity" RemainScripted="1" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S10_ValeriaMove" Type="EntityRotate" Name="A2_Q5_S10_ValeriaRotate" RotatedEntityName="Valeria" Target="QP_ValeriaFace_FleshCity" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S10_ValeriaMove" Type="EntityAnimate" SpeedScale="1" BlendingTime="1" Name="A2_Q5_S10_ValeriaWounded" AnimatedEntityName="Valeria" Play="cfh_cine_a2_demonofflesh_falldown_out_loop_01" Loop="1" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityTeleport" MinRadius="0" Name="FleshCity_Lambach_Teleport" TeleportedEntityName="NPC_A2_Q6_S1_Lambach" DestinationName="QP_LambachSpawn_FleshCity" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityAnimate" SpeedScale="1" BlendingTime="0" Delay="1.4" Name="FleshCity_Lambach_Spawn" AnimatedEntityName="NPC_A2_Q6_S1_Lambach" Play="cofe_lambach_step1_spawn_02" Loop="0" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityTeleport" MinRadius="0" Delay="1.5" Name="FleshCity_Lambach_Teleport2" TeleportedEntityName="NPC_A2_Q6_S1_Lambach" DestinationName="QP_LambachTP_FleshCity" />
+      <Event Trigger="EventEnd" EventName="FleshCity_Lambach_Spawn" Type="EntityAnimate" SpeedScale="1" BlendingTime=".5" Name="FleshCity_Lambach_SpawnIdle" AnimatedEntityName="NPC_A2_Q6_S1_Lambach" Play="cofe_lambach_step1_idle_03" Loop="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="GlobalDialog" Delay="2" Name="A2_Q5_S9_VictoryDial1" DialogName="ACT2_Q5_S9_DynS_Valeria_Talk1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityHeal" MinPercent="20" MaxPercent="20" Frequency="0" Name="A2_Q5_S9_ArenaWinHealPlayer" TargetEntityName="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="A2_Q5_S9_StepUpdate3" Localization="@ui_A2_Q5_S9_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntityFollow" Name="A3_Q5_S9_ValeriUnfollow" FollowerEntityName="Valeria" Follow="" Constraints="" />
+      <Event Trigger="GoalSuccess" GoalIndex="6" Type="EntityIsGod" Name="A3_Q5_S9_ValeriaIsMortal" EntityName="Valeria" Invincible="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_VictoryDial1" Type="GoalAchieve" Name="A2_Q5_S9_Goal1Achieved2" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="GlobalRevivePlayers" Name="Fleshcity_FleshBridgeCutscene" RevivePostion="" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q5_S9_CutScene2" SequenceName="A2_FleshBridge" />
+      <Event Trigger="GoalStart" GoalIndex="8" Type="EntityTeleport" Name="A1_Q5_PlayerTeleportCutsceneEventBegin" TeleportedEntityName="#Player" DestinationName="QP_A2_Q5_S9_EventSpawnPoint" MinRadius="3" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene2" Type="GoalAchieve" Name="A2_Q5_S9_Goal1Achieved3" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene2" Type="GlobalReleaseGameplayEvent" Name="FleshCity_Event_SucceedEventSlotRelease" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene2" Type="EntityTeleport" Name="A1_Q5_PlayerTeleportCutsceneEventEnd" TeleportedEntityName="#Player" DestinationName="QP_A2_Q5_S9_EventSpawnPoint" MinRadius="3" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene2" Type="EntityTeleport" Name="A2_Q5_ClickableTeleport" TeleportedEntityName="CE_A2_Q5_S9_EventVoteTrigger" DestinationName="QP_Unreachable" MinRadius="3" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene2" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_Win_FleshCityEvent" CheckpointEntityName="" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene2" Type="EntityIsHidden" Name="Hide_ClickableEvent" EntityNames="CE_A2_Q5_S9_EventVoteTrigger" Hide="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q5_S9_CutScene2" Type="EntityIsHidden" Name="Hide_BridgeBlockerEvent" EntityNames="FleshCityBridge_Wall1" Hide="1" />
+      <Event Trigger="PlayerWipe" Type="ActionSequenceReset" Name="A2_Q5_S9_DynEnd1" SequenceName="A2_DYN_VALERIAVSHEIMLOCK" ResetAtLastFrame="1" />
+      <Event Trigger="PlayerWipe" Type="ActionSequenceReset" Name="A2_Q5_S9_DynEnd2" SequenceName="A2_DYN_VALERIAVSHEIMLOCKEND" ResetAtLastFrame="1" />
+      <Event Trigger="PlayerWipe" Type="EntityIsHidden" Name="A2_Q5_S9_HideDynHeimlock_Reset" EntityNames="Heimlock_A2_DYN_VALERIAVSHEIMLOCK" Hide="1" />
+      <Event Trigger="PlayerWipe" Type="EntityIsHidden" Name="A2_Q5_S9_HideDynValeria_Reset" EntityNames="Valeria_A2_DYN_MEETDEMONFLESH" Hide="1" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="StopAllDialogs_FleshCityEvent" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="FleshCity_Event_EventFail" RollbackToPreviousStep="1" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="7500" />
+        <XP Amount="300000" />
+        <FixedLootClass Name="A2_Q5_Reward2_Fixe" MinItemNumber="3" MaxItemNumber="3" SortByRarity="0" />
+        <ChoiceLootClass Name="A2_Q5_Reward2" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,54 @@
+<MetaData>
+  <Skill UID="playerskill_H2_Crossbow_atk_01" ESkill="default_ranged" Keywords="default_ranged,attack_skill">
+    <HUD HUDPicture="../u_resources/spells/brutality/ranged_weapon_icon.png" UIName="@ui_AST_RapidShot" />
+    <Animation ActionString="player_skill_atk_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_bow" TrailPresetBase="ranged" />
+    <Projectile Name="crossbow_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" />
+    <ParticleList LoadFromPreset="bow_default_muzzle" />
+    <Combo ComboStarter="Combo_H2_Crossbow" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_CrossbowShot" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+  </Skill>
+  <Skill UID="playerskill_H2_Crossbow_atk_02" ESkill="default_ranged" Keywords="default_ranged,attack_skill">
+    <HUD HUDPicture="../u_resources/spells/brutality/ranged_weapon_icon.png" UIName="@ui_AST_RapidShot" />
+    <Animation ActionString="player_skill_atk_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_bow" TrailPresetBase="ranged" />
+    <Projectile Name="crossbow_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" />
+    <ParticleList LoadFromPreset="bow_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <DamageBase Type="physical" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_CrossbowShot" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+  </Skill>
+  <Skill UID="playerskill_H2_Crossbow_atk_loop_01" ESkill="default_ranged" Keywords="default_ranged,attack_skill">
+    <HUD HUDPicture="../u_resources/spells/brutality/ranged_weapon_icon.png" UIName="@ui_AST_RapidShot" />
+    <Animation ActionString="player_skill_atk_loop_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_bow" TrailPresetBase="ranged" />
+    <Projectile Name="crossbow_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" />
+    <ParticleList LoadFromPreset="bow_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <DamageBase Type="physical" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_CrossbowShot" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+  </Skill>
+  <Skill UID="playerskill_H2_Crossbow_atk_loop_02" ESkill="default_ranged" Keywords="default_ranged,attack_skill">
+    <HUD HUDPicture="../u_resources/spells/brutality/ranged_weapon_icon.png" UIName="@ui_AST_RapidShot" />
+    <Animation ActionString="player_skill_atk_loop_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <VisualFeedback FeedbackPresetBase="Player_weapon_bow" TrailPresetBase="ranged" />
+    <Projectile Name="crossbow_proj" ProjectileCount="1" AppendElementalSuffixToProjectileName="1" />
+    <ParticleList LoadFromPreset="bow_default_muzzle" />
+    <Aggression TargetValueOnHit="5" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <DamageBase Type="physical" />
+    <SoundTrigger OnAnimCast="PLAY_Skill_DefaultWeapon_CrossbowShot" />
+    <CastingParams CastFromWeaponHelper="Caster" CastBone="R_Weapon_Bone" />
+    <ResourceGain UseDefaultRageGeneration="1" />
+  </Skill>
+</MetaData>

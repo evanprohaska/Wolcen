@@ -1,0 +1,377 @@
+<MetaData>
+  <Quest Name="ACT2_Quest3" StartDialog="" Type="Main" UIName="@ui_A2_Q3_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT2">
+    <Step Order="0" UIName="@ui_A2_Q3_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="CE_TemplarCampEntrance" Radius="80" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_TemplarCampEntrance" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_TemplarCampEntrance" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="NPC_A2_Q3_Valeria" DialogName="ACT2_Q3_S1_Valeria_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q3_Valeria" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="NPC_A2_Q3_Valeria" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q3_S1_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S1_UnhideZimaCry" EntityNames="A2_Zima_DynS_Crying" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S1_UnhideTriggerZima" EntityNames="Trigger_A2_Zima_DynS_Crying" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityIsHidden" Name="A2_Q3_S1_RevealValeria" EntityNames="NPC_A2_Q3_Valeria" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A2_Q3_S1_StepUpdate" Localization="@ui_A2_Q3_S1_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalDialog" Name="A2_Q3_S1_DynS_Valeria_Talk1" DialogName="ACT2_Q3_S3_DynS_Valeria_Talk1" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S1_DynS_Valeria_Talk1" Type="GlobalDialog" Name="A2_Q3_S1_DynS_Valeria_Talk2" DialogName="ACT2_Q3_S3_DynS_Valeria_Talk2" Delay="10" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S1_DynS_Valeria_Talk1" Type="EntityIsHidden" Name="A2_Q3_S1_HideValeria" EntityNames="NPC_A2_Q3_Valeria" Hide="1" Delay="10" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S1_DynS_Valeria_Talk1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="0" SpawnFrequency="0" Name="A2_Q3_S1_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="QP_A3_Q3_S1_ValeriaSpawn" FaceAtSpawn="" Delay="10" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S1_ValeriaSpawn" Type="EntityFollow" Delay=".2" Name="A2_Q3_S1_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S1_ValeriaFollow" Type="GoalAchieve" Name="A2_Q1_S1_Goal4Achieved" SimulateOnly="1" GoalIndexToAchieve="-1" Delay="0" />
+    </Step>
+    <Step Order="1" UIName="@ui_A2_Q3_S2_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="" IgnoreAutomaticStepUIUpdate="1">
+      <Goal Order="0" Type="Go" Destination="CE_TemplarCampEntrance" Radius="80" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_TemplarCampEntrance" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="2">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="CE_TemplarCampEntrance" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="KillAll" EventsName="A3_Q3_S2_CultisteSpawn,A3_Q3_S2_NamedSpikerSpawn" KillCount="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="QP_A2_Q3_S3_ZombiesSpawn" Area="ACT2_Templar_Camp" Threshold="85" UseAreaSize="35" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q3_S2_ClearUI" StepToKeep="2" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S2_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="QP_A3_Q3_S1_ValeriaSpawn" FaceAtSpawn="" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S2_ValeriaSpawn" Type="EntityFollow" Delay="2" Name="A2_Q3_S2_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT2_Stormfall,ACT2_Warlord_Lair,ACT2_VOS1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S2_HideTemplarCampWall" EntityNames="CE_TemplarCampEntrance" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionWaypoint" Name="A2_Q3_S2_DeactivateWaypoint" WaypointEntityName="waypoint_act_2_templar_camp" Action="LOCK" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="TemplarCamp_BlockingRoadOff" EmitterEntityName="BlockingRoadFX_TemplarCampEvent" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Name="A2_Q3_S2_StepUpdate" Localization="@ui_A2_Q3_S2_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="8.5" SpawnFrequency="0" Name="A3_Q3_S2_ZombiesSpawn" SpawnClass="Sc_Sty_AC2_COS_TrashTemplarCamp" TargetEntityName="QP_A2_Q3_S3_ZombiesSpawn" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="12" SpawnFrequency="0" Name="A3_Q3_S2_ZombiesSpawn1" SpawnClass="Sc_Sty_AC2_COS_TrashTemplarCamp" TargetEntityName="QP_A2_Q3_S3_ZombiesSpawn1" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="12" SpawnFrequency="0" Name="A3_Q3_S2_ZombiesSpawn2" SpawnClass="Sc_Sty_AC2_COS_TrashTemplarCamp" TargetEntityName="QP_A2_Q3_S3_ZombiesSpawn2" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q3_S2_CultisteSpawn" SpawnClass="Sc_Sty_AC2_COS_CultistTemplarCamp" TargetEntityName="waypoint_act_2_templar_camp" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q3_S2_NamedSpikerSpawn" SpawnClass="Sc_Sty_AC2_COS_NamedSpikerTemplarCamp" TargetEntityName="QP_A2_Q5_S1_NamedSpikerSpawner" FaceAtSpawn="" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionWaypoint" Name="A2_Q3_S2_ActivateWaypoint" WaypointEntityName="waypoint_act_2_templar_camp" Action="FORCEUNLOCK" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalDialog" Name="A2_Q3_S3_DynS_Valeria_Talk3" DialogName="ACT2_Q3_S3_DynS_Valeria_Talk3" />
+    </Step>
+    <Step Order="2" UIName="@ui_A2_Q3_S3_UpdateStepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="QP_A3_Q5_S1_ValeriaSpawn" Radius="90" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_A3_Q5_S1_ValeriaSpawn" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Wait" TimeLimit="1">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_A3_Q5_S1_ValeriaSpawn" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_A3_Q5_S1_ValeriaSpawn" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Talk" EntityName="Valeria" DialogName="ACT2_Q3_S3_Valeria_Talk">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Valeria" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Interact" Names="DungeonEntrance_TempleOfJustice" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_TempleOfJustice" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q3_S3_ClearUI" StepToKeep="2" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S3_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityTeleport" MinRadius="5" Name="A2_Q3_S3_Valeria_Tp" TeleportedEntityName="Valeria" DestinationName="QP_A3_Q5_S1_ValeriaSpawn" Delay="3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A3_Q5_S1_ValeriaSpawn" AreaRadius="50" Type="EntityFollow" Name="A2_Q3_S3_ValeriaFollow" FollowerEntityName="Valeria" Follow="" Constraints="" Delay="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A3_Q5_S1_ValeriaSpawn" AreaRadius="50" Type="EntityMove" TargetMinDistance="5" OverrideSpeed="10" Name="A2_Q3_S3_ValeriaMove" EntityName="Valeria" TargetName="QP_A3_Q5_S1_ValeriaSpawn" RemainScripted="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S3_ValeriaMove" Type="EntityRotate" Name="A2_Q3_S3_ValeriaRotate" RotatedEntityName="Valeria" Target="QP_A3_Q5_S1_ValeriaSpawn" FaceTarget="0" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S3_ValeriaRotate" Type="EntityWait" Duration="1" Name="A2_Q3_S3_ValeriaWait" EntityName="Valeria" RemainScripted="1" Delay="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S3_ValeriaRotate" Type="GoalAchieve" Name="A2_Q3_S3_Goal1Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="A2_Q3_S3_StepUpdate" Localization="@ui_A2_Q3_S3_UpdateStepNameLabel" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="A2_Q3_S1_HideBlocker" EntityNames="CE_TempleBlock" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="ActionParticleEmitter" Name="TemplarCamp_BlockingRoadOff" EmitterEntityName="BlockingRoadFX_TemplarCampEvent" Activate="0" />
+    </Step>
+    <Step Order="3" UIName="@ui_A2_Q3_S4_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Wait" TimeLimit="2" />
+      <Goal Order="1" Type="Go" Destination="TempleOfJustice_Exit" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="TempleOfJustice_Exit" Area="Act2_TempleOfJustice" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_TempleOfJustice" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Interact" Names="TempleOfJustice_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="TempleOfJustice_Exit" Area="Act2_TempleOfJustice" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_TempleOfJustice" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Wait" TimeLimit="1.6">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="NPC_innerSanctum_Door" Area="ACT2_InnerSanctum" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="DungeonEntrance_TempleOfJustice" Area="ACT2_Templar_Camp" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q3_S4_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="A2_Q3_S4_DynS_Player_Talk" DialogName="ACT2_Q3_S4_DynS_Player_Talk" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_A2_Q3_S5_CossSpawn1" AreaRadius="75" Type="GlobalDialog" Name="A2_Q3_S5_DynS_Player_Talk" DialogName="ACT2_Q3_S5_DynS_Player_Talk" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_DynS_Player_Talk" Type="GlobalDialog" Name="A2_Q3_S5_DynS_Gernese_Talk1" DialogName="ACT2_Q3_S5_DynS_Gernese_Talk1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_DynS_Gernese_Talk1" Type="GoalAchieve" Name="A2_Q3_S5_Goal1Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionWaypoint" Delay="1.5" Name="A2_Q3_S4_ActivateWaypoint1" WaypointEntityName="waypoint_act_2_inner_sanctum" Action="FORCEUNLOCK" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="ActionWaypoint" Delay="1.5" Name="A2_Q3_S4_ActivateWaypoint2" WaypointEntityName="waypoint_act_2_inner_sanctum" Action="FORCEUNLOCK" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile1bis" EntityNames="ZombiePile_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile2bis" EntityNames="ZombiePile_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile3bis" EntityNames="ZombiePile_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile4bis" EntityNames="ZombiePile_4" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile5bis" EntityNames="ZombiePile_5" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile6bis" EntityNames="ZombiePile_6" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile7bis" EntityNames="ZombiePile_7" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile8bis" EntityNames="ZombiePile_8" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile9bis" EntityNames="ZombiePile_9" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile10bis" EntityNames="ZombiePile_10" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile11bis" EntityNames="ZombiePile_11" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile12bis" EntityNames="ZombiePile_12" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile13bis" EntityNames="ZombiePile_13" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="ZombiePile14bis" EntityNames="ZombiePile_14" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="InnerSanctumLeftbis" EntityNames="ApoGlobeProp_InnerSanctum_ACT2_Left" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="InnerSanctumRightbis" EntityNames="ApoGlobeProp_InnerSanctum_ACT2_Right" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="InnerSanctum_TemplarSpawn18" AreaRadius="100" Type="EntityIsHidden" Name="A2_Q3_S6_HideApoGlobe1_StartBis" EntityNames="ApoGlobe_InnerSanctum_ACT2_Left" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="InnerSanctum_TemplarSpawn18" AreaRadius="100" Type="EntityIsHidden" Name="A2_Q3_S6_HideApoGlobe2_StartBis" EntityNames="ApoGlobe_InnerSanctum_ACT2_Right" Hide="1" />
+    </Step>
+    <Step Order="4" UIName="@ui_A2_Q3_S5_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="AnimDoor_innerSanctum_Door" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="AnimDoor_innerSanctum_Door" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="AnimDoor_innerSanctum_Door" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Talk" EntityName="NPC_A2_Q3_Gernez" DialogName="ACT2_Q3_S5_Gernese_Talk1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q3_Gernez" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Vote" VotePreset="VotePreset_ACT2_InnerSanctum" GameplayEventPresetName="ACT2_Inner_Sanctum">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="ClickableEntity_golum_part1_to_part2" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q3_S5_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionWaypoint" Name="A2_Q3_S4_ActivateWaypoint3" WaypointEntityName="waypoint_act_2_inner_sanctum" Action="FORCEUNLOCK" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" AnimationSpeed="100" Delay=".2" Name="A2_Q6_S2_innerSanctum_Door_Anim_Reset" DoorName="AnimDoor_innerSanctum_Door" Action="Close" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Type="ActionDoor" AnimationSpeed="100" Delay="1.4" Name="A2_Q6_S2_innerSanctum_Door_Anim_ForceOpen" DoorName="AnimDoor_innerSanctum_Door" Action="Open" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GameplayAreaReset" Name="A2_Q6_S4_GPA_Reset" GameplayAreaName="ACT2_InnerSanctum" PrepareAreaIfPlayerInside="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Delay=".5" Type="GlobalReleaseGameplayEvent" Name="InnerSanctum_FailEventSlotRelease" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Delay=".2" Name="A2_Q3_S5_SquireHKill_Fail" MonsterClass="TemplarsSquireHammer" Area="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Delay=".2" Name="A2_Q3_S5_SquireSKill_Fail" MonsterClass="TemplarsSquireSword" Area="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Delay=".2" Name="A2_Q3_S5_PriestKill_Fail" MonsterClass="TemplarsPriest" Area="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityKillAll" Delay=".2" Name="A2_Q3_S5_KnightKill_Fail" MonsterClass="TemplarsKnight" Area="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="A2_Q3_S6_HideSquireH1_Fail" EntityNames="InnerSanctum_Squire2hhmr1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="A2_Q3_S6_HideSquireH2_Fail" EntityNames="InnerSanctum_Squire2hhmr2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="A2_Q3_S6_HideSquireH3_Fail" EntityNames="InnerSanctum_Squire2hhmr3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="A2_Q3_S6_HideSquireS1_Fail" EntityNames="InnerSanctum_Squire2hswd1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="A2_Q3_S6_HideSquireS2_Fail" EntityNames="InnerSanctum_Squire2hswd2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="A2_Q3_S6_HideSquireS3_Fail" EntityNames="InnerSanctum_Squire2hswd3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="A2_Q3_S6_HidePriest_Fail" EntityNames="InnerSanctum_Priest1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="A2_Q3_S6_HideKnight_Fail" EntityNames="NPC_A2_Q3_TemplarKnight" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Gernez01_Fail" EntityNames="NPC_A2_Q3_Gernez" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Gernez02_Fail" EntityNames="NPC_A2_Q3_Gernez3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalStopAllDialogs" Delay=".2" Name="InnerSanctum_EventFail_GlobalDialogStop" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="A2_Q3_S6_HideGernez2" EntityNames="NPC_A2_Q3_Gernez3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Delay=".2" Name="InnerSanctumCollisionHideStart" EntityNames="InnerSanctumDoorCollision" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Delay=".2" Name="InnerSanctumCollisionHideStart2" EntityNames="InnerSanctumDoorCollision2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Delay=".2" Name="InnerSanctumParticleHideStart" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Delay=".2" Name="InnerSanctumParticleHideStart2" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum2" Activate="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_InnerSanctumEvent_SF" CheckpointEntityName="waypoint_act_2_inner_sanctum" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="AnimDoor_innerSanctum_Door" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_InnerSanctumEvent" CheckpointEntityName="waypoint_act_2_inner_sanctum" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="InnerSanctum_TemplarSpawn18" AreaRadius="100" Type="EntityIsHidden" Name="A2_Q3_S6_HideApoGlobe1_Start" EntityNames="ApoGlobe_InnerSanctum_ACT2_Left" Hide="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="InnerSanctum_TemplarSpawn18" AreaRadius="100" Type="EntityIsHidden" Name="A2_Q3_S6_HideApoGlobe2_Start" EntityNames="ApoGlobe_InnerSanctum_ACT2_Right" Hide="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q6_S4_GPA_Reset" Type="EntityIsHidden" Name="A2_Q3_S6_HideApoGlobe1_Start_Bis" EntityNames="ApoGlobe_InnerSanctum_ACT2_Left" Hide="1" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q6_S4_GPA_Reset" Type="EntityIsHidden" Name="A2_Q3_S6_HideApoGlobe2_Start_Bis" EntityNames="ApoGlobe_InnerSanctum_ACT2_Right" Hide="1" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="StepUpdate" Delay=".2" Name="A2_Q3_S5_StepUpdate1" Localization="@ui_A2_Q3_S5_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_DynS_Templars_Talk1" Type="StepUpdate" Name="A2_Q3_S5_StepUpdate2" Localization="@ui_A2_Q3_S5_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile1" EntityNames="ZombiePile_1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile2" EntityNames="ZombiePile_2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile3" EntityNames="ZombiePile_3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile4" EntityNames="ZombiePile_4" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile5" EntityNames="ZombiePile_5" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile6" EntityNames="ZombiePile_6" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile7" EntityNames="ZombiePile_7" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile8" EntityNames="ZombiePile_8" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile9" EntityNames="ZombiePile_9" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile10" EntityNames="ZombiePile_10" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile11" EntityNames="ZombiePile_11" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile12" EntityNames="ZombiePile_12" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile13" EntityNames="ZombiePile_13" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_ZombiePile14" EntityNames="ZombiePile_14" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_InnerSanctumLeft" EntityNames="ApoGlobeProp_InnerSanctum_ACT2_Left" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Delay=".2" Name="Reset_InnerSanctumRight" EntityNames="ApoGlobeProp_InnerSanctum_ACT2_Right" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="EntityIsHidden" Name="A2_Q3_S6_HideGernez1" EntityNames="NPC_A2_Q3_Gernez" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="3" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q3_S6_Dyn_GerneseWounded" SequenceName="A2_DYN_ISWOUNDEDGERNESE" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S6_Dyn_GerneseWounded" Type="EntityIsHidden" Name="A2_Q3_S6_UnhideGernez3" EntityNames="NPC_A2_Q3_Gernez3" Hide="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="InnerSanctum_TemplarSpawn18" AreaRadius="22" Type="GlobalDialog" Name="A2_Q3_S5_DynS_Templars_Talk1" DialogName="ACT2_Q3_S5_DynS_Templars_Talk1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_DynS_Templars_Talk1" Type="GoalAchieve" Name="A2_Q3_S6_Goal2Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Delay=".7" Type="ActionDoor" AnimationSpeed="0" Name="A2_Q6_S2_innerSanctum_Door_Anim_Unlock" DoorName="AnimDoor_innerSanctum_Door" Action="Unlock" />
+      <Event Trigger="GoalSuccess" GoalIndex="0" Delay="1.5" Type="ActionDoor" AnimationSpeed="0" Name="A2_Q6_S2_innerSanctum_Door_Anim_Lock" DoorName="AnimDoor_innerSanctum_Door" Action="Lock" />
+      <Event Trigger="GoalFailure" GoalIndex="3" Type="GlobalReleaseGameplayEvent" Name="InnerSanctum_FailVoteEventSlotRelease" />
+    </Step>
+    <Step Order="5" UIName="@ui_A2_Q3_S6_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Talk" EntityName="InnerSanctum_Knight" DialogName="ACT2_Q3_S5_Knight_Talk2" />
+      <Goal Order="1" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="A2_Q3_S5_OutlawSpawn1" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Wait" ReferenceEntityName="" Radius="0" TimeLimit="21">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="AnimDoor_innerSanctum_Door" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="AnimDoor_innerSanctum_Door" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="A2_Q3_S5_OutlawSpawn2" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <Goal Order="5" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="AnimDoor_innerSanctum_Door" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <Goal Order="6" Type="Talk" EntityName="NPC_A2_Q3_Gernez3" DialogName="ACT2_Q3_S5_Gernese_Talk2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="NPC_A2_Q3_Gernez3" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <Goal Order="7" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="0" Target="AnimDoor_innerSanctum_Door" Area="ACT2_InnerSanctum" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05-06-07" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalAnnouncement" Name="A2_Q3_EA_AN_EventStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_A2_Q3_S6_UpdateStepNameLabel1" DisplayTime="3" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="GlobalAnnouncement" Name="A2_Q3_EA_AN_EventEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="Instant" Type="QuestClearUI" Name="A2_Q3_S6_ClearUI" StepToKeep="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionDoor" AnimationSpeed="100" Name="A2_Q3_S6_DoorClosing" DoorName="AnimDoor_innerSanctum_Door" Action="Close" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="InnerSanctumCollisionHide2" EntityNames="InnerSanctumDoorCollision" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="InnerSanctumParticleHide2" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="QuestMarker" Distance="100" HeightOffset="4" Delay=".5" Name="A2_Q3_S6_G1_QuestMarker" TargetName="InnerSanctum_Knight" AreaName="" VFX="U_Utils.Quest.Objective" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EventEnd" Name="A2_Q3_S6_G1_QuestMarkerEnd" EventsName="A2_Q3_S6_G1_QuestMarker" TriggerEnd="0" Remove="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalMusic" Name="InnerSanctumEvent_IntroMusic" MusicName="Svriir_Raid" Delay=".7" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ArenaStart" ArenaPreset="InnerSanctum_Act2" LocationEntityName="Arena_InnerSanctum_Act2_Location" EntityToFollow="" Name="InnerSanctumEvent_StartArena_Part1" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part1" Type="GoalAchieve" GoalIndexToAchieve="1" Name="InnerSanctumEvent_IntroMusic_Arena_Part1_Victory" SimulateOnly="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Type="GlobalMusic" Name="InnerSanctumEvent_StartMusic" MusicName="PermanentApocalypticForm" Delay=".7" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ArenaStart" ArenaPreset="InnerSanctum_Act2_2" LocationEntityName="Arena_InnerSanctum_Act2_Location" EntityToFollow="" Name="InnerSanctumEvent_StartArena_Part2" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" Type="GoalAchieve" GoalIndexToAchieve="4" Name="InnerSanctumEvent_IntroMusic_Arena_Part2_Victory" SimulateOnly="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalMusic" Name="InnerSanctumEvent_StopMusic" MusicName="ACT2_TempleOfJustice" Delay=".7" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S5_ValeriaSpawn" SpawnClass="Sc_Sty_AC2_QVV1" TargetEntityName="QP_A3_Q5_S1_ValeriaSpawn" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" MinRadius="10" Name="A2_Q3_S5_Player_Tp_Event" TeleportedEntityName="#Player" DestinationName="InnerSanctum_PlayerTP2" Delay="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="Set_InnerSanctumEvent_Checkpoint" CheckpointEntityName="InnerSanctum_GlobalCheckpoint" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="InnerSanctumFadeStart" SequenceName="A2_HeimlockFaceOff2_TEMP" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S6_HideSquireH1" EntityNames="InnerSanctum_Squire2hhmr1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S6_HideSquireH2" EntityNames="InnerSanctum_Squire2hhmr2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S6_HideSquireH3" EntityNames="InnerSanctum_Squire2hhmr3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S6_HideSquireS1" EntityNames="InnerSanctum_Squire2hswd1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S6_HideSquireS2" EntityNames="InnerSanctum_Squire2hswd2" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S6_HideSquireS3" EntityNames="InnerSanctum_Squire2hswd3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S6_HidePriest" EntityNames="InnerSanctum_Priest1" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A2_Q3_S6_HideKnight" EntityNames="NPC_A2_Q3_TemplarKnight" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S5_SquireHSpawn1" SpawnClass="sc_Templar_InnerSanctum_SquireHammer1" TargetEntityName="InnerSanctum_TemplarSpawn2" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S5_SquireHSpawn2" SpawnClass="sc_Templar_InnerSanctum_SquireHammer2" TargetEntityName="InnerSanctum_TemplarSpawn4" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S5_SquireHSpawn3" SpawnClass="sc_Templar_InnerSanctum_SquireHammer3" TargetEntityName="InnerSanctum_TemplarSpawn7" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S5_SquireSSpawn1" SpawnClass="sc_Templar_InnerSanctum_SquireSword1" TargetEntityName="InnerSanctum_TemplarSpawn3" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S5_SquireSSpawn2" SpawnClass="sc_Templar_InnerSanctum_SquireSword2" TargetEntityName="InnerSanctum_TemplarSpawn5" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S5_SquireSSpawn3" SpawnClass="sc_Templar_InnerSanctum_SquireSword3" TargetEntityName="InnerSanctum_TemplarSpawn6" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S5_PriestSpawn1" SpawnClass="sc_Templar_InnerSanctum_Priest" TargetEntityName="InnerSanctum_TemplarSpawn8" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A2_Q3_S5_KnightSpawn1" SpawnClass="sc_Templar_InnerSanctum_Knight" TargetEntityName="InnerSanctum_TemplarSpawn" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionSequence" BlendingSpeed="2" PlaySpeed="1" EnableBlendOut="1" Name="A2_Q3_S6_DynScene1" SequenceName="A2_DYN_INNERSANCTUMBATTLEINTRO" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S6_DynScene1" Delay="0.1" Type="ActionDoor" AnimationSpeed="100" Name="A2_Q6_S2_innerSanctum_Door_Anim_PostDyn" DoorName="AnimDoor_innerSanctum_Door" Action="Open" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S6_DynScene1" Type="ActionParticleEmitter" Name="InnerSanctumParticleUnhide" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum" Activate="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S6_DynScene1" Type="StepUpdate" Name="A2_Q3_S6_StepUpdate1" Localization="@ui_A2_Q3_S6_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay="0.7" Name="A2_Q3_S6_Wave1Dial1" DialogName="ACT2_Q3_S5_DynS_Templars_Talk2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay="6" Name="A2_Q3_S6_Wave1Dial2" DialogName="ACT2_Q3_S5_DynS_Gernese_Talk2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Delay="10" Name="A2_Q3_S6_Wave1Dial3" DialogName="ACT2_Q3_S5_DynS_Templars_Talk3" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalDialog" Delay="5" Name="A2_Q3_S6_Wave1Dial4" DialogName="ACT2_Q3_S5_DynS_Templars_Talk4" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntitySound" Delay="12" Name="A2_Q1_S3_AlertSound" EntityName="#Player" SoundName="Play_DYN_ACT2_UndeadHordeCall" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalDialog" Delay="13.5" Name="A2_Q3_S6_Wave1Dial5" DialogName="ACT2_Q3_S5_DynS_Player_Talk1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Delay="0.5" Type="EntityKillAll" Name="A2_Q3_S6_KillSummonW1" MonsterClass="CultOfSouls_Zombie_frost" Area="" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Delay="0.5" Type="GlobalRevivePlayers" Name="A2_Q3_S6_ReviveBeforeCutscene" RevivePostion="" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Delay="1.5" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_SquireHMove1" EntityName="InnerSanctum_Hammer1" TargetName="InnerSanctum_TemplarSpawn2" RemainScripted="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Delay="1" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_SquireHMove2" EntityName="InnerSanctum_Hammer2" TargetName="InnerSanctum_TemplarSpawn4" RemainScripted="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Delay="1.5" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_SquireHMove3" EntityName="InnerSanctum_Hammer3" TargetName="InnerSanctum_TemplarSpawn7" RemainScripted="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Delay="1.2" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_SquireSMove1" EntityName="InnerSanctum_Sword1" TargetName="InnerSanctum_TemplarSpawn3" RemainScripted="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Delay="1" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_SquireSMove2" EntityName="InnerSanctum_Sword2" TargetName="InnerSanctum_TemplarSpawn5" RemainScripted="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Delay="1" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_SquireSMove3" EntityName="InnerSanctum_Sword3" TargetName="InnerSanctum_TemplarSpawn6" RemainScripted="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Delay="2" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_PriestMove1" EntityName="InnerSanctum_Priest" TargetName="InnerSanctum_TemplarSpawn8" RemainScripted="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Delay="2.2" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_KnightMove1" EntityName="InnerSanctum_Knight" TargetName="InnerSanctum_TemplarSpawn" RemainScripted="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_SquireHMove1" Type="EntityRotate" Name="A2_Q2_S2_SquireHRotate1" RotatedEntityName="InnerSanctum_Hammer1" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_SquireHMove2" Type="EntityRotate" Name="A2_Q2_S2_SquireHRotate2" RotatedEntityName="InnerSanctum_Hammer2" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_SquireHMove3" Type="EntityRotate" Name="A2_Q2_S2_SquireHRotate3" RotatedEntityName="InnerSanctum_Hammer3" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_SquireSMove1" Type="EntityRotate" Name="A2_Q2_S2_SquireSRotate1" RotatedEntityName="InnerSanctum_Sword1" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_SquireSMove2" Type="EntityRotate" Name="A2_Q2_S2_SquireSRotate2" RotatedEntityName="InnerSanctum_Sword2" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_SquireSMove3" Type="EntityRotate" Name="A2_Q2_S2_SquireSRotate3" RotatedEntityName="InnerSanctum_Sword3" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_PriestMove1" Type="EntityRotate" Name="A2_Q2_S2_PriestRotate1" RotatedEntityName="InnerSanctum_Priest" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_KnightMove1" Type="EntityRotate" Name="A2_Q2_S2_KnightRotate1" RotatedEntityName="InnerSanctum_Knight" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Type="EntityIsHidden" Name="InnerSanctumCollisionHide3" EntityNames="InnerSanctumDoorCollision" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Type="ActionParticleEmitter" Name="InnerSanctumParticleHide3" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="3" Delay="0" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q3_S5_CutScene" SequenceName="A2_FINALSTAND" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Type="EntityIsHidden" Name="A2_Q3_S6_HideGernez3" EntityNames="NPC_A2_Q3_Gernez3" Hide="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_CutScene" Type="GoalAchieve" Name="A2_Q3_S5_Goal1Achieved" SimulateOnly="1" Delay="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_CutScene" Type="EntityIsHidden" Name="A2_Q3_S6_UnhideGernez3_Bis" EntityNames="NPC_A2_Q3_Gernez3" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_CutScene" Type="ActionSequence" BlendingSpeed="30" PlaySpeed="1" EnableBlendOut="0" Name="InnerSanctumFadeafterCutscene" SequenceName="A2_HeimlockFaceOff2_TEMP" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Type="EntityKillAll" Name="A2_Q3_S5_SquireHKill1" MonsterClass="TemplarsSquireHammer" Area="" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Type="EntityKillAll" Name="A2_Q3_S5_SquireSKill1" MonsterClass="TemplarsSquireSword" Area="" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Type="EntityKillAll" Name="A2_Q3_S5_PriestKill1" MonsterClass="TemplarsPriest" Area="" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Type="EntityKillAll" Name="A2_Q3_S5_KnightKill1" MonsterClass="TemplarsKnight" Area="" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Delay="0.5" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q3_S5_SquireHSpawn3Cutscene" SpawnClass="sc_Templar_InnerSanctum_SquireHammer3" TargetEntityName="InnerSanctum_TemplarSpawn10" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Delay="0.5" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q3_S5_SquireSSpawn3Cutscene" SpawnClass="sc_Templar_InnerSanctum_SquireSword3" TargetEntityName="InnerSanctum_TemplarSpawn15" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Delay="0.5" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q3_S5_PriestSpawn1Cutscene" SpawnClass="sc_Templar_InnerSanctum_Priest" TargetEntityName="InnerSanctum_TemplarSpawn9" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Delay="0.5" Type="EntitySpawn" MinimumRadius="0" MaximumRadius=".1" SpawnFrequency="0" Name="A2_Q3_S5_KnightSpawn1Cutscene" SpawnClass="sc_Templar_InnerSanctum_Knight" TargetEntityName="InnerSanctum_TemplarSpawn18" FaceAtSpawn="QP_A2_Q3_S5_CossSpawn1" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_CutScene" Type="EntityIsHidden" Name="A2_Q3_S6_HideGernezForDyn" EntityNames="Knight_A2_DYN_INNERSANCTUM3" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Delay="0.7" Type="EntityFollow" Name="A2_Q3_S5_SquireHFollow3Cutscene" FollowerEntityName="sc_Templar_InnerSanctum_SquireHammer3" Follow="#Player" Constraints="" />
+      <Event Trigger="GoalStart" GoalIndex="4" Delay="0.7" Type="EntityFollow" Name="A2_Q3_S5_SquireSFollow3Cutscene" FollowerEntityName="sc_Templar_InnerSanctum_SquireSword3" Follow="#Player" Constraints="" />
+      <Event Trigger="GoalStart" GoalIndex="4" Delay="0.7" Type="EntityFollow" Name="A2_Q3_S5_PriestFollow1Cutscene" FollowerEntityName="sc_Templar_InnerSanctum_Priest" Follow="#Player" Constraints="" />
+      <Event Trigger="GoalStart" GoalIndex="4" Delay="0.7" Type="EntityFollow" Name="A2_Q3_S5_KnightFollow1Cutscene" FollowerEntityName="sc_Templar_InnerSanctum_Knight" Follow="#Player" Constraints="" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile1" EntityNames="ZombiePile_1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile2" EntityNames="ZombiePile_2" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile3" EntityNames="ZombiePile_3" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile4" EntityNames="ZombiePile_4" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile5" EntityNames="ZombiePile_5" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile6" EntityNames="ZombiePile_6" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile7" EntityNames="ZombiePile_7" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile8" EntityNames="ZombiePile_8" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile9" EntityNames="ZombiePile_9" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile10" EntityNames="ZombiePile_10" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile11" EntityNames="ZombiePile_11" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile12" EntityNames="ZombiePile_12" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile13" EntityNames="ZombiePile_13" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="ZombiePile14" EntityNames="ZombiePile_14" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="InnerSanctumLeft" EntityNames="InnerSanctumLeft" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="InnerSanctumRight" EntityNames="InnerSanctumRight" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_CutScene" Type="EntityTeleport" MinRadius="5" Name="InnerSanctumTPPlayerWaves2" TeleportedEntityName="#Player" DestinationName="InnerSanctum_PlayerTP" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_CutScene" Type="PlayerApocalypticForm" Ressource="" Name="InnerSanctumForcePlayerApoFormOn" Limited="0" Transformation="ForceOn" Preset="REGULAR" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_CutScene" Type="StepUpdate" Name="A2_Q3_S6_StepUpdate2" Localization="@ui_A2_Q3_S6_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_CutScene" Type="EntityIsHidden" Name="InnerSanctumCollision2_Unhide" EntityNames="InnerSanctumDoorCollision2" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_CutScene" Type="ActionParticleEmitter" Name="InnerSanctumParticle2_Unhide" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum2" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q3_S6_Dyn_GerneseLeaveApoForm" SequenceName="A2_DYN_ISGERNESEFROMAPO" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalDialog" Delay="1" Name="A2_Q3_S6_Wave2Dial1" DialogName="ACT2_Q3_S5_DynS_Gernese_Talk3" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalDialog" Delay="10" Name="A2_Q3_S6_Wave2Dial2" DialogName="ACT2_Q3_S5_DynS_Gernese_Talk4" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="GlobalDialog" Delay="20" Name="A2_Q3_S6_Wave2Dial3" DialogName="ACT2_Q3_S5_DynS_Templars_Talk5" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="2" Type="PlayerApocalypticForm" Ressource="" Name="InnerSanctumForcePlayerApoFormOff" Limited="1" Transformation="ForceOff" Preset="REGULAR" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="2" Type="PlayerApocalypticForm" Delay="0.5" Ressource="-1000000" Name="InnerSanctumForcePlayerApoRessourceOff" Limited="1" Transformation="ForceOff" Preset="REGULAR" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="2" Type="EntityKillAll" Delay="0.5" Name="A2_Q3_S6_KillSummonW2" MonsterClass="CultOfSouls_Zombie_frost" Area="" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="2" Type="GlobalDialog" Delay="5" Name="A2_Q3_S6_Wave3Dial1" DialogName="ACT2_Q3_S5_DynS_Templars_Talk6" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="3" Type="GlobalDialog" Delay="2" Name="A2_Q3_S6_Wave4Dial1" DialogName="ACT2_Q3_S5_DynS_Templars_Talk7" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="3" Type="EntityKillAll" Delay="0.5" Name="A2_Q3_S6_KillSummonW3" MonsterClass="CultOfSouls_Zombie_frost" Area="" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="3" Type="ActionSequence" Delay="0" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="InnerSanctumLightafterCutscene" SequenceName="A2_DYN_INNERSANCTUMLIGHTING" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="3" Type="EntityIsHidden" Delay="2" Name="A2_Q3_S6_HideModelApoGlobe1" EntityNames="ApoGlobeProp_InnerSanctum_ACT2_Left" Hide="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="3" Type="EntityIsHidden" Delay="2" Name="A2_Q3_S6_HideModelApoGlobe2" EntityNames="ApoGlobeProp_InnerSanctum_ACT2_Right" Hide="1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="3" Type="EntityIsHidden" Delay="1.5" Name="A2_Q3_S6_UnhideApoGlobe1" EntityNames="ApoGlobe_InnerSanctum_ACT2_Left" Hide="0" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="3" Type="EntityIsHidden" Delay="1.5" Name="A2_Q3_S6_UnhideApoGlobe2" EntityNames="ApoGlobe_InnerSanctum_ACT2_Right" Hide="0" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="4" Type="GlobalDialog" Delay="3" Name="A2_Q3_S6_Wave5Dial1" DialogName="ACT2_Q3_S5_DynS_Gernese_Talk5" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="4" Type="EntityKillAll" Delay="0.5" Name="A2_Q3_S6_KillSummonW4" MonsterClass="CultOfSouls_Zombie_frost" Area="" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="5" Type="GlobalDialog" Delay="1.5" Name="A2_Q3_S6_Wave5DialFinal" DialogName="ACT2_Q3_S5_DynS_Gernese_Talk6" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S6_Wave5DialFinal" Type="GoalAchieve" Name="A2_Q3_S5_Goal5Achieved" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="ArenaWaveWon" ArenaStartEventName="InnerSanctumEvent_StartArena_Part2" WaveIndex="5" Type="EntityKillAll" Delay="0.5" Name="A2_Q3_S6_KillSummonW5" MonsterClass="CultOfSouls_Zombie_frost" Area="" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="StepUpdate" Name="A2_Q3_S6_StepUpdate3" Localization="@ui_A2_Q3_S5_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="A2_Q3_S6_StepUpdate4" Localization="@ui_A2_Q3_S6_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityKill" Name="A2_Q3_S5_RemoveVal" EntityName="Valeria" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="A2_Q3_S5_RevealGernez" EntityNames="NPC_A2_Q4_Gernez" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Delay="1.5" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_SquireHMove3bis" EntityName="InnerSanctum_Hammer3" TargetName="InnerSanctum_TemplarSpawn7" RemainScripted="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Delay="1" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_SquireSMove3bis" EntityName="InnerSanctum_Sword3" TargetName="InnerSanctum_TemplarSpawn6" RemainScripted="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Delay="2" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_PriestMove1bis" EntityName="InnerSanctum_Priest" TargetName="InnerSanctum_TemplarSpawn8" RemainScripted="0" />
+      <Event Trigger="GoalStart" GoalIndex="5" Delay="2.2" Type="EntityMove" TargetMinDistance=".2" OverrideSpeed="0" Name="A2_Q3_S5_KnightMove1bis" EntityName="InnerSanctum_Knight" TargetName="InnerSanctum_TemplarSpawn" RemainScripted="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_SquireHMove3bis" Type="EntityRotate" Name="A2_Q2_S2_SquireHRotate3bis" RotatedEntityName="InnerSanctum_Hammer3" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_SquireSMove3bis" Type="EntityRotate" Name="A2_Q2_S2_SquireSRotate3bis" RotatedEntityName="InnerSanctum_Sword3" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_PriestMove1bis" Type="EntityRotate" Name="A2_Q2_S2_PriestRotate1bis" RotatedEntityName="InnerSanctum_Priest" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_KnightMove1bis" Type="EntityRotate" Name="A2_Q2_S2_KnightRotate1bis" RotatedEntityName="InnerSanctum_Knight" Target="QP_A2_Q3_S5_CossSpawn1" FaceTarget="1" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_ValFightCoss" Type="EntityKillAll" Name="A2_Q3_S5_SquireHKill2" MonsterClass="TemplarsSquireHammer" Area="" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_ValFightCoss" Type="EntityKillAll" Name="A2_Q3_S5_SquireSKill2" MonsterClass="TemplarsSquireSword" Area="" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_ValFightCoss" Type="EntityKillAll" Name="A2_Q3_S5_PriestKill2" MonsterClass="TemplarsPriest" Area="" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_ValFightCoss" Type="EntityKillAll" Name="A2_Q3_S5_KnightKill2" MonsterClass="TemplarsKnight" Area="" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_ValFightCoss" Type="ActionParticleEmitter" Name="InnerSanctumParticle2_HideSuccess" EmitterEntityName="U_EnvironmentParticle.BlockingRoad.InnerSanctum2" Activate="0" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_ValFightCoss" Type="EntityIsHidden" Name="A2_Q3_S6_HideGernez3Success" EntityNames="NPC_A2_Q3_Gernez3" Hide="1" />
+      <Event Trigger="EventStart" EventName="A2_Q3_S5_ValFightCoss" Type="ActionDoor" Name="A2_Q3_S6_DoorClosingSuccess" AnimationSpeed="100" DoorName="AnimDoor_innerSanctum_Door" Action="Close" />
+      <Event Trigger="GoalSuccess" GoalIndex="6" Type="GlobalCheckpoint" Name="Reset_InnerSanctumEvent_Win_Checkpoint" CheckpointEntityName="" />
+      <Event Trigger="GoalSuccess" GoalIndex="6" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A2_Q3_S5_ValFightCoss" SequenceName="A2_BADASSVAL" />
+      <Event Trigger="GoalSuccess" GoalIndex="6" Type="GlobalReleaseGameplayEvent" Name="InnerSanctum_SucceedEventSlotRelease" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_ValFightCoss" Type="GoalAchieve" Name="A2_Q3_S5_Goal1Achieved2" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_ValFightCoss" Type="EntityIsHidden" Name="A2_Q3_S1_RevealVal" EntityNames="NPC_A2_Q2_Valeria" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_ValFightCoss" Type="EntityTeleport" MinRadius="1" Name="A2_Q3_S5_Player_Tp" TeleportedEntityName="#Player" DestinationName="QP_A2_Q4_S1_PlayerSpawn" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_Player_Tp" Type="EntityIsHidden" Name="A2_Q3_S1_HideVOS2_Blocker" EntityNames="CE_A2_VOS2_Blocker" Hide="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_Player_Tp" Type="EntityIsHidden" Name="A2_Q3_S1_HideVOS2_BlockerArt" EntityNames="TemplarCamp_ForestClearing_AccessBlocker" Hide="1" />
+      <Event Trigger="EventEnd" EventName="A2_Q3_S5_Player_Tp" Type="EntityIsHidden" Name="A2_Q3_S1_VOS2_RevealBlocker" EntityNames="TemplarCamp_VOS2_Access" Hide="0" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="InnerSanctum_EventFail" RollbackToPreviousStep="1" />
+    </Step>
+  </Quest>
+</MetaData>

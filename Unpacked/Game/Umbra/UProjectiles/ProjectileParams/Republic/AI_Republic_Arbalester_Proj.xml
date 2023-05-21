@@ -1,0 +1,19 @@
+<MetaData>
+  <Projectile ID="AI_Republic_Arbalester_Proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.7,0.7,0.7" vOffset="0,0,0.75" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,1,0" WorldSpace="0" Scale="1" />
+      <HitEnvironment ParticleName="U_VFX_Oskar.Hits.Hit_Lightning" Direction="0,0,1" WorldSpace="0" />
+      <Travel ParticleName="U_VFX_Oskar.Monster.REPU_Arbalester_RangeAttack_Projectile" Direction="-1,0,0" WorldSpace="0" Scale="0.8" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="8" SpeedMax="8" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Launch SoundTriggerName="Play_Republic_Arbalester_RangeAttack_Proj_Loop" />
+      <Hit SoundTriggerName="Play_Republic_Arbalester_RangeAttack_Impact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact_Miss" />
+    </Audio>
+  </Projectile>
+</MetaData>

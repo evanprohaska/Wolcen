@@ -1,0 +1,81 @@
+<MetaData>
+  <Skill UID="AI_COFY_Ahriman_SuccessiveExplosionP2" ESkill="AI_DEFAULT_COMBO" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_05" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="0" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape1" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape2" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape3" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape4" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape5" />
+    </Shapes>
+    <SkillSpecific NumberOfAttacks="5" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_SuccessiveExplosionP2_Nerfed" ESkill="AI_DEFAULT_COMBO" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_05" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="0" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape1_Nerfed" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape2_Nerfed" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape3_Nerfed" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape4_Nerfed" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape5_Nerfed" />
+    </Shapes>
+    <EventEffectOverride>
+      <AnimEvent Original="COFY_Ahriman.SuccessiveExplosion.Indicator" Override="COFY_Ahriman.SuccessiveExplosion.IndicatorNerfed" />
+      <AnimEvent Original="COFY_Ahriman.SuccessiveExplosion.AoEFast" Override="COFY_Ahriman.SuccessiveExplosion.AoEFastNerfed" />
+    </EventEffectOverride>
+    <SkillSpecific NumberOfAttacks="5" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_SuccessiveExplosionP3" ESkill="AI_DEFAULT_COMBO" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_07" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="0" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="30" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape1" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape2" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape3" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape4" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape5" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape5" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape4" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape3" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape2" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape1" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape1" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape2" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape3" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape4" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape5" />
+    </Shapes>
+    <SkillSpecific NumberOfAttacks="15" />
+    <SoundTrigger OnAnimCast="" OnAnimStart="" OnHit="" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_COFY_Ahriman_SuccessiveExplosionP3_Nerfed" ESkill="AI_DEFAULT_COMBO" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_07" ScaleWithSpellCastingSpeed="1" AnimationDrivenMovement="0" />
+    <CastingParams CastBone="" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <DamageWeapon Type="fire" WeaponMultiplier="2" />
+    <Cooldown Cooldown="20" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape1_Nerfed" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape2_Nerfed" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape3_Nerfed" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape4_Nerfed" />
+      <Entry ShapeName="Ahriman_SuccessiveExplosion_Shape5_Nerfed" />
+    </Shapes>
+    <EventEffectOverride>
+      <AnimEvent Original="COFY_Ahriman.SuccessiveExplosion.Indicator" Override="COFY_Ahriman.SuccessiveExplosion.IndicatorNerfed" />
+      <AnimEvent Original="COFY_Ahriman.SuccessiveExplosion.AoEFast" Override="COFY_Ahriman.SuccessiveExplosion.AoEFastNerfed" />
+    </EventEffectOverride>
+    <SkillSpecific NumberOfAttacks="5" />
+  </Skill>
+</MetaData>

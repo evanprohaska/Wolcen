@@ -1,0 +1,86 @@
+<MetaData>
+  <Quest Name="QuestFailTest" StartDialog="" Type="Adventure" UIName="@ui_gold" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Wait" TimeLimit="1" ShowTimer="1" />
+      <Goal Order="1" Type="Defend" ShowProgression="1" AllyToDefend="SC_SVRAlphaP_EB2" TimeLimit="100" ShowTimer="1" />
+      <Goal Order="2" Type="Wait" TimeLimit="100" ShowTimer="1" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="QuestFail" QuestName="QuestFailTest" Name="Event_Crash" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" Name="Event_Spawn" SpawnClass="Sc_SvriirAlphaPoison_EventB2" TargetEntityName="Test" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFaction" EntityName="SC_SVRAlphaP_EB2" FactionName="Players" Name="Event_Faction" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFollow" FollowerEntityName="SC_SVRAlphaP_EB2" Follow="#player" Name="Event_Follow" Delay=".5" />
+    </Step>
+  </Quest>
+  <Quest Name="FactionChangeTest" StartDialog="" Type="Adventure" UIName="@ui_gold" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Wait" TimeLimit="1" ShowTimer="1" />
+      <Goal Order="1" Type="Weaken" ShowProgression="1" EnnemyName="SC_SVRAlphaP_EB2" Percent="75" />
+      <Goal Order="2" Type="Wait" TimeLimit="100" ShowTimer="1" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySpawn" MinimumRadius="5" MaximumRadius="10" SpawnFrequency="0" Name="Event_Spawn" SpawnClass="Sc_SvriirAlphaPoison_EventB2" TargetEntityName="Test" FaceAtSpawn="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFaction" EntityName="SC_SVRAlphaP_EB2" FactionName="Players" Name="Event_Faction" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFollow" FollowerEntityName="SC_SVRAlphaP_EB2" Follow="#player" Name="Event_Follow" Delay=".5" />
+    </Step>
+  </Quest>
+  <Quest Name="ChannelingTest" StartDialog="" Type="Adventure" UIName="@ui_gold" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="test" InteractCount="10" ChannelingTime="5" ShowProgression="1" Animation="" />
+      <Goal Order="1" Type="Wait" TimeLimit="10" ShowTimer="1" />
+      <GoalLogic Formula="00-01" />
+    </Step>
+  </Quest>
+  <Quest Name="LootTest" StartDialog="" Type="Adventure" UIName="@ui_gold" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Wait" TimeLimit="10" ShowTimer="1" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalLoot" Name="Event_Loot" Delay="5" LootClass="Uniques_MerchantAltars" Target="Test" />
+    </Step>
+  </Quest>
+  <Quest Name="FrenzyTest" StartDialog="" Type="Adventure" UIName="@ui_gold" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Frenzy" TimeLimit="10" ValueToReach="20" DropRate="100" ShowTimer="1" ShowProgression="1" />
+      <GoalLogic Formula="00" />
+    </Step>
+  </Quest>
+  <Quest Name="BloodthirstTest" StartDialog="" Type="Adventure" UIName="@ui_gold" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Bloodthirst" TimeLimit="1000" DecayRate="0.2" MaxValue="20" ShowTimer="1" ShowProgression="1" />
+      <GoalLogic Formula="00" />
+    </Step>
+  </Quest>
+  <Quest Name="HoldVFXTest" StartDialog="" Type="Adventure" UIName="@ui_gold" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Hold" TimeLimit="1000" Tolerance="1" Radius="2" ShowTimer="1" ShowProgression="1" CenterEntityName="test" />
+      <Goal Order="1" Type="Hold" TimeLimit="1000" Tolerance="1" Radius="5" ShowTimer="1" ShowProgression="1" CenterEntityName="test" />
+      <Goal Order="2" Type="Hold" TimeLimit="1000" Tolerance="1" Radius="10" ShowTimer="1" ShowProgression="1" CenterEntityName="test" />
+      <Goal Order="3" Type="Hold" TimeLimit="1000" Tolerance="1" Radius="15" ShowTimer="1" ShowProgression="1" CenterEntityName="test" />
+      <Goal Order="4" Type="Hold" TimeLimit="1000" Tolerance="1" Radius="20" ShowTimer="1" ShowProgression="1" CenterEntityName="test" />
+      <Goal Order="5" Type="Hold" TimeLimit="1000" Tolerance="1" Radius="25" ShowTimer="1" ShowProgression="1" CenterEntityName="test" />
+      <GoalLogic Formula="00-01-02-03-04-05" />
+    </Step>
+  </Quest>
+  <Quest Name="ConquerVFXTest" StartDialog="" Type="Adventure" UIName="@ui_gold" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Conquer" TimeLimit="1000" Radius="2" ShowTimer="1" ShowProgression="1" CenterEntityNames="test,test1,test2,test3" EarnPointPerSec="1" MaxPoints="30" EnnemiesAreBlocking="1" />
+      <Goal Order="1" Type="Conquer" TimeLimit="1000" Radius="5" ShowTimer="1" ShowProgression="1" CenterEntityNames="test,test1,test2,test3" EarnPointPerSec="1" MaxPoints="30" EnnemiesAreBlocking="1" />
+      <Goal Order="2" Type="Conquer" TimeLimit="1000" Radius="10" ShowTimer="1" ShowProgression="1" CenterEntityNames="test,test1,test2,test3" EarnPointPerSec="1" MaxPoints="30" EnnemiesAreBlocking="1" />
+      <Goal Order="3" Type="Conquer" TimeLimit="1000" Radius="15" ShowTimer="1" ShowProgression="1" CenterEntityNames="test,test1,test2,test3" EarnPointPerSec="1" MaxPoints="30" EnnemiesAreBlocking="1" />
+      <Goal Order="4" Type="Conquer" TimeLimit="1000" Radius="20" ShowTimer="1" ShowProgression="1" CenterEntityNames="test,test1,test2,test3" EarnPointPerSec="1" MaxPoints="30" EnnemiesAreBlocking="1" />
+      <Goal Order="5" Type="Conquer" TimeLimit="1000" Radius="25" ShowTimer="1" ShowProgression="1" CenterEntityNames="test,test1,test2,test3" EarnPointPerSec="1" MaxPoints="30" EnnemiesAreBlocking="1" />
+      <GoalLogic Formula="00-01-02-03-04-05" />
+    </Step>
+  </Quest>
+  <Quest Name="Utility" StartDialog="" Type="Adventure" UIName="@ui_gold" UIDesc="" BoundToMap="">
+    <Step Order="0" UIName="@ui_gold" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Wait" TimeLimit="10000" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="QuestFail" QuestName="HL_C1" Name="event_fail_1" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="QuestFail" QuestName="HL_C2" Name="event_fail_2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="QuestFail" QuestName="HL_C3" Name="event_fail_3" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="QuestFail" QuestName="HL_C4" Name="event_fail_4" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="FS_HideSoldier2_rip" EntityNames="EfraimFaarad" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Name="QN_HE_ManHunt_Proto_ClearSpawn3" Type="ClearSpawn" Events="QN_HE_ManHunt_Proto_Directed_T8" Delay="0.5" />
+      <Event Trigger="Goalstart" GoalIndex="1" Name="QN_HE_B2_SpawnBoss" Type="EntitySpawn" SpawnClass="Sc_Sty_HLC1_REPU_Lucan" TargetEntityName="#Player" FaceAtSpawn="#Player" MinimumRadius="2" MaximumRadius="8" SpawnFrequency="0" Delay="1" />
+    </Step>
+  </Quest>
+</MetaData>

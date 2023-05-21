@@ -1,0 +1,23 @@
+<MetaData>
+  <Preset Name="Player_skill_laser">
+    <TargetAnimationSuspension>
+      <BuildUpTime Value="0.0" />
+      <SuspensionTime Value="0.05" />
+      <ReleaseTime Value="0.1" />
+    </TargetAnimationSuspension>
+    <DeathImpulseStrength>
+      <Strength Min="4000" Max="4500" />
+    </DeathImpulseStrength>
+    <Blink>
+      <Duration Min="0.2" Max="0.3" />
+      <Intensity Min="0.8" Max="1" />
+    </Blink>
+    <CamShake>
+      <Rotation Direction="0.0,0.0,0.0" Randomness="0.01" />
+      <Shift Direction="0.025, 0.005, 0.005" Randomness="0.05" />
+      <Frequency Min="0.015" Max="0.015" />
+      <Duration Min="0.1" Max="0.15" />
+      <Randomness Min="1" Max="1" />
+    </CamShake>
+  </Preset>
+</MetaData>

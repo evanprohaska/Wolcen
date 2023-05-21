@@ -1,0 +1,63 @@
+<MetaData>
+  <Skill UID="AI_COFY_ApoMage_BasicAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="umbra" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="3" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="20" />
+    <Projectile Name="apo_mage_mob_defaultattack_proj" SpeedScale="0.5" ProjectileCount="5" AngleBetweenProjectiles="10.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+  <Skill UID="AI_COFY_ApoMage_ExplosiveProj" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_02" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="umbra" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" CastBone="Bip01 L Hand" />
+    <Projectile Name="apo_mage_mob_projectile_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <Explosion ExplosionRadius="3" />
+    <SkillSpecific ComputeTargetPosAtCast="1" />
+    <SoundTrigger OnAnimStart="Play_Fanatic_Fireball_Projectile_Buildup" OnHit="Play_hero_default_damage" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_COFY_ApoMage_Laser" ESkill="AI_cultofsouls_demonofsouls_soulstorm_part2" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_ai_attacks" BloodDecalOrientation="forward" />
+    <CastingParams CastBone="Bip01 BackFX" CanCastWhileMoving="0" MinimumCastDuration="0.4" MaximumTurnRate="24" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <DamageWeapon Type="umbra" WeaponMultiplier="0.15" />
+    <StatusAilment>
+      <freeze Chance="0" ChanceMode="ignored" Duration="1.5" DurationMode="override" />
+    </StatusAilment>
+    <ParticleList>
+      <Particle Key="Ready" Name="U_Monster.DeomonOfSoul.Soul_Beam_Ready_01" Direction="0,0,-1" />
+      <Particle Key="Beam" Name="U_ApocalypticForm.Mage_ApocalypticFrom.Ult_Beam_03_Loop" Direction="0,0,-1" Scale="1.5" />
+    </ParticleList>
+    <Range ProjectileMinDistance="2" AttackRange="10" />
+    <Cooldown Cooldown="20" CooldownPerLevel="0" />
+    <Specific_AI_Laser NumberOfBeams="1" LengthPadding="0.1" MaxZOffset="1.5" LaserWidth="4" AngleAtDistanceMin="10" AngleAtDistanceMax="75" TimeBetweenHits="0.1" CanHitMultipleTargets="1" MinLaserRangeForAngleComputation="2" IsInLoopOutLaser="1" MaximumDuration="8" TimeOutDuration="3" TargetBone="Bip01 Spine" SoundStart="Play_DemonOfSouls_Ray_Loop" SoundEnd="Play_DemonOfSouls_Ray_End" SoundHitStart="Play_DemonOfSouls_Ray_Impact_Loop" SoundHitEnd="Stop_DemonOfSouls_Ray_Impact_Loop" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="100" To="500" In="0.5" />
+      <EmissiveIntensity From="500" To="400" In="1" />
+      <EmissiveIntensity From="400" To="500" In="2" />
+      <EmissiveIntensity From="500" To="origin" In="2" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_COFY_ApoMage_Clone" ESkill="AI_default_summonminions" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" />
+    <SoundTrigger OnAnimStart="Play_COSS_Mystagogue_Summon" />
+    <Particles ParticleName="U_Monster_Alt.cultist_fury.monster_spawn" ParticleBone="" ParticleOffSet="0,0,1" ParticleDirection="0,1,0" ParticleScale="1" />
+    <CastingParams CanBeInterrupted="0" />
+    <Cooldown Cooldown="20.0" />
+    <Summoning MaxSummons="5" SummonDuration="0" MinRadiusAroundSpawnPosition="0" MaxRadiusAroundSpawnPosition="5" KillLowestHPOnOversummoning="0" SummonsSuicideWhenMasterDies="1" SpawnOffset="5,0,0">
+      <SummonedSpawnClass Key="Default" Name="sc_ApoMage_Clone" />
+    </Summoning>
+  </Skill>
+  <Skill UID="AI_COFY_ApoMageClone_BasicAttack" ESkill="default_ranged" Keywords="magic_spell,projectile">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" />
+    <DamageWeapon Type="umbra" WeaponMultiplier=".8" />
+    <Cooldown Cooldown="3" />
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <Range AttackRange="20" />
+    <Projectile Name="apo_mage_mob_defaultattack_proj" SpeedScale="0.5" ProjectileCount="1" AngleBetweenProjectiles="10.0" PenetrationLimit="3" />
+    <Collisions IgnoreTerrainCollisions="1" />
+  </Skill>
+</MetaData>

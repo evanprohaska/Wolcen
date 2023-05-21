@@ -1,0 +1,34 @@
+<MetaData>
+  <MonsterManager Name="MM_BenTest_Quest">
+    <DesignParams GroupValueModifierPercent="50" GroupValueDispersionPercent="25" HConstraint_CountThreshold="2" HConstraint_TriggerFactorPercent="30" CConstraint_CountThreshold="2" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="100" Factor="1.1" />
+      </ActivationTriggers>
+      <SpreadMode PackPercent="100" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="20" />
+    <CombatPointsRepartition Mode="fixed" CP="30" DefaultSpawnerSpawnRadius="15" DefaultSpawnerTriggerHeight="20" />
+    <Categories>
+      <Entry Category="S_B" SpawnClassFamily="Scf_WreckCoast_S_B" MandatoryContentKeywords="" />
+      <Entry Category="S_O" SpawnClassFamily="Scf_WreckCoast_S_O" MandatoryContentKeywords="" />
+      <Entry Category="S_A" SpawnClassFamily="Scf_SvriirsNetwork1_S_Spa" MandatoryContentKeywords="" />
+    </Categories>
+    <RMP>
+      <Entry Category="S_B" Percentage="50" />
+      <Entry Category="S_O" Percentage="20" />
+      <Entry Category="S_A" Percentage="30" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="1" SpawnClassFamily="Scf_WreckCoast_S_O" />
+      <Entry DeduceCPFromTotal="1" SpawnClassFamily="Scf_WreckCoast_S_B" />
+      <Entry DeduceCPFromTotal="1" SpawnClassFamily="Scf_SvriirsNetwork1_S_Trash" />
+      <Entry DeduceCPFromTotal="1" SpawnClassFamily="Scf_WreckCoast_S_B" />
+      <Entry DeduceCPFromTotal="1" SpawnClassFamily="Scf_WreckCoast_S_Medium" />
+    </FMP>
+    <SpawnPatterns>
+      <SurroundingAssault Percentage="50" TriggerRadiusOverride="15" SpawnRadiusMin="7" SpawnRadiusMax="9" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="0.1" SpawnCountPerTick="1" />
+      <ReinforcementGroup Percentage="5" GroupCountMin="2" GroupCountMax="3" Category="S_B" Category_CPMin="5" Category_CPMax="10" DelayBeforeFirstSpawn="1" DelayBetweenGroups="5" DelayBetweenMonsterSpawn="0.1" SpawnDistanceFromPlayer="20" SpawnCountPerTick="1" />
+      <ReinforcementGroup Percentage="15" GroupCountMin="1" GroupCountMax="2" Category="S_B" Category_CPMin="10" Category_CPMax="15" DelayBeforeFirstSpawn="1" DelayBetweenGroups="5" DelayBetweenMonsterSpawn="0.1" SpawnDistanceFromPlayer="20" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+</MetaData>

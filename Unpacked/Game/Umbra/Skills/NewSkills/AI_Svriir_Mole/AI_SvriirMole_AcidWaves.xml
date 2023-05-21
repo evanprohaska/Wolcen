@@ -1,0 +1,17 @@
+<MetaData>
+  <Skill UID="AI_SvriirMole_AcidWaves" ESkill="AI_TMPL_Knight_SacredFire" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_03" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="6" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="toxic" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone RateOfFire="0.3" Duration="5" />
+    <Shapes>
+      <Entry Key="DamageZoneShape01" ShapeName="SvriirMole_AcidWaves_Shape01" />
+      <Entry Key="DamageZoneShape01" ShapeName="SvriirMole_AcidWaves_Shape02" />
+    </Shapes>
+    <ParticleList>
+      <Particle Key="Wave" Name="U_Monster.AuroraKnight.SacredFire_1Seconds" Offset="0,0,0" Direction="0,1,0" Scale="1" />
+    </ParticleList>
+  </Skill>
+</MetaData>

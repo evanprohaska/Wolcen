@@ -1,0 +1,21 @@
+<MetaData>
+  <Projectile ID="COFY_FirePillar_Overloaded_proj" ClassName="UProjectile_Exploding">
+    <Collider GeomType="box" vSize="1.0,1.0,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Delay ParticleName="" Direction="" WorldSpace="0" />
+      <Travel ParticleName="COFY_Ahriman.OverloadedFirePillar.Projectile" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_VFX_Oskar.Hits.Hit_Fire" Direction="0,0,1" WorldSpace="0" Scale="1" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="2" SpeedMax="2" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Audio>
+      <Launch SoundTriggerName="Play_Ahriman_FirePillar_Overloaded_Proj_Loop" />
+      <Hit SoundTriggerName="Play_DOT_Burn" />
+      <Removed SoundTriggerName="Stop_Ahriman_FirePillar_Overloaded_Proj_Loop" />
+    </Audio>
+    <Explosion>
+      <Param name="snapOnTargetCenter" value="1" />
+    </Explosion>
+  </Projectile>
+</MetaData>

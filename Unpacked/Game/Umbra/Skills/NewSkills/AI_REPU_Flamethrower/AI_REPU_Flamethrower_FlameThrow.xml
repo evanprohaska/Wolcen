@@ -1,0 +1,40 @@
+<MetaData>
+  <Skill UID="AI_REPU_Flamethrow_Cone" ESkill="AI_default_maintainedskillwithdamageinshape" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="ParticleIn" Name="U_VFX_Oskar.Monster.REPU_Soldier_Flamethrower_Init" Offset="0,0,-1.5" Direction="0,0,1" Scale="2" Bone="R_Weapon_Bone" />
+      <Particle Key="ShapeParticle" Name="U_VFX_Oskar.Monster.REPU_Soldier_Flamethrower_Loop" Offset="0,0,-1.5" Direction="0,0,1" Scale="2" Bone="R_Weapon_Bone" />
+      <Particle Key="ParticleOut" Name="U_VFX_Oskar.Monster.REPU_Soldier_Flamethrower_End" Offset="0,0,-1.5" Direction="0,0,1" Scale="2" Bone="R_Weapon_Bone" />
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Fire" Offset="0,1.5,0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageWeapon Type="fire" WeaponMultiplier="0.55" />
+    <Cooldown Cooldown="4.0" />
+    <DamageZone Duration="0" RateOfFire="0.0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="AI_REPU_Flamethrower_Cone_DZ" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_REPU_Flamethrower_Pre_Attack" OnAnimCast="Play_REPU_Flamethrower_Attack_Start" OnAnimLoopIn="Play_REPU_Flamethrower_Cone_Loop" OnAnimLoopOut="Play_REPU_Flamethrower_Cone_End" OnInterrupt="Play_REPU_Flamethrower_Cone_End" OnHit="Play_DOT_Burn" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.3" MaxDuration="3" MaxTimeOutDuration="2.5" DistanceBetweenParticles="1" DZForwardOffset="2" />
+  </Skill>
+  <Skill UID="AI_REPU_Flamethrow_Line" ESkill="AI_default_maintainedskillwithdamageinshape" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="R_Weapon_Bone" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <ParticleList>
+      <Particle Key="ParticleIn" Name="U_VFX_Oskar.Monster.REPU_Soldier_Flamethrower_Line_Init" Offset="0,0,-1.5" Direction="0,0,1" Scale="2" Bone="R_Weapon_Bone" />
+      <Particle Key="ShapeParticle" Name="U_VFX_Oskar.Monster.REPU_Soldier_Flamethrower_Line_Loop" Offset="0,0,-1.5" Direction="0,0,1" Scale="1" Bone="R_Weapon_Bone" />
+      <Particle Key="ParticleOut" Name="U_VFX_Oskar.Monster.REPU_Soldier_Flamethrower_End" Offset="0,0,-1.5" Direction="0,0,1" Scale="2" Bone="R_Weapon_Bone" />
+      <Particle Key="Hit" Name="U_VFX_Oskar.Hits.Hit_Fire" Offset="0,1.5,0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <DamageWeapon Type="fire" WeaponMultiplier="0.44" />
+    <Cooldown Cooldown="4.0" />
+    <DamageZone Duration="0" RateOfFire="0" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="AI_REPU_Flamethrower_Line_DZ" />
+    </Shapes>
+    <SoundTrigger OnAnimStart="Play_REPU_Flamethrower_Pre_Attack" OnAnimCast="Play_REPU_Flamethrower_Attack_Start" OnAnimLoopIn="Play_REPU_Flamethrower_Line_Loop" OnAnimLoopOut="Play_REPU_Flamethrower_Line_End" OnInterrupt="Play_REPU_Flamethrower_Line_End" OnHit="Play_DOT_Burn" PlayAttackVoice="0" />
+    <SkillSpecific TimeBetweenHits="0.3" MaxDuration="2.5" MaxTimeOutDuration="2.5" DistanceBetweenParticles="1" DZForwardOffset="2" />
+  </Skill>
+</MetaData>

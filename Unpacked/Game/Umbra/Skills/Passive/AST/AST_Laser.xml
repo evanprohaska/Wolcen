@@ -1,0 +1,34 @@
+<MetaData>
+  <Spell Name="AST_Laser_Buff_Aether" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_umbra" Permanent="0">
+        <Semantics DamagePercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/laser_buff.png" Description="@ui_damage_percent_as_umbra_buff_skill" Title="@ui_laser_buff_title" />
+  </Spell>
+  <Spell Name="AST_Laser_Buff_Poison" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_toxic" Permanent="0">
+        <Semantics DamagePercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/laser_Toxic.png" Description="@ui_damage_percent_as_toxic_buff_skill" Title="@ui_laser_buff_title" />
+  </Spell>
+  <Spell Name="AST_Laser_Buff_Fire" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_fire" Permanent="0">
+        <Semantics DamagePercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/laser_Fire.png" Description="@ui_damage_percent_as_fire_buff_skill" Title="@ui_laser_buff_title" />
+  </Spell>
+  <Spell Name="AST_Laser_Buff_Sacred" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_sacred" Permanent="0">
+        <Semantics DamagePercentInt="20" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/laser_Sacred.png" Description="@ui_damage_percent_as_sacred_buff_skill" Title="@ui_laser_buff_title" />
+  </Spell>
+</MetaData>

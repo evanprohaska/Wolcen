@@ -1,0 +1,65 @@
+<MetaData>
+  <MonsterManager Name="test_monster_manager_descriptor_COSS_OTLW_1">
+    <CombatPointsRepartition Mode="fixed" CP="100" DefaultSpawnerSpawnRadius="5" DefaultSpawnerTriggerHeight="7" />
+    <DesignParams GroupValueModifierPercent="30" GroupValueDispersionPercent="30" HConstraint_CountThreshold="3" HConstraint_TriggerFactorPercent="30" CConstraint_CountThreshold="3" CConstraint_TriggerFactorPercent="50">
+      <ActivationTriggers>
+        <Entry Percentage="80" Factor="0.5" />
+        <Entry Percentage="10" Factor="0.2" />
+      </ActivationTriggers>
+      <SpreadMode SpreadPercent="90" PackPercent="5" />
+    </DesignParams>
+    <MonsterLevelParams LevelMin="1" LevelMax="1" />
+    <Population iPick="2">
+      <Entry SCF="RMP_SCF_DEV_COSS_0" Weight="1" />
+      <Entry SCF="RMP_SCF_DEV_OTLW_0" Weight="1" />
+    </Population>
+    <Categories>
+      <Entry Category="category_1" SpawnClassFamily="" MandatoryContentKeywords="trash" />
+      <Entry Category="category_2" SpawnClassFamily="" MandatoryContentKeywords="trash" />
+      <Entry Category="category_3" SpawnClassFamily="" MandatoryContentKeywords="elite" />
+      <Entry Category="category_4" SpawnClassFamily="" MandatoryContentKeywords="elite" />
+    </Categories>
+    <RMP>
+      <Entry Category="category_1" Percentage="40" />
+      <Entry Category="category_2" Percentage="40" />
+      <Entry Category="category_3" Percentage="0" />
+    </RMP>
+    <FMP>
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="FMP_SCF_DEV_COSS_1" MandatoryContentKeywords="elite" />
+      <Entry DeduceCPFromTotal="0" SpawnClassFamily="FMP_SCF_DEV_OTLW_1" MandatoryContentKeywords="elite" />
+    </FMP>
+    <AdditiveEvents>
+      <Event>
+        <AdditiveTriggerParams Mode="manual">
+          <ManualTrigger CPMin="25" CPMax="25" />
+          <ManualTrigger CPMin="50" CPMax="50" />
+          <ManualTrigger CPMin="75" CPMax="75" />
+        </AdditiveTriggerParams>
+        <EventChoices>
+          <EventChoice Weight="1" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="2" BossRank="ActBoss" />
+          <EventChoice Weight="1" ThresholdMode="fixed" ThresholdMax="0" ThresholdMin="1" BossRank="champion" SCF="FMP_SCF_DEV_COSS_1" />
+        </EventChoices>
+      </Event>
+      <Event>
+        <AdditiveTriggerParams Mode="auto" CPMin="25" CPMax="25" PercentageDispersion="5" />
+        <EventChoices>
+          <EventChoice Weight="1" ThresholdMode="deduced" ThresholdMax="0" ThresholdMin="60" BossRank="lord" Category="category_1" Category_EntityMin="7" Category_EntityMax="7" />
+          <EventChoice Weight="1" ThresholdMode="deduced" ThresholdMax="60" ThresholdMin="60" BossRank="champion" Category="category_4" Category_CPMin="8.5" Category_CPMax="8.5" />
+        </EventChoices>
+      </Event>
+    </AdditiveEvents>
+    <Constraints>
+      <Limitation_ByName AIName="CultOfSouls_HalfBreed" MaxNumberInGroup="1" />
+      <Limitation_ByKeyword AIKeyword="elite" MaxNumberInGroup="1" />
+      <Diversity_SinglePopulation Percentage="20" />
+      <Diversity_SingleCategory Percentage="20" Category="category_1" />
+      <Diversity_SingleCategory_SingleMonster Percentage="20" Category="category_2" />
+    </Constraints>
+    <SpawnPatterns>
+      <Ambush Percentage="20" TriggerRadiusOverride="7" BaseSpawnRadiusOverride="14" DelayBeforeFirstSpawn="0" DelayBetweenMonsterSpawn="0.5" SpawnCountPerTick="1" />
+      <SurroundingAssault Percentage="20" TriggerRadiusOverride="7" SpawnRadiusMin="3" SpawnRadiusMax="4" DelayBeforeFirstSpawn="1" DelayBetweenMonsterSpawn="1" SpawnCountPerTick="3" />
+      <ReinforcementGroup Percentage="20" GroupCountMin="1" GroupCountMax="3" Category="category_1" Category_CPMin="6" Category_CPMax="8" DelayBeforeFirstSpawn="1" DelayBetweenGroups="2" DelayBetweenMonsterSpawn="0" SpawnDistanceFromPlayer="5" SpawnCountPerTick="3" />
+      <ReinforcementGroup Percentage="20" GroupCountMin="1" GroupCountMax="3" Category="category_1" Category_EntityMin="10" Category_EntityMax="10" DelayBeforeFirstSpawn="1" DelayBetweenGroups="0" DelayBetweenMonsterSpawn="0.3" SpawnDistanceFromPlayer="40" SpawnCountPerTick="1" />
+    </SpawnPatterns>
+  </MonsterManager>
+</MetaData>

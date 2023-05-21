@@ -1,0 +1,67 @@
+<MetaData>
+  <Skill UID="AI_SiegeBeast_Bombardment" ESkill="AI_Default_GenericProjectiles" Keywords="projectile,magic_spell">
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier=".7" />
+    <CastingParams MaximumTurnRate="360" CastBone="Bip01 Canon02" CasterImmobilizationTime="1" MaximumTargetingHalfAngle="10" CanBeInterrupted="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <Cooldown Cooldown="2.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Explosion ExplosionRadius="3" />
+    <Range AttackRange="50" />
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_SiegeBeast_Bombardment_DamageZone" />
+    </SecondarySkillToCast>
+    <ParticleList>
+      <Particle Key="indicator" Name="U_Monster_Alt.RepuBeast.bomb_indicator" Direction="0,1,0" InstantKill="0" />
+    </ParticleList>
+    <Projectile Name="SiegeBeast_Bombardment_proj" ProjectileCount="4" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="0.5" CastMode="FromSky">
+      <CastAttributes OnTarget="1" StartZOffset="16" AngleFromZAxis="0" ZPadding="0" LockTarget="1" />
+    </Specific_AI_Default_GenericProjectiles>
+    <SoundTrigger OnAnimStart="" OnAnimCast="" OnHit="Play_hero_default_damage_large" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_Named_SiegeBeast_Bombardment" ESkill="AI_Default_GenericProjectiles" Keywords="projectile,magic_spell">
+    <Targeting TargetingType="target" />
+    <Collisions IgnoreEntityCollisions="1" />
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier=".7" />
+    <CastingParams MaximumTurnRate="360" CastBone="Bip01 Canon02" CasterImmobilizationTime="1" MaximumTargetingHalfAngle="10" CanBeInterrupted="0" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <Cooldown Cooldown="20.0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Explosion ExplosionRadius="3" />
+    <Range AttackRange="50" />
+    <Projectile Name="Named_SiegeBeast_Bombardment_proj" ProjectileCount="6" />
+    <Specific_AI_Default_GenericProjectiles TimeBetweenProjectiles="1" CastMode="FromSky">
+      <CastAttributes OnTarget="1" StartZOffset="20" AngleFromZAxis="0" ZPadding="0" LockTarget="0" />
+    </Specific_AI_Default_GenericProjectiles>
+    <SoundTrigger OnAnimStart="" OnAnimCast="" OnHit="Play_hero_default_damage_large" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_SiegeBeast_Bombardment_DamageZone" ESkill="AI_default_projectileskillwithdamagezone_damagezone" Keywords="magic_spell">
+    <DamageWeapon Type="Lightning" WeaponMultiplier=".7" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="SiegeBeast_Bombardment_DZ" />
+    </DamageZone>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="defaultweaponhit_medium" TrailPresetBase="default" />
+    <SoundTrigger OnAnimStart="Play_Republic_Siegebeast_Bombardment_Shower" OnAnimCast="" OnHit="Play_hero_default_damage_large" PlayAttackVoice="0" />
+  </Skill>
+  <Skill UID="AI_Named_SiegeBeast_JusticeFromAbove" ESkill="AI_REPU_Golgoth_JusticeFromAbove" Keywords="magic_spell">
+    <Animation ActionString="monster_skill_01" ScaleWithCastSpeed="1" AnimationDrivenMovement="0" />
+    <Cooldown Cooldown="3" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="2.25" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="REPU_Golgoth_JusticeFromAbove_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Indicator" Name="U_Monster_Alt.golgoth.jfa_indicator" Offset="0,0,0" Direction="-1,0,0" Scale="0.6" InstantKill="0" />
+    </ParticleList>
+    <Targeting TargetingType="Directional" />
+    <Projectile Name="Named_SiegeBeast_justicefromabove_bolt_proj" ProjectileCount="1" AngleBetweenProjectiles="180" PenetrationLimit="0" />
+    <SkillSpecific ProjectileLaunchTickRate="1" ProjectileSpawnRadiusIn="2" ProjectileSpawnRadiusOut="2" />
+    <SoundTrigger OnAnimCast="Play_Republic_Golgoth_JusticeFromAbove_Fire" OnAnimStart="Play_Republic_Golgoth_JusticeFromAbove_ChargeUp" OnHit="Play_staff_electric_storm_strike" />
+  </Skill>
+</MetaData>

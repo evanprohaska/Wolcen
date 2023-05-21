@@ -1,0 +1,246 @@
+<MetaData>
+  <Quest Name="ACT3_Quest2" StartDialog="" Type="Main" UIName="@ui_A3_Q2_QuestLabel" UIDesc="" BoundToMap="Wolcen_ACT3">
+    <Step Order="0" UIName="@ui_A3_Q2_S1_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="DungeonEntrance_RedWaste1" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_RedWaste1" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="DungeonEntrance_RedWaste1" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_RedWaste1" Area="ACT3_Nowhere" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Wait" ReferenceEntityName="" TimeLimit="5" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q2_S1_ClearUI" />
+      <Event Trigger="OnLoading" MinimumRadius="0" MaximumRadius="9" SpawnFrequency="0" Type="EntitySpawn" Name="A3_Q2_S1_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A3_Q2_S1_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith" Delay="2" />
+    </Step>
+    <Step Order="1" UIName="@ui_A3_Q2_S2_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="Act3_RedWaste1_Exit" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Act3_RedWaste1_Exit" Area="Act3_Redwaste1" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="Act3_RedWaste1_Exit" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Act3_RedWaste1_Exit" Area="Act3_Redwaste1" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Vote" VotePreset="VotePreset_ACT3_RW1_WW1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_Nowhere_to_InnerSanctum" Area="Act3_Redwaste1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q2_S1_ClearUI" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="Act3_RedWaste1_Entrance" AreaRadius="20" Type="GlobalDialog" Name="ACT3_Quest2_RW1_Valeria2" DialogName="ACT3_Quest2_RW1_Valeria2" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="ActionDungeonNextLevel" Name="A3_Q2_S2_FilterRedwasteExit" EntityName="Act3_RedWaste1_Exit" Activate="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A3_Q2_S2_WorldWar1Cutscene" SequenceName="A3_WORLDWAR1" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="ActionDungeonNextLevel" Name="A3_Q2_S2_UnfilterRedwasteExit" EntityName="Act3_RedWaste1_Exit" Activate="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q2_S2_WorldWar1Cutscene" Type="EntityTeleport" MinRadius="1" Name="A3_Q2_S2_Player_Tp" TeleportedEntityName="#Player" DestinationName="SpawnPoint_TrenchesFromRedWaste1" />
+      <Event Trigger="LeaveAreaOne" CenterEntityName="Act3_RedWaste1_Entrance" AreaRadius="250" Type="GlobalDialog" Name="ACT3_Quest2_RW1_Valeria1" DialogName="ACT3_Quest2_RW1_Valeria1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Act3_RedWaste1_Exit" AreaRadius="150" Type="GlobalDialog" Name="ACT3_Quest2_RW1_Valeria3" DialogName="ACT3_Quest2_RW1_Valeria3" />
+    </Step>
+    <Step Order="2" UIName="@ui_A3_Q2_S3_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="DungeonEntrance_Redwaste2" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_Redwaste2" Area="ACT3_BattlefieldOverlook" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="DungeonEntrance_Redwaste2" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="DungeonEntrance_Redwaste2" Area="ACT3_BattlefieldOverlook" Threshold="85" />
+      </Goal>
+      <Goal Order="2" Type="Wait" ReferenceEntityName="" TimeLimit="2" />
+      <GoalLogic Formula="00-01-02" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q2_S3_ClearUI" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="DungeonEntrance_Redwaste2" AreaRadius="150" Type="GlobalDialog" Name="ACT3_Quest2_RWO_Valeria3" DialogName="ACT3_Quest2_RWO_Valeria3" Delay="4" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="9" SpawnFrequency="0" Name="A3_Q2_S3_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="#Player" FaceAtSpawn="" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A3_Q2_S3_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith" Delay="2" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="StepUpdate" Name="A3_Q2_S3_Goal3" Localization="" DisplayNewIcon="1" />
+    </Step>
+    <Step Order="3" UIName="@ui_A3_Q2_S4_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="SpawnPoint_TrenchesFromRedWaste2" Radius="100" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="Act3_RedWaste2_Exit" Area="Act3_Redwaste2" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q2_S4_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntitySound" Name="A3_Q2_S4_CanonSound" EntityName="#Player" SoundName="Play_DYN_ACT3_FederatorCannon_DistantSound" Delay="2" />
+      <Event Trigger="EventEnd" EventName="A3_Q2_S4_CanonSound" Type="GlobalDialog" Name="ACT3_Quest2_RW2_Valeria4" DialogName="ACT3_Quest2_RW2_Valeria4" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Act3_RedWaste2_Exit" AreaRadius="100" Type="GlobalDialog" Name="ACT3_Quest2_RW2_Valeria5" DialogName="ACT3_Quest2_RW2_Valeria5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Act3_RedWaste2_Exit" AreaRadius="100" Type="QuestMarker" Name="ACT3_Quest2_RW2_Marker" TargetName="Act3_RedWaste2_Exit" AreaName="Act3_Redwaste2" Distance="100" />
+    </Step>
+    <Step Order="4" UIName="@ui_A3_Q2_S5_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Go" Destination="QP_ACT3_Q2_S2_TrenchesEventTrigger" Radius="30" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_ACT3_Q2_S2_TrenchesEventTrigger" Area="ACT3_RepublicanTrenchWarfare" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q2_S5_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" Name="A3_Q2_S5_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="#Player" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="9" SpawnFrequency="0" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A3_Q2_S5_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Veteran1" AreaRadius="45" Type="GlobalDialog" Name="ACT3_Quest2_RWT_Republicans1" DialogName="ACT3_Quest2_RWT_Republicans1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Veteran1" AreaRadius="50" Type="EntitySpawn" Name="A3_Q2_S5_VeteranSpawn1" SpawnClass="Sc_Sty_AC3_REPU_V1" TargetEntityName="QP_Q2_S5_Veteran1" FaceAtSpawn="QP_Q2_S5_Veteran2" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Veteran1" AreaRadius="50" Type="EntitySpawn" Name="A3_Q2_S5_VeteranSpawn2" SpawnClass="Sc_Sty_AC3_REPU_V2" TargetEntityName="QP_Q2_S5_Veteran2" FaceAtSpawn="QP_Q2_S5_Veteran1" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Isolated" AreaRadius="145" Type="GlobalDialog" Name="ACT3_Quest2_RWT_Republicans2" DialogName="ACT3_Quest2_RWT_Republicans2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_CounterBattery" AreaRadius="20" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre2_6a" DialogName="ACT3_Quest2_RWT_TrenchMassacre2_6a" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_CounterBattery" AreaRadius="10" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre2_6b" DialogName="ACT3_Quest2_RWT_TrenchMassacre2_6b" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_RepuLeaving" AreaRadius="42" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre1" DialogName="ACT3_Quest2_RWT_TrenchMassacre1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_StaringBack" AreaRadius="7" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre2_2" DialogName="ACT3_Quest2_RWT_TrenchMassacre2_2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Wounded" AreaRadius="50" Type="EntitySpawn" Name="A3_Q2_S5_WoundedSpawn1" SpawnClass="Sc_Sty_AC3_REPU_IS_16" TargetEntityName="QP_Q2_S5_Wounded" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Wounded" AreaRadius="15" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre2_5" DialogName="ACT3_Quest2_RWT_TrenchMassacre2_5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Isolated" AreaRadius="19" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre2_4" DialogName="ACT3_Quest2_RWT_TrenchMassacre2_4" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Pacification" AreaRadius="10" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre4" DialogName="ACT3_Quest2_RWT_TrenchMassacre4" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Retreat" AreaRadius="13" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre2_3" DialogName="ACT3_Quest2_RWT_TrenchMassacre2_3" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="RepublicanSoldier_24" AreaRadius="30" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre5" DialogName="ACT3_Quest2_RWT_TrenchMassacre5" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Gunners" AreaRadius="30" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre2_6c" DialogName="ACT3_Quest2_RWT_TrenchMassacre2_6c" />
+      <Event Trigger="EventEnd" EventName="ACT3_Quest2_RWT_TrenchMassacre2_6c" Type="ActionParticleEmitter" Name="ACT3_Quest2_RWT_TrenchMassacre2_6c_FX" EmitterEntityName="explosions.C4_explosion.c3" Activate="1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Gunners" AreaRadius="50" Type="EntitySpawn" Name="A3_Q2_S5_GunnerSpawn1" SpawnClass="Sc_Sty_AC3_REPU_IS_9" TargetEntityName="QP_Q2_S5_Gunners" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Gunners" AreaRadius="50" Type="EntitySpawn" Name="A3_Q2_S5_GunnerSpawn2" SpawnClass="Sc_Sty_AC3_REPU_IS_10" TargetEntityName="QP_Q2_S5_Gunners" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Gunners" AreaRadius="20" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre2_1" DialogName="ACT3_Quest2_RWT_TrenchMassacre2_1" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Panicked" AreaRadius="25" Type="EntitySpawn" Name="A3_Q2_S5_PanickedSpawn1" SpawnClass="Sc_Sty_AC3_REPU_IS_20" TargetEntityName="QP_Q2_S5_Panicked" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Panicked" AreaRadius="25" Type="EntitySpawn" Name="A3_Q2_S5_PanickedSpawn2" SpawnClass="Sc_Sty_AC3_REPU_IS_21" TargetEntityName="QP_Q2_S5_Panicked2" FaceAtSpawn="" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="QP_Q2_S5_Panicked" AreaRadius="25" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre2_7" DialogName="ACT3_Quest2_RWT_TrenchMassacre2_7" Delay=".2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="ClickableEntity_A3_Q2_S5_Event" AreaRadius="100" Type="GlobalDialog" Name="ACT3_Quest2_RWT_TrenchMassacre6" DialogName="ACT3_Quest2_RWT_TrenchMassacre6" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="CheckPoint_TrenchesEvent" AreaRadius="15" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_TrenchesEvent_CP" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="Waypoint_Stormfall" AreaRadius="45" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_TrenchesEvent_SF" CheckpointEntityName="" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Start_FuryPortalLeft" EntityNames="FuryPortal_Left" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Start_FuryPortalRight" EntityNames="FuryPortal_Right" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_FurySpark_Slow" EntityNames="FurySpark_A3_Slow" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_FurySpark_Slow_AreaTrigger" EntityNames="FurySpark_A3_Slow_AreaTrigger" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_FurySpark_Fast" EntityNames="FurySpark_A3_Fast" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_FurySpark_Fast_AreaTrigger" EntityNames="FurySpark_A3_Fast_AreaTrigger" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Heimlock_KO" EntityNames="Heimlock_KO" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityAnimate" Name="Heimlock_ResetEventKO" AnimatedEntityName="Heimlock_KO" Play="repu_heimlock_cine_winningmental_loop_01" Loop="1" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Hide_Reset_FXCollider" EmitterEntityName="FXBlockingRoad_TrenchesEvent" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Reset_Heimlock_Collision" EntityNames="Heimlock_Collision" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Heimlock_Aura_Off_Reset" EmitterEntityName="Heimlock_Aura" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Heimlock_ShockWave_Off_Reset" EmitterEntityName="Heimlock_ShockWave" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Unhide_Reset_EventClickable" EntityNames="ClickableEntity_A3_Q2_S5_Event" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="Activate_Reset_EventClickable" ClickableEntityName="ClickableEntity_A3_Q2_S5_Event" MakeClickable="1" FilterEvents="" />
+    </Step>
+    <Step Order="5" UIName="@ui_A3_Q2_S6_StepNameLabel" AutoClearEvents="1" Save="0" CheckPoint="" IgnoreAutomaticStepUIUpdate="1">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_A3_Q2_S5_Event" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_A3_Q2_S5_Event" Area="ACT3_RepublicanTrenchWarfare" Threshold="85" />
+      </Goal>
+      <Goal Order="1" Type="Vote" VotePreset="VotePreset_ACT3_Trenches" GameplayEventPresetName="ACT3_Trenches" />
+      <Goal Order="2" Type="Kill" ClassToKill="Trenches_InfantrySword,Trenches_Veteran" KillCount="15">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="PacifiedInfantrySword" Area="ACT3_RepublicanTrenchWarfare" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="PacifiedInfantryRanged" Area="ACT3_RepublicanTrenchWarfare" Threshold="85" />
+      </Goal>
+      <Goal Order="3" Type="Go" Destination="QP_Unreachable" Radius="15" RequireAllPlayers="0">
+        <ArrowMarker ShowMinimapIcon="0" ShowOnWorldmap="1" Target="QP_SoldierSpawn" Area="ACT3_RepublicanTrenchWarfare" Threshold="85" />
+      </Goal>
+      <Goal Order="4" Type="Impossible" />
+      <Goal Order="5" Type="Wait" TimeLimit="35" />
+      <Goal Order="6" Type="Kill" ClassToKill="Trenches_Golgoth,Trenches_Enforcer" KillCount="2">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Instigator_3" Area="ACT3_RepublicanTrenchWarfare" Threshold="85" />
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Trenches_Golgoth" Area="ACT3_RepublicanTrenchWarfare" Threshold="85" />
+      </Goal>
+      <Goal Order="7" Type="Wait" TimeLimit="11.5" />
+      <Goal Order="8" Type="Talk" EntityName="Heimlock" DialogName="ACT3_Quest2_RWT_HeimlockTalk1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="Heimlock" VFX="U_Utils.Quest.Objective" VFXOffsetZ="4" Area="ACT3_RepublicanTrenchWarfare" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01-02-03-04-05-06-07-08" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_EventStart" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventStart" ContextualMessage="@ui_A3_Q2_S6_UpdateStepNameLabel1" DisplayTime="3" />
+      <Event Trigger="GoalSuccess" GoalIndex="8" Type="GlobalAnnouncement" Name="A1_Q2_EA_AN_EventEnd" UIReference="EventAnnouncement" AnnouncementName="@ui_All_EA_AN_EventEnd" ContextualMessage="" DisplayTime="2" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q2_S6_ClearUI" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Show_Heimlock_KO_Init" EntityNames="Heimlock_KO" Hide="1" />
+      <Event Trigger="GoalFailure" GoalIndex="1" Type="GlobalReleaseGameplayEvent" Name="Vote_Failure_TrenchesEvent" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityTeleport" Name="A3_Q2_S6_Player_Tp" MinRadius="1" TeleportedEntityName="#Player" DestinationName="QP_A3_Q2_S6_EventPlayerSpawn" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntitySpawn" Name="FurySoldier_Spawn" MinimumRadius="0" MaximumRadius="6" SpawnFrequency="0" SpawnClass="sc_PreSpawn_TrenchesEvent" TargetEntityName="QP_SoldierSpawn" FaceAtSpawn="#Player" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalCheckpoint" Name="SetGlobalCheckpoint_TrenchesEvent" CheckpointEntityName="CheckPoint_TrenchesEvent" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ActionParticleEmitter" Name="Unhide_FXCollider" EmitterEntityName="FXBlockingRoad_TrenchesEvent" Activate="1" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="EntityIsHidden" Name="Unhide_Heimlock_Collision" EntityNames="Heimlock_Collision" Hide="0" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="GlobalRevivePlayers" Name="RevivePlayer_StartEventTrenches" RevivePostion="" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="EntityIsHidden" Name="Hide_Start_FuryPortalToRampart" EntityNames="ClickableEntity_RepublicanTrenches_to_Rempart1" Hide="1" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ActionClickable" Name="Deactivate_Start_FuryPortalToRampart" ClickableEntityName="ClickableEntity_RepublicanTrenches_to_Rempart1" MakeClickable="0" FilterEvents="" />
+      <Event Trigger="GoalSuccess" GoalIndex="1" Type="ActionClickable" Name="Deactivate_Start_EventClickable" ClickableEntityName="ClickableEntity_A3_Q2_S5_Event" MakeClickable="0" FilterEvents="" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="GlobalMusic" Name="A3_TrenchesEvent_StartMusic" MusicName="ACT3_ProtectHeimlock" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="GlobalMusic" Name="A3_TrenchesEvent_StopMusic" MusicName="ACT3_Trenches" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityKill" Name="A3_Q2_S6_ResetRemoveValeria_2" EntityName="Valeria" Hide="1" Remove="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntitySpawn" MinimumRadius="2" MaximumRadius="5" SpawnFrequency="0" Name="A3_Q2_S6_ResetValeriaSpawn_2" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q2_S6_ResetValeriaSpawn_2" Type="GlobalDialog" Name="Start_Talk1" DialogName="ACT3_Quest2_RWT_ThreePortals1" Delay="0.5" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="StepUpdate" Name="A3_Q2_S6_Goal3" Localization="@ui_A3_Q2_S6_UpdateStepNameLabel1" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="2" Type="EntityFollow" Name="A3_Q2_S6_ResetValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith" Delay="2.5" />
+      <Event Trigger="GoalSuccess" GoalIndex="2" Type="GlobalDialog" Name="Start_Talk2" DialogName="ACT3_Quest2_RWT_ThreePortals2" Delay="1.5" />
+      <Event Trigger="EventEnd" EventName="Start_Talk2" Type="GlobalRevivePlayers" RevivePostion="" Name="Revive_Cutscene_Trenches" Delay="0" />
+      <Event Trigger="EventEnd" EventName="Start_Talk2" Type="ActionSequence" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" Name="A3_Q2_S2_FaceOff1Cutscene" SequenceName="A3_FACEOFF" Delay="0" />
+      <Event Trigger="EventStart" EventName="A3_Q2_S2_FaceOff1Cutscene" Type="ActionParticleEmitter" Name="Hide_Cutscene_FX" EmitterEntityName="FXBlockingRoad_TrenchesEvent" Activate="0" />
+      <Event Trigger="EventEnd" EventName="A3_Q2_S2_FaceOff1Cutscene" Type="ActionParticleEmitter" Name="Unhide_Cutscene_FX" EmitterEntityName="FXBlockingRoad_TrenchesEvent" Activate="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q2_S2_FaceOff1Cutscene" Type="GoalAchieve" Name="A3_Q2_S2_GoalAchieve1" SimulateOnly="1" GoalIndexToAchieve="-1" />
+      <Event Trigger="EventEnd" EventName="A3_Q2_S2_FaceOff1Cutscene" Type="EntityIsHidden" Name="Show_Heimlock_KO" EntityNames="Heimlock_KO" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A3_Q2_S2_FaceOff1Cutscene" Type="ActionParticleEmitter" Name="Heimlock_Aura_On" EmitterEntityName="Heimlock_Aura" Activate="1" />
+      <Event Trigger="EventEnd" EventName="A3_Q2_S2_FaceOff1Cutscene" Type="EntityIsHidden" Name="Unhide_Wave1_FuryPortalLeft" EntityNames="FuryPortal_Left" Hide="0" />
+      <Event Trigger="EventEnd" EventName="A3_Q2_S2_FaceOff1Cutscene" Type="EntityIsHidden" Name="Unhide_Wave1_FuryPortalRight" EntityNames="FuryPortal_Right" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="ArenaStart" Name="A3_Q2_S6_StartArena" ArenaPreset="TrenchesEvent_Act3" LocationEntityName="TrenchesEvent_Act3" EntityToFollow="" />
+      <Event Trigger="ArenaWon" ArenaStartEventName="A3_Q2_S6_StartArena" Type="GoalAchieve" GoalIndexToAchieve="4" Name="A3_Q2_S6_Arena_Victory" />
+      <Event Trigger="GoalStart" GoalIndex="4" Type="StepUpdate" Name="A3_Q2_S6_Goal5" Localization="@ui_A3_Q2_S6_UpdateStepNameLabel2" DisplayNewIcon="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="A3_Q2_S6_StartArena" WaveIndex="1" Type="GlobalDialog" Name="Children_Talk_1" DialogName="ACT3_Quest2_RWT_FirstWave1" Delay="2.5" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="A3_Q2_S6_StartArena" WaveIndex="2" Type="GlobalDialog" Name="Children_Talk_2" DialogName="ACT3_Quest2_RWT_SecondWave1" Delay="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="A3_Q2_S6_StartArena" WaveIndex="2" Type="EntityIsHidden" Name="Start_FurySpark_A3_Slow" EntityNames="FurySpark_A3_Slow" Hide="0" Delay="2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="A3_Q2_S6_StartArena" WaveIndex="2" Type="EntityIsHidden" Name="Start_FurySpark_Slow_AreaTrigger" EntityNames="FurySpark_A3_Slow_AreaTrigger" Hide="0" Delay="2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="A3_Q2_S6_StartArena" WaveIndex="3" Type="GlobalDialog" Name="Children_Talk_3" DialogName="ACT3_Quest2_RWT_ThirdWave1" Delay="1" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="A3_Q2_S6_StartArena" WaveIndex="3" Type="EntityIsHidden" Name="End_FurySpark_A3_Slow" EntityNames="FurySpark_A3_Slow" Hide="1" Delay="2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="A3_Q2_S6_StartArena" WaveIndex="2" Type="EntityIsHidden" Name="End_FurySpark_Slow_AreaTrigger" EntityNames="FurySpark_A3_Slow_AreaTrigger" Hide="1" Delay="2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="A3_Q2_S6_StartArena" WaveIndex="3" Type="EntityIsHidden" Name="Start_FurySpark_A3_Fast" EntityNames="FurySpark_A3_Fast" Hide="0" Delay="2" />
+      <Event Trigger="ArenaWaveStart" ArenaStartEventName="A3_Q2_S6_StartArena" WaveIndex="3" Type="EntityIsHidden" Name="Start_FurySpark_Fast_AreaTrigger" EntityNames="FurySpark_A3_Fast_AreaTrigger" Hide="0" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="Hide_Win_Heimlock_Collision" EntityNames="Heimlock_Collision" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntitySpawn" Name="Spawn_UberGolgoth1_TrenchesEvent" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" SpawnClass="sc_UberGolgoth_TrenchesEvent1" TargetEntityName="Spawn_UberGolgoth3" FaceAtSpawn="#Player" Delay="3" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntitySpawn" Name="Spawn_UberGolgoth2_TrenchesEvent" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" SpawnClass="sc_UberGolgoth_TrenchesEvent2" TargetEntityName="Spawn_UberGolgoth2" FaceAtSpawn="#Player" Delay="3" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntitySpawn" Name="Spawn_UberGolgoth3_TrenchesEvent" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" SpawnClass="sc_UberGolgoth_TrenchesEvent3" TargetEntityName="Spawn_UberGolgoth1" FaceAtSpawn="#Player" Delay="3" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="End_FurySpark_A3_Fast" EntityNames="FurySpark_A3_Fast" Hide="1" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="End_FurySpark_A3_Fast_AreaTrigger" EntityNames="FurySpark_A3_Fast_AreaTrigger" Hide="1" Delay="1" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalDialog" Name="Children_Talk_4" DialogName="ACT3_Quest2_RWT_Transition1" Delay="4" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityAnimate" Name="Heimlock_WinningInnerDemon" AnimatedEntityName="Heimlock_KO" Play="repu_heimlock_cine_winningmental_standup_01" Loop="0" Delay="14" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalDialog" Name="Heimlock_revive_Talk1" DialogName="ACT3_Quest2_RWT_Transition2" Delay="16.25" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="Heimlock_ShockWave" EmitterEntityName="Heimlock_ShockWave" Activate="1" Delay="17" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="Heimlock_Aura_Off" EmitterEntityName="Heimlock_Aura" Activate="0" Delay="17.5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="Hide_PortalLeft_Final" EmitterEntityName="FuryPortal_Left" Activate="0" Delay="17.5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="Hide_PortalRight_Final" EmitterEntityName="FuryPortal_Right" Activate="0" Delay="17.5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="Hide_PortalLeft_Final_Cutscene" EmitterEntityName="ParticleEffect_A3_Faceoff_Gate2" Activate="0" Delay="17.5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="ActionParticleEmitter" Name="Hide_PortalRight_Final_Cutscene" EmitterEntityName="ParticleEffect_A3_Faceoff_Gate3" Activate="0" Delay="17.5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityKill" Name="Kill_UberGolgoth1" EntityName="Trenches_UberGolgoth1" Hide="0" Remove="0" Delay="17.5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityKill" Name="Kill_UberGolgoth2" EntityName="Trenches_UberGolgoth2" Hide="0" Remove="0" Delay="17.5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityKill" Name="Kill_UberGolgoth3" EntityName="Trenches_UberGolgoth3" Hide="0" Remove="0" Delay="17.5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityKillAll" Name="Kill_FurySpark_Instigator" MonsterClass="FurySpark_Instigator" Area="ACT3_RepublicanTrenchWarfare" Delay="17.5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="GlobalDialog" Name="Heimlock_revive_Talk2" DialogName="ACT3_Quest2_RWT_Transition3" Delay="19.5" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityIsHidden" Name="Hide_End_Heimlock_KO" EntityNames="Heimlock_KO" Hide="1" Delay="35" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q2_S6_HeimlockSpawn" SpawnClass="Sc_Sty_AC3_QH" TargetEntityName="Spawn_EscortHeimlock" FaceAtSpawn="Spawn_EscortHeimlock_Direction" Delay="35" />
+      <Event Trigger="GoalStart" GoalIndex="5" Type="EntityFollow" Name="A3_Q2_S6_HeimlockFollow" FollowerEntityName="Heimlock" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith" Delay="36" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="StepUpdate" Name="A3_Q2_S6_Goal7" Localization="@ui_A3_Q2_S6_UpdateStepNameLabel3" DisplayNewIcon="1" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q2_S6_GolgothSpawn" SpawnClass="sc_BossGolgoth_TrenchesEvent" TargetEntityName="Spawn_Golgoth" FaceAtSpawn="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="1" SpawnFrequency="0" Name="A3_Q2_S6_EnforcerSpawn" SpawnClass="sc_BossEnforcer_TrenchesEvent" TargetEntityName="Spawn_Enforcer" FaceAtSpawn="#Player" Delay="0.5" />
+      <Event Trigger="GoalStart" GoalIndex="6" Type="GlobalDialog" DialogName="ACT3_Quest2_RWT_NewInstigator1" Name="EndBoss_Talk1" Delay="1.5" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="Instigator_3" PercentLeft="65" Type="GlobalDialog" DialogName="ACT3_Quest2_RWT_NewInstigator2" Name="EndBoss_Talk2" />
+      <Event Trigger="GoalSuccess" GoalIndex="6" Type="GlobalDialog" DialogName="ACT3_Quest2_RWT_Victory1" Name="EndBoss_Talk3" Delay="1.5" />
+      <Event Trigger="GoalStart" GoalIndex="7" Type="StepUpdate" Name="A3_Q2_S6_Goal8" Localization="@ui_A3_Q2_S6_UpdateStepNameLabel4" DisplayNewIcon="1" />
+      <Event Trigger="PlayerWipe" Type="GlobalReleaseGameplayEvent" Name="EventSlotRelease_Lost_TrenchesEvent" />
+      <Event Trigger="PlayerWipe" Type="EventEnd" Name="StepFail_EventEndRevive" EventsName="Start_Talk2" TriggerEnd="0" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="StopAllDialogs_TrenchesEvent" />
+      <Event Trigger="PlayerWipe" Type="EntityKill" Name="KillHeimlock_TrenchesEvent" EntityName="Heimlock" Hide="1" Remove="0" />
+      <Event Trigger="PlayerWipe" Type="EntityKill" Name="KillVeteran_TrenchesEvent" EntityName="Trenches_Veteran" Hide="1" Remove="0" />
+      <Event Trigger="PlayerWipe" Type="EntityKill" Name="KillInfantry_TrenchesEvent" EntityName="Trenches_InfantrySword" Hide="1" Remove="0" />
+      <Event Trigger="PlayerWipe" Type="EntityKill" Name="KillGolgoth_TrenchesEvent" EntityName="Trenches_Golgoth" Hide="1" Remove="0" />
+      <Event Trigger="PlayerWipe" Type="EntityKill" Name="KillEnforcer_TrenchesEvent" EntityName="Instigator_3" Hide="1" Remove="0" />
+      <Event Trigger="PlayerWipe" Type="EntityKill" Name="Kill_UberGolgoth1_Wipe" EntityName="Trenches_UberGolgoth1" Hide="1" Remove="0" />
+      <Event Trigger="PlayerWipe" Type="EntityKill" Name="Kill_UberGolgoth2_Wipe" EntityName="Trenches_UberGolgoth2" Hide="1" Remove="0" />
+      <Event Trigger="PlayerWipe" Type="EntityKill" Name="Kill_UberGolgoth3_Wipe" EntityName="Trenches_UberGolgoth3" Hide="1" Remove="0" />
+      <Event Trigger="PlayerWipe" Type="StepFail" Name="StepFail_TrenchesEvent" RollbackToPreviousStep="1" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="9" SpawnFrequency="0" Name="A3_Q2_S6_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A3_Q2_S6_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith" Delay="2" />
+      <Reward ShowRewardPanel="Classic" Order="1">
+        <Gold Amount="10000" />
+        <XP Amount="400000" />
+        <ChoiceLootClass Name="A3_Q2_Reward" MinItemNumber="4" MaxItemNumber="4" SortByRarity="1" />
+      </Reward>
+    </Step>
+    <Step Order="6" UIName="@ui_A3_Q2_S7_StepNameLabel" AutoClearEvents="0" Save="1" CheckPoint="">
+      <Goal Order="0" Type="Interact" Names="ClickableEntity_RepublicanTrenches_to_Rempart1" InteractCount="1">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="1" Target="ClickableEntity_RepublicanTrenches_to_Rempart1" Area="ACT3_RepublicanTrenchWarfare" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00" />
+      <Event Trigger="Instant" Type="QuestClearUI" StepToKeep="2" Name="A3_Q2_S7_ClearUI" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="9" SpawnFrequency="0" Name="A3_Q2_S7_ValeriaSpawn" SpawnClass="Sc_Sty_AC3_QVV1" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A3_Q2_S7_ValeriaFollow" FollowerEntityName="Valeria" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith" Delay="2" />
+      <Event Trigger="OnLoading" Type="EntitySpawn" MinimumRadius="0" MaximumRadius="9" SpawnFrequency="0" Name="A3_Q2_S7_HeimlockSpawn" SpawnClass="Sc_Sty_AC3_QH" TargetEntityName="#Player" FaceAtSpawn="" Delay="1" />
+      <Event Trigger="OnLoading" Type="EntityFollow" Name="A3_Q2_S7_HeimlockFollow" FollowerEntityName="Heimlock" Follow="#Player" Constraints="not:ACT3_Stormfall,ACT3_DawnGateHall,Act3_TempleOfSerenity_WingOfWar,Act3_TempleOfSerenity_WingOfFaith,ACT3_Nowhere" Delay="2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Unhide_FuryPortalToRampart" EntityNames="ClickableEntity_RepublicanTrenches_to_Rempart1" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionClickable" Name="Activate_Final_FuryPortalToRampart" ClickableEntityName="ClickableEntity_RepublicanTrenches_to_Rempart1" MakeClickable="1" FilterEvents="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalReleaseGameplayEvent" Name="EventSlotRelease_Win_TrenchesEvent" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Win_RoadCollider" EntityNames="BlockingRoad_TrenchesEvent" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Hide_Win_FXCollider" EmitterEntityName="FXBlockingRoad_TrenchesEvent" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalCheckpoint" Name="ResetGlobalCheckpoint_TrenchesEvent_Win" CheckpointEntityName="" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionParticleEmitter" Name="Hide_Win_FuryPortalTop" EmitterEntityName="FuryPortal_Top" Activate="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Hide_Final_EventClickable" EntityNames="ClickableEntity_A3_Q2_S5_Event" Hide="1" />
+    </Step>
+  </Quest>
+</MetaData>

@@ -1,0 +1,77 @@
+<MetaData>
+  <Trap Name="trap_outlaw_trapper_carpetmines">
+    <Trigger TriggerDelay="1" SpawnMinesPreTriggered="1" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="3" TriggerOnRemove="1" />
+    <States>
+      <Activated>
+        <Particle Name="U_Projectile.Bomb.Bomb_Trapper_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Trapper_Bomb_Fuse_Loop" StopAtStateReached="Triggered" StopTrigger="Stop_Trapper_Bomb_Fuse_Loop" />
+      </Activated>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Fire_3m_Secondary" Direction="0,0,1" Scale="0.45" />
+        <Audio Trigger="Play_Trapper_Bomb_Impact" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_outlaw_trapper_S_carpetmines">
+    <Trigger TriggerDelay="1" SpawnMinesPreTriggered="1" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="3" TriggerOnRemove="1" />
+    <States>
+      <Activated>
+        <Particle Name="U_Projectile.Bomb.Bomb_Character_Shadow_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Trapper_Bomb_Fuse_Loop" StopAtStateReached="Triggered" StopTrigger="Stop_Trapper_Bomb_Fuse_Loop" />
+      </Activated>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Shadow_3m_Secondary" Scale="0.45" Direction="0,0,1" />
+        <Audio Trigger="Play_Trapper_Bomb_Impact" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_outlaw_trapper_sacred_carpetmines">
+    <Trigger TriggerDelay="1" SpawnMinesPreTriggered="1" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="3" TriggerOnRemove="1" />
+    <States>
+      <Activated>
+        <Particle Name="U_Projectile.Bomb.Bomb_Character_Sacred_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Trapper_Bomb_Fuse_Loop" StopAtStateReached="Triggered" StopTrigger="Stop_Trapper_Bomb_Fuse_Loop" />
+      </Activated>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Sacred_3m_Secondary" Scale="0.45" Direction="0,0,1" />
+        <Audio Trigger="Play_Trapper_Bomb_Impact" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_outlaw_trapper_Aether_carpetmines">
+    <Trigger TriggerDelay="1" SpawnMinesPreTriggered="1" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="3" TriggerOnRemove="1" />
+    <States>
+      <Activated>
+        <Particle Name="U_Projectile.Bomb.Bomb_Character_Aether_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Trapper_Bomb_Fuse_Loop" StopAtStateReached="Triggered" StopTrigger="Stop_Trapper_Bomb_Fuse_Loop" />
+      </Activated>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Aether_3m_Secondary" Scale="0.45" Direction="0,0,1" />
+        <Audio Trigger="Play_Trapper_Bomb_Impact" />
+      </Triggered>
+    </States>
+  </Trap>
+  <Trap Name="trap_outlaw_trapper_frost_carpetmines">
+    <Trigger TriggerDelay="1" SpawnMinesPreTriggered="1" />
+    <Explosion UseSkillComponentExplosion="1" />
+    <LifeTime TimeToLive="600" MaximumInWorld="3" TriggerOnRemove="1" />
+    <States>
+      <Activated>
+        <Particle Name="U_Projectile.Bomb.Bomb_Character_Frost_01" Direction="0,0,1" />
+        <Audio Trigger="Play_Trapper_Bomb_Fuse_Loop" StopAtStateReached="Triggered" StopTrigger="Stop_Trapper_Bomb_Fuse_Loop" />
+      </Activated>
+      <Triggered>
+        <Particle Name="U_Monster.Trapper.Explosion_Bomb_01_Frost_3m_Secondary" Scale="0.45" Direction="0,0,1" />
+        <Audio Trigger="Play_Trapper_Bomb_Impact" />
+      </Triggered>
+    </States>
+  </Trap>
+</MetaData>

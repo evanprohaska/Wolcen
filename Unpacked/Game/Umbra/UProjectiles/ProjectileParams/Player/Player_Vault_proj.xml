@@ -1,0 +1,177 @@
+<MetaData>
+  <Projectile ID="player_vault_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Shadow_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Vault" Rotation="0" Force="2" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Vault_Bomb_Trail_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Vault_BombExplode_Shadow" />
+      <Removed SoundTriggerName="Stop_Skill_Vault_Bomb_Trail_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_vault_proj_poison" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Poison_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Vault" Rotation="0" Force="2" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Vault_Bomb_Trail_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Vault_BombExplode_Toxic" />
+      <Removed SoundTriggerName="Stop_Skill_Vault_Bomb_Trail_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_vault_proj_fire" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Fire_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Vault" Rotation="0" Force="2" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Vault_Bomb_Trail_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Vault_BombExplode_Fire" />
+      <Removed SoundTriggerName="Stop_Skill_Vault_Bomb_Trail_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_vault_proj_aether" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Aether_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Vault" Rotation="0" Force="2" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Vault_Bomb_Trail_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Vault_BombExplode_Aether" />
+      <Removed SoundTriggerName="Stop_Skill_Vault_Bomb_Trail_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_vault_proj_rend" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Rend_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Vault" Rotation="0" Force="2" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Vault_Bomb_Trail_Loop" />
+      <Hit SoundTriggerName="Play_Skill_Vault_BombExplode_Rend" />
+      <Removed SoundTriggerName="Stop_Skill_Vault_Bomb_Trail_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_vault_proj_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Shadow_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Vault" Rotation="0" Force="2" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Vault_Bomb_Trail_Loop" />
+      <Removed SoundTriggerName="Stop_Skill_Vault_Bomb_Trail_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_vault_proj_poison_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Poison_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Vault" Rotation="0" Force="2" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Vault_Bomb_Trail_Loop" />
+      <Removed SoundTriggerName="Stop_Skill_Vault_Bomb_Trail_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_vault_proj_fire_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Fire_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Vault" Rotation="0" Force="2" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Vault_Bomb_Trail_Loop" />
+      <Removed SoundTriggerName="Stop_Skill_Vault_Bomb_Trail_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_vault_proj_aether_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Aether_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Vault" Rotation="0" Force="2" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Vault_Bomb_Trail_Loop" />
+      <Removed SoundTriggerName="Stop_Skill_Vault_Bomb_Trail_Loop" />
+    </Audio>
+  </Projectile>
+  <Projectile ID="player_vault_proj_rend_mine" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="0.5,0.5,0.5" vOffset="0,0,0" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Bomb.Bomb_Character_Rend_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_Vault" Rotation="0" Force="2" Randomize="0" />
+    <Speed SpeedMin="14" SpeedMax="14" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion>
+      <param name="explode_on_end_reach" value="1" />
+    </Explosion>
+    <Audio>
+      <BuildUp SoundTriggerName="" />
+      <Launch SoundTriggerName="Play_Skill_Vault_Bomb_Trail_Loop" />
+      <Removed SoundTriggerName="Stop_Skill_Vault_Bomb_Trail_Loop" />
+    </Audio>
+  </Projectile>
+</MetaData>

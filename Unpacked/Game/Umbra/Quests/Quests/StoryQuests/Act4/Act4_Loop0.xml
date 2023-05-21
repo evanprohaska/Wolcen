@@ -1,0 +1,80 @@
+<MetaData>
+  <Quest Name="ACT4_Loop0" StartDialog="" Type="Main" UIName="@ui_A4_Q2_QuestLabel" UIDesc="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_A4_Q2_S1_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="QP_Act4_Quest1_PlayerSpawn_Start">
+      <Goal Order="0" Type="Impossible">
+        <ArrowMarker ShowMinimapIcon="1" ShowOnWorldmap="0" Target="NPC_END_LOOP1" Area="Stormfall_SFUA" Threshold="85" UseAreaSize="25" VFX="U_Utils.Quest.Objective" VFXOffsetZ="3" />
+      </Goal>
+      <Goal Order="1" Type="Interact" Names="ClickableEntity_palacedoor_ACT4" InteractCount="1">
+        <ArrowMarker Target="ClickableEntity_palacedoor_ACT4" Area="Stormfall_SFUA" ShowMinimapIcon="1" Threshold="85" />
+      </Goal>
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_Hellion_Hide" Modifier="HellionCosmetic" Remove="1" Target="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Ilthain_Hide" EntityNames="SFUA_Ilthain" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Gernese_Hide" EntityNames="SFUA_Gernese" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Damaskus_Hide" EntityNames="SFUA_Damaskus" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_sua_productionUpdated_Hide" EntityNames="AlphaFlow_IncreaseLoop" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_sua_launchQuest_Hide" EntityNames="AlphaFlow_StartFight" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_sua_productionUpdated_Hide3" EntityNames="Act4_sua_productionUpdated" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="Act4_sua_launchQuest_Hide3" EntityNames="Act4_sua_launchQuest" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TenseFamilyMeeting_Valeria_Hide" EntityNames="A4_Valeria_TenseFamily_NPC" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_TenseFamilyMeeting_Heimlock_Hide" EntityNames="A4_Heimlock_TenseFamily_NPC" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_Prefab264_Hide" EntityNames="Prefab264" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_CE_A4_P1_SF_To_FleshArena_Hide" EntityNames="CE_A4_P1_SF_To_FleshArena" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_CE_A4_P1_SF_To_FuryArena_Hide" EntityNames="CE_A4_P1_SF_To_FuryArena" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_CE_A4_P1_SF_To_SoulsArena_Hide" EntityNames="CE_A4_P1_SF_To_SoulsArena" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_SFUA_Zalahir_Hide" EntityNames="AnimObject_Dyn_Zalahir_ZalahirMessage" Hide="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="D_TeleportPlayersInStormfallUnderAttack" MinRadius="2" TeleportedEntityName="#Player" DestinationName="QP_Act4_AhrimanQuest_Spawn_COFY2" PreBlackScreen="3" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_AbruptAwakening" Type="EntityTeleport" Name="D_TeleportPlayersInStormfallUnderAttack2" MinRadius="2" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Start" />
+      <Event Trigger="EventEnd" EventName="D_TeleportPlayersInStormfallUnderAttack2" Type="EntityRotate" Name="D_RotatePlayersInStormfallUnderAttack" RotatedEntityName="#Player" Target="QP_Act4_Quest1_PlayerSpawn_Start" FaceTarget="0" />
+      <Event Trigger="EventEnd" EventName="D_TeleportPlayersInStormfallUnderAttack" Type="ActionSequence" Name="A4_SUA_AbruptAwakening" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="A4_AbruptAwakening" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_AbruptAwakening" Type="GoalAchieve" Name="Achieve" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalMusic" Name="Music_ACT4_Stormfall_PreBossFight" MusicName="ACT4_Stormfall_PreBossFight" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="EntityIsHidden" Name="HideBarricadeCollision" EntityNames="Blocker_A4_P1_to_P2" Hide="1" VFX="" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalFlowGraph" Name="FG_A4_P1_To_P2_open_barricade" />
+      <Event Trigger="GoalStart" GoalIndex="1" Type="GlobalDialog" Name="ACT4_Q2_WakeUp" DialogName="ACT4_Q2_WakeUp" IsCST="false" />
+      <Event Trigger="EnterAreaOne" CenterEntityName="A4_DYN_UnfortunateSurvivor_SFGuard_1" AreaRadius="10" Type="GlobalDialog" Name="ACT4_Q2_UnfortunateSurvivor" DialogName="ACT4_Q2_UnfortunateSurvivor" IsCST="false" />
+    </Step>
+    <Step Order="1" UIName="@ui_A4_Q2_S2_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="QP_Act4_Quest1_PlayerSpawn_Start">
+      <Goal Order="0" Type="Impossible" />
+      <Goal Order="1" Type="BossFight" FightPreset="BossFight_Ahriman_Loop0" />
+      <GoalLogic Formula="00-01" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="ClickableEntity_EndQuest_CheckTheEgg" Hide="1" VFX="" Name="G0_egg_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="drag_oshara_egg32" Hide="0" VFX="" Name="G0_egg_2" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="CE_A4_SFUAEnd_Egg" Hide="1" VFX="" Name="G0_egg_2_1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg_Pedestal4" Hide="0" VFX="" Name="G0_egg_2_pedestalTrue" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg_Pedestal" Hide="1" VFX="" Name="G0_egg_2_pedestalFalse" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" EntityNames="AnimObject_A4_ArhimanDefeatPart2_DragonEgg3" Hide="1" VFX="" Name="G0_egg_3" />
+      <Event Trigger="EventEnd" EventName="D_TeleportPlayersInPalace" Type="GlobalMapModifier" Name="GMM_Hellion_Hide2" Modifier="HellionCosmetic" Remove="1" Target="#Player" Delay=".5" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="D_TeleportPlayersInPalace" MinRadius="2" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Phase2" />
+      <Event Trigger="EventEnd" EventName="D_TeleportPlayersInPalace" Type="ActionSequence" Name="A4_SUA_FakeEnd" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="A4_FakeEnd" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_FakeEnd" Type="GoalAchieve" Name="Act4_Loop0_AchieveSequence" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_FakeEnd" Type="GlobalDialog" Name="ACT4_Q2_PossessedValeria" DialogName="ACT4_Q2_PossessedValeria" IsCST="false" Delay=".5" />
+      <Event Trigger="EventEnd" EventName="ACT4_Q2_PossessedValeria" Type="GlobalDialog" Name="ACT4_Q2_PossessedHeimlock" DialogName="ACT4_Q2_PossessedHeimlock" IsCST="false" Delay=".7" />
+      <Event Trigger="EventEnd" EventName="D_TeleportPlayersInPalace" Type="EntityIsHidden" Name="A4_DYN_TenseFamilyMeeting_Valeria_Hide" EntityNames="A4_DYN_TenseFamilyMeeting_Valeria" Hide="1" Delay=".1" />
+      <Event Trigger="EventEnd" EventName="D_TeleportPlayersInPalace" Type="EntityIsHidden" Name="A4_DYN_TenseFamilyMeeting_Heimlock_Hide" EntityNames="A4_DYN_TenseFamilyMeeting_Heimlock" Hide="1" Delay=".1" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P2_Ahriman" PercentLeft="80" Type="EntityKill" Name="Act4_P2_Ahriman_KillByHurt" EntityName="A4_P2_Ahriman" Hide="1" Remove="0" VFX="" />
+      <Event Trigger="HarmedEntity" TriggerEntityName="A4_P2_Ahriman" PercentLeft="80" Type="GlobalStopAllDialogs" Name="Act4_Loop0_StopTalk" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_FakeEnd" Type="EntityKill" Name="Act4_P2_Ahriman_KillByTime" EntityName="A4_P2_Ahriman" Hide="1" Remove="0" VFX="" Delay="60" />
+      <Event Trigger="EventEnd" EventName="A4_SUA_FakeEnd" Type="GlobalStopAllDialogs" Name="Act4_Loop0_StopTalk_Delay" Delay="60" />
+      <Event Trigger="PlayerWipe" Type="EntityKill" Name="Act4_P2_Ahriman_KillByDeath" EntityName="A4_P2_Ahriman" Hide="1" Remove="0" VFX="" />
+      <Event Trigger="PlayerWipe" Type="GlobalStopAllDialogs" Name="Act4_Loop0_StopTalk_PlayerDie" />
+      <Event Trigger="PlayerWipe" Type="GoalAchieve" Name="Act4_Loop0_AchieveBossFight" SimulateOnly="0" GoalIndexToAchieve="1" />
+    </Step>
+  </Quest>
+  <Quest Name="ACT4_Loop0_End" StartDialog="" Type="Main" UIName="@ui_A4_Q2_End_QuestLabel" UIDesc="" BoundToMap="Wolcen_ENDGAME">
+    <Step Order="0" UIName="@ui_A4_Q2_End_S1_StepNameLabel" AutoClearEvents="0" Save="0" CheckPoint="">
+      <Goal Order="0" Type="Impossible" />
+      <GoalLogic Formula="00" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_CE_A4_P1_SF_To_FleshArena_UnHide" EntityNames="CE_A4_P1_SF_To_FleshArena" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_CE_A4_P1_SF_To_FuryArena_UnHide" EntityNames="CE_A4_P1_SF_To_FuryArena" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityIsHidden" Name="A4_CE_A4_P1_SF_To_SoulsArena_UnHide" EntityNames="CE_A4_P1_SF_To_SoulsArena" Hide="0" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="GlobalMapModifier" Name="GMM_Hellion_Hide3" Modifier="HellionCosmetic" Remove="1" Target="#Player" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="EntityTeleport" Name="D_TeleportPlayersInPalaceSFUA" TeleportedEntityName="#Player" DestinationName="QP_Act4_Quest1_PlayerSpawn_Phase2" MinRadius="1" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="ActionSequence" Name="A4_L0_Rollback" BlendingSpeed="100" PlaySpeed="1" EnableBlendOut="0" SequenceName="A4_Rollback" />
+      <Event Trigger="GoalStart" GoalIndex="0" Type="FakeCredit" Name="A4_L0_FakeCredits" DirectorTime="42" CreditsTime="51" ReverseTime="94" SequenceName="A4_Rollback" Delay="0.5" />
+      <Event Trigger="EventEnd" EventName="A4_L0_Rollback" Type="EntityTeleport" Name="D_TeleportPlayersInSF2" TeleportedEntityName="#Player" DestinationName="SpawnPoint_SF_terrainrecover" MinRadius="1" PreBlackScreen="3" />
+      <Event Trigger="EventEnd" EventName="A4_L0_Rollback" Type="GoalAchieve" Name="Achieve" SimulateOnly="0" GoalIndexToAchieve="0" />
+      <Event Trigger="EventEnd" EventName="A4_L0_Rollback" Type="QuestUnlock" Name="Act4_Loop0_UnlockLoop1" QuestName="ACT4_Loop1" FailCurrent="1" StartingStep="0" />
+    </Step>
+  </Quest>
+</MetaData>

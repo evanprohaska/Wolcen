@@ -1,0 +1,13 @@
+<MetaData>
+  <Spell Name="AI_ACT2_Support_Valeria_WarCry_passive" MaxStack="1">
+    <Icon Picture="../u_resources/spells/buffs/Warcry.png" Description="@ui_WarcryAttackSpeedCastSpeed_Desc" Title="@ui_WarcryAttackSpeedCastSpeed_Title" />
+    <MagicEffects>
+      <EIM Name="dummy_ai_buff_attackspeed" Permanent="0">
+        <Semantics PossibilityInt="1" />
+      </EIM>
+      <EIM Name="attackspeed_final_percent" Permanent="0">
+        <Semantics CharacteristicFinalPercentFloat="15" />
+      </EIM>
+    </MagicEffects>
+  </Spell>
+</MetaData>

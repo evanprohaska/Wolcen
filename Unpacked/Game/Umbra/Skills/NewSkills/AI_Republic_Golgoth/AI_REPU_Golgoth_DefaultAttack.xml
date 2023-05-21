@@ -1,0 +1,40 @@
+<MetaData>
+  <Skill UID="AI_REPU_Golgoth_DefaultAttack" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="3" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="3.2" />
+    <StatusAilment>
+      <stun Chance="100" ChanceMode="override" Duration="1" DurationMode="override" />
+    </StatusAilment>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="REPU_Golgoth_DefaultAttack_Shape" />
+    </Shapes>
+    <SoundTrigger OnAnimCast="" OnAnimStart="" OnHit="Play_Republic_Golgoth_Punch_Impact" PlayAttackVoice="1" />
+  </Skill>
+  <Skill UID="AI_Hunt_Golgoth_DefaultAttack_1" ESkill="default_melee" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_01" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="3" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Lightning" WeaponMultiplier="3.2" />
+    <StatusAilment>
+      <stun Chance="100" ChanceMode="override" Duration="1" DurationMode="override" />
+    </StatusAilment>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Hunt_Golgoth_DefaultAttack_Shape" />
+    </Shapes>
+    <SkillSpecific HitEntityOnlyOnce="0">
+      <Particles>
+        <Start>
+          <Particle Key="Indicator" Name="U_Monster.DeomonOfSoul.Soul_Wave_Indicator_01_Big" Direction="-1,0,0" Scale="0.62" />
+        </Start>
+        <Cast>
+          <Particle Key="Ray1" Name="U_Monster_Alt.golgoth.IEM_Ray_15m" Offset="0,0,1" Direction="0,1,0" Scale="1" InstantKill="0" />
+        </Cast>
+      </Particles>
+    </SkillSpecific>
+    <SoundTrigger OnAnimCast="" OnAnimStart="" OnHit="Play_Republic_Golgoth_Punch_Impact" PlayAttackVoice="1" />
+  </Skill>
+</MetaData>

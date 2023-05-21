@@ -1,0 +1,650 @@
+<CursedChestAltarPresets>
+  <CursedChest PresetName="CursedChest_Altar_Common" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Low" Normal="0" Magic="3000" Rare="1000" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <Low Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_8" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_9" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_1" Weight="2" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_4" Weight="1" />
+      </Low>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01" Direction="0,1,0" Offset="0,0,0" Scale="1.3" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Common_SVRIIR" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Low" Normal="0" Magic="3000" Rare="1000" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <Low Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_CommonAltar_7" Weight="1" />
+      </Low>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01" Direction="0,1,0" Offset="0,0,0" Scale="1.3" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Common_BANDIT" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Low" Normal="0" Magic="3000" Rare="1000" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <Low Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_CommonAltar_7" Weight="1" />
+      </Low>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01" Direction="0,1,0" Offset="0,0,0" Scale="1.3" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Common_COS" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Low" Normal="0" Magic="3000" Rare="1000" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <Low Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_8" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_CommonAltar_9" Weight="1" />
+      </Low>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01" Direction="0,1,0" Offset="0,0,0" Scale="1.3" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Common_FLESH" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Low" Normal="0" Magic="3000" Rare="1000" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <Low Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_CommonAltar_6" Weight="1" />
+      </Low>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01" Direction="0,1,0" Offset="0,0,0" Scale="1.3" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Common_FURY" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Low" Normal="0" Magic="3000" Rare="1000" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <Low Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_1" Weight="2" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_CommonAltar_4" Weight="1" />
+      </Low>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01" Direction="0,1,0" Offset="0,0,0" Scale="1.3" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_01_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Uncommon" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Middle" Normal="0" Magic="50" Rare="200" Legendary="1" />
+    </Loot>
+    <Spawn>
+      <Middle Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_UncommonAltar_1" Weight="2" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_UncommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_UncommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_UncommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_8" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_9" Weight="1" />
+      </Middle>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02" Direction="0,1,0" Offset="0,0,0" Scale="1.5" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Uncommon_SVRIIR" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Middle" Normal="0" Magic="50" Rare="200" Legendary="1" />
+    </Loot>
+    <Spawn>
+      <Middle Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_UncommonAltar_7" Weight="1" />
+      </Middle>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02" Direction="0,1,0" Offset="0,0,0" Scale="1.5" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Uncommon_BANDIT" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Middle" Normal="0" Magic="50" Rare="200" Legendary="1" />
+    </Loot>
+    <Spawn>
+      <Middle Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_UncommonAltar_7" Weight="1" />
+      </Middle>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02" Direction="0,1,0" Offset="0,0,0" Scale="1.5" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Uncommon_FLESH" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Middle" Normal="0" Magic="50" Rare="200" Legendary="1" />
+    </Loot>
+    <Spawn>
+      <Middle Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_UncommonAltar_6" Weight="1" />
+      </Middle>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02" Direction="0,1,0" Offset="0,0,0" Scale="1.5" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Uncommon_FURY" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Middle" Normal="0" Magic="50" Rare="200" Legendary="1" />
+    </Loot>
+    <Spawn>
+      <Middle Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Fury_UncommonAltar_1" Weight="2" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_UncommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_UncommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_UncommonAltar_4" Weight="1" />
+      </Middle>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02" Direction="0,1,0" Offset="0,0,0" Scale="1.5" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Uncommon_COS" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Middle" Normal="0" Magic="50" Rare="200" Legendary="1" />
+    </Loot>
+    <Spawn>
+      <Middle Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_8" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_UncommonAltar_9" Weight="1" />
+      </Middle>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02" Direction="0,1,0" Offset="0,0,0" Scale="1.5" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_02_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Rare" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="High" Normal="0" Magic="0" Rare="200" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <High Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_8" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_9" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Rare_1" Weight="2" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Rare_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Rare_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Rare_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_7" Weight="1" />
+      </High>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03" Direction="0,1,0" Offset="0,0,0" Scale="1.75" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Rare_COS" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="High" Normal="0" Magic="0" Rare="200" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <High Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_8" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Rare_9" Weight="1" />
+      </High>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03" Direction="0,1,0" Offset="0,0,0" Scale="1.75" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Rare_SVRIIR" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="High" Normal="0" Magic="0" Rare="200" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <High Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Rare_7" Weight="1" />
+      </High>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03" Direction="0,1,0" Offset="0,0,0" Scale="1.75" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Rare_FLESH" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="High" Normal="0" Magic="0" Rare="200" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <High Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Rare_6" Weight="1" />
+      </High>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03" Direction="0,1,0" Offset="0,0,0" Scale="1.75" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Rare_FURY" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="High" Normal="0" Magic="0" Rare="200" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <High Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Fury_Rare_1" Weight="2" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Rare_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Rare_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Rare_4" Weight="1" />
+      </High>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03" Direction="0,1,0" Offset="0,0,0" Scale="1.75" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Rare_BANDIT" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="High" Normal="0" Magic="0" Rare="200" Legendary="5" />
+    </Loot>
+    <Spawn>
+      <High Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Rare_7" Weight="1" />
+      </High>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03" Direction="0,1,0" Offset="0,0,0" Scale="1.75" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_03_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Legendary" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Highest" Normal="0" Magic="0" Rare="200" Legendary="20" />
+    </Loot>
+    <Spawn>
+      <Highest Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_8" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_9" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Legendary_1" Weight="2" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Legendary_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Legendary_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Legendary_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_7" Weight="1" />
+      </Highest>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04" Direction="0,1,0" Offset="0,0,0" Scale="2" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Legendary_COS" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Highest" Normal="0" Magic="0" Rare="200" Legendary="20" />
+    </Loot>
+    <Spawn>
+      <Highest Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_7" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_8" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Soul_Legendary_9" Weight="1" />
+      </Highest>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04" Direction="0,1,0" Offset="0,0,0" Scale="2" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Legendary_SVRIIR" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Highest" Normal="0" Magic="0" Rare="200" Legendary="20" />
+    </Loot>
+    <Spawn>
+      <Highest Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Svriir_Legendary_7" Weight="1" />
+      </Highest>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04" Direction="0,1,0" Offset="0,0,0" Scale="2" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Legendary_FLESH" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Highest" Normal="0" Magic="0" Rare="200" Legendary="20" />
+    </Loot>
+    <Spawn>
+      <Highest Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Flesh_Legendary_6" Weight="1" />
+      </Highest>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04" Direction="0,1,0" Offset="0,0,0" Scale="2" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Legendary_BANDIT" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Highest" Normal="0" Magic="0" Rare="200" Legendary="20" />
+    </Loot>
+    <Spawn>
+      <Highest Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_1" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_4" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_5" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_6" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Bandit_Legendary_7" Weight="1" />
+      </Highest>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04" Direction="0,1,0" Offset="0,0,0" Scale="2" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+  <CursedChest PresetName="CursedChest_Altar_Legendary_FURY" Weight="1" SpawnRadius="15" Geometry="objects/props/flayers_props/chest_classic_anim.cga" SpawnOffset="0,0,0">
+    <Loot>
+      <Rarity Tier="Highest" Normal="0" Magic="0" Rare="200" Legendary="20" />
+    </Loot>
+    <Spawn>
+      <Highest Weight="1">
+        <SpawnClass SpawnClass="sc_Adv_Fury_Legendary_1" Weight="2" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Legendary_2" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Legendary_3" Weight="1" />
+        <SpawnClass SpawnClass="sc_Adv_Fury_Legendary_4" Weight="1" />
+      </Highest>
+    </Spawn>
+    <MagicEffects />
+    <Particles>
+      <Particle Key="Permanent" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04" Direction="0,1,0" Offset="0,0,0" Scale="2" />
+      <Particle Key="OnActivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Activate" Direction="0,1,0" Offset="0,0,0" Scale="1" />
+      <Particle Key="OnDeactivation" VFXName="U_CommonVFX.Cursed_Chest.Cursed_Chest_04_Clear" Direction="0,1,0" Offset="0,0,1" Scale="2" />
+      <Particle Key="Mark" VFXName="U_CommonVFX.Altars.Monster_Indicator_01_Red" Direction="0,1,0" Scale="0.3" Offset="0,0,0" Bone="Bip01" />
+    </Particles>
+  </CursedChest>
+</CursedChestAltarPresets>

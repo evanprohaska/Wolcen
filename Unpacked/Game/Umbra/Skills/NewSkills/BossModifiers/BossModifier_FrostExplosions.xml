@@ -1,0 +1,19 @@
+<MetaData>
+  <Skill UID="AI_BossModifier_FrostExplosions" ESkill="AI_Default_GenericExplosionsAround" Keywords="">
+    <DamageWeapon Type="Frost" WeaponMultiplier="1.2" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Shapes>
+      <Entry Key="ExplosionShape" ShapeName="AI_BossModifier_FrostExplosions" />
+    </Shapes>
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="1" />
+    <StatusEffect_MovementSpeed SlowPercent="80" SlowPercentPerLevel="0" Duration="1.5" DurationPerLevel="0" />
+    <ParticleList>
+      <Particle Key="Indicator" Name="u_bossmodifiers.sacred_storm.indicator_slow" Offset="0,0,2" Direction="0,0,1" Scale="1.75" TimeScale="0.5" />
+      <Particle Key="Explosion" Name="U_VFX_Temp.Temp_Chaguk.IceMeteor_Explosion_Medium" Direction="0,0,1" WorldSpace="1" />
+    </ParticleList>
+    <Range ProjectileMinDistance="3" AttackRange="15" />
+    <SkillSpecific NumberOfExplosionsPerLoop="4" DelayBetweenExplosionsOfASameLoop="0.5" AnticipationTimerForExplosion="1.5" ComputeExplosionExclusionRange="3" TimeBetweenLoops="1" />
+  </Skill>
+</MetaData>

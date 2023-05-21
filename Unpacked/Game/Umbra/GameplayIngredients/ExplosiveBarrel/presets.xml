@@ -1,0 +1,22 @@
+<Metadata>
+  <Preset Name="fire">
+    <Model Static="objects/props/Flayers_Props/Explosive_barrel_blink_fire_mesh.cgf" Destroyable="objects/props/Flayers_Props/explosive_barrel_blink_fire_destroyable.cgf" />
+    <ActivateParticle Name="U_CommonVFX.Explosive_Barrel.Barrel_Avtivate_01_Fire" Direction="0,1,0" />
+    <Skill UID="explosive_barrel_fire" />
+  </Preset>
+  <Preset Name="lightning">
+    <Model Static="objects/architecture/Stormfall/Explosive_barrel_blink_lightning_StormfallEdition_mesh.cgf" Destroyable="objects/architecture/Stormfall/Explosive_barrel_blink_lightning_StormfallEdition_destroyable.cgf" />
+    <ActivateParticle Name="U_CommonVFX.Explosive_Barrel.Barrel_Avtivate_01_Lightning" Direction="0,1,0" />
+    <Skill UID="explosive_barrel_lightning" />
+  </Preset>
+  <Preset Name="Republiclightning">
+    <Model Static="Objects/architecture/Republic/Props_ElectricalBarrel_01_Mesh.cgf" Destroyable="Objects/architecture/Republic/Props_ElectricalBarrel_01_Destroyable.cgf" />
+    <ActivateParticle Name="U_CommonVFX.Explosive_Barrel.Barrel_Avtivate_01_RepublicLightning" Direction="0,1,0" />
+    <Skill UID="explosive_barrel_lightning" />
+  </Preset>
+  <Preset Name="poison">
+    <Model Static="objects/props/Flayers_Props/Explosive_barrel_blink_poison_mesh.cgf" Destroyable="objects/props/Flayers_Props/Explosive_barrel_blink_poison_destroyable.cgf" />
+    <ActivateParticle Name="U_CommonVFX.Explosive_Barrel.Barrel_Activate_01_Poison" Direction="0,1,0" />
+    <Skill UID="explosive_barrel_poison" />
+  </Preset>
+</Metadata>

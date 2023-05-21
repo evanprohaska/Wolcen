@@ -1,0 +1,47 @@
+<MetaData>
+  <Skill UID="AI_ACT2_Support_Valeria_DualStrike" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" AnimationDrivenMovement="1" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="5" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon WeaponMultiplier="1.6" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="4" />
+    <ParticleList>
+      <Particle Key="Impact" Name="U_Monster.Heimlock_APO.BasicAttack_Impact_01_Shadow" Offset="0,2,0" Direction="0,0,1" Scale="1.3" />
+    </ParticleList>
+    <Specific_AI_Default_GenericCastSecondarySkills LastIndexOfALoop="3">
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_ACT2_Support_Valeria_DualStrike_Shapes01" />
+      <SkillSpecificParams Index="1" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_ACT2_Support_Valeria_DualStrike_Shapes02" />
+      <SkillSpecificParams Index="2" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_ACT2_Support_Valeria_DualStrike_Shapes03" />
+      <SkillSpecificParams Index="3" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_ACT2_Support_Valeria_DualStrike_Shapes04" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+  </Skill>
+  <Skill UID="AI_ACT2_Support_Valeria_DualStrike_Shapes01" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Spreader_DefaultAttackShape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_ACT2_Support_Valeria_DualStrike_Shapes02" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Spreader_DefaultAttackShape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_ACT2_Support_Valeria_DualStrike_Shapes03" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Spreader_DefaultAttackShape" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_ACT2_Support_Valeria_DualStrike_Shapes04" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Spreader_DefaultAttackShape" />
+    </Shapes>
+  </Skill>
+</MetaData>

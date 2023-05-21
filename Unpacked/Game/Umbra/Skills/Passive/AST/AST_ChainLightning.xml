@@ -1,0 +1,34 @@
+<MetaData>
+  <Spell Name="AST_ChainLightning_DamageBoost" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_lightning" Permanent="0">
+        <Semantics DamagePercentInt="30" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_lightning.png" Description="@ui_ChainLightningLightningDamageBoost_Desc" Title="@ui_ChainLightningLightningDamageBoost_Title" />
+  </Spell>
+  <Spell Name="AST_ChainLightning_DamageBoost_Shadow" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_shadow" Permanent="0">
+        <Semantics DamagePercentInt="30" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_shadow.png" Description="@ui_FrostNovaShadowdamageBoost_Desc" Title="@ui_FrostNovaShadowdamageBoost_Title" />
+  </Spell>
+  <Spell Name="AST_ChainLightning_DamageBoost_Bleed" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_rend" Permanent="0">
+        <Semantics DamagePercentInt="30" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_bleed.png" Description="@ui_ChainLightningBleedDamageBoost_Desc" Title="@ui_ChainLightningBleedDamageBoost_Title" />
+  </Spell>
+  <Spell Name="AST_ChainLightning_DamageBoost_Frost" MaxStack="1">
+    <MagicEffects>
+      <EIM Name="damage_percent_as_frost" Permanent="0">
+        <Semantics DamagePercentInt="30" />
+      </EIM>
+    </MagicEffects>
+    <Icon Picture="../u_resources/spells/buffs/buff_ice.png" Description="@ui_FrostNovaFrostdamageBoost_Desc" Title="@ui_FrostNovaFrostdamageBoost_Title" />
+  </Spell>
+</MetaData>

@@ -1,0 +1,55 @@
+<MetaData>
+  <Skill UID="AI_TMPL_Knight_SacredCombo" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_06" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="0.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_TMPL_Knight_SacredCombo_Shapes01" />
+      <SkillSpecificParams Index="1" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_TMPL_Knight_SacredCombo_Shapes01" />
+      <SkillSpecificParams Index="2" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_TMPL_Knight_SacredCombo_Shapes02" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+  </Skill>
+  <Skill UID="AI_TMPL_Knight_SacredCombo_Shapes01" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Type="Sacred" Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Templars_Knight_SacredCombo_1" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_TMPL_Knight_SacredCombo_Shapes02" ESkill="AI_Default_GenericShapes" Keywords="attack_skill">
+    <DamageAsPercentageOfParent Type="Sacred" Percent="100" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Shapes>
+      <Entry ShapeName="Templars_Knight_SacredCombo_2" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_SacredCombo" ESkill="AI_Default_GenericCastSecondarySkills" Keywords="attack_skill">
+    <Animation ActionString="monster_skill_06" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <Cooldown Cooldown="0.0" />
+    <CastingParams CanBeInterrupted="0" />
+    <DamageWeapon Type="Sacred" WeaponMultiplier="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <Specific_AI_Default_GenericCastSecondarySkills>
+      <SkillSpecificParams Index="0" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_TMPL_Knight_SacredCombo_Shapes01" />
+      <SkillSpecificParams Index="1" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_TMPL_Knight_SacredCombo_Shapes01" />
+      <SkillSpecificParams Index="2" IndicatorKeys="" ParticleKeys="" SecondarySkillUIDs="AI_TMPL_Knight_SacredCombo_Shapes02,AI_Hunt_Knight_SacredCombo_DZ" />
+    </Specific_AI_Default_GenericCastSecondarySkills>
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_Hunt_Knight_SacredCombo_DZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageAsPercentageOfParent Type="Sacred" Percent="100" />
+    <Cooldown Cooldown="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="Templars_Knight_HolyDive_Level2_Shape" />
+    </Shapes>
+    <CastingParams CastBone="R_Weapon_Bone" />
+    <DamageZone Duration="60" RateOfFire="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="DamageZone" Name="U_Character_02.Vortex.Vortex_Area_Inside_01_Sacred" Offset="0,0,0" Direction="0,0,1" Scale="1.2" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="3" RandomBaseDistMax="3" RandomBaseAngleMin="0" RandomBaseAngleMax="0" LimitAngle="0" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="0" NumberOfDZ="1" BaseDirIsClockwise="1" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

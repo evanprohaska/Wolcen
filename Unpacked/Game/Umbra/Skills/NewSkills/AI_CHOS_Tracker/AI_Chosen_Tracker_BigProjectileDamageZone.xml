@@ -1,0 +1,15 @@
+<MetaData>
+  <Skill UID="AI_Chosen_Tracker_BigProjectileDamageZone" ESkill="AI_Chosen_Tracker_ProjectileDamageZone" Keywords="magic_spell">
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <DamageWeapon Type="Sarisel" WeaponMultiplier="1" />
+    <CastingParams />
+    <DamageZone UseDamageZoneList="1">
+      <Entry DamageZoneName="Chosen_Tracker_Projectile_DZ" />
+    </DamageZone>
+    <ParticleList>
+      <Particle Key="Warning" Name="U_Monster.Tracker.Blink_Light_02_1" Direction="0,0,1" />
+      <Particle Key="ExplosionExtra" Name="U_Monster.Tracker.Projectile_Explosion_02" Direction="0,1,0" />
+    </ParticleList>
+    <SkillSpecific AOEDamageMultiplierMin="0.2" AOEDamageMultiplierMax="0.8" AOESlowPercentMin="10" AOESlowPercentMax="90" AOESlowDuration="0.8" />
+  </Skill>
+</MetaData>

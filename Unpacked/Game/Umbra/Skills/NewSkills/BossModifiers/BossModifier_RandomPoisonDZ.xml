@@ -1,0 +1,40 @@
+<MetaData>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_BossModifier_RandomPoisonDZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <Poison Chance="100" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomPoisonDZ" />
+    </Shapes>
+    <DamageZone Duration="120" RateOfFire="1" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="U_Monster.Indicator.Indicator_3M_03" Offset="0,0,0" Direction="0,0,1" Scale="1" TimeScale="0.25" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.random_poison_dz.dz" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.random_poison_dz.Fade" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="3" RandomBaseDistMax="20" RandomBaseAngleMin="0" RandomBaseAngleMax="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="2" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+  <Skill ESkill="AI_Default_GenericMobileDamageZones" Keywords="attack_skill" UID="AI_Hunt_BossModifier_RandomPoisonDZ">
+    <VisualFeedback TrailPresetBase="default" FeedbackPresetBase="default_status_ailment" BloodDecalOrientation="forward" />
+    <RandomCastingParams RandomNumberRangeMin="1" RandomNumberRangeMax="2" />
+    <DamageWeapon Type="toxic" WeaponMultiplier=".1" />
+    <StatusAilment>
+      <Poison Chance="100" ChanceMode="override" Duration="5" DurationMode="override" />
+    </StatusAilment>
+    <SoundTrigger />
+    <Shapes>
+      <Entry Key="DamageZoneShape" ShapeName="AI_BossModifier_RandomPoisonDZ" />
+    </Shapes>
+    <DamageZone Duration="120" RateOfFire="1" RemoveParticleWithShape="1" RemoveDamageZoneWhenCasterDies="1" />
+    <ParticleList>
+      <Particle Key="Warmup" Name="U_Monster.Indicator.Indicator_3M_03" Offset="0,0,0" Direction="0,0,1" Scale="1" TimeScale="0.25" />
+      <Particle Key="DamageZone" Name="u_bossmodifiers.random_poison_dz.dz" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+      <Particle Key="Disappear" Name="u_bossmodifiers.random_poison_dz.Fade" Offset="0,0,0" Direction="0,0,1" Scale="1" />
+    </ParticleList>
+    <Specific_AI_Default_GenericMobileDamageZones RandomBaseDistMin="3" RandomBaseDistMax="20" RandomBaseAngleMin="0" RandomBaseAngleMax="360" MinLinearSpeed="0" MaxLinearSpeed="0" MinAngularSpeed="0" MaxAngularSpeed="0" IndicatorMaxTimer="2" NumberOfDZ="1" BaseDirIsClockwise="0" AllowRandomDir="0" LockOnCasterBetweenWarmupAndCast="0" LockOnCasterAfterCast="0" />
+  </Skill>
+</MetaData>

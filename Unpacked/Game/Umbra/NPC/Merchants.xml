@@ -1,0 +1,22 @@
+<MetaData>
+  <Panel Id="reclaim" IconId="999" />
+  <Panel Id="archivist" IconId="7" />
+  <Panel Id="jeweler" IconId="8" />
+  <Panel Id="gems" IconId="9">
+    <LevelParams LevelMin="1" LevelMax="90" LootClass="jeweler_amarth_gems" />
+  </Panel>
+  <Panel Id="sockets_reroll" IconId="10" />
+  <Merchant Name="Archivist" UIName="Archivist">
+    <Panel Id="archivist" />
+    <Panel Id="reclaim" />
+  </Merchant>
+  <Merchant Name="ArchivistOnly" UIName="Archivist">
+    <Panel Id="archivist" />
+  </Merchant>
+  <Merchant Name="Jeweler" UIName="Jeweler">
+    <Panel Id="jeweler" />
+    <Panel Id="sockets_reroll" />
+    <Panel Id="gems" />
+    <Panel Id="reclaim" />
+  </Merchant>
+</MetaData>

@@ -1,0 +1,78 @@
+<MetaData>
+  <Skill UID="AI_cultofsouls_demonofsouls_possess_part1" ESkill="AI_cultofsouls_demonofsouls_possess_part1" Keywords="magic_spell,projectile">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out_01" ScaleWithAttackSpeed="1" />
+    <Range AttackRange="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="L_Weapon_Bone" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <Projectile Name="demonofsouls_soulprojectile_proj02" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ProjectileTTL="4" TargetBone="Bip01 Head" PossessParticleTTL="3.5" />
+    <ParticleList>
+      <Particle Key="Possess" Name="U_Monster.DeomonOfSoul.Possess_01" Offset="0,0,0" Direction="1,0,0" Scale="0.75" Bone="Bip01" />
+      <Particle Key="UnderSoul" Name="U_Monster.DeomonOfSoul.Under_Soul_02" Offset="0,0,0" Direction="0,0,1" Bone="Bip01" />
+    </ParticleList>
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_cultofsouls_demonofsouls_possess_part2" />
+    </SecondarySkillToCast>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" OnAnimStart="" />
+  </Skill>
+  <Skill UID="AI_cultofsouls_demonofsouls_possess_part2" ESkill="AI_cultofsouls_demonofsouls_possess_part2" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_05_in" ActionString_Loop="monster_skill_loop_05_loop" ActionString_Out="monster_skill_loop_05_out_01" ScaleWithAttackSpeed="1" />
+    <Range AttackRange="10" />
+    <DamageWeapon Type="frost" WeaponMultiplier="3.5" />
+    <Cooldown Cooldown="0" />
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.DeomonOfSoul.Teleport_Out_02" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="Consume" Name="U_Monster.Tomb_Bearer.Soul_Trail_04_1" Offset="0,0,0" Direction="0,1,0" Bone="Bip01 Spine2" />
+      <Particle Key="Indicator" Name="U_Monster.DeomonOfSoul.Soul_Impact_Indicator" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="Explosion" Name="U_Monster.Tomb_Bearer.Soul_Impact" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Projectile Name="demonofsouls_soulprojectile_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific LoopDuration="2.5" EscapeTimeForTarget="1" />
+    <SoundTrigger OnAnimStart="" OnHit="Play_DemonOfSouls_Attack_Impact" PlayAttackVoice="0" />
+    <Shapes>
+      <Entry ShapeName="DemonOfSouls_PossessExplosion" />
+    </Shapes>
+  </Skill>
+  <Skill UID="AI_hunt_demonofsouls_possess_part1" ESkill="AI_cultofsouls_demonofsouls_possess_part1" Keywords="magic_spell,projectile">
+    <Animation ActionString_In="monster_skill_loop_04_in" ActionString_Loop="monster_skill_loop_04_loop" ActionString_Out="monster_skill_loop_04_out_01" ScaleWithAttackSpeed="1" />
+    <Range AttackRange="10" />
+    <DamageWeapon WeaponMultiplier="1" />
+    <Cooldown Cooldown="10" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CastBone="L_Weapon_Bone" CanBeInterrupted="0" InterruptIfTargetGoesInvisible="1" />
+    <Projectile Name="demonofsouls_soulprojectile_proj02" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific ProjectileTTL="4" TargetBone="Bip01 Head" PossessParticleTTL="3.5" />
+    <ParticleList>
+      <Particle Key="Possess" Name="U_Monster.DeomonOfSoul.Possess_01" Offset="0,0,0" Direction="1,0,0" Scale="0.75" Bone="Bip01" />
+      <Particle Key="UnderSoul" Name="U_Monster.DeomonOfSoul.Under_Soul_02" Offset="0,0,0" Direction="0,0,1" Bone="Bip01" />
+    </ParticleList>
+    <SecondarySkillToCast>
+      <Entry Key="Default" UID="AI_hunt_demonofsouls_possess_part2" />
+    </SecondarySkillToCast>
+    <SoundTrigger OnHit="PLAY_Player_DefaultHit" PlayAttackVoice="0" OnAnimStart="" />
+  </Skill>
+  <Skill UID="AI_hunt_demonofsouls_possess_part2" ESkill="AI_cultofsouls_demonofsouls_possess_part2" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_05_in" ActionString_Loop="monster_skill_loop_05_loop" ActionString_Out="monster_skill_loop_05_out_01" ScaleWithAttackSpeed="1" />
+    <Range AttackRange="10" />
+    <DamageWeapon Type="frost" WeaponMultiplier="3.5" />
+    <Cooldown Cooldown="0" />
+    <ParticleList>
+      <Particle Key="Disappear" Name="U_Monster.DeomonOfSoul.Teleport_Out_02" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="Consume" Name="U_Monster.Tomb_Bearer.Soul_Trail_04_1" Offset="0,0,0" Direction="0,1,0" Bone="Bip01 Spine2" />
+      <Particle Key="Indicator" Name="U_Monster.DeomonOfSoul.Soul_Impact_Indicator" Offset="0,0,0" Direction="0,0,1" />
+      <Particle Key="Explosion" Name="U_Monster.Tomb_Bearer.Soul_Impact" Offset="0,0,0" Direction="0,0,1" />
+    </ParticleList>
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <CastingParams CanBeInterrupted="0" />
+    <Projectile Name="demonofsouls_soulprojectile_proj" ProjectileCount="1" PenetrationLimit="1" />
+    <SkillSpecific LoopDuration="1.5" EscapeTimeForTarget="1" />
+    <SoundTrigger OnAnimStart="" OnHit="Play_DemonOfSouls_Attack_Impact" PlayAttackVoice="0" />
+    <Shapes>
+      <Entry ShapeName="DemonOfSouls_PossessExplosion" />
+    </Shapes>
+  </Skill>
+</MetaData>

@@ -1,0 +1,19 @@
+<MetaData>
+  <Projectile ID="assassin_evadedash_proj" ClassName="UProjectile_Bullet">
+    <Collider GeomType="box" vSize="1,1,1" vOffset="0,-1,0.5" />
+    <Rendering UseVelocityAsForwardDir="1">
+      <Travel ParticleName="U_Projectile.Dagger.Trow_Dagger_01" Direction="0,1,0" WorldSpace="0" />
+      <Hit ParticleName="U_Projectile.Dagger.Throw_Dagger_Hit_01" AttachToBone="Bip01 Spine1" Direction="0,1,0" WorldSpace="0" />
+      <HitEnvironment ParticleName="U_Projectile.Dagger.Throw_Dagger_GroundHit_01" Direction="0,1,0" WorldSpace="0" />
+    </Rendering>
+    <MovementMethodParams_Curve Type="CurveFollower" ID="UC_None" Rotation="0" Force="1" Randomize="0" />
+    <Speed SpeedMin="45" SpeedMax="45" Acceleration="0" AccelerationCurveID="" ArePercentageValues="0" />
+    <Targeting FollowTarget="0" />
+    <Explosion />
+    <Audio>
+      <Hit SoundTriggerName="Play_Republic_Alastor_DualBlade_Impact" />
+      <HitEnvironment SoundTriggerName="Play_Arrow_Impact" />
+      <Launch SoundTriggerName="PLAY_Skill_DefaultWeapon_ArrowLoop" />
+    </Audio>
+  </Projectile>
+</MetaData>

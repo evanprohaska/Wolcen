@@ -1,0 +1,66 @@
+<MetaData>
+  <Skill UID="AI_TMPL_Knight_Prayer" ESkill="AI_TMPL_Knight_Prayer" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="12" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <TemporaryProtection ComputeHealthFrom="Caster" HealthPercent="25" />
+    <SecondarySkillToCast>
+      <Entry Key="OnSuccess" UID="AI_TMPL_Knight_SacredForm" />
+      <Entry Key="OnFailure" UID="AI_TMPL_Knight_PrayerFailure" />
+    </SecondarySkillToCast>
+    <SkillSpecific PrayerDuration="10" />
+    <ParticleList>
+      <Particle Key="Shield" Name="U_Monster.AuroraKnight.Prayer_Shield_01" Offset="0,0,1.5" Direction="0,1,0" Scale="1.15" Bone="Bip01" />
+      <Particle Key="Warning" Name="U_Monster.AuroraKnight.Prayer_ReadyAura_01" Offset="0,0.2,0.6" Direction="0,1,0" Scale="0.2" Bone="L_Weapon_Bone" />
+    </ParticleList>
+    <SoundTrigger OnAnimLoopIn="Play_TMPL_Knight_Prayer_Start" OnAnimLoopOut="Play_TMPL_Knight_Prayer_EndExplosion" onInterrupt="Stop_TMPL_Knight_Prayer_Loop" />
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_Prayer" ESkill="AI_TMPL_Knight_Prayer" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="12" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <TemporaryProtection ComputeHealthFrom="Caster" HealthPercent="35" />
+    <SecondarySkillToCast>
+      <Entry Key="OnSuccess" UID="AI_Hunt_Knight_SacredForm" />
+      <Entry Key="OnFailure" UID="AI_TMPL_Knight_PrayerFailure" />
+    </SecondarySkillToCast>
+    <SkillSpecific PrayerDuration="10" />
+    <ParticleList>
+      <Particle Key="Shield" Name="U_Monster.AuroraKnight.Prayer_Shield_01" Offset="0,0,1.5" Direction="0,1,0" Scale="1.15" Bone="Bip01" />
+      <Particle Key="Warning" Name="U_Monster.AuroraKnight.Prayer_ReadyAura_01" Offset="0,0.2,0.6" Direction="0,1,0" Scale="0.2" Bone="L_Weapon_Bone" />
+    </ParticleList>
+    <SoundTrigger OnAnimLoopIn="Play_TMPL_Knight_Prayer_Start" OnAnimLoopOut="Play_TMPL_Knight_Prayer_EndExplosion" onInterrupt="Stop_TMPL_Knight_Prayer_Loop" />
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_Prayer_SacredFire" ESkill="AI_TMPL_Knight_Prayer" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="12" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <TemporaryProtection ComputeHealthFrom="Caster" HealthPercent="35" />
+    <SecondarySkillToCast>
+      <Entry Key="OnSuccess" UID="AI_Hunt_Knight_SacredForm_SacredFire" />
+      <Entry Key="OnFailure" UID="AI_TMPL_Knight_PrayerFailure" />
+    </SecondarySkillToCast>
+    <SkillSpecific PrayerDuration="10" />
+    <ParticleList>
+      <Particle Key="Shield" Name="U_Monster.AuroraKnight.Prayer_Shield_01" Offset="0,0,1.5" Direction="0,1,0" Scale="1.15" Bone="Bip01" />
+      <Particle Key="Warning" Name="U_Monster.AuroraKnight.Prayer_ReadyAura_01" Offset="0,0.2,0.6" Direction="0,1,0" Scale="0.2" Bone="L_Weapon_Bone" />
+    </ParticleList>
+    <SoundTrigger OnAnimLoopIn="Play_TMPL_Knight_Prayer_Start" OnAnimLoopOut="Play_TMPL_Knight_Prayer_EndExplosion" onInterrupt="Stop_TMPL_Knight_Prayer_Loop" />
+  </Skill>
+  <Skill UID="AI_Hunt_Knight_Prayer_SacredOrbs" ESkill="AI_TMPL_Knight_Prayer" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_02_in" ActionString_Loop="monster_skill_loop_02_loop" ActionString_Out="monster_skill_loop_02_out" ScaleWithAttackSpeed="1" />
+    <Cooldown Cooldown="12" CooldownTrigger="OnEnd" />
+    <CastingParams CanBeInterrupted="0" />
+    <TemporaryProtection ComputeHealthFrom="Caster" HealthPercent="35" />
+    <SecondarySkillToCast>
+      <Entry Key="OnSuccess" UID="AI_Hunt_Knight_SacredForm_SacredOrbs" />
+      <Entry Key="OnFailure" UID="AI_TMPL_Knight_PrayerFailure" />
+    </SecondarySkillToCast>
+    <SkillSpecific PrayerDuration="10" />
+    <ParticleList>
+      <Particle Key="Shield" Name="U_Monster.AuroraKnight.Prayer_Shield_01" Offset="0,0,1.5" Direction="0,1,0" Scale="1.15" Bone="Bip01" />
+      <Particle Key="Warning" Name="U_Monster.AuroraKnight.Prayer_ReadyAura_01" Offset="0,0.2,0.6" Direction="0,1,0" Scale="0.2" Bone="L_Weapon_Bone" />
+    </ParticleList>
+    <SoundTrigger OnAnimLoopIn="Play_TMPL_Knight_Prayer_Start" OnAnimLoopOut="Play_TMPL_Knight_Prayer_EndExplosion" onInterrupt="Stop_TMPL_Knight_Prayer_Loop" />
+  </Skill>
+</MetaData>

@@ -1,0 +1,44 @@
+<MetaData>
+  <Skill UID="AI_svriirbeta_screecher_screech" ESkill="AI_default_maintainedskillwithdamageinshape" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01 Jaw0" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <VisualFeedback FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="ShapeParticle" Name="U_Monster.Siviir.Screecher_ShockWave_01" Offset="0,0,0" Direction="0,1,0" />
+    </ParticleList>
+    <DamageWeapon WeaponMultiplier=".5" />
+    <StatusEffect_MovementSpeed SlowPercent="50" SlowPercentPerLevel="0" Duration="0.34" DurationPerLevel="0" />
+    <Cooldown Cooldown="5.0" CooldownPerLevel="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry ShapeName="SvriirBeta_Screecher_Screech" />
+    </Shapes>
+    <SkillSpecific TimeBetweenHits="0.33" MaxDuration="4" MaxTimeOutDuration="1.0" />
+    <SoundTrigger OnAnimStart="PLAY_AI_SvriirScreecher_ScreamStart" OnAnimLoopOut="PLAY_AI_SvriirScreecher_ScreamEnd" OnInterrupt="PLAY_AI_SvriirScreecher_ScreamEnd" OnHit="Play_Svriir_Screamer_Scream_Impact" PlayAttackVoice="0" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="10" To="50" In="0.5" />
+      <EmissiveIntensity From="50" To="75" In="0.7" />
+      <EmissiveIntensity From="75" To="10" In="1.5" />
+    </Material>
+  </Skill>
+  <Skill UID="AI_svriirbeta_screecher_screech_fire" ESkill="AI_default_maintainedskillwithdamageinshape" Keywords="magic_spell">
+    <Animation ActionString_In="monster_skill_loop_01_in" ActionString_Loop="monster_skill_loop_01_loop" ActionString_Out="monster_skill_loop_01_out_01" ScaleWithSpellCastingSpeed="1" />
+    <CastingParams CastBone="Bip01 Jaw0" CanCastWhileMoving="0" MaintainedCast="1" MaximumTurnRate="0" CanBeInterrupted="0" />
+    <VisualFeedback FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <ParticleList>
+      <Particle Key="ShapeParticle" Name="U_Monster_Alt.svriir_red.screecher_skill_loop" Offset="0,0,0" Direction="0,1,0" />
+    </ParticleList>
+    <DamageWeapon Type="Fire" WeaponMultiplier=".5" />
+    <StatusEffect_MovementSpeed SlowPercent="50" SlowPercentPerLevel="0" Duration="0.34" DurationPerLevel="0" />
+    <Cooldown Cooldown="5.0" CooldownPerLevel="0" CooldownTrigger="OnEnd" />
+    <Shapes>
+      <Entry ShapeName="SvriirBeta_Screecher_Screech" />
+    </Shapes>
+    <SkillSpecific TimeBetweenHits="0.33" MaxDuration="4" MaxTimeOutDuration="1.0" />
+    <SoundTrigger OnAnimStart="PLAY_AI_SvriirScreecher_ScreamStart" OnInterrupt="PLAY_AI_SvriirScreecher_ScreamEnd" PlayAttackVoice="0" />
+    <Material ScaleWithAnimationSpeed="1" ForceStopDuration="0.5">
+      <EmissiveIntensity From="10" To="50" In="0.5" />
+      <EmissiveIntensity From="50" To="75" In="0.7" />
+      <EmissiveIntensity From="75" To="10" In="1.5" />
+    </Material>
+  </Skill>
+</MetaData>

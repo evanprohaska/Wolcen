@@ -1,0 +1,10 @@
+<MetaData>
+  <Skill UID="AI_COFY_Spirit_FuryMissile" ESkill="AI_COFY_Spirit_FuryMissile" Keywords="deathskill,projectile">
+    <Animation ActionString="monster_skill_02" ScaleWithAttackSpeed="1" AnimationDrivenMovement="1" />
+    <DamageWeapon Type="fire" WeaponMultiplier=".4" />
+    <Explosion ExplosionRadius="3" />
+    <Projectile Name="cofy_fury_missile_proj" ProjectileCount="1" />
+    <VisualFeedback BloodDecalOrientation="forward" FeedbackPresetBase="default_ai_attacks" TrailPresetBase="default" />
+    <SkillSpecific ProjectileRangeIfNoTarget="10" />
+  </Skill>
+</MetaData>
